@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-inline-end",
+  "title": "Inline End Input Group",
+  "description": "Input Group Inline End variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-inline-end.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\n\r\n// assets\r\nimport { EyeOffIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - INLINE END | ------------------------------  //\r\n\r\nexport function InputGroupInlineEnd() {\r\n  return (\r\n    <Field className=\"max-w-sm\">\r\n      <FieldLabel htmlFor=\"inline-end-input\">Input</FieldLabel>\r\n      <InputGroup>\r\n        <InputGroupInput\r\n          id=\"inline-end-input\"\r\n          type=\"password\"\r\n          placeholder=\"Enter password\"\r\n        />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <EyeOffIcon />\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <FieldDescription>Icon positioned at the end.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-inline-end.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

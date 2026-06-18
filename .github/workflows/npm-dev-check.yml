@@ -1,0 +1,33 @@
+name: npm Build
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the dev branch
+  push:
+    branches: [dev*]
+
+jobs:
+  SFTP-deploy:
+    name: 🪛 Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: 📦 Install - npm
+        run: npm i
+
+      - name: 🧹 Lint
+        run: npm run lint
+
+      - name: 🔨 Build - npm
+        run: npm run build
+
+      - name: 🔎 Type-check
+        run: npm run type-check

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-progress-animated-primary",
+  "title": "Animated Primary Progress",
+  "description": "Progress Animated Primary variant for progress.",
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-animated-primary.tsx",
+      "content": "// shadcn\r\nimport { ProgressIndicator, ProgressTrack } from \"@/components/ui/progress\";\r\n\r\n// third party\r\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - ANIMATED PRIMARY | ------------------------------  //\r\n\r\nexport default function ProgressAnimatedPrimary() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <ProgressPrimitive.Root value={70}>\r\n        <ProgressTrack className=\"h-4 bg-muted/20 dark:bg-muted/10 rounded-lg\">\r\n          <ProgressIndicator className=\"bg-primary rounded-lg animate-progress-bar-stripes bg-[linear-gradient(45deg,rgba(255,255,255,.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.15)_50%,rgba(255,255,255,.15)_75%,transparent_75%,transparent)] bg-[length:16px_16px]\" />\r\n        </ProgressTrack>\r\n      </ProgressPrimitive.Root>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-animated-primary.tsx"
+    }
+  ],
+  "categories": [
+    "progress"
+  ],
+  "type": "registry:ui"
+}

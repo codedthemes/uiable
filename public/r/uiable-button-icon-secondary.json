@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-icon-secondary",
+  "title": "Secondary Icon Button",
+  "description": "Button Icon Secondary variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-icon-secondary.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { Info } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON ICON SECONDARY | ------------------------------  //\n\nexport default function ButtonIconSecondary() {\n  return (\n    <Button className=\"gap-2 bg-slate-500 hover:bg-slate-600\">\n      <Info className=\"size-5\" /> Secondary\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-icon-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

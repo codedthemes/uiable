@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-progress-controlled",
+  "title": "Controlled Progress",
+  "description": "Progress Controlled variant for progress.",
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-controlled.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { ProgressIndicator, ProgressTrack } from \"@/components/ui/progress\";\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n// third party\r\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - CONTROLLED | ------------------------------  //\r\n\r\nexport function ProgressControlled() {\r\n  const [value, setValue] = useState(50);\r\n\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-4\">\r\n      <ProgressPrimitive.Root value={value}>\r\n        <ProgressTrack className=\"h-4 bg-muted/20 dark:bg-muted/10 rounded-lg\">\r\n          <ProgressIndicator className=\"bg-primary rounded-lg animate-[1s_linear_infinite_progress-bar-stripes] bg-[linear-gradient(45deg,rgba(255,255,255,.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.15)_50%,rgba(255,255,255,.15)_75%,transparent_75%,transparent)] bg-[length:16px_16px]\" />\r\n        </ProgressTrack>\r\n      </ProgressPrimitive.Root>\r\n      <Slider\r\n        value={value}\r\n        onValueChange={(value) => setValue(value as number)}\r\n        min={0}\r\n        max={100}\r\n        step={1}\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-controlled.tsx"
+    }
+  ],
+  "categories": [
+    "progress"
+  ],
+  "type": "registry:ui"
+}

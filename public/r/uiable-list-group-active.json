@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-list-group-active",
+  "title": "Active List Group",
+  "description": "List Group Active variant for list-group.",
+  "registryDependencies": [
+    "list-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/list-group/list-group-active.tsx",
+      "content": "//  ------------------------------ | LIST GROUP - ACTIVE | ------------------------------  //\r\n\r\nexport default function ListGroupActive() {\r\n  return (\r\n    <ul className=\"rounded-lg divide-y divide-border-border border border-border  bg-card overflow-hidden\">\r\n      <li className=\"py-4 px-6.25\">Cras justo odio</li>\r\n      <li className=\"py-4 px-6.25 bg-primary text-primary-foreground\">\r\n        Dapibus ac facilisis in\r\n      </li>\r\n      <li className=\"py-4 px-6.25\">Morbi leo risus</li>\r\n      <li className=\"py-4 px-6.25\">Porta ac consectetur ac</li>\r\n      <li className=\"py-4 px-6.25\">Vestibulum at eros</li>\r\n    </ul>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/list-group/list-group-active.tsx"
+    }
+  ],
+  "categories": [
+    "list-group"
+  ],
+  "type": "registry:ui"
+}

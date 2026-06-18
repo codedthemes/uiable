@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-popover-form",
+  "title": "Form Popover",
+  "description": "Popover Form variant for popover.",
+  "registryDependencies": [
+    "popover"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/popover/popover-form.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\nimport {\r\n  Popover,\r\n  PopoverContent,\r\n  PopoverDescription,\r\n  PopoverHeader,\r\n  PopoverTitle,\r\n  PopoverTrigger\r\n} from \"@/components/ui/popover\";\r\n\r\n//  ------------------------------ | POPOVER - FORM | ------------------------------  //\r\n\r\nexport function PopoverForm() {\r\n  return (\r\n    <>\r\n      <Popover>\r\n        <PopoverTrigger render={<Button />}>Open Popover</PopoverTrigger>\r\n        <PopoverContent className=\"w-64\" align=\"start\">\r\n          <PopoverHeader>\r\n            <PopoverTitle className=\"h5\">Dimensions</PopoverTitle>\r\n            <PopoverDescription>\r\n              Set the dimensions for the layer.\r\n            </PopoverDescription>\r\n          </PopoverHeader>\r\n          <FieldGroup className=\"gap-4\">\r\n            <Field orientation=\"vertical\">\r\n              <FieldLabel htmlFor=\"width\">Width</FieldLabel>\r\n              <Input id=\"width\" defaultValue=\"100%\" />\r\n            </Field>\r\n            <Field orientation=\"vertical\">\r\n              <FieldLabel htmlFor=\"height\">Height</FieldLabel>\r\n              <Input id=\"height\" defaultValue=\"25px\" />\r\n            </Field>\r\n          </FieldGroup>\r\n        </PopoverContent>\r\n      </Popover>\r\n    </>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/popover/popover-form.tsx"
+    }
+  ],
+  "categories": [
+    "popover"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-kbd",
+  "title": "Kbd Input Group",
+  "description": "Input Group Kbd variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-kbd.tsx",
+      "content": "// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\nimport { Kbd } from \"@/components/ui/kbd\";\r\n\r\n// assets\r\nimport { SearchIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - KBD | ------------------------------  //\r\n\r\nexport function InputGroupKbd() {\r\n  return (\r\n    <InputGroup className=\"max-w-sm\">\r\n      <InputGroupInput placeholder=\"Search...\" />\r\n      <InputGroupAddon>\r\n        <SearchIcon className=\"text-muted-foreground\" />\r\n      </InputGroupAddon>\r\n      <InputGroupAddon align=\"inline-end\">\r\n        <Kbd>⌘K</Kbd>\r\n      </InputGroupAddon>\r\n    </InputGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-kbd.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

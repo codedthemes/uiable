@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-pricing-3",
+  "title": "Pricing 3",
+  "description": "Pricing variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/pricing/pricing-3/pricing-3.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// assets\r\nimport {\r\n  CircleUserRoundIcon,\r\n  FingerprintIcon,\r\n  HandMetalIcon\r\n} from \"lucide-react\";\r\n\r\n// constants\r\nconst plans = [\r\n  {\r\n    id: 1,\r\n    icon: CircleUserRoundIcon,\r\n    name: \"Personal\",\r\n    price: 24,\r\n    description: \"At half-past eight the door opened, the policeman appeared.\",\r\n    featured: false\r\n  },\r\n  {\r\n    id: 2,\r\n    icon: HandMetalIcon,\r\n    name: \"Team\",\r\n    price: 49,\r\n    description: \"At half-past eight the door opened, the policeman appeared.\",\r\n    featured: true\r\n  },\r\n  {\r\n    id: 3,\r\n    icon: FingerprintIcon,\r\n    name: \"Enterprise\",\r\n    price: 99,\r\n    description: \"At half-past eight the door opened, the policeman appeared.\",\r\n    featured: false\r\n  }\r\n];\r\n\r\n//  ------------------------------ | PRICING 3 | ------------------------------  //\r\n\r\nexport default function Pricing3() {\r\n  return (\r\n    <section className=\"py-20\">\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-14 flex flex-col gap-3\">\r\n          <h2 className=\"text-foreground\">Pricing Plans</h2>\r\n          <p className=\"text-muted-foreground max-w-lg mx-auto\">\r\n            At half-past eight the door opened, the policeman appeared and\r\n            requesting them to follow him, led way to an adjoining hall.\r\n          </p>\r\n        </div>\r\n\r\n        {/* 3-column split with dividers */}\r\n        <div className=\"grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border\">\r\n          {plans.map((plan) => {\r\n            const Icon = plan.icon;\r\n            return (\r\n              <div\r\n                key={plan.id}\r\n                className=\"flex flex-col items-center text-center gap-6 px-8 py-4\"\r\n              >\r\n                {/* Icon */}\r\n                <Icon className=\"size-13 text-primary\" strokeWidth={1.5} />\r\n\r\n                {/* Plan name */}\r\n                <h4 className=\"text-foreground font-bold\">{plan.name}</h4>\r\n\r\n                {/* Price */}\r\n                <div className=\"flex items-end gap-1.5\">\r\n                  <span className=\"text-5xl font-bold text-primary\">\r\n                    ${plan.price}\r\n                  </span>\r\n                  <span className=\"text-muted-foreground text-md mb-1\">\r\n                    /per month\r\n                  </span>\r\n                </div>\r\n\r\n                {/* Description */}\r\n                <p className=\"text-muted-foreground text-md\">\r\n                  {plan.description}\r\n                </p>\r\n\r\n                {/* CTA */}\r\n                <Button\r\n                  className={\r\n                    plan.featured\r\n                      ? \"bg-primary text-primary-foreground\"\r\n                      : \"bg-transparent border border-primary text-primary hover:bg-transparent hover:text-primary\"\r\n                  }\r\n                  variant={plan.featured ? \"default\" : \"outline\"}\r\n                >\r\n                  Get Started\r\n                </Button>\r\n              </div>\r\n            );\r\n          })}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/pricing/pricing-3/pricing-3.tsx"
+    }
+  ],
+  "categories": [
+    "pricing"
+  ],
+  "type": "registry:block"
+}

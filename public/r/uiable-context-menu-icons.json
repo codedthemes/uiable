@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-context-menu-icons",
+  "title": "Icons Context Menu",
+  "description": "Context Menu Icons variant for context-menu.",
+  "registryDependencies": [
+    "context-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/context-menu/context-menu-icons.tsx",
+      "content": "// shadcn\nimport {\n  ContextMenu,\n  ContextMenuContent,\n  ContextMenuGroup,\n  ContextMenuItem,\n  ContextMenuSeparator,\n  ContextMenuTrigger\n} from \"@/components/ui/context-menu\";\n\n// assets\nimport {\n  ClipboardPasteIcon,\n  CopyIcon,\n  ScissorsIcon,\n  TrashIcon\n} from \"lucide-react\";\n\n//  ------------------------------ | CONTEXT MENU - ICONS | ------------------------------  //\n\nexport function ContextMenuIcons() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className=\"flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base\">\n        <span className=\"hidden pointer-fine:inline-block\">\n          Right click here\n        </span>\n        <span className=\"hidden pointer-coarse:inline-block\">\n          Long press here\n        </span>\n      </ContextMenuTrigger>\n      <ContextMenuContent>\n        <ContextMenuGroup>\n          <ContextMenuItem>\n            <CopyIcon />\n            Copy\n          </ContextMenuItem>\n          <ContextMenuItem>\n            <ScissorsIcon />\n            Cut\n          </ContextMenuItem>\n          <ContextMenuItem>\n            <ClipboardPasteIcon />\n            Paste\n          </ContextMenuItem>\n        </ContextMenuGroup>\n        <ContextMenuSeparator />\n        <ContextMenuGroup>\n          <ContextMenuItem variant=\"destructive\">\n            <TrashIcon />\n            Delete\n          </ContextMenuItem>\n        </ContextMenuGroup>\n      </ContextMenuContent>\n    </ContextMenu>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/context-menu/context-menu-icons.tsx"
+    }
+  ],
+  "categories": [
+    "context-menu"
+  ],
+  "type": "registry:ui"
+}

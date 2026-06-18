@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sonner-types",
+  "title": "Types Sonner",
+  "description": "Sonner Types variant for sonner.",
+  "registryDependencies": [
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/sonner/sonner-types.tsx",
+      "content": "\"use client\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// third party\r\nimport { toast } from \"sonner\";\r\n\r\n//  ------------------------------ | SONNER - TYPES | ------------------------------  //\r\n\r\nexport function SonnerTypes() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-2\">\r\n      <Button onClick={() => toast(\"Event has been created\")}>Default</Button>\r\n      <Button onClick={() => toast.success(\"Event has been created\")}>\r\n        Success\r\n      </Button>\r\n      <Button\r\n        onClick={() =>\r\n          toast.info(\"Be at the area 10 minutes before the event time\")\r\n        }\r\n      >\r\n        Info\r\n      </Button>\r\n      <Button\r\n        onClick={() =>\r\n          toast.warning(\"Event start time cannot be earlier than 8am\")\r\n        }\r\n      >\r\n        Warning\r\n      </Button>\r\n      <Button onClick={() => toast.error(\"Event has not been created\")}>\r\n        Error\r\n      </Button>\r\n      <Button\r\n        onClick={() => {\r\n          toast.promise<{ name: string }>(\r\n            () =>\r\n              new Promise((resolve) =>\r\n                setTimeout(() => resolve({ name: \"Event\" }), 2000),\r\n              ),\r\n            {\r\n              loading: \"Loading...\",\r\n              success: (data) => `${data.name} has been created`,\r\n              error: \"Error\",\r\n            },\r\n          );\r\n        }}\r\n      >\r\n        Promise\r\n      </Button>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/sonner/sonner-types.tsx"
+    }
+  ],
+  "categories": [
+    "sonner"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-image",
+  "title": "Image Item",
+  "description": "Item Image variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-image.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Item,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemMedia,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\";\r\n\r\n// constants\r\nconst music = [\r\n  {\r\n    title: \"Midnight City Lights\",\r\n    artist: \"Neon Dreams\",\r\n    album: \"Electric Nights\",\r\n    duration: \"3:45\",\r\n  },\r\n  {\r\n    title: \"Coffee Shop Conversations\",\r\n    artist: \"The Morning Brew\",\r\n    album: \"Urban Stories\",\r\n    duration: \"4:05\",\r\n  },\r\n  {\r\n    title: \"Digital Rain\",\r\n    artist: \"Cyber Symphony\",\r\n    album: \"Binary Beats\",\r\n    duration: \"3:30\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | ITEM - IMAGE | ------------------------------  //\r\n\r\nexport function ItemImage() {\r\n  return (\r\n    <div className=\"flex w-full max-w-md flex-col gap-6\">\r\n      <ItemGroup className=\"gap-4\">\r\n        {music.map((song) => (\r\n          <Item\r\n            key={song.title}\r\n            variant=\"outline\"\r\n            render={<a href=\"#\" />}\r\n            role=\"listitem\"\r\n          >\r\n            <ItemMedia variant=\"image\">\r\n              <img\r\n                src=\"https://cdn.uiable.com/component/card-sample.png\"\r\n                alt={song.title}\r\n                width={32}\r\n                height={32}\r\n                className=\"object-cover\"\r\n              />\r\n            </ItemMedia>\r\n            <ItemContent>\r\n              <ItemTitle className=\"line-clamp-1\">\r\n                {song.title} -{\" \"}\r\n                <span className=\"text-muted-foreground\">{song.album}</span>\r\n              </ItemTitle>\r\n              <ItemDescription>{song.artist}</ItemDescription>\r\n            </ItemContent>\r\n            <ItemContent className=\"flex-none text-center\">\r\n              <ItemDescription>{song.duration}</ItemDescription>\r\n            </ItemContent>\r\n          </Item>\r\n        ))}\r\n      </ItemGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-image.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

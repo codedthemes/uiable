@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-outline-danger",
+  "title": "Danger Outline Badge",
+  "description": "Badge Outline Danger variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-outline-danger.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - OUTLINE DANGER | ------------------------------  //\n\nexport default function BadgeOutlineDanger() {\n  return (\n    <Badge className=\"border-red-500 text-red-500 bg-transparent\">Danger</Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-outline-danger.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-toggle-text",
+  "title": "Text Toggle",
+  "description": "Toggle Text variant for toggle.",
+  "registryDependencies": [
+    "toggle"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/toggle/toggle-text.tsx",
+      "content": "// shadcn\r\nimport { Toggle } from \"@/components/ui/toggle\";\r\n\r\n// assets\r\nimport { ItalicIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TOGGLE - TEXT | ------------------------------  //\r\n\r\nexport function ToggleText() {\r\n  return (\r\n    <Toggle aria-label=\"Toggle italic\">\r\n      <ItalicIcon />\r\n      Italic\r\n    </Toggle>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/toggle/toggle-text.tsx"
+    }
+  ],
+  "categories": [
+    "toggle"
+  ],
+  "type": "registry:ui"
+}

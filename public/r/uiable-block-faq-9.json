@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-faq-9",
+  "title": "FAQ 9",
+  "description": "FAQ variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/faq/faq-9/faq-9.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// constants\r\nconst faqs = [\r\n  {\r\n    question: \"Why Must I Make Payment Immediately At Checkout?\",\r\n    answer:\r\n      \"Due to the limited quantity, each member's account is only entitled to 1 unique free sample. You can check out up to 4 free samples in each checkout.\"\r\n  },\r\n  {\r\n    question: \"What Happens if There's Been A Delivery Mishap To My Order?\",\r\n    answer:\r\n      \"Because you are important to us, we want to know what you think about the products. As an added value, every time you rate the products you earn points.\"\r\n  },\r\n  {\r\n    question:\r\n      \"How Long Will It Take For My Order To Arrive After I Make Payment?\",\r\n    answer:\r\n      \"Due to the limited quantity, each member's account is only entitled to 1 unique free sample. You can check out up to 4 free samples in each checkout.\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | FAQ - 9 | ------------------------------  //\r\n\r\nexport default function Faq9() {\r\n  return (\r\n    <section className=\"bg-primary py-20 md:py-28 text-white\">\r\n      <div className=\"container mx-auto px-4\">\r\n        <div className=\"grid grid-cols-12 gap-6 items-center\">\r\n          {/* Left Column: Heading & Button */}\r\n          <div className=\"col-span-12 md:col-span-5 max-w-xs\">\r\n            <h2 className=\"mb-6 text-white\">\r\n              Got Questions ? We’ve Got Answers\r\n            </h2>\r\n            <p className=\"text-white/80 mb-8\">\r\n              This is a big one and i consider it one of the most important\r\n              things for a designer to get right.\r\n            </p>\r\n            <Button\r\n              size=\"lg\"\r\n              className=\"bg-yellow-500 text-white hover:bg-yellow-400\"\r\n            >\r\n              Get Started\r\n            </Button>\r\n          </div>\r\n\r\n          {/* Right Column: FAQ List */}\r\n          <div className=\"col-span-12 md:col-span-7 max-w-lg\">\r\n            <div className=\"flex flex-col gap-10\">\r\n              {faqs.map((item, index) => (\r\n                <div key={index} className=\"flex flex-col gap-4\">\r\n                  <h5 className=\"text-white\">{item.question}</h5>\r\n                  <div className=\"h-0.5 w-full bg-yellow-500\" />\r\n                  <p className=\"text-white/70 text-md\">{item.answer}</p>\r\n                </div>\r\n              ))}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/faq/faq-9/faq-9.tsx"
+    }
+  ],
+  "categories": [
+    "faq"
+  ],
+  "type": "registry:block"
+}

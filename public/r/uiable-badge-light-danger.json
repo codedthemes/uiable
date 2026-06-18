@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-light-danger",
+  "title": "Light Danger Badge",
+  "description": "Badge Light Danger variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-light-danger.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - LIGHT DANGER | ------------------------------  //\n\nexport default function BadgeLightDanger() {\n  return (\n    <Badge className=\"bg-red-500/15 text-red-500 border-transparent\">\n      Danger\n    </Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-light-danger.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

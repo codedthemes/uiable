@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-empty",
+  "title": "Empty Spinner",
+  "description": "Spinner Empty variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-empty.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Empty,\r\n  EmptyContent,\r\n  EmptyDescription,\r\n  EmptyHeader,\r\n  EmptyMedia,\r\n  EmptyTitle\r\n} from \"@/components/ui/empty\";\r\nimport { Spinner } from \"@/components/ui/spinner\";\r\n\r\n//  ------------------------------ | SPINNER - EMPTY | ------------------------------  //\r\n\r\nexport function SpinnerEmpty() {\r\n  return (\r\n    <Empty className=\"w-full\">\r\n      <EmptyHeader>\r\n        <EmptyMedia variant=\"icon\" className=\"bg-background p-3 rounded-lg\">\r\n          <Spinner />\r\n        </EmptyMedia>\r\n        <EmptyTitle>Processing your request</EmptyTitle>\r\n        <EmptyDescription>\r\n          Please wait while we process your request. Do not refresh the page.\r\n        </EmptyDescription>\r\n      </EmptyHeader>\r\n      <EmptyContent>\r\n        <Button variant=\"outline\" size=\"sm\">\r\n          Cancel\r\n        </Button>\r\n      </EmptyContent>\r\n    </Empty>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-empty.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

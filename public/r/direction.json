@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "direction",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/direction.tsx",
+      "content": "\"use client\"\r\n\r\nexport {\r\n  DirectionProvider,\r\n  useDirection,\r\n} from \"@base-ui/react/direction-provider\"\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/direction.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

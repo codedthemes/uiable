@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-avatar-size",
+  "title": "Size Avatar",
+  "description": "Avatar Size variant for avatar.",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/avatar/avatar-size.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\n//  ------------------------------ | AVATAR - SIZE | ------------------------------  //\n\nexport function AvatarSizeExample() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Avatar size=\"sm\">\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-5.jpg\"\n          alt=\"@shadcn\"\n        />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-5.jpg\"\n          alt=\"@shadcn\"\n        />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar size=\"lg\">\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-5.jpg\"\n          alt=\"@shadcn\"\n        />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/avatar/avatar-size.tsx"
+    }
+  ],
+  "categories": [
+    "avatar"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-tabs-pills",
+  "title": "Pills Tabs",
+  "description": "Tabs Pills variant for tabs.",
+  "registryDependencies": [
+    "tabs"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/tabs/tabs-pills.tsx",
+      "content": "// shadcn\r\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\r\n\r\n//  ------------------------------ | TABS - PILLS | ------------------------------  //\r\n\r\nexport function TabsPills() {\r\n  return (\r\n    <Tabs defaultValue=\"home\" className=\"w-full\">\r\n      <TabsList className=\"bg-transparent h-auto p-0 gap-1 max-h-10!\">\r\n        <TabsTrigger\r\n          value=\"home\"\r\n          className=\"rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border\"\r\n        >\r\n          Home\r\n        </TabsTrigger>\r\n        <TabsTrigger\r\n          value=\"profile\"\r\n          className=\"rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border\"\r\n        >\r\n          Profile\r\n        </TabsTrigger>\r\n        <TabsTrigger\r\n          value=\"contact\"\r\n          className=\"rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border\"\r\n        >\r\n          Contact\r\n        </TabsTrigger>\r\n      </TabsList>\r\n      <div className=\"mt-2 border border-border rounded-lg p-5\">\r\n        <TabsContent value=\"home\" className=\"mt-0\">\r\n          <p className=\"text-base text-muted-foreground\">\r\n            Lorem Ipsum is simply dummy text of the printing and typesetting\r\n            industry.\r\n          </p>\r\n        </TabsContent>\r\n        <TabsContent value=\"profile\" className=\"mt-0\">\r\n          <p className=\"text-base text-muted-foreground\">\r\n            It is a long established fact that a reader will be distracted by\r\n            the readable content of a page.\r\n          </p>\r\n        </TabsContent>\r\n        <TabsContent value=\"contact\" className=\"mt-0\">\r\n          <p className=\"text-base text-muted-foreground\">\r\n            There are many variations of passages of Lorem Ipsum available.\r\n          </p>\r\n        </TabsContent>\r\n      </div>\r\n    </Tabs>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tabs/tabs-pills.tsx"
+    }
+  ],
+  "categories": [
+    "tabs"
+  ],
+  "type": "registry:ui"
+}

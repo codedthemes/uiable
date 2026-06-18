@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dropdown-menu-checkboxes",
+  "title": "Checkbox Dropdown Menu",
+  "description": "Dropdown Menu Checkboxes variant for dropdown-menu.",
+  "registryDependencies": [
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-checkboxes.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuCheckboxItem,\r\n  DropdownMenuContent,\r\n  DropdownMenuGroup,\r\n  DropdownMenuLabel,\r\n  DropdownMenuTrigger\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n//  ------------------------------ | DROPDOWN MENU - CHECKBOXES | ------------------------------  //\r\n\r\nexport function DropdownMenuCheckboxes() {\r\n  const [showStatusBar, setShowStatusBar] = useState(true);\r\n  const [showActivityBar, setShowActivityBar] = useState(false);\r\n  const [showPanel, setShowPanel] = useState(false);\r\n\r\n  return (\r\n    <DropdownMenu>\r\n      <DropdownMenuTrigger render={<Button variant=\"outline\" />}>\r\n        Open\r\n      </DropdownMenuTrigger>\r\n      <DropdownMenuContent className=\"w-40\">\r\n        <DropdownMenuGroup>\r\n          <DropdownMenuLabel>Appearance</DropdownMenuLabel>\r\n          <DropdownMenuCheckboxItem\r\n            checked={showStatusBar ?? false}\r\n            onCheckedChange={setShowStatusBar}\r\n          >\r\n            Status Bar\r\n          </DropdownMenuCheckboxItem>\r\n          <DropdownMenuCheckboxItem\r\n            checked={showActivityBar}\r\n            onCheckedChange={setShowActivityBar}\r\n            disabled\r\n          >\r\n            Activity Bar\r\n          </DropdownMenuCheckboxItem>\r\n          <DropdownMenuCheckboxItem\r\n            checked={showPanel}\r\n            onCheckedChange={setShowPanel}\r\n          >\r\n            Panel\r\n          </DropdownMenuCheckboxItem>\r\n        </DropdownMenuGroup>\r\n      </DropdownMenuContent>\r\n    </DropdownMenu>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-checkboxes.tsx"
+    }
+  ],
+  "categories": [
+    "dropdown-menu"
+  ],
+  "type": "registry:ui"
+}

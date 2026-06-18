@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-command-dialog",
+  "title": "Dialog Command",
+  "description": "Command Dialog variant for command.",
+  "registryDependencies": [
+    "command"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/command/command-dialog.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useEffect, useState } from \"react\";\r\n\r\n// shadcn\r\nimport {\r\n  CommandDialog,\r\n  CommandEmpty,\r\n  CommandGroup,\r\n  CommandInput,\r\n  CommandItem,\r\n  CommandList,\r\n  CommandSeparator,\r\n  CommandShortcut\r\n} from \"@/components/ui/command\";\r\n\r\n// assets\r\nimport {\r\n  Calculator,\r\n  Calendar,\r\n  CreditCard,\r\n  Settings,\r\n  Smile,\r\n  User\r\n} from \"lucide-react\";\r\n\r\n//  ------------------------------ | COMMAND - DIALOG | ------------------------------  //\r\n\r\nexport function CommandDialogDemo() {\r\n  const [open, setOpen] = useState(false);\r\n\r\n  useEffect(() => {\r\n    const down = (e: KeyboardEvent) => {\r\n      if (e.key === \"j\" && (e.metaKey || e.ctrlKey)) {\r\n        e.preventDefault();\r\n        setOpen((open) => !open);\r\n      }\r\n    };\r\n\r\n    document.addEventListener(\"keydown\", down);\r\n    return () => document.removeEventListener(\"keydown\", down);\r\n  }, []);\r\n\r\n  return (\r\n    <>\r\n      <p className=\"text-muted-foreground text-sm\">\r\n        Press{\" \"}\r\n        <kbd className=\"bg-muted text-muted-foreground pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none\">\r\n          <span className=\"text-xs\">⌘</span>J\r\n        </kbd>\r\n      </p>\r\n      <CommandDialog open={open} onOpenChange={setOpen}>\r\n        <CommandInput placeholder=\"Type a command or search...\" />\r\n        <CommandList>\r\n          <CommandEmpty>No results found.</CommandEmpty>\r\n          <CommandGroup heading=\"Suggestions\">\r\n            <CommandItem>\r\n              <Calendar />\r\n              <span>Calendar</span>\r\n            </CommandItem>\r\n            <CommandItem>\r\n              <Smile />\r\n              <span>Search Emoji</span>\r\n            </CommandItem>\r\n            <CommandItem>\r\n              <Calculator />\r\n              <span>Calculator</span>\r\n            </CommandItem>\r\n          </CommandGroup>\r\n          <CommandSeparator />\r\n          <CommandGroup heading=\"Settings\">\r\n            <CommandItem>\r\n              <User />\r\n              <span>Profile</span>\r\n              <CommandShortcut>⌘P</CommandShortcut>\r\n            </CommandItem>\r\n            <CommandItem>\r\n              <CreditCard />\r\n              <span>Billing</span>\r\n              <CommandShortcut>⌘B</CommandShortcut>\r\n            </CommandItem>\r\n            <CommandItem>\r\n              <Settings />\r\n              <span>Settings</span>\r\n              <CommandShortcut>⌘S</CommandShortcut>\r\n            </CommandItem>\r\n          </CommandGroup>\r\n        </CommandList>\r\n      </CommandDialog>\r\n    </>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/command/command-dialog.tsx"
+    }
+  ],
+  "categories": [
+    "command"
+  ],
+  "type": "registry:ui"
+}

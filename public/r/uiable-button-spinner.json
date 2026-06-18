@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-spinner",
+  "title": "Spinner Button",
+  "description": "Button Spinner variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-spinner.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\n//  ------------------------------ | BUTTON LOADING | ------------------------------  //\n\nexport default function ButtonLoading() {\n  return (\n    <div className=\"flex gap-2 flex-wrap justify-center\">\n      <Button disabled className=\"gap-1\">\n        <Spinner />\n        Generating\n      </Button>\n      <Button variant=\"secondary\" disabled className=\"gap-1\">\n        Downloading\n        <Spinner />\n      </Button>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-spinner.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-basic",
+  "title": "Basic Input Group",
+  "description": "Input Group Basic variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-basic.tsx",
+      "content": "// shadcn\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\nimport { InputGroup, InputGroupInput } from \"@/components/ui/input-group\";\n\n//  ------------------------------ | INPUT GROUP - BASIC | ------------------------------  //\n\nexport function InputGroupBasic() {\n  return (\n    <FieldGroup>\n      <Field>\n        <FieldLabel htmlFor=\"input-default-01\">\n          Default (No Input Group)\n        </FieldLabel>\n        <Input placeholder=\"Placeholder\" id=\"input-default-01\" />\n      </Field>\n      <Field>\n        <FieldLabel htmlFor=\"input-group-02\">Input Group</FieldLabel>\n        <InputGroup>\n          <InputGroupInput id=\"input-group-02\" placeholder=\"Placeholder\" />\n        </InputGroup>\n      </Field>\n      <Field data-disabled=\"true\">\n        <FieldLabel htmlFor=\"input-disabled-03\">Disabled</FieldLabel>\n        <InputGroup>\n          <InputGroupInput\n            id=\"input-disabled-03\"\n            placeholder=\"This field is disabled\"\n            disabled\n          />\n        </InputGroup>\n      </Field>\n      <Field data-invalid=\"true\">\n        <FieldLabel htmlFor=\"input-invalid-04\">Invalid</FieldLabel>\n        <InputGroup>\n          <InputGroupInput\n            id=\"input-invalid-04\"\n            placeholder=\"This field is invalid\"\n            aria-invalid=\"true\"\n          />\n        </InputGroup>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-basic.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

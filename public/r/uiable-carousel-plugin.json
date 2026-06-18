@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-carousel-plugin",
+  "title": "Plugin Carousel",
+  "description": "Carousel Plugin variant for carousel.",
+  "registryDependencies": [
+    "carousel"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/carousel/carousel-plugin.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useMemo } from \"react\";\r\n\r\n// shadcn\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\nimport {\r\n  Carousel,\r\n  CarouselContent,\r\n  CarouselItem,\r\n  CarouselNext,\r\n  CarouselPrevious\r\n} from \"@/components/ui/carousel\";\r\n\r\n// third party\r\nimport Autoplay from \"embla-carousel-autoplay\";\r\n\r\n//  ------------------------------ | CAROUSEL - PLUGIN | ------------------------------  //\r\n\r\nexport default function CarouselPlugin() {\r\n  const plugin = useMemo(\r\n    () => Autoplay({ delay: 2000, stopOnInteraction: true }),\r\n    []\r\n  );\r\n\r\n  return (\r\n    <Carousel\r\n      plugins={[plugin]}\r\n      className=\"w-full max-w-[10rem] sm:max-w-xs\"\r\n      onMouseEnter={() => plugin.stop()}\r\n      onMouseLeave={() => plugin.reset()}\r\n    >\r\n      <CarouselContent>\r\n        {Array.from({ length: 5 }).map((_, index) => (\r\n          <CarouselItem key={index}>\r\n            <div className=\"p-1\">\r\n              <Card className=\"bg-primary/10 border-primary\">\r\n                <CardContent className=\"flex aspect-square items-center justify-center p-6\">\r\n                  <span className=\"text-4xl font-semibold text-primary\">\r\n                    {index + 1}\r\n                  </span>\r\n                </CardContent>\r\n              </Card>\r\n            </div>\r\n          </CarouselItem>\r\n        ))}\r\n      </CarouselContent>\r\n      <CarouselPrevious />\r\n      <CarouselNext />\r\n    </Carousel>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/carousel/carousel-plugin.tsx"
+    }
+  ],
+  "categories": [
+    "carousel"
+  ],
+  "type": "registry:ui"
+}

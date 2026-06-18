@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-slider-range",
+  "title": "Range Slider",
+  "description": "Slider Range variant for slider.",
+  "registryDependencies": [
+    "slider"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/slider/slider-range.tsx",
+      "content": "// shadcn\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n//  ------------------------------ | SLIDER - RANGE | ------------------------------  //\r\n\r\nexport function SliderRange() {\r\n  return (\r\n    <Slider\r\n      defaultValue={[25, 50]}\r\n      max={100}\r\n      step={5}\r\n      className=\"mx-auto w-full max-w-xs\"\r\n    />\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/slider/slider-range.tsx"
+    }
+  ],
+  "categories": [
+    "slider"
+  ],
+  "type": "registry:ui"
+}

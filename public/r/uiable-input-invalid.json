@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-invalid",
+  "title": "Invalid Input",
+  "description": "Input Invalid variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-invalid.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - INVALID | ------------------------------  //\r\n\r\nexport function InputInvalid() {\r\n  return (\r\n    <Field data-invalid>\r\n      <FieldLabel htmlFor=\"input-invalid\">Invalid Input</FieldLabel>\r\n      <Input id=\"input-invalid\" placeholder=\"Error\" aria-invalid />\r\n      <FieldDescription>\r\n        This field contains validation errors.\r\n      </FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-invalid.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

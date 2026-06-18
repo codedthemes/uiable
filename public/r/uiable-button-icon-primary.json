@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-icon-primary",
+  "title": "Primary Icon Button",
+  "description": "Button Icon Primary variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-icon-primary.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { ThumbsUp } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON ICON PRIMARY | ------------------------------  //\n\nexport default function ButtonIconPrimary() {\n  return (\n    <Button className=\"gap-2\">\n      <ThumbsUp className=\"size-5\" /> Primary\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-icon-primary.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

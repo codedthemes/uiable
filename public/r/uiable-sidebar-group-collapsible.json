@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sidebar-group-collapsible",
+  "title": "Group Collapsible Sidebar",
+  "description": "Sidebar Group Collapsible variant for sidebar.",
+  "dependencies": [],
+  "registryDependencies": [
+    "sidebar"
+  ],
+  "files": [
+    {
+      "path": "components/uiable/sidebar/sidebar-group-collapsible.tsx",
+      "content": "\"use client\"\r\n\r\nimport {\r\n  Collapsible,\r\n  CollapsibleContent,\r\n  CollapsibleTrigger,\r\n} from \"@/components/ui/collapsible\"\r\nimport {\r\n  Sidebar,\r\n  SidebarContent,\r\n  SidebarGroup,\r\n  SidebarGroupContent,\r\n  SidebarGroupLabel,\r\n  SidebarMenu,\r\n  SidebarMenuButton,\r\n  SidebarMenuItem,\r\n  SidebarProvider,\r\n} from \"@/components/ui/sidebar\"\r\nimport { ChevronDownIcon, LifeBuoyIcon, SendIcon } from \"lucide-react\"\r\n\r\nexport default function AppSidebar() {\r\n  return (\r\n    <SidebarProvider className=\"relative min-h-[450px]\">\r\n      <Sidebar className=\"absolute h-[450px]\">\r\n        <SidebarContent>\r\n          <Collapsible defaultOpen className=\"group/collapsible\">\r\n            <SidebarGroup>\r\n              <SidebarGroupLabel\r\n                render={<CollapsibleTrigger />}\r\n                className=\"hover:bg-sidebar-accent hover:text-sidebar-accent-foreground text-base py-3\"\r\n              >\r\n                Help\r\n                <ChevronDownIcon className=\"ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180\" />\r\n              </SidebarGroupLabel>\r\n              <CollapsibleContent>\r\n                <SidebarGroupContent>\r\n                  <SidebarMenu>\r\n                    <SidebarMenuItem>\r\n                      <SidebarMenuButton>\r\n                        <LifeBuoyIcon />\r\n                        Support\r\n                      </SidebarMenuButton>\r\n                    </SidebarMenuItem>\r\n                    <SidebarMenuItem>\r\n                      <SidebarMenuButton>\r\n                        <SendIcon />\r\n                        Feedback\r\n                      </SidebarMenuButton>\r\n                    </SidebarMenuItem>\r\n                  </SidebarMenu>\r\n                </SidebarGroupContent>\r\n              </CollapsibleContent>\r\n            </SidebarGroup>\r\n          </Collapsible>\r\n        </SidebarContent>\r\n      </Sidebar>\r\n    </SidebarProvider>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/uiable/sidebar/sidebar-group-collapsible.tsx"
+    }
+  ],
+  "categories": [
+    "sidebar"
+  ],
+  "type": "registry:component"
+}

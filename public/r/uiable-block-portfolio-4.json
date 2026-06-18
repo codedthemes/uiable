@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-portfolio-4",
+  "title": "Portfolio 4",
+  "description": "Portfolio variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/portfolio/portfolio-4/portfolio-4.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// assets\r\nimport { ArrowRightIcon } from \"lucide-react\";\r\n\r\n// constants\r\nconst items = [\r\n  {\r\n    id: 1,\r\n    image: \"https://cdn.uiable.com/block/portfolio4-1.png\",\r\n    title: \"Breathe In\",\r\n    description:\r\n      \"Life isn't about finding yourself, it's about creating yourself.\",\r\n  },\r\n  {\r\n    id: 2,\r\n    image: \"https://cdn.uiable.com/block/portfolio4-2.png\",\r\n    title: \"Breathe In\",\r\n    description:\r\n      \"Life isn't about finding yourself, it's about creating yourself.\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | PORTFOLIO 4 | ------------------------------  //\r\n\r\nexport default function Portfolio4() {\r\n  return (\r\n    <section className=\"py-20 bg-primary overflow-hidden\">\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        {/* Centered header */}\r\n        <div className=\"text-center mb-12 flex flex-col gap-6 max-w-md mx-auto\">\r\n          <h2 className=\"text-primary-foreground\">\r\n            Great Ideas Start With A Scribble\r\n          </h2>\r\n          <p className=\"text-primary-foreground/70 max-w-md mx-auto\">\r\n            This is a big one and I consider one of the most important, and\r\n            difficult, things for designer to get right.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Grid */}\r\n        <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-6\">\r\n          {items.map((item) => (\r\n            <div\r\n              key={item.id}\r\n              className=\"relative rounded-4xl overflow-hidden h-80\"\r\n            >\r\n              {/* Full-bleed image */}\r\n              <img\r\n                src={item.image}\r\n                alt={item.title}\r\n                className=\"absolute inset-0 w-full h-full object-cover opacity-95\"\r\n              />\r\n              {/* White content box floating over bottom of image */}\r\n              <div className=\"absolute bottom-4 left-4 right-4 bg-white rounded-2xl p-6 flex items-center justify-between gap-4\">\r\n                <div className=\"flex flex-col gap-4 min-w-0\">\r\n                  <h5 className=\"text-foreground font-bold truncate\">\r\n                    {item.title}\r\n                  </h5>\r\n                  <p className=\"text-muted-foreground text-sm truncate\">\r\n                    {item.description}\r\n                  </p>\r\n                </div>\r\n                <Button\r\n                  variant=\"outline\"\r\n                  size=\"icon\"\r\n                  className=\"shrink-0 rounded-lg hover:bg-primary border border-primary text-primary hover:text-white\"\r\n                >\r\n                  <ArrowRightIcon className=\"size-4\" />\r\n                </Button>\r\n              </div>\r\n            </div>\r\n          ))}\r\n        </div>\r\n\r\n        {/* Bottom CTA */}\r\n        <div className=\"flex justify-center mt-10\">\r\n          <Button className=\"bg-yellow-500 text-white hover:bg-yellow-500/90 px-8\">\r\n            View Portfolio\r\n          </Button>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/portfolio/portfolio-4/portfolio-4.tsx"
+    }
+  ],
+  "categories": [
+    "portfolio"
+  ],
+  "type": "registry:block"
+}

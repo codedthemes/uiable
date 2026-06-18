@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-pagination-icon",
+  "title": "Icon Pagination",
+  "description": "Pagination Icon variant for pagination.",
+  "registryDependencies": [
+    "pagination"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/pagination/pagination-icon.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Pagination,\r\n  PaginationContent,\r\n  PaginationItem,\r\n  PaginationLink,\r\n  PaginationNext,\r\n  PaginationPrevious\r\n} from \"@/components/ui/pagination\";\r\n\r\n//  ------------------------------ | PAGINATION - ICON | ------------------------------  //\r\n\r\nexport default function PaginationIcon() {\r\n  return (\r\n    <Pagination className=\"justify-start\">\r\n      <PaginationContent>\r\n        <PaginationItem>\r\n          <PaginationPrevious href=\"#\" text=\"\" />\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">1</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\" isActive>\r\n            2\r\n          </PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">3</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationNext href=\"#\" text=\"\" />\r\n        </PaginationItem>\r\n      </PaginationContent>\r\n    </Pagination>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/pagination/pagination-icon.tsx"
+    }
+  ],
+  "categories": [
+    "pagination"
+  ],
+  "type": "registry:ui"
+}

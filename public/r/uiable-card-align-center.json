@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-align-center",
+  "title": "Align Center Card",
+  "description": "Card Align Center variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-align-center.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\n\n//  ------------------------------ | CARD - ALIGN CENTER | ------------------------------  //\n\nexport default function CardAlignCenter() {\n  return (\n    <Card className=\"text-center\">\n      <CardContent>\n        <h5>Special title treatment</h5>\n        <p className=\"mb-4 mt-3\">\n          With supporting text below as a natural lead-in to additional content.\n        </p>\n        <Button>Go somewhere</Button>\n      </CardContent>\n    </Card>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-align-center.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

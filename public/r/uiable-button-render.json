@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-render",
+  "title": "Render Button",
+  "description": "Button Render variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-render.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON RENDER | ------------------------------  //\n\nexport default function ButtonRender() {\n  return (\n    <Button nativeButton={false} render={<a href=\"#\" />}>\n      Login\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-render.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

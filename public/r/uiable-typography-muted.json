@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-muted",
+  "title": "Muted Typography",
+  "description": "Typography Muted variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-muted.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - MUTED | ------------------------------  //\r\n\r\nexport function TypographyMuted() {\r\n  return <p className=\"text-muted-foreground\">Enter your email address.</p>;\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-muted.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

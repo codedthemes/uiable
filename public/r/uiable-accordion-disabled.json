@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-accordion-disabled",
+  "title": "Disabled Accordion",
+  "description": "Accordion Disabled variant for accordion.",
+  "registryDependencies": [
+    "accordion"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/accordion/accordion-disabled.tsx",
+      "content": "// shadcn\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger\n} from \"@/components/ui/accordion\";\n\n//  ------------------------------ | ACCORDION DISABLED | ------------------------------  //\n\nexport default function AccordionDisabled() {\n  return (\n    <Accordion className=\"w-full\">\n      <AccordionItem value=\"item-1\">\n        <AccordionTrigger>Can I access my account history?</AccordionTrigger>\n        <AccordionContent>\n          Yes, you can view your complete account history including all\n          transactions, plan changes, and support tickets in the Account History\n          section of your dashboard.\n        </AccordionContent>\n      </AccordionItem>\n      <AccordionItem value=\"item-2\" disabled>\n        <AccordionTrigger>Premium feature information</AccordionTrigger>\n        <AccordionContent>\n          This section contains information about premium features. Upgrade your\n          plan to access this content.\n        </AccordionContent>\n      </AccordionItem>\n      <AccordionItem value=\"item-3\">\n        <AccordionTrigger>How do I update my email address?</AccordionTrigger>\n        <AccordionContent>\n          You can update your email address in your account settings. You'll\n          receive a verification email at your new address to confirm the\n          change.\n        </AccordionContent>\n      </AccordionItem>\n    </Accordion>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/accordion/accordion-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "accordion"
+  ],
+  "type": "registry:ui"
+}

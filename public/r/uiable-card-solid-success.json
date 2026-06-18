@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-solid-success",
+  "title": "Success Solid Card",
+  "description": "Card Solid Success variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-solid-success.tsx",
+      "content": "// shadcn\r\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\n//  ------------------------------ | CARD - SOLID SUCCESS | ------------------------------  //\r\n\r\nexport default function CardSolidSuccess() {\r\n  return (\r\n    <Card className=\"rounded-xl shadow-none border-none ring-1 ring-green-500/20 bg-green-500 text-white overflow-hidden\">\r\n      <CardHeader className=\"p-4 border-b border-white/10\">\r\n        <CardTitle className=\"text-base font-bold text-white\">Header</CardTitle>\r\n      </CardHeader>\r\n      <CardContent className=\"p-5\">\r\n        <CardTitle className=\"text-lg font-bold mb-2 text-white\">\r\n          Success card title\r\n        </CardTitle>\r\n        <p className=\"text-sm opacity-90 leading-relaxed text-white\">\r\n          Some quick example text to build on the card title and make up the\r\n          bulk of the card's content.\r\n        </p>\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-solid-success.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

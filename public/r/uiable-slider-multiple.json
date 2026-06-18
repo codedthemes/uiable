@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-slider-multiple",
+  "title": "Multiple Slider",
+  "description": "Slider Multiple variant for slider.",
+  "registryDependencies": [
+    "slider"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/slider/slider-multiple.tsx",
+      "content": "// shadcn\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n//  ------------------------------ | SLIDER - MULTIPLE | ------------------------------  //\r\n\r\nexport function SliderMultiple() {\r\n  return (\r\n    <Slider\r\n      defaultValue={[10, 20, 70]}\r\n      max={100}\r\n      step={10}\r\n      className=\"mx-auto w-full max-w-xs\"\r\n    />\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/slider/slider-multiple.tsx"
+    }
+  ],
+  "categories": [
+    "slider"
+  ],
+  "type": "registry:ui"
+}

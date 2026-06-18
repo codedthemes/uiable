@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-feature-8",
+  "title": "Feature 8",
+  "description": "Feature variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/feature/feature-8/feature-8.tsx",
+      "content": "// assets\r\nimport { CloudLightning, Layers, Puzzle, Sparkles } from \"lucide-react\";\r\n\r\n// constants\r\nconst featureData = [\r\n  {\r\n    title: \"Cool Animations\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him, led the way to an adjoining.\",\r\n    icon: Sparkles,\r\n    color: \"bg-blue-500\"\r\n  },\r\n  {\r\n    title: \"Fast & Easy Work\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him, led the way to an adjoining.\",\r\n    icon: Puzzle,\r\n    color: \"bg-yellow-500\"\r\n  },\r\n  {\r\n    title: \"Quick Result\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him, led the way to an adjoining.\",\r\n    icon: Layers,\r\n    color: \"bg-green-500\"\r\n  },\r\n  {\r\n    title: \"Creative Design\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him, led the way to an adjoining.\",\r\n    icon: CloudLightning,\r\n    color: \"bg-cyan-500\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | FEATURE - 8 | ------------------------------  //\r\n\r\nexport default function Feature8() {\r\n  return (\r\n    <section className=\"py-20 md:py-28\">\r\n      <div className=\"container mx-auto px-4\">\r\n        {/* Header Section */}\r\n        <div className=\"mb-8 lg:mb-12\">\r\n          <h2 className=\"mb-6\">Key Features</h2>\r\n          <p className=\"text-muted-foreground text-lg\">\r\n            At half-past eight the door opened, the policeman appeared and\r\n            requesting them to follow him, led way to an adjoining hall.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Features Grid */}\r\n        <div className=\"grid grid-cols-12 gap-6\">\r\n          {featureData.map((item, index) => (\r\n            <div key={index} className=\"col-span-12 md:col-span-6 flex gap-6\">\r\n              <div\r\n                className={`flex size-20 shrink-0 items-center justify-center rounded-xl text-white ${item.color}`}\r\n              >\r\n                <item.icon size={40} strokeWidth={1.5} />\r\n              </div>\r\n              <div className=\"flex flex-col gap-2\">\r\n                <h5>{item.title}</h5>\r\n                <p className=\"text-muted-foreground text-lg\">\r\n                  {item.description}\r\n                </p>\r\n              </div>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/feature/feature-8/feature-8.tsx"
+    }
+  ],
+  "categories": [
+    "feature"
+  ],
+  "type": "registry:block"
+}

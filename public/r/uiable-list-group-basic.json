@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-list-group-basic",
+  "title": "Basic List Group",
+  "description": "List Group Basic variant for list-group.",
+  "registryDependencies": [
+    "list-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/list-group/list-group-basic.tsx",
+      "content": "//  ------------------------------ | LIST GROUP - BASIC | ------------------------------  //\r\n\r\nexport default function ListGroupBasic() {\r\n  return (\r\n    <ul className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card\">\r\n      <li className=\"py-4 px-6.25\">Cras justo odio</li>\r\n      <li className=\"py-4 px-6.25\">Dapibus ac facilisis in</li>\r\n      <li className=\"py-4 px-6.25\">Morbi leo risus</li>\r\n      <li className=\"py-4 px-6.25\">Porta ac consectetur ac</li>\r\n      <li className=\"py-4 px-6.25\">Vestibulum at eros</li>\r\n    </ul>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/list-group/list-group-basic.tsx"
+    }
+  ],
+  "categories": [
+    "list-group"
+  ],
+  "type": "registry:ui"
+}

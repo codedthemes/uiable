@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-rounded",
+  "title": "Radios Button",
+  "description": "Button Radios variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-rounded.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { ArrowUpIcon } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON ROUNDED | ------------------------------  //\n\nexport default function ButtonRounded() {\n  return (\n    <div className=\"flex gap-2 items-center\">\n      <Button className=\"rounded-full\">Get Started</Button>\n      <Button size=\"icon-lg\" className=\"rounded-full\">\n        <ArrowUpIcon />\n      </Button>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-rounded.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

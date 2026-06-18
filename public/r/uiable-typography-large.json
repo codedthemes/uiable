@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-large",
+  "title": "Large Typography",
+  "description": "Typography Large variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-large.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - LARGE | ------------------------------  //\r\n\r\nexport function TypographyLarge() {\r\n  return <div className=\"text-lg font-semibold\">Are you absolutely sure?</div>;\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-large.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

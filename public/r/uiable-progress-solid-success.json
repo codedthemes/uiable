@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-progress-solid-success",
+  "title": "Solid Success Progress",
+  "description": "Progress Solid Success variant for progress.",
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-solid-success.tsx",
+      "content": "// shadcn\r\nimport { Progress } from \"@/components/ui/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - SOLID SUCCESS | ------------------------------  //\r\n\r\nexport default function ProgressSolidSuccess() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <Progress\r\n        value={25}\r\n        className=\"*:h-4 *:bg-muted/20 dark:*:bg-muted/10 *:rounded-lg **:bg-green-600 **:rounded-lg\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-solid-success.tsx"
+    }
+  ],
+  "categories": [
+    "progress"
+  ],
+  "type": "registry:ui"
+}

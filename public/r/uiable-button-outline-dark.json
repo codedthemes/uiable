@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-outline-dark",
+  "title": "Outline Dark Button",
+  "description": "Button Outline Dark variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-outline-dark.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON OUTLINE DARK | ------------------------------  //\n\nexport default function ButtonOutlineDark() {\n  return (\n    <Button className=\"border-mist-800 bg-transparent text-mist-800 hover:bg-mist-800 hover:text-white dark:border-mist-400 dark:text-mist-400\">\n      Dark\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-outline-dark.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

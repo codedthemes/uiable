@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb",
+  "dependencies": [
+    "@base-ui/react",
+    "lucide-react",
+    "react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/breadcrumb.tsx",
+      "content": "import * as React from \"react\"\r\nimport { mergeProps } from \"@base-ui/react/merge-props\"\r\nimport { useRender } from \"@base-ui/react/use-render\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\nimport { ChevronRightIcon, MoreHorizontalIcon } from \"lucide-react\"\r\n\r\nfunction Breadcrumb({ className, ...props }: React.ComponentProps<\"nav\">) {\r\n  return (\r\n    <nav\r\n      aria-label=\"breadcrumb\"\r\n      data-slot=\"breadcrumb\"\r\n      className={cn(className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction BreadcrumbList({ className, ...props }: React.ComponentProps<\"ol\">) {\r\n  return (\r\n    <ol\r\n      data-slot=\"breadcrumb-list\"\r\n      className={cn(\r\n        \"text-muted-foreground flex flex-wrap items-center gap-1.5 text-base wrap-break-word\",\r\n        className\r\n      )}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction BreadcrumbItem({ className, ...props }: React.ComponentProps<\"li\">) {\r\n  return (\r\n    <li\r\n      data-slot=\"breadcrumb-item\"\r\n      className={cn(\"inline-flex items-center gap-1\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction BreadcrumbLink({\r\n  className,\r\n  render,\r\n  ...props\r\n}: useRender.ComponentProps<\"a\">) {\r\n  return useRender({\r\n    defaultTagName: \"a\",\r\n    props: mergeProps<\"a\">(\r\n      {\r\n        className: cn(\"hover:text-foreground transition-colors\", className),\r\n      },\r\n      props\r\n    ),\r\n    render,\r\n    state: {\r\n      slot: \"breadcrumb-link\",\r\n    },\r\n  })\r\n}\r\n\r\nfunction BreadcrumbPage({ className, ...props }: React.ComponentProps<\"span\">) {\r\n  return (\r\n    <span\r\n      data-slot=\"breadcrumb-page\"\r\n      role=\"link\"\r\n      aria-disabled=\"true\"\r\n      aria-current=\"page\"\r\n      className={cn(\"text-foreground font-normal\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction BreadcrumbSeparator({\r\n  children,\r\n  className,\r\n  ...props\r\n}: React.ComponentProps<\"li\">) {\r\n  return (\r\n    <li\r\n      data-slot=\"breadcrumb-separator\"\r\n      role=\"presentation\"\r\n      aria-hidden=\"true\"\r\n      className={cn(\"[&>svg]:size-4 [&>svg]:leading-0\", className)}\r\n      {...props}\r\n    >\r\n      {children ?? (\r\n        <ChevronRightIcon />\r\n      )}\r\n    </li>\r\n  )\r\n}\r\n\r\nfunction BreadcrumbEllipsis({\r\n  className,\r\n  ...props\r\n}: React.ComponentProps<\"span\">) {\r\n  return (\r\n    <span\r\n      data-slot=\"breadcrumb-ellipsis\"\r\n      role=\"presentation\"\r\n      aria-hidden=\"true\"\r\n      className={cn(\r\n        \"flex size-5 items-center justify-center [&>svg]:size-4\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      <MoreHorizontalIcon\r\n      />\r\n      <span className=\"sr-only\">More</span>\r\n    </span>\r\n  )\r\n}\r\n\r\nexport {\r\n  Breadcrumb,\r\n  BreadcrumbList,\r\n  BreadcrumbItem,\r\n  BreadcrumbLink,\r\n  BreadcrumbPage,\r\n  BreadcrumbSeparator,\r\n  BreadcrumbEllipsis,\r\n}\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/breadcrumb.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

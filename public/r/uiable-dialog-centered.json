@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dialog-centered",
+  "title": "Centered Dialog",
+  "description": "Dialog Centered variant for dialog.",
+  "registryDependencies": [
+    "dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-centered.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger\n} from \"@/components/ui/dialog\";\n\n//  ------------------------------ | DIALOG - CENTERED | ------------------------------  //\n\nexport function DialogCentered() {\n  return (\n    <Dialog>\n      <DialogTrigger render={<Button>Vertically Centered</Button>} />\n      <DialogContent className=\"sm:max-w-md\">\n        <DialogHeader>\n          <DialogTitle>Modal Title</DialogTitle>\n          <DialogDescription>\n            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,\n            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta\n            ac consectetur ac, vestibulum at eros.\n          </DialogDescription>\n        </DialogHeader>\n        <DialogFooter>\n          <Button variant=\"secondary\">Close</Button>\n          <Button>Save changes</Button>\n        </DialogFooter>\n      </DialogContent>\n    </Dialog>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-centered.tsx"
+    }
+  ],
+  "categories": [
+    "dialog"
+  ],
+  "type": "registry:ui"
+}

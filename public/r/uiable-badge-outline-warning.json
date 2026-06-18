@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-outline-warning",
+  "title": "Warning Outline Badge",
+  "description": "Badge Outline Warning variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-outline-warning.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - OUTLINE WARNING | ------------------------------  //\n\nexport default function BadgeOutlineWarning() {\n  return (\n    <Badge className=\"border-yellow-500 text-yellow-500 bg-transparent\">\n      Warning\n    </Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-outline-warning.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

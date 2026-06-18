@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-input-group",
+  "title": "Input Button Group",
+  "description": "Button Group Input Group variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-input-group.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\n// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput\n} from \"@/components/ui/input-group\";\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger\n} from \"@/components/ui/tooltip\";\n\n// assets\nimport { AudioLinesIcon, PlusIcon } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON GROUP - INPUT GROUP | ------------------------------  //\n\nexport default function ButtonGroupInputGroup() {\n  const [voiceEnabled, setVoiceEnabled] = useState(false);\n\n  return (\n    <ButtonGroup className=\"[--radius:9999rem] items-center gap-2\">\n      <ButtonGroup>\n        <Button size=\"icon-lg\">\n          <PlusIcon />\n        </Button>\n      </ButtonGroup>\n      <ButtonGroup>\n        <InputGroup>\n          <InputGroupInput\n            placeholder={\n              voiceEnabled ? \"Record and send audio...\" : \"Send a message...\"\n            }\n            disabled={voiceEnabled}\n          />\n          <InputGroupAddon align=\"inline-end\">\n            <Tooltip>\n              <TooltipTrigger\n                render={\n                  <InputGroupButton\n                    onClick={() => setVoiceEnabled(!voiceEnabled)}\n                    size=\"icon-xs\"\n                    data-active={voiceEnabled}\n                    className=\"data-[active=true]:bg-orange-100 data-[active=true]:text-orange-700 dark:data-[active=true]:bg-orange-800 dark:data-[active=true]:text-orange-100\"\n                    aria-pressed={voiceEnabled}\n                  />\n                }\n              >\n                <AudioLinesIcon />\n              </TooltipTrigger>\n              <TooltipContent>Voice Mode</TooltipContent>\n            </Tooltip>\n          </InputGroupAddon>\n        </InputGroup>\n      </ButtonGroup>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-input-group.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

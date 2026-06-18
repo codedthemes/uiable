@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area",
+  "dependencies": [
+    "@base-ui/react",
+    "react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/scroll-area.tsx",
+      "content": "\"use client\"\r\n\r\nimport * as React from \"react\"\r\nimport { ScrollArea as ScrollAreaPrimitive } from \"@base-ui/react/scroll-area\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction ScrollArea({\r\n  className,\r\n  children,\r\n  ...props\r\n}: ScrollAreaPrimitive.Root.Props) {\r\n  return (\r\n    <ScrollAreaPrimitive.Root\r\n      data-slot=\"scroll-area\"\r\n      className={cn(\"relative\", className)}\r\n      {...props}\r\n    >\r\n      <ScrollAreaPrimitive.Viewport\r\n        data-slot=\"scroll-area-viewport\"\r\n        className=\"focus-visible:ring-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:outline-1\"\r\n      >\r\n        {children}\r\n      </ScrollAreaPrimitive.Viewport>\r\n      <ScrollBar />\r\n      <ScrollAreaPrimitive.Corner />\r\n    </ScrollAreaPrimitive.Root>\r\n  )\r\n}\r\n\r\nfunction ScrollBar({\r\n  className,\r\n  orientation = \"vertical\",\r\n  ...props\r\n}: ScrollAreaPrimitive.Scrollbar.Props) {\r\n  return (\r\n    <ScrollAreaPrimitive.Scrollbar\r\n      data-slot=\"scroll-area-scrollbar\"\r\n      data-orientation={orientation}\r\n      orientation={orientation}\r\n      className={cn(\r\n        \"flex touch-none p-px transition-colors select-none data-horizontal:h-2.5 data-horizontal:flex-col data-horizontal:border-t data-horizontal:border-t-transparent data-vertical:h-full data-vertical:w-2.5 data-vertical:border-l data-vertical:border-l-transparent\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      <ScrollAreaPrimitive.Thumb\r\n        data-slot=\"scroll-area-thumb\"\r\n        className=\"bg-border relative flex-1 rounded-full\"\r\n      />\r\n    </ScrollAreaPrimitive.Scrollbar>\r\n  )\r\n}\r\n\r\nexport { ScrollArea, ScrollBar }\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/scroll-area.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

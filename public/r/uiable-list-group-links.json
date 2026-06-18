@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-list-group-links",
+  "title": "Links List Group",
+  "description": "List Group Links variant for list-group.",
+  "registryDependencies": [
+    "list-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/list-group/list-group-links.tsx",
+      "content": "//  ------------------------------ | LIST GROUP - LINKS | ------------------------------  //\r\n\r\nexport default function ListGroupLinks() {\r\n  return (\r\n    <div className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card overflow-hidden\">\r\n      <a\r\n        href=\"#!\"\r\n        className=\"block py-4 px-6.25 transition-colors hover:bg-muted/50\"\r\n      >\r\n        Cras justo odio\r\n      </a>\r\n      <a\r\n        href=\"#!\"\r\n        aria-current=\"true\"\r\n        className=\"block py-4 px-6.25 bg-primary text-primary-foreground\"\r\n      >\r\n        Dapibus ac facilisis in\r\n      </a>\r\n      <a\r\n        href=\"#!\"\r\n        className=\"block py-4 px-6.25 transition-colors hover:bg-muted/50\"\r\n      >\r\n        Morbi leo risus\r\n      </a>\r\n      <a\r\n        href=\"#!\"\r\n        className=\"block py-4 px-6.25 transition-colors hover:bg-muted/50\"\r\n      >\r\n        Porta ac consectetur ac\r\n      </a>\r\n      <a\r\n        href=\"#!\"\r\n        className=\"block py-4 px-6.25 opacity-50 pointer-events-none\"\r\n        tabIndex={-1}\r\n      >\r\n        Vestibulum at eros ( disabled )\r\n      </a>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/list-group/list-group-links.tsx"
+    }
+  ],
+  "categories": [
+    "list-group"
+  ],
+  "type": "registry:ui"
+}

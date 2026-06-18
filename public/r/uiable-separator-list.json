@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-separator-list",
+  "title": "List Separator",
+  "description": "Separator List variant for separator.",
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/separator/separator-list.tsx",
+      "content": "// shadcn\r\nimport { Separator } from \"@/components/ui/separator\";\r\n\r\n//  ------------------------------ | SEPARATOR - LIST | ------------------------------  //\r\n\r\nexport function SeparatorList() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-2\">\r\n      <dl className=\"flex items-center justify-between\">\r\n        <dt>Item 1</dt>\r\n        <dd className=\"text-muted-foreground\">Value 1</dd>\r\n      </dl>\r\n      <Separator />\r\n      <dl className=\"flex items-center justify-between\">\r\n        <dt>Item 2</dt>\r\n        <dd className=\"text-muted-foreground\">Value 2</dd>\r\n      </dl>\r\n      <Separator />\r\n      <dl className=\"flex items-center justify-between\">\r\n        <dt>Item 3</dt>\r\n        <dd className=\"text-muted-foreground\">Value 3</dd>\r\n      </dl>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/separator/separator-list.tsx"
+    }
+  ],
+  "categories": [
+    "separator"
+  ],
+  "type": "registry:ui"
+}

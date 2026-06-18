@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-small",
+  "title": "Small Typography",
+  "description": "Typography Small variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-small.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - SMALL | ------------------------------  //\r\n\r\nexport function TypographySmall() {\r\n  return <small className=\"text-sm\">Email address</small>;\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-small.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

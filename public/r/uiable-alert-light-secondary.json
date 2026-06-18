@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-light-secondary",
+  "title": "Light Secondary Alert",
+  "description": "Alert Light Secondary variant for alert.",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-light-secondary.tsx",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - LIGHT SECONDARY | ------------------------------  //\n\nexport default function AlertLightSecondary() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-secondary/20 bg-secondary/10 text-secondary\">\n      A simple secondary alert—check it out!\n    </Alert>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-light-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

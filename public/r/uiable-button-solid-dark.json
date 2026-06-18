@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-solid-dark",
+  "title": "Solid Dark Button",
+  "description": "Button Solid Dark variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-solid-dark.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SOLID DARK | ------------------------------  //\n\nexport default function ButtonSolidDark() {\n  return (\n    <Button className=\"bg-mist-800 text-white hover:bg-mist-900\">Dark</Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-solid-dark.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

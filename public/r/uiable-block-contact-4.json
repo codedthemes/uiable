@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-contact-4",
+  "title": "Contact 4",
+  "description": "Contact variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/contact/contact-4/contact-4.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | CONTACT 4 | ------------------------------  //\r\n\r\nexport default function Contact4() {\r\n  return (\r\n    <div className=\"pt-24 sm:pt-32 relative overflow-hidden\">\r\n      <div className=\"relative isolate \">\r\n        <div\r\n          aria-hidden=\"true\"\r\n          className=\"absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80\"\r\n        >\r\n          <div\r\n            style={{\r\n              clipPath:\r\n                \"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\r\n            }}\r\n            className=\"relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75\"\r\n          />\r\n        </div>\r\n        <div className=\"px-6 lg:px-8\">\r\n          <div className=\"max-w-200 bg-card rounded-lg mx-auto shadow-[0_0_40px_-8px_#4680ff38] p-5 sm:p-14 relative z-30\">\r\n            <div className=\"text-center flex flex-col gap-4 sm:gap-10\">\r\n              <div className=\"text-center flex flex-col items-center gap-4 sm:gap-10\">\r\n                <h2 className=\"text-lg sm:text-3xl font-medium text-slate-800 dark:text-slate-100\">\r\n                  Let's Get In Touch\r\n                </h2>\r\n                <p className=\"max-w-112 text-slate-600 dark:text-slate-400\">\r\n                  We’d love to hear from you! Reach out with your questions,\r\n                  ideas, or feedback, and our team will be happy to assist you.\r\n                  Let’s connect and create something amazing together.\r\n                </p>\r\n              </div>\r\n              <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6\">\r\n                <Input placeholder=\"Email Id\" />\r\n                <Input placeholder=\"Name\" />\r\n                <Button className=\"w-full sm:w-auto\">Get Started</Button>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div\r\n          aria-hidden=\"true\"\r\n          className=\"absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]\"\r\n        >\r\n          <div\r\n            style={{\r\n              clipPath:\r\n                \"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\r\n            }}\r\n            className=\"relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75\"\r\n          />\r\n        </div>\r\n        <div className=\"w-full h-100 overflow-hidden -mt-30 relative z-20\">\r\n          <iframe\r\n            src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14875.987145437051!2d72.86633095391547!3d21.231976027219776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f0778f12ea7%3A0xd4bc1f45fa091301!2sSurat%20Digital%20Valley!5e0!3m2!1sen!2sin!4v1779250060915!5m2!1sen!2sin\"\r\n            width=\"100%\"\r\n            height=\"100%\"\r\n            allowFullScreen\r\n            loading=\"lazy\"\r\n            referrerPolicy=\"no-referrer-when-downgrade\"\r\n          ></iframe>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/contact/contact-4/contact-4.tsx"
+    }
+  ],
+  "categories": [
+    "contact"
+  ],
+  "type": "registry:block"
+}

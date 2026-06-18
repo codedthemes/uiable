@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-e-commerce-6",
+  "title": "E-commerce 6",
+  "description": "E-commerce variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/e-commerce/e-commerce-6/e-commerce-6.tsx",
+      "content": "const products = [\r\n  {\r\n    name: \"PlayStation VR\",\r\n    description: \"Having worked across a number.\",\r\n    price: \"$140\",\r\n    image: \"https://cdn.uiable.com/block/img-wed-1.jpg\",\r\n  },\r\n  {\r\n    name: \"Donut Turqoise Backpack\",\r\n    description: \"Having worked across a number.\",\r\n    price: \"$180\",\r\n    image: \"https://cdn.uiable.com/block/img-wed-2.jpg\",\r\n  },\r\n  {\r\n    name: \"Nintendo Switch\",\r\n    description: \"Having worked across a number.\",\r\n    price: \"$300\",\r\n    image: \"https://cdn.uiable.com/block/img-wed-3.jpg\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | E - COMMERCE 6 | ------------------------------  //\r\n\r\nexport default function Ecommerce6() {\r\n  return (\r\n    <div className=\"py-24 sm:py-32 bg-cover bg-center overflow-hidden relative\">\r\n      <div className=\"absolute inset-0 bg-linear-to-br from-cyan-100 to-purple-300 z-20\"></div>\r\n      <div className=\"container mx-auto px-6 lg:px-8 relative z-30\">\r\n        <div className=\"flex flex-col gap-8\">\r\n          <div className=\"max-w-108 mx-auto flex flex-col items-center text-center gap-2 sm:gap-4\">\r\n            <h2 className=\"text-lg sm:text-3xl font-medium text-slate-800 dark:text-slate-50\">\r\n              in compite\r\n            </h2>\r\n            <p className=\"max-w-90 text-slate-600 dark:text-slate-100\">\r\n              Get in touch for questions, support, or feedback. We’re here to\r\n              help and hear from you.\r\n            </p>\r\n          </div>\r\n          <div className=\"w-330 max-w-full mx-auto\">\r\n            <div className=\"grid grid-cols-12 gap-6\">\r\n              {products.map((product, idx) => (\r\n                <div key={idx} className=\"col-span-12 md:col-span-4\">\r\n                  <div className=\"bg-card rounded-lg shadow-[0_0_40px_-8px_#4680ff38] p-2 group\">\r\n                    <div className=\"flex flex-col gap-10 mb-10\">\r\n                      <div className=\"relative overflow-hidden rounded-md\">\r\n                        <img\r\n                          src={product.image}\r\n                          alt={product.name}\r\n                          className=\"w-full\"\r\n                        />\r\n                        <div className=\"absolute bottom-5 left-5 size-40 border-l-4 border-b-4 border-white/80 scale-0 origin-bottom-left group-hover:scale-100 transition-all\">\r\n                          <div className=\"absolute w-120 h-4 bg-white/60 bottom-25 -left-35 rotate-45\"></div>\r\n                          <div className=\"absolute w-90 h-16 bg-white/20 bottom-8 -left-33 rotate-45\"></div>\r\n                        </div>\r\n                      </div>\r\n                      <div className=\"flex flex-col gap-4 px-10\">\r\n                        <h4 className=\"text-slate-800 dark:text-slate-50\">\r\n                          {product.name}\r\n                        </h4>\r\n                        <p className=\"text-slate-600 dark:text-slate-100\">\r\n                          {product.description}\r\n                        </p>\r\n                        <p className=\"text-cyan-500 font-bold text-xl md:text-2xl\">\r\n                          {product.price}\r\n                        </p>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              ))}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/e-commerce/e-commerce-6/e-commerce-6.tsx"
+    }
+  ],
+  "categories": [
+    "e-commerce"
+  ],
+  "type": "registry:block"
+}

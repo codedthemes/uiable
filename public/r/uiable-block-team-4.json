@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-team-4",
+  "title": "Team 4",
+  "description": "Team variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/team/team-4/team-4.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\n\r\n// constants\r\nconst members = [\r\n  {\r\n    name: \"Joseph William\",\r\n    role: \"Professional\",\r\n    bio: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    avatar: \"https://cdn.uiable.com/block/team7.png\",\r\n    initials: \"JW\",\r\n  },\r\n  {\r\n    name: \"Shirley Hoe\",\r\n    role: \"Professional\",\r\n    bio: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    avatar: \"https://cdn.uiable.com/block/team8.png\",\r\n    initials: \"SH\",\r\n  },\r\n  {\r\n    name: \"Joseph William\",\r\n    role: \"Professional\",\r\n    bio: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    avatar: \"https://cdn.uiable.com/block/team9.png\",\r\n    initials: \"JW\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | TEAM 4 | ------------------------------  //\r\n\r\nexport default function team4() {\r\n  return (\r\n    <section className=\"py-16\">\r\n      <div className=\"mx-auto container px-6\">\r\n        <div className=\"grid grid-cols-12 mb-12\">\r\n          <div className=\"col-span-12 text-center\">\r\n            <h2>Our Crew</h2>\r\n            <h5 className=\"text-muted-foreground font-light mt-3 mx-auto max-w-xl\">\r\n              At half-past eight the door opened, the policeman appeared and\r\n              requesting them to follow him, led way to an adjoining hall.\r\n            </h5>\r\n          </div>\r\n        </div>\r\n\r\n        <div className=\"grid grid-cols-12 gap-8\">\r\n          {members.map((member, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"col-span-12 sm:col-span-6 lg:col-span-4 flex flex-col items-center text-center gap-4\"\r\n            >\r\n              <Avatar className=\"size-26!\">\r\n                <AvatarImage src={member.avatar} alt={member.name} />\r\n                <AvatarFallback>{member.initials}</AvatarFallback>\r\n              </Avatar>\r\n              <div>\r\n                <h5 className=\"\">{member.name}</h5>\r\n                <h6 className=\"text-muted-foreground font-normal mt-1\">\r\n                  {member.role}\r\n                </h6>\r\n              </div>\r\n              <h6 className=\"text-muted-foreground font-light\">{member.bio}</h6>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/team/team-4/team-4.tsx"
+    }
+  ],
+  "categories": [
+    "team"
+  ],
+  "type": "registry:block"
+}

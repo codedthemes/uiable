@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-pagination-alignment",
+  "title": "Alignment Pagination",
+  "description": "Pagination Alignment variant for pagination.",
+  "registryDependencies": [
+    "pagination"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/pagination/pagination-alignment.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Pagination,\r\n  PaginationContent,\r\n  PaginationItem,\r\n  PaginationLink,\r\n  PaginationNext,\r\n  PaginationPrevious\r\n} from \"@/components/ui/pagination\";\r\n\r\n//  ------------------------------ | PAGINATION - ALIGNMENT | ------------------------------  //\r\n\r\nexport default function PaginationAlignment() {\r\n  return (\r\n    <div className=\"flex flex-col gap-8 w-full\">\r\n      <div>\r\n        <h6 className=\"mb-3 text-center text-base font-medium text-muted-foreground uppercase tracking-wider\">\r\n          Center Alignment\r\n        </h6>\r\n        <Pagination className=\"justify-center\">\r\n          <PaginationContent>\r\n            <PaginationItem>\r\n              <PaginationPrevious href=\"#\" />\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationLink href=\"#\">1</PaginationLink>\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationLink href=\"#\" isActive>\r\n                2\r\n              </PaginationLink>\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationLink href=\"#\">3</PaginationLink>\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationNext href=\"#\" />\r\n            </PaginationItem>\r\n          </PaginationContent>\r\n        </Pagination>\r\n      </div>\r\n\r\n      <div>\r\n        <h6 className=\"mb-3 text-right text-base font-medium text-muted-foreground uppercase tracking-wider\">\r\n          End Alignment\r\n        </h6>\r\n        <Pagination className=\"justify-end\">\r\n          <PaginationContent>\r\n            <PaginationItem>\r\n              <PaginationPrevious href=\"#\" />\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationLink href=\"#\">1</PaginationLink>\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationLink href=\"#\" isActive>\r\n                2\r\n              </PaginationLink>\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationLink href=\"#\">3</PaginationLink>\r\n            </PaginationItem>\r\n            <PaginationItem>\r\n              <PaginationNext href=\"#\" />\r\n            </PaginationItem>\r\n          </PaginationContent>\r\n        </Pagination>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/pagination/pagination-alignment.tsx"
+    }
+  ],
+  "categories": [
+    "pagination"
+  ],
+  "type": "registry:ui"
+}

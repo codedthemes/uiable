@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-gallery-10",
+  "title": "Gallery 10",
+  "description": "Gallery variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/gallery/gallery-10/gallery-10.tsx",
+      "content": "import Image from \"next/image\";\r\n\r\n// shadcn\r\nimport {\r\n  Carousel,\r\n  CarouselContent,\r\n  CarouselItem,\r\n  CarouselNext,\r\n  CarouselPrevious,\r\n} from \"@/components/ui/carousel\";\r\n\r\n// constants\r\nconst galleryImages = [\r\n  \"https://cdn.uiable.com/block/g1.jpg\",\r\n  \"https://cdn.uiable.com/block/g2.jpg\",\r\n  \"https://cdn.uiable.com/block/g3.jpg\",\r\n];\r\n\r\n//  ------------------------------ | GALLERY 11 | ------------------------------  //\r\n\r\nexport default function Gallery10() {\r\n  return (\r\n    <section className=\"bg-background py-16 md:py-24\">\r\n      <div className=\"container mx-auto px-10\">\r\n        <div className=\"grid grid-cols-12 gap-y-12 md:gap-8\">\r\n          {/* Top Section - Left Column (Title & Main Desc) */}\r\n          <div className=\"col-span-12 md:col-span-6 flex flex-col gap-6 pr-0 md:pr-8\">\r\n            <h2>Collector's Boba Fett Adult Helmet</h2>\r\n            <p className=\"text-slate-500 text-sm md:text-base leading-relaxed\">\r\n              At half-past eight the door opened, the policeman appeared led way\r\n              to an adjoining and requesting them to follow him led way to an\r\n              adjoining hall.\r\n            </p>\r\n          </div>\r\n\r\n          {/* Top Section - Right Column (Features) */}\r\n          <div className=\"col-span-12 md:col-span-6 flex flex-col gap-8\">\r\n            <div className=\"flex flex-col gap-2\">\r\n              <h4 className=\"font-semibold text-foreground\">First one</h4>\r\n              <p className=\"text-slate-500 text-sm leading-relaxed\">\r\n                At half-past eight the door opened, the policeman appeared led\r\n                way to an adjoining and requesting them to follow him led way to\r\n                an adjoining hall.\r\n              </p>\r\n            </div>\r\n            <div className=\"flex flex-col gap-2\">\r\n              <h4 className=\"font-semibold text-foreground\">Second one</h4>\r\n              <p className=\"text-slate-500 text-sm leading-relaxed\">\r\n                At half-past eight the door opened, the policeman appeared led\r\n                way to an adjoining and requesting them to follow him led way to\r\n                an adjoining hall.\r\n              </p>\r\n            </div>\r\n          </div>\r\n\r\n          {/* Bottom Section - Carousel */}\r\n          <div className=\"col-span-12 mt-8 md:mt-12 px-12 md:px-16 relative\">\r\n            <Carousel opts={{ align: \"start\", loop: true }} className=\"w-full\">\r\n              <CarouselContent>\r\n                {galleryImages.map((src, index) => (\r\n                  <CarouselItem key={index} className=\"basis-full\">\r\n                    <div className=\"overflow-hidden rounded-3xl border shadow-sm\">\r\n                      <div className=\"relative aspect-video md:aspect-[21/9] w-full\">\r\n                        <Image\r\n                          src={src}\r\n                          alt={`Product gallery image ${index + 1}`}\r\n                          fill\r\n                          className=\"object-cover\"\r\n                        />\r\n                      </div>\r\n                    </div>\r\n                  </CarouselItem>\r\n                ))}\r\n              </CarouselContent>\r\n\r\n              {/* Custom Carousel Navigation */}\r\n              <CarouselPrevious className=\"absolute -left-4 md:-left-14 h-12 w-12 border-slate-200 text-slate-600 hover:bg-slate-100 hidden sm:flex\" />\r\n              <CarouselNext className=\"absolute -right-4 md:-right-14 h-12 w-12 border-slate-200 text-slate-600 hover:bg-slate-100 hidden sm:flex\" />\r\n            </Carousel>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/gallery/gallery-10/gallery-10.tsx"
+    }
+  ],
+  "categories": [
+    "gallery"
+  ],
+  "type": "registry:block"
+}

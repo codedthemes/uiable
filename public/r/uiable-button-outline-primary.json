@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-outline-primary",
+  "title": "Outline Primary Button",
+  "description": "Button Outline Primary variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-outline-primary.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON OUTLINE PRIMARY | ------------------------------  //\n\nexport default function ButtonOutlinePrimary() {\n  return (\n    <Button className=\"border-primary bg-transparent text-primary hover:bg-primary hover:text-white\">\n      Primary\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-outline-primary.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

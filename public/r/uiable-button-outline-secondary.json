@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-outline-secondary",
+  "title": "Outline Secondary Button",
+  "description": "Button Outline Secondary variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-outline-secondary.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON OUTLINE SECONDARY | ------------------------------  //\n\nexport default function ButtonOutlineSecondary() {\n  return (\n    <Button className=\"border-slate-500 bg-transparent text-slate-500 hover:bg-slate-500 hover:text-white\">\n      Secondary\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-outline-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

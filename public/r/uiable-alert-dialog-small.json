@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-dialog-small",
+  "title": "Small Alert Dialog",
+  "description": "Alert Dialog Small variant for alert-dialog.",
+  "registryDependencies": [
+    "alert-dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert-dialog/alert-dialog-small.tsx",
+      "content": "// shadcn\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger\n} from \"@/components/ui/alert-dialog\";\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | ALERT DIALOG - SMALL | ------------------------------  //\n\nexport function AlertDialogSmall() {\n  return (\n    <AlertDialog>\n      <AlertDialogTrigger render={<Button>Show Dialog</Button>} />\n      <AlertDialogContent size=\"sm\">\n        <AlertDialogHeader>\n          <AlertDialogTitle>Allow accessory to connect?</AlertDialogTitle>\n          <AlertDialogDescription>\n            Do you want to allow the USB accessory to connect to this device?\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n        <AlertDialogFooter>\n          <AlertDialogCancel>Don't allow</AlertDialogCancel>\n          <AlertDialogAction>Allow</AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert-dialog/alert-dialog-small.tsx"
+    }
+  ],
+  "categories": [
+    "alert-dialog"
+  ],
+  "type": "registry:ui"
+}

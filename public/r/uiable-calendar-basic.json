@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-calendar-basic",
+  "title": "Basic Calendar",
+  "description": "Calendar Basic variant for calendar.",
+  "registryDependencies": [
+    "calendar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/calendar/calendar-basic.tsx",
+      "content": "// shadcn\nimport { Calendar } from \"@/components/ui/calendar\";\n\n//  ------------------------------ | CALENDAR - BASIC | ------------------------------  //\n\nexport default function CalendarBasic() {\n  return <Calendar mode=\"single\" className=\"rounded-lg border\" />;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/calendar/calendar-basic.tsx"
+    }
+  ],
+  "categories": [
+    "calendar"
+  ],
+  "type": "registry:ui"
+}

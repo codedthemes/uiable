@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-cta-3",
+  "title": "Call To Action 3",
+  "description": "Call To Action variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/cta/cta-3/cta-3.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { ButtonGroup } from \"@/components/ui/button-group\";\r\nimport { Field } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | CTA 3 | ------------------------------  //\r\n\r\nexport default function cta3() {\r\n  return (\r\n    <div className=\"py-24 sm:py-32 relative\">\r\n      <div className=\"absolute inset-0 bg-linear-65 from-purple-500 to-pink-500 z-10\"></div>\r\n      <div className=\"absolute inset-0 bg-card/85 z-20\"></div>\r\n      <div className=\"container mx-auto px-6 lg:px-8 relative z-30\">\r\n        <div className=\"bg-card max-w-250 rounded-lg mx-auto shadow-[0_0_40px_-8px_#d547cc3d] p-5 sm:p-14\">\r\n          <div className=\"text-center items-center flex flex-col md:flex-row gap-4 md:gap-24\">\r\n            <h2 className=\"text-lg sm:text-3xl font-medium text-slate-800 dark:text-slate-100\">\r\n              Subscribe\r\n            </h2>\r\n            <Field>\r\n              <ButtonGroup className=\"items-stretch [&>[data-slot]:not(:has(~[data-slot]))]:rounded-r-lg!\">\r\n                <Input\r\n                  id=\"input-button-group\"\r\n                  className=\"rounded-r-none\"\r\n                  placeholder=\"We never SPAM\"\r\n                />\r\n                <Button\r\n                  variant=\"default\"\r\n                  className=\"bg-linear-65 from-purple-500 to-pink-500\"\r\n                >\r\n                  Get Started\r\n                </Button>\r\n              </ButtonGroup>\r\n            </Field>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/cta/cta-3/cta-3.tsx"
+    }
+  ],
+  "categories": [
+    "cta"
+  ],
+  "type": "registry:block"
+}

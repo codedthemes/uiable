@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-list-group-disabled",
+  "title": "Disabled List Group",
+  "description": "List Group Disabled variant for list-group.",
+  "registryDependencies": [
+    "list-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/list-group/list-group-disabled.tsx",
+      "content": "//  ------------------------------ | LIST GROUP - DISABLED | ------------------------------  //\r\n\r\nexport default function ListGroupDisabled() {\r\n  return (\r\n    <ul className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card\">\r\n      <li className=\"py-4 px-6.25 opacity-50 select-none\">\r\n        Cras justo odio ( disabled )\r\n      </li>\r\n      <li className=\"py-4 px-6.25\">Dapibus ac facilisis in</li>\r\n      <li className=\"py-4 px-6.25 opacity-50 select-none\">\r\n        Morbi leo risus ( disabled )\r\n      </li>\r\n      <li className=\"py-4 px-6.25\">Porta ac consectetur ac</li>\r\n      <li className=\"py-4 px-6.25\">Vestibulum at eros</li>\r\n    </ul>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/list-group/list-group-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "list-group"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-file",
+  "title": "File Input",
+  "description": "Input File variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-file.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - FILE | ------------------------------  //\r\n\r\nexport function InputFile() {\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"picture\">Picture</FieldLabel>\r\n      <Input id=\"picture\" type=\"file\" />\r\n      <FieldDescription>Select a picture to upload.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-file.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

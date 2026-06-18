@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-list-group-checkboxes",
+  "title": "Checkboxes List Group",
+  "description": "List Group Checkboxes variant for list-group.",
+  "registryDependencies": [
+    "list-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/list-group/list-group-checkboxes.tsx",
+      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\n//  ------------------------------ | LIST GROUP - CHECKBOXES | ------------------------------  //\r\n\r\nexport default function ListGroupCheckboxes() {\r\n  return (\r\n    <div className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card overflow-hidden\">\r\n      <div className=\"flex items-center space-x-3 py-4 px-6.25\">\r\n        <Checkbox id=\"check1\" />\r\n        <Label\r\n          htmlFor=\"check1\"\r\n          className=\"flex-1 cursor-pointer font-normal text-base\"\r\n        >\r\n          Cras justo odio\r\n        </Label>\r\n      </div>\r\n      <div className=\"flex items-center space-x-3 py-4 px-6.25\">\r\n        <Checkbox id=\"check2\" />\r\n        <Label\r\n          htmlFor=\"check2\"\r\n          className=\"flex-1 cursor-pointer font-normal text-base\"\r\n        >\r\n          Dapibus ac facilisis in\r\n        </Label>\r\n      </div>\r\n      <div className=\"flex items-center space-x-3 py-4 px-6.25\">\r\n        <Checkbox id=\"check3\" />\r\n        <Label\r\n          htmlFor=\"check3\"\r\n          className=\"flex-1 cursor-pointer font-normal text-base\"\r\n        >\r\n          Morbi leo risus\r\n        </Label>\r\n      </div>\r\n      <div className=\"flex items-center space-x-3 py-4 px-6.25\">\r\n        <Checkbox id=\"check4\" />\r\n        <Label\r\n          htmlFor=\"check4\"\r\n          className=\"flex-1 cursor-pointer font-normal text-base\"\r\n        >\r\n          Porta ac consectetur ac\r\n        </Label>\r\n      </div>\r\n      <div className=\"flex items-center space-x-3 py-4 px-6.25\">\r\n        <Checkbox id=\"check5\" />\r\n        <Label\r\n          htmlFor=\"check5\"\r\n          className=\"flex-1 cursor-pointer font-normal text-base\"\r\n        >\r\n          Vestibulum at eros\r\n        </Label>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/list-group/list-group-checkboxes.tsx"
+    }
+  ],
+  "categories": [
+    "list-group"
+  ],
+  "type": "registry:ui"
+}

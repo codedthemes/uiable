@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sidebar-group",
+  "title": "Group Sidebar",
+  "description": "Sidebar Group variant for sidebar.",
+  "dependencies": [],
+  "registryDependencies": [
+    "sidebar"
+  ],
+  "files": [
+    {
+      "path": "components/uiable/sidebar/sidebar-group.tsx",
+      "content": "\"use client\"\r\n\r\nimport {\r\n  Sidebar,\r\n  SidebarContent,\r\n  SidebarGroup,\r\n  SidebarGroupContent,\r\n  SidebarGroupLabel,\r\n  SidebarMenu,\r\n  SidebarMenuButton,\r\n  SidebarMenuItem,\r\n  SidebarProvider,\r\n} from \"@/components/ui/sidebar\"\r\nimport { LifeBuoyIcon, SendIcon } from \"lucide-react\"\r\n\r\nexport default function AppSidebar() {\r\n  return (\r\n    <SidebarProvider className=\"relative min-h-[450px]\">\r\n      <Sidebar className=\"absolute h-[450px]\">\r\n        <SidebarContent>\r\n          <SidebarGroup>\r\n            <SidebarGroupLabel className=\"py-3\">Help</SidebarGroupLabel>\r\n            <SidebarGroupContent>\r\n              <SidebarMenu>\r\n                <SidebarMenuItem>\r\n                  <SidebarMenuButton>\r\n                    <LifeBuoyIcon />\r\n                    Support\r\n                  </SidebarMenuButton>\r\n                </SidebarMenuItem>\r\n                <SidebarMenuItem>\r\n                  <SidebarMenuButton>\r\n                    <SendIcon />\r\n                    Feedback\r\n                  </SidebarMenuButton>\r\n                </SidebarMenuItem>\r\n              </SidebarMenu>\r\n            </SidebarGroupContent>\r\n          </SidebarGroup>\r\n        </SidebarContent>\r\n      </Sidebar>\r\n    </SidebarProvider>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/uiable/sidebar/sidebar-group.tsx"
+    }
+  ],
+  "categories": [
+    "sidebar"
+  ],
+  "type": "registry:component"
+}

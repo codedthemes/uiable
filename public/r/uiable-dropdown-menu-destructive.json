@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dropdown-menu-destructive",
+  "title": "Destructive Dropdown Menu",
+  "description": "Dropdown Menu Destructive variant for dropdown-menu.",
+  "registryDependencies": [
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-destructive.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger\n} from \"@/components/ui/dropdown-menu\";\n\n// assets\nimport { PencilIcon, ShareIcon, TrashIcon } from \"lucide-react\";\n\n//  ------------------------------ | DROPDOWN MENU - DESTRUCTIVE | ------------------------------  //\n\nexport function DropdownMenuDestructive() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger render={<Button variant=\"outline\" />}>\n        Actions\n      </DropdownMenuTrigger>\n      <DropdownMenuContent>\n        <DropdownMenuGroup>\n          <DropdownMenuItem>\n            <PencilIcon />\n            Edit\n          </DropdownMenuItem>\n          <DropdownMenuItem>\n            <ShareIcon />\n            Share\n          </DropdownMenuItem>\n        </DropdownMenuGroup>\n        <DropdownMenuSeparator />\n        <DropdownMenuGroup>\n          <DropdownMenuItem variant=\"destructive\">\n            <TrashIcon />\n            Delete\n          </DropdownMenuItem>\n        </DropdownMenuGroup>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-destructive.tsx"
+    }
+  ],
+  "categories": [
+    "dropdown-menu"
+  ],
+  "type": "registry:ui"
+}

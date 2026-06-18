@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-h4",
+  "title": "H4 Typography",
+  "description": "Typography H4 variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-h4.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - H4 | ------------------------------  //\r\n\r\nexport function TypographyH4() {\r\n  return (\r\n    <h4 className=\"scroll-m-20 text-xl font-semibold tracking-tight\">\r\n      People stopped telling jokes\r\n    </h4>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-h4.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

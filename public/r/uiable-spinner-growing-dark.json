@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-growing-dark",
+  "title": "Dark Growing Spinner",
+  "description": "Spinner Growing Dark variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-growing-dark.tsx",
+      "content": "//  ------------------------------ | SPINNER - GROWING DARK | ------------------------------  //\r\n\r\nexport default function SpinnerGrowingDark() {\r\n  return (\r\n    <div\r\n      className=\"inline-flex bg-slate-800 dark:bg-white/50 rounded-full opacity-75 size-4 animate-ping\"\r\n      role=\"status\"\r\n    >\r\n      <span className=\"sr-only\">Loading...</span>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-growing-dark.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

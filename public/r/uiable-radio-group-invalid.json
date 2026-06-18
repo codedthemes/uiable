@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-radio-group-invalid",
+  "title": "Invalid Radio Group",
+  "description": "Radio Group Invalid variant for radio-group.",
+  "registryDependencies": [
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/radio-group/radio-group-invalid.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Field,\r\n  FieldDescription,\r\n  FieldLabel,\r\n  FieldLegend,\r\n  FieldSet\r\n} from \"@/components/ui/field\";\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\r\n\r\n//  ------------------------------ | RADIO GROUP - INVALID | ------------------------------  //\r\n\r\nexport function RadioGroupInvalid() {\r\n  return (\r\n    <FieldSet className=\"w-full max-w-xs\">\r\n      <FieldLegend variant=\"label\">Notification Preferences</FieldLegend>\r\n      <FieldDescription>\r\n        Choose how you want to receive notifications.\r\n      </FieldDescription>\r\n      <RadioGroup defaultValue=\"email\">\r\n        <Field orientation=\"horizontal\" data-invalid>\r\n          <RadioGroupItem value=\"email\" id=\"invalid-email\" aria-invalid />\r\n          <FieldLabel htmlFor=\"invalid-email\" className=\"font-normal\">\r\n            Email only\r\n          </FieldLabel>\r\n        </Field>\r\n        <Field orientation=\"horizontal\" data-invalid>\r\n          <RadioGroupItem value=\"sms\" id=\"invalid-sms\" aria-invalid />\r\n          <FieldLabel htmlFor=\"invalid-sms\" className=\"font-normal\">\r\n            SMS only\r\n          </FieldLabel>\r\n        </Field>\r\n        <Field orientation=\"horizontal\" data-invalid>\r\n          <RadioGroupItem value=\"both\" id=\"invalid-both\" aria-invalid />\r\n          <FieldLabel htmlFor=\"invalid-both\" className=\"font-normal\">\r\n            Both Email & SMS\r\n          </FieldLabel>\r\n        </Field>\r\n      </RadioGroup>\r\n    </FieldSet>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/radio-group/radio-group-invalid.tsx"
+    }
+  ],
+  "categories": [
+    "radio-group"
+  ],
+  "type": "registry:ui"
+}

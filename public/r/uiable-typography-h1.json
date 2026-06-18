@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-h1",
+  "title": "H1 Typography",
+  "description": "Typography H1 variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-h1.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - H1 | ------------------------------  //\r\n\r\nexport function TypographyH1() {\r\n  return (\r\n    <h1 className=\"scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance\">\r\n      Taxing Laughter: The Joke Tax Chronicles\r\n    </h1>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-h1.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

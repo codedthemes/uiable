@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-textarea-invalid",
+  "title": "Invalid Textarea",
+  "description": "Textarea Invalid variant for textarea.",
+  "registryDependencies": [
+    "textarea"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/textarea/textarea-invalid.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { Textarea } from \"@/components/ui/textarea\";\r\n\r\n//  ------------------------------ | TEXTAREA - INVALID | ------------------------------  //\r\n\r\nexport function TextareaInvalid() {\r\n  return (\r\n    <Field data-invalid>\r\n      <FieldLabel htmlFor=\"textarea-invalid\">Message</FieldLabel>\r\n      <Textarea\r\n        id=\"textarea-invalid\"\r\n        placeholder=\"Type your message here.\"\r\n        aria-invalid\r\n      />\r\n      <FieldDescription>Please enter a valid message.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/textarea/textarea-invalid.tsx"
+    }
+  ],
+  "categories": [
+    "textarea"
+  ],
+  "type": "registry:ui"
+}

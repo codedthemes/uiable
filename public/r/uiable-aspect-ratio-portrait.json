@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-aspect-ratio-portrait",
+  "title": "Portrait Aspect Ratio",
+  "description": "Aspect Ratio Portrait variant for aspect-ratio.",
+  "registryDependencies": [
+    "aspect-ratio"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/aspect-ratio/aspect-ratio-portrait.tsx",
+      "content": "import Image from \"next/image\";\n\n// shadcn\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\n\n//  ------------------------------ | ASPECT RATIO - PORTRAIT | ------------------------------  //\n\nexport function AspectRatioPortrait() {\n  return (\n    <AspectRatio\n      ratio={9 / 16}\n      className=\"bg-muted w-full max-w-[10rem] rounded-lg\"\n    >\n      <Image\n        src=\"https://avatar.vercel.sh/shadcn1\"\n        alt=\"Photo\"\n        fill\n        className=\"rounded-lg object-cover\"\n      />\n    </AspectRatio>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/aspect-ratio/aspect-ratio-portrait.tsx"
+    }
+  ],
+  "categories": [
+    "aspect-ratio"
+  ],
+  "type": "registry:ui"
+}

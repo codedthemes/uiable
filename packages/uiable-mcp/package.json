@@ -1,0 +1,32 @@
+{
+  "name": "uiable-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the uiable shadcn registry: discover, install, and generate UI from uiable blocks.",
+  "type": "module",
+  "bin": {
+    "uiable-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "shadcn",
+    "uiable",
+    "registry",
+    "ui"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

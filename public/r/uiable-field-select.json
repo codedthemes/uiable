@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-field-select",
+  "title": "Select Field",
+  "description": "Field Select variant for field.",
+  "registryDependencies": [
+    "field"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/field/field-select.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue\r\n} from \"@/components/ui/select\";\r\n\r\n// constants\r\nconst items = [\r\n  { label: \"Choose department\", value: null },\r\n  { label: \"Engineering\", value: \"engineering\" },\r\n  { label: \"Design\", value: \"design\" },\r\n  { label: \"Marketing\", value: \"marketing\" },\r\n  { label: \"Sales\", value: \"sales\" },\r\n  { label: \"Customer Support\", value: \"support\" },\r\n  { label: \"Human Resources\", value: \"hr\" },\r\n  { label: \"Finance\", value: \"finance\" },\r\n  { label: \"Operations\", value: \"operations\" }\r\n];\r\n\r\n//  ------------------------------ | FIELD - SELECT | ------------------------------  //\r\n\r\nexport default function FieldSelect() {\r\n  return (\r\n    <Field className=\"w-full max-w-xs\">\r\n      <FieldLabel>Department</FieldLabel>\r\n      <Select items={items}>\r\n        <SelectTrigger>\r\n          <SelectValue />\r\n        </SelectTrigger>\r\n        <SelectContent>\r\n          <SelectGroup>\r\n            {items.map((item) => (\r\n              <SelectItem key={item.value} value={item.value}>\r\n                {item.label}\r\n              </SelectItem>\r\n            ))}\r\n          </SelectGroup>\r\n        </SelectContent>\r\n      </Select>\r\n      <FieldDescription>\r\n        Select your department or area of work.\r\n      </FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/field/field-select.tsx"
+    }
+  ],
+  "categories": [
+    "field"
+  ],
+  "type": "registry:ui"
+}

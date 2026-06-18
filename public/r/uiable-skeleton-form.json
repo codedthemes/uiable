@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-skeleton-form",
+  "title": "Form Skeleton",
+  "description": "Skeleton Form variant for skeleton.",
+  "registryDependencies": [
+    "skeleton"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/skeleton/skeleton-form.tsx",
+      "content": "// shadcn\r\nimport { Skeleton } from \"@/components/ui/skeleton\";\r\n\r\n//  ------------------------------ | SKELETON - FORM | ------------------------------  //\r\n\r\nexport function SkeletonForm() {\r\n  return (\r\n    <div className=\"flex w-full max-w-xs flex-col gap-7\">\r\n      <div className=\"flex flex-col gap-3\">\r\n        <Skeleton className=\"h-4 w-18\" />\r\n        <Skeleton className=\"h-8 w-full\" />\r\n      </div>\r\n      <div className=\"flex flex-col gap-3\">\r\n        <Skeleton className=\"h-4 w-24\" />\r\n        <Skeleton className=\"h-8 w-full\" />\r\n      </div>\r\n      <Skeleton className=\"h-8 w-28\" />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/skeleton/skeleton-form.tsx"
+    }
+  ],
+  "categories": [
+    "skeleton"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-avatar-group-count",
+  "title": "Group Count Avatar",
+  "description": "Avatar Group Count variant for avatar.",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/avatar/avatar-group-count.tsx",
+      "content": "// shadcn\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarGroup,\n  AvatarGroupCount,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\n//  ------------------------------ | AVATAR - GROUP COUNT | ------------------------------  //\n\nexport function AvatarGroupCountExample() {\n  return (\n    <AvatarGroup>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-8.jpg\"\n          alt=\"@shadcn\"\n        />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-9.jpg\"\n          alt=\"@maxleiter\"\n        />\n        <AvatarFallback>LR</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-10.jpg\"\n          alt=\"@evilrabbit\"\n        />\n        <AvatarFallback>ER</AvatarFallback>\n      </Avatar>\n      <AvatarGroupCount>+3</AvatarGroupCount>\n    </AvatarGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/avatar/avatar-group-count.tsx"
+    }
+  ],
+  "categories": [
+    "avatar"
+  ],
+  "type": "registry:ui"
+}

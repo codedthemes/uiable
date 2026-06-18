@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-native-select-invalid",
+  "title": "Invalid Native Select",
+  "description": "Native Select Invalid variant for native-select.",
+  "registryDependencies": [
+    "native-select"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/native-select/native-select-invalid.tsx",
+      "content": "// shadcn\r\nimport {\r\n  NativeSelect,\r\n  NativeSelectOption\r\n} from \"@/components/ui/native-select\";\r\n\r\n//  ------------------------------ | NATIVE SELECT - INVALID | ------------------------------  //\r\n\r\nexport function NativeSelectInvalid() {\r\n  return (\r\n    <NativeSelect aria-invalid=\"true\" className=\"w-35 [&>select]:w-full\">\r\n      <NativeSelectOption value=\"\">Error state</NativeSelectOption>\r\n      <NativeSelectOption value=\"apple\">Apple</NativeSelectOption>\r\n      <NativeSelectOption value=\"banana\">Banana</NativeSelectOption>\r\n      <NativeSelectOption value=\"blueberry\">Blueberry</NativeSelectOption>\r\n    </NativeSelect>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/native-select/native-select-invalid.tsx"
+    }
+  ],
+  "categories": [
+    "native-select"
+  ],
+  "type": "registry:ui"
+}

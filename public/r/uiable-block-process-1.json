@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-process-1",
+  "title": "Process 1",
+  "description": "Process variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/process/process-1/process-1.tsx",
+      "content": "// assets\r\nimport { DiamondIcon, ScanIcon, WifiIcon, ZapIcon } from \"lucide-react\";\r\n\r\nconst steps = [\r\n  {\r\n    id: 1,\r\n    icon: DiamondIcon,\r\n    iconBg: \"bg-teal-300\",\r\n    title: \"User Journey Map\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    id: 2,\r\n    icon: ZapIcon,\r\n    iconBg: \"bg-orange-300\",\r\n    title: \"Digital Wireframe\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    id: 3,\r\n    icon: WifiIcon,\r\n    iconBg: \"bg-sky-300\",\r\n    title: \"Clickable Prototype\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    id: 4,\r\n    icon: ScanIcon,\r\n    iconBg: \"bg-violet-300\",\r\n    title: \"Visual Design\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | PROCESS 1 | ------------------------------  //\r\n\r\nexport default function Process1() {\r\n  return (\r\n    <section className=\"py-20\">\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-14 flex flex-col gap-3\">\r\n          <p className=\"text-yellow-500 text-lg uppercase tracking-widest\">\r\n            Process\r\n          </p>\r\n          <h2 className=\"text-foreground\">How We Work</h2>\r\n          <p className=\"text-muted-foreground max-w-md mx-auto\">\r\n            This is a big one and i consider it one of the most important things\r\n            for a designer to get right.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Steps */}\r\n        {/* Icons row with connectors */}\r\n        <div className=\"hidden lg:flex items-center mb-6\">\r\n          {steps.map((step) => {\r\n            const Icon = step.icon;\r\n            return (\r\n              <div\r\n                key={step.id}\r\n                className=\"flex items-center flex-1 last:flex-none\"\r\n              >\r\n                <div\r\n                  className={`${step.iconBg} rounded-2xl p-4 inline-flex shrink-0`}\r\n                >\r\n                  <Icon className=\"size-7 text-white\" strokeWidth={1.5} />\r\n                </div>\r\n              </div>\r\n            );\r\n          })}\r\n        </div>\r\n\r\n        {/* Text row below icons */}\r\n        <div className=\"grid grid-cols-12 gap-6\">\r\n          {steps.map((step) => {\r\n            const Icon = step.icon;\r\n            return (\r\n              <div\r\n                key={step.id}\r\n                className=\"col-span-12 sm:col-span-6 lg:col-span-3 flex flex-col gap-4\"\r\n              >\r\n                {/* Icon visible only on mobile/tablet */}\r\n                <div\r\n                  className={`${step.iconBg} rounded-2xl p-4 inline-flex shrink-0 lg:hidden`}\r\n                >\r\n                  <Icon className=\"size-15 text-white\" strokeWidth={1.5} />\r\n                </div>\r\n                <div className=\"flex flex-col gap-2\">\r\n                  <h5 className=\"text-foreground font-bold\">\r\n                    {step.id}. {step.title}\r\n                  </h5>\r\n                  <p className=\"text-muted-foreground text-md\">\r\n                    {step.description}\r\n                  </p>\r\n                </div>\r\n              </div>\r\n            );\r\n          })}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/process/process-1/process-1.tsx"
+    }
+  ],
+  "categories": [
+    "process"
+  ],
+  "type": "registry:block"
+}

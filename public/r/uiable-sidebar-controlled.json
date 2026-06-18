@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sidebar-controlled",
+  "title": "Controlled Sidebar",
+  "description": "Sidebar Controlled variant for sidebar.",
+  "dependencies": [],
+  "registryDependencies": [
+    "sidebar"
+  ],
+  "files": [
+    {
+      "path": "components/uiable/sidebar/sidebar-controlled.tsx",
+      "content": "\"use client\"\r\n\r\nimport * as React from \"react\"\r\nimport { Button } from \"@/components/ui/button\"\r\nimport {\r\n  Sidebar,\r\n  SidebarContent,\r\n  SidebarGroup,\r\n  SidebarGroupContent,\r\n  SidebarGroupLabel,\r\n  SidebarInset,\r\n  SidebarMenu,\r\n  SidebarMenuButton,\r\n  SidebarMenuItem,\r\n  SidebarProvider,\r\n} from \"@/components/ui/sidebar\"\r\nimport {\r\n  FrameIcon,\r\n  LifeBuoyIcon,\r\n  MapIcon,\r\n  PanelLeftCloseIcon,\r\n  PanelLeftOpenIcon,\r\n  PieChartIcon,\r\n  SendIcon,\r\n} from \"lucide-react\"\r\n\r\nconst projects = [\r\n  {\r\n    name: \"Design Engineering\",\r\n    url: \"#\",\r\n    icon: FrameIcon,\r\n  },\r\n  {\r\n    name: \"Sales & Marketing\",\r\n    url: \"#\",\r\n    icon: PieChartIcon,\r\n  },\r\n  {\r\n    name: \"Travel\",\r\n    url: \"#\",\r\n    icon: MapIcon,\r\n  },\r\n  {\r\n    name: \"Support\",\r\n    url: \"#\",\r\n    icon: LifeBuoyIcon,\r\n  },\r\n  {\r\n    name: \"Feedback\",\r\n    url: \"#\",\r\n    icon: SendIcon,\r\n  },\r\n]\r\n\r\nexport default function AppSidebar() {\r\n  const [open, setOpen] = React.useState(true)\r\n\r\n  return (\r\n    <SidebarProvider open={open} onOpenChange={setOpen} className=\"relative min-h-[450px]\">\r\n      <Sidebar className=\"absolute h-[450px]\">\r\n        <SidebarContent >\r\n          <SidebarGroup>\r\n            <SidebarGroupLabel className=\"py-3\">Projects</SidebarGroupLabel>\r\n            <SidebarGroupContent>\r\n              <SidebarMenu>\r\n                {projects.map((project) => (\r\n                  <SidebarMenuItem key={project.name}>\r\n                    <SidebarMenuButton render={<a href={project.url} />}>\r\n                      <project.icon />\r\n                      <span>{project.name}</span>\r\n                    </SidebarMenuButton>\r\n                  </SidebarMenuItem>\r\n                ))}\r\n              </SidebarMenu>\r\n            </SidebarGroupContent>\r\n          </SidebarGroup>\r\n        </SidebarContent>\r\n      </Sidebar>\r\n      <SidebarInset>\r\n        <header className=\"flex h-12 items-center justify-between px-4\">\r\n          <Button\r\n            onClick={() => setOpen((open) => !open)}\r\n            size=\"sm\"\r\n            variant=\"ghost\"\r\n            className=\"gap-2\"\r\n          >\r\n            {open ? <PanelLeftCloseIcon /> : <PanelLeftOpenIcon />}\r\n            <span>{open ? \"Close\" : \"Open\"} Sidebar</span>\r\n          </Button>\r\n        </header>\r\n      </SidebarInset>\r\n    </SidebarProvider>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/uiable/sidebar/sidebar-controlled.tsx"
+    }
+  ],
+  "categories": [
+    "sidebar"
+  ],
+  "type": "registry:component"
+}

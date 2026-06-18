@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-with-buttons",
+  "title": "With Buttons Input Group",
+  "description": "Input Group With Buttons variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-with-buttons.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\n\r\n// assets\r\nimport { CopyIcon, TrashIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - WITH BUTTONS | ------------------------------  //\r\n\r\nexport function InputGroupWithButtons() {\r\n  return (\r\n    <FieldGroup>\r\n      <Field>\r\n        <FieldLabel htmlFor=\"input-button-13\">Button</FieldLabel>\r\n        <InputGroup>\r\n          <InputGroupInput id=\"input-button-13\" />\r\n          <InputGroupAddon>\r\n            <InputGroupButton>Default</InputGroupButton>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <InputGroup>\r\n          <InputGroupInput id=\"input-button-14\" />\r\n          <InputGroupAddon>\r\n            <InputGroupButton variant=\"outline\">Outline</InputGroupButton>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <InputGroup>\r\n          <InputGroupInput id=\"input-button-15\" />\r\n          <InputGroupAddon>\r\n            <InputGroupButton variant=\"secondary\">Secondary</InputGroupButton>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <InputGroup>\r\n          <InputGroupInput id=\"input-button-16\" />\r\n          <InputGroupAddon align=\"inline-end\">\r\n            <InputGroupButton variant=\"secondary\">Button</InputGroupButton>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <InputGroup>\r\n          <InputGroupInput id=\"input-button-17\" />\r\n          <InputGroupAddon align=\"inline-end\">\r\n            <InputGroupButton size=\"icon-xs\">\r\n              <CopyIcon />\r\n            </InputGroupButton>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <InputGroup>\r\n          <InputGroupInput id=\"input-button-18\" />\r\n          <InputGroupAddon align=\"inline-end\">\r\n            <InputGroupButton variant=\"secondary\" size=\"icon-xs\">\r\n              <TrashIcon />\r\n            </InputGroupButton>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n      </Field>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-with-buttons.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

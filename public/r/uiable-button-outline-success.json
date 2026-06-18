@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-outline-success",
+  "title": "Outline Success Button",
+  "description": "Button Outline Success variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-outline-success.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON OUTLINE SUCCESS | ------------------------------  //\n\nexport default function ButtonOutlineSuccess() {\n  return (\n    <Button className=\"border-green-500 bg-transparent text-green-500 hover:bg-green-500 hover:text-white\">\n      Success\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-outline-success.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

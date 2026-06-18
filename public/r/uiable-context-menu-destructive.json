@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-context-menu-destructive",
+  "title": "Destructive Context Menu",
+  "description": "Context Menu Destructive variant for context-menu.",
+  "registryDependencies": [
+    "context-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/context-menu/context-menu-destructive.tsx",
+      "content": "// shadcn\nimport {\n  ContextMenu,\n  ContextMenuContent,\n  ContextMenuGroup,\n  ContextMenuItem,\n  ContextMenuSeparator,\n  ContextMenuTrigger\n} from \"@/components/ui/context-menu\";\n\n// assets\nimport { PencilIcon, ShareIcon, TrashIcon } from \"lucide-react\";\n\n//  ------------------------------ | CONTEXT MENU - DESTRUCTIVE | ------------------------------  //\n\nexport function ContextMenuDestructive() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className=\"flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base\">\n        <span className=\"hidden pointer-fine:inline-block\">\n          Right click here\n        </span>\n        <span className=\"hidden pointer-coarse:inline-block\">\n          Long press here\n        </span>\n      </ContextMenuTrigger>\n      <ContextMenuContent>\n        <ContextMenuGroup>\n          <ContextMenuItem>\n            <PencilIcon />\n            Edit\n          </ContextMenuItem>\n          <ContextMenuItem>\n            <ShareIcon />\n            Share\n          </ContextMenuItem>\n        </ContextMenuGroup>\n        <ContextMenuSeparator />\n        <ContextMenuGroup>\n          <ContextMenuItem variant=\"destructive\">\n            <TrashIcon />\n            Delete\n          </ContextMenuItem>\n        </ContextMenuGroup>\n      </ContextMenuContent>\n    </ContextMenu>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/context-menu/context-menu-destructive.tsx"
+    }
+  ],
+  "categories": [
+    "context-menu"
+  ],
+  "type": "registry:ui"
+}

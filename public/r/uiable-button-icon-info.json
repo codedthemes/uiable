@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-icon-info",
+  "title": "Info Icon Button",
+  "description": "Button Icon Info variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-icon-info.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { Info } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON ICON INFO | ------------------------------  //\n\nexport default function ButtonIconInfo() {\n  return (\n    <Button className=\"gap-2 bg-cyan-500 text-white hover:bg-cyan-600\">\n      <Info className=\"size-5\" /> Info\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-icon-info.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

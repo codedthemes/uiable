@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-dialog-destructive",
+  "title": "Destructive Alert Dialog",
+  "description": "Alert Dialog Destructive variant for alert-dialog.",
+  "registryDependencies": [
+    "alert-dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert-dialog/alert-dialog-destructive.tsx",
+      "content": "// shadcn\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogMedia,\n  AlertDialogTitle,\n  AlertDialogTrigger\n} from \"@/components/ui/alert-dialog\";\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { Trash } from \"iconsax-reactjs\";\n\n//  ------------------------------ | ALERT DIALOG - DESTRUCTIVE | ------------------------------  //\n\nexport function AlertDialogDestructive() {\n  return (\n    <AlertDialog>\n      <AlertDialogTrigger\n        render={<Button variant=\"destructive\">Delete Chat</Button>}\n      />\n      <AlertDialogContent size=\"sm\">\n        <AlertDialogHeader>\n          <AlertDialogMedia className=\"bg-red-500/10 text-red-500 dark:bg-red-500/20 dark:text-red-500\">\n            <Trash />\n          </AlertDialogMedia>\n          <AlertDialogTitle>Delete chat?</AlertDialogTitle>\n          <AlertDialogDescription>\n            This will permanently delete this chat conversation. View{\" \"}\n            <a href=\"#\">Settings</a> delete any memories saved during this chat.\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n        <AlertDialogFooter>\n          <AlertDialogCancel variant=\"outline\">Cancel</AlertDialogCancel>\n          <AlertDialogAction variant=\"destructive\">Delete</AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert-dialog/alert-dialog-destructive.tsx"
+    }
+  ],
+  "categories": [
+    "alert-dialog"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dropdown-menu-radio-group",
+  "title": "Radio Group Dropdown Menu",
+  "description": "Dropdown Menu Radio Group variant for dropdown-menu.",
+  "registryDependencies": [
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-radio-group.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuGroup,\r\n  DropdownMenuLabel,\r\n  DropdownMenuRadioGroup,\r\n  DropdownMenuRadioItem,\r\n  DropdownMenuTrigger\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n//  ------------------------------ | DROPDOWN MENU - RADIO GROUP | ------------------------------  //\r\n\r\nexport function DropdownMenuRadioGroupDemo() {\r\n  const [position, setPosition] = useState(\"bottom\");\r\n\r\n  return (\r\n    <DropdownMenu>\r\n      <DropdownMenuTrigger render={<Button variant=\"outline\" />}>\r\n        Open\r\n      </DropdownMenuTrigger>\r\n      <DropdownMenuContent className=\"w-32\">\r\n        <DropdownMenuGroup>\r\n          <DropdownMenuLabel>Panel Position</DropdownMenuLabel>\r\n          <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>\r\n            <DropdownMenuRadioItem value=\"top\">Top</DropdownMenuRadioItem>\r\n            <DropdownMenuRadioItem value=\"bottom\">Bottom</DropdownMenuRadioItem>\r\n            <DropdownMenuRadioItem value=\"right\">Right</DropdownMenuRadioItem>\r\n          </DropdownMenuRadioGroup>\r\n        </DropdownMenuGroup>\r\n      </DropdownMenuContent>\r\n    </DropdownMenu>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-radio-group.tsx"
+    }
+  ],
+  "categories": [
+    "dropdown-menu"
+  ],
+  "type": "registry:ui"
+}

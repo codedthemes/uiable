@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-faq-10",
+  "title": "FAQ 10",
+  "description": "FAQ variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/faq/faq-10/faq-10.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Accordion,\r\n  AccordionContent,\r\n  AccordionItem,\r\n  AccordionTrigger\r\n} from \"@/components/ui/accordion\";\r\n\r\n// constants\r\nconst faqs = [\r\n  {\r\n    question: \"Why Must I Make Payment Immediately At Checkout?\",\r\n    answer:\r\n      \"As an added value, every time you rate the products you earn points which go straight to your account. Due to the limited quantity, each member's account is only entitled to 1 unique free sample. You can check out up to 4 free samples in each checkout.\"\r\n  },\r\n  {\r\n    question: \"Why Must I Make Payment Immediately At Checkout?\",\r\n    answer:\r\n      \"As an added value, every time you rate the products you earn points which go straight to your account. Due to the limited quantity, each member's account is only entitled to 1 unique free sample. You can check out up to 4 free samples in each checkout.\"\r\n  },\r\n  {\r\n    question: \"How Can I Track My Orders & Payment?\",\r\n    answer:\r\n      \"As an added value, every time you rate the products you earn points which go straight to your account. Due to the limited quantity, each member's account is only entitled to 1 unique free sample. You can check out up to 4 free samples in each checkout.\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | FAQ - 10 | ------------------------------  //\r\n\r\nexport default function Faq10() {\r\n  return (\r\n    <section className=\"py-20 md:py-28\">\r\n      <div className=\"container mx-auto px-4\">\r\n        {/* Header */}\r\n        <div className=\"mx-auto mb-16 max-w-lg text-center\">\r\n          <p className=\"mb-4 text-lg font-medium uppercase tracking-widest text-yellow-500\">\r\n            F.A.Q\r\n          </p>\r\n          <h2 className=\"mb-6\">Popular FAQ's</h2>\r\n          <p className=\"text-muted-foreground text-lg\">\r\n            This is a big one and i consider it one of the most important things\r\n            for a designer to get right.\r\n          </p>\r\n        </div>\r\n\r\n        {/* FAQ Accordion */}\r\n        <div className=\"grid grid-cols-12\">\r\n          <div className=\"col-span-12 md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6\">\r\n            <Accordion className=\"space-y-2\" defaultValue={[\"item-0\"]}>\r\n              {faqs.map((item, index) => (\r\n                <AccordionItem\r\n                  key={index}\r\n                  value={`item-${index}`}\r\n                  className=\"border-none\"\r\n                >\r\n                  <AccordionTrigger>\r\n                    <span className=\"text-left font-semibold text-lg\">\r\n                      {item.question}\r\n                    </span>\r\n                  </AccordionTrigger>\r\n                  <div className=\"h-0.5 w-full bg-primary\" />\r\n                  <AccordionContent className=\"text-muted-foreground leading-relaxed\">\r\n                    <div className=\"py-6\">{item.answer}</div>\r\n                  </AccordionContent>\r\n                </AccordionItem>\r\n              ))}\r\n            </Accordion>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/faq/faq-10/faq-10.tsx"
+    }
+  ],
+  "categories": [
+    "faq"
+  ],
+  "type": "registry:block"
+}

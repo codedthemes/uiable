@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-basic",
+  "title": "Basic Card",
+  "description": "Card Basic variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-basic.tsx",
+      "content": "// shadcn\nimport { Card, CardContent } from \"@/components/ui/card\";\n\n//  ------------------------------ | CARD - BASIC | ------------------------------  //\n\nexport default function CardBasic() {\n  return (\n    <Card>\n      <CardContent>This is some text within a card body.</CardContent>\n    </Card>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-basic.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

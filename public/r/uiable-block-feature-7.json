@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-feature-7",
+  "title": "Feature 7",
+  "description": "Feature variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/feature/feature-7/feature-7.tsx",
+      "content": "// assets\r\nimport { Layers, MonitorSmartphone, Puzzle } from \"lucide-react\";\r\n\r\n// constants\r\nconst featureData = [\r\n  {\r\n    title: \"Responsive\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    icon: MonitorSmartphone,\r\n    iconColor: \"text-blue-500\"\r\n  },\r\n  {\r\n    title: \"Creative Design\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    icon: Puzzle,\r\n    iconColor: \"text-yellow-500\"\r\n  },\r\n  {\r\n    title: \"Quick Result\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    icon: Layers,\r\n    iconColor: \"text-green-500\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | FEATURE - 7 | ------------------------------  //\r\n\r\nexport default function Feature7() {\r\n  return (\r\n    <section className=\"py-20 md:py-28\">\r\n      <div className=\"container mx-auto px-4\">\r\n        {/* Header Section */}\r\n        <div className=\"mx-auto max-w-2xl text-center mb-16 lg:mb-24\">\r\n          <h2 className=\"mb-6\">Provided Features</h2>\r\n          <p className=\"text-muted-foreground text-lg\">\r\n            At half-past eight the door opened, the policeman appeared and\r\n            requesting them to follow him, led way to an adjoining hall.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Features Grid */}\r\n        <div className=\"grid grid-cols-12 gap-6\">\r\n          {featureData.map((item, index) => (\r\n            <div\r\n              key={index}\r\n              className=\"col-span-12 md:col-span-4 flex flex-col items-center text-center gap-6\"\r\n            >\r\n              <div className={`mb-2 ${item.iconColor}`}>\r\n                <item.icon size={40} strokeWidth={1.5} />\r\n              </div>\r\n              <h5 className=\"mb-2\">{item.title}</h5>\r\n              <p className=\"text-muted-foreground max-w-xs\">\r\n                {item.description}\r\n              </p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/feature/feature-7/feature-7.tsx"
+    }
+  ],
+  "categories": [
+    "feature"
+  ],
+  "type": "registry:block"
+}

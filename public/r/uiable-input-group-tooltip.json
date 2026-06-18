@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-tooltip",
+  "title": "Tooltip Input Group",
+  "description": "Input Group Tooltip variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-tooltip.tsx",
+      "content": "// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger\r\n} from \"@/components/ui/tooltip\";\r\n\r\n// assets\r\nimport { HelpCircle, InfoIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - TOOLTIP | ------------------------------  //\r\n\r\nexport default function InputGroupTooltip() {\r\n  return (\r\n    <div className=\"grid w-full max-w-sm gap-4\">\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Enter password\" type=\"password\" />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <Tooltip>\r\n            <TooltipTrigger\r\n              render={\r\n                <InputGroupButton\r\n                  variant=\"ghost\"\r\n                  aria-label=\"Info\"\r\n                  size=\"icon-xs\"\r\n                />\r\n              }\r\n            >\r\n              <InfoIcon />\r\n            </TooltipTrigger>\r\n            <TooltipContent>\r\n              <p>Password must be at least 8 characters</p>\r\n            </TooltipContent>\r\n          </Tooltip>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Your email address\" />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <Tooltip>\r\n            <TooltipTrigger\r\n              render={\r\n                <InputGroupButton\r\n                  variant=\"ghost\"\r\n                  aria-label=\"Help\"\r\n                  size=\"icon-xs\"\r\n                />\r\n              }\r\n            >\r\n              <HelpCircle />\r\n            </TooltipTrigger>\r\n            <TooltipContent>\r\n              <p>We'll use this to send you notifications</p>\r\n            </TooltipContent>\r\n          </Tooltip>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Enter API key\" />\r\n        <Tooltip>\r\n          <InputGroupAddon>\r\n            <TooltipTrigger\r\n              render={\r\n                <InputGroupButton\r\n                  variant=\"ghost\"\r\n                  aria-label=\"Help\"\r\n                  size=\"icon-xs\"\r\n                />\r\n              }\r\n            >\r\n              <HelpCircle />\r\n            </TooltipTrigger>\r\n          </InputGroupAddon>\r\n          <TooltipContent side=\"left\">\r\n            <p>Click for help with API keys</p>\r\n          </TooltipContent>\r\n        </Tooltip>\r\n      </InputGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-tooltip.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

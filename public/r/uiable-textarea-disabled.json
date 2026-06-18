@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-textarea-disabled",
+  "title": "Disabled Textarea",
+  "description": "Textarea Disabled variant for textarea.",
+  "registryDependencies": [
+    "textarea"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/textarea/textarea-disabled.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Textarea } from \"@/components/ui/textarea\";\r\n\r\n//  ------------------------------ | TEXTAREA - DISABLED | ------------------------------  //\r\n\r\nexport function TextareaDisabled() {\r\n  return (\r\n    <Field data-disabled>\r\n      <FieldLabel htmlFor=\"textarea-disabled\">Message</FieldLabel>\r\n      <Textarea\r\n        id=\"textarea-disabled\"\r\n        placeholder=\"Type your message here.\"\r\n        disabled\r\n      />\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/textarea/textarea-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "textarea"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-select-align-item",
+  "title": "Align Item Select",
+  "description": "Select Align Item variant for select.",
+  "registryDependencies": [
+    "select"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/select/select-align-item.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport {\r\n  Field,\r\n  FieldContent,\r\n  FieldDescription,\r\n  FieldGroup,\r\n  FieldLabel,\r\n} from \"@/components/ui/field\";\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue,\r\n} from \"@/components/ui/select\";\r\nimport { Switch } from \"@/components/ui/switch\";\r\n\r\n// constants\r\nconst items = [\r\n  { label: \"Select a fruit\", value: null },\r\n  { label: \"Apple\", value: \"apple\" },\r\n  { label: \"Banana\", value: \"banana\" },\r\n  { label: \"Blueberry\", value: \"blueberry\" },\r\n  { label: \"Grapes\", value: \"grapes\" },\r\n  { label: \"Pineapple\", value: \"pineapple\" },\r\n];\r\n\r\n//  ------------------------------ | SELECT - ALIGN ITEM | ------------------------------  //\r\n\r\nexport function SelectAlignItem() {\r\n  const [alignItemWithTrigger, setAlignItemWithTrigger] = useState(true);\r\n\r\n  return (\r\n    <FieldGroup className=\"w-full max-w-xs\">\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"align-item\">Align Item</FieldLabel>\r\n          <FieldDescription>\r\n            Toggle to align the item with the trigger.\r\n          </FieldDescription>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"align-item\"\r\n          checked={alignItemWithTrigger}\r\n          onCheckedChange={setAlignItemWithTrigger}\r\n        />\r\n      </Field>\r\n      <Field>\r\n        <Select items={items} defaultValue=\"banana\">\r\n          <SelectTrigger>\r\n            <SelectValue />\r\n          </SelectTrigger>\r\n          <SelectContent alignItemWithTrigger={alignItemWithTrigger}>\r\n            <SelectGroup>\r\n              {items.map((item) => (\r\n                <SelectItem key={item.value} value={item.value}>\r\n                  {item.label}\r\n                </SelectItem>\r\n              ))}\r\n            </SelectGroup>\r\n          </SelectContent>\r\n        </Select>\r\n      </Field>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/select/select-align-item.tsx"
+    }
+  ],
+  "categories": [
+    "select"
+  ],
+  "type": "registry:ui"
+}

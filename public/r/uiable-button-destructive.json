@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-destructive",
+  "title": "Destructive Button",
+  "description": "Button Destructive variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-destructive.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON DESTRUCTIVE | ------------------------------  //\n\nexport default function ButtonDestructive() {\n  return <Button variant=\"destructive\">Destructive</Button>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-destructive.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

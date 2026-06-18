@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-avatar-group-count-icon",
+  "title": "Group Count Icon Avatar",
+  "description": "Avatar Group Count Icon variant for avatar.",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/avatar/avatar-group-count-icon.tsx",
+      "content": "// shadcn\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarGroup,\n  AvatarGroupCount,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\n// assets\nimport { PlusIcon } from \"lucide-react\";\n\n//  ------------------------------ | AVATAR - GROUP COUNT ICON | ------------------------------  //\n\nexport function AvatarGroupCountIconExample() {\n  return (\n    <AvatarGroup>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-1.jpg\"\n          alt=\"@shadcn\"\n        />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-2.jpg\"\n          alt=\"@maxleiter\"\n        />\n        <AvatarFallback>LR</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-3.jpg\"\n          alt=\"@evilrabbit\"\n        />\n        <AvatarFallback>ER</AvatarFallback>\n      </Avatar>\n      <AvatarGroupCount>\n        <PlusIcon />\n      </AvatarGroupCount>\n    </AvatarGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/avatar/avatar-group-count-icon.tsx"
+    }
+  ],
+  "categories": [
+    "avatar"
+  ],
+  "type": "registry:ui"
+}

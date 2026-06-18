@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-portfolio-2",
+  "title": "Portfolio 2",
+  "description": "Portfolio variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/portfolio/portfolio-2/portfolio-2.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | PORTFOLIO 2 | ------------------------------  //\r\n\r\nexport default function Portfolio2() {\r\n  return (\r\n    <section className=\"bg-primary py-20\">\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-14\">\r\n          <p className=\"text-yellow-500 text-xs font-semibold uppercase tracking-widest mb-3\">\r\n            Portfolio\r\n          </p>\r\n          <h2 className=\"text-primary-foreground\">Creating Results</h2>\r\n        </div>\r\n\r\n        {/* Content grid */}\r\n        <div className=\"grid grid-cols-12 gap-8 items-center\">\r\n          {/* Left: text content */}\r\n          <div className=\"col-span-12 md:col-span-5 flex flex-col gap-6\">\r\n            <h3 className=\"text-primary-foreground\">\r\n              Building Brands With Purpose And Passion\r\n            </h3>\r\n            <p className=\"text-primary-foreground/70\">\r\n              Only those who risk going too far can possibly find out how far\r\n              one can go.\r\n            </p>\r\n            <div>\r\n              <Button className=\"bg-yellow-500 text-white hover:bg-yellow-500\">\r\n                View Case Study\r\n              </Button>\r\n            </div>\r\n          </div>\r\n\r\n          <div className=\"col-span-12 md:col-span-7 relative flex items-center justify-center min-h-96\">\r\n            {/* Orange circle backdrop */}\r\n            <div className=\"absolute w-80 h-80 rounded-full bg-yellow-500\" />\r\n            {/* Phones image */}\r\n            <img\r\n              src=\"https://cdn.uiable.com/block/portfolio2.png\"\r\n              alt=\"Portfolio showcase\"\r\n              className=\"relative z-10 w-4/5 h-auto\"\r\n            />\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/portfolio/portfolio-2/portfolio-2.tsx"
+    }
+  ],
+  "categories": [
+    "portfolio"
+  ],
+  "type": "registry:block"
+}

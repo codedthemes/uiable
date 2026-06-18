@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-link",
+  "title": "Link Badge",
+  "description": "Badge Link variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-link.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n// assets\nimport { ArrowUpRightIcon } from \"lucide-react\";\n\n//  ------------------------------ | BADGE - LINK | ------------------------------  //\n\nexport function BadgeAsLink() {\n  return (\n    <Badge render={<a href=\"#link\" />}>\n      Open Link <ArrowUpRightIcon data-icon=\"inline-end\" />\n    </Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-link.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-checkbox-group",
+  "title": "Group Checkbox",
+  "description": "Checkbox Group variant for checkbox.",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/checkbox/checkbox-group.tsx",
+      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldLegend,\n  FieldSet\n} from \"@/components/ui/field\";\n\n//  ------------------------------ | CHECKBOX - GROUP | ------------------------------  //\n\nexport function CheckboxGroup() {\n  return (\n    <FieldSet>\n      <FieldLegend variant=\"label\">\n        Show these items on the desktop:\n      </FieldLegend>\n      <FieldDescription>\n        Select the items you want to show on the desktop.\n      </FieldDescription>\n      <FieldGroup className=\"gap-3\">\n        <Field orientation=\"horizontal\">\n          <Checkbox\n            id=\"finder-pref-9k2-hard-disks-ljj-checkbox\"\n            name=\"finder-pref-9k2-hard-disks-ljj-checkbox\"\n            defaultChecked\n          />\n          <FieldLabel\n            htmlFor=\"finder-pref-9k2-hard-disks-ljj-checkbox\"\n            className=\"font-normal\"\n          >\n            Hard disks\n          </FieldLabel>\n        </Field>\n        <Field orientation=\"horizontal\">\n          <Checkbox\n            id=\"finder-pref-9k2-external-disks-1yg-checkbox\"\n            name=\"finder-pref-9k2-external-disks-1yg-checkbox\"\n            defaultChecked\n          />\n          <FieldLabel\n            htmlFor=\"finder-pref-9k2-external-disks-1yg-checkbox\"\n            className=\"font-normal\"\n          >\n            External disks\n          </FieldLabel>\n        </Field>\n        <Field orientation=\"horizontal\">\n          <Checkbox\n            id=\"finder-pref-9k2-cds-dvds-fzt-checkbox\"\n            name=\"finder-pref-9k2-cds-dvds-fzt-checkbox\"\n          />\n          <FieldLabel\n            htmlFor=\"finder-pref-9k2-cds-dvds-fzt-checkbox\"\n            className=\"font-normal\"\n          >\n            CDs, DVDs, and iPods\n          </FieldLabel>\n        </Field>\n        <Field orientation=\"horizontal\">\n          <Checkbox\n            id=\"finder-pref-9k2-connected-servers-6l2-checkbox\"\n            name=\"finder-pref-9k2-connected-servers-6l2-checkbox\"\n          />\n          <FieldLabel\n            htmlFor=\"finder-pref-9k2-connected-servers-6l2-checkbox\"\n            className=\"font-normal\"\n          >\n            Connected servers\n          </FieldLabel>\n        </Field>\n      </FieldGroup>\n    </FieldSet>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/checkbox/checkbox-group.tsx"
+    }
+  ],
+  "categories": [
+    "checkbox"
+  ],
+  "type": "registry:ui"
+}

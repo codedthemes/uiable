@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-navbar-2",
+  "title": "Navbar 2",
+  "description": "Navbar variant 2.",
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/navbar/navbar-2.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { SidebarProvider, SidebarTrigger } from \"@/components/ui/sidebar\";\r\n\r\n// project\r\nimport NotificationDropdown from \"@/components/uiable/layout/notification-dropdown\";\r\nimport SearchBar from \"@/components/uiable/layout/search-bar\";\r\nimport UserProfile from \"@/components/uiable/layout/user-profile\";\r\n\r\n// assets\r\nimport { Settings } from \"lucide-react\";\r\n\r\n//  ------------------------------ | LAYOUT - DASHBOARD | ------------------------------  //\r\n\r\nexport default function Navbar2() {\r\n  return (\r\n    <SidebarProvider className=\"min-h-fit w-full\">\r\n      <header className=\"sticky top-0 z-40 flex h-16 w-full shrink-0 items-center gap-1 bg-background/80 backdrop-blur-md px-4 sm:px-6\">\r\n        <SidebarTrigger className=\"-ml-1 w-11 h-11 rounded-lg relative flex items-center justify-center mx-1\" />\r\n        <SearchBar />\r\n        <div className=\"flex-1\" />\r\n        <div className=\"flex items-center gap-2 sm:gap-4\">\r\n          <Button\r\n            variant=\"ghost\"\r\n            size=\"icon\"\r\n            className=\"inline-flex items-center justify-center h-9 w-9 rounded-lg border border-transparent text-muted-foreground hover:bg-muted hover:text-primary transition-colors\"\r\n          >\r\n            <Settings className=\"size-5\" />\r\n          </Button>\r\n          <div className=\"h-4 w-px bg-border mx-1\" />\r\n          <NotificationDropdown />\r\n          <div className=\"h-4 w-px bg-border mx-1\" />\r\n          <UserProfile />\r\n        </div>\r\n      </header>\r\n    </SidebarProvider>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@@components/uiable/blocks/navbar/navbar-2.tsx"
+    }
+  ],
+  "categories": [
+    "navbar"
+  ],
+  "type": "registry:block"
+}

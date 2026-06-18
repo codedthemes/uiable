@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-icon-info",
+  "title": "Info Icon Alert",
+  "description": "Alert Icon Info variant for alert.",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-icon-info.tsx",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n// assets\nimport { Info } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - ICON INFO | ------------------------------  //\n\nexport default function AlertIconInfo() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-cyan-500/20 bg-cyan-500/10 text-cyan-700 dark:text-cyan-400\">\n      <Info className=\"h-5 w-5\" />\n      <span>A simple info alert—check it out!</span>\n    </Alert>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-icon-info.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

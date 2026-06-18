@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dialog-no-close-button",
+  "title": "No Close Button Dialog",
+  "description": "Dialog No Close Button variant for dialog.",
+  "registryDependencies": [
+    "dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-no-close-button.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Dialog,\r\n  DialogContent,\r\n  DialogDescription,\r\n  DialogHeader,\r\n  DialogTitle,\r\n  DialogTrigger\r\n} from \"@/components/ui/dialog\";\r\n\r\n//  ------------------------------ | DIALOG - NO CLOSE BUTTON | ------------------------------  //\r\n\r\nexport function DialogNoCloseButton() {\r\n  return (\r\n    <Dialog>\r\n      <DialogTrigger render={<Button />}>No Close Button</DialogTrigger>\r\n      <DialogContent showCloseButton={false}>\r\n        <DialogHeader>\r\n          <DialogTitle>No Close Button</DialogTitle>\r\n          <DialogDescription>\r\n            This dialog doesn't have a close button in the top-right corner.\r\n          </DialogDescription>\r\n        </DialogHeader>\r\n      </DialogContent>\r\n    </Dialog>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-no-close-button.tsx"
+    }
+  ],
+  "categories": [
+    "dialog"
+  ],
+  "type": "registry:ui"
+}
