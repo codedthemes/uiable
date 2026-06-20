@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover",
+  "dependencies": [
+    "@base-ui/react",
+    "react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/popover.tsx",
+      "content": "\"use client\"\r\n\r\nimport * as React from \"react\"\r\nimport { Popover as PopoverPrimitive } from \"@base-ui/react/popover\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction Popover({ ...props }: PopoverPrimitive.Root.Props) {\r\n  return <PopoverPrimitive.Root data-slot=\"popover\" {...props} />\r\n}\r\n\r\nfunction PopoverTrigger({ ...props }: PopoverPrimitive.Trigger.Props) {\r\n  return <PopoverPrimitive.Trigger data-slot=\"popover-trigger\" {...props} />\r\n}\r\n\r\nfunction PopoverContent({\r\n  className,\r\n  align = \"center\",\r\n  alignOffset = 0,\r\n  side = \"bottom\",\r\n  sideOffset = 4,\r\n  ...props\r\n}: PopoverPrimitive.Popup.Props &\r\n  Pick<\r\n    PopoverPrimitive.Positioner.Props,\r\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\r\n  >) {\r\n  return (\r\n    <PopoverPrimitive.Portal>\r\n      <PopoverPrimitive.Positioner\r\n        align={align}\r\n        alignOffset={alignOffset}\r\n        side={side}\r\n        sideOffset={sideOffset}\r\n        className=\"isolate z-50\"\r\n      >\r\n        <PopoverPrimitive.Popup\r\n          data-slot=\"popover-content\"\r\n          className={cn(\r\n            \"bg-popover text-popover-foreground data-open:animate-in data-closed:animate-out data-closed:fade-out-0 data-open:fade-in-0 data-closed:zoom-out-95 data-open:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 ring-foreground/10 data-[side=inline-start]:slide-in-from-right-2 data-[side=inline-end]:slide-in-from-left-2 z-50 flex w-72 origin-(--transform-origin) flex-col gap-2.5 rounded-lg p-4 text-sm shadow-[0_4px_24px_0_rgba(62,57,107,.18)] ring-0 outline-hidden duration-100\",\r\n            className\r\n          )}\r\n          {...props}\r\n        />\r\n      </PopoverPrimitive.Positioner>\r\n    </PopoverPrimitive.Portal>\r\n  )\r\n}\r\n\r\nfunction PopoverHeader({ className, ...props }: React.ComponentProps<\"div\">) {\r\n  return (\r\n    <div\r\n      data-slot=\"popover-header\"\r\n      className={cn(\"flex flex-col gap-0.5 text-sm\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction PopoverTitle({ className, ...props }: PopoverPrimitive.Title.Props) {\r\n  return (\r\n    <PopoverPrimitive.Title\r\n      data-slot=\"popover-title\"\r\n      className={cn(\"font-medium\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction PopoverDescription({\r\n  className,\r\n  ...props\r\n}: PopoverPrimitive.Description.Props) {\r\n  return (\r\n    <PopoverPrimitive.Description\r\n      data-slot=\"popover-description\"\r\n      className={cn(\"text-muted-foreground\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport {\r\n  Popover,\r\n  PopoverContent,\r\n  PopoverDescription,\r\n  PopoverHeader,\r\n  PopoverTitle,\r\n  PopoverTrigger,\r\n}\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/popover.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

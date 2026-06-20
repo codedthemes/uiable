@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-outline-primary",
+  "title": "Primary Outline Badge",
+  "description": "Badge Outline Primary variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-outline-primary.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - OUTLINE PRIMARY | ------------------------------  //\n\nexport default function BadgeOutlinePrimary() {\n  return (\n    <Badge className=\"border-primary text-primary bg-transparent\">\n      Primary\n    </Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-outline-primary.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

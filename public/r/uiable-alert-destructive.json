@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-destructive",
+  "title": "Destructive Alert",
+  "description": "Alert Destructive variant for alert.",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-destructive.tsx",
+      "content": "// shadcn\nimport { Alert, AlertDescription, AlertTitle } from \"@/components/ui/alert\";\n\n// assets\nimport { AlertCircleIcon } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - DESTRUCTIVE | ------------------------------  //\n\nexport default function AlertDestructive() {\n  return (\n    <Alert variant=\"destructive\" className=\"max-w-md\">\n      <AlertCircleIcon />\n      <AlertTitle>Payment failed</AlertTitle>\n      <AlertDescription>\n        Your payment could not be processed. Please check your payment method\n        and try again.\n      </AlertDescription>\n    </Alert>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-destructive.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

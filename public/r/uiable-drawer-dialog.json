@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-drawer-dialog",
+  "title": "Dialog Drawer",
+  "description": "Drawer Dialog variant for drawer.",
+  "registryDependencies": [
+    "drawer"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/drawer/drawer-dialog.tsx",
+      "content": "\"use client\";\r\n\r\nimport { ComponentProps, useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Dialog,\r\n  DialogContent,\r\n  DialogDescription,\r\n  DialogHeader,\r\n  DialogTitle,\r\n  DialogTrigger\r\n} from \"@/components/ui/dialog\";\r\nimport {\r\n  Drawer,\r\n  DrawerClose,\r\n  DrawerContent,\r\n  DrawerDescription,\r\n  DrawerFooter,\r\n  DrawerHeader,\r\n  DrawerTitle,\r\n  DrawerTrigger\r\n} from \"@/components/ui/drawer\";\r\nimport { Input } from \"@/components/ui/input\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\n// project\r\nimport { useMediaQuery } from \"@/hooks/use-media-query\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\n//  ------------------------------ | DRAWER - DIALOG | ------------------------------  //\r\n\r\nexport function DrawerDialogDemo() {\r\n  const [open, setOpen] = useState(false);\r\n  const isDesktop = useMediaQuery(\"(min-width: 768px)\");\r\n\r\n  if (isDesktop) {\r\n    return (\r\n      <Dialog open={open} onOpenChange={setOpen}>\r\n        <DialogTrigger render={<Button />}>Edit Profile</DialogTrigger>\r\n        <DialogContent className=\"sm:max-w-[425px]\">\r\n          <DialogHeader>\r\n            <DialogTitle>Edit profile</DialogTitle>\r\n            <DialogDescription>\r\n              Make changes to your profile here. Click save when you're done.\r\n            </DialogDescription>\r\n          </DialogHeader>\r\n          <ProfileForm />\r\n        </DialogContent>\r\n      </Dialog>\r\n    );\r\n  }\r\n\r\n  return (\r\n    <Drawer open={open} onOpenChange={setOpen}>\r\n      <DrawerTrigger asChild>\r\n        <Button variant=\"outline\">Edit Profile</Button>\r\n      </DrawerTrigger>\r\n      <DrawerContent>\r\n        <DrawerHeader className=\"text-left\">\r\n          <DrawerTitle>Edit profile</DrawerTitle>\r\n          <DrawerDescription>\r\n            Make changes to your profile here. Click save when you're done.\r\n          </DrawerDescription>\r\n        </DrawerHeader>\r\n        <ProfileForm className=\"px-4\" />\r\n        <DrawerFooter className=\"pt-2\">\r\n          <DrawerClose>\r\n            <Button variant=\"outline\">Cancel</Button>\r\n          </DrawerClose>\r\n        </DrawerFooter>\r\n      </DrawerContent>\r\n    </Drawer>\r\n  );\r\n}\r\n\r\nfunction ProfileForm({ className }: ComponentProps<\"form\">) {\r\n  return (\r\n    <form className={cn(\"grid items-start gap-6\", className)}>\r\n      <div className=\"grid gap-3\">\r\n        <Label htmlFor=\"email\">Email</Label>\r\n        <Input type=\"email\" id=\"email\" defaultValue=\"shadcn@example.com\" />\r\n      </div>\r\n      <div className=\"grid gap-3\">\r\n        <Label htmlFor=\"username\">Username</Label>\r\n        <Input id=\"username\" defaultValue=\"@shadcn\" />\r\n      </div>\r\n      <Button type=\"submit\">Save changes</Button>\r\n    </form>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/drawer/drawer-dialog.tsx"
+    }
+  ],
+  "categories": [
+    "drawer"
+  ],
+  "type": "registry:ui"
+}

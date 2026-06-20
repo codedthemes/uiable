@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "content": "\"use client\"\r\n\r\nimport { Tooltip as TooltipPrimitive } from \"@base-ui/react/tooltip\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction TooltipProvider({\r\n  delay = 0,\r\n  ...props\r\n}: TooltipPrimitive.Provider.Props) {\r\n  return (\r\n    <TooltipPrimitive.Provider\r\n      data-slot=\"tooltip-provider\"\r\n      delay={delay}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction Tooltip({ ...props }: TooltipPrimitive.Root.Props) {\r\n  return <TooltipPrimitive.Root data-slot=\"tooltip\" {...props} />\r\n}\r\n\r\nfunction TooltipTrigger({ ...props }: TooltipPrimitive.Trigger.Props) {\r\n  return <TooltipPrimitive.Trigger data-slot=\"tooltip-trigger\" {...props} />\r\n}\r\n\r\nfunction TooltipContent({\r\n  className,\r\n  side = \"top\",\r\n  sideOffset = 4,\r\n  align = \"center\",\r\n  alignOffset = 0,\r\n  children,\r\n  ...props\r\n}: TooltipPrimitive.Popup.Props &\r\n  Pick<\r\n    TooltipPrimitive.Positioner.Props,\r\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\r\n  >) {\r\n  return (\r\n    <TooltipPrimitive.Portal>\r\n      <TooltipPrimitive.Positioner\r\n        align={align}\r\n        alignOffset={alignOffset}\r\n        side={side}\r\n        sideOffset={sideOffset}\r\n        className=\"isolate z-50\"\r\n      >\r\n        <TooltipPrimitive.Popup\r\n          data-slot=\"tooltip-content\"\r\n          className={cn(\r\n            \"data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-[state=delayed-open]:animate-in data-[state=delayed-open]:fade-in-0 data-[state=delayed-open]:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[side=inline-start]:slide-in-from-right-2 data-[side=inline-end]:slide-in-from-left-2 bg-foreground text-background z-50 w-fit max-w-xs origin-(--transform-origin) rounded-md px-4 py-2 text-xs shadow-lg\",\r\n            className\r\n          )}\r\n          {...props}\r\n        >\r\n          {children}\r\n          <TooltipPrimitive.Arrow className=\"bg-foreground fill-foreground z-50 size-3 translate-y-[calc(-50%-2px)] rotate-45 rounded-[2px] data-[side=bottom]:top-1 data-[side=inline-end]:top-1/2! data-[side=inline-end]:-left-1 data-[side=inline-end]:-translate-y-1/2 data-[side=inline-start]:top-1/2! data-[side=inline-start]:-right-1 data-[side=inline-start]:-translate-y-1/2 data-[side=left]:top-1/2! data-[side=left]:-right-1 data-[side=left]:-translate-y-1/2 data-[side=right]:top-1/2! data-[side=right]:-left-1 data-[side=right]:-translate-y-1/2 data-[side=top]:-bottom-3 shadow-lg\" />\r\n        </TooltipPrimitive.Popup>\r\n      </TooltipPrimitive.Positioner>\r\n    </TooltipPrimitive.Portal>\r\n  )\r\n}\r\n\r\nexport { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider }\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/tooltip.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

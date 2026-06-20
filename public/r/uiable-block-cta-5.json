@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-cta-5",
+  "title": "Call To Action 5",
+  "description": "Call To Action variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/cta/cta-5/cta-5.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | CTA 5 | ------------------------------  //\r\n\r\nexport default function cta5() {\r\n  return (\r\n    <div className=\"py-24 sm:py-32 relative overflow-hidden\">\r\n      <div className=\"max-w-150 mx-auto absolute inset-0 z-10\">\r\n        <div className=\"auth-bg absolute inset-0\">\r\n          <span className=\"absolute top-12 -right-20 w-62.5 h-62.5 block rounded-full bg-linear-to-r from-cyan-500 to-blue-500\"></span>\r\n          <span className=\"absolute top-37.5 -right-37.5 w-8 h-8 block rounded-full bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 \"></span>\r\n          <span className=\"absolute -left-37.5 bottom-37.5 w-8 h-8 block rounded-full bg-linear-to-r from-cyan-500 to-blue-500\"></span>\r\n          <span className=\"absolute -left-20 bottom-10 w-62.5 h-62.5 block rounded-full bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500\"></span>\r\n        </div>\r\n      </div>\r\n      <div className=\"absolute inset-0 bg-card/85 z-20 backdrop-blur-2xl\"></div>\r\n      <div className=\"container mx-auto px-6 lg:px-8 relative z-30\">\r\n        <div className=\"max-w-150 mx-auto relative\">\r\n          <div className=\"max-w-150 mx-auto bg-card rounded-lg shadow-[0_0_40px_-8px_#4680ff38] p-5 sm:p-14\">\r\n            <div className=\"text-center flex flex-col items-center gap-4 sm:gap-8\">\r\n              <div className=\"text-center flex flex-col items-center gap-2 sm:gap-5\">\r\n                <h2 className=\"text-lg sm:text-3xl font-medium text-slate-800 dark:text-slate-100\">\r\n                  Free Trial For 7 Days\r\n                </h2>\r\n                <p className=\"max-w-100 text-slate-600 dark:text-slate-400\">\r\n                  Experience everything with our 7-day free trial, completely\r\n                  risk-free and easy to start.\r\n                </p>\r\n              </div>\r\n              <div className=\"flex flex-col gap-4\">\r\n                <Input placeholder=\"Enter your mail\" />\r\n                <div className=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\r\n                  <Input placeholder=\"First name\" />\r\n                  <Input placeholder=\"Last name\" />\r\n                </div>\r\n              </div>\r\n              <div className=\"flex items-center justify-center gap-4\">\r\n                <Button\r\n                  size=\"lg\"\r\n                  className=\"rounded-full shadow-lg shadow-blue-500/50 hover:shadow-none dark:shadow-none transition-all\"\r\n                >\r\n                  Get Started\r\n                </Button>\r\n                <Button size=\"lg\" variant=\"secondary\" className=\"rounded-full\">\r\n                  Read More\r\n                </Button>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/cta/cta-5/cta-5.tsx"
+    }
+  ],
+  "categories": [
+    "cta"
+  ],
+  "type": "registry:block"
+}

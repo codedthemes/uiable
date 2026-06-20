@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dropdown-menu-radio-icons",
+  "title": "Radio Icons Dropdown Menu",
+  "description": "Dropdown Menu Radio Icons variant for dropdown-menu.",
+  "registryDependencies": [
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-radio-icons.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuGroup,\r\n  DropdownMenuLabel,\r\n  DropdownMenuRadioGroup,\r\n  DropdownMenuRadioItem,\r\n  DropdownMenuTrigger\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n// assets\r\nimport { Building2Icon, CreditCardIcon, WalletIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | DROPDOWN MENU - RADIO ICONS | ------------------------------  //\r\n\r\nexport function DropdownMenuRadioIcons() {\r\n  const [paymentMethod, setPaymentMethod] = useState(\"card\");\r\n\r\n  return (\r\n    <DropdownMenu>\r\n      <DropdownMenuTrigger render={<Button variant=\"outline\" />}>\r\n        Payment Method\r\n      </DropdownMenuTrigger>\r\n      <DropdownMenuContent className=\"min-w-56\">\r\n        <DropdownMenuGroup>\r\n          <DropdownMenuLabel>Select Payment Method</DropdownMenuLabel>\r\n          <DropdownMenuRadioGroup\r\n            value={paymentMethod}\r\n            onValueChange={setPaymentMethod}\r\n          >\r\n            <DropdownMenuRadioItem value=\"card\">\r\n              <CreditCardIcon />\r\n              Credit Card\r\n            </DropdownMenuRadioItem>\r\n            <DropdownMenuRadioItem value=\"paypal\">\r\n              <WalletIcon />\r\n              PayPal\r\n            </DropdownMenuRadioItem>\r\n            <DropdownMenuRadioItem value=\"bank\">\r\n              <Building2Icon />\r\n              Bank Transfer\r\n            </DropdownMenuRadioItem>\r\n          </DropdownMenuRadioGroup>\r\n        </DropdownMenuGroup>\r\n      </DropdownMenuContent>\r\n    </DropdownMenu>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-radio-icons.tsx"
+    }
+  ],
+  "categories": [
+    "dropdown-menu"
+  ],
+  "type": "registry:ui"
+}

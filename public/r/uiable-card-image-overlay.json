@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-image-overlay",
+  "title": "Image Overlay Card",
+  "description": "Card Image Overlay variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-image-overlay.tsx",
+      "content": "// shadcn\r\nimport { Card } from \"@/components/ui/card\";\r\n\r\n//  ------------------------------ | CARD - IMAGE OVERLAY | ------------------------------  //\r\n\r\nexport default function CardImageOverlay() {\r\n  return (\r\n    <Card className=\"overflow-hidden relative group h-87\">\r\n      <img\r\n        className=\"w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-110\"\r\n        src=\"https://cdn.uiable.com/component/card-sample.png\"\r\n        alt=\"Card background image\"\r\n      />\r\n      <div className=\"absolute inset-0 p-6 flex flex-col justify-end bg-linear-to-t from-slate-800/90 to-transparent\">\r\n        <h5 className=\" text-white\">Card title</h5>\r\n        <p className=\"mt-4 mb-3 text-white/90 leading-relaxed max-w-[80%]\">\r\n          This is a wider card with supporting text below as a natural lead-in\r\n          to additional content. This content is a little bit longer.\r\n        </p>\r\n        <p className=\"text-xs text-white/70\">Last updated 3 mins ago</p>\r\n      </div>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-image-overlay.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-solid-danger",
+  "title": "Solid Danger Button",
+  "description": "Button Solid Danger variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-solid-danger.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SOLID DANGER | ------------------------------  //\n\nexport default function ButtonSolidDanger() {\n  return (\n    <Button className=\"bg-red-500 text-white hover:bg-red-600\">Danger</Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-solid-danger.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

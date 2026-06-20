@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-light-success",
+  "title": "Light Success Button",
+  "description": "Button Light Success variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-light-success.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON LIGHT SUCCESS | ------------------------------  //\n\nexport default function ButtonLightSuccess() {\n  return (\n    <Button className=\"bg-green-500/10 text-green-500 hover:bg-green-500 hover:text-white\">\n      Success\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-light-success.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

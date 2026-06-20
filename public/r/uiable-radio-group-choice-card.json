@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-radio-group-choice-card",
+  "title": "Choice Card Radio Group",
+  "description": "Radio Group Choice Card variant for radio-group.",
+  "registryDependencies": [
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/radio-group/radio-group-choice-card.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Field,\r\n  FieldContent,\r\n  FieldDescription,\r\n  FieldLabel,\r\n  FieldTitle\r\n} from \"@/components/ui/field\";\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\r\n\r\n//  ------------------------------ | RADIO GROUP - CHOICE CARD | ------------------------------  //\r\n\r\nexport function RadioGroupChoiceCard() {\r\n  return (\r\n    <RadioGroup defaultValue=\"plus\" className=\"max-w-sm\">\r\n      <FieldLabel htmlFor=\"plus-plan\">\r\n        <Field orientation=\"horizontal\">\r\n          <FieldContent>\r\n            <FieldTitle>Plus</FieldTitle>\r\n            <FieldDescription>\r\n              For individuals and small teams.\r\n            </FieldDescription>\r\n          </FieldContent>\r\n          <RadioGroupItem value=\"plus\" id=\"plus-plan\" />\r\n        </Field>\r\n      </FieldLabel>\r\n      <FieldLabel htmlFor=\"pro-plan\">\r\n        <Field orientation=\"horizontal\">\r\n          <FieldContent>\r\n            <FieldTitle>Pro</FieldTitle>\r\n            <FieldDescription>For growing businesses.</FieldDescription>\r\n          </FieldContent>\r\n          <RadioGroupItem value=\"pro\" id=\"pro-plan\" />\r\n        </Field>\r\n      </FieldLabel>\r\n      <FieldLabel htmlFor=\"enterprise-plan\">\r\n        <Field orientation=\"horizontal\">\r\n          <FieldContent>\r\n            <FieldTitle>Enterprise</FieldTitle>\r\n            <FieldDescription>\r\n              For large teams and enterprises.\r\n            </FieldDescription>\r\n          </FieldContent>\r\n          <RadioGroupItem value=\"enterprise\" id=\"enterprise-plan\" />\r\n        </Field>\r\n      </FieldLabel>\r\n    </RadioGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/radio-group/radio-group-choice-card.tsx"
+    }
+  ],
+  "categories": [
+    "radio-group"
+  ],
+  "type": "registry:ui"
+}

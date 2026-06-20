@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-portfolio-1",
+  "title": "Portfolio 1",
+  "description": "Portfolio variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/portfolio/portfolio-1/portfolio-1.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | PORTFOLIO 1 | ------------------------------  //\r\n\r\nexport default function Portfolio1() {\r\n  return (\r\n    <section className=\"py-20\">\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-14\">\r\n          <h5 className=\"text-yellow-500 uppercase tracking-widest mb-3\">\r\n            Portfolio\r\n          </h5>\r\n          <h2 className=\"text-foreground\">Creating Results</h2>\r\n        </div>\r\n\r\n        {/* Content grid */}\r\n        <div className=\"grid grid-cols-12 gap-6 items-center\">\r\n          {/* Left: phone mockups on image background */}\r\n          <div className=\"col-span-12 md:col-span-7 relative flex items-center justify-center min-h-96\">\r\n            <img\r\n              src=\"https://cdn.uiable.com/block/portfolio1.png\"\r\n              alt=\"Portfolio showcase\"\r\n              className=\"w-4/5 h-auto\"\r\n            />\r\n          </div>\r\n\r\n          {/* Right: text content */}\r\n          <div className=\"col-span-12 md:col-span-4 md:col-start-9 flex flex-col gap-6\">\r\n            <h3 className=\"text-foreground\">\r\n              Building Brands With Purpose And Passion\r\n            </h3>\r\n            <p className=\"text-muted-foreground\">\r\n              Only those who risk going too far can possibly find out how far\r\n              one can go.\r\n            </p>\r\n            <div>\r\n              <Button size=\"lg\">View Case Study</Button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/portfolio/portfolio-1/portfolio-1.tsx"
+    }
+  ],
+  "categories": [
+    "portfolio"
+  ],
+  "type": "registry:block"
+}

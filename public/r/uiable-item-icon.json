@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-icon",
+  "title": "Icon Item",
+  "description": "Item Icon variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-icon.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemMedia,\r\n  ItemTitle\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { ShieldSecurity } from \"iconsax-reactjs\";\r\n\r\n//  ------------------------------ | ITEM - ICON | ------------------------------  //\r\n\r\nexport function ItemIcon() {\r\n  return (\r\n    <div className=\"flex w-full max-w-lg flex-col gap-6\">\r\n      <Item variant=\"outline\">\r\n        <ItemMedia variant=\"icon\">\r\n          <ShieldSecurity className=\"size-8 text-yellow-500\" />\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Security Alert</ItemTitle>\r\n          <ItemDescription>\r\n            New login detected from unknown device.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Review</Button>\r\n        </ItemActions>\r\n      </Item>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-icon.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

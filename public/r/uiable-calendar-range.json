@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-calendar-range",
+  "title": "Range Calendar",
+  "description": "Calendar Range variant for calendar.",
+  "registryDependencies": [
+    "calendar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/calendar/calendar-range.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\n\r\n// third party\r\nimport { addDays } from \"date-fns\";\r\nimport { DateRange } from \"react-day-picker\";\r\n\r\n//  ------------------------------ | CALENDAR - RANGE | ------------------------------  //\r\n\r\nexport function CalendarRange() {\r\n  const [dateRange, setDateRange] = useState<DateRange | undefined>({\r\n    from: new Date(new Date().getFullYear(), 0, 12),\r\n    to: addDays(new Date(new Date().getFullYear(), 0, 12), 30)\r\n  });\r\n\r\n  return (\r\n    <Calendar\r\n      mode=\"range\"\r\n      defaultMonth={dateRange?.from}\r\n      selected={dateRange}\r\n      onSelect={setDateRange}\r\n      numberOfMonths={2}\r\n      className=\"rounded-lg border\"\r\n    />\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/calendar/calendar-range.tsx"
+    }
+  ],
+  "categories": [
+    "calendar"
+  ],
+  "type": "registry:ui"
+}

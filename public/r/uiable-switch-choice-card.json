@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-switch-choice-card",
+  "title": "Choice Card Switch",
+  "description": "Switch Choice Card variant for switch.",
+  "registryDependencies": [
+    "switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-choice-card.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Field,\r\n  FieldContent,\r\n  FieldDescription,\r\n  FieldGroup,\r\n  FieldLabel,\r\n  FieldTitle\r\n} from \"@/components/ui/field\";\r\nimport { Switch } from \"@/components/ui/switch\";\r\n\r\n//  ------------------------------ | SWITCH - CHOICE CARD | ------------------------------  //\r\n\r\nexport function SwitchChoiceCard() {\r\n  return (\r\n    <FieldGroup className=\"w-full max-w-sm\">\r\n      <FieldLabel htmlFor=\"switch-share\">\r\n        <Field orientation=\"horizontal\">\r\n          <FieldContent>\r\n            <FieldTitle>Share across devices</FieldTitle>\r\n            <FieldDescription>\r\n              Focus is shared across devices, and turns off when you leave the\r\n              app.\r\n            </FieldDescription>\r\n          </FieldContent>\r\n          <Switch id=\"switch-share\" />\r\n        </Field>\r\n      </FieldLabel>\r\n      <FieldLabel htmlFor=\"switch-notifications\">\r\n        <Field orientation=\"horizontal\">\r\n          <FieldContent>\r\n            <FieldTitle>Enable notifications</FieldTitle>\r\n            <FieldDescription>\r\n              Receive notifications when focus mode is enabled or disabled.\r\n            </FieldDescription>\r\n          </FieldContent>\r\n          <Switch id=\"switch-notifications\" defaultChecked />\r\n        </Field>\r\n      </FieldLabel>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-choice-card.tsx"
+    }
+  ],
+  "categories": [
+    "switch"
+  ],
+  "type": "registry:ui"
+}

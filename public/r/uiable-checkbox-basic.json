@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-checkbox-basic",
+  "title": "Basic Checkbox",
+  "description": "Checkbox Basic variant for checkbox.",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/checkbox/checkbox-basic.tsx",
+      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\n\n//  ------------------------------ | CHECKBOX - BASIC | ------------------------------  //\n\nexport function CheckboxBasic() {\n  return (\n    <FieldGroup className=\"mx-auto w-56\">\n      <Field orientation=\"horizontal\">\n        <Checkbox id=\"terms-checkbox-basic\" name=\"terms-checkbox-basic\" />\n        <FieldLabel htmlFor=\"terms-checkbox-basic\">\n          Accept terms and conditions\n        </FieldLabel>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/checkbox/checkbox-basic.tsx"
+    }
+  ],
+  "categories": [
+    "checkbox"
+  ],
+  "type": "registry:ui"
+}

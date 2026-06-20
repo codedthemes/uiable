@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-context-menu-radio",
+  "title": "Radio Context Menu",
+  "description": "Context Menu Radio variant for context-menu.",
+  "registryDependencies": [
+    "context-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/context-menu/context-menu-radio.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport {\r\n  ContextMenu,\r\n  ContextMenuContent,\r\n  ContextMenuGroup,\r\n  ContextMenuLabel,\r\n  ContextMenuRadioGroup,\r\n  ContextMenuRadioItem,\r\n  ContextMenuSeparator,\r\n  ContextMenuTrigger\r\n} from \"@/components/ui/context-menu\";\r\n\r\n//  ------------------------------ | CONTEXT MENU - RADIO | ------------------------------  //\r\n\r\nexport function ContextMenuRadio() {\r\n  const [user, setUser] = useState(\"pedro\");\r\n  const [theme, setTheme] = useState(\"light\");\r\n\r\n  return (\r\n    <ContextMenu>\r\n      <ContextMenuTrigger className=\"flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base\">\r\n        <span className=\"hidden pointer-fine:inline-block\">\r\n          Right click here\r\n        </span>\r\n        <span className=\"hidden pointer-coarse:inline-block\">\r\n          Long press here\r\n        </span>\r\n      </ContextMenuTrigger>\r\n      <ContextMenuContent>\r\n        <ContextMenuGroup>\r\n          <ContextMenuLabel>People</ContextMenuLabel>\r\n          <ContextMenuRadioGroup value={user} onValueChange={setUser}>\r\n            <ContextMenuRadioItem value=\"pedro\">\r\n              Pedro Duarte\r\n            </ContextMenuRadioItem>\r\n            <ContextMenuRadioItem value=\"colm\">Colm Tuite</ContextMenuRadioItem>\r\n          </ContextMenuRadioGroup>\r\n        </ContextMenuGroup>\r\n        <ContextMenuSeparator />\r\n        <ContextMenuGroup>\r\n          <ContextMenuLabel>Theme</ContextMenuLabel>\r\n          <ContextMenuRadioGroup value={theme} onValueChange={setTheme}>\r\n            <ContextMenuRadioItem value=\"light\">Light</ContextMenuRadioItem>\r\n            <ContextMenuRadioItem value=\"dark\">Dark</ContextMenuRadioItem>\r\n            <ContextMenuRadioItem value=\"system\">System</ContextMenuRadioItem>\r\n          </ContextMenuRadioGroup>\r\n        </ContextMenuGroup>\r\n      </ContextMenuContent>\r\n    </ContextMenu>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/context-menu/context-menu-radio.tsx"
+    }
+  ],
+  "categories": [
+    "context-menu"
+  ],
+  "type": "registry:ui"
+}

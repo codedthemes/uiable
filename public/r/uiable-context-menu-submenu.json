@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-context-menu-submenu",
+  "title": "Submenu Context Menu",
+  "description": "Context Menu Submenu variant for context-menu.",
+  "registryDependencies": [
+    "context-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/context-menu/context-menu-submenu.tsx",
+      "content": "// shadcn\nimport {\n  ContextMenu,\n  ContextMenuContent,\n  ContextMenuGroup,\n  ContextMenuItem,\n  ContextMenuSeparator,\n  ContextMenuShortcut,\n  ContextMenuSub,\n  ContextMenuSubContent,\n  ContextMenuSubTrigger,\n  ContextMenuTrigger\n} from \"@/components/ui/context-menu\";\n\n//  ------------------------------ | CONTEXT MENU - SUBMENU | ------------------------------  //\n\nexport function ContextMenuSubmenu() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className=\"flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base\">\n        <span className=\"hidden pointer-fine:inline-block\">\n          Right click here\n        </span>\n        <span className=\"hidden pointer-coarse:inline-block\">\n          Long press here\n        </span>\n      </ContextMenuTrigger>\n      <ContextMenuContent>\n        <ContextMenuGroup>\n          <ContextMenuItem>\n            Copy\n            <ContextMenuShortcut>⌘C</ContextMenuShortcut>\n          </ContextMenuItem>\n          <ContextMenuItem>\n            Cut\n            <ContextMenuShortcut>⌘X</ContextMenuShortcut>\n          </ContextMenuItem>\n        </ContextMenuGroup>\n        <ContextMenuSub>\n          <ContextMenuSubTrigger>More Tools</ContextMenuSubTrigger>\n          <ContextMenuSubContent>\n            <ContextMenuGroup>\n              <ContextMenuItem>Save Page...</ContextMenuItem>\n              <ContextMenuItem>Create Shortcut...</ContextMenuItem>\n              <ContextMenuItem>Name Window...</ContextMenuItem>\n            </ContextMenuGroup>\n            <ContextMenuSeparator />\n            <ContextMenuGroup>\n              <ContextMenuItem>Developer Tools</ContextMenuItem>\n            </ContextMenuGroup>\n            <ContextMenuSeparator />\n            <ContextMenuGroup>\n              <ContextMenuItem variant=\"destructive\">Delete</ContextMenuItem>\n            </ContextMenuGroup>\n          </ContextMenuSubContent>\n        </ContextMenuSub>\n      </ContextMenuContent>\n    </ContextMenu>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/context-menu/context-menu-submenu.tsx"
+    }
+  ],
+  "categories": [
+    "context-menu"
+  ],
+  "type": "registry:ui"
+}

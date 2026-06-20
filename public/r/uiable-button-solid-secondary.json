@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-solid-secondary",
+  "title": "Solid Secondary Button",
+  "description": "Button Solid Secondary variant for button.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-solid-secondary.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SOLID SECONDARY | ------------------------------  //\n\nexport default function ButtonSolidSecondary() {\n  return (\n    <Button className=\"bg-slate-500 text-white hover:bg-slate-600\">\n      Secondary\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-solid-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

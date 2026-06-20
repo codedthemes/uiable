@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-toggle-outline",
+  "title": "Outline Toggle",
+  "description": "Toggle Outline variant for toggle.",
+  "registryDependencies": [
+    "toggle"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/toggle/toggle-outline.tsx",
+      "content": "// shadcn\r\nimport { Toggle } from \"@/components/ui/toggle\";\r\n\r\n// assets\r\nimport { BoldIcon, ItalicIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TOGGLE - OUTLINE | ------------------------------  //\r\n\r\nexport function ToggleOutline() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle italic\">\r\n        <ItalicIcon />\r\n        Italic\r\n      </Toggle>\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle bold\">\r\n        <BoldIcon />\r\n        Bold\r\n      </Toggle>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/toggle/toggle-outline.tsx"
+    }
+  ],
+  "categories": [
+    "toggle"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-date-picker-natural-language",
+  "title": "Natural Language Date Picker",
+  "description": "Date Picker Natural Language variant for date-picker.",
+  "registryDependencies": [
+    "date-picker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/date-picker/date-picker-natural-language.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\nimport {\r\n  Popover,\r\n  PopoverContent,\r\n  PopoverTrigger\r\n} from \"@/components/ui/popover\";\r\n\r\n// third party\r\nimport { parseDate } from \"chrono-node\";\r\n\r\n// assets\r\nimport { CalendarIcon } from \"lucide-react\";\r\n\r\nfunction formatDate(date: Date | undefined) {\r\n  if (!date) {\r\n    return \"\";\r\n  }\r\n\r\n  return date.toLocaleDateString(\"en-US\", {\r\n    day: \"2-digit\",\r\n    month: \"long\",\r\n    year: \"numeric\"\r\n  });\r\n}\r\n\r\n//  ------------------------------ | DATE PICKER - NATURAL LANGUAGE | ------------------------------  //\r\n\r\nexport function DatePickerNaturalLanguage() {\r\n  const [open, setOpen] = useState(false);\r\n  const [value, setValue] = useState(\"In 2 days\");\r\n  const [date, setDate] = useState<Date | undefined>(\r\n    parseDate(value) || undefined\r\n  );\r\n\r\n  return (\r\n    <Field className=\"mx-auto max-w-xs\">\r\n      <FieldLabel htmlFor=\"date-optional\">Schedule Date</FieldLabel>\r\n      <InputGroup>\r\n        <InputGroupInput\r\n          id=\"date-optional\"\r\n          value={value}\r\n          placeholder=\"Tomorrow or next week\"\r\n          onChange={(e) => {\r\n            setValue(e.target.value);\r\n            const date = parseDate(e.target.value);\r\n            if (date) {\r\n              setDate(date);\r\n            }\r\n          }}\r\n          onKeyDown={(e) => {\r\n            if (e.key === \"ArrowDown\") {\r\n              e.preventDefault();\r\n              setOpen(true);\r\n            }\r\n          }}\r\n        />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <Popover open={open} onOpenChange={setOpen}>\r\n            <PopoverTrigger\r\n              render={\r\n                <InputGroupButton\r\n                  id=\"date-picker\"\r\n                  variant=\"ghost\"\r\n                  size=\"icon-xs\"\r\n                  aria-label=\"Select date\"\r\n                />\r\n              }\r\n            >\r\n              <CalendarIcon />\r\n              <span className=\"sr-only\">Select date</span>\r\n            </PopoverTrigger>\r\n            <PopoverContent\r\n              className=\"w-auto overflow-hidden p-0\"\r\n              align=\"end\"\r\n              sideOffset={8}\r\n            >\r\n              <Calendar\r\n                mode=\"single\"\r\n                selected={date}\r\n                captionLayout=\"dropdown\"\r\n                defaultMonth={date}\r\n                onSelect={(date) => {\r\n                  setDate(date);\r\n                  setValue(formatDate(date));\r\n                  setOpen(false);\r\n                }}\r\n              />\r\n            </PopoverContent>\r\n          </Popover>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <div className=\"text-muted-foreground px-1 text-sm\">\r\n        Your post will be published on{\" \"}\r\n        <span className=\"font-medium\">{formatDate(date)}</span>.\r\n      </div>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/date-picker/date-picker-natural-language.tsx"
+    }
+  ],
+  "categories": [
+    "date-picker"
+  ],
+  "type": "registry:ui"
+}

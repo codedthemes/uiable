@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-link",
+  "title": "Link Item",
+  "description": "Item Link variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-link.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemTitle\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { ChevronRightIcon, ExternalLinkIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ITEM - LINK | ------------------------------  //\r\n\r\nexport function ItemLink() {\r\n  return (\r\n    <div className=\"flex w-full max-w-md flex-col gap-4\">\r\n      <Item render={<a href=\"#\" />}>\r\n        <ItemContent>\r\n          <ItemTitle>Visit our documentation</ItemTitle>\r\n          <ItemDescription>\r\n            Learn how to get started with our components.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <ChevronRightIcon className=\"size-4\" />\r\n        </ItemActions>\r\n      </Item>\r\n      <Item\r\n        variant=\"outline\"\r\n        render={<a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" />}\r\n      >\r\n        <ItemContent>\r\n          <ItemTitle>External resource</ItemTitle>\r\n          <ItemDescription>\r\n            Opens in a new tab with security attributes.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <ExternalLinkIcon className=\"size-4\" />\r\n        </ItemActions>\r\n      </Item>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-link.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

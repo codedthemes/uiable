@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-combobox-popup",
+  "title": "Popup Combobox",
+  "description": "Combobox Popup variant for combobox.",
+  "registryDependencies": [
+    "combobox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/combobox/combobox-popup.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Combobox,\r\n  ComboboxContent,\r\n  ComboboxEmpty,\r\n  ComboboxInput,\r\n  ComboboxItem,\r\n  ComboboxList,\r\n  ComboboxTrigger,\r\n  ComboboxValue\r\n} from \"@/components/ui/combobox\";\r\n\r\n// constants\r\nconst countries = [\r\n  { code: \"\", value: \"\", continent: \"\", label: \"Select country\" },\r\n  {\r\n    code: \"ar\",\r\n    value: \"argentina\",\r\n    label: \"Argentina\",\r\n    continent: \"South America\"\r\n  },\r\n  { code: \"au\", value: \"australia\", label: \"Australia\", continent: \"Oceania\" },\r\n  { code: \"br\", value: \"brazil\", label: \"Brazil\", continent: \"South America\" },\r\n  { code: \"ca\", value: \"canada\", label: \"Canada\", continent: \"North America\" },\r\n  { code: \"cn\", value: \"china\", label: \"China\", continent: \"Asia\" },\r\n  {\r\n    code: \"co\",\r\n    value: \"colombia\",\r\n    label: \"Colombia\",\r\n    continent: \"South America\"\r\n  },\r\n  { code: \"eg\", value: \"egypt\", label: \"Egypt\", continent: \"Africa\" },\r\n  { code: \"fr\", value: \"france\", label: \"France\", continent: \"Europe\" },\r\n  { code: \"de\", value: \"germany\", label: \"Germany\", continent: \"Europe\" },\r\n  { code: \"it\", value: \"italy\", label: \"Italy\", continent: \"Europe\" },\r\n  { code: \"jp\", value: \"japan\", label: \"Japan\", continent: \"Asia\" },\r\n  { code: \"ke\", value: \"kenya\", label: \"Kenya\", continent: \"Africa\" },\r\n  { code: \"mx\", value: \"mexico\", label: \"Mexico\", continent: \"North America\" },\r\n  {\r\n    code: \"nz\",\r\n    value: \"new-zealand\",\r\n    label: \"New Zealand\",\r\n    continent: \"Oceania\"\r\n  },\r\n  { code: \"ng\", value: \"nigeria\", label: \"Nigeria\", continent: \"Africa\" },\r\n  {\r\n    code: \"za\",\r\n    value: \"south-africa\",\r\n    label: \"South Africa\",\r\n    continent: \"Africa\"\r\n  },\r\n  { code: \"kr\", value: \"south-korea\", label: \"South Korea\", continent: \"Asia\" },\r\n  {\r\n    code: \"gb\",\r\n    value: \"united-kingdom\",\r\n    label: \"United Kingdom\",\r\n    continent: \"Europe\"\r\n  },\r\n  {\r\n    code: \"us\",\r\n    value: \"united-states\",\r\n    label: \"United States\",\r\n    continent: \"North America\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | COMBOBOX - POPUP | ------------------------------  //\r\n\r\nexport function ComboboxPopup() {\r\n  return (\r\n    <>\r\n      <Combobox items={countries} defaultValue={countries[0]}>\r\n        <ComboboxTrigger\r\n          render={<Button className=\"w-64 justify-between font-normal\" />}\r\n        >\r\n          <ComboboxValue />\r\n        </ComboboxTrigger>\r\n        <ComboboxContent>\r\n          <ComboboxInput showTrigger={false} placeholder=\"Search\" />\r\n          <ComboboxEmpty>No items found.</ComboboxEmpty>\r\n          <ComboboxList>\r\n            {(item) => (\r\n              <ComboboxItem key={item.code} value={item}>\r\n                {item.label}\r\n              </ComboboxItem>\r\n            )}\r\n          </ComboboxList>\r\n        </ComboboxContent>\r\n      </Combobox>\r\n    </>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/combobox/combobox-popup.tsx"
+    }
+  ],
+  "categories": [
+    "combobox"
+  ],
+  "type": "registry:ui"
+}

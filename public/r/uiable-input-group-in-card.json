@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-in-card",
+  "title": "In Card Input Group",
+  "description": "Input Group In Card variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-in-card.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Card,\r\n  CardContent,\r\n  CardDescription,\r\n  CardFooter,\r\n  CardHeader,\r\n  CardTitle\r\n} from \"@/components/ui/card\";\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput,\r\n  InputGroupText,\r\n  InputGroupTextarea\r\n} from \"@/components/ui/input-group\";\r\n\r\n// assets\r\nimport { ExternalLinkIcon, MailIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - IN CARD | ------------------------------  //\r\n\r\nexport function InputGroupInCard() {\r\n  return (\r\n    <Card className=\"w-full\">\r\n      <CardHeader>\r\n        <CardTitle>Card with Input Group</CardTitle>\r\n        <CardDescription>This is a card with an input group.</CardDescription>\r\n      </CardHeader>\r\n      <CardContent>\r\n        <FieldGroup>\r\n          <Field>\r\n            <FieldLabel htmlFor=\"email-input\">Email Address</FieldLabel>\r\n            <InputGroup>\r\n              <InputGroupInput\r\n                id=\"email-input\"\r\n                type=\"email\"\r\n                placeholder=\"you@example.com\"\r\n              />\r\n              <InputGroupAddon align=\"inline-end\">\r\n                <MailIcon />\r\n              </InputGroupAddon>\r\n            </InputGroup>\r\n          </Field>\r\n          <Field>\r\n            <FieldLabel htmlFor=\"website-input\">Website URL</FieldLabel>\r\n            <InputGroup>\r\n              <InputGroupAddon>\r\n                <InputGroupText>https://</InputGroupText>\r\n              </InputGroupAddon>\r\n              <InputGroupInput id=\"website-input\" placeholder=\"example.com\" />\r\n              <InputGroupAddon align=\"inline-end\">\r\n                <ExternalLinkIcon />\r\n              </InputGroupAddon>\r\n            </InputGroup>\r\n          </Field>\r\n          <Field>\r\n            <FieldLabel htmlFor=\"feedback-textarea\">\r\n              Feedback & Comments\r\n            </FieldLabel>\r\n            <InputGroup>\r\n              <InputGroupTextarea\r\n                id=\"feedback-textarea\"\r\n                placeholder=\"Share your thoughts...\"\r\n                className=\"min-h-[100px]\"\r\n              />\r\n              <InputGroupAddon align=\"block-end\">\r\n                <InputGroupText>0/500 characters</InputGroupText>\r\n              </InputGroupAddon>\r\n            </InputGroup>\r\n          </Field>\r\n        </FieldGroup>\r\n      </CardContent>\r\n      <CardFooter className=\"flex justify-end gap-2\">\r\n        <Button variant=\"outline\">Cancel</Button>\r\n        <Button>Submit</Button>\r\n      </CardFooter>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-in-card.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-faq-8",
+  "title": "FAQ 8",
+  "description": "FAQ variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/faq/faq-8/faq-8.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Accordion,\r\n  AccordionContent,\r\n  AccordionItem,\r\n  AccordionTrigger\r\n} from \"@/components/ui/accordion\";\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// constants\r\nconst faqs = [\r\n  {\r\n    question:\r\n      \"How Long Will It Take For My Order To Arrive After I Make Payment?\",\r\n    answer:\r\n      \"Because you are important to us, we want to know what you think about the products. As an added value, every time you rate the products you earn points.\"\r\n  },\r\n  {\r\n    question: \"How Can I Change My Shipping Address?\",\r\n    answer:\r\n      \"You can change your shipping address by logging into your account and visiting the address book section in your profile settings.\"\r\n  },\r\n  {\r\n    question: \"How Can I Track My Orders & Payment?\",\r\n    answer:\r\n      \"Once your order is shipped, you will receive a tracking number via email which you can use to track your package on our carrier's website.\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | FAQ - 8 | ------------------------------  //\r\n\r\nexport default function Faq8() {\r\n  return (\r\n    <section className=\"py-20 md:py-28\">\r\n      <div className=\"container mx-auto px-4\">\r\n        <div className=\"grid grid-cols-12 gap-6\">\r\n          {/* Left Column: Heading & Button */}\r\n          <div className=\"col-span-12 md:col-span-5 max-w-xs\">\r\n            <h2 className=\"mb-6\">Frequently Asked Questions</h2>\r\n            <p className=\"text-muted-foreground mb-8\">\r\n              This is a big one and i consider it one of the most important\r\n              things for a designer to get right.\r\n            </p>\r\n            <Button size=\"lg\" className=\"bg-primary hover:bg-primary/90\">\r\n              Get Started\r\n            </Button>\r\n          </div>\r\n\r\n          {/* Right Column: Accordion */}\r\n          <div className=\"col-span-12 md:col-span-7\">\r\n            <Accordion className=\"space-y-4\">\r\n              {faqs.map((item, index) => (\r\n                <AccordionItem\r\n                  key={index}\r\n                  value={`item-${index}`}\r\n                  className=\"rounded-2xl border border-muted bg-card px-6 py-2 shadow-sm\"\r\n                >\r\n                  <AccordionTrigger>\r\n                    <span className=\"text-left text-md sm:text-lg font-semibold\">\r\n                      {item.question}\r\n                    </span>\r\n                  </AccordionTrigger>\r\n                  <AccordionContent className=\"text-muted-foreground pb-6\">\r\n                    {item.answer}\r\n                  </AccordionContent>\r\n                </AccordionItem>\r\n              ))}\r\n            </Accordion>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/faq/faq-8/faq-8.tsx"
+    }
+  ],
+  "categories": [
+    "faq"
+  ],
+  "type": "registry:block"
+}

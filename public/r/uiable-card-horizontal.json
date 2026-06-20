@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-horizontal",
+  "title": "Horizontal Card",
+  "description": "Card Horizontal variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-horizontal.tsx",
+      "content": "// shadcn\nimport { Card, CardContent } from \"@/components/ui/card\";\n\n//  ------------------------------ | CARD - HORIZONTAL | ------------------------------  //\n\nexport default function CardHorizontal() {\n  return (\n    <Card className=\"overflow-hidden\">\n      <div className=\"flex flex-col sm:flex-row h-full\">\n        <div className=\"sm:w-[35%] shrink-0 h-48 sm:h-auto overflow-hidden\">\n          <img\n            className=\"w-full h-full object-cover transition-transform duration-500 hover:scale-110\"\n            src=\"https://cdn.uiable.com/component/card-sample.png\"\n            alt=\"Horizontal card image\"\n          />\n        </div>\n        <CardContent>\n          <h5>Card title</h5>\n          <p className=\"mb-4 mt-3\">\n            This is a wider card with supporting text below as a natural lead-in\n            to additional content. This content is a little bit longer.\n          </p>\n          <p className=\"text-xs text-muted-foreground mt-auto\">\n            Last updated 3 mins ago\n          </p>\n        </CardContent>\n      </div>\n    </Card>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-horizontal.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

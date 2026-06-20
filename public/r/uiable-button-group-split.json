@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-split",
+  "title": "Split Button Group",
+  "description": "Button Group Split variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-split.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  ButtonGroup,\n  ButtonGroupSeparator\n} from \"@/components/ui/button-group\";\n\n// assets\nimport { IconPlus } from \"@tabler/icons-react\";\n\n//  ------------------------------ | BUTTON GROUP - SPLIT | ------------------------------  //\n\nexport default function ButtonGroupSplit() {\n  return (\n    <ButtonGroup>\n      <Button variant=\"secondary\">Button</Button>\n      <ButtonGroupSeparator />\n      <Button size=\"icon\" variant=\"secondary\" className=\"h-auto\">\n        <IconPlus />\n      </Button>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-split.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

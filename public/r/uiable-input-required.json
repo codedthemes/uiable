@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-required",
+  "title": "Required Input",
+  "description": "Input Required variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-required.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - REQUIRED | ------------------------------  //\r\n\r\nexport function InputRequired() {\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"input-required\">\r\n        Required Field <span className=\"text-destructive\">*</span>\r\n      </FieldLabel>\r\n      <Input\r\n        id=\"input-required\"\r\n        placeholder=\"This field is required\"\r\n        required\r\n      />\r\n      <FieldDescription>This field must be filled out.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-required.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

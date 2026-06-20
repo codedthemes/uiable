@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-inline-code",
+  "title": "Inline Code Typography",
+  "description": "Typography Inline Code variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-inline-code.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - INLINE CODE | ------------------------------  //\r\n\r\nexport function TypographyInlineCode() {\r\n  return (\r\n    <code className=\"bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold\">\r\n      @radix-ui/react-alert-dialog\r\n    </code>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-inline-code.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

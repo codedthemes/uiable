@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-hover-card-sides",
+  "title": "Sides Hover Card",
+  "description": "Hover Card Sides variant for hover-card.",
+  "registryDependencies": [
+    "hover-card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/hover-card/hover-card-sides.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  HoverCard,\n  HoverCardContent,\n  HoverCardTrigger\n} from \"@/components/ui/hover-card\";\n\n// constants\nconst HOVER_CARD_SIDES = [\"left\", \"top\", \"bottom\", \"right\"] as const;\n\n//  ------------------------------ | HOVER CARD - SIDES | ------------------------------  //\n\nexport function HoverCardSides() {\n  return (\n    <div className=\"flex flex-wrap justify-center gap-2\">\n      {HOVER_CARD_SIDES.map((side) => (\n        <HoverCard key={side}>\n          <HoverCardTrigger\n            delay={100}\n            closeDelay={100}\n            render={<Button className=\"capitalize\" />}\n          >\n            {side}\n          </HoverCardTrigger>\n          <HoverCardContent side={side}>\n            <div className=\"flex flex-col gap-2\">\n              <h5>Hover Card</h5>\n              <p>This hover card appears on the {side} side of the trigger.</p>\n            </div>\n          </HoverCardContent>\n        </HoverCard>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/hover-card/hover-card-sides.tsx"
+    }
+  ],
+  "categories": [
+    "hover-card"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-field-slider",
+  "title": "Slider Field",
+  "description": "Field Slider variant for field.",
+  "registryDependencies": [
+    "field"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/field/field-slider.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Field, FieldDescription, FieldTitle } from \"@/components/ui/field\";\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n//  ------------------------------ | FIELD - SLIDER | ------------------------------  //\r\n\r\nexport default function FieldSlider() {\r\n  const [value, setValue] = useState([200, 800]);\r\n\r\n  return (\r\n    <Field className=\"w-full max-w-xs\">\r\n      <FieldTitle>Price Range</FieldTitle>\r\n      <FieldDescription>\r\n        Set your budget range ($\r\n        <span className=\"font-medium tabular-nums\">{value[0]}</span> -{\" \"}\r\n        <span className=\"font-medium tabular-nums\">{value[1]}</span>).\r\n      </FieldDescription>\r\n      <Slider\r\n        value={value}\r\n        onValueChange={(value) => setValue(value as [number, number])}\r\n        max={1000}\r\n        min={0}\r\n        step={10}\r\n        className=\"mt-2 w-full\"\r\n        aria-label=\"Price Range\"\r\n      />\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/field/field-slider.tsx"
+    }
+  ],
+  "categories": [
+    "field"
+  ],
+  "type": "registry:ui"
+}

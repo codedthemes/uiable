@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dialog-full-screen",
+  "title": "Full Screen Dialog",
+  "description": "Dialog Full Screen variant for dialog.",
+  "registryDependencies": [
+    "dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-full-screen.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger\n} from \"@/components/ui/dialog\";\n\n//  ------------------------------ | DIALOG - FULL SCREEN | ------------------------------  //\n\nexport function DialogFullScreen() {\n  return (\n    <Dialog>\n      <DialogTrigger render={<Button>Full Screen Modal</Button>} />\n      <DialogContent className=\"max-w-screen! h-screen! rounded-none\">\n        <DialogHeader>\n          <DialogTitle>Full Screen Modal</DialogTitle>\n          <DialogDescription>\n            This modal takes up the entire screen.\n          </DialogDescription>\n        </DialogHeader>\n        <div className=\"flex-1 overflow-auto p-4\">\n          {Array.from({ length: 15 }).map((_, index) => (\n            <p key={index} className=\"mb-4 leading-normal\">\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do\n              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n              enim ad minim veniam, quis nostrud exercitation ullamco laboris\n              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\n              reprehenderit in voluptate velit esse cillum dolore eu fugiat\n              nulla pariatur. Excepteur sint occaecat cupidatat non proident,\n              sunt in culpa qui officia deserunt mollit anim id est laborum.\n            </p>\n          ))}\n        </div>\n        <DialogFooter className=\"border-t\">\n          <Button variant=\"secondary\">Close</Button>\n          <Button>Save changes</Button>\n        </DialogFooter>\n      </DialogContent>\n    </Dialog>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-full-screen.tsx"
+    }
+  ],
+  "categories": [
+    "dialog"
+  ],
+  "type": "registry:ui"
+}

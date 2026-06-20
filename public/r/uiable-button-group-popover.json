@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-popover",
+  "title": "Popover Button Group",
+  "description": "Button Group Popover variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-popover.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\nimport {\n  Popover,\n  PopoverContent,\n  PopoverDescription,\n  PopoverHeader,\n  PopoverTitle,\n  PopoverTrigger\n} from \"@/components/ui/popover\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\n// assets\nimport { BotIcon, ChevronDownIcon } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON GROUP - POPOVER | ------------------------------  //\n\nexport default function ButtonGroupPopover() {\n  return (\n    <ButtonGroup className=\"items-stretch\">\n      <Button className=\"gap-2\">\n        <BotIcon /> Copilot\n      </Button>\n      <Popover>\n        <PopoverTrigger\n          render={\n            <Button size=\"icon\" className=\"h-auto!\" aria-label=\"Open Popover\" />\n          }\n        >\n          <ChevronDownIcon />\n        </PopoverTrigger>\n        <PopoverContent align=\"end\" className=\"rounded-xl text-sm\">\n          <PopoverHeader>\n            <PopoverTitle className=\"h5\">\n              Start a new task with Copilot\n            </PopoverTitle>\n            <PopoverDescription>\n              Describe your task in natural language.\n            </PopoverDescription>\n          </PopoverHeader>\n          <Field>\n            <FieldLabel htmlFor=\"task\" className=\"sr-only\">\n              Task Description\n            </FieldLabel>\n            <Textarea\n              id=\"task\"\n              placeholder=\"I need to...\"\n              className=\"resize-none\"\n            />\n            <FieldDescription>\n              Copilot will open a pull request for review.\n            </FieldDescription>\n          </Field>\n        </PopoverContent>\n      </Popover>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-popover.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

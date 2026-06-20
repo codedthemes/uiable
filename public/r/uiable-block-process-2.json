@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-process-2",
+  "title": "Process 2",
+  "description": "Process variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/process/process-2/process-2.tsx",
+      "content": "// constants\r\nconst steps = [\r\n  {\r\n    id: \"01\",\r\n    title: \"User Journey Map\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    id: \"02\",\r\n    title: \"Digital Wireframe\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    id: \"03\",\r\n    title: \"Clickable Prototype\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    id: \"04\",\r\n    title: \"Visual Design\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  }\r\n];\r\n\r\n// ------------------------------ | PROCESS 2 | ------------------------------ //\r\n\r\nexport default function Process2() {\r\n  return (\r\n    <section className=\"bg-primary py-20 lg:py-28\">\r\n      <div className=\"mx-auto container px-4 sm:px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"mx-auto mb-16 max-w-3xl text-center\">\r\n          <p className=\"mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-yellow-500 sm:text-base\">\r\n            Process\r\n          </p>\r\n\r\n          <h2 className=\"mb-6 text-primary-foreground\">How We Work</h2>\r\n\r\n          <p className=\"mx-auto max-w-2xl text-base leading-8 text-primary-foreground/75 sm:text-lg\">\r\n            This is a big one and i consider it one of the most important things\r\n            for a designer to get right.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Steps */}\r\n        <div className=\"grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8\">\r\n          {steps.map((step, index) => (\r\n            <div key={step.id} className=\"text-center lg:text-left\">\r\n              {/* Number Box */}\r\n              <div className=\"mb-7 flex justify-center lg:justify-start\">\r\n                <div className=\"flex h-20 w-20 items-center justify-center bg-background\">\r\n                  <span className=\"text-4xl font-bold text-yellow-500\">\r\n                    {step.id}\r\n                  </span>\r\n                </div>\r\n              </div>\r\n\r\n              {/* Title */}\r\n              <h5 className=\"mb-2 font-semibold text-primary-foreground\">\r\n                {index + 1}. {step.title}\r\n              </h5>\r\n\r\n              {/* Description */}\r\n              <p className=\"text-base text-primary-foreground/75\">\r\n                {step.description}\r\n              </p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/process/process-2/process-2.tsx"
+    }
+  ],
+  "categories": [
+    "process"
+  ],
+  "type": "registry:block"
+}

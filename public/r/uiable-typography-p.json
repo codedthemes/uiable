@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-p",
+  "title": "P Typography",
+  "description": "Typography P variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-p.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - P | ------------------------------  //\r\n\r\nexport function TypographyP() {\r\n  return (\r\n    <p>\r\n      The king, seeing how much happier his subjects were, realized the error of\r\n      his ways and repealed the joke tax.\r\n    </p>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-p.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-otp-controlled",
+  "title": "Controlled Input Otp",
+  "description": "Input Otp Controlled variant for input-otp.",
+  "registryDependencies": [
+    "input-otp"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-otp/input-otp-controlled.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport {\r\n  InputOTP,\r\n  InputOTPGroup,\r\n  InputOTPSlot\r\n} from \"@/components/ui/input-otp\";\r\n\r\n//  ------------------------------ | INPUT OTP - CONTROLLED | ------------------------------  //\r\n\r\nexport default function InputOTPControlled() {\r\n  const [value, setValue] = useState(\"\");\r\n\r\n  return (\r\n    <div className=\"space-y-2\">\r\n      <InputOTP\r\n        maxLength={6}\r\n        value={value}\r\n        onChange={(value) => setValue(value)}\r\n      >\r\n        <InputOTPGroup>\r\n          <InputOTPSlot index={0} />\r\n          <InputOTPSlot index={1} />\r\n          <InputOTPSlot index={2} />\r\n          <InputOTPSlot index={3} />\r\n          <InputOTPSlot index={4} />\r\n          <InputOTPSlot index={5} />\r\n        </InputOTPGroup>\r\n      </InputOTP>\r\n      <div className=\"text-center text-sm\">\r\n        {value === \"\" ? (\r\n          <>Enter your one-time password.</>\r\n        ) : (\r\n          <>You entered: {value}</>\r\n        )}\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-otp/input-otp-controlled.tsx"
+    }
+  ],
+  "categories": [
+    "input-otp"
+  ],
+  "type": "registry:ui"
+}

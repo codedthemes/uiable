@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-block-start",
+  "title": "Block Start Input Group",
+  "description": "Input Group Block Start variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-block-start.tsx",
+      "content": "// shadcn\nimport {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel\n} from \"@/components/ui/field\";\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n  InputGroupText,\n  InputGroupTextarea\n} from \"@/components/ui/input-group\";\n\n// assets\nimport { CopyIcon, FileCodeIcon } from \"lucide-react\";\n\n//  ------------------------------ | INPUT GROUP - BLOCK START | ------------------------------  //\n\nexport function InputGroupBlockStart() {\n  return (\n    <FieldGroup className=\"max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"block-start-input\">Input</FieldLabel>\n        <InputGroup className=\"h-auto\">\n          <InputGroupInput\n            id=\"block-start-input\"\n            placeholder=\"Enter your name\"\n          />\n          <InputGroupAddon align=\"block-start\">\n            <InputGroupText>Full Name</InputGroupText>\n          </InputGroupAddon>\n        </InputGroup>\n        <FieldDescription>Header positioned above the input.</FieldDescription>\n      </Field>\n      <Field>\n        <FieldLabel htmlFor=\"block-start-textarea\">Textarea</FieldLabel>\n        <InputGroup>\n          <InputGroupTextarea\n            id=\"block-start-textarea\"\n            placeholder=\"console.log('Hello, world!');\"\n            className=\"font-mono text-sm\"\n          />\n          <InputGroupAddon align=\"block-start\">\n            <FileCodeIcon className=\"text-muted-foreground\" />\n            <InputGroupText className=\"font-mono\">script.js</InputGroupText>\n            <InputGroupButton size=\"icon-xs\" className=\"ml-auto\">\n              <CopyIcon />\n              <span className=\"sr-only\">Copy</span>\n            </InputGroupButton>\n          </InputGroupAddon>\n        </InputGroup>\n        <FieldDescription>\n          Header positioned above the textarea.\n        </FieldDescription>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-block-start.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

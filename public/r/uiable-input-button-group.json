@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-button-group",
+  "title": "Button Group Input",
+  "description": "Input Button Group variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-button-group.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { ButtonGroup } from \"@/components/ui/button-group\";\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - BUTTON GROUP | ------------------------------  //\r\n\r\nexport function InputButtonGroup() {\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"input-button-group\">Search</FieldLabel>\r\n      <ButtonGroup className=\"items-stretch\">\r\n        <Input\r\n          id=\"input-button-group\"\r\n          className=\"rounded-r-none\"\r\n          placeholder=\"Type to search...\"\r\n        />\r\n        <Button variant=\"outline\">Search</Button>\r\n      </ButtonGroup>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-button-group.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

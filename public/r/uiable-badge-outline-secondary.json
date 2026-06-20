@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-outline-secondary",
+  "title": "Secondary Outline Badge",
+  "description": "Badge Outline Secondary variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-outline-secondary.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - OUTLINE SECONDARY | ------------------------------  //\n\nexport default function BadgeOutlineSecondary() {\n  return (\n    <Badge className=\"border-secondary-500 text-secondary-500 bg-transparent\">\n      Secondary\n    </Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-outline-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

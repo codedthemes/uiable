@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-kbd-group",
+  "title": "Group Kbd",
+  "description": "Kbd Group variant for kbd.",
+  "registryDependencies": [
+    "kbd"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/kbd/kbd-group.tsx",
+      "content": "// shadcn\r\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\";\r\n\r\n//  ------------------------------ | KBD - GROUP | ------------------------------  //\r\n\r\nexport default function KbdGroupExample() {\r\n  return (\r\n    <div className=\"flex flex-col items-center gap-4\">\r\n      <div className=\"flex items-center gap-1 flex-wrap\">\r\n        Use{\" \"}\r\n        <KbdGroup>\r\n          <Kbd>Ctrl + B</Kbd>\r\n          <Kbd>Ctrl + K</Kbd>\r\n        </KbdGroup>{\" \"}\r\n        to open the command palette\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/kbd/kbd-group.tsx"
+    }
+  ],
+  "categories": [
+    "kbd"
+  ],
+  "type": "registry:ui"
+}

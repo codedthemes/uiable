@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-solid-success",
+  "title": "Success Solid Badge",
+  "description": "Badge Solid Success variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-solid-success.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - SOLID SUCCESS | ------------------------------  //\n\nexport default function BadgeSolidSuccess() {\n  return <Badge className=\"bg-green-500 text-white\">Success</Badge>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-solid-success.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

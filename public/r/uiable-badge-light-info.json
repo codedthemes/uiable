@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-light-info",
+  "title": "Light Info Badge",
+  "description": "Badge Light Info variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-light-info.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - LIGHT INFO | ------------------------------  //\n\nexport default function BadgeLightInfo() {\n  return (\n    <Badge className=\"bg-cyan-500/10 text-cyan-700 dark:text-cyan-400 border-transparent\">\n      Info\n    </Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-light-info.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

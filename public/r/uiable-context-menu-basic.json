@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-context-menu-basic",
+  "title": "Basic Context Menu",
+  "description": "Context Menu Basic variant for context-menu.",
+  "registryDependencies": [
+    "context-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/context-menu/context-menu-basic.tsx",
+      "content": "// shadcn\nimport {\n  ContextMenu,\n  ContextMenuContent,\n  ContextMenuGroup,\n  ContextMenuItem,\n  ContextMenuTrigger\n} from \"@/components/ui/context-menu\";\n\n//  ------------------------------ | CONTEXT MENU - BASIC | ------------------------------  //\n\nexport function ContextMenuBasic() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className=\"flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base\">\n        <span className=\"hidden pointer-fine:inline-block\">\n          Right click here\n        </span>\n        <span className=\"hidden pointer-coarse:inline-block\">\n          Long press here\n        </span>\n      </ContextMenuTrigger>\n      <ContextMenuContent>\n        <ContextMenuGroup>\n          <ContextMenuItem>Back</ContextMenuItem>\n          <ContextMenuItem disabled>Forward</ContextMenuItem>\n          <ContextMenuItem>Reload</ContextMenuItem>\n        </ContextMenuGroup>\n      </ContextMenuContent>\n    </ContextMenu>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/context-menu/context-menu-basic.tsx"
+    }
+  ],
+  "categories": [
+    "context-menu"
+  ],
+  "type": "registry:ui"
+}

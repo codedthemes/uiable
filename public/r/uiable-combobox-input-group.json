@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-combobox-input-group",
+  "title": "Input Group Combobox",
+  "description": "Combobox Input Group variant for combobox.",
+  "registryDependencies": [
+    "combobox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/combobox/combobox-input-group.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Combobox,\r\n  ComboboxCollection,\r\n  ComboboxContent,\r\n  ComboboxEmpty,\r\n  ComboboxGroup,\r\n  ComboboxInput,\r\n  ComboboxItem,\r\n  ComboboxLabel,\r\n  ComboboxList\r\n} from \"@/components/ui/combobox\";\r\nimport { InputGroupAddon } from \"@/components/ui/input-group\";\r\n\r\n// assets\r\nimport { GlobeIcon } from \"lucide-react\";\r\n\r\n// constants\r\nconst timezones = [\r\n  {\r\n    value: \"Americas\",\r\n    items: [\r\n      \"(GMT-5) New York\",\r\n      \"(GMT-8) Los Angeles\",\r\n      \"(GMT-6) Chicago\",\r\n      \"(GMT-5) Toronto\",\r\n      \"(GMT-8) Vancouver\",\r\n      \"(GMT-3) São Paulo\"\r\n    ]\r\n  },\r\n  {\r\n    value: \"Europe\",\r\n    items: [\r\n      \"(GMT+0) London\",\r\n      \"(GMT+1) Paris\",\r\n      \"(GMT+1) Berlin\",\r\n      \"(GMT+1) Rome\",\r\n      \"(GMT+1) Madrid\",\r\n      \"(GMT+1) Amsterdam\"\r\n    ]\r\n  },\r\n  {\r\n    value: \"Asia/Pacific\",\r\n    items: [\r\n      \"(GMT+9) Tokyo\",\r\n      \"(GMT+8) Shanghai\",\r\n      \"(GMT+8) Singapore\",\r\n      \"(GMT+4) Dubai\",\r\n      \"(GMT+11) Sydney\",\r\n      \"(GMT+9) Seoul\"\r\n    ]\r\n  }\r\n] as const;\r\n\r\n//  ------------------------------ | COMBOBOX - INPUT GROUP | ------------------------------  //\r\n\r\nexport function ComboxboxInputGroup() {\r\n  return (\r\n    <Combobox items={timezones}>\r\n      <ComboboxInput placeholder=\"Select a timezone\">\r\n        <InputGroupAddon>\r\n          <GlobeIcon />\r\n        </InputGroupAddon>\r\n      </ComboboxInput>\r\n      <ComboboxContent alignOffset={-28} className=\"w-60\">\r\n        <ComboboxEmpty>No timezones found.</ComboboxEmpty>\r\n        <ComboboxList>\r\n          {(group) => (\r\n            <ComboboxGroup key={group.value} items={group.items}>\r\n              <ComboboxLabel>{group.value}</ComboboxLabel>\r\n              <ComboboxCollection>\r\n                {(item) => (\r\n                  <ComboboxItem key={item} value={item}>\r\n                    {item}\r\n                  </ComboboxItem>\r\n                )}\r\n              </ComboboxCollection>\r\n            </ComboboxGroup>\r\n          )}\r\n        </ComboboxList>\r\n      </ComboboxContent>\r\n    </Combobox>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/combobox/combobox-input-group.tsx"
+    }
+  ],
+  "categories": [
+    "combobox"
+  ],
+  "type": "registry:ui"
+}

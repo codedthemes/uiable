@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-solid-primary",
+  "title": "Primary Solid Badge",
+  "description": "Badge Solid Primary variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-solid-primary.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - SOLID PRIMARY | ------------------------------  //\n\nexport default function BadgeSolidPrimary() {\n  return <Badge>Primary</Badge>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-solid-primary.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

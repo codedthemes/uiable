@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge",
+  "dependencies": [
+    "@base-ui/react",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/badge.tsx",
+      "content": "import { mergeProps } from \"@base-ui/react/merge-props\"\r\nimport { useRender } from \"@base-ui/react/use-render\"\r\nimport { cva, type VariantProps } from \"class-variance-authority\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nconst badgeVariants = cva(\r\n  \"gap-1 rounded-md border border-transparent px-[0.8em] py-[0.45em] text-[.75em] font-medium leading-[0.9] transition-all has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&>svg]:size-3! inline-flex items-center justify-center w-fit whitespace-nowrap shrink-0 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive overflow-hidden group/badge\",\r\n  {\r\n    variants: {\r\n      variant: {\r\n        default: \"bg-primary text-white [a]:hover:bg-primary/80\",\r\n        secondary:\r\n          \"bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80\",\r\n        destructive:\r\n          \"bg-destructive/10 [a]:hover:bg-destructive/20 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 text-destructive dark:bg-destructive/20\",\r\n        outline:\r\n          \"border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground\",\r\n        ghost:\r\n          \"hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50\",\r\n        link: \"text-primary underline-offset-4 hover:underline\",\r\n      },\r\n    },\r\n    defaultVariants: {\r\n      variant: \"default\",\r\n    },\r\n  }\r\n)\r\n\r\nfunction Badge({\r\n  className,\r\n  variant = \"default\",\r\n  render,\r\n  ...props\r\n}: useRender.ComponentProps<\"span\"> & VariantProps<typeof badgeVariants>) {\r\n  return useRender({\r\n    defaultTagName: \"span\",\r\n    props: mergeProps<\"span\">(\r\n      {\r\n        className: cn(badgeVariants({ variant }), className),\r\n      },\r\n      props\r\n    ),\r\n    render,\r\n    state: {\r\n      slot: \"badge\",\r\n      variant,\r\n    },\r\n  })\r\n}\r\n\r\nexport { Badge, badgeVariants }\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/badge.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

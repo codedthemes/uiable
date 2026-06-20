@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-border-primary",
+  "title": "Primary Border Spinner",
+  "description": "Spinner Border Primary variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-border-primary.tsx",
+      "content": "//  ------------------------------ | SPINNER - BORDER PRIMARY | ------------------------------  //\r\n\r\nexport default function SpinnerBorderPrimary() {\r\n  return (\r\n    <div\r\n      className=\"inline-block border-[3.5px] border-primary rounded-full size-8 animate-spin border-l-transparent dark:border-l-transparent\"\r\n      role=\"status\"\r\n    >\r\n      <span className=\"sr-only\">Loading...</span>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-border-primary.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

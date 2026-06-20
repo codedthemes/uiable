@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-avatar-basic",
+  "title": "Basic Avatar",
+  "description": "Avatar Basic variant for avatar.",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/avatar/avatar-basic.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\n//  ------------------------------ | AVATAR - BASIC | ------------------------------  //\n\nexport default function AvatarDemo() {\n  return (\n    <Avatar>\n      <AvatarImage\n        src=\"https://cdn.uiable.com/user/avatar-3.jpg\"\n        alt=\"@shadcn\"\n      />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/avatar/avatar-basic.tsx"
+    }
+  ],
+  "categories": [
+    "avatar"
+  ],
+  "type": "registry:ui"
+}

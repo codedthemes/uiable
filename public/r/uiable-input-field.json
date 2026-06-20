@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-field",
+  "title": "Field Input",
+  "description": "Input Field variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-field.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - FIELD | ------------------------------  //\r\n\r\nexport function InputField() {\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"input-field-username\">Username</FieldLabel>\r\n      <Input\r\n        id=\"input-field-username\"\r\n        type=\"text\"\r\n        placeholder=\"Enter your username\"\r\n      />\r\n      <FieldDescription>\r\n        Choose a unique username for your account.\r\n      </FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-field.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

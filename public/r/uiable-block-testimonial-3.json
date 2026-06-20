@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-testimonial-3",
+  "title": "Testimonial 3",
+  "description": "Testimonial variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/testimonial/testimonial-3/testimonial-3.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\n\r\n// constants\r\nconst clients = [\r\n  {\r\n    name: \"Shirley Hoe\",\r\n    role: \"Professional\",\r\n    avatar: \"https://cdn.uiable.com/block/team1.png\",\r\n    initials: \"SH\",\r\n    text: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n  },\r\n  {\r\n    name: \"John Doe\",\r\n    role: \"Professional\",\r\n    avatar: \"https://cdn.uiable.com/block/team2.png\",\r\n    initials: \"JD\",\r\n    text: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n  },\r\n  {\r\n    name: \"Joseph William\",\r\n    role: \"Professional\",\r\n    avatar: \"https://cdn.uiable.com/block/team3.png\",\r\n    initials: \"JW\",\r\n    text: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | TESTIMONIAL 3 | ------------------------------  //\r\n\r\nexport default function Testimonial3() {\r\n  return (\r\n    <section className=\"py-20\">\r\n      <div className=\"container mx-auto px-6\">\r\n        <div className=\"grid grid-cols-12 mb-10\">\r\n          <div className=\"col-span-12 text-center\">\r\n            <h2>Our Clients</h2>\r\n            <p className=\"text-muted-foreground mt-3 mx-auto max-w-3xl\">\r\n              At half-past eight the door opened, the policeman appeared, and\r\n              requesting them to follow him, led the way to an adjoining hall.\r\n            </p>\r\n          </div>\r\n        </div>\r\n        <div className=\"grid grid-cols-12 gap-8\">\r\n          {clients.map((c, i) => (\r\n            <div\r\n              key={i}\r\n              className=\"col-span-12 md:col-span-4 flex flex-col items-center text-center gap-2\"\r\n            >\r\n              <Avatar className=\"h-25 w-25\">\r\n                <AvatarImage src={c.avatar} alt={c.name} />\r\n                <AvatarFallback>{c.initials}</AvatarFallback>\r\n              </Avatar>\r\n              <h3 className=\"mt-2 mb-1\">{c.name}</h3>\r\n              <p className=\"text-muted-foreground mb-2\">{c.role}</p>\r\n              <p className=\"text-muted-foreground max-w-xs\">{c.text}</p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/testimonial/testimonial-3/testimonial-3.tsx"
+    }
+  ],
+  "categories": [
+    "testimonial"
+  ],
+  "type": "registry:block"
+}

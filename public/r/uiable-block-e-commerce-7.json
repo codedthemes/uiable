@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-e-commerce-7",
+  "title": "E-commerce 7",
+  "description": "E-commerce variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/e-commerce/e-commerce-7/e-commerce-7.tsx",
+      "content": "// constants\r\nconst products = [\r\n  {\r\n    name: \"Nike Sneakers\",\r\n    price: \"$210\",\r\n    image: \"https://cdn.uiable.com/block/e-commerce-7-1.png\",\r\n  },\r\n  {\r\n    name: \"Anti-theft Backpack\",\r\n    price: \"$340\",\r\n    image: \"https://cdn.uiable.com/block/e-commerce-7-2.png\",\r\n  },\r\n  {\r\n    name: \"Rain Jacket\",\r\n    price: \"$210\",\r\n    image: \"https://cdn.uiable.com/block/e-commerce-7-3.png\",\r\n  },\r\n  {\r\n    name: \"Retro Sunglasses\",\r\n    price: \"$340\",\r\n    image: \"https://cdn.uiable.com/block/e-commerce-7-4.png\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | E - COMMERCE 7 | ------------------------------  //\r\n\r\nexport default function Ecommerce7() {\r\n  return (\r\n    <section className=\"py-20 sm:py-24\">\r\n      <div className=\"container mx-auto px-6 lg:px-8\">\r\n        <div className=\"mx-auto max-w-2xl text-center\">\r\n          <p className=\"text-lg uppercase font-medium tracking-widest text-primary\">\r\n            E-commerce\r\n          </p>\r\n          <h2 className=\"mt-2\">Product You Need</h2>\r\n        </div>\r\n\r\n        <div className=\"mx-auto mt-10 grid max-w-6xl grid-cols-12 gap-6\">\r\n          {products.map((product) => (\r\n            <article\r\n              key={product.name}\r\n              className=\"col-span-12 rounded-2xl md:col-span-6 lg:col-span-3\"\r\n            >\r\n              <div className=\"relative\">\r\n                <img\r\n                  src={product.image}\r\n                  alt={product.name}\r\n                  className=\"object-contain\"\r\n                />\r\n                <div className=\"absolute inset-x-0 bottom-0 px-3 pb-3 pt-12\">\r\n                  <p className=\"mb-2 text-lg font-medium text-white\">\r\n                    {product.name}\r\n                  </p>\r\n                  <p className=\"text-lg text-white/85 mb-3\">{product.price}</p>\r\n                </div>\r\n              </div>\r\n            </article>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/e-commerce/e-commerce-7/e-commerce-7.tsx"
+    }
+  ],
+  "categories": [
+    "e-commerce"
+  ],
+  "type": "registry:block"
+}

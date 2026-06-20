@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-list-group-buttons",
+  "title": "Buttons List Group",
+  "description": "List Group Buttons variant for list-group.",
+  "registryDependencies": [
+    "list-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/list-group/list-group-buttons.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | LIST GROUP - BUTTONS | ------------------------------  //\r\n\r\nexport default function ListGroupButtons() {\r\n  return (\r\n    <div className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card overflow-hidden\">\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start hover:bg-muted/50 border-none font-normal\"\r\n      >\r\n        Cras justo odio\r\n      </Button>\r\n      <Button\r\n        variant=\"default\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start border-none font-normal bg-primary text-primary-foreground\"\r\n      >\r\n        Dapibus ac facilisis in\r\n      </Button>\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start hover:bg-muted/50 border-none font-normal\"\r\n      >\r\n        Morbi leo risus\r\n      </Button>\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start hover:bg-muted/50 border-none font-normal\"\r\n      >\r\n        Porta ac consectetur ac\r\n      </Button>\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start border-none font-normal opacity-50 cursor-not-allowed\"\r\n        disabled\r\n      >\r\n        Vestibulum at eros\r\n      </Button>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/list-group/list-group-buttons.tsx"
+    }
+  ],
+  "categories": [
+    "list-group"
+  ],
+  "type": "registry:ui"
+}

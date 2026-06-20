@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sidebar-group-action",
+  "title": "Group Action Sidebar",
+  "description": "Sidebar Group Action variant for sidebar.",
+  "dependencies": [],
+  "registryDependencies": [
+    "sidebar"
+  ],
+  "files": [
+    {
+      "path": "components/uiable/sidebar/sidebar-group-action.tsx",
+      "content": "\"use client\"\r\n\r\nimport {\r\n  Sidebar,\r\n  SidebarContent,\r\n  SidebarGroup,\r\n  SidebarGroupAction,\r\n  SidebarGroupContent,\r\n  SidebarGroupLabel,\r\n  SidebarMenu,\r\n  SidebarMenuButton,\r\n  SidebarMenuItem,\r\n  SidebarProvider,\r\n} from \"@/components/ui/sidebar\"\r\nimport { FrameIcon, MapIcon, PieChartIcon, PlusIcon } from \"lucide-react\"\r\nimport { toast, Toaster } from \"sonner\"\r\n\r\nexport default function AppSidebar() {\r\n  return (\r\n    <SidebarProvider className=\"relative min-h-[450px]\">\r\n      <Toaster\r\n        position=\"bottom-left\"\r\n        toastOptions={{\r\n          className: \"ml-[160px]\",\r\n        }}\r\n      />\r\n      <Sidebar className=\"absolute h-[450px]\">\r\n        <SidebarContent>\r\n          <SidebarGroup>\r\n            <SidebarGroupLabel className=\"py-3\">Projects</SidebarGroupLabel>\r\n            <SidebarGroupAction\r\n              title=\"Add Project\"\r\n              onClick={() => toast(\"You clicked the group action!\")}\r\n            >\r\n              <PlusIcon /> <span className=\"sr-only\">Add Project</span>\r\n            </SidebarGroupAction>\r\n            <SidebarGroupContent>\r\n              <SidebarMenu>\r\n                <SidebarMenuItem>\r\n                  <SidebarMenuButton render={<a href=\"#\" />}>\r\n                    <FrameIcon />\r\n                    <span>Design Engineering</span>\r\n                  </SidebarMenuButton>\r\n                </SidebarMenuItem>\r\n                <SidebarMenuItem>\r\n                  <SidebarMenuButton render={<a href=\"#\" />}>\r\n                    <PieChartIcon />\r\n                    <span>Sales & Marketing</span>\r\n                  </SidebarMenuButton>\r\n                </SidebarMenuItem>\r\n                <SidebarMenuItem>\r\n                  <SidebarMenuButton render={<a href=\"#\" />}>\r\n                    <MapIcon />\r\n                    <span>Travel</span>\r\n                  </SidebarMenuButton>\r\n                </SidebarMenuItem>\r\n              </SidebarMenu>\r\n            </SidebarGroupContent>\r\n          </SidebarGroup>\r\n        </SidebarContent>\r\n      </Sidebar>\r\n    </SidebarProvider>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/uiable/sidebar/sidebar-group-action.tsx"
+    }
+  ],
+  "categories": [
+    "sidebar"
+  ],
+  "type": "registry:component"
+}

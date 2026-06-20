@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider",
+  "dependencies": [
+    "@base-ui/react",
+    "react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/slider.tsx",
+      "content": "\"use client\"\r\n\r\nimport * as React from \"react\"\r\nimport { Slider as SliderPrimitive } from \"@base-ui/react/slider\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction Slider({\r\n  className,\r\n  defaultValue,\r\n  value,\r\n  min = 0,\r\n  max = 100,\r\n  ...props\r\n}: SliderPrimitive.Root.Props) {\r\n  const _values = React.useMemo(\r\n    () =>\r\n      Array.isArray(value)\r\n        ? value\r\n        : Array.isArray(defaultValue)\r\n          ? defaultValue\r\n              : [min, max],\r\n    [value, defaultValue, min, max]\r\n  )\r\n\r\n  return (\r\n    <SliderPrimitive.Root\r\n      className={cn(\"data-horizontal:w-full data-vertical:h-full\", className)}\r\n      data-slot=\"slider\"\r\n      defaultValue={defaultValue}\r\n      value={value}\r\n      min={min}\r\n      max={max}\r\n      thumbAlignment=\"edge\"\r\n      {...props}\r\n    >\r\n      <SliderPrimitive.Control className=\"relative flex w-full touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col\">\r\n        <SliderPrimitive.Track\r\n          data-slot=\"slider-track\"\r\n          className=\"bg-border relative grow overflow-hidden rounded-full select-none data-horizontal:h-1.5 data-horizontal:w-full data-vertical:h-full data-vertical:w-1.5\"\r\n        >\r\n          <SliderPrimitive.Indicator\r\n            data-slot=\"slider-range\"\r\n            className=\"bg-primary select-none data-horizontal:h-full data-vertical:w-full\"\r\n          />\r\n        </SliderPrimitive.Track>\r\n        {Array.from({ length: _values.length }, (_, index) => (\r\n          <SliderPrimitive.Thumb\r\n            data-slot=\"slider-thumb\"\r\n            key={index}\r\n            className=\"border-primary ring-primary/30 relative block size-4 shrink-0 rounded-full border-2 bg-white transition-[color,box-shadow] select-none after:absolute after:-inset-2 hover:ring-3 focus-visible:ring-3 focus-visible:outline-hidden active:ring-3 disabled:pointer-events-none disabled:opacity-50\"\r\n          />\r\n        ))}\r\n      </SliderPrimitive.Control>\r\n    </SliderPrimitive.Root>\r\n  )\r\n}\r\n\r\nexport { Slider }\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/slider.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

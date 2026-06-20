@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-list-group-custom-content",
+  "title": "Custom Content List Group",
+  "description": "List Group Custom Content variant for list-group.",
+  "registryDependencies": [
+    "list-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/list-group/list-group-custom-content.tsx",
+      "content": "//  ------------------------------ | LIST GROUP - CUSTOM CONTENT | ------------------------------  //\r\n\r\nexport default function ListGroupCustomContent() {\r\n  return (\r\n    <div className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card overflow-hidden\">\r\n      <a\r\n        href=\"#!\"\r\n        aria-current=\"true\"\r\n        className=\"block py-4 px-6.25 bg-primary text-primary-foreground group\"\r\n      >\r\n        <div className=\"flex w-full justify-between items-center mb-1\">\r\n          <h5 className=\"font-bold text-lg text-white\">\r\n            List group item heading\r\n          </h5>\r\n          <small className=\"opacity-80\">3 days ago</small>\r\n        </div>\r\n        <p className=\"mb-1 text-sm opacity-90 leading-relaxed\">\r\n          Donec id elit non mi porta gravida at eget metus. Maecenas sed diam\r\n          eget risus varius blandit.\r\n        </p>\r\n        <small className=\"opacity-80\">Donec id elit non mi porta.</small>\r\n      </a>\r\n      <a\r\n        href=\"#!\"\r\n        className=\"block py-4 px-6.25 hover:bg-muted/50 transition-colors\"\r\n      >\r\n        <div className=\"flex w-full justify-between items-center mb-1\">\r\n          <h5 className=\"font-bold text-lg\">List group item heading</h5>\r\n          <small className=\"text-muted-foreground\">3 days ago</small>\r\n        </div>\r\n        <p className=\"mb-1 text-sm text-muted-foreground leading-relaxed\">\r\n          Donec id elit non mi porta gravida at eget metus. Maecenas sed diam\r\n          eget risus varius blandit.\r\n        </p>\r\n        <small className=\"text-muted-foreground\">\r\n          Donec id elit non mi porta.\r\n        </small>\r\n      </a>\r\n      <a\r\n        href=\"#!\"\r\n        className=\"block py-4 px-6.25 hover:bg-muted/50 transition-colors\"\r\n      >\r\n        <div className=\"flex w-full justify-between items-center mb-1\">\r\n          <h5 className=\"font-bold text-lg\">List group item heading</h5>\r\n          <small className=\"text-muted-foreground\">3 days ago</small>\r\n        </div>\r\n        <p className=\"mb-1 text-sm text-muted-foreground leading-relaxed\">\r\n          Donec id elit non mi porta gravida at eget metus. Maecenas sed diam\r\n          eget risus varius blandit.\r\n        </p>\r\n        <small className=\"text-muted-foreground\">\r\n          Donec id elit non mi porta.\r\n        </small>\r\n      </a>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/list-group/list-group-custom-content.tsx"
+    }
+  ],
+  "categories": [
+    "list-group"
+  ],
+  "type": "registry:ui"
+}

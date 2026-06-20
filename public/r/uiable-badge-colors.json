@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-colors",
+  "title": "Colors Badge",
+  "description": "Badge Colors variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-colors.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - COLORS | ------------------------------  //\n\nexport function BadgeCustomColors() {\n  return (\n    <div className=\"flex flex-wrap gap-3\">\n      <Badge className=\"bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300\">\n        Blue\n      </Badge>\n      <Badge className=\"bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300\">\n        Green\n      </Badge>\n      <Badge className=\"bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300\">\n        Sky\n      </Badge>\n      <Badge className=\"bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-300\">\n        Purple\n      </Badge>\n      <Badge className=\"bg-red-50 text-red-700 dark:bg-red-950 dark:text-red-300\">\n        Red\n      </Badge>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-colors.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

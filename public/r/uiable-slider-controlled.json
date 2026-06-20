@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-slider-controlled",
+  "title": "Controlled Slider",
+  "description": "Slider Controlled variant for slider.",
+  "registryDependencies": [
+    "slider"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/slider/slider-controlled.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Label } from \"@/components/ui/label\";\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n//  ------------------------------ | SLIDER - CONTROLLED | ------------------------------  //\r\n\r\nexport function SliderControlled() {\r\n  const [value, setValue] = useState([0.3, 0.7]);\r\n\r\n  return (\r\n    <div className=\"mx-auto grid w-full max-w-xs gap-3\">\r\n      <div className=\"flex items-center justify-between gap-2\">\r\n        <Label htmlFor=\"slider-demo-temperature\">Temperature</Label>\r\n        <span className=\"text-muted-foreground text-sm\">\r\n          {value.join(\", \")}\r\n        </span>\r\n      </div>\r\n      <Slider\r\n        id=\"slider-demo-temperature\"\r\n        value={value}\r\n        onValueChange={(value) => setValue(value as number[])}\r\n        min={0}\r\n        max={1}\r\n        step={0.1}\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/slider/slider-controlled.tsx"
+    }
+  ],
+  "categories": [
+    "slider"
+  ],
+  "type": "registry:ui"
+}

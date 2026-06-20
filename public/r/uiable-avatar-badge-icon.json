@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-avatar-badge-icon",
+  "title": "Badge Icon Avatar",
+  "description": "Avatar Badge Icon variant for avatar.",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/avatar/avatar-badge-icon.tsx",
+      "content": "// shadcn\nimport {\n  Avatar,\n  AvatarBadge,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\n// assets\nimport { PlusIcon } from \"lucide-react\";\n\n//  ------------------------------ | AVATAR - BADGE ICON | ------------------------------  //\n\nexport function AvatarBadgeIconExample() {\n  return (\n    <Avatar>\n      <AvatarImage\n        src=\"https://cdn.uiable.com/user/avatar-2.jpg\"\n        alt=\"@pranathip\"\n      />\n      <AvatarFallback>PP</AvatarFallback>\n      <AvatarBadge>\n        <PlusIcon />\n      </AvatarBadge>\n    </Avatar>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/avatar/avatar-badge-icon.tsx"
+    }
+  ],
+  "categories": [
+    "avatar"
+  ],
+  "type": "registry:ui"
+}

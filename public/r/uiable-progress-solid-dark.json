@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-progress-solid-dark",
+  "title": "Solid Dark Progress",
+  "description": "Progress Solid Dark variant for progress.",
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-solid-dark.tsx",
+      "content": "// shadcn\r\nimport { Progress } from \"@/components/ui/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - SOLID DARK | ------------------------------  //\r\n\r\nexport default function ProgressSolidDark() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <Progress\r\n        value={85}\r\n        className=\"*:h-4 *:bg-muted/20 dark:*:bg-muted/10 *:rounded-lg **:bg-slate-800 dark:**:bg-slate-100 **:rounded-lg\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-solid-dark.tsx"
+    }
+  ],
+  "categories": [
+    "progress"
+  ],
+  "type": "registry:ui"
+}

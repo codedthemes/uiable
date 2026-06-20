@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-team-2",
+  "title": "Team 2",
+  "description": "Team variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/team/team-2/team-2.tsx",
+      "content": "import Image from \"next/image\";\r\n\r\n// assets\r\nimport { Facebook, Instagram, Twitter } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TEAM 2 | ------------------------------  //\r\n\r\nexport default function team2() {\r\n  return (\r\n    <section className=\"pt-16\">\r\n      <div className=\"mx-auto container px-6\">\r\n        <div className=\"grid grid-cols-12 items-center gap-8\">\r\n          <div className=\"col-span-12 md:col-span-5 flex justify-center\">\r\n            <Image\r\n              src=\"https://cdn.uiable.com/block/team4.png\"\r\n              alt=\"Shirley Hoe\"\r\n              width={365}\r\n              height={350}\r\n              className=\"object-cover\"\r\n            />\r\n          </div>\r\n          <div className=\"col-span-12 md:col-span-7\">\r\n            <p className=\"text-primary text-lg font-semibold uppercase tracking-widest mb-3\">\r\n              Meet Your Assistant\r\n            </p>\r\n            <h2>Shirley Hoe</h2>\r\n            <p className=\"text-muted-foreground mt-4 max-w-md\">\r\n              At half-past eight the door opened, the policeman appeared, and\r\n              requesting them to follow him, led the way to an adjoining hall.\r\n            </p>\r\n            <div className=\"mt-6 mb-3 flex items-center gap-4\">\r\n              <a\r\n                href=\"#\"\r\n                aria-label=\"Facebook\"\r\n                className=\"flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600 transition-all hover:scale-105 hover:bg-blue-600 hover:text-white\"\r\n              >\r\n                <Facebook className=\"size-5\" />\r\n              </a>\r\n\r\n              <a\r\n                href=\"#\"\r\n                aria-label=\"Twitter\"\r\n                className=\"flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 text-sky-500 transition-all hover:scale-105 hover:bg-sky-500 hover:text-white\"\r\n              >\r\n                <Twitter className=\"size-5\" />\r\n              </a>\r\n\r\n              <a\r\n                href=\"#\"\r\n                aria-label=\"Instagram\"\r\n                className=\"flex h-10 w-10 items-center justify-center rounded-full bg-pink-100 text-pink-500 transition-all hover:scale-105 hover:bg-pink-500 hover:text-white\"\r\n              >\r\n                <Instagram className=\"size-5\" />\r\n              </a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/team/team-2/team-2.tsx"
+    }
+  ],
+  "categories": [
+    "team"
+  ],
+  "type": "registry:block"
+}

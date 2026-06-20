@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-empty-card",
+  "title": "Empty Card",
+  "description": "Empty Card variant for empty.",
+  "registryDependencies": [
+    "empty"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/empty/empty-card.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Empty,\r\n  EmptyContent,\r\n  EmptyDescription,\r\n  EmptyHeader,\r\n  EmptyMedia,\r\n  EmptyTitle\r\n} from \"@/components/ui/empty\";\r\n\r\n// assets\r\nimport { FolderOpen, Link1 } from \"iconsax-reactjs\";\r\n\r\n//  ------------------------------ | EMPTY - CARD | ------------------------------  //\r\n\r\nexport function EmptyInCard() {\r\n  return (\r\n    <Empty>\r\n      <EmptyHeader>\r\n        <EmptyMedia variant=\"icon\">\r\n          <FolderOpen />\r\n        </EmptyMedia>\r\n        <EmptyTitle>No projects yet</EmptyTitle>\r\n        <EmptyDescription>\r\n          You haven't created any projects yet. Get started by creating your\r\n          first project.\r\n        </EmptyDescription>\r\n      </EmptyHeader>\r\n      <EmptyContent>\r\n        <div className=\"flex gap-2 mb-2\">\r\n          <Button render={<a href=\"#\" />} nativeButton={false}>\r\n            Create project\r\n          </Button>\r\n          <Button variant=\"outline\">Import project</Button>\r\n        </div>\r\n        <Button\r\n          variant=\"link\"\r\n          render={<a href=\"#\" />}\r\n          nativeButton={false}\r\n          className=\" gap-2 hover:text-primary\"\r\n        >\r\n          Learn more <Link1 />\r\n        </Button>\r\n      </EmptyContent>\r\n    </Empty>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/empty/empty-card.tsx"
+    }
+  ],
+  "categories": [
+    "empty"
+  ],
+  "type": "registry:ui"
+}

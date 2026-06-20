@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-content-23",
+  "title": "Content 23",
+  "description": "Content variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/content/content-23/content-23.tsx",
+      "content": "//  ------------------------------ | CONTENT 23 | ------------------------------  //\r\n\r\nexport default function Content23() {\r\n  return (\r\n    <div className=\"bg-white py-24 sm:py-32\">\r\n      <div className=\"mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8\">\r\n        <h2 className=\"text-center text-base/7 font-semibold text-indigo-600\">\r\n          We’re Working on Something Cool\r\n        </h2>\r\n        <p className=\"mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl\">\r\n          Big Things Are Coming 🚀\r\n        </p>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/content/content-23/content-23.tsx"
+    }
+  ],
+  "categories": [
+    "content"
+  ],
+  "type": "registry:block"
+}

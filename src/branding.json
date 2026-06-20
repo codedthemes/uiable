@@ -1,0 +1,22 @@
+{
+  "brandName": "UIAble",
+  "title": "Components to Complete Interfaces",
+  "company": {
+    "name": "CodedThemes ",
+    "url": "https://codedthemes.com/",
+    "socialLink": {
+      "linkedin": "https://in.linkedin.com/company/codedthemes",
+      "x": "https://x.com/uiable",
+      "instagram": "#",
+      "github": "https://github.com/codedthemes/uiable",
+      "discord": "https://discord.gg/gmqz4BWYA8",
+      "support": "https://codedthemes.support-hub.io/"
+    }
+  },
+  "logo": {
+    "main": "",
+    "logoIcon": "",
+    "logoFab": "",
+    "logoWatermark": ""
+  }
+}

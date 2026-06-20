@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-avatar",
+  "title": "Avatar Item",
+  "description": "Item Avatar variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-avatar.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemMedia,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { Plus } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ITEM - AVATAR | ------------------------------  //\r\n\r\nexport function ItemAvatar() {\r\n  return (\r\n    <div className=\"flex w-full max-w-lg flex-col gap-6\">\r\n      <Item variant=\"outline\">\r\n        <ItemMedia>\r\n          <Avatar className=\"size-10\">\r\n            <AvatarImage src=\"https://cdn.uiable.com/user/avatar-1.jpg\" />\r\n            <AvatarFallback>ER</AvatarFallback>\r\n          </Avatar>\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Evil Rabbit</ItemTitle>\r\n          <ItemDescription>Last seen 5 months ago</ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"icon-sm\" className=\"rounded-full\" aria-label=\"Invite\">\r\n            <Plus />\r\n          </Button>\r\n        </ItemActions>\r\n      </Item>\r\n      <Item variant=\"outline\">\r\n        <ItemMedia>\r\n          <div className=\"*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2\">\r\n            <Avatar className=\"hidden sm:flex\">\r\n              <AvatarImage\r\n                src=\"https://cdn.uiable.com/user/avatar-2.jpg\"\r\n                alt=\"@shadcn\"\r\n              />\r\n              <AvatarFallback>CN</AvatarFallback>\r\n            </Avatar>\r\n            <Avatar className=\"hidden sm:flex\">\r\n              <AvatarImage\r\n                src=\"https://cdn.uiable.com/user/avatar-3.jpg\"\r\n                alt=\"@maxleiter\"\r\n              />\r\n              <AvatarFallback>LR</AvatarFallback>\r\n            </Avatar>\r\n            <Avatar>\r\n              <AvatarImage\r\n                src=\"https://cdn.uiable.com/user/avatar-4.jpg\"\r\n                alt=\"@evilrabbit\"\r\n              />\r\n              <AvatarFallback>ER</AvatarFallback>\r\n            </Avatar>\r\n          </div>\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>No Team Members</ItemTitle>\r\n          <ItemDescription>\r\n            Invite your team to collaborate on this project.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Invite</Button>\r\n        </ItemActions>\r\n      </Item>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-avatar.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

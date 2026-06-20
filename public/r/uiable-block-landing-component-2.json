@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-landing-component-2",
+  "title": "Component 2",
+  "description": "Landing component block with a complete application console UI.",
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "input-group",
+    "checkbox",
+    "radio-group",
+    "switch",
+    "avatar",
+    "badge",
+    "slider"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/landing/component-2/component-2.tsx",
+      "content": "\"use client\";\n\n// project imports\nimport ProfileCard from \"@/components/uiable/blocks/landing/components/ProfileCard\";\nimport AskMeAnything from \"@/components/uiable/blocks/landing/components/AskMeAnything\";\nimport RevenueGrowthSlider from \"@/components/uiable/blocks/landing/components/RevenueGrowthSlider\";\nimport OneTimePasswordCard from \"@/components/uiable/blocks/landing/components/OneTimePasswordCard\";\nimport ActionButtonGroupBadge from \"@/components/uiable/blocks/landing/components/ActionButtonGroupBadge\";\nimport RevenueChartCard from \"@/components/uiable/blocks/landing/components/RevenueChartCard\";\nimport PrivacyVisibilityCard from \"@/components/uiable/blocks/landing/components/PrivacyVisibilityCard\";\nimport UploadFilesCard from \"@/components/uiable/blocks/landing/components/UploadFilesCard\";\nimport DeploymentEnvironmentCard from \"@/components/uiable/blocks/landing/components/DeploymentEnvironmentCard\";\nimport EventAlertCard from \"@/components/uiable/blocks/landing/components/EventAlertCard\";\nimport VerificationBannerCard from \"@/components/uiable/blocks/landing/components/VerificationBannerCard\";\nimport CurrencySwapCard from \"@/components/uiable/blocks/landing/components/CurrencySwapCard\";\nimport PowerUsageCard from \"@/components/uiable/blocks/landing/components/PowerUsageCard\";\n\n//  ------------------------------ | COMPONENT 2 | ------------------------------  //\n\nexport default function Component2() {\n  return (\n    <section className=\"w-full mx-auto py-12.5 px-4 sm:px-8 flex flex-col gap-12.5\">\n      <div className=\"flex flex-col gap-2.5 sm:gap-3.5\">\n        <h2 className=\"text-2xl sm:text-3xl md:text-4xl font-medium leading-tight tracking-[0.1px] text-foreground\">\n          Build complete experiences, not just interfaces\n        </h2>\n        <p className=\"font-normal text-base sm:text-base md:text-lg leading-6 sm:leading-6 text-muted-foreground\">\n          Pre-built application patterns designed to help you move from idea to\n          production faster.\n        </p>\n      </div>\n\n      <div className=\"relative\">\n        <div className=\"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6\">\n          {/* COLUMN 1 */}\n          <div className=\"flex flex-col gap-6\">\n            <ProfileCard />\n            <AskMeAnything />\n            <RevenueGrowthSlider />\n            <OneTimePasswordCard />\n          </div>\n\n          {/* COLUMN 2 */}\n          <div className=\"flex flex-col gap-6\">\n            <ActionButtonGroupBadge />\n            <RevenueChartCard />\n            <PrivacyVisibilityCard />\n          </div>\n\n          {/* COLUMN 3 */}\n          <div className=\"flex flex-col gap-6\">\n            <UploadFilesCard />\n            <DeploymentEnvironmentCard />\n          </div>\n\n          {/* COLUMN 4 */}\n          <div className=\"flex flex-col gap-6\">\n            <EventAlertCard />\n            <VerificationBannerCard />\n            <CurrencySwapCard />\n            <PowerUsageCard />\n          </div>\n        </div>\n\n        <div\n          className=\"absolute bottom-0 left-0 right-0 h-70 bg-gradient-to-t from-card via-card/40 to-transparent pointer-events-none z-20\"\n        />\n      </div>\n    </section>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/landing/component-2/component-2.tsx"
+    }
+  ],
+  "categories": [
+    "landing"
+  ],
+  "type": "registry:block"
+}

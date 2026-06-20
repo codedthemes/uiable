@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-block-end",
+  "title": "Block End Input Group",
+  "description": "Input Group Block End variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-block-end.tsx",
+      "content": "// shadcn\nimport {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel\n} from \"@/components/ui/field\";\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n  InputGroupText,\n  InputGroupTextarea\n} from \"@/components/ui/input-group\";\n\n//  ------------------------------ | INPUT GROUP - BLOCK END | ------------------------------  //\n\nexport function InputGroupBlockEnd() {\n  return (\n    <FieldGroup className=\"max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"block-end-input\">Input</FieldLabel>\n        <InputGroup className=\"h-auto\">\n          <InputGroupInput id=\"block-end-input\" placeholder=\"Enter amount\" />\n          <InputGroupAddon align=\"block-end\">\n            <InputGroupText>USD</InputGroupText>\n          </InputGroupAddon>\n        </InputGroup>\n        <FieldDescription>Footer positioned below the input.</FieldDescription>\n      </Field>\n      <Field>\n        <FieldLabel htmlFor=\"block-end-textarea\">Textarea</FieldLabel>\n        <InputGroup>\n          <InputGroupTextarea\n            id=\"block-end-textarea\"\n            placeholder=\"Write a comment...\"\n          />\n          <InputGroupAddon align=\"block-end\">\n            <InputGroupText>0/280</InputGroupText>\n            <InputGroupButton variant=\"default\" size=\"sm\" className=\"ml-auto\">\n              Post\n            </InputGroupButton>\n          </InputGroupAddon>\n        </InputGroup>\n        <FieldDescription>\n          Footer positioned below the textarea.\n        </FieldDescription>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-block-end.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

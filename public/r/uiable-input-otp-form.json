@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-otp-form",
+  "title": "Form Input Otp",
+  "description": "Input Otp Form variant for input-otp.",
+  "registryDependencies": [
+    "input-otp"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-otp/input-otp-form.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Card,\r\n  CardContent,\r\n  CardDescription,\r\n  CardFooter,\r\n  CardHeader,\r\n  CardTitle\r\n} from \"@/components/ui/card\";\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputOTP,\r\n  InputOTPGroup,\r\n  InputOTPSeparator,\r\n  InputOTPSlot\r\n} from \"@/components/ui/input-otp\";\r\n\r\n// assets\r\nimport { RefreshCwIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT OTP - FORM | ------------------------------  //\r\n\r\nexport function InputOTPForm() {\r\n  return (\r\n    <Card className=\"mx-auto max-w-md\">\r\n      <CardHeader>\r\n        <CardTitle>Verify your login</CardTitle>\r\n        <CardDescription>\r\n          Enter the verification code we sent to your email address:{\" \"}\r\n          <span className=\"font-medium\">m@example.com</span>.\r\n        </CardDescription>\r\n      </CardHeader>\r\n      <CardContent>\r\n        <Field>\r\n          <div className=\"flex items-center justify-between\">\r\n            <FieldLabel htmlFor=\"otp-verification\">\r\n              Verification code\r\n            </FieldLabel>\r\n            <Button variant=\"outline\" size=\"xs\">\r\n              <RefreshCwIcon />\r\n              Resend Code\r\n            </Button>\r\n          </div>\r\n          <InputOTP maxLength={6} id=\"otp-verification\" required>\r\n            <InputOTPGroup className=\"*:data-[slot=input-otp-slot]:h-12 *:data-[slot=input-otp-slot]:w-11 *:data-[slot=input-otp-slot]:text-xl\">\r\n              <InputOTPSlot index={0} />\r\n              <InputOTPSlot index={1} />\r\n              <InputOTPSlot index={2} />\r\n            </InputOTPGroup>\r\n            <InputOTPSeparator className=\"mx-2\" />\r\n            <InputOTPGroup className=\"*:data-[slot=input-otp-slot]:h-12 *:data-[slot=input-otp-slot]:w-11 *:data-[slot=input-otp-slot]:text-xl\">\r\n              <InputOTPSlot index={3} />\r\n              <InputOTPSlot index={4} />\r\n              <InputOTPSlot index={5} />\r\n            </InputOTPGroup>\r\n          </InputOTP>\r\n          <FieldDescription>\r\n            <a href=\"#\">I no longer have access to this email address.</a>\r\n          </FieldDescription>\r\n        </Field>\r\n      </CardContent>\r\n      <CardFooter>\r\n        <Field>\r\n          <Button type=\"submit\" className=\"w-full\">\r\n            Verify\r\n          </Button>\r\n          <div className=\"text-muted-foreground text-sm\">\r\n            Having trouble signing in?{\" \"}\r\n            <a\r\n              href=\"#\"\r\n              className=\"hover:text-primary underline underline-offset-4 transition-colors\"\r\n            >\r\n              Contact support\r\n            </a>\r\n          </div>\r\n        </Field>\r\n      </CardFooter>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-otp/input-otp-form.tsx"
+    }
+  ],
+  "categories": [
+    "input-otp"
+  ],
+  "type": "registry:ui"
+}

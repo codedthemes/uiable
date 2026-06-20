@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-size",
+  "title": "Size Button Group",
+  "description": "Button Group Size variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-size.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\n\n// assets\nimport { PlusIcon } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON GROUP - SIZE | ------------------------------  //\n\nexport default function ButtonGroupSize() {\n  return (\n    <div className=\"flex flex-col items-start gap-8\">\n      <ButtonGroup>\n        <Button size=\"sm\">Small</Button>\n        <Button size=\"sm\">Button</Button>\n        <Button size=\"sm\">Group</Button>\n        <Button size=\"icon-sm\" className=\"h-auto\">\n          <PlusIcon />\n        </Button>\n      </ButtonGroup>\n      <ButtonGroup>\n        <Button>Default</Button>\n        <Button>Button</Button>\n        <Button>Group</Button>\n        <Button size=\"icon\" className=\"h-auto\">\n          <PlusIcon />\n        </Button>\n      </ButtonGroup>\n      <ButtonGroup>\n        <Button size=\"lg\">Large</Button>\n        <Button size=\"lg\">Button</Button>\n        <Button size=\"lg\">Group</Button>\n        <Button size=\"icon-lg\" className=\"h-auto\">\n          <PlusIcon />\n        </Button>\n      </ButtonGroup>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-size.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

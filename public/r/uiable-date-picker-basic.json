@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-date-picker-basic",
+  "title": "Basic Date Picker",
+  "description": "Date Picker Basic variant for date-picker.",
+  "registryDependencies": [
+    "date-picker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/date-picker/date-picker-basic.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  Popover,\r\n  PopoverContent,\r\n  PopoverTrigger\r\n} from \"@/components/ui/popover\";\r\n\r\n// third party\r\nimport { format } from \"date-fns\";\r\n\r\n//  ------------------------------ | DATE PICKER - BASIC | ------------------------------  //\r\n\r\nexport function DatePickerSimple() {\r\n  const [date, setDate] = useState<Date>();\r\n\r\n  return (\r\n    <Field className=\"mx-auto w-44\">\r\n      <FieldLabel htmlFor=\"date-picker-simple\">Date</FieldLabel>\r\n      <Popover>\r\n        <PopoverTrigger\r\n          render={\r\n            <Button\r\n              id=\"date-picker-simple\"\r\n              className=\"justify-start font-normal block\"\r\n            />\r\n          }\r\n        >\r\n          {date ? format(date, \"PPP\") : <span>Pick a date</span>}\r\n        </PopoverTrigger>\r\n        <PopoverContent className=\"w-auto p-0\" align=\"start\">\r\n          <Calendar\r\n            mode=\"single\"\r\n            selected={date}\r\n            onSelect={setDate}\r\n            defaultMonth={date}\r\n          />\r\n        </PopoverContent>\r\n      </Popover>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/date-picker/date-picker-basic.tsx"
+    }
+  ],
+  "categories": [
+    "date-picker"
+  ],
+  "type": "registry:ui"
+}

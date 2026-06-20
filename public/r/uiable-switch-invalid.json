@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-switch-invalid",
+  "title": "Invalid Switch",
+  "description": "Switch Invalid variant for switch.",
+  "registryDependencies": [
+    "switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-invalid.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Field,\r\n  FieldContent,\r\n  FieldDescription,\r\n  FieldLabel\r\n} from \"@/components/ui/field\";\r\nimport { Switch } from \"@/components/ui/switch\";\r\n\r\n//  ------------------------------ | SWITCH - INVALID | ------------------------------  //\r\n\r\nexport function SwitchInvalid() {\r\n  return (\r\n    <Field orientation=\"horizontal\" className=\"max-w-sm\" data-invalid>\r\n      <FieldContent>\r\n        <FieldLabel htmlFor=\"switch-terms\">\r\n          Accept terms and conditions\r\n        </FieldLabel>\r\n        <FieldDescription>\r\n          You must accept the terms and conditions to continue.\r\n        </FieldDescription>\r\n      </FieldContent>\r\n      <Switch id=\"switch-terms\" aria-invalid />\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-invalid.tsx"
+    }
+  ],
+  "categories": [
+    "switch"
+  ],
+  "type": "registry:ui"
+}

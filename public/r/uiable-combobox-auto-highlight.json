@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-combobox-auto-highlight",
+  "title": "Auto Highlight Combobox",
+  "description": "Combobox Auto Highlight variant for combobox.",
+  "registryDependencies": [
+    "combobox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/combobox/combobox-auto-highlight.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Combobox,\r\n  ComboboxContent,\r\n  ComboboxEmpty,\r\n  ComboboxInput,\r\n  ComboboxItem,\r\n  ComboboxList\r\n} from \"@/components/ui/combobox\";\r\n\r\n// constants\r\nconst frameworks = [\r\n  \"Next.js\",\r\n  \"SvelteKit\",\r\n  \"Nuxt.js\",\r\n  \"Remix\",\r\n  \"Astro\"\r\n] as const;\r\n\r\n//  ------------------------------ | COMBOBOX - AUTO HIGHLIGHT | ------------------------------  //\r\n\r\nexport function ComboboxAutoHighlight() {\r\n  return (\r\n    <Combobox items={frameworks} autoHighlight>\r\n      <ComboboxInput placeholder=\"Select a framework\" />\r\n      <ComboboxContent>\r\n        <ComboboxEmpty>No items found.</ComboboxEmpty>\r\n        <ComboboxList>\r\n          {(item) => (\r\n            <ComboboxItem key={item} value={item}>\r\n              {item}\r\n            </ComboboxItem>\r\n          )}\r\n        </ComboboxList>\r\n      </ComboboxContent>\r\n    </Combobox>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/combobox/combobox-auto-highlight.tsx"
+    }
+  ],
+  "categories": [
+    "combobox"
+  ],
+  "type": "registry:ui"
+}

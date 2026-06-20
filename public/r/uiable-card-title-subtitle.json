@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-title-subtitle",
+  "title": "Title Subtitle Card",
+  "description": "Card Title Subtitle variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-title-subtitle.tsx",
+      "content": "// shadcn\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardTitle\n} from \"@/components/ui/card\";\n\n//  ------------------------------ | CARD - TITLE SUBTITLE | ------------------------------  //\n\nexport default function CardTitleSubtitle() {\n  return (\n    <Card className=\"rounded-xl shadow-none border-none ring-1 ring-foreground/10 bg-card\">\n      <CardContent className=\"p-5\">\n        <CardTitle className=\"mb-1\">Card title</CardTitle>\n        <CardDescription className=\"text-secondary-500 mb-2\">\n          Card subtitle\n        </CardDescription>\n        <p className=\"mb-3 text-muted-foreground leading-relaxed\">\n          Some quick example text to build on the card title and make up the\n          bulk of the card's content.\n        </p>\n        <div className=\"flex gap-4 text-primary\">\n          <a href=\"#!\" className=\"hover:underline\">\n            Card link\n          </a>\n          <a href=\"#!\" className=\"hover:underline\">\n            Another link\n          </a>\n        </div>\n      </CardContent>\n    </Card>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-title-subtitle.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

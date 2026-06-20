@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-gallery-8",
+  "title": "Gallery 8",
+  "description": "Gallery variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/gallery/gallery-8/gallery-8.tsx",
+      "content": "import Image from \"next/image\";\r\n\r\n// constants\r\nconst works = [\r\n  {\r\n    title: \"First one\",\r\n    description: \"At half-past eight\",\r\n    image: \"https://cdn.uiable.com/block/g1.jpg\",\r\n  },\r\n  {\r\n    title: \"Second one\",\r\n    description: \"At half-past eight\",\r\n    image: \"https://cdn.uiable.com/block/g2.jpg\",\r\n  },\r\n  {\r\n    title: \"Third one\",\r\n    description: \"At half-past eight\",\r\n    image: \"https://cdn.uiable.com/block/g3.jpg\",\r\n  },\r\n  {\r\n    title: \"Four one\",\r\n    description: \"At half-past eight\",\r\n    image: \"https://cdn.uiable.com/block/g4.jpg\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | GALLERY 9 | ------------------------------  //\r\n\r\nexport default function Gallery8() {\r\n  return (\r\n    <section className=\"py-16 md:py-24\">\r\n      <div className=\"container px-4 mx-auto\">\r\n        <div className=\"grid grid-cols-12 gap-y-12 text-center\">\r\n          {/* Header Section */}\r\n          <div className=\"col-span-12 flex flex-col items-center gap-4\">\r\n            <h2>Our Works</h2>\r\n            <p className=\"text-slate-500 text-sm md:text-base max-w-2xl\">\r\n              At half-past eight the door opened, the policeman appeared and\r\n              requesting them to follow him, led way to an adjoining hall.\r\n            </p>\r\n          </div>\r\n\r\n          {/* Gallery Items Grid */}\r\n          <div className=\"col-span-12\">\r\n            <div className=\"grid grid-cols-12 gap-y-6 md:gap-x-6\">\r\n              {works.map((item, index) => (\r\n                <div\r\n                  key={index}\r\n                  className=\"col-span-12 sm:col-span-6 md:col-span-3 flex flex-col items-center gap-6\"\r\n                >\r\n                  {/* Circular Image Container */}\r\n                  <div className=\"relative w-full max-w-50 aspect-square rounded-full overflow-hidden border border-slate-100 shadow-sm\">\r\n                    <Image\r\n                      src={item.image}\r\n                      alt={item.title}\r\n                      fill\r\n                      className=\"object-cover\"\r\n                    />\r\n                  </div>\r\n\r\n                  {/* Text Content */}\r\n                  <div className=\"flex flex-col gap-1\">\r\n                    <h4>{item.title}</h4>\r\n                    <p className=\"text-slate-500 text-sm md:text-md\">\r\n                      {item.description}\r\n                    </p>\r\n                  </div>\r\n                </div>\r\n              ))}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/gallery/gallery-8/gallery-8.tsx"
+    }
+  ],
+  "categories": [
+    "gallery"
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-drawer-sides",
+  "title": "Sides Drawer",
+  "description": "Drawer Sides variant for drawer.",
+  "registryDependencies": [
+    "drawer"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/drawer/drawer-sides.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Drawer,\n  DrawerClose,\n  DrawerContent,\n  DrawerDescription,\n  DrawerFooter,\n  DrawerHeader,\n  DrawerTitle,\n  DrawerTrigger\n} from \"@/components/ui/drawer\";\n\n// constants\nconst DRAWER_SIDES = [\"top\", \"right\", \"bottom\", \"left\"] as const;\n\n//  ------------------------------ | DRAWER - SIDES | ------------------------------  //\n\nexport function DrawerWithSides() {\n  return (\n    <div className=\"flex flex-wrap gap-2\">\n      {DRAWER_SIDES.map((side) => (\n        <Drawer\n          key={side}\n          direction={\n            side === \"bottom\" ? undefined : (side as \"top\" | \"right\" | \"left\")\n          }\n        >\n          <DrawerTrigger asChild className=\"capitalize\">\n            <Button>{side}</Button>\n          </DrawerTrigger>\n          <DrawerContent className=\"data-[vaul-drawer-direction=bottom]:max-h-[50vh] data-[vaul-drawer-direction=top]:max-h-[50vh]\">\n            <DrawerHeader>\n              <DrawerTitle>Move Goal</DrawerTitle>\n              <DrawerDescription>\n                Set your daily activity goal.\n              </DrawerDescription>\n            </DrawerHeader>\n            <div className=\"no-scrollbar overflow-y-auto px-5\">\n              {Array.from({ length: 10 }).map((_, index) => (\n                <p key={index} className=\"mb-4 leading-normal\">\n                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed\n                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n                  Ut enim ad minim veniam, quis nostrud exercitation ullamco\n                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute\n                  irure dolor in reprehenderit in voluptate velit esse cillum\n                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat\n                  cupidatat non proident, sunt in culpa qui officia deserunt\n                  mollit anim id est laborum.\n                </p>\n              ))}\n            </div>\n            <DrawerFooter>\n              <div className=\"grid grid-cols-2 gap-2\">\n                <Button>Submit</Button>\n                <DrawerClose>\n                  <Button variant=\"outline\">Cancel</Button>\n                </DrawerClose>\n              </div>\n            </DrawerFooter>\n          </DrawerContent>\n        </Drawer>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/drawer/drawer-sides.tsx"
+    }
+  ],
+  "categories": [
+    "drawer"
+  ],
+  "type": "registry:ui"
+}

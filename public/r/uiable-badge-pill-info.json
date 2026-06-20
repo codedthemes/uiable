@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-pill-info",
+  "title": "Info Pill Badge",
+  "description": "Badge Pill Info variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-pill-info.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - PILL INFO | ------------------------------  //\n\nexport default function BadgePillInfo() {\n  return <Badge className=\"rounded-full bg-cyan-500 text-white\">Info</Badge>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-pill-info.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

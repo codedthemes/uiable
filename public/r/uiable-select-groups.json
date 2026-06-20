@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-select-groups",
+  "title": "Groups Select",
+  "description": "Select Groups variant for select.",
+  "registryDependencies": [
+    "select"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/select/select-groups.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectLabel,\r\n  SelectSeparator,\r\n  SelectTrigger,\r\n  SelectValue,\r\n} from \"@/components/ui/select\";\r\n\r\n// constants\r\nconst fruits = [\r\n  { label: \"Apple\", value: \"apple\" },\r\n  { label: \"Banana\", value: \"banana\" },\r\n  { label: \"Blueberry\", value: \"blueberry\" },\r\n];\r\nconst vegetables = [\r\n  { label: \"Carrot\", value: \"carrot\" },\r\n  { label: \"Broccoli\", value: \"broccoli\" },\r\n  { label: \"Spinach\", value: \"spinach\" },\r\n];\r\nconst allItems = [\r\n  { label: \"Select a fruit\", value: null },\r\n  ...fruits,\r\n  ...vegetables,\r\n];\r\n\r\n//  ------------------------------ | SELECT - GROUPS | ------------------------------  //\r\n\r\nexport function SelectGroups() {\r\n  return (\r\n    <Select items={allItems}>\r\n      <SelectTrigger className=\"w-full max-w-48\">\r\n        <SelectValue />\r\n      </SelectTrigger>\r\n      <SelectContent>\r\n        <SelectGroup>\r\n          <SelectLabel>Fruits</SelectLabel>\r\n          {fruits.map((item) => (\r\n            <SelectItem key={item.value} value={item.value}>\r\n              {item.label}\r\n            </SelectItem>\r\n          ))}\r\n        </SelectGroup>\r\n        <SelectSeparator />\r\n        <SelectGroup>\r\n          <SelectLabel>Vegetables</SelectLabel>\r\n          {vegetables.map((item) => (\r\n            <SelectItem key={item.value} value={item.value}>\r\n              {item.label}\r\n            </SelectItem>\r\n          ))}\r\n        </SelectGroup>\r\n      </SelectContent>\r\n    </Select>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/select/select-groups.tsx"
+    }
+  ],
+  "categories": [
+    "select"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sidebar-menu-badge",
+  "title": "Menu Badge Sidebar",
+  "description": "Sidebar Menu Badge variant for sidebar.",
+  "dependencies": [],
+  "registryDependencies": [
+    "sidebar"
+  ],
+  "files": [
+    {
+      "path": "components/uiable/sidebar/sidebar-menu-badge.tsx",
+      "content": "\"use client\"\r\n\r\nimport {\r\n  Sidebar,\r\n  SidebarContent,\r\n  SidebarGroup,\r\n  SidebarGroupContent,\r\n  SidebarGroupLabel,\r\n  SidebarMenu,\r\n  SidebarMenuBadge,\r\n  SidebarMenuButton,\r\n  SidebarMenuItem,\r\n  SidebarProvider,\r\n} from \"@/components/ui/sidebar\"\r\nimport {\r\n  FrameIcon,\r\n  LifeBuoyIcon,\r\n  MapIcon,\r\n  PieChartIcon,\r\n  SendIcon,\r\n} from \"lucide-react\"\r\n\r\nconst projects = [\r\n  {\r\n    name: \"Design Engineering\",\r\n    url: \"#\",\r\n    icon: FrameIcon,\r\n    badge: \"24\",\r\n  },\r\n  {\r\n    name: \"Sales & Marketing\",\r\n    url: \"#\",\r\n    icon: PieChartIcon,\r\n    badge: \"12\",\r\n  },\r\n  {\r\n    name: \"Travel\",\r\n    url: \"#\",\r\n    icon: MapIcon,\r\n    badge: \"3\",\r\n  },\r\n  {\r\n    name: \"Support\",\r\n    url: \"#\",\r\n    icon: LifeBuoyIcon,\r\n    badge: \"21\",\r\n  },\r\n  {\r\n    name: \"Feedback\",\r\n    url: \"#\",\r\n    icon: SendIcon,\r\n    badge: \"8\",\r\n  },\r\n]\r\n\r\nexport default function AppSidebar() {\r\n  return (\r\n    <SidebarProvider className=\"relative min-h-[450px]\">\r\n      <Sidebar className=\"absolute h-[450px]\">\r\n        <SidebarContent>\r\n          <SidebarGroup>\r\n            <SidebarGroupLabel className=\"py-3\">Projects</SidebarGroupLabel>\r\n            <SidebarGroupContent>\r\n              <SidebarMenu>\r\n                {projects.map((project) => (\r\n                  <SidebarMenuItem key={project.name}>\r\n                    <SidebarMenuButton\r\n                      render={<a href={project.url} />}\r\n                      className=\"group-has-[[data-state=open]]/menu-item:bg-sidebar-accent\"\r\n                    >\r\n                      <project.icon />\r\n                      <span>{project.name}</span>\r\n                    </SidebarMenuButton>\r\n                    <SidebarMenuBadge>{project.badge}</SidebarMenuBadge>\r\n                  </SidebarMenuItem>\r\n                ))}\r\n              </SidebarMenu>\r\n            </SidebarGroupContent>\r\n          </SidebarGroup>\r\n        </SidebarContent>\r\n      </Sidebar>\r\n    </SidebarProvider>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/uiable/sidebar/sidebar-menu-badge.tsx"
+    }
+  ],
+  "categories": [
+    "sidebar"
+  ],
+  "type": "registry:component"
+}

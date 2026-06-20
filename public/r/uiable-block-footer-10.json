@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-footer-10",
+  "title": "Footer 10",
+  "description": "Footer variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/footer/footer-10/footer-10.tsx",
+      "content": "import Link from \"next/link\";\r\n\r\n// assets\r\nimport { Chrome, Facebook, Globe, Instagram } from \"lucide-react\";\r\n\r\n// project\r\nimport branding from \"@/branding.json\";\r\n\r\n// constants\r\nconst footerLinks = [\r\n  { label: \"About Us\", href: \"#\" },\r\n  { label: \"Services\", href: \"#\" },\r\n  { label: \"Privacy\", href: \"#\" },\r\n  { label: \"Content\", href: \"#\" }\r\n];\r\n\r\nconst socialLinks = [\r\n  { icon: Facebook, href: \"#\" },\r\n  { icon: Chrome, href: \"#\" },\r\n  { icon: Instagram, href: \"#\" }\r\n];\r\n\r\n//  ------------------------------ | FOOTER - 10 | ------------------------------  //\r\n\r\nexport default function Footer10() {\r\n  return (\r\n    <footer className=\"py-12 md:py-20\">\r\n      <div className=\"container px-4 mx-auto\">\r\n        <div className=\"grid grid-cols-12 gap-y-6 items-center\">\r\n          {/* Brand Section */}\r\n          <div className=\"col-span-12 md:col-span-3 flex items-center justify-center md:justify-start gap-2\">\r\n            <Globe className=\"h-5 w-5 text-slate-400\" />\r\n            <span className=\"text-md font-medium text-slate-500\">\r\n              {branding.brandName} UI Kit\r\n            </span>\r\n          </div>\r\n\r\n          {/* Navigation Links */}\r\n          <div className=\"col-span-12 md:col-span-6\">\r\n            <nav className=\"flex flex-wrap items-center justify-center gap-x-6\">\r\n              {footerLinks.map((link) => (\r\n                <Link\r\n                  key={link.label}\r\n                  href={link.href}\r\n                  className=\"text-md text-slate-500 hover:text-primary transition-colors\"\r\n                >\r\n                  {link.label}\r\n                </Link>\r\n              ))}\r\n            </nav>\r\n          </div>\r\n\r\n          {/* Social Icons Section */}\r\n          <div className=\"col-span-12 md:col-span-3 flex items-center justify-center md:justify-end gap-6\">\r\n            {socialLinks.map((social, index) => (\r\n              <Link\r\n                key={index}\r\n                href={social.href}\r\n                className=\"text-slate-400 hover:text-primary transition-colors\"\r\n                aria-label=\"Social link\"\r\n              >\r\n                <social.icon size={20} strokeWidth={1.5} />\r\n              </Link>\r\n            ))}\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/footer/footer-10/footer-10.tsx"
+    }
+  ],
+  "categories": [
+    "footer"
+  ],
+  "type": "registry:block"
+}

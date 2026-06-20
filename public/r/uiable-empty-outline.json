@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-empty-outline",
+  "title": "Empty Outline",
+  "description": "Empty Outline variant for empty.",
+  "registryDependencies": [
+    "empty"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/empty/empty-outline.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Empty,\n  EmptyContent,\n  EmptyDescription,\n  EmptyHeader,\n  EmptyMedia,\n  EmptyTitle\n} from \"@/components/ui/empty\";\n\n// assets\nimport { Cloud } from \"iconsax-reactjs\";\n\n//  ------------------------------ | EMPTY - OUTLINE | ------------------------------  //\n\nexport default function EmptyOutline() {\n  return (\n    <Empty className=\"border border-dashed border-border rounded-lg\">\n      <EmptyHeader>\n        <EmptyMedia variant=\"icon\">\n          <Cloud />\n        </EmptyMedia>\n        <EmptyTitle>Cloud Storage Empty</EmptyTitle>\n        <EmptyDescription>\n          Upload files to your cloud storage to access them anywhere.\n        </EmptyDescription>\n      </EmptyHeader>\n      <EmptyContent>\n        <Button>Upload Files</Button>\n      </EmptyContent>\n    </Empty>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/empty/empty-outline.tsx"
+    }
+  ],
+  "categories": [
+    "empty"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-avatar-group",
+  "title": "Group Avatar",
+  "description": "Avatar Group variant for avatar.",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/avatar/avatar-group.tsx",
+      "content": "// shadcn\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarGroup,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\n//  ------------------------------ | AVATAR - GROUP | ------------------------------  //\n\nexport function AvatarGroupExample() {\n  return (\n    <AvatarGroup>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-5.jpg\"\n          alt=\"@shadcn\"\n        />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-6.jpg\"\n          alt=\"@maxleiter\"\n        />\n        <AvatarFallback>LR</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://cdn.uiable.com/user/avatar-7.jpg\"\n          alt=\"@evilrabbit\"\n        />\n        <AvatarFallback>ER</AvatarFallback>\n      </Avatar>\n    </AvatarGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/avatar/avatar-group.tsx"
+    }
+  ],
+  "categories": [
+    "avatar"
+  ],
+  "type": "registry:ui"
+}

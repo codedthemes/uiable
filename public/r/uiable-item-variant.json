@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-variant",
+  "title": "Variant Item",
+  "description": "Item Variant variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-variant.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Item,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemMedia,\r\n  ItemTitle\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { Cup, FingerScan, MicrophoneSlash1 } from \"iconsax-reactjs\";\r\n\r\n//  ------------------------------ | ITEM - VARIANT | ------------------------------  //\r\n\r\nexport function ItemVariant() {\r\n  return (\r\n    <div className=\"flex w-full max-w-md flex-col gap-6\">\r\n      <Item>\r\n        <ItemMedia variant=\"icon\">\r\n          <Cup className=\"text-primary size-8\" />\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Default Variant</ItemTitle>\r\n          <ItemDescription>\r\n            Transparent background with no border.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n      </Item>\r\n      <Item variant=\"outline\">\r\n        <ItemMedia variant=\"icon\">\r\n          <FingerScan className=\"text-primary size-8\" />\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Outline Variant</ItemTitle>\r\n          <ItemDescription>\r\n            Outlined style with a visible border.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n      </Item>\r\n      <Item variant=\"muted\">\r\n        <ItemMedia variant=\"icon\">\r\n          <MicrophoneSlash1 className=\"text-primary size-8\" />\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Muted Variant</ItemTitle>\r\n          <ItemDescription>\r\n            Muted background for secondary content.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n      </Item>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-variant.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

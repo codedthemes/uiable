@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-native-select-disabled",
+  "title": "Disabled Native Select",
+  "description": "Native Select Disabled variant for native-select.",
+  "registryDependencies": [
+    "native-select"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/native-select/native-select-disabled.tsx",
+      "content": "// shadcn\r\nimport {\r\n  NativeSelect,\r\n  NativeSelectOption\r\n} from \"@/components/ui/native-select\";\r\n\r\n//  ------------------------------ | NATIVE SELECT - DISABLED | ------------------------------  //\r\n\r\nexport function NativeSelectDisabled() {\r\n  return (\r\n    <NativeSelect disabled className=\"w-35 [&>select]:w-full\">\r\n      <NativeSelectOption value=\"\">Disabled</NativeSelectOption>\r\n      <NativeSelectOption value=\"apple\">Apple</NativeSelectOption>\r\n      <NativeSelectOption value=\"banana\">Banana</NativeSelectOption>\r\n      <NativeSelectOption value=\"blueberry\">Blueberry</NativeSelectOption>\r\n    </NativeSelect>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/native-select/native-select-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "native-select"
+  ],
+  "type": "registry:ui"
+}

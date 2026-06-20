@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-select",
+  "title": "Select Button Group",
+  "description": "Button Group Select variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-select.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { ButtonGroup } from \"@/components/ui/button-group\";\r\nimport { Input } from \"@/components/ui/input\";\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger\r\n} from \"@/components/ui/select\";\r\n\r\n// assets\r\nimport { ArrowRightIcon } from \"lucide-react\";\r\n\r\n// constants\r\nconst CURRENCIES = [\r\n  { label: \"US Dollar\", value: \"$\" },\r\n  { label: \"Euro\", value: \"€\" },\r\n  { label: \"British Pound\", value: \"£\" }\r\n];\r\n\r\n//  ------------------------------ | BUTTON GROUP - SELECT | ------------------------------  //\r\n\r\nexport default function ButtonGroupSelect() {\r\n  const [currency, setCurrency] = useState(\"$\");\r\n\r\n  return (\r\n    <ButtonGroup className=\"items-center\">\r\n      <ButtonGroup>\r\n        <Select\r\n          items={CURRENCIES}\r\n          value={currency}\r\n          onValueChange={(value) => setCurrency(value as string)}\r\n        >\r\n          <SelectTrigger className=\"font-mono\">{currency}</SelectTrigger>\r\n          <SelectContent\r\n            alignItemWithTrigger={false}\r\n            align=\"start\"\r\n            className=\"min-w-45\"\r\n          >\r\n            <SelectGroup>\r\n              {CURRENCIES.map((item) => (\r\n                <SelectItem key={item.value} value={item.value}>\r\n                  {item.value}{\" \"}\r\n                  <span className=\"text-muted-foreground\">{item.label}</span>\r\n                </SelectItem>\r\n              ))}\r\n            </SelectGroup>\r\n          </SelectContent>\r\n        </Select>\r\n        <Input placeholder=\"10.00\" pattern=\"[0-9]*\" />\r\n      </ButtonGroup>\r\n      <ButtonGroup>\r\n        <Button aria-label=\"Send\" size=\"icon-lg\">\r\n          <ArrowRightIcon />\r\n        </Button>\r\n      </ButtonGroup>\r\n    </ButtonGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-select.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

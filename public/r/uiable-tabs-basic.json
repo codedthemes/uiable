@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-tabs-basic",
+  "title": "Basic Tabs",
+  "description": "Tabs Basic variant for tabs.",
+  "registryDependencies": [
+    "tabs"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/tabs/tabs-basic.tsx",
+      "content": "// shadcn\r\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\r\n\r\n//  ------------------------------ | TABS - BASIC | ------------------------------  //\r\n\r\nexport function TabsBasic() {\r\n  return (\r\n    <Tabs defaultValue=\"home\" className=\"w-full\">\r\n      <TabsList className=\"border-b border-b-border-border rounded-b-none justify-start w-full bg-transparent h-auto p-0 gap-1 max-h-10! *:flex-none\">\r\n        <TabsTrigger\r\n          value=\"home\"\r\n          className=\"rounded-b-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-4 py-2\"\r\n        >\r\n          Home\r\n        </TabsTrigger>\r\n        <TabsTrigger\r\n          value=\"profile\"\r\n          className=\"rounded-b-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-4 py-2\"\r\n        >\r\n          Profile\r\n        </TabsTrigger>\r\n        <TabsTrigger\r\n          value=\"contact\"\r\n          className=\"rounded-b-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-4 py-2\"\r\n        >\r\n          Contact\r\n        </TabsTrigger>\r\n      </TabsList>\r\n      <div className=\"mt-4\">\r\n        <TabsContent value=\"home\">\r\n          <p className=\"text-base text-muted-foreground\">\r\n            Lorem Ipsum is simply dummy text of the printing and typesetting\r\n            industry.\r\n          </p>\r\n        </TabsContent>\r\n        <TabsContent value=\"profile\">\r\n          <p className=\"text-base text-muted-foreground\">\r\n            It is a long established fact that a reader will be distracted by\r\n            the readable content of a page.\r\n          </p>\r\n        </TabsContent>\r\n        <TabsContent value=\"contact\">\r\n          <p className=\"text-base text-muted-foreground\">\r\n            There are many variations of passages of Lorem Ipsum available.\r\n          </p>\r\n        </TabsContent>\r\n      </div>\r\n    </Tabs>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tabs/tabs-basic.tsx"
+    }
+  ],
+  "categories": [
+    "tabs"
+  ],
+  "type": "registry:ui"
+}

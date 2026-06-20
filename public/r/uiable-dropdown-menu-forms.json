@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dropdown-menu-forms",
+  "title": "Form Dropdown Menu",
+  "description": "Dropdown Menu Forms variant for dropdown-menu.",
+  "registryDependencies": [
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-forms.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger\n} from \"@/components/ui/dropdown-menu\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\n\n// assets\nimport { ChevronDown } from \"lucide-react\";\n\n//  ------------------------------ | DROPDOWN MENU - FORMS | ------------------------------  //\n\nexport default function DropdownMenuForms() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger\n        render={\n          <Button\n            variant=\"default\"\n            className=\"bg-green-600 hover:bg-green-700 text-white\"\n          >\n            Forms <ChevronDown className=\"ml-2 h-4 w-4\" />\n          </Button>\n        }\n      />\n      <DropdownMenuContent align=\"start\" className=\"w-64 p-6\">\n        <form className=\"space-y-4\" onSubmit={(e) => e.preventDefault()}>\n          <div className=\"space-y-2\">\n            <Label htmlFor=\"email\">Email Address</Label>\n            <Input id=\"email\" type=\"email\" placeholder=\"email@example.com\" />\n          </div>\n          <div className=\"space-y-2\">\n            <Label htmlFor=\"password\">Password</Label>\n            <Input id=\"password\" type=\"password\" placeholder=\"Password\" />\n          </div>\n          <div className=\"flex items-center space-x-2\">\n            <Checkbox id=\"remember\" />\n            <Label htmlFor=\"remember\" className=\"text-xs font-normal\">\n              Remember me\n            </Label>\n          </div>\n          <div className=\"grid grid-cols-2 gap-2\">\n            <Button type=\"submit\">Sign in</Button>\n            <Button type=\"reset\" variant=\"secondary\">\n              Reset\n            </Button>\n          </div>\n        </form>\n        <DropdownMenuSeparator className=\"my-4\" />\n        <DropdownMenuItem>\n          New here? <a href=\"#\">Sign up</a>\n        </DropdownMenuItem>\n        <DropdownMenuItem>\n          <a href=\"#\">Forgot password?</a>\n        </DropdownMenuItem>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-forms.tsx"
+    }
+  ],
+  "categories": [
+    "dropdown-menu"
+  ],
+  "type": "registry:ui"
+}

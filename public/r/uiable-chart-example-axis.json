@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-chart-example-axis",
+  "title": "Axis Chart Example",
+  "description": "Chart Example Axis variant for chart.",
+  "registryDependencies": [
+    "chart"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/chart/chart-example-axis.tsx",
+      "content": "// shadcn\r\nimport { ChartConfig, ChartContainer } from \"@/components/ui/chart\";\r\n\r\n// third party\r\nimport { Bar, BarChart, CartesianGrid, XAxis } from \"recharts\";\r\n\r\n// constants\r\nconst chartData = [\r\n  { month: \"January\", desktop: 186, mobile: 80 },\r\n  { month: \"February\", desktop: 305, mobile: 200 },\r\n  { month: \"March\", desktop: 237, mobile: 120 },\r\n  { month: \"April\", desktop: 73, mobile: 190 },\r\n  { month: \"May\", desktop: 209, mobile: 130 },\r\n  { month: \"June\", desktop: 214, mobile: 140 }\r\n];\r\n\r\nconst chartConfig = {\r\n  desktop: {\r\n    label: \"Desktop\",\r\n    color: \"var(--chart-3)\"\r\n  },\r\n  mobile: {\r\n    label: \"Mobile\",\r\n    color: \"var(--chart-4)\"\r\n  }\r\n} satisfies ChartConfig;\r\n\r\n//  ------------------------------ | CHART - EXAMPLE AXIS | ------------------------------  //\r\n\r\nexport function ChartBarDemoAxis() {\r\n  return (\r\n    <ChartContainer config={chartConfig} className=\"min-h-[200px] w-full\">\r\n      <BarChart accessibilityLayer data={chartData}>\r\n        <CartesianGrid vertical={false} />\r\n        <XAxis\r\n          dataKey=\"month\"\r\n          tickLine={false}\r\n          tickMargin={10}\r\n          axisLine={false}\r\n          tickFormatter={(value) => value.slice(0, 3)}\r\n        />\r\n        <Bar dataKey=\"desktop\" fill=\"var(--color-desktop)\" radius={4} />\r\n        <Bar dataKey=\"mobile\" fill=\"var(--color-mobile)\" radius={4} />\r\n      </BarChart>\r\n    </ChartContainer>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/chart/chart-example-axis.tsx"
+    }
+  ],
+  "categories": [
+    "chart"
+  ],
+  "type": "registry:ui"
+}

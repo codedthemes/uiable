@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-solid-warning",
+  "title": "Warning Solid Badge",
+  "description": "Badge Solid Warning variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-solid-warning.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - SOLID WARNING | ------------------------------  //\n\nexport default function BadgeSolidWarning() {\n  return <Badge className=\"bg-yellow-500 text-white\">Warning</Badge>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-solid-warning.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

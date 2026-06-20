@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sidebar-rsc",
+  "title": "Rsc Sidebar",
+  "description": "Sidebar Rsc variant for sidebar.",
+  "dependencies": [],
+  "registryDependencies": [
+    "sidebar"
+  ],
+  "files": [
+    {
+      "path": "components/uiable/sidebar/sidebar-rsc.tsx",
+      "content": "import * as React from \"react\"\r\nimport {\r\n  Sidebar,\r\n  SidebarContent,\r\n  SidebarGroup,\r\n  SidebarGroupContent,\r\n  SidebarGroupLabel,\r\n  SidebarMenu,\r\n  SidebarMenuButton,\r\n  SidebarMenuItem,\r\n  SidebarMenuSkeleton,\r\n  SidebarProvider,\r\n} from \"@/components/ui/sidebar\"\r\nimport {\r\n  FrameIcon,\r\n  LifeBuoyIcon,\r\n  MapIcon,\r\n  PieChartIcon,\r\n  SendIcon,\r\n} from \"lucide-react\"\r\n\r\nconst projects = [\r\n  {\r\n    name: \"Design Engineering\",\r\n    url: \"#\",\r\n    icon: FrameIcon,\r\n    badge: \"24\",\r\n  },\r\n  {\r\n    name: \"Sales & Marketing\",\r\n    url: \"#\",\r\n    icon: PieChartIcon,\r\n    badge: \"12\",\r\n  },\r\n  {\r\n    name: \"Travel\",\r\n    url: \"#\",\r\n    icon: MapIcon,\r\n    badge: \"3\",\r\n  },\r\n  {\r\n    name: \"Support\",\r\n    url: \"#\",\r\n    icon: LifeBuoyIcon,\r\n    badge: \"21\",\r\n  },\r\n  {\r\n    name: \"Feedback\",\r\n    url: \"#\",\r\n    icon: SendIcon,\r\n    badge: \"8\",\r\n  },\r\n]\r\n\r\n// Dummy fetch function.\r\nasync function fetchProjects() {\r\n  await new Promise((resolve) => setTimeout(resolve, 3000))\r\n  return projects\r\n}\r\n\r\nexport default function AppSidebar() {\r\n  return (\r\n    <SidebarProvider className=\"relative min-h-[450px]\">\r\n      <Sidebar className=\"absolute h-[450px]\">\r\n        <SidebarContent>\r\n          <SidebarGroup>\r\n            <SidebarGroupLabel className=\"my-3\">Projects</SidebarGroupLabel>\r\n            <SidebarGroupContent>\r\n              <React.Suspense fallback={<NavProjectsSkeleton />}>\r\n                <NavProjects />\r\n              </React.Suspense>\r\n            </SidebarGroupContent>\r\n          </SidebarGroup>\r\n        </SidebarContent>\r\n      </Sidebar>\r\n    </SidebarProvider>\r\n  )\r\n}\r\n\r\nfunction NavProjectsSkeleton() {\r\n  return (\r\n    <SidebarMenu>\r\n      {Array.from({ length: 5 }).map((_, index) => (\r\n        <SidebarMenuItem key={index}>\r\n          <SidebarMenuSkeleton showIcon />\r\n        </SidebarMenuItem>\r\n      ))}\r\n    </SidebarMenu>\r\n  )\r\n}\r\n\r\nfunction NavProjects() {\r\n  return (\r\n    <SidebarMenu>\r\n      {projects.map((project) => (\r\n        <SidebarMenuItem key={project.name}>\r\n          <SidebarMenuButton render={<a href={project.url} />}>\r\n            <project.icon />\r\n            <span>{project.name}</span>\r\n          </SidebarMenuButton>\r\n        </SidebarMenuItem>\r\n      ))}\r\n    </SidebarMenu>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/uiable/sidebar/sidebar-rsc.tsx"
+    }
+  ],
+  "categories": [
+    "sidebar"
+  ],
+  "type": "registry:component"
+}

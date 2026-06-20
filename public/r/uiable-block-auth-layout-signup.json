@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-auth-layout-signup",
+  "title": "Signup",
+  "description": "Auth layout signup block.",
+  "registryDependencies": [
+    "button",
+    "card",
+    "checkbox",
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/layout/auth-layout/Signup.tsx",
+      "content": "import Link from \"next/link\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n// project\r\nimport Logo from \"@/components/uiable/layout/shared/logo\";\r\n\r\n//  ------------------------------ | PAGE - REGISTER | ------------------------------  //\r\n\r\nexport default function Signup() {\r\n  return (\r\n    <div className=\"min-h-screen w-full flex items-center justify-center px-4 py-10 bg-[url('https://cdn.uiable.com/authentication/img-auth-bg.jpg')] bg-cover bg-center dark:bg-[url('https://cdn.uiable.com/authentication/img-auth-bg-dark.jpg')]\">\r\n      <Card className=\"w-full max-w-md shadow-none\">\r\n        <CardContent className=\"space-y-4 p-6 sm:p-10\">\r\n          <div className=\"text-center\">\r\n            <Logo className=\"mb-2 justify-center\" />\r\n          </div>\r\n\r\n          {/* Email Login Heading */}\r\n          <div className=\"text-center mb-4\">\r\n            <h4 className=\"text-center font-medium mb-4\">\r\n              Sign up with your work email.\r\n            </h4>\r\n          </div>\r\n\r\n          {/* Signup Form */}\r\n          <div className=\"grid gap-0\">\r\n            <div className=\"grid sm:grid-cols-2 gap-3\">\r\n              <div className=\"grid gap-2 mb-3\">\r\n                <Input id=\"firstName\" placeholder=\"First Name\" required />\r\n              </div>\r\n              <div className=\"grid gap-2 mb-3\">\r\n                <Input id=\"lastName\" placeholder=\"Last Name\" required />\r\n              </div>\r\n            </div>\r\n            <div className=\"grid gap-2 mb-3\">\r\n              <Input\r\n                id=\"email\"\r\n                type=\"email\"\r\n                placeholder=\"Email Address\"\r\n                required\r\n              />\r\n            </div>\r\n            <div className=\"grid gap-2 mb-3\">\r\n              <Input\r\n                id=\"password\"\r\n                type=\"password\"\r\n                placeholder=\"Password\"\r\n                required\r\n              />\r\n            </div>\r\n            <div className=\"grid gap-2 mb-4\">\r\n              <Input\r\n                id=\"confirmPassword\"\r\n                type=\"password\"\r\n                placeholder=\"Confirm Password\"\r\n                required\r\n              />\r\n            </div>\r\n            <div className=\"flex items-center justify-between mt-1 flex-wrap gap-2\">\r\n              <div className=\"flex items-center space-x-2\">\r\n                <Checkbox\r\n                  id=\"remember\"\r\n                  className=\"border-border data-[state=checked]:bg-primary data-[state=checked]:border-primary rounded\"\r\n                  defaultChecked\r\n                />\r\n                <label\r\n                  htmlFor=\"remember\"\r\n                  className=\"peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"\r\n                >\r\n                  I agree to all the{\" \"}\r\n                  <Link href=\"#\" className=\"text-blue-600 hover:underline\">\r\n                    Terms & Condition\r\n                  </Link>\r\n                </label>\r\n              </div>\r\n            </div>\r\n            <Button className=\"w-full mt-4\">Sign up</Button>\r\n          </div>\r\n          <div className=\"flex justify-between items-end flex-wrap gap-2 mt-4\">\r\n            <h6 className=\"f-w-500 mb-0\">Already have an Account?</h6>\r\n            <Link href=\"\" className=\"text-primary\">\r\n              Login here\r\n            </Link>\r\n          </div>\r\n        </CardContent>\r\n      </Card>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/layout/auth-layout/Signup.tsx"
+    }
+  ],
+  "categories": [
+    "auth-layout"
+  ],
+  "type": "registry:block"
+}

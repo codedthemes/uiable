@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-collapsible-settings",
+  "title": "Settings Collapsible",
+  "description": "Collapsible Settings variant for collapsible.",
+  "registryDependencies": [
+    "collapsible"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/collapsible/collapsible-settings.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Card,\r\n  CardContent,\r\n  CardDescription,\r\n  CardHeader,\r\n  CardTitle\r\n} from \"@/components/ui/card\";\r\nimport {\r\n  Collapsible,\r\n  CollapsibleContent,\r\n  CollapsibleTrigger\r\n} from \"@/components/ui/collapsible\";\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n// assets\r\nimport { MaximizeIcon, MinimizeIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | COLLAPSIBLE - SETTINGS | ------------------------------  //\r\n\r\nexport function CollapsibleSettings() {\r\n  const [isOpen, setIsOpen] = useState(false);\r\n\r\n  return (\r\n    <Card className=\"mx-auto w-full max-w-xs\" size=\"sm\">\r\n      <CardHeader>\r\n        <CardTitle>Radius</CardTitle>\r\n        <CardDescription>Set the corner radius of the element.</CardDescription>\r\n      </CardHeader>\r\n      <CardContent>\r\n        <Collapsible\r\n          open={isOpen}\r\n          onOpenChange={setIsOpen}\r\n          className=\"flex items-start gap-2\"\r\n        >\r\n          <FieldGroup className=\"grid w-full grid-cols-2 gap-2\">\r\n            <Field>\r\n              <FieldLabel htmlFor=\"radius-x\" className=\"sr-only\">\r\n                Radius X\r\n              </FieldLabel>\r\n              <Input id=\"radius\" placeholder=\"0\" defaultValue={0} />\r\n            </Field>\r\n            <Field>\r\n              <FieldLabel htmlFor=\"radius-y\" className=\"sr-only\">\r\n                Radius Y\r\n              </FieldLabel>\r\n              <Input id=\"radius\" placeholder=\"0\" defaultValue={0} />\r\n            </Field>\r\n            <CollapsibleContent className=\"col-span-full grid grid-cols-subgrid gap-2\">\r\n              <Field>\r\n                <FieldLabel htmlFor=\"radius-x\" className=\"sr-only\">\r\n                  Radius X\r\n                </FieldLabel>\r\n                <Input id=\"radius\" placeholder=\"0\" defaultValue={0} />\r\n              </Field>\r\n              <Field>\r\n                <FieldLabel htmlFor=\"radius-y\" className=\"sr-only\">\r\n                  Radius Y\r\n                </FieldLabel>\r\n                <Input id=\"radius\" placeholder=\"0\" defaultValue={0} />\r\n              </Field>\r\n            </CollapsibleContent>\r\n          </FieldGroup>\r\n          <CollapsibleTrigger\r\n            render={<Button variant=\"outline\" size=\"icon\" className=\"mt-2\" />}\r\n          >\r\n            {isOpen ? <MinimizeIcon /> : <MaximizeIcon />}\r\n          </CollapsibleTrigger>\r\n        </Collapsible>\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/collapsible/collapsible-settings.tsx"
+    }
+  ],
+  "categories": [
+    "collapsible"
+  ],
+  "type": "registry:ui"
+}

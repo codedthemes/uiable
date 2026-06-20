@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-size",
+  "title": "Size Item",
+  "description": "Item Size variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-size.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Item,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemMedia,\r\n  ItemTitle\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { Code1 } from \"iconsax-reactjs\";\r\n\r\n//  ------------------------------ | ITEM - SIZE | ------------------------------  //\r\n\r\nexport function ItemSizeDemo() {\r\n  return (\r\n    <div className=\"flex w-full max-w-md flex-col gap-6\">\r\n      <Item variant=\"outline\">\r\n        <ItemMedia variant=\"icon\">\r\n          <Code1 className=\"size-6 text-cyan-500\" />\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Default Size</ItemTitle>\r\n          <ItemDescription>\r\n            The standard size for most use cases.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n      </Item>\r\n      <Item variant=\"outline\" size=\"sm\">\r\n        <ItemMedia variant=\"icon\">\r\n          <Code1 className=\"size-5 text-cyan-500\" />\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Small Size</ItemTitle>\r\n          <ItemDescription>A compact size for dense layouts.</ItemDescription>\r\n        </ItemContent>\r\n      </Item>\r\n      <Item variant=\"outline\" size=\"xs\">\r\n        <ItemMedia variant=\"icon\">\r\n          <Code1 className=\"size-4 text-cyan-500\" />\r\n        </ItemMedia>\r\n        <ItemContent>\r\n          <ItemTitle>Extra Small Size</ItemTitle>\r\n          <ItemDescription>The most compact size available.</ItemDescription>\r\n        </ItemContent>\r\n      </Item>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-size.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

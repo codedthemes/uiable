@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-slider-vertical",
+  "title": "Vertical Slider",
+  "description": "Slider Vertical variant for slider.",
+  "registryDependencies": [
+    "slider"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/slider/slider-vertical.tsx",
+      "content": "// shadcn\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n//  ------------------------------ | SLIDER - VERTICAL | ------------------------------  //\r\n\r\nexport function SliderVertical() {\r\n  return (\r\n    <div className=\"mx-auto flex w-full max-w-xs items-center justify-center gap-6\">\r\n      <Slider\r\n        defaultValue={[50]}\r\n        max={100}\r\n        step={1}\r\n        orientation=\"vertical\"\r\n        className=\"h-40\"\r\n      />\r\n      <Slider\r\n        defaultValue={[25]}\r\n        max={100}\r\n        step={1}\r\n        orientation=\"vertical\"\r\n        className=\"h-40\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/slider/slider-vertical.tsx"
+    }
+  ],
+  "categories": [
+    "slider"
+  ],
+  "type": "registry:ui"
+}

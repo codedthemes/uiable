@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-field-responsive",
+  "title": "Responsive Field",
+  "description": "Field Responsive variant for field.",
+  "registryDependencies": [
+    "field"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/field/field-responsive.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldLegend,\n  FieldSet\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\n//  ------------------------------ | FIELD - RESPONSIVE | ------------------------------  //\n\nexport function FieldResponsive() {\n  return (\n    <div className=\"w-full max-w-lg\">\n      <form>\n        <FieldSet>\n          <FieldLegend>Profile</FieldLegend>\n          <FieldDescription>Fill in your profile information.</FieldDescription>\n          <FieldGroup>\n            <Field orientation=\"responsive\">\n              <FieldContent>\n                <FieldLabel htmlFor=\"name\">Name</FieldLabel>\n                <FieldDescription>\n                  Provide your full name for identification\n                </FieldDescription>\n              </FieldContent>\n              <Input id=\"name\" placeholder=\"Evil Rabbit\" required />\n            </Field>\n            <Field orientation=\"responsive\">\n              <Button type=\"submit\">Submit</Button>\n              <Button type=\"button\" variant=\"outline\">\n                Cancel\n              </Button>\n            </Field>\n          </FieldGroup>\n        </FieldSet>\n      </form>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/field/field-responsive.tsx"
+    }
+  ],
+  "categories": [
+    "field"
+  ],
+  "type": "registry:ui"
+}
