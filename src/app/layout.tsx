@@ -1,20 +1,21 @@
-import { ReactNode } from "react";
-import { Metadata } from "next";
+import { ReactNode } from "react"
+import { Metadata } from "next"
 
 // shadcn
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 // third-party
-import { Toaster } from "sonner";
+import { Toaster } from "sonner"
 
 // project
-import branding from "@/branding.json";
-import { ThemeProvider } from "@/components/theme-provider";
+import branding from "@/branding.json"
+import { ThemePresetStyles } from "@/components/customizer/ThemePresetStyles"
+import { ThemeProvider } from "@/components/theme-provider"
 
 // assets
-import "./globals.css";
+import "./globals.css"
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL!;
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL!
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}
 
 //  ------------------------------ | LAYOUT - ROOT | ------------------------------  //
 
@@ -70,15 +71,24 @@ export default function RootLayout({
         logo: `${baseUrl}https://cdn.uiable.com/og/components-to-complete-interfaces.png`,
       },
     ],
-  };
+  }
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="group/body font-sans antialiased bg-background **:outline-none [&_*:focus]:outline-none">
+      <body
+        className="group/body preset-7 bg-background font-sans antialiased **:outline-none [&_*:focus]:outline-none"
+        suppressHydrationWarning
+      >
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var p=localStorage.getItem("theme-preset");if(p&&p!=="default"){document.body.className=document.body.className.replace(/preset-\\d+/g,"").trim();document.body.classList.add(p)}var r=localStorage.getItem("theme-radius");if(r){document.body.style.setProperty("--radius",r+"rem")}}catch(e){}})()`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <ThemePresetStyles />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -90,5 +100,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
