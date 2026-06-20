@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-icon-danger.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n// assets\nimport { ShieldAlert } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - ICON DANGER | ------------------------------  //\n\nexport default function AlertIconDanger() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-red-500/20 bg-red-500/10 text-red-500 font-medium\">\n      <ShieldAlert className=\"h-5 w-5\" />\n      <span>A simple danger alert—check it out!</span>\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n// assets\r\nimport { ShieldAlert } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ALERT - ICON DANGER | ------------------------------  //\r\n\r\nexport default function AlertIconDanger() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-red-500/20 bg-red-500/10 text-red-500 font-medium\">\r\n      <ShieldAlert className=\"h-5 w-5\" />\r\n      <span>A simple danger alert—check it out!</span>\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-icon-danger.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/field/field-switch.tsx",
-      "content": "// shadcn\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\n//  ------------------------------ | FIELD - SWITCH | ------------------------------  //\n\nexport default function FieldSwitch() {\n  return (\n    <Field orientation=\"horizontal\" className=\"w-fit\">\n      <FieldLabel htmlFor=\"2fa\">Multi-factor authentication</FieldLabel>\n      <Switch id=\"2fa\" />\n    </Field>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Switch } from \"@/components/ui/switch\";\r\n\r\n//  ------------------------------ | FIELD - SWITCH | ------------------------------  //\r\n\r\nexport default function FieldSwitch() {\r\n  return (\r\n    <Field orientation=\"horizontal\" className=\"w-fit\">\r\n      <FieldLabel htmlFor=\"2fa\">Multi-factor authentication</FieldLabel>\r\n      <Switch id=\"2fa\" />\r\n    </Field>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/field/field-switch.tsx"
     }

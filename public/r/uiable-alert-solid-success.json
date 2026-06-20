@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-solid-success.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - SOLID SUCCESS | ------------------------------  //\n\nexport default function AlertSolidSuccess() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-green-500 text-white border-transparent\">\n      Solid Success Alert\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - SOLID SUCCESS | ------------------------------  //\r\n\r\nexport default function AlertSolidSuccess() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-green-500 text-white border-transparent\">\r\n      Solid Success Alert\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-solid-success.tsx"
     }

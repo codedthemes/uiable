@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-colors.tsx",
-      "content": "// shadcn\nimport { Alert, AlertDescription, AlertTitle } from \"@/components/ui/alert\";\n\n// assets\nimport { AlertTriangleIcon } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - COLORS | ------------------------------  //\n\nexport default function AlertColors() {\n  return (\n    <Alert className=\"max-w-md border-yellow-200 bg-yellow-50 text-yellow-900 dark:border-yellow-900 dark:bg-yellow-950 dark:text-yellow-50\">\n      <AlertTriangleIcon />\n      <AlertTitle>Your subscription will expire in 3 days.</AlertTitle>\n      <AlertDescription>\n        Renew now to avoid service interruption or upgrade to a paid plan to\n        continue using the service.\n      </AlertDescription>\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert, AlertDescription, AlertTitle } from \"@/components/ui/alert\";\r\n\r\n// assets\r\nimport { AlertTriangleIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ALERT - COLORS | ------------------------------  //\r\n\r\nexport default function AlertColors() {\r\n  return (\r\n    <Alert className=\"max-w-md border-yellow-200 bg-yellow-50 text-yellow-900 dark:border-yellow-900 dark:bg-yellow-950 dark:text-yellow-50\">\r\n      <AlertTriangleIcon />\r\n      <AlertTitle>Your subscription will expire in 3 days.</AlertTitle>\r\n      <AlertDescription>\r\n        Renew now to avoid service interruption or upgrade to a paid plan to\r\n        continue using the service.\r\n      </AlertDescription>\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-colors.tsx"
     }

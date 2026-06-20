@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/checkbox/checkbox-invalid.tsx",
-      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\n\n//  ------------------------------ | CHECKBOX - INVALID | ------------------------------  //\n\nexport function CheckboxInvalid() {\n  return (\n    <FieldGroup className=\"mx-auto w-56\">\n      <Field orientation=\"horizontal\" data-invalid>\n        <Checkbox\n          id=\"terms-checkbox-invalid\"\n          name=\"terms-checkbox-invalid\"\n          aria-invalid\n        />\n        <FieldLabel htmlFor=\"terms-checkbox-invalid\">\n          Accept terms and conditions\n        </FieldLabel>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\n\r\n//  ------------------------------ | CHECKBOX - INVALID | ------------------------------  //\r\n\r\nexport function CheckboxInvalid() {\r\n  return (\r\n    <FieldGroup className=\"mx-auto w-56\">\r\n      <Field orientation=\"horizontal\" data-invalid>\r\n        <Checkbox\r\n          id=\"terms-checkbox-invalid\"\r\n          name=\"terms-checkbox-invalid\"\r\n          aria-invalid\r\n        />\r\n        <FieldLabel htmlFor=\"terms-checkbox-invalid\">\r\n          Accept terms and conditions\r\n        </FieldLabel>\r\n      </Field>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/checkbox/checkbox-invalid.tsx"
     }

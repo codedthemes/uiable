@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button-group/button-group-orientation.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\n\n// assets\nimport { MinusIcon, PlusIcon } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON GROUP - ORIENTATION | ------------------------------  //\n\nexport default function ButtonGroupOrientation() {\n  return (\n    <ButtonGroup\n      orientation=\"vertical\"\n      aria-label=\"Media controls\"\n      className=\"h-fit\"\n    >\n      <Button variant=\"outline\" size=\"icon\">\n        <PlusIcon />\n      </Button>\n      <Button variant=\"outline\" size=\"icon\">\n        <MinusIcon />\n      </Button>\n    </ButtonGroup>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { ButtonGroup } from \"@/components/ui/button-group\";\r\n\r\n// assets\r\nimport { MinusIcon, PlusIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BUTTON GROUP - ORIENTATION | ------------------------------  //\r\n\r\nexport default function ButtonGroupOrientation() {\r\n  return (\r\n    <ButtonGroup\r\n      orientation=\"vertical\"\r\n      aria-label=\"Media controls\"\r\n      className=\"h-fit\"\r\n    >\r\n      <Button variant=\"outline\" size=\"icon\">\r\n        <PlusIcon />\r\n      </Button>\r\n      <Button variant=\"outline\" size=\"icon\">\r\n        <MinusIcon />\r\n      </Button>\r\n    </ButtonGroup>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button-group/button-group-orientation.tsx"
     }

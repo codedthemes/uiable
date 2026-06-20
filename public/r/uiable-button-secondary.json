@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-secondary.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SECONDARY | ------------------------------  //\n\nexport default function ButtonSecondary() {\n  return <Button variant=\"secondary\">Secondary</Button>;\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON SECONDARY | ------------------------------  //\r\n\r\nexport default function ButtonSecondary() {\r\n  return <Button variant=\"secondary\">Secondary</Button>;\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-secondary.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-pill-primary.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - PILL PRIMARY | ------------------------------  //\n\nexport default function BadgePillPrimary() {\n  return <Badge className=\"rounded-full bg-primary text-white\">Primary</Badge>;\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - PILL PRIMARY | ------------------------------  //\r\n\r\nexport default function BadgePillPrimary() {\r\n  return <Badge className=\"rounded-full bg-primary text-white\">Primary</Badge>;\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-pill-primary.tsx"
     }

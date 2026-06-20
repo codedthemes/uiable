@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/checkbox/checkbox-basic.tsx",
-      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\n\n//  ------------------------------ | CHECKBOX - BASIC | ------------------------------  //\n\nexport function CheckboxBasic() {\n  return (\n    <FieldGroup className=\"mx-auto w-56\">\n      <Field orientation=\"horizontal\">\n        <Checkbox id=\"terms-checkbox-basic\" name=\"terms-checkbox-basic\" />\n        <FieldLabel htmlFor=\"terms-checkbox-basic\">\n          Accept terms and conditions\n        </FieldLabel>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\n\r\n//  ------------------------------ | CHECKBOX - BASIC | ------------------------------  //\r\n\r\nexport function CheckboxBasic() {\r\n  return (\r\n    <FieldGroup className=\"mx-auto w-56\">\r\n      <Field orientation=\"horizontal\">\r\n        <Checkbox id=\"terms-checkbox-basic\" name=\"terms-checkbox-basic\" />\r\n        <FieldLabel htmlFor=\"terms-checkbox-basic\">\r\n          Accept terms and conditions\r\n        </FieldLabel>\r\n      </Field>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/checkbox/checkbox-basic.tsx"
     }

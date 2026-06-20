@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "uiable",
-  "homepage": "https://internal.uiable.com",
+  "homepage": "https://uiable.com",
   "items": [
     {
       "name": "uiable-accordion-basic",

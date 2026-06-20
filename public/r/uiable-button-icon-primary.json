@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-icon-primary.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { ThumbsUp } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON ICON PRIMARY | ------------------------------  //\n\nexport default function ButtonIconPrimary() {\n  return (\n    <Button className=\"gap-2\">\n      <ThumbsUp className=\"size-5\" /> Primary\n    </Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// assets\r\nimport { ThumbsUp } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BUTTON ICON PRIMARY | ------------------------------  //\r\n\r\nexport default function ButtonIconPrimary() {\r\n  return (\r\n    <Button className=\"gap-2\">\r\n      <ThumbsUp className=\"size-5\" /> Primary\r\n    </Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-icon-primary.tsx"
     }

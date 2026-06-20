@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/avatar/avatar-badge.tsx",
-      "content": "// shadcn\nimport {\n  Avatar,\n  AvatarBadge,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\n//  ------------------------------ | AVATAR - BADGE | ------------------------------  //\n\nexport function AvatarWithBadge() {\n  return (\n    <Avatar>\n      <AvatarImage\n        src=\"https://cdn.uiable.com/user/avatar-1.jpg\"\n        alt=\"@shadcn\"\n      />\n      <AvatarFallback>CN</AvatarFallback>\n      <AvatarBadge className=\"bg-green-600 dark:bg-green-800\" />\n    </Avatar>\n  );\n}\n",
+      "content": "// shadcn\r\nimport {\r\n  Avatar,\r\n  AvatarBadge,\r\n  AvatarFallback,\r\n  AvatarImage,\r\n} from \"@/components/ui/avatar\";\r\n\r\n//  ------------------------------ | AVATAR - BADGE | ------------------------------  //\r\n\r\nexport function AvatarWithBadge() {\r\n  return (\r\n    <Avatar>\r\n      <AvatarImage\r\n        src=\"https://cdn.uiable.com/user/avatar-1.jpg\"\r\n        alt=\"@shadcn\"\r\n      />\r\n      <AvatarFallback>CN</AvatarFallback>\r\n      <AvatarBadge className=\"bg-green-600 dark:bg-green-800\" />\r\n    </Avatar>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/avatar/avatar-badge.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/calendar/calendar-caption.tsx",
-      "content": "// shadcn\nimport { Calendar } from \"@/components/ui/calendar\";\n\n//  ------------------------------ | CALENDAR - CAPTION | ------------------------------  //\n\nexport function CalendarCaption() {\n  return (\n    <Calendar\n      mode=\"single\"\n      captionLayout=\"dropdown\"\n      className=\"rounded-lg border\"\n    />\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\n\r\n//  ------------------------------ | CALENDAR - CAPTION | ------------------------------  //\r\n\r\nexport function CalendarCaption() {\r\n  return (\r\n    <Calendar\r\n      mode=\"single\"\r\n      captionLayout=\"dropdown\"\r\n      className=\"rounded-lg border\"\r\n    />\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/calendar/calendar-caption.tsx"
     }

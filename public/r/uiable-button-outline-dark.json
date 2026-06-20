@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-outline-dark.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON OUTLINE DARK | ------------------------------  //\n\nexport default function ButtonOutlineDark() {\n  return (\n    <Button className=\"border-mist-800 bg-transparent text-mist-800 hover:bg-mist-800 hover:text-white dark:border-mist-400 dark:text-mist-400\">\n      Dark\n    </Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON OUTLINE DARK | ------------------------------  //\r\n\r\nexport default function ButtonOutlineDark() {\r\n  return (\r\n    <Button className=\"border-mist-800 bg-transparent text-mist-800 hover:bg-mist-800 hover:text-white dark:border-mist-400 dark:text-mist-400\">\r\n      Dark\r\n    </Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-outline-dark.tsx"
     }

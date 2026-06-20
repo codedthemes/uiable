@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-solid-danger.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SOLID DANGER | ------------------------------  //\n\nexport default function ButtonSolidDanger() {\n  return (\n    <Button className=\"bg-red-500 text-white hover:bg-red-600\">Danger</Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON SOLID DANGER | ------------------------------  //\r\n\r\nexport default function ButtonSolidDanger() {\r\n  return (\r\n    <Button className=\"bg-red-500 text-white hover:bg-red-600\">Danger</Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-solid-danger.tsx"
     }

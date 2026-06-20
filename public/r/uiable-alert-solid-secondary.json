@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-solid-secondary.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - SOLID SECONDARY | ------------------------------  //\n\nexport default function AlertSolidSecondary() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-secondary-500 text-white border-transparent\">\n      Solid Secondary Alert\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - SOLID SECONDARY | ------------------------------  //\r\n\r\nexport default function AlertSolidSecondary() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-secondary-500 text-white border-transparent\">\r\n      Solid Secondary Alert\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-solid-secondary.tsx"
     }

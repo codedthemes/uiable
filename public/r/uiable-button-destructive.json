@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-destructive.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON DESTRUCTIVE | ------------------------------  //\n\nexport default function ButtonDestructive() {\n  return <Button variant=\"destructive\">Destructive</Button>;\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON DESTRUCTIVE | ------------------------------  //\r\n\r\nexport default function ButtonDestructive() {\r\n  return <Button variant=\"destructive\">Destructive</Button>;\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-destructive.tsx"
     }

@@ -1,13 +1,13 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Progress } from "@/components/ui/progress"
 
 // project
-import TaskListItem from "./task-list-item";
+import TaskListItem from "./task-list-item"
 
 // assets
-import { MoreVertical, Plus } from "lucide-react";
+import { MoreVertical, Plus } from "lucide-react"
 
 //  ------------------------------ | BLOCK - PROJECT TASKS CARD | ------------------------------  //
 
@@ -15,14 +15,14 @@ export default function ProjectTasksCard() {
   return (
     <Card>
       <CardHeader className="pb-4">
-        <CardTitle className="text-md font-bold text-muted-foreground flex items-center justify-between">
-          Project - Able Pro
+        <CardTitle className="text-md flex items-center justify-between font-bold text-muted-foreground">
+          Project - UIAble
           <MoreVertical className="h-4 w-4" />
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
         <div>
-          <div className="flex items-center justify-between mb-2">
+          <div className="mb-2 flex items-center justify-between">
             <span className="text-sm font-medium">Release v1.2.0</span>
             <span className="text-sm font-bold text-primary">70%</span>
           </div>
@@ -40,9 +40,9 @@ export default function ProjectTasksCard() {
         </div>
 
         <Button className="w-full">
-          <Plus className="h-4 w-4 mr-2" /> Add task
+          <Plus className="mr-2 h-4 w-4" /> Add task
         </Button>
       </CardContent>
     </Card>
-  );
+  )
 }

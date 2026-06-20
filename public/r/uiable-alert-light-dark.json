@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-light-dark.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - LIGHT DARK | ------------------------------  //\n\nexport default function AlertLightDark() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-dark-800/20 bg-dark-800/10 text-dark-800 dark:text-dark-300\">\n      A simple dark alert—check it out!\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - LIGHT DARK | ------------------------------  //\r\n\r\nexport default function AlertLightDark() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-dark-800/20 bg-dark-800/10 text-dark-800 dark:text-dark-300\">\r\n      A simple dark alert—check it out!\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-light-dark.tsx"
     }

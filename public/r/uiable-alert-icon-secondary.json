@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-icon-secondary.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n// assets\nimport { Info } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - ICON SECONDARY | ------------------------------  //\n\nexport default function AlertIconSecondary() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-secondary/20 bg-secondary/10 text-secondary\">\n      <Info className=\"h-5 w-5\" />\n      <span>A simple secondary alert—check it out!</span>\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n// assets\r\nimport { Info } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ALERT - ICON SECONDARY | ------------------------------  //\r\n\r\nexport default function AlertIconSecondary() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-secondary/20 bg-secondary/10 text-secondary\">\r\n      <Info className=\"h-5 w-5\" />\r\n      <span>A simple secondary alert—check it out!</span>\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-icon-secondary.tsx"
     }

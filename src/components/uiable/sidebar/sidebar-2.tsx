@@ -1,18 +1,18 @@
-"use client";
+"use client"
 
 /* eslint-disable @typescript-eslint/no-unused-vars, jsx-a11y/alt-text */
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from "@/components/ui/collapsible"
 import {
   Sidebar,
   SidebarContent,
@@ -28,10 +28,10 @@ import {
   SidebarMenuSubItem,
   SidebarProvider,
   SidebarRail,
-} from "@/components/ui/sidebar";
+} from "@/components/ui/sidebar"
 
 // project
-import Logo from "@/components/uiable/layout/shared/logo";
+import Logo from "@/components/uiable/layout/shared/logo"
 
 // assets
 import {
@@ -46,40 +46,40 @@ import {
   Shield,
   Sort,
   StatusUp,
-} from "iconsax-reactjs";
-import { LockKeyhole, Power, Settings, User } from "lucide-react";
+} from "iconsax-reactjs"
+import { LockKeyhole, Power, Settings, User } from "lucide-react"
 
 const imgCoupon = {
   src: "https://cdn.uiable.com/application/img-coupon.png",
-};
+}
 const uImg1 = {
   src: "https://cdn.uiable.com/user/avatar-1.jpg",
-};
+}
 
 // ── Dummy data ────────────────────────────────────────────────────────────── //
 
 //  ------------------------------ | COMPONENT - SIDEBAR 2 | ------------------------------  //
 
 export default function Sidebar2() {
-  const [isUserOpen, setIsUserOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("dashboard");
-  const [openSections, setOpenSections] = useState<string[]>([]);
-  const [openBlocks, setOpenBlocks] = useState(false);
+  const [isUserOpen, setIsUserOpen] = useState(false)
+  const [activeItem, setActiveItem] = useState("dashboard")
+  const [openSections, setOpenSections] = useState<string[]>([])
+  const [openBlocks, setOpenBlocks] = useState(false)
 
   const toggleSection = (title: string) => {
     setOpenSections((prev) =>
-      prev.includes(title) ? prev.filter((s) => s !== title) : [...prev, title],
-    );
-  };
+      prev.includes(title) ? prev.filter((s) => s !== title) : [...prev, title]
+    )
+  }
 
   return (
-    <SidebarProvider className="w-full h-[600px] relative overflow-hidden rounded-lg border bg-background">
+    <SidebarProvider className="relative h-[600px] w-full overflow-hidden rounded-lg border bg-background">
       <Sidebar
         collapsible="icon"
         variant="inset"
-        className="absolute h-full z-10 border-r border-dashed border-border"
+        className="absolute z-10 h-full border-r border-dashed border-border"
       >
-        <SidebarHeader className="pt-4 px-4 pb-2">
+        <SidebarHeader className="px-4 pt-4 pb-2">
           <SidebarMenu>
             <SidebarMenuItem>
               <Logo />
@@ -87,9 +87,9 @@ export default function Sidebar2() {
           </SidebarMenu>
         </SidebarHeader>
 
-        <SidebarContent className="px-2 gap-0 *:py-0">
+        <SidebarContent className="gap-0 px-2 *:py-0">
           {/* User Profile Card */}
-          <Card className="m-1.75 shadow-none bg-[#f3f5f7] dark:bg-[#1b232d]">
+          <Card className="m-1.75 bg-[#f3f5f7] shadow-none dark:bg-[#1b232d]">
             <CardContent className="p-5!">
               <Collapsible
                 open={isUserOpen}
@@ -99,11 +99,11 @@ export default function Sidebar2() {
                 <div className="flex items-center gap-3">
                   <Avatar className="h-10 w-10 border-2 border-background">
                     <AvatarImage src={uImg1.src} alt="User" />
-                    <AvatarFallback className="bg-primary/10 text-primary font-bold">
+                    <AvatarFallback className="bg-primary/10 font-bold text-primary">
                       JS
                     </AvatarFallback>
                   </Avatar>
-                  <div className="flex flex-col flex-1">
+                  <div className="flex flex-1 flex-col">
                     <h6 className="mb-0">John Smith</h6>
                     <small className="text-muted-foreground">
                       Administrator
@@ -118,7 +118,7 @@ export default function Sidebar2() {
                   />
                 </div>
                 <CollapsibleContent>
-                  <div className="pt-3 *:flex *:items-center *:py-2 *:gap-2.5 *:hover:text-primary *:last:pb-0">
+                  <div className="pt-3 *:flex *:items-center *:gap-2.5 *:py-2 *:last:pb-0 *:hover:text-primary">
                     <a href="#!">
                       <User className="size-4" />
                       <span>My Account</span>
@@ -143,7 +143,7 @@ export default function Sidebar2() {
 
           {/* Dashboard */}
           <SidebarGroup>
-            <SidebarGroupLabel className="pt-6 pb-2 px-5.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+            <SidebarGroupLabel className="px-5.5 pt-6 pb-2 text-[10px] font-bold tracking-widest text-muted-foreground/70 uppercase">
               Dashboard
             </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -164,7 +164,7 @@ export default function Sidebar2() {
 
           {/* Authentication */}
           <SidebarGroup>
-            <SidebarGroupLabel className="pt-6 pb-2 px-5.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+            <SidebarGroupLabel className="px-5.5 pt-6 pb-2 text-[10px] font-bold tracking-widest text-muted-foreground/70 uppercase">
               Authentication
             </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -195,7 +195,7 @@ export default function Sidebar2() {
 
           {/* Components */}
           <SidebarGroup>
-            <SidebarGroupLabel className="pt-6 pb-2 px-5.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+            <SidebarGroupLabel className="px-5.5 pt-6 pb-2 text-[10px] font-bold tracking-widest text-muted-foreground/70 uppercase">
               Components
             </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -226,7 +226,7 @@ export default function Sidebar2() {
 
           {/* Extra */}
           <SidebarGroup>
-            <SidebarGroupLabel className="pt-6 pb-2 px-5.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+            <SidebarGroupLabel className="px-5.5 pt-6 pb-2 text-[10px] font-bold tracking-widest text-muted-foreground/70 uppercase">
               Extra
             </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -269,14 +269,14 @@ export default function Sidebar2() {
                             <CollapsibleTrigger
                               nativeButton={false}
                               render={
-                                <SidebarMenuSubButton className="w-full flex justify-between" />
+                                <SidebarMenuSubButton className="flex w-full justify-between" />
                               }
                             >
                               <span>Level 2.2</span>
                               <ArrowRight2 className="ml-auto size-4 transition-transform group-data-[state=open]/collapsible-2:rotate-90" />
                             </CollapsibleTrigger>
                             <CollapsibleContent>
-                              <SidebarMenuSub className="ml-2 border-l border-border/50 pl-2 mt-1">
+                              <SidebarMenuSub className="mt-1 ml-2 border-l border-border/50 pl-2">
                                 <SidebarMenuSubItem>
                                   <SidebarMenuSubButton>
                                     <span>Level 3.1</span>
@@ -287,14 +287,14 @@ export default function Sidebar2() {
                                     <CollapsibleTrigger
                                       nativeButton={false}
                                       render={
-                                        <SidebarMenuSubButton className="w-full flex justify-between" />
+                                        <SidebarMenuSubButton className="flex w-full justify-between" />
                                       }
                                     >
                                       <span>Level 3.2</span>
                                       <ArrowRight2 className="ml-auto size-4 transition-transform group-data-[state=open]/collapsible-3:rotate-90" />
                                     </CollapsibleTrigger>
                                     <CollapsibleContent>
-                                      <SidebarMenuSub className="ml-2 border-l border-border/50 pl-2 mt-1">
+                                      <SidebarMenuSub className="mt-1 ml-2 border-l border-border/50 pl-2">
                                         <SidebarMenuSubItem>
                                           <SidebarMenuSubButton>
                                             <span>Level 4.1</span>
@@ -319,14 +319,14 @@ export default function Sidebar2() {
                                     <CollapsibleTrigger
                                       nativeButton={false}
                                       render={
-                                        <SidebarMenuSubButton className="w-full flex justify-between" />
+                                        <SidebarMenuSubButton className="flex w-full justify-between" />
                                       }
                                     >
                                       <span>Level 3.3</span>
                                       <ArrowRight2 className="ml-auto size-4 transition-transform group-data-[state=open]/collapsible-4:rotate-90" />
                                     </CollapsibleTrigger>
                                     <CollapsibleContent>
-                                      <SidebarMenuSub className="ml-2 border-l border-border/50 pl-2 mt-1">
+                                      <SidebarMenuSub className="mt-1 ml-2 border-l border-border/50 pl-2">
                                         <SidebarMenuSubItem>
                                           <SidebarMenuSubButton>
                                             <span>Level 4.1</span>
@@ -376,10 +376,10 @@ export default function Sidebar2() {
           </SidebarGroup>
 
           {/* Upgrade Card */}
-          <Card className="my-3.75 mx-1.75 shadow-none">
+          <Card className="mx-1.75 my-3.75 shadow-none">
             <CardContent className="text-center">
-              <img src={imgCoupon.src} className="w-2/4 max-w-full mx-auto" />
-              <h5 className="mb-0 mt-1">Able Pro</h5>
+              <img src={imgCoupon.src} className="mx-auto w-2/4 max-w-full" />
+              <h5 className="mt-1 mb-0">UIAble</h5>
               <p className="mb-4">Checkout pro features</p>
               <Button className="gap-2 bg-yellow-500 hover:bg-yellow-600">
                 <Logout />
@@ -391,5 +391,5 @@ export default function Sidebar2() {
         <SidebarRail />
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

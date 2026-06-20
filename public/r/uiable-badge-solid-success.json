@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-solid-success.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - SOLID SUCCESS | ------------------------------  //\n\nexport default function BadgeSolidSuccess() {\n  return <Badge className=\"bg-green-500 text-white\">Success</Badge>;\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - SOLID SUCCESS | ------------------------------  //\r\n\r\nexport default function BadgeSolidSuccess() {\r\n  return <Badge className=\"bg-green-500 text-white\">Success</Badge>;\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-solid-success.tsx"
     }

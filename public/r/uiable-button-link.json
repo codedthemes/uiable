@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-link.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON LINK | ------------------------------  //\n\nexport default function ButtonLink() {\n  return <Button variant=\"link\">Link</Button>;\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON LINK | ------------------------------  //\r\n\r\nexport default function ButtonLink() {\r\n  return <Button variant=\"link\">Link</Button>;\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-link.tsx"
     }

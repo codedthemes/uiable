@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-outline-success.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - OUTLINE SUCCESS | ------------------------------  //\n\nexport default function BadgeOutlineSuccess() {\n  return (\n    <Badge className=\"border-green-500 text-green-500 bg-transparent\">\n      Success\n    </Badge>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - OUTLINE SUCCESS | ------------------------------  //\r\n\r\nexport default function BadgeOutlineSuccess() {\r\n  return (\r\n    <Badge className=\"border-green-500 text-green-500 bg-transparent\">\r\n      Success\r\n    </Badge>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-outline-success.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-light-danger.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - LIGHT DANGER | ------------------------------  //\n\nexport default function AlertLightDanger() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-red-500/20 bg-red-500/10 text-red-500\">\n      A simple danger alert—check it out!\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - LIGHT DANGER | ------------------------------  //\r\n\r\nexport default function AlertLightDanger() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-red-500/20 bg-red-500/10 text-red-500\">\r\n      A simple danger alert—check it out!\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-light-danger.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-icon.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n// assets\nimport { BadgeCheck, BookmarkIcon } from \"lucide-react\";\n\n//  ------------------------------ | BADGE - ICON | ------------------------------  //\n\nexport function BadgeWithIconLeft() {\n  return (\n    <div className=\"flex flex-wrap gap-2\">\n      <Badge variant=\"default\">\n        <BadgeCheck data-icon=\"inline-start\" />\n        Verified\n      </Badge>\n      <Badge variant=\"outline\">\n        Bookmark\n        <BookmarkIcon data-icon=\"inline-end\" />\n      </Badge>\n    </div>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n// assets\r\nimport { BadgeCheck, BookmarkIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BADGE - ICON | ------------------------------  //\r\n\r\nexport function BadgeWithIconLeft() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-2\">\r\n      <Badge variant=\"default\">\r\n        <BadgeCheck data-icon=\"inline-start\" />\r\n        Verified\r\n      </Badge>\r\n      <Badge variant=\"outline\">\r\n        Bookmark\r\n        <BookmarkIcon data-icon=\"inline-end\" />\r\n      </Badge>\r\n    </div>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-icon.tsx"
     }
