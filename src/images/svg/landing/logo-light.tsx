@@ -5,7 +5,7 @@ import type { SVGAttributes } from "react";
 export default function LightLogo({ width = 84, height = 80, ...props }: SVGAttributes<SVGElement>) {
   return (
     <svg width={width} height={height} viewBox="0 0 84 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...props}>
-      <rect width="84" height="80" rx="24" fill="#030712" fillOpacity="0.4" />
+      <rect width="84" height="80" rx="24" fill="var(--foreground)" fillOpacity="0.4" />
       <rect x="12.2769" y="21.137" width="60.0923" height="38.7262" fill="url(#pattern0_3410_1542)" />
       <defs>
         <pattern id="pattern0_3410_1542" patternContentUnits="objectBoundingBox" width="1" height="1">

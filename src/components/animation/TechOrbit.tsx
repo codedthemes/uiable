@@ -48,7 +48,7 @@ function TechNode({ icon, startAngle, orbitDuration, orbitDirection }: TechNodeP
                             ease: "linear"
                         }
                     }}
-                    className="flex h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-[#4680FF14] backdrop-blur-[34px] border border-slate-200 dark:border-slate-800 shadow-md text-foreground transition-colors cursor-pointer"
+                    className="flex h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-primary/10 backdrop-blur-[34px] border border-slate-200 dark:border-slate-800 shadow-md text-foreground transition-colors cursor-pointer"
                 >
                     {icon}
                 </motion.div>

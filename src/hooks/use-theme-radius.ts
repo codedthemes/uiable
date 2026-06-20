@@ -24,11 +24,19 @@ const getCssRootRadius = () => {
   return Number.isNaN(parsedRadius) ? null : parsedRadius;
 };
 
+const THEME_RADIUS_KEY = "theme-radius";
+
 //  ------------------------------ | CUSTOMIZER - USE THEME RADIUS | ------------------------------  //
 
 export function useThemeRadius() {
   const [radius, setRadius] = useState<number>(() => {
     if (typeof window === "undefined") return 0.3;
+    // Prefer localStorage value over CSS computed value
+    const stored = localStorage.getItem(THEME_RADIUS_KEY);
+    if (stored !== null) {
+      const parsed = parseFloat(stored);
+      if (!Number.isNaN(parsed)) return parsed;
+    }
     return getCssRootRadius() ?? 0.3;
   });
 
@@ -46,6 +54,7 @@ export function useThemeRadius() {
 
   useEffect(() => {
     document.body.style.setProperty("--radius", `${radius}rem`);
+    localStorage.setItem(THEME_RADIUS_KEY, String(radius));
   }, [radius]);
 
   return { radius, setRadius, syncRadiusFromBody };
