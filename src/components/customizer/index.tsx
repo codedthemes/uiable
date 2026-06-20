@@ -27,6 +27,8 @@ import { ThemePresetStyles } from "./ThemePresetStyles"
 import { CircleCheckBig, Moon, Settings, Sun } from "lucide-react"
 
 // constants
+const THEME_PRESET_KEY = "theme-preset"
+
 const themeClasses = [
   "default",
   "ghibli-studio",
@@ -56,7 +58,18 @@ export function ThemeToggle() {
 
   useEffect(() => {
     if (mounted) {
-      syncRadiusFromBody()
+      // Restore saved preset class from localStorage on mount
+      const savedPreset = localStorage.getItem(THEME_PRESET_KEY)
+      if (savedPreset && savedPreset !== "default") {
+        const body = document.body
+        themeClasses.forEach((cls) => body.classList.remove(cls))
+        body.classList.add(savedPreset)
+      }
+      // Only sync radius from CSS if there's no saved radius preference
+      // (syncRadiusFromBody removes inline --radius which causes a flash)
+      if (!localStorage.getItem("theme-radius")) {
+        syncRadiusFromBody()
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted])
@@ -70,6 +83,9 @@ export function ThemeToggle() {
 
       if (!isCurrentlyActive) {
         body.classList.add(className)
+        localStorage.setItem(THEME_PRESET_KEY, className)
+      } else {
+        localStorage.removeItem(THEME_PRESET_KEY)
       }
 
       syncRadiusFromBody()
@@ -165,8 +181,13 @@ export function ThemeToggle() {
 
   const resetDefault = useCallback(() => {
     setTheme("light")
-    toggleBodyClass("default")
-  }, [setTheme, toggleBodyClass])
+    themeClasses.forEach((cls) => document.body.classList.remove(cls))
+    document.body.classList.add("preset-7")
+    localStorage.removeItem(THEME_PRESET_KEY)
+    localStorage.removeItem("theme-radius")
+    document.body.style.removeProperty("--radius")
+    syncRadiusFromBody()
+  }, [setTheme, syncRadiusFromBody])
 
   if (!mounted) {
     return (

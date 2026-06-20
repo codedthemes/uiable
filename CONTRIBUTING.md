@@ -4,14 +4,14 @@ Thank you for your interest in contributing to UIAble! We appreciate your suppor
 
 Read the [example PR](https://github.com/codedthemes/uiable/pull/1) to learn which files you need to add. **You only need to change 2 files to add a new component or effect** and it only takes around 10 minutes of work!
 
-Once done, open a pull request from your forked repo to the main repo [here](https://github.com/codedthemes/uiable-free-react-admin-template/compare).
+Once done, open a pull request from your forked repo to the main repo [here](https://github.com/codedthemes/uiable/compare).
 
 ## Getting Started
 
 ### Fork and Clone the Repository
 
 1. **Fork this repository**  
-   Click [here](https://github.com/codedthemes/uiable-free-react-admin-template/fork) to fork the repository.
+   Click [here](https://github.com/codedthemes/uiable/fork) to fork the repository.
 
 2. **Clone your forked repository to your local machine**
 

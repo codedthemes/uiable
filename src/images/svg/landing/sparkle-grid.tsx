@@ -23,8 +23,8 @@ export default function SparkleGrid() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(287 287) rotate(90) scale(316)"
         >
-          <stop stopColor="#C6D7FD" />
-          <stop offset="0.942308" stopColor="#4680FF" stopOpacity="0" />
+          <stop stopColor="var(--primary)" stopOpacity="0.3" />
+          <stop offset="0.942308" stopColor="var(--primary)" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_2059_4750"
@@ -34,8 +34,8 @@ export default function SparkleGrid() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(287 287) rotate(90) scale(287)"
         >
-          <stop stopColor="#4680FF" />
-          <stop offset="1" stopColor="#F3F4F6" />
+          <stop stopColor="var(--primary)" />
+          <stop offset="1" stopColor="var(--background)" />
         </radialGradient>
       </defs>
     </svg>
