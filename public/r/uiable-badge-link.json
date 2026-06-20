@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-link.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n// assets\nimport { ArrowUpRightIcon } from \"lucide-react\";\n\n//  ------------------------------ | BADGE - LINK | ------------------------------  //\n\nexport function BadgeAsLink() {\n  return (\n    <Badge render={<a href=\"#link\" />}>\n      Open Link <ArrowUpRightIcon data-icon=\"inline-end\" />\n    </Badge>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n// assets\r\nimport { ArrowUpRightIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BADGE - LINK | ------------------------------  //\r\n\r\nexport function BadgeAsLink() {\r\n  return (\r\n    <Badge render={<a href=\"#link\" />}>\r\n      Open Link <ArrowUpRightIcon data-icon=\"inline-end\" />\r\n    </Badge>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-link.tsx"
     }

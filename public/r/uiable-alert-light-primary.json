@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-light-primary.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - LIGHT PRIMARY | ------------------------------  //\n\nexport default function AlertLightPrimary() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-primary/20 bg-primary/10 text-primary\">\n      A simple primary alert—check it out!\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - LIGHT PRIMARY | ------------------------------  //\r\n\r\nexport default function AlertLightPrimary() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-primary/20 bg-primary/10 text-primary\">\r\n      A simple primary alert—check it out!\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-light-primary.tsx"
     }

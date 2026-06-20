@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-icon-info.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { Info } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON ICON INFO | ------------------------------  //\n\nexport default function ButtonIconInfo() {\n  return (\n    <Button className=\"gap-2 bg-cyan-500 text-white hover:bg-cyan-600\">\n      <Info className=\"size-5\" /> Info\n    </Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// assets\r\nimport { Info } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BUTTON ICON INFO | ------------------------------  //\r\n\r\nexport default function ButtonIconInfo() {\r\n  return (\r\n    <Button className=\"gap-2 bg-cyan-500 text-white hover:bg-cyan-600\">\r\n      <Info className=\"size-5\" /> Info\r\n    </Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-icon-info.tsx"
     }

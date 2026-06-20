@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-solid-primary.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - SOLID PRIMARY | ------------------------------  //\n\nexport default function BadgeSolidPrimary() {\n  return <Badge>Primary</Badge>;\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - SOLID PRIMARY | ------------------------------  //\r\n\r\nexport default function BadgeSolidPrimary() {\r\n  return <Badge>Primary</Badge>;\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-solid-primary.tsx"
     }

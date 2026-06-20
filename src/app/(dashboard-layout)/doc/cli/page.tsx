@@ -146,7 +146,7 @@ export default function ShadcnCliPage() {
                       <div className="flex items-center justify-between">
                         <CodeBlock lang="json">{`{
   "registries": {
-    "@uiable": "https://internal.uiable.com/r/{name}.json"
+    "@uiable": "https://uiable.com/r/{name}.json"
   }
 }`}</CodeBlock>
                       </div>

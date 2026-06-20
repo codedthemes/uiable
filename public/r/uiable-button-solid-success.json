@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-solid-success.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SOLID SUCCESS | ------------------------------  //\n\nexport default function ButtonSolidSuccess() {\n  return (\n    <Button className=\"bg-green-500 text-white hover:bg-green-600\">\n      Success\n    </Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON SOLID SUCCESS | ------------------------------  //\r\n\r\nexport default function ButtonSolidSuccess() {\r\n  return (\r\n    <Button className=\"bg-green-500 text-white hover:bg-green-600\">\r\n      Success\r\n    </Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-solid-success.tsx"
     }

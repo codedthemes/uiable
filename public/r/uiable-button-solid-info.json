@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-solid-info.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SOLID INFO | ------------------------------  //\n\nexport default function ButtonSolidInfo() {\n  return (\n    <Button className=\"bg-cyan-500 text-white hover:bg-cyan-600\">Info</Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON SOLID INFO | ------------------------------  //\r\n\r\nexport default function ButtonSolidInfo() {\r\n  return (\r\n    <Button className=\"bg-cyan-500 text-white hover:bg-cyan-600\">Info</Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-solid-info.tsx"
     }

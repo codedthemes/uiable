@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-rounded.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { ArrowUpIcon } from \"lucide-react\";\n\n//  ------------------------------ | BUTTON ROUNDED | ------------------------------  //\n\nexport default function ButtonRounded() {\n  return (\n    <div className=\"flex gap-2 items-center\">\n      <Button className=\"rounded-full\">Get Started</Button>\n      <Button size=\"icon-lg\" className=\"rounded-full\">\n        <ArrowUpIcon />\n      </Button>\n    </div>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// assets\r\nimport { ArrowUpIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BUTTON ROUNDED | ------------------------------  //\r\n\r\nexport default function ButtonRounded() {\r\n  return (\r\n    <div className=\"flex gap-2 items-center\">\r\n      <Button className=\"rounded-full\">Get Started</Button>\r\n      <Button size=\"icon-lg\" className=\"rounded-full\">\r\n        <ArrowUpIcon />\r\n      </Button>\r\n    </div>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-rounded.tsx"
     }

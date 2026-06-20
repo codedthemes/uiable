@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/avatar/avatar-basic.tsx",
-      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\n//  ------------------------------ | AVATAR - BASIC | ------------------------------  //\n\nexport default function AvatarDemo() {\n  return (\n    <Avatar>\n      <AvatarImage\n        src=\"https://cdn.uiable.com/user/avatar-3.jpg\"\n        alt=\"@shadcn\"\n      />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\n\r\n//  ------------------------------ | AVATAR - BASIC | ------------------------------  //\r\n\r\nexport default function AvatarDemo() {\r\n  return (\r\n    <Avatar>\r\n      <AvatarImage\r\n        src=\"https://cdn.uiable.com/user/avatar-3.jpg\"\r\n        alt=\"@shadcn\"\r\n      />\r\n      <AvatarFallback>CN</AvatarFallback>\r\n    </Avatar>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/avatar/avatar-basic.tsx"
     }

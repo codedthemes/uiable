@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-icon-info.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n// assets\nimport { Info } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - ICON INFO | ------------------------------  //\n\nexport default function AlertIconInfo() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-cyan-500/20 bg-cyan-500/10 text-cyan-700 dark:text-cyan-400\">\n      <Info className=\"h-5 w-5\" />\n      <span>A simple info alert—check it out!</span>\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n// assets\r\nimport { Info } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ALERT - ICON INFO | ------------------------------  //\r\n\r\nexport default function AlertIconInfo() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-cyan-500/20 bg-cyan-500/10 text-cyan-700 dark:text-cyan-400\">\r\n      <Info className=\"h-5 w-5\" />\r\n      <span>A simple info alert—check it out!</span>\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-icon-info.tsx"
     }

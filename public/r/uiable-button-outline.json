@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-outline.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON OUTLINE | ------------------------------  //\n\nexport default function ButtonOutline() {\n  return <Button variant=\"outline\">Outline</Button>;\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON OUTLINE | ------------------------------  //\r\n\r\nexport default function ButtonOutline() {\r\n  return <Button variant=\"outline\">Outline</Button>;\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-outline.tsx"
     }

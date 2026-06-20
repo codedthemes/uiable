@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-spinner.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\n//  ------------------------------ | BADGE - SPINNER | ------------------------------  //\n\nexport function BadgeWithSpinner() {\n  return (\n    <div className=\"flex flex-wrap gap-2\">\n      <Badge variant=\"destructive\">\n        <Spinner data-icon=\"inline-start\" />\n        Deleting\n      </Badge>\n      <Badge variant=\"default\">\n        Generating\n        <Spinner data-icon=\"inline-end\" />\n      </Badge>\n    </div>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\nimport { Spinner } from \"@/components/ui/spinner\";\r\n\r\n//  ------------------------------ | BADGE - SPINNER | ------------------------------  //\r\n\r\nexport function BadgeWithSpinner() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-2\">\r\n      <Badge variant=\"destructive\">\r\n        <Spinner data-icon=\"inline-start\" />\r\n        Deleting\r\n      </Badge>\r\n      <Badge variant=\"default\">\r\n        Generating\r\n        <Spinner data-icon=\"inline-end\" />\r\n      </Badge>\r\n    </div>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-spinner.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-action.tsx",
-      "content": "// shadcn\nimport {\n  Alert,\n  AlertAction,\n  AlertDescription,\n  AlertTitle\n} from \"@/components/ui/alert\";\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | ALERT - ACTION | ------------------------------  //\n\nexport default function AlertActionExample() {\n  return (\n    <Alert className=\"max-w-md\">\n      <AlertTitle>Dark mode is now available</AlertTitle>\n      <AlertDescription>\n        Enable it under your profile settings to get started.\n      </AlertDescription>\n      <AlertAction>\n        <Button size=\"xs\" variant=\"default\">\n          Enable\n        </Button>\n      </AlertAction>\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport {\r\n  Alert,\r\n  AlertAction,\r\n  AlertDescription,\r\n  AlertTitle\r\n} from \"@/components/ui/alert\";\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | ALERT - ACTION | ------------------------------  //\r\n\r\nexport default function AlertActionExample() {\r\n  return (\r\n    <Alert className=\"max-w-md\">\r\n      <AlertTitle>Dark mode is now available</AlertTitle>\r\n      <AlertDescription>\r\n        Enable it under your profile settings to get started.\r\n      </AlertDescription>\r\n      <AlertAction>\r\n        <Button size=\"xs\" variant=\"default\">\r\n          Enable\r\n        </Button>\r\n      </AlertAction>\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-action.tsx"
     }

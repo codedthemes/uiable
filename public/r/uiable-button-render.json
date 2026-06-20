@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-render.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON RENDER | ------------------------------  //\n\nexport default function ButtonRender() {\n  return (\n    <Button nativeButton={false} render={<a href=\"#\" />}>\n      Login\n    </Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON RENDER | ------------------------------  //\r\n\r\nexport default function ButtonRender() {\r\n  return (\r\n    <Button nativeButton={false} render={<a href=\"#\" />}>\r\n      Login\r\n    </Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-render.tsx"
     }

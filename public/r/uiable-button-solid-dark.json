@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-solid-dark.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON SOLID DARK | ------------------------------  //\n\nexport default function ButtonSolidDark() {\n  return (\n    <Button className=\"bg-mist-800 text-white hover:bg-mist-900\">Dark</Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON SOLID DARK | ------------------------------  //\r\n\r\nexport default function ButtonSolidDark() {\r\n  return (\r\n    <Button className=\"bg-mist-800 text-white hover:bg-mist-900\">Dark</Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-solid-dark.tsx"
     }

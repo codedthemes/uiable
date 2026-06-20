@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/avatar/avatar-badge-icon.tsx",
-      "content": "// shadcn\nimport {\n  Avatar,\n  AvatarBadge,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\n// assets\nimport { PlusIcon } from \"lucide-react\";\n\n//  ------------------------------ | AVATAR - BADGE ICON | ------------------------------  //\n\nexport function AvatarBadgeIconExample() {\n  return (\n    <Avatar>\n      <AvatarImage\n        src=\"https://cdn.uiable.com/user/avatar-2.jpg\"\n        alt=\"@pranathip\"\n      />\n      <AvatarFallback>PP</AvatarFallback>\n      <AvatarBadge>\n        <PlusIcon />\n      </AvatarBadge>\n    </Avatar>\n  );\n}\n",
+      "content": "// shadcn\r\nimport {\r\n  Avatar,\r\n  AvatarBadge,\r\n  AvatarFallback,\r\n  AvatarImage,\r\n} from \"@/components/ui/avatar\";\r\n\r\n// assets\r\nimport { PlusIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | AVATAR - BADGE ICON | ------------------------------  //\r\n\r\nexport function AvatarBadgeIconExample() {\r\n  return (\r\n    <Avatar>\r\n      <AvatarImage\r\n        src=\"https://cdn.uiable.com/user/avatar-2.jpg\"\r\n        alt=\"@pranathip\"\r\n      />\r\n      <AvatarFallback>PP</AvatarFallback>\r\n      <AvatarBadge>\r\n        <PlusIcon />\r\n      </AvatarBadge>\r\n    </Avatar>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/avatar/avatar-badge-icon.tsx"
     }

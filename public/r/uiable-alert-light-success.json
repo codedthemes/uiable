@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-light-success.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - LIGHT SUCCESS | ------------------------------  //\n\nexport default function AlertLightSuccess() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-green-600/20 bg-green-600/10 text-green-700 dark:text-green-400\">\n      A simple success alert—check it out!\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - LIGHT SUCCESS | ------------------------------  //\r\n\r\nexport default function AlertLightSuccess() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-green-600/20 bg-green-600/10 text-green-700 dark:text-green-400\">\r\n      A simple success alert—check it out!\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-light-success.tsx"
     }

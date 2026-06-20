@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/alert/alert-solid-dark.tsx",
-      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - SOLID DARK | ------------------------------  //\n\nexport default function AlertSolidDark() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-dark-500 text-white border-transparent\">\n      Solid Dark Alert\n    </Alert>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - SOLID DARK | ------------------------------  //\r\n\r\nexport default function AlertSolidDark() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-dark-500 text-white border-transparent\">\r\n      Solid Dark Alert\r\n    </Alert>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-solid-dark.tsx"
     }

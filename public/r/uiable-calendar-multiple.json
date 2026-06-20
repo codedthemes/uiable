@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/calendar/calendar-multiple.tsx",
-      "content": "// shadcn\nimport { Calendar } from \"@/components/ui/calendar\";\nimport { Card, CardContent } from \"@/components/ui/card\";\n\n//  ------------------------------ | CALENDAR - MULTIPLE | ------------------------------  //\n\nexport function CalendarMultiple() {\n  return (\n    <Card className=\"mx-auto w-fit p-0\">\n      <CardContent className=\"p-0\">\n        <Calendar mode=\"multiple\" />\n      </CardContent>\n    </Card>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\n\r\n//  ------------------------------ | CALENDAR - MULTIPLE | ------------------------------  //\r\n\r\nexport function CalendarMultiple() {\r\n  return (\r\n    <Card className=\"mx-auto w-fit p-0\">\r\n      <CardContent className=\"p-0\">\r\n        <Calendar mode=\"multiple\" />\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/calendar/calendar-multiple.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/badge/badge-light-dark.tsx",
-      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - LIGHT DARK | ------------------------------  //\n\nexport default function BadgeLightDark() {\n  return (\n    <Badge className=\"bg-dark-500/10 text-dark-500 dark:text-dark-300 border-transparent\">\n      Dark\n    </Badge>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - LIGHT DARK | ------------------------------  //\r\n\r\nexport default function BadgeLightDark() {\r\n  return (\r\n    <Badge className=\"bg-dark-500/10 text-dark-500 dark:text-dark-300 border-transparent\">\r\n      Dark\r\n    </Badge>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-light-dark.tsx"
     }

@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button-group/button-group-separator.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  ButtonGroup,\n  ButtonGroupSeparator\n} from \"@/components/ui/button-group\";\n\n//  ------------------------------ | BUTTON GROUP - SEPARATOR | ------------------------------  //\n\nexport default function ButtonGroupSeparatorDemo() {\n  return (\n    <ButtonGroup>\n      <Button>Copy</Button>\n      <ButtonGroupSeparator />\n      <Button>Paste</Button>\n    </ButtonGroup>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  ButtonGroup,\r\n  ButtonGroupSeparator\r\n} from \"@/components/ui/button-group\";\r\n\r\n//  ------------------------------ | BUTTON GROUP - SEPARATOR | ------------------------------  //\r\n\r\nexport default function ButtonGroupSeparatorDemo() {\r\n  return (\r\n    <ButtonGroup>\r\n      <Button>Copy</Button>\r\n      <ButtonGroupSeparator />\r\n      <Button>Paste</Button>\r\n    </ButtonGroup>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button-group/button-group-separator.tsx"
     }

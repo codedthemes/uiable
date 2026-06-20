@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/button/button-outline-warning.tsx",
-      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | BUTTON OUTLINE WARNING | ------------------------------  //\n\nexport default function ButtonOutlineWarning() {\n  return (\n    <Button className=\"border-yellow-500 bg-transparent text-yellow-500 hover:bg-yellow-500 hover:text-white\">\n      Warning\n    </Button>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON OUTLINE WARNING | ------------------------------  //\r\n\r\nexport default function ButtonOutlineWarning() {\r\n  return (\r\n    <Button className=\"border-yellow-500 bg-transparent text-yellow-500 hover:bg-yellow-500 hover:text-white\">\r\n      Warning\r\n    </Button>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-outline-warning.tsx"
     }

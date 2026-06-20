@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/components/uiable/checkbox/checkbox-disabled.tsx",
-      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\n\n//  ------------------------------ | CHECKBOX - DISABLED | ------------------------------  //\n\nexport function CheckboxDisabled() {\n  return (\n    <FieldGroup className=\"mx-auto w-56\">\n      <Field orientation=\"horizontal\" data-disabled>\n        <Checkbox\n          id=\"toggle-checkbox-disabled\"\n          name=\"toggle-checkbox-disabled\"\n          disabled\n        />\n        <FieldLabel htmlFor=\"toggle-checkbox-disabled\">\n          Enable notifications\n        </FieldLabel>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\n\r\n//  ------------------------------ | CHECKBOX - DISABLED | ------------------------------  //\r\n\r\nexport function CheckboxDisabled() {\r\n  return (\r\n    <FieldGroup className=\"mx-auto w-56\">\r\n      <Field orientation=\"horizontal\" data-disabled>\r\n        <Checkbox\r\n          id=\"toggle-checkbox-disabled\"\r\n          name=\"toggle-checkbox-disabled\"\r\n          disabled\r\n        />\r\n        <FieldLabel htmlFor=\"toggle-checkbox-disabled\">\r\n          Enable notifications\r\n        </FieldLabel>\r\n      </Field>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
       "type": "registry:component",
       "target": "@components/uiable/checkbox/checkbox-disabled.tsx"
     }
