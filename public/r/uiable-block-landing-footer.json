@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-landing-footer",
+  "title": "Footer",
+  "description": "Landing footer section for the landing category.",
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/landing/footer/footer.tsx",
+      "content": "import Link from \"next/link\";\n\n// project\nimport branding from \"@/branding.json\";\nimport Logo from \"@/components/uiable/layout/shared/logo\";\n\n// assets\nimport {\n  IconBrandDiscord,\n  IconBrandGithub,\n  IconBrandX\n} from \"@tabler/icons-react\";\n\n// constants\nconst navLinks = [\n  { href: \"/components\", label: \"Components\" },\n  { href: \"/doc/introduction\", label: \"Documentation\" }\n];\n\nconst socialLinks = [\n  { Icon: IconBrandX, href: branding.company.socialLink.x, label: \"Twitter\" },\n  {\n    Icon: IconBrandDiscord,\n    href: branding.company.socialLink.discord,\n    label: \"Discord\"\n  },\n  {\n    Icon: IconBrandGithub,\n    href: branding.company.socialLink.github,\n    label: \"Github\"\n  }\n];\n\n//  ------------------------------ | LAYOUT - FOOTER | ------------------------------  //\n\nexport default function Footer() {\n  return (\n    <footer\n      style={{\n        background:\n          \"linear-gradient(to top, var(--primary) -180%, var(--background) 95%)\"\n      }}\n      className=\"w-full\"\n    >\n      <div className=\"container mx-auto px-4 sm:px-8 flex flex-col gap-8 py-10 md:flex-row md:items-center md:justify-between border-x border-t border-border/60\">\n        {/* LEFT */}\n        <div className=\"flex flex-col gap-3\">\n          <div className=\"flex items-center gap-2.5\">\n            <Logo />\n          </div>\n\n          <p className=\"text-md leading-6 tracking-[0.1px] text-foreground font-normal\">\n            v1.0 | Built by{\" \"}\n            <Link\n              href={branding.company.url}\n              target=\"_blank\"\n              rel=\"noopener noreferrer\"\n              className=\"text-primary hover:underline\"\n            >\n              {branding.company.name}\n            </Link>\n          </p>\n        </div>\n\n        {/* RIGHT */}\n        <div className=\"flex flex-col items-start gap-5 sm:flex-row sm:items-center md:items-center\">\n          {/* NAV LINKS */}\n          <nav className=\"flex items-center gap-8\">\n            {navLinks.map(({ href, label }) => (\n              <Link\n                key={href}\n                href={href}\n                className=\"font-sans text-[16px] leading-6 tracking-[0.1px] text-foreground transition hover:text-primary font-normal\"\n              >\n                {label}\n              </Link>\n            ))}\n          </nav>\n\n          {/* DIVIDER */}\n          <div className=\"hidden h-6 w-px bg-black/10 sm:block\" />\n\n          {/* SOCIALS */}\n          <div className=\"flex items-center gap-2.5\">\n            {socialLinks.map(({ Icon, href, label }) => (\n              <Link\n                key={label}\n                href={href}\n                target=\"_blank\"\n                rel=\"noopener noreferrer\"\n                aria-label={label}\n                className=\"flex h-10 w-10 items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-muted dark:hover:bg-muted\"\n              >\n                <Icon size={18} />\n              </Link>\n            ))}\n          </div>\n        </div>\n      </div>\n    </footer>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/landing/footer/footer.tsx"
+    }
+  ],
+  "categories": [
+    "landing"
+  ],
+  "type": "registry:block"
+}

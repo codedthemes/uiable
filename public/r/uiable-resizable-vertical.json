@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-resizable-vertical",
+  "title": "Vertical Resizable",
+  "description": "Resizable Vertical variant for resizable.",
+  "registryDependencies": [
+    "resizable"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/resizable/resizable-vertical.tsx",
+      "content": "// shadcn\r\nimport {\r\n  ResizableHandle,\r\n  ResizablePanel,\r\n  ResizablePanelGroup\r\n} from \"@/components/ui/resizable\";\r\n\r\n//  ------------------------------ | RESIZABLE - VERTICAL | ------------------------------  //\r\n\r\nexport function ResizableVertical() {\r\n  return (\r\n    <ResizablePanelGroup\r\n      orientation=\"vertical\"\r\n      className=\"min-h-[200px] max-w-sm rounded-lg border\"\r\n    >\r\n      <ResizablePanel defaultSize=\"25%\">\r\n        <div className=\"flex h-full items-center justify-center p-6\">\r\n          <span className=\"font-semibold\">Header</span>\r\n        </div>\r\n      </ResizablePanel>\r\n      <ResizableHandle />\r\n      <ResizablePanel defaultSize=\"75%\">\r\n        <div className=\"flex h-full items-center justify-center p-6\">\r\n          <span className=\"font-semibold\">Content</span>\r\n        </div>\r\n      </ResizablePanel>\r\n    </ResizablePanelGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/resizable/resizable-vertical.tsx"
+    }
+  ],
+  "categories": [
+    "resizable"
+  ],
+  "type": "registry:ui"
+}

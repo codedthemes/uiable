@@ -1,0 +1,138 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "uiable",
+  "homepage": "https://internal.uiable.com",
+  "items": [
+    {
+      "name": "uiable-block-landing-header",
+      "type": "registry:block",
+      "title": "Landing Header",
+      "description": "Landing header section for the landing block category.",
+      "files": [
+        {
+          "path": "landing/navbar/navbar.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/navbar/navbar.tsx"
+        }
+      ],
+      "categories": [
+        "landing"
+      ]
+    },
+    {
+      "name": "uiable-block-landing-hero",
+      "type": "registry:block",
+      "title": "Hero",
+      "description": "Landing hero block shown after the navbar in the landing category.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "landing/hero/hero.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/hero/hero.tsx"
+        }
+      ],
+      "categories": [
+        "landing"
+      ]
+    },
+    {
+      "name": "uiable-block-landing-component-1",
+      "type": "registry:block",
+      "title": "Component 1",
+      "description": "Landing component block with a components overview grid.",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "files": [
+        {
+          "path": "landing/component-1/component-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/component-1/component-1.tsx"
+        }
+      ],
+      "categories": [
+        "landing"
+      ]
+    },
+    {
+      "name": "uiable-block-landing-component-2",
+      "type": "registry:block",
+      "title": "Component 2",
+      "description": "Landing component block with a complete application console UI.",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "input-group",
+        "checkbox",
+        "radio-group",
+        "switch",
+        "avatar",
+        "badge",
+        "slider"
+      ],
+      "files": [
+        {
+          "path": "landing/component-2/component-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/component-2/component-2.tsx"
+        }
+      ],
+      "categories": [
+        "landing"
+      ]
+    },
+    {
+      "name": "uiable-block-landing-feature",
+      "type": "registry:block",
+      "title": "Feature",
+      "description": "Landing feature block for the landing category.",
+      "files": [
+        {
+          "path": "landing/feature/Feature.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/feature/Feature.tsx"
+        }
+      ],
+      "categories": [
+        "landing"
+      ]
+    },
+    {
+      "name": "uiable-block-landing-contact",
+      "type": "registry:block",
+      "title": "Contact",
+      "description": "Landing contact section for the landing category.",
+      "files": [
+        {
+          "path": "landing/contact/Contact.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/contact/Contact.tsx"
+        }
+      ],
+      "categories": [
+        "landing"
+      ]
+    },
+    {
+      "name": "uiable-block-landing-footer",
+      "type": "registry:block",
+      "title": "Footer",
+      "description": "Landing footer section for the landing category.",
+      "files": [
+        {
+          "path": "landing/footer/footer.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/footer/footer.tsx"
+        }
+      ],
+      "categories": [
+        "landing"
+      ]
+    }
+  ]
+}

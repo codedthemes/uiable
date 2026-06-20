@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-cta-6",
+  "title": "Call To Action 6",
+  "description": "Call To Action variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/cta/cta-6/cta-6.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | CTA 6 | ------------------------------  //\r\n\r\nexport default function Cta6() {\r\n  return (\r\n    <section className=\"bg-slate-900 py-20 sm:py-25 relative overflow-hidden\">\r\n      <span className=\"absolute -bottom-80 right-2/4 translate-x-2/4 w-150 h-100 block rounded-full bg-linear-to-r from-cyan-500 to-blue-500\"></span>\r\n      <div className=\"absolute inset-0 bg-slate-900/10 z-20 backdrop-blur-[150px]\"></div>\r\n      <div className=\"container mx-auto px-4 sm:px-6 lg:px-8 relative z-30\">\r\n        <div className=\"flex flex-col items-center gap-4 sm:gap-8\">\r\n          <div className=\"text-center flex flex-col items-center gap-2 sm:gap-5\">\r\n            <div className=\"flex bg-sky-500/10 px-6 py-2 rounded-full border border-sky-500/50\">\r\n              <span className=\"text-sm font-bold text-sky-500\">\r\n                Exclusive Sale\r\n              </span>\r\n            </div>\r\n            <h2 className=\"text-lg sm:text-3xl font-medium text-slate-100\">\r\n              Premium Deals Await You\r\n            </h2>\r\n            <p className=\"max-w-100 text-slate-400\">\r\n              Carefully selected offers at unbeatable prices, available for a\r\n              limited time only. Shop before they’re gone!\r\n            </p>\r\n          </div>\r\n          <Button\r\n            size=\"lg\"\r\n            className=\"bg-pink-500 text-white hover:bg-pink-500/20 hover:text-pink-500 border-2 border-pink-500\"\r\n          >\r\n            Explore Now\r\n          </Button>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/cta/cta-6/cta-6.tsx"
+    }
+  ],
+  "categories": [
+    "cta"
+  ],
+  "type": "registry:block"
+}

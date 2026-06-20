@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-badge",
+  "title": "Badge Input",
+  "description": "Input Badge variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-badge.tsx",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - BADGE | ------------------------------  //\r\n\r\nexport function InputBadge() {\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"input-badge\">\r\n        Webhook URL{\" \"}\r\n        <Badge variant=\"default\" className=\"ml-auto\">\r\n          Beta\r\n        </Badge>\r\n      </FieldLabel>\r\n      <Input\r\n        id=\"input-badge\"\r\n        type=\"url\"\r\n        placeholder=\"https://api.example.com/webhook\"\r\n      />\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-badge.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

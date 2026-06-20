@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-menubar-checkbox",
+  "title": "Checkbox Menubar",
+  "description": "Menubar Checkbox variant for menubar.",
+  "registryDependencies": [
+    "menubar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/menubar/menubar-checkbox.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Menubar,\r\n  MenubarCheckboxItem,\r\n  MenubarContent,\r\n  MenubarItem,\r\n  MenubarMenu,\r\n  MenubarSeparator,\r\n  MenubarShortcut,\r\n  MenubarTrigger\r\n} from \"@/components/ui/menubar\";\r\n\r\n//  ------------------------------ | MENUBAR - CHECKBOX | ------------------------------  //\r\n\r\nexport function MenubarCheckbox() {\r\n  return (\r\n    <Menubar className=\"w-72\">\r\n      <MenubarMenu>\r\n        <MenubarTrigger>View</MenubarTrigger>\r\n        <MenubarContent className=\"w-64\">\r\n          <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>\r\n          <MenubarCheckboxItem checked>\r\n            Always Show Full URLs\r\n          </MenubarCheckboxItem>\r\n          <MenubarSeparator />\r\n          <MenubarItem inset>\r\n            Reload <MenubarShortcut>⌘R</MenubarShortcut>\r\n          </MenubarItem>\r\n          <MenubarItem disabled inset>\r\n            Force Reload <MenubarShortcut>⇧⌘R</MenubarShortcut>\r\n          </MenubarItem>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n      <MenubarMenu>\r\n        <MenubarTrigger>Format</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarCheckboxItem checked>Strikethrough</MenubarCheckboxItem>\r\n          <MenubarCheckboxItem>Code</MenubarCheckboxItem>\r\n          <MenubarCheckboxItem>Superscript</MenubarCheckboxItem>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n    </Menubar>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/menubar/menubar-checkbox.tsx"
+    }
+  ],
+  "categories": [
+    "menubar"
+  ],
+  "type": "registry:ui"
+}

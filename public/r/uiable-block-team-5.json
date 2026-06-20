@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-team-5",
+  "title": "Team 5",
+  "description": "Team variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/team/team-5/team-5.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | TEAM 5 | ------------------------------  //\r\n\r\nexport default function Team5() {\r\n  return (\r\n    <section className=\"pt-24\">\r\n      <div className=\"container mx-auto px-6\">\r\n        <div className=\"grid grid-cols-12 gap-8 items-center min-h-80\">\r\n          <div className=\"col-span-12 md:col-span-6 flex flex-col gap-8\">\r\n            <div>\r\n              <h2>Hello, my name is joseph William.</h2>\r\n              <h5 className=\"mt-6 text-muted-foreground font-normal max-w-xl\">\r\n                I am a freelance designer specialising in making you more\r\n                awesome. I love simple effective artwork and thrash metal.\r\n              </h5>\r\n            </div>\r\n            <Button size=\"lg\">Get Started</Button>\r\n          </div>\r\n          <div className=\"col-span-12 md:col-span-6 flex justify-center\">\r\n            <img\r\n              src=\"https://cdn.uiable.com/block/team10.png\"\r\n              alt=\"Joseph William\"\r\n              className=\"max-h-96 max-w-sm object-contain\"\r\n              draggable={false}\r\n            />\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/team/team-5/team-5.tsx"
+    }
+  ],
+  "categories": [
+    "team"
+  ],
+  "type": "registry:block"
+}

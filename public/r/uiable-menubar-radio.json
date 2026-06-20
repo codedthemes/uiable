@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-menubar-radio",
+  "title": "Radio Menubar",
+  "description": "Menubar Radio variant for menubar.",
+  "registryDependencies": [
+    "menubar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/menubar/menubar-radio.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport {\r\n  Menubar,\r\n  MenubarContent,\r\n  MenubarItem,\r\n  MenubarMenu,\r\n  MenubarRadioGroup,\r\n  MenubarRadioItem,\r\n  MenubarSeparator,\r\n  MenubarTrigger\r\n} from \"@/components/ui/menubar\";\r\n\r\n//  ------------------------------ | MENUBAR - RADIO | ------------------------------  //\r\n\r\nexport function MenubarRadio() {\r\n  const [user, setUser] = useState(\"benoit\");\r\n  const [theme, setTheme] = useState(\"system\");\r\n\r\n  return (\r\n    <Menubar className=\"w-72\">\r\n      <MenubarMenu>\r\n        <MenubarTrigger>Profiles</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarRadioGroup value={user} onValueChange={setUser}>\r\n            <MenubarRadioItem value=\"andy\">Andy</MenubarRadioItem>\r\n            <MenubarRadioItem value=\"benoit\">Benoit</MenubarRadioItem>\r\n            <MenubarRadioItem value=\"luis\">Luis</MenubarRadioItem>\r\n          </MenubarRadioGroup>\r\n          <MenubarSeparator />\r\n          <MenubarItem inset>Edit...</MenubarItem>\r\n          <MenubarItem inset>Add Profile...</MenubarItem>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n      <MenubarMenu>\r\n        <MenubarTrigger>Theme</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarRadioGroup value={theme} onValueChange={setTheme}>\r\n            <MenubarRadioItem value=\"light\">Light</MenubarRadioItem>\r\n            <MenubarRadioItem value=\"dark\">Dark</MenubarRadioItem>\r\n            <MenubarRadioItem value=\"system\">System</MenubarRadioItem>\r\n          </MenubarRadioGroup>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n    </Menubar>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/menubar/menubar-radio.tsx"
+    }
+  ],
+  "categories": [
+    "menubar"
+  ],
+  "type": "registry:ui"
+}

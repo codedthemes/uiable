@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-outline-info",
+  "title": "Info Outline Badge",
+  "description": "Badge Outline Info variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-outline-info.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - OUTLINE INFO | ------------------------------  //\n\nexport default function BadgeOutlineInfo() {\n  return (\n    <Badge className=\"border-cyan-500 text-cyan-500 bg-transparent\">Info</Badge>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-outline-info.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

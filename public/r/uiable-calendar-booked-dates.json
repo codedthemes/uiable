@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-calendar-booked-dates",
+  "title": "Booked Dates Calendar",
+  "description": "Calendar Booked Dates variant for calendar.",
+  "registryDependencies": [
+    "calendar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/calendar/calendar-booked-dates.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\n\r\n//  ------------------------------ | CALENDAR - BOOKED DATES | ------------------------------  //\r\n\r\nexport function CalendarBookedDates() {\r\n  const [date, setDate] = useState<Date | undefined>(\r\n    new Date(new Date().getFullYear(), 0, 6)\r\n  );\r\n  const bookedDates = Array.from(\r\n    { length: 15 },\r\n    (_, i) => new Date(new Date().getFullYear(), 0, 12 + i)\r\n  );\r\n\r\n  return (\r\n    <Card className=\"mx-auto w-fit p-0\">\r\n      <CardContent className=\"p-0\">\r\n        <Calendar\r\n          mode=\"single\"\r\n          defaultMonth={date}\r\n          selected={date}\r\n          onSelect={setDate}\r\n          disabled={bookedDates}\r\n          modifiers={{\r\n            booked: bookedDates\r\n          }}\r\n          modifiersClassNames={{\r\n            booked: \"[&>button]:line-through opacity-100\"\r\n          }}\r\n        />\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/calendar/calendar-booked-dates.tsx"
+    }
+  ],
+  "categories": [
+    "calendar"
+  ],
+  "type": "registry:ui"
+}

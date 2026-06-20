@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-pill-primary",
+  "title": "Primary Pill Badge",
+  "description": "Badge Pill Primary variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-pill-primary.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - PILL PRIMARY | ------------------------------  //\n\nexport default function BadgePillPrimary() {\n  return <Badge className=\"rounded-full bg-primary text-white\">Primary</Badge>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-pill-primary.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

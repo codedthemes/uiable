@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-kbd-tooltip",
+  "title": "Tooltip Kbd",
+  "description": "Kbd Tooltip variant for kbd.",
+  "registryDependencies": [
+    "kbd"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/kbd/kbd-tooltip.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\";\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger\r\n} from \"@/components/ui/tooltip\";\r\n\r\n//  ------------------------------ | KBD - TOOLTIP | ------------------------------  //\r\n\r\nexport default function KbdTooltip() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-4\">\r\n      <Tooltip>\r\n        <TooltipTrigger render={<Button variant=\"outline\" />}>\r\n          Save\r\n        </TooltipTrigger>\r\n        <TooltipContent className=\"pr-1.5\">\r\n          <div className=\"flex items-center gap-2\">\r\n            Save Changes <Kbd>S</Kbd>\r\n          </div>\r\n        </TooltipContent>\r\n      </Tooltip>\r\n      <Tooltip>\r\n        <TooltipTrigger render={<Button variant=\"outline\" />}>\r\n          Print\r\n        </TooltipTrigger>\r\n        <TooltipContent className=\"pr-1.5\">\r\n          <div className=\"flex items-center gap-2\">\r\n            Print Document{\" \"}\r\n            <KbdGroup>\r\n              <Kbd>Ctrl</Kbd>\r\n              <Kbd>P</Kbd>\r\n            </KbdGroup>\r\n          </div>\r\n        </TooltipContent>\r\n      </Tooltip>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/kbd/kbd-tooltip.tsx"
+    }
+  ],
+  "categories": [
+    "kbd"
+  ],
+  "type": "registry:ui"
+}

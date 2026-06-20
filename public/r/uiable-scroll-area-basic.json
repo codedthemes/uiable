@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-scroll-area-basic",
+  "title": "Basic Scroll Area",
+  "description": "Scroll Area Basic variant for scroll-area.",
+  "registryDependencies": [
+    "scroll-area"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/scroll-area/scroll-area-basic.tsx",
+      "content": "import { Fragment } from \"react\";\r\n\r\n// shadcn\r\nimport { ScrollArea } from \"@/components/ui/scroll-area\";\r\nimport { Separator } from \"@/components/ui/separator\";\r\n\r\nconst tags = Array.from({ length: 20 }).map(\r\n  (_, i, a) => `v1.2.0-beta.${a.length - i}`,\r\n);\r\n\r\n//  ------------------------------ | SCROLL AREA - BASIC | ------------------------------  //\r\n\r\nexport default function ScrollAreaBasic() {\r\n  return (\r\n    <ScrollArea className=\"h-72 w-50 rounded-md border border-border \">\r\n      <div className=\"p-5\">\r\n        <h5 className=\"mb-4 font-medium leading-none text-primary\">Tags</h5>\r\n        {tags.map((tag) => (\r\n          <Fragment key={tag}>\r\n            <Separator className=\"my-1 opacity-50\" />\r\n            <div className=\"py-2\">{tag}</div>\r\n          </Fragment>\r\n        ))}\r\n      </div>\r\n    </ScrollArea>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/scroll-area/scroll-area-basic.tsx"
+    }
+  ],
+  "categories": [
+    "scroll-area"
+  ],
+  "type": "registry:ui"
+}

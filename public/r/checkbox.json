@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox",
+  "dependencies": [
+    "@base-ui/react",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/checkbox.tsx",
+      "content": "\"use client\"\r\n\r\nimport { Checkbox as CheckboxPrimitive } from \"@base-ui/react/checkbox\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\nimport { CheckIcon } from \"lucide-react\"\r\n\r\nfunction Checkbox({ className, ...props }: CheckboxPrimitive.Root.Props) {\r\n  return (\r\n    <CheckboxPrimitive.Root\r\n      data-slot=\"checkbox\"\r\n      className={cn(\r\n        \"border-border dark:bg-input/30 data-checked:bg-primary data-checked:text-primary-foreground dark:data-checked:bg-primary data-checked:border-primary aria-invalid:aria-checked:border-primary aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 peer relative flex size-[17.5px] shrink-0 items-center justify-center rounded-[4px] border transition-colors outline-none group-has-disabled/field:opacity-50 after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:ring-3 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:ring-3\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      <CheckboxPrimitive.Indicator\r\n        data-slot=\"checkbox-indicator\"\r\n        className=\"grid place-content-center text-current transition-none [&>svg]:size-3 [&>svg]:stroke-3\"\r\n      >\r\n        <CheckIcon\r\n        />\r\n      </CheckboxPrimitive.Indicator>\r\n    </CheckboxPrimitive.Root>\r\n  )\r\n}\r\n\r\nexport { Checkbox }\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/checkbox.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

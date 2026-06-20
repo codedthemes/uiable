@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-textarea",
+  "title": "Textarea Input Group",
+  "description": "Input Group Textarea variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-textarea.tsx",
+      "content": "// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupText,\r\n  InputGroupTextarea\r\n} from \"@/components/ui/input-group\";\r\n\r\n// assets\r\nimport {\r\n  IconBrandJavascript,\r\n  IconCopy,\r\n  IconCornerDownLeft,\r\n  IconRefresh\r\n} from \"@tabler/icons-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - TEXTAREA | ------------------------------  //\r\n\r\nexport default function InputGroupTextareaExample() {\r\n  return (\r\n    <div className=\"grid w-full max-w-md gap-4\">\r\n      <InputGroup>\r\n        <InputGroupTextarea\r\n          id=\"textarea-code-32\"\r\n          placeholder=\"console.log('Hello, world!');\"\r\n          className=\"min-h-[200px]\"\r\n        />\r\n        <InputGroupAddon align=\"block-end\" className=\"border-t border-border\">\r\n          <InputGroupText>Line 1, Column 1</InputGroupText>\r\n          <InputGroupButton size=\"sm\" className=\"ml-auto\" variant=\"default\">\r\n            Run <IconCornerDownLeft />\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n        <InputGroupAddon align=\"block-start\" className=\"border-b border-border\">\r\n          <InputGroupText className=\"font-mono font-medium\">\r\n            <IconBrandJavascript />\r\n            script.js\r\n          </InputGroupText>\r\n          <InputGroupButton className=\"ml-auto\" size=\"icon-xs\">\r\n            <IconRefresh />\r\n          </InputGroupButton>\r\n          <InputGroupButton variant=\"ghost\" size=\"icon-xs\">\r\n            <IconCopy />\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-textarea.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

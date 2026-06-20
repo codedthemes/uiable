@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-process-4",
+  "title": "Process 4",
+  "description": "Process variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/process/process-4/process-4.tsx",
+      "content": "// assets\r\nimport { DiamondIcon, ScanIcon, ZapIcon } from \"lucide-react\";\r\n\r\n// constants\r\nconst steps = [\r\n  {\r\n    number: \"1\",\r\n    icon: DiamondIcon,\r\n    title: \"User Journey Map\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    number: \"2\",\r\n    icon: ZapIcon,\r\n    title: \"User Journey Map\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  },\r\n  {\r\n    number: \"3\",\r\n    icon: ScanIcon,\r\n    title: \"User Journey Map\",\r\n    description: \"Better a diamond with a flaw than a pebble without one.\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | PROCESS 4 | ------------------------------  //\r\n\r\nexport default function Process4() {\r\n  return (\r\n    <section className=\"py-20 bg-primary\">\r\n      <div className=\"mx-auto container px-4 sm:px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-14 flex flex-col gap-3 max-w-sm mx-auto\">\r\n          <h2 className=\"text-primary-foreground\">\r\n            Our Process Is Aimed To Help Your Business\r\n          </h2>\r\n          <p className=\"text-primary-foreground/70\">\r\n            Only those who risk going too far can possibly find out how far one\r\n            can go.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Steps grid */}\r\n        <div className=\"grid grid-cols-12 gap-8\">\r\n          {steps.map((step) => {\r\n            const Icon = step.icon;\r\n            return (\r\n              <div\r\n                key={step.number}\r\n                className=\"col-span-12 sm:col-span-4 flex flex-col gap-3\"\r\n              >\r\n                {/* Icon + number row */}\r\n                <div className=\"flex items-end justify-between\">\r\n                  <Icon\r\n                    className=\"size-10 text-primary-foreground/80\"\r\n                    strokeWidth={1.5}\r\n                  />\r\n                  <span className=\"text-9xl font-bold text-yellow-500 leading-none\">\r\n                    {step.number}\r\n                  </span>\r\n                </div>\r\n                <h5 className=\"text-primary-foreground font-bold\">\r\n                  {step.title}\r\n                </h5>\r\n                <p className=\"text-primary-foreground/70 text-md\">\r\n                  {step.description}\r\n                </p>\r\n              </div>\r\n            );\r\n          })}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/process/process-4/process-4.tsx"
+    }
+  ],
+  "categories": [
+    "process"
+  ],
+  "type": "registry:block"
+}

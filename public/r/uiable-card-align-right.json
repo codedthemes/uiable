@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-align-right",
+  "title": "Align Right Card",
+  "description": "Card Align Right variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-align-right.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\n\n//  ------------------------------ | CARD - ALIGN RIGHT | ------------------------------  //\n\nexport default function CardAlignRight() {\n  return (\n    <Card className=\"text-right\">\n      <CardContent>\n        <h5>Special title treatment</h5>\n        <p className=\"mb-4 mt-3\">\n          With supporting text below as a natural lead-in to additional content.\n        </p>\n        <Button>Go somewhere</Button>\n      </CardContent>\n    </Card>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-align-right.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

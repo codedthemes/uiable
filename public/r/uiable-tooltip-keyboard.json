@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-tooltip-keyboard",
+  "title": "Keyboard Tooltip",
+  "description": "Tooltip Keyboard variant for tooltip.",
+  "registryDependencies": [
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/tooltip/tooltip-keyboard.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Kbd } from \"@/components/ui/kbd\";\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger\r\n} from \"@/components/ui/tooltip\";\r\n\r\n// assets\r\nimport { SaveIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TOOLTIP - KEYBOARD | ------------------------------  //\r\n\r\nexport function TooltipKeyboard() {\r\n  return (\r\n    <Tooltip>\r\n      <TooltipTrigger render={<Button size=\"icon-lg\" />}>\r\n        <SaveIcon />\r\n      </TooltipTrigger>\r\n      <TooltipContent className=\"pr-2.5\">\r\n        <div className=\"flex items-center gap-2\">\r\n          Save Changes <Kbd>S</Kbd>\r\n        </div>\r\n      </TooltipContent>\r\n    </Tooltip>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tooltip/tooltip-keyboard.tsx"
+    }
+  ],
+  "categories": [
+    "tooltip"
+  ],
+  "type": "registry:ui"
+}

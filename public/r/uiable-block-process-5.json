@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-process-5",
+  "title": "Process 5",
+  "description": "Process variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/process/process-5/process-5.tsx",
+      "content": "// types\r\ntype Step = {\r\n  number: string;\r\n  title: string;\r\n  description: string;\r\n};\r\n\r\n// constants\r\nconst steps: Step[] = [\r\n  {\r\n    number: \"1\",\r\n    title: \"User Journey Map\",\r\n    description:\r\n      \"Overcoming all obstacles develops our natural ability and makes us stronger.\",\r\n  },\r\n  {\r\n    number: \"2\",\r\n    title: \"Digital Wireframe\",\r\n    description:\r\n      \"Overcoming all obstacles develops our natural ability and makes us stronger.\",\r\n  },\r\n  {\r\n    number: \"3\",\r\n    title: \"Clickable Prototype\",\r\n    description:\r\n      \"Overcoming all obstacles develops our natural ability and makes us stronger.\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | PROCESS 5 | ------------------------------  //\r\n\r\nexport default function Process5() {\r\n  return (\r\n    <section className=\"py-20\">\r\n      <div className=\"mx-auto container px-4 sm:px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-14 flex flex-col gap-3 max-w-lg mx-auto\">\r\n          <h2 className=\"text-foreground\">\r\n            Our Process Is Aimed To Help Your Business\r\n          </h2>\r\n          <p className=\"text-muted-foreground\">\r\n            Only those who risk going too far can possibly find out how far one\r\n            can go.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Steps grid */}\r\n        <div className=\"grid grid-cols-12 gap-8\">\r\n          {steps.map((step) => (\r\n            <div\r\n              key={step.number}\r\n              className=\"col-span-12 sm:col-span-4 flex flex-col gap-4\"\r\n            >\r\n              {/* Image with number badge */}\r\n              <div className=\"relative\">\r\n                <img\r\n                  src=\"https://cdn.uiable.com/block/process-3-1.png\"\r\n                  alt={step.title}\r\n                  className=\"w-full rounded-xl\"\r\n                />\r\n                {/* Number badge top-right */}\r\n                <div className=\"absolute -top-3 -right-3 size-10 rounded-lg bg-primary flex items-center justify-center\">\r\n                  <span className=\"text-primary-foreground text-lg font-bold\">\r\n                    {step.number}\r\n                  </span>\r\n                </div>\r\n              </div>\r\n              {/* Text */}\r\n              <div className=\"flex flex-col gap-1\">\r\n                <h5 className=\"text-foreground font-bold\">{step.title}</h5>\r\n                <p className=\"text-muted-foreground text-md\">\r\n                  {step.description}\r\n                </p>\r\n              </div>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/process/process-5/process-5.tsx"
+    }
+  ],
+  "categories": [
+    "process"
+  ],
+  "type": "registry:block"
+}

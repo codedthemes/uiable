@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-growing-primary",
+  "title": "Primary Growing Spinner",
+  "description": "Spinner Growing Primary variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-growing-primary.tsx",
+      "content": "//  ------------------------------ | SPINNER - GROWING PRIMARY | ------------------------------  //\r\n\r\nexport default function SpinnerGrowingPrimary() {\r\n  return (\r\n    <div\r\n      className=\"inline-flex bg-primary rounded-full opacity-75 size-4 animate-ping\"\r\n      role=\"status\"\r\n    >\r\n      <span className=\"sr-only\">Loading...</span>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-growing-primary.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

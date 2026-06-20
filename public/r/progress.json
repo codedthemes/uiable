@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/progress.tsx",
+      "content": "\"use client\"\r\n\r\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction Progress({\r\n  className,\r\n  children,\r\n  value,\r\n  ...props\r\n}: ProgressPrimitive.Root.Props) {\r\n  return (\r\n    <ProgressPrimitive.Root\r\n      value={value}\r\n      data-slot=\"progress\"\r\n      className={cn(\"flex flex-wrap gap-3\", className)}\r\n      {...props}\r\n    >\r\n      {children}\r\n      <ProgressTrack>\r\n        <ProgressIndicator />\r\n      </ProgressTrack>\r\n    </ProgressPrimitive.Root>\r\n  )\r\n}\r\n\r\nfunction ProgressTrack({ className, ...props }: ProgressPrimitive.Track.Props) {\r\n  return (\r\n    <ProgressPrimitive.Track\r\n      className={cn(\r\n        \"bg-muted relative flex h-1 w-full items-center overflow-x-hidden rounded-full\",\r\n        className\r\n      )}\r\n      data-slot=\"progress-track\"\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction ProgressIndicator({\r\n  className,\r\n  ...props\r\n}: ProgressPrimitive.Indicator.Props) {\r\n  return (\r\n    <ProgressPrimitive.Indicator\r\n      data-slot=\"progress-indicator\"\r\n      className={cn(\"bg-primary h-full transition-all\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction ProgressLabel({ className, ...props }: ProgressPrimitive.Label.Props) {\r\n  return (\r\n    <ProgressPrimitive.Label\r\n      className={cn(\"text-sm font-medium\", className)}\r\n      data-slot=\"progress-label\"\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction ProgressValue({ className, ...props }: ProgressPrimitive.Value.Props) {\r\n  return (\r\n    <ProgressPrimitive.Value\r\n      className={cn(\r\n        \"text-muted-foreground ml-auto text-sm tabular-nums\",\r\n        className\r\n      )}\r\n      data-slot=\"progress-value\"\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport {\r\n  Progress,\r\n  ProgressTrack,\r\n  ProgressIndicator,\r\n  ProgressLabel,\r\n  ProgressValue,\r\n}\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/progress.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

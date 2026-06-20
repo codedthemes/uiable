@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-tooltip-disabled",
+  "title": "Disabled Tooltip",
+  "description": "Tooltip Disabled variant for tooltip.",
+  "registryDependencies": [
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/tooltip/tooltip-disabled.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger\r\n} from \"@/components/ui/tooltip\";\r\n\r\n//  ------------------------------ | TOOLTIP - DISABLED | ------------------------------  //\r\n\r\nexport function TooltipDisabled() {\r\n  return (\r\n    <>\r\n      <Tooltip>\r\n        <TooltipTrigger render={<span className=\"inline-block w-fit\" />}>\r\n          <Button disabled>Disabled</Button>\r\n        </TooltipTrigger>\r\n        <TooltipContent>\r\n          <p>This feature is currently unavailable</p>\r\n        </TooltipContent>\r\n      </Tooltip>\r\n    </>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tooltip/tooltip-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "tooltip"
+  ],
+  "type": "registry:ui"
+}

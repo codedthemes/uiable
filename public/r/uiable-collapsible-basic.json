@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-collapsible-basic",
+  "title": "Basic Collapsible",
+  "description": "Collapsible Basic variant for collapsible.",
+  "registryDependencies": [
+    "collapsible"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/collapsible/collapsible-basic.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger\n} from \"@/components/ui/collapsible\";\n\n// assets\nimport { ChevronDownIcon } from \"lucide-react\";\n\n//  ------------------------------ | COLLAPSIBLE - BASIC | ------------------------------  //\n\nexport function CollapsibleBasic() {\n  return (\n    <Card className=\"mx-auto w-full max-w-sm\">\n      <CardContent>\n        <Collapsible className=\"data-open:bg-background rounded-lg\">\n          <CollapsibleTrigger\n            render={\n              <Button\n                variant=\"ghost\"\n                className=\"w-full hover:bg-background aria-expanded:bg-background\"\n              />\n            }\n          >\n            Product details\n            <ChevronDownIcon className=\"ml-auto group-data-panel-open/button:rotate-180\" />\n          </CollapsibleTrigger>\n          <CollapsibleContent className=\"flex flex-col items-start gap-2 p-4 pt-0 text-base\">\n            <div>\n              This panel can be expanded or collapsed to reveal additional\n              content.\n            </div>\n            <Button size=\"sm\">Learn More</Button>\n          </CollapsibleContent>\n        </Collapsible>\n      </CardContent>\n    </Card>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/collapsible/collapsible-basic.tsx"
+    }
+  ],
+  "categories": [
+    "collapsible"
+  ],
+  "type": "registry:ui"
+}

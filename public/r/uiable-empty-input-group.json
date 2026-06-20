@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-empty-input-group",
+  "title": "Empty Input Group",
+  "description": "Empty Input Group variant for empty.",
+  "registryDependencies": [
+    "empty"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/empty/empty-input-group.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Empty,\r\n  EmptyContent,\r\n  EmptyDescription,\r\n  EmptyHeader,\r\n  EmptyTitle\r\n} from \"@/components/ui/empty\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\nimport { Kbd } from \"@/components/ui/kbd\";\r\n\r\n// assets\r\nimport { SearchIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | EMPTY - INPUT GROUP | ------------------------------  //\r\n\r\nexport default function EmptyInputGroup() {\r\n  return (\r\n    <Empty>\r\n      <EmptyHeader>\r\n        <EmptyTitle>404 - Not Found</EmptyTitle>\r\n        <EmptyDescription>\r\n          The page you're looking for doesn't exist. Try searching for what you\r\n          need below.\r\n        </EmptyDescription>\r\n      </EmptyHeader>\r\n      <EmptyContent>\r\n        <InputGroup className=\"sm:w-3/4 mx-auto mb-2\">\r\n          <InputGroupInput placeholder=\"Try searching for pages...\" />\r\n          <InputGroupAddon>\r\n            <SearchIcon />\r\n          </InputGroupAddon>\r\n          <InputGroupAddon align=\"inline-end\">\r\n            <Kbd>/</Kbd>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <EmptyDescription>\r\n          Need help?{\" \"}\r\n          <a href=\"#\" className=\"hover:text-primary\">\r\n            Contact support\r\n          </a>\r\n        </EmptyDescription>\r\n      </EmptyContent>\r\n    </Empty>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/empty/empty-input-group.tsx"
+    }
+  ],
+  "categories": [
+    "empty"
+  ],
+  "type": "registry:ui"
+}

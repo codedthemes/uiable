@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-toggle-group-font-weight-selector",
+  "title": "Font Weight Selector Toggle Group",
+  "description": "Toggle Group Font Weight Selector variant for toggle-group.",
+  "registryDependencies": [
+    "toggle-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/toggle-group/toggle-group-font-weight-selector.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\";\r\n\r\n//  ------------------------------ | TOGGLE GROUP - FONT WEIGHT SELECTOR | ------------------------------  //\r\n\r\nexport function ToggleGroupFontWeightSelector() {\r\n  const [fontWeight, setFontWeight] = useState(\"normal\");\r\n  return (\r\n    <Field>\r\n      <FieldLabel>Font Weight</FieldLabel>\r\n      <ToggleGroup\r\n        value={[fontWeight]}\r\n        onValueChange={(value) => setFontWeight(value[0])}\r\n        variant=\"outline\"\r\n        spacing={2}\r\n        size=\"lg\"\r\n      >\r\n        <ToggleGroupItem\r\n          value=\"light\"\r\n          aria-label=\"Light\"\r\n          className=\"flex size-20 flex-col items-center justify-center rounded-xl\"\r\n        >\r\n          <span className=\"text-2xl leading-none font-light\">Aa</span>\r\n          <span className=\"text-xs\">Light</span>\r\n        </ToggleGroupItem>\r\n        <ToggleGroupItem\r\n          value=\"normal\"\r\n          aria-label=\"Normal\"\r\n          className=\"flex size-20 flex-col items-center justify-center rounded-xl\"\r\n        >\r\n          <span className=\"text-2xl leading-none font-normal\">Aa</span>\r\n          <span className=\"text-xs\">Normal</span>\r\n        </ToggleGroupItem>\r\n        <ToggleGroupItem\r\n          value=\"medium\"\r\n          aria-label=\"Medium\"\r\n          className=\"flex size-20 flex-col items-center justify-center rounded-xl\"\r\n        >\r\n          <span className=\"text-2xl leading-none font-medium\">Aa</span>\r\n          <span className=\"text-xs\">Medium</span>\r\n        </ToggleGroupItem>\r\n        <ToggleGroupItem\r\n          value=\"bold\"\r\n          aria-label=\"Bold\"\r\n          className=\"flex size-20 flex-col items-center justify-center rounded-xl\"\r\n        >\r\n          <span className=\"text-2xl leading-none font-bold\">Aa</span>\r\n          <span className=\"text-xs\">Bold</span>\r\n        </ToggleGroupItem>\r\n      </ToggleGroup>\r\n      <FieldDescription>\r\n        Use{\" \"}\r\n        <code className=\"bg-muted rounded-md px-1 py-0.5 font-mono\">\r\n          font-{fontWeight}\r\n        </code>{\" \"}\r\n        to set the font weight.\r\n      </FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/toggle-group/toggle-group-font-weight-selector.tsx"
+    }
+  ],
+  "categories": [
+    "toggle-group"
+  ],
+  "type": "registry:ui"
+}

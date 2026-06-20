@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-testimonial-1",
+  "title": "Testimonial 1",
+  "description": "Testimonial variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/testimonial/testimonial-1/testimonial-1.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\n\r\n// constants\r\nconst testimonials = [\r\n  {\r\n    name: \"Joseph William\",\r\n    avatar: \"https://cdn.uiable.com/block/team2.png\",\r\n    initials: \"JW\",\r\n    text: \"At half-past eight the door opened, the policeman appeared, and requesting them to follow him.\",\r\n  },\r\n  {\r\n    name: \"Shirley Hoe\",\r\n    avatar: \"https://cdn.uiable.com/block/team1.png\",\r\n    initials: \"SH\",\r\n    text: \"At half-past eight the door opened, the policeman appeared, and requesting them to follow him.\",\r\n  },\r\n  {\r\n    name: \"Shirley Hoe\",\r\n    avatar: \"https://cdn.uiable.com/block/team3.png\",\r\n    initials: \"SH\",\r\n    text: \"At half-past eight the door opened, the policeman appeared, and requesting them to follow him.\",\r\n  },\r\n  {\r\n    name: \"Joseph William\",\r\n    avatar: \"https://cdn.uiable.com/block/team4.png\",\r\n    initials: \"JW\",\r\n    text: \"At half-past eight the door opened, the policeman appeared, and requesting them to follow him.\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | TESTIMONIAL 1 | ------------------------------  //\r\n\r\n//  ------------------------------ | TESTIMONIAL1 | ------------------------------  //\r\n\r\nexport default function Testimonial1() {\r\n  return (\r\n    <section className=\"py-20\">\r\n      <div className=\"container mx-auto px-6\">\r\n        <div className=\"grid grid-cols-12 mb-10\">\r\n          <div className=\"col-span-12 text-start\">\r\n            <h2>What Clients Say</h2>\r\n            <p className=\"text-muted-foreground mt-3 max-w-4xl\">\r\n              At half-past eight the door opened, the policeman appeared and\r\n              requesting them to follow him, led way to an adjoining hall.\r\n            </p>\r\n          </div>\r\n        </div>\r\n        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12\">\r\n          {testimonials.map((t, i) => (\r\n            <div key={i} className=\"flex items-start gap-4 py-4\">\r\n              <Avatar className=\"h-18 w-18\">\r\n                <AvatarImage src={t.avatar} alt={t.name} />\r\n                <AvatarFallback>{t.initials}</AvatarFallback>\r\n              </Avatar>\r\n              <div>\r\n                <h5 className=\"text-foreground mb-4\">{t.name}</h5>\r\n                <p className=\"text-muted-foreground\">{t.text}</p>\r\n              </div>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/testimonial/testimonial-1/testimonial-1.tsx"
+    }
+  ],
+  "categories": [
+    "testimonial"
+  ],
+  "type": "registry:block"
+}

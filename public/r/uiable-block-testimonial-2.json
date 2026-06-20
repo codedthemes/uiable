@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-testimonial-2",
+  "title": "Testimonial 2",
+  "description": "Testimonial variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/testimonial/testimonial-2/testimonial-2.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// constants\r\nconst testimonials = [\r\n  {\r\n    name: \"Joseph William\",\r\n    role: \"Manager at Apple\",\r\n    text: \"At half-past eight the door opened, the policeman appeared, and requesting them to follow him, led the way to an adjoining hall.\"\r\n  },\r\n  {\r\n    name: \"Shirley Hoe\",\r\n    role: \"Manager at Apple\",\r\n    text: \"At half-past eight the door opened, the policeman appeared, and requesting them to follow him, led the way to an adjoining hall.\"\r\n  },\r\n  {\r\n    name: \"Joseph William\",\r\n    role: \"Manager at Apple\",\r\n    text: \"At half-past eight the door opened, the policeman appeared, and requesting them to follow him, led the way to an adjoining hall.\"\r\n  }\r\n];\r\n\r\n//  ------------------------------ | TESTIMONIAL 2 | ------------------------------  //\r\n\r\nexport default function Testimonial2() {\r\n  return (\r\n    <section className=\"py-24\">\r\n      <div className=\"container mx-auto px-6\">\r\n        <div className=\"grid grid-cols-12 gap-8\">\r\n          {testimonials.map((t, i) => (\r\n            <div\r\n              key={i}\r\n              className=\"col-span-12 md:col-span-4 flex flex-col items-start gap-2\"\r\n            >\r\n              <h5 className=\"mt-2 mb-1\">{t.name}</h5>\r\n              <h6 className=\"mb-2\">{t.role}</h6>\r\n              <p className=\"text-muted-foreground mb-6 max-w-xs\">{t.text}</p>\r\n            </div>\r\n          ))}\r\n        </div>\r\n        <div className=\"flex justify-center mt-8\">\r\n          <Button\r\n            variant=\"outline\"\r\n            className=\"text-primary outline-primary\"\r\n            size=\"lg\"\r\n          >\r\n            View All\r\n          </Button>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/testimonial/testimonial-2/testimonial-2.tsx"
+    }
+  ],
+  "categories": [
+    "testimonial"
+  ],
+  "type": "registry:block"
+}

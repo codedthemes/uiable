@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-toggle-group-vertical",
+  "title": "Vertical Toggle Group",
+  "description": "Toggle Group Vertical variant for toggle-group.",
+  "registryDependencies": [
+    "toggle-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/toggle-group/toggle-group-vertical.tsx",
+      "content": "// shadcn\r\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\";\r\n\r\n// assets\r\nimport { BoldIcon, ItalicIcon, UnderlineIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TOGGLE GROUP - VERTICAL | ------------------------------  //\r\n\r\nexport function ToggleGroupVertical() {\r\n  return (\r\n    <ToggleGroup\r\n      multiple\r\n      orientation=\"vertical\"\r\n      spacing={1}\r\n      defaultValue={[\"bold\", \"italic\"]}\r\n    >\r\n      <ToggleGroupItem value=\"bold\" aria-label=\"Toggle bold\">\r\n        <BoldIcon />\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"italic\" aria-label=\"Toggle italic\">\r\n        <ItalicIcon />\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"underline\" aria-label=\"Toggle underline\">\r\n        <UnderlineIcon />\r\n      </ToggleGroupItem>\r\n    </ToggleGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/toggle-group/toggle-group-vertical.tsx"
+    }
+  ],
+  "categories": [
+    "toggle-group"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-custom",
+  "title": "Custom Spinner",
+  "description": "Spinner Custom variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-custom.tsx",
+      "content": "import { ComponentProps } from \"react\";\r\n\r\n// project\r\nimport { cn } from \"@/lib/utils\";\r\n\r\n// assets\r\nimport { LoaderIcon } from \"lucide-react\";\r\n\r\nfunction Spinner({ className, ...props }: ComponentProps<\"svg\">) {\r\n  return (\r\n    <LoaderIcon\r\n      role=\"status\"\r\n      aria-label=\"Loading\"\r\n      className={cn(\"size-4 animate-spin\", className)}\r\n      {...props}\r\n    />\r\n  );\r\n}\r\n\r\n//  ------------------------------ | SPINNER - CUSTOM | ------------------------------  //\r\n\r\nexport function SpinnerCustom() {\r\n  return (\r\n    <div className=\"flex items-center gap-4\">\r\n      <Spinner />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-custom.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

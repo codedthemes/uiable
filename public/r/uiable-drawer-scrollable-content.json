@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-drawer-scrollable-content",
+  "title": "Scrollable Content Drawer",
+  "description": "Drawer Scrollable Content variant for drawer.",
+  "registryDependencies": [
+    "drawer"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/drawer/drawer-scrollable-content.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Drawer,\r\n  DrawerClose,\r\n  DrawerContent,\r\n  DrawerDescription,\r\n  DrawerFooter,\r\n  DrawerHeader,\r\n  DrawerTitle,\r\n  DrawerTrigger\r\n} from \"@/components/ui/drawer\";\r\n\r\n// project\r\n\r\n//  ------------------------------ | DRAWER - SCROLLABLE CONTENT | ------------------------------  //\r\n\r\nexport function DrawerScrollableContent() {\r\n  return (\r\n    <Drawer direction=\"right\">\r\n      <DrawerTrigger asChild>\r\n        <Button>Scrollable Content</Button>\r\n      </DrawerTrigger>\r\n      <DrawerContent>\r\n        <DrawerHeader>\r\n          <DrawerTitle>Move Goal</DrawerTitle>\r\n          <DrawerDescription>Set your daily activity goal.</DrawerDescription>\r\n        </DrawerHeader>\r\n        <div className=\"no-scrollbar overflow-y-auto px-5\">\r\n          {Array.from({ length: 10 }).map((_, index) => (\r\n            <p key={index} className=\"mb-4 leading-normal\">\r\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do\r\n              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n              enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n              reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n              nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n              sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n            </p>\r\n          ))}\r\n        </div>\r\n        <DrawerFooter>\r\n          <div className=\"grid grid-cols-2 gap-2\">\r\n            <Button>Submit</Button>\r\n            <DrawerClose>\r\n              <Button variant=\"outline\">Cancel</Button>\r\n            </DrawerClose>\r\n          </div>\r\n        </DrawerFooter>\r\n      </DrawerContent>\r\n    </Drawer>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/drawer/drawer-scrollable-content.tsx"
+    }
+  ],
+  "categories": [
+    "drawer"
+  ],
+  "type": "registry:ui"
+}

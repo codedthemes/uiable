@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-footer-7",
+  "title": "Footer 7",
+  "description": "Footer variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/footer/footer-7/footer-7.tsx",
+      "content": "import Link from \"next/link\";\r\n\r\n// assets\r\nimport {\r\n  Dribbble,\r\n  Facebook,\r\n  Globe,\r\n  Instagram,\r\n  Slack,\r\n  Twitter,\r\n} from \"lucide-react\";\r\n\r\nconst brandLogo = \"https://cdn.uiable.com/logo-dark.svg\";\r\n\r\n// constants\r\nconst socialLinks = [\r\n  { icon: Slack, href: \"#\" },\r\n  { icon: Twitter, href: \"#\" },\r\n  { icon: Facebook, href: \"#\" },\r\n  { icon: Dribbble, href: \"#\" },\r\n  { icon: Globe, href: \"#\" },\r\n  { icon: Instagram, href: \"#\" },\r\n];\r\n\r\n//  ------------------------------ | FOOTER - 7 | ------------------------------  //\r\n\r\nexport default function Footer7() {\r\n  return (\r\n    <footer className=\"py-16 md:py-20\">\r\n      <div className=\"container mx-auto px-4\">\r\n        <div className=\"grid grid-cols-12\">\r\n          <div className=\"col-span-12 flex flex-col items-center text-center gap-6\">\r\n            {/* Logo */}\r\n            <img src={brandLogo} alt=\"Logo\" />\r\n            {/* Description */}\r\n            <p className=\"text-muted-foreground max-w-md\">\r\n              At half-past eight the door opened, the policeman appeared.\r\n            </p>\r\n\r\n            {/* Social Icons */}\r\n            <div className=\"flex items-center gap-6 mt-2\">\r\n              {socialLinks.map((item, index) => (\r\n                <Link key={index} href={item.href} className=\"text-primary\">\r\n                  <item.icon size={22} strokeWidth={1.5} />\r\n                </Link>\r\n              ))}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/footer/footer-7/footer-7.tsx"
+    }
+  ],
+  "categories": [
+    "footer"
+  ],
+  "type": "registry:block"
+}

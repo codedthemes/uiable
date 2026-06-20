@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-tabs-icons",
+  "title": "Icons Tabs",
+  "description": "Tabs Icons variant for tabs.",
+  "registryDependencies": [
+    "tabs"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/tabs/tabs-icons.tsx",
+      "content": "// shadcn\r\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\r\n\r\n// assets\r\nimport { AppWindowIcon, CodeIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TABS - ICONS | ------------------------------  //\r\n\r\nexport function TabsIcons() {\r\n  return (\r\n    <Tabs defaultValue=\"preview\">\r\n      <TabsList>\r\n        <TabsTrigger value=\"preview\">\r\n          <AppWindowIcon />\r\n          Preview\r\n        </TabsTrigger>\r\n        <TabsTrigger value=\"code\">\r\n          <CodeIcon />\r\n          Code\r\n        </TabsTrigger>\r\n      </TabsList>\r\n    </Tabs>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tabs/tabs-icons.tsx"
+    }
+  ],
+  "categories": [
+    "tabs"
+  ],
+  "type": "registry:ui"
+}

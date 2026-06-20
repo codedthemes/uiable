@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner",
+  "dependencies": [
+    "lucide-react",
+    "next-themes",
+    "sonner"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/sonner.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useTheme } from \"next-themes\"\r\nimport { Toaster as Sonner, type ToasterProps } from \"sonner\"\r\nimport { CircleCheckIcon, InfoIcon, TriangleAlertIcon, OctagonXIcon, Loader2Icon } from \"lucide-react\"\r\n\r\nconst Toaster = ({ ...props }: ToasterProps) => {\r\n  const { theme = \"system\" } = useTheme()\r\n\r\n  return (\r\n    <Sonner\r\n      theme={theme as ToasterProps[\"theme\"]}\r\n      className=\"toaster group\"\r\n      icons={{\r\n        success: (\r\n          <CircleCheckIcon className=\"size-4 text-green-500\" />\r\n        ),\r\n        info: (\r\n          <InfoIcon className=\"size-4 text-cyan-500\" />\r\n        ),\r\n        warning: (\r\n          <TriangleAlertIcon className=\"size-4 text-yellow-500\" />\r\n        ),\r\n        error: (\r\n          <OctagonXIcon className=\"size-4 text-red-500\" />\r\n        ),\r\n        loading: (\r\n          <Loader2Icon className=\"size-4 animate-spin text-primary\" />\r\n        ),\r\n      }}\r\n      style={\r\n        {\r\n          \"--normal-bg\": \"var(--popover)\",\r\n          \"--normal-text\": \"var(--popover-foreground)\",\r\n          \"--normal-border\": \"var(--border)\",\r\n          \"--border-radius\": \"var(--radius)\",\r\n        } as React.CSSProperties\r\n      }\r\n      toastOptions={{\r\n        classNames: {\r\n          toast: \"cn-toast\",\r\n        },\r\n      }}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport { Toaster }\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/sonner.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

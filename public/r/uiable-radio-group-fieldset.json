@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-radio-group-fieldset",
+  "title": "Fieldset Radio Group",
+  "description": "Radio Group Fieldset variant for radio-group.",
+  "registryDependencies": [
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/radio-group/radio-group-fieldset.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Field,\r\n  FieldDescription,\r\n  FieldLabel,\r\n  FieldLegend,\r\n  FieldSet\r\n} from \"@/components/ui/field\";\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\r\n\r\n//  ------------------------------ | RADIO GROUP - FIELDSET | ------------------------------  //\r\n\r\nexport function RadioGroupFieldset() {\r\n  return (\r\n    <FieldSet className=\"w-full max-w-xs\">\r\n      <FieldLegend variant=\"label\">Subscription Plan</FieldLegend>\r\n      <FieldDescription>\r\n        Yearly and lifetime plans offer significant savings.\r\n      </FieldDescription>\r\n      <RadioGroup defaultValue=\"monthly\">\r\n        <Field orientation=\"horizontal\">\r\n          <RadioGroupItem value=\"monthly\" id=\"plan-monthly\" />\r\n          <FieldLabel htmlFor=\"plan-monthly\" className=\"font-normal\">\r\n            Monthly ($9.99/month)\r\n          </FieldLabel>\r\n        </Field>\r\n        <Field orientation=\"horizontal\">\r\n          <RadioGroupItem value=\"yearly\" id=\"plan-yearly\" />\r\n          <FieldLabel htmlFor=\"plan-yearly\" className=\"font-normal\">\r\n            Yearly ($99.99/year)\r\n          </FieldLabel>\r\n        </Field>\r\n        <Field orientation=\"horizontal\">\r\n          <RadioGroupItem value=\"lifetime\" id=\"plan-lifetime\" />\r\n          <FieldLabel htmlFor=\"plan-lifetime\" className=\"font-normal\">\r\n            Lifetime ($299.99)\r\n          </FieldLabel>\r\n        </Field>\r\n      </RadioGroup>\r\n    </FieldSet>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/radio-group/radio-group-fieldset.tsx"
+    }
+  ],
+  "categories": [
+    "radio-group"
+  ],
+  "type": "registry:ui"
+}

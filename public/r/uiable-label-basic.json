@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-label-basic",
+  "title": "Basic Label",
+  "description": "Label Basic variant for label.",
+  "registryDependencies": [
+    "label"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/label/label-basic.tsx",
+      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\n//  ------------------------------ | LABEL - BASIC | ------------------------------  //\r\n\r\nexport default function LabelBasic() {\r\n  return (\r\n    <div className=\"flex items-center space-x-2 p-8 bg-card border rounded-xl border-border \">\r\n      <Checkbox id=\"terms\" />\r\n      <Label\r\n        htmlFor=\"terms\"\r\n        className=\"text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer\"\r\n      >\r\n        Accept terms and conditions\r\n      </Label>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/label/label-basic.tsx"
+    }
+  ],
+  "categories": [
+    "label"
+  ],
+  "type": "registry:ui"
+}

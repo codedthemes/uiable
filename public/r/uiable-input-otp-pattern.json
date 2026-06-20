@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-otp-pattern",
+  "title": "Pattern Input Otp",
+  "description": "Input Otp Pattern variant for input-otp.",
+  "registryDependencies": [
+    "input-otp"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-otp/input-otp-pattern.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputOTP,\r\n  InputOTPGroup,\r\n  InputOTPSlot\r\n} from \"@/components/ui/input-otp\";\r\n\r\n// third party\r\nimport { REGEXP_ONLY_DIGITS } from \"input-otp\";\r\n\r\n//  ------------------------------ | INPUT OTP - PATTERN | ------------------------------  //\r\n\r\nexport function InputOTPPattern() {\r\n  return (\r\n    <Field className=\"w-fit\">\r\n      <FieldLabel htmlFor=\"digits-only\">Digits Only</FieldLabel>\r\n      <InputOTP id=\"digits-only\" maxLength={6} pattern={REGEXP_ONLY_DIGITS}>\r\n        <InputOTPGroup>\r\n          <InputOTPSlot index={0} />\r\n          <InputOTPSlot index={1} />\r\n          <InputOTPSlot index={2} />\r\n          <InputOTPSlot index={3} />\r\n          <InputOTPSlot index={4} />\r\n          <InputOTPSlot index={5} />\r\n        </InputOTPGroup>\r\n      </InputOTP>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-otp/input-otp-pattern.tsx"
+    }
+  ],
+  "categories": [
+    "input-otp"
+  ],
+  "type": "registry:ui"
+}

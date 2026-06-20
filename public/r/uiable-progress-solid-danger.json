@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-progress-solid-danger",
+  "title": "Solid Danger Progress",
+  "description": "Progress Solid Danger variant for progress.",
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-solid-danger.tsx",
+      "content": "// shadcn\r\nimport { Progress } from \"@/components/ui/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - SOLID DANGER | ------------------------------  //\r\n\r\nexport default function ProgressSolidDanger() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <Progress\r\n        value={100}\r\n        className=\"*:h-4 *:bg-muted/20 dark:*:bg-muted/10 *:rounded-lg **:bg-destructive **:rounded-lg\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-solid-danger.tsx"
+    }
+  ],
+  "categories": [
+    "progress"
+  ],
+  "type": "registry:ui"
+}

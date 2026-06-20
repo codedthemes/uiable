@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-solid-secondary",
+  "title": "Secondary Solid Badge",
+  "description": "Badge Solid Secondary variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-solid-secondary.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - SOLID SECONDARY | ------------------------------  //\n\nexport default function BadgeSolidSecondary() {\n  return <Badge className=\"bg-secondary-500 text-white\">Secondary</Badge>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-solid-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

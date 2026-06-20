@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-aspect-ratio-square",
+  "title": "Square Aspect Ratio",
+  "description": "Aspect Ratio Square variant for aspect-ratio.",
+  "registryDependencies": [
+    "aspect-ratio"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/aspect-ratio/aspect-ratio-square.tsx",
+      "content": "import Image from \"next/image\";\n\n// shadcn\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\";\n\n//  ------------------------------ | ASPECT RATIO - SQUARE | ------------------------------  //\n\nexport function AspectRatioSquare() {\n  return (\n    <AspectRatio\n      ratio={1 / 1}\n      className=\"bg-muted w-full max-w-[12rem] rounded-lg\"\n    >\n      <Image\n        src=\"https://avatar.vercel.sh/shadcn1\"\n        alt=\"Photo\"\n        fill\n        className=\"rounded-lg object-cover\"\n      />\n    </AspectRatio>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/aspect-ratio/aspect-ratio-square.tsx"
+    }
+  ],
+  "categories": [
+    "aspect-ratio"
+  ],
+  "type": "registry:ui"
+}

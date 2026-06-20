@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-gallery-2",
+  "title": "Gallery 2",
+  "description": "Gallery variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/gallery/gallery-2/gallery-2.tsx",
+      "content": "// constants\r\nconst items = [\r\n  {\r\n    title: \"First one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g4.jpg\",\r\n  },\r\n  {\r\n    title: \"Second one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g5.jpg\",\r\n  },\r\n  {\r\n    title: \"Third one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g6.jpg\",\r\n  },\r\n  {\r\n    title: \"Fourth one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g7.jpg\",\r\n  },\r\n  {\r\n    title: \"Fifth one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g8.jpg\",\r\n  },\r\n  {\r\n    title: \"Sixth one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g9.jpg\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | GALLERY 2 | ------------------------------  //\r\n\r\nexport default function Gallery2() {\r\n  return (\r\n    <section className=\"py-20\">\r\n      <div className=\"container mx-auto px-6 lg:px-8\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-14\">\r\n          <h2 className=\"text-foreground\">Gallery</h2>\r\n          <p className=\"mt-4 max-w-xl mx-auto text-muted-foreground\">\r\n            At half-past eight the door opened, the policeman appeared and\r\n            requesting them to follow him, led way to an adjoining hall.\r\n          </p>\r\n        </div>\r\n\r\n        {/* Grid */}\r\n        <div className=\"grid grid-cols-12 gap-6\">\r\n          {items.map((item) => (\r\n            <div\r\n              key={item.title}\r\n              className=\"col-span-12 sm:col-span-6 md:col-span-4\"\r\n            >\r\n              <div className=\"relative overflow-hidden rounded-2xl aspect-video cursor-pointer group\">\r\n                {/* Image */}\r\n                <img\r\n                  src={item.image}\r\n                  alt={item.title}\r\n                  className=\"absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105\"\r\n                />\r\n                {/* Hover overlay */}\r\n                <div className=\"absolute inset-0 bg-primary flex flex-col items-center justify-center text-center px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300\">\r\n                  <h5 className=\"text-primary-foreground font-bold mb-2\">\r\n                    {item.title}\r\n                  </h5>\r\n                  <p className=\"text-primary-foreground/90 text-sm\">\r\n                    {item.description}\r\n                  </p>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/gallery/gallery-2/gallery-2.tsx"
+    }
+  ],
+  "categories": [
+    "gallery"
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-image",
+  "title": "Image Card",
+  "description": "Card Image variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-image.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Card,\n  CardContent,\n  CardFooter,\n  CardHeader,\n} from \"@/components/ui/card\";\n\n//  ------------------------------ | CARD - IMAGE | ------------------------------  //\n\nexport function CardImage() {\n  return (\n    <Card className=\"relative mx-auto w-full max-w-sm overflow-hidden\">\n      <CardHeader className=\"p-0\">\n        <div className=\"absolute inset-0 z-30 aspect-video bg-dark-500/20\" />\n        <img\n          src=\"https://cdn.uiable.com/component/card-sample.png\"\n          alt=\"Event cover\"\n          className=\"relative z-20 aspect-video w-full object-cover\"\n        />\n      </CardHeader>\n      <CardContent>\n        <h5>Design systems meetup</h5>\n        <p className=\"mt-3\">\n          A practical talk on component APIs, accessibility, and shipping\n          faster.\n        </p>\n      </CardContent>\n      <CardFooter>\n        <Button className=\"w-full\">View Event</Button>\n      </CardFooter>\n    </Card>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-image.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

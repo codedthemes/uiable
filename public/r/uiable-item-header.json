@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-header",
+  "title": "Header Item",
+  "description": "Item Header variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-header.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Item,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemHeader,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\";\r\n\r\n// constants\r\nconst models = [\r\n  {\r\n    name: \"v0-1.5-sm\",\r\n    description: \"Everyday tasks and UI generation.\",\r\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\r\n    credit: \"Valeria Reverdo on Unsplash\",\r\n  },\r\n  {\r\n    name: \"v0-1.5-lg\",\r\n    description: \"Advanced thinking or reasoning.\",\r\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\r\n    credit: \"Michael Oeser on Unsplash\",\r\n  },\r\n  {\r\n    name: \"v0-2.0-mini\",\r\n    description: \"Open Source model for everyone.\",\r\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\r\n    credit: \"Cherry Laithang on Unsplash\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | ITEM - HEADER | ------------------------------  //\r\n\r\nexport function ItemHeaderDemo() {\r\n  return (\r\n    <div className=\"flex w-full max-w-xl flex-col gap-6\">\r\n      <ItemGroup className=\"grid grid-cols-3 gap-4\">\r\n        {models.map((model) => (\r\n          <Item key={model.name} variant=\"outline\">\r\n            <ItemHeader>\r\n              <img\r\n                src={model.image}\r\n                alt={model.name}\r\n                width={128}\r\n                height={128}\r\n                className=\"aspect-square w-full rounded-sm object-cover\"\r\n              />\r\n            </ItemHeader>\r\n            <ItemContent>\r\n              <ItemTitle>{model.name}</ItemTitle>\r\n              <ItemDescription>{model.description}</ItemDescription>\r\n            </ItemContent>\r\n          </Item>\r\n        ))}\r\n      </ItemGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-header.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

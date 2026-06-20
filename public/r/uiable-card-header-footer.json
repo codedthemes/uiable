@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-header-footer",
+  "title": "Header Footer Card",
+  "description": "Card Header Footer variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-header-footer.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\n//  ------------------------------ | CARD - HEADER FOOTER | ------------------------------  //\r\n\r\nexport default function CardHeaderFooter() {\r\n  return (\r\n    <Card>\r\n      <CardHeader>\r\n        <CardTitle>Featured</CardTitle>\r\n      </CardHeader>\r\n      <CardContent>\r\n        <h5>Special title treatment</h5>\r\n        <p className=\"mb-4 mt-3\">\r\n          With supporting text below as a natural lead-in to additional content.\r\n        </p>\r\n        <Button>Go somewhere</Button>\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-header-footer.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

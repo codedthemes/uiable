@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-otp-four-digits",
+  "title": "Four Digits Input Otp",
+  "description": "Input Otp Four Digits variant for input-otp.",
+  "registryDependencies": [
+    "input-otp"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-otp/input-otp-four-digits.tsx",
+      "content": "// shadcn\r\nimport {\r\n  InputOTP,\r\n  InputOTPGroup,\r\n  InputOTPSlot\r\n} from \"@/components/ui/input-otp\";\r\n\r\n// third party\r\nimport { REGEXP_ONLY_DIGITS } from \"input-otp\";\r\n\r\n//  ------------------------------ | INPUT OTP - FOUR DIGITS | ------------------------------  //\r\n\r\nexport function InputOTPFourDigits() {\r\n  return (\r\n    <InputOTP maxLength={4} pattern={REGEXP_ONLY_DIGITS}>\r\n      <InputOTPGroup>\r\n        <InputOTPSlot index={0} />\r\n        <InputOTPSlot index={1} />\r\n        <InputOTPSlot index={2} />\r\n        <InputOTPSlot index={3} />\r\n      </InputOTPGroup>\r\n    </InputOTP>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-otp/input-otp-four-digits.tsx"
+    }
+  ],
+  "categories": [
+    "input-otp"
+  ],
+  "type": "registry:ui"
+}

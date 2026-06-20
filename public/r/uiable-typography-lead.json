@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-typography-lead",
+  "title": "Lead Typography",
+  "description": "Typography Lead variant for typography.",
+  "registryDependencies": [
+    "typography"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-lead.tsx",
+      "content": "//  ------------------------------ | TYPOGRAPHY - LEAD | ------------------------------  //\r\n\r\nexport function TypographyLead() {\r\n  return (\r\n    <p className=\"text-muted-foreground text-xl\">\r\n      A modal dialog that interrupts the user with important content and expects\r\n      a response.\r\n    </p>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-lead.tsx"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:ui"
+}

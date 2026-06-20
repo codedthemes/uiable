@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-pagination-icons-only",
+  "title": "Icons Only Pagination",
+  "description": "Pagination Icons Only variant for pagination.",
+  "registryDependencies": [
+    "pagination"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/pagination/pagination-icons-only.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  Pagination,\r\n  PaginationContent,\r\n  PaginationItem,\r\n  PaginationNext,\r\n  PaginationPrevious\r\n} from \"@/components/ui/pagination\";\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue\r\n} from \"@/components/ui/select\";\r\n\r\n//  ------------------------------ | PAGINATION - ICONS ONLY | ------------------------------  //\r\n\r\nexport function PaginationIconsOnly() {\r\n  return (\r\n    <div className=\"flex items-center justify-between gap-4\">\r\n      <Field orientation=\"horizontal\" className=\"w-fit\">\r\n        <FieldLabel htmlFor=\"select-rows-per-page\">Rows per page</FieldLabel>\r\n        <Select defaultValue=\"25\">\r\n          <SelectTrigger className=\"w-20\" id=\"select-rows-per-page\">\r\n            <SelectValue />\r\n          </SelectTrigger>\r\n          <SelectContent align=\"start\">\r\n            <SelectGroup>\r\n              <SelectItem value=\"10\">10</SelectItem>\r\n              <SelectItem value=\"25\">25</SelectItem>\r\n              <SelectItem value=\"50\">50</SelectItem>\r\n              <SelectItem value=\"100\">100</SelectItem>\r\n            </SelectGroup>\r\n          </SelectContent>\r\n        </Select>\r\n      </Field>\r\n      <Pagination className=\"mx-0 w-auto\">\r\n        <PaginationContent>\r\n          <PaginationItem>\r\n            <PaginationPrevious href=\"#\" />\r\n          </PaginationItem>\r\n          <PaginationItem>\r\n            <PaginationNext href=\"#\" />\r\n          </PaginationItem>\r\n        </PaginationContent>\r\n      </Pagination>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/pagination/pagination-icons-only.tsx"
+    }
+  ],
+  "categories": [
+    "pagination"
+  ],
+  "type": "registry:ui"
+}

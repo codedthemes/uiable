@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-checkbox-description",
+  "title": "Description Checkbox",
+  "description": "Checkbox Description variant for checkbox.",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/checkbox/checkbox-description.tsx",
+      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel\n} from \"@/components/ui/field\";\n\n//  ------------------------------ | CHECKBOX - DESCRIPTION | ------------------------------  //\n\nexport function CheckboxDescription() {\n  return (\n    <FieldGroup className=\"mx-auto w-72\">\n      <Field orientation=\"horizontal\">\n        <Checkbox\n          id=\"terms-checkbox-desc\"\n          name=\"terms-checkbox-desc\"\n          defaultChecked\n        />\n        <FieldContent>\n          <FieldLabel htmlFor=\"terms-checkbox-desc\">\n            Accept terms and conditions\n          </FieldLabel>\n          <FieldDescription>\n            By clicking this checkbox, you agree to the terms and conditions.\n          </FieldDescription>\n        </FieldContent>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/checkbox/checkbox-description.tsx"
+    }
+  ],
+  "categories": [
+    "checkbox"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-group-button",
+  "title": "Button Input Group",
+  "description": "Input Group Button variant for input-group.",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-button.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\nimport {\r\n  Popover,\r\n  PopoverContent,\r\n  PopoverTrigger\r\n} from \"@/components/ui/popover\";\r\n\r\n// project\r\nimport { useCopyToClipboard } from \"@/hooks/use-copy-to-clipboard\";\r\n\r\n// assets\r\nimport {\r\n  IconCheck,\r\n  IconCopy,\r\n  IconInfoCircle,\r\n  IconStar\r\n} from \"@tabler/icons-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - BUTTON | ------------------------------  //\r\n\r\nexport default function InputGroupButtonExample() {\r\n  const { copyToClipboard, isCopied } = useCopyToClipboard();\r\n  const [isFavorite, setIsFavorite] = useState(false);\r\n\r\n  return (\r\n    <div className=\"grid w-full max-w-sm gap-6\">\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"https://x.com/shadcn\" readOnly />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <InputGroupButton\r\n            aria-label=\"Copy\"\r\n            title=\"Copy\"\r\n            size=\"icon-xs\"\r\n            onClick={() => {\r\n              copyToClipboard(\"https://x.com/shadcn\");\r\n            }}\r\n          >\r\n            {isCopied ? <IconCheck /> : <IconCopy />}\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup className=\"[--radius:9999px]\">\r\n        <Popover>\r\n          <InputGroupAddon>\r\n            <PopoverTrigger\r\n              render={<InputGroupButton variant=\"secondary\" size=\"icon-xs\" />}\r\n            >\r\n              <IconInfoCircle />\r\n            </PopoverTrigger>\r\n          </InputGroupAddon>\r\n          <PopoverContent\r\n            align=\"start\"\r\n            className=\"flex flex-col gap-1 rounded-xl text-sm\"\r\n          >\r\n            <p className=\"font-medium\">Your connection is not secure.</p>\r\n            <p>You should not enter any sensitive information on this site.</p>\r\n          </PopoverContent>\r\n        </Popover>\r\n        <InputGroupAddon className=\"text-muted-foreground pl-1.5\">\r\n          https://\r\n        </InputGroupAddon>\r\n        <InputGroupInput id=\"input-secure-19\" />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <InputGroupButton\r\n            onClick={() => setIsFavorite(!isFavorite)}\r\n            size=\"icon-xs\"\r\n          >\r\n            <IconStar\r\n              data-favorite={isFavorite}\r\n              className=\"data-[favorite=true]:fill-blue-600 data-[favorite=true]:stroke-blue-600\"\r\n            />\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Type to search...\" />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <InputGroupButton variant=\"secondary\">Search</InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-button.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-dropdown",
+  "title": "Dropdown Item",
+  "description": "Item Dropdown variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-dropdown.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuGroup,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger,\r\n} from \"@/components/ui/dropdown-menu\";\r\nimport {\r\n  Item,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemMedia,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { ChevronDownIcon } from \"lucide-react\";\r\n\r\n// constants\r\nconst people = [\r\n  {\r\n    username: \"shadcn\",\r\n    avatar: \"https://cdn.uiable.com/user/avatar-5.jpg\",\r\n    email: \"shadcn@demo.com\",\r\n  },\r\n  {\r\n    username: \"maxleiter\",\r\n    avatar: \"https://cdn.uiable.com/user/avatar-6.jpg\",\r\n    email: \"maxle@demo.com\",\r\n  },\r\n  {\r\n    username: \"evilrabbit\",\r\n    avatar: \"https://cdn.uiable.com/user/avatar-7.jpg\",\r\n    email: \"evil@demo.com\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | ITEM - DROPDOWN | ------------------------------  //\r\n\r\nexport function ItemDropdown() {\r\n  return (\r\n    <DropdownMenu>\r\n      <DropdownMenuTrigger render={<Button />}>\r\n        Select <ChevronDownIcon />\r\n      </DropdownMenuTrigger>\r\n      <DropdownMenuContent className=\"w-60\" align=\"end\">\r\n        <DropdownMenuGroup>\r\n          {people.map((person) => (\r\n            <DropdownMenuItem key={person.username}>\r\n              <Item className=\"w-full flex gap-2.5 px-2.5 py-2 border-0 flex-nowrap\">\r\n                <ItemMedia>\r\n                  <Avatar className=\"size-8\">\r\n                    <AvatarImage src={person.avatar} />\r\n                    <AvatarFallback>{person.username.charAt(0)}</AvatarFallback>\r\n                  </Avatar>\r\n                </ItemMedia>\r\n                <ItemContent className=\"gap-0\">\r\n                  <ItemTitle>{person.username}</ItemTitle>\r\n                  <ItemDescription className=\"leading-none\">\r\n                    {person.email}\r\n                  </ItemDescription>\r\n                </ItemContent>\r\n              </Item>\r\n            </DropdownMenuItem>\r\n          ))}\r\n        </DropdownMenuGroup>\r\n      </DropdownMenuContent>\r\n    </DropdownMenu>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-dropdown.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

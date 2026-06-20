@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-footer-9",
+  "title": "Footer 9",
+  "description": "Footer variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/footer/footer-9/footer-9.tsx",
+      "content": "import Link from \"next/link\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Separator } from \"@/components/ui/separator\";\r\n\r\n// project\r\nimport branding from \"@/branding.json\";\r\n\r\n// constants\r\nconst footerLinks = [\r\n  { label: \"About Us\", href: \"#\" },\r\n  { label: \"Services\", href: \"#\" },\r\n  { label: \"Privacy\", href: \"#\" },\r\n  { label: \"Stories\", href: \"#\" },\r\n  { label: \"Contact\", href: \"#\" }\r\n];\r\n\r\n//  ------------------------------ | FOOTER - 9 | ------------------------------  //\r\n\r\nexport default function Footer9() {\r\n  return (\r\n    <footer className=\"py-12 md:py-20\">\r\n      <div className=\"container mx-auto px-4\">\r\n        <div className=\"grid grid-cols-12 gap-y-6 items-center\">\r\n          {/* Navigation Links Section */}\r\n          <div className=\"col-span-12 md:col-span-8 mb-6\">\r\n            <nav className=\"flex flex-wrap items-center gap-x-6 gap-y-6 justify-start\">\r\n              {footerLinks.map((link) => (\r\n                <Link\r\n                  key={link.label}\r\n                  href={link.href}\r\n                  className=\"text-slate-500 hover:text-primary transition-colors text-md font-medium\"\r\n                >\r\n                  {link.label}\r\n                </Link>\r\n              ))}\r\n            </nav>\r\n          </div>\r\n\r\n          {/* Right-aligned Call to Action */}\r\n          <div className=\"col-span-12 md:col-span-4 flex justify-start items-center\">\r\n            <Button size=\"lg\">Download for free</Button>\r\n          </div>\r\n\r\n          {/* Separator Section */}\r\n          <div className=\"col-span-12\">\r\n            <Separator className=\"bg-slate-300\" />\r\n          </div>\r\n\r\n          {/* Copyright/Description Section */}\r\n          <div className=\"col-span-12\">\r\n            <p className=\"text-slate-400 text-md max-w-4xl\">\r\n              &copy; {branding.brandName} UI Kit. At half-past eight the door opened, the\r\n              policeman appeared and requesting them.\r\n            </p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/footer/footer-9/footer-9.tsx"
+    }
+  ],
+  "categories": [
+    "footer"
+  ],
+  "type": "registry:block"
+}

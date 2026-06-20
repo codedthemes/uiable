@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-breadcrumb-icon",
+  "title": "Icon Breadcrumb",
+  "description": "Breadcrumb Icon variant for breadcrumb.",
+  "registryDependencies": [
+    "breadcrumb"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/breadcrumb/breadcrumb-icon.tsx",
+      "content": "// shadcn\nimport {\n  Breadcrumb,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator\n} from \"@/components/ui/breadcrumb\";\n\n// assets\nimport { Home } from \"lucide-react\";\n\n//  ------------------------------ | BREADCRUMB - ICON | ------------------------------  //\n\nexport default function BreadcrumbIcon() {\n  return (\n    <Breadcrumb>\n      <BreadcrumbList>\n        <BreadcrumbItem>\n          <BreadcrumbLink href=\"#\" className=\"inline-flex items-center gap-2\">\n            <Home className=\"size-4\" />\n          </BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbLink href=\"#\">Library</BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbPage>Data</BreadcrumbPage>\n        </BreadcrumbItem>\n      </BreadcrumbList>\n    </Breadcrumb>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/breadcrumb/breadcrumb-icon.tsx"
+    }
+  ],
+  "categories": [
+    "breadcrumb"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-badge",
+  "title": "Badge Spinner",
+  "description": "Spinner Badge variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-badge.tsx",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\nimport { Spinner } from \"@/components/ui/spinner\";\r\n\r\n//  ------------------------------ | SPINNER - BADGE | ------------------------------  //\r\n\r\nexport function SpinnerBadge() {\r\n  return (\r\n    <div className=\"flex items-center gap-3 flex-wrap justify-center [--radius:1.2rem]\">\r\n      <Badge>\r\n        <Spinner data-icon=\"inline-start\" />\r\n        Syncing\r\n      </Badge>\r\n      <Badge variant=\"secondary\">\r\n        <Spinner data-icon=\"inline-start\" />\r\n        Updating\r\n      </Badge>\r\n      <Badge variant=\"outline\">\r\n        <Spinner data-icon=\"inline-start\" />\r\n        Processing\r\n      </Badge>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-badge.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

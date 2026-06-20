@@ -1,0 +1,50 @@
+// shadcn
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupText,
+  InputGroupTextarea
+} from "@/components/ui/input-group";
+
+// assets
+import {
+  IconBrandJavascript,
+  IconCopy,
+  IconCornerDownLeft,
+  IconRefresh
+} from "@tabler/icons-react";
+
+//  ------------------------------ | INPUT GROUP - TEXTAREA | ------------------------------  //
+
+export default function InputGroupTextareaExample() {
+  return (
+    <div className="grid w-full max-w-md gap-4">
+      <InputGroup>
+        <InputGroupTextarea
+          id="textarea-code-32"
+          placeholder="console.log('Hello, world!');"
+          className="min-h-[200px]"
+        />
+        <InputGroupAddon align="block-end" className="border-t border-border">
+          <InputGroupText>Line 1, Column 1</InputGroupText>
+          <InputGroupButton size="sm" className="ml-auto" variant="default">
+            Run <IconCornerDownLeft />
+          </InputGroupButton>
+        </InputGroupAddon>
+        <InputGroupAddon align="block-start" className="border-b border-border">
+          <InputGroupText className="font-mono font-medium">
+            <IconBrandJavascript />
+            script.js
+          </InputGroupText>
+          <InputGroupButton className="ml-auto" size="icon-xs">
+            <IconRefresh />
+          </InputGroupButton>
+          <InputGroupButton variant="ghost" size="icon-xs">
+            <IconCopy />
+          </InputGroupButton>
+        </InputGroupAddon>
+      </InputGroup>
+    </div>
+  );
+}

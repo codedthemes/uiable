@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-card-small",
+  "title": "Small Card",
+  "description": "Card Small variant for card.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/card/card-small.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Card,\r\n  CardContent,\r\n  CardDescription,\r\n  CardFooter,\r\n  CardHeader,\r\n  CardTitle\r\n} from \"@/components/ui/card\";\r\n\r\n// assets\r\nimport { ChevronRightIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | CARD - SMALL | ------------------------------  //\r\n\r\nexport function CardSmall() {\r\n  const featureName = \"Scheduled reports\";\r\n\r\n  return (\r\n    <Card size=\"sm\">\r\n      <CardHeader>\r\n        <CardTitle>{featureName}</CardTitle>\r\n        <CardDescription>\r\n          Weekly snapshots. No more manual exports.\r\n        </CardDescription>\r\n      </CardHeader>\r\n      <CardContent>\r\n        <ul className=\"grid gap-2\">\r\n          <li className=\"flex gap-2\">\r\n            <ChevronRightIcon className=\"text-muted-foreground mt-0.5 size-4 shrink-0\" />\r\n            <span>Choose a schedule (daily, or weekly).</span>\r\n          </li>\r\n          <li className=\"flex gap-2\">\r\n            <ChevronRightIcon className=\"text-muted-foreground mt-0.5 size-4 shrink-0\" />\r\n            <span>Send to channels or specific teammates.</span>\r\n          </li>\r\n          <li className=\"flex gap-2\">\r\n            <ChevronRightIcon className=\"text-muted-foreground mt-0.5 size-4 shrink-0\" />\r\n            <span>Include charts, tables, and key metrics.</span>\r\n          </li>\r\n        </ul>\r\n      </CardContent>\r\n      <CardFooter className=\"grid gap-2\">\r\n        <Button size=\"sm\">Set up scheduled reports</Button>\r\n        <Button variant=\"outline\" size=\"sm\">\r\n          See what's new\r\n        </Button>\r\n      </CardFooter>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/card/card-small.tsx"
+    }
+  ],
+  "categories": [
+    "card"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-tooltip-sides",
+  "title": "Sides Tooltip",
+  "description": "Tooltip Sides variant for tooltip.",
+  "registryDependencies": [
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/tooltip/tooltip-sides.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger\r\n} from \"@/components/ui/tooltip\";\r\n\r\n//  ------------------------------ | TOOLTIP - SIDES | ------------------------------  //\r\n\r\nexport function TooltipSides() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-2\">\r\n      {([\"left\", \"top\", \"bottom\", \"right\"] as const).map((side) => (\r\n        <Tooltip key={side}>\r\n          <TooltipTrigger render={<Button className=\"w-fit capitalize\" />}>\r\n            {side}\r\n          </TooltipTrigger>\r\n          <TooltipContent side={side}>\r\n            <p>Add to library</p>\r\n          </TooltipContent>\r\n        </Tooltip>\r\n      ))}\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tooltip/tooltip-sides.tsx"
+    }
+  ],
+  "categories": [
+    "tooltip"
+  ],
+  "type": "registry:ui"
+}

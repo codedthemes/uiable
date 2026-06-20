@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-switch-sizes",
+  "title": "Sizes Switch",
+  "description": "Switch Sizes variant for switch.",
+  "registryDependencies": [
+    "switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-sizes.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\nimport { Switch } from \"@/components/ui/switch\";\r\n\r\n//  ------------------------------ | SWITCH - SIZES | ------------------------------  //\r\n\r\nexport function SwitchSizes() {\r\n  return (\r\n    <FieldGroup className=\"w-full max-w-[10rem]\">\r\n      <Field orientation=\"horizontal\">\r\n        <Switch id=\"switch-size-sm\" size=\"sm\" />\r\n        <FieldLabel htmlFor=\"switch-size-sm\">Small</FieldLabel>\r\n      </Field>\r\n      <Field orientation=\"horizontal\">\r\n        <Switch id=\"switch-size-default\" size=\"default\" />\r\n        <FieldLabel htmlFor=\"switch-size-default\">Default</FieldLabel>\r\n      </Field>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-sizes.tsx"
+    }
+  ],
+  "categories": [
+    "switch"
+  ],
+  "type": "registry:ui"
+}

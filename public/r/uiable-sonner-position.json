@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sonner-position",
+  "title": "Position Sonner",
+  "description": "Sonner Position variant for sonner.",
+  "registryDependencies": [
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/sonner/sonner-position.tsx",
+      "content": "\"use client\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// third party\r\nimport { toast } from \"sonner\";\r\n\r\n//  ------------------------------ | SONNER - POSITION | ------------------------------  //\r\n\r\nexport function SonnerPosition() {\r\n  return (\r\n    <div className=\"flex flex-col gap-2\">\r\n      <div className=\"flex flex-wrap justify-center gap-2\">\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"top-left\" })\r\n          }\r\n        >\r\n          Top Left\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"top-center\" })\r\n          }\r\n        >\r\n          Top Center\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"top-right\" })\r\n          }\r\n        >\r\n          Top Right\r\n        </Button>\r\n      </div>\r\n      <div className=\"flex flex-wrap justify-center gap-2\">\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"bottom-left\" })\r\n          }\r\n        >\r\n          Bottom Left\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"bottom-center\" })\r\n          }\r\n        >\r\n          Bottom Center\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"bottom-right\" })\r\n          }\r\n        >\r\n          Bottom Right\r\n        </Button>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/sonner/sonner-position.tsx"
+    }
+  ],
+  "categories": [
+    "sonner"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-menubar-icons",
+  "title": "Icons Menubar",
+  "description": "Menubar Icons variant for menubar.",
+  "registryDependencies": [
+    "menubar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/menubar/menubar-icons.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Menubar,\r\n  MenubarContent,\r\n  MenubarGroup,\r\n  MenubarItem,\r\n  MenubarMenu,\r\n  MenubarSeparator,\r\n  MenubarShortcut,\r\n  MenubarTrigger\r\n} from \"@/components/ui/menubar\";\r\n\r\n// assets\r\nimport {\r\n  FileIcon,\r\n  FolderIcon,\r\n  HelpCircleIcon,\r\n  SaveIcon,\r\n  SettingsIcon,\r\n  TrashIcon\r\n} from \"lucide-react\";\r\n\r\n//  ------------------------------ | MENUBAR - ICONS | ------------------------------  //\r\n\r\nexport function MenubarIcons() {\r\n  return (\r\n    <Menubar className=\"w-72\">\r\n      <MenubarMenu>\r\n        <MenubarTrigger>File</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarItem>\r\n            <FileIcon />\r\n            New File <MenubarShortcut>⌘N</MenubarShortcut>\r\n          </MenubarItem>\r\n          <MenubarItem>\r\n            <FolderIcon />\r\n            Open Folder\r\n          </MenubarItem>\r\n          <MenubarSeparator />\r\n          <MenubarItem>\r\n            <SaveIcon />\r\n            Save <MenubarShortcut>⌘S</MenubarShortcut>\r\n          </MenubarItem>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n      <MenubarMenu>\r\n        <MenubarTrigger>More</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarGroup>\r\n            <MenubarItem>\r\n              <SettingsIcon />\r\n              Settings\r\n            </MenubarItem>\r\n            <MenubarItem>\r\n              <HelpCircleIcon />\r\n              Help\r\n            </MenubarItem>\r\n            <MenubarSeparator />\r\n            <MenubarItem variant=\"destructive\">\r\n              <TrashIcon />\r\n              Delete\r\n            </MenubarItem>\r\n          </MenubarGroup>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n    </Menubar>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/menubar/menubar-icons.tsx"
+    }
+  ],
+  "categories": [
+    "menubar"
+  ],
+  "type": "registry:ui"
+}

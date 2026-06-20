@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-switch-disabled",
+  "title": "Disabled Switch",
+  "description": "Switch Disabled variant for switch.",
+  "registryDependencies": [
+    "switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-disabled.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Switch } from \"@/components/ui/switch\";\r\n\r\n//  ------------------------------ | SWITCH - DISABLED | ------------------------------  //\r\n\r\nexport function SwitchDisabled() {\r\n  return (\r\n    <Field orientation=\"horizontal\" data-disabled className=\"w-fit\">\r\n      <Switch id=\"switch-disabled-unchecked\" disabled />\r\n      <FieldLabel htmlFor=\"switch-disabled-unchecked\">Disabled</FieldLabel>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "switch"
+  ],
+  "type": "registry:ui"
+}

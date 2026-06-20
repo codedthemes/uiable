@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-team-1",
+  "title": "Team 1",
+  "description": "Team variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/team/team-1/team-1.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\nimport {\r\n  Carousel,\r\n  CarouselContent,\r\n  CarouselItem,\r\n  CarouselNext,\r\n  CarouselPrevious,\r\n} from \"@/components/ui/carousel\";\r\n\r\n// constants\r\nconst members = [\r\n  {\r\n    name: \"Shirley Hoe\",\r\n    role: \"Professional\",\r\n    bio: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    avatar: \"https://cdn.uiable.com/block/team1.png\",\r\n    initials: \"SH\",\r\n  },\r\n  {\r\n    name: \"Joseph William\",\r\n    role: \"Professional\",\r\n    bio: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    avatar: \"https://cdn.uiable.com/block/team2.png\",\r\n    initials: \"JW\",\r\n  },\r\n  {\r\n    name: \"John Doe\",\r\n    role: \"Professional\",\r\n    bio: \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    avatar: \"https://cdn.uiable.com/block/team3.png\",\r\n    initials: \"JD\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | TEAM 1 | ------------------------------  //\r\n\r\nexport default function team1() {\r\n  return (\r\n    <section className=\"py-16\">\r\n      <div className=\"mx-auto container px-6\">\r\n        <div className=\"grid grid-cols-12 mb-12\">\r\n          <div className=\"col-span-12 text-center\">\r\n            <h2>Our Crew</h2>\r\n            <p className=\"text-muted-foreground mt-3 mx-auto max-w-xl\">\r\n              At half-past eight the door opened, the policeman appeared and\r\n              requesting them to follow him, led way to an adjoining hall.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <Carousel opts={{ align: \"start\", loop: true }} className=\"px-10\">\r\n          <CarouselContent>\r\n            {members.map((member) => (\r\n              <CarouselItem\r\n                key={member.name}\r\n                className=\"basis-full sm:basis-1/2 lg:basis-1/3\"\r\n              >\r\n                <Card className=\"mb-0\">\r\n                  <CardContent className=\"flex flex-col items-center text-center p-8 gap-4\">\r\n                    <Avatar className=\"size-26!\">\r\n                      <AvatarImage src={member.avatar} alt={member.name} />\r\n                      <AvatarFallback>{member.initials}</AvatarFallback>\r\n                    </Avatar>\r\n                    <div>\r\n                      <h6 className=\"font-semibold text-foreground\">\r\n                        {member.name}\r\n                      </h6>\r\n                      <p className=\"text-muted-foreground text-sm mt-1\">\r\n                        {member.role}\r\n                      </p>\r\n                    </div>\r\n                    <p className=\"text-muted-foreground text-md leading-relaxed\">\r\n                      {member.bio}\r\n                    </p>\r\n                  </CardContent>\r\n                </Card>\r\n              </CarouselItem>\r\n            ))}\r\n          </CarouselContent>\r\n          <CarouselPrevious className=\"-left-6\" />\r\n          <CarouselNext className=\"-right-6\" />\r\n        </Carousel>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/team/team-1/team-1.tsx"
+    }
+  ],
+  "categories": [
+    "team"
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-feature-6",
+  "title": "Feature 6",
+  "description": "Feature variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/feature/feature-6/feature-6.tsx",
+      "content": "// constants\r\nconst featureData = [\r\n  {\r\n    title: \"Creative Design\",\r\n    description:\r\n      \"Overcoming all obstacles improves us, develops our ability and makes us stronger.\",\r\n  },\r\n  {\r\n    title: \"Cool Animations\",\r\n    description:\r\n      \"Overcoming all obstacles improves us, develops our ability and makes us stronger.\",\r\n  },\r\n  {\r\n    title: \"Fast & Easy Work\",\r\n    description:\r\n      \"Overcoming all obstacles improves us, develops our ability and makes us stronger.\",\r\n  },\r\n  {\r\n    title: \"Quick Result\",\r\n    description:\r\n      \"Overcoming all obstacles improves us, develops our ability and makes us stronger.\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | FEATURE - 6 | ------------------------------  //\r\n\r\nexport default function Feature6() {\r\n  return (\r\n    <section className=\"bg-primary pt-20 md:pt-28 pb-0 overflow-hidden text-white\">\r\n      <div className=\"container mx-auto px-4\">\r\n        <div className=\"grid grid-cols-12 gap-6 items-center\">\r\n          {/* Left Column: Content */}\r\n          <div className=\"col-span-12 lg:col-span-7 pb-20 md:pb-28\">\r\n            <div className=\"max-w-2xl\">\r\n              <h2 className=\"mb-6 text-white\">Features</h2>\r\n              <p className=\"text-white/80 mb-14 text-lg lg:text-xl\">\r\n                At half-past eight the door opened, the policeman appeared and\r\n                requesting them to follow him, led the way to an adjoining hall.\r\n              </p>\r\n\r\n              {/* Nested Grid for Features */}\r\n              <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6\">\r\n                {featureData.map((item, index) => (\r\n                  <div key={index} className=\"flex flex-col gap-3\">\r\n                    <h5 className=\"text-white\">{item.title}</h5>\r\n                    <p className=\"text-white/70\">{item.description}</p>\r\n                  </div>\r\n                ))}\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n          {/* Right Column: Mobile Mockup (Cut off at bottom) */}\r\n          <div className=\"col-span-12 lg:col-span-5 flex justify-center lg:justify-end self-end\">\r\n            <div className=\"relative w-full max-w-[320px] overflow-hidden max-h-96 md:max-h-125\">\r\n              <img\r\n                src=\"https://cdn.uiable.com/block/content-29.png\"\r\n                alt=\"Meetings App Interface\"\r\n                className=\"h-auto w-full object-contain object-top\"\r\n              />\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/feature/feature-6/feature-6.tsx"
+    }
+  ],
+  "categories": [
+    "feature"
+  ],
+  "type": "registry:block"
+}

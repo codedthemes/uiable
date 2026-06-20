@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-radio-group-disabled",
+  "title": "Disabled Radio Group",
+  "description": "Radio Group Disabled variant for radio-group.",
+  "registryDependencies": [
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/radio-group/radio-group-disabled.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\r\n\r\n//  ------------------------------ | RADIO GROUP - DISABLED | ------------------------------  //\r\n\r\nexport function RadioGroupDisabled() {\r\n  return (\r\n    <RadioGroup defaultValue=\"option2\" className=\"w-fit\">\r\n      <Field orientation=\"horizontal\" data-disabled>\r\n        <RadioGroupItem value=\"option1\" id=\"disabled-1\" disabled />\r\n        <FieldLabel htmlFor=\"disabled-1\" className=\"font-normal\">\r\n          Disabled\r\n        </FieldLabel>\r\n      </Field>\r\n      <Field orientation=\"horizontal\">\r\n        <RadioGroupItem value=\"option2\" id=\"disabled-2\" />\r\n        <FieldLabel htmlFor=\"disabled-2\" className=\"font-normal\">\r\n          Option 2\r\n        </FieldLabel>\r\n      </Field>\r\n      <Field orientation=\"horizontal\">\r\n        <RadioGroupItem value=\"option3\" id=\"disabled-3\" />\r\n        <FieldLabel htmlFor=\"disabled-3\" className=\"font-normal\">\r\n          Option 3\r\n        </FieldLabel>\r\n      </Field>\r\n    </RadioGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/radio-group/radio-group-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "radio-group"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "native-select",
+  "dependencies": [
+    "lucide-react",
+    "react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/components/ui/native-select.tsx",
+      "content": "import * as React from \"react\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\nimport { ChevronDownIcon } from \"lucide-react\"\r\n\r\ntype NativeSelectProps = Omit<React.ComponentProps<\"select\">, \"size\"> & {\r\n  size?: \"sm\" | \"default\"\r\n}\r\n\r\nfunction NativeSelect({\r\n  className,\r\n  size = \"default\",\r\n  ...props\r\n}: NativeSelectProps) {\r\n  return (\r\n    <div\r\n      className={cn(\r\n        \"group/native-select relative w-fit has-[select:disabled]:opacity-50\",\r\n        className\r\n      )}\r\n      data-slot=\"native-select-wrapper\"\r\n      data-size={size}\r\n    >\r\n      <select\r\n        data-slot=\"native-select\"\r\n        data-size={size}\r\n        className=\"data-placeholder:text-[#bec8d0] appearance-none bg-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 flex w-fit items-center justify-between gap-1.5 rounded-lg border py-[.8rem] pr-3 pl-3 text-base whitespace-nowrap transition-colors outline-none select-none focus-visible:ring-3 disabled:bg-secondary-200/10 disabled:pointer-events-none disabled:opacity-50 aria-invalid:ring-3 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 focus:outline-none focus:border-primary dark:focus:border-primary border-border\"\r\n        {...props}\r\n      />\r\n      <ChevronDownIcon className=\"pointer-events-none absolute top-1/2 right-2.5 size-4 -translate-y-1/2 text-muted-foreground select-none\" aria-hidden=\"true\" data-slot=\"native-select-icon\" />\r\n    </div>\r\n  )\r\n}\r\n\r\nfunction NativeSelectOption({ ...props }: React.ComponentProps<\"option\">) {\r\n  return <option data-slot=\"native-select-option\" {...props} />\r\n}\r\n\r\nfunction NativeSelectOptGroup({\r\n  className,\r\n  ...props\r\n}: React.ComponentProps<\"optgroup\">) {\r\n  return (\r\n    <optgroup\r\n      data-slot=\"native-select-optgroup\"\r\n      className={cn(className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport { NativeSelect, NativeSelectOptGroup, NativeSelectOption }\r\n",
+      "type": "registry:ui",
+      "target": "components/ui/native-select.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

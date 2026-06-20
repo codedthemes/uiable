@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dropdown-menu-icons",
+  "title": "Icon Dropdown Menu",
+  "description": "Dropdown Menu Icons variant for dropdown-menu.",
+  "registryDependencies": [
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-icons.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger\n} from \"@/components/ui/dropdown-menu\";\n\n// assets\nimport {\n  CreditCardIcon,\n  LogOutIcon,\n  SettingsIcon,\n  UserIcon\n} from \"lucide-react\";\n\n//  ------------------------------ | DROPDOWN MENU - ICONS | ------------------------------  //\n\nexport function DropdownMenuIcons() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger render={<Button variant=\"outline\" />}>\n        Open\n      </DropdownMenuTrigger>\n      <DropdownMenuContent>\n        <DropdownMenuItem>\n          <UserIcon />\n          Profile\n        </DropdownMenuItem>\n        <DropdownMenuItem>\n          <CreditCardIcon />\n          Billing\n        </DropdownMenuItem>\n        <DropdownMenuItem>\n          <SettingsIcon />\n          Settings\n        </DropdownMenuItem>\n        <DropdownMenuSeparator />\n        <DropdownMenuItem variant=\"destructive\">\n          <LogOutIcon />\n          Log out\n        </DropdownMenuItem>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-icons.tsx"
+    }
+  ],
+  "categories": [
+    "dropdown-menu"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-empty-avatar",
+  "title": "Empty Avatar",
+  "description": "Empty Avatar variant for empty.",
+  "registryDependencies": [
+    "empty"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/empty/empty-avatar.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Empty,\n  EmptyContent,\n  EmptyDescription,\n  EmptyHeader,\n  EmptyMedia,\n  EmptyTitle\n} from \"@/components/ui/empty\";\n\n//  ------------------------------ | EMPTY - AVATAR | ------------------------------  //\n\nexport default function EmptyAvatar() {\n  return (\n    <Empty>\n      <EmptyHeader>\n        <EmptyMedia variant=\"default\">\n          <Avatar className=\"size-12\">\n            <AvatarImage src=\"https://github.com/shadcn.png\" />\n            <AvatarFallback>LR</AvatarFallback>\n          </Avatar>\n        </EmptyMedia>\n        <EmptyTitle>User Offline</EmptyTitle>\n        <EmptyDescription>\n          This user is currently offline. You can leave a message to notify them\n          or try again later.\n        </EmptyDescription>\n      </EmptyHeader>\n      <EmptyContent>\n        <Button>Leave Message</Button>\n      </EmptyContent>\n    </Empty>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/empty/empty-avatar.tsx"
+    }
+  ],
+  "categories": [
+    "empty"
+  ],
+  "type": "registry:ui"
+}

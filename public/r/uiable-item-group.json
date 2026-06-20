@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-group",
+  "title": "Group Item",
+  "description": "Item Group variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-group.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemMedia,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { PlusIcon } from \"lucide-react\";\r\n\r\n// constants\r\nconst people = [\r\n  {\r\n    username: \"shadcn\",\r\n    avatar: \"https://cdn.uiable.com/user/avatar-8.jpg\",\r\n    email: \"shadcn@demo.com\",\r\n  },\r\n  {\r\n    username: \"maxleiter\",\r\n    avatar: \"https://cdn.uiable.com/user/avatar-9.jpg\",\r\n    email: \"maxle@demo.com\",\r\n  },\r\n  {\r\n    username: \"evilrabbit\",\r\n    avatar: \"https://cdn.uiable.com/user/avatar-10.jpg\",\r\n    email: \"evil@demo.com\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | ITEM - GROUP | ------------------------------  //\r\n\r\nexport function ItemGroupExample() {\r\n  return (\r\n    <ItemGroup className=\"max-w-sm\">\r\n      {people.map((person) => (\r\n        <Item key={person.username} variant=\"outline\">\r\n          <ItemMedia>\r\n            <Avatar className=\"size-8\">\r\n              <AvatarImage src={person.avatar} />\r\n              <AvatarFallback>{person.username.charAt(0)}</AvatarFallback>\r\n            </Avatar>\r\n          </ItemMedia>\r\n          <ItemContent className=\"gap-0\">\r\n            <ItemTitle>{person.username}</ItemTitle>\r\n            <ItemDescription>{person.email}</ItemDescription>\r\n          </ItemContent>\r\n          <ItemActions>\r\n            <Button size=\"icon\">\r\n              <PlusIcon />\r\n            </Button>\r\n          </ItemActions>\r\n        </Item>\r\n      ))}\r\n    </ItemGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-group.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

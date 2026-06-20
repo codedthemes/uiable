@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-cta-1",
+  "title": "Call To Action 1",
+  "description": "Call To Action variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/cta/cta-1/cta-1.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { ButtonGroup } from \"@/components/ui/button-group\";\r\nimport { Field } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | CTA 1 | ------------------------------  //\r\n\r\nexport default function cta1() {\r\n  return (\r\n    <div className=\"py-24 sm:py-32\">\r\n      <div className=\"relative isolate px-6 pt-14 lg:px-8\">\r\n        <div\r\n          aria-hidden=\"true\"\r\n          className=\"absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80\"\r\n        >\r\n          <div\r\n            style={{\r\n              clipPath:\r\n                \"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\r\n            }}\r\n            className=\"relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75\"\r\n          />\r\n        </div>\r\n        <div className=\"max-w-200 bg-card rounded-lg mx-auto shadow-[0_0_40px_-8px_#4680ff38] p-5 sm:p-14\">\r\n          <div className=\"text-center flex flex-col items-center gap-4 sm:gap-10 mb-6 sm:mb-12\">\r\n            <h2 className=\"text-lg sm:text-3xl font-medium text-slate-800 dark:text-slate-100\">\r\n              Subscribe Now\r\n            </h2>\r\n            <p className=\"max-w-145 text-slate-600 dark:text-slate-400\">\r\n              Unlock premium features, exclusive updates, and priority access to\r\n              new content. Join our community today and enjoy a seamless\r\n              experience designed just for you. Subscribe now and never miss out\r\n              on what matters most.\r\n            </p>\r\n          </div>\r\n          <Field className=\"max-w-150 mx-auto\">\r\n            <ButtonGroup className=\"items-stretch [&>[data-slot]:not(:has(~[data-slot]))]:rounded-r-lg!\">\r\n              <Input id=\"input-button-group\" placeholder=\"Enter Mail\" />\r\n              <Button>Join Now</Button>\r\n            </ButtonGroup>\r\n          </Field>\r\n        </div>\r\n        <div\r\n          aria-hidden=\"true\"\r\n          className=\"absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]\"\r\n        >\r\n          <div\r\n            style={{\r\n              clipPath:\r\n                \"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\r\n            }}\r\n            className=\"relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75\"\r\n          />\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/cta/cta-1/cta-1.tsx"
+    }
+  ],
+  "categories": [
+    "cta"
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-icon-success",
+  "title": "Success Icon Alert",
+  "description": "Alert Icon Success variant for alert.",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-icon-success.tsx",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n// assets\nimport { CircleCheck } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - ICON SUCCESS | ------------------------------  //\n\nexport default function AlertIconSuccess() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-green-600/20 bg-green-600/10 text-green-700 dark:text-green-400\">\n      <CircleCheck className=\"h-5 w-5\" />\n      <span>A simple success alert—check it out!</span>\n    </Alert>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-icon-success.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-field-textarea",
+  "title": "Textarea Field",
+  "description": "Field Textarea variant for field.",
+  "registryDependencies": [
+    "field"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/field/field-textarea.tsx",
+      "content": "// shadcn\nimport {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldSet\n} from \"@/components/ui/field\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\n//  ------------------------------ | FIELD - TEXTAREA | ------------------------------  //\n\nexport default function FieldTextarea() {\n  return (\n    <FieldSet className=\"w-full max-w-xs\">\n      <FieldGroup>\n        <Field>\n          <FieldLabel htmlFor=\"feedback\">Feedback</FieldLabel>\n          <Textarea\n            id=\"feedback\"\n            placeholder=\"Your feedback helps us improve...\"\n            rows={4}\n          />\n          <FieldDescription>\n            Share your thoughts about our service.\n          </FieldDescription>\n        </Field>\n      </FieldGroup>\n    </FieldSet>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/field/field-textarea.tsx"
+    }
+  ],
+  "categories": [
+    "field"
+  ],
+  "type": "registry:ui"
+}

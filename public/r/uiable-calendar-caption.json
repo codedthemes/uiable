@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-calendar-caption",
+  "title": "Caption Calendar",
+  "description": "Calendar Caption variant for calendar.",
+  "registryDependencies": [
+    "calendar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/calendar/calendar-caption.tsx",
+      "content": "// shadcn\nimport { Calendar } from \"@/components/ui/calendar\";\n\n//  ------------------------------ | CALENDAR - CAPTION | ------------------------------  //\n\nexport function CalendarCaption() {\n  return (\n    <Calendar\n      mode=\"single\"\n      captionLayout=\"dropdown\"\n      className=\"rounded-lg border\"\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/calendar/calendar-caption.tsx"
+    }
+  ],
+  "categories": [
+    "calendar"
+  ],
+  "type": "registry:ui"
+}

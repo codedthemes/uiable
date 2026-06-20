@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-tabs-disabled",
+  "title": "Disabled Tabs",
+  "description": "Tabs Disabled variant for tabs.",
+  "registryDependencies": [
+    "tabs"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/tabs/tabs-disabled.tsx",
+      "content": "// shadcn\r\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\r\n\r\n//  ------------------------------ | TABS - DISABLED | ------------------------------  //\r\n\r\nexport function TabsDisabled() {\r\n  return (\r\n    <Tabs defaultValue=\"home\">\r\n      <TabsList>\r\n        <TabsTrigger value=\"home\">Home</TabsTrigger>\r\n        <TabsTrigger value=\"settings\" disabled>\r\n          Disabled\r\n        </TabsTrigger>\r\n      </TabsList>\r\n    </Tabs>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tabs/tabs-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "tabs"
+  ],
+  "type": "registry:ui"
+}

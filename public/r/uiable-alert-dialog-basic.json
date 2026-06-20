@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-dialog-basic",
+  "title": "Basic Alert Dialog",
+  "description": "Alert Dialog Basic variant for alert-dialog.",
+  "registryDependencies": [
+    "alert-dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert-dialog/alert-dialog-basic.tsx",
+      "content": "// shadcn\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger\n} from \"@/components/ui/alert-dialog\";\nimport { Button } from \"@/components/ui/button\";\n\n//  ------------------------------ | ALERT DIALOG - BASIC | ------------------------------  //\n\nexport function AlertDialogBasic() {\n  return (\n    <AlertDialog>\n      <AlertDialogTrigger render={<Button>Show Dialog</Button>} />\n      <AlertDialogContent>\n        <AlertDialogHeader>\n          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>\n          <AlertDialogDescription>\n            This action cannot be undone. This will permanently delete your\n            account and remove your data from our servers.\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n        <AlertDialogFooter>\n          <AlertDialogCancel>Cancel</AlertDialogCancel>\n          <AlertDialogAction>Continue</AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert-dialog/alert-dialog-basic.tsx"
+    }
+  ],
+  "categories": [
+    "alert-dialog"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-sonner-description",
+  "title": "Description Sonner",
+  "description": "Sonner Description variant for sonner.",
+  "registryDependencies": [
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/sonner/sonner-description.tsx",
+      "content": "\"use client\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// third party\r\nimport { toast } from \"sonner\";\r\n\r\n//  ------------------------------ | SONNER - DESCRIPTION | ------------------------------  //\r\n\r\nexport function SonnerDescription() {\r\n  return (\r\n    <>\r\n      <Button\r\n        onClick={() =>\r\n          toast(\"Event has been created\", {\r\n            description: \"Monday, January 3rd at 6:00pm\",\r\n          })\r\n        }\r\n        className=\"w-fit\"\r\n      >\r\n        Show Toast\r\n      </Button>\r\n    </>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/sonner/sonner-description.tsx"
+    }
+  ],
+  "categories": [
+    "sonner"
+  ],
+  "type": "registry:ui"
+}

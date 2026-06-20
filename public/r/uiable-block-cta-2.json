@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-cta-2",
+  "title": "Call To Action 2",
+  "description": "Call To Action variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/cta/cta-2/cta-2.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | CTA 2 | ------------------------------  //\r\n\r\nexport default function cta2() {\r\n  return (\r\n    <div className=\"py-24 sm:py-32\">\r\n      <div className=\"relative isolate px-6 pt-14 lg:px-8\">\r\n        <div\r\n          aria-hidden=\"true\"\r\n          className=\"absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80\"\r\n        >\r\n          <div\r\n            style={{\r\n              clipPath:\r\n                \"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\r\n            }}\r\n            className=\"relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75\"\r\n          />\r\n        </div>\r\n        <div className=\"max-w-200 bg-card rounded-lg mx-auto shadow-[0_0_40px_-8px_#4680ff38] p-5 sm:p-14\">\r\n          <div className=\"text-center flex flex-col items-center gap-4 sm:gap-10\">\r\n            <p className=\"mx-auto text-center text-lg sm:text-xl text-slate-800 dark:text-slate-100\">\r\n              Get exclusive updates, helpful insights, and special announcements\r\n              delivered straight to your inbox.\r\n            </p>\r\n            <div className=\"grid grid-cols-1 md:grid-cols-3 gap-6\">\r\n              <Input placeholder=\"Name\" />\r\n              <Input placeholder=\"Email Id\" />\r\n              <Button className=\"w-full sm:w-auto\">Subscribe</Button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div\r\n          aria-hidden=\"true\"\r\n          className=\"absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]\"\r\n        >\r\n          <div\r\n            style={{\r\n              clipPath:\r\n                \"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\r\n            }}\r\n            className=\"relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75\"\r\n          />\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/cta/cta-2/cta-2.tsx"
+    }
+  ],
+  "categories": [
+    "cta"
+  ],
+  "type": "registry:block"
+}

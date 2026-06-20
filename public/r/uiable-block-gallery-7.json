@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-gallery-7",
+  "title": "Gallery 7",
+  "description": "Gallery variant for block.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/gallery/gallery-7/gallery-7.tsx",
+      "content": "import Image from \"next/image\";\r\n\r\n// shadcn\r\nimport {\r\n  Carousel,\r\n  CarouselContent,\r\n  CarouselItem,\r\n  CarouselNext,\r\n  CarouselPrevious,\r\n} from \"@/components/ui/carousel\";\r\n\r\n// constants\r\nconst portfolioItems = [\r\n  {\r\n    title: \"First one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g1.jpg\",\r\n  },\r\n  {\r\n    title: \"Second one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g2.jpg\",\r\n  },\r\n  {\r\n    title: \"Third one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g3.jpg\",\r\n  },\r\n  {\r\n    title: \"Fourth one\",\r\n    description:\r\n      \"At half-past eight the door opened, the policeman appeared and requesting them to follow him.\",\r\n    image: \"https://cdn.uiable.com/block/g4.jpg\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | GALLERY 8 | ------------------------------  //\r\n\r\nexport default function Gallery7() {\r\n  return (\r\n    <section className=\"py-16 md:py-24\">\r\n      <div className=\"container px-4 mx-auto\">\r\n        <div className=\"grid grid-cols-12 gap-y-6\">\r\n          {/* Header Section */}\r\n          <div className=\"col-span-12 text-center flex flex-col items-center gap-4\">\r\n            <h2>Portfolio</h2>\r\n            <p className=\"text-slate-500 text-sm md:text-lg max-w-2xl\">\r\n              At half-past eight the door opened, the policeman appeared and\r\n              requesting them to follow him, led way to an adjoining hall.\r\n            </p>\r\n          </div>\r\n\r\n          {/* Carousel Section */}\r\n          <div className=\"col-span-12 px-12 md:px-16\">\r\n            <Carousel opts={{ align: \"start\", loop: true }} className=\"w-full\">\r\n              <CarouselContent className=\"-ml-8\">\r\n                {portfolioItems.map((item, index) => (\r\n                  <CarouselItem\r\n                    key={index}\r\n                    className=\"pl-8 basis-full md:basis-1/2\"\r\n                  >\r\n                    <div className=\"flex flex-col gap-6 text-center items-center\">\r\n                      {/* Image Container */}\r\n                      <div className=\"overflow-hidden rounded-3xl w-full\">\r\n                        <div className=\"relative aspect-4/3\">\r\n                          <Image\r\n                            src={item.image}\r\n                            alt={item.title}\r\n                            fill\r\n                            className=\"object-cover\"\r\n                          />\r\n                        </div>\r\n                      </div>\r\n\r\n                      {/* Content Section */}\r\n                      <div className=\"flex flex-col gap-2 max-w-md\">\r\n                        <h4>{item.title}</h4>\r\n                        <p className=\"text-slate-500 text-sm md:text-md\">\r\n                          {item.description}\r\n                        </p>\r\n                      </div>\r\n                    </div>\r\n                  </CarouselItem>\r\n                ))}\r\n              </CarouselContent>\r\n              <CarouselPrevious className=\"hidden md:flex\" />\r\n              <CarouselNext className=\"hidden md:flex\" />\r\n            </Carousel>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/gallery/gallery-7/gallery-7.tsx"
+    }
+  ],
+  "categories": [
+    "gallery"
+  ],
+  "type": "registry:block"
+}

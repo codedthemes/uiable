@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-carousel-orientation",
+  "title": "Orientation Carousel",
+  "description": "Carousel Orientation variant for carousel.",
+  "registryDependencies": [
+    "carousel"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/carousel/carousel-orientation.tsx",
+      "content": "// shadcn\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\nimport {\r\n  Carousel,\r\n  CarouselContent,\r\n  CarouselItem,\r\n  CarouselNext,\r\n  CarouselPrevious\r\n} from \"@/components/ui/carousel\";\r\n\r\n//  ------------------------------ | CAROUSEL - ORIENTATION | ------------------------------  //\r\n\r\nexport default function CarouselOrientation() {\r\n  return (\r\n    <div className=\"relative py-10 w-full flex items-center justify-center\">\r\n      <Carousel\r\n        opts={{\r\n          align: \"center\"\r\n        }}\r\n        orientation=\"vertical\"\r\n        className=\"w-full max-w-xs\"\r\n      >\r\n        <CarouselContent className=\"mt-1 h-[270px]\">\r\n          {Array.from({ length: 5 }).map((_, index) => (\r\n            <CarouselItem key={index} className=\"basis-1/2 pt-1\">\r\n              <div className=\"p-1\">\r\n                <Card className=\"bg-primary/10 border-primary mb-0\">\r\n                  <CardContent className=\"flex items-center justify-center p-6\">\r\n                    <span className=\"text-3xl font-semibold text-primary\">\r\n                      {index + 1}\r\n                    </span>\r\n                  </CardContent>\r\n                </Card>\r\n              </div>\r\n            </CarouselItem>\r\n          ))}\r\n        </CarouselContent>\r\n        <CarouselPrevious />\r\n        <CarouselNext />\r\n      </Carousel>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/carousel/carousel-orientation.tsx"
+    }
+  ],
+  "categories": [
+    "carousel"
+  ],
+  "type": "registry:ui"
+}

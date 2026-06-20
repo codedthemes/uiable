@@ -1,0 +1,31 @@
+// shadcn
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupInput
+} from "@/components/ui/input-group";
+
+// assets
+import { EyeOffIcon } from "lucide-react";
+
+//  ------------------------------ | INPUT GROUP - INLINE END | ------------------------------  //
+
+export function InputGroupInlineEnd() {
+  return (
+    <Field className="max-w-sm">
+      <FieldLabel htmlFor="inline-end-input">Input</FieldLabel>
+      <InputGroup>
+        <InputGroupInput
+          id="inline-end-input"
+          type="password"
+          placeholder="Enter password"
+        />
+        <InputGroupAddon align="inline-end">
+          <EyeOffIcon />
+        </InputGroupAddon>
+      </InputGroup>
+      <FieldDescription>Icon positioned at the end.</FieldDescription>
+    </Field>
+  );
+}

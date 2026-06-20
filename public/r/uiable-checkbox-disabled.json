@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-checkbox-disabled",
+  "title": "Disabled Checkbox",
+  "description": "Checkbox Disabled variant for checkbox.",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/checkbox/checkbox-disabled.tsx",
+      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\";\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\n\n//  ------------------------------ | CHECKBOX - DISABLED | ------------------------------  //\n\nexport function CheckboxDisabled() {\n  return (\n    <FieldGroup className=\"mx-auto w-56\">\n      <Field orientation=\"horizontal\" data-disabled>\n        <Checkbox\n          id=\"toggle-checkbox-disabled\"\n          name=\"toggle-checkbox-disabled\"\n          disabled\n        />\n        <FieldLabel htmlFor=\"toggle-checkbox-disabled\">\n          Enable notifications\n        </FieldLabel>\n      </Field>\n    </FieldGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/checkbox/checkbox-disabled.tsx"
+    }
+  ],
+  "categories": [
+    "checkbox"
+  ],
+  "type": "registry:ui"
+}

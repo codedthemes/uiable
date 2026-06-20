@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-muted-item-group",
+  "title": "Muted Group Item",
+  "description": "Muted Item Group variant for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/muted-item-group.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemTitle\r\n} from \"@/components/ui/item\";\r\n\r\n//  ------------------------------ | ITEM - MUTED GROUP | ------------------------------  //\r\n\r\nexport function MutedItemGroup() {\r\n  return (\r\n    <ItemGroup>\r\n      <Item variant=\"muted\">\r\n        <ItemContent>\r\n          <ItemTitle>Item 1</ItemTitle>\r\n          <ItemDescription>First item in muted group.</ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Action</Button>\r\n        </ItemActions>\r\n      </Item>\r\n      <Item variant=\"muted\">\r\n        <ItemContent>\r\n          <ItemTitle>Item 2</ItemTitle>\r\n          <ItemDescription>Second item in muted group.</ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Action</Button>\r\n        </ItemActions>\r\n      </Item>\r\n      <Item variant=\"muted\">\r\n        <ItemContent>\r\n          <ItemTitle>Item 3</ItemTitle>\r\n          <ItemDescription>Third item in muted group.</ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Action</Button>\r\n        </ItemActions>\r\n      </Item>\r\n    </ItemGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/muted-item-group.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

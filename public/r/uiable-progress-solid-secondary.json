@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-progress-solid-secondary",
+  "title": "Solid Secondary Progress",
+  "description": "Progress Solid Secondary variant for progress.",
+  "registryDependencies": [
+    "progress"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-solid-secondary.tsx",
+      "content": "// shadcn\r\nimport { Progress } from \"@/components/ui/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - SOLID SECONDARY | ------------------------------  //\r\n\r\nexport default function ProgressSolidSecondary() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <Progress\r\n        value={50}\r\n        className=\"*:h-4 *:bg-slate-500/20 dark:*:bg-muted/10 *:rounded-lg **:bg-secondary **:rounded-lg\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-solid-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "progress"
+  ],
+  "type": "registry:ui"
+}

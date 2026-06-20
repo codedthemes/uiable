@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-pill-dark",
+  "title": "Dark Pill Badge",
+  "description": "Badge Pill Dark variant for badge.",
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-pill-dark.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\";\n\n//  ------------------------------ | BADGE - PILL DARK | ------------------------------  //\n\nexport default function BadgePillDark() {\n  return <Badge className=\"rounded-full bg-dark-500 text-white\">Dark</Badge>;\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-pill-dark.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

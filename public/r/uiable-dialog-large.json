@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-dialog-large",
+  "title": "Large Dialog",
+  "description": "Dialog Large variant for dialog.",
+  "registryDependencies": [
+    "dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-large.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger\n} from \"@/components/ui/dialog\";\n\n//  ------------------------------ | DIALOG - LARGE | ------------------------------  //\n\nexport function DialogLarge() {\n  return (\n    <Dialog>\n      <DialogTrigger render={<Button>Large Modal</Button>} />\n      <DialogContent className=\"sm:max-w-2xl\">\n        <DialogHeader>\n          <DialogTitle>Large Modal</DialogTitle>\n          <DialogDescription>This is a larger modal variant.</DialogDescription>\n        </DialogHeader>\n        <div className=\"py-4\">...</div>\n        <DialogFooter>\n          <Button variant=\"secondary\">Close</Button>\n          <Button>Save changes</Button>\n        </DialogFooter>\n      </DialogContent>\n    </Dialog>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-large.tsx"
+    }
+  ],
+  "categories": [
+    "dialog"
+  ],
+  "type": "registry:ui"
+}

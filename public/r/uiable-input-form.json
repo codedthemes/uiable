@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-form",
+  "title": "Form Input",
+  "description": "Input Form variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-form.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Field,\r\n  FieldDescription,\r\n  FieldGroup,\r\n  FieldLabel\r\n} from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue\r\n} from \"@/components/ui/select\";\r\n\r\n// constants\r\nconst countries = [\r\n  { label: \"United States\", value: \"us\" },\r\n  { label: \"United Kingdom\", value: \"uk\" },\r\n  { label: \"Canada\", value: \"ca\" }\r\n];\r\n\r\n//  ------------------------------ | INPUT - FORM | ------------------------------  //\r\n\r\nexport function InputForm() {\r\n  return (\r\n    <form className=\"w-full max-w-sm\">\r\n      <FieldGroup>\r\n        <Field>\r\n          <FieldLabel htmlFor=\"form-name\">Name</FieldLabel>\r\n          <Input\r\n            id=\"form-name\"\r\n            type=\"text\"\r\n            placeholder=\"Evil Rabbit\"\r\n            required\r\n          />\r\n        </Field>\r\n        <Field>\r\n          <FieldLabel htmlFor=\"form-email\">Email</FieldLabel>\r\n          <Input id=\"form-email\" type=\"email\" placeholder=\"john@example.com\" />\r\n          <FieldDescription>\r\n            We'll never share your email with anyone.\r\n          </FieldDescription>\r\n        </Field>\r\n        <div className=\"grid grid-cols-2 gap-4\">\r\n          <Field>\r\n            <FieldLabel htmlFor=\"form-phone\">Phone</FieldLabel>\r\n            <Input id=\"form-phone\" type=\"tel\" placeholder=\"+1 (555) 123-4567\" />\r\n          </Field>\r\n          <Field>\r\n            <FieldLabel htmlFor=\"form-country\">Country</FieldLabel>\r\n            <Select items={countries} defaultValue=\"us\">\r\n              <SelectTrigger id=\"form-country\">\r\n                <SelectValue />\r\n              </SelectTrigger>\r\n              <SelectContent>\r\n                <SelectGroup>\r\n                  {countries.map((country) => (\r\n                    <SelectItem key={country.value} value={country.value}>\r\n                      {country.label}\r\n                    </SelectItem>\r\n                  ))}\r\n                </SelectGroup>\r\n              </SelectContent>\r\n            </Select>\r\n          </Field>\r\n        </div>\r\n        <Field>\r\n          <FieldLabel htmlFor=\"form-address\">Address</FieldLabel>\r\n          <Input id=\"form-address\" type=\"text\" placeholder=\"123 Main St\" />\r\n        </Field>\r\n        <Field orientation=\"horizontal\">\r\n          <Button type=\"button\" variant=\"outline\">\r\n            Cancel\r\n          </Button>\r\n          <Button type=\"submit\">Submit</Button>\r\n        </Field>\r\n      </FieldGroup>\r\n    </form>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-form.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

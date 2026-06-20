@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-dismissible-info",
+  "title": "Info Dismissible Alert",
+  "description": "Alert Dismissible Info variant for alert.",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-dismissible-info.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\n// shadcn\nimport { Alert, AlertAction } from \"@/components/ui/alert\";\nimport { Button } from \"@/components/ui/button\";\n\n// assets\nimport { Info, X } from \"lucide-react\";\n\n//  ------------------------------ | ALERT - DISMISSIBLE INFO | ------------------------------  //\n\nexport default function AlertDismissibleInfo() {\n  const [isVisible, setIsVisible] = useState(true);\n\n  if (!isVisible) return null;\n\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 flex items-center gap-3 border-cyan-500/20 bg-cyan-500/10 text-cyan-700 relative pr-10\">\n      <Info className=\"h-5 w-5 shrink-0\" />\n      <span>\n        <strong>Note:</strong> A new update is available for your software.\n      </span>\n      <AlertAction className=\"absolute right-2 top-2\">\n        <Button\n          size=\"icon\"\n          onClick={() => setIsVisible(false)}\n          className=\"text-lg flex items-center justify-center rounded w-7 h-7 text-inherit bg-transparent hover:bg-cyan/5 dark:hover:bg-white/5\"\n        >\n          <X className=\"h-4 w-4\" />\n        </Button>\n      </AlertAction>\n    </Alert>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-dismissible-info.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

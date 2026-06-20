@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-combobox-multiple",
+  "title": "Multiple Combobox",
+  "description": "Combobox Multiple variant for combobox.",
+  "registryDependencies": [
+    "combobox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/combobox/combobox-multiple.tsx",
+      "content": "\"use client\";\r\n\r\nimport { Fragment } from \"react\";\r\n\r\n// shadcn\r\nimport {\r\n  Combobox,\r\n  ComboboxChip,\r\n  ComboboxChips,\r\n  ComboboxChipsInput,\r\n  ComboboxContent,\r\n  ComboboxEmpty,\r\n  ComboboxItem,\r\n  ComboboxList,\r\n  ComboboxValue,\r\n  useComboboxAnchor\r\n} from \"@/components/ui/combobox\";\r\n\r\n// constants\r\nconst frameworks = [\r\n  \"Next.js\",\r\n  \"SvelteKit\",\r\n  \"Nuxt.js\",\r\n  \"Remix\",\r\n  \"Astro\"\r\n] as const;\r\n\r\n//  ------------------------------ | COMBOBOX - MULTIPLE | ------------------------------  //\r\n\r\nexport function ComboboxMultiple() {\r\n  const anchor = useComboboxAnchor();\r\n\r\n  return (\r\n    <Combobox\r\n      multiple\r\n      autoHighlight\r\n      items={frameworks}\r\n      defaultValue={[frameworks[0]]}\r\n    >\r\n      <ComboboxChips ref={anchor} className=\"w-full max-w-xs\">\r\n        <ComboboxValue>\r\n          {(values) => (\r\n            <Fragment>\r\n              {values.map((value: string) => (\r\n                <ComboboxChip key={value}>{value}</ComboboxChip>\r\n              ))}\r\n              <ComboboxChipsInput />\r\n            </Fragment>\r\n          )}\r\n        </ComboboxValue>\r\n      </ComboboxChips>\r\n      <ComboboxContent anchor={anchor}>\r\n        <ComboboxEmpty>No items found.</ComboboxEmpty>\r\n        <ComboboxList>\r\n          {(item) => (\r\n            <ComboboxItem key={item} value={item}>\r\n              {item}\r\n            </ComboboxItem>\r\n          )}\r\n        </ComboboxList>\r\n      </ComboboxContent>\r\n    </Combobox>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/combobox/combobox-multiple.tsx"
+    }
+  ],
+  "categories": [
+    "combobox"
+  ],
+  "type": "registry:ui"
+}

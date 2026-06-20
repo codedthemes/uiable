@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-light-success",
+  "title": "Light Success Alert",
+  "description": "Alert Light Success variant for alert.",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-light-success.tsx",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - LIGHT SUCCESS | ------------------------------  //\n\nexport default function AlertLightSuccess() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-green-600/20 bg-green-600/10 text-green-700 dark:text-green-400\">\n      A simple success alert—check it out!\n    </Alert>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-light-success.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-breadcrumb-ellipsis",
+  "title": "Ellipsis Breadcrumb",
+  "description": "Breadcrumb Ellipsis variant for breadcrumb.",
+  "registryDependencies": [
+    "breadcrumb"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/breadcrumb/breadcrumb-ellipsis.tsx",
+      "content": "import Link from \"next/link\";\n\n// shadcn\nimport {\n  Breadcrumb,\n  BreadcrumbEllipsis,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator\n} from \"@/components/ui/breadcrumb\";\n\n//  ------------------------------ | BREADCRUMB - ELLIPSIS | ------------------------------  //\n\nexport function BreadcrumbEllipsisDemo() {\n  return (\n    <Breadcrumb>\n      <BreadcrumbList>\n        <BreadcrumbItem>\n          <BreadcrumbLink render={<Link href=\"#\" />}>Home</BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbEllipsis />\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbLink render={<Link href=\"#\" />}>Components</BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbPage>Breadcrumb</BreadcrumbPage>\n        </BreadcrumbItem>\n      </BreadcrumbList>\n    </Breadcrumb>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/breadcrumb/breadcrumb-ellipsis.tsx"
+    }
+  ],
+  "categories": [
+    "breadcrumb"
+  ],
+  "type": "registry:ui"
+}

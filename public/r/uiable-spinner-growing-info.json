@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-growing-info",
+  "title": "Info Growing Spinner",
+  "description": "Spinner Growing Info variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-growing-info.tsx",
+      "content": "//  ------------------------------ | SPINNER - GROWING INFO | ------------------------------  //\r\n\r\nexport default function SpinnerGrowingInfo() {\r\n  return (\r\n    <div\r\n      className=\"inline-flex bg-cyan-500 rounded-full opacity-75 size-4 animate-ping\"\r\n      role=\"status\"\r\n    >\r\n      <span className=\"sr-only\">Loading...</span>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-growing-info.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

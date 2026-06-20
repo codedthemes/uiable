@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-separator-menu",
+  "title": "Menu Separator",
+  "description": "Separator Menu variant for separator.",
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/separator/separator-menu.tsx",
+      "content": "// shadcn\r\nimport { Separator } from \"@/components/ui/separator\";\r\n\r\n//  ------------------------------ | SEPARATOR - MENU | ------------------------------  //\r\n\r\nexport function SeparatorMenu() {\r\n  return (\r\n    <div className=\"flex items-center gap-2 md:gap-4\">\r\n      <div className=\"flex flex-col gap-1\">\r\n        <h6 className=\"font-medium\">Settings</h6>\r\n        <span className=\"text-muted-foreground\">Manage preferences</span>\r\n      </div>\r\n      <Separator orientation=\"vertical\" />\r\n      <div className=\"flex flex-col gap-1\">\r\n        <h6 className=\"font-medium\">Account</h6>\r\n        <span className=\"text-muted-foreground\">Profile & security</span>\r\n      </div>\r\n      <Separator orientation=\"vertical\" className=\"hidden md:block\" />\r\n      <div className=\"hidden flex-col gap-1 md:flex\">\r\n        <h6 className=\"font-medium\">Help</h6>\r\n        <span className=\"text-muted-foreground\">Support & docs</span>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/separator/separator-menu.tsx"
+    }
+  ],
+  "categories": [
+    "separator"
+  ],
+  "type": "registry:ui"
+}

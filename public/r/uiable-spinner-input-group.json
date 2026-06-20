@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-spinner-input-group",
+  "title": "Input Group Spinner",
+  "description": "Spinner Input Group variant for spinner.",
+  "registryDependencies": [
+    "spinner"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-input-group.tsx",
+      "content": "// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput,\r\n  InputGroupTextarea\r\n} from \"@/components/ui/input-group\";\r\nimport { Spinner } from \"@/components/ui/spinner\";\r\n\r\n// assets\r\nimport { ArrowUpIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | SPINNER - INPUT GROUP | ------------------------------  //\r\n\r\nexport function SpinnerInputGroup() {\r\n  return (\r\n    <div className=\"flex w-full max-w-md flex-col gap-4\">\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Send a message...\" disabled />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <Spinner />\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup>\r\n        <InputGroupTextarea placeholder=\"Send a message...\" disabled />\r\n        <InputGroupAddon align=\"block-end\">\r\n          <Spinner /> Validating...\r\n          <InputGroupButton className=\"ml-auto\" variant=\"default\">\r\n            <ArrowUpIcon />\r\n            <span className=\"sr-only\">Send</span>\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-input-group.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

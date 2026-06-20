@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-dropdown",
+  "title": "Dropdown Button Group",
+  "description": "Button Group Dropdown variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-dropdown.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger\n} from \"@/components/ui/dropdown-menu\";\n\n// assets\nimport {\n  AlertTriangleIcon,\n  CheckIcon,\n  ChevronDownIcon,\n  CopyIcon,\n  ShareIcon,\n  TrashIcon,\n  UserRoundXIcon,\n  VolumeOffIcon\n} from \"lucide-react\";\n\n//  ------------------------------ | BUTTON GROUP - DROPDOWN | ------------------------------  //\n\nexport default function ButtonGroupDropdown() {\n  return (\n    <ButtonGroup className=\"items-stretch\">\n      <Button>Follow</Button>\n      <DropdownMenu>\n        <DropdownMenuTrigger render={<Button />}>\n          <ChevronDownIcon />\n        </DropdownMenuTrigger>\n        <DropdownMenuContent align=\"end\" className=\"min-w-54\">\n          <DropdownMenuGroup>\n            <DropdownMenuItem>\n              <VolumeOffIcon />\n              Mute Conversation\n            </DropdownMenuItem>\n            <DropdownMenuItem>\n              <CheckIcon />\n              Mark as Read\n            </DropdownMenuItem>\n            <DropdownMenuItem>\n              <AlertTriangleIcon />\n              Report Conversation\n            </DropdownMenuItem>\n            <DropdownMenuItem>\n              <UserRoundXIcon />\n              Block User\n            </DropdownMenuItem>\n            <DropdownMenuItem>\n              <ShareIcon />\n              Share Conversation\n            </DropdownMenuItem>\n            <DropdownMenuItem>\n              <CopyIcon />\n              Copy Conversation\n            </DropdownMenuItem>\n          </DropdownMenuGroup>\n          <DropdownMenuSeparator />\n          <DropdownMenuGroup>\n            <DropdownMenuItem variant=\"destructive\">\n              <TrashIcon />\n              Delete Conversation\n            </DropdownMenuItem>\n          </DropdownMenuGroup>\n        </DropdownMenuContent>\n      </DropdownMenu>\n    </ButtonGroup>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-dropdown.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

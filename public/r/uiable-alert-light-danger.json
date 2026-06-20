@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-alert-light-danger",
+  "title": "Danger Light Alert",
+  "description": "Alert Light Danger variant for alert.",
+  "registryDependencies": [
+    "alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-light-danger.tsx",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\";\n\n//  ------------------------------ | ALERT - LIGHT DANGER | ------------------------------  //\n\nexport default function AlertLightDanger() {\n  return (\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 border-red-500/20 bg-red-500/10 text-red-500\">\n      A simple danger alert—check it out!\n    </Alert>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-light-danger.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

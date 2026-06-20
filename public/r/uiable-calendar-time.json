@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-calendar-time",
+  "title": "Time Calendar",
+  "description": "Calendar Time variant for calendar.",
+  "registryDependencies": [
+    "calendar"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/calendar/calendar-time.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\nimport { Card, CardContent, CardFooter } from \"@/components/ui/card\";\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\n\r\n// assets\r\nimport { Clock2Icon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | CALENDAR - TIME | ------------------------------  //\r\n\r\nexport function CalendarWithTime() {\r\n  const [date, setDate] = useState<Date | undefined>(\r\n    new Date(new Date().getFullYear(), new Date().getMonth(), 12)\r\n  );\r\n\r\n  return (\r\n    <Card size=\"sm\" className=\"mx-auto w-fit\">\r\n      <CardContent>\r\n        <Calendar\r\n          mode=\"single\"\r\n          selected={date}\r\n          onSelect={setDate}\r\n          className=\"p-0\"\r\n        />\r\n      </CardContent>\r\n      <CardFooter className=\"border-t\">\r\n        <FieldGroup>\r\n          <Field>\r\n            <FieldLabel htmlFor=\"time-from\">Start Time</FieldLabel>\r\n            <InputGroup>\r\n              <InputGroupInput\r\n                id=\"time-from\"\r\n                type=\"time\"\r\n                step=\"1\"\r\n                defaultValue=\"10:30:00\"\r\n                className=\"appearance-none [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none\"\r\n              />\r\n              <InputGroupAddon>\r\n                <Clock2Icon className=\"text-muted-foreground\" />\r\n              </InputGroupAddon>\r\n            </InputGroup>\r\n          </Field>\r\n          <Field>\r\n            <FieldLabel htmlFor=\"time-to\">End Time</FieldLabel>\r\n            <InputGroup>\r\n              <InputGroupInput\r\n                id=\"time-to\"\r\n                type=\"time\"\r\n                step=\"1\"\r\n                defaultValue=\"12:30:00\"\r\n                className=\"appearance-none [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none\"\r\n              />\r\n              <InputGroupAddon>\r\n                <Clock2Icon className=\"text-muted-foreground\" />\r\n              </InputGroupAddon>\r\n            </InputGroup>\r\n          </Field>\r\n        </FieldGroup>\r\n      </CardFooter>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/calendar/calendar-time.tsx"
+    }
+  ],
+  "categories": [
+    "calendar"
+  ],
+  "type": "registry:ui"
+}

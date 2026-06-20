@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-field-group",
+  "title": "Group Field",
+  "description": "Field Group variant for field.",
+  "registryDependencies": [
+    "field"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/field/field-group.tsx",
+      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport {\r\n  Field,\r\n  FieldDescription,\r\n  FieldGroup,\r\n  FieldLabel,\r\n  FieldSeparator,\r\n  FieldSet\r\n} from \"@/components/ui/field\";\r\n\r\n//  ------------------------------ | FIELD - GROUP | ------------------------------  //\r\n\r\nexport default function FieldGroupExample() {\r\n  return (\r\n    <FieldGroup className=\"w-full max-w-xs\">\r\n      <FieldSet>\r\n        <FieldLabel>Responses</FieldLabel>\r\n        <FieldDescription>\r\n          Get notified when ChatGPT responds to requests that take time, like\r\n          research or image generation.\r\n        </FieldDescription>\r\n        <FieldGroup data-slot=\"checkbox-group\">\r\n          <Field orientation=\"horizontal\">\r\n            <Checkbox id=\"push\" defaultChecked disabled />\r\n            <FieldLabel htmlFor=\"push\" className=\"font-normal\">\r\n              Push notifications\r\n            </FieldLabel>\r\n          </Field>\r\n        </FieldGroup>\r\n      </FieldSet>\r\n      <FieldSeparator />\r\n      <FieldSet>\r\n        <FieldLabel>Tasks</FieldLabel>\r\n        <FieldDescription>\r\n          Get notified when tasks you've created have updates.{\" \"}\r\n          <a href=\"#\">Manage tasks</a>\r\n        </FieldDescription>\r\n        <FieldGroup data-slot=\"checkbox-group\">\r\n          <Field orientation=\"horizontal\">\r\n            <Checkbox id=\"push-tasks\" />\r\n            <FieldLabel htmlFor=\"push-tasks\" className=\"font-normal\">\r\n              Push notifications\r\n            </FieldLabel>\r\n          </Field>\r\n          <Field orientation=\"horizontal\">\r\n            <Checkbox id=\"email-tasks\" />\r\n            <FieldLabel htmlFor=\"email-tasks\" className=\"font-normal\">\r\n              Email notifications\r\n            </FieldLabel>\r\n          </Field>\r\n        </FieldGroup>\r\n      </FieldSet>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/field/field-group.tsx"
+    }
+  ],
+  "categories": [
+    "field"
+  ],
+  "type": "registry:ui"
+}
