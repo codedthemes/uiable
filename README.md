@@ -77,9 +77,25 @@ npm run dev
 
 <hr />
 
+## Support
+
+- Join our [Discord community](https://discord.gg/gmqz4BWYA8) for quick help and discussions
+- Open a [GitHub Issue](https://github.com/codedthemes/uiable/issues) to report bugs or request features
+- Browse the [Documentation](https://uiable.com/doc/introduction) for guides and references
+
+<hr />
+
 ## Contributing
 
-Visit our [contributing guide](https://github.com/codedthemes/uiable-free-react-admin-template/contribute) to learn how to contribute. It only takes ~5 minutes to add your own!
+Visit our [contributing guide](https://github.com/codedthemes/uiable/blob/master/CONTRIBUTING.md) to learn how to contribute. It only takes ~5 minutes to add your own!
+
+Please read our [Code of Conduct](https://github.com/codedthemes/uiable/blob/master/CODE_OF_CONDUCT.md) before contributing.
+
+<hr />
+
+## Maintainers
+
+UIAble is built and maintained by [CodedThemes](https://codedthemes.com/). Feel free to reach out via [Discord](https://discord.gg/gmqz4BWYA8) or open an issue.
 
 <hr />
 
@@ -87,7 +103,3 @@ Visit our [contributing guide](https://github.com/codedthemes/uiable-free-react-
 
 - Licensed under [MIT](https://github.com/codedthemes/uiable-free-react-admin-template/blob/master/LICENSE)
 - Copyright © [CodedThemes](https://codedthemes.com/)
-
-<br />
-
-**Tags** - react, nextjs, components, shadcn-ui, tailwindcss, shadcn, ui, vire, base-ui, tanstack, react-components, ui-components
