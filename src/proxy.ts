@@ -20,7 +20,7 @@ function isProtectedPath(pathname: string) {
 }
 
 export function proxy(request: NextRequest) {
-  // Skip auth entirely in local development — devs don't need Firebase credentials
+  // Skip auth entirely in local development
   if (process.env.NODE_ENV === "development") return NextResponse.next()
 
   const { pathname } = request.nextUrl

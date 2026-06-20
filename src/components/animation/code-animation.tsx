@@ -97,15 +97,15 @@ export default function CodeAnimation({
       <AnimationBg className="top-1/2 left-1/2 max-h-full max-w-full -translate-x-1/2 -translate-y-1/2 p-4 sm:p-8 md:p-12" />
 
       {/* Faint Background Code - Top Right */}
-      <div className="pointer-events-none absolute top-1 right-4 flex flex-col items-start justify-start overflow-hidden sm:top-1 sm:-right-4 md:top-1 md:-right-2">
-        <pre className="text-left font-mono text-[10px] leading-[2.5] text-blue-500/20 opacity-80 mix-blend-multiply sm:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
+      <div className="pointer-events-none absolute top-2 right-2 flex flex-col items-start justify-start overflow-hidden sm:top-4 sm:right-4 md:top-4 md:right-4">
+        <pre className="text-left font-mono text-[8px] leading-[2.5] text-blue-500/20 opacity-80 mix-blend-multiply sm:text-[9px] md:text-[10px] lg:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
           {backgroundCode || codeTopRight}
         </pre>
       </div>
 
       {/* Faint Background Code - Bottom Left */}
-      <div className="pointer-events-none absolute bottom-1 left-1 flex flex-col items-start justify-end overflow-hidden sm:-bottom-1 sm:left-2 md:-bottom-1 md:left-2">
-        <pre className="text-left font-mono text-[10px] leading-[2.5] text-blue-500/20 opacity-80 mix-blend-multiply sm:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
+      <div className="pointer-events-none absolute bottom-2 left-2 flex flex-col items-start justify-end overflow-hidden sm:bottom-4 sm:left-4 md:bottom-4 md:left-4">
+        <pre className="text-left font-mono text-[8px] leading-[2.5] text-blue-500/20 opacity-80 mix-blend-multiply sm:text-[9px] md:text-[10px] lg:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
           {backgroundCode || codeBottomLeft}
         </pre>
       </div>
@@ -127,7 +127,7 @@ export default function CodeAnimation({
         >
           <ChevronLeft
             strokeWidth={1}
-            className="h-[100px] w-[100px] sm:h-[120px] sm:w-[120px] md:h-[140px] md:w-[140px] lg:h-[188px] lg:w-[188px]"
+            className="h-[75px] w-[75px] shrink-0 sm:h-[90px] sm:w-[90px] md:h-[120px] md:w-[120px]"
           />
         </motion.div>
 
@@ -147,7 +147,7 @@ export default function CodeAnimation({
             variants={dotVariants(0.6)}
             initial="hidden"
             animate="visible"
-            className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] md:h-[34px] md:w-[34px] lg:h-10 lg:w-10"
+            className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] lg:h-8 lg:w-8 xl:h-[34px] xl:w-[34px]"
           >
             <AnimationLogo />
           </motion.div>
@@ -155,7 +155,7 @@ export default function CodeAnimation({
             variants={dotVariants(1.4)}
             initial="hidden"
             animate="visible"
-            className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] md:h-[34px] md:w-[34px] lg:h-10 lg:w-10"
+            className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] lg:h-8 lg:w-8 xl:h-[34px] xl:w-[34px]"
           >
             <AnimationLogo />
           </motion.div>
@@ -163,7 +163,7 @@ export default function CodeAnimation({
             variants={dotVariants(2.2)}
             initial="hidden"
             animate="visible"
-            className="flex h-7 w-7 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] md:h-[34px] md:w-[34px] lg:h-10 lg:w-10"
+            className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] lg:h-8 lg:w-8 xl:h-[34px] xl:w-[34px]"
           >
             <AnimationLogo />
           </motion.div>
@@ -177,7 +177,7 @@ export default function CodeAnimation({
           >
             <Slash
               strokeWidth={1}
-              className="h-[70px] w-[70px] shrink-0 rotate-[150deg] sm:h-[80px] sm:w-[80px] md:h-[90px] md:w-[90px] lg:h-[118px] lg:w-[118px]"
+              className="h-[50px] w-[50px] shrink-0 rotate-[150deg] sm:h-[70px] sm:w-[70px] md:h-[90px] md:w-[90px] lg:h-[70px] lg:w-[70px] xl:h-[90px] xl:w-[90px] 2xl:h-[110px] 2xl:w-[110px]"
             />
           </motion.div>
         </motion.div>
@@ -194,7 +194,7 @@ export default function CodeAnimation({
         >
           <ChevronRight
             strokeWidth={1}
-            className="h-[100px] w-[100px] sm:h-[120px] sm:w-[120px] md:h-[140px] md:w-[140px] lg:h-[188px] lg:w-[188px]"
+            className="h-[75px] w-[75px] shrink-0 sm:h-[90px] sm:w-[90px] md:h-[120px] md:w-[120px]"
           />
         </motion.div>
       </div>

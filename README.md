@@ -51,7 +51,6 @@ UIAble offers everything you need to create dashboards with high-end modern feat
 - Extensive data visualization with ApexCharts and Recharts
 - State management using React Context API
 - Form handling and validation capabilities
-- Firebase backend integration ready
 - Advanced Tables using @tanstack/react-table
 - Automatic code splitting and optimized fonts
 

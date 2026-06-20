@@ -142,7 +142,7 @@ export default function Feature() {
           {selectedIndex === 2 && <MotionVisual />}
           {selectedIndex === 3 && <CodeAnimation />}
           {selectedIndex === 4 && (
-            <div className="h-full w-full px-15 py-5">
+            <div className="h-full min-h-[380px] w-full px-15 py-5 sm:min-h-[440px] md:min-h-[500px]">
               <EchoStack>
                 <div className="flex h-full w-full items-center justify-center">
                   <AnimationLogo />
