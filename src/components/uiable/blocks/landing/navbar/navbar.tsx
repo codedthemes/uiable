@@ -1,37 +1,55 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { useState } from "react";
+import Link from "next/link"
+import { useState } from "react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
 
 // project imports
-import branding from "@/branding.json";
-import Logo from "@/components/uiable/layout/shared/logo";
+import branding from "@/branding.json"
+import Logo from "@/components/uiable/layout/shared/logo"
+import NavSearchDialog from "../components/NavSearchDialog"
+import { ThemeToggle } from "@/components/customizer"
 
 // assets
-import { IconBrandDiscord, IconBrandGithub, IconBrandX, IconMenu2, IconSearch, IconX } from "@tabler/icons-react";
+import {
+  IconBrandDiscord,
+  IconBrandGithub,
+  IconBrandX,
+  IconMenu2,
+  IconSearch,
+  IconX,
+} from "@tabler/icons-react"
 
 // constants
 const navlinks = [
   { label: "Components", href: "/components" },
-  { label: "Get Started", href: "/doc/introduction" }
-];
+  { label: "Get Started", href: "/doc/introduction" },
+]
 
 function Divider() {
-  return <Separator orientation="vertical" className="my-1.5" />;
+  return <Separator orientation="vertical" className="my-1.5" />
 }
 
-function SocialActions({ className = "" }: { className?: string }) {
+function SocialActions({
+  className = "",
+  onSearchClick,
+}: {
+  className?: string
+  onSearchClick?: () => void
+}) {
   return (
     <div className={className}>
+      <ThemeToggle />
+      <Divider />
       <Button
         variant="ghost"
         size="icon-lg"
         aria-label="Search"
-        className="w-10.5 h-10.5 flex items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
+        onClick={onSearchClick}
+        className="flex h-10.5 w-10.5 items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
       >
         <IconSearch className="size-4.5" />
       </Button>
@@ -49,7 +67,7 @@ function SocialActions({ className = "" }: { className?: string }) {
             rel="noopener noreferrer"
           />
         }
-        className="w-10.5 h-10.5 flex items-center justify-center hover:bg-foreground/10 dark:hover:bg-muted rounded-sm"
+        className="flex h-10.5 w-10.5 items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
       >
         <IconBrandX className="size-4.5" />
       </Button>
@@ -67,7 +85,7 @@ function SocialActions({ className = "" }: { className?: string }) {
             rel="noopener noreferrer"
           />
         }
-        className="w-10.5 h-10.5 flex items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
+        className="flex h-10.5 w-10.5 items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
       >
         <IconBrandDiscord className="size-4.5" />
       </Button>
@@ -82,35 +100,36 @@ function SocialActions({ className = "" }: { className?: string }) {
             rel="noopener noreferrer"
           />
         }
-        className=" w-10.5 h-10.5 flex items-center text-md leading-6 bg-foreground hover:bg-foreground/90 text-secondary font-medium rounded-full p-0"
+        className="text-md flex h-10.5 w-10.5 items-center rounded-full bg-foreground p-0 leading-6 font-medium text-secondary hover:bg-foreground/90"
       >
         <IconBrandGithub className="size-4.5" />
       </Button>
     </div>
-  );
+  )
 }
 
 //  ------------------------------ | LAYOUT - NAVBAR | ------------------------------  //
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
 
   return (
     <header>
-      <div className="flex items-center justify-between h-19.5 z-50 w-full px-4 sm:px-8">
+      <div className="z-50 flex h-19.5 w-full items-center justify-between px-4 sm:px-8">
         {/* LEFT — Logo + nav links */}
         <div className="flex items-center gap-8">
           <Logo />
 
           {/* Nav links */}
-          <nav className="hidden md:flex items-center gap-2">
+          <nav className="hidden items-center gap-2 md:flex">
             {navlinks.map((item) => (
               <Button
                 key={item.label}
                 variant="ghost"
                 nativeButton={false}
                 render={<Link href={item.href} />}
-                className="text-[14px] leading-6 font-medium text-foreground hover:text-primary hover:bg-transparent dark:hover:bg-transparent px-3 py-1.5"
+                className="px-3 py-1.5 text-[14px] leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
               >
                 {item.label}
               </Button>
@@ -118,11 +137,14 @@ export default function Navbar() {
           </nav>
         </div>
 
-        <SocialActions className="hidden md:flex items-center gap-2" />
+        <SocialActions
+          className="hidden items-center gap-2 md:flex"
+          onSearchClick={() => setSearchOpen(true)}
+        />
         <Button
           variant="ghost"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="md:hidden w-10 h-10 rounded-sm flex items-center justify-center"
+          className="flex h-10 w-10 items-center justify-center rounded-sm md:hidden"
           onClick={() => setOpen((prev) => !prev)}
         >
           {open ? (
@@ -133,7 +155,7 @@ export default function Navbar() {
         </Button>
       </div>
       {open && (
-        <div className="md:hidden border-t border-border bg-background container mx-auto px-4 sm:px-8 py-4 flex flex-col gap-4">
+        <div className="container mx-auto flex flex-col gap-4 border-t border-border bg-background px-4 py-4 sm:px-8 md:hidden">
           <nav className="flex flex-col gap-3">
             {navlinks.map((item) => (
               <Button
@@ -141,15 +163,19 @@ export default function Navbar() {
                 variant="ghost"
                 nativeButton={false}
                 render={<Link href={item.href} />}
-                className="text-[14px] leading-6 font-medium text-foreground hover:text-primary hover:bg-transparent dark:hover:bg-transparent justify-start px-0 py-1.5"
+                className="justify-start px-0 py-1.5 text-[14px] leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
               >
                 {item.label}
               </Button>
             ))}
           </nav>
-          <SocialActions className="flex items-center gap-2" />
+          <SocialActions
+            className="flex items-center gap-2"
+            onSearchClick={() => setSearchOpen(true)}
+          />
         </div>
       )}
+      <NavSearchDialog open={searchOpen} setOpen={setSearchOpen} />
     </header>
-  );
+  )
 }

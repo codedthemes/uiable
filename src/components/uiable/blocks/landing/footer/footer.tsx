@@ -1,35 +1,35 @@
-import Link from "next/link";
+import Link from "next/link"
 
 // project
-import branding from "@/branding.json";
-import Logo from "@/components/uiable/layout/shared/logo";
+import branding from "@/branding.json"
+import Logo from "@/components/uiable/layout/shared/logo"
 
 // assets
 import {
   IconBrandDiscord,
   IconBrandGithub,
-  IconBrandX
-} from "@tabler/icons-react";
+  IconBrandX,
+} from "@tabler/icons-react"
 
 // constants
 const navLinks = [
   { href: "/components", label: "Components" },
-  { href: "/doc/introduction", label: "Documentation" }
-];
+  { href: "/doc/introduction", label: "Documentation" },
+]
 
 const socialLinks = [
   { Icon: IconBrandX, href: branding.company.socialLink.x, label: "Twitter" },
   {
     Icon: IconBrandDiscord,
     href: branding.company.socialLink.discord,
-    label: "Discord"
+    label: "Discord",
   },
   {
     Icon: IconBrandGithub,
     href: branding.company.socialLink.github,
-    label: "Github"
-  }
-];
+    label: "Github",
+  },
+]
 
 //  ------------------------------ | LAYOUT - FOOTER | ------------------------------  //
 
@@ -38,18 +38,18 @@ export default function Footer() {
     <footer
       style={{
         background:
-          "linear-gradient(to top, var(--primary) -180%, var(--background) 95%)"
+          "linear-gradient(to top, var(--primary) -180%, var(--background) 95%)",
       }}
       className="w-full"
     >
-      <div className="container mx-auto px-4 sm:px-8 flex flex-col gap-8 py-10 md:flex-row md:items-center md:justify-between border-x border-t border-border/60">
+      <div className="container mx-auto flex flex-col gap-8 border-x border-t border-border/60 px-4 py-10 sm:px-8 md:flex-row md:items-center md:justify-between">
         {/* LEFT */}
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2.5">
             <Logo />
           </div>
 
-          <p className="text-md leading-6 tracking-[0.1px] text-foreground font-normal">
+          <p className="text-md leading-6 font-normal tracking-[0.1px] text-foreground">
             v1.0 | Built by{" "}
             <Link
               href={branding.company.url}
@@ -70,7 +70,7 @@ export default function Footer() {
               <Link
                 key={href}
                 href={href}
-                className="font-sans text-[16px] leading-6 tracking-[0.1px] text-foreground transition hover:text-primary font-normal"
+                className="font-sans text-[16px] leading-6 font-normal tracking-[0.1px] text-foreground transition hover:text-primary"
               >
                 {label}
               </Link>
@@ -98,5 +98,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

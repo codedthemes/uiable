@@ -27,18 +27,12 @@ import {
 // project
 import Logo from "./uiable/layout/shared/logo"
 import CATEGORY_COUNTS from "@/category-counts.json"
-import { NAV_BLOCKS, NAV_CATEGORIES } from "@/components-grid"
+import { NAV_CATEGORIES } from "@/components-grid"
 import ComponentList from "@/components/uiable/layout/component-list"
-import BlockList from "@/components/uiable/layout/block-list"
 import ComponentSearch from "@/components/uiable/layout/shared/component-search"
 
 // assets
-import {
-  Component,
-  FileText,
-  LayoutDashboard,
-  ChevronDownIcon,
-} from "lucide-react"
+import { Component, FileText, ChevronDownIcon } from "lucide-react"
 
 //  ------------------------------ | COMPONENT - APP SIDEBAR | ------------------------------  //
 
@@ -48,11 +42,23 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
 
   const filteredSections = NAV_CATEGORIES.map((section) => ({
     ...section,
+    items: section.items.filter(
+      (item) =>
+        item.title.toLowerCase().includes(search.toLowerCase()) ||
+        item.slug.toLowerCase().includes(search.toLowerCase())
+    ),
   })).filter((section) => section.items.length > 0)
 
-  const filteredBlock = NAV_BLOCKS.map((section) => ({
-    ...section,
-  })).filter((section) => section.items.length > 0)
+  const docs = [
+    { title: "Introduction", href: "/doc/introduction" },
+    { title: "Installation", href: "/doc/installation" },
+    { title: "Shadcn CLI", href: "/doc/cli" },
+    { title: "Components", href: "/doc/components" },
+  ]
+
+  const filteredDocs = docs.filter((doc) =>
+    doc.title.toLowerCase().includes(search.toLowerCase())
+  )
 
   return (
     <Sidebar collapsible="icon" variant="inset" {...props}>
@@ -82,16 +88,6 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
               </SidebarMenuItem>
               <SidebarMenuItem>
                 <SidebarMenuButton
-                  isActive={pathname.startsWith("/blocks")}
-                  render={<Link href="/blocks" />}
-                  tooltip="View All Blocks"
-                >
-                  <LayoutDashboard className="size-5!" />
-                  <span>Blocks</span>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton
                   isActive={pathname.startsWith("/doc")}
                   render={<Link href="/doc" />}
                   tooltip="Documentation"
@@ -103,119 +99,34 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        {pathname.startsWith("/blocks") && <BlockList search={search} />}
         {pathname.startsWith("/components") && (
           <ComponentList search={search} />
         )}
         {pathname.startsWith("/doc") && (
           <>
-            <SidebarGroup>
-              <SidebarGroupLabel className="p-2 text-xs font-medium tracking-normal text-sidebar-ring capitalize">
-                Documentation
-              </SidebarGroupLabel>
-              <SidebarGroupContent>
-                <SidebarMenu>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton
-                      isActive={pathname === "/doc/introduction"}
-                      render={<Link href="/doc/introduction" />}
-                      tooltip="Introduction"
-                    >
-                      <span className="font-medium">Introduction</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton
-                      isActive={pathname === "/doc/installation"}
-                      render={<Link href="/doc/installation" />}
-                      tooltip="Installation"
-                    >
-                      <span className="font-medium">Installation</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton
-                      isActive={pathname === "/doc/cli"}
-                      render={<Link href="/doc/cli" />}
-                      tooltip="Shadcn CLI"
-                    >
-                      <span className="font-medium">Shadcn CLI</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton
-                      isActive={pathname === "/doc/components"}
-                      render={<Link href="/doc/components" />}
-                      tooltip="Components"
-                    >
-                      <span className="font-medium">Components</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
+            {filteredDocs.length > 0 && (
+              <SidebarGroup>
+                <SidebarGroupLabel className="p-2 text-xs font-medium tracking-normal text-sidebar-ring capitalize">
+                  Documentation
+                </SidebarGroupLabel>
+                <SidebarGroupContent>
+                  <SidebarMenu>
+                    {filteredDocs.map((doc) => (
+                      <SidebarMenuItem key={doc.href}>
+                        <SidebarMenuButton
+                          isActive={pathname === doc.href}
+                          render={<Link href={doc.href} />}
+                          tooltip={doc.title}
+                        >
+                          <span className="font-medium">{doc.title}</span>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                    ))}
+                  </SidebarMenu>
+                </SidebarGroupContent>
+              </SidebarGroup>
+            )}
 
-                  {/*
-                  <SidebarMenuItem>
-                    <SidebarMenuButton
-                      isActive={pathname === "/doc/license"}
-                      render={<Link href="/doc/license" />}
-                      tooltip="License"
-                    >
-                      <span className="font-medium">License</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  */}
-                </SidebarMenu>
-              </SidebarGroupContent>
-            </SidebarGroup>
-            <SidebarGroup className="flex flex-col gap-1">
-              <SidebarGroupLabel className="p-2 text-xs font-medium tracking-normal text-sidebar-ring capitalize">
-                Block
-              </SidebarGroupLabel>
-              {filteredBlock.map((section) => (
-                <Collapsible key={section.title} className="p-0">
-                  <CollapsibleTrigger
-                    render={
-                      <Button
-                        variant="ghost"
-                        className="mb-1 w-full border-0 p-2 text-sidebar-foreground hover:bg-muted-foreground/6 aria-expanded:bg-muted-foreground/6"
-                      />
-                    }
-                  >
-                    <SidebarGroupLabel className="px-0 text-sm font-medium text-sidebar-foreground">
-                      {section.title}
-                    </SidebarGroupLabel>
-                    <ChevronDownIcon className="ml-auto size-4 -rotate-90 transition-all group-data-panel-open/button:rotate-0" />
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="flex flex-col items-start">
-                    <SidebarGroupContent>
-                      <SidebarMenu>
-                        {section.items.map((item) => {
-                          const href = `/blocks/${item.slug}`
-                          return (
-                            <SidebarMenuItem key={item.slug}>
-                              <SidebarMenuButton
-                                isActive={pathname === href}
-                                render={<Link href={href} />}
-                                tooltip="License"
-                                className="rounded-lg p-2"
-                              >
-                                <span className="font-medium">
-                                  {item.title}
-                                </span>
-                                <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
-                                  {CATEGORY_COUNTS[
-                                    item.slug as keyof typeof CATEGORY_COUNTS
-                                  ] || 0}
-                                </span>
-                              </SidebarMenuButton>
-                            </SidebarMenuItem>
-                          )
-                        })}
-                      </SidebarMenu>
-                    </SidebarGroupContent>
-                  </CollapsibleContent>
-                </Collapsible>
-              ))}
-            </SidebarGroup>
             <SidebarGroup className="flex flex-col gap-1">
               <SidebarGroupLabel className="p-2 text-xs font-medium tracking-normal text-sidebar-ring capitalize">
                 Components

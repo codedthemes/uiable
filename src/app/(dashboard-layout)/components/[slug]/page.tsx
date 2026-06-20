@@ -1,32 +1,30 @@
-import { notFound } from "next/navigation";
-import { Metadata } from "next";
+import { notFound } from "next/navigation"
+import { Metadata } from "next"
 
 // third party
-import fs from "fs";
-import path from "path";
+import fs from "fs"
+import path from "path"
 
 // project
-import branding from "@/branding.json";
-import CategoryDescription from "@/components/category-description";
-import CategoryView from "@/components/category-view";
-import { blockCategoryInfoMap } from "@/data/blocks";
-import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components";
+import branding from "@/branding.json"
+import CategoryDescription from "@/components/category-description"
+import CategoryView from "@/components/category-view"
+import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 
 const categoryInfoMap = {
   ...componentCategoryInfoMap,
-  ...blockCategoryInfoMap,
-};
+}
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string }>
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const data = categoryInfoMap[slug];
+  const { slug } = await params
+  const data = categoryInfoMap[slug]
 
   if (!data) {
-    return {};
+    return {}
   }
 
   return {
@@ -47,7 +45,7 @@ export async function generateMetadata({
         },
       ],
     },
-  };
+  }
 }
 
 //  ------------------------------ | PAGE - CATEGORY | ------------------------------  //
@@ -55,52 +53,50 @@ export async function generateMetadata({
 export default async function CategoryPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string }>
 }) {
-  const { slug } = await params;
-  const data = categoryInfoMap[slug];
+  const { slug } = await params
+  const data = categoryInfoMap[slug]
 
   if (!data) {
-    notFound();
+    notFound()
   }
 
   const uiRegistryPath = path.join(
     process.cwd(),
-    "src/components/uiable/registry.json",
-  );
+    "src/components/uiable/registry.json"
+  )
   const blocksRegistryPath = path.join(
     process.cwd(),
-    "src/components/uiable/blocks/registry.json",
-  );
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"));
-  const blocksRegistry = JSON.parse(
-    fs.readFileSync(blocksRegistryPath, "utf8"),
-  );
+    "src/components/uiable/blocks/registry.json"
+  )
+  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
+  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
   const registryItems = [
     ...(uiRegistry.items || []),
     ...(blocksRegistry.items || []),
-  ];
+  ]
 
   const items = registryItems
     .filter((item: any) => item.categories?.includes(slug))
     .map((item: any) => {
-      const relativePath = item.files[0].path;
+      const relativePath = item.files[0].path
       const mappedPath =
         item.type === "registry:block"
           ? `src/components/uiable/blocks/${relativePath}`
-          : `src/components/uiable/${relativePath}`;
-      const filePath = path.join(process.cwd(), mappedPath);
-      let rawCode = "";
+          : `src/components/uiable/${relativePath}`
+      const filePath = path.join(process.cwd(), mappedPath)
+      let rawCode = ""
       try {
-        rawCode = fs.readFileSync(filePath, "utf8");
+        rawCode = fs.readFileSync(filePath, "utf8")
       } catch (error) {
-        console.error(`Failed to read file: ${filePath}`, error);
+        console.error(`Failed to read file: ${filePath}`, error)
       }
-      return { ...item, rawCode };
-    });
+      return { ...item, rawCode }
+    })
 
   if (items.length === 0) {
-    notFound();
+    notFound()
   }
 
   return (
@@ -109,7 +105,7 @@ export default async function CategoryPage({
         <h1 className="text-3xl font-semibold capitalize">
           {data.title.replace("-", " ")}
         </h1>
-        <div className="text-muted-foreground text-base">
+        <div className="text-base text-muted-foreground">
           {data.description.map((p: string, i: number) => (
             <p key={i}>{p}</p>
           ))}
@@ -118,33 +114,31 @@ export default async function CategoryPage({
       <CategoryView category={slug} items={items} />
       <CategoryDescription category={slug} />
     </div>
-  );
+  )
 }
 
 export async function generateStaticParams() {
   const uiRegistryPath = path.join(
     process.cwd(),
-    "src/components/uiable/registry.json",
-  );
+    "src/components/uiable/registry.json"
+  )
   const blocksRegistryPath = path.join(
     process.cwd(),
-    "src/components/uiable/blocks/registry.json",
-  );
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"));
-  const blocksRegistry = JSON.parse(
-    fs.readFileSync(blocksRegistryPath, "utf8"),
-  );
+    "src/components/uiable/blocks/registry.json"
+  )
+  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
+  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
   const registryItems = [
     ...(uiRegistry.items || []),
     ...(blocksRegistry.items || []),
-  ];
+  ]
 
-  const categories = new Set<string>();
+  const categories = new Set<string>()
   registryItems.forEach((item: any) => {
-    item.categories?.forEach((cat: string) => categories.add(cat));
-  });
+    item.categories?.forEach((cat: string) => categories.add(cat))
+  })
 
   return Array.from(categories).map((slug) => ({
     slug,
-  }));
+  }))
 }

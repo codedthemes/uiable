@@ -3,55 +3,54 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from "@/components/ui/accordion";
-import { Card, CardContent } from "@/components/ui/card";
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import { Card, CardContent } from "@/components/ui/card"
 
 // project
-import branding from "@/branding.json";
-import { blockCategoryInfoMap } from "@/data/blocks";
-import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components";
+import branding from "@/branding.json"
+import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 
 const categoryInfoMap = {
   ...componentCategoryInfoMap,
-  ...blockCategoryInfoMap
-};
+}
 
 interface CategoryDescriptionProps {
-  category: string;
+  category: string
 }
 
 //  ------------------------------ | COMPONENT - CATEGORY DESCRIPTION | ------------------------------  //
 
 export default function CategoryDescription({
-  category
+  category,
 }: Readonly<CategoryDescriptionProps>) {
-  const displayCategory = category.replace("-", " ");
-  const data = categoryInfoMap[category];
+  const displayCategory = category.replace("-", " ")
+  const data = categoryInfoMap[category]
 
   if (!data) {
     return (
-      <div className="flex flex-col gap-7 text-base my-10">
+      <div className="my-10 flex flex-col gap-7 text-base">
         <div className="flex flex-col gap-4">
           <h3 className="capitalize">
-            {branding.brandName} {displayCategory}: Create Stylish and Functional{" "}
-            {displayCategory}s for Your UI
+            {branding.brandName} {displayCategory}: Create Stylish and
+            Functional {displayCategory}s for Your UI
           </h3>
           <p>
-            {branding.brandName} {displayCategory} is a ready-to-use component made for React
-            and Next.js apps. It helps you build clean, responsive, and
-            interactive interfaces without overthinking styles or behavior.
+            {branding.brandName} {displayCategory} is a ready-to-use component
+            made for React and Next.js apps. It helps you build clean,
+            responsive, and interactive interfaces without overthinking styles
+            or behavior.
           </p>
         </div>
       </div>
-    );
+    )
   }
   return (
     <Card className="bg-card/60">
       <CardContent>
         <div className="flex flex-col gap-7 text-base">
           <div className="flex flex-col gap-4">
-            <h3 className="capitalize hidden">{data.whatIsHeading}</h3>
+            <h3 className="hidden capitalize">{data.whatIsHeading}</h3>
             <div className="flex flex-col gap-3">
               {data.whatIsDescription.map((p: string, i: number) => (
                 <p key={i}>{p}</p>
@@ -60,14 +59,14 @@ export default function CategoryDescription({
           </div>
           <div className="flex flex-col gap-4">
             <h3 className="capitalize">{data.variantsHeading ?? ""}</h3>
-            <ul className="flex flex-col gap-3 list-disc pl-6">
+            <ul className="flex list-disc flex-col gap-3 pl-6">
               {(data.variants ?? []).map((f: string, i: number) => {
-                const [bold, ...rest] = f.split(". ");
+                const [bold, ...rest] = f.split(". ")
                 return (
                   <li key={i}>
                     <b>{bold}:</b> {rest.join(". ")}
                   </li>
-                );
+                )
               })}
             </ul>
           </div>
@@ -81,14 +80,14 @@ export default function CategoryDescription({
           </div>
           <div className="flex flex-col gap-4">
             <h3 className="capitalize">{data.featuresHeading}</h3>
-            <ul className="flex flex-col gap-3 list-disc pl-6">
+            <ul className="flex list-disc flex-col gap-3 pl-6">
               {data.features.map((f: string, i: number) => {
-                const [bold, ...rest] = f.split(". ");
+                const [bold, ...rest] = f.split(". ")
                 return (
                   <li key={i}>
                     <b>{bold}.</b> {rest.join(". ")}
                   </li>
-                );
+                )
               })}
             </ul>
           </div>
@@ -99,14 +98,14 @@ export default function CategoryDescription({
                 <p
                   key={i}
                   dangerouslySetInnerHTML={{
-                    __html: p.replace(/<b>(.*?)<\/b>/g, "<b>$1</b>")
+                    __html: p.replace(/<b>(.*?)<\/b>/g, "<b>$1</b>"),
                   }}
                 />
               ))}
             </div>
-            <ul className="flex flex-col gap-3 list-disc pl-6">
+            <ul className="flex list-disc flex-col gap-3 pl-6">
               {(data.integrationList ?? []).map((p: string, i: number) => {
-                return <li key={i}>{p}</li>;
+                return <li key={i}>{p}</li>
               })}
             </ul>
             <p>{data.integrationNote ?? ""}</p>
@@ -120,12 +119,12 @@ export default function CategoryDescription({
                     <AccordionItem
                       key={i}
                       value={`item-${i + 1}`}
-                      className="border-border "
+                      className="border-border"
                     >
-                      <AccordionTrigger className="pl-9 pr-0 py-5 relative text-[16px] font-semibold hover:no-underline **:data-[slot=accordion-trigger-icon]:ml-0 **:data-[slot=accordion-trigger-icon]:mr-auto **:data-[slot=accordion-trigger-icon]:size-6 **:data-[slot=accordion-trigger-icon]:absolute **:data-[slot=accordion-trigger-icon]:top-5.5 **:data-[slot=accordion-trigger-icon]:left-0">
+                      <AccordionTrigger className="relative py-5 pr-0 pl-9 text-[16px] font-semibold hover:no-underline **:data-[slot=accordion-trigger-icon]:absolute **:data-[slot=accordion-trigger-icon]:top-5.5 **:data-[slot=accordion-trigger-icon]:left-0 **:data-[slot=accordion-trigger-icon]:mr-auto **:data-[slot=accordion-trigger-icon]:ml-0 **:data-[slot=accordion-trigger-icon]:size-6">
                         {faq.question}
                       </AccordionTrigger>
-                      <AccordionContent className="pl-9 pr-0 text-base pb-5">
+                      <AccordionContent className="pr-0 pb-5 pl-9 text-base">
                         {faq.answer}
                       </AccordionContent>
                     </AccordionItem>
@@ -137,5 +136,5 @@ export default function CategoryDescription({
         </div>
       </CardContent>
     </Card>
-  );
+  )
 }

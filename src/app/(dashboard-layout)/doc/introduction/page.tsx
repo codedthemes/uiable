@@ -37,16 +37,6 @@ export default function IntroductionPage() {
                   interfaces and ship production-ready applications faster than
                   ever.
                 </p>
-                <Alert className="border-cyan-500 bg-cyan-500/10 text-cyan-800">
-                  <AlertTitle>
-                    Welcome to the {branding.brandName} Documentation
-                  </AlertTitle>
-                  <AlertDescription>
-                    This is your starting point for building premium user
-                    interfaces. Explore our extensive library of components and
-                    blocks to accelerate your workflow.
-                  </AlertDescription>
-                </Alert>
                 <Separator className="mb-6" />
                 <div className="space-y-5" id="what-is-uiable">
                   <h4 className="group relative mb-2 scroll-mt-20">

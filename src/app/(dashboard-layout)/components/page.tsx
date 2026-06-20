@@ -1,20 +1,20 @@
-import { Metadata } from "next";
+import { Metadata } from "next"
 
 // projects imports
-import branding from "@/branding.json";
-import ComponentsPageClient from "./components-page-client";
+import branding from "@/branding.json"
+import ComponentsPageClient from "./components-page-client"
 
 export const metadata: Metadata = {
   title: `All Components - ${branding.brandName}`,
   description:
-    "Browse through our comprehensive library of UI components and their variants.",
+    "450+ production-ready React UI components built with Tailwind CSS, powered by shadcn/ui and Base UI. Designed for modern Next.js applications with accessibility, customization, and developer experience in mind.",
   alternates: {
     canonical: "/components",
   },
   openGraph: {
     title: `All Components - ${branding.brandName}`,
     description:
-      "Browse through our comprehensive library of UI components and their variants.",
+      "450+ production-ready React UI components built with Tailwind CSS, powered by shadcn/ui and Base UI. Designed for modern Next.js applications with accessibility, customization, and developer experience in mind.",
     images: [
       {
         url: "https://cdn.uiable.com/og/components.png",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}
 
 export default function ComponentsPage() {
-  return <ComponentsPageClient />;
+  return <ComponentsPageClient />
 }
