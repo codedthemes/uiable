@@ -89,7 +89,7 @@ export default function CodeAnimation({
   return (
     <div
       className={cn(
-        "relative flex h-full min-h-[380px] w-full items-center justify-center overflow-hidden rounded-3xl border border-border/40 bg-white/30 py-10 select-none sm:min-h-[440px] md:min-h-[500px] dark:bg-slate-950/20",
+        "relative flex h-full min-h-[380px] w-full items-center justify-center overflow-hidden rounded-3xl border border-border/40 py-10 select-none sm:min-h-[440px] md:min-h-[500px]",
         className
       )}
     >

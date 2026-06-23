@@ -20,6 +20,8 @@ import { NAV_CATEGORIES } from "@/components-grid"
 // assets
 import { IconSparkles, IconComponents } from "@tabler/icons-react"
 
+// ------------------------------ | NAVBAR SEARCH DIALOG | ------------------------------  //
+
 export default function NavSearchDialog({
   open,
   setOpen,

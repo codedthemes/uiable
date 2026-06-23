@@ -7,6 +7,7 @@ import { ComponentType, useEffect, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 
 // project
+import branding from "@/branding.json"
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_CATEGORIES } from "@/components-grid"
 import Intro from "@/images/svg/Intro"
@@ -134,7 +135,7 @@ export default function ComponentsPageClient() {
   return (
     <div className="max-full mx-auto flex flex-col gap-8 pb-20">
       <div className="flex flex-col gap-2">
-        <h2>All Components</h2>
+        <h2>UI Components - {branding.brandName}</h2>
         <p>
           450+ production-ready React UI components built with Tailwind CSS,
           powered by shadcn/ui and Base UI. Designed for modern Next.js

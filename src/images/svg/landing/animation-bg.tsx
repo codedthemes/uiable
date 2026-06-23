@@ -1,3 +1,5 @@
+import { HTMLAttributes } from "react"
+
 // third party
 import { cn } from "@/lib/utils"
 
@@ -6,11 +8,11 @@ import { cn } from "@/lib/utils"
 export default function AnimationBg({
   className,
   ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
+}: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       className={cn(
-        "pointer-events-none absolute top-[75px] left-[75px] h-[552px] w-[552px] opacity-100 dark:opacity-5",
+        "pointer-events-none absolute top-[75px] left-[75px] h-[552px] w-[552px] opacity-100 dark:rounded-full dark:opacity-70",
         className
       )}
       {...props}

@@ -12,12 +12,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/doc/introduction",
     "/doc/installation",
     "/doc/cli",
+    "/doc/components",
     // "/doc/license"
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: route === "" ? 1.0 : 0.8,
   }))
 
   // Dynamic component routes
@@ -25,7 +25,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/components/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: 0.6,
   }))
 
   return [...staticRoutes, ...componentRoutes]

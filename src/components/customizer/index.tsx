@@ -1,6 +1,6 @@
 "use client"
 
-import { useCallback, useEffect, useState } from "react"
+import { MouseEvent, useCallback, useEffect, useState } from "react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -24,7 +24,7 @@ import { RadiusControl } from "./RadiusControl"
 import { ThemePresetStyles } from "./ThemePresetStyles"
 
 // assets
-import { CircleCheckBig, Moon, Settings, Sun } from "lucide-react"
+import { CircleCheckBig, Moon, Settings2, Sun } from "lucide-react"
 
 // constants
 const THEME_PRESET_KEY = "theme-preset"
@@ -60,19 +60,22 @@ export function ThemeToggle() {
     if (mounted) {
       // Restore saved preset class from localStorage on mount
       const savedPreset = localStorage.getItem(THEME_PRESET_KEY)
+      const body = document.body
+      themeClasses.forEach((cls) => body.classList.remove(cls))
+
       if (savedPreset && savedPreset !== "default") {
-        const body = document.body
-        themeClasses.forEach((cls) => body.classList.remove(cls))
         body.classList.add(savedPreset)
+      } else {
+        body.classList.add("default")
       }
+
       // Only sync radius from CSS if there's no saved radius preference
       // (syncRadiusFromBody removes inline --radius which causes a flash)
       if (!localStorage.getItem("theme-radius")) {
         syncRadiusFromBody()
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mounted])
+  }, [mounted, syncRadiusFromBody])
 
   const toggleBodyClass = useCallback(
     (className: string) => {
@@ -94,7 +97,7 @@ export function ThemeToggle() {
   )
 
   const handleThemeChange = useCallback(
-    (newTheme: string, event: React.MouseEvent<HTMLButtonElement>) => {
+    (newTheme: string, event: MouseEvent<HTMLButtonElement>) => {
       if (theme === newTheme) return
 
       const doc = document as any
@@ -138,7 +141,7 @@ export function ThemeToggle() {
   )
 
   const handlePresetChange = useCallback(
-    (presetClass: string, event: React.MouseEvent<HTMLButtonElement>) => {
+    (presetClass: string, event: MouseEvent<HTMLButtonElement>) => {
       const doc = document as any
       if (
         typeof window === "undefined" ||
@@ -182,7 +185,7 @@ export function ThemeToggle() {
   const resetDefault = useCallback(() => {
     setTheme("light")
     themeClasses.forEach((cls) => document.body.classList.remove(cls))
-    document.body.classList.add("preset-7")
+    document.body.classList.add("default")
     localStorage.removeItem(THEME_PRESET_KEY)
     localStorage.removeItem("theme-radius")
     document.body.style.removeProperty("--radius")
@@ -203,11 +206,13 @@ export function ThemeToggle() {
           render={
             <Button
               variant="ghost"
-              size="icon-lg"
-              className="flex h-10.5 w-10.5 items-center justify-center rounded-sm text-foreground hover:bg-foreground/10 hover:text-foreground dark:hover:bg-muted"
-              aria-label="Toggle Theme"
+              size="icon"
+              aria-label="Theme Customizer"
+              className="h-9.5 w-9.5 rounded-full bg-[linear-gradient(239.74deg,#C800DE_0%,#9810FA_16.93%,#4680FF_29.63%,#D08700_55.02%,#FF6900_67.72%,#FB2C36_84.65%)] p-[2px] hover:opacity-90"
             >
-              <Settings className="size-4.5" />
+              <div className="flex h-full w-full items-center justify-center rounded-full bg-foreground dark:bg-white">
+                <Settings2 className="size-4.5 text-background" />
+              </div>
             </Button>
           }
         >
@@ -263,7 +268,7 @@ export function ThemeToggle() {
                 </p>
               </div>
               <div className="hidden">
-                <div className="group-[.preset-10]/body:flex group-[.preset-11]/body:flex group-[.preset-12]/body:flex group-[.preset-13]/body:flex group-[.preset-14]/body:flex group-[.preset-15]/body:flex group-[.preset-16]/body:flex group-[.preset-17]/body:flex group-[.preset-18]/body:flex group-[.preset-2]/body:flex group-[.preset-3]/body:flex group-[.preset-4]/body:flex group-[.preset-5]/body:flex group-[.preset-6]/body:flex group-[.preset-7]/body:flex group-[.preset-8]/body:flex group-[.preset-9]/body:flex"></div>
+                <div className="group-[.preset-10]/body:flex group-[.preset-12]/body:flex group-[.preset-13]/body:flex group-[.preset-14]/body:flex group-[.preset-15]/body:flex group-[.preset-16]/body:flex group-[.preset-17]/body:flex group-[.preset-18]/body:flex group-[.preset-2]/body:flex group-[.preset-3]/body:flex group-[.preset-4]/body:flex group-[.preset-5]/body:flex group-[.preset-6]/body:flex group-[.preset-7]/body:flex group-[.preset-8]/body:flex group-[.preset-9]/body:flex"></div>
               </div>
               <div className="flex flex-wrap gap-2">
                 {customPresetIds.map((num) => (
