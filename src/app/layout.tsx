@@ -11,6 +11,7 @@ import { Toaster } from "sonner"
 import branding from "@/branding.json"
 import { ThemePresetStyles } from "@/components/customizer/ThemePresetStyles"
 import { ThemeProvider } from "@/components/theme-provider"
+import Metrics from "@/metrics"
 
 // assets
 import "./globals.css"
@@ -98,6 +99,7 @@ export default function RootLayout({
           <TooltipProvider>{children}</TooltipProvider>
           <Toaster richColors />
         </ThemeProvider>
+        <Metrics />
       </body>
     </html>
   )
