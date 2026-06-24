@@ -43,7 +43,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           <SidebarTrigger className="relative mx-1 -ml-1 flex h-11 w-11 items-center justify-center rounded-lg" />
           {/* <SearchBar /> */}
           <div className="flex-1" />
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-2.5">
             <Button
               variant="ghost"
               size="icon-lg"

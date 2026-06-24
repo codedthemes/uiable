@@ -94,7 +94,7 @@ export default function MotionVisual() {
             scale: [1, 1.4, 0.8, 1.2, 0.9, 1],
           }}
           transition={{
-            duration: 18,
+            duration: 10,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "easeInOut",

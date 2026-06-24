@@ -9,9 +9,9 @@ import { Separator } from "@/components/ui/separator"
 
 // project imports
 import branding from "@/branding.json"
-import Logo from "@/components/uiable/layout/shared/logo"
-import NavSearchDialog from "../components/NavSearchDialog"
 import { ThemeToggle } from "@/components/customizer"
+import NavSearchDialog from "@/components/uiable/blocks/landing/components/NavSearchDialog"
+import Logo from "@/components/uiable/layout/shared/logo"
 
 // assets
 import {
@@ -42,8 +42,6 @@ function SocialActions({
 }) {
   return (
     <div className={className}>
-      <ThemeToggle />
-      <Divider />
       <Button
         variant="ghost"
         size="icon-lg"
@@ -71,7 +69,6 @@ function SocialActions({
       >
         <IconBrandX className="size-4.5" />
       </Button>
-      <Divider />
 
       <Button
         variant="ghost"
@@ -89,9 +86,10 @@ function SocialActions({
       >
         <IconBrandDiscord className="size-4.5" />
       </Button>
-      <Divider />
 
       <Button
+        variant="ghost"
+        size="icon-lg"
         nativeButton={false}
         render={
           <Link
@@ -100,10 +98,12 @@ function SocialActions({
             rel="noopener noreferrer"
           />
         }
-        className="text-md flex h-10.5 w-10.5 items-center rounded-full bg-foreground p-0 leading-6 font-medium text-secondary hover:bg-foreground/90"
+        className="flex h-10.5 w-10.5 items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
       >
         <IconBrandGithub className="size-4.5" />
       </Button>
+      <Divider />
+      <ThemeToggle />
     </div>
   )
 }

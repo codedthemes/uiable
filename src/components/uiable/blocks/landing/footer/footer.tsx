@@ -1,8 +1,10 @@
+import { ComponentProps } from "react"
 import Link from "next/link"
 
 // project
 import branding from "@/branding.json"
 import Logo from "@/components/uiable/layout/shared/logo"
+import { cn } from "@/lib/utils"
 
 // assets
 import {
@@ -10,6 +12,10 @@ import {
   IconBrandGithub,
   IconBrandX,
 } from "@tabler/icons-react"
+
+interface FooterProps extends ComponentProps<"footer"> {
+  containerClassName?: string
+}
 
 // constants
 const navLinks = [
@@ -33,16 +39,26 @@ const socialLinks = [
 
 //  ------------------------------ | LAYOUT - FOOTER | ------------------------------  //
 
-export default function Footer() {
+export default function Footer({
+  className,
+  containerClassName,
+  ...props
+}: FooterProps) {
   return (
     <footer
       style={{
         background:
           "linear-gradient(to top, var(--primary) -180%, var(--background) 95%)",
       }}
-      className="w-full"
+      className={cn("w-full", className)}
+      {...props}
     >
-      <div className="container mx-auto flex flex-col gap-8 border-x border-t border-border/60 px-4 py-10 sm:px-8 md:flex-row md:items-center md:justify-between">
+      <div
+        className={cn(
+          "container mx-auto flex flex-col gap-8 border-border/60 px-4 py-10 sm:px-8 md:flex-row md:items-center md:justify-between",
+          containerClassName
+        )}
+      >
         {/* LEFT */}
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2.5">

@@ -26,10 +26,6 @@ export const metadata: Metadata = {
   title: `UI component library built on shadcn and Base UI - ${branding.brandName}`,
   description:
     "A set of beautifully designed UI components you can customize, extend, and make your own. Open source and built for Next.js",
-  robots: {
-    index: false,
-    follow: false,
-  },
   icons: { icon: "https://cdn.uiable.com/brand/favicon.svg" },
   openGraph: {
     title: `UI component library built on shadcn and Base UI - ${branding.brandName}`,
@@ -77,7 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className="group/body preset-7 bg-background font-sans antialiased **:outline-none [&_*:focus]:outline-none"
+        className="group/body bg-background font-sans antialiased **:outline-none [&_*:focus]:outline-none"
         suppressHydrationWarning
       >
         <script
