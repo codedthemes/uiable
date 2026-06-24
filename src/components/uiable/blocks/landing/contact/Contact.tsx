@@ -5,6 +5,7 @@ import Link from "next/link"
 
 // shadcn
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 
 // third party
 import { toast } from "sonner"
@@ -113,13 +114,13 @@ export default function Contact({
             onSubmit={handleSubmit}
             className="flex w-full max-w-xl flex-col gap-3 border border-white/10 bg-white/5 p-2 backdrop-blur sm:flex-row sm:items-center sm:rounded-full sm:p-1.5"
           >
-            <input
+            <Input
               type="email"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="contact-email-input h-12 flex-1 bg-transparent px-5 py-3 text-base leading-5 tracking-[0.1px] text-white outline-none placeholder:text-white/50"
+              className="h-12 flex-1 rounded-none border-none bg-transparent px-5 py-3 text-base leading-5 tracking-[0.1px] text-white outline-none placeholder:text-white/50 focus:border-none"
             />
 
             <Button

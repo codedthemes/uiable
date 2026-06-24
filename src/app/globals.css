@@ -197,7 +197,7 @@
   }
 
   body {
-    @apply font-sans bg-background text-foreground;
+    @apply bg-background font-sans text-foreground;
   }
 
   html {
@@ -256,7 +256,7 @@
   }
 
   body {
-    @apply text-base leading-normal bg-background text-foreground;
+    @apply bg-background text-base leading-normal text-foreground;
     font-family: "Inter var", sans-serif;
     font-feature-settings: "salt";
   }
@@ -279,4 +279,9 @@
 
 ::view-transition-new(root) {
   z-index: 99999;
+}
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
 }
