@@ -1,27 +1,66 @@
-import Link from "next/link";
+"use client"
+
+import Link from "next/link"
+import dynamic from "next/dynamic"
 
 // project imports
-import branding from "@/branding.json";
-import { cn } from "@/lib/utils";
+import branding from "@/branding.json"
+import { cn } from "@/lib/utils"
 
 // assets
-const brandFavLogo = "https://cdn.uiable.com/brand/favicon.svg";
-const brandLogoDark = "https://cdn.uiable.com/brand/logo-dark.svg";
-const brandLogoLight = "https://cdn.uiable.com/brand/logo-white.svg";
+const brandFavLogo = "/assets/images/brand/favicon.svg"
+const brandLogoDark = "/assets/images/brand/logo-white.svg"
+const brandLogoLight = "/assets/images/brand/logo-dark.svg"
+
+const LocalLightLogo = dynamic<{ className?: string }>(
+  () =>
+    import("@/images/brand")
+      .then((mod) => mod.LightLogo)
+      .catch(() => {
+        return function FallbackLightLogo({ className, ...props }: any) {
+          return (
+            <img
+              src={brandLogoLight}
+              alt={`${branding.brandName} Logo`}
+              className={className}
+              {...props}
+            />
+          )
+        }
+      }),
+  { ssr: false }
+)
+
+const LocalDarkLogo = dynamic<{ className?: string }>(
+  () =>
+    import("@/images/brand")
+      .then((mod) => mod.DarkLogo)
+      .catch(() => {
+        return function FallbackDarkLogo({ className, ...props }: any) {
+          return (
+            <img
+              src={brandLogoDark}
+              alt={`${branding.brandName} Logo`}
+              className={className}
+              {...props}
+            />
+          )
+        }
+      }),
+  { ssr: false }
+)
 
 interface LogoProps {
-  className?: string;
+  className?: string
 }
 
 //  ------------------------------ | SHARED - LOGO | ------------------------------  //
 
 export default function Logo({ className }: LogoProps) {
   return (
-    <Link href="/" className={cn("flex items-center gap-3 group", className)}>
+    <Link href="/" className={cn("group flex items-center gap-3", className)}>
       <div className="hidden dark:block">
-        <img
-          src={brandLogoDark}
-          alt={`${branding.brandName} Logo`}
+        <LocalDarkLogo
           className={cn("group-data-[collapsible=icon]:hidden", className)}
         />
         <img
@@ -29,14 +68,12 @@ export default function Logo({ className }: LogoProps) {
           alt={`${branding.brandName} Logo`}
           className={cn(
             "hidden group-data-[collapsible=icon]:block",
-            className,
+            className
           )}
         />
       </div>
       <div className="block dark:hidden">
-        <img
-          src={brandLogoLight}
-          alt={`${branding.brandName} Logo`}
+        <LocalLightLogo
           className={cn("group-data-[collapsible=icon]:hidden", className)}
         />
         <img
@@ -44,10 +81,10 @@ export default function Logo({ className }: LogoProps) {
           alt={`${branding.brandName} Logo`}
           className={cn(
             "hidden group-data-[collapsible=icon]:block",
-            className,
+            className
           )}
         />
       </div>
     </Link>
-  );
+  )
 }

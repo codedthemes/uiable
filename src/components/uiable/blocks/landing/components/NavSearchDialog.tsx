@@ -31,12 +31,14 @@ export default function NavSearchDialog({
 }) {
   const router = useRouter()
   const [search, setSearch] = useState("")
+  const [prevOpen, setPrevOpen] = useState(open)
 
-  useEffect(() => {
+  if (open !== prevOpen) {
+    setPrevOpen(open)
     if (!open) {
       setSearch("")
     }
-  }, [open])
+  }
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {

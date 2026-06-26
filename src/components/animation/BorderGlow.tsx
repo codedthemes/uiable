@@ -182,18 +182,16 @@ export default function BorderGlow({
   const [cursorAngle, setCursorAngle] = useState(45)
   const [edgeProximity, setEdgeProximity] = useState(0)
   const [sweepActive, setSweepActive] = useState(false)
-  const [resolvedGlowColor, setResolvedGlowColor] = useState("221 100 64")
+  const [internalGlowColor, setInternalGlowColor] = useState("221 100 64")
+  const resolvedGlowColor = glowColor || internalGlowColor
 
   useEffect(() => {
-    if (glowColor) {
-      setResolvedGlowColor(glowColor)
-      return
-    }
+    if (glowColor) return
 
     const update = () => {
       requestAnimationFrame(() => {
         const hsl = readPrimaryAsHSL()
-        if (hsl) setResolvedGlowColor(hsl)
+        if (hsl) setInternalGlowColor(hsl)
       })
     }
 

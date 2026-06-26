@@ -24,7 +24,7 @@ import { RadiusControl } from "./RadiusControl"
 import { ThemePresetStyles } from "./ThemePresetStyles"
 
 // assets
-import { CircleCheckBig, Moon, Settings2, Sun } from "lucide-react"
+import { CircleCheckBig, Moon, Cpu, Settings2, Sun } from "lucide-react"
 
 // constants
 const THEME_PRESET_KEY = "theme-preset"
@@ -183,7 +183,7 @@ export function ThemeToggle() {
   )
 
   const resetDefault = useCallback(() => {
-    setTheme("light")
+    setTheme("system")
     themeClasses.forEach((cls) => document.body.classList.remove(cls))
     document.body.classList.add("default")
     localStorage.removeItem(THEME_PRESET_KEY)
@@ -226,9 +226,11 @@ export function ThemeToggle() {
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-1">
                 <h6>Theme Mode</h6>
-                <p className="text-foreground">Choose light or dark mode</p>
+                <p className="text-foreground">
+                  Choose light, dark, or system mode
+                </p>
               </div>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-3 gap-2">
                 <Button
                   onClick={(e) => handleThemeChange("light", e)}
                   className="inline-flex flex-col items-center justify-center gap-1 py-4"
@@ -246,6 +248,15 @@ export function ThemeToggle() {
                 >
                   <Moon className="size-6" />
                   Dark
+                </Button>
+                <Button
+                  onClick={(e) => handleThemeChange("system", e)}
+                  className="inline-flex flex-col items-center justify-center gap-1 py-4"
+                  aria-label="Toggle Theme"
+                  variant={theme === "system" ? "default" : "outline"}
+                >
+                  <Cpu className="size-6" />
+                  System
                 </Button>
               </div>
               {/* <Separator />

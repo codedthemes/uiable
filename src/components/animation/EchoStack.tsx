@@ -51,7 +51,7 @@ export default function EchoStack({
         }, pauseBeforeExit)
       }
     } else {
-      if (visibleCount > 1) {
+      if (visibleCount > 2) {
         timeoutId = setTimeout(() => {
           setVisibleCount((prev) => prev - 1)
         }, exitInterval)
@@ -76,35 +76,37 @@ export default function EchoStack({
   if (totalCards === 0) return null
 
   return (
-    <div className={`relative h-full w-full ${className}`}>
+    <>
       <AnimationBg className="top-1/2 left-1/2 max-h-full max-w-full -translate-x-1/2 -translate-y-1/2 p-4 sm:p-8 md:p-12" />
-      {cards.map((child, index) => {
-        const isVisible = index < visibleCount
+      <div className={`relative h-full w-full ${className}`}>
+        {cards.map((child, index) => {
+          const isVisible = index < visibleCount
 
-        // The newest card is full size. Older cards shrink.
-        const stackIndex = isVisible ? visibleCount - 1 - index : 0
-        // Each subsequent card is 40px lower than the previous one
-        const offset = index * 40
-        const scale = 1 - stackIndex * 0.04
+          // The newest card is full size. Older cards shrink.
+          const stackIndex = isVisible ? visibleCount - 1 - index : 0
+          // Each subsequent card is 50px lower than the previous one
+          const offset = index * 50
+          const scale = 1 - stackIndex * 0.04
 
-        return (
-          <div
-            key={index}
-            className={`absolute flex h-full w-full justify-center overflow-hidden rounded-2xl ${cardClassName}`}
-            style={{
-              transform: isVisible
-                ? `translateY(${offset}px) scale(${scale})`
-                : "translateY(100%) scale(0.9)",
-              opacity: isVisible ? 1 : 0,
-              zIndex: index,
-              transition:
-                "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
-            }}
-          >
-            {child}
-          </div>
-        )
-      })}
-    </div>
+          return (
+            <div
+              key={index}
+              className={`absolute flex h-full w-full justify-center ${index === 0 ? "items-center" : "top-[-60px]"} overflow-hidden rounded-2xl ${cardClassName}`}
+              style={{
+                transform: isVisible
+                  ? `translateY(${offset}px) scale(${scale})`
+                  : "translateY(100%) scale(0.9)",
+                opacity: isVisible ? 1 : 0,
+                zIndex: index,
+                transition:
+                  "transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
+            >
+              {child}
+            </div>
+          )
+        })}
+      </div>
+    </>
   )
 }

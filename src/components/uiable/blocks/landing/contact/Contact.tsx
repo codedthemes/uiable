@@ -1,7 +1,6 @@
 "use client"
 
 import { SyntheticEvent, useState } from "react"
-import Link from "next/link"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -11,12 +10,8 @@ import { Input } from "@/components/ui/input"
 import { toast } from "sonner"
 
 // assets
-import {
-  ContactLeftGrid,
-  ContactRightGrid,
-  DarkLogo,
-  LightLogo,
-} from "@/images/svg/landing"
+import { LightFav, DarkFav } from "@/images/brand"
+import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
 
 //  ------------------------------ | CONTACT | ------------------------------  //
 
@@ -82,18 +77,16 @@ export default function Contact({
         <div className="relative z-30 mx-auto flex max-w-3xl flex-col items-center gap-10 py-16 text-center">
           {/* LOGO */}
           <div className="flex items-center justify-center">
-            <Link href="/">
-              <LightLogo
-                width={84}
-                height={80}
-                className="text-white dark:hidden"
-              />
-              <DarkLogo
-                width={84}
-                height={80}
-                className="hidden text-white dark:block"
-              />
-            </Link>
+            <LightFav
+              width={84}
+              height={80}
+              className="block text-white dark:hidden"
+            />
+            <DarkFav
+              width={84}
+              height={80}
+              className="hidden text-white dark:block"
+            />
           </div>
 
           {/* HEADING */}

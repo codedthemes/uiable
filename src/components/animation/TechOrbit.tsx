@@ -1,197 +1,236 @@
-"use client";
+"use client"
 
 // third party
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
+
+// project imports
+import { AnimationBg } from "@/images/svg/landing"
+import { LightFav, DarkFav } from "@/images/brand"
+import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons"
 
 // assets
-import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons";
-import { IconBrandNextjs, IconBrandReact } from "@tabler/icons-react";
-import { AnimationLogo, AnimationBg } from "@/images/svg/landing";
-
+import { IconBrandNextjs, IconBrandReact } from "@tabler/icons-react"
 
 // Duration and ease definitions for orbital movement
-const ORBIT_1_DURATION = 25; // Clockwise inner orbit
-const ORBIT_2_DURATION = 35; // Counter-clockwise middle orbit
-const ORBIT_3_DURATION = 45; // Clockwise outer orbit
+const ORBIT_1_DURATION = 25 // Clockwise inner orbit
+const ORBIT_2_DURATION = 35 // Counter-clockwise middle orbit
+const ORBIT_3_DURATION = 45 // Clockwise outer orbit
 
 type TechNodeProps = {
-    icon: React.ReactNode;
-    startAngle: number;
-    orbitDuration: number;
-    orbitDirection: "clockwise" | "counter-clockwise";
-};
-
-function TechNode({ icon, startAngle, orbitDuration, orbitDirection }: TechNodeProps) {
-    const isClockwise = orbitDirection === "clockwise";
-
-    // The parent orbit container will rotate by 360 or -360.
-    // To keep the child upright, it needs to counter-rotate in the opposite direction.
-    const initialRotation = -startAngle;
-    const animateRotation = isClockwise
-        ? -startAngle - 360
-        : -startAngle + 360;
-
-    return (
-        <div
-            className="absolute inset-0 pointer-events-none"
-            style={{ transform: `rotate(${startAngle}deg)` }}
-        >
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto">
-                <motion.div
-                    whileHover={{ scale: 1.15, boxShadow: "0 10px 25px rgba(59,130,246,0.15)" }}
-                    animate={{ rotate: animateRotation }}
-                    style={{ rotate: initialRotation }}
-                    transition={{
-                        rotate: {
-                            repeat: Infinity,
-                            duration: orbitDuration,
-                            ease: "linear"
-                        }
-                    }}
-                    className="flex h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-primary/10 backdrop-blur-[34px] border border-slate-200 dark:border-slate-800 shadow-md text-foreground transition-colors cursor-pointer"
-                >
-                    {icon}
-                </motion.div>
-            </div>
-        </div>
-    );
+  icon: React.ReactNode
+  startAngle: number
+  orbitDuration: number
+  orbitDirection: "clockwise" | "counter-clockwise"
 }
 
+function TechNode({
+  icon,
+  startAngle,
+  orbitDuration,
+  orbitDirection,
+}: TechNodeProps) {
+  const isClockwise = orbitDirection === "clockwise"
 
+  // The parent orbit container will rotate by 360 or -360.
+  // To keep the child upright, it needs to counter-rotate in the opposite direction.
+  const initialRotation = -startAngle
+  const animateRotation = isClockwise ? -startAngle - 360 : -startAngle + 360
+
+  return (
+    <div
+      className="pointer-events-none absolute inset-0"
+      style={{ transform: `rotate(${startAngle}deg)` }}
+    >
+      <div className="pointer-events-auto absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <motion.div
+          whileHover={{
+            scale: 1.15,
+            boxShadow: "0 10px 25px rgba(59,130,246,0.15)",
+          }}
+          animate={{ rotate: animateRotation }}
+          style={{ rotate: initialRotation }}
+          transition={{
+            rotate: {
+              repeat: Infinity,
+              duration: orbitDuration,
+              ease: "linear",
+            },
+          }}
+          className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-slate-200 bg-primary/10 text-foreground shadow-md backdrop-blur-[34px] transition-colors sm:h-14 sm:w-14 md:h-16 md:w-16 dark:border-slate-800"
+        >
+          {icon}
+        </motion.div>
+      </div>
+    </div>
+  )
+}
 
 //  ------------------------------ | COMPONENTS TECH ORBITS | ------------------------------  //
 
 export default function TechOrbit() {
-    return (
-        <div className="relative flex h-full w-full min-h-[380px] sm:min-h-[440px] md:min-h-[500px] items-center justify-center overflow-hidden rounded-3xl py-10 select-none border border-border/40">
+  return (
+    <div className="relative flex h-full min-h-[380px] w-full items-center justify-center overflow-hidden rounded-3xl py-10 select-none sm:min-h-[440px] md:min-h-[500px]">
+      {/* SVG Background */}
+      <AnimationBg className="top-auto -right-[60px] -bottom-10 left-auto" />
 
-            {/* SVG Background */}
-            <AnimationBg className="top-auto left-auto -bottom-10 -right-[60px]" />
+      {/* Orbit Container Centered in the Bottom-Right Area */}
+      <div className="absolute right-[6%] bottom-[12%] flex items-center justify-center">
+        {/* Orbit 3 (Outer - radius ~360px) */}
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            duration: ORBIT_3_DURATION,
+            ease: "linear",
+          }}
+          className="absolute flex h-[520px] w-[520px] items-center justify-center rounded-full sm:h-[680px] sm:w-[680px] md:h-[760px] md:w-[760px]"
+        >
+          <svg className="pointer-events-none absolute inset-0 h-full w-full overflow-visible">
+            <circle
+              cx="50%"
+              cy="50%"
+              r="50%"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+              className="text-muted-foreground"
+            />
+          </svg>
+          {/* shadcn  */}
+          <TechNode
+            startAngle={90}
+            orbitDuration={ORBIT_3_DURATION}
+            orbitDirection="clockwise"
+            icon={<Shadcn />}
+          />
 
-            {/* Orbit Container Centered in the Bottom-Right Area */}
-            <div className="absolute right-[6%] bottom-[12%] flex items-center justify-center">
+          {/* Tailwind 2 */}
+          <TechNode
+            startAngle={135}
+            orbitDuration={ORBIT_3_DURATION}
+            orbitDirection="clockwise"
+            icon={<Tailwind />}
+          />
 
-                {/* Orbit 3 (Outer - radius ~360px) */}
-                <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: ORBIT_3_DURATION,
-                        ease: "linear"
-                    }}
-                    className="absolute flex items-center justify-center rounded-full w-[520px] h-[520px] sm:w-[680px] sm:h-[680px] md:w-[760px] md:h-[760px]"
-                >
-                    <svg className="absolute inset-0 w-full h-full pointer-events-none overflow-visible">
-                        <circle cx="50%" cy="50%" r="50%" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" className="text-muted-foreground" />
-                    </svg>
-                    {/* shadcn  */}
-                    <TechNode
-                        startAngle={90}
-                        orbitDuration={ORBIT_3_DURATION}
-                        orbitDirection="clockwise"
-                        icon={<Shadcn />}
-                    />
+          {/* Code/Slash (//) */}
+          <TechNode
+            startAngle={180}
+            orbitDuration={ORBIT_3_DURATION}
+            orbitDirection="clockwise"
+            icon={<IconBrandNextjs />}
+          />
+        </motion.div>
 
-                    {/* Tailwind 2 */}
-                    <TechNode
-                        startAngle={135}
-                        orbitDuration={ORBIT_3_DURATION}
-                        orbitDirection="clockwise"
-                        icon={<Tailwind />}
-                    />
+        {/* Orbit 2 (Middle - radius ~240px) */}
+        <motion.div
+          animate={{ rotate: -360 }}
+          transition={{
+            repeat: Infinity,
+            duration: ORBIT_2_DURATION,
+            ease: "linear",
+          }}
+          className="absolute flex h-[360px] w-[360px] items-center justify-center rounded-full sm:h-[460px] sm:w-[460px] md:h-[520px] md:w-[520px]"
+        >
+          <svg className="pointer-events-none absolute inset-0 h-full w-full overflow-visible">
+            <circle
+              cx="50%"
+              cy="50%"
+              r="50%"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+              className="text-muted-foreground"
+            />
+          </svg>
+          {/* React */}
+          <TechNode
+            startAngle={105}
+            orbitDuration={ORBIT_2_DURATION}
+            orbitDirection="counter-clockwise"
+            icon={<IconBrandReact />}
+          />
 
-                    {/* Code/Slash (//) */}
-                    <TechNode
-                        startAngle={180}
-                        orbitDuration={ORBIT_3_DURATION}
-                        orbitDirection="clockwise"
-                        icon={<IconBrandNextjs />}
-                    />
-                </motion.div>
+          {/* TypeScript */}
+          <TechNode
+            startAngle={165}
+            orbitDuration={ORBIT_2_DURATION}
+            orbitDirection="counter-clockwise"
+            icon={<BaseUi />}
+          />
+        </motion.div>
 
-                {/* Orbit 2 (Middle - radius ~240px) */}
-                <motion.div
-                    animate={{ rotate: -360 }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: ORBIT_2_DURATION,
-                        ease: "linear"
-                    }}
-                    className="absolute flex items-center justify-center rounded-full w-[360px] h-[360px] sm:w-[460px] sm:h-[460px] md:w-[520px] md:h-[520px]"
-                >
-                    <svg className="absolute inset-0 w-full h-full pointer-events-none overflow-visible">
-                        <circle cx="50%" cy="50%" r="50%" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" className="text-muted-foreground" />
-                    </svg>
-                    {/* React */}
-                    <TechNode
-                        startAngle={105}
-                        orbitDuration={ORBIT_2_DURATION}
-                        orbitDirection="counter-clockwise"
-                        icon={<IconBrandReact />}
-                    />
+        {/* Orbit 1 (Inner - radius ~140px) */}
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            duration: ORBIT_1_DURATION,
+            ease: "linear",
+          }}
+          className="absolute flex h-[200px] w-[200px] items-center justify-center rounded-full sm:h-[260px] sm:w-[260px] md:h-[300px] md:w-[300px]"
+        >
+          <svg className="pointer-events-none absolute inset-0 h-full w-full overflow-visible">
+            <circle
+              cx="50%"
+              cy="50%"
+              r="50%"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+              className="text-muted-foreground"
+            />
+          </svg>
+          {/* Next.js */}
+          <TechNode
+            startAngle={0}
+            orbitDuration={ORBIT_1_DURATION}
+            orbitDirection="clockwise"
+            icon={<BaseUi />}
+          />
 
-                    {/* TypeScript */}
-                    <TechNode
-                        startAngle={165}
-                        orbitDuration={ORBIT_2_DURATION}
-                        orbitDirection="counter-clockwise"
-                        icon={<BaseUi />}
-                    />
-                </motion.div>
+          <TechNode
+            startAngle={90}
+            orbitDuration={ORBIT_1_DURATION}
+            orbitDirection="clockwise"
+            icon={<IconBrandNextjs />}
+          />
 
-                {/* Orbit 1 (Inner - radius ~140px) */}
-                <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: ORBIT_1_DURATION,
-                        ease: "linear"
-                    }}
-                    className="absolute flex items-center justify-center rounded-full w-[200px] h-[200px] sm:w-[260px] sm:h-[260px] md:w-[300px] md:h-[300px]"
-                >
-                    <svg className="absolute inset-0 w-full h-full pointer-events-none overflow-visible">
-                        <circle cx="50%" cy="50%" r="50%" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" className="text-muted-foreground" />
-                    </svg>
-                    {/* Next.js */}
-                    <TechNode
-                        startAngle={0}
-                        orbitDuration={ORBIT_1_DURATION}
-                        orbitDirection="clockwise"
-                        icon={<BaseUi />}
-                    />
+          <TechNode
+            startAngle={180}
+            orbitDuration={ORBIT_1_DURATION}
+            orbitDirection="clockwise"
+            icon={<Tailwind />}
+          />
 
-                    <TechNode
-                        startAngle={90}
-                        orbitDuration={ORBIT_1_DURATION}
-                        orbitDirection="clockwise"
-                        icon={<IconBrandNextjs />}
-                    />
+          <TechNode
+            startAngle={270}
+            orbitDuration={ORBIT_1_DURATION}
+            orbitDirection="clockwise"
+            icon={<IconBrandReact />}
+          />
+        </motion.div>
 
-                    <TechNode
-                        startAngle={180}
-                        orbitDuration={ORBIT_1_DURATION}
-                        orbitDirection="clockwise"
-                        icon={<Tailwind />}
-                    />
-
-                    <TechNode
-                        startAngle={270}
-                        orbitDuration={ORBIT_1_DURATION}
-                        orbitDirection="clockwise"
-                        icon={<IconBrandReact />}
-                    />
-
-                </motion.div>
-
-                {/* Center Blue Pulse Logo */}
-                <motion.div
-                    animate={{ scale: [1, 1.05, 1], }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                    className="relative z-20 flex h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 items-center justify-center rounded-full cursor-pointer "
-                >
-                    <AnimationLogo width={110} height={110} />
-                </motion.div>
-            </div>
-        </div>
-    );
+        {/* Center Blue Pulse Logo */}
+        <motion.div
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          className="relative z-20 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full sm:h-24 sm:w-24 md:h-28 md:w-28"
+        >
+          <LightFav
+            width={110}
+            height={110}
+            className="block rounded-full text-white dark:hidden"
+          />
+          <DarkFav
+            width={110}
+            height={110}
+            className="hidden rounded-full text-white dark:block"
+          />
+        </motion.div>
+      </div>
+    </div>
+  )
 }

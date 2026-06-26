@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 
 // project imports
-import { AnimationBg, AnimationLogo } from "@/images/svg/landing"
+import { DarkFav, LightFav } from "@/images/brand"
+import { AnimationBg } from "@/images/svg/landing"
 
 // assets
 import { ChevronLeft, ChevronRight, Slash } from "lucide-react"
@@ -89,7 +90,7 @@ export default function CodeAnimation({
   return (
     <div
       className={cn(
-        "relative flex h-full min-h-[380px] w-full items-center justify-center overflow-hidden rounded-3xl border border-border/40 py-10 select-none sm:min-h-[440px] md:min-h-[500px]",
+        "relative flex h-full min-h-[324px] w-full items-center justify-center overflow-hidden rounded-3xl py-10 select-none sm:min-h-[440px] md:min-h-[500px]",
         className
       )}
     >
@@ -98,14 +99,14 @@ export default function CodeAnimation({
 
       {/* Faint Background Code - Top Right */}
       <div className="pointer-events-none absolute top-2 right-2 flex flex-col items-start justify-start overflow-hidden sm:top-4 sm:right-4 md:top-4 md:right-4">
-        <pre className="text-left font-mono text-[8px] leading-[2.5] text-blue-500/20 opacity-80 mix-blend-multiply sm:text-[9px] md:text-[10px] lg:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
+        <pre className="text-left font-mono text-[8px] leading-[2.5] text-blue-500/20 opacity-24 mix-blend-multiply sm:text-[9px] md:text-[10px] lg:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
           {backgroundCode || codeTopRight}
         </pre>
       </div>
 
       {/* Faint Background Code - Bottom Left */}
       <div className="pointer-events-none absolute bottom-2 left-2 flex flex-col items-start justify-end overflow-hidden sm:bottom-4 sm:left-4 md:bottom-4 md:left-4">
-        <pre className="text-left font-mono text-[8px] leading-[2.5] text-blue-500/20 opacity-80 mix-blend-multiply sm:text-[9px] md:text-[10px] lg:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
+        <pre className="text-left font-mono text-[8px] leading-[2.5] text-blue-500/20 opacity-24 mix-blend-multiply sm:text-[9px] md:text-[10px] lg:text-[11px] dark:text-slate-500/20 dark:mix-blend-lighten">
           {backgroundCode || codeBottomLeft}
         </pre>
       </div>
@@ -149,7 +150,16 @@ export default function CodeAnimation({
             animate="visible"
             className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] lg:h-8 lg:w-8 xl:h-[34px] xl:w-[34px]"
           >
-            <AnimationLogo />
+            <LightFav
+              width={24}
+              height={24}
+              className="block rounded-full text-white dark:hidden"
+            />
+            <DarkFav
+              width={24}
+              height={24}
+              className="hidden rounded-full text-white dark:block"
+            />
           </motion.div>
           <motion.div
             variants={dotVariants(1.4)}
@@ -157,7 +167,16 @@ export default function CodeAnimation({
             animate="visible"
             className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] lg:h-8 lg:w-8 xl:h-[34px] xl:w-[34px]"
           >
-            <AnimationLogo />
+            <LightFav
+              width={24}
+              height={24}
+              className="block rounded-full text-white dark:hidden"
+            />
+            <DarkFav
+              width={24}
+              height={24}
+              className="hidden rounded-full text-white dark:block"
+            />
           </motion.div>
           <motion.div
             variants={dotVariants(2.2)}
@@ -165,7 +184,16 @@ export default function CodeAnimation({
             animate="visible"
             className="flex h-6 w-6 items-center justify-center overflow-hidden rounded-full sm:h-[34px] sm:w-[34px] lg:h-8 lg:w-8 xl:h-[34px] xl:w-[34px]"
           >
-            <AnimationLogo />
+            <LightFav
+              width={24}
+              height={24}
+              className="block rounded-full text-white dark:hidden"
+            />
+            <DarkFav
+              width={24}
+              height={24}
+              className="hidden rounded-full text-white dark:block"
+            />
           </motion.div>
 
           {/* Slash */}
@@ -173,7 +201,7 @@ export default function CodeAnimation({
             variants={slashVariants}
             initial="hidden"
             animate="visible"
-            className="flex items-center justify-center overflow-hidden text-slate-800 dark:text-slate-200"
+            className="text-slate-240 flex items-center justify-center overflow-hidden dark:text-slate-200"
           >
             <Slash
               strokeWidth={1}
