@@ -1,9 +1,10 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { ButtonGroup } from "@/components/ui/button-group";
 
 // assets
-import { MinusIcon, PlusIcon } from "lucide-react";
+import { MinusIcon, PlusIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { ButtonGroup } from "@/components/ui/button-group"
 
 //  ------------------------------ | BUTTON GROUP - ORIENTATION | ------------------------------  //
 
@@ -21,5 +22,5 @@ export default function ButtonGroupOrientation() {
         <MinusIcon />
       </Button>
     </ButtonGroup>
-  );
+  )
 }

@@ -1,8 +1,22 @@
 "use client"
 
 /* eslint-disable @typescript-eslint/no-unused-vars, jsx-a11y/alt-text */
-
 import { useState } from "react"
+// assets
+import {
+  ArrowRight2,
+  Clipboard,
+  Designtools,
+  DocumentText,
+  Level,
+  Logout,
+  NotificationStatus,
+  PasswordCheck,
+  Shield,
+  Sort,
+  StatusUp,
+} from "iconsax-reactjs"
+import { LockKeyhole, Power, Settings, User } from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -29,25 +43,8 @@ import {
   SidebarProvider,
   SidebarRail,
 } from "@/components/ui/sidebar"
-
 // project
 import Logo from "@/components/uiable/layout/shared/logo"
-
-// assets
-import {
-  ArrowRight2,
-  Clipboard,
-  Designtools,
-  DocumentText,
-  Level,
-  Logout,
-  NotificationStatus,
-  PasswordCheck,
-  Shield,
-  Sort,
-  StatusUp,
-} from "iconsax-reactjs"
-import { LockKeyhole, Power, Settings, User } from "lucide-react"
 
 const imgCoupon = {
   src: "https://cdn.uiable.com/application/img-coupon.png",

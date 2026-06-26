@@ -1,24 +1,23 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
+// third party
+import { format } from "date-fns"
 
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
-import { Field, FieldLabel } from "@/components/ui/field";
+import { Button } from "@/components/ui/button"
+import { Calendar } from "@/components/ui/calendar"
+import { Field, FieldLabel } from "@/components/ui/field"
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger
-} from "@/components/ui/popover";
-
-// third party
-import { format } from "date-fns";
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
 //  ------------------------------ | DATE PICKER - BASIC | ------------------------------  //
 
 export function DatePickerSimple() {
-  const [date, setDate] = useState<Date>();
+  const [date, setDate] = useState<Date>()
 
   return (
     <Field className="mx-auto w-44">
@@ -28,7 +27,7 @@ export function DatePickerSimple() {
           render={
             <Button
               id="date-picker-simple"
-              className="justify-start font-normal block"
+              className="block justify-start font-normal"
             />
           }
         >
@@ -44,5 +43,5 @@ export function DatePickerSimple() {
         </PopoverContent>
       </Popover>
     </Field>
-  );
+  )
 }

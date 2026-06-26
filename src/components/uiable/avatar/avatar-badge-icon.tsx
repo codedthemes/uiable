@@ -1,13 +1,14 @@
 // shadcn
+
+// assets
+import { PlusIcon } from "lucide-react"
+
 import {
   Avatar,
   AvatarBadge,
   AvatarFallback,
   AvatarImage,
-} from "@/components/ui/avatar";
-
-// assets
-import { PlusIcon } from "lucide-react";
+} from "@/components/ui/avatar"
 
 //  ------------------------------ | AVATAR - BADGE ICON | ------------------------------  //
 
@@ -23,5 +24,5 @@ export function AvatarBadgeIconExample() {
         <PlusIcon />
       </AvatarBadge>
     </Avatar>
-  );
+  )
 }

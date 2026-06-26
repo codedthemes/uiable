@@ -1,17 +1,15 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
-
-// third party
-import { cn } from "@/lib/utils"
-import { motion } from "framer-motion"
-
 // project imports
 import { DarkFav, LightFav } from "@/images/brand"
 import { AnimationBg } from "@/images/svg/landing"
-
+import { motion } from "framer-motion"
 // assets
 import { ChevronLeft, ChevronRight, Slash } from "lucide-react"
+
+// third party
+import { cn } from "@/lib/utils"
 
 interface CodeAnimationProps extends React.HTMLAttributes<HTMLDivElement> {
   backgroundCode?: string

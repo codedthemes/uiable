@@ -1,24 +1,24 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuLabel,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | DROPDOWN MENU - CHECKBOXES | ------------------------------  //
 
 export function DropdownMenuCheckboxes() {
-  const [showStatusBar, setShowStatusBar] = useState(true);
-  const [showActivityBar, setShowActivityBar] = useState(false);
-  const [showPanel, setShowPanel] = useState(false);
+  const [showStatusBar, setShowStatusBar] = useState(true)
+  const [showActivityBar, setShowActivityBar] = useState(false)
+  const [showPanel, setShowPanel] = useState(false)
 
   return (
     <DropdownMenu>
@@ -50,5 +50,5 @@ export function DropdownMenuCheckboxes() {
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

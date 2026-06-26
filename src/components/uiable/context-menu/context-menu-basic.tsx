@@ -4,8 +4,8 @@ import {
   ContextMenuContent,
   ContextMenuGroup,
   ContextMenuItem,
-  ContextMenuTrigger
-} from "@/components/ui/context-menu";
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
 
 //  ------------------------------ | CONTEXT MENU - BASIC | ------------------------------  //
 
@@ -28,5 +28,5 @@ export function ContextMenuBasic() {
         </ContextMenuGroup>
       </ContextMenuContent>
     </ContextMenu>
-  );
+  )
 }

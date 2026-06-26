@@ -1,6 +1,15 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+// assets
+import {
+  Calculator,
+  Calendar,
+  CreditCard,
+  Settings,
+  Smile,
+  User,
+} from "lucide-react"
 
 // shadcn
 import {
@@ -11,41 +20,31 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut
-} from "@/components/ui/command";
-
-// assets
-import {
-  Calculator,
-  Calendar,
-  CreditCard,
-  Settings,
-  Smile,
-  User
-} from "lucide-react";
+  CommandShortcut,
+} from "@/components/ui/command"
 
 //  ------------------------------ | COMMAND - DIALOG | ------------------------------  //
 
 export function CommandDialogDemo() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "j" && (e.metaKey || e.ctrlKey)) {
-        e.preventDefault();
-        setOpen((open) => !open);
+        e.preventDefault()
+        setOpen((open) => !open)
       }
-    };
+    }
 
-    document.addEventListener("keydown", down);
-    return () => document.removeEventListener("keydown", down);
-  }, []);
+    document.addEventListener("keydown", down)
+    return () => document.removeEventListener("keydown", down)
+  }, [])
 
   return (
     <>
-      <p className="text-muted-foreground text-sm">
+      <p className="text-sm text-muted-foreground">
         Press{" "}
-        <kbd className="bg-muted text-muted-foreground pointer-events-none inline-flex h-5 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none">
+        <kbd className="pointer-events-none inline-flex h-5 items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100 select-none">
           <span className="text-xs">⌘</span>J
         </kbd>
       </p>
@@ -88,5 +87,5 @@ export function CommandDialogDemo() {
         </CommandList>
       </CommandDialog>
     </>
-  );
+  )
 }

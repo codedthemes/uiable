@@ -2,10 +2,20 @@
 
 export default function Image3() {
   return (
-    <svg viewBox="0 0 1440 792" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+    <svg
+      viewBox="0 0 1440 792"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin meet"
+    >
       <g clipPath="url(#clip0_3609_1778)">
         <rect width="1440" height="792" fill="var(--card)" />
-        <rect width="1440" height="792" fill="var(--background)" fillOpacity="0.5" />
+        <rect
+          width="1440"
+          height="792"
+          fill="var(--background)"
+          fillOpacity="0.5"
+        />
         <rect width="1440" height="78" fill="var(--background)" />
         <path
           d="M255.354 48.1937C254.568 48.1937 253.922 47.9457 253.416 47.4497C252.927 46.9346 252.682 46.305 252.682 45.561C252.682 44.7979 252.927 44.1588 253.416 43.6437C253.922 43.1286 254.568 42.8711 255.354 42.8711C256.123 42.8711 256.751 43.1286 257.24 43.6437C257.747 44.1588 258 44.7979 258 45.561C258 46.305 257.747 46.9346 257.24 47.4497C256.751 47.9457 256.123 48.1937 255.354 48.1937Z"

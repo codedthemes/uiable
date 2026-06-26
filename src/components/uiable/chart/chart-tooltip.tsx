@@ -1,13 +1,13 @@
-import { CSSProperties, ComponentProps } from "react";
+import { ComponentProps, CSSProperties } from "react"
 
 // project
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 //  ------------------------------ | CHART - TOOLTIP | ------------------------------  //
 
 export function ChartTooltipDemo() {
   return (
-    <div className="text-foreground grid aspect-video w-full max-w-md justify-center md:grid-cols-2 [&>div]:relative [&>div]:flex [&>div]:h-[137px] [&>div]:w-[224px] [&>div]:items-center [&>div]:justify-center [&>div]:p-4">
+    <div className="grid aspect-video w-full max-w-md justify-center text-foreground md:grid-cols-2 [&>div]:relative [&>div]:flex [&>div]:h-[137px] [&>div]:w-[224px] [&>div]:items-center [&>div]:justify-center [&>div]:p-4">
       <div>
         <div className="absolute top-[45px] left-[-35px] z-10 text-sm font-medium">
           Label
@@ -36,7 +36,7 @@ export function ChartTooltipDemo() {
           label="Page Views"
           payload={[
             { name: "Desktop", value: 186, fill: "var(--chart-1)" },
-            { name: "Mobile", value: 80, fill: "var(--chart-2)" }
+            { name: "Mobile", value: 80, fill: "var(--chart-2)" },
           ]}
           className="w-[8rem]"
         />
@@ -70,7 +70,7 @@ export function ChartTooltipDemo() {
           hideLabel
           payload={[
             { name: "Chrome", value: 1286, fill: "var(--chart-3)" },
-            { name: "Firefox", value: 1000, fill: "var(--chart-4)" }
+            { name: "Firefox", value: 1000, fill: "var(--chart-4)" },
           ]}
           indicator="dashed"
           className="w-[8rem]"
@@ -117,7 +117,7 @@ export function ChartTooltipDemo() {
         </svg>
       </div>
     </div>
-  );
+  )
 }
 
 function TooltipDemo({
@@ -126,47 +126,47 @@ function TooltipDemo({
   payload,
   hideLabel,
   hideIndicator,
-  className
+  className,
 }: {
-  label: string;
-  hideLabel?: boolean;
-  hideIndicator?: boolean;
-  indicator?: "line" | "dot" | "dashed";
+  label: string
+  hideLabel?: boolean
+  hideIndicator?: boolean
+  indicator?: "line" | "dot" | "dashed"
   payload: {
-    name: string;
-    value: number;
-    fill: string;
-  }[];
-  nameKey?: string;
-  labelKey?: string;
+    name: string
+    value: number
+    fill: string
+  }[]
+  nameKey?: string
+  labelKey?: string
 } & ComponentProps<"div">) {
   const tooltipLabel = hideLabel ? null : (
     <div className="font-medium">{label}</div>
-  );
+  )
 
   if (!payload?.length) {
-    return null;
+    return null
   }
 
-  const nestLabel = payload.length === 1 && indicator !== "dot";
+  const nestLabel = payload.length === 1 && indicator !== "dot"
 
   return (
     <div
       className={cn(
-        "border-border/50 bg-background grid min-w-[8rem] items-start gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs shadow-xl transition-all ease-in-out hover:-translate-y-0.5",
+        "grid min-w-[8rem] items-start gap-1.5 rounded-lg border border-border/50 bg-background px-2.5 py-1.5 text-xs shadow-xl transition-all ease-in-out hover:-translate-y-0.5",
         className
       )}
     >
       {!nestLabel ? tooltipLabel : null}
       <div className="grid gap-1.5">
         {payload.map((item, index) => {
-          const indicatorColor = item.fill;
+          const indicatorColor = item.fill
 
           return (
             <div
               key={index}
               className={cn(
-                "[&>svg]:text-muted-foreground flex w-full items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5",
+                "flex w-full items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5 [&>svg]:text-muted-foreground",
                 indicator === "dot" && "items-center"
               )}
             >
@@ -180,13 +180,13 @@ function TooltipDemo({
                         "w-1": indicator === "line",
                         "w-0 border-[1.5px] border-dashed bg-transparent":
                           indicator === "dashed",
-                        "my-0.5": nestLabel && indicator === "dashed"
+                        "my-0.5": nestLabel && indicator === "dashed",
                       }
                     )}
                     style={
                       {
                         "--color-bg": indicatorColor,
-                        "--color-border": indicatorColor
+                        "--color-border": indicatorColor,
                       } as CSSProperties
                     }
                   />
@@ -201,15 +201,15 @@ function TooltipDemo({
                     {nestLabel ? tooltipLabel : null}
                     <span className="text-muted-foreground">{item.name}</span>
                   </div>
-                  <span className="text-foreground font-mono font-medium tabular-nums">
+                  <span className="font-mono font-medium text-foreground tabular-nums">
                     {item.value.toLocaleString()}
                   </span>
                 </div>
               </>
             </div>
-          );
+          )
         })}
       </div>
     </div>
-  );
+  )
 }

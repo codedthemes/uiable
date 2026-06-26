@@ -1,14 +1,15 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+
+// assets
+import { ChevronDown } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-
-// assets
-import { ChevronDown } from "lucide-react";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | DROPDOWN MENU - SPLIT PRIMARY | ------------------------------  //
 
@@ -36,5 +37,5 @@ export default function DropdownMenuSplitPrimary() {
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
-  );
+  )
 }

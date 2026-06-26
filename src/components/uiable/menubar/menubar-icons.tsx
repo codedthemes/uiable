@@ -1,14 +1,4 @@
 // shadcn
-import {
-  Menubar,
-  MenubarContent,
-  MenubarGroup,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger
-} from "@/components/ui/menubar";
 
 // assets
 import {
@@ -17,8 +7,19 @@ import {
   HelpCircleIcon,
   SaveIcon,
   SettingsIcon,
-  TrashIcon
-} from "lucide-react";
+  TrashIcon,
+} from "lucide-react"
+
+import {
+  Menubar,
+  MenubarContent,
+  MenubarGroup,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar"
 
 //  ------------------------------ | MENUBAR - ICONS | ------------------------------  //
 
@@ -64,5 +65,5 @@ export function MenubarIcons() {
         </MenubarContent>
       </MenubarMenu>
     </Menubar>
-  );
+  )
 }

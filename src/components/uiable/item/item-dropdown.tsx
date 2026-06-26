@@ -1,23 +1,24 @@
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+
+// assets
+import { ChevronDownIcon } from "lucide-react"
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu"
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/components/ui/item";
-
-// assets
-import { ChevronDownIcon } from "lucide-react";
+} from "@/components/ui/item"
 
 // constants
 const people = [
@@ -36,7 +37,7 @@ const people = [
     avatar: "https://cdn.uiable.com/user/avatar-7.jpg",
     email: "evil@demo.com",
   },
-];
+]
 
 //  ------------------------------ | ITEM - DROPDOWN | ------------------------------  //
 
@@ -50,7 +51,7 @@ export function ItemDropdown() {
         <DropdownMenuGroup>
           {people.map((person) => (
             <DropdownMenuItem key={person.username}>
-              <Item className="w-full flex gap-2.5 px-2.5 py-2 border-0 flex-nowrap">
+              <Item className="flex w-full flex-nowrap gap-2.5 border-0 px-2.5 py-2">
                 <ItemMedia>
                   <Avatar className="size-8">
                     <AvatarImage src={person.avatar} />
@@ -69,5 +70,5 @@ export function ItemDropdown() {
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

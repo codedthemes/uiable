@@ -1,17 +1,15 @@
 "use client"
 
 import { SyntheticEvent, useState } from "react"
+// assets
+import { DarkFav, LightFav } from "@/images/brand"
+import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
+// third party
+import { toast } from "sonner"
 
 // shadcn
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-
-// third party
-import { toast } from "sonner"
-
-// assets
-import { LightFav, DarkFav } from "@/images/brand"
-import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
 
 //  ------------------------------ | CONTACT | ------------------------------  //
 

@@ -1,7 +1,13 @@
 "use client"
 
 import { MouseEvent, useCallback, useEffect, useState } from "react"
+// assets
+import { CircleCheckBig, Cpu, Moon, Settings2, Sun } from "lucide-react"
+// third party
+import { useTheme } from "next-themes"
 
+// project
+import { useThemeRadius } from "@/hooks/use-theme-radius"
 // shadcn
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -14,17 +20,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-// third party
-import { useTheme } from "next-themes"
-
-// project
-import { useThemeRadius } from "@/hooks/use-theme-radius"
 import { RadiusControl } from "./RadiusControl"
 // import { ThemePresetButtons } from "./ThemePresetButtons";
 import { ThemePresetStyles } from "./ThemePresetStyles"
-
-// assets
-import { CircleCheckBig, Moon, Cpu, Settings2, Sun } from "lucide-react"
 
 // constants
 const THEME_PRESET_KEY = "theme-preset"

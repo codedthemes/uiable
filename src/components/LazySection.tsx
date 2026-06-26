@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import {
   ComponentType,
@@ -7,23 +7,23 @@ import {
   useEffect,
   useMemo,
   useRef,
-  useState
-} from "react";
+  useState,
+} from "react"
 
 // project
-import Loader from "@/components/Loader";
+import Loader from "@/components/Loader"
 
 interface SectionConfig {
-  importFunc: () => Promise<{ default: ComponentType<any> }>;
+  importFunc: () => Promise<{ default: ComponentType<any> }>
 
-  props?: Record<string, any>;
+  props?: Record<string, any>
 }
 
 interface LazySectionProps {
-  sections: SectionConfig | SectionConfig[];
-  fallback?: ReactNode;
-  offset?: string;
-  placeholderHeight?: number;
+  sections: SectionConfig | SectionConfig[]
+  fallback?: ReactNode
+  offset?: string
+  placeholderHeight?: number
 }
 
 //  ------------------------------ | COMPONENT - LAZY SECTION | ------------------------------  //
@@ -32,37 +32,37 @@ export default function LazySection({
   sections,
   fallback = <Loader />,
   offset = "0px",
-  placeholderHeight = 400
+  placeholderHeight = 400,
 }: LazySectionProps) {
   const sectionList = useMemo(
     () => (Array.isArray(sections) ? sections : [sections]),
     [sections]
-  );
-  const [isVisible, setIsVisible] = useState(false);
+  )
+  const [isVisible, setIsVisible] = useState(false)
   const [loadedComponents, setLoadedComponents] = useState<
     (ComponentType | null)[]
-  >(Array(sectionList.length).fill(null));
-  const ref = useRef<HTMLDivElement>(null);
+  >(Array(sectionList.length).fill(null))
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true);
+          setIsVisible(true)
           Promise.all(
             sectionList.map((section) =>
               section.importFunc().then((module) => module.default)
             )
-          ).then((components) => setLoadedComponents(components));
+          ).then((components) => setLoadedComponents(components))
         }
       },
       { rootMargin: offset, threshold: 0.1 }
-    );
+    )
 
-    if (ref.current) observer.observe(ref.current);
+    if (ref.current) observer.observe(ref.current)
 
-    return () => observer.disconnect();
-  }, [sectionList, offset, isVisible]);
+    return () => observer.disconnect()
+  }, [sectionList, offset, isVisible])
 
   return (
     <div ref={ref} style={{ minHeight: placeholderHeight }}>
@@ -70,10 +70,10 @@ export default function LazySection({
         ? sectionList.map((section, index) =>
             createElement(loadedComponents[index]!, {
               key: index,
-              ...section.props
+              ...section.props,
             })
           )
         : isVisible && fallback}
     </div>
-  );
+  )
 }

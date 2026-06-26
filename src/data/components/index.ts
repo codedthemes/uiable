@@ -1,68 +1,67 @@
 // project
-import { accordionInfo } from "./accordion";
-import { alertInfo } from "./alert";
-import { alertDialogInfo } from "./alert-dialog";
-import { aspectRatioInfo } from "./aspect-ratio";
-import { avatarInfo } from "./avatar";
-import { badgeInfo } from "./badge";
-import { breadcrumbInfo } from "./breadcrumb";
-import { buttonInfo } from "./button";
-import { buttonGroupInfo } from "./button-group";
-import { calendarInfo } from "./calendar";
-import { cardInfo } from "./card";
-import { carouselInfo } from "./carousel";
-import { chartInfo } from "./chart";
-import { checkboxInfo } from "./checkbox";
-import { collapsibleInfo } from "./collapsible";
-import { comboboxInfo } from "./combobox";
-import { commandInfo } from "./command";
-import { contextMenuInfo } from "./context-menu";
-import { dataTableInfo } from "./data-table";
-import { datePickerInfo } from "./date-picker";
-import { dialogInfo } from "./dialog";
-import { drawerInfo } from "./drawer";
-import { dropdownMenuInfo } from "./dropdown-menu";
-import { emptyInfo } from "./empty";
-import { fieldInfo } from "./field";
-import { fileUploadInfo } from "./file-upload";
-import { hoverCardInfo } from "./hover-card";
-import { inputInfo } from "./input";
-import { inputGroupInfo } from "./input-group";
-import { inputOtpInfo } from "./input-otp";
-import { itemInfo } from "./item";
-import { kbdInfo } from "./kbd";
-import { labelInfo } from "./label";
-import { listGroupInfo } from "./list-group";
-import { menubarInfo } from "./menubar";
-import { nativeSelectInfo } from "./native-select";
-import { navbarInfo } from "./navbar";
-import { navigationMenuInfo } from "./navigation-menu";
-import { paginationInfo } from "./pagination";
-import { popoverInfo } from "./popover";
-import { progressInfo } from "./progress";
-import { radioInfo } from "./radio";
-import { radioGroupInfo } from "./radio-group";
-import { resizableInfo } from "./resizable";
-import { scrollAreaInfo } from "./scroll-area";
-import { selectInfo } from "./select";
-import { separatorInfo } from "./separator";
-import { sheetInfo } from "./sheet";
-import { sidebarInfo } from "./sidebar";
-import { skeletonInfo } from "./skeleton";
-import { sliderInfo } from "./slider";
-import { sonnerInfo } from "./sonner";
-import { spinnerInfo } from "./spinner";
-import { switchInfo } from "./switch";
-import { tableInfo } from "./table";
-import { tabsInfo } from "./tabs";
-import { textareaInfo } from "./textarea";
-import { toggleInfo } from "./toggle";
-import { toggleGroupInfo } from "./toggle-group";
-import { tooltipInfo } from "./tooltip";
-import { typographyInfo } from "./typography";
-
+import { accordionInfo } from "./accordion"
+import { alertInfo } from "./alert"
+import { alertDialogInfo } from "./alert-dialog"
+import { aspectRatioInfo } from "./aspect-ratio"
+import { avatarInfo } from "./avatar"
+import { badgeInfo } from "./badge"
+import { breadcrumbInfo } from "./breadcrumb"
+import { buttonInfo } from "./button"
+import { buttonGroupInfo } from "./button-group"
+import { calendarInfo } from "./calendar"
+import { cardInfo } from "./card"
+import { carouselInfo } from "./carousel"
+import { chartInfo } from "./chart"
+import { checkboxInfo } from "./checkbox"
+import { collapsibleInfo } from "./collapsible"
+import { comboboxInfo } from "./combobox"
+import { commandInfo } from "./command"
+import { contextMenuInfo } from "./context-menu"
+import { dataTableInfo } from "./data-table"
+import { datePickerInfo } from "./date-picker"
+import { dialogInfo } from "./dialog"
+import { drawerInfo } from "./drawer"
+import { dropdownMenuInfo } from "./dropdown-menu"
+import { emptyInfo } from "./empty"
+import { fieldInfo } from "./field"
+import { fileUploadInfo } from "./file-upload"
+import { hoverCardInfo } from "./hover-card"
+import { inputInfo } from "./input"
+import { inputGroupInfo } from "./input-group"
+import { inputOtpInfo } from "./input-otp"
+import { itemInfo } from "./item"
+import { kbdInfo } from "./kbd"
+import { labelInfo } from "./label"
+import { listGroupInfo } from "./list-group"
+import { menubarInfo } from "./menubar"
+import { nativeSelectInfo } from "./native-select"
+import { navbarInfo } from "./navbar"
+import { navigationMenuInfo } from "./navigation-menu"
+import { paginationInfo } from "./pagination"
+import { popoverInfo } from "./popover"
+import { progressInfo } from "./progress"
+import { radioInfo } from "./radio"
+import { radioGroupInfo } from "./radio-group"
+import { resizableInfo } from "./resizable"
+import { scrollAreaInfo } from "./scroll-area"
+import { selectInfo } from "./select"
+import { separatorInfo } from "./separator"
+import { sheetInfo } from "./sheet"
+import { sidebarInfo } from "./sidebar"
+import { skeletonInfo } from "./skeleton"
+import { sliderInfo } from "./slider"
+import { sonnerInfo } from "./sonner"
+import { spinnerInfo } from "./spinner"
+import { switchInfo } from "./switch"
+import { tableInfo } from "./table"
+import { tabsInfo } from "./tabs"
+import { textareaInfo } from "./textarea"
+import { toggleInfo } from "./toggle"
+import { toggleGroupInfo } from "./toggle-group"
+import { tooltipInfo } from "./tooltip"
 // types
-import { CategoryInfo } from "./types";
+import { CategoryInfo } from "./types"
+import { typographyInfo } from "./typography"
 
 export const categoryInfoMap: Record<string, CategoryInfo> = {
   accordion: accordionInfo,
@@ -125,5 +124,5 @@ export const categoryInfoMap: Record<string, CategoryInfo> = {
   toggle: toggleInfo,
   "toggle-group": toggleGroupInfo,
   tooltip: tooltipInfo,
-  typography: typographyInfo
-};
+  typography: typographyInfo,
+}

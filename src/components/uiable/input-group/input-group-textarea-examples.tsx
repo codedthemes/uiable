@@ -1,18 +1,4 @@
 // shadcn
-import {
-  Field,
-  FieldDescription,
-  FieldGroup,
-  FieldLabel
-} from "@/components/ui/field";
-import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupButton,
-  InputGroupText,
-  InputGroupTextarea
-} from "@/components/ui/input-group";
-import { Textarea } from "@/components/ui/textarea";
 
 // assets
 import {
@@ -20,8 +6,23 @@ import {
   CodeIcon,
   CopyIcon,
   InfoIcon,
-  RefreshCwIcon
-} from "lucide-react";
+  RefreshCwIcon,
+} from "lucide-react"
+
+import {
+  Field,
+  FieldDescription,
+  FieldGroup,
+  FieldLabel,
+} from "@/components/ui/field"
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupText,
+  InputGroupTextarea,
+} from "@/components/ui/input-group"
+import { Textarea } from "@/components/ui/textarea"
 
 //  ------------------------------ | INPUT GROUP - TEXTAREA EXAMPLES | ------------------------------  //
 
@@ -81,7 +82,7 @@ export function InputGroupTextareaExamples() {
           <InputGroupTextarea id="prompt-31" />
           <InputGroupAddon align="block-start">
             <InputGroupText>Ask, Search or Chat...</InputGroupText>
-            <InfoIcon className="text-muted-foreground ml-auto" />
+            <InfoIcon className="ml-auto text-muted-foreground" />
           </InputGroupAddon>
         </InputGroup>
         <FieldDescription>
@@ -158,5 +159,5 @@ export function InputGroupTextareaExamples() {
         </InputGroup>
       </Field>
     </FieldGroup>
-  );
+  )
 }

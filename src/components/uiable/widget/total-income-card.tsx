@@ -1,32 +1,30 @@
-"use client";
+"use client"
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react"
+// third party
+import ApexCharts from "apexcharts"
+// assets
+import { MoreVertical } from "lucide-react"
 
+import { cn } from "@/lib/utils"
 // shadcn
-import { buttonVariants } from "@/components/ui/button";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { buttonVariants } from "@/components/ui/button"
+import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-// third party
-import ApexCharts from "apexcharts";
+} from "@/components/ui/dropdown-menu"
 
 // project
-import IncomeItem from "./income-item";
-import { cn } from "@/lib/utils";
-
-// assets
-import { MoreVertical } from "lucide-react";
+import IncomeItem from "./income-item"
 
 interface TotalIncomeCardProps {
-  title: string;
-  series: number[];
-  labels: string[];
-  items: { label: string; amount: string; change: string; color: string }[];
+  title: string
+  series: number[]
+  labels: string[]
+  items: { label: string; amount: string; change: string; color: string }[]
 }
 
 //  ------------------------------ | BLOCK - TOTAL INCOME CARD | ------------------------------  //
@@ -37,14 +35,14 @@ export default function TotalIncomeCard({
   labels,
   items,
 }: TotalIncomeCardProps) {
-  const chartRef = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    let active = true;
-    let chart: ApexCharts | null = null;
+    let active = true
+    let chart: ApexCharts | null = null
 
     const timer = setTimeout(() => {
-      if (!active || !chartRef.current) return;
+      if (!active || !chartRef.current) return
 
       const options = {
         chart: { height: 320, type: "donut" },
@@ -77,31 +75,31 @@ export default function TotalIncomeCard({
             },
           },
         ],
-      };
+      }
 
-      chart = new ApexCharts(chartRef.current, options as any);
-      chart.render();
-    }, 0);
+      chart = new ApexCharts(chartRef.current, options as any)
+      chart.render()
+    }, 0)
 
     return () => {
-      active = false;
-      clearTimeout(timer);
+      active = false
+      clearTimeout(timer)
       if (chart) {
-        chart.destroy();
+        chart.destroy()
       }
-    };
-  }, [series, labels]);
+    }
+  }, [series, labels])
 
   return (
     <Card>
       <CardContent className="p-6">
-        <div className="flex items-center justify-between mb-6">
+        <div className="mb-6 flex items-center justify-between">
           <CardTitle className="text-lg font-bold">{title}</CardTitle>
           <DropdownMenu>
             <DropdownMenuTrigger
               className={cn(
                 buttonVariants({ variant: "ghost", size: "icon" }),
-                "h-8 w-8 rounded-xl shrink-0",
+                "h-8 w-8 shrink-0 rounded-xl"
               )}
             >
               <MoreVertical className="h-4 w-4" />
@@ -113,13 +111,13 @@ export default function TotalIncomeCard({
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <div ref={chartRef} className="h-[250px] mb-6"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div ref={chartRef} className="mb-6 h-[250px]"></div>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {items.map((item, idx) => (
             <IncomeItem key={idx} {...item} />
           ))}
         </div>
       </CardContent>
     </Card>
-  );
+  )
 }

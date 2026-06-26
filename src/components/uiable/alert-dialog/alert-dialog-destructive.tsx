@@ -1,4 +1,8 @@
 // shadcn
+
+// assets
+import { Trash } from "iconsax-reactjs"
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -9,12 +13,9 @@ import {
   AlertDialogHeader,
   AlertDialogMedia,
   AlertDialogTitle,
-  AlertDialogTrigger
-} from "@/components/ui/alert-dialog";
-import { Button } from "@/components/ui/button";
-
-// assets
-import { Trash } from "iconsax-reactjs";
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { Button } from "@/components/ui/button"
 
 //  ------------------------------ | ALERT DIALOG - DESTRUCTIVE | ------------------------------  //
 
@@ -41,5 +42,5 @@ export function AlertDialogDestructive() {
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-  );
+  )
 }

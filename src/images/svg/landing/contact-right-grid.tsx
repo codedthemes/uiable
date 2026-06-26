@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | SVG - CONTACT RIGHT GRID | ------------------------------  //
 
@@ -29,5 +29,5 @@ export default function ContactRightGrid(props: SVGAttributes<SVGElement>) {
         </radialGradient>
       </defs>
     </svg>
-  );
+  )
 }

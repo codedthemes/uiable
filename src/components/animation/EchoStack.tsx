@@ -1,7 +1,6 @@
 "use client"
 
-import { useEffect, useState, ReactNode, Children } from "react"
-
+import { Children, ReactNode, useEffect, useState } from "react"
 // project imports
 import { AnimationBg } from "@/images/svg/landing"
 

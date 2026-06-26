@@ -1,15 +1,13 @@
 "use client"
 
 // third party
-import { motion } from "framer-motion"
-
+import { DarkFav, LightFav } from "@/images/brand"
+import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons"
 // project imports
 import { AnimationBg } from "@/images/svg/landing"
-import { LightFav, DarkFav } from "@/images/brand"
-import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons"
-
 // assets
 import { IconBrandNextjs, IconBrandReact } from "@tabler/icons-react"
+import { motion } from "framer-motion"
 
 // Duration and ease definitions for orbital movement
 const ORBIT_1_DURATION = 25 // Clockwise inner orbit

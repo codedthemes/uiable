@@ -1,9 +1,10 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { ButtonGroup } from "@/components/ui/button-group";
 
 // assets
-import { PlusIcon } from "lucide-react";
+import { PlusIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { ButtonGroup } from "@/components/ui/button-group"
 
 //  ------------------------------ | BUTTON GROUP - SIZE | ------------------------------  //
 
@@ -35,5 +36,5 @@ export default function ButtonGroupSize() {
         </Button>
       </ButtonGroup>
     </div>
-  );
+  )
 }

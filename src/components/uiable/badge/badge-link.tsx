@@ -1,8 +1,9 @@
 // shadcn
-import { Badge } from "@/components/ui/badge";
 
 // assets
-import { ArrowUpRightIcon } from "lucide-react";
+import { ArrowUpRightIcon } from "lucide-react"
+
+import { Badge } from "@/components/ui/badge"
 
 //  ------------------------------ | BADGE - LINK | ------------------------------  //
 
@@ -11,5 +12,5 @@ export function BadgeAsLink() {
     <Badge render={<a href="#link" />}>
       Open Link <ArrowUpRightIcon data-icon="inline-end" />
     </Badge>
-  );
+  )
 }

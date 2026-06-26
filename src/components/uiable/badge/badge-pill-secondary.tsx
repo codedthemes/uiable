@@ -1,12 +1,12 @@
 // shadcn
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge"
 
 //  ------------------------------ | BADGE - PILL SECONDARY | ------------------------------  //
 
 export default function BadgePillSecondary() {
   return (
-    <Badge className="rounded-full bg-secondary-500 text-white">
+    <Badge className="bg-secondary-500 rounded-full text-white">
       Secondary
     </Badge>
-  );
+  )
 }

@@ -1,8 +1,12 @@
 "use client"
 
+import { ComponentProps, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useState, ComponentProps } from "react"
+import CATEGORY_COUNTS from "@/category-counts.json"
+import { NAV_CATEGORIES } from "@/components-grid"
+// assets
+import { ChevronDownIcon, Component, FileText } from "lucide-react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -14,25 +18,20 @@ import {
 import {
   Sidebar,
   SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarGroup,
-  SidebarGroupLabel,
-  SidebarGroupContent,
   SidebarRail,
 } from "@/components/ui/sidebar"
-
-// project
-import Logo from "./uiable/layout/shared/logo"
-import CATEGORY_COUNTS from "@/category-counts.json"
-import { NAV_CATEGORIES } from "@/components-grid"
 import ComponentList from "@/components/uiable/layout/component-list"
 import ComponentSearch from "@/components/uiable/layout/shared/component-search"
 
-// assets
-import { Component, FileText, ChevronDownIcon } from "lucide-react"
+// project
+import Logo from "./uiable/layout/shared/logo"
 
 //  ------------------------------ | COMPONENT - APP SIDEBAR | ------------------------------  //
 

@@ -1,8 +1,9 @@
 // shadcn
-import { Button } from "@/components/ui/button";
 
 // assets
-import { CircleFadingArrowUpIcon } from "lucide-react";
+import { CircleFadingArrowUpIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 
 //  ------------------------------ | BUTTON ICON | ------------------------------  //
 
@@ -11,5 +12,5 @@ export default function ButtonIcon() {
     <Button variant="outline" size="icon">
       <CircleFadingArrowUpIcon />
     </Button>
-  );
+  )
 }

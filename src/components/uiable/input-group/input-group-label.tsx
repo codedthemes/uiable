@@ -1,19 +1,20 @@
 // shadcn
+
+// assets
+import { InfoIcon } from "lucide-react"
+
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-  InputGroupInput
-} from "@/components/ui/input-group";
-import { Label } from "@/components/ui/label";
+  InputGroupInput,
+} from "@/components/ui/input-group"
+import { Label } from "@/components/ui/label"
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger
-} from "@/components/ui/tooltip";
-
-// assets
-import { InfoIcon } from "lucide-react";
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 //  ------------------------------ | INPUT GROUP - LABEL | ------------------------------  //
 
@@ -52,5 +53,5 @@ export default function InputGroupLabel() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  );
+  )
 }

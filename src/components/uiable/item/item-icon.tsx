@@ -1,16 +1,17 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+
+// assets
+import { ShieldSecurity } from "iconsax-reactjs"
+
+import { Button } from "@/components/ui/button"
 import {
   Item,
   ItemActions,
   ItemContent,
   ItemDescription,
   ItemMedia,
-  ItemTitle
-} from "@/components/ui/item";
-
-// assets
-import { ShieldSecurity } from "iconsax-reactjs";
+  ItemTitle,
+} from "@/components/ui/item"
 
 //  ------------------------------ | ITEM - ICON | ------------------------------  //
 
@@ -32,5 +33,5 @@ export function ItemIcon() {
         </ItemActions>
       </Item>
     </div>
-  );
+  )
 }

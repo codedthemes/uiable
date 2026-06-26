@@ -1,14 +1,4 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { ButtonGroup } from "@/components/ui/button-group";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
 
 // assets
 import {
@@ -19,8 +9,19 @@ import {
   ShareIcon,
   TrashIcon,
   UserRoundXIcon,
-  VolumeOffIcon
-} from "lucide-react";
+  VolumeOffIcon,
+} from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { ButtonGroup } from "@/components/ui/button-group"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | BUTTON GROUP - DROPDOWN | ------------------------------  //
 
@@ -69,5 +70,5 @@ export default function ButtonGroupDropdown() {
         </DropdownMenuContent>
       </DropdownMenu>
     </ButtonGroup>
-  );
+  )
 }

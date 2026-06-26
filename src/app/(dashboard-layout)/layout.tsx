@@ -1,5 +1,15 @@
 import { ReactNode } from "react"
 import Link from "next/link"
+// project
+import branding from "@/branding.json"
+// assets
+import {
+  IconBrandDiscord,
+  IconBrandGithub,
+  IconBrandX,
+} from "@tabler/icons-react"
+// third party
+import { Toaster } from "sonner"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -9,22 +19,9 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-
-// third party
-import { Toaster } from "sonner"
-
-// project
-import branding from "@/branding.json"
 import { AppSidebar } from "@/components/app-sidebar"
 import { ThemeToggle } from "@/components/customizer"
 import Footer from "@/components/uiable/blocks/landing/footer/footer"
-
-// assets
-import {
-  IconBrandDiscord,
-  IconBrandGithub,
-  IconBrandX,
-} from "@tabler/icons-react"
 
 // import SearchBar from "@/components/uiable/layout/search-bar";
 

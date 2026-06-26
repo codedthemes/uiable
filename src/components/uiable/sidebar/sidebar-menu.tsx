@@ -1,4 +1,14 @@
 // shadcn
+
+// assets
+import {
+  FrameIcon,
+  LifeBuoyIcon,
+  MapIcon,
+  PieChartIcon,
+  SendIcon,
+} from "lucide-react"
+
 import {
   Sidebar,
   SidebarContent,
@@ -9,16 +19,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/components/ui/sidebar";
-
-// assets
-import {
-  FrameIcon,
-  LifeBuoyIcon,
-  MapIcon,
-  PieChartIcon,
-  SendIcon,
-} from "lucide-react";
+} from "@/components/ui/sidebar"
 
 // constants
 const projects = [
@@ -47,7 +48,7 @@ const projects = [
     url: "#",
     icon: SendIcon,
   },
-];
+]
 
 //  ------------------------------ | SIDEBAR - MENU | ------------------------------  //
 
@@ -74,5 +75,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

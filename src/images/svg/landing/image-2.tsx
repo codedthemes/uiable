@@ -2,7 +2,12 @@
 
 export default function Image2() {
   return (
-    <svg viewBox="0 0 1440 790" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+    <svg
+      viewBox="0 0 1440 790"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin meet"
+    >
       <g clipPath="url(#clip0_3609_1650)">
         <rect width="1440" height="790" fill="var(--card)" />
         <rect width="1440" height="78" fill="var(--card)" />
@@ -206,7 +211,10 @@ export default function Image2() {
             fill="var(--primary-foreground)"
             fillOpacity="0.3"
           />
-          <path d="M826.5 158.5V197.5H613.5V158.5H826.5Z" stroke="var(--border)" />
+          <path
+            d="M826.5 158.5V197.5H613.5V158.5H826.5Z"
+            stroke="var(--border)"
+          />
           <circle cx="637" cy="178" r="4" fill="var(--foreground)" />
           <circle
             cx="637"

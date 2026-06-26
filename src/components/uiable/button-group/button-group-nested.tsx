@@ -1,25 +1,26 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { ButtonGroup } from "@/components/ui/button-group";
+
+// assets
+import { AudioLinesIcon, PlusIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { ButtonGroup } from "@/components/ui/button-group"
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput
-} from "@/components/ui/input-group";
+  InputGroupInput,
+} from "@/components/ui/input-group"
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger
-} from "@/components/ui/tooltip";
-
-// assets
-import { AudioLinesIcon, PlusIcon } from "lucide-react";
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 //  ------------------------------ | BUTTON GROUP - NESTED | ------------------------------  //
 
 export function ButtonGroupNested() {
   return (
-    <ButtonGroup className="gap-2 items-center">
+    <ButtonGroup className="items-center gap-2">
       <ButtonGroup>
         <Button size="icon-lg">
           <PlusIcon />
@@ -37,5 +38,5 @@ export function ButtonGroupNested() {
         </InputGroup>
       </ButtonGroup>
     </ButtonGroup>
-  );
+  )
 }

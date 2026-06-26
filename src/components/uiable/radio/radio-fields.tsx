@@ -7,9 +7,9 @@ import {
   FieldLabel,
   FieldLegend,
   FieldSet,
-  FieldTitle
-} from "@/components/ui/field";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+  FieldTitle,
+} from "@/components/ui/field"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 //  ------------------------------ | RADIO - FIELDS | ------------------------------  //
 
@@ -148,5 +148,5 @@ export function RadioFields() {
         </RadioGroup>
       </FieldSet>
     </FieldGroup>
-  );
+  )
 }

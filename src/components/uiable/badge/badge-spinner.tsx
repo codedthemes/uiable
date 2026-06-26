@@ -1,6 +1,6 @@
 // shadcn
-import { Badge } from "@/components/ui/badge";
-import { Spinner } from "@/components/ui/spinner";
+import { Badge } from "@/components/ui/badge"
+import { Spinner } from "@/components/ui/spinner"
 
 //  ------------------------------ | BADGE - SPINNER | ------------------------------  //
 
@@ -16,5 +16,5 @@ export function BadgeWithSpinner() {
         <Spinner data-icon="inline-end" />
       </Badge>
     </div>
-  );
+  )
 }

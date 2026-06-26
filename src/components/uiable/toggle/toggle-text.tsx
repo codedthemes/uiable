@@ -1,8 +1,9 @@
 // shadcn
-import { Toggle } from "@/components/ui/toggle";
 
 // assets
-import { ItalicIcon } from "lucide-react";
+import { ItalicIcon } from "lucide-react"
+
+import { Toggle } from "@/components/ui/toggle"
 
 //  ------------------------------ | TOGGLE - TEXT | ------------------------------  //
 
@@ -12,5 +13,5 @@ export function ToggleText() {
       <ItalicIcon />
       Italic
     </Toggle>
-  );
+  )
 }

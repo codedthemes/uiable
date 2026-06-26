@@ -2,20 +2,20 @@
 
 // project imports
 import {
-  ProfileCard,
-  AskMeAnything,
-  RevenueGrowthSlider,
-  OneTimePasswordCard,
   ActionButtonGroupBadge,
-  RevenueChartCard,
-  PrivacyVisibilityCard,
-  UploadFilesCard,
+  AskMeAnything,
+  CurrencySwapCard,
   DeploymentEnvironmentCard,
   EventAlertCard,
-  VerificationBannerCard,
-  CurrencySwapCard,
+  OneTimePasswordCard,
   PowerUsageCard,
+  PrivacyVisibilityCard,
+  ProfileCard,
+  RevenueChartCard,
+  RevenueGrowthSlider,
   SectionHeader,
+  UploadFilesCard,
+  VerificationBannerCard,
 } from "@/components/uiable/blocks/landing/components"
 
 //  ------------------------------ | COMPONENT 2 | ------------------------------  //

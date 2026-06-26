@@ -1,10 +1,14 @@
 // shadcn
+
+// assets
+import { ChevronUpIcon } from "lucide-react"
+
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import {
   Sidebar,
   SidebarContent,
@@ -15,11 +19,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-  SidebarTrigger
-} from "@/components/ui/sidebar";
-
-// assets
-import { ChevronUpIcon } from "lucide-react";
+  SidebarTrigger,
+} from "@/components/ui/sidebar"
 
 //  ------------------------------ | SIDEBAR - FOOTER | ------------------------------  //
 
@@ -66,5 +67,5 @@ export default function AppSidebar() {
         </header>
       </SidebarInset>
     </SidebarProvider>
-  );
+  )
 }

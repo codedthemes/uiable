@@ -1,14 +1,15 @@
 // shadcn
+
+// assets
+import { LoaderIcon } from "lucide-react"
+
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-  InputGroupText
-} from "@/components/ui/input-group";
-import { Spinner } from "@/components/ui/spinner";
-
-// assets
-import { LoaderIcon } from "lucide-react";
+  InputGroupText,
+} from "@/components/ui/input-group"
+import { Spinner } from "@/components/ui/spinner"
 
 //  ------------------------------ | INPUT GROUP - SPINNER | ------------------------------  //
 
@@ -46,5 +47,5 @@ export default function InputGroupSpinner() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  );
+  )
 }

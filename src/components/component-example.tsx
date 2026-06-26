@@ -1,71 +1,6 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-
-// shadcn
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogMedia,
-  AlertDialogTitle,
-  AlertDialogTrigger
-} from "@/components/ui/alert-dialog";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle
-} from "@/components/ui/card";
-import {
-  Combobox,
-  ComboboxContent,
-  ComboboxEmpty,
-  ComboboxInput,
-  ComboboxItem,
-  ComboboxList
-} from "@/components/ui/combobox";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-
-// project
-import { Example, ExampleWrapper } from "@/components/example";
-
+import { useState } from "react"
 // assets
 import {
   BellIcon,
@@ -95,8 +30,71 @@ import {
   SettingsIcon,
   ShieldIcon,
   SunIcon,
-  UserIcon
-} from "lucide-react";
+  UserIcon,
+} from "lucide-react"
+
+// shadcn
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogMedia,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import {
+  Combobox,
+  ComboboxContent,
+  ComboboxEmpty,
+  ComboboxInput,
+  ComboboxItem,
+  ComboboxList,
+} from "@/components/ui/combobox"
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
+import { Input } from "@/components/ui/input"
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+import { Textarea } from "@/components/ui/textarea"
+// project
+import { Example, ExampleWrapper } from "@/components/example"
 
 //  ------------------------------ | COMPONENT - EXAMPLE | ------------------------------  //
 
@@ -106,14 +104,14 @@ export function ComponentExample() {
       <CardExample />
       <FormExample />
     </ExampleWrapper>
-  );
+  )
 }
 
 function CardExample() {
   return (
     <Example title="Card" className="items-center justify-center">
       <Card className="relative w-full max-w-sm overflow-hidden pt-0">
-        <div className="bg-primary absolute inset-0 z-30 aspect-video opacity-50 mix-blend-color" />
+        <div className="absolute inset-0 z-30 aspect-video bg-primary opacity-50 mix-blend-color" />
         <img
           src="https://images.unsplash.com/photo-1604076850742-4c7221f3101b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Photo by mymind on Unsplash"
@@ -157,7 +155,7 @@ function CardExample() {
         </CardFooter>
       </Card>
     </Example>
-  );
+  )
 }
 
 const frameworks = [
@@ -165,44 +163,46 @@ const frameworks = [
   "SvelteKit",
   "Nuxt.js",
   "Remix",
-  "Astro"
-] as const;
+  "Astro",
+] as const
 
 const roleItems = [
   { label: "Developer", value: "developer" },
   { label: "Designer", value: "designer" },
   { label: "Manager", value: "manager" },
-  { label: "Other", value: "other" }
-];
+  { label: "Other", value: "other" },
+]
 
 function FormExample() {
   const [notifications, setNotifications] = useState({
     email: true,
     sms: false,
-    push: true
-  });
-  const [theme, setTheme] = useState("light");
+    push: true,
+  })
+  const [theme, setTheme] = useState("light")
 
-  const handleEmailNotificationChange = (checked: boolean | "indeterminate") => {
+  const handleEmailNotificationChange = (
+    checked: boolean | "indeterminate"
+  ) => {
     setNotifications((prev) => ({
       ...prev,
-      email: checked === true
-    }));
-  };
+      email: checked === true,
+    }))
+  }
 
   const handleSmsNotificationChange = (checked: boolean | "indeterminate") => {
     setNotifications((prev) => ({
       ...prev,
-      sms: checked === true
-    }));
-  };
+      sms: checked === true,
+    }))
+  }
 
   const handlePushNotificationChange = (checked: boolean | "indeterminate") => {
     setNotifications((prev) => ({
       ...prev,
-      push: checked === true
-    }));
-  };
+      push: checked === true,
+    }))
+  }
 
   return (
     <Example title="Form">
@@ -379,14 +379,18 @@ function FormExample() {
                                   </DropdownMenuLabel>
                                   <DropdownMenuCheckboxItem
                                     checked={notifications.push}
-                                    onCheckedChange={handlePushNotificationChange}
+                                    onCheckedChange={
+                                      handlePushNotificationChange
+                                    }
                                   >
                                     <BellIcon />
                                     Push Notifications
                                   </DropdownMenuCheckboxItem>
                                   <DropdownMenuCheckboxItem
                                     checked={notifications.email}
-                                    onCheckedChange={handleEmailNotificationChange}
+                                    onCheckedChange={
+                                      handleEmailNotificationChange
+                                    }
                                   >
                                     <MailIcon />
                                     Email Notifications
@@ -500,5 +504,5 @@ function FormExample() {
         </CardContent>
       </Card>
     </Example>
-  );
+  )
 }

@@ -1,17 +1,15 @@
 import { ReactNode } from "react"
 import { Metadata } from "next"
-
-// shadcn
-import { TooltipProvider } from "@/components/ui/tooltip"
-
+// project
+import branding from "@/branding.json"
+import Metrics from "@/metrics"
 // third-party
 import { Toaster } from "sonner"
 
-// project
-import branding from "@/branding.json"
+// shadcn
+import { TooltipProvider } from "@/components/ui/tooltip"
 import { ThemePresetStyles } from "@/components/customizer/ThemePresetStyles"
 import { ThemeProvider } from "@/components/theme-provider"
-import Metrics from "@/metrics"
 
 // assets
 import "./globals.css"

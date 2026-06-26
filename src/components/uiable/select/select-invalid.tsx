@@ -1,5 +1,5 @@
 // shadcn
-import { Field, FieldError, FieldLabel } from "@/components/ui/field";
+import { Field, FieldError, FieldLabel } from "@/components/ui/field"
 import {
   Select,
   SelectContent,
@@ -7,7 +7,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select"
 
 // constants
 const items = [
@@ -15,7 +15,7 @@ const items = [
   { label: "Apple", value: "apple" },
   { label: "Banana", value: "banana" },
   { label: "Blueberry", value: "blueberry" },
-];
+]
 
 //  ------------------------------ | SELECT - INVALID | ------------------------------  //
 
@@ -39,5 +39,5 @@ export function SelectInvalid() {
       </Select>
       <FieldError>Please select a fruit.</FieldError>
     </Field>
-  );
+  )
 }

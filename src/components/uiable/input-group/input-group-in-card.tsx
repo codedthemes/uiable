@@ -1,24 +1,25 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+
+// assets
+import { ExternalLinkIcon, MailIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle
-} from "@/components/ui/card";
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+  CardTitle,
+} from "@/components/ui/card"
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
-  InputGroupTextarea
-} from "@/components/ui/input-group";
-
-// assets
-import { ExternalLinkIcon, MailIcon } from "lucide-react";
+  InputGroupTextarea,
+} from "@/components/ui/input-group"
 
 //  ------------------------------ | INPUT GROUP - IN CARD | ------------------------------  //
 
@@ -78,5 +79,5 @@ export function InputGroupInCard() {
         <Button>Submit</Button>
       </CardFooter>
     </Card>
-  );
+  )
 }

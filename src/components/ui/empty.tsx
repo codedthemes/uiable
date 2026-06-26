@@ -1,6 +1,6 @@
-import { cva, type VariantProps } from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 function Empty({ className, ...props }: React.ComponentProps<"div">) {
   return (
@@ -12,7 +12,7 @@ function Empty({ className, ...props }: React.ComponentProps<"div">) {
       )}
       {...props}
     />
-  );
+  )
 }
 
 function EmptyHeader({ className, ...props }: React.ComponentProps<"div">) {
@@ -22,7 +22,7 @@ function EmptyHeader({ className, ...props }: React.ComponentProps<"div">) {
       className={cn("mb-6 flex flex-col items-center gap-3", className)}
       {...props}
     />
-  );
+  )
 }
 
 const emptyMediaVariants = cva(
@@ -31,14 +31,14 @@ const emptyMediaVariants = cva(
     variants: {
       variant: {
         default: "bg-transparent",
-        icon: "flex size-8 shrink-0 items-center justify-center rounded-lg bg-muted text-foreground [&_svg:not([class*='size-'])]:size-4"
-      }
+        icon: "flex size-8 shrink-0 items-center justify-center rounded-lg bg-muted text-foreground [&_svg:not([class*='size-'])]:size-4",
+      },
     },
     defaultVariants: {
-      variant: "default"
-    }
+      variant: "default",
+    },
   }
-);
+)
 
 function EmptyMedia({
   className,
@@ -55,7 +55,7 @@ function EmptyMedia({
       )}
       {...props}
     />
-  );
+  )
 }
 
 function EmptyTitle({ className, ...props }: React.ComponentProps<"div">) {
@@ -65,17 +65,17 @@ function EmptyTitle({ className, ...props }: React.ComponentProps<"div">) {
       className={cn("text-lg font-semibold", className)}
       {...props}
     />
-  );
+  )
 }
 
 function EmptyDescription({ className, ...props }: React.ComponentProps<"p">) {
   return (
     <p
       data-slot="empty-description"
-      className={cn("text-muted-foreground text-base", className)}
+      className={cn("text-base text-muted-foreground", className)}
       {...props}
     />
-  );
+  )
 }
 
 function EmptyContent({ className, ...props }: React.ComponentProps<"div">) {
@@ -88,7 +88,7 @@ function EmptyContent({ className, ...props }: React.ComponentProps<"div">) {
       )}
       {...props}
     />
-  );
+  )
 }
 
 export {
@@ -97,5 +97,5 @@ export {
   EmptyTitle,
   EmptyDescription,
   EmptyContent,
-  EmptyMedia
-};
+  EmptyMedia,
+}

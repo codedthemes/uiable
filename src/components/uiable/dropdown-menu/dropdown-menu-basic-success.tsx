@@ -1,14 +1,15 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+
+// assets
+import { ChevronDown } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-
-// assets
-import { ChevronDown } from "lucide-react";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | DROPDOWN MENU - BASIC SUCCESS | ------------------------------  //
 
@@ -19,7 +20,7 @@ export default function DropdownMenuBasicSuccess() {
         render={
           <Button
             variant="default"
-            className="bg-green-600 hover:bg-green-700 text-white"
+            className="bg-green-600 text-white hover:bg-green-700"
           >
             Success <ChevronDown className="ml-2 h-4 w-4" />
           </Button>
@@ -31,5 +32,5 @@ export default function DropdownMenuBasicSuccess() {
         <DropdownMenuItem>Something else here</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

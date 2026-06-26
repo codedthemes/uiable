@@ -1,4 +1,6 @@
-import Link from "next/link";
+import Link from "next/link"
+// assets
+import { ChevronDownIcon, DotIcon } from "lucide-react"
 
 // shadcn
 import {
@@ -7,19 +9,16 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-
-// assets
-import { ChevronDownIcon, DotIcon } from "lucide-react";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | BREADCRUMB - DROPDOWN | ------------------------------  //
 
@@ -39,7 +38,7 @@ export function BreadcrumbDropdown() {
               render={
                 <Button
                   variant="ghost"
-                  className="p-0 h-auto hover:bg-transparent dark:hover:bg-transparent aria-expanded:bg-transparent aria-expanded:text-inherit flex items-center gap-1"
+                  className="flex h-auto items-center gap-1 p-0 hover:bg-transparent aria-expanded:bg-transparent aria-expanded:text-inherit dark:hover:bg-transparent"
                 />
               }
             >
@@ -63,5 +62,5 @@ export function BreadcrumbDropdown() {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
+  )
 }

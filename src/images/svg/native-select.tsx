@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | NATIVESELECT | ------------------------------  //
 
@@ -117,5 +117,5 @@ export default function NativeSelect(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

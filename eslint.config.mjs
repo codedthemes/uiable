@@ -1,6 +1,6 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
+import nextVitals from "eslint-config-next/core-web-vitals"
+import nextTs from "eslint-config-next/typescript"
+import { defineConfig, globalIgnores } from "eslint/config"
 
 const eslintConfig = defineConfig([
   ...nextVitals,
@@ -23,8 +23,8 @@ const eslintConfig = defineConfig([
       "react/display-name": "warn",
       "jsx-a11y/role-supports-aria-props": "warn",
 
-      "react/prop-types": "off"
-    }
+      "react/prop-types": "off",
+    },
   },
 
   globalIgnores([
@@ -34,8 +34,8 @@ const eslintConfig = defineConfig([
     "build/**",
     "dist/**",
     "next-env.d.ts",
-    ".env*"
-  ])
-]);
+    ".env*",
+  ]),
+])
 
-export default eslintConfig;
+export default eslintConfig

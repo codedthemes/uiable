@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
 import {
@@ -11,14 +11,14 @@ import {
   ContextMenuRadioGroup,
   ContextMenuRadioItem,
   ContextMenuSeparator,
-  ContextMenuTrigger
-} from "@/components/ui/context-menu";
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
 
 //  ------------------------------ | CONTEXT MENU - RADIO | ------------------------------  //
 
 export function ContextMenuRadio() {
-  const [user, setUser] = useState("pedro");
-  const [theme, setTheme] = useState("light");
+  const [user, setUser] = useState("pedro")
+  const [theme, setTheme] = useState("light")
 
   return (
     <ContextMenu>
@@ -51,5 +51,5 @@ export function ContextMenuRadio() {
         </ContextMenuGroup>
       </ContextMenuContent>
     </ContextMenu>
-  );
+  )
 }

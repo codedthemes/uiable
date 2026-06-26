@@ -1,23 +1,21 @@
 import Link from "next/link"
-
-// shadcn
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-
 // project
 import categoryCounts from "@/category-counts.json"
-import BorderGlow from "@/components/animation/BorderGlow"
-import { SectionHeader } from "@/components/uiable/blocks/landing/components"
 import ButtonSvg from "@/images/svg/button"
 import ButtonGroupSvg from "@/images/svg/ButtonGroup"
 import InputOtpSvg from "@/images/svg/InputOtp"
 import ItemSvg from "@/images/svg/item"
 import SwitchSvg from "@/images/svg/switch"
 import ToggleGroupSvg from "@/images/svg/ToggleGroup"
-
 // assets
 import { IconArrowUpRight } from "@tabler/icons-react"
+
+// shadcn
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+import BorderGlow from "@/components/animation/BorderGlow"
+import { SectionHeader } from "@/components/uiable/blocks/landing/components"
 
 const components_data = [
   {

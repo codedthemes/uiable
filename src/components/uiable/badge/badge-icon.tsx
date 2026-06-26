@@ -1,8 +1,9 @@
 // shadcn
-import { Badge } from "@/components/ui/badge";
 
 // assets
-import { BadgeCheck, BookmarkIcon } from "lucide-react";
+import { BadgeCheck, BookmarkIcon } from "lucide-react"
+
+import { Badge } from "@/components/ui/badge"
 
 //  ------------------------------ | BADGE - ICON | ------------------------------  //
 
@@ -18,5 +19,5 @@ export function BadgeWithIconLeft() {
         <BookmarkIcon data-icon="inline-end" />
       </Badge>
     </div>
-  );
+  )
 }

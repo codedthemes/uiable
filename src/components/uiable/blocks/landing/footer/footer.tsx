@@ -1,17 +1,16 @@
 import { ComponentProps } from "react"
 import Link from "next/link"
-
 // project
 import branding from "@/branding.json"
-import Logo from "@/components/uiable/layout/shared/logo"
-import { cn } from "@/lib/utils"
-
 // assets
 import {
   IconBrandDiscord,
   IconBrandGithub,
   IconBrandX,
 } from "@tabler/icons-react"
+
+import { cn } from "@/lib/utils"
+import Logo from "@/components/uiable/layout/shared/logo"
 
 interface FooterProps extends ComponentProps<"footer"> {
   containerClassName?: string

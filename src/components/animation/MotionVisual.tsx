@@ -1,11 +1,10 @@
 "use client"
 
 // third party
-import { motion } from "framer-motion"
-
 // project imports
-import { LightFav, DarkFav } from "@/images/brand"
+import { DarkFav, LightFav } from "@/images/brand"
 import { AnimationBg } from "@/images/svg/landing"
+import { motion } from "framer-motion"
 
 // ------------------------------ | MOTION VISUAL | ------------------------------ //
 

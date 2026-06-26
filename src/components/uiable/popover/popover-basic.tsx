@@ -1,13 +1,13 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Popover,
   PopoverContent,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
-  PopoverTrigger
-} from "@/components/ui/popover";
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
 //  ------------------------------ | POPOVER - BASIC | ------------------------------  //
 
@@ -28,5 +28,5 @@ export function PopoverBasic() {
         </PopoverContent>
       </Popover>
     </>
-  );
+  )
 }

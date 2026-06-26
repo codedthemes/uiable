@@ -1,9 +1,19 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
+// assets
+import {
+  FrameIcon,
+  LifeBuoyIcon,
+  MapIcon,
+  PanelLeftCloseIcon,
+  PanelLeftOpenIcon,
+  PieChartIcon,
+  SendIcon,
+} from "lucide-react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Sidebar,
   SidebarContent,
@@ -15,18 +25,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/components/ui/sidebar";
-
-// assets
-import {
-  FrameIcon,
-  LifeBuoyIcon,
-  MapIcon,
-  PanelLeftCloseIcon,
-  PanelLeftOpenIcon,
-  PieChartIcon,
-  SendIcon,
-} from "lucide-react";
+} from "@/components/ui/sidebar"
 
 // constants
 const projects = [
@@ -55,12 +54,12 @@ const projects = [
     url: "#",
     icon: SendIcon,
   },
-];
+]
 
 //  ------------------------------ | SIDEBAR - CONTROLLED | ------------------------------  //
 
 export default function AppSidebar() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(true)
 
   return (
     <SidebarProvider
@@ -101,5 +100,5 @@ export default function AppSidebar() {
         </header>
       </SidebarInset>
     </SidebarProvider>
-  );
+  )
 }

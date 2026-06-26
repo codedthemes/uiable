@@ -1,46 +1,53 @@
-"use client";
+"use client"
 
-import { ComponentProps, KeyboardEvent, createContext, useCallback, useContext, useEffect, useState } from "react";
-
+import {
+  ComponentProps,
+  createContext,
+  KeyboardEvent,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from "react"
 import useEmblaCarousel, {
-  type UseEmblaCarouselType
-} from "embla-carousel-react";
+  type UseEmblaCarouselType,
+} from "embla-carousel-react"
+import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 
-type CarouselApi = UseEmblaCarouselType[1];
-type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
-type CarouselOptions = UseCarouselParameters[0];
-type CarouselPlugin = UseCarouselParameters[1];
+type CarouselApi = UseEmblaCarouselType[1]
+type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
+type CarouselOptions = UseCarouselParameters[0]
+type CarouselPlugin = UseCarouselParameters[1]
 
 type CarouselProps = {
-  opts?: CarouselOptions;
-  plugins?: CarouselPlugin;
-  orientation?: "horizontal" | "vertical";
-  setApi?: (api: CarouselApi) => void;
-};
+  opts?: CarouselOptions
+  plugins?: CarouselPlugin
+  orientation?: "horizontal" | "vertical"
+  setApi?: (api: CarouselApi) => void
+}
 
 type CarouselContextProps = {
-  carouselRef: ReturnType<typeof useEmblaCarousel>[0];
-  api: ReturnType<typeof useEmblaCarousel>[1];
-  scrollPrev: () => void;
-  scrollNext: () => void;
-  canScrollPrev: boolean;
-  canScrollNext: boolean;
-} & CarouselProps;
+  carouselRef: ReturnType<typeof useEmblaCarousel>[0]
+  api: ReturnType<typeof useEmblaCarousel>[1]
+  scrollPrev: () => void
+  scrollNext: () => void
+  canScrollPrev: boolean
+  canScrollNext: boolean
+} & CarouselProps
 
-const CarouselContext = createContext<CarouselContextProps | null>(null);
+const CarouselContext = createContext<CarouselContextProps | null>(null)
 
 function useCarousel() {
-  const context = useContext(CarouselContext);
+  const context = useContext(CarouselContext)
 
   if (!context) {
-    throw new Error("useCarousel must be used within a <Carousel />");
+    throw new Error("useCarousel must be used within a <Carousel />")
   }
 
-  return context;
+  return context
 }
 
 function Carousel({
@@ -55,55 +62,55 @@ function Carousel({
   const [carouselRef, api] = useEmblaCarousel(
     {
       ...opts,
-      axis: orientation === "horizontal" ? "x" : "y"
+      axis: orientation === "horizontal" ? "x" : "y",
     },
     plugins
-  );
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-  const [canScrollNext, setCanScrollNext] = useState(false);
+  )
+  const [canScrollPrev, setCanScrollPrev] = useState(false)
+  const [canScrollNext, setCanScrollNext] = useState(false)
 
   const onSelect = useCallback((api: CarouselApi) => {
-    if (!api) return;
-    setCanScrollPrev(api.canScrollPrev());
-    setCanScrollNext(api.canScrollNext());
-  }, []);
+    if (!api) return
+    setCanScrollPrev(api.canScrollPrev())
+    setCanScrollNext(api.canScrollNext())
+  }, [])
 
   const scrollPrev = useCallback(() => {
-    api?.scrollPrev();
-  }, [api]);
+    api?.scrollPrev()
+  }, [api])
 
   const scrollNext = useCallback(() => {
-    api?.scrollNext();
-  }, [api]);
+    api?.scrollNext()
+  }, [api])
 
   const handleKeyDown = useCallback(
     (event: KeyboardEvent<HTMLDivElement>) => {
       if (event.key === "ArrowLeft") {
-        event.preventDefault();
-        scrollPrev();
+        event.preventDefault()
+        scrollPrev()
       } else if (event.key === "ArrowRight") {
-        event.preventDefault();
-        scrollNext();
+        event.preventDefault()
+        scrollNext()
       }
     },
     [scrollPrev, scrollNext]
-  );
+  )
 
   useEffect(() => {
-    if (!api || !setApi) return;
-    setApi(api);
-  }, [api, setApi]);
+    if (!api || !setApi) return
+    setApi(api)
+  }, [api, setApi])
 
   useEffect(() => {
-    if (!api) return;
-    setTimeout(() => onSelect(api), 0);
-    api.on("reInit", onSelect);
-    api.on("select", onSelect);
+    if (!api) return
+    setTimeout(() => onSelect(api), 0)
+    api.on("reInit", onSelect)
+    api.on("select", onSelect)
 
     return () => {
-      api?.off("select", onSelect);
-    };
-  }, [api, onSelect]);
+      api?.off("select", onSelect)
+    }
+  }, [api, onSelect])
 
   return (
     <CarouselContext.Provider
@@ -116,7 +123,7 @@ function Carousel({
         scrollPrev,
         scrollNext,
         canScrollPrev,
-        canScrollNext
+        canScrollNext,
       }}
     >
       <div
@@ -130,11 +137,11 @@ function Carousel({
         {children}
       </div>
     </CarouselContext.Provider>
-  );
+  )
 }
 
 function CarouselContent({ className, ...props }: ComponentProps<"div">) {
-  const { carouselRef, orientation } = useCarousel();
+  const { carouselRef, orientation } = useCarousel()
 
   return (
     <div
@@ -151,11 +158,11 @@ function CarouselContent({ className, ...props }: ComponentProps<"div">) {
         {...props}
       />
     </div>
-  );
+  )
 }
 
 function CarouselItem({ className, ...props }: ComponentProps<"div">) {
-  const { orientation } = useCarousel();
+  const { orientation } = useCarousel()
 
   return (
     <div
@@ -169,7 +176,7 @@ function CarouselItem({ className, ...props }: ComponentProps<"div">) {
       )}
       {...props}
     />
-  );
+  )
 }
 
 function CarouselPrevious({
@@ -178,7 +185,7 @@ function CarouselPrevious({
   size = "icon-sm",
   ...props
 }: ComponentProps<typeof Button>) {
-  const { orientation, scrollPrev, canScrollPrev } = useCarousel();
+  const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
     <Button
@@ -199,7 +206,7 @@ function CarouselPrevious({
       <ChevronLeftIcon />
       <span className="sr-only">Previous slide</span>
     </Button>
-  );
+  )
 }
 
 function CarouselNext({
@@ -208,7 +215,7 @@ function CarouselNext({
   size = "icon-sm",
   ...props
 }: ComponentProps<typeof Button>) {
-  const { orientation, scrollNext, canScrollNext } = useCarousel();
+  const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (
     <Button
@@ -229,7 +236,7 @@ function CarouselNext({
       <ChevronRightIcon />
       <span className="sr-only">Next slide</span>
     </Button>
-  );
+  )
 }
 
 export {
@@ -239,5 +246,5 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
-  useCarousel
-};
+  useCarousel,
+}

@@ -9,8 +9,8 @@ import {
   ContextMenuSub,
   ContextMenuSubContent,
   ContextMenuSubTrigger,
-  ContextMenuTrigger
-} from "@/components/ui/context-menu";
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
 
 //  ------------------------------ | CONTEXT MENU - SUBMENU | ------------------------------  //
 
@@ -56,5 +56,5 @@ export function ContextMenuSubmenu() {
         </ContextMenuSub>
       </ContextMenuContent>
     </ContextMenu>
-  );
+  )
 }

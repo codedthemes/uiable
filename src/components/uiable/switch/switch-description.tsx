@@ -3,9 +3,9 @@ import {
   Field,
   FieldContent,
   FieldDescription,
-  FieldLabel
-} from "@/components/ui/field";
-import { Switch } from "@/components/ui/switch";
+  FieldLabel,
+} from "@/components/ui/field"
+import { Switch } from "@/components/ui/switch"
 
 //  ------------------------------ | SWITCH - DESCRIPTION | ------------------------------  //
 
@@ -22,5 +22,5 @@ export function SwitchDescription() {
       </FieldContent>
       <Switch id="switch-focus-mode" />
     </Field>
-  );
+  )
 }

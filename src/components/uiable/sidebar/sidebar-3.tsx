@@ -1,14 +1,16 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
+// assets
+import { ArrowLeft, ChevronDown } from "lucide-react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from "@/components/ui/collapsible"
 import {
   SidebarContent,
   SidebarGroup,
@@ -19,13 +21,9 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/components/ui/sidebar";
-
+} from "@/components/ui/sidebar"
 // project
-import Logo from "@/components/uiable/layout/shared/logo";
-
-// assets
-import { ArrowLeft, ChevronDown } from "lucide-react";
+import Logo from "@/components/uiable/layout/shared/logo"
 
 // ── Dummy data ────────────────────────────────────────────────────────────── //
 
@@ -36,29 +34,29 @@ const DUMMY_DOC_LINKS = [
   { title: "Blocks", active: false },
   { title: "Figma", active: false },
   { title: "License", active: false },
-];
+]
 
 const DUMMY_BLOCKS = [
   { title: "Hero", count: 12 },
   { title: "Feature", count: 8 },
   { title: "CTA", count: 5 },
   { title: "Footer", count: 10 },
-];
+]
 
 const DUMMY_COMPONENTS = [
   { title: "Accordion", count: 3 },
   { title: "Button", count: 15 },
   { title: "Dialog", count: 7 },
   { title: "Tabs", count: 4 },
-];
+]
 
 //  ------------------------------ | COMPONENT - SIDEBAR 3 (Documentation) | ------------------------------  //
 
 export default function Sidebar3() {
-  const [activeItem, setActiveItem] = useState("Introduction");
+  const [activeItem, setActiveItem] = useState("Introduction")
 
   return (
-    <SidebarProvider className="min-h-0! w-full relative overflow-hidden rounded-lg border bg-background">
+    <SidebarProvider className="relative min-h-0! w-full overflow-hidden rounded-lg border bg-background">
       <div
         className="group peer text-sidebar-foreground"
         data-state="expanded"
@@ -67,11 +65,11 @@ export default function Sidebar3() {
         data-side="left"
       >
         <div
-          className="z-10 flex flex-col w-(--sidebar-width) border-r border-dashed border-border bg-sidebar"
+          className="z-10 flex w-(--sidebar-width) flex-col border-r border-dashed border-border bg-sidebar"
           data-sidebar="sidebar"
           data-slot="sidebar-inner"
         >
-          <SidebarHeader className="pt-4 px-4 pb-2">
+          <SidebarHeader className="px-4 pt-4 pb-2">
             <SidebarMenu>
               <SidebarMenuItem>
                 <Logo />
@@ -79,10 +77,10 @@ export default function Sidebar3() {
             </SidebarMenu>
           </SidebarHeader>
 
-          <SidebarContent className="px-2 gap-0 *:py-0 overflow-visible flex-none">
+          <SidebarContent className="flex-none gap-0 overflow-visible px-2 *:py-0">
             {/* Documentation Section */}
             <SidebarGroup>
-              <SidebarGroupLabel className="pt-6 pb-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+              <SidebarGroupLabel className="pt-6 pb-2 text-[10px] font-bold tracking-widest text-muted-foreground/70 uppercase">
                 Documentation
               </SidebarGroupLabel>
               <SidebarGroupContent>
@@ -106,18 +104,18 @@ export default function Sidebar3() {
             {/* Block Collapsible Section */}
             <SidebarGroup className="flex flex-col gap-1">
               <Collapsible
-                className="data-open:bg-background rounded-lg"
+                className="rounded-lg data-open:bg-background"
                 defaultOpen
               >
                 <CollapsibleTrigger
                   render={
                     <Button
                       variant="ghost"
-                      className="w-full hover:bg-background aria-expanded:bg-background p-0 pt-6 pb-2"
+                      className="w-full p-0 pt-6 pb-2 hover:bg-background aria-expanded:bg-background"
                     />
                   }
                 >
-                  <SidebarGroupLabel className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+                  <SidebarGroupLabel className="text-[10px] font-bold tracking-widest text-muted-foreground/70 uppercase">
                     Block
                   </SidebarGroupLabel>
                   <ChevronDown className="ml-auto size-4 transition-transform group-data-[state=open]/collapsible:rotate-180" />
@@ -133,7 +131,7 @@ export default function Sidebar3() {
                             className="rounded-lg px-4 py-2 data-[active=true]:bg-primary/10 data-[active=true]:text-primary"
                           >
                             <span className="font-medium">{item.title}</span>
-                            <span className="size-5.5 inline-flex items-center justify-center text-[11px] transition-colors opacity-80 ml-auto bg-primary/10 text-primary">
+                            <span className="ml-auto inline-flex size-5.5 items-center justify-center bg-primary/10 text-[11px] text-primary opacity-80 transition-colors">
                               {item.count}
                             </span>
                           </SidebarMenuButton>
@@ -147,16 +145,16 @@ export default function Sidebar3() {
 
             {/* UI Components Collapsible Section */}
             <SidebarGroup className="flex flex-col gap-1">
-              <Collapsible className="data-open:bg-background rounded-lg">
+              <Collapsible className="rounded-lg data-open:bg-background">
                 <CollapsibleTrigger
                   render={
                     <Button
                       variant="ghost"
-                      className="w-full hover:bg-background aria-expanded:bg-background p-0 pt-6 pb-2"
+                      className="w-full p-0 pt-6 pb-2 hover:bg-background aria-expanded:bg-background"
                     />
                   }
                 >
-                  <SidebarGroupLabel className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground/70">
+                  <SidebarGroupLabel className="text-[11px] font-bold tracking-widest text-muted-foreground/70 uppercase">
                     UI Components
                   </SidebarGroupLabel>
                   <ChevronDown className="ml-auto size-4 transition-transform group-data-[state=open]/collapsible:rotate-180" />
@@ -172,7 +170,7 @@ export default function Sidebar3() {
                             className="rounded-lg px-4 py-2 data-[active=true]:bg-primary/10 data-[active=true]:text-primary"
                           >
                             <span className="font-medium">{item.title}</span>
-                            <span className="size-5.5 inline-flex items-center justify-center text-[11px] transition-colors opacity-80 ml-auto bg-primary/10 text-primary">
+                            <span className="ml-auto inline-flex size-5.5 items-center justify-center bg-primary/10 text-[11px] text-primary opacity-80 transition-colors">
                               {item.count}
                             </span>
                           </SidebarMenuButton>
@@ -186,13 +184,13 @@ export default function Sidebar3() {
 
             {/* Navigation Section */}
             <SidebarGroup>
-              <SidebarGroupLabel className="pt-6 pb-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground/70">
+              <SidebarGroupLabel className="pt-6 pb-2 text-[10px] font-bold tracking-widest text-muted-foreground/70 uppercase">
                 Navigation
               </SidebarGroupLabel>
               <SidebarGroupContent>
                 <SidebarMenu>
                   <SidebarMenuItem>
-                    <SidebarMenuButton className="rounded-lg px-4 py-2 mb-4 data-[active=true]:bg-primary/10 data-[active=true]:text-primary">
+                    <SidebarMenuButton className="mb-4 rounded-lg px-4 py-2 data-[active=true]:bg-primary/10 data-[active=true]:text-primary">
                       <ArrowLeft className="size-4!" />
                       <span className="font-medium">Back to Dashboard</span>
                     </SidebarMenuButton>
@@ -204,5 +202,5 @@ export default function Sidebar3() {
         </div>
       </div>
     </SidebarProvider>
-  );
+  )
 }

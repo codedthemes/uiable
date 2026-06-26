@@ -1,13 +1,14 @@
 // shadcn
+
+// assets
+import { SearchIcon } from "lucide-react"
+
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput
-} from "@/components/ui/input-group";
-import { Kbd } from "@/components/ui/kbd";
-
-// assets
-import { SearchIcon } from "lucide-react";
+  InputGroupInput,
+} from "@/components/ui/input-group"
+import { Kbd } from "@/components/ui/kbd"
 
 //  ------------------------------ | KBD - INPUT GROUP | ------------------------------  //
 
@@ -25,5 +26,5 @@ export default function KbdInputGroup() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  );
+  )
 }

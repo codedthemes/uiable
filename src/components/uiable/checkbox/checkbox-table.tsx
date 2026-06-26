@@ -1,17 +1,17 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Checkbox } from "@/components/ui/checkbox";
+import { Checkbox } from "@/components/ui/checkbox"
 import {
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableHeader,
-  TableRow
-} from "@/components/ui/table";
+  TableRow,
+} from "@/components/ui/table"
 
 // constants
 const tableData = [
@@ -19,54 +19,52 @@ const tableData = [
     id: "1",
     name: "Sarah Chen",
     email: "sarah.chen@example.com",
-    role: "Admin"
+    role: "Admin",
   },
   {
     id: "2",
     name: "Marcus Rodriguez",
     email: "marcus.rodriguez@example.com",
-    role: "User"
+    role: "User",
   },
   {
     id: "3",
     name: "Priya Patel",
     email: "priya.patel@example.com",
-    role: "User"
+    role: "User",
   },
   {
     id: "4",
     name: "David Kim",
     email: "david.kim@example.com",
-    role: "Editor"
-  }
-];
+    role: "Editor",
+  },
+]
 
 //  ------------------------------ | CHECKBOX - TABLE | ------------------------------  //
 
 export function CheckboxInTable() {
-  const [selectedRows, setSelectedRows] = useState<Set<string>>(
-    new Set(["1"])
-  );
+  const [selectedRows, setSelectedRows] = useState<Set<string>>(new Set(["1"]))
 
-  const selectAll = selectedRows.size === tableData.length;
+  const selectAll = selectedRows.size === tableData.length
 
   const handleSelectAll = (checked: boolean) => {
     if (checked) {
-      setSelectedRows(new Set(tableData.map((row) => row.id)));
+      setSelectedRows(new Set(tableData.map((row) => row.id)))
     } else {
-      setSelectedRows(new Set());
+      setSelectedRows(new Set())
     }
-  };
+  }
 
   const handleSelectRow = (id: string, checked: boolean) => {
-    const newSelected = new Set(selectedRows);
+    const newSelected = new Set(selectedRows)
     if (checked) {
-      newSelected.add(id);
+      newSelected.add(id)
     } else {
-      newSelected.delete(id);
+      newSelected.delete(id)
     }
-    setSelectedRows(newSelected);
-  };
+    setSelectedRows(newSelected)
+  }
 
   return (
     <Table>
@@ -108,5 +106,5 @@ export function CheckboxInTable() {
         ))}
       </TableBody>
     </Table>
-  );
+  )
 }

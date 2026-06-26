@@ -3,9 +3,9 @@ import {
   Alert,
   AlertAction,
   AlertDescription,
-  AlertTitle
-} from "@/components/ui/alert";
-import { Button } from "@/components/ui/button";
+  AlertTitle,
+} from "@/components/ui/alert"
+import { Button } from "@/components/ui/button"
 
 //  ------------------------------ | ALERT - ACTION | ------------------------------  //
 
@@ -22,5 +22,5 @@ export default function AlertActionExample() {
         </Button>
       </AlertAction>
     </Alert>
-  );
+  )
 }

@@ -1,10 +1,14 @@
 // shadcn
+
+// assets
+import { ChevronDownIcon } from "lucide-react"
+
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import {
   Sidebar,
   SidebarHeader,
@@ -13,11 +17,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-  SidebarTrigger
-} from "@/components/ui/sidebar";
-
-// assets
-import { ChevronDownIcon } from "lucide-react";
+  SidebarTrigger,
+} from "@/components/ui/sidebar"
 
 //  ------------------------------ | SIDEBAR - HEADER | ------------------------------  //
 
@@ -56,5 +57,5 @@ export default function AppSidebar() {
         </header>
       </SidebarInset>
     </SidebarProvider>
-  );
+  )
 }

@@ -1,6 +1,6 @@
 // shadcn
-import { Calendar } from "@/components/ui/calendar";
-import { Card, CardContent } from "@/components/ui/card";
+import { Calendar } from "@/components/ui/calendar"
+import { Card, CardContent } from "@/components/ui/card"
 
 //  ------------------------------ | CALENDAR - MULTIPLE | ------------------------------  //
 
@@ -11,5 +11,5 @@ export function CalendarMultiple() {
         <Calendar mode="multiple" />
       </CardContent>
     </Card>
-  );
+  )
 }
