@@ -127,7 +127,7 @@ export default function Navbar() {
                 variant="ghost"
                 nativeButton={false}
                 render={<Link href={item.href} />}
-                className="px-3 py-1.5 text-[14px] leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
+                className="px-3 py-1.5 text-sm leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
               >
                 {item.label}
               </Button>
@@ -161,7 +161,7 @@ export default function Navbar() {
                 variant="ghost"
                 nativeButton={false}
                 render={<Link href={item.href} />}
-                className="justify-start px-0 py-1.5 text-[14px] leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
+                className="justify-start px-0 py-1.5 text-sm leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
               >
                 {item.label}
               </Button>

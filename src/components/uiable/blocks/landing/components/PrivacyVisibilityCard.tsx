@@ -78,7 +78,7 @@ export default function PrivacyVisibilityCard() {
   return (
     <div className="flex flex-col gap-4 rounded-xl border border-border bg-card p-6">
       <div className="flex flex-col gap-1">
-        <p className="text-md font-semibold text-foreground">Privacy</p>
+        <p className="text-base font-semibold text-foreground">Privacy</p>
         <p className="text-xs text-muted-foreground">Profile visibility</p>
       </div>
 

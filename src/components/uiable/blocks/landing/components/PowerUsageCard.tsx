@@ -19,7 +19,7 @@ export default function PowerUsageCard() {
 
       {/* Bottom Row: Content & Chart */}
       <div className="flex w-full items-end justify-between gap-4">
-        <div className="flex max-w-[130px] flex-col gap-1">
+        <div className="flex max-w-32.5 flex-col gap-1">
           <span className="text-xl leading-6 font-semibold tracking-normal text-secondary-foreground">
             4.6 kW
           </span>
@@ -32,13 +32,13 @@ export default function PowerUsageCard() {
 
         {/* Tiny vertical bar chart */}
         <div className="flex h-12 shrink-0 items-end gap-1.5">
-          <div className="h-[50%] w-2 rounded-full bg-primary/20" />
-          <div className="h-[75%] w-2 rounded-full bg-primary/20" />
-          <div className="h-[35%] w-2 rounded-full bg-primary/20" />
-          <div className="h-[70%] w-2 rounded-full bg-primary" />
-          <div className="h-[55%] w-2 rounded-full bg-primary/20" />
-          <div className="h-[75%] w-2 rounded-full bg-primary/20" />
-          <div className="h-[85%] w-2 rounded-full bg-primary/20" />
+          <div className="h-1/2 w-2 rounded-full bg-primary/20" />
+          <div className="h-3/4 w-2 rounded-full bg-primary/20" />
+          <div className="h-1/3 w-2 rounded-full bg-primary/20" />
+          <div className="h-2/3 w-2 rounded-full bg-primary" />
+          <div className="h-3/5 w-2 rounded-full bg-primary/20" />
+          <div className="h-3/4 w-2 rounded-full bg-primary/20" />
+          <div className="h-5/6 w-2 rounded-full bg-primary/20" />
         </div>
       </div>
     </div>

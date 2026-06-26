@@ -1,6 +1,7 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
+import { useEffect, useState, type HTMLAttributes } from "react"
+
 // project imports
 import { DarkFav, LightFav } from "@/images/brand"
 import { AnimationBg } from "@/images/svg/landing"
@@ -11,7 +12,7 @@ import { ChevronLeft, ChevronRight, Slash } from "lucide-react"
 // third party
 import { cn } from "@/lib/utils"
 
-interface CodeAnimationProps extends React.HTMLAttributes<HTMLDivElement> {
+interface CodeAnimationProps extends HTMLAttributes<HTMLDivElement> {
   backgroundCode?: string
 }
 

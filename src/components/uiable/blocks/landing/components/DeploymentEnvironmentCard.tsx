@@ -34,7 +34,7 @@ export default function DeploymentEnvironmentCard() {
               : "border-border bg-card hover:bg-accent/30"
           }`}
         >
-          <div className="flex max-w-[85%] flex-col gap-1.5">
+          <div className="flex flex-1 flex-col gap-1.5 pr-4">
             <p className="text-sm leading-4 font-medium tracking-normal text-accent-foreground">
               Production
             </p>
@@ -53,7 +53,7 @@ export default function DeploymentEnvironmentCard() {
               : "border-border bg-card hover:bg-accent/30"
           }`}
         >
-          <div className="flex max-w-[85%] flex-col gap-1.5">
+          <div className="flex flex-1 flex-col gap-1.5 pr-4">
             <p className="text-sm leading-4 font-medium tracking-normal text-accent-foreground">
               Staging
             </p>

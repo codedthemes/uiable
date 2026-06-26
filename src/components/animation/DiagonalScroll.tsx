@@ -1,11 +1,11 @@
 "use client"
 
-import React, { useEffect, useRef } from "react"
+import { useEffect, useRef, type ReactNode, type RefObject } from "react"
 
 import { cn } from "@/lib/utils"
 
 interface DiagonalScrollProps {
-  badge: React.ReactNode
+  badge: ReactNode
   src: string
   darkSrc?: string
   duration?: number
@@ -19,7 +19,7 @@ function ScrollImage({
   darkSrc,
   opacity,
 }: {
-  innerRef: React.RefObject<HTMLDivElement | null>
+  innerRef: RefObject<HTMLDivElement | null>
   src: string
   darkSrc?: string
   opacity: number

@@ -1,5 +1,7 @@
 "use client"
 
+import { CSSProperties } from "react"
+
 // third party
 // project imports
 import { DarkFav, LightFav } from "@/images/brand"
@@ -108,7 +110,7 @@ export default function MotionVisual() {
             {
               offsetPath: `path('${pathString}')`,
               offsetRotate: "0deg",
-            } as React.CSSProperties
+            } as CSSProperties
           }
         >
           <g

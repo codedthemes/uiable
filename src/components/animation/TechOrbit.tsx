@@ -1,5 +1,7 @@
 "use client"
 
+import { ReactNode } from "react"
+
 // third party
 import { DarkFav, LightFav } from "@/images/brand"
 import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons"
@@ -15,7 +17,7 @@ const ORBIT_2_DURATION = 35 // Counter-clockwise middle orbit
 const ORBIT_3_DURATION = 45 // Clockwise outer orbit
 
 type TechNodeProps = {
-  icon: React.ReactNode
+  icon: ReactNode
   startAngle: number
   orbitDuration: number
   orbitDirection: "clockwise" | "counter-clockwise"

@@ -1,4 +1,6 @@
+import { ComponentPropsWithoutRef } from "react"
 import Link from "next/link"
+
 // assets
 import {
   CircleAlertIcon,
@@ -143,7 +145,7 @@ function ListItem({
   children,
   href,
   ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
+}: ComponentPropsWithoutRef<"li"> & { href: string }) {
   return (
     <li {...props}>
       <NavigationMenuLink

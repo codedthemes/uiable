@@ -1,6 +1,6 @@
 "use client"
 
-import { memo, useCallback, useEffect, useRef, useState } from "react"
+import { memo, useCallback, useEffect, useRef, useState, type SyntheticEvent } from "react"
 // assets
 import {
   ArrowUpRight,
@@ -187,7 +187,7 @@ export default function BlockItem({
   }
 
   const handleIframeLoadEvent = (
-    event: React.SyntheticEvent<HTMLIFrameElement>
+    event: SyntheticEvent<HTMLIFrameElement>
   ) => {
     const iframe = event.currentTarget
     if (iframe) {

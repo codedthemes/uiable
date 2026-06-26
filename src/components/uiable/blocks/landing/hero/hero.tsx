@@ -66,7 +66,7 @@ export default function Hero() {
       <div className="relative z-10 flex w-full flex-col items-center gap-7">
         <h1
           id="hero-heading"
-          className="text-center text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl md:leading-[1.1] lg:text-7xl"
+          className="text-center text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl md:leading-none lg:text-7xl"
         >
           {branding.title.startsWith("Components to") ? (
             <>
@@ -80,7 +80,7 @@ export default function Hero() {
           )}
         </h1>
 
-        <p className="text-md max-w-182 text-center font-normal text-foreground md:text-lg md:leading-7">
+        <p className="text-base max-w-182 text-center font-normal text-foreground md:text-lg md:leading-7">
           {branding.brandName} is a structured, shadcn-based UI system designed
           to help developers build scalable, production-ready applications
           faster.

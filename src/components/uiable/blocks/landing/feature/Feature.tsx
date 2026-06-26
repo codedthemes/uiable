@@ -98,7 +98,7 @@ export default function Feature() {
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div
                     className={cn(
-                      "flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] transition-colors sm:h-14 sm:w-14",
+                      "flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-colors sm:h-14 sm:w-14",
                       isSelected
                         ? "bg-foreground text-background"
                         : "bg-secondary text-foreground"
@@ -108,11 +108,11 @@ export default function Feature() {
                   </div>
 
                   <div className="flex flex-col gap-1 sm:gap-1.5">
-                    <h3 className="text-base leading-snug font-medium tracking-[0.1px] text-foreground sm:text-lg md:text-xl">
+                    <h3 className="text-base leading-snug font-medium text-foreground sm:text-lg md:text-xl">
                       {feature.title}
                     </h3>
 
-                    <p className="text-sm leading-normal font-normal tracking-[0.1px] text-muted-foreground sm:text-base">
+                    <p className="text-sm leading-normal font-normal text-muted-foreground sm:text-base">
                       {feature.description}
                     </p>
                   </div>
@@ -150,7 +150,7 @@ export default function Feature() {
           {selectedIndex === 2 && <MotionVisual />}
           {selectedIndex === 3 && <CodeAnimation />}
           {selectedIndex === 4 && (
-            <div className="h-full min-h-[380px] w-full px-4.5 py-5 sm:min-h-[440px] md:min-h-[500px]">
+            <div className="h-full min-h-95 w-full px-4.5 py-5 sm:min-h-110 md:min-h-125">
               <EchoStack>
                 <div className="flex h-full w-full items-center justify-center">
                   <LightFav

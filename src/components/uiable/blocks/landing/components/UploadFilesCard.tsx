@@ -39,7 +39,7 @@ export default function UploadFilesCard() {
         className="flex cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border-2 border-dashed border-border bg-muted/10 px-5 py-4 text-center transition-colors hover:bg-muted/20"
         onClick={handleUploadClick}
       >
-        <IconUpload className="size-[34px] text-accent-foreground" />
+        <IconUpload className="size-8.5 text-accent-foreground" />
         <div className="flex flex-col gap-1.5">
           <p className="text-sm leading-4 font-normal tracking-normal text-card-foreground">
             Drop files here or click to browse

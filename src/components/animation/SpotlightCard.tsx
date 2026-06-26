@@ -1,18 +1,18 @@
 "use client"
 
-import React, { useRef, useState } from "react"
+import { useRef, useState, type PropsWithChildren, type FC, type MouseEventHandler } from "react"
 
 interface Position {
   x: number
   y: number
 }
 
-interface SpotlightCardProps extends React.PropsWithChildren {
+interface SpotlightCardProps extends PropsWithChildren {
   className?: string
   spotlightColor?: `rgba(${number}, ${number}, ${number}, ${number})`
 }
 
-const SpotlightCard: React.FC<SpotlightCardProps> = ({
+const SpotlightCard: FC<SpotlightCardProps> = ({
   children,
   className = "",
   spotlightColor = "rgba(255, 255, 255, 0.25)",
@@ -22,7 +22,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
   const [position, setPosition] = useState<Position>({ x: 0, y: 0 })
   const [opacity, setOpacity] = useState<number>(0)
 
-  const handleMouseMove: React.MouseEventHandler<HTMLDivElement> = (e) => {
+  const handleMouseMove: MouseEventHandler<HTMLDivElement> = (e) => {
     if (!divRef.current || isFocused) return
 
     const rect = divRef.current.getBoundingClientRect()

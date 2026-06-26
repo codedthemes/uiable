@@ -64,7 +64,7 @@ export default function Footer({
             <Logo />
           </div>
 
-          <p className="text-md leading-6 font-normal tracking-[0.1px] text-foreground">
+          <p className="text-base leading-6 font-normal text-foreground">
             v1.0 | Built by{" "}
             <Link
               href={branding.company.url}
@@ -85,7 +85,7 @@ export default function Footer({
               <Link
                 key={href}
                 href={href}
-                className="font-sans text-[16px] leading-6 font-normal tracking-[0.1px] text-foreground transition hover:text-primary"
+                className="font-sans text-base leading-6 font-normal text-foreground transition hover:text-primary"
               >
                 {label}
               </Link>

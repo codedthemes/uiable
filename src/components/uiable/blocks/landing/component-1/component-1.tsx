@@ -77,12 +77,12 @@ export default function Component1() {
                 <CardContent>
                   <div className="mb-1 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <p className="font-sans text-[16px] leading-none font-medium tracking-normal text-secondary-foreground capitalize">
+                      <p className="font-sans text-base leading-none font-medium tracking-normal text-secondary-foreground capitalize">
                         {title}
                       </p>
 
                       <Separator orientation="vertical" />
-                      <p className="text-md font-medium text-muted-foreground">
+                      <p className="text-sm font-medium text-muted-foreground">
                         {count}
                       </p>
                     </div>

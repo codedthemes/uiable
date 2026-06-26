@@ -1,6 +1,14 @@
 "use client"
 
-import { ReactNode, useCallback, useEffect, useRef, useState } from "react"
+import {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type PointerEvent,
+  type CSSProperties,
+} from "react"
 
 interface BorderGlowProps {
   children?: ReactNode
@@ -260,7 +268,7 @@ export default function BorderGlow({
   )
 
   const handlePointerMove = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
+    (e: PointerEvent<HTMLDivElement>) => {
       const card = cardRef.current
       if (!card) return
       const rect = card.getBoundingClientRect()
@@ -393,7 +401,7 @@ export default function BorderGlow({
             transition: isVisible
               ? "opacity 0.25s ease-out"
               : "opacity 0.75s ease-in-out",
-          } as React.CSSProperties
+          } as CSSProperties
         }
       />
 
@@ -409,7 +417,7 @@ export default function BorderGlow({
             transition: isVisible
               ? "opacity 0.25s ease-out"
               : "opacity 0.75s ease-in-out",
-          } as React.CSSProperties
+          } as CSSProperties
         }
       >
         <span
