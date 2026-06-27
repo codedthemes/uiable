@@ -1,21 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { DarkFav, LightFav } from "@/images/brand"
-import { Image1, Image2, Image3, Image4, Image5 } from "@/images/svg/landing"
-// assets
-import {
-  Code,
-  Component,
-  Layers,
-  Settings,
-  Zap,
-  type LucideIcon,
-} from "lucide-react"
 
-import { cn } from "@/lib/utils"
 // shadcn
 import { Button } from "@/components/ui/button"
+
 // project imports
 import {
   CodeAnimation,
@@ -25,6 +14,19 @@ import {
   TechOrbit,
 } from "@/components/animation"
 import { SectionHeader } from "@/components/uiable/blocks/landing/components"
+import { Image1, Image2, Image3, Image4, Image5 } from "@/images/svg/landing"
+import { DarkFav, LightFav } from "@/images/brand"
+import { cn } from "@/lib/utils"
+
+// assets
+import {
+  Code,
+  Component,
+  Layers,
+  Settings,
+  Zap,
+  type LucideIcon,
+} from "lucide-react"
 
 interface FeatureItem {
   title: string

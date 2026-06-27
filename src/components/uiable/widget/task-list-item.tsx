@@ -1,13 +1,14 @@
 "use client"
 
 // shadcn
-// assets
-import { Paperclip } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { buttonVariants } from "@/components/ui/button"
 
 // project
 import { cn } from "@/lib/utils"
-import { Badge } from "@/components/ui/badge"
-import { buttonVariants } from "@/components/ui/button"
+
+// assets
+import { Paperclip } from "lucide-react"
 
 interface TaskListItemProps {
   title: string

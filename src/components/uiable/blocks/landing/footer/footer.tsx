@@ -14,6 +14,7 @@ import Logo from "@/components/uiable/layout/shared/logo"
 
 interface FooterProps extends ComponentProps<"footer"> {
   containerClassName?: string
+  showGradient?: boolean
 }
 
 // constants
@@ -41,14 +42,19 @@ const socialLinks = [
 export default function Footer({
   className,
   containerClassName,
+  showGradient = true,
   ...props
 }: FooterProps) {
   return (
     <footer
-      style={{
-        background:
-          "linear-gradient(to top, var(--primary) -180%, var(--background) 95%)",
-      }}
+      style={
+        showGradient
+          ? {
+              background:
+                "linear-gradient(to top, var(--primary) -180%, var(--background) 95%)",
+            }
+          : undefined
+      }
       className={cn("w-full", className)}
       {...props}
     >

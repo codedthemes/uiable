@@ -98,7 +98,7 @@ export default function MotionVisual() {
         <motion.g
           animate={{
             offsetDistance: ["0%", "100%"],
-            scale: [0.8, 1.4, 0.8, 1.2, 0.9, 0.8],
+            scale: [0.8, 1.8, 0.8, 1.8, 0.8],
           }}
           transition={{
             duration: 10,
@@ -114,18 +114,18 @@ export default function MotionVisual() {
           }
         >
           <g
-            transform="translate(-40, -40)"
+            transform="translate(-20, -20)"
             className="pointer-events-auto"
             clipPath="url(#badge-circle-clip)"
           >
             <LightFav
-              width={80}
-              height={80}
+              width={40}
+              height={40}
               className="block text-white dark:hidden"
             />
             <DarkFav
-              width={80}
-              height={80}
+              width={40}
+              height={40}
               className="hidden text-white dark:block"
             />
           </g>

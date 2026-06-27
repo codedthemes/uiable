@@ -1,15 +1,5 @@
 import { ReactNode } from "react"
 import Link from "next/link"
-// project
-import branding from "@/branding.json"
-// assets
-import {
-  IconBrandDiscord,
-  IconBrandGithub,
-  IconBrandX,
-} from "@tabler/icons-react"
-// third party
-import { Toaster } from "sonner"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -19,11 +9,23 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+
+// project
+import branding from "@/branding.json"
 import { AppSidebar } from "@/components/app-sidebar"
 import { ThemeToggle } from "@/components/customizer"
 import Footer from "@/components/uiable/blocks/landing/footer/footer"
-
 // import SearchBar from "@/components/uiable/layout/search-bar";
+
+// assets
+import {
+  IconBrandDiscord,
+  IconBrandGithub,
+  IconBrandX,
+} from "@tabler/icons-react"
+
+// third party
+import { Toaster } from "sonner"
 
 function Divider() {
   return <Separator orientation="vertical" className="my-1.5" />
@@ -104,7 +106,8 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
             {children}
             <Toaster />
           </main>
-          <Footer />
+          <Separator />
+          <Footer showGradient={false} />
         </SidebarInset>
       </SidebarProvider>
     </div>
