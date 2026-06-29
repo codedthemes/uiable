@@ -92,9 +92,9 @@ const faqItems = [
   },
   {
     number: "5.",
-    question: "Will there be more components added to UIAble in the future?",
+    question: "How are UIAble components different from shadcn/ui primitives?",
     answer:
-      "Yes! We regularly release new updates, components, and interactive blocks. Once you purchase a license, all future additions are completely free.",
+      "Shadcn/ui provides the core components like Buttons, Dialogs, Alerts, and Badges. UIAble builds on top of them with production-ready, fully styled components like animated buttons, searchable comboboxes, date pickers, advanced sidebars, and more. You get the flexibility of shadcn/ui with ready-to-use components that are easier to copy, customize, and ship.",
   },
 ]
 
