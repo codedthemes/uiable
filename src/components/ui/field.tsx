@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, ComponentProps, ReactNode } from "react"
+import { ComponentProps, ReactNode, useMemo } from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
@@ -98,10 +98,7 @@ function FieldContent({ className, ...props }: ComponentProps<"div">) {
   )
 }
 
-function FieldLabel({
-  className,
-  ...props
-}: ComponentProps<typeof Label>) {
+function FieldLabel({ className, ...props }: ComponentProps<typeof Label>) {
   return (
     <Label
       data-slot="field-label"

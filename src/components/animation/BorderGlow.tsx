@@ -6,8 +6,8 @@ import {
   useEffect,
   useRef,
   useState,
-  type PointerEvent,
   type CSSProperties,
+  type PointerEvent,
 } from "react"
 
 interface BorderGlowProps {

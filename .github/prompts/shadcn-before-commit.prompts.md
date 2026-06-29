@@ -44,6 +44,7 @@ When reviewing or generating code, you must automatically fix any violations of 
     import { Card, CardContent, CardHeader } from "@/components/ui/card"
     ```
   - _Incorrect:_
+
     ```typescript
     import { Badge } from "shadcn/badge"
 
@@ -233,6 +234,7 @@ export default function Feature6() {
     const [open, setOpen] = React.useState(false)
     ```
   - _Correct:_
+
     ```typescript
     import { useState } from "react"
 

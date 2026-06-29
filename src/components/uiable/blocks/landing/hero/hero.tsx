@@ -80,7 +80,7 @@ export default function Hero() {
           )}
         </h1>
 
-        <p className="text-base max-w-182 text-center font-normal text-foreground md:text-lg md:leading-7">
+        <p className="max-w-182 text-center text-base font-normal text-foreground md:text-lg md:leading-7">
           {branding.brandName} is a structured, shadcn-based UI system designed
           to help developers build scalable, production-ready applications
           faster.

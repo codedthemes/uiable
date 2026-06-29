@@ -1,6 +1,13 @@
 "use client"
 
-import { memo, useCallback, useEffect, useRef, useState, type SyntheticEvent } from "react"
+import {
+  memo,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type SyntheticEvent,
+} from "react"
 // assets
 import {
   ArrowUpRight,
@@ -186,9 +193,7 @@ export default function BlockItem({
     handleCopy(index, item.rawCode || "")
   }
 
-  const handleIframeLoadEvent = (
-    event: SyntheticEvent<HTMLIFrameElement>
-  ) => {
+  const handleIframeLoadEvent = (event: SyntheticEvent<HTMLIFrameElement>) => {
     const iframe = event.currentTarget
     if (iframe) {
       iframe.removeAttribute("srcdoc")

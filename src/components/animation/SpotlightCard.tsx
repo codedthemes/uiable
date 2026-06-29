@@ -1,6 +1,12 @@
 "use client"
 
-import { useRef, useState, type PropsWithChildren, type FC, type MouseEventHandler } from "react"
+import {
+  useRef,
+  useState,
+  type FC,
+  type MouseEventHandler,
+  type PropsWithChildren,
+} from "react"
 
 interface Position {
   x: number

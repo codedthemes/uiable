@@ -18,6 +18,7 @@ When reviewing or generating code, you must automatically fix any violations of 
     import { Card, CardContent, CardHeader } from "@/components/ui/card"
     ```
   - _Incorrect:_
+
     ```typescript
     import { Badge } from "shadcn/badge"
 

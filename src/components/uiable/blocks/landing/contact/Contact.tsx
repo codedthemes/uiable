@@ -80,7 +80,7 @@ export default function Contact({
             <LightFav
               width={84}
               height={80}
-              className="block text-white dark:hidden"
+              className="block text-white opacity-40 dark:hidden"
             />
             <DarkFav
               width={84}
@@ -96,7 +96,7 @@ export default function Contact({
             </h2>
 
             {/* SUBTEXT */}
-            <p className="text-base max-w-lg leading-5 font-normal text-white">
+            <p className="max-w-lg text-base leading-5 font-normal text-white">
               Be the first to know about new components, application blocks,
               templates, and upcoming releases.
             </p>

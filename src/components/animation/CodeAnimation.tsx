@@ -1,11 +1,12 @@
 "use client"
 
 import { useEffect, useRef, useState, type HTMLAttributes } from "react"
-import { cn } from "@/lib/utils"
-import { motion } from "framer-motion"
-import { AnimationBg } from "@/images/svg/landing"
 import { DarkFav, LightFav } from "@/images/brand"
+import { AnimationBg } from "@/images/svg/landing"
+import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight, Slash } from "lucide-react"
+
+import { cn } from "@/lib/utils"
 
 interface CodeAnimationProps extends HTMLAttributes<HTMLDivElement> {
   badges?: unknown[]
@@ -91,7 +92,7 @@ interface AnimatedBadgeProps {
   index: number
 }
 
-function AnimatedBadge({ visible, index }: AnimatedBadgeProps) {
+function AnimatedBadge({ visible }: AnimatedBadgeProps) {
   return (
     <motion.div
       variants={badgeVariants}
