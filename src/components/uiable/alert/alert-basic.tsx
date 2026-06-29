@@ -1,8 +1,9 @@
 // shadcn
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 // assets
-import { CheckCircle2Icon } from "lucide-react";
+import { CheckCircle2Icon } from "lucide-react"
+
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 //  ------------------------------ | ALERT - BASIC | ------------------------------  //
 
@@ -16,5 +17,5 @@ export default function AlertBasic() {
         immediately.
       </AlertDescription>
     </Alert>
-  );
+  )
 }

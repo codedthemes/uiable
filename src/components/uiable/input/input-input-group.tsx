@@ -1,14 +1,15 @@
 // shadcn
-import { Field, FieldLabel } from "@/components/ui/field";
+
+// assets
+import { InfoIcon } from "lucide-react"
+
+import { Field, FieldLabel } from "@/components/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-  InputGroupText
-} from "@/components/ui/input-group";
-
-// assets
-import { InfoIcon } from "lucide-react";
+  InputGroupText,
+} from "@/components/ui/input-group"
 
 //  ------------------------------ | INPUT - INPUT GROUP | ------------------------------  //
 
@@ -26,5 +27,5 @@ export function InputInputGroup() {
         </InputGroupAddon>
       </InputGroup>
     </Field>
-  );
+  )
 }

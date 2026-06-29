@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | PROGRESS | ------------------------------  //
 
@@ -46,5 +46,5 @@ export default function Progress(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

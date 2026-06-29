@@ -3,10 +3,10 @@
 export default function SpinnerGrowingSecondary() {
   return (
     <div
-      className="inline-flex bg-secondary rounded-full opacity-75 size-4 animate-ping"
+      className="inline-flex size-4 animate-ping rounded-full bg-secondary opacity-75"
       role="status"
     >
       <span className="sr-only">Loading...</span>
     </div>
-  );
+  )
 }

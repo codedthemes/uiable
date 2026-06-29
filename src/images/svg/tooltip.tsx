@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | TOOLTIP | ------------------------------  //
 
@@ -59,5 +59,5 @@ export default function Tooltip(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

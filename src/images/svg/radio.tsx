@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | RADIO | ------------------------------  //
 
@@ -36,5 +36,5 @@ export default function Radio(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

@@ -1,16 +1,17 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+
+// assets
+import { PencilIcon, ShareIcon, TrashIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-
-// assets
-import { PencilIcon, ShareIcon, TrashIcon } from "lucide-react";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | DROPDOWN MENU - DESTRUCTIVE | ------------------------------  //
 
@@ -40,5 +41,5 @@ export function DropdownMenuDestructive() {
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

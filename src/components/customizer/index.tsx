@@ -1,7 +1,13 @@
 "use client"
 
 import { MouseEvent, useCallback, useEffect, useState } from "react"
+// assets
+import { CircleCheckBig, Cpu, Moon, Settings2, Sun } from "lucide-react"
+// third party
+import { useTheme } from "next-themes"
 
+// project
+import { useThemeRadius } from "@/hooks/use-theme-radius"
 // shadcn
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -14,17 +20,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-// third party
-import { useTheme } from "next-themes"
-
-// project
-import { useThemeRadius } from "@/hooks/use-theme-radius"
 import { RadiusControl } from "./RadiusControl"
 // import { ThemePresetButtons } from "./ThemePresetButtons";
 import { ThemePresetStyles } from "./ThemePresetStyles"
-
-// assets
-import { CircleCheckBig, Moon, Settings2, Sun } from "lucide-react"
 
 // constants
 const THEME_PRESET_KEY = "theme-preset"
@@ -183,7 +181,7 @@ export function ThemeToggle() {
   )
 
   const resetDefault = useCallback(() => {
-    setTheme("light")
+    setTheme("system")
     themeClasses.forEach((cls) => document.body.classList.remove(cls))
     document.body.classList.add("default")
     localStorage.removeItem(THEME_PRESET_KEY)
@@ -208,9 +206,10 @@ export function ThemeToggle() {
               variant="ghost"
               size="icon"
               aria-label="Theme Customizer"
-              className="h-9.5 w-9.5 rounded-full bg-[linear-gradient(239.74deg,#C800DE_0%,#9810FA_16.93%,#4680FF_29.63%,#D08700_55.02%,#FF6900_67.72%,#FB2C36_84.65%)] p-[2px] hover:opacity-90"
+              className="relative h-9.5 w-9.5 overflow-hidden rounded-full p-[2px] hover:opacity-90"
             >
-              <div className="flex h-full w-full items-center justify-center rounded-full bg-foreground dark:bg-white">
+              <div className="absolute inset-0 animate-[spin_3s_linear_infinite] bg-[linear-gradient(239.74deg,#C800DE_0%,#9810FA_16.93%,#4680FF_29.63%,#D08700_55.02%,#FF6900_67.72%,#FB2C36_84.65%)]" />
+              <div className="relative z-10 flex h-full w-full items-center justify-center rounded-full bg-foreground dark:bg-white">
                 <Settings2 className="size-4.5 text-background" />
               </div>
             </Button>
@@ -226,9 +225,11 @@ export function ThemeToggle() {
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-1">
                 <h6>Theme Mode</h6>
-                <p className="text-foreground">Choose light or dark mode</p>
+                <p className="text-foreground">
+                  Choose light, dark, or system mode
+                </p>
               </div>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-3 gap-2">
                 <Button
                   onClick={(e) => handleThemeChange("light", e)}
                   className="inline-flex flex-col items-center justify-center gap-1 py-4"
@@ -246,6 +247,15 @@ export function ThemeToggle() {
                 >
                   <Moon className="size-6" />
                   Dark
+                </Button>
+                <Button
+                  onClick={(e) => handleThemeChange("system", e)}
+                  className="inline-flex flex-col items-center justify-center gap-1 py-4"
+                  aria-label="Toggle Theme"
+                  variant={theme === "system" ? "default" : "outline"}
+                >
+                  <Cpu className="size-6" />
+                  System
                 </Button>
               </div>
               {/* <Separator />

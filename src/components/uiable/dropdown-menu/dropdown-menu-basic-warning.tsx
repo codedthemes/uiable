@@ -1,14 +1,15 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+
+// assets
+import { ChevronDown } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-
-// assets
-import { ChevronDown } from "lucide-react";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | DROPDOWN MENU - BASIC WARNING | ------------------------------  //
 
@@ -17,7 +18,7 @@ export function DropdownMenuBasicWarning() {
     <DropdownMenu>
       <DropdownMenuTrigger
         render={
-          <Button className="inline-flex items-center gap-2 py-2 px-5 text-center border border-transparent bg-yellow-500 text-white hover:bg-yellow-600 hover:shadow-lg h-auto text-base font-medium transition-all duration-200 ease-in-out">
+          <Button className="inline-flex h-auto items-center gap-2 border border-transparent bg-yellow-500 px-5 py-2 text-center text-base font-medium text-white transition-all duration-200 ease-in-out hover:bg-yellow-600 hover:shadow-lg">
             Warning <ChevronDown className="ml-2 h-4 w-4" />
           </Button>
         }
@@ -28,5 +29,5 @@ export function DropdownMenuBasicWarning() {
         <DropdownMenuItem>Something else here</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

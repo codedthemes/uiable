@@ -1,21 +1,21 @@
-"use client";
+"use client"
 
 // shadcn
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
+// assets
+import { MoreVertical, Plus } from "lucide-react"
+
+import { cn } from "@/lib/utils"
+import { Button, buttonVariants } from "@/components/ui/button"
+import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu"
 
 // project
-import ProjectOverviewItem from "./project-overview-item";
-import { cn } from "@/lib/utils";
-
-// assets
-import { MoreVertical, Plus } from "lucide-react";
+import ProjectOverviewItem from "./project-overview-item"
 
 //  ------------------------------ | BLOCK - PROJECT OVERVIEW CARD | ------------------------------  //
 
@@ -23,13 +23,13 @@ export default function ProjectOverviewCard() {
   return (
     <Card>
       <CardContent className="p-6">
-        <div className="flex items-center justify-between mb-6">
+        <div className="mb-6 flex items-center justify-between">
           <CardTitle className="text-lg font-bold">Project overview</CardTitle>
           <DropdownMenu>
             <DropdownMenuTrigger
               className={cn(
                 buttonVariants({ variant: "ghost", size: "icon" }),
-                "h-8 w-8 rounded-xl shrink-0",
+                "h-8 w-8 shrink-0 rounded-xl"
               )}
             >
               <MoreVertical className="h-4 w-4" />
@@ -41,7 +41,7 @@ export default function ProjectOverviewCard() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <div className="grid grid-cols-12 gap-6 items-center">
+        <div className="grid grid-cols-12 items-center gap-6">
           <div className="col-span-12 md:col-span-6 xl:col-span-4">
             <ProjectOverviewItem
               title="Total Tasks"
@@ -59,12 +59,12 @@ export default function ProjectOverviewCard() {
             />
           </div>
           <div className="col-span-12 md:col-span-6 xl:col-span-4">
-            <Button className="w-full rounded-xl h-11" variant="default">
-              <Plus className="h-4 w-4 mr-2" /> Add project
+            <Button className="h-11 w-full rounded-xl" variant="default">
+              <Plus className="mr-2 h-4 w-4" /> Add project
             </Button>
           </div>
         </div>
       </CardContent>
     </Card>
-  );
+  )
 }

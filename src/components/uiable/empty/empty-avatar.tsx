@@ -1,14 +1,14 @@
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 import {
   Empty,
   EmptyContent,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
-  EmptyTitle
-} from "@/components/ui/empty";
+  EmptyTitle,
+} from "@/components/ui/empty"
 
 //  ------------------------------ | EMPTY - AVATAR | ------------------------------  //
 
@@ -32,5 +32,5 @@ export default function EmptyAvatar() {
         <Button>Leave Message</Button>
       </EmptyContent>
     </Empty>
-  );
+  )
 }

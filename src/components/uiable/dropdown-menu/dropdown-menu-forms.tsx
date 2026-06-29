@@ -1,18 +1,19 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
+
+// assets
+import { ChevronDown } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-
-// assets
-import { ChevronDown } from "lucide-react";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 //  ------------------------------ | DROPDOWN MENU - FORMS | ------------------------------  //
 
@@ -23,7 +24,7 @@ export default function DropdownMenuForms() {
         render={
           <Button
             variant="default"
-            className="bg-green-600 hover:bg-green-700 text-white"
+            className="bg-green-600 text-white hover:bg-green-700"
           >
             Forms <ChevronDown className="ml-2 h-4 w-4" />
           </Button>
@@ -61,5 +62,5 @@ export default function DropdownMenuForms() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

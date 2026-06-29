@@ -1,31 +1,28 @@
-"use client";
-import { memo, useEffect, useState } from "react";
+"use client"
 
-// shadcn
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-
+import { memo, useEffect, useState } from "react"
 // project
-import branding from "@/branding.json";
-import DocsNavigation from "@/components/doc-bottom-nav";
-import TableOfContents from "@/components/uiable/layout/table-of-contents";
-
+import branding from "@/branding.json"
 // assets
 import {
-  Code,
-  Terminal,
-  ClipboardCopy,
-  Sparkles,
   BookOpen,
+  ClipboardCopy,
+  Code,
   Copy,
+  Sparkles,
   SquareCheckBig,
-} from "lucide-react";
-
-import { Button } from "@/components/ui/button";
-
+  Terminal,
+} from "lucide-react"
 // third party
-import { type BundledLanguage, codeToHtml } from "shiki";
+import { codeToHtml, type BundledLanguage } from "shiki"
+
+// shadcn
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+import DocsNavigation from "@/components/doc-bottom-nav"
+import TableOfContents from "@/components/uiable/layout/table-of-contents"
 
 // constants
 const tocItems = [
@@ -34,39 +31,39 @@ const tocItems = [
   { title: "Manual Copy-Paste Method", url: "#manual-method" },
   { title: "Usage Example", url: "#usage" },
   { title: "Customization", url: "#customization" },
-];
+]
 
 const CodeBlock = memo(
   ({ children, lang }: { children: string; lang: BundledLanguage }) => {
-    const [html, setHtml] = useState<string>("");
-    const [copied, setCopied] = useState(false);
+    const [html, setHtml] = useState<string>("")
+    const [copied, setCopied] = useState(false)
 
     useEffect(() => {
-      let mounted = true;
+      let mounted = true
       codeToHtml(children, { lang, theme: "slack-dark" }).then((res) => {
-        if (mounted) setHtml(res);
-      });
+        if (mounted) setHtml(res)
+      })
       return () => {
-        mounted = false;
-      };
-    }, [children, lang]);
+        mounted = false
+      }
+    }, [children, lang])
 
     const handleCopy = () => {
-      navigator.clipboard.writeText(children);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    };
+      navigator.clipboard.writeText(children)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }
 
     return (
-      <div className="relative flex items-center justify-between w-full group/code">
+      <div className="group/code relative flex w-full items-center justify-between">
         <div
-          className="grow [&_pre]:!bg-transparent [&_pre]:!m-0 [&_pre]:!p-0 [&_pre]:overflow-visible"
+          className="grow [&_pre]:!m-0 [&_pre]:overflow-visible [&_pre]:!bg-transparent [&_pre]:!p-0"
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <Button
           variant="ghost"
           size="icon"
-          className="absolute right-0 -top-1 text-white/70 hover:text-white hover:bg-white/10 transition-colors shrink-0 border-none bg-transparent"
+          className="absolute -top-1 right-0 shrink-0 border-none bg-transparent text-white/70 transition-colors hover:bg-white/10 hover:text-white"
           onClick={handleCopy}
         >
           {copied ? (
@@ -76,11 +73,11 @@ const CodeBlock = memo(
           )}
         </Button>
       </div>
-    );
-  },
-);
+    )
+  }
+)
 
-CodeBlock.displayName = "CodeBlock";
+CodeBlock.displayName = "CodeBlock"
 
 //  ------------------------------ | PAGE - COMPONENTS | ------------------------------  //
 
@@ -91,15 +88,15 @@ export default function ComponentsPage() {
         <CardContent>
           <div className="flex flex-row gap-6 text-muted-foreground">
             <div className="grow">
-              <section id="components" className="scroll-mt-24 space-y-8 mb-8">
+              <section id="components" className="mb-8 scroll-mt-24 space-y-8">
                 <div className="space-y-4">
-                  <h4 className="mb-2 relative group scroll-mt-20">
+                  <h4 className="group relative mb-2 scroll-mt-20">
                     Using {branding.brandName} Components
                   </h4>
                   <p className="text-muted-foreground">
-                    {branding.brandName} components are exported directly into your project's
-                    codebase as raw source files. Learn how to install and
-                    integrate them.
+                    {branding.brandName} components are exported directly into
+                    your project's codebase as raw source files. Learn how to
+                    install and integrate them.
                   </p>
                 </div>
 
@@ -107,26 +104,26 @@ export default function ComponentsPage() {
                   <Sparkles className="size-5.5 shrink-0" />
                   <AlertTitle>Developer Freedom</AlertTitle>
                   <AlertDescription>
-                    Because {branding.brandName} components are not locked inside an NPM
-                    package, you have 100% control over the DOM structure, React
-                    logic, and styling from day one.
+                    Because {branding.brandName} components are not locked
+                    inside an NPM package, you have 100% control over the DOM
+                    structure, React logic, and styling from day one.
                   </AlertDescription>
                 </Alert>
 
                 <Separator className="mb-6" />
 
                 <div className="space-y-5" id="overview">
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-2 flex items-center gap-2">
                     <BookOpen className="size-5 text-muted-foreground" />
-                    <h5 className="mb-0 underline-offset-4 decoration-primary/30 font-semibold tracking-tight">
+                    <h5 className="mb-0 font-semibold tracking-tight decoration-primary/30 underline-offset-4">
                       Overview
                     </h5>
                   </div>
                   <p>
-                    There are two main ways to integrate {branding.brandName} components into
-                    your application:
+                    There are two main ways to integrate {branding.brandName}{" "}
+                    components into your application:
                   </p>
-                  <ol className="list-decimal ps-8 space-y-2">
+                  <ol className="list-decimal space-y-2 ps-8">
                     <li>
                       <b>Using the Shadcn CLI</b> (Recommended): Installs
                       components and their dependencies automatically with one
@@ -143,9 +140,9 @@ export default function ComponentsPage() {
                 <Separator className="mb-6" />
 
                 <div className="space-y-5" id="cli-method">
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-2 flex items-center gap-2">
                     <Terminal className="size-5 text-muted-foreground" />
-                    <h5 className="mb-0 underline-offset-4 decoration-primary/30 font-semibold tracking-tight">
+                    <h5 className="mb-0 font-semibold tracking-tight decoration-primary/30 underline-offset-4">
                       Method 1: Shadcn CLI (Recommended)
                     </h5>
                   </div>
@@ -158,8 +155,8 @@ export default function ComponentsPage() {
                     For example, to install the borders variant of the
                     accordion, run:
                   </p>
-                  <div className="flex-1 min-h-0 flex flex-col w-full overflow-hidden rounded-[8px] bg-[#222222] dark:bg-background">
-                    <div className="flex-1 min-h-0 overflow-auto p-4 text-[14px] leading-relaxed scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+                  <div className="flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-[8px] bg-[#222222] dark:bg-background">
+                    <div className="min-h-0 flex-1 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overflow-auto p-4 text-[14px] leading-relaxed">
                       <div className="flex items-center justify-between">
                         <CodeBlock lang="bash">{`npx shadcn add @uiable/accordion-borders`}</CodeBlock>
                       </div>
@@ -176,9 +173,9 @@ export default function ComponentsPage() {
                 <Separator className="mb-6" />
 
                 <div className="space-y-5" id="manual-method">
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-2 flex items-center gap-2">
                     <ClipboardCopy className="size-5 text-muted-foreground" />
-                    <h5 className="mb-0 underline-offset-4 decoration-primary/30 font-semibold tracking-tight">
+                    <h5 className="mb-0 font-semibold tracking-tight decoration-primary/30 underline-offset-4">
                       Method 2: Manual Copy & Paste
                     </h5>
                   </div>
@@ -186,9 +183,10 @@ export default function ComponentsPage() {
                     If you prefer not to use the CLI, you can add components
                     manually:
                   </p>
-                  <ul className="list-disc ps-8 space-y-2 text-sm">
+                  <ul className="list-disc space-y-2 ps-8 text-sm">
                     <li>
-                      <b>Browse</b> to the component in the {branding.brandName} Catalog.
+                      <b>Browse</b> to the component in the {branding.brandName}{" "}
+                      Catalog.
                     </li>
                     <li>
                       Click the <b>Copy Code</b> button on the variant page.
@@ -210,9 +208,9 @@ export default function ComponentsPage() {
                 <Separator className="mb-6" />
 
                 <div className="space-y-5" id="usage">
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-2 flex items-center gap-2">
                     <Code className="size-5 text-muted-foreground" />
-                    <h5 className="mb-0 underline-offset-4 decoration-primary/30 font-semibold tracking-tight">
+                    <h5 className="mb-0 font-semibold tracking-tight decoration-primary/30 underline-offset-4">
                       Importing and Usage
                     </h5>
                   </div>
@@ -220,8 +218,8 @@ export default function ComponentsPage() {
                     Once a component is placed in your workspace, you can import
                     and use it in your React pages:
                   </p>
-                  <div className="flex-1 min-h-0 flex flex-col w-full overflow-hidden rounded-[8px] bg-[#222222] dark:bg-background">
-                    <div className="flex-1 min-h-0 overflow-auto p-4 text-[14px] leading-relaxed scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+                  <div className="flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-[8px] bg-[#222222] dark:bg-background">
+                    <div className="min-h-0 flex-1 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overflow-auto p-4 text-[14px] leading-relaxed">
                       <div className="flex items-center justify-between">
                         <CodeBlock lang="tsx">{`import AccordionBorders from "@/components/uiable/accordion/accordion-borders";
 
@@ -240,7 +238,7 @@ export default function MyPage() {
                 <Separator className="mb-6" />
 
                 <div className="space-y-5" id="customization">
-                  <h4 className="mb-2 relative group scroll-mt-20 font-semibold tracking-tight">
+                  <h4 className="group relative mb-2 scroll-mt-20 font-semibold tracking-tight">
                     Customization
                   </h4>
                   <p>
@@ -264,9 +262,9 @@ export default function MyPage() {
               />
             </div>
             <Separator orientation="vertical" className="max-xl:hidden" />
-            <div className="hidden xl:block shrink-0 w-sidebar-width">
+            <div className="hidden w-sidebar-width shrink-0 xl:block">
               <div className="sticky top-20">
-                <Card className="bg-transparent border-0">
+                <Card className="border-0 bg-transparent">
                   <CardHeader className="px-0 py-3">
                     <h5>On this page</h5>
                   </CardHeader>
@@ -280,5 +278,5 @@ export default function MyPage() {
         </CardContent>
       </Card>
     </div>
-  );
+  )
 }

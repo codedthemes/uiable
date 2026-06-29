@@ -1,14 +1,15 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+
+// assets
+import { ChevronDownIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
-  CollapsibleTrigger
-} from "@/components/ui/collapsible";
-
-// assets
-import { ChevronDownIcon } from "lucide-react";
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
 
 //  ------------------------------ | COLLAPSIBLE - BASIC | ------------------------------  //
 
@@ -16,7 +17,7 @@ export function CollapsibleBasic() {
   return (
     <Card className="mx-auto w-full max-w-sm">
       <CardContent>
-        <Collapsible className="data-open:bg-background rounded-lg">
+        <Collapsible className="rounded-lg data-open:bg-background">
           <CollapsibleTrigger
             render={
               <Button
@@ -38,5 +39,5 @@ export function CollapsibleBasic() {
         </Collapsible>
       </CardContent>
     </Card>
-  );
+  )
 }

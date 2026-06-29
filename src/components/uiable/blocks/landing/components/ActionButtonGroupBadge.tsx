@@ -1,27 +1,35 @@
 // shadcn
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ButtonGroup, ButtonGroupSeparator } from "@/components/ui/button-group";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Separator } from "@/components/ui/separator";
-
-// project
-import DatePickerCard from "./DatePickerCard";
 
 // assets
-import { BadgeCheck, PlusIcon } from "lucide-react";
+import { BadgeCheck, PlusIcon } from "lucide-react"
+
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { ButtonGroup, ButtonGroupSeparator } from "@/components/ui/button-group"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Separator } from "@/components/ui/separator"
+
+// project
+import DatePickerCard from "./DatePickerCard"
 
 //  ------------------------------ | BLOCK - ACTION BUTTON GROUP BADGE | ------------------------------  //
 
 export default function ActionButtonGroupBadge() {
   return (
-    <div className="border border-border rounded-xl p-4 flex flex-col gap-4 bg-card">
-      <div className="flex border border-border rounded-lg overflow-hidden w-fit">
+    <div className="flex flex-col gap-4 rounded-xl border border-border bg-card p-4">
+      <div className="flex w-fit overflow-hidden rounded-lg border border-border">
         <ButtonGroup className="bg-muted/50 dark:bg-muted/20">
           <Button
             variant="ghost"
             size="sm"
-            className="rounded-none h-auto px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-muted dark:hover:bg-muted/80"
+            className="h-auto rounded-none px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-muted dark:hover:bg-muted/80"
           >
             Small
           </Button>
@@ -29,7 +37,7 @@ export default function ActionButtonGroupBadge() {
           <Button
             variant="ghost"
             size="sm"
-            className="rounded-none h-auto px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-muted dark:hover:bg-muted/80"
+            className="h-auto rounded-none px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-muted dark:hover:bg-muted/80"
           >
             Button
           </Button>
@@ -37,7 +45,7 @@ export default function ActionButtonGroupBadge() {
           <Button
             variant="ghost"
             size="sm"
-            className="rounded-none h-auto px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-muted dark:hover:bg-muted/80"
+            className="h-auto rounded-none px-3 py-1.5 text-xs font-semibold text-foreground hover:bg-muted dark:hover:bg-muted/80"
           >
             Group
           </Button>
@@ -45,7 +53,7 @@ export default function ActionButtonGroupBadge() {
           <Button
             variant="ghost"
             size="icon-sm"
-            className="rounded-none h-auto px-3 py-1.5 text-foreground hover:bg-muted dark:hover:bg-muted/80"
+            className="h-auto rounded-none px-3 py-1.5 text-foreground hover:bg-muted dark:hover:bg-muted/80"
           >
             <PlusIcon className="size-3.5" />
           </Button>
@@ -55,9 +63,7 @@ export default function ActionButtonGroupBadge() {
         <Dialog>
           <DialogTrigger
             render={
-              <Button
-                className="rounded-lg text-xs font-semibold border-border text-foreground bg-background hover:bg-accent/10"
-              />
+              <Button className="rounded-lg border-border bg-background text-xs font-semibold text-foreground hover:bg-accent/10" />
             }
           >
             Show dialog
@@ -77,5 +83,5 @@ export default function ActionButtonGroupBadge() {
       <Separator />
       <DatePickerCard />
     </div>
-  );
+  )
 }

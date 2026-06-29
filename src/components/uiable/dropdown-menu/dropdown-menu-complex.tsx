@@ -1,27 +1,6 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-
-// shadcn
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-
+import { useState } from "react"
 // assets
 import {
   BellIcon,
@@ -48,8 +27,28 @@ import {
   SettingsIcon,
   ShieldIcon,
   SunIcon,
-  UserIcon
-} from "lucide-react";
+  UserIcon,
+} from "lucide-react"
+
+// shadcn
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | DROPDOWN MENU - COMPLEX | ------------------------------  //
 
@@ -57,9 +56,9 @@ export function DropdownMenuComplex() {
   const [notifications, setNotifications] = useState({
     email: true,
     sms: false,
-    push: true
-  });
-  const [theme, setTheme] = useState("light");
+    push: true,
+  })
+  const [theme, setTheme] = useState("light")
 
   return (
     <DropdownMenu>
@@ -234,7 +233,7 @@ export function DropdownMenuComplex() {
                             onCheckedChange={(checked) =>
                               setNotifications({
                                 ...notifications,
-                                push: checked === true
+                                push: checked === true,
                               })
                             }
                           >
@@ -246,7 +245,7 @@ export function DropdownMenuComplex() {
                             onCheckedChange={(checked) =>
                               setNotifications({
                                 ...notifications,
-                                email: checked === true
+                                email: checked === true,
                               })
                             }
                           >
@@ -290,5 +289,5 @@ export function DropdownMenuComplex() {
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

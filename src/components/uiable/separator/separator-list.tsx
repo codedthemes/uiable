@@ -1,5 +1,5 @@
 // shadcn
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/components/ui/separator"
 
 //  ------------------------------ | SEPARATOR - LIST | ------------------------------  //
 
@@ -21,5 +21,5 @@ export function SeparatorList() {
         <dd className="text-muted-foreground">Value 3</dd>
       </dl>
     </div>
-  );
+  )
 }

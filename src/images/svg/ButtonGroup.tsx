@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | BUTTONGROUP | ------------------------------  //
 
@@ -83,5 +83,5 @@ export default function ButtonGroup(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

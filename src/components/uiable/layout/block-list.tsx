@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 // project
-import CATEGORY_COUNTS from "@/category-counts.json";
-import { NAV_BLOCKS } from "@/components-grid";
-import { cn } from "@/lib/utils";
+import CATEGORY_COUNTS from "@/category-counts.json"
+import { NAV_BLOCKS } from "@/components-grid"
+
+import { cn } from "@/lib/utils"
 
 interface BlockListProps {
-  search?: string;
-  onSelect?: () => void;
+  search?: string
+  onSelect?: () => void
 }
 
 //  ------------------------------ | LAYOUT - BLOCK LIST | ------------------------------  //
 
 export default function BlockList({ search = "", onSelect }: BlockListProps) {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   const filteredSections = NAV_BLOCKS.map((section) => ({
     ...section,
@@ -24,8 +24,8 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
       (item) =>
         item.title.toLowerCase().includes(search.toLowerCase()) ||
         item.slug.toLowerCase().includes(search.toLowerCase())
-    )
-  })).filter((section) => section.items.length > 0);
+    ),
+  })).filter((section) => section.items.length > 0)
 
   const totalBlocks = NAV_BLOCKS.reduce((total, section) => {
     return (
@@ -34,10 +34,10 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
         return (
           secTotal +
           (CATEGORY_COUNTS[item.slug as keyof typeof CATEGORY_COUNTS] || 0)
-        );
+        )
       }, 0)
-    );
-  }, 0);
+    )
+  }, 0)
 
   return (
     <div className="flex flex-col gap-1 p-2">
@@ -45,7 +45,7 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
         href="/blocks"
         onClick={onSelect}
         className={cn(
-          "flex items-center justify-between p-2 text-sm font-medium rounded-lg group",
+          "group flex items-center justify-between rounded-lg p-2 text-sm font-medium",
           pathname === "/blocks"
             ? "bg-primary/10 text-primary"
             : "text-sidebar-foreground hover:bg-muted-foreground/6 hover:text-foreground"
@@ -54,7 +54,7 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
         <span>All Blocks</span>
         <span
           className={cn(
-            "text-xs transition-colors ",
+            "text-xs transition-colors",
             pathname === "/blocks" ? "text-primary" : "text-sidebar-ring"
           )}
         >
@@ -64,15 +64,15 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
       {filteredSections.map((section) => (
         <div key={section.title} className="flex flex-col gap-1">
           {section.items.map((item) => {
-            const href = `/blocks/${item.slug}`;
-            const isActive = pathname === href;
+            const href = `/blocks/${item.slug}`
+            const isActive = pathname === href
             return (
               <Link
                 key={item.slug}
                 href={href}
                 onClick={onSelect}
                 className={cn(
-                  "flex items-center justify-between p-2 text-sm font-medium rounded-lg transition-all group",
+                  "group flex items-center justify-between rounded-lg p-2 text-sm font-medium transition-all",
                   isActive
                     ? "bg-primary/10 text-primary"
                     : "text-sidebar-foreground hover:bg-muted-foreground/6 hover:text-foreground"
@@ -89,10 +89,10 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
                     0}
                 </span>
               </Link>
-            );
+            )
           })}
         </div>
       ))}
     </div>
-  );
+  )
 }

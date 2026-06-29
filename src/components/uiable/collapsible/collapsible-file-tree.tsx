@@ -1,18 +1,19 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+
+// assets
+import { ChevronRightIcon, FileIcon, FolderIcon } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import {
   Collapsible,
   CollapsibleContent,
-  CollapsibleTrigger
-} from "@/components/ui/collapsible";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-// assets
-import { ChevronRightIcon, FileIcon, FolderIcon } from "lucide-react";
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 // types
-type FileTreeItem = { name: string } | { name: string; items: FileTreeItem[] };
+type FileTreeItem = { name: string } | { name: string; items: FileTreeItem[] }
 
 //  ------------------------------ | COLLAPSIBLE - FILE TREE | ------------------------------  //
 
@@ -29,32 +30,36 @@ export function CollapsibleFileTree() {
             { name: "dialog.tsx" },
             { name: "input.tsx" },
             { name: "select.tsx" },
-            { name: "table.tsx" }
-          ]
+            { name: "table.tsx" },
+          ],
         },
         { name: "login-form.tsx" },
-        { name: "register-form.tsx" }
-      ]
+        { name: "register-form.tsx" },
+      ],
     },
     {
       name: "lib",
-      items: [{ name: "utils.ts" }, { name: "cn.ts" }, { name: "api.ts" }]
+      items: [{ name: "utils.ts" }, { name: "cn.ts" }, { name: "api.ts" }],
     },
     {
       name: "hooks",
       items: [
         { name: "use-media-query.ts" },
         { name: "use-debounce.ts" },
-        { name: "use-local-storage.ts" }
-      ]
+        { name: "use-local-storage.ts" },
+      ],
     },
     {
       name: "types",
-      items: [{ name: "index.d.ts" }, { name: "api.d.ts" }]
+      items: [{ name: "index.d.ts" }, { name: "api.d.ts" }],
     },
     {
       name: "public",
-      items: [{ name: "favicon.ico" }, { name: "logo.svg" }, { name: "images" }]
+      items: [
+        { name: "favicon.ico" },
+        { name: "logo.svg" },
+        { name: "images" },
+      ],
     },
     { name: "app.tsx" },
     { name: "layout.tsx" },
@@ -62,8 +67,8 @@ export function CollapsibleFileTree() {
     { name: "package.json" },
     { name: "tsconfig.json" },
     { name: "README.md" },
-    { name: ".gitignore" }
-  ];
+    { name: ".gitignore" },
+  ]
 
   const renderItem = (fileItem: FileTreeItem) => {
     if ("items" in fileItem) {
@@ -74,7 +79,7 @@ export function CollapsibleFileTree() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="group hover:bg-accent hover:text-accent-foreground w-full justify-start transition-none gap-1"
+                className="group w-full justify-start gap-1 transition-none hover:bg-accent hover:text-accent-foreground"
               />
             }
           >
@@ -88,20 +93,20 @@ export function CollapsibleFileTree() {
             </div>
           </CollapsibleContent>
         </Collapsible>
-      );
+      )
     }
     return (
       <Button
         key={fileItem.name}
         variant="link"
         size="sm"
-        className="text-foreground w-full justify-start gap-2"
+        className="w-full justify-start gap-2 text-foreground"
       >
         <FileIcon />
         <span>{fileItem.name}</span>
       </Button>
-    );
-  };
+    )
+  }
 
   return (
     <Card className="mx-auto w-full max-w-[16rem] gap-2" size="sm">
@@ -119,5 +124,5 @@ export function CollapsibleFileTree() {
         </div>
       </CardContent>
     </Card>
-  );
+  )
 }

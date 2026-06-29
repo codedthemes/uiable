@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | HOVERCARD | ------------------------------  //
 
@@ -92,5 +92,5 @@ export default function HoverCard(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

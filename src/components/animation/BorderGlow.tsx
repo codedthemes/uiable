@@ -1,6 +1,14 @@
 "use client"
 
-import { ReactNode, useCallback, useEffect, useRef, useState } from "react"
+import {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type PointerEvent,
+} from "react"
 
 interface BorderGlowProps {
   children?: ReactNode
@@ -182,18 +190,16 @@ export default function BorderGlow({
   const [cursorAngle, setCursorAngle] = useState(45)
   const [edgeProximity, setEdgeProximity] = useState(0)
   const [sweepActive, setSweepActive] = useState(false)
-  const [resolvedGlowColor, setResolvedGlowColor] = useState("221 100 64")
+  const [internalGlowColor, setInternalGlowColor] = useState("221 100 64")
+  const resolvedGlowColor = glowColor || internalGlowColor
 
   useEffect(() => {
-    if (glowColor) {
-      setResolvedGlowColor(glowColor)
-      return
-    }
+    if (glowColor) return
 
     const update = () => {
       requestAnimationFrame(() => {
         const hsl = readPrimaryAsHSL()
-        if (hsl) setResolvedGlowColor(hsl)
+        if (hsl) setInternalGlowColor(hsl)
       })
     }
 
@@ -262,7 +268,7 @@ export default function BorderGlow({
   )
 
   const handlePointerMove = useCallback(
-    (e: React.PointerEvent<HTMLDivElement>) => {
+    (e: PointerEvent<HTMLDivElement>) => {
       const card = cardRef.current
       if (!card) return
       const rect = card.getBoundingClientRect()
@@ -395,7 +401,7 @@ export default function BorderGlow({
             transition: isVisible
               ? "opacity 0.25s ease-out"
               : "opacity 0.75s ease-in-out",
-          } as React.CSSProperties
+          } as CSSProperties
         }
       />
 
@@ -411,7 +417,7 @@ export default function BorderGlow({
             transition: isVisible
               ? "opacity 0.25s ease-out"
               : "opacity 0.75s ease-in-out",
-          } as React.CSSProperties
+          } as CSSProperties
         }
       >
         <span

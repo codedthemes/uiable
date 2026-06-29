@@ -1,5 +1,5 @@
 // shadcn
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge"
 
 //  ------------------------------ | BADGE - COLORS | ------------------------------  //
 
@@ -22,5 +22,5 @@ export function BadgeCustomColors() {
         Red
       </Badge>
     </div>
-  );
+  )
 }

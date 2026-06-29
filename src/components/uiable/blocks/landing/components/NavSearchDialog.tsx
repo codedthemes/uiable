@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
+// project imports
+import { NAV_CATEGORIES } from "@/components-grid"
+// assets
+import { IconComponents, IconSparkles } from "@tabler/icons-react"
 
 // shadcn
 import {
@@ -14,12 +18,6 @@ import {
   CommandList,
 } from "@/components/ui/command"
 
-// project imports
-import { NAV_CATEGORIES } from "@/components-grid"
-
-// assets
-import { IconSparkles, IconComponents } from "@tabler/icons-react"
-
 // ------------------------------ | NAVBAR SEARCH DIALOG | ------------------------------  //
 
 export default function NavSearchDialog({
@@ -31,12 +29,14 @@ export default function NavSearchDialog({
 }) {
   const router = useRouter()
   const [search, setSearch] = useState("")
+  const [prevOpen, setPrevOpen] = useState(open)
 
-  useEffect(() => {
+  if (open !== prevOpen) {
+    setPrevOpen(open)
     if (!open) {
       setSearch("")
     }
-  }, [open])
+  }
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {

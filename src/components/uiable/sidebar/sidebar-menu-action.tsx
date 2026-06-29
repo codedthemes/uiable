@@ -1,10 +1,21 @@
 // shadcn
+
+// assets
+import {
+  FrameIcon,
+  LifeBuoyIcon,
+  MapIcon,
+  MoreHorizontalIcon,
+  PieChartIcon,
+  SendIcon,
+} from "lucide-react"
+
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu"
 import {
   Sidebar,
   SidebarContent,
@@ -16,17 +27,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/components/ui/sidebar";
-
-// assets
-import {
-  FrameIcon,
-  LifeBuoyIcon,
-  MapIcon,
-  MoreHorizontalIcon,
-  PieChartIcon,
-  SendIcon,
-} from "lucide-react";
+} from "@/components/ui/sidebar"
 
 // constants
 const projects = [
@@ -55,7 +56,7 @@ const projects = [
     url: "#",
     icon: SendIcon,
   },
-];
+]
 
 //  ------------------------------ | SIDEBAR - MENU ACTION | ------------------------------  //
 
@@ -102,5 +103,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

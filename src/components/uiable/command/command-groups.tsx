@@ -1,9 +1,18 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
+// assets
+import {
+  CalculatorIcon,
+  CalendarIcon,
+  CreditCardIcon,
+  SettingsIcon,
+  SmileIcon,
+  UserIcon,
+} from "lucide-react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Command,
   CommandDialog,
@@ -13,23 +22,13 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut
-} from "@/components/ui/command";
-
-// assets
-import {
-  CalculatorIcon,
-  CalendarIcon,
-  CreditCardIcon,
-  SettingsIcon,
-  SmileIcon,
-  UserIcon
-} from "lucide-react";
+  CommandShortcut,
+} from "@/components/ui/command"
 
 //  ------------------------------ | COMMAND - GROUPS | ------------------------------  //
 
 export function CommandWithGroups() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="flex flex-col gap-4">
@@ -77,5 +76,5 @@ export function CommandWithGroups() {
         </Command>
       </CommandDialog>
     </div>
-  );
+  )
 }

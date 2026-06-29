@@ -4,9 +4,9 @@ import {
   FieldContent,
   FieldDescription,
   FieldLabel,
-  FieldTitle
-} from "@/components/ui/field";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+  FieldTitle,
+} from "@/components/ui/field"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 //  ------------------------------ | RADIO GROUP - CHOICE CARD | ------------------------------  //
 
@@ -45,5 +45,5 @@ export function RadioGroupChoiceCard() {
         </Field>
       </FieldLabel>
     </RadioGroup>
-  );
+  )
 }

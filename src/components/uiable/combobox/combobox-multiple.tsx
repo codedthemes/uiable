@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { Fragment } from "react";
+import { Fragment } from "react"
 
 // shadcn
 import {
@@ -13,8 +13,8 @@ import {
   ComboboxItem,
   ComboboxList,
   ComboboxValue,
-  useComboboxAnchor
-} from "@/components/ui/combobox";
+  useComboboxAnchor,
+} from "@/components/ui/combobox"
 
 // constants
 const frameworks = [
@@ -22,13 +22,13 @@ const frameworks = [
   "SvelteKit",
   "Nuxt.js",
   "Remix",
-  "Astro"
-] as const;
+  "Astro",
+] as const
 
 //  ------------------------------ | COMBOBOX - MULTIPLE | ------------------------------  //
 
 export function ComboboxMultiple() {
-  const anchor = useComboboxAnchor();
+  const anchor = useComboboxAnchor()
 
   return (
     <Combobox
@@ -60,5 +60,5 @@ export function ComboboxMultiple() {
         </ComboboxList>
       </ComboboxContent>
     </Combobox>
-  );
+  )
 }

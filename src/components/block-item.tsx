@@ -1,31 +1,13 @@
-"use client";
+"use client"
 
-import { memo, useCallback, useEffect, useRef, useState } from "react";
-
-// shadcn
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger
-} from "@/components/ui/dialog";
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger
-} from "@/components/ui/tooltip";
-
-// third party
-import { type BundledLanguage, codeToHtml } from "shiki";
-
-// project
-import Loader from "@/components/Loader";
-import { cn } from "@/lib/utils";
-
+  memo,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type SyntheticEvent,
+} from "react"
 // assets
 import {
   ArrowUpRight,
@@ -35,48 +17,70 @@ import {
   RotateCw,
   Smartphone,
   SquareCheckBig,
+  Tablet,
   Terminal,
-  Tablet
-} from "lucide-react";
+} from "lucide-react"
+// third party
+import { codeToHtml, type BundledLanguage } from "shiki"
+
+import { cn } from "@/lib/utils"
+// shadcn
+import { Button, buttonVariants } from "@/components/ui/button"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+// project
+import Loader from "@/components/Loader"
 
 export interface Item {
-  name: string;
-  title: string;
-  description: string;
-  files: { path: string }[];
-  categories: string[];
-  rawCode?: string;
+  name: string
+  title: string
+  description: string
+  files: { path: string }[]
+  categories: string[]
+  rawCode?: string
 }
 
 const CodeBlock = memo(
   ({ children, lang }: { children: string; lang: BundledLanguage }) => {
-    const [html, setHtml] = useState<string>("");
+    const [html, setHtml] = useState<string>("")
     useEffect(() => {
-      let mounted = true;
+      let mounted = true
       codeToHtml(children, { lang, theme: "one-dark-pro" }).then((res) => {
-        if (mounted) setHtml(res);
-      });
+        if (mounted) setHtml(res)
+      })
       return () => {
-        mounted = false;
-      };
-    }, [children, lang]);
+        mounted = false
+      }
+    }, [children, lang])
     return (
       <div
-        className="[&_pre]:!bg-transparent [&_pre]:!m-0 [&_pre]:!p-0 [&_pre]:overflow-visible"
+        className="[&_pre]:!m-0 [&_pre]:overflow-visible [&_pre]:!bg-transparent [&_pre]:!p-0"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-    );
+    )
   }
-);
+)
 
-CodeBlock.displayName = "CodeBlock";
+CodeBlock.displayName = "CodeBlock"
 
 interface BlockItemProps {
-  item: Item;
-  index: number;
-  isLast: boolean;
-  handleCopy: (index: number, code: string) => void;
-  copiedIndex: number | null;
+  item: Item
+  index: number
+  isLast: boolean
+  handleCopy: (index: number, code: string) => void
+  copiedIndex: number | null
 }
 
 //  ------------------------------ | BLOCK ITEM | ------------------------------  //
@@ -87,131 +91,131 @@ export default function BlockItem({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   isLast,
   handleCopy,
-  copiedIndex
+  copiedIndex,
 }: BlockItemProps) {
-  const [viewport, setViewport] = useState("desktop");
+  const [viewport, setViewport] = useState("desktop")
   const filePath = item.files[0].path
     .replace(/^src\//, "")
     .replace(/^components\/uiable\//, "")
-    .replace(".tsx", "");
+    .replace(".tsx", "")
 
-  const iframeEl = useRef<HTMLIFrameElement>(null);
-  const [viewportHeight, setViewportHeight] = useState(0);
-  const [isIframeLoading, setIsIframeLoading] = useState(true);
-  const [copiedCommand, setCopiedCommand] = useState(false);
+  const iframeEl = useRef<HTMLIFrameElement>(null)
+  const [viewportHeight, setViewportHeight] = useState(0)
+  const [isIframeLoading, setIsIframeLoading] = useState(true)
+  const [copiedCommand, setCopiedCommand] = useState(false)
 
   // Set iframe height based on its content
   const setIframeHeight = useCallback(() => {
-    const iframe = iframeEl.current;
+    const iframe = iframeEl.current
     if (iframe && iframe.contentWindow?.document?.body) {
-      const doc = iframe.contentWindow.document;
-      const height = doc.body.scrollHeight;
+      const doc = iframe.contentWindow.document
+      const height = doc.body.scrollHeight
       if (height > 0) {
-        setViewportHeight(height);
+        setViewportHeight(height)
       }
     }
-  }, []);
+  }, [])
   useEffect(() => {
-    const iframe = iframeEl.current;
-    if (!iframe) return;
+    const iframe = iframeEl.current
+    if (!iframe) return
 
     const handleIframeLoad = () => {
       // Small delay to ensure styles are applied
-      setTimeout(setIframeHeight, 150);
+      setTimeout(setIframeHeight, 150)
 
-      const iframeDoc = iframe.contentWindow?.document?.documentElement;
+      const iframeDoc = iframe.contentWindow?.document?.documentElement
       if (iframeDoc && typeof ResizeObserver !== "undefined") {
-        const resizeObserver = new ResizeObserver(() => setIframeHeight());
-        resizeObserver.observe(iframeDoc);
-        return () => resizeObserver.disconnect();
+        const resizeObserver = new ResizeObserver(() => setIframeHeight())
+        resizeObserver.observe(iframeDoc)
+        return () => resizeObserver.disconnect()
       }
-    };
+    }
 
-    iframe.addEventListener("load", handleIframeLoad);
-    window.addEventListener("resize", setIframeHeight);
+    iframe.addEventListener("load", handleIframeLoad)
+    window.addEventListener("resize", setIframeHeight)
 
     // Initial check in case it's already loaded
     if (iframe.contentWindow?.document?.readyState === "complete") {
-      handleIframeLoad();
+      handleIframeLoad()
     }
 
     return () => {
-      iframe.removeEventListener("load", handleIframeLoad);
-      window.removeEventListener("resize", setIframeHeight);
-    };
-  }, [setIframeHeight]);
+      iframe.removeEventListener("load", handleIframeLoad)
+      window.removeEventListener("resize", setIframeHeight)
+    }
+  }, [setIframeHeight])
 
   // Handle screen size change
   const onScreenChange = () => {
     // Reset height to allow accurate measurement of shrinking content
-    setViewportHeight(0);
+    setViewportHeight(0)
     // wait for the iframe to reflow then recalculate height
-    setTimeout(setIframeHeight, 200);
-  };
+    setTimeout(setIframeHeight, 200)
+  }
 
   // Handle iframe reload
   const handleReload = () => {
     if (iframeEl.current) {
-      setIsIframeLoading(true);
+      setIsIframeLoading(true)
       try {
         if (iframeEl.current.contentWindow) {
-          iframeEl.current.contentWindow.location.reload();
+          iframeEl.current.contentWindow.location.reload()
         } else {
-          iframeEl.current.src = iframeEl.current.src;
+          iframeEl.current.src = iframeEl.current.src
         }
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (_error) {
-        iframeEl.current.src = iframeEl.current.src;
+        iframeEl.current.src = iframeEl.current.src
       }
     }
-  };
+  }
 
   // Handle copying shadcn CLI command
   const handleCopyCommand = () => {
-    const commandText = `npx shadcn add @uiable/${item.name.replace(/^uiable-/, "")}`;
-    navigator.clipboard.writeText(commandText);
-    setCopiedCommand(true);
-    setTimeout(() => setCopiedCommand(false), 2000);
-  };
+    const commandText = `npx shadcn add @uiable/${item.name.replace(/^uiable-/, "")}`
+    navigator.clipboard.writeText(commandText)
+    setCopiedCommand(true)
+    setTimeout(() => setCopiedCommand(false), 2000)
+  }
 
   const handleViewportChange = (value: string[]) => {
     if (value && value.length > 0) {
-      setViewport(value[value.length - 1]);
-      onScreenChange();
+      setViewport(value[value.length - 1])
+      onScreenChange()
     }
-  };
+  }
 
   const handleOpenPreview = () => {
-    window.open(`/preview/${filePath}`, "_blank");
-  };
+    window.open(`/preview/${filePath}`, "_blank")
+  }
 
   const handleCopyClick = () => {
-    handleCopy(index, item.rawCode || "");
-  };
+    handleCopy(index, item.rawCode || "")
+  }
 
-  const handleIframeLoadEvent = (event: React.SyntheticEvent<HTMLIFrameElement>) => {
-    const iframe = event.currentTarget;
+  const handleIframeLoadEvent = (event: SyntheticEvent<HTMLIFrameElement>) => {
+    const iframe = event.currentTarget
     if (iframe) {
-      iframe.removeAttribute("srcdoc");
-      setIframeHeight();
-      setIsIframeLoading(false);
+      iframe.removeAttribute("srcdoc")
+      setIframeHeight()
+      setIsIframeLoading(false)
     }
-  };
+  }
 
   return (
-    <div className="flex flex-col gap-8 group/blockshow">
-      <div className="container flex items-center justify-between px-4 sm:px-8 mx-auto">
-        <div className="flex flex-col gap-4 w-full">
-          <Card className="mb-0 group/item overflow-hidden relative">
+    <div className="group/blockshow flex flex-col gap-8">
+      <div className="container mx-auto flex items-center justify-between px-4 sm:px-8">
+        <div className="flex w-full flex-col gap-4">
+          <Card className="group/item relative mb-0 overflow-hidden">
             <CardHeader className="py-4">
-              <div className="grid items-center justify-between flex-col sm:flex-row grid-cols-3">
+              <div className="grid grid-cols-3 flex-col items-center justify-between sm:flex-row">
                 <div className="flex flex-col gap-1">
-                  <h5 className="text-[18px] font-semibold mb-0 line-clamp-1">
+                  <h5 className="mb-0 line-clamp-1 text-[18px] font-semibold">
                     {item.title}
                   </h5>
                 </div>
-                <div className="text-center flex flex-row flex-wrap gap-1 items-center justify-center">
-                  <div className="hidden lg:inline-flex items-center gap-2 resize-button-group border border-border/50 rounded-lg bg-card p-0.5">
+                <div className="flex flex-row flex-wrap items-center justify-center gap-1 text-center">
+                  <div className="resize-button-group hidden items-center gap-2 rounded-lg border border-border/50 bg-card p-0.5 lg:inline-flex">
                     <ToggleGroup
                       spacing={1}
                       value={[viewport]}
@@ -267,7 +271,7 @@ export default function BlockItem({
                       </Tooltip>
                     </ToggleGroup>
                   </div>
-                  <div className="hidden lg:inline-flex items-center gap-2 resize-button-group border border-border/50 rounded-lg bg-card p-0.5">
+                  <div className="resize-button-group hidden items-center gap-2 rounded-lg border border-border/50 bg-card p-0.5 lg:inline-flex">
                     <Tooltip>
                       <TooltipTrigger
                         render={<span className="inline-block w-fit" />}
@@ -308,7 +312,7 @@ export default function BlockItem({
                   <Button
                     onClick={handleCopyCommand}
                     variant="outline"
-                    className="bg-card border-border/80 gap-1.5"
+                    className="gap-1.5 border-border/80 bg-card"
                   >
                     {copiedCommand ? (
                       <SquareCheckBig className="size-4 text-green-500" />
@@ -325,7 +329,7 @@ export default function BlockItem({
                         onClick={handleCopyClick}
                         variant="outline"
                         size="icon-lg"
-                        className="bg-card border-border/80 gap-1.5 size-10"
+                        className="size-10 gap-1.5 border-border/80 bg-card"
                       >
                         {copiedIndex === index ? (
                           <SquareCheckBig className="size-4 text-green-500" />
@@ -348,9 +352,9 @@ export default function BlockItem({
                           className={cn(
                             buttonVariants({
                               variant: "outline",
-                              size: "icon-lg"
+                              size: "icon-lg",
                             }),
-                            "bg-card border-border/80 size-10"
+                            "size-10 border-border/80 bg-card"
                           )}
                         >
                           <Code className="size-4" />
@@ -360,21 +364,21 @@ export default function BlockItem({
                         <p>View code</p>
                       </TooltipContent>
                     </Tooltip>
-                    <DialogContent className="sm:max-w-5xl w-full max-h-[95vh] p-6 flex flex-col gap-0 overflow-hidden">
+                    <DialogContent className="flex max-h-[95vh] w-full flex-col gap-0 overflow-hidden p-6 sm:max-w-5xl">
                       <DialogHeader className="gap-1 pb-5">
                         <DialogTitle className="text-[16px] font-semibold">
                           {item.title} Code
                         </DialogTitle>
                       </DialogHeader>
-                      <div className="flex-1 min-h-0 flex flex-col w-full overflow-hidden rounded-[8px] bg-[#282c34]">
-                        <div className="flex-none flex items-center w-full justify-between px-4 py-2 border-b border-white/10">
-                          <span className="text-xs font-medium text-white uppercase tracking-wider">
+                      <div className="flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-[8px] bg-[#282c34]">
+                        <div className="flex w-full flex-none items-center justify-between border-b border-white/10 px-4 py-2">
+                          <span className="text-xs font-medium tracking-wider text-white uppercase">
                             TSX
                           </span>
                           <Button
                             variant="ghost"
                             size="icon-lg"
-                            className="text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                            className="text-white/70 transition-colors hover:bg-white/10 hover:text-white"
                             onClick={handleCopyClick}
                           >
                             {copiedIndex === index ? (
@@ -384,11 +388,11 @@ export default function BlockItem({
                             )}
                           </Button>
                         </div>
-                        <div className="flex-1 min-h-0 overflow-auto p-4 text-[14px] leading-relaxed scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+                        <div className="min-h-0 flex-1 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overflow-auto p-4 text-[14px] leading-relaxed">
                           {item.rawCode ? (
                             <CodeBlock lang="tsx">{item.rawCode}</CodeBlock>
                           ) : (
-                            <div className="text-white/50 py-10 text-center">
+                            <div className="py-10 text-center text-white/50">
                               No code available.
                             </div>
                           )}
@@ -400,11 +404,11 @@ export default function BlockItem({
               </div>
             </CardHeader>
             <CardContent className="p-0">
-              <div className="p-0 relative bg-background/80 overflow-hidden w-full">
-                <div className="opacity-50 bg-size-[10px_10px] bg-[repeating-linear-gradient(-45deg,var(--color-border)_0,var(--color-border)_1px,transparent_0,transparent_50%)] absolute inset-0 z-10"></div>
+              <div className="relative w-full overflow-hidden bg-background/80 p-0">
+                <div className="absolute inset-0 z-10 bg-[repeating-linear-gradient(-45deg,var(--color-border)_0,var(--color-border)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] opacity-50"></div>
                 <div
                   className={cn(
-                    "w-full overflow-hidden relative min-h-10 mx-auto bg-card z-20 shadow-[0_0_24px_0_#1b2e5e17]",
+                    "relative z-20 mx-auto min-h-10 w-full overflow-hidden bg-card shadow-[0_0_24px_0_#1b2e5e17]",
                     viewport === "tablet" && "max-w-212.5",
                     viewport === "mobile" && "max-w-106.25"
                   )}
@@ -425,7 +429,7 @@ export default function BlockItem({
                     title={item.title}
                     onLoad={handleIframeLoadEvent}
                     style={{
-                      height: viewportHeight || "100%"
+                      height: viewportHeight || "100%",
                     }}
                   />
                 </div>
@@ -444,5 +448,5 @@ export default function BlockItem({
         ></div>
       </div> */}
     </div>
-  );
+  )
 }

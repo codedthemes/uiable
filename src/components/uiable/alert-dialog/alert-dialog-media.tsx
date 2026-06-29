@@ -1,4 +1,8 @@
 // shadcn
+
+// assets
+import { Share } from "iconsax-reactjs"
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -9,12 +13,9 @@ import {
   AlertDialogHeader,
   AlertDialogMedia,
   AlertDialogTitle,
-  AlertDialogTrigger
-} from "@/components/ui/alert-dialog";
-import { Button } from "@/components/ui/button";
-
-// assets
-import { Share } from "iconsax-reactjs";
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { Button } from "@/components/ui/button"
 
 //  ------------------------------ | ALERT DIALOG - MEDIA | ------------------------------  //
 
@@ -24,7 +25,7 @@ export function AlertDialogWithMedia() {
       <AlertDialogTrigger render={<Button>Share Project</Button>} />
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogMedia className="text-primary bg-primary/10">
+          <AlertDialogMedia className="bg-primary/10 text-primary">
             <Share />
           </AlertDialogMedia>
           <AlertDialogTitle>Share this project?</AlertDialogTitle>
@@ -38,5 +39,5 @@ export function AlertDialogWithMedia() {
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-  );
+  )
 }

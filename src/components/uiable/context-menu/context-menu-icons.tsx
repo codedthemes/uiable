@@ -1,20 +1,21 @@
 // shadcn
-import {
-  ContextMenu,
-  ContextMenuContent,
-  ContextMenuGroup,
-  ContextMenuItem,
-  ContextMenuSeparator,
-  ContextMenuTrigger
-} from "@/components/ui/context-menu";
 
 // assets
 import {
   ClipboardPasteIcon,
   CopyIcon,
   ScissorsIcon,
-  TrashIcon
-} from "lucide-react";
+  TrashIcon,
+} from "lucide-react"
+
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuGroup,
+  ContextMenuItem,
+  ContextMenuSeparator,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
 
 //  ------------------------------ | CONTEXT MENU - ICONS | ------------------------------  //
 
@@ -53,5 +54,5 @@ export function ContextMenuIcons() {
         </ContextMenuGroup>
       </ContextMenuContent>
     </ContextMenu>
-  );
+  )
 }

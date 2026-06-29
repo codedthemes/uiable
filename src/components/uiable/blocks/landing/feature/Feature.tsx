@@ -5,21 +5,17 @@ import { useState } from "react"
 // shadcn
 import { Button } from "@/components/ui/button"
 
-// project
+// project imports
 import {
-  TechOrbit,
-  MotionVisual,
   CodeAnimation,
+  DiagonalScroll,
   EchoStack,
+  MotionVisual,
+  TechOrbit,
 } from "@/components/animation"
-import {
-  AnimationLogo,
-  Image1,
-  Image2,
-  Image3,
-  Image4,
-  Image5,
-} from "@/images/svg/landing"
+import { SectionHeader } from "@/components/uiable/blocks/landing/components"
+import { Image1, Image2, Image3, Image4, Image5 } from "@/images/svg/landing"
+import { DarkFav, LightFav } from "@/images/brand"
 import { cn } from "@/lib/utils"
 
 // assets
@@ -76,17 +72,10 @@ export default function Feature() {
 
   return (
     <section className="mx-auto flex w-full flex-col gap-12.5 px-4 py-12.5 sm:px-8">
-      <div className="flex flex-col gap-2 md:gap-3">
-        {/* Heading */}
-        <h2 className="text-2xl leading-tight font-medium tracking-[0.1px] text-foreground sm:text-3xl md:text-4xl">
-          More than components - a complete UI system
-        </h2>
-
-        <p className="text-base leading-relaxed font-normal tracking-[0.1px] text-muted-foreground md:text-lg">
-          Uiable combines scalable architecture, reusable patterns, and modern
-          workflows into one consistent system.
-        </p>
-      </div>
+      <SectionHeader
+        title="More than components - a complete UI system"
+        subtitle="Uiable combines scalable architecture, reusable patterns, and modern workflows into one consistent system."
+      />
 
       {/* Content */}
       <div className="grid gap-6 rounded-2xl bg-card p-5 lg:grid-cols-2 lg:gap-10">
@@ -111,7 +100,7 @@ export default function Feature() {
                 <div className="flex items-start gap-3 sm:gap-4">
                   <div
                     className={cn(
-                      "flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] transition-colors sm:h-14 sm:w-14",
+                      "flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-colors sm:h-14 sm:w-14",
                       isSelected
                         ? "bg-foreground text-background"
                         : "bg-secondary text-foreground"
@@ -121,11 +110,11 @@ export default function Feature() {
                   </div>
 
                   <div className="flex flex-col gap-1 sm:gap-1.5">
-                    <h3 className="text-base leading-snug font-medium tracking-[0.1px] text-foreground sm:text-lg md:text-xl">
+                    <h3 className="text-base leading-snug font-medium text-foreground sm:text-lg md:text-xl">
                       {feature.title}
                     </h3>
 
-                    <p className="text-sm leading-normal font-normal tracking-[0.1px] text-muted-foreground sm:text-base">
+                    <p className="text-sm leading-normal font-normal text-muted-foreground sm:text-base">
                       {feature.description}
                     </p>
                   </div>
@@ -136,16 +125,46 @@ export default function Feature() {
         </div>
 
         {/* Right Visual */}
-        <div className="relative overflow-hidden rounded-3xl border border-border/50 bg-muted/5">
-          {selectedIndex === 0 && <MotionVisual />}
+        <div className="relative overflow-hidden rounded-3xl bg-muted/5">
+          {selectedIndex === 0 && (
+            <DiagonalScroll
+              badge={
+                <div className="flex h-24 w-24 items-center justify-center">
+                  <LightFav
+                    width={90}
+                    height={90}
+                    className="block rounded-full dark:hidden"
+                  />
+                  <DarkFav
+                    width={90}
+                    height={90}
+                    className="hidden rounded-full dark:block"
+                  />
+                </div>
+              }
+              src="/assets/images/landing/light.png"
+              darkSrc="/assets/images/landing/dark.png"
+              duration={12}
+              opacity={0.6}
+            />
+          )}
           {selectedIndex === 1 && <TechOrbit />}
           {selectedIndex === 2 && <MotionVisual />}
           {selectedIndex === 3 && <CodeAnimation />}
           {selectedIndex === 4 && (
-            <div className="h-full min-h-[380px] w-full px-15 py-5 sm:min-h-[440px] md:min-h-[500px]">
+            <div className="h-full min-h-95 w-full px-4.5 py-5 sm:min-h-110 md:min-h-125">
               <EchoStack>
                 <div className="flex h-full w-full items-center justify-center">
-                  <AnimationLogo />
+                  <LightFav
+                    width={84}
+                    height={80}
+                    className="block rounded-full text-white dark:hidden"
+                  />
+                  <DarkFav
+                    width={84}
+                    height={80}
+                    className="hidden rounded-full text-white dark:block"
+                  />
                 </div>
                 <Image1 />
                 <Image2 />

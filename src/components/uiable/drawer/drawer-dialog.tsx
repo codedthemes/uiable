@@ -1,17 +1,20 @@
-"use client";
+"use client"
 
-import { ComponentProps, useState } from "react";
+import { ComponentProps, useState } from "react"
 
+import { cn } from "@/lib/utils"
+// project
+import { useMediaQuery } from "@/hooks/use-media-query"
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger
-} from "@/components/ui/dialog";
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import {
   Drawer,
   DrawerClose,
@@ -20,20 +23,16 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger
-} from "@/components/ui/drawer";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-
-// project
-import { useMediaQuery } from "@/hooks/use-media-query";
-import { cn } from "@/lib/utils";
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 //  ------------------------------ | DRAWER - DIALOG | ------------------------------  //
 
 export function DrawerDialogDemo() {
-  const [open, setOpen] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const [open, setOpen] = useState(false)
+  const isDesktop = useMediaQuery("(min-width: 768px)")
 
   if (isDesktop) {
     return (
@@ -49,7 +48,7 @@ export function DrawerDialogDemo() {
           <ProfileForm />
         </DialogContent>
       </Dialog>
-    );
+    )
   }
 
   return (
@@ -72,7 +71,7 @@ export function DrawerDialogDemo() {
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
-  );
+  )
 }
 
 function ProfileForm({ className }: ComponentProps<"form">) {
@@ -88,5 +87,5 @@ function ProfileForm({ className }: ComponentProps<"form">) {
       </div>
       <Button type="submit">Save changes</Button>
     </form>
-  );
+  )
 }

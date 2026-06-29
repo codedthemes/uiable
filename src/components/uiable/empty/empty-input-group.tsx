@@ -1,20 +1,21 @@
 // shadcn
+
+// assets
+import { SearchIcon } from "lucide-react"
+
 import {
   Empty,
   EmptyContent,
   EmptyDescription,
   EmptyHeader,
-  EmptyTitle
-} from "@/components/ui/empty";
+  EmptyTitle,
+} from "@/components/ui/empty"
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput
-} from "@/components/ui/input-group";
-import { Kbd } from "@/components/ui/kbd";
-
-// assets
-import { SearchIcon } from "lucide-react";
+  InputGroupInput,
+} from "@/components/ui/input-group"
+import { Kbd } from "@/components/ui/kbd"
 
 //  ------------------------------ | EMPTY - INPUT GROUP | ------------------------------  //
 
@@ -29,7 +30,7 @@ export default function EmptyInputGroup() {
         </EmptyDescription>
       </EmptyHeader>
       <EmptyContent>
-        <InputGroup className="sm:w-3/4 mx-auto mb-2">
+        <InputGroup className="mx-auto mb-2 sm:w-3/4">
           <InputGroupInput placeholder="Try searching for pages..." />
           <InputGroupAddon>
             <SearchIcon />
@@ -46,5 +47,5 @@ export default function EmptyInputGroup() {
         </EmptyDescription>
       </EmptyContent>
     </Empty>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
 // shadcn
-import { Button } from "@/components/ui/button";
-
 // third party
-import { toast } from "sonner";
+import { toast } from "sonner"
+
+import { Button } from "@/components/ui/button"
 
 //  ------------------------------ | SONNER - DESCRIPTION | ------------------------------  //
 
@@ -22,5 +22,5 @@ export function SonnerDescription() {
         Show Toast
       </Button>
     </>
-  );
+  )
 }

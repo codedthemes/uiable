@@ -1,20 +1,21 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
 
 // assets
 import {
   CreditCardIcon,
   LogOutIcon,
   SettingsIcon,
-  UserIcon
-} from "lucide-react";
+  UserIcon,
+} from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 //  ------------------------------ | DROPDOWN MENU - ICONS | ------------------------------  //
 
@@ -44,5 +45,5 @@ export function DropdownMenuIcons() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

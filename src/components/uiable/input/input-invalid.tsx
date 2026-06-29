@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
+import { Input } from "@/components/ui/input"
 
 //  ------------------------------ | INPUT - INVALID | ------------------------------  //
 
@@ -13,5 +13,5 @@ export function InputInvalid() {
         This field contains validation errors.
       </FieldDescription>
     </Field>
-  );
+  )
 }

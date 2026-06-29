@@ -1,21 +1,20 @@
 import { ReactNode } from "react"
 import { Metadata } from "next"
-import { cn } from "@/lib/utils"
-
 // project imports
 import branding from "@/branding.json"
+// assets
+import { Star } from "@/images/svg/icons"
 
+import { cn } from "@/lib/utils"
 // project
 import Component1 from "@/components/uiable/blocks/landing/component-1/component-1"
 import Component2 from "@/components/uiable/blocks/landing/component-2/component-2"
 import Contact from "@/components/uiable/blocks/landing/contact/Contact"
+import FAQ from "@/components/uiable/blocks/landing/faq/faq"
 import Featured from "@/components/uiable/blocks/landing/feature/Feature"
 import Footer from "@/components/uiable/blocks/landing/footer/footer"
 import Hero from "@/components/uiable/blocks/landing/hero/hero"
 import Navbar from "@/components/uiable/blocks/landing/navbar/navbar"
-
-// assets
-import { Star } from "@/images/svg/icons"
 
 export const metadata: Metadata = {
   title: `${branding.brandName} - Component Library`,
@@ -84,6 +83,9 @@ export default function LandingPage() {
         </BlockArchitecture>
         <BlockArchitecture>
           <Featured />
+        </BlockArchitecture>
+        <BlockArchitecture>
+          <FAQ />
         </BlockArchitecture>
         <BlockArchitecture>
           <Contact />

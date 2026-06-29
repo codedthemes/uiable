@@ -1,5 +1,5 @@
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 //  ------------------------------ | AVATAR - SIZE | ------------------------------  //
 
@@ -28,5 +28,5 @@ export function AvatarSizeExample() {
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
     </div>
-  );
+  )
 }

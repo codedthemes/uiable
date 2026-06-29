@@ -1,19 +1,18 @@
-"use client";
+"use client"
 
-import { useMemo } from "react";
+import { useMemo } from "react"
+// third party
+import Autoplay from "embla-carousel-autoplay"
 
 // shadcn
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious
-} from "@/components/ui/carousel";
-
-// third party
-import Autoplay from "embla-carousel-autoplay";
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 //  ------------------------------ | CAROUSEL - PLUGIN | ------------------------------  //
 
@@ -21,7 +20,7 @@ export default function CarouselPlugin() {
   const plugin = useMemo(
     () => Autoplay({ delay: 2000, stopOnInteraction: true }),
     []
-  );
+  )
 
   return (
     <Carousel
@@ -34,7 +33,7 @@ export default function CarouselPlugin() {
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
-              <Card className="bg-primary/10 border-primary">
+              <Card className="border-primary bg-primary/10">
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <span className="text-4xl font-semibold text-primary">
                     {index + 1}
@@ -48,5 +47,5 @@ export default function CarouselPlugin() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  );
+  )
 }

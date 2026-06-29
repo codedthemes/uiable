@@ -1,8 +1,9 @@
 // shadcn
-import { Button } from "@/components/ui/button";
 
 // assets
-import { ShieldAlert } from "lucide-react";
+import { ShieldAlert } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
 
 //  ------------------------------ | BUTTON ICON DANGER | ------------------------------  //
 
@@ -11,5 +12,5 @@ export default function ButtonIconDanger() {
     <Button className="gap-2 bg-red-500 text-white hover:bg-red-600">
       <ShieldAlert className="size-5" /> Danger
     </Button>
-  );
+  )
 }

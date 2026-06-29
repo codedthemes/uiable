@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 
 // shadcn
 import {
@@ -8,8 +8,8 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 //  ------------------------------ | BREADCRUMB - ELLIPSIS | ------------------------------  //
 
@@ -34,5 +34,5 @@ export function BreadcrumbEllipsisDemo() {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
+  )
 }

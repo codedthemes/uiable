@@ -1,33 +1,32 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
+// assets
+import { ArrowRightIcon } from "lucide-react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
-import { ButtonGroup } from "@/components/ui/button-group";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button"
+import { ButtonGroup } from "@/components/ui/button-group"
+import { Input } from "@/components/ui/input"
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectTrigger
-} from "@/components/ui/select";
-
-// assets
-import { ArrowRightIcon } from "lucide-react";
+  SelectTrigger,
+} from "@/components/ui/select"
 
 // constants
 const CURRENCIES = [
   { label: "US Dollar", value: "$" },
   { label: "Euro", value: "€" },
-  { label: "British Pound", value: "£" }
-];
+  { label: "British Pound", value: "£" },
+]
 
 //  ------------------------------ | BUTTON GROUP - SELECT | ------------------------------  //
 
 export default function ButtonGroupSelect() {
-  const [currency, setCurrency] = useState("$");
+  const [currency, setCurrency] = useState("$")
 
   return (
     <ButtonGroup className="items-center">
@@ -61,5 +60,5 @@ export default function ButtonGroupSelect() {
         </Button>
       </ButtonGroup>
     </ButtonGroup>
-  );
+  )
 }

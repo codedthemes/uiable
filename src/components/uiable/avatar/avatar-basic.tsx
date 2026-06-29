@@ -1,5 +1,5 @@
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 //  ------------------------------ | AVATAR - BASIC | ------------------------------  //
 
@@ -12,5 +12,5 @@ export default function AvatarDemo() {
       />
       <AvatarFallback>CN</AvatarFallback>
     </Avatar>
-  );
+  )
 }

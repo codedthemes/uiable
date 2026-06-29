@@ -1,17 +1,18 @@
-"use client";
+"use client"
 
-import { useTheme } from "next-themes";
-import { Toaster as Sonner, type ToasterProps } from "sonner";
+import { CSSProperties } from "react"
 import {
   CircleCheckIcon,
   InfoIcon,
-  TriangleAlertIcon,
+  Loader2Icon,
   OctagonXIcon,
-  Loader2Icon
-} from "lucide-react";
+  TriangleAlertIcon,
+} from "lucide-react"
+import { useTheme } from "next-themes"
+import { Toaster as Sonner, type ToasterProps } from "sonner"
 
 const Toaster = ({ ...props }: ToasterProps) => {
-  const { theme = "system" } = useTheme();
+  const { theme = "system" } = useTheme()
 
   return (
     <Sonner
@@ -22,24 +23,24 @@ const Toaster = ({ ...props }: ToasterProps) => {
         info: <InfoIcon className="size-4 text-cyan-500" />,
         warning: <TriangleAlertIcon className="size-4 text-yellow-500" />,
         error: <OctagonXIcon className="size-4 text-red-500" />,
-        loading: <Loader2Icon className="size-4 animate-spin text-primary" />
+        loading: <Loader2Icon className="size-4 animate-spin text-primary" />,
       }}
       style={
         {
           "--normal-bg": "var(--popover)",
           "--normal-text": "var(--popover-foreground)",
           "--normal-border": "var(--border)",
-          "--border-radius": "var(--radius)"
-        } as React.CSSProperties
+          "--border-radius": "var(--radius)",
+        } as CSSProperties
       }
       toastOptions={{
         classNames: {
-          toast: "cn-toast"
-        }
+          toast: "cn-toast",
+        },
       }}
       {...props}
     />
-  );
-};
+  )
+}
 
-export { Toaster };
+export { Toaster }

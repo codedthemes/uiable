@@ -1,8 +1,8 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { ButtonGroup } from "@/components/ui/button-group";
-import { Field, FieldLabel } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button"
+import { ButtonGroup } from "@/components/ui/button-group"
+import { Field, FieldLabel } from "@/components/ui/field"
+import { Input } from "@/components/ui/input"
 
 //  ------------------------------ | INPUT - BUTTON GROUP | ------------------------------  //
 
@@ -19,5 +19,5 @@ export function InputButtonGroup() {
         <Button variant="outline">Search</Button>
       </ButtonGroup>
     </Field>
-  );
+  )
 }

@@ -6,8 +6,8 @@ import {
   ContextMenuItem,
   ContextMenuSeparator,
   ContextMenuShortcut,
-  ContextMenuTrigger
-} from "@/components/ui/context-menu";
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
 
 //  ------------------------------ | CONTEXT MENU - SHORTCUTS | ------------------------------  //
 
@@ -50,5 +50,5 @@ export function ContextMenuShortcuts() {
         </ContextMenuGroup>
       </ContextMenuContent>
     </ContextMenu>
-  );
+  )
 }

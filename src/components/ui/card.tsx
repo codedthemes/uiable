@@ -1,6 +1,6 @@
-import { ComponentProps } from "react";
+import { ComponentProps } from "react"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 function Card({
   className,
@@ -12,12 +12,12 @@ function Card({
       data-slot="card"
       data-size={size}
       className={cn(
-        "group/card rounded-lg border relative border-border  mb-6 bg-card",
+        "group/card relative mb-6 rounded-lg border border-border bg-card",
         className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function CardHeader({ className, ...props }: ComponentProps<"div">) {
@@ -25,12 +25,12 @@ function CardHeader({ className, ...props }: ComponentProps<"div">) {
     <div
       data-slot="card-header"
       className={cn(
-        "p-[25px] border-b border-border group-data-[size=sm]/card:p-4",
+        "border-b border-border p-[25px] group-data-[size=sm]/card:p-4",
         className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function CardTitle({ className, ...props }: ComponentProps<"div">) {
@@ -40,17 +40,17 @@ function CardTitle({ className, ...props }: ComponentProps<"div">) {
       className={cn("h5 font-semibold", className)}
       {...props}
     />
-  );
+  )
 }
 
 function CardDescription({ className, ...props }: ComponentProps<"div">) {
   return (
     <div
       data-slot="card-description"
-      className={cn("text-muted-foreground text-sm", className)}
+      className={cn("text-sm text-muted-foreground", className)}
       {...props}
     />
-  );
+  )
 }
 
 function CardAction({ className, ...props }: ComponentProps<"div">) {
@@ -63,7 +63,7 @@ function CardAction({ className, ...props }: ComponentProps<"div">) {
       )}
       {...props}
     />
-  );
+  )
 }
 
 function CardContent({ className, ...props }: ComponentProps<"div">) {
@@ -73,7 +73,7 @@ function CardContent({ className, ...props }: ComponentProps<"div">) {
       className={cn("p-[25px] group-data-[size=sm]/card:p-4", className)}
       {...props}
     />
-  );
+  )
 }
 
 function CardFooter({ className, ...props }: ComponentProps<"div">) {
@@ -81,12 +81,12 @@ function CardFooter({ className, ...props }: ComponentProps<"div">) {
     <div
       data-slot="card-footer"
       className={cn(
-        "px-6.25 py-4 border-t border-border  group-data-[size=sm]/card:px-4",
+        "border-t border-border px-6.25 py-4 group-data-[size=sm]/card:px-4",
         className
       )}
       {...props}
     />
-  );
+  )
 }
 
 export {
@@ -96,5 +96,5 @@ export {
   CardTitle,
   CardAction,
   CardDescription,
-  CardContent
-};
+  CardContent,
+}

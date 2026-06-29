@@ -1,15 +1,14 @@
-import { notFound } from "next/navigation"
-import { Metadata } from "next"
-
 // third party
 import fs from "fs"
 import path from "path"
-
+import { Metadata } from "next"
+import { notFound } from "next/navigation"
 // project
 import branding from "@/branding.json"
+import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
+
 import CategoryDescription from "@/components/category-description"
 import CategoryView from "@/components/category-view"
-import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 
 const categoryInfoMap = {
   ...componentCategoryInfoMap,

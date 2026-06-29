@@ -1,4 +1,9 @@
 // shadcn
+
+// project
+import branding from "@/branding.json"
+import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
+
 import {
   Accordion,
   AccordionContent,
@@ -6,10 +11,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
-
-// project
-import branding from "@/branding.json"
-import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 
 const categoryInfoMap = {
   ...componentCategoryInfoMap,

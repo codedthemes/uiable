@@ -1,6 +1,10 @@
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+
+// assets
+import { Plus } from "lucide-react"
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 import {
   Item,
   ItemActions,
@@ -8,10 +12,7 @@ import {
   ItemDescription,
   ItemMedia,
   ItemTitle,
-} from "@/components/ui/item";
-
-// assets
-import { Plus } from "lucide-react";
+} from "@/components/ui/item"
 
 //  ------------------------------ | ITEM - AVATAR | ------------------------------  //
 
@@ -37,7 +38,7 @@ export function ItemAvatar() {
       </Item>
       <Item variant="outline">
         <ItemMedia>
-          <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2">
+          <div className="flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background">
             <Avatar className="hidden sm:flex">
               <AvatarImage
                 src="https://cdn.uiable.com/user/avatar-2.jpg"
@@ -72,5 +73,5 @@ export function ItemAvatar() {
         </ItemActions>
       </Item>
     </div>
-  );
+  )
 }

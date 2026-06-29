@@ -13,14 +13,16 @@ When reviewing or generating code, you must automatically fix any violations of 
 - **Named imports from path-specific modules:** You MUST import Shadcn UI components using **named imports** from their specific `@/components/ui/` path. NEVER import from a generic barrel file or re-export.
   - _Correct:_
     ```typescript
-    import { Badge } from "@/components/ui/badge";
-    import { Button } from "@/components/ui/button";
-    import { Card, CardContent, CardHeader } from "@/components/ui/card";
+    import { Badge } from "@/components/ui/badge"
+    import { Button } from "@/components/ui/button"
+    import { Card, CardContent, CardHeader } from "@/components/ui/card"
     ```
   - _Incorrect:_
+
     ```typescript
-    import { Badge, Button, Card } from "@/components/ui";
-    import { Badge } from "shadcn/badge";
+    import { Badge } from "shadcn/badge"
+
+    import { Badge, Button, Card } from "@/components/ui"
     ```
 
 - **NEVER modify `components/ui/`:** These are protected Shadcn primitives. Any design-specific customization must be applied via `className` props at the usage site, never inside the primitive file itself.
@@ -48,24 +50,24 @@ Within each group, imports MUST be sorted in **alphabetical order (A → Z) base
 1. **React / Next.js** (Top priority — **NO COMMENT**)
 
    ```typescript
-   import { useState, useEffect } from "react";
-   import Image from "next/image";
-   import Link from "next/link";
-   import { useRouter } from "next/navigation";
+   import { useEffect, useState } from "react"
+   import Image from "next/image"
+   import Link from "next/link"
+   import { useRouter } from "next/navigation"
    ```
 
 2. **Shadcn UI / Internal UI Primitives**
 
    ```typescript
    // shadcn
-   import { Badge } from "@/components/ui/badge";
-   import { Button } from "@/components/ui/button";
+   import { Badge } from "@/components/ui/badge"
+   import { Button } from "@/components/ui/button"
    import {
      Card,
      CardContent,
      CardHeader,
      CardTitle,
-   } from "@/components/ui/card";
+   } from "@/components/ui/card"
    ```
 
    - Within this section, sort alphabetically by `from` path (e.g., `badge` before `button` before `card`).
@@ -74,23 +76,23 @@ Within each group, imports MUST be sorted in **alphabetical order (A → Z) base
 
    ```typescript
    // third party
-   import { motion } from "framer-motion";
-   import { useForm } from "react-hook-form";
+   import { motion } from "framer-motion"
+   import { useForm } from "react-hook-form"
    ```
 
 4. **Project Imports** (Internal modules, layouts, hooks, lib)
 
    ```typescript
    // project
-   import { cn } from "@/lib/utils";
-   import { siteConfig } from "@/config/site";
+   import { siteConfig } from "@/config/site"
+   import { cn } from "@/lib/utils"
    ```
 
 5. **Assets / Icons**
 
    ```typescript
    // assets
-   import { ArrowRight, CheckCircle, Star } from "lucide-react";
+   import { ArrowRight, CheckCircle, Star } from "lucide-react"
    ```
 
    - ALL Lucide icons MUST be imported together in a single named import statement from `"lucide-react"`.
@@ -101,8 +103,9 @@ Within each group, imports MUST be sorted in **alphabetical order (A → Z) base
 
    ```typescript
    // types
-   import type { ComponentProps } from "react";
-   import type { RegistryItem } from "@/types/registry";
+   import type { ComponentProps } from "react"
+
+   import type { RegistryItem } from "@/types/registry"
    ```
 
 7. **Constants / Data (inline)**
@@ -132,12 +135,11 @@ Within each group, imports MUST be sorted in **alphabetical order (A → Z) base
 - **Merge Same-Path Imports:** If you find multiple import statements importing from the exact same file path, you MUST merge them into a single import statement.
   - _Incorrect:_
     ```typescript
-    import { Card } from "@/components/ui/card";
-    import { CardContent } from "@/components/ui/card";
+    import { Card, CardContent } from "@/components/ui/card"
     ```
   - _Correct:_
     ```typescript
-    import { Card, CardContent } from "@/components/ui/card";
+    import { Card, CardContent } from "@/components/ui/card"
     ```
   - _Action:_ Scan all imports and combine any that share the same `from` path into one line, merging all named exports together. Apply this to Lucide icons as well.
 

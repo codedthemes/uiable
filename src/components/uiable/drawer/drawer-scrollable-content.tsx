@@ -1,5 +1,5 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Drawer,
   DrawerClose,
@@ -8,8 +8,8 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger
-} from "@/components/ui/drawer";
+  DrawerTrigger,
+} from "@/components/ui/drawer"
 
 // project
 
@@ -49,5 +49,5 @@ export function DrawerScrollableContent() {
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
-  );
+  )
 }

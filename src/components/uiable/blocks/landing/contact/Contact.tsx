@@ -1,22 +1,17 @@
 "use client"
 
 import { SyntheticEvent, useState } from "react"
-import Link from "next/link"
 
-// shadcn
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+// assets
+import { DarkFav, LightFav } from "@/images/brand"
+import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
 
 // third party
 import { toast } from "sonner"
 
-// assets
-import {
-  ContactLeftGrid,
-  ContactRightGrid,
-  DarkLogo,
-  LightLogo,
-} from "@/images/svg/landing"
+// shadcn
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 
 //  ------------------------------ | CONTACT | ------------------------------  //
 
@@ -69,41 +64,39 @@ export default function Contact({
         />
 
         {/* LEFT GRID */}
-        <div className="pointer-events-none absolute top-[-20px] left-[-20px] z-20 select-none sm:top-[-30px] sm:left-[-30px] lg:top-[-50px] lg:left-[-50px]">
-          <ContactLeftGrid className="h-[180px] w-[180px] sm:h-[260px] sm:w-[260px] lg:h-[372px] lg:w-[372px]" />
+        <div className="pointer-events-none absolute -top-5 -left-5 z-20 select-none sm:-top-7.5 sm:-left-7.5 lg:-top-12.5 lg:-left-12.5">
+          <ContactLeftGrid className="h-45 w-45 sm:h-65 sm:w-65 lg:h-93 lg:w-93" />
         </div>
 
         {/* RIGHT GRID */}
-        <div className="pointer-events-none absolute right-[-20px] bottom-[-20px] z-20 select-none sm:right-[-30px] sm:bottom-[-30px] lg:right-[-50px] lg:bottom-[-50px]">
-          <ContactRightGrid className="h-[180px] w-[180px] sm:h-[260px] sm:w-[260px] lg:h-[372px] lg:w-[372px]" />
+        <div className="pointer-events-none absolute -right-5 -bottom-5 z-20 select-none sm:-right-7.5 sm:-bottom-7.5 lg:-right-12.5 lg:-bottom-12.5">
+          <ContactRightGrid className="h-45 w-45 sm:h-65 sm:w-65 lg:h-93 lg:w-93" />
         </div>
 
         {/* CONTENT */}
         <div className="relative z-30 mx-auto flex max-w-3xl flex-col items-center gap-10 py-16 text-center">
           {/* LOGO */}
           <div className="flex items-center justify-center">
-            <Link href="/">
-              <LightLogo
-                width={84}
-                height={80}
-                className="text-white dark:hidden"
-              />
-              <DarkLogo
-                width={84}
-                height={80}
-                className="hidden text-white dark:block"
-              />
-            </Link>
+            <LightFav
+              width={84}
+              height={80}
+              className="block text-white opacity-40 dark:hidden"
+            />
+            <DarkFav
+              width={84}
+              height={80}
+              className="hidden text-white dark:block"
+            />
           </div>
 
           {/* HEADING */}
           <div className="flex flex-col items-center gap-3.5">
-            <h2 className="text-4xl leading-[100%] font-semibold tracking-[0.1px] text-white">
+            <h2 className="text-4xl leading-none font-semibold text-white">
               Get product updates and new releases
             </h2>
 
             {/* SUBTEXT */}
-            <p className="text-md max-w-lg leading-5 font-normal tracking-[0.1px] text-white">
+            <p className="max-w-lg text-base leading-5 font-normal text-white">
               Be the first to know about new components, application blocks,
               templates, and upcoming releases.
             </p>
@@ -120,7 +113,7 @@ export default function Contact({
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="h-12 flex-1 rounded-none border-none bg-transparent px-5 py-3 text-base leading-5 tracking-[0.1px] text-white outline-none placeholder:text-white/50 focus:border-none"
+              className="h-12 flex-1 rounded-none border-none bg-transparent px-5 py-3 text-base leading-5 text-white outline-none placeholder:text-white/50 focus:border-none"
             />
 
             <Button

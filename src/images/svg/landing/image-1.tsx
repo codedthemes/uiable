@@ -2,7 +2,12 @@
 
 export default function Image1() {
   return (
-    <svg viewBox="0 0 1440 792" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+    <svg
+      viewBox="0 0 1440 792"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMin meet"
+    >
       <g clipPath="url(#clip0_3600_1454)">
         <rect width="1440" height="792" fill="var(--background)" />
         <rect width="1440" height="78" fill="var(--background)" />

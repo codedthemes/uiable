@@ -1,6 +1,10 @@
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+
+// assets
+import { PlusIcon } from "lucide-react"
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 import {
   Item,
   ItemActions,
@@ -9,10 +13,7 @@ import {
   ItemGroup,
   ItemMedia,
   ItemTitle,
-} from "@/components/ui/item";
-
-// assets
-import { PlusIcon } from "lucide-react";
+} from "@/components/ui/item"
 
 // constants
 const people = [
@@ -31,7 +32,7 @@ const people = [
     avatar: "https://cdn.uiable.com/user/avatar-10.jpg",
     email: "evil@demo.com",
   },
-];
+]
 
 //  ------------------------------ | ITEM - GROUP | ------------------------------  //
 
@@ -58,5 +59,5 @@ export function ItemGroupExample() {
         </Item>
       ))}
     </ItemGroup>
-  );
+  )
 }

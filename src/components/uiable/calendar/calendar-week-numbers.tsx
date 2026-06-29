@@ -1,17 +1,17 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Calendar } from "@/components/ui/calendar";
-import { Card, CardContent } from "@/components/ui/card";
+import { Calendar } from "@/components/ui/calendar"
+import { Card, CardContent } from "@/components/ui/card"
 
 //  ------------------------------ | CALENDAR - WEEK NUMBERS | ------------------------------  //
 
 export function CalendarWeekNumbers() {
   const [date, setDate] = useState<Date | undefined>(
     new Date(new Date().getFullYear(), 0, 12)
-  );
+  )
 
   return (
     <Card className="mx-auto w-fit p-0">
@@ -25,5 +25,5 @@ export function CalendarWeekNumbers() {
         />
       </CardContent>
     </Card>
-  );
+  )
 }

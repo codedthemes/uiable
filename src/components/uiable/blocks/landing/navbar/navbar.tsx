@@ -1,18 +1,9 @@
 "use client"
 
-import Link from "next/link"
 import { useState } from "react"
-
-// shadcn
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-
+import Link from "next/link"
 // project imports
 import branding from "@/branding.json"
-import { ThemeToggle } from "@/components/customizer"
-import NavSearchDialog from "@/components/uiable/blocks/landing/components/NavSearchDialog"
-import Logo from "@/components/uiable/layout/shared/logo"
-
 // assets
 import {
   IconBrandDiscord,
@@ -22,6 +13,13 @@ import {
   IconSearch,
   IconX,
 } from "@tabler/icons-react"
+
+// shadcn
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
+import { ThemeToggle } from "@/components/customizer"
+import NavSearchDialog from "@/components/uiable/blocks/landing/components/NavSearchDialog"
+import Logo from "@/components/uiable/layout/shared/logo"
 
 // constants
 const navlinks = [
@@ -129,7 +127,7 @@ export default function Navbar() {
                 variant="ghost"
                 nativeButton={false}
                 render={<Link href={item.href} />}
-                className="px-3 py-1.5 text-[14px] leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
+                className="px-3 py-1.5 text-sm leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
               >
                 {item.label}
               </Button>
@@ -163,7 +161,7 @@ export default function Navbar() {
                 variant="ghost"
                 nativeButton={false}
                 render={<Link href={item.href} />}
-                className="justify-start px-0 py-1.5 text-[14px] leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
+                className="justify-start px-0 py-1.5 text-sm leading-6 font-medium text-foreground hover:bg-transparent hover:text-primary dark:hover:bg-transparent"
               >
                 {item.label}
               </Button>

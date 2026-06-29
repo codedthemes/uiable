@@ -5,8 +5,8 @@ import {
   ComboboxEmpty,
   ComboboxInput,
   ComboboxItem,
-  ComboboxList
-} from "@/components/ui/combobox";
+  ComboboxList,
+} from "@/components/ui/combobox"
 
 // constants
 const frameworks = [
@@ -14,8 +14,8 @@ const frameworks = [
   "SvelteKit",
   "Nuxt.js",
   "Remix",
-  "Astro"
-] as const;
+  "Astro",
+] as const
 
 //  ------------------------------ | COMBOBOX - DISABLED | ------------------------------  //
 
@@ -34,5 +34,5 @@ export function ComboboxDisabled() {
         </ComboboxList>
       </ComboboxContent>
     </Combobox>
-  );
+  )
 }

@@ -1,9 +1,13 @@
 // shadcn
+
+// assets
+import { ChevronRightIcon } from "lucide-react"
+
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from "@/components/ui/collapsible"
 import {
   Sidebar,
   SidebarContent,
@@ -16,10 +20,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   SidebarProvider,
-} from "@/components/ui/sidebar";
-
-// assets
-import { ChevronRightIcon } from "lucide-react";
+} from "@/components/ui/sidebar"
 
 // constants
 const items = [
@@ -148,7 +149,7 @@ const items = [
       },
     ],
   },
-];
+]
 
 //  ------------------------------ | SIDEBAR - MENU COLLAPSIBLE | ------------------------------  //
 
@@ -193,5 +194,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

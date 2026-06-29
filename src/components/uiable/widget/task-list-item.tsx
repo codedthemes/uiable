@@ -1,19 +1,19 @@
-"use client";
+"use client"
 
 // shadcn
-import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge"
+import { buttonVariants } from "@/components/ui/button"
 
 // project
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 // assets
-import { Paperclip } from "lucide-react";
+import { Paperclip } from "lucide-react"
 
 interface TaskListItemProps {
-  title: string;
-  dotColor: string;
-  badgeCount?: number;
+  title: string
+  dotColor: string
+  badgeCount?: number
 }
 
 //  ------------------------------ | BLOCK - TASK LIST ITEM | ------------------------------  //
@@ -28,23 +28,23 @@ export default function TaskListItem({
       href="#"
       className={cn(
         buttonVariants({ variant: "ghost" }),
-        "w-full justify-start p-2 h-auto hover:bg-muted/50 rounded-xl group",
+        "group h-auto w-full justify-start rounded-xl p-2 hover:bg-muted/50"
       )}
     >
-      <div className="flex items-center w-full">
-        <div className={cn("w-2 h-2 rounded-full mr-3", dotColor)}></div>
-        <span className="flex-grow text-left truncate font-medium">
+      <div className="flex w-full items-center">
+        <div className={cn("mr-3 h-2 w-2 rounded-full", dotColor)}></div>
+        <span className="flex-grow truncate text-left font-medium">
           {title}
         </span>
         {badgeCount !== undefined && (
           <Badge
             variant="outline"
-            className="ml-2 gap-1 bg-muted/50 text-muted-foreground border-none"
+            className="ml-2 gap-1 border-none bg-muted/50 text-muted-foreground"
           >
             <Paperclip className="h-3 w-3" /> {badgeCount}
           </Badge>
         )}
       </div>
     </a>
-  );
+  )
 }

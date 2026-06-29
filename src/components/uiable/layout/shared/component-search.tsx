@@ -1,13 +1,12 @@
 "use client"
 
 // shadcn
-import { Input } from "@/components/ui/input"
+// assets
+import { Search } from "lucide-react"
 
 // project
 import { cn } from "@/lib/utils"
-
-// assets
-import { Search } from "lucide-react"
+import { Input } from "@/components/ui/input"
 
 interface ComponentSearchProps {
   value: string

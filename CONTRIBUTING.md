@@ -65,14 +65,10 @@ To add a new component to UIAble, you will need to modify several files. Follow 
 Create the main component in `src/components/uiable/[category]/example-component.tsx`
 
 ```tsx
-import React from 'react'
+import React from "react"
 
 export default function ExampleComponent() {
-  return (
-    <div className="rounded-lg shadow-sm">
-      This is your component.
-    </div>
-  )
+  return <div className="rounded-lg shadow-sm">This is your component.</div>
 }
 ```
 

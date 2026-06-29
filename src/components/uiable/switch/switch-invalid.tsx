@@ -3,9 +3,9 @@ import {
   Field,
   FieldContent,
   FieldDescription,
-  FieldLabel
-} from "@/components/ui/field";
-import { Switch } from "@/components/ui/switch";
+  FieldLabel,
+} from "@/components/ui/field"
+import { Switch } from "@/components/ui/switch"
 
 //  ------------------------------ | SWITCH - INVALID | ------------------------------  //
 
@@ -22,5 +22,5 @@ export function SwitchInvalid() {
       </FieldContent>
       <Switch id="switch-terms" aria-invalid />
     </Field>
-  );
+  )
 }

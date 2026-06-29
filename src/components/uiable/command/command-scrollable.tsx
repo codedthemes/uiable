@@ -1,21 +1,6 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-
-// shadcn
-import { Button } from "@/components/ui/button";
-import {
-  Command,
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-  CommandShortcut
-} from "@/components/ui/command";
-
+import { useState } from "react"
 // assets
 import {
   BellIcon,
@@ -40,13 +25,27 @@ import {
   TrashIcon,
   UserIcon,
   ZoomInIcon,
-  ZoomOutIcon
-} from "lucide-react";
+  ZoomOutIcon,
+} from "lucide-react"
+
+// shadcn
+import { Button } from "@/components/ui/button"
+import {
+  Command,
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from "@/components/ui/command"
 
 //  ------------------------------ | COMMAND - SCROLLABLE | ------------------------------  //
 
 export function CommandManyItems() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="flex flex-col gap-4">
@@ -183,5 +182,5 @@ export function CommandManyItems() {
         </Command>
       </CommandDialog>
     </div>
-  );
+  )
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Toggle } from "@/components/ui/toggle";
+import { Toggle } from "@/components/ui/toggle"
 
 //  ------------------------------ | TOGGLE - SIZES | ------------------------------  //
 
@@ -16,5 +16,5 @@ export function ToggleSizes() {
         Large
       </Toggle>
     </div>
-  );
+  )
 }

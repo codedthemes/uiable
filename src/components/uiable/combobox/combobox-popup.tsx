@@ -1,5 +1,5 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Combobox,
   ComboboxContent,
@@ -8,8 +8,8 @@ import {
   ComboboxItem,
   ComboboxList,
   ComboboxTrigger,
-  ComboboxValue
-} from "@/components/ui/combobox";
+  ComboboxValue,
+} from "@/components/ui/combobox"
 
 // constants
 const countries = [
@@ -18,7 +18,7 @@ const countries = [
     code: "ar",
     value: "argentina",
     label: "Argentina",
-    continent: "South America"
+    continent: "South America",
   },
   { code: "au", value: "australia", label: "Australia", continent: "Oceania" },
   { code: "br", value: "brazil", label: "Brazil", continent: "South America" },
@@ -28,7 +28,7 @@ const countries = [
     code: "co",
     value: "colombia",
     label: "Colombia",
-    continent: "South America"
+    continent: "South America",
   },
   { code: "eg", value: "egypt", label: "Egypt", continent: "Africa" },
   { code: "fr", value: "france", label: "France", continent: "Europe" },
@@ -41,29 +41,29 @@ const countries = [
     code: "nz",
     value: "new-zealand",
     label: "New Zealand",
-    continent: "Oceania"
+    continent: "Oceania",
   },
   { code: "ng", value: "nigeria", label: "Nigeria", continent: "Africa" },
   {
     code: "za",
     value: "south-africa",
     label: "South Africa",
-    continent: "Africa"
+    continent: "Africa",
   },
   { code: "kr", value: "south-korea", label: "South Korea", continent: "Asia" },
   {
     code: "gb",
     value: "united-kingdom",
     label: "United Kingdom",
-    continent: "Europe"
+    continent: "Europe",
   },
   {
     code: "us",
     value: "united-states",
     label: "United States",
-    continent: "North America"
-  }
-];
+    continent: "North America",
+  },
+]
 
 //  ------------------------------ | COMBOBOX - POPUP | ------------------------------  //
 
@@ -89,5 +89,5 @@ export function ComboboxPopup() {
         </ComboboxContent>
       </Combobox>
     </>
-  );
+  )
 }

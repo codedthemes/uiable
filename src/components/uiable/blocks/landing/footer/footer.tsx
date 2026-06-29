@@ -1,11 +1,7 @@
 import { ComponentProps } from "react"
 import Link from "next/link"
-
 // project
 import branding from "@/branding.json"
-import Logo from "@/components/uiable/layout/shared/logo"
-import { cn } from "@/lib/utils"
-
 // assets
 import {
   IconBrandDiscord,
@@ -13,8 +9,12 @@ import {
   IconBrandX,
 } from "@tabler/icons-react"
 
+import { cn } from "@/lib/utils"
+import Logo from "@/components/uiable/layout/shared/logo"
+
 interface FooterProps extends ComponentProps<"footer"> {
   containerClassName?: string
+  showGradient?: boolean
 }
 
 // constants
@@ -42,14 +42,19 @@ const socialLinks = [
 export default function Footer({
   className,
   containerClassName,
+  showGradient = true,
   ...props
 }: FooterProps) {
   return (
     <footer
-      style={{
-        background:
-          "linear-gradient(to top, var(--primary) -180%, var(--background) 95%)",
-      }}
+      style={
+        showGradient
+          ? {
+              background:
+                "linear-gradient(to top, var(--primary) -180%, var(--background) 95%)",
+            }
+          : undefined
+      }
       className={cn("w-full", className)}
       {...props}
     >
@@ -65,7 +70,7 @@ export default function Footer({
             <Logo />
           </div>
 
-          <p className="text-md leading-6 font-normal tracking-[0.1px] text-foreground">
+          <p className="text-base leading-6 font-normal text-foreground">
             v1.0 | Built by{" "}
             <Link
               href={branding.company.url}
@@ -86,7 +91,7 @@ export default function Footer({
               <Link
                 key={href}
                 href={href}
-                className="font-sans text-[16px] leading-6 font-normal tracking-[0.1px] text-foreground transition hover:text-primary"
+                className="font-sans text-base leading-6 font-normal text-foreground transition hover:text-primary"
               >
                 {label}
               </Link>
