@@ -206,9 +206,10 @@ export function ThemeToggle() {
               variant="ghost"
               size="icon"
               aria-label="Theme Customizer"
-              className="h-9.5 w-9.5 rounded-full bg-[linear-gradient(239.74deg,#C800DE_0%,#9810FA_16.93%,#4680FF_29.63%,#D08700_55.02%,#FF6900_67.72%,#FB2C36_84.65%)] p-[2px] hover:opacity-90"
+              className="relative h-9.5 w-9.5 overflow-hidden rounded-full p-[2px] hover:opacity-90"
             >
-              <div className="flex h-full w-full items-center justify-center rounded-full bg-foreground dark:bg-white">
+              <div className="absolute inset-0 animate-[spin_3s_linear_infinite] bg-[linear-gradient(239.74deg,#C800DE_0%,#9810FA_16.93%,#4680FF_29.63%,#D08700_55.02%,#FF6900_67.72%,#FB2C36_84.65%)]" />
+              <div className="relative z-10 flex h-full w-full items-center justify-center rounded-full bg-foreground dark:bg-white">
                 <Settings2 className="size-4.5 text-background" />
               </div>
             </Button>
