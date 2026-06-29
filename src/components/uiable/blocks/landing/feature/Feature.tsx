@@ -129,17 +129,20 @@ export default function Feature() {
           {selectedIndex === 0 && (
             <DiagonalScroll
               badge={
-                <div className="flex h-24 w-24 items-center justify-center">
-                  <LightFav
-                    width={90}
-                    height={90}
-                    className="block rounded-full dark:hidden"
-                  />
-                  <DarkFav
-                    width={90}
-                    height={90}
-                    className="hidden rounded-full dark:block"
-                  />
+                <div className="relative h-24 w-24 overflow-hidden rounded-full p-[4px]">
+                  <div className="absolute inset-0 animate-[spin_3s_linear_infinite] bg-[linear-gradient(239.74deg,#C800DE_0%,#9810FA_16.93%,#4680FF_29.63%,#D08700_55.02%,#FF6900_67.72%,#FB2C36_84.65%)]" />
+                  <div className="relative z-10 flex h-full w-full items-center justify-center rounded-full">
+                    <LightFav
+                      width={90}
+                      height={90}
+                      className="block rounded-full dark:hidden"
+                    />
+                    <DarkFav
+                      width={90}
+                      height={90}
+                      className="hidden rounded-full dark:block"
+                    />
+                  </div>
                 </div>
               }
               src="/assets/images/landing/light.png"
