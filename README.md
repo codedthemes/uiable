@@ -1,8 +1,11 @@
-<h1 align="center">UIAble</h1>
+<div align="center"> 
+  <h3>UIAble</h3>
+  <p>
+    <strong>A modern UI component library built with Tailwind CSS and Shadcn architecture.</strong>
+  </p>
+</div>
 
-<p align="center">
-  <strong>A modern UI component library built with Tailwind CSS and Shadcn architecture.</strong>
-</p>
+---
 
 UIAble is an open-source collection of reusable UI components designed for developers who want clean, practical, and fully customizable building blocks for modern frontend projects, without lock-in, without unnecessary abstraction, and without rebuilding the same UI patterns from scratch every time.
 
