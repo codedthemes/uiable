@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h3>UIAble</h3>
+  <h1>UIAble</h1>
   <p>
     <strong>A modern UI component library built with Tailwind CSS and Shadcn architecture.</strong>
   </p>
@@ -15,8 +15,6 @@
   <a href="https://discord.com/invite/txPuEn5atw"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://x.com/uiable"><img src="https://img.shields.io/badge/@uiable-black?style=flat-square&logo=x&logoColor=white" alt="X"></a>
 </p>
-
----
 
 UIAble is an open-source collection of reusable UI components designed for developers who want clean, practical, and fully customizable building blocks for modern frontend projects, without lock-in, without unnecessary abstraction, and without rebuilding the same UI patterns from scratch every time.
 
