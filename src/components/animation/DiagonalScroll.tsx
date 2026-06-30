@@ -53,47 +53,50 @@ export default function DiagonalScroll({
   badge,
   src,
   darkSrc,
-  duration = 20,
   opacity = 0.9,
   className,
 }: DiagonalScrollProps) {
   const img1Ref = useRef<HTMLDivElement>(null)
   const img2Ref = useRef<HTMLDivElement>(null)
-  const anim1Ref = useRef<Animation | null>(null)
-  const anim2Ref = useRef<Animation | null>(null)
 
   useEffect(() => {
-    if (!img1Ref.current || !img2Ref.current) return
+    const img1 = img1Ref.current
+    const img2 = img2Ref.current
+    if (!img1 || !img2) return
 
-    anim1Ref.current = img1Ref.current.animate(
-      [
-        { transform: "translate(-50%, -50%) translate(0%, 0%)" },
-        { transform: "translate(-50%, -50%) translate(-100%, -100%)" },
-      ],
-      {
-        duration: duration * 1000,
-        iterations: Infinity,
-        easing: "linear",
-      }
-    )
+    const duration = 25000
+    const imgW = 1400
+    const imgH = 1567
+    const overlapFactor = 0.8
 
-    anim2Ref.current = img2Ref.current.animate(
-      [
-        { transform: "translate(-50%, -50%) translate(100%, 100%)" },
-        { transform: "translate(-50%, -50%) translate(0%, 0%)" },
-      ],
+    const keyframes1 = [
+      { transform: "translate(-50%, -50%) translate(0px, 0px)" },
       {
-        duration: duration * 1000,
-        iterations: Infinity,
-        easing: "linear",
-      }
-    )
+        transform: `translate(-50%, -50%) translate(${-imgW * overlapFactor}px, ${-imgH * overlapFactor}px)`,
+      },
+    ]
+
+    const keyframes2 = [
+      {
+        transform: `translate(-50%, -50%) translate(${imgW * overlapFactor}px, ${imgH * overlapFactor}px)`,
+      },
+      { transform: "translate(-50%, -50%) translate(0px, 0px)" },
+    ]
+
+    const options = {
+      duration: duration,
+      iterations: Infinity,
+      easing: "linear",
+    }
+
+    const anim1 = img1.animate(keyframes1, options)
+    const anim2 = img2.animate(keyframes2, options)
 
     return () => {
-      anim1Ref.current?.cancel()
-      anim2Ref.current?.cancel()
+      anim1.cancel()
+      anim2.cancel()
     }
-  }, [duration])
+  }, [])
 
   return (
     <div

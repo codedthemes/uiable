@@ -1,6 +1,7 @@
 "use client"
 
 import { Children, ReactNode, useEffect, useState } from "react"
+
 // project imports
 import { AnimationBg } from "@/images/svg/landing"
 
@@ -83,17 +84,15 @@ export default function EchoStack({
 
           // The newest card is full size. Older cards shrink.
           const stackIndex = isVisible ? visibleCount - 1 - index : 0
-          // Each subsequent card is 50px lower than the previous one
-          const offset = index * 50
           const scale = 1 - stackIndex * 0.04
 
           return (
             <div
               key={index}
-              className={`absolute flex h-full w-full justify-center ${index === 0 ? "items-center" : "top-[-60px]"} overflow-hidden rounded-2xl ${cardClassName}`}
+              className={`absolute flex h-full w-full justify-center ${index === 0 ? "items-center" : "top-[-30px] sm:top-[-60px]"} overflow-hidden rounded-2xl ${cardClassName}`}
               style={{
                 transform: isVisible
-                  ? `translateY(${offset}px) scale(${scale})`
+                  ? `translateY(calc(${index} * clamp(25px, 5vw, 50px))) scale(${scale})`
                   : "translateY(100%) scale(0.9)",
                 opacity: isVisible ? 1 : 0,
                 zIndex: index,
