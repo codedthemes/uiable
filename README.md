@@ -5,10 +5,6 @@
   </p>
 </div>
 
----
-
-UIAble is an open-source collection of reusable UI components designed for developers who want clean, practical, and fully customizable building blocks for modern frontend projects, without lock-in, without unnecessary abstraction, and without rebuilding the same UI patterns from scratch every time.
-
 <p align="center">
   <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19%2B-007ec6?style=flat-square&logo=react&logoColor=61DAFB" alt="React"></a>
   <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16%2B-007ec6?style=flat-square&logo=next.js&logoColor=white" alt="Next.js"></a>
@@ -19,6 +15,10 @@ UIAble is an open-source collection of reusable UI components designed for devel
   <a href="https://discord.com/invite/txPuEn5atw"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://x.com/uiable"><img src="https://img.shields.io/badge/@uiable-black?style=flat-square&logo=x&logoColor=white" alt="X"></a>
 </p>
+
+---
+
+UIAble is an open-source collection of reusable UI components designed for developers who want clean, practical, and fully customizable building blocks for modern frontend projects, without lock-in, without unnecessary abstraction, and without rebuilding the same UI patterns from scratch every time.
 
 ![Uiable Banner](public/assets/images/banner/free-version-banner.gif)
 
