@@ -2,7 +2,7 @@
 
 **A modern UI component library built with Tailwind CSS and Shadcn architecture.**
 
-UIAble is an open-source collection of reusable UI components designed for developers who want clean, practical, and fully customizable building blocks for modern frontend projects — without lock-in, without unnecessary abstraction, and without rebuilding the same UI patterns from scratch every time.
+UIAble is an open-source collection of reusable UI components designed for developers who want clean, practical, and fully customizable building blocks for modern frontend projects, without lock-in, without unnecessary abstraction, and without rebuilding the same UI patterns from scratch every time.
 
 [![React](https://img.shields.io/badge/React-19%2B-007ec6?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev)
 [![Next.js](https://img.shields.io/badge/Next.js-16%2B-007ec6?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org)
@@ -21,7 +21,7 @@ UIAble is an open-source collection of reusable UI components designed for devel
 
 Most UI libraries built on Shadcn end up looking and feeling nearly identical. Same structure. Same visual defaults. Same tradeoffs.
 
-UIAble was built to be different — not by adding more features, but by being more intentional about what a component library should actually do in a real project.
+UIAble was built to be different, not by adding more features but by being more intentional about what a component library should actually do in a real project.
 
 The common frustrations with existing libraries:
 
@@ -41,7 +41,7 @@ UIAble addresses all of these directly.
 No black-box packages. Components are copied directly into your codebase. You see them, you edit them, you own them.
 
 ### Built for real product UI
-The focus is on components that handle real requirements — form validation, edge case inputs, accessible dialogs, scalable tables, proper keyboard navigation — not components optimized for screenshots.
+The focus is on components that handle real requirements, including form validation, edge case inputs, accessible dialogs, scalable tables, and proper keyboard navigation, rather than components optimized for screenshots.
 
 ### Tailwind-first, not Tailwind-locked
 UIAble uses Tailwind CSS in a clean, sensible way. No class soup. No structural gymnastics. Just readable component code that happens to use Tailwind well.
@@ -165,7 +165,7 @@ npm run dev
 
 MIT © [UIAble](https://uiable.com)
 
-You can use, modify, and distribute UIAble freely — in personal and commercial projects. No attribution required, though it's always appreciated.
+You can use, modify, and distribute UIAble freely in personal and commercial projects. No attribution required, though it's always appreciated.
 
 See the full [LICENSE](https://github.com/codedthemes/uiable/blob/master/LICENSE) file for details.
 
@@ -178,7 +178,6 @@ UIAble stands on the shoulders of great open-source work:
 - [shadcn/ui](https://ui.shadcn.com) — for the copy-paste component model
 - [Tailwind CSS](https://tailwindcss.com) — for the utility-first foundation
 - [Base UI](https://base-ui.com) — for unstyled accessible primitives
-- [Radix UI](https://radix-ui.com) — for headless component primitives
 - [Lucide](https://lucide.dev) — for the icon set
 
 ---
