@@ -20,21 +20,21 @@ export const NAV_CATEGORIES: NavSection[] = [
   {
     title: "Inputs",
     items: [
-      { title: "Button", slug: "button", breakpoints: { xl: 3, md: 2, xs: 1 } },
+      { title: "Button", slug: "button", breakpoints: { xl: 3, lg: 2, xs: 1 } },
       {
         title: "Button Group",
         slug: "button-group",
-        breakpoints: { xxl: 3, md: 2, sm: 1, xs: 1 },
+        breakpoints: { xxl: 3, lg: 2, sm: 1, xs: 1 },
       },
       {
         title: "Checkbox",
         slug: "checkbox",
-        breakpoints: { md: 2, sm: 2, xs: 1 },
+        breakpoints: { lg: 2, xs: 1 },
       },
       {
         title: "Combobox",
         slug: "combobox",
-        breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
+        breakpoints: { xl: 3, lg: 2, xs: 1 },
       },
       {
         title: "Command",
