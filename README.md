@@ -1,17 +1,22 @@
-# UIAble
+<div align="center"> 
+  <h1>UIAble</h1>
+  <p>
+    <strong>A modern UI component library built with Tailwind CSS and Shadcn architecture.</strong>
+  </p>
+</div>
 
-**A modern UI component library built with Tailwind CSS and Shadcn architecture.**
+<p align="center">
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19%2B-007ec6?style=flat-square&logo=react&logoColor=61DAFB" alt="React"></a>
+  <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16%2B-007ec6?style=flat-square&logo=next.js&logoColor=white" alt="Next.js"></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-4%2B-007ec6?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"></a>
+  <a href="https://ui.shadcn.com/"><img src="https://img.shields.io/badge/shadcn%2Fui-4%2B-007ec6?style=flat-square&logo=shadcnui&logoColor=white" alt="shadcn/ui"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-007ec6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript Ready"></a>
+  <br />
+  <a href="https://discord.com/invite/txPuEn5atw"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://x.com/uiable"><img src="https://img.shields.io/badge/@uiable-black?style=flat-square&logo=x&logoColor=white" alt="X"></a>
+</p>
 
 UIAble is an open-source collection of reusable UI components designed for developers who want clean, practical, and fully customizable building blocks for modern frontend projects, without lock-in, without unnecessary abstraction, and without rebuilding the same UI patterns from scratch every time.
-
-[![React](https://img.shields.io/badge/React-19%2B-007ec6?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev)
-[![Next.js](https://img.shields.io/badge/Next.js-16%2B-007ec6?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4%2B-007ec6?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-4%2B-007ec6?style=flat-square&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
-[![TypeScript Ready](https://img.shields.io/badge/TypeScript-Ready-007ec6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/txPuEn5atw)
-[![X](https://img.shields.io/badge/@uiable-black?style=flat-square&logo=x&logoColor=white)](https://x.com/uiable)
 
 ![Uiable Banner](public/assets/images/banner/free-version-banner.gif)
 
@@ -38,31 +43,36 @@ UIAble addresses all of these directly.
 ## What Makes It Different
 
 ### You get the actual code
+
 No black-box packages. Components are copied directly into your codebase. You see them, you edit them, you own them.
 
 ### Built for real product UI
+
 The focus is on components that handle real requirements, including form validation, edge case inputs, accessible dialogs, scalable tables, and proper keyboard navigation, rather than components optimized for screenshots.
 
 ### Tailwind-first, not Tailwind-locked
+
 UIAble uses Tailwind CSS in a clean, sensible way. No class soup. No structural gymnastics. Just readable component code that happens to use Tailwind well.
 
 ### No lock-in
+
 If you stop using UIAble tomorrow, your code still works. Because it's already yours.
 
 ### Open source from day one
+
 The entire component library is transparent and open for contribution. No gated tiers. No "pro" version. Just components.
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Styling | Tailwind CSS v4 |
-| Architecture | shadcn/ui |
-| Primitives | Base UI |
-| Language | TypeScript |
-| Framework | React (Next.js compatible) |
+| Layer        | Technology                 |
+| ------------ | -------------------------- |
+| Styling      | Tailwind CSS v4            |
+| Architecture | shadcn/ui                  |
+| Primitives   | Base UI                    |
+| Language     | TypeScript                 |
+| Framework    | React (Next.js compatible) |
 
 ---
 
@@ -71,6 +81,7 @@ The entire component library is transparent and open for contribution. No gated 
 UIAble v1.0 ships with the following components:
 
 ### Form Controls
+
 - `Button`
 - `Button Group`
 - `Checkbox`
@@ -91,6 +102,7 @@ UIAble v1.0 ships with the following components:
 - `Toggle Group`
 
 ### Data Display
+
 - `Avatar`
 - `Badge`
 - `Card`
@@ -108,6 +120,7 @@ UIAble v1.0 ships with the following components:
 - `Calendar`
 
 ### Feedback & Overlays
+
 - `Alert`
 - `Alert Dialog`
 - `Dialog`
@@ -118,6 +131,7 @@ UIAble v1.0 ships with the following components:
 - `Spinner`
 
 ### Navigation
+
 - `Breadcrumb`
 - `Dropdown Menu`
 - `Menubar`
@@ -128,6 +142,7 @@ UIAble v1.0 ships with the following components:
 - `Sidebar`
 
 ### Layout & Interaction
+
 - `Accordion`
 - `Collapsible`
 - `Context Menu`
@@ -182,4 +197,4 @@ UIAble stands on the shoulders of great open-source work:
 
 ---
 
-*UIAble is intentionally not trying to feel like a product. It's trying to feel like something you quietly copy into your project — and forget about, because it just works.*
+_UIAble is intentionally not trying to feel like a product. It's trying to feel like something you quietly copy into your project — and forget about, because it just works._
