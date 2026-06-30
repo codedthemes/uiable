@@ -14,7 +14,6 @@ import {
   TechOrbit,
 } from "@/components/animation"
 import { SectionHeader } from "@/components/uiable/blocks/landing/components"
-import { Image1, Image2, Image3, Image4, Image5 } from "@/images/svg/landing"
 import { DarkFav, LightFav } from "@/images/brand"
 import { cn } from "@/lib/utils"
 
@@ -147,7 +146,6 @@ export default function Feature() {
               }
               src="/assets/images/landing/light.png"
               darkSrc="/assets/images/landing/dark.png"
-              duration={12}
               opacity={0.6}
             />
           )}
@@ -169,11 +167,23 @@ export default function Feature() {
                     className="hidden rounded-full text-white dark:block"
                   />
                 </div>
-                <Image1 />
-                <Image2 />
-                <Image3 />
-                <Image4 />
-                <Image5 />
+                {[1, 2, 3, 4, 5].map((num) => (
+                  <div
+                    key={num}
+                    className="flex size-full items-start justify-center"
+                  >
+                    <img
+                      src={`/assets/images/landing/image-light-${num}.png`}
+                      alt={`Feature layer ${num}`}
+                      className="block size-full object-contain object-top md:h-[580px] md:w-[580px] dark:hidden"
+                    />
+                    <img
+                      src={`/assets/images/landing/image-dark-${num}.png`}
+                      alt={`Feature layer ${num}`}
+                      className="hidden size-full object-contain object-top dark:block"
+                    />
+                  </div>
+                ))}
               </EchoStack>
             </div>
           )}

@@ -77,16 +77,7 @@ export default function Contact({
         <div className="relative z-30 mx-auto flex max-w-3xl flex-col items-center gap-10 py-16 text-center">
           {/* LOGO */}
           <div className="flex items-center justify-center">
-            <LightFav
-              width={84}
-              height={80}
-              className="block text-white opacity-40 dark:hidden"
-            />
-            <DarkFav
-              width={84}
-              height={80}
-              className="hidden text-white dark:block"
-            />
+            <LightFav width={84} height={80} />
           </div>
 
           {/* HEADING */}

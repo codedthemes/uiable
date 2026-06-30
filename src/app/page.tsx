@@ -25,41 +25,47 @@ export const metadata: Metadata = {
 
 //  ------------------------------ | BLOCK ARCHITECTURE | ------------------------------  //
 
+function TopStars() {
+  return (
+    <>
+      <div className="absolute top-0 left-0 -translate-x-2/4 -translate-y-2/4 text-border/60">
+        <Star />
+      </div>
+      <div className="absolute top-0 right-0 translate-x-2/4 -translate-y-2/4 text-border/60">
+        <Star />
+      </div>
+    </>
+  )
+}
+
 function BlockArchitecture({
   children,
   fullWidth = false,
+  hasTopBorder = true,
 }: {
   children: ReactNode
   fullWidth?: boolean
+  hasTopBorder?: boolean
 }) {
   return (
     <div
       className={cn(
-        "relative before:absolute before:top-0 before:left-[-100vw] before:h-px before:w-[200vw] before:bg-border/60 after:absolute",
+        "relative after:absolute",
+        hasTopBorder &&
+          "before:absolute before:top-0 before:left-[-100vw] before:h-px before:w-[200vw] before:bg-border/60",
         fullWidth && "left-1/2 w-screen -translate-x-1/2"
       )}
     >
-      {fullWidth ? (
-        <div className="pointer-events-none absolute inset-0">
-          <div className="relative container mx-auto h-full">
-            <div className="absolute top-0 left-0 -translate-2/4 text-border/60">
-              <Star />
-            </div>
-            <div className="absolute top-0 right-0 translate-x-2/4 -translate-y-2/4 text-border/60">
-              <Star />
+      {hasTopBorder &&
+        (fullWidth ? (
+          <div className="pointer-events-none absolute inset-0">
+            <div className="relative container mx-auto h-full">
+              <TopStars />
             </div>
           </div>
-        </div>
-      ) : (
-        <>
-          <div className="absolute top-0 left-0 -translate-2/4 text-border/60">
-            <Star />
-          </div>
-          <div className="absolute top-0 right-0 translate-x-2/4 -translate-y-2/4 text-border/60">
-            <Star />
-          </div>
-        </>
-      )}
+        ) : (
+          <TopStars />
+        ))}
       {children}
     </div>
   )
@@ -69,10 +75,10 @@ function BlockArchitecture({
 
 export default function LandingPage() {
   return (
-    <div className="w-full overflow-hidden bg-background">
+    <div className="w-full overflow-clip bg-background">
+      <Navbar />
       <div className="container mx-auto border-x border-border/60">
-        <Navbar />
-        <BlockArchitecture fullWidth>
+        <BlockArchitecture fullWidth hasTopBorder={false}>
           <Hero />
         </BlockArchitecture>
         <BlockArchitecture>
