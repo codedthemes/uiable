@@ -97,7 +97,6 @@ export default function TechOrbit() {
               className="text-muted-foreground"
             />
           </svg>
-          {/* shadcn  */}
           <TechNode
             startAngle={90}
             orbitDuration={ORBIT_3_DURATION}
@@ -105,7 +104,6 @@ export default function TechOrbit() {
             icon={<Shadcn />}
           />
 
-          {/* Tailwind 2 */}
           <TechNode
             startAngle={135}
             orbitDuration={ORBIT_3_DURATION}
@@ -113,9 +111,29 @@ export default function TechOrbit() {
             icon={<Tailwind />}
           />
 
-          {/* Code/Slash (//) */}
           <TechNode
             startAngle={180}
+            orbitDuration={ORBIT_3_DURATION}
+            orbitDirection="clockwise"
+            icon={<IconBrandNextjs />}
+          />
+
+          <TechNode
+            startAngle={210}
+            orbitDuration={ORBIT_3_DURATION}
+            orbitDirection="clockwise"
+            icon={<Shadcn />}
+          />
+
+          <TechNode
+            startAngle={270}
+            orbitDuration={ORBIT_3_DURATION}
+            orbitDirection="clockwise"
+            icon={<Tailwind />}
+          />
+
+          <TechNode
+            startAngle={320}
             orbitDuration={ORBIT_3_DURATION}
             orbitDirection="clockwise"
             icon={<IconBrandNextjs />}
@@ -146,7 +164,7 @@ export default function TechOrbit() {
           </svg>
           {/* React */}
           <TechNode
-            startAngle={105}
+            startAngle={90}
             orbitDuration={ORBIT_2_DURATION}
             orbitDirection="counter-clockwise"
             icon={<IconBrandReact />}
@@ -158,6 +176,20 @@ export default function TechOrbit() {
             orbitDuration={ORBIT_2_DURATION}
             orbitDirection="counter-clockwise"
             icon={<BaseUi />}
+          />
+
+          <TechNode
+            startAngle={245}
+            orbitDuration={ORBIT_2_DURATION}
+            orbitDirection="counter-clockwise"
+            icon={<IconBrandNextjs />}
+          />
+
+          <TechNode
+            startAngle={325}
+            orbitDuration={ORBIT_2_DURATION}
+            orbitDirection="counter-clockwise"
+            icon={<Tailwind />}
           />
         </motion.div>
 
