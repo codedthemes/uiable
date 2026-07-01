@@ -14,7 +14,7 @@ function loadNotifyScript(notifyId) {
 
   const script = document.createElement("script")
   script.id = "notify-script"
-  script.src = `https://phpstack-207002-5085356.cloudwaysapps.com/pixel/${notifyId}`
+  script.src = `https://fomo.codedthemes.com/pixel/${notifyId}`
   script.defer = true
 
   script.onload = () => {
