@@ -1,37 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import {
-  BellIcon,
-  BluetoothIcon,
-  CreditCardIcon,
-  DownloadIcon,
-  EyeIcon,
-  FileCodeIcon,
-  FileIcon,
-  FileTextIcon,
-  FolderIcon,
-  FolderOpenIcon,
-  FolderSearchIcon,
-  HelpCircleIcon,
-  KeyboardIcon,
-  LanguagesIcon,
-  LayoutIcon,
-  LogOutIcon,
-  MailIcon,
-  MonitorIcon,
-  MoonIcon,
-  MoreHorizontalIcon,
-  MoreVerticalIcon,
-  PaletteIcon,
-  PlusIcon,
-  SaveIcon,
-  SettingsIcon,
-  ShieldIcon,
-  SunIcon,
-  UserIcon,
-} from "lucide-react"
 
 // shadcn
 import {
@@ -93,8 +62,41 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
+
 // project
 import { Example, ExampleWrapper } from "@/components/example"
+
+// assets
+import {
+  BellIcon,
+  BluetoothIcon,
+  CreditCardIcon,
+  DownloadIcon,
+  EyeIcon,
+  FileCodeIcon,
+  FileIcon,
+  FileTextIcon,
+  FolderIcon,
+  FolderOpenIcon,
+  FolderSearchIcon,
+  HelpCircleIcon,
+  KeyboardIcon,
+  LanguagesIcon,
+  LayoutIcon,
+  LogOutIcon,
+  MailIcon,
+  MonitorIcon,
+  MoonIcon,
+  MoreHorizontalIcon,
+  MoreVerticalIcon,
+  PaletteIcon,
+  PlusIcon,
+  SaveIcon,
+  SettingsIcon,
+  ShieldIcon,
+  SunIcon,
+  UserIcon,
+} from "lucide-react"
 
 //  ------------------------------ | COMPONENT - EXAMPLE | ------------------------------  //
 

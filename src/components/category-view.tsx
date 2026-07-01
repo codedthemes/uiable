@@ -1,19 +1,22 @@
 "use client"
 
 import { memo, useEffect, useMemo, useState } from "react"
-// project
-import { categories } from "@/components-grid"
-// assets
-import { Code, Copy, SquareCheckBig } from "lucide-react"
-// third party
-import { codeToHtml, type BundledLanguage } from "shiki"
 
-import { cn } from "@/lib/utils"
 // shadcn
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+// third party
+import { type BundledLanguage, codeToHtml } from "shiki"
+
+// project
+import { categories } from "@/components-grid"
+import { cn } from "@/lib/utils"
+
+// assets
+import { Code, Copy, Loader2, SquareCheckBig } from "lucide-react"
 
 interface Item {
   name: string
@@ -33,15 +36,36 @@ interface CategoryViewProps {
 const CodeBlock = memo(
   ({ children, lang }: { children: string; lang: BundledLanguage }) => {
     const [html, setHtml] = useState<string>("")
+    const [isLoading, setIsLoading] = useState<boolean>(true)
+
+    const [prevProps, setPrevProps] = useState({ children, lang })
+    if (prevProps.children !== children || prevProps.lang !== lang) {
+      setPrevProps({ children, lang })
+      setIsLoading(true)
+    }
+
     useEffect(() => {
       let mounted = true
+      setIsLoading(true)
       codeToHtml(children, { lang, theme: "one-dark-pro" }).then((res) => {
-        if (mounted) setHtml(res)
+        if (mounted) {
+          setHtml(res)
+          setIsLoading(false)
+        }
       })
       return () => {
         mounted = false
       }
     }, [children, lang])
+
+    if (isLoading) {
+      return (
+        <div className="flex w-full items-center justify-center py-12">
+          <Loader2 className="size-6 animate-spin text-white/50" />
+        </div>
+      )
+    }
+
     return (
       <div
         className="[&_pre]:!m-0 [&_pre]:overflow-visible [&_pre]:!bg-transparent [&_pre]:!p-0"
