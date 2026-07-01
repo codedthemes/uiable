@@ -2,28 +2,13 @@
 
 import {
   memo,
+  SyntheticEvent,
   useCallback,
   useEffect,
   useRef,
   useState,
-  type SyntheticEvent,
 } from "react"
-// assets
-import {
-  ArrowUpRight,
-  Code,
-  Copy,
-  Monitor,
-  RotateCw,
-  Smartphone,
-  SquareCheckBig,
-  Tablet,
-  Terminal,
-} from "lucide-react"
-// third party
-import { codeToHtml, type BundledLanguage } from "shiki"
 
-import { cn } from "@/lib/utils"
 // shadcn
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -40,8 +25,27 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+
+// third party
+import { type BundledLanguage, codeToHtml } from "shiki"
+
 // project
 import Loader from "@/components/Loader"
+import { cn } from "@/lib/utils"
+
+// assets
+import {
+  ArrowUpRight,
+  Code,
+  Copy,
+  Loader2,
+  Monitor,
+  RotateCw,
+  Smartphone,
+  SquareCheckBig,
+  Terminal,
+  Tablet,
+} from "lucide-react"
 
 export interface Item {
   name: string
@@ -55,15 +59,35 @@ export interface Item {
 const CodeBlock = memo(
   ({ children, lang }: { children: string; lang: BundledLanguage }) => {
     const [html, setHtml] = useState<string>("")
+    const [isLoading, setIsLoading] = useState<boolean>(true)
+
+    const [prevProps, setPrevProps] = useState({ children, lang })
+    if (prevProps.children !== children || prevProps.lang !== lang) {
+      setPrevProps({ children, lang })
+      setIsLoading(true)
+    }
+
     useEffect(() => {
       let mounted = true
+      setIsLoading(true)
       codeToHtml(children, { lang, theme: "one-dark-pro" }).then((res) => {
-        if (mounted) setHtml(res)
+        if (mounted) {
+          setHtml(res)
+          setIsLoading(false)
+        }
       })
       return () => {
         mounted = false
       }
     }, [children, lang])
+
+    if (isLoading) {
+      return (
+        <div className="flex w-full items-center justify-center py-12">
+          <Loader2 className="size-6 animate-spin text-white/50" />
+        </div>
+      )
+    }
     return (
       <div
         className="[&_pre]:!m-0 [&_pre]:overflow-visible [&_pre]:!bg-transparent [&_pre]:!p-0"
@@ -342,7 +366,6 @@ export default function BlockItem({
                       <p>Copy code</p>
                     </TooltipContent>
                   </Tooltip>
-
                   <Dialog>
                     <Tooltip>
                       <TooltipTrigger
@@ -438,15 +461,6 @@ export default function BlockItem({
           </Card>
         </div>
       </div>
-
-      {/* <div className="container flex items-center justify-between px-4 sm:px-8 mx-auto">
-        <div
-          className={`
-          mx-auto h-px w-full border-t border-t-border-border border-dashed my-7
-          ${isLast ? "hidden" : ""}
-        `}
-        ></div>
-      </div> */}
     </div>
   )
 }

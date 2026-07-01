@@ -129,7 +129,6 @@ function StickyWrapper({ children }: { children: ReactNode }) {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 h-px w-full bg-border/60" />
-      <div className="pointer-events-none absolute top-full left-0 h-8 w-full bg-gradient-to-b from-background to-transparent" />
     </div>
   )
 }
