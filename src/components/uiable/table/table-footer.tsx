@@ -8,7 +8,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 
 // constants
 const invoices = [
@@ -54,7 +54,7 @@ const invoices = [
     totalAmount: "$300.00",
     paymentMethod: "Credit Card",
   },
-]
+];
 
 //  ------------------------------ | TABLE - FOOTER | ------------------------------  //
 
@@ -87,5 +87,5 @@ export function TableFooterExample() {
         </TableRow>
       </TableFooter>
     </Table>
-  )
+  );
 }

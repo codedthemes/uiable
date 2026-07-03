@@ -1,21 +1,21 @@
 // shadcn
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+  CarouselPrevious
+} from "@/components/ui/carousel";
 
 //  ------------------------------ | CAROUSEL - ORIENTATION | ------------------------------  //
 
 export default function CarouselOrientation() {
   return (
-    <div className="relative flex w-full items-center justify-center py-10">
+    <div className="relative py-10 w-full flex items-center justify-center">
       <Carousel
         opts={{
-          align: "center",
+          align: "center"
         }}
         orientation="vertical"
         className="w-full max-w-xs"
@@ -24,7 +24,7 @@ export default function CarouselOrientation() {
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index} className="basis-1/2 pt-1">
               <div className="p-1">
-                <Card className="mb-0 border-primary bg-primary/10">
+                <Card className="bg-primary/10 border-primary mb-0">
                   <CardContent className="flex items-center justify-center p-6">
                     <span className="text-3xl font-semibold text-primary">
                       {index + 1}
@@ -39,5 +39,5 @@ export default function CarouselOrientation() {
         <CarouselNext />
       </Carousel>
     </div>
-  )
+  );
 }

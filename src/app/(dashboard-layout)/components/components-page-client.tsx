@@ -1,17 +1,19 @@
 "use client"
 
-import { ComponentType, useEffect, useState } from "react"
 import Link from "next/link"
+import { ComponentType, useEffect, useState } from "react"
+
+// shadcn
+import { Card, CardContent } from "@/components/ui/card"
+
 // project
 import branding from "@/branding.json"
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_CATEGORIES } from "@/components-grid"
 import Intro from "@/images/svg/Intro"
+
 // assets
 import { Link1 } from "iconsax-reactjs"
-
-// shadcn
-import { Card, CardContent } from "@/components/ui/card"
 
 /**
  * SVG Mapping for categories whose slug doesn't match the filename directly

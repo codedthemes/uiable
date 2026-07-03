@@ -1,5 +1,5 @@
 // shadcn
-import { Spinner } from "@/components/ui/spinner"
+import { Spinner } from "@/components/ui/spinner";
 
 //  ------------------------------ | SPINNER - SIZE | ------------------------------  //
 
@@ -11,5 +11,5 @@ export function SpinnerSize() {
       <Spinner className="size-6" />
       <Spinner className="size-8" />
     </div>
-  )
+  );
 }

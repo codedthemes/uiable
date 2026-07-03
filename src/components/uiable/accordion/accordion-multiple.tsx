@@ -3,15 +3,15 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+  AccordionTrigger
+} from "@/components/ui/accordion";
 
 //  ------------------------------ | ACCORDION MULTIPLE | ------------------------------  //
 
 export default function AccordionMultiple() {
   return (
     <Accordion multiple defaultValue={["item-1"]} className="w-full">
-      <AccordionItem value="item-1" className="border-border bg-card">
+      <AccordionItem value="item-1" className="bg-card border-border">
         <AccordionTrigger className="p-4 text-base font-semibold hover:no-underline">
           Accordion Item #1
         </AccordionTrigger>
@@ -21,7 +21,7 @@ export default function AccordionMultiple() {
           that we use to style each element.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2" className="border-border bg-card">
+      <AccordionItem value="item-2" className="bg-card border-border">
         <AccordionTrigger className="p-4 text-base font-semibold hover:no-underline">
           Accordion Item #2
         </AccordionTrigger>
@@ -31,7 +31,7 @@ export default function AccordionMultiple() {
           classes that we use to style each element.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3" className="border-border bg-card">
+      <AccordionItem value="item-3" className="bg-card border-border">
         <AccordionTrigger className="p-4 text-base font-semibold hover:no-underline">
           Accordion Item #3
         </AccordionTrigger>
@@ -42,5 +42,5 @@ export default function AccordionMultiple() {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  )
+  );
 }

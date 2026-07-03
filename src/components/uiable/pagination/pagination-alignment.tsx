@@ -5,16 +5,16 @@ import {
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination"
+  PaginationPrevious
+} from "@/components/ui/pagination";
 
 //  ------------------------------ | PAGINATION - ALIGNMENT | ------------------------------  //
 
 export default function PaginationAlignment() {
   return (
-    <div className="flex w-full flex-col gap-8">
+    <div className="flex flex-col gap-8 w-full">
       <div>
-        <h6 className="mb-3 text-center text-base font-medium tracking-wider text-muted-foreground uppercase">
+        <h6 className="mb-3 text-center text-base font-medium text-muted-foreground uppercase tracking-wider">
           Center Alignment
         </h6>
         <Pagination className="justify-center">
@@ -41,7 +41,7 @@ export default function PaginationAlignment() {
       </div>
 
       <div>
-        <h6 className="mb-3 text-right text-base font-medium tracking-wider text-muted-foreground uppercase">
+        <h6 className="mb-3 text-right text-base font-medium text-muted-foreground uppercase tracking-wider">
           End Alignment
         </h6>
         <Pagination className="justify-end">
@@ -67,5 +67,5 @@ export default function PaginationAlignment() {
         </Pagination>
       </div>
     </div>
-  )
+  );
 }

@@ -1,29 +1,31 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// third party
-import { addDays, format } from "date-fns"
-// assets
-import { CalendarIcon } from "lucide-react"
-import { DateRange } from "react-day-picker"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
-import { Field, FieldLabel } from "@/components/ui/field"
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
+import { Field, FieldLabel } from "@/components/ui/field";
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+  PopoverTrigger
+} from "@/components/ui/popover";
+
+// third party
+import { addDays, format } from "date-fns";
+import { DateRange } from "react-day-picker";
+
+// assets
+import { CalendarIcon } from "lucide-react";
 
 //  ------------------------------ | DATE PICKER - RANGE | ------------------------------  //
 
 export function DatePickerWithRange() {
   const [date, setDate] = useState<DateRange | undefined>({
     from: new Date(new Date().getFullYear(), 0, 20),
-    to: addDays(new Date(new Date().getFullYear(), 0, 20), 20),
-  })
+    to: addDays(new Date(new Date().getFullYear(), 0, 20), 20)
+  });
 
   return (
     <Field className="mx-auto w-60">
@@ -33,7 +35,7 @@ export function DatePickerWithRange() {
           render={
             <Button
               id="date-picker-range"
-              className="flex justify-center gap-2 px-2.5 font-normal"
+              className="justify-center px-2.5 font-normal flex gap-2"
             />
           }
         >
@@ -62,5 +64,5 @@ export function DatePickerWithRange() {
         </PopoverContent>
       </Popover>
     </Field>
-  )
+  );
 }

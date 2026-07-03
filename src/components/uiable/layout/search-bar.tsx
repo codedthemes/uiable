@@ -1,22 +1,21 @@
 // shadcn
+import { Input } from "@/components/ui/input";
 
 // assets
-import { SearchNormal1 } from "iconsax-reactjs"
-
-import { Input } from "@/components/ui/input"
+import { SearchNormal1 } from "iconsax-reactjs";
 
 //  ------------------------------ | LAYOUT - SEARCH BAR | ------------------------------  //
 
 export default function SearchBar() {
   return (
-    <div className="relative hidden w-49.5 md:block">
-      <SearchNormal1 className="absolute top-3.5 left-3.5 h-4 w-4 text-muted-foreground" />
+    <div className="relative w-49.5 hidden md:block">
+      <SearchNormal1 className="absolute left-3.5 top-3.5 h-4 w-4 text-muted-foreground" />
       <Input
         id="search-bar-input"
         type="search"
         placeholder="Ctrl + K"
-        className="disabled:bg-secondary-200/10 block h-auto w-full rounded-xl border border-border bg-input py-[.66rem] pr-3 pl-10 text-base placeholder:text-[#bec8d0] focus:border-primary focus:outline-none disabled:pointer-events-none dark:focus:border-primary"
+        className="border rounded-xl h-auto block text-base pl-10 py-[.66rem] pr-3 w-full placeholder:text-[#bec8d0] disabled:bg-secondary-200/10 disabled:pointer-events-none focus:outline-none focus:border-primary dark:focus:border-primary border-border bg-input"
       />
     </div>
-  )
+  );
 }

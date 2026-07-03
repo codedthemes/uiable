@@ -1,15 +1,14 @@
 // shadcn
-
-// assets
-import { PlusIcon } from "lucide-react"
-
 import {
   Avatar,
   AvatarFallback,
   AvatarGroup,
   AvatarGroupCount,
   AvatarImage,
-} from "@/components/ui/avatar"
+} from "@/components/ui/avatar";
+
+// assets
+import { PlusIcon } from "lucide-react";
 
 //  ------------------------------ | AVATAR - GROUP COUNT ICON | ------------------------------  //
 
@@ -41,5 +40,5 @@ export function AvatarGroupCountIconExample() {
         <PlusIcon />
       </AvatarGroupCount>
     </AvatarGroup>
-  )
+  );
 }

@@ -5,7 +5,7 @@ import {
   AvatarGroup,
   AvatarGroupCount,
   AvatarImage,
-} from "@/components/ui/avatar"
+} from "@/components/ui/avatar";
 
 //  ------------------------------ | AVATAR - GROUP COUNT | ------------------------------  //
 
@@ -35,5 +35,5 @@ export function AvatarGroupCountExample() {
       </Avatar>
       <AvatarGroupCount>+3</AvatarGroupCount>
     </AvatarGroup>
-  )
+  );
 }

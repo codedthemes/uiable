@@ -1,27 +1,29 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// third party
-import { format } from "date-fns"
-// assets
-import { Calendar as CalendarIcon } from "lucide-react"
+import { useState } from "react";
 
-import { Button } from "@/components/ui/button"
 // shadcn
-import { Calendar } from "@/components/ui/calendar"
+import { Calendar } from "@/components/ui/calendar";
+import { Button } from "@/components/ui/button";
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+  PopoverTrigger
+} from "@/components/ui/popover";
+
+// third party
+import { format } from "date-fns";
+
+// assets
+import { Calendar as CalendarIcon } from "lucide-react";
 
 // ------------------------------ | DATE PICKER CARD | ------------------------------ //
 
 export default function DatePickerCard() {
-  const [date, setDate] = useState<Date | undefined>(new Date(2025, 5, 1))
+  const [date, setDate] = useState<Date | undefined>(new Date(2025, 5, 1));
 
   return (
-    <div className="flex items-center justify-between rounded-xl border border-border bg-background px-3 py-2 text-sm text-foreground">
+    <div className="border border-border rounded-xl px-3 py-2 flex items-center justify-between text-sm text-foreground bg-background">
       <span className="font-medium">
         {date ? format(date, "MMMM dd, yyyy") : "Pick a date"}
       </span>
@@ -32,7 +34,7 @@ export default function DatePickerCard() {
               type="button"
               variant="ghost"
               size="icon"
-              className="size-8 rounded-lg text-muted-foreground hover:bg-accent hover:text-foreground"
+              className="size-8 rounded-lg hover:bg-accent text-muted-foreground hover:text-foreground"
             />
           }
         >
@@ -48,5 +50,5 @@ export default function DatePickerCard() {
         </PopoverContent>
       </Popover>
     </div>
-  )
+  );
 }

@@ -1,34 +1,35 @@
-"use client"
+"use client";
 
 // shadcn
-// project
-import branding from "@/branding.json"
-// assets
-import { Download } from "lucide-react"
+import { buttonVariants } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+// project
+import branding from "@/branding.json";
+import { cn } from "@/lib/utils";
+
+// assets
+import { Download } from "lucide-react";
 
 //  ------------------------------ | BLOCK - WELCOME BANNER | ------------------------------  //
 
 export default function WelcomeBanner() {
   return (
-    <Card className="welcome-banner relative overflow-hidden border-none bg-chart-4">
+    <Card className="welcome-banner bg-chart-4 border-none relative overflow-hidden">
       <div
-        className="absolute inset-0 z-10 bg-[length:100%] bg-right-bottom bg-no-repeat opacity-50"
+        className="absolute opacity-50 inset-0 z-10 bg-right-bottom bg-[length:100%] bg-no-repeat"
         style={{
           backgroundImage: `url(https://cdn.uiable.com/widget/img-dropbox-bg.svg)`,
         }}
       ></div>
       <CardContent className="relative z-20 p-6 md:p-10">
-        <div className="grid grid-cols-12 items-center gap-6">
+        <div className="grid grid-cols-12 gap-6 items-center">
           <div className="col-span-12 sm:col-span-7">
             <div className="space-y-6">
-              <h2 className="text-2xl leading-tight font-bold text-white md:text-3xl">
+              <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight">
                 Explore Redesigned {branding.brandName}
               </h2>
-              <p className="text-lg leading-relaxed text-white/80">
+              <p className="text-white/80 text-lg leading-relaxed">
                 The Brand new User Interface with power of Shadcn Components.
                 Explore the Endless possibilities with {branding.brandName}.
               </p>
@@ -36,7 +37,7 @@ export default function WelcomeBanner() {
                 href="https://1.envato.market/zNkqj6"
                 className={cn(
                   buttonVariants({ variant: "outline" }),
-                  "h-12 rounded-xl border-white bg-transparent px-8 font-bold text-white hover:bg-white hover:text-primary"
+                  "bg-transparent border-white text-white hover:bg-white hover:text-primary font-bold px-8 h-12 rounded-xl",
                 )}
               >
                 Download
@@ -44,15 +45,15 @@ export default function WelcomeBanner() {
               </a>
             </div>
           </div>
-          <div className="col-span-12 flex justify-center sm:col-span-5">
+          <div className="col-span-12 sm:col-span-5 flex justify-center">
             <img
               src="https://cdn.uiable.com/og/components-to-complete-interfaces.png"
               alt="Welcome Banner"
-              className="w-full max-w-[200px] animate-in drop-shadow-2xl duration-700 fade-in zoom-in"
+              className="w-full max-w-[200px] drop-shadow-2xl animate-in fade-in zoom-in duration-700"
             />
           </div>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

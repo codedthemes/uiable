@@ -6,7 +6,7 @@ import {
   ItemGroup,
   ItemHeader,
   ItemTitle,
-} from "@/components/ui/item"
+} from "@/components/ui/item";
 
 // constants
 const models = [
@@ -28,7 +28,7 @@ const models = [
     image: "https://cdn.uiable.com/component/card-sample.png",
     credit: "Cherry Laithang on Unsplash",
   },
-]
+];
 
 //  ------------------------------ | ITEM - HEADER | ------------------------------  //
 
@@ -55,5 +55,5 @@ export function ItemHeaderDemo() {
         ))}
       </ItemGroup>
     </div>
-  )
+  );
 }

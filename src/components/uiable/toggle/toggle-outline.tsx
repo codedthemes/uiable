@@ -1,9 +1,8 @@
 // shadcn
+import { Toggle } from "@/components/ui/toggle";
 
 // assets
-import { BoldIcon, ItalicIcon } from "lucide-react"
-
-import { Toggle } from "@/components/ui/toggle"
+import { BoldIcon, ItalicIcon } from "lucide-react";
 
 //  ------------------------------ | TOGGLE - OUTLINE | ------------------------------  //
 
@@ -19,5 +18,5 @@ export function ToggleOutline() {
         Bold
       </Toggle>
     </div>
-  )
+  );
 }

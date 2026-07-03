@@ -5,8 +5,8 @@ import {
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination"
+  PaginationPrevious
+} from "@/components/ui/pagination";
 
 //  ------------------------------ | PAGINATION - BASIC | ------------------------------  //
 
@@ -33,5 +33,5 @@ export default function PaginationBasic() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  )
+  );
 }

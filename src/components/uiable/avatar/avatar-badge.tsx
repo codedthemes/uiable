@@ -4,7 +4,7 @@ import {
   AvatarBadge,
   AvatarFallback,
   AvatarImage,
-} from "@/components/ui/avatar"
+} from "@/components/ui/avatar";
 
 //  ------------------------------ | AVATAR - BADGE | ------------------------------  //
 
@@ -18,5 +18,5 @@ export function AvatarWithBadge() {
       <AvatarFallback>CN</AvatarFallback>
       <AvatarBadge className="bg-green-600 dark:bg-green-800" />
     </Avatar>
-  )
+  );
 }

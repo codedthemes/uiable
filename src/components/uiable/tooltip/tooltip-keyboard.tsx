@@ -1,15 +1,14 @@
 // shadcn
-
-// assets
-import { SaveIcon } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import { Kbd } from "@/components/ui/kbd"
+import { Button } from "@/components/ui/button";
+import { Kbd } from "@/components/ui/kbd";
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+  TooltipTrigger
+} from "@/components/ui/tooltip";
+
+// assets
+import { SaveIcon } from "lucide-react";
 
 //  ------------------------------ | TOOLTIP - KEYBOARD | ------------------------------  //
 
@@ -25,5 +24,5 @@ export function TooltipKeyboard() {
         </div>
       </TooltipContent>
     </Tooltip>
-  )
+  );
 }

@@ -1,11 +1,11 @@
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Kbd, KbdGroup } from "@/components/ui/kbd"
+import { Button } from "@/components/ui/button";
+import { Kbd, KbdGroup } from "@/components/ui/kbd";
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+  TooltipTrigger
+} from "@/components/ui/tooltip";
 
 //  ------------------------------ | KBD - TOOLTIP | ------------------------------  //
 
@@ -37,5 +37,5 @@ export default function KbdTooltip() {
         </TooltipContent>
       </Tooltip>
     </div>
-  )
+  );
 }

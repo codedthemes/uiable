@@ -1,9 +1,8 @@
 // shadcn
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // assets
-import { AppWindowIcon, CodeIcon } from "lucide-react"
-
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { AppWindowIcon, CodeIcon } from "lucide-react";
 
 //  ------------------------------ | TABS - ICONS | ------------------------------  //
 
@@ -21,5 +20,5 @@ export function TabsIcons() {
         </TabsTrigger>
       </TabsList>
     </Tabs>
-  )
+  );
 }

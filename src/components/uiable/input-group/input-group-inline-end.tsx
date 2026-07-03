@@ -1,14 +1,13 @@
 // shadcn
-
-// assets
-import { EyeOffIcon } from "lucide-react"
-
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput,
-} from "@/components/ui/input-group"
+  InputGroupInput
+} from "@/components/ui/input-group";
+
+// assets
+import { EyeOffIcon } from "lucide-react";
 
 //  ------------------------------ | INPUT GROUP - INLINE END | ------------------------------  //
 
@@ -28,5 +27,5 @@ export function InputGroupInlineEnd() {
       </InputGroup>
       <FieldDescription>Icon positioned at the end.</FieldDescription>
     </Field>
-  )
+  );
 }

@@ -8,24 +8,24 @@ import {
   SelectSeparator,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
 // constants
 const fruits = [
   { label: "Apple", value: "apple" },
   { label: "Banana", value: "banana" },
   { label: "Blueberry", value: "blueberry" },
-]
+];
 const vegetables = [
   { label: "Carrot", value: "carrot" },
   { label: "Broccoli", value: "broccoli" },
   { label: "Spinach", value: "spinach" },
-]
+];
 const allItems = [
   { label: "Select a fruit", value: null },
   ...fruits,
   ...vegetables,
-]
+];
 
 //  ------------------------------ | SELECT - GROUPS | ------------------------------  //
 
@@ -55,5 +55,5 @@ export function SelectGroups() {
         </SelectGroup>
       </SelectContent>
     </Select>
-  )
+  );
 }

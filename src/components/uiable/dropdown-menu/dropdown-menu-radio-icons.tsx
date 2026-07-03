@@ -1,11 +1,9 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// assets
-import { Building2Icon, CreditCardIcon, WalletIcon } from "lucide-react"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,13 +11,16 @@ import {
   DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+
+// assets
+import { Building2Icon, CreditCardIcon, WalletIcon } from "lucide-react";
 
 //  ------------------------------ | DROPDOWN MENU - RADIO ICONS | ------------------------------  //
 
 export function DropdownMenuRadioIcons() {
-  const [paymentMethod, setPaymentMethod] = useState("card")
+  const [paymentMethod, setPaymentMethod] = useState("card");
 
   return (
     <DropdownMenu>
@@ -49,5 +50,5 @@ export function DropdownMenuRadioIcons() {
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

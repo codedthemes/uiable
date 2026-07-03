@@ -1,5 +1,5 @@
 // shadcn
-import { Slider } from "@/components/ui/slider"
+import { Slider } from "@/components/ui/slider";
 
 //  ------------------------------ | SLIDER - DISABLED | ------------------------------  //
 
@@ -12,5 +12,5 @@ export function SliderDisabled() {
       disabled
       className="mx-auto w-full max-w-xs"
     />
-  )
+  );
 }

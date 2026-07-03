@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldLabel } from "@/components/ui/field"
-import { Switch } from "@/components/ui/switch"
+import { Field, FieldLabel } from "@/components/ui/field";
+import { Switch } from "@/components/ui/switch";
 
 //  ------------------------------ | SWITCH - DISABLED | ------------------------------  //
 
@@ -10,5 +10,5 @@ export function SwitchDisabled() {
       <Switch id="switch-disabled-unchecked" disabled />
       <FieldLabel htmlFor="switch-disabled-unchecked">Disabled</FieldLabel>
     </Field>
-  )
+  );
 }

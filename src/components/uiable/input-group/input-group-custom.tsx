@@ -1,13 +1,12 @@
 // shadcn
-
-// third party
-import TextareaAutosize from "react-textarea-autosize"
-
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupButton,
-} from "@/components/ui/input-group"
+  InputGroupButton
+} from "@/components/ui/input-group";
+
+// third party
+import TextareaAutosize from "react-textarea-autosize";
 
 //  ------------------------------ | INPUT GROUP - CUSTOM | ------------------------------  //
 
@@ -27,5 +26,5 @@ export default function InputGroupCustom() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  )
+  );
 }

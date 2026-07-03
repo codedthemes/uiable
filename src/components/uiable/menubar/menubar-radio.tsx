@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 // shadcn
 import {
@@ -11,14 +11,14 @@ import {
   MenubarRadioGroup,
   MenubarRadioItem,
   MenubarSeparator,
-  MenubarTrigger,
-} from "@/components/ui/menubar"
+  MenubarTrigger
+} from "@/components/ui/menubar";
 
 //  ------------------------------ | MENUBAR - RADIO | ------------------------------  //
 
 export function MenubarRadio() {
-  const [user, setUser] = useState("benoit")
-  const [theme, setTheme] = useState("system")
+  const [user, setUser] = useState("benoit");
+  const [theme, setTheme] = useState("system");
 
   return (
     <Menubar className="w-72">
@@ -46,5 +46,5 @@ export function MenubarRadio() {
         </MenubarContent>
       </MenubarMenu>
     </Menubar>
-  )
+  );
 }

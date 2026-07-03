@@ -1,6 +1,6 @@
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Kbd } from "@/components/ui/kbd"
+import { Button } from "@/components/ui/button";
+import { Kbd } from "@/components/ui/kbd";
 
 //  ------------------------------ | KBD - BUTTON | ------------------------------  //
 
@@ -12,5 +12,5 @@ export default function KbdButton() {
         ⏎
       </Kbd>
     </Button>
-  )
+  );
 }

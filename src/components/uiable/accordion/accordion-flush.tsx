@@ -3,8 +3,8 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+  AccordionTrigger
+} from "@/components/ui/accordion";
 
 //  ------------------------------ | ACCORDION FLUSH | ------------------------------  //
 
@@ -12,7 +12,7 @@ export default function AccordionFlush() {
   return (
     <Accordion className="w-full gap-1">
       <AccordionItem value="item-1" className="not-last:border-b-0">
-        <AccordionTrigger className="border-b border-border p-4 text-base font-semibold hover:no-underline">
+        <AccordionTrigger className="p-4 text-base font-semibold hover:no-underline border-b border-border">
           Accordion Item #1
         </AccordionTrigger>
         <AccordionContent className="p-4">
@@ -22,7 +22,7 @@ export default function AccordionFlush() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className="not-last:border-b-0">
-        <AccordionTrigger className="border-b border-border p-4 text-base font-semibold hover:no-underline">
+        <AccordionTrigger className="p-4 text-base font-semibold hover:no-underline border-b border-border">
           Accordion Item #2
         </AccordionTrigger>
         <AccordionContent className="p-4">
@@ -32,7 +32,7 @@ export default function AccordionFlush() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3" className="not-last:border-b-0">
-        <AccordionTrigger className="border-b border-border p-4 text-base font-semibold hover:no-underline">
+        <AccordionTrigger className="p-4 text-base font-semibold hover:no-underline border-b border-border">
           Accordion Item #3
         </AccordionTrigger>
         <AccordionContent className="p-4">
@@ -42,5 +42,5 @@ export default function AccordionFlush() {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  )
+  );
 }

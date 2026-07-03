@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 //  ------------------------------ | INPUT - DISABLED | ------------------------------  //
 
@@ -16,5 +16,5 @@ export function InputDisabled() {
       />
       <FieldDescription>This field is currently disabled.</FieldDescription>
     </Field>
-  )
+  );
 }

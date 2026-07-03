@@ -1,15 +1,15 @@
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 import {
   Popover,
   PopoverContent,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+  PopoverTrigger
+} from "@/components/ui/popover";
 
 //  ------------------------------ | POPOVER - FORM | ------------------------------  //
 
@@ -38,5 +38,5 @@ export function PopoverForm() {
         </PopoverContent>
       </Popover>
     </>
-  )
+  );
 }

@@ -1,13 +1,12 @@
 // shadcn
-
-// third party
-import { REGEXP_ONLY_DIGITS } from "input-otp"
-
 import {
   InputOTP,
   InputOTPGroup,
-  InputOTPSlot,
-} from "@/components/ui/input-otp"
+  InputOTPSlot
+} from "@/components/ui/input-otp";
+
+// third party
+import { REGEXP_ONLY_DIGITS } from "input-otp";
 
 //  ------------------------------ | INPUT OTP - FOUR DIGITS | ------------------------------  //
 
@@ -21,5 +20,5 @@ export function InputOTPFourDigits() {
         <InputOTPSlot index={3} />
       </InputOTPGroup>
     </InputOTP>
-  )
+  );
 }

@@ -1,9 +1,8 @@
 // shadcn
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 // assets
-import { AlertCircleIcon } from "lucide-react"
-
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { AlertCircleIcon } from "lucide-react";
 
 //  ------------------------------ | ALERT - DESTRUCTIVE | ------------------------------  //
 
@@ -17,5 +16,5 @@ export default function AlertDestructive() {
         and try again.
       </AlertDescription>
     </Alert>
-  )
+  );
 }

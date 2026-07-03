@@ -1,5 +1,5 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerClose,
@@ -8,11 +8,11 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer"
+  DrawerTrigger
+} from "@/components/ui/drawer";
 
 // constants
-const DRAWER_SIDES = ["top", "right", "bottom", "left"] as const
+const DRAWER_SIDES = ["top", "right", "bottom", "left"] as const;
 
 //  ------------------------------ | DRAWER - SIDES | ------------------------------  //
 
@@ -62,5 +62,5 @@ export function DrawerWithSides() {
         </Drawer>
       ))}
     </div>
-  )
+  );
 }

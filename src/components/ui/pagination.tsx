@@ -1,12 +1,12 @@
-import { ComponentProps } from "react"
+import { ComponentProps } from "react";
+
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
-  MoreHorizontalIcon,
-} from "lucide-react"
-
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+  MoreHorizontalIcon
+} from "lucide-react";
 
 function Pagination({ className, ...props }: ComponentProps<"nav">) {
   return (
@@ -17,27 +17,30 @@ function Pagination({ className, ...props }: ComponentProps<"nav">) {
       className={cn("mx-auto flex w-full justify-center", className)}
       {...props}
     />
-  )
+  );
 }
 
-function PaginationContent({ className, ...props }: ComponentProps<"ul">) {
+function PaginationContent({
+  className,
+  ...props
+}: ComponentProps<"ul">) {
   return (
     <ul
       data-slot="pagination-content"
       className={cn("flex items-center gap-0.5", className)}
       {...props}
     />
-  )
+  );
 }
 
 function PaginationItem({ ...props }: ComponentProps<"li">) {
-  return <li data-slot="pagination-item" {...props} />
+  return <li data-slot="pagination-item" {...props} />;
 }
 
 type PaginationLinkProps = {
-  isActive?: boolean
+  isActive?: boolean;
 } & Pick<ComponentProps<typeof Button>, "size"> &
-  ComponentProps<"a">
+  ComponentProps<"a">;
 
 function PaginationLink({
   className,
@@ -60,7 +63,7 @@ function PaginationLink({
         />
       }
     />
-  )
+  );
 }
 
 function PaginationPrevious({
@@ -78,7 +81,7 @@ function PaginationPrevious({
       <ChevronLeftIcon data-icon="inline-start" />
       <span className="hidden sm:block">{text}</span>
     </PaginationLink>
-  )
+  );
 }
 
 function PaginationNext({
@@ -96,10 +99,13 @@ function PaginationNext({
       <span className="hidden sm:block">{text}</span>
       <ChevronRightIcon data-icon="inline-end" />
     </PaginationLink>
-  )
+  );
 }
 
-function PaginationEllipsis({ className, ...props }: ComponentProps<"span">) {
+function PaginationEllipsis({
+  className,
+  ...props
+}: ComponentProps<"span">) {
   return (
     <span
       aria-hidden
@@ -113,7 +119,7 @@ function PaginationEllipsis({ className, ...props }: ComponentProps<"span">) {
       <MoreHorizontalIcon />
       <span className="sr-only">More pages</span>
     </span>
-  )
+  );
 }
 
 export {
@@ -123,5 +129,5 @@ export {
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious,
-}
+  PaginationPrevious
+};

@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+
 // project imports
 import { SectionHeader } from "@/components/uiable/blocks/landing/components"
 

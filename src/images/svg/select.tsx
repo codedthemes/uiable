@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | SELECT | ------------------------------  //
 
@@ -94,5 +94,5 @@ export default function Select(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

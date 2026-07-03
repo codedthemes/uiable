@@ -1,6 +1,11 @@
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 
 //  ------------------------------ | CARD - IMAGE | ------------------------------  //
 
@@ -8,7 +13,7 @@ export function CardImage() {
   return (
     <Card className="relative mx-auto w-full max-w-sm overflow-hidden">
       <CardHeader className="p-0">
-        <div className="bg-dark-500/20 absolute inset-0 z-30 aspect-video" />
+        <div className="absolute inset-0 z-30 aspect-video bg-dark-500/20" />
         <img
           src="https://cdn.uiable.com/component/card-sample.png"
           alt="Event cover"
@@ -26,5 +31,5 @@ export function CardImage() {
         <Button className="w-full">View Event</Button>
       </CardFooter>
     </Card>
-  )
+  );
 }

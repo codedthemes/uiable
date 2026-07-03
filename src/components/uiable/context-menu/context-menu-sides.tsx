@@ -4,8 +4,8 @@ import {
   ContextMenuContent,
   ContextMenuGroup,
   ContextMenuItem,
-  ContextMenuTrigger,
-} from "@/components/ui/context-menu"
+  ContextMenuTrigger
+} from "@/components/ui/context-menu";
 
 //  ------------------------------ | CONTEXT MENU - SIDES | ------------------------------  //
 
@@ -81,5 +81,5 @@ export function ContextMenuSides() {
         </ContextMenuContent>
       </ContextMenu>
     </div>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 //  ------------------------------ | INPUT - REQUIRED | ------------------------------  //
 
@@ -17,5 +17,5 @@ export function InputRequired() {
       />
       <FieldDescription>This field must be filled out.</FieldDescription>
     </Field>
-  )
+  );
 }

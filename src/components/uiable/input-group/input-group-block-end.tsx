@@ -3,16 +3,16 @@ import {
   Field,
   FieldDescription,
   FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field"
+  FieldLabel
+} from "@/components/ui/field";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
   InputGroupText,
-  InputGroupTextarea,
-} from "@/components/ui/input-group"
+  InputGroupTextarea
+} from "@/components/ui/input-group";
 
 //  ------------------------------ | INPUT GROUP - BLOCK END | ------------------------------  //
 
@@ -48,5 +48,5 @@ export function InputGroupBlockEnd() {
         </FieldDescription>
       </Field>
     </FieldGroup>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 //  ------------------------------ | TABS - VERTICAL PILLS | ------------------------------  //
 
@@ -8,29 +8,29 @@ export function TabsVerticalPills() {
     <Tabs
       defaultValue="home"
       orientation="vertical"
-      className="flex w-full gap-6"
+      className="flex gap-6 w-full"
     >
-      <TabsList className="flex h-auto w-26.5 shrink-0 flex-col gap-2 bg-transparent p-0">
+      <TabsList className="flex flex-col bg-transparent h-auto p-0 gap-2 w-26.5 shrink-0">
         <TabsTrigger
           value="home"
-          className="justify-start rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="justify-start rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border"
         >
           Home
         </TabsTrigger>
         <TabsTrigger
           value="profile"
-          className="justify-start rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="justify-start rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border"
         >
           Profile
         </TabsTrigger>
         <TabsTrigger
           value="contact"
-          className="justify-start rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="justify-start rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border"
         >
           Contact
         </TabsTrigger>
       </TabsList>
-      <div className="flex-1 rounded-lg border border-border p-5">
+      <div className="flex-1 border border-border rounded-lg p-5">
         <TabsContent value="home" className="mt-0">
           <p className="text-base text-muted-foreground">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -50,5 +50,5 @@ export function TabsVerticalPills() {
         </TabsContent>
       </div>
     </Tabs>
-  )
+  );
 }

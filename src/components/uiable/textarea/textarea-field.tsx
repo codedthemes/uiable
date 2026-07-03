@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
-import { Textarea } from "@/components/ui/textarea"
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
+import { Textarea } from "@/components/ui/textarea";
 
 //  ------------------------------ | TEXTAREA - FIELD | ------------------------------  //
 
@@ -11,5 +11,5 @@ export function TextareaField() {
       <FieldDescription>Enter your message below.</FieldDescription>
       <Textarea id="textarea-message" placeholder="Type your message here." />
     </Field>
-  )
+  );
 }

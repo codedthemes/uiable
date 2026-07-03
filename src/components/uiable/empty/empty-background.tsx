@@ -1,23 +1,22 @@
 // shadcn
-
-// assets
-import { NotificationBing, Refresh } from "iconsax-reactjs"
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Empty,
   EmptyContent,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
-  EmptyTitle,
-} from "@/components/ui/empty"
+  EmptyTitle
+} from "@/components/ui/empty";
+
+// assets
+import { NotificationBing, Refresh } from "iconsax-reactjs";
 
 //  ------------------------------ | EMPTY - MUTED | ------------------------------  //
 
 export function EmptyMuted() {
   return (
-    <Empty className="h-full rounded-lg bg-background">
+    <Empty className="bg-background h-full rounded-lg">
       <EmptyHeader>
         <EmptyMedia variant="icon">
           <NotificationBing />
@@ -34,5 +33,5 @@ export function EmptyMuted() {
         </Button>
       </EmptyContent>
     </Empty>
-  )
+  );
 }

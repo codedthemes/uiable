@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 // shadcn
-// third party
-import { toast } from "sonner"
+import { Button } from "@/components/ui/button";
 
-import { Button } from "@/components/ui/button"
+// third party
+import { toast } from "sonner";
 
 //  ------------------------------ | SONNER - TYPES | ------------------------------  //
 
@@ -37,18 +37,18 @@ export function SonnerTypes() {
           toast.promise<{ name: string }>(
             () =>
               new Promise((resolve) =>
-                setTimeout(() => resolve({ name: "Event" }), 2000)
+                setTimeout(() => resolve({ name: "Event" }), 2000),
               ),
             {
               loading: "Loading...",
               success: (data) => `${data.name} has been created`,
               error: "Error",
-            }
-          )
+            },
+          );
         }}
       >
         Promise
       </Button>
     </div>
-  )
+  );
 }

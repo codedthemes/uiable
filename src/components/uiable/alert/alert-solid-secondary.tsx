@@ -1,12 +1,12 @@
 // shadcn
-import { Alert } from "@/components/ui/alert"
+import { Alert } from "@/components/ui/alert";
 
 //  ------------------------------ | ALERT - SOLID SECONDARY | ------------------------------  //
 
 export default function AlertSolidSecondary() {
   return (
-    <Alert className="bg-secondary-500 mb-3 grid-cols-1 rounded-lg border border-transparent px-5 py-3 text-white">
+    <Alert className="px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-secondary-500 text-white border-transparent">
       Solid Secondary Alert
     </Alert>
-  )
+  );
 }

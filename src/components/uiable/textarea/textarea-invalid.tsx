@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
-import { Textarea } from "@/components/ui/textarea"
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
+import { Textarea } from "@/components/ui/textarea";
 
 //  ------------------------------ | TEXTAREA - INVALID | ------------------------------  //
 
@@ -15,5 +15,5 @@ export function TextareaInvalid() {
       />
       <FieldDescription>Please enter a valid message.</FieldDescription>
     </Field>
-  )
+  );
 }

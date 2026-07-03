@@ -1,5 +1,5 @@
 // shadcn
-import { Progress } from "@/components/ui/progress"
+import { Progress } from "@/components/ui/progress";
 
 //  ------------------------------ | PROGRESS - SOLID SECONDARY | ------------------------------  //
 
@@ -8,8 +8,8 @@ export default function ProgressSolidSecondary() {
     <div className="w-full">
       <Progress
         value={50}
-        className="*:h-4 *:rounded-lg *:bg-slate-500/20 **:rounded-lg **:bg-secondary dark:*:bg-muted/10"
+        className="*:h-4 *:bg-slate-500/20 dark:*:bg-muted/10 *:rounded-lg **:bg-secondary **:rounded-lg"
       />
     </div>
-  )
+  );
 }

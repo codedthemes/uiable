@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | ALERTDIALOG | ------------------------------  //
 
@@ -86,5 +86,5 @@ export default function AlertDialog(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

@@ -1,27 +1,27 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Field,
   FieldDescription,
   FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+  FieldLabel
+} from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
   SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+  SelectValue
+} from "@/components/ui/select";
 
 // constants
 const countries = [
   { label: "United States", value: "us" },
   { label: "United Kingdom", value: "uk" },
-  { label: "Canada", value: "ca" },
-]
+  { label: "Canada", value: "ca" }
+];
 
 //  ------------------------------ | INPUT - FORM | ------------------------------  //
 
@@ -80,5 +80,5 @@ export function InputForm() {
         </Field>
       </FieldGroup>
     </form>
-  )
+  );
 }

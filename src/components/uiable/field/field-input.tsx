@@ -4,9 +4,9 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-  FieldSet,
-} from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+  FieldSet
+} from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 //  ------------------------------ | FIELD - INPUT | ------------------------------  //
 
@@ -30,5 +30,5 @@ export default function FieldInput() {
         </Field>
       </FieldGroup>
     </FieldSet>
-  )
+  );
 }

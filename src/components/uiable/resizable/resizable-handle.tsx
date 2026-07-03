@@ -2,8 +2,8 @@
 import {
   ResizableHandle,
   ResizablePanel,
-  ResizablePanelGroup,
-} from "@/components/ui/resizable"
+  ResizablePanelGroup
+} from "@/components/ui/resizable";
 
 //  ------------------------------ | RESIZABLE - HANDLE | ------------------------------  //
 
@@ -25,5 +25,5 @@ export default function ResizableHandleDemo() {
         </div>
       </ResizablePanel>
     </ResizablePanelGroup>
-  )
+  );
 }

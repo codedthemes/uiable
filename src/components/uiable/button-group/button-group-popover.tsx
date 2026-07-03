@@ -1,20 +1,19 @@
 // shadcn
-
-// assets
-import { BotIcon, ChevronDownIcon } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import { ButtonGroup } from "@/components/ui/button-group"
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
+import { Button } from "@/components/ui/button";
+import { ButtonGroup } from "@/components/ui/button-group";
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
 import {
   Popover,
   PopoverContent,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
-  PopoverTrigger,
-} from "@/components/ui/popover"
-import { Textarea } from "@/components/ui/textarea"
+  PopoverTrigger
+} from "@/components/ui/popover";
+import { Textarea } from "@/components/ui/textarea";
+
+// assets
+import { BotIcon, ChevronDownIcon } from "lucide-react";
 
 //  ------------------------------ | BUTTON GROUP - POPOVER | ------------------------------  //
 
@@ -57,5 +56,5 @@ export default function ButtonGroupPopover() {
         </PopoverContent>
       </Popover>
     </ButtonGroup>
-  )
+  );
 }

@@ -1,18 +1,20 @@
 import Link from "next/link"
+
+// shadcn
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+
 // project imports
 import branding from "@/branding.json"
-import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons"
+import { HoverBg } from "@/components/animation"
+
 // assets
 import {
   IconArrowUpRight,
   IconBrandNextjs,
   IconBrandReact,
 } from "@tabler/icons-react"
-
-import { Badge } from "@/components/ui/badge"
-// shadcn
-import { Button } from "@/components/ui/button"
-import { HoverBg } from "@/components/animation"
+import { Shadcn, BaseUi, Tailwind } from "@/images/svg/icons"
 
 //  ------------------------------ | CONSTANTS | ------------------------------  //
 

@@ -1,16 +1,15 @@
 // shadcn
-
-// assets
-import { Gps } from "iconsax-reactjs"
-
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemGroup,
   ItemMedia,
-  ItemTitle,
-} from "@/components/ui/item"
+  ItemTitle
+} from "@/components/ui/item";
+
+// assets
+import { Gps } from "iconsax-reactjs";
 
 //  ------------------------------ | ITEM - OUTLINE GROUP | ------------------------------  //
 
@@ -45,5 +44,5 @@ export function OutlineItemGroup() {
         </ItemContent>
       </Item>
     </ItemGroup>
-  )
+  );
 }

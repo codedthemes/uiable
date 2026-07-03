@@ -1,7 +1,7 @@
-import Image from "next/image"
+import Image from "next/image";
 
 // shadcn
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 //  ------------------------------ | ASPECT RATIO - SQUARE | ------------------------------  //
 
@@ -9,7 +9,7 @@ export function AspectRatioSquare() {
   return (
     <AspectRatio
       ratio={1 / 1}
-      className="w-full max-w-[12rem] rounded-lg bg-muted"
+      className="bg-muted w-full max-w-[12rem] rounded-lg"
     >
       <Image
         src="https://avatar.vercel.sh/shadcn1"
@@ -18,5 +18,5 @@ export function AspectRatioSquare() {
         className="rounded-lg object-cover"
       />
     </AspectRatio>
-  )
+  );
 }

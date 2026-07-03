@@ -1,17 +1,18 @@
 "use client"
 
-import { useRef, useState } from "react"
-// assets
-import {
-  IconFileDescription,
-  IconMusic,
-  IconPhoto,
-  IconUpload,
-  IconVideo,
-} from "@tabler/icons-react"
+import { useState, useRef } from "react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
+
+// assets
+import {
+  IconUpload,
+  IconFileDescription,
+  IconPhoto,
+  IconVideo,
+  IconMusic,
+} from "@tabler/icons-react"
 
 const fileTypes = [
   { key: "documents", label: "Documents", icon: IconFileDescription },

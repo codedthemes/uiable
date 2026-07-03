@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from "react";
+
 // third party
-import ApexCharts from "apexcharts"
+import ApexCharts from "apexcharts";
 
 interface ProjectOverviewItemProps {
-  title: string
-  value: string
-  series: number[]
-  color: string
+  title: string;
+  value: string;
+  series: number[];
+  color: string;
 }
 
 //  ------------------------------ | BLOCK - PROJECT OVERVIEW ITEM | ------------------------------  //
@@ -19,14 +20,14 @@ export default function ProjectOverviewItem({
   series,
   color,
 }: ProjectOverviewItemProps) {
-  const chartRef = useRef<HTMLDivElement>(null)
+  const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let active = true
-    let chart: ApexCharts | null = null
+    let active = true;
+    let chart: ApexCharts | null = null;
 
     const timer = setTimeout(() => {
-      if (!active || !chartRef.current) return
+      if (!active || !chartRef.current) return;
 
       const options = {
         chart: {
@@ -60,32 +61,32 @@ export default function ProjectOverviewItem({
         },
         stroke: { curve: "smooth", width: 2 },
         series: [{ data: series }],
-      }
+      };
 
-      chart = new ApexCharts(chartRef.current, options as any)
-      chart.render()
-    }, 0)
+      chart = new ApexCharts(chartRef.current, options as any);
+      chart.render();
+    }, 0);
 
     return () => {
-      active = false
-      clearTimeout(timer)
+      active = false;
+      clearTimeout(timer);
       if (chart) {
-        chart.destroy()
+        chart.destroy();
       }
-    }
-  }, [series, color])
+    };
+  }, [series, color]);
 
   return (
     <div className="col-span-12 md:col-span-6 xl:col-span-4">
       <div className="grid grid-cols-12 gap-4 self-center">
         <div className="col-span-6 self-center">
-          <p className="mb-1 text-foreground">{title}</p>
+          <p className="text-foreground mb-1">{title}</p>
           <h5 className="mb-0">{value}</h5>
         </div>
         <div className="col-span-6 self-center">
-          <div ref={chartRef} className="h-10 grow"></div>
+          <div ref={chartRef} className="grow h-10"></div>
         </div>
       </div>
     </div>
-  )
+  );
 }

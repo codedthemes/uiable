@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 //  ------------------------------ | INPUT - GRID | ------------------------------  //
 
@@ -16,5 +16,5 @@ export function InputGrid() {
         <Input id="last-name" placeholder="Lee" />
       </Field>
     </FieldGroup>
-  )
+  );
 }

@@ -3,8 +3,8 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+  AccordionTrigger
+} from "@/components/ui/accordion";
 
 //  ------------------------------ | ACCORDION DISABLED | ------------------------------  //
 
@@ -35,5 +35,5 @@ export default function AccordionDisabled() {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  )
+  );
 }

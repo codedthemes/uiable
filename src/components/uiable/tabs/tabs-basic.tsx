@@ -1,27 +1,27 @@
 // shadcn
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 //  ------------------------------ | TABS - BASIC | ------------------------------  //
 
 export function TabsBasic() {
   return (
     <Tabs defaultValue="home" className="w-full">
-      <TabsList className="border-b-border-border h-auto max-h-10! w-full justify-start gap-1 rounded-b-none border-b bg-transparent p-0 *:flex-none">
+      <TabsList className="border-b border-b-border-border rounded-b-none justify-start w-full bg-transparent h-auto p-0 gap-1 max-h-10! *:flex-none">
         <TabsTrigger
           value="home"
-          className="rounded-b-none border-b-2 border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+          className="rounded-b-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-4 py-2"
         >
           Home
         </TabsTrigger>
         <TabsTrigger
           value="profile"
-          className="rounded-b-none border-b-2 border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+          className="rounded-b-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-4 py-2"
         >
           Profile
         </TabsTrigger>
         <TabsTrigger
           value="contact"
-          className="rounded-b-none border-b-2 border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+          className="rounded-b-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none px-4 py-2"
         >
           Contact
         </TabsTrigger>
@@ -46,5 +46,5 @@ export function TabsBasic() {
         </TabsContent>
       </div>
     </Tabs>
-  )
+  );
 }

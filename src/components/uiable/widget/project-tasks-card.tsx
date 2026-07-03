@@ -1,14 +1,13 @@
 // shadcn
-
-// assets
-import { MoreVertical, Plus } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 
 // project
 import TaskListItem from "./task-list-item"
+
+// assets
+import { MoreVertical, Plus } from "lucide-react"
 
 //  ------------------------------ | BLOCK - PROJECT TASKS CARD | ------------------------------  //
 

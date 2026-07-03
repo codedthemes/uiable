@@ -1,38 +1,39 @@
-import Link from "next/link"
-// assets
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import Link from "next/link";
 
 // shadcn
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card";
+
+// assets
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type NavItem = {
-  name: string
-  url: string
-}
+  name: string;
+  url: string;
+};
 
 type ComponentNavigationProps = {
-  previousItem: NavItem | null
-  nextItem: NavItem | null
-}
+  previousItem: NavItem | null;
+  nextItem: NavItem | null;
+};
 
 //  ------------------------------ | COMPONENT - DOC BOTTOM NAV | ------------------------------  //
 
 export default function DocBottomNav({
   previousItem,
-  nextItem,
+  nextItem
 }: ComponentNavigationProps) {
   return (
-    <div className="mt-10 flex w-full flex-col gap-4 *:flex-1 sm:flex-row">
+    <div className="flex flex-col sm:flex-row *:flex-1 gap-4 mt-10 w-full">
       {previousItem && (
         <Link href={previousItem.url} className="group">
-          <Card className="mb-0 transition-all group-hover:border-primary/40">
+          <Card className="mb-0 group-hover:border-primary/40 transition-all">
             <CardContent className="p-5">
               <div className="flex items-center">
                 <div className="shrink-0">
-                  <ChevronLeft className="transition-all group-hover:text-primary" />
+                  <ChevronLeft className="group-hover:text-primary transition-all" />
                 </div>
-                <div className="flex grow flex-col text-right">
-                  <p className="absolute -top-3 right-5 min-w-20 rounded-full border border-border bg-card px-3 py-0.5 text-center text-[12px] transition-all group-hover:border-primary group-hover:bg-primary group-hover:text-white">
+                <div className="flex flex-col grow text-right">
+                  <p className="min-w-20 text-center text-[12px] absolute right-5 -top-3 bg-card px-3 py-0.5 rounded-full transition-all border border-border group-hover:bg-primary group-hover:border-primary group-hover:text-white">
                     Previous
                   </p>
                   <p className="h6 text-xl">{previousItem.name}</p>
@@ -44,17 +45,17 @@ export default function DocBottomNav({
       )}
       {nextItem && (
         <Link href={nextItem.url} className="group">
-          <Card className="mb-0 transition-all group-hover:border-primary/40">
+          <Card className="mb-0 group-hover:border-primary/40 transition-all">
             <CardContent className="p-5">
               <div className="flex items-center">
-                <div className="flex grow flex-col text-left">
-                  <p className="absolute -top-3 left-5 min-w-20 rounded-full border border-border bg-card px-3 py-0.5 text-center text-[12px] transition-all group-hover:border-primary group-hover:bg-primary group-hover:text-white">
+                <div className="flex flex-col grow text-left">
+                  <p className="min-w-20 text-center text-[12px] absolute left-5 -top-3 bg-card px-3 py-0.5 rounded-full transition-all border border-border group-hover:bg-primary group-hover:border-primary group-hover:text-white">
                     Next
                   </p>
                   <p className="h6 text-xl">{nextItem.name}</p>
                 </div>
                 <div className="shrink-0">
-                  <ChevronRight className="transition-all group-hover:text-primary" />
+                  <ChevronRight className="group-hover:text-primary transition-all" />
                 </div>
               </div>
             </CardContent>
@@ -62,5 +63,5 @@ export default function DocBottomNav({
         </Link>
       )}
     </div>
-  )
+  );
 }

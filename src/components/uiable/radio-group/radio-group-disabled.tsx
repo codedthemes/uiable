@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldLabel } from "@/components/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Field, FieldLabel } from "@/components/ui/field";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 //  ------------------------------ | RADIO GROUP - DISABLED | ------------------------------  //
 
@@ -26,5 +26,5 @@ export function RadioGroupDisabled() {
         </FieldLabel>
       </Field>
     </RadioGroup>
-  )
+  );
 }

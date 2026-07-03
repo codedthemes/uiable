@@ -3,9 +3,9 @@ import {
   Field,
   FieldContent,
   FieldDescription,
-  FieldLabel,
-} from "@/components/ui/field"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+  FieldLabel
+} from "@/components/ui/field";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 //  ------------------------------ | RADIO GROUP - DESCRIPTION | ------------------------------  //
 
@@ -38,5 +38,5 @@ export function RadioGroupDescription() {
         </FieldContent>
       </Field>
     </RadioGroup>
-  )
+  );
 }

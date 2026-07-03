@@ -1,21 +1,23 @@
 "use client"
-
 import { memo, useEffect, useState } from "react"
-// project
-import branding from "@/branding.json"
-// assets
-import { Book, InfoCircle, Magicpen, Setting2 } from "iconsax-reactjs"
-import { Copy, SquareCheckBig } from "lucide-react"
-// third party
-import { codeToHtml, type BundledLanguage } from "shiki"
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 // shadcn
 import { Button } from "@/components/ui/button"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+
+// project
+import branding from "@/branding.json"
 import DocsNavigation from "@/components/doc-bottom-nav"
 import TableOfContents from "@/components/uiable/layout/table-of-contents"
+
+// assets
+import { Book, InfoCircle, Magicpen, Setting2 } from "iconsax-reactjs"
+
+// third party
+import { codeToHtml, type BundledLanguage } from "shiki"
+import { Copy, SquareCheckBig } from "lucide-react"
 
 // constants
 const tocItems = [

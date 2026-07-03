@@ -1,13 +1,6 @@
 import { ComponentPropsWithoutRef } from "react"
 import Link from "next/link"
 
-// assets
-import {
-  CircleAlertIcon,
-  CircleCheckIcon,
-  CircleDashedIcon,
-} from "lucide-react"
-
 // shadcn
 import {
   NavigationMenu,
@@ -18,6 +11,13 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+
+// assets
+import {
+  CircleAlertIcon,
+  CircleCheckIcon,
+  CircleDashedIcon,
+} from "lucide-react"
 
 // constants
 const components: { title: string; href: string; description: string }[] = [

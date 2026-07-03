@@ -1,12 +1,12 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Field,
   FieldDescription,
   FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+  FieldLabel
+} from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 
 //  ------------------------------ | INPUT - FIELDGROUP | ------------------------------  //
 
@@ -33,5 +33,5 @@ export function InputFieldgroup() {
         <Button type="submit">Submit</Button>
       </Field>
     </FieldGroup>
-  )
+  );
 }

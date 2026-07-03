@@ -1,4 +1,16 @@
 // shadcn
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 // assets
 import {
@@ -7,38 +19,25 @@ import {
   Notification,
   SecuritySafe,
   Sms,
-  User,
-} from "iconsax-reactjs"
-
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { ScrollArea } from "@/components/ui/scroll-area"
+  User
+} from "iconsax-reactjs";
 
 //  ------------------------------ | LAYOUT - NOTIFICATION DROPDOWN | ------------------------------  //
 
 export default function NotificationDropdown() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="relative inline-flex h-11 w-11 items-center justify-center rounded-lg transition-colors hover:bg-muted/50">
+      <DropdownMenuTrigger className="relative h-11 w-11 rounded-lg hover:bg-muted/50 transition-colors inline-flex items-center justify-center">
         <Notification variant="Bulk" className="size-6 text-muted-foreground" />
-        <Badge className="absolute top-0 right-0 h-5 w-5 justify-center border-2 border-background bg-green-500 p-0 text-[9px] font-bold hover:bg-green-500">
+        <Badge className="absolute right-0 top-0 h-5 w-5 justify-center p-0 text-[9px] bg-green-500 hover:bg-green-500 border-2 border-background font-bold">
           3
         </Badge>
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="min-w-[calc(100vw-8px)] overflow-hidden rounded-xl border-border/40 p-2 shadow-xl sm:min-w-[450px]"
+        className="min-w-[calc(100vw-8px)] sm:min-w-[450px] p-2 shadow-xl border-border/40 overflow-hidden rounded-xl"
       >
-        <DropdownMenuGroup className="flex items-center justify-between p-5">
+        <DropdownMenuGroup className="p-5 flex items-center justify-between">
           <DropdownMenuLabel className="p-0">
             <h5>Notifications</h5>
           </DropdownMenuLabel>
@@ -50,10 +49,10 @@ export default function NotificationDropdown() {
             Mark all read
           </Button>
         </DropdownMenuGroup>
-        <ScrollArea className="flex h-[calc(100vh-220px)] max-h-[calc(100vh-220px)] flex-col gap-4 p-5">
+        <ScrollArea className="h-[calc(100vh-220px)] max-h-[calc(100vh-220px)] p-5 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <span className="mb-2">Today</span>
-            <Card className="mb-0 hover:bg-background">
+            <Card className="hover:bg-background mb-0">
               <CardContent>
                 <div className="flex gap-4">
                   <div className="shrink-0">
@@ -76,7 +75,7 @@ export default function NotificationDropdown() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="mb-0 hover:bg-background">
+            <Card className="hover:bg-background mb-0">
               <CardContent>
                 <div className="flex gap-4">
                   <div className="shrink-0">
@@ -97,8 +96,8 @@ export default function NotificationDropdown() {
             </Card>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="mt-4 mb-2">Yesterday</span>
-            <Card className="mb-0 hover:bg-background">
+            <span className="mb-2 mt-4">Yesterday</span>
+            <Card className="hover:bg-background mb-0">
               <CardContent>
                 <div className="flex gap-4">
                   <div className="shrink-0">
@@ -121,7 +120,7 @@ export default function NotificationDropdown() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="mb-0 hover:bg-background">
+            <Card className="hover:bg-background mb-0">
               <CardContent>
                 <div className="flex gap-4">
                   <div className="shrink-0">
@@ -147,7 +146,7 @@ export default function NotificationDropdown() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="mb-0 hover:bg-background">
+            <Card className="hover:bg-background mb-0">
               <CardContent>
                 <div className="flex gap-4">
                   <div className="shrink-0">
@@ -178,12 +177,12 @@ export default function NotificationDropdown() {
           <Button
             variant="ghost"
             size="sm"
-            className="w-full text-[14px] font-semibold text-destructive hover:bg-destructive/5 hover:text-destructive"
+            className="w-full text-destructive hover:text-destructive hover:bg-destructive/5 font-semibold text-[14px]"
           >
             Clear all Notifications
           </Button>
         </div>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

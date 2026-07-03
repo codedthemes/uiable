@@ -4,9 +4,9 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-  FieldSet,
-} from "@/components/ui/field"
-import { Textarea } from "@/components/ui/textarea"
+  FieldSet
+} from "@/components/ui/field";
+import { Textarea } from "@/components/ui/textarea";
 
 //  ------------------------------ | FIELD - TEXTAREA | ------------------------------  //
 
@@ -27,5 +27,5 @@ export default function FieldTextarea() {
         </Field>
       </FieldGroup>
     </FieldSet>
-  )
+  );
 }

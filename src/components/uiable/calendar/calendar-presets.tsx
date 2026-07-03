@@ -1,23 +1,24 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// third party
-import { addDays } from "date-fns"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+
+// third party
+import { addDays } from "date-fns";
 
 //  ------------------------------ | CALENDAR - PRESETS | ------------------------------  //
 
 export function CalendarWithPresets() {
   const [date, setDate] = useState<Date | undefined>(
     new Date(new Date().getFullYear(), 1, 12)
-  )
+  );
   const [currentMonth, setCurrentMonth] = useState<Date>(
     new Date(new Date().getFullYear(), new Date().getMonth(), 1)
-  )
+  );
 
   return (
     <Card className="mx-auto w-fit max-w-[300px]" size="sm">
@@ -38,7 +39,7 @@ export function CalendarWithPresets() {
           { label: "Tomorrow", value: 1 },
           { label: "In 3 days", value: 3 },
           { label: "In a week", value: 7 },
-          { label: "In 2 weeks", value: 14 },
+          { label: "In 2 weeks", value: 14 }
         ].map((preset) => (
           <Button
             key={preset.value}
@@ -46,11 +47,11 @@ export function CalendarWithPresets() {
             size="sm"
             className="flex-1"
             onClick={() => {
-              const newDate = addDays(new Date(), preset.value)
-              setDate(newDate)
+              const newDate = addDays(new Date(), preset.value);
+              setDate(newDate);
               setCurrentMonth(
                 new Date(newDate.getFullYear(), newDate.getMonth(), 1)
-              )
+              );
             }}
           >
             {preset.label}
@@ -58,5 +59,5 @@ export function CalendarWithPresets() {
         ))}
       </CardFooter>
     </Card>
-  )
+  );
 }

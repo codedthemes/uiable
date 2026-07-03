@@ -1,23 +1,22 @@
 // shadcn
-
-// assets
-import { Cloud } from "iconsax-reactjs"
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Empty,
   EmptyContent,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
-  EmptyTitle,
-} from "@/components/ui/empty"
+  EmptyTitle
+} from "@/components/ui/empty";
+
+// assets
+import { Cloud } from "iconsax-reactjs";
 
 //  ------------------------------ | EMPTY - OUTLINE | ------------------------------  //
 
 export default function EmptyOutline() {
   return (
-    <Empty className="rounded-lg border border-dashed border-border">
+    <Empty className="border border-dashed border-border rounded-lg">
       <EmptyHeader>
         <EmptyMedia variant="icon">
           <Cloud />
@@ -31,5 +30,5 @@ export default function EmptyOutline() {
         <Button>Upload Files</Button>
       </EmptyContent>
     </Empty>
-  )
+  );
 }

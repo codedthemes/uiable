@@ -1,31 +1,32 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// assets
-import { AudioLinesIcon, PlusIcon } from "lucide-react"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
-import { ButtonGroup } from "@/components/ui/button-group"
+import { Button } from "@/components/ui/button";
+import { ButtonGroup } from "@/components/ui/button-group";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-  InputGroupInput,
-} from "@/components/ui/input-group"
+  InputGroupInput
+} from "@/components/ui/input-group";
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+  TooltipTrigger
+} from "@/components/ui/tooltip";
+
+// assets
+import { AudioLinesIcon, PlusIcon } from "lucide-react";
 
 //  ------------------------------ | BUTTON GROUP - INPUT GROUP | ------------------------------  //
 
 export default function ButtonGroupInputGroup() {
-  const [voiceEnabled, setVoiceEnabled] = useState(false)
+  const [voiceEnabled, setVoiceEnabled] = useState(false);
 
   return (
-    <ButtonGroup className="items-center gap-2 [--radius:9999rem]">
+    <ButtonGroup className="[--radius:9999rem] items-center gap-2">
       <ButtonGroup>
         <Button size="icon-lg">
           <PlusIcon />
@@ -60,5 +61,5 @@ export default function ButtonGroupInputGroup() {
         </InputGroup>
       </ButtonGroup>
     </ButtonGroup>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 
 //  ------------------------------ | SEPARATOR - MENU | ------------------------------  //
 
@@ -21,5 +21,5 @@ export function SeparatorMenu() {
         <span className="text-muted-foreground">Support & docs</span>
       </div>
     </div>
-  )
+  );
 }

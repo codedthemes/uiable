@@ -4,7 +4,7 @@ import {
   AvatarFallback,
   AvatarGroup,
   AvatarImage,
-} from "@/components/ui/avatar"
+} from "@/components/ui/avatar";
 
 //  ------------------------------ | AVATAR - GROUP | ------------------------------  //
 
@@ -33,5 +33,5 @@ export function AvatarGroupExample() {
         <AvatarFallback>ER</AvatarFallback>
       </Avatar>
     </AvatarGroup>
-  )
+  );
 }

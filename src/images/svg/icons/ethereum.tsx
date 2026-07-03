@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | ETHEREUM ICON | ------------------------------  //
 
@@ -25,5 +25,5 @@ export default function Ethereum(props: SVGAttributes<SVGElement>) {
         fill="#2859C5"
       />
     </svg>
-  )
+  );
 }
