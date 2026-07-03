@@ -3,7 +3,7 @@
 import { SyntheticEvent, useState } from "react"
 
 // assets
-import { DarkFav, LightFav } from "@/images/brand"
+import { LightFav } from "@/images/brand"
 import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
 
 // third party

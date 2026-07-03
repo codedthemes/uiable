@@ -145,7 +145,7 @@ export default function Feature() {
               }
               src="/assets/images/landing/light.png"
               darkSrc="/assets/images/landing/dark.png"
-              opacity={0.6}
+              opacity={0.7}
             />
           )}
           {selectedIndex === 1 && <TechOrbit />}
@@ -156,12 +156,12 @@ export default function Feature() {
               <EchoStack>
                 <div className="flex h-full w-full items-center justify-center">
                   <LightFav
-                    width={84}
+                    width={80}
                     height={80}
                     className="block rounded-full text-white dark:hidden"
                   />
                   <DarkFav
-                    width={84}
+                    width={80}
                     height={80}
                     className="hidden rounded-full text-white dark:block"
                   />
@@ -179,7 +179,7 @@ export default function Feature() {
                     <img
                       src={`/assets/images/landing/image-dark-${num}.png`}
                       alt={`Feature layer ${num}`}
-                      className="hidden size-full object-contain object-top dark:block"
+                      className="hidden size-full object-contain object-top md:h-[580px] md:w-[580px] dark:block"
                     />
                   </div>
                 ))}

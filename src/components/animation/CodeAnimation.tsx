@@ -108,6 +108,8 @@ function AnimatedBadge({ visible }: AnimatedBadgeProps) {
   )
 }
 
+//  ------------------------------ | CODE ANIMATION | ------------------------------  //
+
 export default function CodeAnimation({
   badges = [null, null, null],
   className,

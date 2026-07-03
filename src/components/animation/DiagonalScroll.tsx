@@ -13,6 +13,8 @@ interface DiagonalScrollProps {
   className?: string
 }
 
+//  ------------------------------ | DIAGONAL SCROLL | ------------------------------  //
+
 function ScrollImage({
   innerRef,
   src,
@@ -27,14 +29,14 @@ function ScrollImage({
   return (
     <div
       ref={innerRef}
-      className="absolute top-0 left-0 w-[1400px] min-w-[1024px]"
-      style={{ opacity, transform: "translate(-50%, -50%)" }}
+      className="absolute top-0 left-0 w-full"
+      style={{ opacity }}
     >
       <img
         src={src}
         alt=""
         className={cn(
-          "pointer-events-none aspect-auto w-full",
+          "pointer-events-none aspect-auto w-full object-cover",
           darkSrc && "dark:hidden"
         )}
       />
@@ -42,7 +44,7 @@ function ScrollImage({
         <img
           src={darkSrc}
           alt=""
-          className="pointer-events-none hidden aspect-auto w-full dark:block"
+          className="pointer-events-none hidden aspect-auto w-full object-cover dark:block"
         />
       )}
     </div>
@@ -64,23 +66,16 @@ export default function DiagonalScroll({
     const img2 = img2Ref.current
     if (!img1 || !img2) return
 
-    const duration = 25000
-    const imgW = 1400
-    const imgH = 1567
-    const overlapFactor = 0.8
+    const duration = 20000
 
     const keyframes1 = [
-      { transform: "translate(-50%, -50%) translate(0px, 0px)" },
-      {
-        transform: `translate(-50%, -50%) translate(${-imgW * overlapFactor}px, ${-imgH * overlapFactor}px)`,
-      },
+      { transform: "translateY(0%)" },
+      { transform: "translateY(-100%)" },
     ]
 
     const keyframes2 = [
-      {
-        transform: `translate(-50%, -50%) translate(${imgW * overlapFactor}px, ${imgH * overlapFactor}px)`,
-      },
-      { transform: "translate(-50%, -50%) translate(0px, 0px)" },
+      { transform: "translateY(100%)" },
+      { transform: "translateY(0%)" },
     ]
 
     const options = {
@@ -105,16 +100,13 @@ export default function DiagonalScroll({
         className
       )}
     >
-      <div className="absolute top-1/2 left-1/2 h-0 w-0">
-        {/* Image 1 — starts visible at center, exits top-left */}
+      <div className="absolute inset-0">
         <ScrollImage
           innerRef={img1Ref}
           src={src}
           darkSrc={darkSrc}
           opacity={opacity}
         />
-
-        {/* Image 2 — starts at bottom-right (outside), enters as Image 1 exits */}
         <ScrollImage
           innerRef={img2Ref}
           src={src}
