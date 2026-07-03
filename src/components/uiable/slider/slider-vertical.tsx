@@ -1,5 +1,5 @@
 // shadcn
-import { Slider } from "@/components/ui/slider"
+import { Slider } from "@/components/ui/slider";
 
 //  ------------------------------ | SLIDER - VERTICAL | ------------------------------  //
 
@@ -21,5 +21,5 @@ export function SliderVertical() {
         className="h-40"
       />
     </div>
-  )
+  );
 }

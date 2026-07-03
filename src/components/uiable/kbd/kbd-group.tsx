@@ -1,12 +1,12 @@
 // shadcn
-import { Kbd, KbdGroup } from "@/components/ui/kbd"
+import { Kbd, KbdGroup } from "@/components/ui/kbd";
 
 //  ------------------------------ | KBD - GROUP | ------------------------------  //
 
 export default function KbdGroupExample() {
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="flex flex-wrap items-center gap-1">
+      <div className="flex items-center gap-1 flex-wrap">
         Use{" "}
         <KbdGroup>
           <Kbd>Ctrl + B</Kbd>
@@ -15,5 +15,5 @@ export default function KbdGroupExample() {
         to open the command palette
       </div>
     </div>
-  )
+  );
 }

@@ -1,32 +1,32 @@
 // shadcn
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 //  ------------------------------ | TABS - PILLS | ------------------------------  //
 
 export function TabsPills() {
   return (
     <Tabs defaultValue="home" className="w-full">
-      <TabsList className="h-auto max-h-10! gap-1 bg-transparent p-0">
+      <TabsList className="bg-transparent h-auto p-0 gap-1 max-h-10!">
         <TabsTrigger
           value="home"
-          className="rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border"
         >
           Home
         </TabsTrigger>
         <TabsTrigger
           value="profile"
-          className="rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border"
         >
           Profile
         </TabsTrigger>
         <TabsTrigger
           value="contact"
-          className="rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="rounded-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground px-6 py-2 shadow-none border"
         >
           Contact
         </TabsTrigger>
       </TabsList>
-      <div className="mt-2 rounded-lg border border-border p-5">
+      <div className="mt-2 border border-border rounded-lg p-5">
         <TabsContent value="home" className="mt-0">
           <p className="text-base text-muted-foreground">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -46,5 +46,5 @@ export function TabsPills() {
         </TabsContent>
       </div>
     </Tabs>
-  )
+  );
 }

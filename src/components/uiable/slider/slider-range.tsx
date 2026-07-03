@@ -1,5 +1,5 @@
 // shadcn
-import { Slider } from "@/components/ui/slider"
+import { Slider } from "@/components/ui/slider";
 
 //  ------------------------------ | SLIDER - RANGE | ------------------------------  //
 
@@ -11,5 +11,5 @@ export function SliderRange() {
       step={5}
       className="mx-auto w-full max-w-xs"
     />
-  )
+  );
 }

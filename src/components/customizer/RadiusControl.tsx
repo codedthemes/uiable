@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
 // shadcn
-import { Input } from "@/components/ui/input"
-import { Slider } from "@/components/ui/slider"
+import { Input } from "@/components/ui/input";
+import { Slider } from "@/components/ui/slider";
 
 type RadiusControlProps = {
-  radius: number
-  onRadiusChange: (value: number) => void
-}
+  radius: number;
+  onRadiusChange: (value: number) => void;
+};
 
 //  ------------------------------ | CUSTOMIZER - RADIUS CONTROL | ------------------------------  //
 
@@ -36,8 +36,8 @@ export function RadiusControl({ radius, onRadiusChange }: RadiusControlProps) {
               type="number"
               value={radius}
               onChange={(e) => {
-                const value = parseFloat(e.target.value)
-                onRadiusChange(isNaN(value) ? 0 : value)
+                const value = parseFloat(e.target.value);
+                onRadiusChange(isNaN(value) ? 0 : value);
               }}
               min={0}
               max={1.25}
@@ -49,5 +49,5 @@ export function RadiusControl({ radius, onRadiusChange }: RadiusControlProps) {
         </div>
       </div>
     </>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 //  ------------------------------ | TABS - DISABLED | ------------------------------  //
 
@@ -13,5 +13,5 @@ export function TabsDisabled() {
         </TabsTrigger>
       </TabsList>
     </Tabs>
-  )
+  );
 }

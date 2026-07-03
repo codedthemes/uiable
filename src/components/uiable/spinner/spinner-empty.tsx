@@ -1,14 +1,14 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Empty,
   EmptyContent,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
-  EmptyTitle,
-} from "@/components/ui/empty"
-import { Spinner } from "@/components/ui/spinner"
+  EmptyTitle
+} from "@/components/ui/empty";
+import { Spinner } from "@/components/ui/spinner";
 
 //  ------------------------------ | SPINNER - EMPTY | ------------------------------  //
 
@@ -16,7 +16,7 @@ export function SpinnerEmpty() {
   return (
     <Empty className="w-full">
       <EmptyHeader>
-        <EmptyMedia variant="icon" className="rounded-lg bg-background p-3">
+        <EmptyMedia variant="icon" className="bg-background p-3 rounded-lg">
           <Spinner />
         </EmptyMedia>
         <EmptyTitle>Processing your request</EmptyTitle>
@@ -30,5 +30,5 @@ export function SpinnerEmpty() {
         </Button>
       </EmptyContent>
     </Empty>
-  )
+  );
 }

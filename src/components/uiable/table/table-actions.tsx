@@ -1,24 +1,23 @@
 // shadcn
-
-// assets
-import { MoreHorizontalIcon } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
 import {
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableHeader,
-  TableRow,
-} from "@/components/ui/table"
+  TableRow
+} from "@/components/ui/table";
+
+// assets
+import { MoreHorizontalIcon } from "lucide-react";
 
 //  ------------------------------ | TABLE - ACTIONS | ------------------------------  //
 
@@ -107,5 +106,5 @@ export function TableActions() {
         </TableRow>
       </TableBody>
     </Table>
-  )
+  );
 }

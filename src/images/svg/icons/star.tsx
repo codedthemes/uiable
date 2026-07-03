@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | STAR ICON | ------------------------------  //
 
@@ -17,5 +17,5 @@ export default function Star(props: SVGAttributes<SVGElement>) {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }

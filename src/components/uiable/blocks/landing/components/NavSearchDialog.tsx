@@ -2,10 +2,6 @@
 
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
-// project imports
-import { NAV_CATEGORIES } from "@/components-grid"
-// assets
-import { IconComponents, IconSparkles } from "@tabler/icons-react"
 
 // shadcn
 import {
@@ -17,6 +13,12 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command"
+
+// project imports
+import { NAV_CATEGORIES } from "@/components-grid"
+
+// assets
+import { IconSparkles, IconComponents } from "@tabler/icons-react"
 
 // ------------------------------ | NAVBAR SEARCH DIALOG | ------------------------------  //
 

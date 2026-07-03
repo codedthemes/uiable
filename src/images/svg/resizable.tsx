@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | RESIZABLE | ------------------------------  //
 
@@ -104,5 +104,5 @@ export default function Resizable(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Skeleton } from "@/components/ui/skeleton"
+import { Skeleton } from "@/components/ui/skeleton";
 
 //  ------------------------------ | SKELETON - FORM | ------------------------------  //
 
@@ -16,5 +16,5 @@ export function SkeletonForm() {
       </div>
       <Skeleton className="h-8 w-28" />
     </div>
-  )
+  );
 }

@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 // shadcn
-import { Field, FieldDescription, FieldTitle } from "@/components/ui/field"
-import { Slider } from "@/components/ui/slider"
+import { Field, FieldDescription, FieldTitle } from "@/components/ui/field";
+import { Slider } from "@/components/ui/slider";
 
 //  ------------------------------ | FIELD - SLIDER | ------------------------------  //
 
 export default function FieldSlider() {
-  const [value, setValue] = useState([200, 800])
+  const [value, setValue] = useState([200, 800]);
 
   return (
     <Field className="w-full max-w-xs">
@@ -29,5 +29,5 @@ export default function FieldSlider() {
         aria-label="Price Range"
       />
     </Field>
-  )
+  );
 }

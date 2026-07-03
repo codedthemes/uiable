@@ -1,55 +1,54 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Bitcoin, Ethereum } from "@/images/svg/icons"
-// assets
-import { ArrowUpDown, ChevronDown } from "lucide-react"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const tabs = ["swap", "trade", "buy", "sell"]
+// assets
+import { ChevronDown, ArrowUpDown } from "lucide-react";
+import { Bitcoin, Ethereum } from "@/images/svg/icons";
+
+const tabs = ["swap", "trade", "buy", "sell"];
 
 // ------------------------------ | CURRENCY SWAP CARD | ------------------------------ //
 
 export default function CurrencySwapCard() {
-  const [activeTab, setActiveTab] = useState("swap")
-  const [isBtcToEth, setIsBtcToEth] = useState(true)
-  const [inputValue, setInputValue] = useState("0.12")
+  const [activeTab, setActiveTab] = useState("swap");
+  const [isBtcToEth, setIsBtcToEth] = useState(true);
+  const [inputValue, setInputValue] = useState("0.12");
 
   const getOutputValue = () => {
-    const val = parseFloat(inputValue)
-    if (isNaN(val)) return ""
-    const num = isBtcToEth ? val * 42.5 : val / 42.5
+    const val = parseFloat(inputValue);
+    if (isNaN(val)) return "";
+    const num = isBtcToEth ? val * 42.5 : val / 42.5;
     if (isBtcToEth) {
-      return num.toFixed(2)
+      return num.toFixed(2);
     } else {
-      return Number(num.toFixed(6)).toString()
+      return Number(num.toFixed(6)).toString();
     }
-  }
+  };
 
   const handleSwapDirection = () => {
-    const outputVal = getOutputValue()
-    setIsBtcToEth(!isBtcToEth)
-    setInputValue(outputVal)
-  }
+    const outputVal = getOutputValue();
+    setIsBtcToEth(!isBtcToEth);
+    setInputValue(outputVal);
+  };
 
-  const currentOutput = getOutputValue()
+  const currentOutput = getOutputValue();
 
   return (
-    <div className="flex flex-col gap-4 rounded-xl border border-border bg-card p-4">
-      <p className="text-center text-base leading-5 font-medium tracking-normal text-card-foreground">
-        Transactions
-      </p>
+    <div className="border border-border rounded-xl p-4 flex flex-col gap-4 bg-card">
+      <p className="text-base font-medium leading-5 tracking-normal text-center text-card-foreground">Transactions</p>
 
       <Tabs value={activeTab} onValueChange={setActiveTab}>
-        <TabsList className="h-auto w-full rounded-lg bg-muted p-1">
+        <TabsList className="w-full bg-muted p-1 rounded-lg h-auto">
           {tabs.map((tab) => (
             <TabsTrigger
               key={tab}
               value={tab}
-              className="flex-1 rounded-md px-3.5 py-1.5 text-sm leading-5 font-medium tracking-normal text-muted-foreground capitalize data-active:bg-card data-active:text-foreground data-active:shadow-sm data-active:hover:text-foreground dark:data-active:bg-card dark:data-active:text-foreground"
+              className="flex-1 text-sm font-medium leading-5 tracking-normal capitalize py-1.5 px-3.5 rounded-md text-muted-foreground data-active:bg-card dark:data-active:bg-card data-active:text-foreground data-active:hover:text-foreground dark:data-active:text-foreground data-active:shadow-sm"
             >
               {tab}
             </TabsTrigger>
@@ -61,51 +60,51 @@ export default function CurrencySwapCard() {
         {/* TOP Input Block (Amount / Send) */}
         <div className="flex flex-col gap-1.5">
           <div className="flex items-center justify-between px-0.5">
-            <span className="text-sm leading-4 font-medium tracking-normal text-foreground">
+            <span className="text-sm font-medium leading-4 tracking-normal text-foreground">
               Amount
             </span>
           </div>
-          <div className="flex items-center justify-between rounded-xl border border-border bg-card px-4 py-2.5 transition-all focus-within:border-primary focus-within:ring-1 focus-within:ring-ring">
-            <div className="flex min-w-0 flex-1 items-center gap-1">
+          <div className="border border-border rounded-xl px-4 py-2.5 bg-card flex items-center justify-between focus-within:ring-1 focus-within:ring-ring focus-within:border-primary transition-all">
+            <div className="flex items-center gap-1 flex-1 min-w-0">
               <input
                 type="text"
                 value={inputValue}
                 onChange={(e) => {
-                  const val = e.target.value
+                  const val = e.target.value;
                   if (/^\d*\.?\d*$/.test(val)) {
-                    setInputValue(val)
+                    setInputValue(val);
                   }
                 }}
-                className="h-auto w-full border-none bg-transparent p-0 text-left text-base font-semibold text-foreground focus:ring-0 focus:outline-none"
+                className="text-base font-semibold text-foreground bg-transparent border-none p-0 h-auto focus:outline-none focus:ring-0 w-full text-left"
               />
-              <span className="pr-2 text-base font-semibold text-foreground select-none">
+              <span className="text-base font-semibold text-foreground select-none pr-2">
                 {isBtcToEth ? "BTC" : "ETH"}
               </span>
             </div>
 
             <div
               onClick={handleSwapDirection}
-              className="flex cursor-pointer items-center gap-2 pl-2 transition-opacity select-none hover:opacity-80"
+              className="flex items-center gap-2 cursor-pointer select-none pl-2 hover:opacity-80 transition-opacity"
             >
               {isBtcToEth ? <Bitcoin /> : <Ethereum />}
-              <span className="text-xs leading-3 font-medium tracking-normal text-muted-foreground">
+              <span className="text-xs font-medium leading-3 tracking-normal text-muted-foreground">
                 {isBtcToEth ? "BTC" : "ETH"}
               </span>
               <ChevronDown size={16} className="text-muted-foreground" />
             </div>
           </div>
-          <span className="px-0.5 text-xs leading-3 font-normal tracking-normal text-muted-foreground">
+          <span className="text-xs font-normal leading-3 tracking-normal text-muted-foreground px-0.5">
             Balance: {isBtcToEth ? "0.20 BTC" : "8.50 ETH"}
           </span>
         </div>
 
         {/* Swap Direction Button */}
-        <div className="relative z-10 -my-2.5 flex justify-center">
+        <div className="flex justify-center -my-2.5 relative z-10">
           <Button
             variant="ghost"
             size="icon"
             onClick={handleSwapDirection}
-            className="flex size-8 cursor-pointer items-center justify-center rounded-full border border-border bg-card shadow-md transition-all hover:bg-muted active:scale-95"
+            className="size-8 rounded-full shadow-md hover:bg-muted active:scale-95 transition-all bg-card border border-border flex items-center justify-center cursor-pointer"
           >
             <ArrowUpDown className="size-4 text-foreground" />
           </Button>
@@ -114,35 +113,35 @@ export default function CurrencySwapCard() {
         {/* BOTTOM Input Block (Receive) */}
         <div className="flex flex-col gap-1.5">
           <div className="flex items-center justify-between px-0.5">
-            <span className="text-sm leading-4 font-medium tracking-normal text-foreground">
+            <span className="text-sm font-medium leading-4 tracking-normal text-foreground">
               {activeTab === "sell" ? "Receive (Est.)" : "Receive"}
             </span>
           </div>
-          <div className="flex items-center justify-between rounded-xl border border-border bg-card px-4 py-2.5 transition-all focus-within:border-primary focus-within:ring-1 focus-within:ring-ring">
-            <div className="flex min-w-0 flex-1 items-center gap-1">
+          <div className="border border-border rounded-xl px-4 py-2.5 bg-card flex items-center justify-between focus-within:ring-1 focus-within:ring-ring focus-within:border-primary transition-all">
+            <div className="flex items-center gap-1 flex-1 min-w-0">
               <input
                 type="text"
                 readOnly
                 value={currentOutput}
-                className="h-auto w-full border-none bg-transparent p-0 text-left text-base font-semibold text-foreground focus:ring-0 focus:outline-none"
+                className="text-base font-semibold text-foreground bg-transparent border-none p-0 h-auto focus:outline-none focus:ring-0 w-full text-left"
               />
-              <span className="pr-2 text-base font-semibold text-foreground select-none">
+              <span className="text-base font-semibold text-foreground select-none pr-2">
                 {isBtcToEth ? "ETH" : "BTC"}
               </span>
             </div>
 
             <div
               onClick={handleSwapDirection}
-              className="flex cursor-pointer items-center gap-2 pl-2 transition-opacity select-none hover:opacity-80"
+              className="flex items-center gap-2 cursor-pointer select-none pl-2 hover:opacity-80 transition-opacity"
             >
               {isBtcToEth ? <Ethereum /> : <Bitcoin />}
-              <span className="text-xs leading-3 font-medium tracking-normal text-muted-foreground">
+              <span className="text-xs font-medium leading-3 tracking-normal text-muted-foreground">
                 {isBtcToEth ? "ETH" : "BTC"}
               </span>
               <ChevronDown size={16} className="text-muted-foreground" />
             </div>
           </div>
-          <span className="px-0.5 text-xs leading-3 font-normal tracking-normal text-muted-foreground">
+          <span className="text-xs font-normal leading-3 tracking-normal text-muted-foreground px-0.5">
             Balance: {isBtcToEth ? "8.50 ETH" : "0.20 BTC"}
           </span>
         </div>
@@ -150,10 +149,10 @@ export default function CurrencySwapCard() {
 
       <Button
         onClick={handleSwapDirection}
-        className="mt-1 w-full rounded-lg bg-primary py-2.5 text-sm font-semibold text-primary-foreground capitalize hover:bg-primary/90"
+        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-2.5 rounded-lg text-sm mt-1 capitalize"
       >
         {activeTab}
       </Button>
     </div>
-  )
+  );
 }

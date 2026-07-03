@@ -5,9 +5,9 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-  FieldTitle,
-} from "@/components/ui/field"
-import { Switch } from "@/components/ui/switch"
+  FieldTitle
+} from "@/components/ui/field";
+import { Switch } from "@/components/ui/switch";
 
 //  ------------------------------ | SWITCH - CHOICE CARD | ------------------------------  //
 
@@ -38,5 +38,5 @@ export function SwitchChoiceCard() {
         </Field>
       </FieldLabel>
     </FieldGroup>
-  )
+  );
 }

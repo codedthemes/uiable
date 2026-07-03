@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | INPUTOTP | ------------------------------  //
 
@@ -98,5 +98,5 @@ export default function InputOtp(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

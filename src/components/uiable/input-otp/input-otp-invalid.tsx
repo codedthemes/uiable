@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 // shadcn
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
-  InputOTPSlot,
-} from "@/components/ui/input-otp"
+  InputOTPSlot
+} from "@/components/ui/input-otp";
 
 //  ------------------------------ | INPUT OTP - INVALID | ------------------------------  //
 
 export function InputOTPInvalid() {
-  const [value, setValue] = useState("000000")
+  const [value, setValue] = useState("000000");
 
   return (
     <InputOTP maxLength={6} value={value} onChange={setValue}>
@@ -32,5 +32,5 @@ export function InputOTPInvalid() {
         <InputOTPSlot index={5} aria-invalid />
       </InputOTPGroup>
     </InputOTP>
-  )
+  );
 }

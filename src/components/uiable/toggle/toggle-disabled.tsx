@@ -1,5 +1,5 @@
 // shadcn
-import { Toggle } from "@/components/ui/toggle"
+import { Toggle } from "@/components/ui/toggle";
 
 //  ------------------------------ | TOGGLE - DISABLED | ------------------------------  //
 
@@ -13,5 +13,5 @@ export function ToggleDisabled() {
         Disabled
       </Toggle>
     </div>
-  )
+  );
 }

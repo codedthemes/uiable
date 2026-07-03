@@ -1,11 +1,6 @@
 "use client"
 
 // shadcn
-// assets
-import { AtSign, MoreVertical, Plus } from "lucide-react"
-
-// project
-import { cn } from "@/lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -15,6 +10,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+
+// project
+import { cn } from "@/lib/utils"
+
+// assets
+import { AtSign, MoreVertical, Plus } from "lucide-react"
 
 //  ------------------------------ | BLOCK - PROFILE CARD | ------------------------------  //
 

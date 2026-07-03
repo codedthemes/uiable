@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | ITEM | ------------------------------  //
 
@@ -54,5 +54,5 @@ export default function Item(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

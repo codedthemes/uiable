@@ -1,20 +1,20 @@
 // shadcn
-import { Field, FieldLabel } from "@/components/ui/field"
+import { Field, FieldLabel } from "@/components/ui/field";
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination"
+  PaginationPrevious
+} from "@/components/ui/pagination";
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
   SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+  SelectValue
+} from "@/components/ui/select";
 
 //  ------------------------------ | PAGINATION - ICONS ONLY | ------------------------------  //
 
@@ -48,5 +48,5 @@ export function PaginationIconsOnly() {
         </PaginationContent>
       </Pagination>
     </div>
-  )
+  );
 }

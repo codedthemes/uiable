@@ -1,51 +1,52 @@
-"use client"
+"use client";
 
 // shadcn
-// assets
-import { ChevronDownIcon, InfoIcon, StarIcon } from "lucide-react"
-// third party
-import { toast } from "sonner"
-
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
 import {
   Field,
   FieldDescription,
   FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field"
+  FieldLabel
+} from "@/components/ui/field";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-  InputGroupInput,
-} from "@/components/ui/input-group"
+  InputGroupInput
+} from "@/components/ui/input-group";
 import {
   Popover,
   PopoverContent,
   PopoverDescription,
   PopoverHeader,
   PopoverTitle,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+  PopoverTrigger
+} from "@/components/ui/popover";
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+  TooltipTrigger
+} from "@/components/ui/tooltip";
+
+// third party
+import { toast } from "sonner";
+
+// assets
+import { ChevronDownIcon, InfoIcon, StarIcon } from "lucide-react";
 
 //  ------------------------------ | INPUT GROUP - WITH TOOLTIP | ------------------------------  //
 
 export function InputGroupWithTooltip({
   country,
-  setCountry,
+  setCountry
 }: {
-  country: string
-  setCountry: (value: string) => void
+  country: string;
+  setCountry: (value: string) => void;
 }) {
   return (
     <>
@@ -129,7 +130,7 @@ export function InputGroupWithTooltip({
                 </PopoverHeader>
               </PopoverContent>
             </Popover>
-            <InputGroupAddon className="pl-1 text-muted-foreground">
+            <InputGroupAddon className="text-muted-foreground pl-1">
               https://
             </InputGroupAddon>
             <InputGroupInput id="input-secure-19" />
@@ -148,5 +149,5 @@ export function InputGroupWithTooltip({
         </Field>
       </FieldGroup>
     </>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 //  ------------------------------ | BUTTON LIGHT DANGER | ------------------------------  //
 
@@ -8,5 +8,5 @@ export default function ButtonLightDanger() {
     <Button className="bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white">
       Danger
     </Button>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -7,8 +7,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+  DialogTrigger
+} from "@/components/ui/dialog";
 
 //  ------------------------------ | DIALOG - BASIC | ------------------------------  //
 
@@ -27,5 +27,5 @@ export function DialogBasic() {
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

@@ -2,39 +2,39 @@
 
 export default function ListGroupLinks() {
   return (
-    <div className="divide-border-border divide-y overflow-hidden rounded-lg border border-border bg-card">
+    <div className="rounded-lg divide-y divide-border-border  border border-border  bg-card overflow-hidden">
       <a
         href="#!"
-        className="block px-6.25 py-4 transition-colors hover:bg-muted/50"
+        className="block py-4 px-6.25 transition-colors hover:bg-muted/50"
       >
         Cras justo odio
       </a>
       <a
         href="#!"
         aria-current="true"
-        className="block bg-primary px-6.25 py-4 text-primary-foreground"
+        className="block py-4 px-6.25 bg-primary text-primary-foreground"
       >
         Dapibus ac facilisis in
       </a>
       <a
         href="#!"
-        className="block px-6.25 py-4 transition-colors hover:bg-muted/50"
+        className="block py-4 px-6.25 transition-colors hover:bg-muted/50"
       >
         Morbi leo risus
       </a>
       <a
         href="#!"
-        className="block px-6.25 py-4 transition-colors hover:bg-muted/50"
+        className="block py-4 px-6.25 transition-colors hover:bg-muted/50"
       >
         Porta ac consectetur ac
       </a>
       <a
         href="#!"
-        className="pointer-events-none block px-6.25 py-4 opacity-50"
+        className="block py-4 px-6.25 opacity-50 pointer-events-none"
         tabIndex={-1}
       >
         Vestibulum at eros ( disabled )
       </a>
     </div>
-  )
+  );
 }

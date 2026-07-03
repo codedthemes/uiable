@@ -11,7 +11,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   SidebarProvider,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
 // constants
 const items = [
@@ -140,7 +140,7 @@ const items = [
       },
     ],
   },
-]
+];
 
 //  ------------------------------ | SIDEBAR - MENU SUB | ------------------------------  //
 
@@ -176,5 +176,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  )
+  );
 }

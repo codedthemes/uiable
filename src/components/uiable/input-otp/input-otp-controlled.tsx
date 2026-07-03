@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 // shadcn
 import {
   InputOTP,
   InputOTPGroup,
-  InputOTPSlot,
-} from "@/components/ui/input-otp"
+  InputOTPSlot
+} from "@/components/ui/input-otp";
 
 //  ------------------------------ | INPUT OTP - CONTROLLED | ------------------------------  //
 
 export default function InputOTPControlled() {
-  const [value, setValue] = useState("")
+  const [value, setValue] = useState("");
 
   return (
     <div className="space-y-2">
@@ -38,5 +38,5 @@ export default function InputOTPControlled() {
         )}
       </div>
     </div>
-  )
+  );
 }

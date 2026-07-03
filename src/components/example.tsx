@@ -1,13 +1,13 @@
-import { ComponentProps } from "react"
+import { ComponentProps } from "react";
 
 // project
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 //  ------------------------------ | COMPONENT - EXAMPLE | ------------------------------  //
 
 function ExampleWrapper({ className, ...props }: ComponentProps<"div">) {
   return (
-    <div className="w-full bg-background">
+    <div className="bg-background w-full">
       <div
         data-slot="example-wrapper"
         className={cn(
@@ -18,7 +18,7 @@ function ExampleWrapper({ className, ...props }: ComponentProps<"div">) {
         {...props}
       />
     </div>
-  )
+  );
 }
 
 function Example({
@@ -28,8 +28,8 @@ function Example({
   containerClassName,
   ...props
 }: ComponentProps<"div"> & {
-  title?: string
-  containerClassName?: string
+  title?: string;
+  containerClassName?: string;
 }) {
   return (
     <div
@@ -41,21 +41,21 @@ function Example({
       {...props}
     >
       {title && (
-        <div className="px-1.5 py-2 text-xs font-medium text-muted-foreground">
+        <div className="text-muted-foreground px-1.5 py-2 text-xs font-medium">
           {title}
         </div>
       )}
       <div
         data-slot="example-content"
         className={cn(
-          "flex min-w-0 flex-1 flex-col items-start gap-6 border border-dashed bg-background p-4 text-foreground sm:p-6 *:[div:not([class*='w-'])]:w-full",
+          "bg-background text-foreground flex min-w-0 flex-1 flex-col items-start gap-6 border border-dashed p-4 sm:p-6 *:[div:not([class*='w-'])]:w-full",
           className
         )}
       >
         {children}
       </div>
     </div>
-  )
+  );
 }
 
-export { ExampleWrapper, Example }
+export { ExampleWrapper, Example };

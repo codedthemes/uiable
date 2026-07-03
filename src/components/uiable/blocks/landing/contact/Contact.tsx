@@ -2,16 +2,16 @@
 
 import { SyntheticEvent, useState } from "react"
 
-// assets
-import { LightFav } from "@/images/brand"
-import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
-
 // third party
 import { toast } from "sonner"
 
 // shadcn
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+
+// assets
+import { LightFav } from "@/images/brand"
+import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
 
 //  ------------------------------ | CONTACT | ------------------------------  //
 

@@ -1,25 +1,26 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// assets
-import { Clock2Icon } from "lucide-react"
+import { useState } from "react";
 
 // shadcn
-import { Calendar } from "@/components/ui/calendar"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
+import { Calendar } from "@/components/ui/calendar";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput,
-} from "@/components/ui/input-group"
+  InputGroupInput
+} from "@/components/ui/input-group";
+
+// assets
+import { Clock2Icon } from "lucide-react";
 
 //  ------------------------------ | CALENDAR - TIME | ------------------------------  //
 
 export function CalendarWithTime() {
   const [date, setDate] = useState<Date | undefined>(
     new Date(new Date().getFullYear(), new Date().getMonth(), 12)
-  )
+  );
 
   return (
     <Card size="sm" className="mx-auto w-fit">
@@ -66,5 +67,5 @@ export function CalendarWithTime() {
         </FieldGroup>
       </CardFooter>
     </Card>
-  )
+  );
 }

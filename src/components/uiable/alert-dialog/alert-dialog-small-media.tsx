@@ -1,8 +1,4 @@
 // shadcn
-
-// assets
-import { Bluetooth } from "iconsax-reactjs"
-
 import {
   AlertDialog,
   AlertDialogAction,
@@ -13,9 +9,12 @@ import {
   AlertDialogHeader,
   AlertDialogMedia,
   AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
+  AlertDialogTrigger
+} from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
+
+// assets
+import { Bluetooth } from "iconsax-reactjs";
 
 //  ------------------------------ | ALERT DIALOG - SMALL MEDIA | ------------------------------  //
 
@@ -40,5 +39,5 @@ export function AlertDialogSmallWithMedia() {
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-  )
+  );
 }

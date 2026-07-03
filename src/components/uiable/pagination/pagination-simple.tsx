@@ -3,8 +3,8 @@ import {
   Pagination,
   PaginationContent,
   PaginationItem,
-  PaginationLink,
-} from "@/components/ui/pagination"
+  PaginationLink
+} from "@/components/ui/pagination";
 
 //  ------------------------------ | PAGINATION - SIMPLE | ------------------------------  //
 
@@ -31,5 +31,5 @@ export function PaginationSimple() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  )
+  );
 }

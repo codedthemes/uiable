@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 // shadcn
 import {
@@ -9,7 +9,7 @@ import {
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@/components/ui/field"
+} from "@/components/ui/field";
 import {
   Select,
   SelectContent,
@@ -17,8 +17,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { Switch } from "@/components/ui/switch"
+} from "@/components/ui/select";
+import { Switch } from "@/components/ui/switch";
 
 // constants
 const items = [
@@ -28,12 +28,12 @@ const items = [
   { label: "Blueberry", value: "blueberry" },
   { label: "Grapes", value: "grapes" },
   { label: "Pineapple", value: "pineapple" },
-]
+];
 
 //  ------------------------------ | SELECT - ALIGN ITEM | ------------------------------  //
 
 export function SelectAlignItem() {
-  const [alignItemWithTrigger, setAlignItemWithTrigger] = useState(true)
+  const [alignItemWithTrigger, setAlignItemWithTrigger] = useState(true);
 
   return (
     <FieldGroup className="w-full max-w-xs">
@@ -67,5 +67,5 @@ export function SelectAlignItem() {
         </Select>
       </Field>
     </FieldGroup>
-  )
+  );
 }

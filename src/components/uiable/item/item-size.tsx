@@ -1,15 +1,14 @@
 // shadcn
-
-// assets
-import { Code1 } from "iconsax-reactjs"
-
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemMedia,
-  ItemTitle,
-} from "@/components/ui/item"
+  ItemTitle
+} from "@/components/ui/item";
+
+// assets
+import { Code1 } from "iconsax-reactjs";
 
 //  ------------------------------ | ITEM - SIZE | ------------------------------  //
 
@@ -46,5 +45,5 @@ export function ItemSizeDemo() {
         </ItemContent>
       </Item>
     </div>
-  )
+  );
 }

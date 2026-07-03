@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 // constants
 const PRESET_BUTTONS = [
@@ -14,17 +14,17 @@ const PRESET_BUTTONS = [
   { label: "Datta", value: "datta" },
   { label: "Flat", value: "flat" },
   { label: "Guru", value: "guru" },
-  { label: "Berry", value: "berry" },
-]
+  { label: "Berry", value: "berry" }
+];
 
 type ThemePresetButtonsProps = {
-  onSelectPreset: (className: string) => void
-}
+  onSelectPreset: (className: string) => void;
+};
 
 //  ------------------------------ | CUSTOMIZER - THEME PRESET BUTTONS | ------------------------------  //
 
 export function ThemePresetButtons({
-  onSelectPreset,
+  onSelectPreset
 }: ThemePresetButtonsProps) {
   return (
     <div className="grid grid-cols-2 gap-2">
@@ -38,5 +38,5 @@ export function ThemePresetButtons({
         </Button>
       ))}
     </div>
-  )
+  );
 }

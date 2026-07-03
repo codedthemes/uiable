@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldLabel } from "@/components/ui/field"
-import { Textarea } from "@/components/ui/textarea"
+import { Field, FieldLabel } from "@/components/ui/field";
+import { Textarea } from "@/components/ui/textarea";
 
 //  ------------------------------ | TEXTAREA - DISABLED | ------------------------------  //
 
@@ -14,5 +14,5 @@ export function TextareaDisabled() {
         disabled
       />
     </Field>
-  )
+  );
 }

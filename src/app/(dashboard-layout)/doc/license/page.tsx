@@ -1,15 +1,15 @@
 // shadcn
-
-// project imports
-import branding from "@/branding.json"
-// assets
-import { DocumentText, Global, SecuritySafe, Shield } from "iconsax-reactjs"
-
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+
+// project imports
+import branding from "@/branding.json"
 import DocsNavigation from "@/components/doc-bottom-nav"
 import TableOfContents from "@/components/uiable/layout/table-of-contents"
+
+// assets
+import { DocumentText, Global, SecuritySafe, Shield } from "iconsax-reactjs"
 
 // constants
 const tocItems = [

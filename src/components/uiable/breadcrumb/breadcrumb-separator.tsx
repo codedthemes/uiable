@@ -1,6 +1,4 @@
-import Link from "next/link"
-// assets
-import { DotIcon } from "lucide-react"
+import Link from "next/link";
 
 // shadcn
 import {
@@ -9,8 +7,11 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb";
+
+// assets
+import { DotIcon } from "lucide-react";
 
 //  ------------------------------ | BREADCRUMB - SEPARATOR | ------------------------------  //
 
@@ -35,5 +36,5 @@ export function BreadcrumbSeparatorDemo() {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  )
+  );
 }

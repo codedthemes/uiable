@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// assets
-import { Search } from "lucide-react"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { ScrollArea } from "@/components/ui/scroll-area"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/components/ui/scroll-area";
+
+// assets
+import { Search } from "lucide-react";
 
 // ── Dummy data ────────────────────────────────────────────────────────────── //
 
@@ -76,49 +77,49 @@ const DUMMY_SECTIONS = [
       { title: "Tooltip", count: 4 },
     ],
   },
-]
+];
 
 const TOTAL = DUMMY_SECTIONS.reduce(
   (acc, s) => acc + s.items.reduce((a, i) => a + i.count, 0),
-  0
-)
+  0,
+);
 
 //  ------------------------------ | COMPONENT - SIDEBAR 1 | ------------------------------  //
 
 export default function Sidebar1() {
-  const [search, setSearch] = useState("")
-  const [activeItem, setActiveItem] = useState<string | null>(null)
+  const [search, setSearch] = useState("");
+  const [activeItem, setActiveItem] = useState<string | null>(null);
 
   const filtered = DUMMY_SECTIONS.map((section) => ({
     ...section,
     items: section.items.filter((item) =>
-      item.title.toLowerCase().includes(search.toLowerCase())
+      item.title.toLowerCase().includes(search.toLowerCase()),
     ),
-  })).filter((section) => section.items.length > 0)
+  })).filter((section) => section.items.length > 0);
 
   return (
-    <div className="flex h-[500px] w-full rounded-lg border bg-background p-4">
-      <aside className="flex h-[450px] w-72 shrink-0 flex-col overflow-hidden rounded-lg border bg-background">
-        <Card className="mb-0 flex h-full flex-col rounded-none border-0 shadow-none">
+    <div className="w-full flex h-[500px] bg-background border p-4 rounded-lg">
+      <aside className="flex w-72 flex-col shrink-0 h-[450px] border rounded-lg overflow-hidden bg-background">
+        <Card className="mb-0 border-0 shadow-none rounded-none h-full flex flex-col">
           <CardHeader>
             {/* Search — matches ComponentSearch design */}
             <div className="relative w-full">
-              <Search className="absolute top-3.5 left-3 h-5 w-5 text-muted-foreground" />
+              <Search className="absolute left-3 top-3.5 h-5 w-5 text-muted-foreground" />
               <Input
                 placeholder="Search Components"
-                className="h-auto py-3 pl-10"
+                className="pl-10 py-3 h-auto"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
             </div>
           </CardHeader>
-          <ScrollArea className="h-[350px] flex-1">
-            <CardContent className="flex flex-1 flex-col gap-3 pb-4">
+          <ScrollArea className="flex-1 h-[350px]">
+            <CardContent className="flex-1 flex flex-col gap-3 pb-4">
               {/* All Components row — matches ComponentList design */}
               <Button
                 variant="ghost"
                 onClick={() => setActiveItem("all")}
-                className={`flex w-full items-center justify-between rounded-lg px-6 py-3 text-left text-base font-medium transition-colors ${
+                className={`flex items-center justify-between px-6 py-3 text-base font-medium rounded-lg transition-colors w-full text-left ${
                   activeItem === "all"
                     ? "bg-primary/10 text-primary"
                     : "text-muted-foreground hover:bg-background hover:text-foreground"
@@ -132,7 +133,7 @@ export default function Sidebar1() {
 
               {filtered.map((section) => (
                 <div key={section.title} className="flex flex-col gap-1">
-                  <p className="sticky top-0 z-10 mb-2 border-b border-b-border/30 bg-card px-6 py-3 text-start text-[16px] font-semibold tracking-widest uppercase">
+                  <p className="px-6 text-[16px] text-start font-semibold uppercase tracking-widest mb-2 bg-card py-3 sticky top-0 z-10 border-b border-b-border/30">
                     {section.title}
                   </p>
                   {section.items.map((item) => (
@@ -140,7 +141,7 @@ export default function Sidebar1() {
                       variant="ghost"
                       key={item.title}
                       onClick={() => setActiveItem(item.title)}
-                      className={`flex w-full items-center justify-between rounded-lg px-6 py-3 text-left text-base font-medium transition-colors ${
+                      className={`flex items-center justify-between px-6 py-3 text-base font-medium rounded-lg transition-colors w-full text-left ${
                         activeItem === item.title
                           ? "bg-primary/10 text-primary"
                           : "text-muted-foreground hover:bg-background hover:text-foreground"
@@ -159,5 +160,5 @@ export default function Sidebar1() {
         </Card>
       </aside>
     </div>
-  )
+  );
 }

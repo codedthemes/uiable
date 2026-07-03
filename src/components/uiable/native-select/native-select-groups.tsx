@@ -2,8 +2,8 @@
 import {
   NativeSelect,
   NativeSelectOptGroup,
-  NativeSelectOption,
-} from "@/components/ui/native-select"
+  NativeSelectOption
+} from "@/components/ui/native-select";
 
 //  ------------------------------ | NATIVE SELECT - GROUPS | ------------------------------  //
 
@@ -37,5 +37,5 @@ export default function NativeSelectGroups() {
         </NativeSelectOption>
       </NativeSelectOptGroup>
     </NativeSelect>
-  )
+  );
 }

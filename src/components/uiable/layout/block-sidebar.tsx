@@ -1,41 +1,41 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
-import { cn } from "@/lib/utils"
 // shadcn
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { ScrollArea } from "@/components/ui/scroll-area"
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 // project
-import BlockList from "./block-list"
-import ComponentSearch from "./shared/component-search"
+import BlockList from "./block-list";
+import ComponentSearch from "./shared/component-search";
+import { cn } from "@/lib/utils";
 
 //  ------------------------------ | LAYOUT - BLOCK SIDEBAR | ------------------------------  //
 
 export default function BlockSidebar({
   isMobile,
-  onSelect,
+  onSelect
 }: {
-  isMobile?: boolean
-  onSelect?: () => void
+  isMobile?: boolean;
+  onSelect?: () => void;
 }) {
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
 
   return (
     <aside
       className={cn(
-        "sticky top-24 w-72 shrink-0 flex-col",
-        isMobile ? "static flex h-full w-full px-0" : "hidden lg:flex"
+        "w-72 flex-col shrink-0 sticky top-24",
+        isMobile ? "flex w-full static h-full px-0" : "hidden lg:flex"
       )}
     >
       <Card
         className={cn(
           "mb-0",
-          isMobile ? "border-none bg-transparent shadow-none" : ""
+          isMobile ? "border-none shadow-none bg-transparent" : ""
         )}
       >
-        <CardHeader className={cn(isMobile ? "px-0 pt-1 pb-4" : "")}>
+        <CardHeader className={cn(isMobile ? "px-0 pb-4 pt-1" : "")}>
           <ComponentSearch value={search} onChange={setSearch} />
         </CardHeader>
         <ScrollArea
@@ -50,5 +50,5 @@ export default function BlockSidebar({
         </ScrollArea>
       </Card>
     </aside>
-  )
+  );
 }

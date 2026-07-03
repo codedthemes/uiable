@@ -1,5 +1,5 @@
 // shadcn
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 //  ------------------------------ | TOGGLE GROUP - SPACING | ------------------------------  //
 
@@ -19,5 +19,5 @@ export function ToggleGroupSpacing() {
         Right
       </ToggleGroupItem>
     </ToggleGroup>
-  )
+  );
 }

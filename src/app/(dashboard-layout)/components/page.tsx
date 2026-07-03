@@ -1,7 +1,7 @@
 import { Metadata } from "next"
+
 // projects imports
 import branding from "@/branding.json"
-
 import ComponentsPageClient from "./components-page-client"
 
 export const metadata: Metadata = {

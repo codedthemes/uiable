@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | DROPDOWN | ------------------------------  //
 
@@ -119,5 +119,5 @@ export default function Dropdown(props: SVGAttributes<SVGElement>) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

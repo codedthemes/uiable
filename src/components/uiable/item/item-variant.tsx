@@ -1,15 +1,14 @@
 // shadcn
-
-// assets
-import { Cup, FingerScan, MicrophoneSlash1 } from "iconsax-reactjs"
-
 import {
   Item,
   ItemContent,
   ItemDescription,
   ItemMedia,
-  ItemTitle,
-} from "@/components/ui/item"
+  ItemTitle
+} from "@/components/ui/item";
+
+// assets
+import { Cup, FingerScan, MicrophoneSlash1 } from "iconsax-reactjs";
 
 //  ------------------------------ | ITEM - VARIANT | ------------------------------  //
 
@@ -18,7 +17,7 @@ export function ItemVariant() {
     <div className="flex w-full max-w-md flex-col gap-6">
       <Item>
         <ItemMedia variant="icon">
-          <Cup className="size-8 text-primary" />
+          <Cup className="text-primary size-8" />
         </ItemMedia>
         <ItemContent>
           <ItemTitle>Default Variant</ItemTitle>
@@ -29,7 +28,7 @@ export function ItemVariant() {
       </Item>
       <Item variant="outline">
         <ItemMedia variant="icon">
-          <FingerScan className="size-8 text-primary" />
+          <FingerScan className="text-primary size-8" />
         </ItemMedia>
         <ItemContent>
           <ItemTitle>Outline Variant</ItemTitle>
@@ -40,7 +39,7 @@ export function ItemVariant() {
       </Item>
       <Item variant="muted">
         <ItemMedia variant="icon">
-          <MicrophoneSlash1 className="size-8 text-primary" />
+          <MicrophoneSlash1 className="text-primary size-8" />
         </ItemMedia>
         <ItemContent>
           <ItemTitle>Muted Variant</ItemTitle>
@@ -50,5 +49,5 @@ export function ItemVariant() {
         </ItemContent>
       </Item>
     </div>
-  )
+  );
 }

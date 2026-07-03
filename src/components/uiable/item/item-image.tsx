@@ -6,7 +6,7 @@ import {
   ItemGroup,
   ItemMedia,
   ItemTitle,
-} from "@/components/ui/item"
+} from "@/components/ui/item";
 
 // constants
 const music = [
@@ -28,7 +28,7 @@ const music = [
     album: "Binary Beats",
     duration: "3:30",
   },
-]
+];
 
 //  ------------------------------ | ITEM - IMAGE | ------------------------------  //
 
@@ -66,5 +66,5 @@ export function ItemImage() {
         ))}
       </ItemGroup>
     </div>
-  )
+  );
 }

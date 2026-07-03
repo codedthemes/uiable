@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldLabel } from "@/components/ui/field"
-import { Switch } from "@/components/ui/switch"
+import { Field, FieldLabel } from "@/components/ui/field";
+import { Switch } from "@/components/ui/switch";
 
 //  ------------------------------ | FIELD - SWITCH | ------------------------------  //
 
@@ -10,5 +10,5 @@ export default function FieldSwitch() {
       <FieldLabel htmlFor="2fa">Multi-factor authentication</FieldLabel>
       <Switch id="2fa" />
     </Field>
-  )
+  );
 }

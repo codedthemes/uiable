@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | BITCOIN ICON | ------------------------------  //
 
@@ -17,5 +17,5 @@ export default function Bitcoin(props: SVGAttributes<SVGElement>) {
         fill="#F7931A"
       />
     </svg>
-  )
+  );
 }

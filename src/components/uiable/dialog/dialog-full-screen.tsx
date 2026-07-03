@@ -1,5 +1,5 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -7,8 +7,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+  DialogTrigger
+} from "@/components/ui/dialog";
 
 //  ------------------------------ | DIALOG - FULL SCREEN | ------------------------------  //
 
@@ -16,7 +16,7 @@ export function DialogFullScreen() {
   return (
     <Dialog>
       <DialogTrigger render={<Button>Full Screen Modal</Button>} />
-      <DialogContent className="h-screen! max-w-screen! rounded-none">
+      <DialogContent className="max-w-screen! h-screen! rounded-none">
         <DialogHeader>
           <DialogTitle>Full Screen Modal</DialogTitle>
           <DialogDescription>
@@ -42,5 +42,5 @@ export function DialogFullScreen() {
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

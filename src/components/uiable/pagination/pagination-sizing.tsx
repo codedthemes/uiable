@@ -2,8 +2,8 @@
 import {
   PaginationContent,
   PaginationItem,
-  PaginationLink,
-} from "@/components/ui/pagination"
+  PaginationLink
+} from "@/components/ui/pagination";
 
 //  ------------------------------ | PAGINATION - SIZING | ------------------------------  //
 
@@ -11,7 +11,7 @@ export default function PaginationSizing() {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <h6 className="mb-3 text-sm font-medium tracking-wider text-muted-foreground uppercase">
+        <h6 className="mb-3 text-sm font-medium text-muted-foreground uppercase tracking-wider">
           Large Pagination
         </h6>
         <PaginationContent className="justify-start">
@@ -34,7 +34,7 @@ export default function PaginationSizing() {
       </div>
 
       <div>
-        <h6 className="mb-3 text-sm font-medium tracking-wider text-muted-foreground uppercase">
+        <h6 className="mb-3 text-sm font-medium text-muted-foreground uppercase tracking-wider">
           Small Pagination
         </h6>
         <PaginationContent className="justify-start">
@@ -56,5 +56,5 @@ export default function PaginationSizing() {
         </PaginationContent>
       </div>
     </div>
-  )
+  );
 }

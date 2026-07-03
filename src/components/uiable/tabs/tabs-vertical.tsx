@@ -1,5 +1,5 @@
 // shadcn
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 //  ------------------------------ | TABS - VERTICAL | ------------------------------  //
 
@@ -12,5 +12,5 @@ export function TabsVertical() {
         <TabsTrigger value="notifications">Notifications</TabsTrigger>
       </TabsList>
     </Tabs>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 // shadcn
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 
 //  ------------------------------ | SEPARATOR - VERTICAL | ------------------------------  //
 
@@ -12,5 +12,5 @@ export function SeparatorVertical() {
       <Separator orientation="vertical" />
       <div>Source</div>
     </div>
-  )
+  );
 }

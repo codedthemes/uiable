@@ -1,20 +1,19 @@
 // shadcn
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupText,
+  InputGroupTextarea
+} from "@/components/ui/input-group";
 
 // assets
 import {
   IconBrandJavascript,
   IconCopy,
   IconCornerDownLeft,
-  IconRefresh,
-} from "@tabler/icons-react"
-
-import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupButton,
-  InputGroupText,
-  InputGroupTextarea,
-} from "@/components/ui/input-group"
+  IconRefresh
+} from "@tabler/icons-react";
 
 //  ------------------------------ | INPUT GROUP - TEXTAREA | ------------------------------  //
 
@@ -47,5 +46,5 @@ export default function InputGroupTextareaExample() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { ComponentProps } from "react"
+import { ComponentProps } from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 function Table({ className, ...props }: ComponentProps<"table">) {
   return (
@@ -16,7 +16,7 @@ function Table({ className, ...props }: ComponentProps<"table">) {
         {...props}
       />
     </div>
-  )
+  );
 }
 
 function TableHeader({ className, ...props }: ComponentProps<"thead">) {
@@ -24,12 +24,12 @@ function TableHeader({ className, ...props }: ComponentProps<"thead">) {
     <thead
       data-slot="table-header"
       className={cn(
-        "[&_tr]:border-b-border-border bg-background align-middle text-[13px] font-bold uppercase ltr:text-left! rtl:text-right! [&_tr]:border-b",
+        "[&_tr]:border-b [&_tr]:border-b-border-border bg-background font-bold text-[13px] align-middle uppercase ltr:text-left! rtl:text-right! ",
         className
       )}
       {...props}
     />
-  )
+  );
 }
 
 function TableBody({ className, ...props }: ComponentProps<"tbody">) {
@@ -39,7 +39,7 @@ function TableBody({ className, ...props }: ComponentProps<"tbody">) {
       className={cn("[&_tr:last-child]:border-0", className)}
       {...props}
     />
-  )
+  );
 }
 
 function TableFooter({ className, ...props }: ComponentProps<"tfoot">) {
@@ -47,12 +47,12 @@ function TableFooter({ className, ...props }: ComponentProps<"tfoot">) {
     <tfoot
       data-slot="table-footer"
       className={cn(
-        "border-t-border-border border-t bg-background font-semibold [&>tr]:last:border-b-0",
+        "bg-background font-semibold border-t border-t-border-border [&>tr]:last:border-b-0",
         className
       )}
       {...props}
     />
-  )
+  );
 }
 
 function TableRow({ className, ...props }: ComponentProps<"tr">) {
@@ -60,12 +60,12 @@ function TableRow({ className, ...props }: ComponentProps<"tr">) {
     <tr
       data-slot="table-row"
       className={cn(
-        "border-b-border-border border-b transition-colors hover:bg-background data-[state=selected]:bg-background",
+        "hover:bg-background data-[state=selected]:bg-background border-b border-b-border-border transition-colors",
         className
       )}
       {...props}
     />
-  )
+  );
 }
 
 function TableHead({ className, ...props }: ComponentProps<"th">) {
@@ -73,12 +73,12 @@ function TableHead({ className, ...props }: ComponentProps<"th">) {
     <th
       data-slot="table-head"
       className={cn(
-        "p-[.9rem_.75rem] whitespace-nowrap text-foreground ltr:first:pl-5 ltr:last:pr-5 ltr:first:sm:pl-[25px] ltr:last:sm:pr-[25px] rtl:first:pr-5 rtl:last:pl-5 rtl:first:sm:pr-[25px] rtl:last:sm:pl-[25px] [&:has([role=checkbox])]:pr-0",
+        "text-foreground p-[.9rem_.75rem] whitespace-nowrap [&:has([role=checkbox])]:pr-0 ltr:first:pl-5 ltr:first:sm:pl-[25px] ltr:last:pr-5 ltr:last:sm:pr-[25px] rtl:first:pr-5 rtl:first:sm:pr-[25px] rtl:last:pl-5 rtl:last:sm:pl-[25px]",
         className
       )}
       {...props}
     />
-  )
+  );
 }
 
 function TableCell({ className, ...props }: ComponentProps<"td">) {
@@ -86,22 +86,25 @@ function TableCell({ className, ...props }: ComponentProps<"td">) {
     <td
       data-slot="table-cell"
       className={cn(
-        "p-[.7rem_.75rem] align-middle whitespace-nowrap ltr:first:pl-5 ltr:last:pr-5 ltr:first:sm:pl-[25px] ltr:last:sm:pr-[25px] rtl:first:pr-5 rtl:last:pl-5 rtl:first:sm:pr-[25px] rtl:last:sm:pl-[25px] [&:has([role=checkbox])]:pr-0",
+        "p-[.7rem_.75rem] align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 ltr:first:pl-5 ltr:first:sm:pl-[25px] ltr:last:pr-5 ltr:last:sm:pr-[25px] rtl:first:pr-5 rtl:first:sm:pr-[25px] rtl:last:pl-5 rtl:last:sm:pl-[25px]",
         className
       )}
       {...props}
     />
-  )
+  );
 }
 
-function TableCaption({ className, ...props }: ComponentProps<"caption">) {
+function TableCaption({
+  className,
+  ...props
+}: ComponentProps<"caption">) {
   return (
     <caption
       data-slot="table-caption"
-      className={cn("mt-4 text-base text-muted-foreground", className)}
+      className={cn("text-muted-foreground mt-4 text-base", className)}
       {...props}
     />
-  )
+  );
 }
 
 export {
@@ -112,5 +115,5 @@ export {
   TableHead,
   TableRow,
   TableCell,
-  TableCaption,
-}
+  TableCaption
+};

@@ -2,8 +2,8 @@
 
 export default function Loader() {
   return (
-    <div className="col-span-full flex min-h-50 w-full items-center justify-center py-12">
-      <div className="relative flex size-10 items-center justify-center">
+    <div className="flex items-center justify-center py-12 w-full min-h-50 col-span-full">
+      <div className="relative flex items-center justify-center size-10">
         <span className="custom-loader text-primary"></span>
       </div>
       <style>{`
@@ -44,5 +44,5 @@ export default function Loader() {
         }
       `}</style>
     </div>
-  )
+  );
 }

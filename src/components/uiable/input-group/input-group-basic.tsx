@@ -1,7 +1,7 @@
 // shadcn
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
-import { InputGroup, InputGroupInput } from "@/components/ui/input-group"
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+import { InputGroup, InputGroupInput } from "@/components/ui/input-group";
 
 //  ------------------------------ | INPUT GROUP - BASIC | ------------------------------  //
 
@@ -41,5 +41,5 @@ export function InputGroupBasic() {
         </InputGroup>
       </Field>
     </FieldGroup>
-  )
+  );
 }

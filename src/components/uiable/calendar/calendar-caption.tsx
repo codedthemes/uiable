@@ -1,5 +1,5 @@
 // shadcn
-import { Calendar } from "@/components/ui/calendar"
+import { Calendar } from "@/components/ui/calendar";
 
 //  ------------------------------ | CALENDAR - CAPTION | ------------------------------  //
 
@@ -10,5 +10,5 @@ export function CalendarCaption() {
       captionLayout="dropdown"
       className="rounded-lg border"
     />
-  )
+  );
 }

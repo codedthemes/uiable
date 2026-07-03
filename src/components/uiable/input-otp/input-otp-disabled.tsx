@@ -3,8 +3,8 @@ import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
-  InputOTPSlot,
-} from "@/components/ui/input-otp"
+  InputOTPSlot
+} from "@/components/ui/input-otp";
 
 //  ------------------------------ | INPUT OTP - DISABLED | ------------------------------  //
 
@@ -29,5 +29,5 @@ export function InputOTPDisabled() {
         <InputOTPSlot index={5} />
       </InputOTPGroup>
     </InputOTP>
-  )
+  );
 }

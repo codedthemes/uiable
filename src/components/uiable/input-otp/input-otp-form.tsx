@@ -1,24 +1,23 @@
 // shadcn
-
-// assets
-import { RefreshCwIcon } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
+  CardTitle
+} from "@/components/ui/card";
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
-  InputOTPSlot,
-} from "@/components/ui/input-otp"
+  InputOTPSlot
+} from "@/components/ui/input-otp";
+
+// assets
+import { RefreshCwIcon } from "lucide-react";
 
 //  ------------------------------ | INPUT OTP - FORM | ------------------------------  //
 
@@ -66,11 +65,11 @@ export function InputOTPForm() {
           <Button type="submit" className="w-full">
             Verify
           </Button>
-          <div className="text-sm text-muted-foreground">
+          <div className="text-muted-foreground text-sm">
             Having trouble signing in?{" "}
             <a
               href="#"
-              className="underline underline-offset-4 transition-colors hover:text-primary"
+              className="hover:text-primary underline underline-offset-4 transition-colors"
             >
               Contact support
             </a>
@@ -78,5 +77,5 @@ export function InputOTPForm() {
         </Field>
       </CardFooter>
     </Card>
-  )
+  );
 }

@@ -1,13 +1,13 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Item,
   ItemActions,
   ItemContent,
   ItemDescription,
   ItemGroup,
-  ItemTitle,
-} from "@/components/ui/item"
+  ItemTitle
+} from "@/components/ui/item";
 
 //  ------------------------------ | ITEM - MUTED GROUP | ------------------------------  //
 
@@ -42,5 +42,5 @@ export function MutedItemGroup() {
         </ItemActions>
       </Item>
     </ItemGroup>
-  )
+  );
 }

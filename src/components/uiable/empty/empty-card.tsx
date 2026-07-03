@@ -1,17 +1,16 @@
 // shadcn
-
-// assets
-import { FolderOpen, Link1 } from "iconsax-reactjs"
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Empty,
   EmptyContent,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
-  EmptyTitle,
-} from "@/components/ui/empty"
+  EmptyTitle
+} from "@/components/ui/empty";
+
+// assets
+import { FolderOpen, Link1 } from "iconsax-reactjs";
 
 //  ------------------------------ | EMPTY - CARD | ------------------------------  //
 
@@ -29,7 +28,7 @@ export function EmptyInCard() {
         </EmptyDescription>
       </EmptyHeader>
       <EmptyContent>
-        <div className="mb-2 flex gap-2">
+        <div className="flex gap-2 mb-2">
           <Button render={<a href="#" />} nativeButton={false}>
             Create project
           </Button>
@@ -39,11 +38,11 @@ export function EmptyInCard() {
           variant="link"
           render={<a href="#" />}
           nativeButton={false}
-          className="gap-2 hover:text-primary"
+          className=" gap-2 hover:text-primary"
         >
           Learn more <Link1 />
         </Button>
       </EmptyContent>
     </Empty>
-  )
+  );
 }

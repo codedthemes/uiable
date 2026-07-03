@@ -1,9 +1,8 @@
 // shadcn
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 // assets
-import { Bold, Italic, Underline } from "lucide-react"
-
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import { Bold, Italic, Underline } from "lucide-react";
 
 //  ------------------------------ | TOGGLE GROUP - DISABLED | ------------------------------  //
 
@@ -20,5 +19,5 @@ export function ToggleGroupDisabled() {
         <Underline />
       </ToggleGroupItem>
     </ToggleGroup>
-  )
+  );
 }

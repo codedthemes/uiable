@@ -1,10 +1,4 @@
 // shadcn
-
-// assets
-import { FrameIcon, MapIcon, PieChartIcon, PlusIcon } from "lucide-react"
-// third party
-import { toast, Toaster } from "sonner"
-
 import {
   Sidebar,
   SidebarContent,
@@ -16,7 +10,13 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
+
+// third party
+import { toast, Toaster } from "sonner";
+
+// assets
+import { FrameIcon, MapIcon, PieChartIcon, PlusIcon } from "lucide-react";
 
 //  ------------------------------ | SIDEBAR - GROUP ACTION | ------------------------------  //
 
@@ -65,5 +65,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  )
+  );
 }

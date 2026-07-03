@@ -8,9 +8,9 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
+  AlertDialogTrigger
+} from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
 
 //  ------------------------------ | ALERT DIALOG - SMALL | ------------------------------  //
 
@@ -31,5 +31,5 @@ export function AlertDialogSmall() {
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-  )
+  );
 }

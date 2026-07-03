@@ -1,22 +1,22 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 // shadcn
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { ScrollArea } from "@/components/ui/scroll-area"
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 // project
-import ComponentList from "./component-list"
-import ComponentSearch from "./shared/component-search"
+import ComponentList from "./component-list";
+import ComponentSearch from "./shared/component-search";
 
 //  ------------------------------ | COMPONENT - SIDEBAR | ------------------------------  //
 
 export default function ComponentSidebar() {
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
 
   return (
-    <aside className="sticky top-24 hidden w-72 shrink-0 flex-col lg:flex">
+    <aside className="hidden lg:flex w-72 flex-col shrink-0 sticky top-24">
       <Card className="mb-0">
         <CardHeader>
           <ComponentSearch value={search} onChange={setSearch} />
@@ -28,5 +28,5 @@ export default function ComponentSidebar() {
         </ScrollArea>
       </Card>
     </aside>
-  )
+  );
 }

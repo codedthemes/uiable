@@ -1,5 +1,5 @@
 // shadcn
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
 
 //  ------------------------------ | BADGE - OUTLINE SECONDARY | ------------------------------  //
 
@@ -8,5 +8,5 @@ export default function BadgeOutlineSecondary() {
     <Badge className="border-secondary-500 text-secondary-500 bg-transparent">
       Secondary
     </Badge>
-  )
+  );
 }

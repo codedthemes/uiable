@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | COMBOBOX | ------------------------------  //
 
@@ -74,5 +74,5 @@ export default function Combobox(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

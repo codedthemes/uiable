@@ -1,21 +1,20 @@
 // shadcn
-
-// assets
-import { ChevronDownIcon, MoreHorizontal } from "lucide-react"
-
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-  InputGroupInput,
-} from "@/components/ui/input-group"
+  InputGroupInput
+} from "@/components/ui/input-group";
+
+// assets
+import { ChevronDownIcon, MoreHorizontal } from "lucide-react";
 
 //  ------------------------------ | INPUT GROUP - DROPDOWN | ------------------------------  //
 
@@ -69,5 +68,5 @@ export function InputGroupDropdown() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  )
+  );
 }

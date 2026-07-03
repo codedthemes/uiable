@@ -1,30 +1,31 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// assets
-import { MaximizeIcon, MinimizeIcon } from "lucide-react"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+  CardTitle
+} from "@/components/ui/card";
 import {
   Collapsible,
   CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible"
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+  CollapsibleTrigger
+} from "@/components/ui/collapsible";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
+
+// assets
+import { MaximizeIcon, MinimizeIcon } from "lucide-react";
 
 //  ------------------------------ | COLLAPSIBLE - SETTINGS | ------------------------------  //
 
 export function CollapsibleSettings() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Card className="mx-auto w-full max-w-xs" size="sm">
@@ -74,5 +75,5 @@ export function CollapsibleSettings() {
         </Collapsible>
       </CardContent>
     </Card>
-  )
+  );
 }

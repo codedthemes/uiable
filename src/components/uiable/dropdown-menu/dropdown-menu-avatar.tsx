@@ -1,23 +1,22 @@
 // shadcn
-
-// assets
-import {
-  BadgeCheckIcon,
-  BellIcon,
-  CreditCardIcon,
-  LogOutIcon,
-} from "lucide-react"
-
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+  DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
+
+// assets
+import {
+  BadgeCheckIcon,
+  BellIcon,
+  CreditCardIcon,
+  LogOutIcon
+} from "lucide-react";
 
 //  ------------------------------ | DROPDOWN MENU - AVATAR | ------------------------------  //
 
@@ -54,5 +53,5 @@ export function DropdownMenuAvatar() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

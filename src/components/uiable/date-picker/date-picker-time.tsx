@@ -1,27 +1,29 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-// third party
-import { format } from "date-fns"
-// assets
-import { ChevronDownIcon } from "lucide-react"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Input } from "@/components/ui/input";
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+  PopoverTrigger
+} from "@/components/ui/popover";
+
+// third party
+import { format } from "date-fns";
+
+// assets
+import { ChevronDownIcon } from "lucide-react";
 
 //  ------------------------------ | DATE PICKER - TIME | ------------------------------  //
 
 export function DatePickerTime() {
-  const [open, setOpen] = useState(false)
-  const [date, setDate] = useState<Date | undefined>(undefined)
+  const [open, setOpen] = useState(false);
+  const [date, setDate] = useState<Date | undefined>(undefined);
 
   return (
     <FieldGroup className="mx-auto max-w-xs flex-row flex-wrap">
@@ -46,8 +48,8 @@ export function DatePickerTime() {
               captionLayout="dropdown"
               defaultMonth={date}
               onSelect={(date) => {
-                setDate(date)
-                setOpen(false)
+                setDate(date);
+                setOpen(false);
               }}
             />
           </PopoverContent>
@@ -64,5 +66,5 @@ export function DatePickerTime() {
         />
       </Field>
     </FieldGroup>
-  )
+  );
 }

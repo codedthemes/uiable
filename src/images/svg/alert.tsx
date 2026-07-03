@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react"
+import type { SVGAttributes } from "react";
 
 //  ------------------------------ | ALERT | ------------------------------  //
 
@@ -102,5 +102,5 @@ export default function Alert(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

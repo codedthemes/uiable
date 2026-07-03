@@ -1,5 +1,5 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetClose,
@@ -9,10 +9,10 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
 // constants
-const SHEET_SIDES = ["top", "right", "bottom", "left"] as const
+const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
 
 //  ------------------------------ | SHEET - SIDE | ------------------------------  //
 
@@ -26,7 +26,7 @@ export default function SheetSide() {
           </SheetTrigger>
           <SheetContent
             side={side}
-            className="gap-0 data-[side=bottom]:max-h-[40vh] data-[side=top]:max-h-[40vh]"
+            className="data-[side=bottom]:max-h-[40vh] data-[side=top]:max-h-[40vh] gap-0"
           >
             <SheetHeader>
               <SheetTitle>Edit profile</SheetTitle>
@@ -60,5 +60,5 @@ export default function SheetSide() {
         </Sheet>
       ))}
     </div>
-  )
+  );
 }

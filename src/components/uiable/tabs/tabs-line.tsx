@@ -1,5 +1,5 @@
 // shadcn
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 //  ------------------------------ | TABS - LINE | ------------------------------  //
 
@@ -12,5 +12,5 @@ export function TabsLine() {
         <TabsTrigger value="reports">Reports</TabsTrigger>
       </TabsList>
     </Tabs>
-  )
+  );
 }

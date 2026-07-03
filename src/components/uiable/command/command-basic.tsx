@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Command,
   CommandDialog,
@@ -11,13 +11,13 @@ import {
   CommandGroup,
   CommandInput,
   CommandItem,
-  CommandList,
-} from "@/components/ui/command"
+  CommandList
+} from "@/components/ui/command";
 
 //  ------------------------------ | COMMAND - BASIC | ------------------------------  //
 
 export function CommandBasic() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="flex flex-col gap-4">
@@ -38,5 +38,5 @@ export function CommandBasic() {
         </Command>
       </CommandDialog>
     </div>
-  )
+  );
 }

@@ -1,22 +1,22 @@
-"use client"
+"use client";
 
 // shadcn
-// assets
-import { MoreVertical } from "lucide-react"
-
-import { cn } from "@/lib/utils"
-import { Button, buttonVariants } from "@/components/ui/button"
-import { Card, CardContent, CardTitle } from "@/components/ui/card"
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+} from "@/components/ui/dropdown-menu";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // project
-import TransactionItem from "./transaction-item"
+import TransactionItem from "./transaction-item";
+import { cn } from "@/lib/utils";
+
+// assets
+import { MoreVertical } from "lucide-react";
 
 //  ------------------------------ | BLOCK - TRANSACTIONS CARD | ------------------------------  //
 
@@ -24,13 +24,13 @@ export default function TransactionsCard() {
   return (
     <Card>
       <CardContent className="p-0">
-        <div className="mb-4 flex items-center justify-between p-6 pb-0">
+        <div className="p-6 pb-0 flex items-center justify-between mb-4">
           <CardTitle className="text-lg font-bold">Transactions</CardTitle>
           <DropdownMenu>
             <DropdownMenuTrigger
               className={cn(
                 buttonVariants({ variant: "ghost", size: "icon" }),
-                "h-8 w-8 shrink-0 rounded-xl"
+                "h-8 w-8 rounded-xl shrink-0",
               )}
             >
               <MoreVertical className="h-4 w-4" />
@@ -43,22 +43,22 @@ export default function TransactionsCard() {
           </DropdownMenu>
         </div>
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="h-auto w-full justify-start gap-6 rounded-none border-b bg-transparent p-0 px-6">
+          <TabsList className="w-full justify-start rounded-none border-b bg-transparent h-auto p-0 px-6 gap-6">
             <TabsTrigger
               value="all"
-              className="rounded-none border-b-2 border-transparent px-0 py-4 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+              className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none py-4 px-0"
             >
               All Transaction
             </TabsTrigger>
             <TabsTrigger
               value="success"
-              className="rounded-none border-b-2 border-transparent px-0 py-4 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+              className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none py-4 px-0"
             >
               Success
             </TabsTrigger>
             <TabsTrigger
               value="pending"
-              className="rounded-none border-b-2 border-transparent px-0 py-4 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none"
+              className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none py-4 px-0"
             >
               Pending
             </TabsTrigger>
@@ -116,17 +116,17 @@ export default function TransactionsCard() {
             </div>
           </TabsContent>
           <TabsContent value="success" className="mt-0 p-0">
-            <div className="p-6 text-center text-sm text-muted-foreground">
+            <div className="p-6 text-center text-muted-foreground text-sm">
               Success transactions will appear here.
             </div>
           </TabsContent>
           <TabsContent value="pending" className="mt-0 p-0">
-            <div className="p-6 text-center text-sm text-muted-foreground">
+            <div className="p-6 text-center text-muted-foreground text-sm">
               Pending transactions will appear here.
             </div>
           </TabsContent>
         </Tabs>
-        <div className="mt-4 border-t p-6">
+        <div className="p-6 border-t mt-4">
           <div className="grid grid-cols-2 gap-4">
             <Button variant="outline" className="w-full rounded-xl">
               View all History
@@ -136,5 +136,5 @@ export default function TransactionsCard() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

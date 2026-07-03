@@ -1,5 +1,5 @@
 // shadcn
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 //  ------------------------------ | TOGGLE GROUP - SIZES | ------------------------------  //
 
@@ -35,5 +35,5 @@ export function ToggleGroupSizes() {
         </ToggleGroupItem>
       </ToggleGroup>
     </div>
-  )
+  );
 }

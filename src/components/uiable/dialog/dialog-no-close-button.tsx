@@ -1,13 +1,13 @@
 // shadcn
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
+  DialogTrigger
+} from "@/components/ui/dialog";
 
 //  ------------------------------ | DIALOG - NO CLOSE BUTTON | ------------------------------  //
 
@@ -24,5 +24,5 @@ export function DialogNoCloseButton() {
         </DialogHeader>
       </DialogContent>
     </Dialog>
-  )
+  );
 }
