@@ -92,7 +92,7 @@ const faqItems = [
   },
   {
     number: "5.",
-    question: "How are UIAble components different from shadcn/ui primitives?",
+    question: "How are UIAble components different from shadcn/ui?",
     answer:
       "Shadcn/ui provides the core components like Buttons, Dialogs, Alerts, and Badges. UIAble builds on top of them with production-ready, fully styled components like animated buttons, searchable comboboxes, date pickers, advanced sidebars, and more. You get the flexibility of shadcn/ui with ready-to-use components that are easier to copy, customize, and ship.",
   },
