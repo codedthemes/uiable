@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 // project imports
+import branding from "@/branding.json"
 import {
   CodeAnimation,
   DiagonalScroll,
@@ -73,7 +74,7 @@ export default function Feature() {
     <section className="mx-auto flex w-full flex-col gap-12.5 px-4 py-12.5 sm:px-8">
       <SectionHeader
         title="More than components - a complete UI system"
-        subtitle="Uiable combines scalable architecture, reusable patterns, and modern workflows into one consistent system."
+        subtitle={`${branding.brandName} combines scalable architecture, reusable patterns, and modern workflows into one consistent system.`}
       />
 
       {/* Content */}
