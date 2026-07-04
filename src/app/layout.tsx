@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
 import { Metadata } from "next"
+import Script from "next/script"
 
 // shadcn
 import { TooltipProvider } from "@/components/ui/tooltip"
@@ -95,6 +96,15 @@ export default function RootLayout({
           <TooltipProvider>{children}</TooltipProvider>
           <Toaster richColors />
         </ThemeProvider>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-NLKTRGXTWS" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NLKTRGXTWS');
+          `}
+        </Script>
         <Metrics />
       </body>
     </html>
