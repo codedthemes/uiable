@@ -10,6 +10,7 @@
   <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16%2B-007ec6?style=flat-square&logo=next.js&logoColor=white" alt="Next.js"></a>
   <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-4%2B-007ec6?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"></a>
   <a href="https://ui.shadcn.com/"><img src="https://img.shields.io/badge/shadcn%2Fui-4%2B-007ec6?style=flat-square&logo=shadcnui&logoColor=white" alt="shadcn/ui"></a>
+  <a href="https://base-ui.com/"><img src="https://img.shields.io/badge/Base_UI-1%2B-007ec6?style=flat-square" alt="Base UI"></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-007ec6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript Ready"></a>
   <br />
   <a href="https://discord.com/invite/txPuEn5atw"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
