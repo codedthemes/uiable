@@ -1,8 +1,8 @@
 "use client"
 
-// shadcn
 import Link from "next/link"
 
+// shadcn
 import {
   Accordion,
   AccordionContent,
@@ -11,16 +11,17 @@ import {
 } from "@/components/ui/accordion"
 
 // project imports
+import branding from "@/branding.json"
 import { SectionHeader } from "@/components/uiable/blocks/landing/components"
 
 // constants
 const faqItems = [
   {
     number: "1.",
-    question: "What is UIAble",
+    question: `What is ${branding.brandName}`,
     answer: (
       <>
-        UIAble is a free, open-source component library built with{" "}
+        {branding.brandName} is a free, open-source component library built with{" "}
         <a
           href="https://tailwindcss.com"
           target="_blank"
@@ -53,10 +54,10 @@ const faqItems = [
   },
   {
     number: "2.",
-    question: "Are UIAble components free and open source?",
+    question: `Are ${branding.brandName} components free and open source?`,
     answer: (
       <>
-        Yes. Every UIAble component is free, open source, and{" "}
+        Yes. Every {branding.brandName} component is free, open source, and{" "}
         <Link
           href="https://github.com/codedthemes/uiable?tab=MIT-1-ov-file"
           className="text-primary no-underline! hover:underline"
@@ -70,7 +71,7 @@ const faqItems = [
   },
   {
     number: "3.",
-    question: "Can I use UIAble components Next.js projects?",
+    question: `Can I use ${branding.brandName} components Next.js projects?`,
     answer: (
       <>
         Yes, every{" "}
@@ -88,14 +89,12 @@ const faqItems = [
   {
     number: "4.",
     question: "Can I easily customize the theme and colors?",
-    answer:
-      "Yes, UIAble is built on standard Tailwind utility classes and CSS variables. You can easily adjust the global color palette, fonts, border radii, and other design tokens directly in your globals.css file.",
+    answer: `Yes, ${branding.brandName} is built on standard Tailwind utility classes and CSS variables. You can easily adjust the global color palette, fonts, border radii, and other design tokens directly in your globals.css file.`,
   },
   {
     number: "5.",
-    question: "How are UIAble components different from shadcn/ui?",
-    answer:
-      "Shadcn/ui provides the core components like Buttons, Dialogs, Alerts, and Badges. UIAble builds on top of them with production-ready, fully styled components like animated buttons, searchable comboboxes, date pickers, advanced sidebars, and more. You get the flexibility of shadcn/ui with ready-to-use components that are easier to copy, customize, and ship.",
+    question: `How are ${branding.brandName} components different from shadcn/ui?`,
+    answer: `Shadcn/ui provides the core components like Buttons, Dialogs, Alerts, and Badges. ${branding.brandName} builds on top of them with production-ready, fully styled components like animated buttons, searchable comboboxes, date pickers, advanced sidebars, and more. You get the flexibility of shadcn/ui with ready-to-use components that are easier to copy, customize, and ship.`,
   },
 ]
 
