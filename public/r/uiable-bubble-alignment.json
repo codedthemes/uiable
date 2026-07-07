@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-bubble-alignment",
+  "title": "Bubble Alignment",
+  "description": "Bubble Alignment variant for bubble.",
+  "registryDependencies": [
+    "bubble"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/bubble/bubble-alignment.tsx",
+      "content": "// shadcn\r\nimport { Bubble, BubbleContent } from \"@/components/ui/bubble\"\r\n\r\n//  ------------------------------ | BUBBLE - ALIGNMENT | ------------------------------  //\r\n\r\nexport default function BubbleAlignment() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-8\">\r\n      <Bubble variant=\"muted\">\r\n        <BubbleContent>\r\n          This bubble is aligned to the start. This is the default alignment.\r\n        </BubbleContent>\r\n      </Bubble>\r\n      <Bubble align=\"end\">\r\n        <BubbleContent className=\"dark:text-white\">\r\n          This bubble is aligned to the end. Use this for user messages.\r\n        </BubbleContent>\r\n      </Bubble>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/bubble/bubble-alignment.tsx"
+    }
+  ],
+  "categories": [
+    "bubble"
+  ],
+  "type": "registry:ui"
+}

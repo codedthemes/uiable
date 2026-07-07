@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-bubble-group",
+  "title": "Bubble Group",
+  "description": "Bubble Group variant for bubble.",
+  "registryDependencies": [
+    "bubble"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/bubble/bubble-group.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Bubble,\r\n  BubbleContent,\r\n  BubbleGroup,\r\n  BubbleReactions,\r\n} from \"@/components/ui/bubble\"\r\n\r\n//  ------------------------------ | BUBBLE - GROUP | ------------------------------  //\r\n\r\nexport default function BubbleGroups() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-8\">\r\n      <Bubble variant=\"muted\">\r\n        <BubbleContent>Can you tell me what&apos;s the issue?</BubbleContent>\r\n      </Bubble>\r\n      <BubbleGroup>\r\n        <Bubble align=\"end\">\r\n          <BubbleContent className=\"dark:text-white\">\r\n            You tell me!\r\n          </BubbleContent>\r\n        </Bubble>\r\n        <Bubble align=\"end\">\r\n          <BubbleContent className=\"dark:text-white\">\r\n            It worked yesterday. You broke it!\r\n          </BubbleContent>\r\n        </Bubble>\r\n        <Bubble align=\"end\">\r\n          <BubbleContent className=\"dark:text-white\">\r\n            Find the bug and fix it.\r\n          </BubbleContent>\r\n          <BubbleReactions aria-label=\"Reactions: eyes\" align=\"start\">\r\n            <span>👀</span>\r\n          </BubbleReactions>\r\n        </Bubble>\r\n      </BubbleGroup>\r\n      <Bubble variant=\"muted\">\r\n        <BubbleContent>\r\n          Want me to diff yesterday&apos;s you against today&apos;s you?\r\n          It&apos;s a bit embarrassing.\r\n        </BubbleContent>\r\n      </Bubble>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/bubble/bubble-group.tsx"
+    }
+  ],
+  "categories": [
+    "bubble"
+  ],
+  "type": "registry:ui"
+}

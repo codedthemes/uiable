@@ -859,6 +859,101 @@
       "type": "registry:ui"
     },
     {
+      "name": "uiable-attachment-vertical",
+      "title": "Vertical Attachment",
+      "description": "Attachment Vertical variant for attachment.",
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/attachment/attachment-vertical.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/attachment/attachment-vertical.tsx"
+        }
+      ],
+      "categories": [
+        "attachment"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-attachment-group",
+      "title": "Group",
+      "description": "Attachment Group variant for attachment.",
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/attachment/attachment-group.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/attachment/attachment-group.tsx"
+        }
+      ],
+      "categories": [
+        "attachment"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-attachment-states",
+      "title": "States",
+      "description": "Attachment States variant for attachment.",
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/attachment/attachment-states.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/attachment/attachment-states.tsx"
+        }
+      ],
+      "categories": [
+        "attachment"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-attachment-sizes",
+      "title": "Sizes",
+      "description": "Attachment Sizes variant for attachment.",
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/attachment/attachment-sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/attachment/attachment-sizes.tsx"
+        }
+      ],
+      "categories": [
+        "attachment"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-attachment-triggers",
+      "title": "Trigger",
+      "description": "Attachment Trigger variant for attachment.",
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/attachment/attachment-triggers.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/attachment/attachment-triggers.tsx"
+        }
+      ],
+      "categories": [
+        "attachment"
+      ],
+      "type": "registry:ui"
+    },
+    {
       "name": "uiable-avatar-badge",
       "title": "Badge Avatar",
       "description": "Avatar Badge variant for avatar.",
@@ -2018,6 +2113,82 @@
       "type": "registry:ui"
     },
     {
+      "name": "uiable-button-group-icon",
+      "title": "Icon Button Group",
+      "description": "Button Group Icon variant for button-group.",
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button-group/button-group-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button-group/button-group-icon.tsx"
+        }
+      ],
+      "categories": [
+        "button-group"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-group-social",
+      "title": "Social Button Group",
+      "description": "Button Group Social variant for button-group.",
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button-group/button-group-social.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button-group/button-group-social.tsx"
+        }
+      ],
+      "categories": [
+        "button-group"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-group-toolbar",
+      "title": "Text Styling Toolbar",
+      "description": "Button Group Toolbar variant for button-group.",
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button-group/button-group-toolbar.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button-group/button-group-toolbar.tsx"
+        }
+      ],
+      "categories": [
+        "button-group"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-group-qty-select",
+      "title": "Quantity Selector",
+      "description": "Button Group Quantity Selector variant for button-group.",
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button-group/button-group-qty-select.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button-group/button-group-qty-select.tsx"
+        }
+      ],
+      "categories": [
+        "button-group"
+      ],
+      "type": "registry:ui"
+    },
+    {
       "name": "uiable-button-icon",
       "title": "Icon Button",
       "description": "Button Icon variant for button.",
@@ -2717,6 +2888,272 @@
       ],
       "categories": [
         "button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-social",
+      "title": "Social Button",
+      "description": "Social button variant for button",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button/button-social.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button/button-social.tsx"
+        }
+      ],
+      "categories": [
+        "button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-with-badge",
+      "title": "Button With Badge",
+      "description": "Button with badge variant for button",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button/button-with-badge.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button/button-with-badge.tsx"
+        }
+      ],
+      "categories": [
+        "button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-toggle",
+      "title": "Toggle Button",
+      "description": "Toggle button variant for button",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button/button-toggle.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button/button-toggle.tsx"
+        }
+      ],
+      "categories": [
+        "button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-animated-border",
+      "title": "Animated Button On Hover",
+      "description": "Animated Button variant for button",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button/button-animated-border.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button/button-animated-border.tsx"
+        }
+      ],
+      "categories": [
+        "button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-animated",
+      "title": "Animated Button",
+      "description": "Animated Button variant for button",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button/button-animated.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button/button-animated.tsx"
+        }
+      ],
+      "categories": [
+        "button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-button-animated-gradient",
+      "title": "Gradient Animated Button",
+      "description": "Gradient Animated Button variant for button",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/button/button-animated-gradient.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button/button-animated-gradient.tsx"
+        }
+      ],
+      "categories": [
+        "button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-variants",
+      "title": "Bubble Variants",
+      "description": "Bubble Visual Variants for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-variants.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-variants.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-group",
+      "title": "Bubble Group",
+      "description": "Bubble Group variant for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-group.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-group.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-alignment",
+      "title": "Bubble Alignment",
+      "description": "Bubble Alignment variant for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-alignment.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-alignment.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-link",
+      "title": "Links and Buttons",
+      "description": "Bubble Links & Buttons variant for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-link.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-link.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-reactions",
+      "title": "Bubble Reactions",
+      "description": "Bubble Reactions variant for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-reactions.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-reactions.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-collapsible",
+      "title": "Show More / Collapsible",
+      "description": "Bubble Collapsible variant for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-collapsible.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-collapsible.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-tooltip",
+      "title": "Tooltip",
+      "description": "Bubble Tooltip variant for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-tooltip.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-tooltip.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-bubble-popover",
+      "title": "Popover",
+      "description": "Bubble Popover variant for bubble.",
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/bubble/bubble-popover.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/bubble/bubble-popover.tsx"
+        }
+      ],
+      "categories": [
+        "bubble"
       ],
       "type": "registry:ui"
     },
@@ -3595,6 +4032,101 @@
       "type": "registry:ui"
     },
     {
+      "name": "uiable-checkbox-indeterminate",
+      "title": "Indeterminate Checkbox",
+      "description": "Indeterminate Checkbox variant for checkbox.",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/checkbox/checkbox-indeterminate.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/checkbox/checkbox-indeterminate.tsx"
+        }
+      ],
+      "categories": [
+        "checkbox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-checkbox-colors",
+      "title": "Colors Checkboxes",
+      "description": "Colors Checkbox variant for checkbox.",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/checkbox/checkbox-colors.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/checkbox/checkbox-colors.tsx"
+        }
+      ],
+      "categories": [
+        "checkbox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-checkbox-sizes",
+      "title": "Checkbox Sizes",
+      "description": "Checkbox Size variant for checkbox.",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/checkbox/checkbox-size.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/checkbox/checkbox-size.tsx"
+        }
+      ],
+      "categories": [
+        "checkbox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-checkbox-list",
+      "title": "Checkbox List",
+      "description": "Checkbox List variant for checkbox.",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/checkbox/checkbox-list.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/checkbox/checkbox-list.tsx"
+        }
+      ],
+      "categories": [
+        "checkbox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-checkbox-todo-list",
+      "title": "Todo List",
+      "description": "Todo List Checkbox variant for checkbox.",
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/checkbox/checkbox-todo-list.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/checkbox/checkbox-todo-list.tsx"
+        }
+      ],
+      "categories": [
+        "checkbox"
+      ],
+      "type": "registry:ui"
+    },
+    {
       "name": "uiable-collapsible-basic",
       "title": "Basic Collapsible",
       "description": "Collapsible Basic variant for collapsible.",
@@ -3834,6 +4366,82 @@
           "path": "src/components/uiable/combobox/combobox-popup.tsx",
           "type": "registry:component",
           "target": "@components/uiable/combobox/combobox-popup.tsx"
+        }
+      ],
+      "categories": [
+        "combobox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-combobox-user",
+      "title": "Users Combobox",
+      "description": "Combobox User variant for combobox.",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/combobox/combobox-user.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/combobox/combobox-user.tsx"
+        }
+      ],
+      "categories": [
+        "combobox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-combobox-error",
+      "title": "Error Combobox",
+      "description": "Combobox Error variant for combobox.",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/combobox/combobox-error.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/combobox/combobox-error.tsx"
+        }
+      ],
+      "categories": [
+        "combobox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-combobox-with-checkbox",
+      "title": "Combobox With Checkbox",
+      "description": "Combobox With Checkbox variant for combobox.",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/combobox/combobox-with-checkbox.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/combobox/combobox-with-checkbox.tsx"
+        }
+      ],
+      "categories": [
+        "combobox"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-combobox-autocomplete",
+      "title": "Autocomplete Combobox",
+      "description": "Combobox Autocomplete variant for combobox.",
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/combobox/combobox-autocomplete.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/combobox/combobox-autocomplete.tsx"
         }
       ],
       "categories": [
@@ -6422,6 +7030,405 @@
       ],
       "categories": [
         "list-group"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-marker-variants",
+      "title": "Variants",
+      "description": "Marker variant for marker.",
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/marker/marker-variants.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/marker/marker-variants.tsx"
+        }
+      ],
+      "categories": [
+        "marker"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-marker-bordered",
+      "title": "Bordered Marker",
+      "description": "Marker Bordered variant for marker.",
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/marker/marker-bordered.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/marker/marker-bordered.tsx"
+        }
+      ],
+      "categories": [
+        "marker"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-marker-separator",
+      "title": "Separator Marker",
+      "description": "Marker Separator variant for marker.",
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/marker/marker-separator.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/marker/marker-separator.tsx"
+        }
+      ],
+      "categories": [
+        "marker"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-marker-with-icon",
+      "title": "Marker With Icon",
+      "description": "Marker With Icon variant for marker.",
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/marker/marker-with-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/marker/marker-with-icon.tsx"
+        }
+      ],
+      "categories": [
+        "marker"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-marker-status",
+      "title": "Status Marker",
+      "description": "Marker Status variant for marker.",
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/marker/marker-status.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/marker/marker-status.tsx"
+        }
+      ],
+      "categories": [
+        "marker"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-marker-shimmer",
+      "title": "Shimmer Marker",
+      "description": "Marker Shimmer variant for marker.",
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/marker/marker-shimmer.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/marker/marker-shimmer.tsx"
+        }
+      ],
+      "categories": [
+        "marker"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-marker-links",
+      "title": "Links and Buttons",
+      "description": "Links and Buttons Marker variant for marker.",
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/marker/marker-links.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/marker/marker-links.tsx"
+        }
+      ],
+      "categories": [
+        "marker"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-with-avatar",
+      "title": "Message With Avatar",
+      "description": "Message With Avatar variant for message.",
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message/message-with-avatar.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message/message-with-avatar.tsx"
+        }
+      ],
+      "categories": [
+        "message"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-header-footer",
+      "title": "Header And Footer",
+      "description": "Message Header And Footer variant for message.",
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message/message-header-footer.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message/message-header-footer.tsx"
+        }
+      ],
+      "categories": [
+        "message"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-actions",
+      "title": "Actions",
+      "description": "Message Actions variant for message.",
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message/message-actions.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message/message-actions.tsx"
+        }
+      ],
+      "categories": [
+        "message"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-group",
+      "title": "Message Group",
+      "description": "Message Group variant for message.",
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message/message-group.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message/message-group.tsx"
+        }
+      ],
+      "categories": [
+        "message"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-attachment",
+      "title": "Attachment",
+      "description": "Message Atachment variant for message.",
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message/message-attachment.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message/message-attachment.tsx"
+        }
+      ],
+      "categories": [
+        "message"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-anchoring-turns",
+      "title": "Anchoring Turns",
+      "description": "Message Scroller Anchoring Turns variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-anchoring-turns.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-anchoring-turns.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-group-chat",
+      "title": "Group Chat",
+      "description": "Message Scroller Group Chat variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-group-chat.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-group-chat.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-context-visible",
+      "title": "Keeping Context Visible",
+      "description": "Message Scroller Keeping Context Visible variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-context-visible.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-context-visible.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-live-edge",
+      "title": "Following the Live Edge",
+      "description": "Message Scroller Live Edge variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-live-edge.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-live-edge.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-position",
+      "title": "Opening Saved Threads",
+      "description": "Message Scroller Opening Saved Threads variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-position.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-position.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-load-history",
+      "title": "Loading Earlier Messages",
+      "description": "Message Scroller Load History variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-load-history.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-load-history.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-animatinng",
+      "title": "Animating New Messages",
+      "description": "Message Scroller Animating variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-animatinng.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-animatinng.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-reader-position",
+      "title": "Tracking the Reader's Position",
+      "description": "Message Scroller Reader Position variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-reader-position.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-reader-position.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "uiable-message-scroller-reading-state",
+      "title": "Reading Scroll State",
+      "description": "Message Scroller Reading State variant for message-scroller.",
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        {
+          "path": "src/components/uiable/message-scroller/message-scroller-reading-state.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/message-scroller/message-scroller-reading-state.tsx"
+        }
+      ],
+      "categories": [
+        "message-scroller"
       ],
       "type": "registry:ui"
     },

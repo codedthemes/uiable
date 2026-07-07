@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-marker-links",
+  "title": "Links and Buttons",
+  "description": "Links and Buttons Marker variant for marker.",
+  "registryDependencies": [
+    "marker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/marker/marker-links.tsx",
+      "content": "\"use client\"\r\n\r\n// shadcn\r\n// assets\r\nimport { GitBranchIcon, RotateCcwIcon } from \"lucide-react\"\r\n// third party\r\nimport { toast } from \"sonner\"\r\n\r\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - LINKS | ------------------------------  //\r\n\r\nexport function MarkerLinks() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker\r\n        render={\r\n          <a href=\"#links-and-buttons\">\r\n            <MarkerIcon>\r\n              <GitBranchIcon />\r\n            </MarkerIcon>\r\n            <MarkerContent>View the pull request</MarkerContent>\r\n          </a>\r\n        }\r\n      />\r\n      <Marker\r\n        render={\r\n          <button\r\n            type=\"button\"\r\n            className=\"transition-colors hover:text-foreground\"\r\n            onClick={() => toast.success(\"You clicked the revert button\")}\r\n          >\r\n            <MarkerIcon>\r\n              <RotateCcwIcon />\r\n            </MarkerIcon>\r\n            <MarkerContent>Revert this change</MarkerContent>\r\n          </button>\r\n        }\r\n      />\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/marker/marker-links.tsx"
+    }
+  ],
+  "categories": [
+    "marker"
+  ],
+  "type": "registry:ui"
+}

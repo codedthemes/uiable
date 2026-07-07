@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-marker-separator",
+  "title": "Separator Marker",
+  "description": "Marker Separator variant for marker.",
+  "registryDependencies": [
+    "marker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/marker/marker-separator.tsx",
+      "content": "// shadcn\r\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - SEPARATOR | ------------------------------  //\r\n\r\nexport function MarkerSeparator() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>Today</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>Worked for 42s</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>Conversation compacted</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/marker/marker-separator.tsx"
+    }
+  ],
+  "categories": [
+    "marker"
+  ],
+  "type": "registry:ui"
+}

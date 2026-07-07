@@ -1,6 +1,9 @@
 export interface CategoryItem {
   title: string
   slug: string
+  badge?: {
+    label: string
+  }
   breakpoints?: {
     xs?: number
     sm?: number
@@ -101,8 +104,20 @@ export const NAV_CATEGORIES: NavSection[] = [
   {
     title: "Data Display",
     items: [
+      {
+        title: "Attachment",
+        slug: "attachment",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
       { title: "Avatar", slug: "avatar", breakpoints: { md: 3, sm: 2, xs: 1 } },
       { title: "Badge", slug: "badge", breakpoints: { lg: 3, sm: 2, xs: 1 } },
+      {
+        title: "Bubble",
+        slug: "bubble",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
       {
         title: "Card",
         slug: "card",
@@ -136,6 +151,24 @@ export const NAV_CATEGORIES: NavSection[] = [
       { title: "Hover Card", slug: "hover-card", breakpoints: { xs: 1 } },
       { title: "Kbd", slug: "kbd", breakpoints: { md: 2, sm: 2, xs: 1 } },
       { title: "Label", slug: "label", breakpoints: { xs: 1 } },
+      {
+        title: "Marker",
+        slug: "marker",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
+      {
+        title: "Message",
+        slug: "message",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
+      {
+        title: "Message Scroller",
+        slug: "message-scroller",
+        badge: { label: "New" },
+        breakpoints: { md: 2, sm: 2, xs: 1 },
+      },
       {
         title: "List Group",
         slug: "list-group",
@@ -295,8 +328,108 @@ export const NAV_CATEGORIES: NavSection[] = [
 
 export const NAV_BLOCKS: NavSection[] = [
   {
+    title: "UI",
+    items: [
+      {
+        title: "Call To Action",
+        slug: "cta",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Contact",
+        slug: "contact",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Content",
+        slug: "content",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "E-commerce",
+        slug: "e-commerce",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "FAQ",
+        slug: "faq",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Feature",
+        slug: "feature",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Footer",
+        slug: "footer",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Gallery",
+        slug: "gallery",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Hero",
+        slug: "hero",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Portfolio",
+        slug: "portfolio",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Pricing",
+        slug: "pricing",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Process",
+        slug: "process",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Statistics",
+        slug: "statistics",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Team",
+        slug: "team",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Testimonial",
+        slug: "testimonial",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+    ],
+  },
+  {
     title: "Layout",
     items: [
+      {
+        title: "Auth Layout",
+        slug: "auth-layout",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Dashboard Layout",
+        slug: "dashboard-layout",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Component Layout",
+        slug: "component-layout",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Doc Layout",
+        slug: "doc-layout",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
       {
         title: "Landing",
         slug: "landing",

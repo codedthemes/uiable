@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-toggle",
+  "title": "Toggle Button",
+  "description": "Toggle button variant for button",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-toggle.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { Moon, Sun1 } from \"iconsax-reactjs\"\r\n\r\n// project\r\nimport { cn } from \"@/lib/utils\"\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\n\r\n//  ------------------------------ | BUTTON TOGGLE | ------------------------------  //\r\n\r\nexport default function ButtonToggle() {\r\n  const [isDark, setIsDark] = useState(false)\r\n\r\n  return (\r\n    <Button\r\n      className={cn(\r\n        \"text-md flex h-10.5 w-10.5 items-center justify-center p-0 leading-6 font-medium\",\r\n        isDark\r\n          ? \"bg-mist-800/10 text-mist-800 hover:bg-mist-800 hover:text-white dark:bg-mist-300/10 dark:text-mist-300\"\r\n          : \"bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500 hover:text-white\"\r\n      )}\r\n      onClick={() => setIsDark((prev) => !prev)}\r\n    >\r\n      {isDark ? <Moon className=\"size-4.5\" /> : <Sun1 className=\"size-5\" />}\r\n    </Button>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-toggle.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

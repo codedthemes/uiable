@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-marker-variants",
+  "title": "Variants",
+  "description": "Marker variant for marker.",
+  "registryDependencies": [
+    "marker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/marker/marker-variants.tsx",
+      "content": "// shadcn\r\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - VARIANTS | ------------------------------  //\r\n\r\nexport function MarkerVariants() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker>\r\n        <MarkerContent>A default marker for inline notes.</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>A separator marker</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"border\">\r\n        <MarkerContent>A border marker for row boundaries.</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/marker/marker-variants.tsx"
+    }
+  ],
+  "categories": [
+    "marker"
+  ],
+  "type": "registry:ui"
+}

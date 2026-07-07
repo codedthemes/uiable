@@ -1,7 +1,5 @@
 "use client"
 
-/* eslint-disable @typescript-eslint/no-unused-vars, jsx-a11y/alt-text */
-
 import { useState } from "react"
 
 // shadcn

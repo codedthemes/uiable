@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-checkbox-list",
+  "title": "Checkbox List",
+  "description": "Checkbox List variant for checkbox.",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/checkbox/checkbox-list.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// third party\r\nimport { AnimatePresence, motion } from \"framer-motion\"\r\n\r\n// fruit options\r\nconst fruits = [\r\n  { id: \"apple\", label: \"Apple\" },\r\n  { id: \"banana\", label: \"Banana\" },\r\n  { id: \"blueberry\", label: \"Blueberry\" },\r\n  { id: \"grapes\", label: \"Grapes\" },\r\n  { id: \"pineapple\", label: \"Pineapple\" },\r\n]\r\n\r\n//  ------------------------------ | CHECKBOX - LIST | ------------------------------  //\r\n\r\nexport function CheckboxList() {\r\n  const [selectedFruits, setSelectedFruits] = useState<string[]>([\r\n    \"blueberry\",\r\n    \"apple\",\r\n  ])\r\n\r\n  const toggleFruit = (id: string) => {\r\n    setSelectedFruits((prev) =>\r\n      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]\r\n    )\r\n  }\r\n\r\n  return (\r\n    <div className=\"w-full max-w-[240px] rounded-lg border border-border bg-popover p-1.5\">\r\n      <div className=\"flex flex-col gap-0.5\">\r\n        {fruits.map((fruit) => {\r\n          const isChecked = selectedFruits.includes(fruit.id)\r\n          return (\r\n            <div\r\n              key={fruit.id}\r\n              onClick={() => toggleFruit(fruit.id)}\r\n              className=\"group flex min-h-[38px] cursor-pointer items-center justify-between rounded-md px-3.25 py-2 transition-colors select-none hover:bg-background\"\r\n            >\r\n              <span className=\"text-base font-normal text-foreground group-hover:text-accent-foreground\">\r\n                {fruit.label}\r\n              </span>\r\n              <AnimatePresence initial={false}>\r\n                {isChecked && (\r\n                  <motion.svg\r\n                    width=\"16\"\r\n                    height=\"16\"\r\n                    viewBox=\"0 0 24 24\"\r\n                    fill=\"none\"\r\n                    stroke=\"currentColor\"\r\n                    strokeWidth=\"3\"\r\n                    strokeLinecap=\"round\"\r\n                    strokeLinejoin=\"round\"\r\n                    className=\"pointer-events-none size-4 text-green-500\"\r\n                  >\r\n                    <motion.path\r\n                      d=\"M4 12L9 17L20 6\"\r\n                      initial={{ pathLength: 0 }}\r\n                      animate={{ pathLength: 1 }}\r\n                      exit={{ pathLength: 0 }}\r\n                      transition={{ duration: 0.25, ease: \"easeInOut\" }}\r\n                    />\r\n                  </motion.svg>\r\n                )}\r\n              </AnimatePresence>\r\n            </div>\r\n          )\r\n        })}\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/checkbox/checkbox-list.tsx"
+    }
+  ],
+  "categories": [
+    "checkbox"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-checkbox-colors",
+  "title": "Colors Checkboxes",
+  "description": "Colors Checkbox variant for checkbox.",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/checkbox/checkbox-colors.tsx",
+      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\"\r\nimport { Field, FieldGroup, FieldLabel, FieldSet } from \"@/components/ui/field\"\r\n\r\n//  ------------------------------ | CHECKBOX - COLORS | ------------------------------  //\r\n\r\nexport function CheckboxColors() {\r\n  return (\r\n    <FieldSet className=\"mx-auto w-64\">\r\n      <FieldGroup className=\"gap-3\">\r\n        {/* Success */}\r\n        <Field orientation=\"horizontal\">\r\n          <Checkbox\r\n            id=\"success\"\r\n            name=\"success\"\r\n            defaultChecked\r\n            className=\"focus-visible:border-green-600 focus-visible:ring-green-600/50 dark:focus-visible:border-green-500 dark:focus-visible:ring-green-500/50 data-checked:border-green-600 data-checked:bg-green-600 dark:data-checked:border-green-500 dark:data-checked:bg-green-500\"\r\n          />\r\n          <FieldLabel htmlFor=\"success\" className=\"font-normal\">\r\n            Success\r\n          </FieldLabel>\r\n        </Field>\r\n\r\n        {/* Danger */}\r\n        <Field orientation=\"horizontal\">\r\n          <Checkbox\r\n            id=\"danger\"\r\n            name=\"danger\"\r\n            defaultChecked\r\n            className=\"focus-visible:border-red-600 focus-visible:ring-red-600/50 dark:focus-visible:border-red-500 dark:focus-visible:ring-red-500/50 data-checked:border-red-600 data-checked:bg-red-600 dark:data-checked:border-red-500 dark:data-checked:bg-red-500\"\r\n          />\r\n          <FieldLabel htmlFor=\"danger\" className=\"font-normal\">\r\n            Danger\r\n          </FieldLabel>\r\n        </Field>\r\n\r\n        {/* Warning */}\r\n        <Field orientation=\"horizontal\">\r\n          <Checkbox\r\n            id=\"warning\"\r\n            name=\"warning\"\r\n            defaultChecked\r\n            className=\"focus-visible:border-amber-500 focus-visible:ring-amber-500/50 dark:focus-visible:border-amber-500 dark:focus-visible:ring-amber-500/50 data-checked:border-amber-500 data-checked:bg-amber-500 dark:data-checked:border-amber-500 dark:data-checked:bg-amber-500\"\r\n          />\r\n          <FieldLabel htmlFor=\"warning\" className=\"font-normal\">\r\n            Warning\r\n          </FieldLabel>\r\n        </Field>\r\n\r\n        {/* Info */}\r\n        <Field orientation=\"horizontal\">\r\n          <Checkbox\r\n            id=\"info\"\r\n            name=\"info\"\r\n            defaultChecked\r\n            className=\"focus-visible:border-sky-500 focus-visible:ring-sky-500/50 dark:focus-visible:border-sky-400 dark:focus-visible:ring-sky-400/50 data-checked:border-sky-500 data-checked:bg-sky-500 dark:data-checked:border-sky-400 dark:data-checked:bg-sky-400\"\r\n          />\r\n          <FieldLabel htmlFor=\"info\" className=\"font-normal\">\r\n            Info\r\n          </FieldLabel>\r\n        </Field>\r\n      </FieldGroup>\r\n    </FieldSet>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/checkbox/checkbox-colors.tsx"
+    }
+  ],
+  "categories": [
+    "checkbox"
+  ],
+  "type": "registry:ui"
+}
