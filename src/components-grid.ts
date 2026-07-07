@@ -1,6 +1,9 @@
 export interface CategoryItem {
   title: string
   slug: string
+  badge?: {
+    label: string
+  }
   breakpoints?: {
     xs?: number
     sm?: number
@@ -101,8 +104,20 @@ export const NAV_CATEGORIES: NavSection[] = [
   {
     title: "Data Display",
     items: [
+      {
+        title: "Attachment",
+        slug: "attachment",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
       { title: "Avatar", slug: "avatar", breakpoints: { md: 3, sm: 2, xs: 1 } },
       { title: "Badge", slug: "badge", breakpoints: { lg: 3, sm: 2, xs: 1 } },
+      {
+        title: "Bubble",
+        slug: "bubble",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
       {
         title: "Card",
         slug: "card",
@@ -136,6 +151,24 @@ export const NAV_CATEGORIES: NavSection[] = [
       { title: "Hover Card", slug: "hover-card", breakpoints: { xs: 1 } },
       { title: "Kbd", slug: "kbd", breakpoints: { md: 2, sm: 2, xs: 1 } },
       { title: "Label", slug: "label", breakpoints: { xs: 1 } },
+      {
+        title: "Marker",
+        slug: "marker",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
+      {
+        title: "Message",
+        slug: "message",
+        badge: { label: "New" },
+        breakpoints: { lg: 2, xs: 1 },
+      },
+      {
+        title: "Message Scroller",
+        slug: "message-scroller",
+        badge: { label: "New" },
+        breakpoints: { md: 2, sm: 2, xs: 1 },
+      },
       {
         title: "List Group",
         slug: "list-group",

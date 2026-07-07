@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-message-attachment",
+  "title": "Attachment",
+  "description": "Message Atachment variant for message.",
+  "registryDependencies": [
+    "message"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/message/message-attachment.tsx",
+      "content": "\"use client\"\r\n\r\n// shadcn\r\n// assets\r\nimport { DownloadIcon, FileTextIcon } from \"lucide-react\"\r\n\r\nimport {\r\n  Attachment,\r\n  AttachmentAction,\r\n  AttachmentActions,\r\n  AttachmentContent,\r\n  AttachmentDescription,\r\n  AttachmentMedia,\r\n  AttachmentTitle,\r\n} from \"@/components/ui/attachment\"\r\nimport { Bubble, BubbleContent } from \"@/components/ui/bubble\"\r\nimport { Message, MessageContent } from \"@/components/ui/message\"\r\n\r\n//  ------------------------------ | MESSAGE - ATTACHMENT | ------------------------------  //\r\n\r\nexport function MessageAttachment() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-8\">\r\n      <Message align=\"end\">\r\n        <MessageContent>\r\n          <Attachment orientation=\"vertical\">\r\n            <AttachmentMedia variant=\"image\">\r\n              <img\r\n                src=\"https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80\"\r\n                alt=\"Workspace\"\r\n              />\r\n            </AttachmentMedia>\r\n          </Attachment>\r\n          <Bubble>\r\n            <BubbleContent className=\"dark:text-white\">\r\n              Here&apos;s the image. Can you add it to the PDF? Use it for the\r\n              cover page.\r\n            </BubbleContent>\r\n          </Bubble>\r\n        </MessageContent>\r\n      </Message>\r\n      <Message>\r\n        <MessageContent>\r\n          <Bubble variant=\"muted\">\r\n            <BubbleContent>\r\n              Done. Here&apos;s the PDF with the image added as the cover page.\r\n            </BubbleContent>\r\n          </Bubble>\r\n          <Attachment>\r\n            <AttachmentMedia>\r\n              <FileTextIcon />\r\n            </AttachmentMedia>\r\n            <AttachmentContent>\r\n              <AttachmentTitle>sales-dashboard.pdf</AttachmentTitle>\r\n              <AttachmentDescription>PDF · 2.4 MB</AttachmentDescription>\r\n            </AttachmentContent>\r\n            <AttachmentActions>\r\n              <AttachmentAction\r\n                type=\"button\"\r\n                title=\"Download\"\r\n                aria-label=\"Download\"\r\n                size=\"icon-sm\"\r\n                variant=\"secondary\"\r\n              >\r\n                <DownloadIcon />\r\n              </AttachmentAction>\r\n            </AttachmentActions>\r\n          </Attachment>\r\n        </MessageContent>\r\n      </Message>\r\n      <Message align=\"end\">\r\n        <MessageContent>\r\n          <Bubble>\r\n            <BubbleContent className=\"dark:text-white\">\r\n              Thanks. Looks good.\r\n            </BubbleContent>\r\n          </Bubble>\r\n        </MessageContent>\r\n      </Message>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/message/message-attachment.tsx"
+    }
+  ],
+  "categories": [
+    "message"
+  ],
+  "type": "registry:ui"
+}

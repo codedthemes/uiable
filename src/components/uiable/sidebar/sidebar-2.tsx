@@ -1,7 +1,5 @@
 "use client"
 
-/* eslint-disable @typescript-eslint/no-unused-vars, jsx-a11y/alt-text */
-
 import { useState } from "react"
 
 // shadcn
@@ -63,14 +61,6 @@ const uImg1 = {
 export default function Sidebar2() {
   const [isUserOpen, setIsUserOpen] = useState(false)
   const [activeItem, setActiveItem] = useState("dashboard")
-  const [openSections, setOpenSections] = useState<string[]>([])
-  const [openBlocks, setOpenBlocks] = useState(false)
-
-  const toggleSection = (title: string) => {
-    setOpenSections((prev) =>
-      prev.includes(title) ? prev.filter((s) => s !== title) : [...prev, title]
-    )
-  }
 
   return (
     <SidebarProvider className="relative h-[600px] w-full overflow-hidden rounded-lg border bg-background">
@@ -378,7 +368,11 @@ export default function Sidebar2() {
           {/* Upgrade Card */}
           <Card className="mx-1.75 my-3.75 shadow-none">
             <CardContent className="text-center">
-              <img src={imgCoupon.src} className="mx-auto w-2/4 max-w-full" />
+              <img
+                src={imgCoupon.src}
+                alt="coupon"
+                className="mx-auto w-2/4 max-w-full"
+              />
               <h5 className="mt-1 mb-0">UIAble</h5>
               <p className="mb-4">Checkout pro features</p>
               <Button className="gap-2 bg-yellow-500 hover:bg-yellow-600">

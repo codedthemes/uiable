@@ -3,6 +3,7 @@
 import { memo, useEffect, useMemo, useState } from "react"
 
 // shadcn
+import { Badge } from "@/components/ui/badge"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -24,6 +25,9 @@ interface Item {
   description: string
   files: { path: string }[]
   categories: string[]
+  badge?: {
+    label: string
+  }
   rawCode?: string
   type?: string
 }
@@ -38,15 +42,15 @@ const CodeBlock = memo(
     const [html, setHtml] = useState<string>("")
     const [isLoading, setIsLoading] = useState<boolean>(true)
 
-    const [prevProps, setPrevProps] = useState({ children, lang })
-    if (prevProps.children !== children || prevProps.lang !== lang) {
-      setPrevProps({ children, lang })
-      setIsLoading(true)
-    }
-
     useEffect(() => {
       let mounted = true
-      setIsLoading(true)
+
+      queueMicrotask(() => {
+        if (mounted) {
+          setIsLoading(true)
+        }
+      })
+
       codeToHtml(children, { lang, theme: "one-dark-pro" }).then((res) => {
         if (mounted) {
           setHtml(res)
@@ -76,9 +80,6 @@ const CodeBlock = memo(
 )
 
 CodeBlock.displayName = "CodeBlock"
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const componentCache: Record<string, unknown> = {}
 
 function DynamicItem({
   filePath,
@@ -220,9 +221,16 @@ export default function CategoryView({ category, items }: CategoryViewProps) {
           <Card key={item.name} className="group/item mb-0 overflow-hidden">
             <CardHeader className="py-3">
               <div className="flex flex-row items-center justify-between gap-1">
-                <h5 className="mb-0 line-clamp-1 text-[16px] font-semibold">
-                  {item.title}
-                </h5>
+                <div className="flex items-center gap-2">
+                  <h5 className="mb-0 line-clamp-1 text-[16px] font-semibold">
+                    {item.title}
+                  </h5>
+                  {item.badge && (
+                    <Badge className="border-transparent bg-red-500/15 text-red-500">
+                      {item.badge.label}
+                    </Badge>
+                  )}
+                </div>
                 <div className="flex items-center justify-end gap-1">
                   <div className="flex justify-end gap-2">
                     <Button

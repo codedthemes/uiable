@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-marker-bordered",
+  "title": "Bordered Marker",
+  "description": "Marker Bordered variant for marker.",
+  "registryDependencies": [
+    "marker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/marker/marker-bordered.tsx",
+      "content": "// shadcn\r\n\r\n// assets\r\nimport { FileTextIcon, GitBranchIcon, SearchIcon } from \"lucide-react\"\r\n\r\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - BORDER | ------------------------------  //\r\n\r\nexport function MarkerBorder() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-3\">\r\n      <Marker variant=\"border\">\r\n        <MarkerIcon>\r\n          <GitBranchIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Switched to release-candidate</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"border\">\r\n        <MarkerIcon>\r\n          <SearchIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Reviewed 8 related files</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"border\">\r\n        <MarkerIcon>\r\n          <FileTextIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Opened implementation notes</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/marker/marker-bordered.tsx"
+    }
+  ],
+  "categories": [
+    "marker"
+  ],
+  "type": "registry:ui"
+}

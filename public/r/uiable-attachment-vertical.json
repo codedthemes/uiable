@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-attachment-vertical",
+  "title": "Vertical Attachment",
+  "description": "Attachment Vertical variant for attachment.",
+  "registryDependencies": [
+    "attachment"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/attachment/attachment-vertical.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { Download, Eye, RefreshCw, X } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport {\r\n  Attachment,\r\n  AttachmentAction,\r\n  AttachmentActions,\r\n  AttachmentContent,\r\n  AttachmentDescription,\r\n  AttachmentMedia,\r\n  AttachmentTitle,\r\n} from \"@/components/ui/attachment\"\r\n\r\n//  ------------------------------ | ATTACHMENT - VERTICAL | ------------------------------  //\r\n\r\nexport default function AttachmentVertical() {\r\n  const [attachments, setAttachments] = useState([\r\n    {\r\n      id: \"1\",\r\n      name: \"nature-photography.jpg\",\r\n      size: \"2.4 MB\",\r\n      url: \"https://cdn.uiable.com/component/card-sample.png\",\r\n      state: \"done\" as const,\r\n    },\r\n    {\r\n      id: \"2\",\r\n      name: \"branding-guidelines.png\",\r\n      size: \"4.8 MB\",\r\n      url: \"https://cdn.uiable.com/component/card-sample.png\",\r\n      state: \"uploading\" as const,\r\n    },\r\n    {\r\n      id: \"3\",\r\n      name: \"website-hero-draft.jpg\",\r\n      size: \"1.2 MB\",\r\n      url: \"https://cdn.uiable.com/component/card-sample.png\",\r\n      state: \"error\" as const,\r\n    },\r\n  ])\r\n\r\n  const removeAttachment = (id: string) => {\r\n    setAttachments((prev) => prev.filter((item) => item.id !== id))\r\n  }\r\n\r\n  const retryUpload = (id: string) => {\r\n    setAttachments((prev) =>\r\n      prev.map((item) => (item.id === id ? { ...item, state: \"done\" } : item))\r\n    )\r\n  }\r\n\r\n  return (\r\n    <div className=\"mx-auto w-full max-w-4xl space-y-6 p-6\">\r\n      <div className=\"flex flex-wrap justify-center gap-4\">\r\n        {attachments.map((item) => (\r\n          <Attachment key={item.id} orientation=\"vertical\" state={item.state}>\r\n            <AttachmentMedia variant=\"image\">\r\n              <img\r\n                src={item.url}\r\n                alt={item.name}\r\n                className=\"aspect-square w-full object-cover\"\r\n              />\r\n            </AttachmentMedia>\r\n            <AttachmentContent>\r\n              <AttachmentTitle>{item.name}</AttachmentTitle>\r\n              <AttachmentDescription>\r\n                {item.state === \"uploading\"\r\n                  ? \"Uploading...\"\r\n                  : item.state === \"error\"\r\n                    ? \"Failed to upload\"\r\n                    : `JPG • ${item.size}`}\r\n              </AttachmentDescription>\r\n            </AttachmentContent>\r\n            <AttachmentActions>\r\n              {item.state === \"error\" && (\r\n                <AttachmentAction\r\n                  aria-label=\"Retry upload\"\r\n                  onClick={() => retryUpload(item.id)}\r\n                >\r\n                  <RefreshCw className=\"animate-spin-hover size-4 text-destructive\" />\r\n                </AttachmentAction>\r\n              )}\r\n              {item.state === \"done\" && (\r\n                <>\r\n                  <AttachmentAction aria-label=\"Preview image\">\r\n                    <Eye className=\"size-4\" />\r\n                  </AttachmentAction>\r\n                  <AttachmentAction aria-label=\"Download image\">\r\n                    <Download className=\"size-4\" />\r\n                  </AttachmentAction>\r\n                </>\r\n              )}\r\n              <AttachmentAction\r\n                aria-label={`Remove ${item.name}`}\r\n                onClick={() => removeAttachment(item.id)}\r\n              >\r\n                <X className=\"size-4\" />\r\n              </AttachmentAction>\r\n            </AttachmentActions>\r\n          </Attachment>\r\n        ))}\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/attachment/attachment-vertical.tsx"
+    }
+  ],
+  "categories": [
+    "attachment"
+  ],
+  "type": "registry:ui"
+}

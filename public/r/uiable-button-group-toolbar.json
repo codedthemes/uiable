@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-toolbar",
+  "title": "Text Styling Toolbar",
+  "description": "Button Group Toolbar variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-toolbar.tsx",
+      "content": "// shadcn\r\n\r\n// assets\r\nimport {\r\n  ArrowDown2,\r\n  TextBold,\r\n  TextItalic,\r\n  TextUnderline,\r\n} from \"iconsax-reactjs\"\r\n\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { ButtonGroup } from \"@/components/ui/button-group\"\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuGroup,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger,\r\n} from \"@/components/ui/dropdown-menu\"\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger,\r\n} from \"@/components/ui/tooltip\"\r\n\r\n//  ------------------------------ | BUTTON GROUP - TOOLBAR | ------------------------------  //\r\n\r\nexport function ButtonGroupToolbar() {\r\n  return (\r\n    <ButtonGroup>\r\n      <DropdownMenu>\r\n        <Tooltip>\r\n          <TooltipTrigger\r\n            render={\r\n              <DropdownMenuTrigger\r\n                className=\"flex items-center gap-1\"\r\n                render={\r\n                  <Button\r\n                    variant=\"outline\"\r\n                    className=\"py-1 transition-colors hover:bg-gray-200 dark:border-border/50\"\r\n                  />\r\n                }\r\n              >\r\n                Inter <ArrowDown2 />\r\n              </DropdownMenuTrigger>\r\n            }\r\n          />\r\n          <TooltipContent>Font Family</TooltipContent>\r\n        </Tooltip>\r\n        <DropdownMenuContent align=\"end\" className=\"min-w-54\">\r\n          <DropdownMenuGroup>\r\n            <DropdownMenuItem>Inter</DropdownMenuItem>\r\n            <DropdownMenuItem>Poppins</DropdownMenuItem>\r\n            <DropdownMenuItem>Public sans</DropdownMenuItem>\r\n            <DropdownMenuItem>Roboto</DropdownMenuItem>\r\n          </DropdownMenuGroup>\r\n        </DropdownMenuContent>\r\n      </DropdownMenu>\r\n      <Tooltip>\r\n        <TooltipTrigger\r\n          render={\r\n            <Button\r\n              variant=\"outline\"\r\n              size=\"icon-lg\"\r\n              className=\"transition-colors hover:bg-gray-200 dark:border-border/50\"\r\n            />\r\n          }\r\n        >\r\n          <TextBold />\r\n        </TooltipTrigger>\r\n        <TooltipContent>Bold</TooltipContent>\r\n      </Tooltip>\r\n      <Tooltip>\r\n        <TooltipTrigger\r\n          render={\r\n            <Button\r\n              variant=\"outline\"\r\n              size=\"icon-lg\"\r\n              className=\"transition-colors hover:bg-gray-200 dark:border-border/50\"\r\n            />\r\n          }\r\n        >\r\n          <TextItalic />\r\n        </TooltipTrigger>\r\n        <TooltipContent>Italic</TooltipContent>\r\n      </Tooltip>\r\n      <Tooltip>\r\n        <TooltipTrigger\r\n          render={\r\n            <Button\r\n              variant=\"outline\"\r\n              size=\"icon-lg\"\r\n              className=\"transition-colors hover:bg-gray-200 dark:border-border/50\"\r\n            />\r\n          }\r\n        >\r\n          <TextUnderline />\r\n        </TooltipTrigger>\r\n        <TooltipContent>Underline</TooltipContent>\r\n      </Tooltip>\r\n    </ButtonGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-toolbar.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

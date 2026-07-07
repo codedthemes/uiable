@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-animated-border",
+  "title": "Animated Button On Hover",
+  "description": "Animated Button variant for button",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-animated-border.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\n\r\n//  ------------------------------ | BUTTON ANIMATED BORDER | ------------------------------  //\r\n\r\nexport default function ButtonAnimatedBorder() {\r\n  return (\r\n    <div className=\"absolute top-1/2 left-1/2 flex size-full -translate-x-1/2 -translate-y-1/2 items-center justify-center\">\r\n      <div className=\"absolute h-[60px] w-[180px]\">\r\n        <Button\r\n          variant=\"ghost\"\r\n          className=\"group relative h-full w-full overflow-hidden rounded-lg border border-border bg-transparent transition-all duration-1000 ease-in-out outline-none group-hover:transition-all\"\r\n        >\r\n          {/* SVG BORDER */}\r\n          <svg\r\n            width=\"180px\"\r\n            height=\"60px\"\r\n            viewBox=\"0 0 180 60\"\r\n            preserveAspectRatio=\"none\"\r\n            className=\"pointer-events-none absolute inset-0 size-full fill-none stroke-mist-800 transition-all duration-1000 ease-in-out [stroke-dasharray:150_480] [stroke-dashoffset:150] group-hover:[stroke-dashoffset:-480] dark:stroke-mist-400\"\r\n          >\r\n            <rect\r\n              x=\"1\"\r\n              y=\"1\"\r\n              width=\"178\"\r\n              height=\"58\"\r\n              rx=\"8\"\r\n              style={{ rx: \"var(--radius)\", ry: \"var(--radius)\" }}\r\n            />\r\n          </svg>\r\n\r\n          {/* TEXT */}\r\n          <span className=\"relative z-10\">Hover me</span>\r\n        </Button>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-animated-border.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

@@ -9,6 +9,9 @@ import {
   useState,
 } from "react"
 
+// third party
+import { type BundledLanguage, codeToHtml } from "shiki"
+
 // shadcn
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -26,10 +29,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-// third party
-import { type BundledLanguage, codeToHtml } from "shiki"
-
-// project
+// project imports
 import Loader from "@/components/Loader"
 import { cn } from "@/lib/utils"
 
@@ -61,15 +61,15 @@ const CodeBlock = memo(
     const [html, setHtml] = useState<string>("")
     const [isLoading, setIsLoading] = useState<boolean>(true)
 
-    const [prevProps, setPrevProps] = useState({ children, lang })
-    if (prevProps.children !== children || prevProps.lang !== lang) {
-      setPrevProps({ children, lang })
-      setIsLoading(true)
-    }
-
     useEffect(() => {
       let mounted = true
-      setIsLoading(true)
+
+      queueMicrotask(() => {
+        if (mounted) {
+          setIsLoading(true)
+        }
+      })
+
       codeToHtml(children, { lang, theme: "one-dark-pro" }).then((res) => {
         if (mounted) {
           setHtml(res)

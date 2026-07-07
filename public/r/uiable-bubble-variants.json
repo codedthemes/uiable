@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-bubble-variants",
+  "title": "Bubble Variants",
+  "description": "Bubble Visual Variants for bubble.",
+  "registryDependencies": [
+    "bubble"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/bubble/bubble-variants.tsx",
+      "content": "// shadcn\r\nimport { Bubble, BubbleContent, BubbleReactions } from \"@/components/ui/bubble\"\r\n\r\n//  ------------------------------ | BUBBLE - VARIANTS | ------------------------------  //\r\n\r\nexport default function BubbleVariants() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-8\">\r\n      <Bubble>\r\n        <BubbleContent className=\"dark:text-white\">\r\n          This is the default primary bubble.\r\n        </BubbleContent>\r\n      </Bubble>\r\n      <Bubble variant=\"secondary\" align=\"end\">\r\n        <BubbleContent>This is the secondary variant.</BubbleContent>\r\n      </Bubble>\r\n      <Bubble variant=\"muted\">\r\n        <BubbleContent>\r\n          This one is muted. It uses a lower emphasis color for the chat bubble.\r\n        </BubbleContent>\r\n        <BubbleReactions role=\"img\" aria-label=\"Reaction: thumbs up\">\r\n          <span>👍</span>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n      <Bubble variant=\"tinted\" align=\"end\">\r\n        <BubbleContent>\r\n          This one is tinted. The tint is a softer color derived from the\r\n          primary color.\r\n        </BubbleContent>\r\n      </Bubble>\r\n      <Bubble variant=\"outline\">\r\n        <BubbleContent>We can also use an outlined variant.</BubbleContent>\r\n      </Bubble>\r\n      <Bubble variant=\"destructive\" align=\"end\">\r\n        <BubbleContent>Or a destructive variant with a reaction.</BubbleContent>\r\n        <BubbleReactions role=\"img\" aria-label=\"Reaction: fire\">\r\n          <span>🔥</span>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/bubble/bubble-variants.tsx"
+    }
+  ],
+  "categories": [
+    "bubble"
+  ],
+  "type": "registry:ui"
+}
