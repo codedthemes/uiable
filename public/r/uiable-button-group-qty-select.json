@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-group-qty-select",
+  "title": "Quantity Selector",
+  "description": "Button Group Quantity Selector variant for button-group.",
+  "registryDependencies": [
+    "button-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button-group/button-group-qty-select.tsx",
+      "content": "import { useState } from \"react\"\r\n// assets\r\nimport { Minus, Plus } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { ButtonGroup } from \"@/components/ui/button-group\"\r\nimport { Input } from \"@/components/ui/input\"\r\n\r\n//  ------------------------------ | BUTTON GROUP - QUANTITY SELECTOR | ------------------------------  //\r\n\r\nexport function ButtonGroupQtySelect() {\r\n  const [qty, setQty] = useState<string>(\"1\")\r\n\r\n  const updateQty = (offset: number) => {\r\n    setQty((prev) => String(Math.max(1, (parseInt(prev, 10) || 1) + offset)))\r\n  }\r\n\r\n  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {\r\n    if (/^\\d*$/.test(e.target.value)) setQty(e.target.value)\r\n  }\r\n\r\n  const handleBlur = () => {\r\n    setQty((prev) => String(Math.max(1, parseInt(prev, 10) || 1)))\r\n  }\r\n\r\n  return (\r\n    <ButtonGroup className=\"py-1 [&>button[data-slot]:first-child]:rounded-l-2xl [&>button[data-slot]:last-child]:rounded-r-2xl!\">\r\n      <Button\r\n        variant=\"outline\"\r\n        aria-label=\"minus\"\r\n        size=\"icon-lg\"\r\n        onClick={() => updateQty(-1)}\r\n        className=\"bg-transparent hover:bg-gray-200 dark:border-border/50\"\r\n      >\r\n        <Minus />\r\n      </Button>\r\n      <Input\r\n        type=\"number\"\r\n        value={qty}\r\n        onChange={handleChange}\r\n        onBlur={handleBlur}\r\n        min={1}\r\n        className=\"z-10 max-w-18 [appearance:textfield] py-1 text-center dark:border-border/50 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none\"\r\n      />\r\n      <Button\r\n        variant=\"outline\"\r\n        aria-label=\"plus\"\r\n        size=\"icon-lg\"\r\n        onClick={() => updateQty(1)}\r\n        className=\"bg-transparent hover:bg-gray-200 dark:border-border/50\"\r\n      >\r\n        <Plus />\r\n      </Button>\r\n    </ButtonGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button-group/button-group-qty-select.tsx"
+    }
+  ],
+  "categories": [
+    "button-group"
+  ],
+  "type": "registry:ui"
+}

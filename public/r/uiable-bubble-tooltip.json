@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-bubble-tooltip",
+  "title": "Tooltip",
+  "description": "Bubble Tooltip variant for bubble.",
+  "registryDependencies": [
+    "bubble"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/bubble/bubble-tooltip.tsx",
+      "content": "// shadcn\r\n\r\n// assets\r\nimport { CheckIcon } from \"lucide-react\"\r\n\r\nimport { Bubble, BubbleContent, BubbleReactions } from \"@/components/ui/bubble\"\r\nimport { Button } from \"@/components/ui/button\"\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger,\r\n} from \"@/components/ui/tooltip\"\r\n\r\n//  ------------------------------ | BUBBLE - TOOLTIP | ------------------------------  //\r\n\r\nexport function BubbleTooltip() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-4\">\r\n      <Bubble variant=\"secondary\">\r\n        <BubbleContent>Did you remove the stale route?</BubbleContent>\r\n      </Bubble>\r\n      <Bubble align=\"end\">\r\n        <BubbleContent className=\"dark:text-white\">\r\n          Yes, removed it from the registry.\r\n        </BubbleContent>\r\n        <BubbleReactions>\r\n          <Tooltip>\r\n            <TooltipTrigger\r\n              render={\r\n                <Button variant=\"ghost\" size=\"icon-xs\">\r\n                  <CheckIcon />\r\n                </Button>\r\n              }\r\n            />\r\n            <TooltipContent>Read on Jan 5, 2026 at 4:32 PM</TooltipContent>\r\n          </Tooltip>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/bubble/bubble-tooltip.tsx"
+    }
+  ],
+  "categories": [
+    "bubble"
+  ],
+  "type": "registry:ui"
+}

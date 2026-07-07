@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-bubble-reactions",
+  "title": "Bubble Reactions",
+  "description": "Bubble Reactions variant for bubble.",
+  "registryDependencies": [
+    "bubble"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/bubble/bubble-reactions.tsx",
+      "content": "\"use client\"\r\n\r\n// shadcn\r\n// third-party\r\nimport { toast } from \"sonner\"\r\n\r\nimport { Bubble, BubbleContent, BubbleReactions } from \"@/components/ui/bubble\"\r\nimport { Button } from \"@/components/ui/button\"\r\n\r\n//  ------------------------------ | BUBBLE - REACTIONS | ------------------------------  //\r\n\r\nexport function BubbleReaction() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-12\">\r\n      <Bubble variant=\"muted\" align=\"end\">\r\n        <BubbleContent>\r\n          I don&apos;t need tests, I know my code works.\r\n        </BubbleContent>\r\n        <BubbleReactions\r\n          align=\"start\"\r\n          role=\"img\"\r\n          aria-label=\"Reactions: thumbs up, surprised\"\r\n        >\r\n          <span>👍</span>\r\n          <span>😮</span>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n      <Bubble variant=\"muted\">\r\n        <BubbleContent>\r\n          Bold. Fine I&apos;ll add some tests. I&apos;ll let you know when\r\n          they&apos;re done.\r\n        </BubbleContent>\r\n        <BubbleReactions\r\n          role=\"img\"\r\n          aria-label=\"Reactions: eyes, rocket, and 2 more\"\r\n        >\r\n          <span>👀</span>\r\n          <span>🚀</span>\r\n          <span>+2</span>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n      <Bubble variant=\"default\" align=\"end\">\r\n        <BubbleContent className=\"dark:text-white\">\r\n          Tests passed on the first try. All 142 of them. Looking good!\r\n        </BubbleContent>\r\n        <BubbleReactions\r\n          side=\"top\"\r\n          align=\"start\"\r\n          role=\"img\"\r\n          aria-label=\"Reactions: party popper, clapping hands\"\r\n        >\r\n          <span>🎉</span>\r\n          <span>👏</span>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n      <Bubble variant=\"destructive\">\r\n        <BubbleContent>Are you sure I can run this command?</BubbleContent>\r\n        <BubbleReactions>\r\n          <Button\r\n            variant=\"ghost\"\r\n            size=\"xs\"\r\n            onClick={() => toast.success(\"You clicked yes, running command...\")}\r\n          >\r\n            Yes, run it\r\n          </Button>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/bubble/bubble-reactions.tsx"
+    }
+  ],
+  "categories": [
+    "bubble"
+  ],
+  "type": "registry:ui"
+}

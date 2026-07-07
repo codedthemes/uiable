@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-checkbox-sizes",
+  "title": "Checkbox Sizes",
+  "description": "Checkbox Size variant for checkbox.",
+  "registryDependencies": [
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/checkbox/checkbox-size.tsx",
+      "content": "// shadcn\r\n\r\n// third party\r\nimport { Checkbox as CheckboxPrimitive } from \"@base-ui/react/checkbox\"\r\n// assets\r\nimport { CheckIcon } from \"lucide-react\"\r\n\r\n// project\r\nimport { cn } from \"@/lib/utils\"\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\"\r\n\r\n// Custom Checkbox component with size variants\r\nfunction Checkbox({\r\n  className,\r\n  size = \"default\",\r\n  ...props\r\n}: CheckboxPrimitive.Root.Props & {\r\n  size?: \"sm\" | \"default\" | \"lg\"\r\n}) {\r\n  return (\r\n    <CheckboxPrimitive.Root\r\n      data-slot=\"checkbox\"\r\n      data-size={size}\r\n      className={cn(\r\n        \"peer group/checkbox relative flex shrink-0 items-center justify-center rounded-[4px] border transition-colors outline-none\",\r\n        \"border-border dark:bg-input/30\",\r\n        // Checked state\r\n        \"data-checked:border-primary data-checked:bg-primary data-checked:text-primary-foreground dark:data-checked:bg-primary\",\r\n        // Focus state\r\n        \"focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50\",\r\n        // Disabled state\r\n        \"group-has-disabled/field:opacity-50 disabled:cursor-not-allowed disabled:opacity-50\",\r\n        // Interactive layout helper\r\n        \"after:absolute after:-inset-x-3 after:-inset-y-2\",\r\n        // Size variants\r\n        \"data-[size=default]:size-[17.5px] data-[size=lg]:size-5 data-[size=sm]:size-3.5\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      <CheckboxPrimitive.Indicator\r\n        data-slot=\"checkbox-indicator\"\r\n        className={cn(\r\n          \"grid place-content-center text-current transition-none\",\r\n          \"group-data-[size=sm]/checkbox:[&>svg]:size-2.5 group-data-[size=sm]/checkbox:[&>svg]:stroke-3\",\r\n          \"group-data-[size=default]/checkbox:[&>svg]:size-3 group-data-[size=default]/checkbox:[&>svg]:stroke-3\",\r\n          \"group-data-[size=lg]/checkbox:[&>svg]:size-3.5 group-data-[size=lg]/checkbox:[&>svg]:stroke-3\"\r\n        )}\r\n      >\r\n        <CheckIcon />\r\n      </CheckboxPrimitive.Indicator>\r\n    </CheckboxPrimitive.Root>\r\n  )\r\n}\r\n\r\n//  ------------------------------ | CHECKBOX - SIZES | ------------------------------  //\r\n\r\nexport function CheckboxSizes() {\r\n  return (\r\n    <FieldGroup className=\"mx-auto flex max-w-40 flex-row flex-wrap\">\r\n      {/* Small */}\r\n      <Field orientation=\"horizontal\">\r\n        <Checkbox\r\n          id=\"checkbox-sm\"\r\n          name=\"checkbox-sm\"\r\n          size=\"sm\"\r\n          defaultChecked\r\n        />\r\n        <FieldLabel htmlFor=\"checkbox-sm\" className=\"text-xs font-normal\">\r\n          Small\r\n        </FieldLabel>\r\n      </Field>\r\n\r\n      {/* Default */}\r\n      <Field orientation=\"horizontal\">\r\n        <Checkbox\r\n          id=\"checkbox-default\"\r\n          name=\"checkbox-default\"\r\n          size=\"default\"\r\n          defaultChecked\r\n        />\r\n        <FieldLabel htmlFor=\"checkbox-default\" className=\"text-sm font-normal\">\r\n          Default\r\n        </FieldLabel>\r\n      </Field>\r\n\r\n      {/* Large */}\r\n      <Field orientation=\"horizontal\">\r\n        <Checkbox\r\n          id=\"checkbox-lg\"\r\n          name=\"checkbox-lg\"\r\n          size=\"lg\"\r\n          defaultChecked\r\n        />\r\n        <FieldLabel htmlFor=\"checkbox-lg\" className=\"text-base font-normal\">\r\n          Large\r\n        </FieldLabel>\r\n      </Field>\r\n    </FieldGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/checkbox/checkbox-size.tsx"
+    }
+  ],
+  "categories": [
+    "checkbox"
+  ],
+  "type": "registry:ui"
+}

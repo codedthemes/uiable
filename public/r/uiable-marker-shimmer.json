@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-marker-shimmer",
+  "title": "Shimmer Marker",
+  "description": "Marker Shimmer variant for marker.",
+  "registryDependencies": [
+    "marker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/marker/marker-shimmer.tsx",
+      "content": "// shadcn\r\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - SHIMMER | ------------------------------  //\r\n\r\nexport function MarkerShimmer() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker role=\"status\">\r\n        <MarkerContent className=\"shimmer\">Thinking...</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\" role=\"status\">\r\n        <MarkerContent className=\"shimmer\">Reading 4 files</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/marker/marker-shimmer.tsx"
+    }
+  ],
+  "categories": [
+    "marker"
+  ],
+  "type": "registry:ui"
+}

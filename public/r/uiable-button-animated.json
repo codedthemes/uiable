@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-button-animated",
+  "title": "Animated Button",
+  "description": "Animated Button variant for button",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-animated.tsx",
+      "content": "\"use client\"\r\n\r\n// shadcn\r\n// third party\r\nimport { motion } from \"framer-motion\"\r\n\r\nimport { Button } from \"@/components/ui/button\"\r\n\r\n//  ------------------------------ | BUTTON ANIMATED | ------------------------------  //\r\n\r\nexport default function ButtonAnimated() {\r\n  return (\r\n    <motion.div\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      whileTap=\"tap\"\r\n      className=\"relative overflow-hidden rounded-full\"\r\n    >\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"relative overflow-hidden rounded-full bg-primary px-8 py-4 text-xs tracking-wider text-white transition-colors duration-300 hover:bg-[#1656e0] hover:text-white\"\r\n      >\r\n        {/* Sliding dark */}\r\n        <motion.span\r\n          className=\"absolute inset-0 z-0 rounded-[full] bg-[#1656e0]\"\r\n          variants={{\r\n            rest: { scaleX: 0 },\r\n            hover: { scaleX: 1 },\r\n          }}\r\n          style={{ originX: 0 }}\r\n          transition={{ duration: 0.35, ease: [0.25, 1, 0.5, 1] }}\r\n        />\r\n\r\n        <span className=\"relative z-10\">Hover me</span>\r\n      </Button>\r\n    </motion.div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-animated.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

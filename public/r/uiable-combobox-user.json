@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-combobox-user",
+  "title": "Users Combobox",
+  "description": "Combobox User variant for combobox.",
+  "registryDependencies": [
+    "combobox"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/combobox/combobox-user.tsx",
+      "content": "// shadcn\r\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"\r\nimport {\r\n  Combobox,\r\n  ComboboxContent,\r\n  ComboboxEmpty,\r\n  ComboboxInput,\r\n  ComboboxItem,\r\n  ComboboxList,\r\n} from \"@/components/ui/combobox\"\r\nimport {\r\n  Item,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemMedia,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\"\r\n\r\n// constants\r\nconst users = [\r\n  {\r\n    id: \"1\",\r\n    name: \"Evil Rabbit\",\r\n    value: \"evil-rabbit\",\r\n    role: \"Lead Designer\",\r\n    avatar: \"/assets/images/user/avatar-1.jpg\",\r\n  },\r\n  {\r\n    id: \"2\",\r\n    name: \"Shadcn\",\r\n    value: \"shadcn\",\r\n    role: \"Founder\",\r\n    avatar: \"/assets/images/user/avatar-2.jpg\",\r\n  },\r\n  {\r\n    id: \"3\",\r\n    name: \"Max Leiter\",\r\n    value: \"max-leiter\",\r\n    role: \"Software Engineer\",\r\n    avatar: \"/assets/images/user/avatar-3.jpg\",\r\n  },\r\n  {\r\n    id: \"4\",\r\n    name: \"Guillermo Rauch\",\r\n    value: \"guillermo-rauch\",\r\n    role: \"CEO\",\r\n    avatar: \"/assets/images/user/avatar-5.jpg\",\r\n  },\r\n  {\r\n    id: \"5\",\r\n    name: \"Dan Abramov\",\r\n    value: \"dan-abramov\",\r\n    role: \"React Core Team\",\r\n    avatar: \"/assets/images/user/avatar-8.jpg\",\r\n  },\r\n  {\r\n    id: \"6\",\r\n    name: \"Sophie Alpert\",\r\n    value: \"sophie-alpert\",\r\n    role: \"React Core Alum\",\r\n    avatar: \"/assets/images/user/avatar-9.jpg\",\r\n  },\r\n  {\r\n    id: \"7\",\r\n    name: \"Rich Harris\",\r\n    value: \"rich-harris\",\r\n    role: \"Creator of Svelte\",\r\n    avatar: \"/assets/images/user/avatar-10.jpg\",\r\n  },\r\n]\r\n\r\n//  ------------------------------ | COMBOBOX - USER | ------------------------------  //\r\n\r\nexport function ComboboxUser() {\r\n  return (\r\n    <Combobox\r\n      items={users}\r\n      itemToStringValue={(user: (typeof users)[number]) => user.name}\r\n      itemToStringLabel={(user: (typeof users)[number]) => user.name}\r\n      defaultValue={users[0]}\r\n    >\r\n      <ComboboxInput placeholder=\"Search users...\" />\r\n      <ComboboxContent>\r\n        <ComboboxEmpty>No users found.</ComboboxEmpty>\r\n        <ComboboxList>\r\n          {(user) => (\r\n            <ComboboxItem key={user.id} value={user}>\r\n              <Item size=\"xs\" className=\"border-none p-0\">\r\n                <ItemMedia>\r\n                  <Avatar className=\"size-8 rounded-sm after:rounded-sm after:border-none\">\r\n                    <AvatarImage src={user.avatar} alt={user.name} />\r\n                    <AvatarFallback className=\"text-[10px] font-semibold\">\r\n                      {user.name\r\n                        .split(\" \")\r\n                        .map((n: string) => n[0])\r\n                        .join(\"\")}\r\n                    </AvatarFallback>\r\n                  </Avatar>\r\n                </ItemMedia>\r\n                <ItemContent>\r\n                  <ItemTitle className=\"whitespace-nowrap\">\r\n                    {user.name}\r\n                  </ItemTitle>\r\n                  <ItemDescription>{user.role}</ItemDescription>\r\n                </ItemContent>\r\n              </Item>\r\n            </ComboboxItem>\r\n          )}\r\n        </ComboboxList>\r\n      </ComboboxContent>\r\n    </Combobox>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/combobox/combobox-user.tsx"
+    }
+  ],
+  "categories": [
+    "combobox"
+  ],
+  "type": "registry:ui"
+}

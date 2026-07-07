@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-attachment-triggers",
+  "title": "Trigger",
+  "description": "Attachment Trigger variant for attachment.",
+  "registryDependencies": [
+    "attachment"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/attachment/attachment-triggers.tsx",
+      "content": "// shadcn\r\n\r\n// assets\r\nimport { CopyIcon, FileSearchIcon, XIcon } from \"lucide-react\"\r\n\r\nimport {\r\n  Attachment,\r\n  AttachmentAction,\r\n  AttachmentActions,\r\n  AttachmentContent,\r\n  AttachmentDescription,\r\n  AttachmentMedia,\r\n  AttachmentTitle,\r\n  AttachmentTrigger,\r\n} from \"@/components/ui/attachment\"\r\nimport {\r\n  Dialog,\r\n  DialogContent,\r\n  DialogDescription,\r\n  DialogHeader,\r\n  DialogTitle,\r\n  DialogTrigger,\r\n} from \"@/components/ui/dialog\"\r\n\r\n//  ------------------------------ | ATTACHMENT - TRIGGER | ------------------------------  //\r\n\r\nexport default function AttachmentTriggers() {\r\n  return (\r\n    <div className=\"mx-auto w-full max-w-sm py-12\">\r\n      <Dialog>\r\n        <Attachment className=\"w-full\">\r\n          <AttachmentMedia>\r\n            <FileSearchIcon />\r\n          </AttachmentMedia>\r\n          <AttachmentContent>\r\n            <AttachmentTitle>research-summary.pdf</AttachmentTitle>\r\n            <AttachmentDescription>Open preview dialog</AttachmentDescription>\r\n          </AttachmentContent>\r\n          <AttachmentActions>\r\n            <AttachmentAction aria-label=\"Copy link\">\r\n              <CopyIcon />\r\n            </AttachmentAction>\r\n            <AttachmentAction aria-label=\"Remove research-summary.pdf\">\r\n              <XIcon />\r\n            </AttachmentAction>\r\n          </AttachmentActions>\r\n          <DialogTrigger\r\n            render={\r\n              <AttachmentTrigger aria-label=\"Preview research-summary.pdf\" />\r\n            }\r\n          />\r\n        </Attachment>\r\n        <DialogContent className=\"sm:max-w-md\">\r\n          <DialogHeader>\r\n            <DialogTitle>research-summary.pdf</DialogTitle>\r\n            <DialogDescription>\r\n              The attachment trigger fills the card and opens the dialog, while\r\n              the actions stay independently clickable above it.\r\n            </DialogDescription>\r\n          </DialogHeader>\r\n        </DialogContent>\r\n      </Dialog>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/attachment/attachment-triggers.tsx"
+    }
+  ],
+  "categories": [
+    "attachment"
+  ],
+  "type": "registry:ui"
+}
