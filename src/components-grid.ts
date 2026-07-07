@@ -331,6 +331,21 @@ export const NAV_BLOCKS: NavSection[] = [
     title: "Layout",
     items: [
       {
+        title: "Dashboard Layout",
+        slug: "dashboard-layout",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Component Layout",
+        slug: "component-layout",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Doc Layout",
+        slug: "doc-layout",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
         title: "Landing",
         slug: "landing",
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
