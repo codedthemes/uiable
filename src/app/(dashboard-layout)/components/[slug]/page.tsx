@@ -81,11 +81,10 @@ export default async function CategoryPage({
     .filter((item: any) => item.categories?.includes(slug))
     .map((item: any) => {
       const relativePath = item.files[0].path
-      const mappedPath =
+      const filePath =
         item.type === "registry:block"
-          ? `src/components/uiable/blocks/${relativePath}`
-          : `src/components/uiable/${relativePath}`
-      const filePath = path.join(process.cwd(), mappedPath)
+          ? path.join(process.cwd(), "src/components/uiable/blocks", relativePath)
+          : path.join(process.cwd(), "src/components/uiable", relativePath)
       let rawCode = ""
       try {
         rawCode = fs.readFileSync(filePath, "utf8")
