@@ -96,7 +96,7 @@ export default function HoverBg({ className = "" }: HoverBgProps) {
   return (
     <div
       ref={glowRef}
-      className={`pointer-events-none absolute inset-0 -z-10 h-full w-full transition-opacity duration-500 ${
+      className={`pointer-events-none absolute inset-0 z-20 h-full w-full transition-opacity duration-500 ${
         hasOpacityClass ? "" : "opacity-60 dark:opacity-40"
       } ${className}`}
       style={{
@@ -110,15 +110,15 @@ export default function HoverBg({ className = "" }: HoverBgProps) {
     >
       {/* The SVG grid pattern repeated across the screen and revealed by the mask */}
       <svg
-        className="pointer-events-none absolute inset-0 h-full w-full text-primary/50 dark:text-primary/35"
+        className="pointer-events-none absolute inset-0 h-full w-full text-primary/50 dark:text-primary"
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
           <pattern
             id="glow-grid-pattern"
             patternUnits="userSpaceOnUse"
-            width="574"
-            height="574"
+            width="282"
+            height="282"
           >
             <SparkleGrid />
           </pattern>

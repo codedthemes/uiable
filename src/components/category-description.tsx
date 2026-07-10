@@ -57,19 +57,21 @@ export default function CategoryDescription({
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <h3 className="capitalize">{data.variantsHeading ?? ""}</h3>
-            <ul className="flex list-disc flex-col gap-3 pl-6">
-              {(data.variants ?? []).map((f: string, i: number) => {
-                const [bold, ...rest] = f.split(". ")
-                return (
-                  <li key={i}>
-                    <b>{bold}:</b> {rest.join(". ")}
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
+          {data.variants && data.variants.length > 0 && (
+            <div className="flex flex-col gap-4">
+              <h3 className="capitalize">{data.variantsHeading ?? ""}</h3>
+              <ul className="flex list-disc flex-col gap-3 pl-6">
+                {data.variants.map((f: string, i: number) => {
+                  const [bold, ...rest] = f.split(". ")
+                  return (
+                    <li key={i}>
+                      <b>{bold}:</b> {rest.join(". ")}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          )}
           <div className="flex flex-col gap-4">
             <h3 className="capitalize">{data.whyUseHeading}</h3>
             <div className="flex flex-col gap-3">
@@ -103,12 +105,14 @@ export default function CategoryDescription({
                 />
               ))}
             </div>
-            <ul className="flex list-disc flex-col gap-3 pl-6">
-              {(data.integrationList ?? []).map((p: string, i: number) => {
-                return <li key={i}>{p}</li>
-              })}
-            </ul>
-            <p>{data.integrationNote ?? ""}</p>
+            {data.integrationList && data.integrationList.length > 0 && (
+              <ul className="flex list-disc flex-col gap-3 pl-6">
+                {data.integrationList.map((p: string, i: number) => {
+                  return <li key={i}>{p}</li>
+                })}
+              </ul>
+            )}
+            {data.integrationNote && <p>{data.integrationNote}</p>}
           </div>
           {data.faqs && data.faqs.length > 0 && (
             <div className="flex flex-col gap-4">

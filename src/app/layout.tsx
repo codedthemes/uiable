@@ -9,6 +9,7 @@ import { Toaster } from "sonner"
 
 // project
 import branding from "@/branding.json"
+import { BackToTop } from "@/components/back-to-top"
 import { ThemePresetStyles } from "@/components/customizer/ThemePresetStyles"
 import { ThemeProvider } from "@/components/theme-provider"
 import Metrics from "@/metrics"
@@ -96,6 +97,7 @@ export default function RootLayout({
           <Toaster richColors />
         </ThemeProvider>
         <Metrics />
+        <BackToTop />
       </body>
     </html>
   )

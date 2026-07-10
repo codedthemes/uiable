@@ -38,7 +38,10 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
     <div className="flex h-screen flex-col overflow-hidden">
       <SidebarProvider className="min-h-0 flex-1">
         <AppSidebar variant="sidebar" collapsible="offcanvas" />
-        <SidebarInset className="flex min-h-0 flex-1 flex-col overflow-y-auto">
+        <SidebarInset
+          id="main-scroll-area"
+          className="flex min-h-0 flex-1 flex-col overflow-y-auto"
+        >
           <header className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-1 bg-background/80 px-4 backdrop-blur-md sm:px-6">
             <SidebarTrigger className="relative mx-1 -ml-1 flex h-11 w-11 items-center justify-center rounded-lg" />
             {/* <SearchBar /> */}
