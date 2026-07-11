@@ -28,12 +28,18 @@ import {
 // project
 import Logo from "./uiable/layout/shared/logo"
 import CATEGORY_COUNTS from "@/category-counts.json"
-import { NAV_CATEGORIES } from "@/components-grid"
+import { NAV_BLOCKS, NAV_CATEGORIES } from "@/components-grid"
+import BlockList from "@/components/uiable/layout/block-list"
 import ComponentList from "@/components/uiable/layout/component-list"
 import ComponentSearch from "@/components/uiable/layout/shared/component-search"
 
 // assets
-import { Component, FileText, ChevronDownIcon } from "lucide-react"
+import {
+  Component,
+  FileText,
+  ChevronDownIcon,
+  LayoutDashboard,
+} from "lucide-react"
 
 //  ------------------------------ | COMPONENT - APP SIDEBAR | ------------------------------  //
 
@@ -42,6 +48,15 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
   const [search, setSearch] = useState("")
 
   const filteredSections = NAV_CATEGORIES.map((section) => ({
+    ...section,
+    items: section.items.filter(
+      (item) =>
+        item.title.toLowerCase().includes(search.toLowerCase()) ||
+        item.slug.toLowerCase().includes(search.toLowerCase())
+    ),
+  })).filter((section) => section.items.length > 0)
+
+  const filteredBlock = NAV_BLOCKS.map((section) => ({
     ...section,
     items: section.items.filter(
       (item) =>
@@ -89,6 +104,16 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
               </SidebarMenuItem>
               <SidebarMenuItem>
                 <SidebarMenuButton
+                  isActive={pathname.startsWith("/blocks")}
+                  render={<Link href="/blocks" />}
+                  tooltip="View All Blocks"
+                >
+                  <LayoutDashboard className="size-5!" />
+                  <span>Blocks</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton
                   isActive={pathname.startsWith("/doc")}
                   render={<Link href="/doc" />}
                   tooltip="Documentation"
@@ -100,6 +125,7 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        {pathname.startsWith("/blocks") && <BlockList search={search} />}
         {pathname.startsWith("/components") && (
           <ComponentList search={search} />
         )}
@@ -127,6 +153,57 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                 </SidebarGroupContent>
               </SidebarGroup>
             )}
+
+            <SidebarGroup className="flex flex-col gap-1">
+              <SidebarGroupLabel className="p-2 text-xs font-medium tracking-normal text-sidebar-ring capitalize">
+                Block
+              </SidebarGroupLabel>
+              {filteredBlock.map((section) => (
+                <Collapsible key={section.title} className="p-0">
+                  <CollapsibleTrigger
+                    render={
+                      <Button
+                        variant="ghost"
+                        className="mb-1 w-full border-0 p-2 text-sidebar-foreground hover:bg-muted-foreground/6 aria-expanded:bg-muted-foreground/6"
+                      />
+                    }
+                  >
+                    <SidebarGroupLabel className="px-0 text-sm font-medium text-sidebar-foreground">
+                      {section.title}
+                    </SidebarGroupLabel>
+                    <ChevronDownIcon className="ml-auto size-4 -rotate-90 transition-all group-data-panel-open/button:rotate-0" />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="flex flex-col items-start">
+                    <SidebarGroupContent>
+                      <SidebarMenu>
+                        {section.items.map((item) => {
+                          const href = `/blocks/${item.slug}`
+                          return (
+                            <SidebarMenuItem key={item.slug}>
+                              <SidebarMenuButton
+                                isActive={pathname === href}
+                                render={<Link href={href} />}
+                                tooltip="License"
+                                className="rounded-lg p-2"
+                              >
+                                <span className="font-medium">
+                                  {item.title}
+                                </span>
+                                <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
+                                  {CATEGORY_COUNTS[
+                                    item.slug as keyof typeof CATEGORY_COUNTS
+                                  ] || 0}
+                                </span>
+                              </SidebarMenuButton>
+                            </SidebarMenuItem>
+                          )
+                        })}
+                      </SidebarMenu>
+                    </SidebarGroupContent>
+                  </CollapsibleContent>
+                </Collapsible>
+              ))}
+            </SidebarGroup>
 
             <SidebarGroup className="flex flex-col gap-1">
               <SidebarGroupLabel className="p-2 text-xs font-medium tracking-normal text-sidebar-ring capitalize">
