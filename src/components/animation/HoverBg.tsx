@@ -96,7 +96,7 @@ export default function HoverBg({ className = "" }: HoverBgProps) {
   return (
     <div
       ref={glowRef}
-      className={`pointer-events-none absolute inset-0 z-20 h-full w-full transition-opacity duration-500 ${
+      className={`pointer-events-none absolute inset-0 -z-10 h-full w-full transition-opacity duration-500 ${
         hasOpacityClass ? "" : "opacity-60 dark:opacity-40"
       } ${className}`}
       style={{
