@@ -2,9 +2,6 @@
 
 import { useCallback, useState } from "react"
 
-// third party
-import { useChat } from "@ai-sdk/react"
-
 // shadcn
 import { Button } from "@/components/ui/button"
 import {
@@ -42,9 +39,12 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-// project imports
-import { createChat, getMessageText } from "@/lib/ai"
+// third party
+import { useChat } from "@ai-sdk/react"
+
+// project
 import { MessageAnimated } from "@/components/message-animated"
+import { createChat, getMessageText } from "@/lib/ai"
 
 // assets
 import {
@@ -57,6 +57,7 @@ import {
   TelescopeIcon,
 } from "lucide-react"
 
+// constants
 const DEFAULT_PEEK = 64
 
 const chat = createChat()

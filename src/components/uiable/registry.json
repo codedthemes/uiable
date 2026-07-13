@@ -10478,6 +10478,94 @@
       "categories": [
         "message-scroller"
       ]
+    },
+    {
+      "name": "uiable-radio-group-list",
+      "type": "registry:ui",
+      "title": "List Radio Group",
+      "description": "Radio Group List variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-list.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-list.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
+      ]
+    },
+    {
+      "name": "uiable-radio-group-colors",
+      "type": "registry:ui",
+      "title": "Colors Radio Group",
+      "description": "Color Radio Group variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-colors.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-colors.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
+      ]
+    },
+    {
+      "name": "uiable-radio-group-box",
+      "type": "registry:ui",
+      "title": "Box Radio Group",
+      "description": "Radio Group Box variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-box.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-box.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
+      ]
+    },
+    {
+      "name": "uiable-radio-group-sizes",
+      "type": "registry:ui",
+      "title": "Sizes Radio Group",
+      "description": "Size Radio Group variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-sizes.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
+      ]
     }
   ]
 }

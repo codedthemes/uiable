@@ -29,7 +29,7 @@ import {
 } from "@/components/ui/message-scroller"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 
-// project imports
+// project
 import { MessageAnimated } from "@/components/message-animated"
 
 // assets
@@ -39,6 +39,7 @@ import {
   RotateCwIcon,
 } from "lucide-react"
 
+// types
 type AnchorRole = "user" | "assistant"
 
 type ChatMessage = {
@@ -47,6 +48,7 @@ type ChatMessage = {
   text: string
 }
 
+// constants
 const scriptedMessages: ChatMessage[] = [
   {
     id: "anchor-1-user",

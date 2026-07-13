@@ -2,32 +2,29 @@
 
 import { ComponentType, useEffect, useState } from "react"
 import Link from "next/link"
-// project
-import CATEGORY_COUNTS from "@/category-counts.json"
-import { NAV_BLOCKS } from "@/components-grid"
-// assets
-import Intro from "@/images/svg/Intro"
-import { Link1 } from "iconsax-reactjs"
 
 // shadcn
 import { Card, CardContent } from "@/components/ui/card"
+
+// project
+import CATEGORY_COUNTS from "@/category-counts.json"
+import { NAV_BLOCKS } from "@/components-grid"
+import Intro from "@/images/svg/Intro"
+
+// assets
+import { Link1 } from "iconsax-reactjs"
+
+// types
+type SvgIconComponent = ComponentType<{ className?: string }>
+type SvgIconModule = { default: SvgIconComponent }
 
 /**
  * SVG Mapping for categories whose slug doesn't match the filename directly
  */
 const SVG_MAPPING: Record<string, string> = {
   cta: "CallToAction",
-  "e-commerce": "ECommerce",
-  hero: "Intro",
-  "auth-layout": "ComponentSoon",
-  "dashboard-layout": "ComponentSoon",
-  "component-layout": "ComponentSoon",
-  "doc-layout": "ComponentSoon",
   landing: "ComponentSoon",
 }
-
-type SvgIconComponent = ComponentType<{ className?: string }>
-type SvgIconModule = { default: SvgIconComponent }
 
 /**
  * Dynamic SVG importers map.
@@ -38,17 +35,8 @@ const SVG_IMPORTERS: Record<string, () => Promise<SvgIconModule>> = {
   ComponentSoon: () => import("@/images/svg/ComponentSoon"),
   contact: () => import("@/images/svg/contact"),
   content: () => import("@/images/svg/content"),
-  ECommerce: () => import("@/images/svg/ECommerce"),
   faq: () => import("@/images/svg/faq"),
-  footer: () => import("@/images/svg/footer"),
-  gallery: () => import("@/images/svg/gallery"),
-  feature: () => import("@/images/svg/feature"),
   Intro: () => import("@/images/svg/Intro"),
-  portfolio: () => import("@/images/svg/portfolio"),
-  pricing: () => import("@/images/svg/pricing"),
-  process: () => import("@/images/svg/process"),
-  team: () => import("@/images/svg/team"),
-  testimonial: () => import("@/images/svg/testimonial"),
 }
 
 /**

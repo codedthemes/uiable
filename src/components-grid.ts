@@ -328,26 +328,26 @@ export const NAV_CATEGORIES: NavSection[] = [
 
 export const NAV_BLOCKS: NavSection[] = [
   {
-    title: "Layout",
+    title: "UI",
     items: [
       {
-        title: "Dashboard Layout",
-        slug: "dashboard-layout",
+        title: "Call To Action",
+        slug: "cta",
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
-        title: "Component Layout",
-        slug: "component-layout",
+        title: "Contact",
+        slug: "contact",
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
-        title: "Doc Layout",
-        slug: "doc-layout",
+        title: "Content",
+        slug: "content",
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
-        title: "Landing",
-        slug: "landing",
+        title: "FAQ",
+        slug: "faq",
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
     ],
