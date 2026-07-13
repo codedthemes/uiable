@@ -28,6 +28,7 @@ import {
 // constants
 const navlinks = [
   { label: "Components", href: "/components" },
+  { label: "Blocks", href: "/blocks" },
   { label: "Get Started", href: "/doc/introduction" },
 ]
 

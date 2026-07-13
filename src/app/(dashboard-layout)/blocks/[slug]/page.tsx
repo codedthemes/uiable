@@ -6,6 +6,8 @@ import { notFound } from "next/navigation"
 // project
 import branding from "@/branding.json"
 import { blockCategoryInfoMap } from "@/data/blocks"
+import uiRegistry from "@/components/uiable/registry.json"
+import blocksRegistry from "@/components/uiable/blocks/registry.json"
 
 import BlockView from "@/components/block-view"
 import CategoryDescription from "@/components/category-description"
@@ -52,16 +54,6 @@ export default async function BlockCategoryPage({
 }) {
   const { slug: category } = await params
 
-  const uiRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/registry.json"
-  )
-  const blocksRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/blocks/registry.json"
-  )
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
-  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
   const registryItems = [
     ...(uiRegistry.items || []),
     ...(blocksRegistry.items || []),
@@ -71,11 +63,10 @@ export default async function BlockCategoryPage({
     .filter((item: any) => item.categories?.includes(category))
     .map((item: any) => {
       const relativePath = item.files[0].path
-      const mappedPath =
+      const filePath =
         item.type === "registry:block"
-          ? `src/components/uiable/blocks/${relativePath}`
-          : `src/components/uiable/${relativePath}`
-      const filePath = path.join(process.cwd(), mappedPath)
+          ? path.join(process.cwd(), "src", "components", "uiable", "blocks", relativePath)
+          : path.join(process.cwd(), "src", "components", "uiable", relativePath)
       let rawCode = ""
       try {
         rawCode = fs.readFileSync(filePath, "utf8")
@@ -107,16 +98,6 @@ export default async function BlockCategoryPage({
 }
 
 export async function generateStaticParams() {
-  const uiRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/registry.json"
-  )
-  const blocksRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/blocks/registry.json"
-  )
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
-  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
   const registryItems = [
     ...(uiRegistry.items || []),
     ...(blocksRegistry.items || []),
