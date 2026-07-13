@@ -51,10 +51,12 @@ export function BackToTop() {
   }, [])
 
   const scrollToTop = useCallback(() => {
-    document
-      .getElementById("main-scroll-area")
-      ?.scrollTo({ top: 0, behavior: "smooth" }) ??
+    const scrollArea = document.getElementById("main-scroll-area")
+    if (scrollArea) {
+      scrollArea.scrollTo({ top: 0, behavior: "smooth" })
+    } else {
       window.scrollTo({ top: 0, behavior: "smooth" })
+    }
   }, [])
 
   return (
