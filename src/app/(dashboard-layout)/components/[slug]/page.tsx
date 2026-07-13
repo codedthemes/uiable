@@ -10,6 +10,8 @@ import branding from "@/branding.json"
 import CategoryDescription from "@/components/category-description"
 import CategoryView from "@/components/category-view"
 import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
+import uiRegistry from "@/components/uiable/registry.json"
+import blocksRegistry from "@/components/uiable/blocks/registry.json"
 
 const categoryInfoMap = {
   ...componentCategoryInfoMap,
@@ -62,16 +64,6 @@ export default async function CategoryPage({
     notFound()
   }
 
-  const uiRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/registry.json"
-  )
-  const blocksRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/blocks/registry.json"
-  )
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
-  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
   const registryItems = [
     ...(uiRegistry.items || []),
     ...(blocksRegistry.items || []),
@@ -83,8 +75,8 @@ export default async function CategoryPage({
       const relativePath = item.files[0].path
       const filePath =
         item.type === "registry:block"
-          ? path.join(process.cwd(), "src/components/uiable/blocks", relativePath)
-          : path.join(process.cwd(), "src/components/uiable", relativePath)
+          ? path.join(process.cwd(), "src", "components", "uiable", "blocks", relativePath)
+          : path.join(process.cwd(), "src", "components", "uiable", relativePath)
       let rawCode = ""
       try {
         rawCode = fs.readFileSync(filePath, "utf8")
@@ -117,16 +109,6 @@ export default async function CategoryPage({
 }
 
 export async function generateStaticParams() {
-  const uiRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/registry.json"
-  )
-  const blocksRegistryPath = path.join(
-    process.cwd(),
-    "src/components/uiable/blocks/registry.json"
-  )
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
-  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
   const registryItems = [
     ...(uiRegistry.items || []),
     ...(blocksRegistry.items || []),
