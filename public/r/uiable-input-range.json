@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-range",
+  "title": "Range Input",
+  "description": "Input Range variant for input.",
+  "registryDependencies": [
+    "input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-range.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport { Field, FieldDescription } from \"@/components/ui/field\"\r\nimport { Input } from \"@/components/ui/input\"\r\nimport { Slider } from \"@/components/ui/slider\"\r\n\r\n//  ------------------------------ | INPUT - RANGE | ------------------------------  //\r\n\r\nexport function InputRange() {\r\n  const [range, setRange] = useState<number[]>([20, 80])\r\n\r\n  const handleMinChange = (e: React.ChangeEvent<HTMLInputElement>) => {\r\n    const val = Math.min(Number(e.target.value) || 0, range[1])\r\n    setRange([val, range[1]])\r\n  }\r\n\r\n  const handleMaxChange = (e: React.ChangeEvent<HTMLInputElement>) => {\r\n    const val = Math.max(Number(e.target.value) || 0, range[0])\r\n    setRange([range[0], val])\r\n  }\r\n\r\n  const handleSliderChange = (values: number | readonly number[]) => {\r\n    if (Array.isArray(values)) {\r\n      setRange(values as number[])\r\n    }\r\n  }\r\n\r\n  return (\r\n    <Field className=\"w-full max-w-md\">\r\n      <div className=\"flex flex-col gap-5 rounded-xl border border-border bg-input/10 p-5 shadow-xs\">\r\n        {/* Slider Controls */}\r\n        <div className=\"px-2 py-3\">\r\n          <Slider\r\n            value={range}\r\n            min={0}\r\n            max={100}\r\n            onValueChange={handleSliderChange}\r\n          />\r\n        </div>\r\n\r\n        {/* Synced Number Input Fields */}\r\n        <div className=\"flex items-center gap-4\">\r\n          <div className=\"flex-1\">\r\n            <label\r\n              htmlFor=\"range-min\"\r\n              className=\"mb-1.5 block text-xs font-medium text-muted-foreground\"\r\n            >\r\n              Min Price ($)\r\n            </label>\r\n            <Input\r\n              id=\"range-min\"\r\n              type=\"number\"\r\n              min={0}\r\n              max={100}\r\n              value={range[0]}\r\n              onChange={handleMinChange}\r\n              className=\"h-9 px-2.5 py-1 text-sm\"\r\n            />\r\n          </div>\r\n          <span className=\"mt-5 text-muted-foreground select-none\">—</span>\r\n          <div className=\"flex-1\">\r\n            <label\r\n              htmlFor=\"range-max\"\r\n              className=\"mb-1.5 block text-xs font-medium text-muted-foreground\"\r\n            >\r\n              Max Price ($)\r\n            </label>\r\n            <Input\r\n              id=\"range-max\"\r\n              type=\"number\"\r\n              min={0}\r\n              max={100}\r\n              value={range[1]}\r\n              onChange={handleMaxChange}\r\n              className=\"h-9 px-2.5 py-1 text-sm\"\r\n            />\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <FieldDescription>\r\n        Enter values or drag the slider thumbs to filter results.\r\n      </FieldDescription>\r\n    </Field>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-range.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

@@ -5,8 +5,8 @@
   "generatedFrom": "registry.json",
   "counts": {
     "total": 562,
-    "blocks": 7,
-    "components": 555
+    "blocks": 12,
+    "components": 550
   },
   "categories": [
     "accordion",
@@ -13885,7 +13885,7 @@
     },
     {
       "name": "uiable-block-cta-1",
-      "kind": "component",
+      "kind": "block",
       "type": "registry:block",
       "title": "Call To Action 1",
       "description": "Call To Action variant for block.",
@@ -13911,7 +13911,7 @@
     },
     {
       "name": "uiable-block-cta-2",
-      "kind": "component",
+      "kind": "block",
       "type": "registry:block",
       "title": "Call To Action 2",
       "description": "Call To Action variant for block.",
@@ -13937,7 +13937,7 @@
     },
     {
       "name": "uiable-block-contact-1",
-      "kind": "component",
+      "kind": "block",
       "type": "registry:block",
       "title": "Contact 1",
       "description": "Contact variant for block.",
@@ -13961,7 +13961,7 @@
     },
     {
       "name": "uiable-block-content-1",
-      "kind": "component",
+      "kind": "block",
       "type": "registry:block",
       "title": "Content 1",
       "description": "Content variant for block.",
@@ -13985,7 +13985,7 @@
     },
     {
       "name": "uiable-block-faq-1",
-      "kind": "component",
+      "kind": "block",
       "type": "registry:block",
       "title": "FAQ 1",
       "description": "FAQ variant for block.",

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-date-picker-neutral",
+  "title": "Neutral Date & Time Picker",
+  "description": "Neutral Date & Time Picker variant for date-picker.",
+  "registryDependencies": [
+    "date-picker"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/date-picker/date-picker-neutral.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\"\r\nimport { Input } from \"@/components/ui/input\"\r\n\r\n//  ------------------------------ | DATE PICKER - NEUTRAL | ------------------------------  //\r\n\r\nexport function DatePickerNeutral() {\r\n  return (\r\n    <FieldGroup className=\"mx-auto max-w-xs flex-row flex-wrap\">\r\n      <Field>\r\n        <FieldLabel htmlFor=\"date-picker-neutral\">Date</FieldLabel>\r\n        <Input id=\"date-picker-neutral\" type=\"date\" />\r\n      </Field>\r\n      <Field>\r\n        <FieldLabel htmlFor=\"time-picker-neutral\">Time</FieldLabel>\r\n        <Input id=\"time-picker-neutral\" type=\"time\" />\r\n      </Field>\r\n    </FieldGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/date-picker/date-picker-neutral.tsx"
+    }
+  ],
+  "categories": [
+    "date-picker"
+  ],
+  "type": "registry:ui"
+}

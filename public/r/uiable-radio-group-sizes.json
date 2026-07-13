@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-radio-group-sizes",
+  "title": "Sizes Radio Group",
+  "description": "Size Radio Group variant for radio-group.",
+  "registryDependencies": [
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/radio-group/radio-group-sizes.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\"\r\n\r\n//  ------------------------------ | RADIO GROUP - SIZES | ------------------------------  //\r\n\r\n// constants\r\nconst sizes = [\r\n  { value: \"xs\", label: \"XS\", description: \"Extra Small\" },\r\n  { value: \"sm\", label: \"SM\", description: \"Small\" },\r\n  { value: \"md\", label: \"MD\", description: \"Medium\" },\r\n  { value: \"lg\", label: \"LG\", description: \"Large\" },\r\n  { value: \"xl\", label: \"XL\", description: \"Extra Large\" },\r\n]\r\n\r\nexport function RadioGroupSizes() {\r\n  const [value, setValue] = useState(\"md\")\r\n\r\n  return (\r\n    <RadioGroup\r\n      value={value}\r\n      onValueChange={setValue}\r\n      className=\"flex flex-wrap justify-center gap-2\"\r\n    >\r\n      {sizes.map((size) => {\r\n        const isSelected = value === size.value\r\n        return (\r\n          <label\r\n            key={size.value}\r\n            htmlFor={`size-${size.value}`}\r\n            className={`flex h-10 min-w-[3rem] cursor-pointer items-center justify-center rounded-lg border px-3 text-sm font-semibold transition-all duration-150 ${\r\n              isSelected\r\n                ? \"border-primary bg-primary text-primary-foreground shadow-sm dark:text-white\"\r\n                : \"border-border bg-card text-muted-foreground hover:border-primary/50 hover:text-foreground\"\r\n            }`}\r\n          >\r\n            <RadioGroupItem\r\n              value={size.value}\r\n              id={`size-${size.value}`}\r\n              className=\"hidden\"\r\n            />\r\n            {size.label}\r\n          </label>\r\n        )\r\n      })}\r\n    </RadioGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/radio-group/radio-group-sizes.tsx"
+    }
+  ],
+  "categories": [
+    "radio-group"
+  ],
+  "type": "registry:ui"
+}

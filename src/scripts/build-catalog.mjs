@@ -37,7 +37,7 @@ const BASE_URL = (
 ).replace(/\/$/, "");
 
 // Categories that denote a composable page-level block (vs a primitive component).
-const BLOCK_CATEGORIES = new Set(["landing"]);
+const BLOCK_CATEGORIES = new Set(["landing", "cta", "contact", "content", "faq"]);
 
 const isBlock = (item) =>
   (item.categories || []).some((c) => BLOCK_CATEGORIES.has(c));
