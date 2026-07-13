@@ -50,7 +50,7 @@ export default function Hero() {
         }}
       />
 
-      <HoverBg className="opacity-60 dark:opacity-45" />
+      <HoverBg className="opacity-60 dark:opacity-60" />
 
       <div className="relative z-10 flex items-center justify-center">
         <Badge
