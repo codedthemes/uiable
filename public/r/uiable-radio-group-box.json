@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-radio-group-box",
+  "title": "Box Radio Group",
+  "description": "Radio Group Box variant for radio-group.",
+  "registryDependencies": [
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/radio-group/radio-group-box.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\r\nimport { Badge } from \"@/components/ui/badge\"\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\"\r\n\r\n// assets\r\nimport { Cloud, HardDrive, Server } from \"lucide-react\"\r\n\r\n// constants\r\nconst plans = [\r\n  {\r\n    value: \"local\",\r\n    icon: HardDrive,\r\n    label: \"Local\",\r\n    description: \"Stored on your device\",\r\n    badge: \"Free\",\r\n  },\r\n  {\r\n    value: \"cloud\",\r\n    icon: Cloud,\r\n    label: \"Cloud\",\r\n    description: \"Synced across devices\",\r\n    badge: \"$5/mo\",\r\n  },\r\n  {\r\n    value: \"server\",\r\n    icon: Server,\r\n    label: \"Server\",\r\n    description: \"Dedicated infrastructure\",\r\n    badge: \"$20/mo\",\r\n  },\r\n]\r\n\r\n//  ------------------------------ | RADIO GROUP - BOX | ------------------------------  //\r\n\r\nexport function RadioGroupBox() {\r\n  const [value, setValue] = useState(\"cloud\")\r\n\r\n  return (\r\n    <RadioGroup\r\n      value={value}\r\n      onValueChange={setValue}\r\n      className=\"grid grid-cols-1 gap-3 md:grid-cols-3\"\r\n    >\r\n      {plans.map((plan) => {\r\n        const Icon = plan.icon\r\n        const isSelected = value === plan.value\r\n        return (\r\n          <label\r\n            key={plan.value}\r\n            htmlFor={`box-${plan.value}`}\r\n            className={`relative flex cursor-pointer flex-col gap-3 rounded-xl border p-4 transition-all duration-150 ${\r\n              isSelected\r\n                ? \"border-primary bg-primary/5 shadow-sm ring-1 ring-primary\"\r\n                : \"border-border bg-card hover:border-primary/40 hover:bg-muted/30\"\r\n            }`}\r\n          >\r\n            <div className=\"flex items-center justify-between\">\r\n              <Avatar className=\"size-8 rounded-lg after:rounded-lg after:border-0\">\r\n                <AvatarFallback\r\n                  className={`rounded-lg transition-colors ${\r\n                    isSelected\r\n                      ? \"bg-primary/15 text-primary\"\r\n                      : \"bg-muted text-muted-foreground\"\r\n                  }`}\r\n                >\r\n                  <Icon className=\"size-4\" />\r\n                </AvatarFallback>\r\n              </Avatar>\r\n              <RadioGroupItem\r\n                value={plan.value}\r\n                id={`box-${plan.value}`}\r\n                className=\"mt-0.5\"\r\n              />\r\n            </div>\r\n            <div className=\"flex flex-col gap-1\">\r\n              <span className=\"text-sm leading-none font-semibold\">\r\n                {plan.label}\r\n              </span>\r\n              <span className=\"text-xs text-muted-foreground\">\r\n                {plan.description}\r\n              </span>\r\n            </div>\r\n            <Badge\r\n              variant=\"secondary\"\r\n              className={\r\n                isSelected\r\n                  ? \"bg-primary/10 text-primary\"\r\n                  : \"bg-muted text-muted-foreground\"\r\n              }\r\n            >\r\n              {plan.badge}\r\n            </Badge>\r\n          </label>\r\n        )\r\n      })}\r\n    </RadioGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/radio-group/radio-group-box.tsx"
+    }
+  ],
+  "categories": [
+    "radio-group"
+  ],
+  "type": "registry:ui"
+}

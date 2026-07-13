@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-input-otp-outlined",
+  "title": "Outlined Input Otp",
+  "description": "Input Otp Outlined variant for input-otp",
+  "registryDependencies": [
+    "input-otp"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-otp/input-otp-outlined.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport {\r\n  InputOTP,\r\n  InputOTPGroup,\r\n  InputOTPSlot,\r\n} from \"@/components/ui/input-otp\"\r\n\r\n//  ------------------------------ | INPUT OTP - OUTLINED | ------------------------------  //\r\n\r\nexport function InputOTPOutlined() {\r\n  const [value, setValue] = useState(\"\")\r\n\r\n  return (\r\n    <div className=\"flex flex-col items-center gap-4\">\r\n      <InputOTP maxLength={6} value={value} onChange={(val) => setValue(val)}>\r\n        <InputOTPGroup className=\"gap-2\">\r\n          {[0, 1, 2, 3, 4, 5].map((i) => (\r\n            <InputOTPSlot\r\n              key={i}\r\n              index={i}\r\n              className=\"rounded-md border-2 border-border bg-background shadow-none transition-colors duration-150 focus-within:border-primary data-[active=true]:border-primary data-[active=true]:shadow-sm dark:bg-background\"\r\n            />\r\n          ))}\r\n        </InputOTPGroup>\r\n      </InputOTP>\r\n\r\n      <p className=\"text-sm text-muted-foreground\">\r\n        {value.length === 6 ? \"✓ Code complete\" : \"Enter your 6-digit code\"}\r\n      </p>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-otp/input-otp-outlined.tsx"
+    }
+  ],
+  "categories": [
+    "input-otp"
+  ],
+  "type": "registry:ui"
+}

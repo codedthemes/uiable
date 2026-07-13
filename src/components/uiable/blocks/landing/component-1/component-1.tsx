@@ -19,6 +19,7 @@ import ToggleGroupSvg from "@/images/svg/ToggleGroup"
 // assets
 import { IconArrowUpRight } from "@tabler/icons-react"
 
+// constants
 const components_data = [
   {
     title: "Button",

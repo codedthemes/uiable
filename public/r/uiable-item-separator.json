@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-separator",
+  "title": "Separator Item",
+  "description": "Items visually divided by separator lines for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-separator.tsx",
+      "content": "// assets\r\nimport { Activity, CreditCard, Mail, Users } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\r\nimport { Badge } from \"@/components/ui/badge\"\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemMedia,\r\n  ItemSeparator,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\"\r\n\r\n//  ------------------------------ | ITEM - SEPARATOR | ------------------------------  //\r\n\r\nconst notifications = [\r\n  {\r\n    id: \"mail\",\r\n    icon: Mail,\r\n    iconColor: \"text-sky-500\",\r\n    bgColor: \"bg-sky-50 dark:bg-sky-950\",\r\n    title: \"New Message\",\r\n    description: \"Sarah left a comment on your latest post.\",\r\n    badge: \"2m ago\",\r\n    badgeVariant: \"secondary\" as const,\r\n  },\r\n  {\r\n    id: \"users\",\r\n    icon: Users,\r\n    iconColor: \"text-violet-500\",\r\n    bgColor: \"bg-violet-50 dark:bg-violet-950\",\r\n    title: \"Team Invite\",\r\n    description: \"You've been added to the Design Systems team.\",\r\n    badge: \"1h ago\",\r\n    badgeVariant: \"secondary\" as const,\r\n  },\r\n  {\r\n    id: \"activity\",\r\n    icon: Activity,\r\n    iconColor: \"text-rose-500\",\r\n    bgColor: \"bg-rose-50 dark:bg-rose-950\",\r\n    title: \"Usage Alert\",\r\n    description: \"API usage reached 90% of the monthly quota.\",\r\n    badge: \"Critical\",\r\n    badgeVariant: \"destructive\" as const,\r\n  },\r\n  {\r\n    id: \"billing\",\r\n    icon: CreditCard,\r\n    iconColor: \"text-emerald-500\",\r\n    bgColor: \"bg-emerald-50 dark:bg-emerald-950\",\r\n    title: \"Payment Received\",\r\n    description: \"Invoice #1042 has been paid successfully.\",\r\n    badge: \"Paid\",\r\n    badgeVariant: \"outline\" as const,\r\n  },\r\n]\r\n\r\n//  ------------------------------ | ITEM - SEPARATOR | ------------------------------  //\r\n\r\nexport function ItemSeparatorDemo() {\r\n  return (\r\n    <div className=\"w-full max-w-md\">\r\n      <ItemGroup className=\"gap-0 p-2\">\r\n        {notifications.map((item, index) => {\r\n          const Icon = item.icon\r\n          return (\r\n            <div key={item.id}>\r\n              <Item className=\"cursor-pointer border-0 px-2 transition-colors hover:bg-muted/30\">\r\n                <ItemMedia>\r\n                  <Avatar\r\n                    className={`size-9 rounded-lg after:border-none ${item.bgColor}`}\r\n                  >\r\n                    <AvatarFallback\r\n                      className={`rounded-lg bg-transparent ${item.iconColor}`}\r\n                    >\r\n                      <Icon className=\"size-4\" />\r\n                    </AvatarFallback>\r\n                  </Avatar>\r\n                </ItemMedia>\r\n                <ItemContent>\r\n                  <ItemTitle className=\"text-sm\">{item.title}</ItemTitle>\r\n                  <ItemDescription className=\"text-xs\">\r\n                    {item.description}\r\n                  </ItemDescription>\r\n                </ItemContent>\r\n                <ItemActions>\r\n                  <Badge variant={item.badgeVariant} className=\"text-xs\">\r\n                    {item.badge}\r\n                  </Badge>\r\n                </ItemActions>\r\n              </Item>\r\n              {index < notifications.length - 1 && (\r\n                <ItemSeparator className=\"my-1\" />\r\n              )}\r\n            </div>\r\n          )\r\n        })}\r\n      </ItemGroup>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-separator.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

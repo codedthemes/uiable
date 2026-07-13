@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-item-switch",
+  "title": "Switch Item",
+  "description": "Item with a toggle switch for item.",
+  "registryDependencies": [
+    "item"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/item/item-switch.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { Bell, Globe, Lock, Moon } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemMedia,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\"\r\nimport { Switch } from \"@/components/ui/switch\"\r\n\r\nconst settings = [\r\n  {\r\n    id: \"dark-mode\",\r\n    icon: Moon,\r\n    iconColor: \"text-violet-500\",\r\n    title: \"Dark Mode\",\r\n    description: \"Switch the interface to a darker theme.\",\r\n    defaultChecked: false,\r\n  },\r\n  {\r\n    id: \"notifications\",\r\n    icon: Bell,\r\n    iconColor: \"text-blue-500\",\r\n    title: \"Push Notifications\",\r\n    description: \"Receive alerts for messages and updates.\",\r\n    defaultChecked: true,\r\n  },\r\n  {\r\n    id: \"privacy\",\r\n    icon: Lock,\r\n    iconColor: \"text-emerald-500\",\r\n    title: \"Private Profile\",\r\n    description: \"Only approved followers can see your posts.\",\r\n    defaultChecked: true,\r\n  },\r\n  {\r\n    id: \"language\",\r\n    icon: Globe,\r\n    iconColor: \"text-orange-500\",\r\n    title: \"Auto-translate\",\r\n    description: \"Automatically translate content to your language.\",\r\n    defaultChecked: false,\r\n  },\r\n]\r\n\r\n//  ------------------------------ | ITEM - SWITCH | ------------------------------  //\r\n\r\nexport function ItemSwitch() {\r\n  const [checked, setChecked] = useState<Record<string, boolean>>(\r\n    Object.fromEntries(settings.map((s) => [s.id, s.defaultChecked]))\r\n  )\r\n\r\n  return (\r\n    <ItemGroup className=\"w-full max-w-md\">\r\n      {settings.map(({ id, icon: Icon, iconColor, title, description }) => (\r\n        <Item key={id} variant=\"outline\">\r\n          <ItemMedia variant=\"icon\">\r\n            <Icon className={`size-5 ${iconColor}`} />\r\n          </ItemMedia>\r\n          <ItemContent>\r\n            <ItemTitle>{title}</ItemTitle>\r\n            <ItemDescription>{description}</ItemDescription>\r\n          </ItemContent>\r\n          <ItemActions>\r\n            <Switch\r\n              id={`switch-${id}`}\r\n              checked={checked[id]}\r\n              onCheckedChange={(val) =>\r\n                setChecked((prev) => ({ ...prev, [id]: val }))\r\n              }\r\n            />\r\n          </ItemActions>\r\n        </Item>\r\n      ))}\r\n    </ItemGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/item/item-switch.tsx"
+    }
+  ],
+  "categories": [
+    "item"
+  ],
+  "type": "registry:ui"
+}

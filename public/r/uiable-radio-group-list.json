@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-radio-group-list",
+  "title": "List Radio Group",
+  "description": "Radio Group List variant for radio-group.",
+  "registryDependencies": [
+    "radio-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/radio-group/radio-group-list.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\"\r\n\r\n// assets\r\nimport { Globe, Lock, Users } from \"lucide-react\"\r\n\r\n//  ------------------------------ | RADIO GROUP - LIST | ------------------------------  //\r\n\r\n// constants\r\nconst options = [\r\n  {\r\n    value: \"public\",\r\n    icon: Globe,\r\n    label: \"Public\",\r\n    description: \"Anyone on the internet can see this.\",\r\n  },\r\n  {\r\n    value: \"team\",\r\n    icon: Users,\r\n    label: \"Team Only\",\r\n    description: \"Only members of your team can access.\",\r\n  },\r\n  {\r\n    value: \"private\",\r\n    icon: Lock,\r\n    label: \"Private\",\r\n    description: \"Only you can see this content.\",\r\n  },\r\n]\r\n\r\n//  ------------------------------ | RADIO GROUP - LIST | ------------------------------  //\r\n\r\nexport function RadioGroupList() {\r\n  const [value, setValue] = useState(\"team\")\r\n\r\n  return (\r\n    <RadioGroup\r\n      value={value}\r\n      onValueChange={setValue}\r\n      className=\"w-full max-w-sm gap-0 overflow-hidden rounded-xl border border-border bg-card\"\r\n    >\r\n      {options.map((opt, idx) => {\r\n        const Icon = opt.icon\r\n        const isSelected = value === opt.value\r\n        return (\r\n          <label\r\n            key={opt.value}\r\n            htmlFor={`list-${opt.value}`}\r\n            className={`flex cursor-pointer items-center gap-4 px-5 py-4 transition-colors ${\r\n              idx !== options.length - 1 ? \"border-b border-border\" : \"\"\r\n            } ${isSelected ? \"bg-primary/5\" : \"hover:bg-muted/40\"}`}\r\n          >\r\n            <Avatar className=\"size-9 rounded-lg after:rounded-lg after:border-0\">\r\n              <AvatarFallback\r\n                className={`rounded-lg transition-colors ${\r\n                  isSelected\r\n                    ? \"bg-primary/10 text-primary\"\r\n                    : \"bg-muted text-muted-foreground\"\r\n                }`}\r\n              >\r\n                <Icon className=\"size-4\" />\r\n              </AvatarFallback>\r\n            </Avatar>\r\n            <span className=\"flex flex-1 flex-col gap-0.5\">\r\n              <span className=\"text-sm leading-none font-medium\">\r\n                {opt.label}\r\n              </span>\r\n              <span className=\"text-xs text-muted-foreground\">\r\n                {opt.description}\r\n              </span>\r\n            </span>\r\n            <RadioGroupItem value={opt.value} id={`list-${opt.value}`} />\r\n          </label>\r\n        )\r\n      })}\r\n    </RadioGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/radio-group/radio-group-list.tsx"
+    }
+  ],
+  "categories": [
+    "radio-group"
+  ],
+  "type": "registry:ui"
+}

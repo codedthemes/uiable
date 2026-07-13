@@ -1,9 +1,6 @@
-﻿"use client"
+"use client"
 
 import { memo, useMemo, useState } from "react"
-
-// third party
-import { motion } from "framer-motion"
 
 // shadcn
 import { Bubble, BubbleContent } from "@/components/ui/bubble"
@@ -40,9 +37,13 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+// third party
+import { motion } from "framer-motion"
+
 // assets
 import { ArrowUpIcon, RotateCwIcon } from "lucide-react"
 
+// constants
 const animationPresets = {
   fade: {
     label: "Fade",

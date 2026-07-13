@@ -4,9 +4,9 @@
   "baseUrl": "https://uiable.com",
   "generatedFrom": "registry.json",
   "counts": {
-    "total": 536,
-    "blocks": 7,
-    "components": 529
+    "total": 562,
+    "blocks": 12,
+    "components": 550
   },
   "categories": [
     "accordion",
@@ -28,13 +28,17 @@
     "collapsible",
     "combobox",
     "command",
+    "contact",
+    "content",
     "context-menu",
+    "cta",
     "data-table",
     "date-picker",
     "dialog",
     "drawer",
     "dropdown-menu",
     "empty",
+    "faq",
     "field",
     "hover-card",
     "input",
@@ -1191,127 +1195,6 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-aspect-ratio-square",
       "url": "https://uiable.com/r/uiable-aspect-ratio-square.json",
       "previewUrl": "https://uiable.com/preview/uiable-aspect-ratio-square"
-    },
-    {
-      "name": "uiable-attachment-vertical",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Vertical Attachment",
-      "description": "Attachment Vertical variant for attachment.",
-      "categories": [
-        "attachment"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "attachment"
-      ],
-      "files": [
-        "@components/uiable/attachment/attachment-vertical.tsx"
-      ],
-      "keywords": [
-        "vertical",
-        "attachment"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-vertical",
-      "url": "https://uiable.com/r/uiable-attachment-vertical.json",
-      "previewUrl": "https://uiable.com/preview/uiable-attachment-vertical"
-    },
-    {
-      "name": "uiable-attachment-group",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Group",
-      "description": "Attachment Group variant for attachment.",
-      "categories": [
-        "attachment"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "attachment"
-      ],
-      "files": [
-        "@components/uiable/attachment/attachment-group.tsx"
-      ],
-      "keywords": [
-        "group",
-        "attachment"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-group",
-      "url": "https://uiable.com/r/uiable-attachment-group.json",
-      "previewUrl": "https://uiable.com/preview/uiable-attachment-group"
-    },
-    {
-      "name": "uiable-attachment-states",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "States",
-      "description": "Attachment States variant for attachment.",
-      "categories": [
-        "attachment"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "attachment"
-      ],
-      "files": [
-        "@components/uiable/attachment/attachment-states.tsx"
-      ],
-      "keywords": [
-        "states",
-        "attachment"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-states",
-      "url": "https://uiable.com/r/uiable-attachment-states.json",
-      "previewUrl": "https://uiable.com/preview/uiable-attachment-states"
-    },
-    {
-      "name": "uiable-attachment-sizes",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Sizes",
-      "description": "Attachment Sizes variant for attachment.",
-      "categories": [
-        "attachment"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "attachment"
-      ],
-      "files": [
-        "@components/uiable/attachment/attachment-sizes.tsx"
-      ],
-      "keywords": [
-        "sizes",
-        "attachment"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-sizes",
-      "url": "https://uiable.com/r/uiable-attachment-sizes.json",
-      "previewUrl": "https://uiable.com/preview/uiable-attachment-sizes"
-    },
-    {
-      "name": "uiable-attachment-triggers",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Trigger",
-      "description": "Attachment Trigger variant for attachment.",
-      "categories": [
-        "attachment"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "attachment"
-      ],
-      "files": [
-        "@components/uiable/attachment/attachment-triggers.tsx"
-      ],
-      "keywords": [
-        "trigger",
-        "attachment",
-        "triggers"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-triggers",
-      "url": "https://uiable.com/r/uiable-attachment-triggers.json",
-      "previewUrl": "https://uiable.com/preview/uiable-attachment-triggers"
     },
     {
       "name": "uiable-avatar-badge",
@@ -2821,111 +2704,6 @@
       "previewUrl": "https://uiable.com/preview/uiable-button-group-split"
     },
     {
-      "name": "uiable-button-group-icon",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Icon Button Group",
-      "description": "Button Group Icon variant for button-group.",
-      "categories": [
-        "button-group"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button-group"
-      ],
-      "files": [
-        "@components/uiable/button-group/button-group-icon.tsx"
-      ],
-      "keywords": [
-        "icon",
-        "button",
-        "group"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-icon",
-      "url": "https://uiable.com/r/uiable-button-group-icon.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-group-icon"
-    },
-    {
-      "name": "uiable-button-group-social",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Social Button Group",
-      "description": "Button Group Social variant for button-group.",
-      "categories": [
-        "button-group"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button-group"
-      ],
-      "files": [
-        "@components/uiable/button-group/button-group-social.tsx"
-      ],
-      "keywords": [
-        "social",
-        "button",
-        "group"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-social",
-      "url": "https://uiable.com/r/uiable-button-group-social.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-group-social"
-    },
-    {
-      "name": "uiable-button-group-toolbar",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Text Styling Toolbar",
-      "description": "Button Group Toolbar variant for button-group.",
-      "categories": [
-        "button-group"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button-group"
-      ],
-      "files": [
-        "@components/uiable/button-group/button-group-toolbar.tsx"
-      ],
-      "keywords": [
-        "text",
-        "styling",
-        "toolbar",
-        "button",
-        "group"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-toolbar",
-      "url": "https://uiable.com/r/uiable-button-group-toolbar.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-group-toolbar"
-    },
-    {
-      "name": "uiable-button-group-qty-select",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Quantity Selector",
-      "description": "Button Group Quantity Selector variant for button-group.",
-      "categories": [
-        "button-group"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button-group"
-      ],
-      "files": [
-        "@components/uiable/button-group/button-group-qty-select.tsx"
-      ],
-      "keywords": [
-        "quantity",
-        "selector",
-        "button",
-        "group",
-        "qty",
-        "select"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-qty-select",
-      "url": "https://uiable.com/r/uiable-button-group-qty-select.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-group-qty-select"
-    },
-    {
       "name": "uiable-button-icon",
       "kind": "component",
       "type": "registry:ui",
@@ -3842,352 +3620,6 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-button-with-icon",
       "url": "https://uiable.com/r/uiable-button-with-icon.json",
       "previewUrl": "https://uiable.com/preview/uiable-button-with-icon"
-    },
-    {
-      "name": "uiable-button-social",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Social Button",
-      "description": "Social button variant for button",
-      "categories": [
-        "button"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        "@components/uiable/button/button-social.tsx"
-      ],
-      "keywords": [
-        "social",
-        "button"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-social",
-      "url": "https://uiable.com/r/uiable-button-social.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-social"
-    },
-    {
-      "name": "uiable-button-with-badge",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Button With Badge",
-      "description": "Button with badge variant for button",
-      "categories": [
-        "button"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        "@components/uiable/button/button-with-badge.tsx"
-      ],
-      "keywords": [
-        "button",
-        "with",
-        "badge"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-with-badge",
-      "url": "https://uiable.com/r/uiable-button-with-badge.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-with-badge"
-    },
-    {
-      "name": "uiable-button-toggle",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Toggle Button",
-      "description": "Toggle button variant for button",
-      "categories": [
-        "button"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        "@components/uiable/button/button-toggle.tsx"
-      ],
-      "keywords": [
-        "toggle",
-        "button"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-toggle",
-      "url": "https://uiable.com/r/uiable-button-toggle.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-toggle"
-    },
-    {
-      "name": "uiable-button-animated-border",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Animated Button On Hover",
-      "description": "Animated Button variant for button",
-      "categories": [
-        "button"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        "@components/uiable/button/button-animated-border.tsx"
-      ],
-      "keywords": [
-        "animated",
-        "button",
-        "hover",
-        "border"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-animated-border",
-      "url": "https://uiable.com/r/uiable-button-animated-border.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-animated-border"
-    },
-    {
-      "name": "uiable-button-animated",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Animated Button",
-      "description": "Animated Button variant for button",
-      "categories": [
-        "button"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        "@components/uiable/button/button-animated.tsx"
-      ],
-      "keywords": [
-        "animated",
-        "button"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-animated",
-      "url": "https://uiable.com/r/uiable-button-animated.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-animated"
-    },
-    {
-      "name": "uiable-button-animated-gradient",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Gradient Animated Button",
-      "description": "Gradient Animated Button variant for button",
-      "categories": [
-        "button"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        "@components/uiable/button/button-animated-gradient.tsx"
-      ],
-      "keywords": [
-        "gradient",
-        "animated",
-        "button"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-button-animated-gradient",
-      "url": "https://uiable.com/r/uiable-button-animated-gradient.json",
-      "previewUrl": "https://uiable.com/preview/uiable-button-animated-gradient"
-    },
-    {
-      "name": "uiable-bubble-variants",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Bubble Variants",
-      "description": "Bubble Visual Variants for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-variants.tsx"
-      ],
-      "keywords": [
-        "bubble",
-        "variants",
-        "visual"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-variants",
-      "url": "https://uiable.com/r/uiable-bubble-variants.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-variants"
-    },
-    {
-      "name": "uiable-bubble-group",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Bubble Group",
-      "description": "Bubble Group variant for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-group.tsx"
-      ],
-      "keywords": [
-        "bubble",
-        "group"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-group",
-      "url": "https://uiable.com/r/uiable-bubble-group.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-group"
-    },
-    {
-      "name": "uiable-bubble-alignment",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Bubble Alignment",
-      "description": "Bubble Alignment variant for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-alignment.tsx"
-      ],
-      "keywords": [
-        "bubble",
-        "alignment"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-alignment",
-      "url": "https://uiable.com/r/uiable-bubble-alignment.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-alignment"
-    },
-    {
-      "name": "uiable-bubble-link",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Links and Buttons",
-      "description": "Bubble Links & Buttons variant for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-link.tsx"
-      ],
-      "keywords": [
-        "links",
-        "and",
-        "buttons",
-        "bubble",
-        "link"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-link",
-      "url": "https://uiable.com/r/uiable-bubble-link.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-link"
-    },
-    {
-      "name": "uiable-bubble-reactions",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Bubble Reactions",
-      "description": "Bubble Reactions variant for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-reactions.tsx"
-      ],
-      "keywords": [
-        "bubble",
-        "reactions"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-reactions",
-      "url": "https://uiable.com/r/uiable-bubble-reactions.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-reactions"
-    },
-    {
-      "name": "uiable-bubble-collapsible",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Show More / Collapsible",
-      "description": "Bubble Collapsible variant for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-collapsible.tsx"
-      ],
-      "keywords": [
-        "show",
-        "more",
-        "collapsible",
-        "bubble"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-collapsible",
-      "url": "https://uiable.com/r/uiable-bubble-collapsible.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-collapsible"
-    },
-    {
-      "name": "uiable-bubble-tooltip",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Tooltip",
-      "description": "Bubble Tooltip variant for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-tooltip.tsx"
-      ],
-      "keywords": [
-        "tooltip",
-        "bubble"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-tooltip",
-      "url": "https://uiable.com/r/uiable-bubble-tooltip.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-tooltip"
-    },
-    {
-      "name": "uiable-bubble-popover",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Popover",
-      "description": "Bubble Popover variant for bubble.",
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "bubble"
-      ],
-      "files": [
-        "@components/uiable/bubble/bubble-popover.tsx"
-      ],
-      "keywords": [
-        "popover",
-        "bubble"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-popover",
-      "url": "https://uiable.com/r/uiable-bubble-popover.json",
-      "previewUrl": "https://uiable.com/preview/uiable-bubble-popover"
     },
     {
       "name": "uiable-calendar-basic",
@@ -5315,129 +4747,6 @@
       "previewUrl": "https://uiable.com/preview/uiable-checkbox-table"
     },
     {
-      "name": "uiable-checkbox-indeterminate",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Indeterminate Checkbox",
-      "description": "Indeterminate Checkbox variant for checkbox.",
-      "categories": [
-        "checkbox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "checkbox"
-      ],
-      "files": [
-        "@components/uiable/checkbox/checkbox-indeterminate.tsx"
-      ],
-      "keywords": [
-        "indeterminate",
-        "checkbox"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-indeterminate",
-      "url": "https://uiable.com/r/uiable-checkbox-indeterminate.json",
-      "previewUrl": "https://uiable.com/preview/uiable-checkbox-indeterminate"
-    },
-    {
-      "name": "uiable-checkbox-colors",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Colors Checkboxes",
-      "description": "Colors Checkbox variant for checkbox.",
-      "categories": [
-        "checkbox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "checkbox"
-      ],
-      "files": [
-        "@components/uiable/checkbox/checkbox-colors.tsx"
-      ],
-      "keywords": [
-        "colors",
-        "checkboxes",
-        "checkbox"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-colors",
-      "url": "https://uiable.com/r/uiable-checkbox-colors.json",
-      "previewUrl": "https://uiable.com/preview/uiable-checkbox-colors"
-    },
-    {
-      "name": "uiable-checkbox-sizes",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Checkbox Sizes",
-      "description": "Checkbox Size variant for checkbox.",
-      "categories": [
-        "checkbox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "checkbox"
-      ],
-      "files": [
-        "@components/uiable/checkbox/checkbox-size.tsx"
-      ],
-      "keywords": [
-        "checkbox",
-        "sizes",
-        "size"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-sizes",
-      "url": "https://uiable.com/r/uiable-checkbox-sizes.json",
-      "previewUrl": "https://uiable.com/preview/uiable-checkbox-sizes"
-    },
-    {
-      "name": "uiable-checkbox-list",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Checkbox List",
-      "description": "Checkbox List variant for checkbox.",
-      "categories": [
-        "checkbox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "checkbox"
-      ],
-      "files": [
-        "@components/uiable/checkbox/checkbox-list.tsx"
-      ],
-      "keywords": [
-        "checkbox",
-        "list"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-list",
-      "url": "https://uiable.com/r/uiable-checkbox-list.json",
-      "previewUrl": "https://uiable.com/preview/uiable-checkbox-list"
-    },
-    {
-      "name": "uiable-checkbox-todo-list",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Todo List",
-      "description": "Todo List Checkbox variant for checkbox.",
-      "categories": [
-        "checkbox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "checkbox"
-      ],
-      "files": [
-        "@components/uiable/checkbox/checkbox-todo-list.tsx"
-      ],
-      "keywords": [
-        "todo",
-        "list",
-        "checkbox"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-todo-list",
-      "url": "https://uiable.com/r/uiable-checkbox-todo-list.json",
-      "previewUrl": "https://uiable.com/preview/uiable-checkbox-todo-list"
-    },
-    {
       "name": "uiable-collapsible-basic",
       "kind": "component",
       "type": "registry:ui",
@@ -5753,104 +5062,6 @@
       "previewUrl": "https://uiable.com/preview/uiable-combobox-popup"
     },
     {
-      "name": "uiable-combobox-user",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Users Combobox",
-      "description": "Combobox User variant for combobox.",
-      "categories": [
-        "combobox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "combobox"
-      ],
-      "files": [
-        "@components/uiable/combobox/combobox-user.tsx"
-      ],
-      "keywords": [
-        "users",
-        "combobox",
-        "user"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-user",
-      "url": "https://uiable.com/r/uiable-combobox-user.json",
-      "previewUrl": "https://uiable.com/preview/uiable-combobox-user"
-    },
-    {
-      "name": "uiable-combobox-error",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Error Combobox",
-      "description": "Combobox Error variant for combobox.",
-      "categories": [
-        "combobox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "combobox"
-      ],
-      "files": [
-        "@components/uiable/combobox/combobox-error.tsx"
-      ],
-      "keywords": [
-        "error",
-        "combobox"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-error",
-      "url": "https://uiable.com/r/uiable-combobox-error.json",
-      "previewUrl": "https://uiable.com/preview/uiable-combobox-error"
-    },
-    {
-      "name": "uiable-combobox-with-checkbox",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Combobox With Checkbox",
-      "description": "Combobox With Checkbox variant for combobox.",
-      "categories": [
-        "combobox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "combobox"
-      ],
-      "files": [
-        "@components/uiable/combobox/combobox-with-checkbox.tsx"
-      ],
-      "keywords": [
-        "combobox",
-        "with",
-        "checkbox"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-with-checkbox",
-      "url": "https://uiable.com/r/uiable-combobox-with-checkbox.json",
-      "previewUrl": "https://uiable.com/preview/uiable-combobox-with-checkbox"
-    },
-    {
-      "name": "uiable-combobox-autocomplete",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Autocomplete Combobox",
-      "description": "Combobox Autocomplete variant for combobox.",
-      "categories": [
-        "combobox"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "combobox"
-      ],
-      "files": [
-        "@components/uiable/combobox/combobox-autocomplete.tsx"
-      ],
-      "keywords": [
-        "autocomplete",
-        "combobox"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-autocomplete",
-      "url": "https://uiable.com/r/uiable-combobox-autocomplete.json",
-      "previewUrl": "https://uiable.com/preview/uiable-combobox-autocomplete"
-    },
-    {
       "name": "uiable-command-basic",
       "kind": "component",
       "type": "registry:ui",
@@ -5969,6 +5180,123 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-command-shortcuts",
       "url": "https://uiable.com/r/uiable-command-shortcuts.json",
       "previewUrl": "https://uiable.com/preview/uiable-command-shortcuts"
+    },
+    {
+      "name": "uiable-command-with-description",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "With Description",
+      "description": "Command With Description variant for command.",
+      "categories": [
+        "command"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "command"
+      ],
+      "files": [
+        "@components/uiable/command/command-with-description.tsx"
+      ],
+      "keywords": [
+        "with",
+        "description",
+        "command"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-command-with-description",
+      "url": "https://uiable.com/r/uiable-command-with-description.json",
+      "previewUrl": "https://uiable.com/preview/uiable-command-with-description"
+    },
+    {
+      "name": "uiable-command-developer-actions",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Developer Actions",
+      "description": "Command Developer Actions variant for command.",
+      "categories": [
+        "command"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "command"
+      ],
+      "files": [
+        "@components/uiable/command/command-developer-actions.tsx"
+      ],
+      "keywords": [
+        "developer",
+        "actions",
+        "command"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-command-developer-actions",
+      "url": "https://uiable.com/r/uiable-command-developer-actions.json",
+      "previewUrl": "https://uiable.com/preview/uiable-command-developer-actions"
+    },
+    {
+      "name": "uiable-command-invite-members",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Invite Members",
+      "description": "Collaborative command palette for inviting teammates and managing workspace actions.",
+      "categories": [
+        "command"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "command"
+      ],
+      "files": [
+        "@components/uiable/command/command-invite-members.tsx"
+      ],
+      "keywords": [
+        "invite",
+        "members",
+        "collaborative",
+        "command",
+        "palette",
+        "inviting",
+        "teammates",
+        "and",
+        "managing",
+        "workspace",
+        "actions"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-command-invite-members",
+      "url": "https://uiable.com/r/uiable-command-invite-members.json",
+      "previewUrl": "https://uiable.com/preview/uiable-command-invite-members"
+    },
+    {
+      "name": "uiable-command-search-filter",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Search & Filter",
+      "description": "Search-focused command palette with smart filters and curated content suggestions.",
+      "categories": [
+        "command"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "command"
+      ],
+      "files": [
+        "@components/uiable/command/command-search-filter.tsx"
+      ],
+      "keywords": [
+        "search",
+        "filter",
+        "focused",
+        "command",
+        "palette",
+        "with",
+        "smart",
+        "filters",
+        "and",
+        "curated",
+        "content",
+        "suggestions"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-command-search-filter",
+      "url": "https://uiable.com/r/uiable-command-search-filter.json",
+      "previewUrl": "https://uiable.com/preview/uiable-command-search-filter"
     },
     {
       "name": "uiable-context-menu-basic",
@@ -6345,6 +5673,57 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-date-picker-time",
       "url": "https://uiable.com/r/uiable-date-picker-time.json",
       "previewUrl": "https://uiable.com/preview/uiable-date-picker-time"
+    },
+    {
+      "name": "uiable-date-picker-disabled",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Disabled Date Picker",
+      "description": "Date Picker Disabled variant for date-picker.",
+      "categories": [
+        "date-picker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "date-picker"
+      ],
+      "files": [
+        "@components/uiable/date-picker/date-picker-disabled.tsx"
+      ],
+      "keywords": [
+        "disabled",
+        "date",
+        "picker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-date-picker-disabled",
+      "url": "https://uiable.com/r/uiable-date-picker-disabled.json",
+      "previewUrl": "https://uiable.com/preview/uiable-date-picker-disabled"
+    },
+    {
+      "name": "uiable-date-picker-neutral",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Neutral Date & Time Picker",
+      "description": "Neutral Date & Time Picker variant for date-picker.",
+      "categories": [
+        "date-picker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "date-picker"
+      ],
+      "files": [
+        "@components/uiable/date-picker/date-picker-neutral.tsx"
+      ],
+      "keywords": [
+        "neutral",
+        "date",
+        "time",
+        "picker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-date-picker-neutral",
+      "url": "https://uiable.com/r/uiable-date-picker-neutral.json",
+      "previewUrl": "https://uiable.com/preview/uiable-date-picker-neutral"
     },
     {
       "name": "uiable-dialog-close-button",
@@ -8368,6 +7747,32 @@
       "previewUrl": "https://uiable.com/preview/uiable-input-group-with-tooltip"
     },
     {
+      "name": "uiable-input-group-chat-message",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Chat Message Input Group",
+      "description": "Input Group Chat Message variant for input-group.",
+      "categories": [
+        "input-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input-group"
+      ],
+      "files": [
+        "@components/uiable/input-group/input-group-chat-message.tsx"
+      ],
+      "keywords": [
+        "chat",
+        "message",
+        "input",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-input-group-chat-message",
+      "url": "https://uiable.com/r/uiable-input-group-chat-message.json",
+      "previewUrl": "https://uiable.com/preview/uiable-input-group-chat-message"
+    },
+    {
       "name": "uiable-input-inline",
       "kind": "component",
       "type": "registry:ui",
@@ -8641,6 +8046,89 @@
       "previewUrl": "https://uiable.com/preview/uiable-input-otp-separator"
     },
     {
+      "name": "uiable-input-otp-animated",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Animated Input Otp",
+      "description": "Input Otp Animated variant with bounce animation on each slot when a digit is entered.",
+      "categories": [
+        "input-otp"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input-otp"
+      ],
+      "files": [
+        "@components/uiable/input-otp/input-otp-animated.tsx"
+      ],
+      "keywords": [
+        "animated",
+        "input",
+        "otp",
+        "with",
+        "bounce",
+        "animation",
+        "each",
+        "slot",
+        "when",
+        "digit",
+        "entered"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-input-otp-animated",
+      "url": "https://uiable.com/r/uiable-input-otp-animated.json",
+      "previewUrl": "https://uiable.com/preview/uiable-input-otp-animated"
+    },
+    {
+      "name": "uiable-input-otp-filled",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Filled Input Otp",
+      "description": "Input Otp Filled variant for input-otp",
+      "categories": [
+        "input-otp"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input-otp"
+      ],
+      "files": [
+        "@components/uiable/input-otp/input-otp-filled.tsx"
+      ],
+      "keywords": [
+        "filled",
+        "input",
+        "otp"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-input-otp-filled",
+      "url": "https://uiable.com/r/uiable-input-otp-filled.json",
+      "previewUrl": "https://uiable.com/preview/uiable-input-otp-filled"
+    },
+    {
+      "name": "uiable-input-otp-outlined",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Outlined Input Otp",
+      "description": "Input Otp Outlined variant for input-otp",
+      "categories": [
+        "input-otp"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input-otp"
+      ],
+      "files": [
+        "@components/uiable/input-otp/input-otp-outlined.tsx"
+      ],
+      "keywords": [
+        "outlined",
+        "input",
+        "otp"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-input-otp-outlined",
+      "url": "https://uiable.com/r/uiable-input-otp-outlined.json",
+      "previewUrl": "https://uiable.com/preview/uiable-input-otp-outlined"
+    },
+    {
       "name": "uiable-input-required",
       "kind": "component",
       "type": "registry:ui",
@@ -8663,6 +8151,78 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-input-required",
       "url": "https://uiable.com/r/uiable-input-required.json",
       "previewUrl": "https://uiable.com/preview/uiable-input-required"
+    },
+    {
+      "name": "uiable-input-range",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Range Input",
+      "description": "Input Range variant for input.",
+      "categories": [
+        "input"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        "@components/uiable/input/input-range.tsx"
+      ],
+      "keywords": [
+        "range",
+        "input"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-input-range",
+      "url": "https://uiable.com/r/uiable-input-range.json",
+      "previewUrl": "https://uiable.com/preview/uiable-input-range"
+    },
+    {
+      "name": "uiable-input-select",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Select Input",
+      "description": "Input Select variant for input.",
+      "categories": [
+        "input"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        "@components/uiable/input/input-select.tsx"
+      ],
+      "keywords": [
+        "select",
+        "input"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-input-select",
+      "url": "https://uiable.com/r/uiable-input-select.json",
+      "previewUrl": "https://uiable.com/preview/uiable-input-select"
+    },
+    {
+      "name": "uiable-input-validation",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Validation Input",
+      "description": "Input Validation variant for input.",
+      "categories": [
+        "input"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        "@components/uiable/input/input-validation.tsx"
+      ],
+      "keywords": [
+        "validation",
+        "input"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-input-validation",
+      "url": "https://uiable.com/r/uiable-input-validation.json",
+      "previewUrl": "https://uiable.com/preview/uiable-input-validation"
     },
     {
       "name": "uiable-item-avatar",
@@ -9228,548 +8788,6 @@
       "previewUrl": "https://uiable.com/preview/uiable-list-group-radios"
     },
     {
-      "name": "uiable-marker-variants",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Variants",
-      "description": "Marker variant for marker.",
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "marker"
-      ],
-      "files": [
-        "@components/uiable/marker/marker-variants.tsx"
-      ],
-      "keywords": [
-        "variants",
-        "marker"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-variants",
-      "url": "https://uiable.com/r/uiable-marker-variants.json",
-      "previewUrl": "https://uiable.com/preview/uiable-marker-variants"
-    },
-    {
-      "name": "uiable-marker-bordered",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Bordered Marker",
-      "description": "Marker Bordered variant for marker.",
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "marker"
-      ],
-      "files": [
-        "@components/uiable/marker/marker-bordered.tsx"
-      ],
-      "keywords": [
-        "bordered",
-        "marker"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-bordered",
-      "url": "https://uiable.com/r/uiable-marker-bordered.json",
-      "previewUrl": "https://uiable.com/preview/uiable-marker-bordered"
-    },
-    {
-      "name": "uiable-marker-separator",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Separator Marker",
-      "description": "Marker Separator variant for marker.",
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "marker"
-      ],
-      "files": [
-        "@components/uiable/marker/marker-separator.tsx"
-      ],
-      "keywords": [
-        "separator",
-        "marker"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-separator",
-      "url": "https://uiable.com/r/uiable-marker-separator.json",
-      "previewUrl": "https://uiable.com/preview/uiable-marker-separator"
-    },
-    {
-      "name": "uiable-marker-with-icon",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Marker With Icon",
-      "description": "Marker With Icon variant for marker.",
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "marker"
-      ],
-      "files": [
-        "@components/uiable/marker/marker-with-icon.tsx"
-      ],
-      "keywords": [
-        "marker",
-        "with",
-        "icon"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-with-icon",
-      "url": "https://uiable.com/r/uiable-marker-with-icon.json",
-      "previewUrl": "https://uiable.com/preview/uiable-marker-with-icon"
-    },
-    {
-      "name": "uiable-marker-status",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Status Marker",
-      "description": "Marker Status variant for marker.",
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "marker"
-      ],
-      "files": [
-        "@components/uiable/marker/marker-status.tsx"
-      ],
-      "keywords": [
-        "status",
-        "marker"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-status",
-      "url": "https://uiable.com/r/uiable-marker-status.json",
-      "previewUrl": "https://uiable.com/preview/uiable-marker-status"
-    },
-    {
-      "name": "uiable-marker-shimmer",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Shimmer Marker",
-      "description": "Marker Shimmer variant for marker.",
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "marker"
-      ],
-      "files": [
-        "@components/uiable/marker/marker-shimmer.tsx"
-      ],
-      "keywords": [
-        "shimmer",
-        "marker"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-shimmer",
-      "url": "https://uiable.com/r/uiable-marker-shimmer.json",
-      "previewUrl": "https://uiable.com/preview/uiable-marker-shimmer"
-    },
-    {
-      "name": "uiable-marker-links",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Links and Buttons",
-      "description": "Links and Buttons Marker variant for marker.",
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "marker"
-      ],
-      "files": [
-        "@components/uiable/marker/marker-links.tsx"
-      ],
-      "keywords": [
-        "links",
-        "and",
-        "buttons",
-        "marker"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-links",
-      "url": "https://uiable.com/r/uiable-marker-links.json",
-      "previewUrl": "https://uiable.com/preview/uiable-marker-links"
-    },
-    {
-      "name": "uiable-message-with-avatar",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Message With Avatar",
-      "description": "Message With Avatar variant for message.",
-      "categories": [
-        "message"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message"
-      ],
-      "files": [
-        "@components/uiable/message/message-with-avatar.tsx"
-      ],
-      "keywords": [
-        "message",
-        "with",
-        "avatar"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-with-avatar",
-      "url": "https://uiable.com/r/uiable-message-with-avatar.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-with-avatar"
-    },
-    {
-      "name": "uiable-message-header-footer",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Header And Footer",
-      "description": "Message Header And Footer variant for message.",
-      "categories": [
-        "message"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message"
-      ],
-      "files": [
-        "@components/uiable/message/message-header-footer.tsx"
-      ],
-      "keywords": [
-        "header",
-        "and",
-        "footer",
-        "message"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-header-footer",
-      "url": "https://uiable.com/r/uiable-message-header-footer.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-header-footer"
-    },
-    {
-      "name": "uiable-message-actions",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Actions",
-      "description": "Message Actions variant for message.",
-      "categories": [
-        "message"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message"
-      ],
-      "files": [
-        "@components/uiable/message/message-actions.tsx"
-      ],
-      "keywords": [
-        "actions",
-        "message"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-actions",
-      "url": "https://uiable.com/r/uiable-message-actions.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-actions"
-    },
-    {
-      "name": "uiable-message-group",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Message Group",
-      "description": "Message Group variant for message.",
-      "categories": [
-        "message"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message"
-      ],
-      "files": [
-        "@components/uiable/message/message-group.tsx"
-      ],
-      "keywords": [
-        "message",
-        "group"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-group",
-      "url": "https://uiable.com/r/uiable-message-group.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-group"
-    },
-    {
-      "name": "uiable-message-attachment",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Attachment",
-      "description": "Message Atachment variant for message.",
-      "categories": [
-        "message"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message"
-      ],
-      "files": [
-        "@components/uiable/message/message-attachment.tsx"
-      ],
-      "keywords": [
-        "attachment",
-        "message",
-        "atachment"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-attachment",
-      "url": "https://uiable.com/r/uiable-message-attachment.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-attachment"
-    },
-    {
-      "name": "uiable-message-scroller-anchoring-turns",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Anchoring Turns",
-      "description": "Message Scroller Anchoring Turns variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-anchoring-turns.tsx"
-      ],
-      "keywords": [
-        "anchoring",
-        "turns",
-        "message",
-        "scroller"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-anchoring-turns",
-      "url": "https://uiable.com/r/uiable-message-scroller-anchoring-turns.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-anchoring-turns"
-    },
-    {
-      "name": "uiable-message-scroller-group-chat",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Group Chat",
-      "description": "Message Scroller Group Chat variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-group-chat.tsx"
-      ],
-      "keywords": [
-        "group",
-        "chat",
-        "message",
-        "scroller"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-group-chat",
-      "url": "https://uiable.com/r/uiable-message-scroller-group-chat.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-group-chat"
-    },
-    {
-      "name": "uiable-message-scroller-context-visible",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Keeping Context Visible",
-      "description": "Message Scroller Keeping Context Visible variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-context-visible.tsx"
-      ],
-      "keywords": [
-        "keeping",
-        "context",
-        "visible",
-        "message",
-        "scroller"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-context-visible",
-      "url": "https://uiable.com/r/uiable-message-scroller-context-visible.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-context-visible"
-    },
-    {
-      "name": "uiable-message-scroller-live-edge",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Following the Live Edge",
-      "description": "Message Scroller Live Edge variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-live-edge.tsx"
-      ],
-      "keywords": [
-        "following",
-        "the",
-        "live",
-        "edge",
-        "message",
-        "scroller"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-live-edge",
-      "url": "https://uiable.com/r/uiable-message-scroller-live-edge.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-live-edge"
-    },
-    {
-      "name": "uiable-message-scroller-position",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Opening Saved Threads",
-      "description": "Message Scroller Opening Saved Threads variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-position.tsx"
-      ],
-      "keywords": [
-        "opening",
-        "saved",
-        "threads",
-        "message",
-        "scroller",
-        "position"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-position",
-      "url": "https://uiable.com/r/uiable-message-scroller-position.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-position"
-    },
-    {
-      "name": "uiable-message-scroller-load-history",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Loading Earlier Messages",
-      "description": "Message Scroller Load History variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-load-history.tsx"
-      ],
-      "keywords": [
-        "loading",
-        "earlier",
-        "messages",
-        "message",
-        "scroller",
-        "load",
-        "history"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-load-history",
-      "url": "https://uiable.com/r/uiable-message-scroller-load-history.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-load-history"
-    },
-    {
-      "name": "uiable-message-scroller-animatinng",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Animating New Messages",
-      "description": "Message Scroller Animating variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-animatinng.tsx"
-      ],
-      "keywords": [
-        "animating",
-        "new",
-        "messages",
-        "message",
-        "scroller",
-        "animatinng"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-animatinng",
-      "url": "https://uiable.com/r/uiable-message-scroller-animatinng.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-animatinng"
-    },
-    {
-      "name": "uiable-message-scroller-reader-position",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Tracking the Reader's Position",
-      "description": "Message Scroller Reader Position variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-reader-position.tsx"
-      ],
-      "keywords": [
-        "tracking",
-        "the",
-        "reader",
-        "position",
-        "message",
-        "scroller"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-reader-position",
-      "url": "https://uiable.com/r/uiable-message-scroller-reader-position.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-reader-position"
-    },
-    {
-      "name": "uiable-message-scroller-reading-state",
-      "kind": "component",
-      "type": "registry:ui",
-      "title": "Reading Scroll State",
-      "description": "Message Scroller Reading State variant for message-scroller.",
-      "categories": [
-        "message-scroller"
-      ],
-      "dependencies": [],
-      "registryDependencies": [
-        "message-scroller"
-      ],
-      "files": [
-        "@components/uiable/message-scroller/message-scroller-reading-state.tsx"
-      ],
-      "keywords": [
-        "reading",
-        "scroll",
-        "state",
-        "message",
-        "scroller"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-reading-state",
-      "url": "https://uiable.com/r/uiable-message-scroller-reading-state.json",
-      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-reading-state"
-    },
-    {
       "name": "uiable-menubar-checkbox",
       "kind": "component",
       "type": "registry:ui",
@@ -9989,6 +9007,112 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-outline-item-group",
       "url": "https://uiable.com/r/uiable-outline-item-group.json",
       "previewUrl": "https://uiable.com/preview/uiable-outline-item-group"
+    },
+    {
+      "name": "uiable-item-switch",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Switch Item",
+      "description": "Item with a toggle switch for item.",
+      "categories": [
+        "item"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "item"
+      ],
+      "files": [
+        "@components/uiable/item/item-switch.tsx"
+      ],
+      "keywords": [
+        "switch",
+        "item",
+        "with",
+        "toggle"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-item-switch",
+      "url": "https://uiable.com/r/uiable-item-switch.json",
+      "previewUrl": "https://uiable.com/preview/uiable-item-switch"
+    },
+    {
+      "name": "uiable-item-separator",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Separator Item",
+      "description": "Items visually divided by separator lines for item.",
+      "categories": [
+        "item"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "item"
+      ],
+      "files": [
+        "@components/uiable/item/item-separator.tsx"
+      ],
+      "keywords": [
+        "separator",
+        "item",
+        "items",
+        "visually",
+        "divided",
+        "lines"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-item-separator",
+      "url": "https://uiable.com/r/uiable-item-separator.json",
+      "previewUrl": "https://uiable.com/preview/uiable-item-separator"
+    },
+    {
+      "name": "uiable-item-background",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Background Item",
+      "description": "Item with background variant for item.",
+      "categories": [
+        "item"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "item"
+      ],
+      "files": [
+        "@components/uiable/item/item-background.tsx"
+      ],
+      "keywords": [
+        "background",
+        "item",
+        "with"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-item-background",
+      "url": "https://uiable.com/r/uiable-item-background.json",
+      "previewUrl": "https://uiable.com/preview/uiable-item-background"
+    },
+    {
+      "name": "uiable-item-checkbox",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Checkbox Item",
+      "description": "Selectable item rows with checkbox for item.",
+      "categories": [
+        "item"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "item"
+      ],
+      "files": [
+        "@components/uiable/item/item-checkbox.tsx"
+      ],
+      "keywords": [
+        "checkbox",
+        "item",
+        "selectable",
+        "rows",
+        "with"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-item-checkbox",
+      "url": "https://uiable.com/r/uiable-item-checkbox.json",
+      "previewUrl": "https://uiable.com/preview/uiable-item-checkbox"
     },
     {
       "name": "uiable-pagination-alignment",
@@ -13122,6 +12246,1443 @@
       "previewUrl": "https://uiable.com/preview/uiable-data-table-basic"
     },
     {
+      "name": "uiable-attachment-vertical",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Vertical Attachment",
+      "description": "Attachment Vertical variant for attachment.",
+      "categories": [
+        "attachment"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        "@components/uiable/attachment/attachment-vertical.tsx"
+      ],
+      "keywords": [
+        "vertical",
+        "attachment"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-vertical",
+      "url": "https://uiable.com/r/uiable-attachment-vertical.json",
+      "previewUrl": "https://uiable.com/preview/uiable-attachment-vertical"
+    },
+    {
+      "name": "uiable-attachment-group",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Group",
+      "description": "Attachment Group variant for attachment.",
+      "categories": [
+        "attachment"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        "@components/uiable/attachment/attachment-group.tsx"
+      ],
+      "keywords": [
+        "group",
+        "attachment"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-group",
+      "url": "https://uiable.com/r/uiable-attachment-group.json",
+      "previewUrl": "https://uiable.com/preview/uiable-attachment-group"
+    },
+    {
+      "name": "uiable-attachment-states",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "States",
+      "description": "Attachment States variant for attachment.",
+      "categories": [
+        "attachment"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        "@components/uiable/attachment/attachment-states.tsx"
+      ],
+      "keywords": [
+        "states",
+        "attachment"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-states",
+      "url": "https://uiable.com/r/uiable-attachment-states.json",
+      "previewUrl": "https://uiable.com/preview/uiable-attachment-states"
+    },
+    {
+      "name": "uiable-attachment-sizes",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Sizes",
+      "description": "Attachment Sizes variant for attachment.",
+      "categories": [
+        "attachment"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        "@components/uiable/attachment/attachment-sizes.tsx"
+      ],
+      "keywords": [
+        "sizes",
+        "attachment"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-sizes",
+      "url": "https://uiable.com/r/uiable-attachment-sizes.json",
+      "previewUrl": "https://uiable.com/preview/uiable-attachment-sizes"
+    },
+    {
+      "name": "uiable-attachment-triggers",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Trigger",
+      "description": "Attachment Trigger variant for attachment.",
+      "categories": [
+        "attachment"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        "@components/uiable/attachment/attachment-triggers.tsx"
+      ],
+      "keywords": [
+        "trigger",
+        "attachment",
+        "triggers"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-attachment-triggers",
+      "url": "https://uiable.com/r/uiable-attachment-triggers.json",
+      "previewUrl": "https://uiable.com/preview/uiable-attachment-triggers"
+    },
+    {
+      "name": "uiable-button-group-icon",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Icon Button Group",
+      "description": "Button Group Icon variant for button-group.",
+      "categories": [
+        "button-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        "@components/uiable/button-group/button-group-icon.tsx"
+      ],
+      "keywords": [
+        "icon",
+        "button",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-icon",
+      "url": "https://uiable.com/r/uiable-button-group-icon.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-group-icon"
+    },
+    {
+      "name": "uiable-button-group-social",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Social Button Group",
+      "description": "Button Group Social variant for button-group.",
+      "categories": [
+        "button-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        "@components/uiable/button-group/button-group-social.tsx"
+      ],
+      "keywords": [
+        "social",
+        "button",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-social",
+      "url": "https://uiable.com/r/uiable-button-group-social.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-group-social"
+    },
+    {
+      "name": "uiable-button-group-toolbar",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Text Styling Toolbar",
+      "description": "Button Group Toolbar variant for button-group.",
+      "categories": [
+        "button-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        "@components/uiable/button-group/button-group-toolbar.tsx"
+      ],
+      "keywords": [
+        "text",
+        "styling",
+        "toolbar",
+        "button",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-toolbar",
+      "url": "https://uiable.com/r/uiable-button-group-toolbar.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-group-toolbar"
+    },
+    {
+      "name": "uiable-button-group-qty-select",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Quantity Selector",
+      "description": "Button Group Quantity Selector variant for button-group.",
+      "categories": [
+        "button-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button-group"
+      ],
+      "files": [
+        "@components/uiable/button-group/button-group-qty-select.tsx"
+      ],
+      "keywords": [
+        "quantity",
+        "selector",
+        "button",
+        "group",
+        "qty",
+        "select"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-group-qty-select",
+      "url": "https://uiable.com/r/uiable-button-group-qty-select.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-group-qty-select"
+    },
+    {
+      "name": "uiable-button-social",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Social Button",
+      "description": "Social button variant for button",
+      "categories": [
+        "button"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/button/button-social.tsx"
+      ],
+      "keywords": [
+        "social",
+        "button"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-social",
+      "url": "https://uiable.com/r/uiable-button-social.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-social"
+    },
+    {
+      "name": "uiable-button-with-badge",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Button With Badge",
+      "description": "Button with badge variant for button",
+      "categories": [
+        "button"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/button/button-with-badge.tsx"
+      ],
+      "keywords": [
+        "button",
+        "with",
+        "badge"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-with-badge",
+      "url": "https://uiable.com/r/uiable-button-with-badge.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-with-badge"
+    },
+    {
+      "name": "uiable-button-toggle",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Toggle Button",
+      "description": "Toggle button variant for button",
+      "categories": [
+        "button"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/button/button-toggle.tsx"
+      ],
+      "keywords": [
+        "toggle",
+        "button"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-toggle",
+      "url": "https://uiable.com/r/uiable-button-toggle.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-toggle"
+    },
+    {
+      "name": "uiable-button-animated-border",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Animated Button On Hover",
+      "description": "Animated Button variant for button",
+      "categories": [
+        "button"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/button/button-animated-border.tsx"
+      ],
+      "keywords": [
+        "animated",
+        "button",
+        "hover",
+        "border"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-animated-border",
+      "url": "https://uiable.com/r/uiable-button-animated-border.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-animated-border"
+    },
+    {
+      "name": "uiable-button-animated",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Animated Button",
+      "description": "Animated Button variant for button",
+      "categories": [
+        "button"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/button/button-animated.tsx"
+      ],
+      "keywords": [
+        "animated",
+        "button"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-animated",
+      "url": "https://uiable.com/r/uiable-button-animated.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-animated"
+    },
+    {
+      "name": "uiable-button-animated-gradient",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Gradient Animated Button",
+      "description": "Gradient Animated Button variant for button",
+      "categories": [
+        "button"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/button/button-animated-gradient.tsx"
+      ],
+      "keywords": [
+        "gradient",
+        "animated",
+        "button"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-button-animated-gradient",
+      "url": "https://uiable.com/r/uiable-button-animated-gradient.json",
+      "previewUrl": "https://uiable.com/preview/uiable-button-animated-gradient"
+    },
+    {
+      "name": "uiable-bubble-variants",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Bubble Variants",
+      "description": "Bubble Visual Variants for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-variants.tsx"
+      ],
+      "keywords": [
+        "bubble",
+        "variants",
+        "visual"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-variants",
+      "url": "https://uiable.com/r/uiable-bubble-variants.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-variants"
+    },
+    {
+      "name": "uiable-bubble-group",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Bubble Group",
+      "description": "Bubble Group variant for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-group.tsx"
+      ],
+      "keywords": [
+        "bubble",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-group",
+      "url": "https://uiable.com/r/uiable-bubble-group.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-group"
+    },
+    {
+      "name": "uiable-bubble-alignment",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Bubble Alignment",
+      "description": "Bubble Alignment variant for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-alignment.tsx"
+      ],
+      "keywords": [
+        "bubble",
+        "alignment"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-alignment",
+      "url": "https://uiable.com/r/uiable-bubble-alignment.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-alignment"
+    },
+    {
+      "name": "uiable-bubble-link",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Links and Buttons",
+      "description": "Bubble Links & Buttons variant for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-link.tsx"
+      ],
+      "keywords": [
+        "links",
+        "and",
+        "buttons",
+        "bubble",
+        "link"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-link",
+      "url": "https://uiable.com/r/uiable-bubble-link.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-link"
+    },
+    {
+      "name": "uiable-bubble-reactions",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Bubble Reactions",
+      "description": "Bubble Reactions variant for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-reactions.tsx"
+      ],
+      "keywords": [
+        "bubble",
+        "reactions"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-reactions",
+      "url": "https://uiable.com/r/uiable-bubble-reactions.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-reactions"
+    },
+    {
+      "name": "uiable-bubble-collapsible",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Show More / Collapsible",
+      "description": "Bubble Collapsible variant for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-collapsible.tsx"
+      ],
+      "keywords": [
+        "show",
+        "more",
+        "collapsible",
+        "bubble"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-collapsible",
+      "url": "https://uiable.com/r/uiable-bubble-collapsible.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-collapsible"
+    },
+    {
+      "name": "uiable-bubble-tooltip",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Bubble Tooltip variant for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-tooltip.tsx"
+      ],
+      "keywords": [
+        "tooltip",
+        "bubble"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-tooltip",
+      "url": "https://uiable.com/r/uiable-bubble-tooltip.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-tooltip"
+    },
+    {
+      "name": "uiable-bubble-popover",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Bubble Popover variant for bubble.",
+      "categories": [
+        "bubble"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "bubble"
+      ],
+      "files": [
+        "@components/uiable/bubble/bubble-popover.tsx"
+      ],
+      "keywords": [
+        "popover",
+        "bubble"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-bubble-popover",
+      "url": "https://uiable.com/r/uiable-bubble-popover.json",
+      "previewUrl": "https://uiable.com/preview/uiable-bubble-popover"
+    },
+    {
+      "name": "uiable-checkbox-indeterminate",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Indeterminate Checkbox",
+      "description": "Indeterminate Checkbox variant for checkbox.",
+      "categories": [
+        "checkbox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        "@components/uiable/checkbox/checkbox-indeterminate.tsx"
+      ],
+      "keywords": [
+        "indeterminate",
+        "checkbox"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-indeterminate",
+      "url": "https://uiable.com/r/uiable-checkbox-indeterminate.json",
+      "previewUrl": "https://uiable.com/preview/uiable-checkbox-indeterminate"
+    },
+    {
+      "name": "uiable-checkbox-colors",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Colors Checkboxes",
+      "description": "Colors Checkbox variant for checkbox.",
+      "categories": [
+        "checkbox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        "@components/uiable/checkbox/checkbox-colors.tsx"
+      ],
+      "keywords": [
+        "colors",
+        "checkboxes",
+        "checkbox"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-colors",
+      "url": "https://uiable.com/r/uiable-checkbox-colors.json",
+      "previewUrl": "https://uiable.com/preview/uiable-checkbox-colors"
+    },
+    {
+      "name": "uiable-checkbox-sizes",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Checkbox Sizes",
+      "description": "Checkbox Size variant for checkbox.",
+      "categories": [
+        "checkbox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        "@components/uiable/checkbox/checkbox-size.tsx"
+      ],
+      "keywords": [
+        "checkbox",
+        "sizes",
+        "size"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-sizes",
+      "url": "https://uiable.com/r/uiable-checkbox-sizes.json",
+      "previewUrl": "https://uiable.com/preview/uiable-checkbox-sizes"
+    },
+    {
+      "name": "uiable-checkbox-list",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Checkbox List",
+      "description": "Checkbox List variant for checkbox.",
+      "categories": [
+        "checkbox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        "@components/uiable/checkbox/checkbox-list.tsx"
+      ],
+      "keywords": [
+        "checkbox",
+        "list"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-list",
+      "url": "https://uiable.com/r/uiable-checkbox-list.json",
+      "previewUrl": "https://uiable.com/preview/uiable-checkbox-list"
+    },
+    {
+      "name": "uiable-checkbox-todo-list",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Todo List",
+      "description": "Todo List Checkbox variant for checkbox.",
+      "categories": [
+        "checkbox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "checkbox"
+      ],
+      "files": [
+        "@components/uiable/checkbox/checkbox-todo-list.tsx"
+      ],
+      "keywords": [
+        "todo",
+        "list",
+        "checkbox"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-checkbox-todo-list",
+      "url": "https://uiable.com/r/uiable-checkbox-todo-list.json",
+      "previewUrl": "https://uiable.com/preview/uiable-checkbox-todo-list"
+    },
+    {
+      "name": "uiable-combobox-user",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Users Combobox",
+      "description": "Combobox User variant for combobox.",
+      "categories": [
+        "combobox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        "@components/uiable/combobox/combobox-user.tsx"
+      ],
+      "keywords": [
+        "users",
+        "combobox",
+        "user"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-user",
+      "url": "https://uiable.com/r/uiable-combobox-user.json",
+      "previewUrl": "https://uiable.com/preview/uiable-combobox-user"
+    },
+    {
+      "name": "uiable-combobox-error",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Error Combobox",
+      "description": "Combobox Error variant for combobox.",
+      "categories": [
+        "combobox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        "@components/uiable/combobox/combobox-error.tsx"
+      ],
+      "keywords": [
+        "error",
+        "combobox"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-error",
+      "url": "https://uiable.com/r/uiable-combobox-error.json",
+      "previewUrl": "https://uiable.com/preview/uiable-combobox-error"
+    },
+    {
+      "name": "uiable-combobox-with-checkbox",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Combobox With Checkbox",
+      "description": "Combobox With Checkbox variant for combobox.",
+      "categories": [
+        "combobox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        "@components/uiable/combobox/combobox-with-checkbox.tsx"
+      ],
+      "keywords": [
+        "combobox",
+        "with",
+        "checkbox"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-with-checkbox",
+      "url": "https://uiable.com/r/uiable-combobox-with-checkbox.json",
+      "previewUrl": "https://uiable.com/preview/uiable-combobox-with-checkbox"
+    },
+    {
+      "name": "uiable-combobox-autocomplete",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Autocomplete Combobox",
+      "description": "Combobox Autocomplete variant for combobox.",
+      "categories": [
+        "combobox"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "combobox"
+      ],
+      "files": [
+        "@components/uiable/combobox/combobox-autocomplete.tsx"
+      ],
+      "keywords": [
+        "autocomplete",
+        "combobox"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-combobox-autocomplete",
+      "url": "https://uiable.com/r/uiable-combobox-autocomplete.json",
+      "previewUrl": "https://uiable.com/preview/uiable-combobox-autocomplete"
+    },
+    {
+      "name": "uiable-marker-variants",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Variants",
+      "description": "Marker variant for marker.",
+      "categories": [
+        "marker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        "@components/uiable/marker/marker-variants.tsx"
+      ],
+      "keywords": [
+        "variants",
+        "marker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-variants",
+      "url": "https://uiable.com/r/uiable-marker-variants.json",
+      "previewUrl": "https://uiable.com/preview/uiable-marker-variants"
+    },
+    {
+      "name": "uiable-marker-bordered",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Bordered Marker",
+      "description": "Marker Bordered variant for marker.",
+      "categories": [
+        "marker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        "@components/uiable/marker/marker-bordered.tsx"
+      ],
+      "keywords": [
+        "bordered",
+        "marker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-bordered",
+      "url": "https://uiable.com/r/uiable-marker-bordered.json",
+      "previewUrl": "https://uiable.com/preview/uiable-marker-bordered"
+    },
+    {
+      "name": "uiable-marker-separator",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Separator Marker",
+      "description": "Marker Separator variant for marker.",
+      "categories": [
+        "marker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        "@components/uiable/marker/marker-separator.tsx"
+      ],
+      "keywords": [
+        "separator",
+        "marker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-separator",
+      "url": "https://uiable.com/r/uiable-marker-separator.json",
+      "previewUrl": "https://uiable.com/preview/uiable-marker-separator"
+    },
+    {
+      "name": "uiable-marker-with-icon",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Marker With Icon",
+      "description": "Marker With Icon variant for marker.",
+      "categories": [
+        "marker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        "@components/uiable/marker/marker-with-icon.tsx"
+      ],
+      "keywords": [
+        "marker",
+        "with",
+        "icon"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-with-icon",
+      "url": "https://uiable.com/r/uiable-marker-with-icon.json",
+      "previewUrl": "https://uiable.com/preview/uiable-marker-with-icon"
+    },
+    {
+      "name": "uiable-marker-status",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Status Marker",
+      "description": "Marker Status variant for marker.",
+      "categories": [
+        "marker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        "@components/uiable/marker/marker-status.tsx"
+      ],
+      "keywords": [
+        "status",
+        "marker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-status",
+      "url": "https://uiable.com/r/uiable-marker-status.json",
+      "previewUrl": "https://uiable.com/preview/uiable-marker-status"
+    },
+    {
+      "name": "uiable-marker-shimmer",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Shimmer Marker",
+      "description": "Marker Shimmer variant for marker.",
+      "categories": [
+        "marker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        "@components/uiable/marker/marker-shimmer.tsx"
+      ],
+      "keywords": [
+        "shimmer",
+        "marker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-shimmer",
+      "url": "https://uiable.com/r/uiable-marker-shimmer.json",
+      "previewUrl": "https://uiable.com/preview/uiable-marker-shimmer"
+    },
+    {
+      "name": "uiable-marker-links",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Links and Buttons",
+      "description": "Links and Buttons Marker variant for marker.",
+      "categories": [
+        "marker"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "marker"
+      ],
+      "files": [
+        "@components/uiable/marker/marker-links.tsx"
+      ],
+      "keywords": [
+        "links",
+        "and",
+        "buttons",
+        "marker"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-marker-links",
+      "url": "https://uiable.com/r/uiable-marker-links.json",
+      "previewUrl": "https://uiable.com/preview/uiable-marker-links"
+    },
+    {
+      "name": "uiable-message-with-avatar",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Message With Avatar",
+      "description": "Message With Avatar variant for message.",
+      "categories": [
+        "message"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        "@components/uiable/message/message-with-avatar.tsx"
+      ],
+      "keywords": [
+        "message",
+        "with",
+        "avatar"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-with-avatar",
+      "url": "https://uiable.com/r/uiable-message-with-avatar.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-with-avatar"
+    },
+    {
+      "name": "uiable-message-header-footer",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Header And Footer",
+      "description": "Message Header And Footer variant for message.",
+      "categories": [
+        "message"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        "@components/uiable/message/message-header-footer.tsx"
+      ],
+      "keywords": [
+        "header",
+        "and",
+        "footer",
+        "message"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-header-footer",
+      "url": "https://uiable.com/r/uiable-message-header-footer.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-header-footer"
+    },
+    {
+      "name": "uiable-message-actions",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Actions",
+      "description": "Message Actions variant for message.",
+      "categories": [
+        "message"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        "@components/uiable/message/message-actions.tsx"
+      ],
+      "keywords": [
+        "actions",
+        "message"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-actions",
+      "url": "https://uiable.com/r/uiable-message-actions.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-actions"
+    },
+    {
+      "name": "uiable-message-group",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Message Group",
+      "description": "Message Group variant for message.",
+      "categories": [
+        "message"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        "@components/uiable/message/message-group.tsx"
+      ],
+      "keywords": [
+        "message",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-group",
+      "url": "https://uiable.com/r/uiable-message-group.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-group"
+    },
+    {
+      "name": "uiable-message-attachment",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Attachment",
+      "description": "Message Atachment variant for message.",
+      "categories": [
+        "message"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message"
+      ],
+      "files": [
+        "@components/uiable/message/message-attachment.tsx"
+      ],
+      "keywords": [
+        "attachment",
+        "message",
+        "atachment"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-attachment",
+      "url": "https://uiable.com/r/uiable-message-attachment.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-attachment"
+    },
+    {
+      "name": "uiable-message-scroller-anchoring-turns",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Anchoring Turns",
+      "description": "Message Scroller Anchoring Turns variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-anchoring-turns.tsx"
+      ],
+      "keywords": [
+        "anchoring",
+        "turns",
+        "message",
+        "scroller"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-anchoring-turns",
+      "url": "https://uiable.com/r/uiable-message-scroller-anchoring-turns.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-anchoring-turns"
+    },
+    {
+      "name": "uiable-message-scroller-group-chat",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Group Chat",
+      "description": "Message Scroller Group Chat variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-group-chat.tsx"
+      ],
+      "keywords": [
+        "group",
+        "chat",
+        "message",
+        "scroller"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-group-chat",
+      "url": "https://uiable.com/r/uiable-message-scroller-group-chat.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-group-chat"
+    },
+    {
+      "name": "uiable-message-scroller-context-visible",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Keeping Context Visible",
+      "description": "Message Scroller Keeping Context Visible variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-context-visible.tsx"
+      ],
+      "keywords": [
+        "keeping",
+        "context",
+        "visible",
+        "message",
+        "scroller"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-context-visible",
+      "url": "https://uiable.com/r/uiable-message-scroller-context-visible.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-context-visible"
+    },
+    {
+      "name": "uiable-message-scroller-live-edge",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Following the Live Edge",
+      "description": "Message Scroller Live Edge variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-live-edge.tsx"
+      ],
+      "keywords": [
+        "following",
+        "the",
+        "live",
+        "edge",
+        "message",
+        "scroller"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-live-edge",
+      "url": "https://uiable.com/r/uiable-message-scroller-live-edge.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-live-edge"
+    },
+    {
+      "name": "uiable-message-scroller-position",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Opening Saved Threads",
+      "description": "Message Scroller Opening Saved Threads variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-position.tsx"
+      ],
+      "keywords": [
+        "opening",
+        "saved",
+        "threads",
+        "message",
+        "scroller",
+        "position"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-position",
+      "url": "https://uiable.com/r/uiable-message-scroller-position.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-position"
+    },
+    {
+      "name": "uiable-message-scroller-load-history",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Loading Earlier Messages",
+      "description": "Message Scroller Load History variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-load-history.tsx"
+      ],
+      "keywords": [
+        "loading",
+        "earlier",
+        "messages",
+        "message",
+        "scroller",
+        "load",
+        "history"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-load-history",
+      "url": "https://uiable.com/r/uiable-message-scroller-load-history.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-load-history"
+    },
+    {
+      "name": "uiable-message-scroller-animatinng",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Animating New Messages",
+      "description": "Message Scroller Animating variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-animatinng.tsx"
+      ],
+      "keywords": [
+        "animating",
+        "new",
+        "messages",
+        "message",
+        "scroller",
+        "animatinng"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-animatinng",
+      "url": "https://uiable.com/r/uiable-message-scroller-animatinng.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-animatinng"
+    },
+    {
+      "name": "uiable-message-scroller-reader-position",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Tracking the Reader's Position",
+      "description": "Message Scroller Reader Position variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-reader-position.tsx"
+      ],
+      "keywords": [
+        "tracking",
+        "the",
+        "reader",
+        "position",
+        "message",
+        "scroller"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-reader-position",
+      "url": "https://uiable.com/r/uiable-message-scroller-reader-position.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-reader-position"
+    },
+    {
+      "name": "uiable-message-scroller-reading-state",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Reading Scroll State",
+      "description": "Message Scroller Reading State variant for message-scroller.",
+      "categories": [
+        "message-scroller"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "message-scroller"
+      ],
+      "files": [
+        "@components/uiable/message-scroller/message-scroller-reading-state.tsx"
+      ],
+      "keywords": [
+        "reading",
+        "scroll",
+        "state",
+        "message",
+        "scroller"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-message-scroller-reading-state",
+      "url": "https://uiable.com/r/uiable-message-scroller-reading-state.json",
+      "previewUrl": "https://uiable.com/preview/uiable-message-scroller-reading-state"
+    },
+    {
+      "name": "uiable-radio-group-list",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "List Radio Group",
+      "description": "Radio Group List variant for radio-group.",
+      "categories": [
+        "radio-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "files": [
+        "@components/uiable/radio-group/radio-group-list.tsx"
+      ],
+      "keywords": [
+        "list",
+        "radio",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-radio-group-list",
+      "url": "https://uiable.com/r/uiable-radio-group-list.json",
+      "previewUrl": "https://uiable.com/preview/uiable-radio-group-list"
+    },
+    {
+      "name": "uiable-radio-group-colors",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Colors Radio Group",
+      "description": "Color Radio Group variant for radio-group.",
+      "categories": [
+        "radio-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "files": [
+        "@components/uiable/radio-group/radio-group-colors.tsx"
+      ],
+      "keywords": [
+        "colors",
+        "radio",
+        "group",
+        "color"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-radio-group-colors",
+      "url": "https://uiable.com/r/uiable-radio-group-colors.json",
+      "previewUrl": "https://uiable.com/preview/uiable-radio-group-colors"
+    },
+    {
+      "name": "uiable-radio-group-box",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Box Radio Group",
+      "description": "Radio Group Box variant for radio-group.",
+      "categories": [
+        "radio-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "files": [
+        "@components/uiable/radio-group/radio-group-box.tsx"
+      ],
+      "keywords": [
+        "box",
+        "radio",
+        "group"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-radio-group-box",
+      "url": "https://uiable.com/r/uiable-radio-group-box.json",
+      "previewUrl": "https://uiable.com/preview/uiable-radio-group-box"
+    },
+    {
+      "name": "uiable-radio-group-sizes",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Sizes Radio Group",
+      "description": "Size Radio Group variant for radio-group.",
+      "categories": [
+        "radio-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "files": [
+        "@components/uiable/radio-group/radio-group-sizes.tsx"
+      ],
+      "keywords": [
+        "sizes",
+        "radio",
+        "group",
+        "size"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-radio-group-sizes",
+      "url": "https://uiable.com/r/uiable-radio-group-sizes.json",
+      "previewUrl": "https://uiable.com/preview/uiable-radio-group-sizes"
+    },
+    {
       "name": "uiable-block-landing-header",
       "kind": "block",
       "type": "registry:block",
@@ -13321,6 +13882,130 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-block-landing-footer",
       "url": "https://uiable.com/r/uiable-block-landing-footer.json",
       "previewUrl": "https://uiable.com/preview/uiable-block-landing-footer"
+    },
+    {
+      "name": "uiable-block-cta-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Call To Action 1",
+      "description": "Call To Action variant for block.",
+      "categories": [
+        "cta"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/blocks/cta/cta-1/cta-1.tsx"
+      ],
+      "keywords": [
+        "call",
+        "action",
+        "block",
+        "cta"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-cta-1",
+      "url": "https://uiable.com/r/uiable-block-cta-1.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-cta-1"
+    },
+    {
+      "name": "uiable-block-cta-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Call To Action 2",
+      "description": "Call To Action variant for block.",
+      "categories": [
+        "cta"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/blocks/cta/cta-2/cta-2.tsx"
+      ],
+      "keywords": [
+        "call",
+        "action",
+        "block",
+        "cta"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-cta-2",
+      "url": "https://uiable.com/r/uiable-block-cta-2.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-cta-2"
+    },
+    {
+      "name": "uiable-block-contact-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 1",
+      "description": "Contact variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/blocks/contact/contact-1/contact-1.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-contact-1",
+      "url": "https://uiable.com/r/uiable-block-contact-1.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-contact-1"
+    },
+    {
+      "name": "uiable-block-content-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Content 1",
+      "description": "Content variant for block.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/blocks/content/content-1/content-1.tsx"
+      ],
+      "keywords": [
+        "content",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-content-1",
+      "url": "https://uiable.com/r/uiable-block-content-1.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-content-1"
+    },
+    {
+      "name": "uiable-block-faq-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "FAQ 1",
+      "description": "FAQ variant for block.",
+      "categories": [
+        "faq"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/blocks/faq/faq-1/faq-1.tsx"
+      ],
+      "keywords": [
+        "faq",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-faq-1",
+      "url": "https://uiable.com/r/uiable-block-faq-1.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-faq-1"
     }
   ]
 }

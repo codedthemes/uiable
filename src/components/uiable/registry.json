@@ -3937,6 +3937,94 @@
       ]
     },
     {
+      "name": "uiable-command-with-description",
+      "type": "registry:ui",
+      "title": "With Description",
+      "description": "Command With Description variant for command.",
+      "registryDependencies": [
+        "command"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "command/command-with-description.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/command/command-with-description.tsx"
+        }
+      ],
+      "categories": [
+        "command"
+      ]
+    },
+    {
+      "name": "uiable-command-developer-actions",
+      "type": "registry:ui",
+      "title": "Developer Actions",
+      "description": "Command Developer Actions variant for command.",
+      "registryDependencies": [
+        "command"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "command/command-developer-actions.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/command/command-developer-actions.tsx"
+        }
+      ],
+      "categories": [
+        "command"
+      ]
+    },
+    {
+      "name": "uiable-command-invite-members",
+      "type": "registry:ui",
+      "title": "Invite Members",
+      "description": "Collaborative command palette for inviting teammates and managing workspace actions.",
+      "registryDependencies": [
+        "command"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "command/command-invite-members.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/command/command-invite-members.tsx"
+        }
+      ],
+      "categories": [
+        "command"
+      ]
+    },
+    {
+      "name": "uiable-command-search-filter",
+      "type": "registry:ui",
+      "title": "Search & Filter",
+      "description": "Search-focused command palette with smart filters and curated content suggestions.",
+      "registryDependencies": [
+        "command"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "command/command-search-filter.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/command/command-search-filter.tsx"
+        }
+      ],
+      "categories": [
+        "command"
+      ]
+    },
+    {
       "name": "uiable-context-menu-basic",
       "type": "registry:ui",
       "title": "Basic Context Menu",
@@ -4215,6 +4303,50 @@
           "path": "date-picker/date-picker-time.tsx",
           "type": "registry:component",
           "target": "@components/uiable/date-picker/date-picker-time.tsx"
+        }
+      ],
+      "categories": [
+        "date-picker"
+      ]
+    },
+    {
+      "name": "uiable-date-picker-disabled",
+      "type": "registry:ui",
+      "title": "Disabled Date Picker",
+      "description": "Date Picker Disabled variant for date-picker.",
+      "registryDependencies": [
+        "date-picker"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "date-picker/date-picker-disabled.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/date-picker/date-picker-disabled.tsx"
+        }
+      ],
+      "categories": [
+        "date-picker"
+      ]
+    },
+    {
+      "name": "uiable-date-picker-neutral",
+      "type": "registry:ui",
+      "title": "Neutral Date & Time Picker",
+      "description": "Neutral Date & Time Picker variant for date-picker.",
+      "registryDependencies": [
+        "date-picker"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "date-picker/date-picker-neutral.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/date-picker/date-picker-neutral.tsx"
         }
       ],
       "categories": [
@@ -5761,6 +5893,28 @@
       ]
     },
     {
+      "name": "uiable-input-group-chat-message",
+      "type": "registry:ui",
+      "title": "Chat Message Input Group",
+      "description": "Input Group Chat Message variant for input-group.",
+      "registryDependencies": [
+        "input-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "input-group/input-group-chat-message.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/input-group/input-group-chat-message.tsx"
+        }
+      ],
+      "categories": [
+        "input-group"
+      ]
+    },
+    {
       "name": "uiable-input-inline",
       "type": "registry:ui",
       "title": "Inline Input",
@@ -5970,6 +6124,72 @@
       ]
     },
     {
+      "name": "uiable-input-otp-animated",
+      "type": "registry:ui",
+      "title": "Animated Input Otp",
+      "description": "Input Otp Animated variant with bounce animation on each slot when a digit is entered.",
+      "registryDependencies": [
+        "input-otp"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "input-otp/input-otp-animated.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/input-otp/input-otp-animated.tsx"
+        }
+      ],
+      "categories": [
+        "input-otp"
+      ]
+    },
+    {
+      "name": "uiable-input-otp-filled",
+      "type": "registry:ui",
+      "title": "Filled Input Otp",
+      "description": "Input Otp Filled variant for input-otp",
+      "registryDependencies": [
+        "input-otp"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "input-otp/input-otp-filled.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/input-otp/input-otp-filled.tsx"
+        }
+      ],
+      "categories": [
+        "input-otp"
+      ]
+    },
+    {
+      "name": "uiable-input-otp-outlined",
+      "type": "registry:ui",
+      "title": "Outlined Input Otp",
+      "description": "Input Otp Outlined variant for input-otp",
+      "registryDependencies": [
+        "input-otp"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "input-otp/input-otp-outlined.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/input-otp/input-otp-outlined.tsx"
+        }
+      ],
+      "categories": [
+        "input-otp"
+      ]
+    },
+    {
       "name": "uiable-input-required",
       "type": "registry:ui",
       "title": "Required Input",
@@ -5982,6 +6202,72 @@
           "path": "input/input-required.tsx",
           "type": "registry:component",
           "target": "@components/uiable/input/input-required.tsx"
+        }
+      ],
+      "categories": [
+        "input"
+      ]
+    },
+    {
+      "name": "uiable-input-range",
+      "type": "registry:ui",
+      "title": "Range Input",
+      "description": "Input Range variant for input.",
+      "registryDependencies": [
+        "input"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "input/input-range.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/input/input-range.tsx"
+        }
+      ],
+      "categories": [
+        "input"
+      ]
+    },
+    {
+      "name": "uiable-input-select",
+      "type": "registry:ui",
+      "title": "Select Input",
+      "description": "Input Select variant for input.",
+      "registryDependencies": [
+        "input"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "input/input-select.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/input/input-select.tsx"
+        }
+      ],
+      "categories": [
+        "input"
+      ]
+    },
+    {
+      "name": "uiable-input-validation",
+      "type": "registry:ui",
+      "title": "Validation Input",
+      "description": "Input Validation variant for input.",
+      "registryDependencies": [
+        "input"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "input/input-validation.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/input/input-validation.tsx"
         }
       ],
       "categories": [
@@ -6590,6 +6876,94 @@
           "path": "item/outline-item-group.tsx",
           "type": "registry:component",
           "target": "@components/uiable/item/outline-item-group.tsx"
+        }
+      ],
+      "categories": [
+        "item"
+      ]
+    },
+    {
+      "name": "uiable-item-switch",
+      "type": "registry:ui",
+      "title": "Switch Item",
+      "description": "Item with a toggle switch for item.",
+      "registryDependencies": [
+        "item"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "item/item-switch.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/item/item-switch.tsx"
+        }
+      ],
+      "categories": [
+        "item"
+      ]
+    },
+    {
+      "name": "uiable-item-separator",
+      "type": "registry:ui",
+      "title": "Separator Item",
+      "description": "Items visually divided by separator lines for item.",
+      "registryDependencies": [
+        "item"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "item/item-separator.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/item/item-separator.tsx"
+        }
+      ],
+      "categories": [
+        "item"
+      ]
+    },
+    {
+      "name": "uiable-item-background",
+      "type": "registry:ui",
+      "title": "Background Item",
+      "description": "Item with background variant for item.",
+      "registryDependencies": [
+        "item"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "item/item-background.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/item/item-background.tsx"
+        }
+      ],
+      "categories": [
+        "item"
+      ]
+    },
+    {
+      "name": "uiable-item-checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox Item",
+      "description": "Selectable item rows with checkbox for item.",
+      "registryDependencies": [
+        "item"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "item/item-checkbox.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/item/item-checkbox.tsx"
         }
       ],
       "categories": [
@@ -10103,6 +10477,94 @@
       ],
       "categories": [
         "message-scroller"
+      ]
+    },
+    {
+      "name": "uiable-radio-group-list",
+      "type": "registry:ui",
+      "title": "List Radio Group",
+      "description": "Radio Group List variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-list.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-list.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
+      ]
+    },
+    {
+      "name": "uiable-radio-group-colors",
+      "type": "registry:ui",
+      "title": "Colors Radio Group",
+      "description": "Color Radio Group variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-colors.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-colors.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
+      ]
+    },
+    {
+      "name": "uiable-radio-group-box",
+      "type": "registry:ui",
+      "title": "Box Radio Group",
+      "description": "Radio Group Box variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-box.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-box.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
+      ]
+    },
+    {
+      "name": "uiable-radio-group-sizes",
+      "type": "registry:ui",
+      "title": "Sizes Radio Group",
+      "description": "Size Radio Group variant for radio-group.",
+      "registryDependencies": [
+        "radio-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "radio-group/radio-group-sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/radio-group/radio-group-sizes.tsx"
+        }
+      ],
+      "categories": [
+        "radio-group"
       ]
     }
   ]
