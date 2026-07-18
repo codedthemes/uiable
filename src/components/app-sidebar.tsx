@@ -70,6 +70,7 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
     { title: "Installation", href: "/doc/installation" },
     { title: "Shadcn CLI", href: "/doc/cli" },
     { title: "Components", href: "/doc/components" },
+    { title: "Changelog", href: "/doc/changelog" },
   ]
 
   const filteredDocs = docs.filter((doc) =>
