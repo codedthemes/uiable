@@ -350,6 +350,31 @@ export const NAV_BLOCKS: NavSection[] = [
         slug: "faq",
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
+      {
+        title: "Feature",
+        slug: "feature",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Footer",
+        slug: "footer",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Gallery",
+        slug: "gallery",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Hero",
+        slug: "hero",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Portfolio",
+        slug: "portfolio",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
     ],
   },
 ]
