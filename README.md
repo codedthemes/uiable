@@ -265,6 +265,8 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/blocks/portfolio" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
 </div>
 
+<br />
+
 > Components are added based on practical frontend needs, not trend-driven requests. If you need something that isn't here, open a discussion or a PR.
 
 ---
