@@ -76,129 +76,101 @@ The entire component library is transparent and open for contribution. No gated 
 
 ## Components
 
-<style>
-.component-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 8px 0 20px;
-}
-.component-grid a {
-  display: inline-block;
-  width: 120px;
-  padding: 5px 10px;
-  border: 1px solid #d0d7de;
-  border-radius: 6px;
-  font-size: 12px;
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-decoration: none;
-  color: inherit;
-  box-sizing: border-box;
-}
-.component-grid a:hover {
-  background: #f6f8fa;
-  border-color: #0969da;
-}
-</style>
-
 ### Form Controls
 
-<div class="component-grid">
-  <a href="/components/button" title="Button">Button</a>
-  <a href="/components/button-group" title="Button Group">Button Group</a>
-  <a href="/components/checkbox" title="Checkbox">Checkbox</a>
-  <a href="/components/combobox" title="Combobox">Combobox</a>
-  <a href="/components/command" title="Command Palette">Command Palette</a>
-  <a href="/components/date-picker" title="Date Picker">Date Picker</a>
-  <a href="/components/input" title="Input">Input</a>
-  <a href="/components/input-group" title="Input Group">Input Group</a>
-  <a href="/components/input-otp" title="Input OTP">Input OTP</a>
-  <a href="/components/native-select" title="Native Select">Native Select</a>
-  <a href="/components/radio" title="Radio">Radio</a>
-  <a href="/components/radio-group" title="Radio Group">Radio Group</a>
-  <a href="/components/select" title="Select">Select</a>
-  <a href="/components/slider" title="Slider">Slider</a>
-  <a href="/components/switch" title="Switch">Switch</a>
-  <a href="/components/textarea" title="Textarea">Textarea</a>
-  <a href="/components/toggle" title="Toggle">Toggle</a>
-  <a href="/components/toggle-group" title="Toggle Group">Toggle Group</a>
+<div>
+  <a href="https://uiable.com/components/button" title="Button"><kbd>Button</kbd></a>
+  <a href="https://uiable.com/components/button-group" title="Button Group"><kbd>Button Group</kbd></a>
+  <a href="https://uiable.com/components/checkbox" title="Checkbox"><kbd>Checkbox</kbd></a>
+  <a href="https://uiable.com/components/combobox" title="Combobox"><kbd>Combobox</kbd></a>
+  <a href="https://uiable.com/components/command" title="Command Palette"><kbd>Command Palette</kbd></a>
+  <a href="https://uiable.com/components/date-picker" title="Date Picker"><kbd>Date Picker</kbd></a>
+  <a href="https://uiable.com/components/input" title="Input"><kbd>Input</kbd></a>
+  <a href="https://uiable.com/components/input-group" title="Input Group"><kbd>Input Group</kbd></a>
+  <a href="https://uiable.com/components/input-otp" title="Input OTP"><kbd>Input OTP</kbd></a>
+  <a href="https://uiable.com/components/native-select" title="Native Select"><kbd>Native Select</kbd></a>
+  <a href="https://uiable.com/components/radio" title="Radio"><kbd>Radio</kbd></a>
+  <a href="https://uiable.com/components/radio-group" title="Radio Group"><kbd>Radio Group</kbd></a>
+  <a href="https://uiable.com/components/select" title="Select"><kbd>Select</kbd></a>
+  <a href="https://uiable.com/components/slider" title="Slider"><kbd>Slider</kbd></a>
+  <a href="https://uiable.com/components/switch" title="Switch"><kbd>Switch</kbd></a>
+  <a href="https://uiable.com/components/textarea" title="Textarea"><kbd>Textarea</kbd></a>
+  <a href="https://uiable.com/components/toggle" title="Toggle"><kbd>Toggle</kbd></a>
+  <a href="https://uiable.com/components/toggle-group" title="Toggle Group"><kbd>Toggle Group</kbd></a>
 </div>
 
 ### Data Display
 
-<div class="component-grid">
-  <a href="/components/avatar" title="Avatar">Avatar</a>
-  <a href="/components/badge" title="Badge">Badge</a>
-  <a href="/components/card" title="Card">Card</a>
-  <a href="/components/carousel" title="Carousel">Carousel</a>
-  <a href="/components/chart" title="Chart">Chart</a>
-  <a href="/components/data-table" title="Data Table">Data Table</a>
-  <a href="/components/empty" title="Empty State">Empty State</a>
-  <a href="/components/hover-card" title="Hover Card">Hover Card</a>
-  <a href="/components/kbd" title="KBD">KBD</a>
-  <a href="/components/label" title="Label">Label</a>
-  <a href="/components/list-group" title="List Group">List Group</a>
-  <a href="/components/table" title="Table">Table</a>
-  <a href="/components/tooltip" title="Tooltip">Tooltip</a>
-  <a href="/components/skeleton" title="Skeleton">Skeleton</a>
-  <a href="/components/calendar" title="Calendar">Calendar</a>
+<div>
+  <a href="https://uiable.com/components/avatar" title="Avatar"><kbd>Avatar</kbd></a>
+  <a href="https://uiable.com/components/badge" title="Badge"><kbd>Badge</kbd></a>
+  <a href="https://uiable.com/components/card" title="Card"><kbd>Card</kbd></a>
+  <a href="https://uiable.com/components/carousel" title="Carousel"><kbd>Carousel</kbd></a>
+  <a href="https://uiable.com/components/chart" title="Chart"><kbd>Chart</kbd></a>
+  <a href="https://uiable.com/components/data-table" title="Data Table"><kbd>Data Table</kbd></a>
+  <a href="https://uiable.com/components/empty" title="Empty State"><kbd>Empty State</kbd></a>
+  <a href="https://uiable.com/components/hover-card" title="Hover Card"><kbd>Hover Card</kbd></a>
+  <a href="https://uiable.com/components/kbd" title="KBD"><kbd>KBD</kbd></a>
+  <a href="https://uiable.com/components/label" title="Label"><kbd>Label</kbd></a>
+  <a href="https://uiable.com/components/list-group" title="List Group"><kbd>List Group</kbd></a>
+  <a href="https://uiable.com/components/table" title="Table"><kbd>Table</kbd></a>
+  <a href="https://uiable.com/components/tooltip" title="Tooltip"><kbd>Tooltip</kbd></a>
+  <a href="https://uiable.com/components/skeleton" title="Skeleton"><kbd>Skeleton</kbd></a>
+  <a href="https://uiable.com/components/calendar" title="Calendar"><kbd>Calendar</kbd></a>
 </div>
 
 ### Feedback & Overlays
 
-<div class="component-grid">
-  <a href="/components/alert" title="Alert">Alert</a>
-  <a href="/components/alert-dialog" title="Alert Dialog">Alert Dialog</a>
-  <a href="/components/dialog" title="Dialog">Dialog</a>
-  <a href="/components/drawer" title="Drawer">Drawer</a>
-  <a href="/components/progress" title="Progress">Progress</a>
-  <a href="/components/sheet" title="Sheet">Sheet</a>
-  <a href="/components/sonner" title="Sonner">Sonner</a>
-  <a href="/components/spinner" title="Spinner">Spinner</a>
+<div>
+  <a href="https://uiable.com/components/alert" title="Alert"><kbd>Alert</kbd></a>
+  <a href="https://uiable.com/components/alert-dialog" title="Alert Dialog"><kbd>Alert Dialog</kbd></a>
+  <a href="https://uiable.com/components/dialog" title="Dialog"><kbd>Dialog</kbd></a>
+  <a href="https://uiable.com/components/drawer" title="Drawer"><kbd>Drawer</kbd></a>
+  <a href="https://uiable.com/components/progress" title="Progress"><kbd>Progress</kbd></a>
+  <a href="https://uiable.com/components/sheet" title="Sheet"><kbd>Sheet</kbd></a>
+  <a href="https://uiable.com/components/sonner" title="Sonner"><kbd>Sonner</kbd></a>
+  <a href="https://uiable.com/components/spinner" title="Spinner"><kbd>Spinner</kbd></a>
 </div>
 
 ### Navigation
 
-<div class="component-grid">
-  <a href="/components/breadcrumb" title="Breadcrumb">Breadcrumb</a>
-  <a href="/components/dropdown-menu" title="Dropdown Menu">Dropdown Menu</a>
-  <a href="/components/menubar" title="Menubar">Menubar</a>
-  <a href="/components/navbar" title="Navbar">Navbar</a>
-  <a href="/components/navigation-menu" title="Navigation Menu">Navigation Menu</a>
-  <a href="/components/pagination" title="Pagination">Pagination</a>
-  <a href="/components/tabs" title="Tabs">Tabs</a>
-  <a href="/components/sidebar" title="Sidebar">Sidebar</a>
+<div>
+  <a href="https://uiable.com/components/breadcrumb" title="Breadcrumb"><kbd>Breadcrumb</kbd></a>
+  <a href="https://uiable.com/components/dropdown-menu" title="Dropdown Menu"><kbd>Dropdown Menu</kbd></a>
+  <a href="https://uiable.com/components/menubar" title="Menubar"><kbd>Menubar</kbd></a>
+  <a href="https://uiable.com/components/navbar" title="Navbar"><kbd>Navbar</kbd></a>
+  <a href="https://uiable.com/components/navigation-menu" title="Navigation Menu"><kbd>Navigation Menu</kbd></a>
+  <a href="https://uiable.com/components/pagination" title="Pagination"><kbd>Pagination</kbd></a>
+  <a href="https://uiable.com/components/tabs" title="Tabs"><kbd>Tabs</kbd></a>
+  <a href="https://uiable.com/components/sidebar" title="Sidebar"><kbd>Sidebar</kbd></a>
 </div>
 
 ### Layout & Interaction
 
-<div class="component-grid">
-  <a href="/components/accordion" title="Accordion">Accordion</a>
-  <a href="/components/collapsible" title="Collapsible">Collapsible</a>
-  <a href="/components/context-menu" title="Context Menu">Context Menu</a>
-  <a href="/components/item" title="Item">Item</a>
-  <a href="/components/popover" title="Popover">Popover</a>
+<div>
+  <a href="https://uiable.com/components/accordion" title="Accordion"><kbd>Accordion</kbd></a>
+  <a href="https://uiable.com/components/collapsible" title="Collapsible"><kbd>Collapsible</kbd></a>
+  <a href="https://uiable.com/components/context-menu" title="Context Menu"><kbd>Context Menu</kbd></a>
+  <a href="https://uiable.com/components/item" title="Item"><kbd>Item</kbd></a>
+  <a href="https://uiable.com/components/popover" title="Popover"><kbd>Popover</kbd></a>
 </div>
 
 ### Other Components
 
-<div class="component-grid">
-  <a href="/components/aspect-ratio" title="Aspect Ratio">Aspect Ratio</a>
-  <a href="/components/attachment" title="Attachment">Attachment</a>
-  <a href="/components/bubble" title="Bubble">Bubble</a>
-  <a href="/components/command" title="Command">Command</a>
-  <a href="/components/empty" title="Empty">Empty</a>
-  <a href="/components/field" title="Field">Field</a>
-  <a href="/components/marker" title="Marker">Marker</a>
-  <a href="/components/message" title="Message">Message</a>
-  <a href="/components/message-scroller" title="Message Scroller">Message Scroller</a>
-  <a href="/components/resizable" title="Resizable">Resizable</a>
-  <a href="/components/scroll-area" title="Scroll Area">Scroll Area</a>
-  <a href="/components/separator" title="Separator">Separator</a>
-  <a href="/components/typography" title="Typography">Typography</a>
+<div>
+  <a href="https://uiable.com/components/aspect-ratio" title="Aspect Ratio"><kbd>Aspect Ratio</kbd></a>
+  <a href="https://uiable.com/components/attachment" title="Attachment"><kbd>Attachment</kbd></a>
+  <a href="https://uiable.com/components/bubble" title="Bubble"><kbd>Bubble</kbd></a>
+  <a href="https://uiable.com/components/command" title="Command"><kbd>Command</kbd></a>
+  <a href="https://uiable.com/components/empty" title="Empty"><kbd>Empty</kbd></a>
+  <a href="https://uiable.com/components/field" title="Field"><kbd>Field</kbd></a>
+  <a href="https://uiable.com/components/marker" title="Marker"><kbd>Marker</kbd></a>
+  <a href="https://uiable.com/components/message" title="Message"><kbd>Message</kbd></a>
+  <a href="https://uiable.com/components/message-scroller" title="Message Scroller"><kbd>Message Scroller</kbd></a>
+  <a href="https://uiable.com/components/resizable" title="Resizable"><kbd>Resizable</kbd></a>
+  <a href="https://uiable.com/components/scroll-area" title="Scroll Area"><kbd>Scroll Area</kbd></a>
+  <a href="https://uiable.com/components/separator" title="Separator"><kbd>Separator</kbd></a>
+  <a href="https://uiable.com/components/typography" title="Typography"><kbd>Typography</kbd></a>
 </div>
 
 ---
@@ -209,114 +181,91 @@ Pre-built page sections ready to drop into your project.
 
 ### Contact
 
-<div class="component-grid">
-  <a href="/blocks/contact" title="Contact 1">Contact 1</a>
+<div>
+  <a href="https://uiable.com/blocks/contact" title="Contact 1"><kbd>Contact 1</kbd></a>
 </div>
 
 ### Content
 
-<div class="component-grid">
-  <a href="/blocks/content" title="Content 1">Content 1</a>
+<div>
+  <a href="https://uiable.com/blocks/content" title="Content 1"><kbd>Content 1</kbd></a>
 </div>
 
 ### CTA
 
-<div class="component-grid">
-  <a href="/blocks/cta" title="Call To Action 1">Call To Action 1</a>
-  <a href="/blocks/cta" title="Call To Action 2">Call To Action 2</a>
+<div>
+  <a href="https://uiable.com/blocks/cta" title="Call To Action 1"><kbd>Call To Action 1</kbd></a>
+  <a href="https://uiable.com/blocks/cta" title="Call To Action 2"><kbd>Call To Action 2</kbd></a>
 </div>
 
 ### Faq
 
-<div class="component-grid">
-  <a href="/blocks/faq" title="FAQ 1">FAQ 1</a>
+<div>
+  <a href="https://uiable.com/blocks/faq" title="FAQ 1"><kbd>FAQ 1</kbd></a>
 </div>
 
 ### Feature
 
-<div class="component-grid">
-  <a href="/blocks/feature" title="Feature 1">Feature 1</a>
-  <a href="/blocks/feature" title="Feature 2">Feature 2</a>
+<div>
+  <a href="https://uiable.com/blocks/feature" title="Feature 1"><kbd>Feature 1</kbd></a>
+  <a href="https://uiable.com/blocks/feature" title="Feature 2"><kbd>Feature 2</kbd></a>
 </div>
 
 ### Footer
 
-<div class="component-grid">
-  <a href="/blocks/footer" title="Footer 1">Footer 1</a>
-  <a href="/blocks/footer" title="Footer 2">Footer 2</a>
-  <a href="/blocks/footer" title="Footer 3">Footer 3</a>
+<div>
+  <a href="https://uiable.com/blocks/footer" title="Footer 1"><kbd>Footer 1</kbd></a>
+  <a href="https://uiable.com/blocks/footer" title="Footer 2"><kbd>Footer 2</kbd></a>
+  <a href="https://uiable.com/blocks/footer" title="Footer 3"><kbd>Footer 3</kbd></a>
 </div>
 
 ### Gallery
 
-<div class="component-grid">
-  <a href="/blocks/gallery" title="Gallery 1">Gallery 1</a>
-  <a href="/blocks/gallery" title="Gallery 2">Gallery 2</a>
-  <a href="/blocks/gallery" title="Gallery 3">Gallery 3</a>
-  <a href="/blocks/gallery" title="Gallery 4">Gallery 4</a>
+<div>
+  <a href="https://uiable.com/blocks/gallery" title="Gallery 1"><kbd>Gallery 1</kbd></a>
+  <a href="https://uiable.com/blocks/gallery" title="Gallery 2"><kbd>Gallery 2</kbd></a>
+  <a href="https://uiable.com/blocks/gallery" title="Gallery 3"><kbd>Gallery 3</kbd></a>
+  <a href="https://uiable.com/blocks/gallery" title="Gallery 4"><kbd>Gallery 4</kbd></a>
 </div>
 
 ### Hero
 
-<div class="component-grid">
-  <a href="/blocks/hero" title="Hero 1">Hero 1</a>
-  <a href="/blocks/hero" title="Hero 2">Hero 2</a>
+<div>
+  <a href="https://uiable.com/blocks/hero" title="Hero 1"><kbd>Hero 1</kbd></a>
+  <a href="https://uiable.com/blocks/hero" title="Hero 2"><kbd>Hero 2</kbd></a>
 </div>
 
 ### Portfolio
 
-<div class="component-grid">
-  <a href="/blocks/portfolio" title="Portfolio 1">Portfolio 1</a>
-  <a href="/blocks/portfolio" title="Portfolio 2">Portfolio 2</a>
-  <a href="/blocks/portfolio" title="Portfolio 3">Portfolio 3</a>
-  <a href="/blocks/portfolio" title="Portfolio 4">Portfolio 4</a>
+<div>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 1"><kbd>Portfolio 1</kbd></a>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 2"><kbd>Portfolio 2</kbd></a>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 3"><kbd>Portfolio 3</kbd></a>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
 </div>
 
 ### Landing
 
-<div class="component-grid">
-  <a href="/blocks/landing" title="Landing Header">Landing Header</a>
-  <a href="/blocks/landing" title="Hero">Hero</a>
-  <a href="/blocks/landing" title="Component 1">Component 1</a>
-  <a href="/blocks/landing" title="Component 2">Component 2</a>
-  <a href="/blocks/landing" title="Feature">Feature</a>
-  <a href="/blocks/landing" title="Contact">Contact</a>
-  <a href="/blocks/landing" title="Footer">Footer</a>
+<div>
+  <a href="https://uiable.com/blocks/landing" title="Landing Header"><kbd>Landing Header</kbd></a>
+  <a href="https://uiable.com/blocks/landing" title="Hero"><kbd>Hero</kbd></a>
+  <a href="https://uiable.com/blocks/landing" title="Component 1"><kbd>Component 1</kbd></a>
+  <a href="https://uiable.com/blocks/landing" title="Component 2"><kbd>Component 2</kbd></a>
+  <a href="https://uiable.com/blocks/landing" title="Feature"><kbd>Feature</kbd></a>
+  <a href="https://uiable.com/blocks/landing" title="Contact"><kbd>Contact</kbd></a>
+  <a href="https://uiable.com/blocks/landing" title="Footer"><kbd>Footer</kbd></a>
 </div>
 
 ### Portfolio
 
-<div class="component-grid">
-  <a href="/blocks/portfolio" title="Portfolio 1">Portfolio 1</a>
-  <a href="/blocks/portfolio" title="Portfolio 2">Portfolio 2</a>
-  <a href="/blocks/portfolio" title="Portfolio 3">Portfolio 3</a>
-  <a href="/blocks/portfolio" title="Portfolio 4">Portfolio 4</a>
+<div>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 1"><kbd>Portfolio 1</kbd></a>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 2"><kbd>Portfolio 2</kbd></a>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 3"><kbd>Portfolio 3</kbd></a>
+  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
 </div>
 
 > Components are added based on practical frontend needs, not trend-driven requests. If you need something that isn't here, open a discussion or a PR.
-
----
-
-## Installation
-
-Clone the repository from Github:
-
-```bash
-git clone https://github.com/codedthemes/uiable.git
-```
-
-Navigate into the directory and install dependencies:
-
-```bash
-cd uiable
-npm install
-```
-
-Start the Next.js development server:
-
-```bash
-npm run dev
-```
 
 ---
 
