@@ -10566,6 +10566,644 @@
       "categories": [
         "radio-group"
       ]
+    },
+    {
+      "name": "uiable-avatar-border-radius",
+      "type": "registry:ui",
+      "title": "Border Radius Avatar",
+      "description": "Avatar Border Radius variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "avatar/avatar-border-radius.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-border-radius.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ]
+    },
+    {
+      "name": "uiable-avatar-counter-indicator",
+      "type": "registry:ui",
+      "title": "Counter Indicator Avatar",
+      "description": "Avatar Counter Indicator variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "avatar/avatar-counter-indicator.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-counter-indicator.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ]
+    },
+    {
+      "name": "uiable-avatar-fallback",
+      "type": "registry:ui",
+      "title": "Fallback Avatar",
+      "description": "Avatar Fallback variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "avatar/avatar-fallback.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-fallback.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ]
+    },
+    {
+      "name": "uiable-avatar-placeholder-icon",
+      "type": "registry:ui",
+      "title": "Placeholder Icon Avatar",
+      "description": "Avatar Placeholder Icon variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "avatar/avatar-placeholder-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-placeholder-icon.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ]
+    },
+    {
+      "name": "uiable-badge-status",
+      "type": "registry:ui",
+      "title": "Status Badge",
+      "description": "Badge Status variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "badge/badge-status.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-status.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ]
+    },
+    {
+      "name": "uiable-badge-avatar",
+      "type": "registry:ui",
+      "title": "Avatar Badge",
+      "description": "Badge Avatar variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "badge/badge-avatar.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-avatar.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ]
+    },
+    {
+      "name": "uiable-badge-sizes",
+      "type": "registry:ui",
+      "title": "Sizes Badge",
+      "description": "Badge Sizes variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "badge/badge-sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-sizes.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ]
+    },
+    {
+      "name": "uiable-badge-gradient",
+      "type": "registry:ui",
+      "title": "Gradient Badge",
+      "description": "Badge Gradient variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "badge/badge-gradient.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-gradient.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ]
+    },
+    {
+      "name": "uiable-calendar-right-navigation",
+      "type": "registry:ui",
+      "title": "Right Navigation Calendar",
+      "description": "Calendar Right Navigation variant for calendar.",
+      "registryDependencies": [
+        "calendar"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "calendar/calendar-right-navigation.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/calendar/calendar-right-navigation.tsx"
+        }
+      ],
+      "categories": [
+        "calendar"
+      ]
+    },
+    {
+      "name": "uiable-card-product",
+      "type": "registry:ui",
+      "title": "Product Card",
+      "description": "Card Product variant for e-commerce items and checkout.",
+      "registryDependencies": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "card/card-product.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-product.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ]
+    },
+    {
+      "name": "uiable-card-tabs",
+      "type": "registry:ui",
+      "title": "Tabbing Card",
+      "description": "Card Tabs variant for multi-section interactive content.",
+      "registryDependencies": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "card/card-tabs.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-tabs.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ]
+    },
+    {
+      "name": "uiable-card-animated-tilt",
+      "type": "registry:ui",
+      "title": "Animated Tilt Card",
+      "description": "Interactive 3D perspective tilt card with light sheen using framer-motion.",
+      "registryDependencies": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "card/card-animated-tilt.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-animated-tilt.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ]
+    },
+    {
+      "name": "uiable-card-animated-flip",
+      "type": "registry:ui",
+      "title": "Animated Flip Card",
+      "description": "Interactive 3D dual-sided flip card with smooth rotation using framer-motion.",
+      "registryDependencies": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "card/card-animated-flip.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-animated-flip.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ]
+    },
+    {
+      "name": "uiable-select-clearable",
+      "type": "registry:ui",
+      "title": "Clearable Select",
+      "description": "Select Clearable variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "select/select-clearable.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-clearable.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ]
+    },
+    {
+      "name": "uiable-select-with-icons",
+      "type": "registry:ui",
+      "title": "With Icons Select",
+      "description": "Select With Icons variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "select/select-with-icons.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-with-icons.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ]
+    },
+    {
+      "name": "uiable-select-with-status",
+      "type": "registry:ui",
+      "title": "With Status Select",
+      "description": "Select With Status variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "select/select-with-status.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-with-status.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ]
+    },
+    {
+      "name": "uiable-select-with-users",
+      "type": "registry:ui",
+      "title": "With Users Select",
+      "description": "Select With Users variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "select/select-with-users.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-with-users.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ]
+    },
+    {
+      "name": "uiable-slider-color-options",
+      "type": "registry:ui",
+      "title": "Color Options Slider",
+      "description": "Color Options Slider Variant for slider.",
+      "registryDependencies": [
+        "slider"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "slider/slider-color-options.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/slider/slider-color-options.tsx"
+        }
+      ],
+      "categories": [
+        "slider"
+      ]
+    },
+    {
+      "name": "uiable-switch-toggle-theme",
+      "type": "registry:ui",
+      "title": "Toggle Theme",
+      "description": "Switch Toggle Theme variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "switch/switch-toggle-theme.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-toggle-theme.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ]
+    },
+    {
+      "name": "uiable-switch-color-options",
+      "type": "registry:ui",
+      "title": "Color Options",
+      "description": "Switch Color Options variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "switch/switch-color-options.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-color-options.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ]
+    },
+    {
+      "name": "uiable-switch-outline",
+      "type": "registry:ui",
+      "title": "Outline Switch",
+      "description": "Switch Outline variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "switch/switch-outline.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-outline.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ]
+    },
+    {
+      "name": "uiable-switch-square",
+      "type": "registry:ui",
+      "title": "Square Switch",
+      "description": "Switch Square variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "switch/switch-square.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-square.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ]
+    },
+    {
+      "name": "uiable-textarea-helper-text",
+      "type": "registry:ui",
+      "title": "Textarea With Helper Text",
+      "description": "Textarea With Helper Text variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "textarea/textarea-helper-text.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-helper-text.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ]
+    },
+    {
+      "name": "uiable-textarea-character-count",
+      "type": "registry:ui",
+      "title": "Character Count Textarea",
+      "description": "Textarea Character Count variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "textarea/textarea-character-count.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-character-count.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ]
+    },
+    {
+      "name": "uiable-textarea-feedback",
+      "type": "registry:ui",
+      "title": "Feedback Textarea",
+      "description": "Textarea Feedback variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "textarea/textarea-feedback.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-feedback.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ]
+    },
+    {
+      "name": "uiable-textarea-readonly",
+      "type": "registry:ui",
+      "title": "Readonly Textarea",
+      "description": "Textarea Readonly variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "textarea/textarea-readonly.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-readonly.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ]
+    },
+    {
+      "name": "uiable-toggle-group-filled-icon",
+      "type": "registry:ui",
+      "title": "Filled Icon",
+      "description": "Toggle Group Filled Icon variant for toggle-group.",
+      "registryDependencies": [
+        "toggle-group"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "toggle-group/toggle-group-filled-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/toggle-group/toggle-group-filled-icon.tsx"
+        }
+      ],
+      "categories": [
+        "toggle-group"
+      ]
+    },
+    {
+      "name": "uiable-toggle-icon",
+      "type": "registry:ui",
+      "title": "Icon Toggle",
+      "description": "Icon Toggle variant for toggle.",
+      "registryDependencies": [
+        "toggle"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "toggle/toggle-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/toggle/toggle-icon.tsx"
+        }
+      ],
+      "categories": [
+        "toggle"
+      ]
+    },
+    {
+      "name": "uiable-toggle-animated",
+      "type": "registry:ui",
+      "title": "Animated Toggle",
+      "description": "Animated Toggle variant for toggle.",
+      "registryDependencies": [
+        "toggle"
+      ],
+      "badge": {
+        "label": "New"
+      },
+      "files": [
+        {
+          "path": "toggle/toggle-animated.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/toggle/toggle-animated.tsx"
+        }
+      ],
+      "categories": [
+        "toggle"
+      ]
     }
   ]
 }

@@ -243,6 +243,291 @@
       "categories": [
         "faq"
       ]
+    },
+    {
+      "name": "uiable-block-feature-1",
+      "type": "registry:block",
+      "title": "Feature 1",
+      "description": "Feature variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "feature/feature-1/feature-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/feature/feature-1/feature-1.tsx"
+        }
+      ],
+      "categories": [
+        "feature"
+      ]
+    },
+    {
+      "name": "uiable-block-feature-2",
+      "type": "registry:block",
+      "title": "Feature 2",
+      "description": "Feature variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "feature/feature-2/feature-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/feature/feature-2/feature-2.tsx"
+        }
+      ],
+      "categories": [
+        "feature"
+      ]
+    },
+    {
+      "name": "uiable-block-footer-1",
+      "type": "registry:block",
+      "title": "Footer 1",
+      "description": "Footer variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "footer/footer-1/footer-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/footer/footer-1/footer-1.tsx"
+        }
+      ],
+      "categories": [
+        "footer"
+      ]
+    },
+    {
+      "name": "uiable-block-footer-2",
+      "type": "registry:block",
+      "title": "Footer 2",
+      "description": "Footer variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "footer/footer-2/footer-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/footer/footer-2/footer-2.tsx"
+        }
+      ],
+      "categories": [
+        "footer"
+      ]
+    },
+    {
+      "name": "uiable-block-footer-3",
+      "type": "registry:block",
+      "title": "Footer 3",
+      "description": "Footer variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "footer/footer-3/footer-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/footer/footer-3/footer-3.tsx"
+        }
+      ],
+      "categories": [
+        "footer"
+      ]
+    },
+    {
+      "name": "uiable-block-gallery-1",
+      "type": "registry:block",
+      "title": "Gallery 1",
+      "description": "Gallery variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "gallery/gallery-1/gallery-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/gallery/gallery-1/gallery-1.tsx"
+        }
+      ],
+      "categories": [
+        "gallery"
+      ]
+    },
+    {
+      "name": "uiable-block-gallery-2",
+      "type": "registry:block",
+      "title": "Gallery 2",
+      "description": "Gallery variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "gallery/gallery-2/gallery-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/gallery/gallery-2/gallery-2.tsx"
+        }
+      ],
+      "categories": [
+        "gallery"
+      ]
+    },
+    {
+      "name": "uiable-block-gallery-3",
+      "type": "registry:block",
+      "title": "Gallery 3",
+      "description": "Gallery variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "gallery/gallery-3/gallery-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/gallery/gallery-3/gallery-3.tsx"
+        }
+      ],
+      "categories": [
+        "gallery"
+      ]
+    },
+    {
+      "name": "uiable-block-gallery-4",
+      "type": "registry:block",
+      "title": "Gallery 4",
+      "description": "Gallery variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "gallery/gallery-4/gallery-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/gallery/gallery-4/gallery-4.tsx"
+        }
+      ],
+      "categories": [
+        "gallery"
+      ]
+    },
+    {
+      "name": "uiable-block-hero-1",
+      "type": "registry:block",
+      "title": "Hero 1",
+      "description": "Hero variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "hero/hero-1/hero-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-1/hero-1.tsx"
+        }
+      ],
+      "categories": [
+        "hero"
+      ]
+    },
+    {
+      "name": "uiable-block-hero-2",
+      "type": "registry:block",
+      "title": "Hero 2",
+      "description": "Hero variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "hero/hero-2/hero-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-2/hero-2.tsx"
+        }
+      ],
+      "categories": [
+        "hero"
+      ]
+    },
+    {
+      "name": "uiable-block-portfolio-1",
+      "type": "registry:block",
+      "title": "Portfolio 1",
+      "description": "Portfolio variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "portfolio/portfolio-1/portfolio-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/portfolio/portfolio-1/portfolio-1.tsx"
+        }
+      ],
+      "categories": [
+        "portfolio"
+      ]
+    },
+    {
+      "name": "uiable-block-portfolio-2",
+      "type": "registry:block",
+      "title": "Portfolio 2",
+      "description": "Portfolio variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "portfolio/portfolio-2/portfolio-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/portfolio/portfolio-2/portfolio-2.tsx"
+        }
+      ],
+      "categories": [
+        "portfolio"
+      ]
+    },
+    {
+      "name": "uiable-block-portfolio-3",
+      "type": "registry:block",
+      "title": "Portfolio 3",
+      "description": "Portfolio variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "portfolio/portfolio-3/portfolio-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/portfolio/portfolio-3/portfolio-3.tsx"
+        }
+      ],
+      "categories": [
+        "portfolio"
+      ]
+    },
+    {
+      "name": "uiable-block-portfolio-4",
+      "type": "registry:block",
+      "title": "Portfolio 4",
+      "description": "Portfolio variant for block.",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "portfolio/portfolio-4/portfolio-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/portfolio/portfolio-4/portfolio-4.tsx"
+        }
+      ],
+      "categories": [
+        "portfolio"
+      ]
     }
   ]
 }
