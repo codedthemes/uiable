@@ -207,40 +207,30 @@ Pre-built page sections ready to drop into your project.
 ### Feature
 
 <div>
-  <a href="https://uiable.com/blocks/feature" title="Feature 1"><kbd>Feature 1</kbd></a>
   <a href="https://uiable.com/blocks/feature" title="Feature 2"><kbd>Feature 2</kbd></a>
 </div>
 
 ### Footer
 
 <div>
-  <a href="https://uiable.com/blocks/footer" title="Footer 1"><kbd>Footer 1</kbd></a>
-  <a href="https://uiable.com/blocks/footer" title="Footer 2"><kbd>Footer 2</kbd></a>
   <a href="https://uiable.com/blocks/footer" title="Footer 3"><kbd>Footer 3</kbd></a>
 </div>
 
 ### Gallery
 
 <div>
-  <a href="https://uiable.com/blocks/gallery" title="Gallery 1"><kbd>Gallery 1</kbd></a>
-  <a href="https://uiable.com/blocks/gallery" title="Gallery 2"><kbd>Gallery 2</kbd></a>
-  <a href="https://uiable.com/blocks/gallery" title="Gallery 3"><kbd>Gallery 3</kbd></a>
   <a href="https://uiable.com/blocks/gallery" title="Gallery 4"><kbd>Gallery 4</kbd></a>
 </div>
 
 ### Hero
 
 <div>
-  <a href="https://uiable.com/blocks/hero" title="Hero 1"><kbd>Hero 1</kbd></a>
   <a href="https://uiable.com/blocks/hero" title="Hero 2"><kbd>Hero 2</kbd></a>
 </div>
 
 ### Portfolio
 
 <div>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 1"><kbd>Portfolio 1</kbd></a>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 2"><kbd>Portfolio 2</kbd></a>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 3"><kbd>Portfolio 3</kbd></a>
   <a href="https://uiable.com/blocks/portfolio" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
 </div>
 
@@ -256,14 +246,6 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/blocks/landing" title="Footer"><kbd>Footer</kbd></a>
 </div>
 
-### Portfolio
-
-<div>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 1"><kbd>Portfolio 1</kbd></a>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 2"><kbd>Portfolio 2</kbd></a>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 3"><kbd>Portfolio 3</kbd></a>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
-</div>
 
 <br />
 
