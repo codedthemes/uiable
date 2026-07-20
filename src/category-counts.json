@@ -68,9 +68,9 @@
   "contact": 1,
   "content": 1,
   "faq": 1,
-  "feature": 2,
-  "footer": 3,
-  "gallery": 4,
-  "hero": 2,
-  "portfolio": 4
+  "feature": 1,
+  "footer": 1,
+  "gallery": 1,
+  "hero": 1,
+  "portfolio": 1
 }
