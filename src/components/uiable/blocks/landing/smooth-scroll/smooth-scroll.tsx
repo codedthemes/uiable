@@ -25,7 +25,11 @@ function ScrollLocker() {
       const locked = isScrollLocked()
       if (locked === lockedRef.current) return
       lockedRef.current = locked
-      locked ? lenis.stop() : lenis.start()
+      if (locked) {
+        lenis.stop()
+      } else {
+        lenis.start()
+      }
     }
 
     const observer = new MutationObserver(applyState)

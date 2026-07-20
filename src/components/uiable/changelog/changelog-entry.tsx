@@ -2,10 +2,12 @@
 
 // shadcn
 import { Separator } from "@/components/ui/separator"
-import { ExternalLink } from "lucide-react"
 
 // project
 import { CHANGELOG_DATA } from "@/data/changelog-data"
+
+// assets
+import { ExternalLink } from "lucide-react"
 
 // types
 type ChangelogRelease = (typeof CHANGELOG_DATA)[number]
@@ -24,25 +26,26 @@ export default function ChangelogEntry({
   return (
     <article aria-labelledby={release.anchor} className="flex flex-col gap-10">
       <div className="flex flex-col gap-6">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-row items-baseline gap-2">
           <h2
             id={release.anchor}
             className="group relative scroll-mt-24 text-xl font-semibold tracking-tight text-foreground"
           >
-        <a
-          href={`#${release.anchor}`}
-          className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-          aria-label={`Version ${release.version}`}
-        >
-          v{release.version}
-          {release.title && (
-            <span className="text-base font-normal text-muted-foreground">
-              — {release.title}
-            </span>
-          )}
-        </a>
+            <a
+              href={`#${release.anchor}`}
+              className="inline-flex items-center gap-2 transition-colors hover:text-primary"
+              aria-label={`Version ${release.version}`}
+            >
+              v{release.version}
+              {release.title && (
+                <span className="text-base font-normal text-muted-foreground">
+                  — {release.title}
+                </span>
+              )}
+            </a>
           </h2>
 
+          <span className="text-muted-foreground">-</span>
           <p className="text-sm text-muted-foreground">{release.date}</p>
         </div>
 
@@ -59,7 +62,7 @@ export default function ChangelogEntry({
                 </span>
               </div>
               <ul
-                className="ml-6 flex flex-col gap-2 list-disc marker:text-muted-foreground"
+                className="ml-6 flex list-disc flex-col gap-2 marker:text-muted-foreground"
                 role="list"
               >
                 {category.items.map((item, index) => {
