@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import { Badge } from "@/components/ui/badge";
 // project
 import CATEGORY_COUNTS from "@/category-counts.json";
 import { NAV_BLOCKS } from "@/components-grid";
@@ -78,7 +78,14 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
                     : "text-sidebar-foreground hover:bg-muted-foreground/6 hover:text-foreground"
                 )}
               >
-                <span className="capitalize">{item.title}</span>
+                <div className="flex items-center gap-2">
+                  <span className="capitalize">{item.title}</span>
+                  {item.badge && (
+                    <Badge className="border-transparent bg-red-500/15 text-red-500">
+                      {item.badge.label}
+                    </Badge>
+                  )}
+                </div>
                 <span
                   className={cn(
                     "text-xs transition-colors",

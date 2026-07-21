@@ -3944,9 +3944,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-with-description.tsx",
@@ -3966,9 +3963,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-developer-actions.tsx",
@@ -3988,9 +3982,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-invite-members.tsx",
@@ -4010,9 +4001,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-search-filter.tsx",
@@ -4317,9 +4305,6 @@
       "registryDependencies": [
         "date-picker"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "date-picker/date-picker-disabled.tsx",
@@ -4339,9 +4324,6 @@
       "registryDependencies": [
         "date-picker"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "date-picker/date-picker-neutral.tsx",
@@ -5900,9 +5882,6 @@
       "registryDependencies": [
         "input-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-group/input-group-chat-message.tsx",
@@ -6131,9 +6110,6 @@
       "registryDependencies": [
         "input-otp"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-otp/input-otp-animated.tsx",
@@ -6153,9 +6129,6 @@
       "registryDependencies": [
         "input-otp"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-otp/input-otp-filled.tsx",
@@ -6175,9 +6148,6 @@
       "registryDependencies": [
         "input-otp"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-otp/input-otp-outlined.tsx",
@@ -6216,9 +6186,6 @@
       "registryDependencies": [
         "input"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input/input-range.tsx",
@@ -6238,9 +6205,6 @@
       "registryDependencies": [
         "input"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input/input-select.tsx",
@@ -6260,9 +6224,6 @@
       "registryDependencies": [
         "input"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input/input-validation.tsx",
@@ -6890,9 +6851,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-switch.tsx",
@@ -6912,9 +6870,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-separator.tsx",
@@ -6934,9 +6889,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-background.tsx",
@@ -6956,9 +6908,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-checkbox.tsx",
@@ -9518,9 +9467,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-icon.tsx",
@@ -9540,9 +9486,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-social.tsx",
@@ -9562,9 +9505,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-toolbar.tsx",
@@ -9584,9 +9524,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-qty-select.tsx",
@@ -9606,9 +9543,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-social.tsx",
@@ -9628,9 +9562,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-with-badge.tsx",
@@ -9650,9 +9581,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-toggle.tsx",
@@ -9672,9 +9600,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-animated-border.tsx",
@@ -9694,9 +9619,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-animated.tsx",
@@ -9716,9 +9638,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-animated-gradient.tsx",
@@ -9890,9 +9809,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-indeterminate.tsx",
@@ -9912,9 +9828,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-colors.tsx",
@@ -9934,9 +9847,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-size.tsx",
@@ -9956,9 +9866,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-list.tsx",
@@ -9978,9 +9885,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-todo-list.tsx",
@@ -10000,9 +9904,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-user.tsx",
@@ -10022,9 +9923,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-error.tsx",
@@ -10044,9 +9942,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-with-checkbox.tsx",
@@ -10066,9 +9961,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-autocomplete.tsx",
@@ -10487,9 +10379,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-list.tsx",
@@ -10509,9 +10398,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-colors.tsx",
@@ -10531,9 +10417,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-box.tsx",
@@ -10553,9 +10436,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-sizes.tsx",
@@ -10575,9 +10455,6 @@
       "registryDependencies": [
         "avatar"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "avatar/avatar-border-radius.tsx",
@@ -10587,7 +10464,10 @@
       ],
       "categories": [
         "avatar"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-avatar-counter-indicator",
@@ -10597,9 +10477,6 @@
       "registryDependencies": [
         "avatar"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "avatar/avatar-counter-indicator.tsx",
@@ -10609,7 +10486,10 @@
       ],
       "categories": [
         "avatar"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-avatar-fallback",
@@ -10619,9 +10499,6 @@
       "registryDependencies": [
         "avatar"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "avatar/avatar-fallback.tsx",
@@ -10631,7 +10508,10 @@
       ],
       "categories": [
         "avatar"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-avatar-placeholder-icon",
@@ -10641,9 +10521,6 @@
       "registryDependencies": [
         "avatar"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "avatar/avatar-placeholder-icon.tsx",
@@ -10653,7 +10530,10 @@
       ],
       "categories": [
         "avatar"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-badge-status",
@@ -10663,9 +10543,6 @@
       "registryDependencies": [
         "badge"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "badge/badge-status.tsx",
@@ -10675,7 +10552,10 @@
       ],
       "categories": [
         "badge"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-badge-avatar",
@@ -10685,9 +10565,6 @@
       "registryDependencies": [
         "badge"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "badge/badge-avatar.tsx",
@@ -10697,7 +10574,10 @@
       ],
       "categories": [
         "badge"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-badge-sizes",
@@ -10707,9 +10587,6 @@
       "registryDependencies": [
         "badge"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "badge/badge-sizes.tsx",
@@ -10719,7 +10596,10 @@
       ],
       "categories": [
         "badge"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-badge-gradient",
@@ -10729,9 +10609,6 @@
       "registryDependencies": [
         "badge"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "badge/badge-gradient.tsx",
@@ -10741,7 +10618,10 @@
       ],
       "categories": [
         "badge"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-calendar-right-navigation",
@@ -10751,9 +10631,6 @@
       "registryDependencies": [
         "calendar"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "calendar/calendar-right-navigation.tsx",
@@ -10763,7 +10640,10 @@
       ],
       "categories": [
         "calendar"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-card-product",
@@ -10773,9 +10653,6 @@
       "registryDependencies": [
         "card"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "card/card-product.tsx",
@@ -10785,7 +10662,10 @@
       ],
       "categories": [
         "card"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-card-tabs",
@@ -10795,9 +10675,6 @@
       "registryDependencies": [
         "card"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "card/card-tabs.tsx",
@@ -10807,7 +10684,10 @@
       ],
       "categories": [
         "card"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-card-animated-tilt",
@@ -10817,9 +10697,6 @@
       "registryDependencies": [
         "card"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "card/card-animated-tilt.tsx",
@@ -10829,7 +10706,10 @@
       ],
       "categories": [
         "card"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-card-animated-flip",
@@ -10839,9 +10719,6 @@
       "registryDependencies": [
         "card"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "card/card-animated-flip.tsx",
@@ -10851,7 +10728,10 @@
       ],
       "categories": [
         "card"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-select-clearable",
@@ -10861,9 +10741,6 @@
       "registryDependencies": [
         "select"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "select/select-clearable.tsx",
@@ -10873,7 +10750,10 @@
       ],
       "categories": [
         "select"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-select-with-icons",
@@ -10883,9 +10763,6 @@
       "registryDependencies": [
         "select"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "select/select-with-icons.tsx",
@@ -10895,7 +10772,10 @@
       ],
       "categories": [
         "select"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-select-with-status",
@@ -10905,9 +10785,6 @@
       "registryDependencies": [
         "select"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "select/select-with-status.tsx",
@@ -10917,7 +10794,10 @@
       ],
       "categories": [
         "select"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-select-with-users",
@@ -10927,9 +10807,6 @@
       "registryDependencies": [
         "select"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "select/select-with-users.tsx",
@@ -10939,7 +10816,10 @@
       ],
       "categories": [
         "select"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-slider-color-options",
@@ -10949,9 +10829,6 @@
       "registryDependencies": [
         "slider"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "slider/slider-color-options.tsx",
@@ -10961,7 +10838,10 @@
       ],
       "categories": [
         "slider"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-switch-toggle-theme",
@@ -10971,9 +10851,6 @@
       "registryDependencies": [
         "switch"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "switch/switch-toggle-theme.tsx",
@@ -10983,7 +10860,10 @@
       ],
       "categories": [
         "switch"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-switch-color-options",
@@ -10993,9 +10873,6 @@
       "registryDependencies": [
         "switch"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "switch/switch-color-options.tsx",
@@ -11005,7 +10882,10 @@
       ],
       "categories": [
         "switch"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-switch-outline",
@@ -11015,9 +10895,6 @@
       "registryDependencies": [
         "switch"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "switch/switch-outline.tsx",
@@ -11027,7 +10904,10 @@
       ],
       "categories": [
         "switch"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-switch-square",
@@ -11037,9 +10917,6 @@
       "registryDependencies": [
         "switch"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "switch/switch-square.tsx",
@@ -11049,7 +10926,10 @@
       ],
       "categories": [
         "switch"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-textarea-helper-text",
@@ -11059,9 +10939,6 @@
       "registryDependencies": [
         "textarea"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "textarea/textarea-helper-text.tsx",
@@ -11071,7 +10948,10 @@
       ],
       "categories": [
         "textarea"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-textarea-character-count",
@@ -11081,9 +10961,6 @@
       "registryDependencies": [
         "textarea"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "textarea/textarea-character-count.tsx",
@@ -11093,7 +10970,10 @@
       ],
       "categories": [
         "textarea"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-textarea-feedback",
@@ -11103,9 +10983,6 @@
       "registryDependencies": [
         "textarea"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "textarea/textarea-feedback.tsx",
@@ -11115,7 +10992,10 @@
       ],
       "categories": [
         "textarea"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-textarea-readonly",
@@ -11125,9 +11005,6 @@
       "registryDependencies": [
         "textarea"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "textarea/textarea-readonly.tsx",
@@ -11137,7 +11014,10 @@
       ],
       "categories": [
         "textarea"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-toggle-group-filled-icon",
@@ -11147,9 +11027,6 @@
       "registryDependencies": [
         "toggle-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "toggle-group/toggle-group-filled-icon.tsx",
@@ -11159,7 +11036,10 @@
       ],
       "categories": [
         "toggle-group"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-toggle-icon",
@@ -11169,9 +11049,6 @@
       "registryDependencies": [
         "toggle"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "toggle/toggle-icon.tsx",
@@ -11181,7 +11058,10 @@
       ],
       "categories": [
         "toggle"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "uiable-toggle-animated",
@@ -11191,9 +11071,6 @@
       "registryDependencies": [
         "toggle"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "toggle/toggle-animated.tsx",
@@ -11203,7 +11080,10 @@
       ],
       "categories": [
         "toggle"
-      ]
+      ],
+      "badge": {
+        "label": "New"
+      }
     }
   ]
 }
