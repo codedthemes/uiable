@@ -70,6 +70,7 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
     { title: "Installation", href: "/doc/installation" },
     { title: "Shadcn CLI", href: "/doc/cli" },
     { title: "Components", href: "/doc/components" },
+    { title: "Changelog", href: "/doc/changelog" },
   ]
 
   const filteredDocs = docs.filter((doc) =>
@@ -189,6 +190,11 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                                 <span className="font-medium">
                                   {item.title}
                                 </span>
+                                {item.badge && (
+                                  <Badge className="ml-2 border-transparent bg-red-500/15 text-red-500">
+                                    {item.badge.label}
+                                  </Badge>
+                                )}
                                 <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
                                   {CATEGORY_COUNTS[
                                     item.slug as keyof typeof CATEGORY_COUNTS

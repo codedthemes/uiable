@@ -3944,9 +3944,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-with-description.tsx",
@@ -3966,9 +3963,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-developer-actions.tsx",
@@ -3988,9 +3982,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-invite-members.tsx",
@@ -4010,9 +4001,6 @@
       "registryDependencies": [
         "command"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "command/command-search-filter.tsx",
@@ -4317,9 +4305,6 @@
       "registryDependencies": [
         "date-picker"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "date-picker/date-picker-disabled.tsx",
@@ -4339,9 +4324,6 @@
       "registryDependencies": [
         "date-picker"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "date-picker/date-picker-neutral.tsx",
@@ -5900,9 +5882,6 @@
       "registryDependencies": [
         "input-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-group/input-group-chat-message.tsx",
@@ -6131,9 +6110,6 @@
       "registryDependencies": [
         "input-otp"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-otp/input-otp-animated.tsx",
@@ -6153,9 +6129,6 @@
       "registryDependencies": [
         "input-otp"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-otp/input-otp-filled.tsx",
@@ -6175,9 +6148,6 @@
       "registryDependencies": [
         "input-otp"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input-otp/input-otp-outlined.tsx",
@@ -6216,9 +6186,6 @@
       "registryDependencies": [
         "input"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input/input-range.tsx",
@@ -6238,9 +6205,6 @@
       "registryDependencies": [
         "input"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input/input-select.tsx",
@@ -6260,9 +6224,6 @@
       "registryDependencies": [
         "input"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "input/input-validation.tsx",
@@ -6890,9 +6851,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-switch.tsx",
@@ -6912,9 +6870,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-separator.tsx",
@@ -6934,9 +6889,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-background.tsx",
@@ -6956,9 +6908,6 @@
       "registryDependencies": [
         "item"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "item/item-checkbox.tsx",
@@ -9518,9 +9467,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-icon.tsx",
@@ -9540,9 +9486,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-social.tsx",
@@ -9562,9 +9505,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-toolbar.tsx",
@@ -9584,9 +9524,6 @@
       "registryDependencies": [
         "button-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button-group/button-group-qty-select.tsx",
@@ -9606,9 +9543,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-social.tsx",
@@ -9628,9 +9562,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-with-badge.tsx",
@@ -9650,9 +9581,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-toggle.tsx",
@@ -9672,9 +9600,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-animated-border.tsx",
@@ -9694,9 +9619,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-animated.tsx",
@@ -9716,9 +9638,6 @@
       "registryDependencies": [
         "button"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-animated-gradient.tsx",
@@ -9890,9 +9809,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-indeterminate.tsx",
@@ -9912,9 +9828,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-colors.tsx",
@@ -9934,9 +9847,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-size.tsx",
@@ -9956,9 +9866,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-list.tsx",
@@ -9978,9 +9885,6 @@
       "registryDependencies": [
         "checkbox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "checkbox/checkbox-todo-list.tsx",
@@ -10000,9 +9904,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-user.tsx",
@@ -10022,9 +9923,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-error.tsx",
@@ -10044,9 +9942,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-with-checkbox.tsx",
@@ -10066,9 +9961,6 @@
       "registryDependencies": [
         "combobox"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "combobox/combobox-autocomplete.tsx",
@@ -10487,9 +10379,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-list.tsx",
@@ -10509,9 +10398,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-colors.tsx",
@@ -10531,9 +10417,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-box.tsx",
@@ -10553,9 +10436,6 @@
       "registryDependencies": [
         "radio-group"
       ],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "radio-group/radio-group-sizes.tsx",
@@ -10566,6 +10446,644 @@
       "categories": [
         "radio-group"
       ]
+    },
+    {
+      "name": "uiable-avatar-border-radius",
+      "type": "registry:ui",
+      "title": "Border Radius Avatar",
+      "description": "Avatar Border Radius variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "avatar/avatar-border-radius.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-border-radius.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-avatar-counter-indicator",
+      "type": "registry:ui",
+      "title": "Counter Indicator Avatar",
+      "description": "Avatar Counter Indicator variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "avatar/avatar-counter-indicator.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-counter-indicator.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-avatar-fallback",
+      "type": "registry:ui",
+      "title": "Fallback Avatar",
+      "description": "Avatar Fallback variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "avatar/avatar-fallback.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-fallback.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-avatar-placeholder-icon",
+      "type": "registry:ui",
+      "title": "Placeholder Icon Avatar",
+      "description": "Avatar Placeholder Icon variant for avatar.",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "avatar/avatar-placeholder-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/avatar/avatar-placeholder-icon.tsx"
+        }
+      ],
+      "categories": [
+        "avatar"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-badge-status",
+      "type": "registry:ui",
+      "title": "Status Badge",
+      "description": "Badge Status variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "badge/badge-status.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-status.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-badge-avatar",
+      "type": "registry:ui",
+      "title": "Avatar Badge",
+      "description": "Badge Avatar variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "badge/badge-avatar.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-avatar.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-badge-sizes",
+      "type": "registry:ui",
+      "title": "Sizes Badge",
+      "description": "Badge Sizes variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "badge/badge-sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-sizes.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-badge-gradient",
+      "type": "registry:ui",
+      "title": "Gradient Badge",
+      "description": "Badge Gradient variant for badge.",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "badge/badge-gradient.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/badge/badge-gradient.tsx"
+        }
+      ],
+      "categories": [
+        "badge"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-calendar-right-navigation",
+      "type": "registry:ui",
+      "title": "Right Navigation Calendar",
+      "description": "Calendar Right Navigation variant for calendar.",
+      "registryDependencies": [
+        "calendar"
+      ],
+      "files": [
+        {
+          "path": "calendar/calendar-right-navigation.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/calendar/calendar-right-navigation.tsx"
+        }
+      ],
+      "categories": [
+        "calendar"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-card-product",
+      "type": "registry:ui",
+      "title": "Product Card",
+      "description": "Card Product variant for e-commerce items and checkout.",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "card/card-product.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-product.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-card-tabs",
+      "type": "registry:ui",
+      "title": "Tabbing Card",
+      "description": "Card Tabs variant for multi-section interactive content.",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "card/card-tabs.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-tabs.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-card-animated-tilt",
+      "type": "registry:ui",
+      "title": "Animated Tilt Card",
+      "description": "Interactive 3D perspective tilt card with light sheen using framer-motion.",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "card/card-animated-tilt.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-animated-tilt.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-card-animated-flip",
+      "type": "registry:ui",
+      "title": "Animated Flip Card",
+      "description": "Interactive 3D dual-sided flip card with smooth rotation using framer-motion.",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "card/card-animated-flip.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/card/card-animated-flip.tsx"
+        }
+      ],
+      "categories": [
+        "card"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-select-clearable",
+      "type": "registry:ui",
+      "title": "Clearable Select",
+      "description": "Select Clearable variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "select/select-clearable.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-clearable.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-select-with-icons",
+      "type": "registry:ui",
+      "title": "With Icons Select",
+      "description": "Select With Icons variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "select/select-with-icons.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-with-icons.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-select-with-status",
+      "type": "registry:ui",
+      "title": "With Status Select",
+      "description": "Select With Status variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "select/select-with-status.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-with-status.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-select-with-users",
+      "type": "registry:ui",
+      "title": "With Users Select",
+      "description": "Select With Users variant for select.",
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "select/select-with-users.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/select/select-with-users.tsx"
+        }
+      ],
+      "categories": [
+        "select"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-slider-color-options",
+      "type": "registry:ui",
+      "title": "Color Options Slider",
+      "description": "Color Options Slider Variant for slider.",
+      "registryDependencies": [
+        "slider"
+      ],
+      "files": [
+        {
+          "path": "slider/slider-color-options.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/slider/slider-color-options.tsx"
+        }
+      ],
+      "categories": [
+        "slider"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-switch-toggle-theme",
+      "type": "registry:ui",
+      "title": "Toggle Theme",
+      "description": "Switch Toggle Theme variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "switch/switch-toggle-theme.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-toggle-theme.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-switch-color-options",
+      "type": "registry:ui",
+      "title": "Color Options",
+      "description": "Switch Color Options variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "switch/switch-color-options.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-color-options.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-switch-outline",
+      "type": "registry:ui",
+      "title": "Outline Switch",
+      "description": "Switch Outline variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "switch/switch-outline.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-outline.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-switch-square",
+      "type": "registry:ui",
+      "title": "Square Switch",
+      "description": "Switch Square variant for switch.",
+      "registryDependencies": [
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "switch/switch-square.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/switch/switch-square.tsx"
+        }
+      ],
+      "categories": [
+        "switch"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-textarea-helper-text",
+      "type": "registry:ui",
+      "title": "Textarea With Helper Text",
+      "description": "Textarea With Helper Text variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "textarea/textarea-helper-text.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-helper-text.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-textarea-character-count",
+      "type": "registry:ui",
+      "title": "Character Count Textarea",
+      "description": "Textarea Character Count variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "textarea/textarea-character-count.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-character-count.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-textarea-feedback",
+      "type": "registry:ui",
+      "title": "Feedback Textarea",
+      "description": "Textarea Feedback variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "textarea/textarea-feedback.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-feedback.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-textarea-readonly",
+      "type": "registry:ui",
+      "title": "Readonly Textarea",
+      "description": "Textarea Readonly variant for textarea.",
+      "registryDependencies": [
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "textarea/textarea-readonly.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/textarea/textarea-readonly.tsx"
+        }
+      ],
+      "categories": [
+        "textarea"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-toggle-group-filled-icon",
+      "type": "registry:ui",
+      "title": "Filled Icon",
+      "description": "Toggle Group Filled Icon variant for toggle-group.",
+      "registryDependencies": [
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "toggle-group/toggle-group-filled-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/toggle-group/toggle-group-filled-icon.tsx"
+        }
+      ],
+      "categories": [
+        "toggle-group"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-toggle-icon",
+      "type": "registry:ui",
+      "title": "Icon Toggle",
+      "description": "Icon Toggle variant for toggle.",
+      "registryDependencies": [
+        "toggle"
+      ],
+      "files": [
+        {
+          "path": "toggle/toggle-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/toggle/toggle-icon.tsx"
+        }
+      ],
+      "categories": [
+        "toggle"
+      ],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "uiable-toggle-animated",
+      "type": "registry:ui",
+      "title": "Animated Toggle",
+      "description": "Animated Toggle variant for toggle.",
+      "registryDependencies": [
+        "toggle"
+      ],
+      "files": [
+        {
+          "path": "toggle/toggle-animated.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/toggle/toggle-animated.tsx"
+        }
+      ],
+      "categories": [
+        "toggle"
+      ],
+      "badge": {
+        "label": "New"
+      }
     }
   ]
 }
