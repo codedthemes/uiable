@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-select-clearable",
+  "title": "Clearable Select",
+  "description": "Select Clearable variant for select.",
+  "registryDependencies": [
+    "select"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/select/select-clearable.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { X } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue,\r\n} from \"@/components/ui/select\"\r\n\r\nconst categories = [\r\n  { label: \"Engineering\", value: \"engineering\" },\r\n  { label: \"Design\", value: \"design\" },\r\n  { label: \"Product Management\", value: \"product\" },\r\n  { label: \"Marketing\", value: \"marketing\" },\r\n  { label: \"Customer Success\", value: \"support\" },\r\n]\r\n\r\n//  ------------------------------ | SELECT - CLEARABLE | ------------------------------  //\r\n\r\nexport function SelectClearable() {\r\n  const [value, setValue] = useState<string | null>(\"design\")\r\n\r\n  const selectedCategory = categories.find((item) => item.value === value)\r\n\r\n  return (\r\n    <div className=\"relative w-full max-w-64\">\r\n      <Select\r\n        items={categories}\r\n        value={value}\r\n        onValueChange={(val) => setValue(val)}\r\n      >\r\n        <SelectTrigger className=\"w-full\">\r\n          <SelectValue>\r\n            {selectedCategory ? (\r\n              selectedCategory.label\r\n            ) : (\r\n              <span className=\"text-muted-foreground\">\r\n                Select department...\r\n              </span>\r\n            )}\r\n          </SelectValue>\r\n        </SelectTrigger>\r\n        <SelectContent>\r\n          <SelectGroup>\r\n            {categories.map((item) => (\r\n              <SelectItem key={item.value} value={item.value}>\r\n                {item.label}\r\n              </SelectItem>\r\n            ))}\r\n          </SelectGroup>\r\n        </SelectContent>\r\n      </Select>\r\n      {value && (\r\n        <Button\r\n          type=\"button\"\r\n          variant=\"ghost\"\r\n          size=\"icon-xs\"\r\n          onClick={(e) => {\r\n            e.stopPropagation()\r\n            e.preventDefault()\r\n            setValue(null)\r\n          }}\r\n          className=\"absolute top-1/2 right-7 -translate-y-1/2 text-muted-foreground hover:text-foreground\"\r\n          aria-label=\"Clear selection\"\r\n        >\r\n          <X className=\"size-3.5\" />\r\n        </Button>\r\n      )}\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/select/select-clearable.tsx"
+    }
+  ],
+  "categories": [
+    "select"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-select-with-users",
+  "title": "With Users Select",
+  "description": "Select With Users variant for select.",
+  "registryDependencies": [
+    "select"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/select/select-with-users.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue,\r\n} from \"@/components/ui/select\"\r\n\r\nconst users = [\r\n  {\r\n    label: \"Olivia Martin\",\r\n    name: \"Olivia Martin\",\r\n    value: \"olivia\",\r\n    role: \"Product Designer\",\r\n    initials: \"OM\",\r\n    color:\r\n      \"bg-blue-500/15 text-blue-700 dark:bg-blue-500/20 dark:text-blue-300\",\r\n  },\r\n  {\r\n    label: \"Jackson Lee\",\r\n    name: \"Jackson Lee\",\r\n    value: \"jackson\",\r\n    role: \"Frontend Lead\",\r\n    initials: \"JL\",\r\n    color:\r\n      \"bg-purple-500/15 text-purple-700 dark:bg-purple-500/20 dark:text-purple-300\",\r\n  },\r\n  {\r\n    label: \"Isabella Nguyen\",\r\n    name: \"Isabella Nguyen\",\r\n    value: \"isabella\",\r\n    role: \"UX Researcher\",\r\n    initials: \"IN\",\r\n    color:\r\n      \"bg-emerald-500/15 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300\",\r\n  },\r\n  {\r\n    label: \"William Kim\",\r\n    name: \"William Kim\",\r\n    value: \"william\",\r\n    role: \"DevOps Engineer\",\r\n    initials: \"WK\",\r\n    color:\r\n      \"bg-amber-500/15 text-amber-700 dark:bg-amber-500/20 dark:text-amber-300\",\r\n  },\r\n  {\r\n    label: \"Sofia Davis\",\r\n    name: \"Sofia Davis\",\r\n    value: \"sofia\",\r\n    role: \"Product Manager\",\r\n    initials: \"SD\",\r\n    color:\r\n      \"bg-rose-500/15 text-rose-700 dark:bg-rose-500/20 dark:text-rose-300\",\r\n  },\r\n]\r\n\r\n//  ------------------------------ | SELECT - WITH USERS | ------------------------------  //\r\n\r\nexport function SelectWithUsers() {\r\n  const [value, setValue] = useState(\"olivia\")\r\n  const selectedUser = users.find((u) => u.value === value)\r\n\r\n  return (\r\n    <Select\r\n      items={users}\r\n      value={value}\r\n      onValueChange={(val) => val && setValue(val)}\r\n    >\r\n      <SelectTrigger className=\"w-full max-w-72\">\r\n        <SelectValue>\r\n          {selectedUser && (\r\n            <span className=\"flex items-center gap-2\">\r\n              <Avatar className=\"after:border-none\">\r\n                <AvatarFallback className={`${selectedUser.color}`}>\r\n                  {selectedUser.initials}\r\n                </AvatarFallback>\r\n              </Avatar>\r\n              <span className=\"font-medium\">{selectedUser.name}</span>\r\n            </span>\r\n          )}\r\n        </SelectValue>\r\n      </SelectTrigger>\r\n      <SelectContent>\r\n        <SelectGroup>\r\n          {users.map((user) => (\r\n            <SelectItem key={user.value} value={user.value}>\r\n              <span className=\"flex items-center gap-2.5 py-0.5\">\r\n                <Avatar className=\"after:border-none\">\r\n                  <AvatarFallback className={`${user.color}`}>\r\n                    {user.initials}\r\n                  </AvatarFallback>\r\n                </Avatar>\r\n                <span className=\"flex flex-col text-left\">\r\n                  <span className=\"text-sm leading-none font-medium\">\r\n                    {user.name}\r\n                  </span>\r\n                  <span className=\"mt-0.5 text-xs text-muted-foreground\">\r\n                    {user.role}\r\n                  </span>\r\n                </span>\r\n              </span>\r\n            </SelectItem>\r\n          ))}\r\n        </SelectGroup>\r\n      </SelectContent>\r\n    </Select>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/select/select-with-users.tsx"
+    }
+  ],
+  "categories": [
+    "select"
+  ],
+  "type": "registry:ui"
+}
