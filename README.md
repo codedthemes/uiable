@@ -1,6 +1,6 @@
 <div align="center">
   <h1>UIAble</h1>
-  <p><strong>A modern UI component library built with Tailwind CSS and Shadcn architecture.</strong></p>
+  <p><strong>A modern UI library built with Tailwind CSS and Shadcn architecture.</strong></p>
   <p>
     <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19%2B-007ec6?style=flat-square&logo=react&logoColor=61DAFB" alt="React"></a>
     <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16%2B-007ec6?style=flat-square&logo=next.js&logoColor=white" alt="Next.js"></a>
@@ -245,7 +245,6 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/blocks/landing" title="Contact"><kbd>Contact</kbd></a>
   <a href="https://uiable.com/blocks/landing" title="Footer"><kbd>Footer</kbd></a>
 </div>
-
 
 <br />
 
