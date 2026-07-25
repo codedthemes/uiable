@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-toggle-group-filled-icon",
+  "title": "Filled Icon",
+  "description": "Toggle Group Filled Icon variant for toggle-group.",
+  "registryDependencies": [
+    "toggle-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/toggle-group/toggle-group-filled-icon.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { Bell, Bookmark, Heart, Pin, Star } from \"lucide-react\"\r\n\r\n// projects\r\nimport { cn } from \"@/lib/utils\"\r\n// shadcn\r\nimport { Badge } from \"@/components/ui/badge\"\r\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\"\r\n\r\ninterface FilledIconItem {\r\n  value: string\r\n  label: string\r\n  icon: React.ComponentType<{ className?: string; fill?: string }>\r\n}\r\n\r\nconst ITEMS: FilledIconItem[] = [\r\n  { value: \"bookmark\", label: \"Bookmark\", icon: Bookmark },\r\n  { value: \"favorite\", label: \"Favorite\", icon: Heart },\r\n  { value: \"star\", label: \"Star\", icon: Star },\r\n  { value: \"pin\", label: \"Pin\", icon: Pin },\r\n  { value: \"notify\", label: \"Notify\", icon: Bell },\r\n]\r\n\r\n//  ------------------------------ | TOGGLE GROUP - FILLED ICON | ------------------------------  //\r\n\r\nexport function ToggleGroupFilledIcon() {\r\n  const [selected, setSelected] = useState<string[]>([\"favorite\", \"star\"])\r\n\r\n  return (\r\n    <div className=\"flex flex-col items-center gap-5 rounded-lg border border-border/60 bg-gradient-to-b from-card/80 to-card/40 p-6\">\r\n      <ToggleGroup\r\n        value={selected}\r\n        onValueChange={(val) => setSelected(val)}\r\n        variant=\"outline\"\r\n        spacing={2}\r\n        size=\"lg\"\r\n        className=\"flex flex-wrap items-center justify-center gap-2\"\r\n      >\r\n        {ITEMS.map((item) => {\r\n          const Icon = item.icon\r\n          const isActive = selected.includes(item.value)\r\n\r\n          return (\r\n            <ToggleGroupItem\r\n              key={item.value}\r\n              value={item.value}\r\n              aria-label={item.label}\r\n              className={cn(\r\n                \"group relative flex size-12 flex-col items-center justify-center border transition-all duration-300\",\r\n                isActive\r\n                  ? \"border-primary bg-primary text-white hover:bg-primary/95 aria-pressed:bg-primary aria-pressed:text-white data-[state=on]:bg-primary data-[state=on]:text-white dark:text-white dark:aria-pressed:text-white dark:data-[state=on]:text-white\"\r\n                  : \"border-border/60 bg-muted/30 text-muted-foreground hover:border-border hover:bg-muted/70 hover:text-foreground\"\r\n              )}\r\n            >\r\n              <Icon\r\n                fill={isActive ? \"currentColor\" : \"none\"}\r\n                className={cn(\r\n                  \"size-5 transition-transform duration-300\",\r\n                  isActive\r\n                    ? \"scale-110 text-white dark:text-white\"\r\n                    : \"text-muted-foreground group-hover:scale-105 group-hover:text-foreground\"\r\n                )}\r\n              />\r\n              <span className=\"sr-only\">{item.label}</span>\r\n            </ToggleGroupItem>\r\n          )\r\n        })}\r\n      </ToggleGroup>\r\n\r\n      <div className=\"flex flex-wrap items-center justify-center gap-1.5 text-xs text-muted-foreground\">\r\n        <span>Active toggles:</span>\r\n        {selected.length > 0 ? (\r\n          selected.map((val) => {\r\n            const item = ITEMS.find((i) => i.value === val)\r\n            return (\r\n              <Badge key={val} className=\"bg-primary/10 text-primary\">\r\n                {item?.label}\r\n              </Badge>\r\n            )\r\n          })\r\n        ) : (\r\n          <span>None selected</span>\r\n        )}\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/toggle-group/toggle-group-filled-icon.tsx"
+    }
+  ],
+  "categories": [
+    "toggle-group"
+  ],
+  "type": "registry:ui"
+}

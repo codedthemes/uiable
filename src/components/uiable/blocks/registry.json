@@ -121,9 +121,6 @@
       "title": "Call To Action 1",
       "description": "Call To Action variant for block.",
       "registryDependencies": ["button"],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "cta/cta-1/cta-1.tsx",
@@ -139,9 +136,6 @@
       "title": "Call To Action 2",
       "description": "Call To Action variant for block.",
       "registryDependencies": ["button"],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "cta/cta-2/cta-2.tsx",
@@ -157,9 +151,6 @@
       "title": "Contact 1",
       "description": "Contact variant for block.",
       "registryDependencies": ["button"],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "contact/contact-1/contact-1.tsx",
@@ -175,9 +166,6 @@
       "title": "Content 1",
       "description": "Content variant for block.",
       "registryDependencies": ["button"],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "content/content-1/content-1.tsx",
@@ -193,9 +181,6 @@
       "title": "FAQ 1",
       "description": "FAQ variant for block.",
       "registryDependencies": ["button"],
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "faq/faq-1/faq-1.tsx",
@@ -279,6 +264,84 @@
         }
       ],
       "categories": ["portfolio"]
+    },
+    {
+      "name": "uiable-block-pricing-2",
+      "type": "registry:block",
+      "title": "Pricing 2",
+      "description": "Pricing variant for block.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "pricing/pricing-2/pricing-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/pricing/pricing-2/pricing-2.tsx"
+        }
+      ],
+      "categories": ["pricing"],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "uiable-block-process-1",
+      "type": "registry:block",
+      "title": "Process 1",
+      "description": "Process variant for block.",
+      "files": [
+        {
+          "path": "process/process-1/process-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/process/process-1/process-1.tsx"
+        }
+      ],
+      "categories": ["process"],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "uiable-block-statistics-1",
+      "type": "registry:block",
+      "title": "Statistics 1",
+      "description": "Statistics variant for block.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "statistics/statistics-1/statistics-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/statistics/statistics-1/statistics-1.tsx"
+        }
+      ],
+      "categories": ["statistics"],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "uiable-block-team-1",
+      "type": "registry:block",
+      "title": "Team 1",
+      "description": "Team variant for block.",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "team/team-1/team-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/team/team-1/team-1.tsx"
+        }
+      ],
+      "categories": ["team"]
+    },
+    {
+      "name": "uiable-block-testimonial-1",
+      "type": "registry:block",
+      "title": "Testimonial 1",
+      "description": "Testimonial variant for block.",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "testimonial/testimonial-1/testimonial-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/testimonial/testimonial-1/testimonial-1.tsx"
+        }
+      ],
+      "categories": ["testimonial"],
+      "dependencies": ["lucide-react"]
     }
   ]
 }
