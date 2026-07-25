@@ -15,10 +15,14 @@ import {
 } from "@/components/ui/command"
 
 // project imports
-import { NAV_CATEGORIES } from "@/components-grid"
+import { NAV_CATEGORIES, NAV_BLOCKS } from "@/components-grid"
 
 // assets
-import { IconSparkles, IconComponents } from "@tabler/icons-react"
+import {
+  IconSparkles,
+  IconComponents,
+  IconLayoutDashboard,
+} from "@tabler/icons-react"
 
 // ------------------------------ | NAVBAR SEARCH DIALOG | ------------------------------  //
 
@@ -94,6 +98,15 @@ export default function NavSearchDialog({
                   <IconSparkles className="mr-2 size-4" />
                   <span>Shadcn CLI</span>
                 </CommandItem>
+                <CommandItem
+                  value="Changelog"
+                  onSelect={() =>
+                    runCommand(() => router.push("/doc/changelog"))
+                  }
+                >
+                  <IconSparkles className="mr-2 size-4" />
+                  <span>Changelog</span>
+                </CommandItem>
               </CommandGroup>
               {NAV_CATEGORIES.map((section) => (
                 <CommandGroup key={section.title} heading={section.title}>
@@ -108,6 +121,25 @@ export default function NavSearchDialog({
                       }
                     >
                       <IconComponents className="mr-2 size-4" />
+                      <span>{item.title}</span>
+                    </CommandItem>
+                  ))}
+                </CommandGroup>
+              ))}
+              {NAV_BLOCKS.map((section) => (
+                <CommandGroup
+                  key={`block-${section.title}`}
+                  heading={`Blocks - ${section.title}`}
+                >
+                  {section.items.map((item) => (
+                    <CommandItem
+                      key={item.slug}
+                      value={item.title}
+                      onSelect={() =>
+                        runCommand(() => router.push(`/blocks/${item.slug}`))
+                      }
+                    >
+                      <IconLayoutDashboard className="mr-2 size-4" />
                       <span>{item.title}</span>
                     </CommandItem>
                   ))}
@@ -131,6 +163,13 @@ export default function NavSearchDialog({
               >
                 <IconComponents className="mr-2 size-4" />
                 <span>Components</span>
+              </CommandItem>
+              <CommandItem
+                value="Blocks"
+                onSelect={() => runCommand(() => router.push("/blocks"))}
+              >
+                <IconLayoutDashboard className="mr-2 size-4" />
+                <span>Blocks</span>
               </CommandItem>
             </CommandGroup>
           )}
