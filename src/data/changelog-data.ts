@@ -27,11 +27,6 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
       {
         title: "New Blocks",
         items: [
-          { text: "Feature: Feature 2", previewUrl: "/blocks/feature" },
-          { text: "Footer: Footer 3", previewUrl: "/blocks/footer" },
-          { text: "Gallery: Gallery 4", previewUrl: "/blocks/gallery" },
-          { text: "Hero: Hero 2", previewUrl: "/blocks/hero" },
-          { text: "Portfolio: Portfolio 4", previewUrl: "/blocks/portfolio" },
           { text: "Pricing: Pricing 2", previewUrl: "/blocks/pricing" },
           { text: "Process: Process 1", previewUrl: "/blocks/process" },
           {
