@@ -3,8 +3,14 @@
   "name": "uiable-calendar-hijri",
   "title": "Hijri Calendar",
   "description": "Calendar Hijri variant for calendar.",
+  "dependencies": [
+    "@daypicker/persian",
+    "lucide-react",
+    "next",
+    "react-day-picker"
+  ],
   "registryDependencies": [
-    "calendar"
+    "@uiable/button"
   ],
   "files": [
     {

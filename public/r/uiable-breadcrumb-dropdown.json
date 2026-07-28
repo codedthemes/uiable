@@ -3,8 +3,14 @@
   "name": "uiable-breadcrumb-dropdown",
   "title": "Dropdown Breadcrumb",
   "description": "Breadcrumb Dropdown variant for breadcrumb.",
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
   "registryDependencies": [
-    "breadcrumb"
+    "@uiable/breadcrumb",
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Menu Separator",
   "description": "Separator Menu variant for separator.",
   "registryDependencies": [
-    "separator"
+    "@uiable/separator"
   ],
   "files": [
     {

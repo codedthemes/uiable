@@ -4,7 +4,10 @@
   "title": "Button Group Input",
   "description": "Input Button Group variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

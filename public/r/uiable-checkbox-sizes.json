@@ -3,8 +3,12 @@
   "name": "uiable-checkbox-sizes",
   "title": "Checkbox Sizes",
   "description": "Checkbox Size variant for checkbox.",
+  "dependencies": [
+    "@base-ui/react",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "checkbox"
+    "@uiable/field"
   ],
   "files": [
     {

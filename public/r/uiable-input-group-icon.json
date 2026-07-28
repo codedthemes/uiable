@@ -3,8 +3,11 @@
   "name": "uiable-input-group-icon",
   "title": "Icon Input Group",
   "description": "Input Group Icon variant for input-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/input-group"
   ],
   "files": [
     {

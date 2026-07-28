@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-switch-square",
+  "title": "Square Switch",
+  "description": "Switch Square variant for switch.",
+  "registryDependencies": [
+    "@uiable/field",
+    "@uiable/switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-square.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport {\r\n  Field,\r\n  FieldContent,\r\n  FieldGroup,\r\n  FieldLabel,\r\n} from \"@/components/ui/field\"\r\nimport { Switch } from \"@/components/ui/switch\"\r\n\r\n//  ------------------------------ | SWITCH - SQUARE | ------------------------------  //\r\n\r\nexport function SwitchSquare() {\r\n  const [sharp, setSharp] = useState(true)\r\n  const [roundedSquare, setRoundedSquare] = useState(false)\r\n  const [softSquare, setSoftSquare] = useState(true)\r\n\r\n  return (\r\n    <FieldGroup className=\"w-full max-w-xs\">\r\n      {/* Sharp Square */}\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"switch-square-sharp\">Sharp square</FieldLabel>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"switch-square-sharp\"\r\n          checked={sharp}\r\n          onCheckedChange={setSharp}\r\n          className=\"!rounded-none [&_[data-slot=switch-thumb]]:!rounded-none\"\r\n        />\r\n      </Field>\r\n\r\n      {/* Rounded Square */}\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"switch-square-rounded\">\r\n            Rounded square\r\n          </FieldLabel>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"switch-square-rounded\"\r\n          checked={roundedSquare}\r\n          onCheckedChange={setRoundedSquare}\r\n          className=\"!rounded-md [&_[data-slot=switch-thumb]]:!rounded-sm\"\r\n        />\r\n      </Field>\r\n\r\n      {/* Soft Square */}\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"switch-square-soft\">Soft square</FieldLabel>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"switch-square-soft\"\r\n          checked={softSquare}\r\n          onCheckedChange={setSoftSquare}\r\n          className=\"!rounded-lg [&_[data-slot=switch-thumb]]:!rounded-md\"\r\n        />\r\n      </Field>\r\n    </FieldGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-square.tsx"
+    }
+  ],
+  "categories": [
+    "switch"
+  ],
+  "type": "registry:ui"
+}

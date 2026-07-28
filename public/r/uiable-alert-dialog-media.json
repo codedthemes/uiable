@@ -3,8 +3,12 @@
   "name": "uiable-alert-dialog-media",
   "title": "Media Alert Dialog",
   "description": "Alert Dialog Media variant for alert-dialog.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "alert-dialog"
+    "@uiable/alert-dialog",
+    "@uiable/button"
   ],
   "files": [
     {

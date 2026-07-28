@@ -3,8 +3,12 @@
   "name": "uiable-alert-dismissible-primary",
   "title": "Primary Dismissible Alert",
   "description": "Alert Dismissible Primary variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert",
+    "@uiable/button"
   ],
   "files": [
     {

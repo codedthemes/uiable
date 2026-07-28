@@ -3,8 +3,11 @@
   "name": "uiable-sonner-position",
   "title": "Position Sonner",
   "description": "Sonner Position variant for sonner.",
-  "registryDependencies": [
+  "dependencies": [
     "sonner"
+  ],
+  "registryDependencies": [
+    "@uiable/button"
   ],
   "files": [
     {

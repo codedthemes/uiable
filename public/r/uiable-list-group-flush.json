@@ -3,9 +3,6 @@
   "name": "uiable-list-group-flush",
   "title": "Flush List Group",
   "description": "List Group Flush variant for list-group.",
-  "registryDependencies": [
-    "list-group"
-  ],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-flush.tsx",

@@ -3,8 +3,11 @@
   "name": "uiable-menubar-icons",
   "title": "Icons Menubar",
   "description": "Menubar Icons variant for menubar.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "menubar"
+    "@uiable/menubar"
   ],
   "files": [
     {

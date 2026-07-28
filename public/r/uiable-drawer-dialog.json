@@ -4,7 +4,11 @@
   "title": "Dialog Drawer",
   "description": "Drawer Dialog variant for drawer.",
   "registryDependencies": [
-    "drawer"
+    "@uiable/button",
+    "@uiable/dialog",
+    "@uiable/drawer",
+    "@uiable/input",
+    "@uiable/label"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Sizes Toggle Group",
   "description": "Toggle Group Sizes variant for toggle-group.",
   "registryDependencies": [
-    "toggle-group"
+    "@uiable/toggle-group"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Select Field",
   "description": "Field Select variant for field.",
   "registryDependencies": [
-    "field"
+    "@uiable/field",
+    "@uiable/select"
   ],
   "files": [
     {

@@ -3,8 +3,12 @@
   "name": "uiable-card-small",
   "title": "Small Card",
   "description": "Card Small variant for card.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "card"
+    "@uiable/button",
+    "@uiable/card"
   ],
   "files": [
     {

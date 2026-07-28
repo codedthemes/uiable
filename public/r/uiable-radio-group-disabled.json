@@ -4,7 +4,8 @@
   "title": "Disabled Radio Group",
   "description": "Radio Group Disabled variant for radio-group.",
   "registryDependencies": [
-    "radio-group"
+    "@uiable/field",
+    "@uiable/radio-group"
   ],
   "files": [
     {

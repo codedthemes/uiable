@@ -4,7 +4,7 @@
   "title": "Light Primary Badge",
   "description": "Badge Light Primary variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

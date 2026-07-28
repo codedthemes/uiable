@@ -3,8 +3,11 @@
   "name": "uiable-combobox-error",
   "title": "Error Combobox",
   "description": "Combobox Error variant for combobox.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox"
   ],
   "files": [
     {

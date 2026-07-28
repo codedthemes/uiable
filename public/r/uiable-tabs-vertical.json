@@ -4,7 +4,7 @@
   "title": "Vertical Tabs",
   "description": "Tabs Vertical variant for tabs.",
   "registryDependencies": [
-    "tabs"
+    "@uiable/tabs"
   ],
   "files": [
     {

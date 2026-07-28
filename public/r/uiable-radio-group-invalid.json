@@ -4,7 +4,8 @@
   "title": "Invalid Radio Group",
   "description": "Radio Group Invalid variant for radio-group.",
   "registryDependencies": [
-    "radio-group"
+    "@uiable/field",
+    "@uiable/radio-group"
   ],
   "files": [
     {

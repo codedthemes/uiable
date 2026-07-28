@@ -3,8 +3,11 @@
   "name": "uiable-progress-height",
   "title": "Height Progress",
   "description": "Progress Height variant for progress.",
+  "dependencies": [
+    "@base-ui/react"
+  ],
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

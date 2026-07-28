@@ -3,9 +3,6 @@
   "name": "uiable-list-group-custom-content",
   "title": "Custom Content List Group",
   "description": "List Group Custom Content variant for list-group.",
-  "registryDependencies": [
-    "list-group"
-  ],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-custom-content.tsx",

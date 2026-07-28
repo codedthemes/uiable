@@ -3,8 +3,13 @@
   "name": "uiable-button-group-dropdown",
   "title": "Dropdown Button Group",
   "description": "Button Group Dropdown variant for button-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

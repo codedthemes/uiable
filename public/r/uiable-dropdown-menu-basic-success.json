@@ -3,8 +3,12 @@
   "name": "uiable-dropdown-menu-basic-success",
   "title": "Success Dropdown Menu",
   "description": "Dropdown Menu Basic Success variant for dropdown-menu.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

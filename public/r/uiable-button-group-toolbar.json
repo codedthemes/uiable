@@ -3,8 +3,14 @@
   "name": "uiable-button-group-toolbar",
   "title": "Text Styling Toolbar",
   "description": "Button Group Toolbar variant for button-group.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/dropdown-menu",
+    "@uiable/tooltip"
   ],
   "files": [
     {

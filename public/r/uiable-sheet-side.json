@@ -4,7 +4,8 @@
   "title": "Side Sheet",
   "description": "Sheet Side variant for sheet.",
   "registryDependencies": [
-    "sheet"
+    "@uiable/button",
+    "@uiable/sheet"
   ],
   "files": [
     {

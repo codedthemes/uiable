@@ -4,7 +4,7 @@
   "title": "Vertical Slider",
   "description": "Slider Vertical variant for slider.",
   "registryDependencies": [
-    "slider"
+    "@uiable/slider"
   ],
   "files": [
     {

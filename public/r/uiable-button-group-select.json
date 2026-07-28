@@ -3,8 +3,14 @@
   "name": "uiable-button-group-select",
   "title": "Select Button Group",
   "description": "Button Group Select variant for button-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/input",
+    "@uiable/select"
   ],
   "files": [
     {

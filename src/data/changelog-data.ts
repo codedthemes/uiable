@@ -20,6 +20,54 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.4.0",
+    date: "July 28, 2026",
+    anchor: "v1-4-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          { text: "Pricing: Pricing 2", previewUrl: "/blocks/pricing" },
+          { text: "Process: Process 1", previewUrl: "/blocks/process" },
+          {
+            text: "Statistics: Statistics 1",
+            previewUrl: "/blocks/statistics",
+          },
+          { text: "Team: Team 1", previewUrl: "/blocks/team" },
+          {
+            text: "Testimonial: Testimonial 1",
+            previewUrl: "/blocks/testimonial",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Chart: Pie, Radial, Area, Line",
+            previewUrl: "/components/chart",
+          },
+          {
+            text: "Data Table: Expandable, Pagination, Editable",
+            previewUrl: "/components/data-table",
+          },
+          {
+            text: "Empty: No Search Result, With Large Icon",
+            previewUrl: "/components/empty",
+          },
+          {
+            text: "Field: One Time Password Form",
+            previewUrl: "/components/field",
+          },
+          {
+            text: "Hover Card: Info With Icon Badge, Image Preview, Simple Info Tooltip, Link Preview",
+            previewUrl: "/components/hover-card",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.3.0",
     date: "July 21, 2026",
     anchor: "v1-3-0",

@@ -3,8 +3,11 @@
   "name": "uiable-sonner-types",
   "title": "Types Sonner",
   "description": "Sonner Types variant for sonner.",
-  "registryDependencies": [
+  "dependencies": [
     "sonner"
+  ],
+  "registryDependencies": [
+    "@uiable/button"
   ],
   "files": [
     {

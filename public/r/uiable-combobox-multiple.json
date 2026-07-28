@@ -4,7 +4,7 @@
   "title": "Multiple Combobox",
   "description": "Combobox Multiple variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox"
   ],
   "files": [
     {

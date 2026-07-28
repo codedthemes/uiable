@@ -4,7 +4,8 @@
   "title": "Sides Drawer",
   "description": "Drawer Sides variant for drawer.",
   "registryDependencies": [
-    "drawer"
+    "@uiable/button",
+    "@uiable/drawer"
   ],
   "files": [
     {

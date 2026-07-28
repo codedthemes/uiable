@@ -4,7 +4,7 @@
   "title": "Outline Warning Button",
   "description": "Button Outline Warning variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

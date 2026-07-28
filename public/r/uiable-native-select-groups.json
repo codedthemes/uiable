@@ -4,7 +4,7 @@
   "title": "Groups Native Select",
   "description": "Native Select Groups variant for native-select.",
   "registryDependencies": [
-    "native-select"
+    "@uiable/native-select"
   ],
   "files": [
     {

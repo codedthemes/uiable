@@ -4,7 +4,8 @@
   "title": "Small Alert Dialog",
   "description": "Alert Dialog Small variant for alert-dialog.",
   "registryDependencies": [
-    "alert-dialog"
+    "@uiable/alert-dialog",
+    "@uiable/button"
   ],
   "files": [
     {

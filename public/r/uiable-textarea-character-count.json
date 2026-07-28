@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-textarea-character-count",
+  "title": "Character Count Textarea",
+  "description": "Textarea Character Count variant for textarea.",
+  "registryDependencies": [
+    "@uiable/field",
+    "@uiable/textarea"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/textarea/textarea-character-count.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\r\nimport { Textarea } from \"@/components/ui/textarea\"\r\n\r\n//  ------------------------------ | TEXTAREA - CHARACTER COUNT | ------------------------------  //\r\n\r\nexport function TextareaCharacterCount() {\r\n  const [text, setText] = useState(\"\")\r\n  const maxLength = 200\r\n\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"textarea-char-count\">Short Biography</FieldLabel>\r\n      <Textarea\r\n        id=\"textarea-char-count\"\r\n        placeholder=\"Write a few sentences about your professional background...\"\r\n        value={text}\r\n        maxLength={maxLength}\r\n        onChange={(e) => setText(e.target.value)}\r\n      />\r\n      <div className=\"flex items-center justify-between\">\r\n        <FieldDescription>\r\n          Brief summary for your profile card.\r\n        </FieldDescription>\r\n        <span className=\"text-xs text-muted-foreground tabular-nums\">\r\n          {text.length}/{maxLength}\r\n        </span>\r\n      </div>\r\n    </Field>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/textarea/textarea-character-count.tsx"
+    }
+  ],
+  "categories": [
+    "textarea"
+  ],
+  "type": "registry:ui"
+}

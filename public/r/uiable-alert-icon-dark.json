@@ -3,8 +3,11 @@
   "name": "uiable-alert-icon-dark",
   "title": "Dark Icon Alert",
   "description": "Alert Icon Dark variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

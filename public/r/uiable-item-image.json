@@ -4,7 +4,7 @@
   "title": "Image Item",
   "description": "Item Image variant for item.",
   "registryDependencies": [
-    "item"
+    "@uiable/item"
   ],
   "files": [
     {

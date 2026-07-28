@@ -4,7 +4,7 @@
   "title": "Submenu Menubar",
   "description": "Menubar Submenu variant for menubar.",
   "registryDependencies": [
-    "menubar"
+    "@uiable/menubar"
   ],
   "files": [
     {

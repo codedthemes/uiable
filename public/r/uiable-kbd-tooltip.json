@@ -4,7 +4,9 @@
   "title": "Tooltip Kbd",
   "description": "Kbd Tooltip variant for kbd.",
   "registryDependencies": [
-    "kbd"
+    "@uiable/button",
+    "@uiable/kbd",
+    "@uiable/tooltip"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Alignment Pagination",
   "description": "Pagination Alignment variant for pagination.",
   "registryDependencies": [
-    "pagination"
+    "@uiable/pagination"
   ],
   "files": [
     {

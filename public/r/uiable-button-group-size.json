@@ -3,8 +3,12 @@
   "name": "uiable-button-group-size",
   "title": "Size Button Group",
   "description": "Button Group Size variant for button-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group"
   ],
   "files": [
     {

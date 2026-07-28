@@ -4,7 +4,8 @@
   "title": "Spinner Badge",
   "description": "Badge Spinner variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge",
+    "@uiable/spinner"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Alignments Popover",
   "description": "Popover Alignments variant for popover.",
   "registryDependencies": [
-    "popover"
+    "@uiable/button",
+    "@uiable/popover"
   ],
   "files": [
     {

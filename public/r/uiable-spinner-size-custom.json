@@ -3,9 +3,6 @@
   "name": "uiable-spinner-size-custom",
   "title": "Custom Size Spinner",
   "description": "Spinner Size Custom variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-size-custom.tsx",

@@ -3,8 +3,11 @@
   "name": "uiable-sonner-description",
   "title": "Description Sonner",
   "description": "Sonner Description variant for sonner.",
-  "registryDependencies": [
+  "dependencies": [
     "sonner"
+  ],
+  "registryDependencies": [
+    "@uiable/button"
   ],
   "files": [
     {

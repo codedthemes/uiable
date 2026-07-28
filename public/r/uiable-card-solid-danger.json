@@ -4,7 +4,7 @@
   "title": "Danger Solid Card",
   "description": "Card Solid Danger variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/card"
   ],
   "files": [
     {

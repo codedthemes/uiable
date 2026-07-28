@@ -3,8 +3,13 @@
   "name": "uiable-command-with-description",
   "title": "With Description",
   "description": "Command With Description variant for command.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "command"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/command"
   ],
   "files": [
     {

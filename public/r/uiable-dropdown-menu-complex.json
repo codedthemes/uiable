@@ -3,8 +3,12 @@
   "name": "uiable-dropdown-menu-complex",
   "title": "Complex Dropdown Menu",
   "description": "Dropdown Menu Complex variant for dropdown-menu.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

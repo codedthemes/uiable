@@ -4,7 +4,7 @@
   "title": "Secondary Solid Badge",
   "description": "Badge Solid Secondary variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Variants",
   "description": "Marker variant for marker.",
   "registryDependencies": [
-    "marker"
+    "@uiable/marker"
   ],
   "files": [
     {

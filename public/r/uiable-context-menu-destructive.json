@@ -3,8 +3,11 @@
   "name": "uiable-context-menu-destructive",
   "title": "Destructive Context Menu",
   "description": "Context Menu Destructive variant for context-menu.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "context-menu"
+    "@uiable/context-menu"
   ],
   "files": [
     {

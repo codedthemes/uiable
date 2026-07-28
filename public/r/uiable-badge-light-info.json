@@ -4,7 +4,7 @@
   "title": "Light Info Badge",
   "description": "Badge Light Info variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

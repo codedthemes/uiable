@@ -4,7 +4,7 @@
   "title": "Vertical Separator",
   "description": "Separator Vertical variant for separator.",
   "registryDependencies": [
-    "separator"
+    "@uiable/separator"
   ],
   "files": [
     {

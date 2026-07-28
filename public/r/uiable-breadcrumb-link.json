@@ -3,8 +3,11 @@
   "name": "uiable-breadcrumb-link",
   "title": "Link Breadcrumb",
   "description": "Breadcrumb Link variant for breadcrumb.",
+  "dependencies": [
+    "next"
+  ],
   "registryDependencies": [
-    "breadcrumb"
+    "@uiable/breadcrumb"
   ],
   "files": [
     {

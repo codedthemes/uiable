@@ -4,7 +4,7 @@
   "title": "Badge Avatar",
   "description": "Avatar Badge variant for avatar.",
   "registryDependencies": [
-    "avatar"
+    "@uiable/avatar"
   ],
   "files": [
     {

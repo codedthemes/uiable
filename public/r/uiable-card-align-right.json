@@ -4,7 +4,8 @@
   "title": "Align Right Card",
   "description": "Card Align Right variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/button",
+    "@uiable/card"
   ],
   "files": [
     {

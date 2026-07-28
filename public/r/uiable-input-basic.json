@@ -4,7 +4,7 @@
   "title": "Basic Input",
   "description": "Input Basic variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/input"
   ],
   "files": [
     {

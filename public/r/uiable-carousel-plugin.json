@@ -3,8 +3,12 @@
   "name": "uiable-carousel-plugin",
   "title": "Plugin Carousel",
   "description": "Carousel Plugin variant for carousel.",
+  "dependencies": [
+    "embla-carousel-autoplay"
+  ],
   "registryDependencies": [
-    "carousel"
+    "@uiable/card",
+    "@uiable/carousel"
   ],
   "files": [
     {

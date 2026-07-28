@@ -3,8 +3,12 @@
   "name": "uiable-button-group-icon",
   "title": "Icon Button Group",
   "description": "Button Group Icon variant for button-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group"
   ],
   "files": [
     {

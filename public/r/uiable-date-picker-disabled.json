@@ -3,8 +3,14 @@
   "name": "uiable-date-picker-disabled",
   "title": "Disabled Date Picker",
   "description": "Date Picker Disabled variant for date-picker.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "date-picker"
+    "@uiable/button",
+    "@uiable/calendar",
+    "@uiable/field",
+    "@uiable/popover"
   ],
   "files": [
     {

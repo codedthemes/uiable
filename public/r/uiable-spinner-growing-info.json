@@ -3,9 +3,6 @@
   "name": "uiable-spinner-growing-info",
   "title": "Info Growing Spinner",
   "description": "Spinner Growing Info variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-info.tsx",

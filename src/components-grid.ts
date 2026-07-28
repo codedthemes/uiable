@@ -114,7 +114,7 @@ export const NAV_CATEGORIES: NavSection[] = [
     items: [
       {
         title: "Attachment",
-        slug: "attachment",    
+        slug: "attachment",
         breakpoints: { lg: 2, xs: 1 },
       },
       {
@@ -129,7 +129,7 @@ export const NAV_CATEGORIES: NavSection[] = [
       },
       {
         title: "Bubble",
-        slug: "bubble", 
+        slug: "bubble",
         breakpoints: { lg: 2, xs: 1 },
       },
       {
@@ -364,30 +364,55 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Feature",
         slug: "feature",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Footer",
         slug: "footer",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Gallery",
         slug: "gallery",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Hero",
         slug: "hero",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Portfolio",
         slug: "portfolio",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Pricing",
+        slug: "pricing",
+        badge: { label: "New" },
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Process",
+        slug: "process",
+        badge: { label: "New" },
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Statistics",
+        slug: "statistics",
+        badge: { label: "New" },
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Team",
+        slug: "team",
+        badge: { label: "New" },
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Testimonial",
+        slug: "testimonial",
         badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },

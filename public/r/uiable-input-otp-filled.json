@@ -4,7 +4,7 @@
   "title": "Filled Input Otp",
   "description": "Input Otp Filled variant for input-otp",
   "registryDependencies": [
-    "input-otp"
+    "@uiable/input-otp"
   ],
   "files": [
     {

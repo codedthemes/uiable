@@ -4,7 +4,7 @@
   "title": "Numbered List Group",
   "description": "List Group Numbered variant for list-group.",
   "registryDependencies": [
-    "list-group"
+    "@uiable/badge"
   ],
   "files": [
     {

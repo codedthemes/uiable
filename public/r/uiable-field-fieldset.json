@@ -4,7 +4,8 @@
   "title": "Fieldset Field",
   "description": "Field Fieldset variant for field.",
   "registryDependencies": [
-    "field"
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

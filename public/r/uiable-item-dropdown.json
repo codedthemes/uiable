@@ -3,8 +3,14 @@
   "name": "uiable-item-dropdown",
   "title": "Dropdown Item",
   "description": "Item Dropdown variant for item.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/dropdown-menu",
+    "@uiable/item"
   ],
   "files": [
     {

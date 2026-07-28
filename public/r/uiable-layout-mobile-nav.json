@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-layout-mobile-nav",
+  "title": "Mobile Nav Layout",
+  "description": "Layout Mobile Nav variant for component.",
+  "dependencies": [
+    "next"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/layout/shared/mobile-nav.tsx",
+      "content": "\"use client\";\r\n\r\nimport Link from \"next/link\";\r\nimport { usePathname } from \"next/navigation\";\r\n\r\n// project\r\nimport { cn } from \"@/lib/utils\";\r\n\r\ninterface MobileNavProps {\r\n  onSelect?: () => void;\r\n  className?: string;\r\n}\r\n\r\n//  ------------------------------ | SHARED - MOBILE NAV | ------------------------------  //\r\n\r\nexport default function MobileNav({ onSelect, className }: MobileNavProps) {\r\n  const pathname = usePathname();\r\n\r\n  const links = [\r\n    { label: \"Components\", href: \"/components\" },\r\n    { label: \"Documentation\", href: \"/doc\" }\r\n  ];\r\n\r\n  return (\r\n    <nav className={cn(\"flex flex-col gap-2\", className)}>\r\n      {links.map((link) => (\r\n        <Link\r\n          key={link.href}\r\n          href={link.href}\r\n          onClick={onSelect}\r\n          className={cn(\r\n            \"px-3 py-2 text-sm font-medium rounded-lg transition-colors\",\r\n            pathname === link.href ||\r\n              (link.href === \"/components\" &&\r\n                pathname.startsWith(\"/components\"))\r\n              ? \"text-primary bg-primary/10\"\r\n              : \"hover:bg-muted\"\r\n          )}\r\n        >\r\n          {link.label}\r\n        </Link>\r\n      ))}\r\n    </nav>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/layout/shared/mobile-nav.tsx"
+    }
+  ],
+  "categories": [
+    "layout"
+  ],
+  "type": "registry:ui"
+}

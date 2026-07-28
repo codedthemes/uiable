@@ -4,7 +4,9 @@
   "title": "Select Input",
   "description": "Input Select variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/field",
+    "@uiable/input-group",
+    "@uiable/select"
   ],
   "files": [
     {

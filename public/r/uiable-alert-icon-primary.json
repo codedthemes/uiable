@@ -3,8 +3,11 @@
   "name": "uiable-alert-icon-primary",
   "title": "Primary Icon Alert",
   "description": "Alert Icon Primary variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

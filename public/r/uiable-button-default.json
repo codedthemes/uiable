@@ -4,7 +4,7 @@
   "title": "Default Button",
   "description": "Button Default variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

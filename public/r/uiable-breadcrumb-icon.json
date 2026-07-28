@@ -3,8 +3,11 @@
   "name": "uiable-breadcrumb-icon",
   "title": "Icon Breadcrumb",
   "description": "Breadcrumb Icon variant for breadcrumb.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "breadcrumb"
+    "@uiable/breadcrumb"
   ],
   "files": [
     {

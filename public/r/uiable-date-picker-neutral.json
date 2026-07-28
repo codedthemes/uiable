@@ -4,7 +4,8 @@
   "title": "Neutral Date & Time Picker",
   "description": "Neutral Date & Time Picker variant for date-picker.",
   "registryDependencies": [
-    "date-picker"
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

@@ -3,8 +3,13 @@
   "name": "uiable-command-developer-actions",
   "title": "Developer Actions",
   "description": "Command Developer Actions variant for command.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "command"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/command"
   ],
   "files": [
     {

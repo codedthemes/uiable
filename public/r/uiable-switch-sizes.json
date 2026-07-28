@@ -4,7 +4,8 @@
   "title": "Sizes Switch",
   "description": "Switch Sizes variant for switch.",
   "registryDependencies": [
-    "switch"
+    "@uiable/field",
+    "@uiable/switch"
   ],
   "files": [
     {

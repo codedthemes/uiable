@@ -4,7 +4,7 @@
   "title": "Sizes Radio Group",
   "description": "Size Radio Group variant for radio-group.",
   "registryDependencies": [
-    "radio-group"
+    "@uiable/radio-group"
   ],
   "files": [
     {

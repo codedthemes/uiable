@@ -3,8 +3,12 @@
   "name": "uiable-combobox-with-checkbox",
   "title": "Combobox With Checkbox",
   "description": "Combobox With Checkbox variant for combobox.",
+  "dependencies": [
+    "@base-ui/react",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Solid Danger Progress",
   "description": "Progress Solid Danger variant for progress.",
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Radios List Group",
   "description": "List Group Radios variant for list-group.",
   "registryDependencies": [
-    "list-group"
+    "@uiable/label",
+    "@uiable/radio-group"
   ],
   "files": [
     {

@@ -3,9 +3,6 @@
   "name": "uiable-list-group-basic",
   "title": "Basic List Group",
   "description": "List Group Basic variant for list-group.",
-  "registryDependencies": [
-    "list-group"
-  ],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-basic.tsx",

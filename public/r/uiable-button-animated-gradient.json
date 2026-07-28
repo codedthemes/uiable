@@ -3,8 +3,12 @@
   "name": "uiable-button-animated-gradient",
   "title": "Gradient Animated Button",
   "description": "Gradient Animated Button variant for button",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

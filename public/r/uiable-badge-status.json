@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-badge-status",
+  "title": "Status Badge",
+  "description": "Badge Status variant for badge.",
+  "registryDependencies": [
+    "@uiable/badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-status.tsx",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\"\r\n\r\n//  ------------------------------ | BADGE - WITH STATUS | ------------------------------  //\r\n\r\nexport function BadgeWithStatus() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Badge variant=\"outline\" className=\"gap-1.5 px-2 py-1\">\r\n        <span\r\n          className=\"size-1.5 rounded-full bg-emerald-500\"\r\n          aria-hidden=\"true\"\r\n        />\r\n        Online\r\n      </Badge>\r\n      <Badge variant=\"outline\" className=\"gap-1.5 px-2 py-1\">\r\n        <span\r\n          className=\"size-1.5 rounded-full bg-amber-500\"\r\n          aria-hidden=\"true\"\r\n        />\r\n        Away\r\n      </Badge>\r\n      <Badge variant=\"outline\" className=\"gap-1.5 px-2 py-1\">\r\n        <span className=\"size-1.5 rounded-full bg-red-500\" aria-hidden=\"true\" />\r\n        Busy\r\n      </Badge>\r\n      <Badge variant=\"outline\" className=\"gap-1.5 px-2 py-1\">\r\n        <span\r\n          className=\"size-1.5 rounded-full bg-muted-foreground\"\r\n          aria-hidden=\"true\"\r\n        />\r\n        Offline\r\n      </Badge>\r\n      <Badge variant=\"secondary\" className=\"gap-1.5 px-2 py-1\">\r\n        <span className=\"relative flex size-2 items-center justify-center\">\r\n          <span className=\"absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75\" />\r\n          <span className=\"relative inline-flex size-1.5 rounded-full bg-emerald-500\" />\r\n        </span>\r\n        Live Status\r\n      </Badge>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-status.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

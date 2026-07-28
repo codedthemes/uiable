@@ -3,6 +3,18 @@
   "name": "uiable-sidebar-2",
   "title": "Sidebar 2",
   "description": "Sidebar variant 2.",
+  "dependencies": [
+    "iconsax-reactjs",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/collapsible",
+    "@uiable/sidebar",
+    "uiable-layout-logo"
+  ],
   "files": [
     {
       "path": "src/components/uiable/sidebar/sidebar-2.tsx",

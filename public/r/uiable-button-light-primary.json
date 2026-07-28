@@ -4,7 +4,7 @@
   "title": "Light Primary Button",
   "description": "Button Light Primary variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

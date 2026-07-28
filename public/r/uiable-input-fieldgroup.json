@@ -4,7 +4,9 @@
   "title": "Fieldgroup Input",
   "description": "Input Fieldgroup variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/button",
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

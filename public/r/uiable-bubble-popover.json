@@ -3,8 +3,13 @@
   "name": "uiable-bubble-popover",
   "title": "Popover",
   "description": "Bubble Popover variant for bubble.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "bubble"
+    "@uiable/bubble",
+    "@uiable/button",
+    "@uiable/popover"
   ],
   "files": [
     {

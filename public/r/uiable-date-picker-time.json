@@ -3,8 +3,16 @@
   "name": "uiable-date-picker-time",
   "title": "Time Date Picker",
   "description": "Date Picker Time variant for date-picker.",
+  "dependencies": [
+    "date-fns",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "date-picker"
+    "@uiable/button",
+    "@uiable/calendar",
+    "@uiable/field",
+    "@uiable/input",
+    "@uiable/popover"
   ],
   "files": [
     {

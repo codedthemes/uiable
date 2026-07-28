@@ -4,7 +4,8 @@
   "title": "Shortcuts Dropdown Menu",
   "description": "Dropdown Menu Shortcuts variant for dropdown-menu.",
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

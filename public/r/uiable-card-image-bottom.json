@@ -4,7 +4,7 @@
   "title": "Image Bottom Card",
   "description": "Card Image Bottom variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/card"
   ],
   "files": [
     {

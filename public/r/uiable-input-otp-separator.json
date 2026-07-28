@@ -4,7 +4,7 @@
   "title": "Separator Input Otp",
   "description": "Input Otp Separator variant for input-otp.",
   "registryDependencies": [
-    "input-otp"
+    "@uiable/input-otp"
   ],
   "files": [
     {

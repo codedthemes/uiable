@@ -3,8 +3,13 @@
   "name": "uiable-calendar-custom-days",
   "title": "Custom Days Calendar",
   "description": "Calendar Custom Days variant for calendar.",
+  "dependencies": [
+    "date-fns",
+    "react-day-picker"
+  ],
   "registryDependencies": [
-    "calendar"
+    "@uiable/calendar",
+    "@uiable/card"
   ],
   "files": [
     {

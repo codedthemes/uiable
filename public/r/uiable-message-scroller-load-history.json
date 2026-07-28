@@ -3,8 +3,15 @@
   "name": "uiable-message-scroller-load-history",
   "title": "Loading Earlier Messages",
   "description": "Message Scroller Load History variant for message-scroller.",
+  "dependencies": [
+    "lucide-react",
+    "sonner"
+  ],
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/message-scroller",
+    "@uiable/tooltip"
   ],
   "files": [
     {

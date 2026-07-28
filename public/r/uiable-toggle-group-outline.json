@@ -4,7 +4,7 @@
   "title": "Outline Toggle Group",
   "description": "Toggle Group Outline variant for toggle-group.",
   "registryDependencies": [
-    "toggle-group"
+    "@uiable/toggle-group"
   ],
   "files": [
     {

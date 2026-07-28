@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-widget-task-list-item",
+  "title": "Task List Item Widget",
+  "description": "Widget Task List Item variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/badge",
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/widget/task-list-item.tsx",
+      "content": "\"use client\"\r\n\r\n// shadcn\r\nimport { Badge } from \"@/components/ui/badge\"\r\nimport { buttonVariants } from \"@/components/ui/button\"\r\n\r\n// project\r\nimport { cn } from \"@/lib/utils\"\r\n\r\n// assets\r\nimport { Paperclip } from \"lucide-react\"\r\n\r\ninterface TaskListItemProps {\r\n  title: string\r\n  dotColor: string\r\n  badgeCount?: number\r\n}\r\n\r\n//  ------------------------------ | BLOCK - TASK LIST ITEM | ------------------------------  //\r\n\r\nexport default function TaskListItem({\r\n  title,\r\n  dotColor,\r\n  badgeCount,\r\n}: TaskListItemProps) {\r\n  return (\r\n    <a\r\n      href=\"#\"\r\n      className={cn(\r\n        buttonVariants({ variant: \"ghost\" }),\r\n        \"group h-auto w-full justify-start rounded-xl p-2 hover:bg-muted/50\"\r\n      )}\r\n    >\r\n      <div className=\"flex w-full items-center\">\r\n        <div className={cn(\"mr-3 h-2 w-2 rounded-full\", dotColor)}></div>\r\n        <span className=\"flex-grow truncate text-left font-medium\">\r\n          {title}\r\n        </span>\r\n        {badgeCount !== undefined && (\r\n          <Badge\r\n            variant=\"outline\"\r\n            className=\"ml-2 gap-1 border-none bg-muted/50 text-muted-foreground\"\r\n          >\r\n            <Paperclip className=\"h-3 w-3\" /> {badgeCount}\r\n          </Badge>\r\n        )}\r\n      </div>\r\n    </a>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/widget/task-list-item.tsx"
+    }
+  ],
+  "categories": [
+    "widget"
+  ],
+  "type": "registry:ui"
+}

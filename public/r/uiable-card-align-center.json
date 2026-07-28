@@ -4,7 +4,8 @@
   "title": "Align Center Card",
   "description": "Card Align Center variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/button",
+    "@uiable/card"
   ],
   "files": [
     {

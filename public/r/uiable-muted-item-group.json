@@ -4,7 +4,8 @@
   "title": "Muted Group Item",
   "description": "Muted Item Group variant for item.",
   "registryDependencies": [
-    "item"
+    "@uiable/button",
+    "@uiable/item"
   ],
   "files": [
     {

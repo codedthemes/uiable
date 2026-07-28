@@ -4,7 +4,8 @@
   "title": "Basic Command",
   "description": "Command Basic variant for command.",
   "registryDependencies": [
-    "command"
+    "@uiable/button",
+    "@uiable/command"
   ],
   "files": [
     {

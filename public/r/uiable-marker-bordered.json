@@ -3,8 +3,11 @@
   "name": "uiable-marker-bordered",
   "title": "Bordered Marker",
   "description": "Marker Bordered variant for marker.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "marker"
+    "@uiable/marker"
   ],
   "files": [
     {

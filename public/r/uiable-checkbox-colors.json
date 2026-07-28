@@ -4,7 +4,8 @@
   "title": "Colors Checkboxes",
   "description": "Colors Checkbox variant for checkbox.",
   "registryDependencies": [
-    "checkbox"
+    "@uiable/checkbox",
+    "@uiable/field"
   ],
   "files": [
     {

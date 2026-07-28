@@ -4,7 +4,7 @@
   "title": "Horizontal Card",
   "description": "Card Horizontal variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/card"
   ],
   "files": [
     {

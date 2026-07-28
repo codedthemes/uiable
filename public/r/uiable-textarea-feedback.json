@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-textarea-feedback",
+  "title": "Feedback Textarea",
+  "description": "Textarea Feedback variant for textarea.",
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/field",
+    "@uiable/textarea"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/textarea/textarea-feedback.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\r\nimport { Textarea } from \"@/components/ui/textarea\"\r\n\r\n//  ------------------------------ | TEXTAREA - FEEDBACK | ------------------------------  //\r\n\r\nexport function TextareaFeedback() {\r\n  return (\r\n    <div className=\"grid w-full gap-3\">\r\n      <Field>\r\n        <FieldLabel htmlFor=\"textarea-feedback\">Your Feedback</FieldLabel>\r\n        <FieldDescription>\r\n          Tell us what you love or what could be improved.\r\n        </FieldDescription>\r\n        <Textarea\r\n          id=\"textarea-feedback\"\r\n          placeholder=\"Share your thoughts, suggestions, or report an issue...\"\r\n          className=\"min-h-24\"\r\n        />\r\n      </Field>\r\n      <div className=\"flex items-center justify-between gap-1\">\r\n        <p className=\"text-xs text-muted-foreground\">\r\n          We read every piece of feedback carefully.\r\n        </p>\r\n        <Button size=\"sm\">Submit Feedback</Button>\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/textarea/textarea-feedback.tsx"
+    }
+  ],
+  "categories": [
+    "textarea"
+  ],
+  "type": "registry:ui"
+}

@@ -4,7 +4,8 @@
   "title": "Api Carousel",
   "description": "Carousel Api variant for carousel.",
   "registryDependencies": [
-    "carousel"
+    "@uiable/card",
+    "@uiable/carousel"
   ],
   "files": [
     {

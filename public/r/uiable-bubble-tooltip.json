@@ -3,8 +3,13 @@
   "name": "uiable-bubble-tooltip",
   "title": "Tooltip",
   "description": "Bubble Tooltip variant for bubble.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "bubble"
+    "@uiable/bubble",
+    "@uiable/button",
+    "@uiable/tooltip"
   ],
   "files": [
     {

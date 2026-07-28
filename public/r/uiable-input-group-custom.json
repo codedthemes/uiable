@@ -3,8 +3,11 @@
   "name": "uiable-input-group-custom",
   "title": "Custom Input Group",
   "description": "Input Group Custom variant for input-group.",
+  "dependencies": [
+    "react-textarea-autosize"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/input-group"
   ],
   "files": [
     {

@@ -3,8 +3,13 @@
   "name": "uiable-button-social",
   "title": "Social Button",
   "description": "Social button variant for button",
+  "dependencies": [
+    "@tabler/icons-react",
+    "next"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button",
+    "@uiable/separator"
   ],
   "files": [
     {

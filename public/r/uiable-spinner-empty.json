@@ -4,7 +4,9 @@
   "title": "Empty Spinner",
   "description": "Spinner Empty variant for spinner.",
   "registryDependencies": [
-    "spinner"
+    "@uiable/button",
+    "@uiable/empty",
+    "@uiable/spinner"
   ],
   "files": [
     {

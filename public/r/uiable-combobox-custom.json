@@ -4,7 +4,8 @@
   "title": "Custom Combobox",
   "description": "Combobox Custom variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox",
+    "@uiable/item"
   ],
   "files": [
     {

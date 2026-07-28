@@ -3,8 +3,12 @@
   "name": "uiable-bubble-reactions",
   "title": "Bubble Reactions",
   "description": "Bubble Reactions variant for bubble.",
+  "dependencies": [
+    "sonner"
+  ],
   "registryDependencies": [
-    "bubble"
+    "@uiable/bubble",
+    "@uiable/button"
   ],
   "files": [
     {

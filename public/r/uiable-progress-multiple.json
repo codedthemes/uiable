@@ -3,8 +3,11 @@
   "name": "uiable-progress-multiple",
   "title": "Multiple Progress",
   "description": "Progress Multiple variant for progress.",
+  "dependencies": [
+    "@base-ui/react"
+  ],
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

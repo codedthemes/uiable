@@ -3,8 +3,12 @@
   "name": "uiable-attachment-sizes",
   "title": "Sizes",
   "description": "Attachment Sizes variant for attachment.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "attachment"
+    "@uiable/attachment",
+    "@uiable/badge"
   ],
   "files": [
     {

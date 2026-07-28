@@ -4,7 +4,8 @@
   "title": "Invalid Switch",
   "description": "Switch Invalid variant for switch.",
   "registryDependencies": [
-    "switch"
+    "@uiable/field",
+    "@uiable/switch"
   ],
   "files": [
     {

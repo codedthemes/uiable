@@ -3,8 +3,12 @@
   "name": "uiable-alert-dismissible-warning",
   "title": "Warning Dismissible Alert",
   "description": "Alert Dismissible Warning variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert",
+    "@uiable/button"
   ],
   "files": [
     {

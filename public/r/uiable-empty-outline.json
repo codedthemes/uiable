@@ -3,8 +3,12 @@
   "name": "uiable-empty-outline",
   "title": "Empty Outline",
   "description": "Empty Outline variant for empty.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "empty"
+    "@uiable/button",
+    "@uiable/empty"
   ],
   "files": [
     {

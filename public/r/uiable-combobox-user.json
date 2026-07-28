@@ -4,7 +4,9 @@
   "title": "Users Combobox",
   "description": "Combobox User variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/avatar",
+    "@uiable/combobox",
+    "@uiable/item"
   ],
   "files": [
     {

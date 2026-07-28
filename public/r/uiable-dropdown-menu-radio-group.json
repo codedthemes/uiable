@@ -4,7 +4,8 @@
   "title": "Radio Group Dropdown Menu",
   "description": "Dropdown Menu Radio Group variant for dropdown-menu.",
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

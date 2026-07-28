@@ -4,7 +4,7 @@
   "title": "Disabled Slider",
   "description": "Slider Disabled variant for slider.",
   "registryDependencies": [
-    "slider"
+    "@uiable/slider"
   ],
   "files": [
     {

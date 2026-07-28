@@ -4,7 +4,7 @@
   "title": "Bubble Variants",
   "description": "Bubble Visual Variants for bubble.",
   "registryDependencies": [
-    "bubble"
+    "@uiable/bubble"
   ],
   "files": [
     {

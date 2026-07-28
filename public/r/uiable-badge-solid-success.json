@@ -4,7 +4,7 @@
   "title": "Success Solid Badge",
   "description": "Badge Solid Success variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Disabled Switch",
   "description": "Switch Disabled variant for switch.",
   "registryDependencies": [
-    "switch"
+    "@uiable/field",
+    "@uiable/switch"
   ],
   "files": [
     {

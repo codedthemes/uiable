@@ -3,8 +3,18 @@
   "name": "uiable-message-scroller-group-chat",
   "title": "Group Chat",
   "description": "Message Scroller Group Chat variant for message-scroller.",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/bubble",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/marker",
+    "@uiable/message",
+    "@uiable/message-scroller",
+    "@uiable/tooltip"
   ],
   "files": [
     {

@@ -3,8 +3,12 @@
   "name": "uiable-navigation-menu-basic",
   "title": "Basic Navigation Menu",
   "description": "Navigation Menu Basic variant for navigation-menu.",
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
   "registryDependencies": [
-    "navigation-menu"
+    "@uiable/navigation-menu"
   ],
   "files": [
     {

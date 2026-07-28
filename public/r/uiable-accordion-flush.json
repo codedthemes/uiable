@@ -4,7 +4,7 @@
   "title": "Flush Accordion",
   "description": "Accordion Flush variant for accordion.",
   "registryDependencies": [
-    "accordion"
+    "@uiable/accordion"
   ],
   "files": [
     {

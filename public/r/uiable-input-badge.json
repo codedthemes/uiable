@@ -4,7 +4,9 @@
   "title": "Badge Input",
   "description": "Input Badge variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/badge",
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

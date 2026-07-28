@@ -3,8 +3,12 @@
   "name": "uiable-calendar-range",
   "title": "Range Calendar",
   "description": "Calendar Range variant for calendar.",
+  "dependencies": [
+    "date-fns",
+    "react-day-picker"
+  ],
   "registryDependencies": [
-    "calendar"
+    "@uiable/calendar"
   ],
   "files": [
     {

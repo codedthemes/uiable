@@ -4,7 +4,7 @@
   "title": "Basic Tabs",
   "description": "Tabs Basic variant for tabs.",
   "registryDependencies": [
-    "tabs"
+    "@uiable/tabs"
   ],
   "files": [
     {

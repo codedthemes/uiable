@@ -4,7 +4,8 @@
   "title": "No Close Button Sheet",
   "description": "Sheet No Close Button variant for sheet.",
   "registryDependencies": [
-    "sheet"
+    "@uiable/button",
+    "@uiable/sheet"
   ],
   "files": [
     {

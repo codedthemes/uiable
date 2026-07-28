@@ -4,7 +4,7 @@
   "title": "Table Skeleton",
   "description": "Skeleton Table variant for skeleton.",
   "registryDependencies": [
-    "skeleton"
+    "@uiable/skeleton"
   ],
   "files": [
     {

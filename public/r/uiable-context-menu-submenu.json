@@ -4,7 +4,7 @@
   "title": "Submenu Context Menu",
   "description": "Context Menu Submenu variant for context-menu.",
   "registryDependencies": [
-    "context-menu"
+    "@uiable/context-menu"
   ],
   "files": [
     {

@@ -3,8 +3,13 @@
   "name": "uiable-item-group",
   "title": "Group Item",
   "description": "Item Group variant for item.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/item"
   ],
   "files": [
     {

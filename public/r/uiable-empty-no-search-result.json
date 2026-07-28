@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-empty-no-search-result",
+  "title": "Empty No Search Result",
+  "description": "Empty No Search Result variant for component.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/empty"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/empty/empty-no-search-result.tsx",
+      "content": "// assets\r\nimport { SearchNormal1 } from \"iconsax-reactjs\"\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport {\r\n  Empty,\r\n  EmptyContent,\r\n  EmptyDescription,\r\n  EmptyHeader,\r\n  EmptyMedia,\r\n  EmptyTitle,\r\n} from \"@/components/ui/empty\"\r\n\r\n//  ------------------------------ | EMPTY - NO SEARCH RESULT | ------------------------------  //\r\n\r\nexport default function EmptyNoSearchResult() {\r\n  return (\r\n    <Empty className=\"p-sm-8 rounded-lg border border-solid border-border p-4\">\r\n      <EmptyHeader>\r\n        <EmptyMedia variant=\"default\">\r\n          <SearchNormal1 />\r\n        </EmptyMedia>\r\n        <EmptyTitle>No results found</EmptyTitle>\r\n        <EmptyDescription className=\"max-w-md\">\r\n          We couldn't find anything matching your search query. Try adjusting\r\n          your filters or using different keywords.\r\n        </EmptyDescription>\r\n      </EmptyHeader>\r\n      <EmptyContent>\r\n        <Button className=\"dark:border-border\" variant=\"outline\">\r\n          Clear filters\r\n        </Button>\r\n      </EmptyContent>\r\n    </Empty>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/empty/empty-no-search-result.tsx"
+    }
+  ],
+  "categories": [
+    "empty"
+  ],
+  "type": "registry:ui"
+}

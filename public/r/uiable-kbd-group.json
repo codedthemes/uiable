@@ -4,7 +4,7 @@
   "title": "Group Kbd",
   "description": "Kbd Group variant for kbd.",
   "registryDependencies": [
-    "kbd"
+    "@uiable/kbd"
   ],
   "files": [
     {

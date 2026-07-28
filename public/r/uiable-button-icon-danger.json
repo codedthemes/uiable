@@ -3,8 +3,11 @@
   "name": "uiable-button-icon-danger",
   "title": "Danger Icon Button",
   "description": "Button Icon Danger variant for button.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

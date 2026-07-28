@@ -4,7 +4,7 @@
   "title": "Footer Table",
   "description": "Table Footer variant for table.",
   "registryDependencies": [
-    "table"
+    "@uiable/table"
   ],
   "files": [
     {

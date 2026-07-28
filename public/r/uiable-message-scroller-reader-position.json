@@ -4,7 +4,10 @@
   "title": "Tracking the Reader's Position",
   "description": "Message Scroller Reader Position variant for message-scroller.",
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/dropdown-menu",
+    "@uiable/message-scroller"
   ],
   "files": [
     {

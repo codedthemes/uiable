@@ -3,8 +3,11 @@
   "name": "uiable-alert-colors",
   "title": "Colors Alert",
   "description": "Alert Colors variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

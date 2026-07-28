@@ -3,8 +3,11 @@
   "name": "uiable-alert-icon-warning",
   "title": "Warning Icon Alert",
   "description": "Alert Icon Warning variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

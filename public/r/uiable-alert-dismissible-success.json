@@ -3,8 +3,12 @@
   "name": "uiable-alert-dismissible-success",
   "title": "Success Dismissible Alert",
   "description": "Alert Dismissible Success variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert",
+    "@uiable/button"
   ],
   "files": [
     {

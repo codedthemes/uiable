@@ -3,8 +3,13 @@
   "name": "uiable-input-group-label",
   "title": "Label Input Group",
   "description": "Input Group Label variant for input-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/input-group",
+    "@uiable/label",
+    "@uiable/tooltip"
   ],
   "files": [
     {

@@ -3,8 +3,11 @@
   "name": "uiable-toggle-outline",
   "title": "Outline Toggle",
   "description": "Toggle Outline variant for toggle.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "toggle"
+    "@uiable/toggle"
   ],
   "files": [
     {

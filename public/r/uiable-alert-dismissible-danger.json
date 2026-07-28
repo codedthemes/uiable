@@ -3,8 +3,12 @@
   "name": "uiable-alert-dismissible-danger",
   "title": "Danger Dismissible Alert",
   "description": "Alert Dismissible Danger variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert",
+    "@uiable/button"
   ],
   "files": [
     {

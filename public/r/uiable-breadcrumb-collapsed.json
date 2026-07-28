@@ -4,7 +4,7 @@
   "title": "Collapsed Breadcrumb",
   "description": "Breadcrumb Collapsed variant for breadcrumb.",
   "registryDependencies": [
-    "breadcrumb"
+    "@uiable/breadcrumb"
   ],
   "files": [
     {

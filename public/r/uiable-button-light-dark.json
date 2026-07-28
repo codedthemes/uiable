@@ -4,7 +4,7 @@
   "title": "Light Dark Button",
   "description": "Button Light Dark variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

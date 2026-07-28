@@ -3,8 +3,14 @@
   "name": "uiable-item-checkbox",
   "title": "Checkbox Item",
   "description": "Selectable item rows with checkbox for item.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/checkbox",
+    "@uiable/item"
   ],
   "files": [
     {

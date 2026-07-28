@@ -3,9 +3,6 @@
   "name": "uiable-spinner-growing-dark",
   "title": "Dark Growing Spinner",
   "description": "Spinner Growing Dark variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-dark.tsx",

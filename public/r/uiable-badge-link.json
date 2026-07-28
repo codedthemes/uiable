@@ -3,8 +3,11 @@
   "name": "uiable-badge-link",
   "title": "Link Badge",
   "description": "Badge Link variant for badge.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

@@ -3,8 +3,11 @@
   "name": "uiable-chart-example-grid",
   "title": "Grid Chart Example",
   "description": "Chart Example Grid variant for chart.",
+  "dependencies": [
+    "recharts"
+  ],
   "registryDependencies": [
-    "chart"
+    "@uiable/chart"
   ],
   "files": [
     {

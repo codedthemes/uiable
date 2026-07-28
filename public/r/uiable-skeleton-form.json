@@ -4,7 +4,7 @@
   "title": "Form Skeleton",
   "description": "Skeleton Form variant for skeleton.",
   "registryDependencies": [
-    "skeleton"
+    "@uiable/skeleton"
   ],
   "files": [
     {

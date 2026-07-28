@@ -4,7 +4,7 @@
   "title": "Checkboxes Context Menu",
   "description": "Context Menu Checkboxes variant for context-menu.",
   "registryDependencies": [
-    "context-menu"
+    "@uiable/context-menu"
   ],
   "files": [
     {

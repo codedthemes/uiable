@@ -4,7 +4,8 @@
   "title": "Field Input",
   "description": "Input Field variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

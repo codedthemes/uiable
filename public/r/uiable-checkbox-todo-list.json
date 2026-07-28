@@ -3,8 +3,16 @@
   "name": "uiable-checkbox-todo-list",
   "title": "Todo List",
   "description": "Todo List Checkbox variant for checkbox.",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "checkbox"
+    "@uiable/avatar",
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/checkbox",
+    "@uiable/progress"
   ],
   "files": [
     {

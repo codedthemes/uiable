@@ -4,7 +4,7 @@
   "title": "Text Skeleton",
   "description": "Skeleton Text variant for skeleton.",
   "registryDependencies": [
-    "skeleton"
+    "@uiable/skeleton"
   ],
   "files": [
     {

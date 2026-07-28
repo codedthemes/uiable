@@ -3,9 +3,6 @@
   "name": "uiable-typography-p",
   "title": "P Typography",
   "description": "Typography P variant for typography.",
-  "registryDependencies": [
-    "typography"
-  ],
   "files": [
     {
       "path": "src/components/uiable/typography/typography-p.tsx",

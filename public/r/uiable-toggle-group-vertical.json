@@ -3,8 +3,11 @@
   "name": "uiable-toggle-group-vertical",
   "title": "Vertical Toggle Group",
   "description": "Toggle Group Vertical variant for toggle-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "toggle-group"
+    "@uiable/toggle-group"
   ],
   "files": [
     {

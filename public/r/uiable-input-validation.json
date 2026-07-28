@@ -3,8 +3,13 @@
   "name": "uiable-input-validation",
   "title": "Validation Input",
   "description": "Input Validation variant for input.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input"
+    "@uiable/button",
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

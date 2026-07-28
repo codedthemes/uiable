@@ -4,7 +4,8 @@
   "title": "Reading Scroll State",
   "description": "Message Scroller Reading State variant for message-scroller.",
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/card",
+    "@uiable/message-scroller"
   ],
   "files": [
     {

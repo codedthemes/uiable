@@ -4,7 +4,7 @@
   "title": "Danger Light Alert",
   "description": "Alert Light Danger variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

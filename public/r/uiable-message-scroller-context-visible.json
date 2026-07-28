@@ -3,8 +3,18 @@
   "name": "uiable-message-scroller-context-visible",
   "title": "Keeping Context Visible",
   "description": "Message Scroller Keeping Context Visible variant for message-scroller.",
+  "dependencies": [
+    "@ai-sdk/react",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/dropdown-menu",
+    "@uiable/input-group",
+    "@uiable/message-scroller",
+    "@uiable/slider",
+    "@uiable/tooltip"
   ],
   "files": [
     {

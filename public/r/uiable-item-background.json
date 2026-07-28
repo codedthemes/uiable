@@ -3,8 +3,13 @@
   "name": "uiable-item-background",
   "title": "Background Item",
   "description": "Item with background variant for item.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/item"
   ],
   "files": [
     {

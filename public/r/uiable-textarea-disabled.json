@@ -4,7 +4,8 @@
   "title": "Disabled Textarea",
   "description": "Textarea Disabled variant for textarea.",
   "registryDependencies": [
-    "textarea"
+    "@uiable/field",
+    "@uiable/textarea"
   ],
   "files": [
     {

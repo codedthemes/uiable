@@ -4,7 +4,7 @@
   "title": "State Pagination",
   "description": "Pagination State variant for pagination.",
   "registryDependencies": [
-    "pagination"
+    "@uiable/pagination"
   ],
   "files": [
     {

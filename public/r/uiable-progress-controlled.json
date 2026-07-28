@@ -3,8 +3,12 @@
   "name": "uiable-progress-controlled",
   "title": "Controlled Progress",
   "description": "Progress Controlled variant for progress.",
+  "dependencies": [
+    "@base-ui/react"
+  ],
   "registryDependencies": [
-    "progress"
+    "@uiable/progress",
+    "@uiable/slider"
   ],
   "files": [
     {

@@ -3,9 +3,6 @@
   "name": "uiable-spinner-growing-danger",
   "title": "Danger Growing Spinner",
   "description": "Spinner Growing Danger variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-danger.tsx",

@@ -4,7 +4,7 @@
   "title": "Avatar Skeleton",
   "description": "Skeleton Avatar variant for skeleton.",
   "registryDependencies": [
-    "skeleton"
+    "@uiable/skeleton"
   ],
   "files": [
     {

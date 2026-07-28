@@ -4,7 +4,7 @@
   "title": "Warning Solid Badge",
   "description": "Badge Solid Warning variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

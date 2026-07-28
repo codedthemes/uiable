@@ -1,6 +1,6 @@
 <div align="center">
   <h1>UIAble</h1>
-  <p><strong>A modern UI component library built with Tailwind CSS and Shadcn architecture.</strong></p>
+  <p><strong>A modern UI library built with Tailwind CSS and Shadcn architecture.</strong></p>
   <p>
     <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19%2B-007ec6?style=flat-square&logo=react&logoColor=61DAFB" alt="React"></a>
     <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16%2B-007ec6?style=flat-square&logo=next.js&logoColor=white" alt="Next.js"></a>
@@ -182,56 +182,86 @@ Pre-built page sections ready to drop into your project.
 ### Contact
 
 <div>
-  <a href="https://uiable.com/blocks/contact" title="Contact 1"><kbd>Contact 1</kbd></a>
+  <a href="https://uiable.com/preview/contact/contact-1/contact-1" title="Contact 1"><kbd>Contact 1</kbd></a>
 </div>
 
 ### Content
 
 <div>
-  <a href="https://uiable.com/blocks/content" title="Content 1"><kbd>Content 1</kbd></a>
+  <a href="https://uiable.com/preview/content/content-1/content-1" title="Content 1"><kbd>Content 1</kbd></a>
 </div>
 
 ### CTA
 
 <div>
-  <a href="https://uiable.com/blocks/cta" title="Call To Action 1"><kbd>Call To Action 1</kbd></a>
-  <a href="https://uiable.com/blocks/cta" title="Call To Action 2"><kbd>Call To Action 2</kbd></a>
+  <a href="https://uiable.com/preview/cta/cta-1/cta-1" title="Call To Action 1"><kbd>Call To Action 1</kbd></a>
+  <a href="https://uiable.com/preview/cta/cta-2/cta-2" title="Call To Action 2"><kbd>Call To Action 2</kbd></a>
 </div>
 
 ### Faq
 
 <div>
-  <a href="https://uiable.com/blocks/faq" title="FAQ 1"><kbd>FAQ 1</kbd></a>
+  <a href="https://uiable.com/preview/faq/faq-1/faq-1" title="FAQ 1"><kbd>FAQ 1</kbd></a>
 </div>
 
 ### Feature
 
 <div>
-  <a href="https://uiable.com/blocks/feature" title="Feature 2"><kbd>Feature 2</kbd></a>
+  <a href="https://uiable.com/preview/feature/feature-2/feature-2" title="Feature 2"><kbd>Feature 2</kbd></a>
 </div>
 
 ### Footer
 
 <div>
-  <a href="https://uiable.com/blocks/footer" title="Footer 3"><kbd>Footer 3</kbd></a>
+  <a href="https://uiable.com/preview/footer/footer-3/footer-3" title="Footer 3"><kbd>Footer 3</kbd></a>
 </div>
 
 ### Gallery
 
 <div>
-  <a href="https://uiable.com/blocks/gallery" title="Gallery 4"><kbd>Gallery 4</kbd></a>
+  <a href="https://uiable.com/preview/gallery/gallery-4/gallery-4" title="Gallery 4"><kbd>Gallery 4</kbd></a>
 </div>
 
 ### Hero
 
 <div>
-  <a href="https://uiable.com/blocks/hero" title="Hero 2"><kbd>Hero 2</kbd></a>
+  <a href="https://uiable.com/preview/hero/hero-2/hero-2" title="Hero 2"><kbd>Hero 2</kbd></a>
 </div>
 
 ### Portfolio
 
 <div>
-  <a href="https://uiable.com/blocks/portfolio" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
+  <a href="https://uiable.com/preview/portfolio/portfolio-4/portfolio-4" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
+</div>
+
+### Pricing
+
+<div>
+  <a href="https://uiable.com/preview/pricing/pricing-2/pricing-2" title="Pricing 2"><kbd>Pricing 2</kbd></a>
+</div>
+
+### Process
+
+<div>
+  <a href="https://uiable.com/preview/process/process-1/process-1" title="Process 1"><kbd>Process 1</kbd></a>
+</div>
+
+### Statistics
+
+<div>
+  <a href="https://uiable.com/preview/statistics/statistics-1/statistics-1" title="Statistics 1"><kbd>Statistics 1</kbd></a>
+</div>
+
+### Team
+
+<div>
+  <a href="https://uiable.com/preview/team/team-1/team-1" title="Team 1"><kbd>Team 1</kbd></a>
+</div>
+
+### Testimonial
+
+<div>
+  <a href="https://uiable.com/preview/testimonial/testimonial-1/testimonial-1" title="Testimonial 1"><kbd>Testimonial 1</kbd></a>
 </div>
 
 ### Landing
@@ -245,7 +275,6 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/blocks/landing" title="Contact"><kbd>Contact</kbd></a>
   <a href="https://uiable.com/blocks/landing" title="Footer"><kbd>Footer</kbd></a>
 </div>
-
 
 <br />
 

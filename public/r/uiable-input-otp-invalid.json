@@ -4,7 +4,7 @@
   "title": "Invalid Input Otp",
   "description": "Input Otp Invalid variant for input-otp.",
   "registryDependencies": [
-    "input-otp"
+    "@uiable/input-otp"
   ],
   "files": [
     {

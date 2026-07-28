@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-textarea-readonly",
+  "title": "Readonly Textarea",
+  "description": "Textarea Readonly variant for textarea.",
+  "registryDependencies": [
+    "@uiable/field",
+    "@uiable/textarea"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/textarea/textarea-readonly.tsx",
+      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\r\nimport { Textarea } from \"@/components/ui/textarea\"\r\n\r\n//  ------------------------------ | TEXTAREA - READONLY | ------------------------------  //\r\n\r\nexport function TextareaReadonly() {\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"textarea-readonly\">\r\n        API Configuration Notes\r\n      </FieldLabel>\r\n      <Textarea\r\n        id=\"textarea-readonly\"\r\n        defaultValue={\r\n          \"Endpoint: https://api.example.com/v1/webhooks\\nEnvironment: Production (us-east-1)\\nStatus: Active and verified\"\r\n        }\r\n        readOnly\r\n      />\r\n      <FieldDescription>\r\n        This configuration is read-only. Contact your administrator to request\r\n        changes.\r\n      </FieldDescription>\r\n    </Field>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/textarea/textarea-readonly.tsx"
+    }
+  ],
+  "categories": [
+    "textarea"
+  ],
+  "type": "registry:ui"
+}

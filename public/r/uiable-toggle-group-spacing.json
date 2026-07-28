@@ -4,7 +4,7 @@
   "title": "Spacing Toggle Group",
   "description": "Toggle Group Spacing variant for toggle-group.",
   "registryDependencies": [
-    "toggle-group"
+    "@uiable/toggle-group"
   ],
   "files": [
     {

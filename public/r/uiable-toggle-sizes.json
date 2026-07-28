@@ -4,7 +4,7 @@
   "title": "Sizes Toggle",
   "description": "Toggle Sizes variant for toggle.",
   "registryDependencies": [
-    "toggle"
+    "@uiable/toggle"
   ],
   "files": [
     {

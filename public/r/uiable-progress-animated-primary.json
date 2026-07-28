@@ -3,8 +3,11 @@
   "name": "uiable-progress-animated-primary",
   "title": "Animated Primary Progress",
   "description": "Progress Animated Primary variant for progress.",
+  "dependencies": [
+    "@base-ui/react"
+  ],
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

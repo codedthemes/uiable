@@ -4,7 +4,10 @@
   "title": "Close Button Dialog",
   "description": "Dialog Close Button variant for dialog.",
   "registryDependencies": [
-    "dialog"
+    "@uiable/button",
+    "@uiable/dialog",
+    "@uiable/input",
+    "@uiable/label"
   ],
   "files": [
     {

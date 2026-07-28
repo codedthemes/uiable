@@ -3,8 +3,14 @@
   "name": "uiable-command-invite-members",
   "title": "Invite Members",
   "description": "Collaborative command palette for inviting teammates and managing workspace actions.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "command"
+    "@uiable/avatar",
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/command"
   ],
   "files": [
     {

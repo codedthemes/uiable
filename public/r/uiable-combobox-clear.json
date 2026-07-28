@@ -4,7 +4,7 @@
   "title": "Clear Combobox",
   "description": "Combobox Clear variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox"
   ],
   "files": [
     {

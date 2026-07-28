@@ -4,7 +4,7 @@
   "title": "Disabled Tabs",
   "description": "Tabs Disabled variant for tabs.",
   "registryDependencies": [
-    "tabs"
+    "@uiable/tabs"
   ],
   "files": [
     {

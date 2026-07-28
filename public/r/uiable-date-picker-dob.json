@@ -4,7 +4,10 @@
   "title": "Dob Date Picker",
   "description": "Date Picker Dob variant for date-picker.",
   "registryDependencies": [
-    "date-picker"
+    "@uiable/button",
+    "@uiable/calendar",
+    "@uiable/field",
+    "@uiable/popover"
   ],
   "files": [
     {

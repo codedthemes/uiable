@@ -4,7 +4,9 @@
   "title": "Align Item Select",
   "description": "Select Align Item variant for select.",
   "registryDependencies": [
-    "select"
+    "@uiable/field",
+    "@uiable/select",
+    "@uiable/switch"
   ],
   "files": [
     {

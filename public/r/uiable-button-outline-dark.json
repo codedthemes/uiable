@@ -4,7 +4,7 @@
   "title": "Outline Dark Button",
   "description": "Button Outline Dark variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

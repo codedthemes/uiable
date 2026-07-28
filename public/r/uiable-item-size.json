@@ -3,8 +3,11 @@
   "name": "uiable-item-size",
   "title": "Size Item",
   "description": "Item Size variant for item.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/item"
   ],
   "files": [
     {

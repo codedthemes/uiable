@@ -3,8 +3,11 @@
   "name": "uiable-marker-with-icon",
   "title": "Marker With Icon",
   "description": "Marker With Icon variant for marker.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "marker"
+    "@uiable/marker"
   ],
   "files": [
     {

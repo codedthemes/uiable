@@ -4,7 +4,8 @@
   "title": "Group Field",
   "description": "Field Group variant for field.",
   "registryDependencies": [
-    "field"
+    "@uiable/checkbox",
+    "@uiable/field"
   ],
   "files": [
     {

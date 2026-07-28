@@ -3,8 +3,15 @@
   "name": "uiable-date-picker-natural-language",
   "title": "Natural Language Date Picker",
   "description": "Date Picker Natural Language variant for date-picker.",
+  "dependencies": [
+    "chrono-node",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "date-picker"
+    "@uiable/calendar",
+    "@uiable/field",
+    "@uiable/input-group",
+    "@uiable/popover"
   ],
   "files": [
     {

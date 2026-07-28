@@ -3,8 +3,11 @@
   "name": "uiable-toggle-text",
   "title": "Text Toggle",
   "description": "Toggle Text variant for toggle.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "toggle"
+    "@uiable/toggle"
   ],
   "files": [
     {

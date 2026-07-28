@@ -3,8 +3,14 @@
   "name": "uiable-button-group-social",
   "title": "Social Button Group",
   "description": "Button Group Social variant for button-group.",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/separator"
   ],
   "files": [
     {

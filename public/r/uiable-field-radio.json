@@ -4,7 +4,8 @@
   "title": "Radio Field",
   "description": "Field Radio variant for field.",
   "registryDependencies": [
-    "field"
+    "@uiable/field",
+    "@uiable/radio-group"
   ],
   "files": [
     {

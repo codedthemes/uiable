@@ -3,8 +3,12 @@
   "name": "uiable-alert-dismissible-secondary",
   "title": "Secondary Dismissible Alert",
   "description": "Alert Dismissible Secondary variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert",
+    "@uiable/button"
   ],
   "files": [
     {

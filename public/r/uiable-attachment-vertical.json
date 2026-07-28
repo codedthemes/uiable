@@ -3,8 +3,11 @@
   "name": "uiable-attachment-vertical",
   "title": "Vertical Attachment",
   "description": "Attachment Vertical variant for attachment.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "attachment"
+    "@uiable/attachment"
   ],
   "files": [
     {

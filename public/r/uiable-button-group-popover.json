@@ -3,8 +3,15 @@
   "name": "uiable-button-group-popover",
   "title": "Popover Button Group",
   "description": "Button Group Popover variant for button-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/field",
+    "@uiable/popover",
+    "@uiable/textarea"
   ],
   "files": [
     {

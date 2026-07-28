@@ -1,4 +1,7 @@
+"use client"
+
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -13,6 +16,7 @@ import {
   IconArrowUpRight,
   IconBrandNextjs,
   IconBrandReact,
+  IconChevronRight,
 } from "@tabler/icons-react"
 import { Shadcn, BaseUi, Tailwind } from "@/images/svg/icons"
 
@@ -32,6 +36,46 @@ const features = [
   "Accessible",
   "AI Ready Structure",
 ]
+
+const delays = [0, 150, 300]
+
+//  ------------------------------ | SUB-COMPONENTS | ------------------------------  //
+
+function PingDot() {
+  return (
+    <div className="relative flex h-3 w-3 items-center justify-center">
+      <span className="pointer-events-none absolute inline-flex h-full w-full animate-ping rounded-full bg-slate-950 opacity-75 dark:bg-slate-50" />
+      <div className="relative h-2 w-2 rounded-full bg-slate-950 dark:bg-slate-50" />
+    </div>
+  )
+}
+
+function ChangelogLink() {
+  return (
+    <Link
+      href="/doc/changelog"
+      className="group flex items-center gap-0.5 rounded-full bg-primary/10 py-0.5 pr-1 pl-2.5 text-xs font-semibold text-primary transition-colors hover:bg-primary/20"
+    >
+      Changelog
+      <div className="flex -space-x-1.5">
+        {delays.map((delay) => (
+          <motion.div
+            key={delay}
+            animate={{ opacity: [0.2, 1, 0.2] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              delay: delay / 1000,
+              ease: "linear",
+            }}
+          >
+            <IconChevronRight className="h-3.5 w-3.5" />
+          </motion.div>
+        ))}
+      </div>
+    </Link>
+  )
+}
 
 //  ------------------------------ | HERO | ------------------------------  //
 
@@ -57,11 +101,13 @@ export default function Hero() {
           variant="outline"
           className="inline-flex items-center gap-3 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-medium text-secondary-foreground"
         >
-          <div className="relative flex h-3 w-3 items-center justify-center">
-            <span className="pointer-events-none absolute inline-flex h-full w-full animate-ping rounded-full bg-slate-950 opacity-75 dark:bg-slate-50" />
-            <div className="relative h-2 w-2 rounded-full bg-slate-950 dark:bg-slate-50" />
-          </div>
-          Shadcn based UI system
+          <PingDot />
+          <span className="flex items-center gap-2">
+            <span className="text-muted-foreground">
+              New Release July 28, 2026
+            </span>
+            <ChangelogLink />
+          </span>
         </Badge>
       </div>
 
@@ -105,7 +151,7 @@ export default function Hero() {
           id="cta-view-components"
           nativeButton={false}
           render={<Link href="/components" />}
-          className="h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent dark:border-border dark:bg-card dark:hover:bg-accent/10"
+          className="h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent"
         >
           View Components
           <IconArrowUpRight className="size-4" aria-hidden="true" />
@@ -133,7 +179,6 @@ export default function Hero() {
         })}
       </div>
 
-      {/* 6. Feature Pills */}
       <div className="relative z-10 flex items-center justify-center">
         <div className="flex flex-wrap items-center justify-center gap-2.5">
           {features.map((item) => (

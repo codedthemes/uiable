@@ -3,8 +3,12 @@
   "name": "uiable-kbd-input-group",
   "title": "Input Group Kbd",
   "description": "Kbd Input Group variant for kbd.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "kbd"
+    "@uiable/input-group",
+    "@uiable/kbd"
   ],
   "files": [
     {

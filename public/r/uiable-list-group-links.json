@@ -3,9 +3,6 @@
   "name": "uiable-list-group-links",
   "title": "Links List Group",
   "description": "List Group Links variant for list-group.",
-  "registryDependencies": [
-    "list-group"
-  ],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-links.tsx",

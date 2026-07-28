@@ -3,8 +3,11 @@
   "name": "uiable-button-toggle",
   "title": "Toggle Button",
   "description": "Toggle button variant for button",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

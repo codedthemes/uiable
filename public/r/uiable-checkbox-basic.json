@@ -4,7 +4,8 @@
   "title": "Basic Checkbox",
   "description": "Checkbox Basic variant for checkbox.",
   "registryDependencies": [
-    "checkbox"
+    "@uiable/checkbox",
+    "@uiable/field"
   ],
   "files": [
     {

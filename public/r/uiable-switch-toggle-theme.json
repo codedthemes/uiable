@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-switch-toggle-theme",
+  "title": "Toggle Theme",
+  "description": "Switch Toggle Theme variant for switch.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-toggle-theme.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { Moon, Sun } from \"lucide-react\"\r\n\r\n// projects\r\nimport { cn } from \"@/lib/utils\"\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { Switch } from \"@/components/ui/switch\"\r\n\r\n//  ------------------------------ | SWITCH - TOGGLE THEME | ------------------------------  //\r\n\r\nexport function SwitchToggleTheme() {\r\n  const [darkBetween, setDarkBetween] = useState(true)\r\n\r\n  return (\r\n    <div className=\"flex items-center justify-center gap-2.5 py-4\">\r\n      <Button\r\n        variant=\"link\"\r\n        size=\"icon-xs\"\r\n        onClick={() => setDarkBetween(false)}\r\n        className={cn(\r\n          \"cursor-pointer transition-colors\",\r\n          !darkBetween\r\n            ? \"text-amber-500 dark:text-amber-400\"\r\n            : \"text-muted-foreground\"\r\n        )}\r\n        aria-label=\"Light mode\"\r\n      >\r\n        <Sun className=\"size-4\" />\r\n      </Button>\r\n      <Switch\r\n        id=\"switch-theme-between\"\r\n        checked={darkBetween}\r\n        onCheckedChange={setDarkBetween}\r\n        className=\"!rounded-md [&_[data-slot=switch-thumb]]:!rounded-sm\"\r\n      />\r\n      <Button\r\n        variant=\"link\"\r\n        size=\"icon-xs\"\r\n        onClick={() => setDarkBetween(true)}\r\n        className={cn(\r\n          \"cursor-pointer transition-colors\",\r\n          darkBetween ? \"text-foreground\" : \"text-muted-foreground\"\r\n        )}\r\n        aria-label=\"Dark mode\"\r\n      >\r\n        <Moon className=\"size-4\" />\r\n      </Button>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-toggle-theme.tsx"
+    }
+  ],
+  "categories": [
+    "switch"
+  ],
+  "type": "registry:ui"
+}

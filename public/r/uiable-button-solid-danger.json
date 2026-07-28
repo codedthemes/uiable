@@ -4,7 +4,7 @@
   "title": "Solid Danger Button",
   "description": "Button Solid Danger variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

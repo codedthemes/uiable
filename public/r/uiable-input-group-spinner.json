@@ -3,8 +3,12 @@
   "name": "uiable-input-group-spinner",
   "title": "Spinner Input Group",
   "description": "Input Group Spinner variant for input-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/input-group",
+    "@uiable/spinner"
   ],
   "files": [
     {

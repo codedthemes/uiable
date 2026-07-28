@@ -3,9 +3,6 @@
   "name": "uiable-spinner-size-small",
   "title": "Small Size Spinner",
   "description": "Spinner Size Small variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-size-small.tsx",

@@ -4,7 +4,7 @@
   "title": "Solid Primary Alert",
   "description": "Alert Solid Primary variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

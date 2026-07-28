@@ -3,8 +3,11 @@
   "name": "uiable-radio-group-colors",
   "title": "Colors Radio Group",
   "description": "Color Radio Group variant for radio-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "radio-group"
+    "@uiable/button"
   ],
   "files": [
     {

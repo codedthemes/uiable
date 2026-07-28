@@ -3,6 +3,15 @@
   "name": "uiable-sidebar-1",
   "title": "Sidebar 1",
   "description": "Sidebar variant 1.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/input",
+    "@uiable/scroll-area"
+  ],
   "files": [
     {
       "path": "src/components/uiable/sidebar/sidebar-1.tsx",

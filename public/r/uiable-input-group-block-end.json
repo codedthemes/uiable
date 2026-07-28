@@ -4,7 +4,8 @@
   "title": "Block End Input Group",
   "description": "Input Group Block End variant for input-group.",
   "registryDependencies": [
-    "input-group"
+    "@uiable/field",
+    "@uiable/input-group"
   ],
   "files": [
     {

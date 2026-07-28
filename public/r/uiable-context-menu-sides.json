@@ -4,7 +4,7 @@
   "title": "Sides Context Menu",
   "description": "Context Menu Sides variant for context-menu.",
   "registryDependencies": [
-    "context-menu"
+    "@uiable/context-menu"
   ],
   "files": [
     {

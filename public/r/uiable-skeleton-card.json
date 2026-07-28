@@ -4,7 +4,8 @@
   "title": "Card Skeleton",
   "description": "Skeleton Card variant for skeleton.",
   "registryDependencies": [
-    "skeleton"
+    "@uiable/card",
+    "@uiable/skeleton"
   ],
   "files": [
     {

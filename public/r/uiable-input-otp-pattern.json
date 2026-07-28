@@ -3,8 +3,12 @@
   "name": "uiable-input-otp-pattern",
   "title": "Pattern Input Otp",
   "description": "Input Otp Pattern variant for input-otp.",
-  "registryDependencies": [
+  "dependencies": [
     "input-otp"
+  ],
+  "registryDependencies": [
+    "@uiable/field",
+    "@uiable/input-otp"
   ],
   "files": [
     {

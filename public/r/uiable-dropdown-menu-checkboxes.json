@@ -4,7 +4,8 @@
   "title": "Checkbox Dropdown Menu",
   "description": "Dropdown Menu Checkboxes variant for dropdown-menu.",
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

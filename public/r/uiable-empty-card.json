@@ -3,8 +3,12 @@
   "name": "uiable-empty-card",
   "title": "Empty Card",
   "description": "Empty Card variant for empty.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "empty"
+    "@uiable/button",
+    "@uiable/empty"
   ],
   "files": [
     {

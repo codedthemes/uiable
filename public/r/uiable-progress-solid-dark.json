@@ -4,7 +4,7 @@
   "title": "Solid Dark Progress",
   "description": "Progress Solid Dark variant for progress.",
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {
