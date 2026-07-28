@@ -4,7 +4,7 @@
   "title": "Solid Primary Button",
   "description": "Button Solid Primary variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

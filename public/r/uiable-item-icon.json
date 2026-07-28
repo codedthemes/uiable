@@ -3,8 +3,12 @@
   "name": "uiable-item-icon",
   "title": "Icon Item",
   "description": "Item Icon variant for item.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/button",
+    "@uiable/item"
   ],
   "files": [
     {

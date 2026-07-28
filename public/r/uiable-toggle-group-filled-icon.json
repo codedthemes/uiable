@@ -3,8 +3,12 @@
   "name": "uiable-toggle-group-filled-icon",
   "title": "Filled Icon",
   "description": "Toggle Group Filled Icon variant for toggle-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "toggle-group"
+    "@uiable/badge",
+    "@uiable/toggle-group"
   ],
   "files": [
     {

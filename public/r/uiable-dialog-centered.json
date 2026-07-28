@@ -4,7 +4,8 @@
   "title": "Centered Dialog",
   "description": "Dialog Centered variant for dialog.",
   "registryDependencies": [
-    "dialog"
+    "@uiable/button",
+    "@uiable/dialog"
   ],
   "files": [
     {

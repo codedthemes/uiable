@@ -4,7 +4,7 @@
   "title": "Line Tabs",
   "description": "Tabs Line variant for tabs.",
   "registryDependencies": [
-    "tabs"
+    "@uiable/tabs"
   ],
   "files": [
     {

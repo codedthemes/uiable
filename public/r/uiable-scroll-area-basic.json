@@ -4,7 +4,8 @@
   "title": "Basic Scroll Area",
   "description": "Scroll Area Basic variant for scroll-area.",
   "registryDependencies": [
-    "scroll-area"
+    "@uiable/scroll-area",
+    "@uiable/separator"
   ],
   "files": [
     {

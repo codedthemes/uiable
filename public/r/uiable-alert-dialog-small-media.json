@@ -3,8 +3,12 @@
   "name": "uiable-alert-dialog-small-media",
   "title": "Small Media Alert Dialog",
   "description": "Alert Dialog Small Media variant for alert-dialog.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "alert-dialog"
+    "@uiable/alert-dialog",
+    "@uiable/button"
   ],
   "files": [
     {

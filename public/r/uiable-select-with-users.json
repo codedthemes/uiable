@@ -4,7 +4,8 @@
   "title": "With Users Select",
   "description": "Select With Users variant for select.",
   "registryDependencies": [
-    "select"
+    "@uiable/avatar",
+    "@uiable/select"
   ],
   "files": [
     {

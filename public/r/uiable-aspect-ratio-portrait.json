@@ -3,8 +3,11 @@
   "name": "uiable-aspect-ratio-portrait",
   "title": "Portrait Aspect Ratio",
   "description": "Aspect Ratio Portrait variant for aspect-ratio.",
+  "dependencies": [
+    "next"
+  ],
   "registryDependencies": [
-    "aspect-ratio"
+    "@uiable/aspect-ratio"
   ],
   "files": [
     {

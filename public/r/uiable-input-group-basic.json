@@ -4,7 +4,9 @@
   "title": "Basic Input Group",
   "description": "Input Group Basic variant for input-group.",
   "registryDependencies": [
-    "input-group"
+    "@uiable/field",
+    "@uiable/input",
+    "@uiable/input-group"
   ],
   "files": [
     {

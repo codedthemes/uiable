@@ -3,8 +3,12 @@
   "name": "uiable-input-group-dropdown",
   "title": "Dropdown Input Group",
   "description": "Input Group Dropdown variant for input-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/dropdown-menu",
+    "@uiable/input-group"
   ],
   "files": [
     {

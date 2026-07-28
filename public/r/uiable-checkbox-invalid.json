@@ -4,7 +4,8 @@
   "title": "Invalid Checkbox",
   "description": "Checkbox Invalid variant for checkbox.",
   "registryDependencies": [
-    "checkbox"
+    "@uiable/checkbox",
+    "@uiable/field"
   ],
   "files": [
     {

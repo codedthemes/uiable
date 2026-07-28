@@ -4,7 +4,7 @@
   "title": "Solid Warning Progress",
   "description": "Progress Solid Warning variant for progress.",
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

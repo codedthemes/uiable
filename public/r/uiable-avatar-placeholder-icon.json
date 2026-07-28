@@ -3,8 +3,11 @@
   "name": "uiable-avatar-placeholder-icon",
   "title": "Placeholder Icon Avatar",
   "description": "Avatar Placeholder Icon variant for avatar.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "avatar"
+    "@uiable/avatar"
   ],
   "files": [
     {

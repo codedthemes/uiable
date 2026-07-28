@@ -3,8 +3,11 @@
   "name": "uiable-bubble-link",
   "title": "Links and Buttons",
   "description": "Bubble Links & Buttons variant for bubble.",
+  "dependencies": [
+    "sonner"
+  ],
   "registryDependencies": [
-    "bubble"
+    "@uiable/bubble"
   ],
   "files": [
     {

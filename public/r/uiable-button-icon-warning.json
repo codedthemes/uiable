@@ -3,8 +3,11 @@
   "name": "uiable-button-icon-warning",
   "title": "Warning Icon Button",
   "description": "Button Icon Warning variant for button.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

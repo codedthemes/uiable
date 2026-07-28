@@ -4,7 +4,8 @@
   "title": "Header Footer Card",
   "description": "Card Header Footer variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/button",
+    "@uiable/card"
   ],
   "files": [
     {

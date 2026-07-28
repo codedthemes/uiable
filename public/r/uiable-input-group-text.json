@@ -4,7 +4,7 @@
   "title": "Text Input Group",
   "description": "Input Group Text variant for input-group.",
   "registryDependencies": [
-    "input-group"
+    "@uiable/input-group"
   ],
   "files": [
     {

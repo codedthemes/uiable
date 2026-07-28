@@ -3,8 +3,12 @@
   "name": "uiable-radio-group-list",
   "title": "List Radio Group",
   "description": "Radio Group List variant for radio-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "radio-group"
+    "@uiable/avatar",
+    "@uiable/radio-group"
   ],
   "files": [
     {

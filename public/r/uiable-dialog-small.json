@@ -4,7 +4,8 @@
   "title": "Small Dialog",
   "description": "Dialog Small variant for dialog.",
   "registryDependencies": [
-    "dialog"
+    "@uiable/button",
+    "@uiable/dialog"
   ],
   "files": [
     {

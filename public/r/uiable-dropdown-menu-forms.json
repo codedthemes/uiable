@@ -3,8 +3,15 @@
   "name": "uiable-dropdown-menu-forms",
   "title": "Form Dropdown Menu",
   "description": "Dropdown Menu Forms variant for dropdown-menu.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/checkbox",
+    "@uiable/dropdown-menu",
+    "@uiable/input",
+    "@uiable/label"
   ],
   "files": [
     {

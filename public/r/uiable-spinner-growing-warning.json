@@ -3,9 +3,6 @@
   "name": "uiable-spinner-growing-warning",
   "title": "Warning Growing Spinner",
   "description": "Spinner Growing Warning variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-warning.tsx",

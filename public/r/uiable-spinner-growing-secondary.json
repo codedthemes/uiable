@@ -3,9 +3,6 @@
   "name": "uiable-spinner-growing-secondary",
   "title": "Secondary Growing Spinner",
   "description": "Spinner Growing Secondary variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-secondary.tsx",

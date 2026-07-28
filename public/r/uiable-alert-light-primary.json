@@ -4,7 +4,7 @@
   "title": "Light Primary Alert",
   "description": "Alert Light Primary variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

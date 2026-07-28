@@ -4,7 +4,8 @@
   "title": "Week Numbers Calendar",
   "description": "Calendar Week Numbers variant for calendar.",
   "registryDependencies": [
-    "calendar"
+    "@uiable/calendar",
+    "@uiable/card"
   ],
   "files": [
     {

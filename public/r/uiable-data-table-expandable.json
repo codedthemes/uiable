@@ -8,13 +8,13 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "avatar",
-    "badge",
-    "button",
-    "checkbox",
-    "dropdown-menu",
-    "input",
-    "table"
+    "@uiable/avatar",
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/checkbox",
+    "@uiable/dropdown-menu",
+    "@uiable/input",
+    "@uiable/table"
   ],
   "files": [
     {

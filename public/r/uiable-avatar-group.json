@@ -4,7 +4,7 @@
   "title": "Group Avatar",
   "description": "Avatar Group variant for avatar.",
   "registryDependencies": [
-    "avatar"
+    "@uiable/avatar"
   ],
   "files": [
     {

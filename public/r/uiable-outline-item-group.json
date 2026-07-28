@@ -3,8 +3,11 @@
   "name": "uiable-outline-item-group",
   "title": "Outline Group Item",
   "description": "Outline Item Group variant for item.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/item"
   ],
   "files": [
     {

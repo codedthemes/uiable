@@ -3,8 +3,12 @@
   "name": "uiable-switch-toggle-theme",
   "title": "Toggle Theme",
   "description": "Switch Toggle Theme variant for switch.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "switch"
+    "@uiable/button",
+    "@uiable/switch"
   ],
   "files": [
     {

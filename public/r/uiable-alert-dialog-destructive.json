@@ -3,8 +3,12 @@
   "name": "uiable-alert-dialog-destructive",
   "title": "Destructive Alert Dialog",
   "description": "Alert Dialog Destructive variant for alert-dialog.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "alert-dialog"
+    "@uiable/alert-dialog",
+    "@uiable/button"
   ],
   "files": [
     {

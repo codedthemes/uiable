@@ -4,7 +4,7 @@
   "title": "Link Button",
   "description": "Button Link variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

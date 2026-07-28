@@ -3,8 +3,13 @@
   "name": "uiable-command-search-filter",
   "title": "Search & Filter",
   "description": "Search-focused command palette with smart filters and curated content suggestions.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "command"
+    "@uiable/button",
+    "@uiable/command",
+    "@uiable/radio-group"
   ],
   "files": [
     {

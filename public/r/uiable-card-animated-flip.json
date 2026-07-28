@@ -3,8 +3,15 @@
   "name": "uiable-card-animated-flip",
   "title": "Animated Flip Card",
   "description": "Interactive 3D dual-sided flip card with smooth rotation using framer-motion.",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "card"
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/progress"
   ],
   "files": [
     {

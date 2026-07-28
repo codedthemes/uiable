@@ -3,8 +3,12 @@
   "name": "uiable-attachment-triggers",
   "title": "Trigger",
   "description": "Attachment Trigger variant for attachment.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "attachment"
+    "@uiable/attachment",
+    "@uiable/dialog"
   ],
   "files": [
     {

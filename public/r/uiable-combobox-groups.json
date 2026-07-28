@@ -4,7 +4,7 @@
   "title": "Groups Combobox",
   "description": "Combobox Groups variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox"
   ],
   "files": [
     {

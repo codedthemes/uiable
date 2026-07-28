@@ -4,7 +4,8 @@
   "title": "Color Options",
   "description": "Switch Color Options variant for switch.",
   "registryDependencies": [
-    "switch"
+    "@uiable/field",
+    "@uiable/switch"
   ],
   "files": [
     {

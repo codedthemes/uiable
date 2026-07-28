@@ -4,7 +4,10 @@
   "title": "Form Popover",
   "description": "Popover Form variant for popover.",
   "registryDependencies": [
-    "popover"
+    "@uiable/button",
+    "@uiable/field",
+    "@uiable/input",
+    "@uiable/popover"
   ],
   "files": [
     {

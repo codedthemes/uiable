@@ -4,7 +4,9 @@
   "title": "Autocomplete Combobox",
   "description": "Combobox Autocomplete variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox",
+    "@uiable/field",
+    "@uiable/kbd"
   ],
   "files": [
     {

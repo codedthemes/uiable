@@ -3,8 +3,16 @@
   "name": "uiable-date-picker-range",
   "title": "Range Date Picker",
   "description": "Date Picker Range variant for date-picker.",
+  "dependencies": [
+    "date-fns",
+    "lucide-react",
+    "react-day-picker"
+  ],
   "registryDependencies": [
-    "date-picker"
+    "@uiable/button",
+    "@uiable/calendar",
+    "@uiable/field",
+    "@uiable/popover"
   ],
   "files": [
     {

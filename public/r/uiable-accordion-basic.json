@@ -4,7 +4,7 @@
   "title": "Basic Accordion",
   "description": "Accordion Basic variant for accordion.",
   "registryDependencies": [
-    "accordion"
+    "@uiable/accordion"
   ],
   "files": [
     {

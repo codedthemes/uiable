@@ -4,7 +4,7 @@
   "title": "Solid Info Button",
   "description": "Button Solid Info variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

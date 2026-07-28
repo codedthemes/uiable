@@ -4,7 +4,8 @@
   "title": "Disabled Input",
   "description": "Input Disabled variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

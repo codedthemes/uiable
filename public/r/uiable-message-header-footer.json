@@ -4,7 +4,8 @@
   "title": "Header And Footer",
   "description": "Message Header And Footer variant for message.",
   "registryDependencies": [
-    "message"
+    "@uiable/bubble",
+    "@uiable/message"
   ],
   "files": [
     {

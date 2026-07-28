@@ -4,7 +4,8 @@
   "title": "Basic Popover",
   "description": "Popover Basic variant for popover.",
   "registryDependencies": [
-    "popover"
+    "@uiable/button",
+    "@uiable/popover"
   ],
   "files": [
     {

@@ -3,8 +3,12 @@
   "name": "uiable-command-shortcuts",
   "title": "Shortcuts Command",
   "description": "Command Shortcuts variant for command.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "command"
+    "@uiable/button",
+    "@uiable/command"
   ],
   "files": [
     {

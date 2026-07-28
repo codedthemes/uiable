@@ -4,7 +4,9 @@
   "title": "Range Input",
   "description": "Input Range variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/field",
+    "@uiable/input",
+    "@uiable/slider"
   ],
   "files": [
     {

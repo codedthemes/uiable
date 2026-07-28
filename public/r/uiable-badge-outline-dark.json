@@ -4,7 +4,7 @@
   "title": "Dark Outline Badge",
   "description": "Badge Outline Dark variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

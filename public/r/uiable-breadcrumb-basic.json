@@ -4,7 +4,7 @@
   "title": "Basic Breadcrumb",
   "description": "Breadcrumb Basic variant for breadcrumb.",
   "registryDependencies": [
-    "breadcrumb"
+    "@uiable/breadcrumb"
   ],
   "files": [
     {

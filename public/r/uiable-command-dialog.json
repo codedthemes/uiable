@@ -3,8 +3,11 @@
   "name": "uiable-command-dialog",
   "title": "Dialog Command",
   "description": "Command Dialog variant for command.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "command"
+    "@uiable/command"
   ],
   "files": [
     {

@@ -3,8 +3,12 @@
   "name": "uiable-button-group-split",
   "title": "Split Button Group",
   "description": "Button Group Split variant for button-group.",
+  "dependencies": [
+    "@tabler/icons-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group"
   ],
   "files": [
     {

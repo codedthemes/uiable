@@ -4,7 +4,7 @@
   "title": "Solid Info Progress",
   "description": "Progress Solid Info variant for progress.",
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

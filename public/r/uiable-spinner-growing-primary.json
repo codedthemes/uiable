@@ -3,9 +3,6 @@
   "name": "uiable-spinner-growing-primary",
   "title": "Primary Growing Spinner",
   "description": "Spinner Growing Primary variant for spinner.",
-  "registryDependencies": [
-    "spinner"
-  ],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-primary.tsx",

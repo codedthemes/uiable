@@ -3,9 +3,6 @@
   "name": "uiable-typography-list",
   "title": "List Typography",
   "description": "Typography List variant for typography.",
-  "registryDependencies": [
-    "typography"
-  ],
   "files": [
     {
       "path": "src/components/uiable/typography/typography-list.tsx",

@@ -3,8 +3,13 @@
   "name": "uiable-empty-avatar-group",
   "title": "Empty Group Avatar",
   "description": "Empty Avatar Group variant for empty.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "empty"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/empty"
   ],
   "files": [
     {

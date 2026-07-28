@@ -3,8 +3,11 @@
   "name": "uiable-progress-striped-primary",
   "title": "Striped Primary Progress",
   "description": "Progress Striped Primary variant for progress.",
+  "dependencies": [
+    "@base-ui/react"
+  ],
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

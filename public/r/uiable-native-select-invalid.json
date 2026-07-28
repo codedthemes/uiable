@@ -4,7 +4,7 @@
   "title": "Invalid Native Select",
   "description": "Native Select Invalid variant for native-select.",
   "registryDependencies": [
-    "native-select"
+    "@uiable/native-select"
   ],
   "files": [
     {

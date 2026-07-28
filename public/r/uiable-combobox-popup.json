@@ -4,7 +4,8 @@
   "title": "Popup Combobox",
   "description": "Combobox Popup variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/button",
+    "@uiable/combobox"
   ],
   "files": [
     {

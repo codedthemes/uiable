@@ -3,8 +3,11 @@
   "name": "uiable-alert-icon-secondary",
   "title": "Secondary Icon Alert",
   "description": "Alert Icon Secondary variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

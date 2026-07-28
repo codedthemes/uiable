@@ -4,7 +4,8 @@
   "title": "Multiple Carousel",
   "description": "Carousel Multiple variant for carousel.",
   "registryDependencies": [
-    "carousel"
+    "@uiable/card",
+    "@uiable/carousel"
   ],
   "files": [
     {

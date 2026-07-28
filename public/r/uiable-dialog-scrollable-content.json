@@ -4,7 +4,8 @@
   "title": "Scrollable Content Dialog",
   "description": "Dialog Scrollable Content variant for dialog.",
   "registryDependencies": [
-    "dialog"
+    "@uiable/button",
+    "@uiable/dialog"
   ],
   "files": [
     {

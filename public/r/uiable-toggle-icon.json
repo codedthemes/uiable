@@ -3,8 +3,11 @@
   "name": "uiable-toggle-icon",
   "title": "Icon Toggle",
   "description": "Icon Toggle variant for toggle.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "toggle"
+    "@uiable/toggle"
   ],
   "files": [
     {

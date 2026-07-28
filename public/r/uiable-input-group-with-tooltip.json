@@ -3,8 +3,16 @@
   "name": "uiable-input-group-with-tooltip",
   "title": "With Tooltip Input Group",
   "description": "Input Group With Tooltip variant for input-group.",
+  "dependencies": [
+    "lucide-react",
+    "sonner"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/dropdown-menu",
+    "@uiable/field",
+    "@uiable/input-group",
+    "@uiable/popover",
+    "@uiable/tooltip"
   ],
   "files": [
     {

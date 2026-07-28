@@ -4,7 +4,8 @@
   "title": "Basic Label",
   "description": "Label Basic variant for label.",
   "registryDependencies": [
-    "label"
+    "@uiable/checkbox",
+    "@uiable/label"
   ],
   "files": [
     {

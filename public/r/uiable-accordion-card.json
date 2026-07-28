@@ -4,7 +4,8 @@
   "title": "Card Accordion",
   "description": "Accordion Card variant for accordion.",
   "registryDependencies": [
-    "accordion"
+    "@uiable/accordion",
+    "@uiable/card"
   ],
   "files": [
     {

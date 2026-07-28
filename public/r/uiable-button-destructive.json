@@ -4,7 +4,7 @@
   "title": "Destructive Button",
   "description": "Button Destructive variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

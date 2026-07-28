@@ -3,8 +3,12 @@
   "name": "uiable-command-groups",
   "title": "Groups Command",
   "description": "Command Groups variant for command.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "command"
+    "@uiable/button",
+    "@uiable/command"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Submenu Dropdown Menu",
   "description": "Dropdown Menu Submenu variant for dropdown-menu.",
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

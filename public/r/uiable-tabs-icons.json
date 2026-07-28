@@ -3,8 +3,11 @@
   "name": "uiable-tabs-icons",
   "title": "Icons Tabs",
   "description": "Tabs Icons variant for tabs.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "tabs"
+    "@uiable/tabs"
   ],
   "files": [
     {

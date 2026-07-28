@@ -3,8 +3,12 @@
   "name": "uiable-input-input-group",
   "title": "Input Group Input",
   "description": "Input Input Group variant for input.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input"
+    "@uiable/field",
+    "@uiable/input-group"
   ],
   "files": [
     {

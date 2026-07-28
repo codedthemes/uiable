@@ -4,7 +4,7 @@
   "title": "Separator Marker",
   "description": "Marker Separator variant for marker.",
   "registryDependencies": [
-    "marker"
+    "@uiable/marker"
   ],
   "files": [
     {

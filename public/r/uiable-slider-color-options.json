@@ -4,7 +4,8 @@
   "title": "Color Options Slider",
   "description": "Color Options Slider Variant for slider.",
   "registryDependencies": [
-    "slider"
+    "@uiable/label",
+    "@uiable/slider"
   ],
   "files": [
     {

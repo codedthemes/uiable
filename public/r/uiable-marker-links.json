@@ -3,8 +3,12 @@
   "name": "uiable-marker-links",
   "title": "Links and Buttons",
   "description": "Links and Buttons Marker variant for marker.",
+  "dependencies": [
+    "lucide-react",
+    "sonner"
+  ],
   "registryDependencies": [
-    "marker"
+    "@uiable/marker"
   ],
   "files": [
     {

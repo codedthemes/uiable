@@ -3,8 +3,13 @@
   "name": "uiable-table-actions",
   "title": "Actions Table",
   "description": "Table Actions variant for table.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "table"
+    "@uiable/button",
+    "@uiable/dropdown-menu",
+    "@uiable/table"
   ],
   "files": [
     {

@@ -3,9 +3,6 @@
   "name": "uiable-list-group-disabled",
   "title": "Disabled List Group",
   "description": "List Group Disabled variant for list-group.",
-  "registryDependencies": [
-    "list-group"
-  ],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-disabled.tsx",

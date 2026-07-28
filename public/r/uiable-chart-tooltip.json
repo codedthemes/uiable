@@ -3,9 +3,6 @@
   "name": "uiable-chart-tooltip",
   "title": "Tooltip Chart",
   "description": "Chart Tooltip variant for chart.",
-  "registryDependencies": [
-    "chart"
-  ],
   "files": [
     {
       "path": "src/components/uiable/chart/chart-tooltip.tsx",

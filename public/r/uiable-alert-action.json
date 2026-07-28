@@ -4,7 +4,8 @@
   "title": "Action Alert",
   "description": "Alert Action variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert",
+    "@uiable/button"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Light Danger Button",
   "description": "Button Light Danger variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

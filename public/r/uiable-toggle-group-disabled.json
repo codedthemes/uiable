@@ -3,8 +3,11 @@
   "name": "uiable-toggle-group-disabled",
   "title": "Disabled Toggle Group",
   "description": "Toggle Group Disabled variant for toggle-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "toggle-group"
+    "@uiable/toggle-group"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Status Marker",
   "description": "Marker Status variant for marker.",
   "registryDependencies": [
-    "marker"
+    "@uiable/marker",
+    "@uiable/spinner"
   ],
   "files": [
     {

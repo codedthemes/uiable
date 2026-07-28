@@ -4,7 +4,8 @@
   "title": "Checkbox Field",
   "description": "Field Checkbox variant for field.",
   "registryDependencies": [
-    "field"
+    "@uiable/checkbox",
+    "@uiable/field"
   ],
   "files": [
     {

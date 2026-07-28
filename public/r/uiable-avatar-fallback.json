@@ -4,7 +4,7 @@
   "title": "Fallback Avatar",
   "description": "Avatar Fallback variant for avatar.",
   "registryDependencies": [
-    "avatar"
+    "@uiable/avatar"
   ],
   "files": [
     {

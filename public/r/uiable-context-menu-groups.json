@@ -4,7 +4,7 @@
   "title": "Groups Context Menu",
   "description": "Context Menu Groups variant for context-menu.",
   "registryDependencies": [
-    "context-menu"
+    "@uiable/context-menu"
   ],
   "files": [
     {

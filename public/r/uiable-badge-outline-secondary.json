@@ -4,7 +4,7 @@
   "title": "Secondary Outline Badge",
   "description": "Badge Outline Secondary variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

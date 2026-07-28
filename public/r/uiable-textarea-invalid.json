@@ -4,7 +4,8 @@
   "title": "Invalid Textarea",
   "description": "Textarea Invalid variant for textarea.",
   "registryDependencies": [
-    "textarea"
+    "@uiable/field",
+    "@uiable/textarea"
   ],
   "files": [
     {

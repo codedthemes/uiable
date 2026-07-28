@@ -4,7 +4,7 @@
   "title": "Primary Outline Badge",
   "description": "Badge Outline Primary variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

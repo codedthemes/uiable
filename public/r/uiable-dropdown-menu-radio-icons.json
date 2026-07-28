@@ -3,8 +3,12 @@
   "name": "uiable-dropdown-menu-radio-icons",
   "title": "Radio Icons Dropdown Menu",
   "description": "Dropdown Menu Radio Icons variant for dropdown-menu.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

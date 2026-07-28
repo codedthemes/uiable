@@ -4,7 +4,8 @@
   "title": "No Close Button Dialog",
   "description": "Dialog No Close Button variant for dialog.",
   "registryDependencies": [
-    "dialog"
+    "@uiable/button",
+    "@uiable/dialog"
   ],
   "files": [
     {

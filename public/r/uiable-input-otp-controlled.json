@@ -4,7 +4,7 @@
   "title": "Controlled Input Otp",
   "description": "Input Otp Controlled variant for input-otp.",
   "registryDependencies": [
-    "input-otp"
+    "@uiable/input-otp"
   ],
   "files": [
     {

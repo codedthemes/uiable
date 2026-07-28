@@ -4,7 +4,7 @@
   "title": "Success Outline Badge",
   "description": "Badge Outline Success variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

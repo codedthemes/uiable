@@ -4,7 +4,7 @@
   "title": "Disabled Select",
   "description": "Select Disabled variant for select.",
   "registryDependencies": [
-    "select"
+    "@uiable/select"
   ],
   "files": [
     {

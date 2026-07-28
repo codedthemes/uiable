@@ -3,8 +3,12 @@
   "name": "uiable-input-group-tooltip",
   "title": "Tooltip Input Group",
   "description": "Input Group Tooltip variant for input-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/input-group",
+    "@uiable/tooltip"
   ],
   "files": [
     {

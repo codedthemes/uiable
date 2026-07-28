@@ -4,7 +4,8 @@
   "title": "Scrollable Content Drawer",
   "description": "Drawer Scrollable Content variant for drawer.",
   "registryDependencies": [
-    "drawer"
+    "@uiable/button",
+    "@uiable/drawer"
   ],
   "files": [
     {

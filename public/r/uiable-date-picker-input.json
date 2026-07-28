@@ -3,8 +3,14 @@
   "name": "uiable-date-picker-input",
   "title": "Input Date Picker",
   "description": "Date Picker Input variant for date-picker.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "date-picker"
+    "@uiable/calendar",
+    "@uiable/field",
+    "@uiable/input-group",
+    "@uiable/popover"
   ],
   "files": [
     {

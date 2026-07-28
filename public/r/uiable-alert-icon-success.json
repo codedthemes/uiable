@@ -3,8 +3,11 @@
   "name": "uiable-alert-icon-success",
   "title": "Success Icon Alert",
   "description": "Alert Icon Success variant for alert.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

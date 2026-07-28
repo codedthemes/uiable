@@ -4,7 +4,10 @@
   "title": "Form Input",
   "description": "Input Form variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/button",
+    "@uiable/field",
+    "@uiable/input",
+    "@uiable/select"
   ],
   "files": [
     {

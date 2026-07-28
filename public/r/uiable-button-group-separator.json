@@ -4,7 +4,8 @@
   "title": "Separator Button Group",
   "description": "Button Group Separator variant for button-group.",
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group"
   ],
   "files": [
     {

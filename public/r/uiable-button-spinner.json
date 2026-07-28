@@ -4,7 +4,8 @@
   "title": "Spinner Button",
   "description": "Button Spinner variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button",
+    "@uiable/spinner"
   ],
   "files": [
     {

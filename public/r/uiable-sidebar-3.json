@@ -3,6 +3,15 @@
   "name": "uiable-sidebar-3",
   "title": "Sidebar 3",
   "description": "Sidebar variant 3.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/collapsible",
+    "@uiable/sidebar",
+    "uiable-layout-logo"
+  ],
   "files": [
     {
       "path": "src/components/uiable/sidebar/sidebar-3.tsx",

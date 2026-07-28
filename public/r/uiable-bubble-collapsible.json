@@ -3,8 +3,13 @@
   "name": "uiable-bubble-collapsible",
   "title": "Show More / Collapsible",
   "description": "Bubble Collapsible variant for bubble.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "bubble"
+    "@uiable/bubble",
+    "@uiable/button",
+    "@uiable/collapsible"
   ],
   "files": [
     {

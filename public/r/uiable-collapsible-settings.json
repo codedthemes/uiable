@@ -3,8 +3,15 @@
   "name": "uiable-collapsible-settings",
   "title": "Settings Collapsible",
   "description": "Collapsible Settings variant for collapsible.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "collapsible"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/collapsible",
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

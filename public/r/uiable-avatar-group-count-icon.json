@@ -3,8 +3,11 @@
   "name": "uiable-avatar-group-count-icon",
   "title": "Group Count Icon Avatar",
   "description": "Avatar Group Count Icon variant for avatar.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "avatar"
+    "@uiable/avatar"
   ],
   "files": [
     {

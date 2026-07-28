@@ -8,12 +8,12 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "button",
-    "checkbox",
-    "dropdown-menu",
-    "input",
-    "select",
-    "table"
+    "@uiable/button",
+    "@uiable/checkbox",
+    "@uiable/dropdown-menu",
+    "@uiable/input",
+    "@uiable/select",
+    "@uiable/table"
   ],
   "files": [
     {

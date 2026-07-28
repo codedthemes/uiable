@@ -4,7 +4,8 @@
   "title": "Booked Dates Calendar",
   "description": "Calendar Booked Dates variant for calendar.",
   "registryDependencies": [
-    "calendar"
+    "@uiable/calendar",
+    "@uiable/card"
   ],
   "files": [
     {

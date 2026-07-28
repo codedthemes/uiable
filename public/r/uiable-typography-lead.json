@@ -3,9 +3,6 @@
   "name": "uiable-typography-lead",
   "title": "Lead Typography",
   "description": "Typography Lead variant for typography.",
-  "registryDependencies": [
-    "typography"
-  ],
   "files": [
     {
       "path": "src/components/uiable/typography/typography-lead.tsx",

@@ -4,7 +4,7 @@
   "title": "Disabled Toggle",
   "description": "Toggle Disabled variant for toggle.",
   "registryDependencies": [
-    "toggle"
+    "@uiable/toggle"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Controlled Slider",
   "description": "Slider Controlled variant for slider.",
   "registryDependencies": [
-    "slider"
+    "@uiable/label",
+    "@uiable/slider"
   ],
   "files": [
     {

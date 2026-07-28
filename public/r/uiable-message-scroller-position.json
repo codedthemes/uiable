@@ -4,7 +4,9 @@
   "title": "Opening Saved Threads",
   "description": "Message Scroller Opening Saved Threads variant for message-scroller.",
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/card",
+    "@uiable/message-scroller",
+    "@uiable/toggle-group"
   ],
   "files": [
     {

@@ -3,8 +3,11 @@
   "name": "uiable-badge-icon",
   "title": "Icon Badge",
   "description": "Badge Icon variant for badge.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

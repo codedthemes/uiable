@@ -4,7 +4,7 @@
   "title": "Colors Badge",
   "description": "Badge Colors variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

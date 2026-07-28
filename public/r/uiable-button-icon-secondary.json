@@ -3,8 +3,11 @@
   "name": "uiable-button-icon-secondary",
   "title": "Secondary Icon Button",
   "description": "Button Icon Secondary variant for button.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

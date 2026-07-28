@@ -3,8 +3,15 @@
   "name": "uiable-message-scroller-live-edge",
   "title": "Following the Live Edge",
   "description": "Message Scroller Live Edge variant for message-scroller.",
+  "dependencies": [
+    "@ai-sdk/react",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/input-group",
+    "@uiable/message-scroller"
   ],
   "files": [
     {

@@ -3,8 +3,12 @@
   "name": "uiable-input-group-button",
   "title": "Button Input Group",
   "description": "Input Group Button variant for input-group.",
+  "dependencies": [
+    "@tabler/icons-react"
+  ],
   "registryDependencies": [
-    "input-group"
+    "@uiable/input-group",
+    "@uiable/popover"
   ],
   "files": [
     {

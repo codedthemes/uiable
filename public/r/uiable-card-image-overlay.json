@@ -4,7 +4,7 @@
   "title": "Image Overlay Card",
   "description": "Card Image Overlay variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/card"
   ],
   "files": [
     {

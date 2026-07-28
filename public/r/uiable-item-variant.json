@@ -3,8 +3,11 @@
   "name": "uiable-item-variant",
   "title": "Variant Item",
   "description": "Item Variant variant for item.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/item"
   ],
   "files": [
     {

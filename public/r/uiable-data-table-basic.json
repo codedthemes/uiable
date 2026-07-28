@@ -4,10 +4,15 @@
   "title": "Basic Data Table",
   "description": "Data Table Basic variant for data-table.",
   "dependencies": [
-    "@tanstack/react-table"
+    "@tanstack/react-table",
+    "lucide-react"
   ],
   "registryDependencies": [
-    "data-table"
+    "@uiable/button",
+    "@uiable/checkbox",
+    "@uiable/dropdown-menu",
+    "@uiable/input",
+    "@uiable/table"
   ],
   "files": [
     {

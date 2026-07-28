@@ -4,7 +4,8 @@
   "title": "Textarea Field",
   "description": "Field Textarea variant for field.",
   "registryDependencies": [
-    "field"
+    "@uiable/field",
+    "@uiable/textarea"
   ],
   "files": [
     {

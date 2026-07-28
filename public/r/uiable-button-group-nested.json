@@ -3,8 +3,14 @@
   "name": "uiable-button-group-nested",
   "title": "Nested Button Group",
   "description": "Button Group Nested variant for button-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/input-group",
+    "@uiable/tooltip"
   ],
   "files": [
     {

@@ -3,8 +3,12 @@
   "name": "uiable-item-switch",
   "title": "Switch Item",
   "description": "Item with a toggle switch for item.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/item",
+    "@uiable/switch"
   ],
   "files": [
     {

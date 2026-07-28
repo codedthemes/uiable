@@ -4,7 +4,9 @@
   "title": "Feedback Textarea",
   "description": "Textarea Feedback variant for textarea.",
   "registryDependencies": [
-    "textarea"
+    "@uiable/button",
+    "@uiable/field",
+    "@uiable/textarea"
   ],
   "files": [
     {

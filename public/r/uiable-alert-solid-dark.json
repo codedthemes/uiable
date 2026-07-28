@@ -4,7 +4,7 @@
   "title": "Solid Dark Alert",
   "description": "Alert Solid Dark variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

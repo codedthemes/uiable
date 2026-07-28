@@ -3,8 +3,14 @@
   "name": "uiable-input-otp-form",
   "title": "Form Input Otp",
   "description": "Input Otp Form variant for input-otp.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "input-otp"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/field",
+    "@uiable/input-otp"
   ],
   "files": [
     {

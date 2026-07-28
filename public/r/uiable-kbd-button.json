@@ -4,7 +4,8 @@
   "title": "Button Kbd",
   "description": "Kbd Button variant for kbd.",
   "registryDependencies": [
-    "kbd"
+    "@uiable/button",
+    "@uiable/kbd"
   ],
   "files": [
     {

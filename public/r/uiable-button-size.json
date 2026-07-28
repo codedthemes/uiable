@@ -3,8 +3,11 @@
   "name": "uiable-button-size",
   "title": "Size Button",
   "description": "Button Size variant for button.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

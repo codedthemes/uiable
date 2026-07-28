@@ -4,7 +4,7 @@
   "title": "Outline Button",
   "description": "Button Outline variant for button.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

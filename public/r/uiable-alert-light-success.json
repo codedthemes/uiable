@@ -4,7 +4,7 @@
   "title": "Light Success Alert",
   "description": "Alert Light Success variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

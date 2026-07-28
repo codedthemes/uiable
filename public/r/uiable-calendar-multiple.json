@@ -4,7 +4,8 @@
   "title": "Multiple Calendar",
   "description": "Calendar Multiple variant for calendar.",
   "registryDependencies": [
-    "calendar"
+    "@uiable/calendar",
+    "@uiable/card"
   ],
   "files": [
     {

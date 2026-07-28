@@ -4,7 +4,7 @@
   "title": "Disabled Accordion",
   "description": "Accordion Disabled variant for accordion.",
   "registryDependencies": [
-    "accordion"
+    "@uiable/accordion"
   ],
   "files": [
     {

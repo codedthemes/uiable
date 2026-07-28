@@ -4,7 +4,9 @@
   "title": "Icons Only Pagination",
   "description": "Pagination Icons Only variant for pagination.",
   "registryDependencies": [
-    "pagination"
+    "@uiable/field",
+    "@uiable/pagination",
+    "@uiable/select"
   ],
   "files": [
     {

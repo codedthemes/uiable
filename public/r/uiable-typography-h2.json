@@ -3,9 +3,6 @@
   "name": "uiable-typography-h2",
   "title": "H2 Typography",
   "description": "Typography H2 variant for typography.",
-  "registryDependencies": [
-    "typography"
-  ],
   "files": [
     {
       "path": "src/components/uiable/typography/typography-h2.tsx",

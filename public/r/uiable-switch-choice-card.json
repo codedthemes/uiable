@@ -4,7 +4,8 @@
   "title": "Choice Card Switch",
   "description": "Switch Choice Card variant for switch.",
   "registryDependencies": [
-    "switch"
+    "@uiable/field",
+    "@uiable/switch"
   ],
   "files": [
     {

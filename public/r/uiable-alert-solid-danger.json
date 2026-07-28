@@ -4,7 +4,7 @@
   "title": "Solid Danger Alert",
   "description": "Alert Solid Danger variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Page Header Breadcrumb",
   "description": "Breadcrumb Page Header variant for breadcrumb.",
   "registryDependencies": [
-    "breadcrumb"
+    "@uiable/breadcrumb"
   ],
   "files": [
     {

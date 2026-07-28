@@ -4,7 +4,7 @@
   "title": "Scrollable Select",
   "description": "Select Scrollable variant for select.",
   "registryDependencies": [
-    "select"
+    "@uiable/select"
   ],
   "files": [
     {

@@ -7,9 +7,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "avatar",
-    "button",
-    "hover-card"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/hover-card"
   ],
   "files": [
     {

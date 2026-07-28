@@ -3,8 +3,12 @@
   "name": "uiable-combobox-input-group",
   "title": "Input Group Combobox",
   "description": "Combobox Input Group variant for combobox.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox",
+    "@uiable/input-group"
   ],
   "files": [
     {

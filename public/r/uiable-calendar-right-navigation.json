@@ -3,8 +3,14 @@
   "name": "uiable-calendar-right-navigation",
   "title": "Right Navigation Calendar",
   "description": "Calendar Right Navigation variant for calendar.",
+  "dependencies": [
+    "date-fns",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "calendar"
+    "@uiable/button",
+    "@uiable/calendar",
+    "@uiable/card"
   ],
   "files": [
     {

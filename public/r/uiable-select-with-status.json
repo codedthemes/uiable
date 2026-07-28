@@ -4,7 +4,8 @@
   "title": "With Status Select",
   "description": "Select With Status variant for select.",
   "registryDependencies": [
-    "select"
+    "@uiable/badge",
+    "@uiable/select"
   ],
   "files": [
     {

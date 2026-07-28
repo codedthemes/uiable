@@ -4,7 +4,8 @@
   "title": "Spacing Carousel",
   "description": "Carousel Spacing variant for carousel.",
   "registryDependencies": [
-    "carousel"
+    "@uiable/card",
+    "@uiable/carousel"
   ],
   "files": [
     {

@@ -7,9 +7,9 @@
     "iconsax-reactjs"
   ],
   "registryDependencies": [
-    "avatar",
-    "button",
-    "empty"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/empty"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Solid Success Alert",
   "description": "Alert Solid Success variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

@@ -3,8 +3,11 @@
   "name": "uiable-button-icon-primary",
   "title": "Primary Icon Button",
   "description": "Button Icon Primary variant for button.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

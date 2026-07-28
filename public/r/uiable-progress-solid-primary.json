@@ -3,8 +3,11 @@
   "name": "uiable-progress-solid-primary",
   "title": "Solid Primary Progress",
   "description": "Progress Solid Primary variant for progress.",
+  "dependencies": [
+    "@base-ui/react"
+  ],
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

@@ -3,8 +3,11 @@
   "name": "uiable-attachment-states",
   "title": "States",
   "description": "Attachment States variant for attachment.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "attachment"
+    "@uiable/attachment"
   ],
   "files": [
     {

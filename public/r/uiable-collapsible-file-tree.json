@@ -3,8 +3,14 @@
   "name": "uiable-collapsible-file-tree",
   "title": "File Tree Collapsible",
   "description": "Collapsible File Tree variant for collapsible.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "collapsible"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/collapsible",
+    "@uiable/tabs"
   ],
   "files": [
     {

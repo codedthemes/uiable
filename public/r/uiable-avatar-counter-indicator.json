@@ -4,7 +4,8 @@
   "title": "Counter Indicator Avatar",
   "description": "Avatar Counter Indicator variant for avatar.",
   "registryDependencies": [
-    "avatar"
+    "@uiable/avatar",
+    "@uiable/badge"
   ],
   "files": [
     {

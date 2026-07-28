@@ -4,7 +4,7 @@
   "title": "Title Subtitle Card",
   "description": "Card Title Subtitle variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/card"
   ],
   "files": [
     {

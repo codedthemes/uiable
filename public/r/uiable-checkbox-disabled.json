@@ -4,7 +4,8 @@
   "title": "Disabled Checkbox",
   "description": "Checkbox Disabled variant for checkbox.",
   "registryDependencies": [
-    "checkbox"
+    "@uiable/checkbox",
+    "@uiable/field"
   ],
   "files": [
     {

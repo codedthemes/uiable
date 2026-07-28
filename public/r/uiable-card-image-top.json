@@ -4,7 +4,7 @@
   "title": "Image Top Card",
   "description": "Card Image Top variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/card"
   ],
   "files": [
     {

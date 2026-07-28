@@ -4,7 +4,7 @@
   "title": "Checkbox Menubar",
   "description": "Menubar Checkbox variant for menubar.",
   "registryDependencies": [
-    "menubar"
+    "@uiable/menubar"
   ],
   "files": [
     {

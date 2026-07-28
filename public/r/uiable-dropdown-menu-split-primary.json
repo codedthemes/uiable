@@ -3,8 +3,12 @@
   "name": "uiable-dropdown-menu-split-primary",
   "title": "Split Primary Dropdown Menu",
   "description": "Dropdown Menu Split Primary variant for dropdown-menu.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "dropdown-menu"
+    "@uiable/button",
+    "@uiable/dropdown-menu"
   ],
   "files": [
     {

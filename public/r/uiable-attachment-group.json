@@ -3,8 +3,11 @@
   "name": "uiable-attachment-group",
   "title": "Group",
   "description": "Attachment Group variant for attachment.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "attachment"
+    "@uiable/attachment"
   ],
   "files": [
     {

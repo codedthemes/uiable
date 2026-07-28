@@ -4,7 +4,7 @@
   "title": "Shortcuts Context Menu",
   "description": "Context Menu Shortcuts variant for context-menu.",
   "registryDependencies": [
-    "context-menu"
+    "@uiable/context-menu"
   ],
   "files": [
     {

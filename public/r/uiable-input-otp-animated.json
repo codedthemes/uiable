@@ -3,8 +3,11 @@
   "name": "uiable-input-otp-animated",
   "title": "Animated Input Otp",
   "description": "Input Otp Animated variant with bounce animation on each slot when a digit is entered.",
+  "dependencies": [
+    "framer-motion"
+  ],
   "registryDependencies": [
-    "input-otp"
+    "@uiable/input-otp"
   ],
   "files": [
     {

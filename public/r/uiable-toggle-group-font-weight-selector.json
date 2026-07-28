@@ -4,7 +4,8 @@
   "title": "Font Weight Selector Toggle Group",
   "description": "Toggle Group Font Weight Selector variant for toggle-group.",
   "registryDependencies": [
-    "toggle-group"
+    "@uiable/field",
+    "@uiable/toggle-group"
   ],
   "files": [
     {

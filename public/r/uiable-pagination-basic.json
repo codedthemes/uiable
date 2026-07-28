@@ -4,7 +4,7 @@
   "title": "Basic Pagination",
   "description": "Pagination Basic variant for pagination.",
   "registryDependencies": [
-    "pagination"
+    "@uiable/pagination"
   ],
   "files": [
     {

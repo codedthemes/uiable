@@ -4,7 +4,7 @@
   "title": "Range Slider",
   "description": "Slider Range variant for slider.",
   "registryDependencies": [
-    "slider"
+    "@uiable/slider"
   ],
   "files": [
     {

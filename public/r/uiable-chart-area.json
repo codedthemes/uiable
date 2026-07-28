@@ -7,7 +7,7 @@
     "recharts"
   ],
   "registryDependencies": [
-    "chart"
+    "@uiable/chart"
   ],
   "files": [
     {

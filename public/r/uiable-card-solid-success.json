@@ -4,7 +4,7 @@
   "title": "Success Solid Card",
   "description": "Card Solid Success variant for card.",
   "registryDependencies": [
-    "card"
+    "@uiable/card"
   ],
   "files": [
     {

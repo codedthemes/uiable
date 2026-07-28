@@ -4,7 +4,9 @@
   "title": "Empty Avatar",
   "description": "Empty Avatar variant for empty.",
   "registryDependencies": [
-    "empty"
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/empty"
   ],
   "files": [
     {

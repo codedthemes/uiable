@@ -4,7 +4,8 @@
   "title": "Outline Switch",
   "description": "Switch Outline variant for switch.",
   "registryDependencies": [
-    "switch"
+    "@uiable/field",
+    "@uiable/switch"
   ],
   "files": [
     {

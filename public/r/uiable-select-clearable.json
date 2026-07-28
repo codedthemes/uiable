@@ -3,8 +3,12 @@
   "name": "uiable-select-clearable",
   "title": "Clearable Select",
   "description": "Select Clearable variant for select.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "select"
+    "@uiable/button",
+    "@uiable/select"
   ],
   "files": [
     {

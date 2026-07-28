@@ -4,7 +4,9 @@
   "title": "Message With Avatar",
   "description": "Message With Avatar variant for message.",
   "registryDependencies": [
-    "message"
+    "@uiable/avatar",
+    "@uiable/bubble",
+    "@uiable/message"
   ],
   "files": [
     {

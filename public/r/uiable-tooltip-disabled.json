@@ -4,7 +4,8 @@
   "title": "Disabled Tooltip",
   "description": "Tooltip Disabled variant for tooltip.",
   "registryDependencies": [
-    "tooltip"
+    "@uiable/button",
+    "@uiable/tooltip"
   ],
   "files": [
     {

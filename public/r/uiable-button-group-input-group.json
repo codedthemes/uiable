@@ -3,8 +3,14 @@
   "name": "uiable-button-group-input-group",
   "title": "Input Button Group",
   "description": "Button Group Input Group variant for button-group.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "button-group"
+    "@uiable/button",
+    "@uiable/button-group",
+    "@uiable/input-group",
+    "@uiable/tooltip"
   ],
   "files": [
     {

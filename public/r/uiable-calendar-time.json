@@ -3,8 +3,14 @@
   "name": "uiable-calendar-time",
   "title": "Time Calendar",
   "description": "Calendar Time variant for calendar.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "calendar"
+    "@uiable/calendar",
+    "@uiable/card",
+    "@uiable/field",
+    "@uiable/input-group"
   ],
   "files": [
     {

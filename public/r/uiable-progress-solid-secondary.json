@@ -4,7 +4,7 @@
   "title": "Solid Secondary Progress",
   "description": "Progress Solid Secondary variant for progress.",
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

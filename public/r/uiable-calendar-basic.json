@@ -4,7 +4,7 @@
   "title": "Basic Calendar",
   "description": "Calendar Basic variant for calendar.",
   "registryDependencies": [
-    "calendar"
+    "@uiable/calendar"
   ],
   "files": [
     {

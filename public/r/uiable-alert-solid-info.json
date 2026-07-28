@@ -4,7 +4,7 @@
   "title": "Solid Info Alert",
   "description": "Alert Solid Info variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

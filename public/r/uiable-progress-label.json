@@ -3,8 +3,11 @@
   "name": "uiable-progress-label",
   "title": "Label Progress",
   "description": "Progress Label variant for progress.",
+  "dependencies": [
+    "@base-ui/react"
+  ],
   "registryDependencies": [
-    "progress"
+    "@uiable/progress"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Description Switch",
   "description": "Switch Description variant for switch.",
   "registryDependencies": [
-    "switch"
+    "@uiable/field",
+    "@uiable/switch"
   ],
   "files": [
     {

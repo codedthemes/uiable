@@ -4,7 +4,8 @@
   "title": "Slider Field",
   "description": "Field Slider variant for field.",
   "registryDependencies": [
-    "field"
+    "@uiable/field",
+    "@uiable/slider"
   ],
   "files": [
     {

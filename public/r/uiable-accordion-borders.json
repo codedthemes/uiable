@@ -4,7 +4,7 @@
   "title": "Borders Accordion",
   "description": "Accordion Borders variant for accordion.",
   "registryDependencies": [
-    "accordion"
+    "@uiable/accordion"
   ],
   "files": [
     {

@@ -4,7 +4,8 @@
   "title": "Invalid Select",
   "description": "Select Invalid variant for select.",
   "registryDependencies": [
-    "select"
+    "@uiable/field",
+    "@uiable/select"
   ],
   "files": [
     {

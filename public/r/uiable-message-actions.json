@@ -3,8 +3,13 @@
   "name": "uiable-message-actions",
   "title": "Actions",
   "description": "Message Actions variant for message.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "message"
+    "@uiable/bubble",
+    "@uiable/button",
+    "@uiable/message"
   ],
   "files": [
     {

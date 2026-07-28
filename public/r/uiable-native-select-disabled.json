@@ -4,7 +4,7 @@
   "title": "Disabled Native Select",
   "description": "Native Select Disabled variant for native-select.",
   "registryDependencies": [
-    "native-select"
+    "@uiable/native-select"
   ],
   "files": [
     {

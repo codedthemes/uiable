@@ -3,8 +3,11 @@
   "name": "uiable-select-with-icons",
   "title": "With Icons Select",
   "description": "Select With Icons variant for select.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "select"
+    "@uiable/select"
   ],
   "files": [
     {

@@ -3,8 +3,11 @@
   "name": "uiable-button-with-icon",
   "title": "With Icon Button",
   "description": "Button With Icon variant for button.",
+  "dependencies": [
+    "@tabler/icons-react"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

@@ -3,8 +3,8 @@
   "name": "uiable-checkbox-list",
   "title": "Checkbox List",
   "description": "Checkbox List variant for checkbox.",
-  "registryDependencies": [
-    "checkbox"
+  "dependencies": [
+    "framer-motion"
   ],
   "files": [
     {

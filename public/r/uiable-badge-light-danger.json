@@ -4,7 +4,7 @@
   "title": "Light Danger Badge",
   "description": "Badge Light Danger variant for badge.",
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

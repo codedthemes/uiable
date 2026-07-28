@@ -4,7 +4,8 @@
   "title": "Sticky Footer Dialog",
   "description": "Dialog Sticky Footer variant for dialog.",
   "registryDependencies": [
-    "dialog"
+    "@uiable/button",
+    "@uiable/dialog"
   ],
   "files": [
     {

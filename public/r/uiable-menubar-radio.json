@@ -4,7 +4,7 @@
   "title": "Radio Menubar",
   "description": "Menubar Radio variant for menubar.",
   "registryDependencies": [
-    "menubar"
+    "@uiable/menubar"
   ],
   "files": [
     {

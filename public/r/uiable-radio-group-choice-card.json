@@ -4,7 +4,8 @@
   "title": "Choice Card Radio Group",
   "description": "Radio Group Choice Card variant for radio-group.",
   "registryDependencies": [
-    "radio-group"
+    "@uiable/field",
+    "@uiable/radio-group"
   ],
   "files": [
     {

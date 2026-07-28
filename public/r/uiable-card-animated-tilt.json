@@ -3,8 +3,16 @@
   "name": "uiable-card-animated-tilt",
   "title": "Animated Tilt Card",
   "description": "Interactive 3D perspective tilt card with light sheen using framer-motion.",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "card"
+    "@uiable/avatar",
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/item"
   ],
   "files": [
     {

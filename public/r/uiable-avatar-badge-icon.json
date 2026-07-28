@@ -3,8 +3,11 @@
   "name": "uiable-avatar-badge-icon",
   "title": "Badge Icon Avatar",
   "description": "Avatar Badge Icon variant for avatar.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "avatar"
+    "@uiable/avatar"
   ],
   "files": [
     {

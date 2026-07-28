@@ -3,8 +3,11 @@
   "name": "uiable-input-otp-four-digits",
   "title": "Four Digits Input Otp",
   "description": "Input Otp Four Digits variant for input-otp.",
-  "registryDependencies": [
+  "dependencies": [
     "input-otp"
+  ],
+  "registryDependencies": [
+    "@uiable/input-otp"
   ],
   "files": [
     {

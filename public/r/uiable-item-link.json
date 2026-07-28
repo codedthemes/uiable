@@ -3,8 +3,11 @@
   "name": "uiable-item-link",
   "title": "Link Item",
   "description": "Item Link variant for item.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "item"
+    "@uiable/item"
   ],
   "files": [
     {

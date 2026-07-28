@@ -3,8 +3,14 @@
   "name": "uiable-radio-fields",
   "title": "Fields Radio",
   "description": "Radio Fields variant for radio.",
+  "dependencies": [
+    "@base-ui/react",
+    "framer-motion"
+  ],
   "registryDependencies": [
-    "radio"
+    "@uiable/badge",
+    "@uiable/field",
+    "@uiable/radio-group"
   ],
   "files": [
     {

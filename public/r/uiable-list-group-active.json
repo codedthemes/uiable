@@ -3,9 +3,6 @@
   "name": "uiable-list-group-active",
   "title": "Active List Group",
   "description": "List Group Active variant for list-group.",
-  "registryDependencies": [
-    "list-group"
-  ],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-active.tsx",

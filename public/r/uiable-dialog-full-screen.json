@@ -4,7 +4,8 @@
   "title": "Full Screen Dialog",
   "description": "Dialog Full Screen variant for dialog.",
   "registryDependencies": [
-    "dialog"
+    "@uiable/button",
+    "@uiable/dialog"
   ],
   "files": [
     {

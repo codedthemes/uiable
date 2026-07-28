@@ -4,7 +4,8 @@
   "title": "Sides Hover Card",
   "description": "Hover Card Sides variant for hover-card.",
   "registryDependencies": [
-    "hover-card"
+    "@uiable/button",
+    "@uiable/hover-card"
   ],
   "files": [
     {

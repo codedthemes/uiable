@@ -4,7 +4,7 @@
   "title": "Buttons List Group",
   "description": "List Group Buttons variant for list-group.",
   "registryDependencies": [
-    "list-group"
+    "@uiable/button"
   ],
   "files": [
     {

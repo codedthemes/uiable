@@ -3,8 +3,11 @@
   "name": "uiable-context-menu-icons",
   "title": "Icons Context Menu",
   "description": "Context Menu Icons variant for context-menu.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "context-menu"
+    "@uiable/context-menu"
   ],
   "files": [
     {

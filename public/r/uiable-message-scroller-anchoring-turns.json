@@ -3,8 +3,15 @@
   "name": "uiable-message-scroller-anchoring-turns",
   "title": "Anchoring Turns",
   "description": "Message Scroller Anchoring Turns variant for message-scroller.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "message-scroller"
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/empty",
+    "@uiable/message-scroller",
+    "@uiable/toggle-group"
   ],
   "files": [
     {

@@ -3,8 +3,18 @@
   "name": "uiable-card-tabs",
   "title": "Tabbing Card",
   "description": "Card Tabs variant for multi-section interactive content.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "card"
+    "@uiable/avatar",
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/item",
+    "@uiable/progress",
+    "@uiable/switch",
+    "@uiable/tabs"
   ],
   "files": [
     {

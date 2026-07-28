@@ -3,8 +3,11 @@
   "name": "uiable-input-otp-alphanumeric",
   "title": "Alphanumeric Input Otp",
   "description": "Input Otp Alphanumeric variant for input-otp.",
-  "registryDependencies": [
+  "dependencies": [
     "input-otp"
+  ],
+  "registryDependencies": [
+    "@uiable/input-otp"
   ],
   "files": [
     {

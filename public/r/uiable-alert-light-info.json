@@ -4,7 +4,7 @@
   "title": "Light Info Alert",
   "description": "Alert Light Info variant for alert.",
   "registryDependencies": [
-    "alert"
+    "@uiable/alert"
   ],
   "files": [
     {

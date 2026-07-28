@@ -3,8 +3,14 @@
   "name": "uiable-date-picker-basic",
   "title": "Basic Date Picker",
   "description": "Date Picker Basic variant for date-picker.",
+  "dependencies": [
+    "date-fns"
+  ],
   "registryDependencies": [
-    "date-picker"
+    "@uiable/button",
+    "@uiable/calendar",
+    "@uiable/field",
+    "@uiable/popover"
   ],
   "files": [
     {

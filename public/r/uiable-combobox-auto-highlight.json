@@ -4,7 +4,7 @@
   "title": "Auto Highlight Combobox",
   "description": "Combobox Auto Highlight variant for combobox.",
   "registryDependencies": [
-    "combobox"
+    "@uiable/combobox"
   ],
   "files": [
     {

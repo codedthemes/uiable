@@ -4,7 +4,8 @@
   "title": "Required Input",
   "description": "Input Required variant for input.",
   "registryDependencies": [
-    "input"
+    "@uiable/field",
+    "@uiable/input"
   ],
   "files": [
     {

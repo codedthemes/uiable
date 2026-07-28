@@ -4,7 +4,8 @@
   "title": "Checkboxes List Group",
   "description": "List Group Checkboxes variant for list-group.",
   "registryDependencies": [
-    "list-group"
+    "@uiable/checkbox",
+    "@uiable/label"
   ],
   "files": [
     {

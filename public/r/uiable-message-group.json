@@ -4,7 +4,9 @@
   "title": "Message Group",
   "description": "Message Group variant for message.",
   "registryDependencies": [
-    "message"
+    "@uiable/avatar",
+    "@uiable/bubble",
+    "@uiable/message"
   ],
   "files": [
     {

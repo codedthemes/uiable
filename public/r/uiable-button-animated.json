@@ -3,8 +3,11 @@
   "name": "uiable-button-animated",
   "title": "Animated Button",
   "description": "Animated Button variant for button",
+  "dependencies": [
+    "framer-motion"
+  ],
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

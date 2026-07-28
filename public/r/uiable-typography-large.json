@@ -3,9 +3,6 @@
   "name": "uiable-typography-large",
   "title": "Large Typography",
   "description": "Typography Large variant for typography.",
-  "registryDependencies": [
-    "typography"
-  ],
   "files": [
     {
       "path": "src/components/uiable/typography/typography-large.tsx",

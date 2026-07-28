@@ -4,7 +4,8 @@
   "title": "Button Textarea",
   "description": "Textarea Button variant for textarea.",
   "registryDependencies": [
-    "textarea"
+    "@uiable/button",
+    "@uiable/textarea"
   ],
   "files": [
     {

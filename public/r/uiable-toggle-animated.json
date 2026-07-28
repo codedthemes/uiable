@@ -3,8 +3,12 @@
   "name": "uiable-toggle-animated",
   "title": "Animated Toggle",
   "description": "Animated Toggle variant for toggle.",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "toggle"
+    "@uiable/toggle"
   ],
   "files": [
     {
