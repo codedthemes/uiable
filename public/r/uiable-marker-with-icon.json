@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-marker-with-icon",
   "title": "Marker With Icon",
-  "description": "Marker With Icon variant for marker.",
+  "description": "Marker With Icon variant for component.",
   "dependencies": [
     "lucide-react"
   ],

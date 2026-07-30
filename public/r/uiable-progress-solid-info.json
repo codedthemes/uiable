@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-progress-solid-info",
-  "title": "Solid Info Progress",
-  "description": "Progress Solid Info variant for progress.",
+  "title": "Progress Solid Info",
+  "description": "Progress Solid Info variant for component.",
   "registryDependencies": [
     "@uiable/progress"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-bubble-collapsible",
-  "title": "Show More / Collapsible",
-  "description": "Bubble Collapsible variant for bubble.",
+  "title": "Bubble Collapsible",
+  "description": "Bubble Collapsible variant for component.",
   "dependencies": [
     "lucide-react"
   ],

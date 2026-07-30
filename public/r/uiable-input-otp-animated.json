@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-animated",
-  "title": "Animated Input Otp",
-  "description": "Input Otp Animated variant with bounce animation on each slot when a digit is entered.",
+  "title": "Input Otp Animated",
+  "description": "Input Otp Animated variant for component.",
   "dependencies": [
     "framer-motion"
   ],

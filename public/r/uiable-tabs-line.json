@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-tabs-line",
-  "title": "Line Tabs",
-  "description": "Tabs Line variant for tabs.",
+  "title": "Tabs Line",
+  "description": "Tabs Line variant for component.",
   "registryDependencies": [
     "@uiable/tabs"
   ],

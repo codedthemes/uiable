@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-animated",
-  "title": "Animated Toggle",
-  "description": "Animated Toggle variant for toggle.",
+  "title": "Toggle Animated",
+  "description": "Toggle Animated variant for component.",
   "dependencies": [
     "framer-motion",
     "lucide-react"

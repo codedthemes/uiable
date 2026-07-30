@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-skeleton-card",
-  "title": "Card Skeleton",
-  "description": "Skeleton Card variant for skeleton.",
+  "title": "Skeleton Card",
+  "description": "Skeleton Card variant for component.",
   "registryDependencies": [
     "@uiable/card",
     "@uiable/skeleton"

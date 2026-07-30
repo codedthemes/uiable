@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-custom",
-  "title": "Custom Combobox",
-  "description": "Combobox Custom variant for combobox.",
+  "title": "Combobox Custom",
+  "description": "Combobox Custom variant for component.",
   "registryDependencies": [
     "@uiable/combobox",
     "@uiable/item"

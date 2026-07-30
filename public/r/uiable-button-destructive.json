@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-destructive",
-  "title": "Destructive Button",
-  "description": "Button Destructive variant for button.",
+  "title": "Button Destructive",
+  "description": "Button Destructive variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

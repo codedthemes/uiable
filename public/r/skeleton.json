@@ -1,15 +1,18 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "skeleton",
-  "dependencies": [],
-  "registryDependencies": [],
+  "title": "Skeleton",
+  "description": "Skeleton component.",
   "files": [
     {
       "path": "src/components/ui/skeleton.tsx",
-      "content": "import { cn } from \"@/lib/utils\"\r\n\r\nfunction Skeleton({ className, ...props }: React.ComponentProps<\"div\">) {\r\n  return (\r\n    <div\r\n      data-slot=\"skeleton\"\r\n      className={cn(\"bg-background animate-pulse rounded-lg\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport { Skeleton }\r\n",
-      "type": "registry:ui",
-      "target": "components/ui/skeleton.tsx"
+      "content": "import { ComponentProps } from \"react\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction Skeleton({ className, ...props }: ComponentProps<\"div\">) {\r\n  return (\r\n    <div\r\n      data-slot=\"skeleton\"\r\n      className={cn(\"animate-pulse rounded-lg bg-background\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport { Skeleton }\r\n",
+      "type": "registry:component",
+      "target": "@components/ui/skeleton.tsx"
     }
+  ],
+  "categories": [
+    "skeleton"
   ],
   "type": "registry:ui"
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-collapsible-settings",
-  "title": "Settings Collapsible",
-  "description": "Collapsible Settings variant for collapsible.",
+  "title": "Collapsible Settings",
+  "description": "Collapsible Settings variant for component.",
   "dependencies": [
     "lucide-react"
   ],

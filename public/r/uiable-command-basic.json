@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-basic",
-  "title": "Basic Command",
-  "description": "Command Basic variant for command.",
+  "title": "Command Basic",
+  "description": "Command Basic variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/command"

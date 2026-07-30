@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-qty-select",
-  "title": "Quantity Selector",
-  "description": "Button Group Quantity Selector variant for button-group.",
+  "title": "Button Group Qty Select",
+  "description": "Button Group Qty Select variant for component.",
   "dependencies": [
     "lucide-react"
   ],

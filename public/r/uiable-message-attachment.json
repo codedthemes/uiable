@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-attachment",
-  "title": "Attachment",
-  "description": "Message Atachment variant for message.",
+  "title": "Message Attachment",
+  "description": "Message Attachment variant for component.",
   "dependencies": [
     "lucide-react"
   ],

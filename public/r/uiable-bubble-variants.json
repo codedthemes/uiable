@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-bubble-variants",
   "title": "Bubble Variants",
-  "description": "Bubble Visual Variants for bubble.",
+  "description": "Bubble Variants variant for component.",
   "registryDependencies": [
     "@uiable/bubble"
   ],

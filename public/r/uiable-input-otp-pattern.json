@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-pattern",
-  "title": "Pattern Input Otp",
-  "description": "Input Otp Pattern variant for input-otp.",
+  "title": "Input Otp Pattern",
+  "description": "Input Otp Pattern variant for component.",
   "dependencies": [
     "input-otp"
   ],

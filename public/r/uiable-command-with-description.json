@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-with-description",
-  "title": "With Description",
-  "description": "Command With Description variant for command.",
+  "title": "Command With Description",
+  "description": "Command With Description variant for component.",
   "dependencies": [
     "lucide-react"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-animated",
-  "title": "Animated Button",
-  "description": "Animated Button variant for button",
+  "title": "Button Animated",
+  "description": "Button Animated variant for component.",
   "dependencies": [
     "framer-motion"
   ],

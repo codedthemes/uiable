@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-empty",
-  "title": "Empty Spinner",
-  "description": "Spinner Empty variant for spinner.",
+  "title": "Spinner Empty",
+  "description": "Spinner Empty variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/empty",

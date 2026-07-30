@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-menubar-icons",
-  "title": "Icons Menubar",
-  "description": "Menubar Icons variant for menubar.",
+  "title": "Menubar Icons",
+  "description": "Menubar Icons variant for component.",
   "dependencies": [
     "lucide-react"
   ],

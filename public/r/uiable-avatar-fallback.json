@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-fallback",
-  "title": "Fallback Avatar",
-  "description": "Avatar Fallback variant for avatar.",
+  "title": "Avatar Fallback",
+  "description": "Avatar Fallback variant for component.",
   "registryDependencies": [
     "@uiable/avatar"
   ],

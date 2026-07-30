@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-context-menu-groups",
-  "title": "Groups Context Menu",
-  "description": "Context Menu Groups variant for context-menu.",
+  "title": "Context Menu Groups",
+  "description": "Context Menu Groups variant for component.",
   "registryDependencies": [
     "@uiable/context-menu"
   ],

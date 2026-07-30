@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sheet-no-close-button",
-  "title": "No Close Button Sheet",
-  "description": "Sheet No Close Button variant for sheet.",
+  "title": "Sheet No Close Button",
+  "description": "Sheet No Close Button variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/sheet"

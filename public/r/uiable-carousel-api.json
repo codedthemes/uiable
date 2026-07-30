@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-carousel-api",
-  "title": "Api Carousel",
-  "description": "Carousel Api variant for carousel.",
+  "title": "Carousel Api",
+  "description": "Carousel Api variant for component.",
   "registryDependencies": [
     "@uiable/card",
     "@uiable/carousel"

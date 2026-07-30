@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-slider-color-options",
-  "title": "Color Options Slider",
-  "description": "Color Options Slider Variant for slider.",
+  "title": "Slider Color Options",
+  "description": "Slider Color Options variant for component.",
   "registryDependencies": [
     "@uiable/label",
     "@uiable/slider"

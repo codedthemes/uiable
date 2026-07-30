@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-textarea-invalid",
-  "title": "Invalid Textarea",
-  "description": "Textarea Invalid variant for textarea.",
+  "title": "Textarea Invalid",
+  "description": "Textarea Invalid variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/textarea"

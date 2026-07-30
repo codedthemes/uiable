@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dialog-scrollable-content",
-  "title": "Scrollable Content Dialog",
-  "description": "Dialog Scrollable Content variant for dialog.",
+  "title": "Dialog Scrollable Content",
+  "description": "Dialog Scrollable Content variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog"

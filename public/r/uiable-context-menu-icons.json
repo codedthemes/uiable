@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-context-menu-icons",
-  "title": "Icons Context Menu",
-  "description": "Context Menu Icons variant for context-menu.",
+  "title": "Context Menu Icons",
+  "description": "Context Menu Icons variant for component.",
   "dependencies": [
     "lucide-react"
   ],

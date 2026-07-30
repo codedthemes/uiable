@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-group-sizes",
-  "title": "Sizes Radio Group",
-  "description": "Size Radio Group variant for radio-group.",
+  "title": "Radio Group Sizes",
+  "description": "Radio Group Sizes variant for component.",
   "registryDependencies": [
     "@uiable/radio-group"
   ],

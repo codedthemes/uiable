@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-input-group",
-  "title": "Input Button Group",
-  "description": "Button Group Input Group variant for button-group.",
+  "title": "Button Group Input Group",
+  "description": "Button Group Input Group variant for component.",
   "dependencies": [
     "lucide-react"
   ],

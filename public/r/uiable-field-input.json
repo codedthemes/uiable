@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-field-input",
-  "title": "Input Field",
-  "description": "Field Input variant for field.",
+  "title": "Field Input",
+  "description": "Field Input variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/input"

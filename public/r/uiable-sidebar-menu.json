@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-menu",
-  "title": "Menu Sidebar",
+  "title": "Sidebar Menu",
   "description": "Sidebar Menu variant for component.",
   "dependencies": [
     "lucide-react"

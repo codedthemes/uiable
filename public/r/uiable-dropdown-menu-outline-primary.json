@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-outline-primary",
-  "title": "Primary Outline Dropdown Menu",
-  "description": "Dropdown Menu Outline Primary variant for dropdown-menu.",
+  "title": "Dropdown Menu Outline Primary",
+  "description": "Dropdown Menu Outline Primary variant for component.",
   "dependencies": [
     "lucide-react"
   ],

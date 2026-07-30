@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-basic",
-  "title": "Basic Alert",
-  "description": "Alert Basic variant for alert.",
+  "title": "Alert Basic",
+  "description": "Alert Basic variant for component.",
   "dependencies": [
     "lucide-react"
   ],

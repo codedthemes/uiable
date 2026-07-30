@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-date-picker-range",
-  "title": "Range Date Picker",
-  "description": "Date Picker Range variant for date-picker.",
+  "title": "Date Picker Range",
+  "description": "Date Picker Range variant for component.",
   "dependencies": [
     "date-fns",
     "lucide-react",

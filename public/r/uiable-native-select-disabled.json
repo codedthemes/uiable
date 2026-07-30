@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-native-select-disabled",
-  "title": "Disabled Native Select",
-  "description": "Native Select Disabled variant for native-select.",
+  "title": "Native Select Disabled",
+  "description": "Native Select Disabled variant for component.",
   "registryDependencies": [
     "@uiable/native-select"
   ],

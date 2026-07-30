@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-hover-card-image-preview",
-  "title": "Image Preview Hover Card",
-  "description": "Image Preview Hover Card variant for hover-card.",
+  "title": "Hover Card Image Preview",
+  "description": "Hover Card Image Preview variant for component.",
   "dependencies": [
     "lucide-react"
   ],

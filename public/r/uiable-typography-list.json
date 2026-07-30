@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-typography-list",
-  "title": "List Typography",
-  "description": "Typography List variant for typography.",
+  "title": "Typography List",
+  "description": "Typography List variant for component.",
   "files": [
     {
       "path": "src/components/uiable/typography/typography-list.tsx",

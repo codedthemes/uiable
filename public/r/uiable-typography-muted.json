@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-typography-muted",
-  "title": "Muted Typography",
-  "description": "Typography Muted variant for typography.",
+  "title": "Typography Muted",
+  "description": "Typography Muted variant for component.",
   "files": [
     {
       "path": "src/components/uiable/typography/typography-muted.tsx",

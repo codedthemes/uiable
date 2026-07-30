@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-range",
-  "title": "Range Calendar",
-  "description": "Calendar Range variant for calendar.",
+  "title": "Calendar Range",
+  "description": "Calendar Range variant for component.",
   "dependencies": [
     "date-fns",
     "react-day-picker"

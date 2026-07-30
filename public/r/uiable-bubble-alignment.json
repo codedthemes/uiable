@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-bubble-alignment",
   "title": "Bubble Alignment",
-  "description": "Bubble Alignment variant for bubble.",
+  "description": "Bubble Alignment variant for component.",
   "registryDependencies": [
     "@uiable/bubble"
   ],

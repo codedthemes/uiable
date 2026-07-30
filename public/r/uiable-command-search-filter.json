@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-search-filter",
-  "title": "Search & Filter",
-  "description": "Search-focused command palette with smart filters and curated content suggestions.",
+  "title": "Command Search Filter",
+  "description": "Command Search Filter variant for component.",
   "dependencies": [
     "lucide-react"
   ],

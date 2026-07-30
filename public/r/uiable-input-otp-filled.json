@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-filled",
-  "title": "Filled Input Otp",
-  "description": "Input Otp Filled variant for input-otp",
+  "title": "Input Otp Filled",
+  "description": "Input Otp Filled variant for component.",
   "registryDependencies": [
     "@uiable/input-otp"
   ],

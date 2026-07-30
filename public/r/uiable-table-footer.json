@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-table-footer",
-  "title": "Footer Table",
-  "description": "Table Footer variant for table.",
+  "title": "Table Footer",
+  "description": "Table Footer variant for component.",
   "registryDependencies": [
     "@uiable/table"
   ],

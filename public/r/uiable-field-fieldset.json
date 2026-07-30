@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-field-fieldset",
-  "title": "Fieldset Field",
-  "description": "Field Fieldset variant for field.",
+  "title": "Field Fieldset",
+  "description": "Field Fieldset variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/input"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-avatar",
-  "title": "Avatar Item",
-  "description": "Item Avatar variant for item.",
+  "title": "Item Avatar",
+  "description": "Item Avatar variant for component.",
   "dependencies": [
     "lucide-react"
   ],

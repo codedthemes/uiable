@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-social",
-  "title": "Social Button Group",
-  "description": "Button Group Social variant for button-group.",
+  "title": "Button Group Social",
+  "description": "Button Group Social variant for component.",
   "dependencies": [
     "framer-motion",
     "lucide-react"

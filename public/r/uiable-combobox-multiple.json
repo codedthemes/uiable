@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-multiple",
-  "title": "Multiple Combobox",
-  "description": "Combobox Multiple variant for combobox.",
+  "title": "Combobox Multiple",
+  "description": "Combobox Multiple variant for component.",
   "registryDependencies": [
     "@uiable/combobox"
   ],

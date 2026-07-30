@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-solid-secondary",
-  "title": "Solid Secondary Button",
-  "description": "Button Solid Secondary variant for button.",
+  "title": "Button Solid Secondary",
+  "description": "Button Solid Secondary variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

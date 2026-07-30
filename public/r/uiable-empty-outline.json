@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-empty-outline",
   "title": "Empty Outline",
-  "description": "Empty Outline variant for empty.",
+  "description": "Empty Outline variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

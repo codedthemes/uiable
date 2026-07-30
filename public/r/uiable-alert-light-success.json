@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-light-success",
-  "title": "Light Success Alert",
-  "description": "Alert Light Success variant for alert.",
+  "title": "Alert Light Success",
+  "description": "Alert Light Success variant for component.",
   "registryDependencies": [
     "@uiable/alert"
   ],

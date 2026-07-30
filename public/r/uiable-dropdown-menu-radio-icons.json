@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-radio-icons",
-  "title": "Radio Icons Dropdown Menu",
-  "description": "Dropdown Menu Radio Icons variant for dropdown-menu.",
+  "title": "Dropdown Menu Radio Icons",
+  "description": "Dropdown Menu Radio Icons variant for component.",
   "dependencies": [
     "lucide-react"
   ],

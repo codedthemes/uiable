@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-dismissible-success",
-  "title": "Success Dismissible Alert",
-  "description": "Alert Dismissible Success variant for alert.",
+  "title": "Alert Dismissible Success",
+  "description": "Alert Dismissible Success variant for component.",
   "dependencies": [
     "lucide-react"
   ],

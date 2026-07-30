@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-aspect-ratio-portrait",
-  "title": "Portrait Aspect Ratio",
-  "description": "Aspect Ratio Portrait variant for aspect-ratio.",
+  "title": "Aspect Ratio Portrait",
+  "description": "Aspect Ratio Portrait variant for component.",
   "dependencies": [
     "next"
   ],

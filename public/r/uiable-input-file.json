@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-file",
-  "title": "File Input",
-  "description": "Input File variant for input.",
+  "title": "Input File",
+  "description": "Input File variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/input"

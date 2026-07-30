@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-select",
-  "title": "Select Button Group",
-  "description": "Button Group Select variant for button-group.",
+  "title": "Button Group Select",
+  "description": "Button Group Select variant for component.",
   "dependencies": [
     "lucide-react"
   ],

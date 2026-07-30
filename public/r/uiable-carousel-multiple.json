@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-carousel-multiple",
-  "title": "Multiple Carousel",
-  "description": "Carousel Multiple variant for carousel.",
+  "title": "Carousel Multiple",
+  "description": "Carousel Multiple variant for component.",
   "registryDependencies": [
     "@uiable/card",
     "@uiable/carousel"

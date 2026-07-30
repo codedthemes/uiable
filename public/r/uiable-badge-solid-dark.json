@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-solid-dark",
-  "title": "Dark Solid Badge",
-  "description": "Badge Solid Dark variant for badge.",
+  "title": "Badge Solid Dark",
+  "description": "Badge Solid Dark variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

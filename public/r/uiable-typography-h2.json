@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-typography-h2",
-  "title": "H2 Typography",
-  "description": "Typography H2 variant for typography.",
+  "title": "Typography H2",
+  "description": "Typography H2 variant for component.",
   "files": [
     {
       "path": "src/components/uiable/typography/typography-h2.tsx",

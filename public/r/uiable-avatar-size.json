@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-size",
-  "title": "Size Avatar",
-  "description": "Avatar Size variant for avatar.",
+  "title": "Avatar Size",
+  "description": "Avatar Size variant for component.",
   "registryDependencies": [
     "@uiable/avatar"
   ],

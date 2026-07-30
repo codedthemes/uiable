@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-icon",
-  "title": "Icon Toggle",
-  "description": "Icon Toggle variant for toggle.",
+  "title": "Toggle Icon",
+  "description": "Toggle Icon variant for component.",
   "dependencies": [
     "lucide-react"
   ],

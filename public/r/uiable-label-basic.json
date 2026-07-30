@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-label-basic",
-  "title": "Basic Label",
-  "description": "Label Basic variant for label.",
+  "title": "Label Basic",
+  "description": "Label Basic variant for component.",
   "registryDependencies": [
     "@uiable/checkbox",
     "@uiable/label"

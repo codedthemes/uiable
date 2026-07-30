@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-outline-item-group",
-  "title": "Outline Group Item",
-  "description": "Outline Item Group variant for item.",
+  "title": "Outline Item Group",
+  "description": "Item Outline Item Group variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

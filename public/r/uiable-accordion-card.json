@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-accordion-card",
-  "title": "Card Accordion",
-  "description": "Accordion Card variant for accordion.",
+  "title": "Accordion Card",
+  "description": "Accordion Card variant for component.",
   "registryDependencies": [
     "@uiable/accordion",
     "@uiable/card"

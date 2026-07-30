@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dialog-large",
-  "title": "Large Dialog",
-  "description": "Dialog Large variant for dialog.",
+  "title": "Dialog Large",
+  "description": "Dialog Large variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog"

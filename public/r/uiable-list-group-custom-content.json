@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-custom-content",
-  "title": "Custom Content List Group",
-  "description": "List Group Custom Content variant for list-group.",
+  "title": "List Group Custom Content",
+  "description": "List Group Custom Content variant for component.",
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-custom-content.tsx",

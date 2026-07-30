@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-breadcrumb-page-header",
-  "title": "Page Header Breadcrumb",
-  "description": "Breadcrumb Page Header variant for breadcrumb.",
+  "title": "Breadcrumb Page Header",
+  "description": "Breadcrumb Page Header variant for component.",
   "registryDependencies": [
     "@uiable/breadcrumb"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dialog-close-button",
-  "title": "Close Button Dialog",
-  "description": "Dialog Close Button variant for dialog.",
+  "title": "Dialog Close Button",
+  "description": "Dialog Close Button variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog",

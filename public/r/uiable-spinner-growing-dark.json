@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-growing-dark",
-  "title": "Dark Growing Spinner",
-  "description": "Spinner Growing Dark variant for spinner.",
+  "title": "Spinner Growing Dark",
+  "description": "Spinner Growing Dark variant for component.",
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-dark.tsx",

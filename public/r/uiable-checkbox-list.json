@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-checkbox-list",
   "title": "Checkbox List",
-  "description": "Checkbox List variant for checkbox.",
+  "description": "Checkbox List variant for component.",
   "dependencies": [
     "framer-motion"
   ],

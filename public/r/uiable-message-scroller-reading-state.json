@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-scroller-reading-state",
-  "title": "Reading Scroll State",
-  "description": "Message Scroller Reading State variant for message-scroller.",
+  "title": "Message Scroller Reading State",
+  "description": "Message Scroller Reading State variant for component.",
   "registryDependencies": [
     "@uiable/card",
     "@uiable/message-scroller"

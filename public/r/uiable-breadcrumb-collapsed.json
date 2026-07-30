@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-breadcrumb-collapsed",
-  "title": "Collapsed Breadcrumb",
-  "description": "Breadcrumb Collapsed variant for breadcrumb.",
+  "title": "Breadcrumb Collapsed",
+  "description": "Breadcrumb Collapsed variant for component.",
   "registryDependencies": [
     "@uiable/breadcrumb"
   ],

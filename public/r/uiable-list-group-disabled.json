@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-disabled",
-  "title": "Disabled List Group",
-  "description": "List Group Disabled variant for list-group.",
+  "title": "List Group Disabled",
+  "description": "List Group Disabled variant for component.",
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-disabled.tsx",

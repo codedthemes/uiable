@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-changelog-mobile-toc",
-  "title": "Mobile Toc Changelog",
+  "title": "Changelog Mobile Toc",
   "description": "Changelog Mobile Toc variant for component.",
   "dependencies": [
     "lucide-react"

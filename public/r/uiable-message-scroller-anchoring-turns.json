@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-scroller-anchoring-turns",
-  "title": "Anchoring Turns",
-  "description": "Message Scroller Anchoring Turns variant for message-scroller.",
+  "title": "Message Scroller Anchoring Turns",
+  "description": "Message Scroller Anchoring Turns variant for component.",
   "dependencies": [
     "lucide-react"
   ],

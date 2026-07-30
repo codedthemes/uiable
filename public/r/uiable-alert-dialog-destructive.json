@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-dialog-destructive",
-  "title": "Destructive Alert Dialog",
-  "description": "Alert Dialog Destructive variant for alert-dialog.",
+  "title": "Alert Dialog Destructive",
+  "description": "Alert Dialog Destructive variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

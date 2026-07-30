@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-light-warning",
-  "title": "Light Warning Button",
-  "description": "Button Light Warning variant for button.",
+  "title": "Button Light Warning",
+  "description": "Button Light Warning variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

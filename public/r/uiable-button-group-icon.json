@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-icon",
-  "title": "Icon Button Group",
-  "description": "Button Group Icon variant for button-group.",
+  "title": "Button Group Icon",
+  "description": "Button Group Icon variant for component.",
   "dependencies": [
     "lucide-react"
   ],

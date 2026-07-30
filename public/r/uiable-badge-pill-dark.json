@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-pill-dark",
-  "title": "Dark Pill Badge",
-  "description": "Badge Pill Dark variant for badge.",
+  "title": "Badge Pill Dark",
+  "description": "Badge Pill Dark variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

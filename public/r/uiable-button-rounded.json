@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-rounded",
-  "title": "Radios Button",
-  "description": "Button Radios variant for button.",
+  "title": "Button Rounded",
+  "description": "Button Rounded variant for component.",
   "dependencies": [
     "lucide-react"
   ],

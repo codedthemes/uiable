@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-tabs-vertical",
-  "title": "Vertical Tabs",
-  "description": "Tabs Vertical variant for tabs.",
+  "title": "Tabs Vertical",
+  "description": "Tabs Vertical variant for component.",
   "registryDependencies": [
     "@uiable/tabs"
   ],

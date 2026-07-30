@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-accordion-borders",
-  "title": "Borders Accordion",
-  "description": "Accordion Borders variant for accordion.",
+  "title": "Accordion Borders",
+  "description": "Accordion Borders variant for component.",
   "registryDependencies": [
     "@uiable/accordion"
   ],

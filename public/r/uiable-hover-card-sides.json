@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-hover-card-sides",
-  "title": "Sides Hover Card",
-  "description": "Hover Card Sides variant for hover-card.",
+  "title": "Hover Card Sides",
+  "description": "Hover Card Sides variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/hover-card"

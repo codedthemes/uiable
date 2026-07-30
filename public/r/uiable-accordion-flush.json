@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-accordion-flush",
-  "title": "Flush Accordion",
-  "description": "Accordion Flush variant for accordion.",
+  "title": "Accordion Flush",
+  "description": "Accordion Flush variant for component.",
   "registryDependencies": [
     "@uiable/accordion"
   ],

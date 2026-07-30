@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-progress-solid-primary",
-  "title": "Solid Primary Progress",
-  "description": "Progress Solid Primary variant for progress.",
+  "title": "Progress Solid Primary",
+  "description": "Progress Solid Primary variant for component.",
   "dependencies": [
     "@base-ui/react"
   ],

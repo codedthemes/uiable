@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-solid-warning",
-  "title": "Solid Warning Alert",
-  "description": "Alert Solid Warning variant for alert.",
+  "title": "Alert Solid Warning",
+  "description": "Alert Solid Warning variant for component.",
   "registryDependencies": [
     "@uiable/alert"
   ],

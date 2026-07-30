@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-icon",
-  "title": "Icon Item",
-  "description": "Item Icon variant for item.",
+  "title": "Item Icon",
+  "description": "Item Icon variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

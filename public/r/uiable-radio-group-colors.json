@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-group-colors",
-  "title": "Colors Radio Group",
-  "description": "Color Radio Group variant for radio-group.",
+  "title": "Radio Group Colors",
+  "description": "Radio Group Colors variant for component.",
   "dependencies": [
     "lucide-react"
   ],

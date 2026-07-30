@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-carousel-plugin",
-  "title": "Plugin Carousel",
-  "description": "Carousel Plugin variant for carousel.",
+  "title": "Carousel Plugin",
+  "description": "Carousel Plugin variant for component.",
   "dependencies": [
     "embla-carousel-autoplay"
   ],

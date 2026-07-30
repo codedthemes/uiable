@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-switch-color-options",
-  "title": "Color Options",
-  "description": "Switch Color Options variant for switch.",
+  "title": "Switch Color Options",
+  "description": "Switch Color Options variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/switch"

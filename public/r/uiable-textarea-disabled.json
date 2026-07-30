@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-textarea-disabled",
-  "title": "Disabled Textarea",
-  "description": "Textarea Disabled variant for textarea.",
+  "title": "Textarea Disabled",
+  "description": "Textarea Disabled variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/textarea"

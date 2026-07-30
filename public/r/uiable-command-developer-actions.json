@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-developer-actions",
-  "title": "Developer Actions",
-  "description": "Command Developer Actions variant for command.",
+  "title": "Command Developer Actions",
+  "description": "Command Developer Actions variant for component.",
   "dependencies": [
     "lucide-react"
   ],

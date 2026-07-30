@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-scroller-position",
-  "title": "Opening Saved Threads",
-  "description": "Message Scroller Opening Saved Threads variant for message-scroller.",
+  "title": "Message Scroller Position",
+  "description": "Message Scroller Position variant for component.",
   "registryDependencies": [
     "@uiable/card",
     "@uiable/message-scroller",

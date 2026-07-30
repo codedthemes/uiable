@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-resizable-vertical",
-  "title": "Vertical Resizable",
-  "description": "Resizable Vertical variant for resizable.",
+  "title": "Resizable Vertical",
+  "description": "Resizable Vertical variant for component.",
   "registryDependencies": [
     "@uiable/resizable"
   ],

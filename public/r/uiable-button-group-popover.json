@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-popover",
-  "title": "Popover Button Group",
-  "description": "Button Group Popover variant for button-group.",
+  "title": "Button Group Popover",
+  "description": "Button Group Popover variant for component.",
   "dependencies": [
     "lucide-react"
   ],

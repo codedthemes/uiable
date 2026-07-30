@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-error",
-  "title": "Error Combobox",
-  "description": "Combobox Error variant for combobox.",
+  "title": "Combobox Error",
+  "description": "Combobox Error variant for component.",
   "dependencies": [
     "lucide-react"
   ],

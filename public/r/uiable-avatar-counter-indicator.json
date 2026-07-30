@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-counter-indicator",
-  "title": "Counter Indicator Avatar",
-  "description": "Avatar Counter Indicator variant for avatar.",
+  "title": "Avatar Counter Indicator",
+  "description": "Avatar Counter Indicator variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/badge"

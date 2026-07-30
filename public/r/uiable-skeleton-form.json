@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-skeleton-form",
-  "title": "Form Skeleton",
-  "description": "Skeleton Form variant for skeleton.",
+  "title": "Skeleton Form",
+  "description": "Skeleton Form variant for component.",
   "registryDependencies": [
     "@uiable/skeleton"
   ],

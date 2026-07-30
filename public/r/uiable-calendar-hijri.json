@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-hijri",
-  "title": "Hijri Calendar",
-  "description": "Calendar Hijri variant for calendar.",
+  "title": "Calendar Hijri",
+  "description": "Calendar Hijri variant for component.",
   "dependencies": [
     "@daypicker/persian",
     "lucide-react",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-disabled",
-  "title": "Disabled Combobox",
-  "description": "Combobox Disabled variant for combobox.",
+  "title": "Combobox Disabled",
+  "description": "Combobox Disabled variant for component.",
   "registryDependencies": [
     "@uiable/combobox"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-menubar-submenu",
-  "title": "Submenu Menubar",
-  "description": "Menubar Submenu variant for menubar.",
+  "title": "Menubar Submenu",
+  "description": "Menubar Submenu variant for component.",
   "registryDependencies": [
     "@uiable/menubar"
   ],

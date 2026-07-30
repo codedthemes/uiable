@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-popover-alignments",
-  "title": "Alignments Popover",
-  "description": "Popover Alignments variant for popover.",
+  "title": "Popover Alignments",
+  "description": "Popover Alignments variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/popover"

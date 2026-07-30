@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-with-icon",
-  "title": "With Icon Button",
-  "description": "Button With Icon variant for button.",
+  "title": "Button With Icon",
+  "description": "Button With Icon variant for component.",
   "dependencies": [
     "@tabler/icons-react"
   ],

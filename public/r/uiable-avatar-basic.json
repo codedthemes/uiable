@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-basic",
-  "title": "Basic Avatar",
-  "description": "Avatar Basic variant for avatar.",
+  "title": "Avatar Basic",
+  "description": "Avatar Basic variant for component.",
   "registryDependencies": [
     "@uiable/avatar"
   ],

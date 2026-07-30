@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-data-table-pagination",
-  "title": "Pagination Data Table",
+  "title": "Data Table Pagination",
   "description": "Data Table Pagination variant for component.",
   "dependencies": [
     "@tanstack/react-table",

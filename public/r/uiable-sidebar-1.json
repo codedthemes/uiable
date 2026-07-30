@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-1",
   "title": "Sidebar 1",
-  "description": "Sidebar variant 1.",
+  "description": "Sidebar 1 variant for component.",
   "dependencies": [
     "lucide-react"
   ],

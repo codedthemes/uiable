@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-size",
-  "title": "Size Item",
-  "description": "Item Size variant for item.",
+  "title": "Item Size",
+  "description": "Item Size variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

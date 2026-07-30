@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-native-select-invalid",
-  "title": "Invalid Native Select",
-  "description": "Native Select Invalid variant for native-select.",
+  "title": "Native Select Invalid",
+  "description": "Native Select Invalid variant for component.",
   "registryDependencies": [
     "@uiable/native-select"
   ],

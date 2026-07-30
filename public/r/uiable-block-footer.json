@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-footer",
+  "title": "Footer",
+  "description": "Footer variant for block.",
+  "dependencies": [
+    "@tabler/icons-react",
+    "next"
+  ],
+  "registryDependencies": [
+    "@uiable/logo"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/landing/footer/footer.tsx",
+      "content": "import { ComponentProps } from \"react\"\r\nimport Link from \"next/link\"\r\n\r\n// project\r\nimport branding from \"@/branding.json\"\r\nimport Logo from \"@/components/uiable/layout/shared/logo\"\r\nimport { cn } from \"@/lib/utils\"\r\n\r\n// assets\r\nimport {\r\n  IconBrandDiscord,\r\n  IconBrandGithub,\r\n  IconBrandX,\r\n} from \"@tabler/icons-react\"\r\n\r\ninterface FooterProps extends ComponentProps<\"footer\"> {\r\n  containerClassName?: string\r\n  showGradient?: boolean\r\n}\r\n\r\n// constants\r\nconst navLinks = [\r\n  { href: \"/components\", label: \"Components\" },\r\n  { href: \"/doc/introduction\", label: \"Documentation\" },\r\n]\r\n\r\nconst socialLinks = [\r\n  { Icon: IconBrandX, href: branding.company.socialLink.x, label: \"Twitter\" },\r\n  {\r\n    Icon: IconBrandDiscord,\r\n    href: branding.company.socialLink.discord,\r\n    label: \"Discord\",\r\n  },\r\n  {\r\n    Icon: IconBrandGithub,\r\n    href: branding.company.socialLink.github,\r\n    label: \"Github\",\r\n  },\r\n]\r\n\r\n//  ------------------------------ | LAYOUT - FOOTER | ------------------------------  //\r\n\r\nexport default function Footer({\r\n  className,\r\n  containerClassName,\r\n  showGradient = true,\r\n  ...props\r\n}: FooterProps) {\r\n  return (\r\n    <footer\r\n      style={\r\n        showGradient\r\n          ? {\r\n              background:\r\n                \"linear-gradient(to top, var(--primary) -180%, var(--background) 95%)\",\r\n            }\r\n          : undefined\r\n      }\r\n      className={cn(\"w-full\", className)}\r\n      {...props}\r\n    >\r\n      <div\r\n        className={cn(\r\n          \"container mx-auto flex flex-col gap-8 border-border/60 px-4 py-10 sm:px-8 md:flex-row md:items-center md:justify-between\",\r\n          containerClassName\r\n        )}\r\n      >\r\n        {/* LEFT */}\r\n        <div className=\"flex flex-col gap-3\">\r\n          <div className=\"flex items-center gap-2.5\">\r\n            <Logo />\r\n          </div>\r\n\r\n          <p className=\"text-base leading-6 font-normal text-foreground\">\r\n            v1.4.0 | Built by{\" \"}\r\n            <Link\r\n              href={branding.company.url}\r\n              target=\"_blank\"\r\n              rel=\"noopener noreferrer\"\r\n              className=\"text-primary hover:underline\"\r\n            >\r\n              {branding.company.name}\r\n            </Link>\r\n          </p>\r\n        </div>\r\n\r\n        {/* RIGHT */}\r\n        <div className=\"flex flex-col items-start gap-5 sm:flex-row sm:items-center md:items-center\">\r\n          {/* NAV LINKS */}\r\n          <nav className=\"flex items-center gap-8\">\r\n            {navLinks.map(({ href, label }) => (\r\n              <Link\r\n                key={href}\r\n                href={href}\r\n                className=\"font-sans text-base leading-6 font-normal text-foreground transition hover:text-primary\"\r\n              >\r\n                {label}\r\n              </Link>\r\n            ))}\r\n          </nav>\r\n\r\n          {/* DIVIDER */}\r\n          <div className=\"hidden h-6 w-px bg-black/10 sm:block\" />\r\n\r\n          {/* SOCIALS */}\r\n          <div className=\"flex items-center gap-2.5\">\r\n            {socialLinks.map(({ Icon, href, label }) => (\r\n              <Link\r\n                key={label}\r\n                href={href}\r\n                target=\"_blank\"\r\n                rel=\"noopener noreferrer\"\r\n                aria-label={label}\r\n                className=\"flex h-10 w-10 items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-muted dark:hover:bg-muted\"\r\n              >\r\n                <Icon size={18} />\r\n              </Link>\r\n            ))}\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/landing/footer/footer.tsx"
+    }
+  ],
+  "categories": [
+    "landing"
+  ],
+  "type": "registry:block"
+}

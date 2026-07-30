@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-background",
-  "title": "Background Item",
-  "description": "Item with background variant for item.",
+  "title": "Item Background",
+  "description": "Item Background variant for component.",
   "dependencies": [
     "lucide-react"
   ],

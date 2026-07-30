@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-text",
-  "title": "Text Dropdown Menu",
-  "description": "Dropdown Menu Text variant for dropdown-menu.",
+  "title": "Dropdown Menu Text",
+  "description": "Dropdown Menu Text variant for component.",
   "dependencies": [
     "lucide-react"
   ],

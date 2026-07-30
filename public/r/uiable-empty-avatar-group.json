@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-empty-avatar-group",
-  "title": "Empty Group Avatar",
-  "description": "Empty Avatar Group variant for empty.",
+  "title": "Empty Avatar Group",
+  "description": "Empty Avatar Group variant for component.",
   "dependencies": [
     "lucide-react"
   ],

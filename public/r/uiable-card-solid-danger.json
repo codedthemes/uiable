@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-solid-danger",
-  "title": "Danger Solid Card",
-  "description": "Card Solid Danger variant for card.",
+  "title": "Card Solid Danger",
+  "description": "Card Solid Danger variant for component.",
   "registryDependencies": [
     "@uiable/card"
   ],

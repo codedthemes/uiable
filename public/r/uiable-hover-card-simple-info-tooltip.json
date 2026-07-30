@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-hover-card-simple-info-tooltip",
-  "title": "Simple Info Tooltip",
-  "description": "Simple Info Tooltip Hover Card variant for hover-card.",
+  "title": "Hover Card Simple Info Tooltip",
+  "description": "Hover Card Simple Info Tooltip variant for component.",
   "dependencies": [
     "lucide-react"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-group-vertical",
-  "title": "Vertical Toggle Group",
-  "description": "Toggle Group Vertical variant for toggle-group.",
+  "title": "Toggle Group Vertical",
+  "description": "Toggle Group Vertical variant for component.",
   "dependencies": [
     "lucide-react"
   ],

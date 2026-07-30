@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-menubar-checkbox",
-  "title": "Checkbox Menubar",
-  "description": "Menubar Checkbox variant for menubar.",
+  "title": "Menubar Checkbox",
+  "description": "Menubar Checkbox variant for component.",
   "registryDependencies": [
     "@uiable/menubar"
   ],

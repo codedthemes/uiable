@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-breadcrumb-link",
-  "title": "Link Breadcrumb",
-  "description": "Breadcrumb Link variant for breadcrumb.",
+  "title": "Breadcrumb Link",
+  "description": "Breadcrumb Link variant for component.",
   "dependencies": [
     "next"
   ],

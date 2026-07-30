@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-bubble-tooltip",
-  "title": "Tooltip",
-  "description": "Bubble Tooltip variant for bubble.",
+  "title": "Bubble Tooltip",
+  "description": "Bubble Tooltip variant for component.",
   "dependencies": [
     "lucide-react"
   ],

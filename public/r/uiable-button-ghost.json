@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-ghost",
-  "title": "Ghost Button",
-  "description": "Button Ghost variant for button.",
+  "title": "Button Ghost",
+  "description": "Button Ghost variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

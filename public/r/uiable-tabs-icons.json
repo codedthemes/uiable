@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-tabs-icons",
-  "title": "Icons Tabs",
-  "description": "Tabs Icons variant for tabs.",
+  "title": "Tabs Icons",
+  "description": "Tabs Icons variant for component.",
   "dependencies": [
     "lucide-react"
   ],

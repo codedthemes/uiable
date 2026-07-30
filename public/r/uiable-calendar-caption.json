@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-caption",
-  "title": "Caption Calendar",
-  "description": "Calendar Caption variant for calendar.",
+  "title": "Calendar Caption",
+  "description": "Calendar Caption variant for component.",
   "registryDependencies": [
     "@uiable/calendar"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-auto-highlight",
-  "title": "Auto Highlight Combobox",
-  "description": "Combobox Auto Highlight variant for combobox.",
+  "title": "Combobox Auto Highlight",
+  "description": "Combobox Auto Highlight variant for component.",
   "registryDependencies": [
     "@uiable/combobox"
   ],

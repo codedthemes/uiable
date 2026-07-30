@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-dropdown",
-  "title": "Dropdown Avatar",
-  "description": "Avatar Dropdown variant for avatar.",
+  "title": "Avatar Dropdown",
+  "description": "Avatar Dropdown variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/button",

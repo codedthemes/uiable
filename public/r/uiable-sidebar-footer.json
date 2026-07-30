@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-footer",
-  "title": "Footer Sidebar",
+  "title": "Sidebar Footer",
   "description": "Sidebar Footer variant for component.",
   "dependencies": [
     "lucide-react"

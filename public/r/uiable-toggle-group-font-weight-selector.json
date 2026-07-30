@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-group-font-weight-selector",
-  "title": "Font Weight Selector Toggle Group",
-  "description": "Toggle Group Font Weight Selector variant for toggle-group.",
+  "title": "Toggle Group Font Weight Selector",
+  "description": "Toggle Group Font Weight Selector variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/toggle-group"

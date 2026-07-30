@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-collapsible-basic",
-  "title": "Basic Collapsible",
-  "description": "Collapsible Basic variant for collapsible.",
+  "title": "Collapsible Basic",
+  "description": "Collapsible Basic variant for component.",
   "dependencies": [
     "lucide-react"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-field-group",
-  "title": "Group Field",
-  "description": "Field Group variant for field.",
+  "title": "Field Group",
+  "description": "Field Group variant for component.",
   "registryDependencies": [
     "@uiable/checkbox",
     "@uiable/field"

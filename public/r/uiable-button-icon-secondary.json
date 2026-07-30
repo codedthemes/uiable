@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-icon-secondary",
-  "title": "Secondary Icon Button",
-  "description": "Button Icon Secondary variant for button.",
+  "title": "Button Icon Secondary",
+  "description": "Button Icon Secondary variant for component.",
   "dependencies": [
     "lucide-react"
   ],

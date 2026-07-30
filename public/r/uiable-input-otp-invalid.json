@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-invalid",
-  "title": "Invalid Input Otp",
-  "description": "Input Otp Invalid variant for input-otp.",
+  "title": "Input Otp Invalid",
+  "description": "Input Otp Invalid variant for component.",
   "registryDependencies": [
     "@uiable/input-otp"
   ],

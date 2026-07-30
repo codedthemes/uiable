@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-chart-example",
   "title": "Chart Example",
-  "description": "Chart Example variant for chart.",
+  "description": "Chart Example variant for component.",
   "dependencies": [
     "recharts"
   ],

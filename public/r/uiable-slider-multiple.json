@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-slider-multiple",
-  "title": "Multiple Slider",
-  "description": "Slider Multiple variant for slider.",
+  "title": "Slider Multiple",
+  "description": "Slider Multiple variant for component.",
   "registryDependencies": [
     "@uiable/slider"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-toolbar",
-  "title": "Text Styling Toolbar",
-  "description": "Button Group Toolbar variant for button-group.",
+  "title": "Button Group Toolbar",
+  "description": "Button Group Toolbar variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-pagination-sizing",
-  "title": "Sizing Pagination",
-  "description": "Pagination Sizing variant for pagination.",
+  "title": "Pagination Sizing",
+  "description": "Pagination Sizing variant for component.",
   "registryDependencies": [
     "@uiable/pagination"
   ],

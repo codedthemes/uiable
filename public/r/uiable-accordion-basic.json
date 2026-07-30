@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-accordion-basic",
-  "title": "Basic Accordion",
-  "description": "Accordion Basic variant for accordion.",
+  "title": "Accordion Basic",
+  "description": "Accordion Basic variant for component.",
   "registryDependencies": [
     "@uiable/accordion"
   ],

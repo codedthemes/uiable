@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-size-small",
-  "title": "Small Size Spinner",
-  "description": "Spinner Size Small variant for spinner.",
+  "title": "Spinner Size Small",
+  "description": "Spinner Size Small variant for component.",
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-size-small.tsx",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-basic",
-  "title": "Basic Combobox",
-  "description": "Combobox Basic variant for combobox.",
+  "title": "Combobox Basic",
+  "description": "Combobox Basic variant for component.",
   "registryDependencies": [
     "@uiable/combobox"
   ],

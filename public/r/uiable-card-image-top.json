@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-image-top",
-  "title": "Image Top Card",
-  "description": "Card Image Top variant for card.",
+  "title": "Card Image Top",
+  "description": "Card Image Top variant for component.",
   "registryDependencies": [
     "@uiable/card"
   ],

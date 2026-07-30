@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-skeleton-text",
-  "title": "Text Skeleton",
-  "description": "Skeleton Text variant for skeleton.",
+  "title": "Skeleton Text",
+  "description": "Skeleton Text variant for component.",
   "registryDependencies": [
     "@uiable/skeleton"
   ],

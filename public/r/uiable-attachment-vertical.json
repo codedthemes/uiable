@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-attachment-vertical",
-  "title": "Vertical Attachment",
-  "description": "Attachment Vertical variant for attachment.",
+  "title": "Attachment Vertical",
+  "description": "Attachment Vertical variant for component.",
   "dependencies": [
     "lucide-react"
   ],

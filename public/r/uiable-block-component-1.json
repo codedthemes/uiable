@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-component-1",
+  "title": "Component 1",
+  "description": "Component 1 variant for block.",
+  "dependencies": [
+    "@tabler/icons-react",
+    "next"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/components",
+    "@uiable/separator"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/landing/component-1/component-1.tsx",
+      "content": "import Link from \"next/link\"\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { Card, CardContent } from \"@/components/ui/card\"\r\nimport { Separator } from \"@/components/ui/separator\"\r\n\r\n// project\r\nimport categoryCounts from \"@/category-counts.json\"\r\nimport BorderGlow from \"@/components/animation/BorderGlow\"\r\nimport { SectionHeader } from \"@/components/uiable/blocks/landing/components\"\r\nimport ButtonSvg from \"@/images/svg/button\"\r\nimport ButtonGroupSvg from \"@/images/svg/ButtonGroup\"\r\nimport InputOtpSvg from \"@/images/svg/InputOtp\"\r\nimport ItemSvg from \"@/images/svg/item\"\r\nimport SwitchSvg from \"@/images/svg/switch\"\r\nimport ToggleGroupSvg from \"@/images/svg/ToggleGroup\"\r\n\r\n// assets\r\nimport { IconArrowUpRight } from \"@tabler/icons-react\"\r\n\r\n// constants\r\nconst components_data = [\r\n  {\r\n    title: \"Button\",\r\n    slug: \"button\",\r\n    count: `${categoryCounts[\"button\"] || 0} variants`,\r\n    Svg: ButtonSvg,\r\n  },\r\n  {\r\n    title: \"Button Group\",\r\n    slug: \"button-group\",\r\n    count: `${categoryCounts[\"button-group\"] || 0} variants`,\r\n    Svg: ButtonGroupSvg,\r\n  },\r\n  {\r\n    title: \"Input OTP\",\r\n    slug: \"input-otp\",\r\n    count: `${categoryCounts[\"input-otp\"] || 0} variants`,\r\n    Svg: InputOtpSvg,\r\n  },\r\n  {\r\n    title: \"Item\",\r\n    slug: \"item\",\r\n    count: `${categoryCounts[\"item\"] || 0} variants`,\r\n    Svg: ItemSvg,\r\n  },\r\n  {\r\n    title: \"Switch\",\r\n    slug: \"switch\",\r\n    count: `${categoryCounts[\"switch\"] || 0} variants`,\r\n    Svg: SwitchSvg,\r\n  },\r\n  {\r\n    title: \"Toggle Group\",\r\n    slug: \"toggle-group\",\r\n    count: `${categoryCounts[\"toggle-group\"] || 0} variants`,\r\n    Svg: ToggleGroupSvg,\r\n  },\r\n]\r\n\r\n//  ------------------------------ | COMPONENT 1 | ------------------------------  //\r\n\r\nexport default function Component1() {\r\n  return (\r\n    <section className=\"mx-auto flex w-full flex-col gap-12.5 px-4 py-12.5 sm:px-8\">\r\n      <SectionHeader\r\n        title=\"Components designed for real applications\"\r\n        subtitle=\"Carefully crafted components built with accessibility, consistency, and developer experience in mind.\"\r\n      />\r\n\r\n      <div className=\"grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3\">\r\n        {components_data.map(({ title, slug, count, Svg }) => (\r\n          <BorderGlow key={title} className=\"rounded-lg\">\r\n            <Link\r\n              href={`/components/${slug}`}\r\n              className=\"group block cursor-pointer\"\r\n            >\r\n              <Card className=\"mb-0 overflow-hidden border-0 transition-all duration-300\">\r\n                <CardContent>\r\n                  <div className=\"mb-1 flex items-center justify-between\">\r\n                    <div className=\"flex items-center gap-2\">\r\n                      <p className=\"font-sans text-base leading-none font-medium tracking-normal text-secondary-foreground capitalize\">\r\n                        {title}\r\n                      </p>\r\n\r\n                      <Separator orientation=\"vertical\" />\r\n                      <p className=\"text-sm font-medium text-muted-foreground\">\r\n                        {count}\r\n                      </p>\r\n                    </div>\r\n                    <div className=\"flex flex-row items-center gap-2 group-hover:text-primary\">\r\n                      <IconArrowUpRight className=\"size-5 text-foreground\" />\r\n                    </div>\r\n                  </div>\r\n                  <div className=\"my-4 h-px flex-1 bg-border/70\" />\r\n                  <div className=\"flex min-h-40 items-center justify-center p-0\">\r\n                    <Svg className=\"h-full max-h-45 w-full max-w-7xl\" />\r\n                  </div>\r\n                </CardContent>\r\n              </Card>\r\n            </Link>\r\n          </BorderGlow>\r\n        ))}\r\n      </div>\r\n\r\n      <div className=\"flex items-center justify-center\">\r\n        <Button\r\n          variant=\"outline\"\r\n          size=\"lg\"\r\n          nativeButton={false}\r\n          render={<Link href=\"/components\" />}\r\n          className=\"h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent dark:border-border dark:bg-card dark:hover:bg-accent/10\"\r\n        >\r\n          View Components\r\n          <IconArrowUpRight className=\"size-5\" />\r\n        </Button>\r\n      </div>\r\n    </section>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/landing/component-1/component-1.tsx"
+    }
+  ],
+  "categories": [
+    "landing"
+  ],
+  "type": "registry:block"
+}

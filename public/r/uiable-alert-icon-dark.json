@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-icon-dark",
-  "title": "Dark Icon Alert",
-  "description": "Alert Icon Dark variant for alert.",
+  "title": "Alert Icon Dark",
+  "description": "Alert Icon Dark variant for component.",
   "dependencies": [
     "lucide-react"
   ],

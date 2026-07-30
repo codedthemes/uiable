@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-group",
-  "title": "Group Sidebar",
+  "title": "Sidebar Group",
   "description": "Sidebar Group variant for component.",
   "dependencies": [
     "lucide-react"

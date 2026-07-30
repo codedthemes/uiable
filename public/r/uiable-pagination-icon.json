@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-pagination-icon",
-  "title": "Icon Pagination",
-  "description": "Pagination Icon variant for pagination.",
+  "title": "Pagination Icon",
+  "description": "Pagination Icon variant for component.",
   "registryDependencies": [
     "@uiable/pagination"
   ],

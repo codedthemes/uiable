@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-outline-secondary",
-  "title": "Outline Secondary Button",
-  "description": "Button Outline Secondary variant for button.",
+  "title": "Button Outline Secondary",
+  "description": "Button Outline Secondary variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

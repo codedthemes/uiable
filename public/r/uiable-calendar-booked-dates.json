@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-booked-dates",
-  "title": "Booked Dates Calendar",
-  "description": "Calendar Booked Dates variant for calendar.",
+  "title": "Calendar Booked Dates",
+  "description": "Calendar Booked Dates variant for component.",
   "registryDependencies": [
     "@uiable/calendar",
     "@uiable/card"

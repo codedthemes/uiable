@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-select-with-icons",
-  "title": "With Icons Select",
-  "description": "Select With Icons variant for select.",
+  "title": "Select With Icons",
+  "description": "Select With Icons variant for component.",
   "dependencies": [
     "lucide-react"
   ],

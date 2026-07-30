@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-with-avatar",
   "title": "Message With Avatar",
-  "description": "Message With Avatar variant for message.",
+  "description": "Message With Avatar variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/bubble",

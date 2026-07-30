@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-textarea-helper-text",
-  "title": "Textarea With Helper Text",
-  "description": "Textarea With Helper Text variant for textarea.",
+  "title": "Textarea Helper Text",
+  "description": "Textarea Helper Text variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/textarea"

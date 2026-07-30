@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-light-secondary",
-  "title": "Light Secondary Button",
-  "description": "Button Light Secondary variant for button.",
+  "title": "Button Light Secondary",
+  "description": "Button Light Secondary variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

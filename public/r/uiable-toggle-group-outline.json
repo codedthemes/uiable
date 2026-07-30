@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-group-outline",
-  "title": "Outline Toggle Group",
-  "description": "Toggle Group Outline variant for toggle-group.",
+  "title": "Toggle Group Outline",
+  "description": "Toggle Group Outline variant for component.",
   "registryDependencies": [
     "@uiable/toggle-group"
   ],

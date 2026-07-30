@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-bubble-group",
   "title": "Bubble Group",
-  "description": "Bubble Group variant for bubble.",
+  "description": "Bubble Group variant for component.",
   "registryDependencies": [
     "@uiable/bubble"
   ],

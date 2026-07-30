@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-invalid",
-  "title": "Invalid Input",
-  "description": "Input Invalid variant for input.",
+  "title": "Input Invalid",
+  "description": "Input Invalid variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/input"

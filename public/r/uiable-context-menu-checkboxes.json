@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-context-menu-checkboxes",
-  "title": "Checkboxes Context Menu",
-  "description": "Context Menu Checkboxes variant for context-menu.",
+  "title": "Context Menu Checkboxes",
+  "description": "Context Menu Checkboxes variant for component.",
   "registryDependencies": [
     "@uiable/context-menu"
   ],

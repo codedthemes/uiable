@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-textarea-character-count",
-  "title": "Character Count Textarea",
-  "description": "Textarea Character Count variant for textarea.",
+  "title": "Textarea Character Count",
+  "description": "Textarea Character Count variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/textarea"

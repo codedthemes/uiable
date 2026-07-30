@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-multiple",
-  "title": "Multiple Calendar",
-  "description": "Calendar Multiple variant for calendar.",
+  "title": "Calendar Multiple",
+  "description": "Calendar Multiple variant for component.",
   "registryDependencies": [
     "@uiable/calendar",
     "@uiable/card"

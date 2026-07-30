@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-tooltip-keyboard",
-  "title": "Keyboard Tooltip",
-  "description": "Tooltip Keyboard variant for tooltip.",
+  "title": "Tooltip Keyboard",
+  "description": "Tooltip Keyboard variant for component.",
   "dependencies": [
     "lucide-react"
   ],

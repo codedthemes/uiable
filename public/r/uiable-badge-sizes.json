@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-sizes",
-  "title": "Sizes Badge",
-  "description": "Badge Sizes variant for badge.",
+  "title": "Badge Sizes",
+  "description": "Badge Sizes variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

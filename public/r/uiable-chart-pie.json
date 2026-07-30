@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-chart-pie",
-  "title": "Pie Chart",
+  "title": "Chart Pie",
   "description": "Chart Pie variant for component.",
   "dependencies": [
     "recharts"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-select-with-status",
-  "title": "With Status Select",
-  "description": "Select With Status variant for select.",
+  "title": "Select With Status",
+  "description": "Select With Status variant for component.",
   "registryDependencies": [
     "@uiable/badge",
     "@uiable/select"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-light-danger",
-  "title": "Danger Light Alert",
-  "description": "Alert Light Danger variant for alert.",
+  "title": "Alert Light Danger",
+  "description": "Alert Light Danger variant for component.",
   "registryDependencies": [
     "@uiable/alert"
   ],

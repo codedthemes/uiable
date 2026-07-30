@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-placeholder-icon",
-  "title": "Placeholder Icon Avatar",
-  "description": "Avatar Placeholder Icon variant for avatar.",
+  "title": "Avatar Placeholder Icon",
+  "description": "Avatar Placeholder Icon variant for component.",
   "dependencies": [
     "lucide-react"
   ],

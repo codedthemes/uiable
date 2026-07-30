@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-rsc",
-  "title": "Rsc Sidebar",
+  "title": "Sidebar Rsc",
   "description": "Sidebar Rsc variant for component.",
   "dependencies": [
     "lucide-react"

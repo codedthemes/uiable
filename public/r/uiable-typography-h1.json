@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-typography-h1",
-  "title": "H1 Typography",
-  "description": "Typography H1 variant for typography.",
+  "title": "Typography H1",
+  "description": "Typography H1 variant for component.",
   "files": [
     {
       "path": "src/components/uiable/typography/typography-h1.tsx",

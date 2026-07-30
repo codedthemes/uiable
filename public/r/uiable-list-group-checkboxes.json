@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-checkboxes",
-  "title": "Checkboxes List Group",
-  "description": "List Group Checkboxes variant for list-group.",
+  "title": "List Group Checkboxes",
+  "description": "List Group Checkboxes variant for component.",
   "registryDependencies": [
     "@uiable/checkbox",
     "@uiable/label"

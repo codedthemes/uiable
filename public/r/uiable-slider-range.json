@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-slider-range",
-  "title": "Range Slider",
-  "description": "Slider Range variant for slider.",
+  "title": "Slider Range",
+  "description": "Slider Range variant for component.",
   "registryDependencies": [
     "@uiable/slider"
   ],

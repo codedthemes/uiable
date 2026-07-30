@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-colors",
-  "title": "Colors Alert",
-  "description": "Alert Colors variant for alert.",
+  "title": "Alert Colors",
+  "description": "Alert Colors variant for component.",
   "dependencies": [
     "lucide-react"
   ],

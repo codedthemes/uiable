@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-dialog",
-  "title": "Dialog Command",
-  "description": "Command Dialog variant for command.",
+  "title": "Command Dialog",
+  "description": "Command Dialog variant for component.",
   "dependencies": [
     "lucide-react"
   ],

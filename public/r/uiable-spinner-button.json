@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-button",
-  "title": "Button Spinner",
-  "description": "Spinner Button variant for spinner.",
+  "title": "Spinner Button",
+  "description": "Spinner Button variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

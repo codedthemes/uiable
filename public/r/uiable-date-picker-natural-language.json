@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-date-picker-natural-language",
-  "title": "Natural Language Date Picker",
-  "description": "Date Picker Natural Language variant for date-picker.",
+  "title": "Date Picker Natural Language",
+  "description": "Date Picker Natural Language variant for component.",
   "dependencies": [
     "chrono-node",
     "lucide-react"

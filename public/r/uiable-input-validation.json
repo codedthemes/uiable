@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-validation",
-  "title": "Validation Input",
-  "description": "Input Validation variant for input.",
+  "title": "Input Validation",
+  "description": "Input Validation variant for component.",
   "dependencies": [
     "lucide-react"
   ],

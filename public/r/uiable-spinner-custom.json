@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-custom",
-  "title": "Custom Spinner",
-  "description": "Spinner Custom variant for spinner.",
+  "title": "Spinner Custom",
+  "description": "Spinner Custom variant for component.",
   "dependencies": [
     "lucide-react"
   ],

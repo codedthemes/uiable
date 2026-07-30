@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-alphanumeric",
-  "title": "Alphanumeric Input Otp",
-  "description": "Input Otp Alphanumeric variant for input-otp.",
+  "title": "Input Otp Alphanumeric",
+  "description": "Input Otp Alphanumeric variant for component.",
   "dependencies": [
     "input-otp"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-four-digits",
-  "title": "Four Digits Input Otp",
-  "description": "Input Otp Four Digits variant for input-otp.",
+  "title": "Input Otp Four Digits",
+  "description": "Input Otp Four Digits variant for component.",
   "dependencies": [
     "input-otp"
   ],

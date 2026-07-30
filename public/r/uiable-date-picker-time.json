@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-date-picker-time",
-  "title": "Time Date Picker",
-  "description": "Date Picker Time variant for date-picker.",
+  "title": "Date Picker Time",
+  "description": "Date Picker Time variant for component.",
   "dependencies": [
     "date-fns",
     "lucide-react"

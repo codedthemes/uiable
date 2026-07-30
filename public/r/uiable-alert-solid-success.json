@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-solid-success",
-  "title": "Solid Success Alert",
-  "description": "Alert Solid Success variant for alert.",
+  "title": "Alert Solid Success",
+  "description": "Alert Solid Success variant for component.",
   "registryDependencies": [
     "@uiable/alert"
   ],

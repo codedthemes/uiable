@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-horizontal",
-  "title": "Horizontal Card",
-  "description": "Card Horizontal variant for card.",
+  "title": "Card Horizontal",
+  "description": "Card Horizontal variant for component.",
   "registryDependencies": [
     "@uiable/card"
   ],

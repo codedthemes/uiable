@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-range",
-  "title": "Range Input",
-  "description": "Input Range variant for input.",
+  "title": "Input Range",
+  "description": "Input Range variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/input",

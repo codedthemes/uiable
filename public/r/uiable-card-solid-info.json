@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-solid-info",
-  "title": "Info Solid Card",
-  "description": "Card Solid Info variant for card.",
+  "title": "Card Solid Info",
+  "description": "Card Solid Info variant for component.",
   "registryDependencies": [
     "@uiable/card"
   ],

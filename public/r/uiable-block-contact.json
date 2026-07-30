@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-block-contact",
+  "title": "Contact",
+  "description": "Contact variant for block.",
+  "dependencies": [
+    "sonner"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/landing/contact/Contact.tsx",
+      "content": "\"use client\"\r\n\r\nimport { SyntheticEvent, useState } from \"react\"\r\n\r\n// third party\r\nimport { toast } from \"sonner\"\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { Input } from \"@/components/ui/input\"\r\n\r\n// assets\r\nimport { LightFav } from \"@/images/brand\"\r\nimport { ContactLeftGrid, ContactRightGrid } from \"@/images/svg/landing\"\r\n\r\n//  ------------------------------ | CONTACT | ------------------------------  //\r\n\r\nexport default function Contact({\r\n  group_name = \"uiable_landing\",\r\n}: {\r\n  group_name?: string\r\n}) {\r\n  const [email, setEmail] = useState(\"\")\r\n  const [loading, setLoading] = useState(false)\r\n\r\n  const handleSubmit = async (e: SyntheticEvent<HTMLFormElement>) => {\r\n    e.preventDefault()\r\n\r\n    if (!email) return\r\n\r\n    setLoading(true)\r\n    try {\r\n      const response = await fetch(\"/api/subscribe\", {\r\n        method: \"POST\",\r\n        headers: { \"Content-Type\": \"application/json\" },\r\n        body: JSON.stringify({ email, group_name }),\r\n      })\r\n\r\n      const data = await response.json()\r\n\r\n      if (response.ok) {\r\n        toast.success(data.message || \"Subscribed successfully!\")\r\n        setEmail(\"\")\r\n      } else {\r\n        toast.error(data.error || \"Failed to subscribe\")\r\n      }\r\n    } catch {\r\n      toast.error(\"Something went wrong. Please try again.\")\r\n    } finally {\r\n      setLoading(false)\r\n    }\r\n  }\r\n\r\n  return (\r\n    <section className=\"mx-auto w-full px-4 py-24 sm:px-8\">\r\n      <div className=\"relative overflow-hidden rounded-lg border border-border bg-slate-950\">\r\n        {/* BLUE GLOW */}\r\n        <div\r\n          className=\"absolute inset-0 z-10\"\r\n          style={{\r\n            background:\r\n              \"linear-gradient(95.43deg, var(--primary) 0.51%, transparent 84.32%)\",\r\n          }}\r\n        />\r\n\r\n        {/* LEFT GRID */}\r\n        <div className=\"pointer-events-none absolute -top-5 -left-5 z-20 select-none sm:-top-7.5 sm:-left-7.5 lg:-top-12.5 lg:-left-12.5\">\r\n          <ContactLeftGrid className=\"h-45 w-45 sm:h-65 sm:w-65 lg:h-93 lg:w-93\" />\r\n        </div>\r\n\r\n        {/* RIGHT GRID */}\r\n        <div className=\"pointer-events-none absolute -right-5 -bottom-5 z-20 select-none sm:-right-7.5 sm:-bottom-7.5 lg:-right-12.5 lg:-bottom-12.5\">\r\n          <ContactRightGrid className=\"h-45 w-45 sm:h-65 sm:w-65 lg:h-93 lg:w-93\" />\r\n        </div>\r\n\r\n        {/* CONTENT */}\r\n        <div className=\"relative z-30 mx-auto flex max-w-3xl flex-col items-center gap-10 py-16 text-center\">\r\n          {/* LOGO */}\r\n          <div className=\"flex items-center justify-center\">\r\n            <LightFav width={84} height={80} />\r\n          </div>\r\n\r\n          {/* HEADING */}\r\n          <div className=\"flex flex-col items-center gap-3.5\">\r\n            <h2 className=\"text-4xl leading-none font-semibold text-white\">\r\n              Get product updates and new releases\r\n            </h2>\r\n\r\n            {/* SUBTEXT */}\r\n            <p className=\"max-w-lg text-base leading-5 font-normal text-white\">\r\n              Be the first to know about new components, application blocks,\r\n              templates, and upcoming releases.\r\n            </p>\r\n          </div>\r\n\r\n          {/* INPUT */}\r\n          <form\r\n            onSubmit={handleSubmit}\r\n            className=\"flex w-full max-w-xl flex-col gap-3 border border-white/10 bg-white/5 p-2 backdrop-blur sm:flex-row sm:items-center sm:rounded-full sm:p-1.5\"\r\n          >\r\n            <Input\r\n              type=\"email\"\r\n              required\r\n              value={email}\r\n              onChange={(e) => setEmail(e.target.value)}\r\n              placeholder=\"Enter your email\"\r\n              className=\"h-12 flex-1 rounded-none border-none bg-transparent px-5 py-3 text-base leading-5 text-white outline-none placeholder:text-white/50 focus:border-none\"\r\n            />\r\n\r\n            <Button\r\n              type=\"submit\"\r\n              className=\"rounded-full\"\r\n              size=\"lg\"\r\n              disabled={loading}\r\n            >\r\n              {loading ? \"Subscribing...\" : \"Subscribe\"}\r\n            </Button>\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/landing/contact/Contact.tsx"
+    }
+  ],
+  "categories": [
+    "landing"
+  ],
+  "type": "registry:block"
+}

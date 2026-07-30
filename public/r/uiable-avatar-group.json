@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-group",
-  "title": "Group Avatar",
-  "description": "Avatar Group variant for avatar.",
+  "title": "Avatar Group",
+  "description": "Avatar Group variant for component.",
   "registryDependencies": [
     "@uiable/avatar"
   ],

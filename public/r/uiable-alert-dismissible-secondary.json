@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-dismissible-secondary",
-  "title": "Secondary Dismissible Alert",
-  "description": "Alert Dismissible Secondary variant for alert.",
+  "title": "Alert Dismissible Secondary",
+  "description": "Alert Dismissible Secondary variant for component.",
   "dependencies": [
     "lucide-react"
   ],

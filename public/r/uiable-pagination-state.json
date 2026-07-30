@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-pagination-state",
-  "title": "State Pagination",
-  "description": "Pagination State variant for pagination.",
+  "title": "Pagination State",
+  "description": "Pagination State variant for component.",
   "registryDependencies": [
     "@uiable/pagination"
   ],

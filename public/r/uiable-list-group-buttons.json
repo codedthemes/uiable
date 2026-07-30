@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-buttons",
-  "title": "Buttons List Group",
-  "description": "List Group Buttons variant for list-group.",
+  "title": "List Group Buttons",
+  "description": "List Group Buttons variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

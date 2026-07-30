@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-separator-vertical",
-  "title": "Vertical Separator",
-  "description": "Separator Vertical variant for separator.",
+  "title": "Separator Vertical",
+  "description": "Separator Vertical variant for component.",
   "registryDependencies": [
     "@uiable/separator"
   ],

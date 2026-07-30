@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-muted-item-group",
-  "title": "Muted Group Item",
-  "description": "Muted Item Group variant for item.",
+  "title": "Muted Item Group",
+  "description": "Item Muted Item Group variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/item"

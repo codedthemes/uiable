@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-pill-secondary",
-  "title": "Secondary Pill Badge",
-  "description": "Badge Pill Secondary variant for badge.",
+  "title": "Badge Pill Secondary",
+  "description": "Badge Pill Secondary variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

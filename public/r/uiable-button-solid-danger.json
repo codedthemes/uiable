@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-solid-danger",
-  "title": "Solid Danger Button",
-  "description": "Button Solid Danger variant for button.",
+  "title": "Button Solid Danger",
+  "description": "Button Solid Danger variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

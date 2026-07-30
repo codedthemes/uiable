@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-action",
-  "title": "Action Alert",
-  "description": "Alert Action variant for alert.",
+  "title": "Alert Action",
+  "description": "Alert Action variant for component.",
   "registryDependencies": [
     "@uiable/alert",
     "@uiable/button"
