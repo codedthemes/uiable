@@ -153,7 +153,7 @@ function generateUiRegistry() {
   const registryContent = {
     $schema: "https://ui.shadcn.com/schema/registry.json",
     name: "uiable",
-    homepage: "https://internal.uiable.com",
+    homepage: "https://uiable.com",
     items: items,
   }
 
@@ -219,7 +219,7 @@ function generateUiableRegistry() {
   const registryContent = {
     $schema: "https://ui.shadcn.com/schema/registry.json",
     name: "uiable",
-    homepage: "https://internal.uiable.com",
+    homepage: "https://uiable.com",
     items: items,
   }
 
@@ -373,7 +373,7 @@ function generateBlocksRegistry() {
   const registryContent = {
     $schema: "https://ui.shadcn.com/schema/registry.json",
     name: "uiable",
-    homepage: "https://internal.uiable.com",
+    homepage: "https://uiable.com",
     items: items,
   }
 

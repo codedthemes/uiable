@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-kbd-function-keys",
+  "title": "Function Keys Kbd",
+  "description": "Kbd Function Keys variant for component.",
+  "registryDependencies": [
+    "kbd"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/kbd/kbd-function-keys.tsx",
+      "content": "// shadcn\r\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\"\r\n\r\n//  ------------------------------ | KBD - FUNCTION KEYS | ------------------------------  //\r\n\r\nexport default function KbdFunctionKeys() {\r\n  return (\r\n    <div className=\"flex flex-col items-center gap-4\">\r\n      <div className=\"flex flex-wrap items-center justify-center gap-1.5\">\r\n        <Kbd>F1</Kbd>\r\n        <Kbd>F2</Kbd>\r\n        <Kbd>F3</Kbd>\r\n        <Kbd>F4</Kbd>\r\n        <Kbd>F5</Kbd>\r\n        <Kbd>F6</Kbd>\r\n        <Kbd>F7</Kbd>\r\n        <Kbd>F8</Kbd>\r\n        <Kbd>F9</Kbd>\r\n        <Kbd>F10</Kbd>\r\n        <Kbd>F11</Kbd>\r\n        <Kbd>F12</Kbd>\r\n      </div>\r\n      <div className=\"flex flex-wrap items-center justify-center gap-1 text-sm text-muted-foreground\">\r\n        Press{\" \"}\r\n        <KbdGroup>\r\n          <Kbd>Fn</Kbd>\r\n          <Kbd>F11</Kbd>\r\n        </KbdGroup>{\" \"}\r\n        to toggle fullscreen\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/kbd/kbd-function-keys.tsx"
+    }
+  ],
+  "categories": [
+    "kbd"
+  ],
+  "type": "registry:ui"
+}

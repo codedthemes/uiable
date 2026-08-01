@@ -4,10 +4,10 @@
   "baseUrl": "https://uiable.com",
   "generatedFrom": "registry.json",
   "counts": {
-    "total": 712,
-    "blocks": 23,
+    "total": 730,
+    "blocks": 28,
     "primitives": 60,
-    "components": 629
+    "components": 642
   },
   "categories": [
     "accordion",
@@ -4480,6 +4480,28 @@
       "previewUrl": "https://uiable.com/preview/uiable-block-feature"
     },
     {
+      "name": "uiable-block-feature-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 1",
+      "description": "Feature variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-1/feature-1.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-feature-1",
+      "url": "https://uiable.com/r/uiable-block-feature-1.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-feature-1"
+    },
+    {
       "name": "uiable-block-feature-2",
       "kind": "block",
       "type": "registry:block",
@@ -4552,6 +4574,50 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-block-footer-3",
       "url": "https://uiable.com/r/uiable-block-footer-3.json",
       "previewUrl": "https://uiable.com/preview/uiable-block-footer-3"
+    },
+    {
+      "name": "uiable-block-footer-7",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Footer 7",
+      "description": "Footer variant for block.",
+      "categories": [
+        "footer"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/footer/footer-7/footer-7.tsx"
+      ],
+      "keywords": [
+        "footer",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-footer-7",
+      "url": "https://uiable.com/r/uiable-block-footer-7.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-footer-7"
+    },
+    {
+      "name": "uiable-block-gallery-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Gallery 2",
+      "description": "Gallery variant for block.",
+      "categories": [
+        "gallery"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/gallery/gallery-2/gallery-2.tsx"
+      ],
+      "keywords": [
+        "gallery",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-gallery-2",
+      "url": "https://uiable.com/r/uiable-block-gallery-2.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-gallery-2"
     },
     {
       "name": "uiable-block-gallery-4",
@@ -4721,6 +4787,30 @@
       "previewUrl": "https://uiable.com/preview/uiable-block-portfolio-4"
     },
     {
+      "name": "uiable-block-portfolio-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Portfolio 5",
+      "description": "Portfolio variant for block.",
+      "categories": [
+        "portfolio"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        "@components/uiable/blocks/portfolio/portfolio-5/portfolio-5.tsx"
+      ],
+      "keywords": [
+        "portfolio",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-portfolio-5",
+      "url": "https://uiable.com/r/uiable-block-portfolio-5.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-portfolio-5"
+    },
+    {
       "name": "uiable-block-pricing-2",
       "kind": "block",
       "type": "registry:block",
@@ -4769,6 +4859,28 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-block-process-1",
       "url": "https://uiable.com/r/uiable-block-process-1.json",
       "previewUrl": "https://uiable.com/preview/uiable-block-process-1"
+    },
+    {
+      "name": "uiable-block-process-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Process 6",
+      "description": "Process variant for block.",
+      "categories": [
+        "process"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/process/process-6/process-6.tsx"
+      ],
+      "keywords": [
+        "process",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-block-process-6",
+      "url": "https://uiable.com/r/uiable-block-process-6.json",
+      "previewUrl": "https://uiable.com/preview/uiable-block-process-6"
     },
     {
       "name": "uiable-block-sidebar",
@@ -13489,6 +13601,32 @@
       "previewUrl": "https://uiable.com/preview/uiable-item-variant"
     },
     {
+      "name": "uiable-kbd-arrow-keys",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Arrow Keys Kbd",
+      "description": "Kbd Arrow Keys variant for component.",
+      "categories": [
+        "kbd"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "kbd"
+      ],
+      "files": [
+        "@components/uiable/kbd/kbd-arrow-keys.tsx"
+      ],
+      "keywords": [
+        "arrow",
+        "keys",
+        "kbd",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-kbd-arrow-keys",
+      "url": "https://uiable.com/r/uiable-kbd-arrow-keys.json",
+      "previewUrl": "https://uiable.com/preview/uiable-kbd-arrow-keys"
+    },
+    {
       "name": "uiable-kbd-button",
       "kind": "component",
       "type": "registry:ui",
@@ -13513,6 +13651,32 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-kbd-button",
       "url": "https://uiable.com/r/uiable-kbd-button.json",
       "previewUrl": "https://uiable.com/preview/uiable-kbd-button"
+    },
+    {
+      "name": "uiable-kbd-function-keys",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Function Keys Kbd",
+      "description": "Kbd Function Keys variant for component.",
+      "categories": [
+        "kbd"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "kbd"
+      ],
+      "files": [
+        "@components/uiable/kbd/kbd-function-keys.tsx"
+      ],
+      "keywords": [
+        "function",
+        "keys",
+        "kbd",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-kbd-function-keys",
+      "url": "https://uiable.com/r/uiable-kbd-function-keys.json",
+      "previewUrl": "https://uiable.com/preview/uiable-kbd-function-keys"
     },
     {
       "name": "uiable-kbd-group",
@@ -13569,6 +13733,32 @@
       "previewUrl": "https://uiable.com/preview/uiable-kbd-input-group"
     },
     {
+      "name": "uiable-kbd-shortcut-keys",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Shortcut Keys Kbd",
+      "description": "Kbd Shortcut Keys variant for component.",
+      "categories": [
+        "kbd"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "kbd"
+      ],
+      "files": [
+        "@components/uiable/kbd/kbd-shortcut-keys.tsx"
+      ],
+      "keywords": [
+        "shortcut",
+        "keys",
+        "kbd",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-kbd-shortcut-keys",
+      "url": "https://uiable.com/r/uiable-kbd-shortcut-keys.json",
+      "previewUrl": "https://uiable.com/preview/uiable-kbd-shortcut-keys"
+    },
+    {
       "name": "uiable-kbd-tooltip",
       "kind": "component",
       "type": "registry:ui",
@@ -13622,6 +13812,89 @@
       "previewUrl": "https://uiable.com/preview/uiable-label-basic"
     },
     {
+      "name": "uiable-label-card",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Card Label",
+      "description": "Label Card variant for component.",
+      "categories": [
+        "label"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "badge",
+        "label",
+        "switch"
+      ],
+      "files": [
+        "@components/uiable/label/label-card.tsx"
+      ],
+      "keywords": [
+        "card",
+        "label",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-label-card",
+      "url": "https://uiable.com/r/uiable-label-card.json",
+      "previewUrl": "https://uiable.com/preview/uiable-label-card"
+    },
+    {
+      "name": "uiable-label-disabled",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Disabled Label",
+      "description": "Label Disabled variant for component.",
+      "categories": [
+        "label"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "badge",
+        "input",
+        "label"
+      ],
+      "files": [
+        "@components/uiable/label/label-disabled.tsx"
+      ],
+      "keywords": [
+        "disabled",
+        "label",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-label-disabled",
+      "url": "https://uiable.com/r/uiable-label-disabled.json",
+      "previewUrl": "https://uiable.com/preview/uiable-label-disabled"
+    },
+    {
+      "name": "uiable-label-required",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Required Label",
+      "description": "Label Required variant for component.",
+      "categories": [
+        "label"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "input",
+        "label",
+        "tooltip"
+      ],
+      "files": [
+        "@components/uiable/label/label-required.tsx"
+      ],
+      "keywords": [
+        "required",
+        "label",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-label-required",
+      "url": "https://uiable.com/r/uiable-label-required.json",
+      "previewUrl": "https://uiable.com/preview/uiable-label-required"
+    },
+    {
       "name": "uiable-list-group-active",
       "kind": "component",
       "type": "registry:ui",
@@ -13644,6 +13917,61 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-active",
       "url": "https://uiable.com/r/uiable-list-group-active.json",
       "previewUrl": "https://uiable.com/preview/uiable-list-group-active"
+    },
+    {
+      "name": "uiable-list-group-avatar",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Avatar List Group",
+      "description": "List Group Avatar variant for component.",
+      "categories": [
+        "list-group"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "badge"
+      ],
+      "files": [
+        "@components/uiable/list-group/list-group-avatar.tsx"
+      ],
+      "keywords": [
+        "avatar",
+        "list",
+        "group",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-avatar",
+      "url": "https://uiable.com/r/uiable-list-group-avatar.json",
+      "previewUrl": "https://uiable.com/preview/uiable-list-group-avatar"
+    },
+    {
+      "name": "uiable-list-group-badge",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Badge List Group",
+      "description": "List Group Badge variant for component.",
+      "categories": [
+        "list-group"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        "@components/uiable/list-group/list-group-badge.tsx"
+      ],
+      "keywords": [
+        "badge",
+        "list",
+        "group",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-badge",
+      "url": "https://uiable.com/r/uiable-list-group-badge.json",
+      "previewUrl": "https://uiable.com/preview/uiable-list-group-badge"
     },
     {
       "name": "uiable-list-group-basic",
@@ -13818,6 +14146,34 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-links",
       "url": "https://uiable.com/r/uiable-list-group-links.json",
       "previewUrl": "https://uiable.com/preview/uiable-list-group-links"
+    },
+    {
+      "name": "uiable-list-group-nested",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Nested List Group",
+      "description": "List Group Nested variant for component.",
+      "categories": [
+        "list-group"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "files": [
+        "@components/uiable/list-group/list-group-nested.tsx"
+      ],
+      "keywords": [
+        "nested",
+        "list",
+        "group",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-nested",
+      "url": "https://uiable.com/r/uiable-list-group-nested.json",
+      "previewUrl": "https://uiable.com/preview/uiable-list-group-nested"
     },
     {
       "name": "uiable-list-group-numbered",
@@ -15930,6 +16286,131 @@
       "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-basic",
       "url": "https://uiable.com/r/uiable-scroll-area-basic.json",
       "previewUrl": "https://uiable.com/preview/uiable-scroll-area-basic"
+    },
+    {
+      "name": "uiable-scroll-area-chat-scroller",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Chat Scroller Scroll Area",
+      "description": "Scroll Area Chat Scroller variant for component.",
+      "categories": [
+        "scroll-area"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button",
+        "card",
+        "scroll-area"
+      ],
+      "files": [
+        "@components/uiable/scroll-area/scroll-area-chat-scroller.tsx"
+      ],
+      "keywords": [
+        "chat",
+        "scroller",
+        "scroll",
+        "area",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-chat-scroller",
+      "url": "https://uiable.com/r/uiable-scroll-area-chat-scroller.json",
+      "previewUrl": "https://uiable.com/preview/uiable-scroll-area-chat-scroller"
+    },
+    {
+      "name": "uiable-scroll-area-horizontal",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Horizontal Scroll Area",
+      "description": "Scroll Area Horizontal variant for component.",
+      "categories": [
+        "scroll-area"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "scroll-area"
+      ],
+      "files": [
+        "@components/uiable/scroll-area/scroll-area-horizontal.tsx"
+      ],
+      "keywords": [
+        "horizontal",
+        "scroll",
+        "area",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-horizontal",
+      "url": "https://uiable.com/r/uiable-scroll-area-horizontal.json",
+      "previewUrl": "https://uiable.com/preview/uiable-scroll-area-horizontal"
+    },
+    {
+      "name": "uiable-scroll-area-image-scroll",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Image Scroll Area",
+      "description": "Scroll Area Image Scroll variant for component.",
+      "categories": [
+        "scroll-area"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "scroll-area"
+      ],
+      "files": [
+        "@components/uiable/scroll-area/scroll-area-image-scroll.tsx"
+      ],
+      "keywords": [
+        "image",
+        "scroll",
+        "area",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-image-scroll",
+      "url": "https://uiable.com/r/uiable-scroll-area-image-scroll.json",
+      "previewUrl": "https://uiable.com/preview/uiable-scroll-area-image-scroll"
+    },
+    {
+      "name": "uiable-scroll-area-terminal-logs",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Terminal Logs Scroll Area",
+      "description": "Scroll Area Terminal Logs variant for component.",
+      "categories": [
+        "scroll-area"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "scroll-area"
+      ],
+      "files": [
+        "@components/uiable/scroll-area/scroll-area-terminal-logs.tsx"
+      ],
+      "keywords": [
+        "terminal",
+        "logs",
+        "scroll",
+        "area",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-terminal-logs",
+      "url": "https://uiable.com/r/uiable-scroll-area-terminal-logs.json",
+      "previewUrl": "https://uiable.com/preview/uiable-scroll-area-terminal-logs"
     },
     {
       "name": "uiable-search-bar",
