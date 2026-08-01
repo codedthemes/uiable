@@ -3,7 +3,7 @@ import { Heart, MessageCircle, Reply } from "lucide-react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-// constants
+// constant
 const testimonials = [
   {
     name: "Sarah Connor",
