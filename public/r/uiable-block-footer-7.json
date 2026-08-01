@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-block-footer-7",
   "title": "Footer 7",
-  "description": "Footer variant for block.",
+  "description": "Footer 7 variant for block.",
   "files": [
     {
       "path": "src/components/uiable/blocks/footer/footer-7/footer-7.tsx",

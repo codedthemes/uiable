@@ -20,6 +20,59 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.5.0",
+    date: "August 4, 2026",
+    anchor: "v1-5-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          {
+            text: "Feature: Feature 1",
+            previewUrl: "/preview/feature/feature-1/feature-1",
+          },
+          {
+            text: "Footer: Footer 7",
+            previewUrl: "/preview/footer/footer-7/footer-7",
+          },
+          {
+            text: "Gallery: Gallery 2",
+            previewUrl: "/preview/gallery/gallery-2/gallery-2",
+          },
+          {
+            text: "Portfolio: Portfolio 5",
+            previewUrl: "/preview/portfolio/portfolio-5/portfolio-5",
+          },
+          {
+            text: "Process: Process 6",
+            previewUrl: "/preview/process/process-6/process-6",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Kbd: Arrow Keys, Function Keys, Shortcut Keys",
+            previewUrl: "/components/kbd",
+          },
+          {
+            text: "Label: Card, Disabled, Required",
+            previewUrl: "/components/label",
+          },
+          {
+            text: "List Group: Avatar, Badge, Nested",
+            previewUrl: "/components/list-group",
+          },
+          {
+            text: "Scroll Area: Chat Scroller, Horizontal, Image Scroll, Terminal Logs",
+            previewUrl: "/components/scroll-area",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.4.0",
     date: "July 28, 2026",
     anchor: "v1-4-0",
@@ -27,16 +80,22 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
       {
         title: "New Blocks",
         items: [
-          { text: "Pricing: Pricing 2", previewUrl: "/blocks/pricing" },
-          { text: "Process: Process 1", previewUrl: "/blocks/process" },
+          {
+            text: "Pricing: Pricing 2",
+            previewUrl: "/preview/pricing/pricing-2/pricing-2",
+          },
+          {
+            text: "Process: Process 1",
+            previewUrl: "/preview/process/process-1/process-1",
+          },
           {
             text: "Statistics: Statistics 1",
-            previewUrl: "/blocks/statistics",
+            previewUrl: "/preview/statistics/statistics-1/statistics-1",
           },
-          { text: "Team: Team 1", previewUrl: "/blocks/team" },
+          { text: "Team: Team 1", previewUrl: "/preview/team/team-1/team-1" },
           {
             text: "Testimonial: Testimonial 1",
-            previewUrl: "/blocks/testimonial",
+            previewUrl: "/preview/testimonial/testimonial-1/testimonial-1",
           },
         ],
       },
@@ -122,23 +181,23 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         items: [
           {
             text: "Hero: Hero 2",
-            previewUrl: "/blocks/hero",
+            previewUrl: "/preview/hero/hero-2/hero-2",
           },
           {
             text: "Feature: Feature 2",
-            previewUrl: "/blocks/feature",
+            previewUrl: "/preview/feature/feature-2/feature-2",
           },
           {
             text: "Footer: Footer 3",
-            previewUrl: "/blocks/footer",
+            previewUrl: "/preview/footer/footer-3/footer-3",
           },
           {
             text: "Gallery: Gallery 4",
-            previewUrl: "/blocks/gallery",
+            previewUrl: "/preview/gallery/gallery-4/gallery-4",
           },
           {
             text: "Portfolio: Portfolio 4",
-            previewUrl: "/blocks/portfolio",
+            previewUrl: "/preview/portfolio/portfolio-4/portfolio-4",
           },
         ],
       },

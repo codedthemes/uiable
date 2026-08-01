@@ -1,13 +1,13 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-nested",
-  "title": "Nested List Group",
+  "title": "List Group Nested",
   "description": "List Group Nested variant for component.",
   "dependencies": [
     "lucide-react"
   ],
   "registryDependencies": [
-    "collapsible"
+    "@uiable/collapsible"
   ],
   "files": [
     {

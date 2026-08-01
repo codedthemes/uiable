@@ -1,12 +1,12 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-label-card",
-  "title": "Card Label",
+  "title": "Label Card",
   "description": "Label Card variant for component.",
   "registryDependencies": [
-    "badge",
-    "label",
-    "switch"
+    "@uiable/badge",
+    "@uiable/label",
+    "@uiable/switch"
   ],
   "files": [
     {

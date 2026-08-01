@@ -1,13 +1,13 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-badge",
-  "title": "Badge List Group",
+  "title": "List Group Badge",
   "description": "List Group Badge variant for component.",
   "dependencies": [
     "lucide-react"
   ],
   "registryDependencies": [
-    "badge"
+    "@uiable/badge"
   ],
   "files": [
     {

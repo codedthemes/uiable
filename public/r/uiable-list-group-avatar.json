@@ -1,11 +1,11 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-avatar",
-  "title": "Avatar List Group",
+  "title": "List Group Avatar",
   "description": "List Group Avatar variant for component.",
   "registryDependencies": [
-    "avatar",
-    "badge"
+    "@uiable/avatar",
+    "@uiable/badge"
   ],
   "files": [
     {

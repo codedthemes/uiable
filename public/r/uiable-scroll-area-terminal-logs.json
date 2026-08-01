@@ -1,16 +1,16 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-scroll-area-terminal-logs",
-  "title": "Terminal Logs Scroll Area",
+  "title": "Scroll Area Terminal Logs",
   "description": "Scroll Area Terminal Logs variant for component.",
   "dependencies": [
     "lucide-react"
   ],
   "registryDependencies": [
-    "badge",
-    "button",
-    "card",
-    "scroll-area"
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/scroll-area"
   ],
   "files": [
     {

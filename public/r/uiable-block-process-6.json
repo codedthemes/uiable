@@ -2,7 +2,10 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-block-process-6",
   "title": "Process 6",
-  "description": "Process variant for block.",
+  "description": "Process 6 variant for block.",
+  "dependencies": [
+    "lucide-react"
+  ],
   "files": [
     {
       "path": "src/components/uiable/blocks/process/process-6/process-6.tsx",

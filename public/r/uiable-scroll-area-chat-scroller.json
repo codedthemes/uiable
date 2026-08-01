@@ -1,17 +1,17 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-scroll-area-chat-scroller",
-  "title": "Chat Scroller Scroll Area",
+  "title": "Scroll Area Chat Scroller",
   "description": "Scroll Area Chat Scroller variant for component.",
   "dependencies": [
     "lucide-react"
   ],
   "registryDependencies": [
-    "avatar",
-    "badge",
-    "button",
-    "card",
-    "scroll-area"
+    "@uiable/avatar",
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/scroll-area"
   ],
   "files": [
     {

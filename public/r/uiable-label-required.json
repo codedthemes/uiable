@@ -1,15 +1,15 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-label-required",
-  "title": "Required Label",
+  "title": "Label Required",
   "description": "Label Required variant for component.",
   "dependencies": [
     "lucide-react"
   ],
   "registryDependencies": [
-    "input",
-    "label",
-    "tooltip"
+    "@uiable/input",
+    "@uiable/label",
+    "@uiable/tooltip"
   ],
   "files": [
     {

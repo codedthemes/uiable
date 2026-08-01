@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-block-portfolio-5",
   "title": "Portfolio 5",
-  "description": "Portfolio variant for block.",
+  "description": "Portfolio 5 variant for block.",
   "registryDependencies": [
-    "button"
+    "@uiable/button"
   ],
   "files": [
     {

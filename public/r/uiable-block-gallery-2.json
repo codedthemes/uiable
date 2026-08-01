@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-block-gallery-2",
   "title": "Gallery 2",
-  "description": "Gallery variant for block.",
+  "description": "Gallery 2 variant for block.",
   "files": [
     {
       "path": "src/components/uiable/blocks/gallery/gallery-2/gallery-2.tsx",

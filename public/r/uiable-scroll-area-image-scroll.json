@@ -1,15 +1,15 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-scroll-area-image-scroll",
-  "title": "Image Scroll Area",
+  "title": "Scroll Area Image Scroll",
   "description": "Scroll Area Image Scroll variant for component.",
   "dependencies": [
     "lucide-react"
   ],
   "registryDependencies": [
-    "badge",
-    "button",
-    "scroll-area"
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/scroll-area"
   ],
   "files": [
     {

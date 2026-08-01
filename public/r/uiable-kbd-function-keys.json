@@ -1,10 +1,10 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-kbd-function-keys",
-  "title": "Function Keys Kbd",
+  "title": "Kbd Function Keys",
   "description": "Kbd Function Keys variant for component.",
   "registryDependencies": [
-    "kbd"
+    "@uiable/kbd"
   ],
   "files": [
     {

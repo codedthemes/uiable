@@ -1,10 +1,10 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-kbd-shortcut-keys",
-  "title": "Shortcut Keys Kbd",
+  "title": "Kbd Shortcut Keys",
   "description": "Kbd Shortcut Keys variant for component.",
   "registryDependencies": [
-    "kbd"
+    "@uiable/kbd"
   ],
   "files": [
     {

@@ -4484,7 +4484,7 @@
       "kind": "block",
       "type": "registry:block",
       "title": "Feature 1",
-      "description": "Feature variant for block.",
+      "description": "Feature 1 variant for block.",
       "categories": [
         "feature"
       ],
@@ -4580,7 +4580,7 @@
       "kind": "block",
       "type": "registry:block",
       "title": "Footer 7",
-      "description": "Footer variant for block.",
+      "description": "Footer 7 variant for block.",
       "categories": [
         "footer"
       ],
@@ -4602,7 +4602,7 @@
       "kind": "block",
       "type": "registry:block",
       "title": "Gallery 2",
-      "description": "Gallery variant for block.",
+      "description": "Gallery 2 variant for block.",
       "categories": [
         "gallery"
       ],
@@ -4791,13 +4791,13 @@
       "kind": "block",
       "type": "registry:block",
       "title": "Portfolio 5",
-      "description": "Portfolio variant for block.",
+      "description": "Portfolio 5 variant for block.",
       "categories": [
         "portfolio"
       ],
       "dependencies": [],
       "registryDependencies": [
-        "button"
+        "@uiable/button"
       ],
       "files": [
         "@components/uiable/blocks/portfolio/portfolio-5/portfolio-5.tsx"
@@ -4865,11 +4865,13 @@
       "kind": "block",
       "type": "registry:block",
       "title": "Process 6",
-      "description": "Process variant for block.",
+      "description": "Process 6 variant for block.",
       "categories": [
         "process"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "lucide-react"
+      ],
       "registryDependencies": [],
       "files": [
         "@components/uiable/blocks/process/process-6/process-6.tsx"
@@ -13604,22 +13606,22 @@
       "name": "uiable-kbd-arrow-keys",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Arrow Keys Kbd",
+      "title": "Kbd Arrow Keys",
       "description": "Kbd Arrow Keys variant for component.",
       "categories": [
         "kbd"
       ],
       "dependencies": [],
       "registryDependencies": [
-        "kbd"
+        "@uiable/kbd"
       ],
       "files": [
         "@components/uiable/kbd/kbd-arrow-keys.tsx"
       ],
       "keywords": [
+        "kbd",
         "arrow",
         "keys",
-        "kbd",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-kbd-arrow-keys",
@@ -13656,22 +13658,22 @@
       "name": "uiable-kbd-function-keys",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Function Keys Kbd",
+      "title": "Kbd Function Keys",
       "description": "Kbd Function Keys variant for component.",
       "categories": [
         "kbd"
       ],
       "dependencies": [],
       "registryDependencies": [
-        "kbd"
+        "@uiable/kbd"
       ],
       "files": [
         "@components/uiable/kbd/kbd-function-keys.tsx"
       ],
       "keywords": [
+        "kbd",
         "function",
         "keys",
-        "kbd",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-kbd-function-keys",
@@ -13736,22 +13738,22 @@
       "name": "uiable-kbd-shortcut-keys",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Shortcut Keys Kbd",
+      "title": "Kbd Shortcut Keys",
       "description": "Kbd Shortcut Keys variant for component.",
       "categories": [
         "kbd"
       ],
       "dependencies": [],
       "registryDependencies": [
-        "kbd"
+        "@uiable/kbd"
       ],
       "files": [
         "@components/uiable/kbd/kbd-shortcut-keys.tsx"
       ],
       "keywords": [
+        "kbd",
         "shortcut",
         "keys",
-        "kbd",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-kbd-shortcut-keys",
@@ -13815,23 +13817,23 @@
       "name": "uiable-label-card",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Card Label",
+      "title": "Label Card",
       "description": "Label Card variant for component.",
       "categories": [
         "label"
       ],
       "dependencies": [],
       "registryDependencies": [
-        "badge",
-        "label",
-        "switch"
+        "@uiable/badge",
+        "@uiable/label",
+        "@uiable/switch"
       ],
       "files": [
         "@components/uiable/label/label-card.tsx"
       ],
       "keywords": [
-        "card",
         "label",
+        "card",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-label-card",
@@ -13842,23 +13844,23 @@
       "name": "uiable-label-disabled",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Disabled Label",
+      "title": "Label Disabled",
       "description": "Label Disabled variant for component.",
       "categories": [
         "label"
       ],
       "dependencies": [],
       "registryDependencies": [
-        "badge",
-        "input",
-        "label"
+        "@uiable/badge",
+        "@uiable/input",
+        "@uiable/label"
       ],
       "files": [
         "@components/uiable/label/label-disabled.tsx"
       ],
       "keywords": [
-        "disabled",
         "label",
+        "disabled",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-label-disabled",
@@ -13869,7 +13871,7 @@
       "name": "uiable-label-required",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Required Label",
+      "title": "Label Required",
       "description": "Label Required variant for component.",
       "categories": [
         "label"
@@ -13878,16 +13880,16 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "input",
-        "label",
-        "tooltip"
+        "@uiable/input",
+        "@uiable/label",
+        "@uiable/tooltip"
       ],
       "files": [
         "@components/uiable/label/label-required.tsx"
       ],
       "keywords": [
-        "required",
         "label",
+        "required",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-label-required",
@@ -13922,23 +13924,23 @@
       "name": "uiable-list-group-avatar",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Avatar List Group",
+      "title": "List Group Avatar",
       "description": "List Group Avatar variant for component.",
       "categories": [
         "list-group"
       ],
       "dependencies": [],
       "registryDependencies": [
-        "avatar",
-        "badge"
+        "@uiable/avatar",
+        "@uiable/badge"
       ],
       "files": [
         "@components/uiable/list-group/list-group-avatar.tsx"
       ],
       "keywords": [
-        "avatar",
         "list",
         "group",
+        "avatar",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-avatar",
@@ -13949,7 +13951,7 @@
       "name": "uiable-list-group-badge",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Badge List Group",
+      "title": "List Group Badge",
       "description": "List Group Badge variant for component.",
       "categories": [
         "list-group"
@@ -13958,15 +13960,15 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "badge"
+        "@uiable/badge"
       ],
       "files": [
         "@components/uiable/list-group/list-group-badge.tsx"
       ],
       "keywords": [
-        "badge",
         "list",
         "group",
+        "badge",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-badge",
@@ -14151,7 +14153,7 @@
       "name": "uiable-list-group-nested",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Nested List Group",
+      "title": "List Group Nested",
       "description": "List Group Nested variant for component.",
       "categories": [
         "list-group"
@@ -14160,15 +14162,15 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "collapsible"
+        "@uiable/collapsible"
       ],
       "files": [
         "@components/uiable/list-group/list-group-nested.tsx"
       ],
       "keywords": [
-        "nested",
         "list",
         "group",
+        "nested",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-list-group-nested",
@@ -16291,7 +16293,7 @@
       "name": "uiable-scroll-area-chat-scroller",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Chat Scroller Scroll Area",
+      "title": "Scroll Area Chat Scroller",
       "description": "Scroll Area Chat Scroller variant for component.",
       "categories": [
         "scroll-area"
@@ -16300,20 +16302,20 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "avatar",
-        "badge",
-        "button",
-        "card",
-        "scroll-area"
+        "@uiable/avatar",
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/scroll-area"
       ],
       "files": [
         "@components/uiable/scroll-area/scroll-area-chat-scroller.tsx"
       ],
       "keywords": [
-        "chat",
-        "scroller",
         "scroll",
         "area",
+        "chat",
+        "scroller",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-chat-scroller",
@@ -16324,7 +16326,7 @@
       "name": "uiable-scroll-area-horizontal",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Horizontal Scroll Area",
+      "title": "Scroll Area Horizontal",
       "description": "Scroll Area Horizontal variant for component.",
       "categories": [
         "scroll-area"
@@ -16333,17 +16335,17 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "badge",
-        "button",
-        "scroll-area"
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/scroll-area"
       ],
       "files": [
         "@components/uiable/scroll-area/scroll-area-horizontal.tsx"
       ],
       "keywords": [
-        "horizontal",
         "scroll",
         "area",
+        "horizontal",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-horizontal",
@@ -16354,7 +16356,7 @@
       "name": "uiable-scroll-area-image-scroll",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Image Scroll Area",
+      "title": "Scroll Area Image Scroll",
       "description": "Scroll Area Image Scroll variant for component.",
       "categories": [
         "scroll-area"
@@ -16363,17 +16365,17 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "badge",
-        "button",
-        "scroll-area"
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/scroll-area"
       ],
       "files": [
         "@components/uiable/scroll-area/scroll-area-image-scroll.tsx"
       ],
       "keywords": [
-        "image",
         "scroll",
         "area",
+        "image",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-image-scroll",
@@ -16384,7 +16386,7 @@
       "name": "uiable-scroll-area-terminal-logs",
       "kind": "component",
       "type": "registry:ui",
-      "title": "Terminal Logs Scroll Area",
+      "title": "Scroll Area Terminal Logs",
       "description": "Scroll Area Terminal Logs variant for component.",
       "categories": [
         "scroll-area"
@@ -16393,19 +16395,19 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "badge",
-        "button",
-        "card",
-        "scroll-area"
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/scroll-area"
       ],
       "files": [
         "@components/uiable/scroll-area/scroll-area-terminal-logs.tsx"
       ],
       "keywords": [
-        "terminal",
-        "logs",
         "scroll",
         "area",
+        "terminal",
+        "logs",
         "component"
       ],
       "addCommand": "npx shadcn@latest add @uiable/uiable-scroll-area-terminal-logs",

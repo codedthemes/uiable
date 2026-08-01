@@ -1,12 +1,12 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-label-disabled",
-  "title": "Disabled Label",
+  "title": "Label Disabled",
   "description": "Label Disabled variant for component.",
   "registryDependencies": [
-    "badge",
-    "input",
-    "label"
+    "@uiable/badge",
+    "@uiable/input",
+    "@uiable/label"
   ],
   "files": [
     {

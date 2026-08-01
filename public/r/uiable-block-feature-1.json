@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-block-feature-1",
   "title": "Feature 1",
-  "description": "Feature variant for block.",
+  "description": "Feature 1 variant for block.",
   "files": [
     {
       "path": "src/components/uiable/blocks/feature/feature-1/feature-1.tsx",
