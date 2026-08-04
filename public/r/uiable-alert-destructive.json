@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-destructive",
-  "title": "Destructive Alert",
-  "description": "Alert Destructive variant for alert.",
+  "title": "Alert Destructive",
+  "description": "Alert Destructive variant for component.",
   "dependencies": [
     "lucide-react"
   ],

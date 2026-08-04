@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-menubar-radio",
-  "title": "Radio Menubar",
-  "description": "Menubar Radio variant for menubar.",
+  "title": "Menubar Radio",
+  "description": "Menubar Radio variant for component.",
   "registryDependencies": [
     "@uiable/menubar"
   ],

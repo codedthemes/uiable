@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-tabs-basic",
-  "title": "Basic Tabs",
-  "description": "Tabs Basic variant for tabs.",
+  "title": "Tabs Basic",
+  "description": "Tabs Basic variant for component.",
   "registryDependencies": [
     "@uiable/tabs"
   ],

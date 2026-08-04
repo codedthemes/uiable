@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-date-picker-basic",
-  "title": "Basic Date Picker",
-  "description": "Date Picker Basic variant for date-picker.",
+  "title": "Date Picker Basic",
+  "description": "Date Picker Basic variant for component.",
   "dependencies": [
     "date-fns"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-pill-warning",
-  "title": "Warning Pill Badge",
-  "description": "Badge Pill Warning variant for badge.",
+  "title": "Badge Pill Warning",
+  "description": "Badge Pill Warning variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

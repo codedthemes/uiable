@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-badge-icon",
-  "title": "Badge Icon Avatar",
-  "description": "Avatar Badge Icon variant for avatar.",
+  "title": "Avatar Badge Icon",
+  "description": "Avatar Badge Icon variant for component.",
   "dependencies": [
     "lucide-react"
   ],

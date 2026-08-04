@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-scroller-reader-position",
-  "title": "Tracking the Reader's Position",
-  "description": "Message Scroller Reader Position variant for message-scroller.",
+  "title": "Message Scroller Reader Position",
+  "description": "Message Scroller Reader Position variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/card",

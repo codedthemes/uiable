@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-solid-success",
-  "title": "Solid Success Button",
-  "description": "Button Solid Success variant for button.",
+  "title": "Button Solid Success",
+  "description": "Button Solid Success variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

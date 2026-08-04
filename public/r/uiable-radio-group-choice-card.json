@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-group-choice-card",
-  "title": "Choice Card Radio Group",
-  "description": "Radio Group Choice Card variant for radio-group.",
+  "title": "Radio Group Choice Card",
+  "description": "Radio Group Choice Card variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/radio-group"

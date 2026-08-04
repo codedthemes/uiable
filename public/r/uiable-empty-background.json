@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-empty-background",
   "title": "Empty Background",
-  "description": "Empty Background variant for empty.",
+  "description": "Empty Background variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

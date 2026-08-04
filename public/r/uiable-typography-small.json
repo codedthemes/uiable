@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-typography-small",
-  "title": "Small Typography",
-  "description": "Typography Small variant for typography.",
+  "title": "Typography Small",
+  "description": "Typography Small variant for component.",
   "files": [
     {
       "path": "src/components/uiable/typography/typography-small.tsx",

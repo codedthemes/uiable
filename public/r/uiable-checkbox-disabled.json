@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-checkbox-disabled",
-  "title": "Disabled Checkbox",
-  "description": "Checkbox Disabled variant for checkbox.",
+  "title": "Checkbox Disabled",
+  "description": "Checkbox Disabled variant for component.",
   "registryDependencies": [
     "@uiable/checkbox",
     "@uiable/field"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-skeleton-avatar",
-  "title": "Avatar Skeleton",
-  "description": "Skeleton Avatar variant for skeleton.",
+  "title": "Skeleton Avatar",
+  "description": "Skeleton Avatar variant for component.",
   "registryDependencies": [
     "@uiable/skeleton"
   ],

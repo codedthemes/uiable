@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-light-success",
-  "title": "Light Success Button",
-  "description": "Button Light Success variant for button.",
+  "title": "Button Light Success",
+  "description": "Button Light Success variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

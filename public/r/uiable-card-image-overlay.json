@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-image-overlay",
-  "title": "Image Overlay Card",
-  "description": "Card Image Overlay variant for card.",
+  "title": "Card Image Overlay",
+  "description": "Card Image Overlay variant for component.",
   "registryDependencies": [
     "@uiable/card"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-social",
-  "title": "Social Button",
-  "description": "Social button variant for button",
+  "title": "Button Social",
+  "description": "Button Social variant for component.",
   "dependencies": [
     "@tabler/icons-react",
     "next"

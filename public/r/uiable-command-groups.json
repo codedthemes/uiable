@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-groups",
-  "title": "Groups Command",
-  "description": "Command Groups variant for command.",
+  "title": "Command Groups",
+  "description": "Command Groups variant for component.",
   "dependencies": [
     "lucide-react"
   ],

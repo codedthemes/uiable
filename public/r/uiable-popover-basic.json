@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-popover-basic",
-  "title": "Basic Popover",
-  "description": "Popover Basic variant for popover.",
+  "title": "Popover Basic",
+  "description": "Popover Basic variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/popover"

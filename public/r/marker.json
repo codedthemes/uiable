@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "marker",
+  "title": "Marker",
+  "description": "Marker component.",
+  "dependencies": [
+    "@base-ui/react",
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "src/components/ui/marker.tsx",
+      "content": "import { ComponentProps } from \"react\"\r\nimport { mergeProps } from \"@base-ui/react/merge-props\"\r\nimport { useRender } from \"@base-ui/react/use-render\"\r\nimport { cva, VariantProps } from \"class-variance-authority\"\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nconst markerVariants = cva(\r\n  \"group/marker relative flex min-h-4 w-full items-center gap-2 text-left text-sm text-muted-foreground [&_svg:not([class*='size-'])]:size-4 [a]:underline [a]:underline-offset-3 [a]:hover:text-foreground\",\r\n  {\r\n    variants: {\r\n      variant: {\r\n        default: \"\",\r\n        separator:\r\n          \"before:mr-1 before:h-px before:min-w-0 before:flex-1 before:bg-border after:ml-1 after:h-px after:min-w-0 after:flex-1 after:bg-border\",\r\n        border: \"border-b border-border pb-2\",\r\n      },\r\n    },\r\n  }\r\n)\r\n\r\nfunction Marker({\r\n  className,\r\n  variant = \"default\",\r\n  render,\r\n  ...props\r\n}: useRender.ComponentProps<\"div\"> & VariantProps<typeof markerVariants>) {\r\n  return useRender({\r\n    defaultTagName: \"div\",\r\n    props: mergeProps<\"div\">(\r\n      {\r\n        className: cn(markerVariants({ variant, className })),\r\n      },\r\n      props\r\n    ),\r\n    render,\r\n    state: {\r\n      slot: \"marker\",\r\n      variant,\r\n    },\r\n  })\r\n}\r\n\r\nfunction MarkerIcon({ className, ...props }: ComponentProps<\"span\">) {\r\n  return (\r\n    <span\r\n      data-slot=\"marker-icon\"\r\n      aria-hidden=\"true\"\r\n      className={cn(\r\n        \"size-4 shrink-0 [&_svg:not([class*='size-'])]:size-4\",\r\n        className\r\n      )}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction MarkerContent({ className, ...props }: ComponentProps<\"span\">) {\r\n  return (\r\n    <span\r\n      data-slot=\"marker-content\"\r\n      className={cn(\r\n        \"min-w-0 wrap-break-word group-data-[variant=separator]/marker:flex-none group-data-[variant=separator]/marker:text-center *:[a]:underline *:[a]:underline-offset-3 *:[a]:hover:text-foreground\",\r\n        className\r\n      )}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport { Marker, MarkerIcon, MarkerContent, markerVariants }\r\n",
+      "type": "registry:component",
+      "target": "@components/ui/marker.tsx"
+    }
+  ],
+  "categories": [
+    "marker"
+  ],
+  "type": "registry:ui"
+}

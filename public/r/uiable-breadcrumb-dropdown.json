@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-breadcrumb-dropdown",
-  "title": "Dropdown Breadcrumb",
-  "description": "Breadcrumb Dropdown variant for breadcrumb.",
+  "title": "Breadcrumb Dropdown",
+  "description": "Breadcrumb Dropdown variant for component.",
   "dependencies": [
     "lucide-react",
     "next"

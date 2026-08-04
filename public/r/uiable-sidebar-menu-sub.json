@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-menu-sub",
-  "title": "Menu Sub Sidebar",
+  "title": "Sidebar Menu Sub",
   "description": "Sidebar Menu Sub variant for component.",
   "registryDependencies": [
     "@uiable/sidebar"

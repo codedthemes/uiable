@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-solid-warning",
-  "title": "Warning Solid Badge",
-  "description": "Badge Solid Warning variant for badge.",
+  "title": "Badge Solid Warning",
+  "description": "Badge Solid Warning variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

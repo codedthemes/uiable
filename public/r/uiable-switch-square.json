@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-switch-square",
-  "title": "Square Switch",
-  "description": "Switch Square variant for switch.",
+  "title": "Switch Square",
+  "description": "Switch Square variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/switch"

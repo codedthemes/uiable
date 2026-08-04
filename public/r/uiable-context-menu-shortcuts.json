@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-context-menu-shortcuts",
-  "title": "Shortcuts Context Menu",
-  "description": "Context Menu Shortcuts variant for context-menu.",
+  "title": "Context Menu Shortcuts",
+  "description": "Context Menu Shortcuts variant for component.",
   "registryDependencies": [
     "@uiable/context-menu"
   ],

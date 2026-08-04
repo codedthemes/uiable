@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-custom-days",
-  "title": "Custom Days Calendar",
-  "description": "Calendar Custom Days variant for calendar.",
+  "title": "Calendar Custom Days",
+  "description": "Calendar Custom Days variant for component.",
   "dependencies": [
     "date-fns",
     "react-day-picker"

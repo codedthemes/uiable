@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-group-label",
-  "title": "Label Input Group",
-  "description": "Input Group Label variant for input-group.",
+  "title": "Input Group Label",
+  "description": "Input Group Label variant for component.",
   "dependencies": [
     "lucide-react"
   ],

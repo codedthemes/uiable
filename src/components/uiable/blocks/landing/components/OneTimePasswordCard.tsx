@@ -20,7 +20,7 @@ export default function OneTimePasswordCard() {
         One-Time Password
       </p>
       <div className="flex justify-start">
-        <InputOTP maxLength={6} value={otp} onChange={setOtp}>
+        <InputOTP maxLength={6} value={otp} onChange={setOtp} aria-label="One-time password">
           <InputOTPGroup>
             <InputOTPSlot index={0} className="w-9 h-9" />
             <InputOTPSlot index={1} className="w-9 h-9" />

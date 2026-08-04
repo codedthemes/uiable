@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-collapsible-file-tree",
-  "title": "File Tree Collapsible",
-  "description": "Collapsible File Tree variant for collapsible.",
+  "title": "Collapsible File Tree",
+  "description": "Collapsible File Tree variant for component.",
   "dependencies": [
     "lucide-react"
   ],

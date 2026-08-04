@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-date-picker-input",
-  "title": "Input Date Picker",
-  "description": "Date Picker Input variant for date-picker.",
+  "title": "Date Picker Input",
+  "description": "Date Picker Input variant for component.",
   "dependencies": [
     "lucide-react"
   ],

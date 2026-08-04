@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-checkbox-invalid",
-  "title": "Invalid Checkbox",
-  "description": "Checkbox Invalid variant for checkbox.",
+  "title": "Checkbox Invalid",
+  "description": "Checkbox Invalid variant for component.",
   "registryDependencies": [
     "@uiable/checkbox",
     "@uiable/field"

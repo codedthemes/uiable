@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-clear",
-  "title": "Clear Combobox",
-  "description": "Combobox Clear variant for combobox.",
+  "title": "Combobox Clear",
+  "description": "Combobox Clear variant for component.",
   "registryDependencies": [
     "@uiable/combobox"
   ],

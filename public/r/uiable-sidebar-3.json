@@ -2,15 +2,15 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-3",
   "title": "Sidebar 3",
-  "description": "Sidebar variant 3.",
+  "description": "Sidebar 3 variant for component.",
   "dependencies": [
     "lucide-react"
   ],
   "registryDependencies": [
     "@uiable/button",
     "@uiable/collapsible",
-    "@uiable/sidebar",
-    "uiable-layout-logo"
+    "@uiable/logo",
+    "@uiable/sidebar"
   ],
   "files": [
     {

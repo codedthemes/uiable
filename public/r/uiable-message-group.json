@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-group",
   "title": "Message Group",
-  "description": "Message Group variant for message.",
+  "description": "Message Group variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/bubble",

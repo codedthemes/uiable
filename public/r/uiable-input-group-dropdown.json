@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-group-dropdown",
-  "title": "Dropdown Input Group",
-  "description": "Input Group Dropdown variant for input-group.",
+  "title": "Input Group Dropdown",
+  "description": "Input Group Dropdown variant for component.",
   "dependencies": [
     "lucide-react"
   ],

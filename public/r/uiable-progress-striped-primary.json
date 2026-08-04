@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-progress-striped-primary",
-  "title": "Striped Primary Progress",
-  "description": "Progress Striped Primary variant for progress.",
+  "title": "Progress Striped Primary",
+  "description": "Progress Striped Primary variant for component.",
   "dependencies": [
     "@base-ui/react"
   ],

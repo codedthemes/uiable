@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-scrollable",
-  "title": "Scrollable Command",
-  "description": "Command Scrollable variant for command.",
+  "title": "Command Scrollable",
+  "description": "Command Scrollable variant for component.",
   "dependencies": [
     "lucide-react"
   ],

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-table-of-contents",
+  "title": "Table Of Contents",
+  "description": "Layout Table Of Contents variant for component.",
+  "files": [
+    {
+      "path": "src/components/uiable/layout/table-of-contents.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useEffect, useState } from \"react\";\r\n\r\n// project\r\nimport { cn } from \"@/lib/utils\";\r\n\r\ninterface TocItem {\r\n  title: string;\r\n  url: string;\r\n  items?: TocItem[];\r\n}\r\n\r\ninterface TableOfContentsProps {\r\n  items: TocItem[];\r\n}\r\n\r\n//  ------------------------------ | LAYOUT - TABLE OF CONTENTS | ------------------------------  //\r\n\r\nexport default function TableOfContents({ items }: TableOfContentsProps) {\r\n  const [activeId, setActiveId] = useState<string | null>(null);\r\n\r\n  useEffect(() => {\r\n    const observer = new IntersectionObserver(\r\n      (entries) => {\r\n        entries.forEach((entry) => {\r\n          if (entry.isIntersecting) {\r\n            setActiveId(entry.target.id);\r\n          }\r\n        });\r\n      },\r\n      { rootMargin: \"0% 0% -80% 0%\" }\r\n    );\r\n\r\n    items.forEach((item) => {\r\n      const element = document.getElementById(item.url.replace(\"#\", \"\"));\r\n      if (element) observer.observe(element);\r\n      item.items?.forEach((subItem) => {\r\n        const subElement = document.getElementById(\r\n          subItem.url.replace(\"#\", \"\")\r\n        );\r\n        if (subElement) observer.observe(subElement);\r\n      });\r\n    });\r\n\r\n    return () => observer.disconnect();\r\n  }, [items]);\r\n\r\n  return (\r\n    <div className=\"space-y-4\">\r\n      <ul className=\"\">\r\n        {items.map((item) => (\r\n          <li key={item.url}>\r\n            <a\r\n              href={item.url}\r\n              className={cn(\r\n                \"block transition-all hover:text-primary pl-3 py-1 border-l-2 border-l-transparent\",\r\n                activeId === item.url.replace(\"#\", \"\")\r\n                  ? \"border-primary text-primary\"\r\n                  : \"text-muted-foreground\"\r\n              )}\r\n            >\r\n              {item.title}\r\n            </a>\r\n            {item.items && item.items.length > 0 && (\r\n              <ul className=\"my-2.5 pl-3 \">\r\n                {item.items.map((subItem) => (\r\n                  <li key={subItem.url}>\r\n                    <a\r\n                      href={subItem.url}\r\n                      className={cn(\r\n                        \"block transition-colors hover:text-primary py-1 border-l-2 border-border/50 pl-3\",\r\n                        activeId === subItem.url.replace(\"#\", \"\")\r\n                          ? \"border-primary text-primary\"\r\n                          : \"text-muted-foreground\"\r\n                      )}\r\n                    >\r\n                      {subItem.title}\r\n                    </a>\r\n                  </li>\r\n                ))}\r\n              </ul>\r\n            )}\r\n          </li>\r\n        ))}\r\n      </ul>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/layout/table-of-contents.tsx"
+    }
+  ],
+  "categories": [
+    "layout"
+  ],
+  "type": "registry:ui"
+}

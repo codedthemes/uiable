@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-outlined",
-  "title": "Outlined Input Otp",
-  "description": "Input Otp Outlined variant for input-otp",
+  "title": "Input Otp Outlined",
+  "description": "Input Otp Outlined variant for component.",
   "registryDependencies": [
     "@uiable/input-otp"
   ],

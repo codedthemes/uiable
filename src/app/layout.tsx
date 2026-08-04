@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   title: `UI component library built on shadcn and Base UI - ${branding.brandName}`,
   description:
     "A set of beautifully designed UI components you can customize, extend, and make your own. Open source and built for Next.js",
+   verification: {
+    google: "iRaIhBSXplR-7cMYw5KsLhMEEOHHC8VZ-V2euMAVubA",
+  },
   icons: { icon: "https://cdn.uiable.com/brand/favicon.svg" },
   openGraph: {
     title: `UI component library built on shadcn and Base UI - ${branding.brandName}`,

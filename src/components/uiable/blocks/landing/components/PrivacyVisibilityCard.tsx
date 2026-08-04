@@ -90,7 +90,7 @@ export default function PrivacyVisibilityCard() {
         }}
         items={visibilityItems}
       >
-        <SelectTrigger className="w-full rounded-lg px-3.5 py-2.5 text-xs font-semibold h-auto bg-card">
+        <SelectTrigger aria-label="Select visibility" className="w-full rounded-lg px-3.5 py-2.5 text-xs font-semibold h-auto bg-card">
           <SelectValue />
         </SelectTrigger>
         <SelectContent>

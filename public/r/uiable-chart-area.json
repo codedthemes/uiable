@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-chart-area",
-  "title": "Area Chart",
+  "title": "Chart Area",
   "description": "Chart Area variant for component.",
   "dependencies": [
     "recharts"

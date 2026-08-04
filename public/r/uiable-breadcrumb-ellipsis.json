@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-breadcrumb-ellipsis",
-  "title": "Ellipsis Breadcrumb",
-  "description": "Breadcrumb Ellipsis variant for breadcrumb.",
+  "title": "Breadcrumb Ellipsis",
+  "description": "Breadcrumb Ellipsis variant for component.",
   "dependencies": [
     "next"
   ],

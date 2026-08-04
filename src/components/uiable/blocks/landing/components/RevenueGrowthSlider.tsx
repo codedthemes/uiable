@@ -38,10 +38,12 @@ export default function RevenueGrowthSlider() {
           </span>
         </div>
 
+        <label htmlFor="revenue-growth-slider" className="sr-only">Revenue growth percentage</label>
         <Slider
           defaultValue={[70]}
           max={100}
           step={1}
+          aria-label="Revenue growth percentage"
           className="w-full text-white [&_[data-slot=slider-range]]:bg-white [&_[data-slot=slider-thumb]]:border-white [&_[data-slot=slider-track]]:bg-white/30"
         />
       </div>

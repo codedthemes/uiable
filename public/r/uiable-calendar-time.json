@@ -1,9 +1,11 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-time",
-  "title": "Time Calendar",
-  "description": "Calendar Time variant for calendar.",
+  "title": "Calendar Time",
+  "description": "Calendar Time variant for component.",
   "dependencies": [
+    "\r\n                type=",
+    ">Start Time<",
     "lucide-react"
   ],
   "registryDependencies": [

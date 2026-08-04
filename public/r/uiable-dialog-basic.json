@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dialog-basic",
-  "title": "Basic Dialog",
-  "description": "Dialog Basic variant for dialog.",
+  "title": "Dialog Basic",
+  "description": "Dialog Basic variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog"

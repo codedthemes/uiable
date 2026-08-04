@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-textarea-readonly",
-  "title": "Readonly Textarea",
-  "description": "Textarea Readonly variant for textarea.",
+  "title": "Textarea Readonly",
+  "description": "Textarea Readonly variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/textarea"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-inline",
-  "title": "Inline Input",
-  "description": "Input Inline variant for input.",
+  "title": "Input Inline",
+  "description": "Input Inline variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/field",

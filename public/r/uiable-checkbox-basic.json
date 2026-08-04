@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-checkbox-basic",
-  "title": "Basic Checkbox",
-  "description": "Checkbox Basic variant for checkbox.",
+  "title": "Checkbox Basic",
+  "description": "Checkbox Basic variant for component.",
   "registryDependencies": [
     "@uiable/checkbox",
     "@uiable/field"

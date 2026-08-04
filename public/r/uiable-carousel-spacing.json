@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-carousel-spacing",
-  "title": "Spacing Carousel",
-  "description": "Carousel Spacing variant for carousel.",
+  "title": "Carousel Spacing",
+  "description": "Carousel Spacing variant for component.",
   "registryDependencies": [
     "@uiable/card",
     "@uiable/carousel"

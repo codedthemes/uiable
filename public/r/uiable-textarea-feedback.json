@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-textarea-feedback",
-  "title": "Feedback Textarea",
-  "description": "Textarea Feedback variant for textarea.",
+  "title": "Textarea Feedback",
+  "description": "Textarea Feedback variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/field",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-basic-secondary",
-  "title": "Secondary Dropdown Menu",
-  "description": "Dropdown Menu Basic Secondary variant for dropdown-menu.",
+  "title": "Dropdown Menu Basic Secondary",
+  "description": "Dropdown Menu Basic Secondary variant for component.",
   "dependencies": [
     "lucide-react"
   ],

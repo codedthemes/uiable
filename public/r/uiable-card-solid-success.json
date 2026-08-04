@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-solid-success",
-  "title": "Success Solid Card",
-  "description": "Card Solid Success variant for card.",
+  "title": "Card Solid Success",
+  "description": "Card Solid Success variant for component.",
   "registryDependencies": [
     "@uiable/card"
   ],

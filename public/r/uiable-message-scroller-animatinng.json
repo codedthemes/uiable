@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-scroller-animatinng",
-  "title": "Animating New Messages",
-  "description": "Message Scroller Animating variant for message-scroller.",
+  "title": "Message Scroller Animatinng",
+  "description": "Message Scroller Animatinng variant for component.",
   "dependencies": [
     "framer-motion",
     "lucide-react"

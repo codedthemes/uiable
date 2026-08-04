@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-group-basic",
-  "title": "Basic Input Group",
-  "description": "Input Group Basic variant for input-group.",
+  "title": "Input Group Basic",
+  "description": "Input Group Basic variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/input",

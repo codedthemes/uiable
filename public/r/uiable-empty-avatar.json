@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-empty-avatar",
   "title": "Empty Avatar",
-  "description": "Empty Avatar variant for empty.",
+  "description": "Empty Avatar variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/button",

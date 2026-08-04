@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-chart-example-axis",
-  "title": "Axis Chart Example",
-  "description": "Chart Example Axis variant for chart.",
+  "title": "Chart Example Axis",
+  "description": "Chart Example Axis variant for component.",
   "dependencies": [
     "recharts"
   ],

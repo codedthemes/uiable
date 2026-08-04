@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-basic",
-  "title": "Basic Card",
-  "description": "Card Basic variant for card.",
+  "title": "Card Basic",
+  "description": "Card Basic variant for component.",
   "registryDependencies": [
     "@uiable/card"
   ],

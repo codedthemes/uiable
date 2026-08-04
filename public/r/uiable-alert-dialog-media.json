@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-dialog-media",
-  "title": "Media Alert Dialog",
-  "description": "Alert Dialog Media variant for alert-dialog.",
+  "title": "Alert Dialog Media",
+  "description": "Alert Dialog Media variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

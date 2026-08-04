@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-drawer-scrollable-content",
-  "title": "Scrollable Content Drawer",
-  "description": "Drawer Scrollable Content variant for drawer.",
+  "title": "Drawer Scrollable Content",
+  "description": "Drawer Scrollable Content variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/drawer"

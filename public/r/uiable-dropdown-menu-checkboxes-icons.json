@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-checkboxes-icons",
-  "title": "Checkbox Icons Dropdown Menu",
-  "description": "Dropdown Menu Checkboxes Icons variant for dropdown-menu.",
+  "title": "Dropdown Menu Checkboxes Icons",
+  "description": "Dropdown Menu Checkboxes Icons variant for component.",
   "dependencies": [
     "lucide-react"
   ],

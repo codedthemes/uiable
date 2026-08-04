@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-drawer-dialog",
-  "title": "Dialog Drawer",
-  "description": "Drawer Dialog variant for drawer.",
+  "title": "Drawer Dialog",
+  "description": "Drawer Dialog variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog",

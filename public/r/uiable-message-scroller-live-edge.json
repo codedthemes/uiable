@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-scroller-live-edge",
-  "title": "Following the Live Edge",
-  "description": "Message Scroller Live Edge variant for message-scroller.",
+  "title": "Message Scroller Live Edge",
+  "description": "Message Scroller Live Edge variant for component.",
   "dependencies": [
     "@ai-sdk/react",
     "lucide-react"

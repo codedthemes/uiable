@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-menu-collapsible",
-  "title": "Menu Collapsible Sidebar",
+  "title": "Sidebar Menu Collapsible",
   "description": "Sidebar Menu Collapsible variant for component.",
   "dependencies": [
     "lucide-react"

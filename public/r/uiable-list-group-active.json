@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-active",
-  "title": "Active List Group",
-  "description": "List Group Active variant for list-group.",
+  "title": "List Group Active",
+  "description": "List Group Active variant for component.",
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-active.tsx",

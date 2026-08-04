@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-pagination-alignment",
-  "title": "Alignment Pagination",
-  "description": "Pagination Alignment variant for pagination.",
+  "title": "Pagination Alignment",
+  "description": "Pagination Alignment variant for component.",
   "registryDependencies": [
     "@uiable/pagination"
   ],

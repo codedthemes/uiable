@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-group-count-icon",
-  "title": "Group Count Icon Avatar",
-  "description": "Avatar Group Count Icon variant for avatar.",
+  "title": "Avatar Group Count Icon",
+  "description": "Avatar Group Count Icon variant for component.",
   "dependencies": [
     "lucide-react"
   ],

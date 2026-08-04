@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-changelog-entry",
-  "title": "Entry Changelog",
+  "title": "Changelog Entry",
   "description": "Changelog Entry variant for component.",
   "dependencies": [
     "lucide-react"

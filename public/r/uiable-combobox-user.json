@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-user",
-  "title": "Users Combobox",
-  "description": "Combobox User variant for combobox.",
+  "title": "Combobox User",
+  "description": "Combobox User variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/combobox",

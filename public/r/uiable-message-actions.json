@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-actions",
-  "title": "Actions",
-  "description": "Message Actions variant for message.",
+  "title": "Message Actions",
+  "description": "Message Actions variant for component.",
   "dependencies": [
     "lucide-react"
   ],

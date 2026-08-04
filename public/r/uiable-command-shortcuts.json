@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-shortcuts",
-  "title": "Shortcuts Command",
-  "description": "Command Shortcuts variant for command.",
+  "title": "Command Shortcuts",
+  "description": "Command Shortcuts variant for component.",
   "dependencies": [
     "lucide-react"
   ],

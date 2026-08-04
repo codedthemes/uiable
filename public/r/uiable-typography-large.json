@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-typography-large",
-  "title": "Large Typography",
-  "description": "Typography Large variant for typography.",
+  "title": "Typography Large",
+  "description": "Typography Large variant for component.",
   "files": [
     {
       "path": "src/components/uiable/typography/typography-large.tsx",

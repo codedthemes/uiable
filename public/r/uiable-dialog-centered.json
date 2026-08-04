@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dialog-centered",
-  "title": "Centered Dialog",
-  "description": "Dialog Centered variant for dialog.",
+  "title": "Dialog Centered",
+  "description": "Dialog Centered variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog"

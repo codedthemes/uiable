@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-dialog-basic",
-  "title": "Basic Alert Dialog",
-  "description": "Alert Dialog Basic variant for alert-dialog.",
+  "title": "Alert Dialog Basic",
+  "description": "Alert Dialog Basic variant for component.",
   "registryDependencies": [
     "@uiable/alert-dialog",
     "@uiable/button"

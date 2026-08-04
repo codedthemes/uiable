@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "uiable-repeat-customer-card",
+  "title": "Repeat Customer Card",
+  "description": "Widget Repeat Customer Card variant for component.",
+  "dependencies": [
+    "apexcharts",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/badge",
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/widget/repeat-customer-card.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useEffect, useRef } from \"react\";\r\n\r\n// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\nimport { buttonVariants } from \"@/components/ui/button\";\r\nimport { Card, CardContent, CardTitle } from \"@/components/ui/card\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger,\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n// third party\r\nimport ApexCharts from \"apexcharts\";\r\n\r\n// project\r\nimport { cn } from \"@/lib/utils\";\r\n\r\n// assets\r\nimport { MoreVertical } from \"lucide-react\";\r\n\r\ninterface RepeatCustomerCardProps {\r\n  title: string;\r\n  value: string;\r\n  percentage: string;\r\n  series: number[];\r\n  categories: string[];\r\n}\r\n\r\n//  ------------------------------ | BLOCK - REPEAT CUSTOMER CARD | ------------------------------  //\r\n\r\nexport default function RepeatCustomerCard({\r\n  title,\r\n  value,\r\n  percentage,\r\n  series,\r\n  categories,\r\n}: RepeatCustomerCardProps) {\r\n  const chartRef = useRef<HTMLDivElement>(null);\r\n\r\n  useEffect(() => {\r\n    let active = true;\r\n    let chart: ApexCharts | null = null;\r\n\r\n    const timer = setTimeout(() => {\r\n      if (!active || !chartRef.current) return;\r\n\r\n      const options = {\r\n        chart: { type: \"area\", height: 230, toolbar: { show: false } },\r\n        colors: [\"var(--primary)\"],\r\n        fill: {\r\n          type: \"gradient\",\r\n          gradient: {\r\n            shadeIntensity: 1,\r\n            type: \"vertical\",\r\n            inverseColors: false,\r\n            colorStops: [\r\n              {\r\n                offset: 0,\r\n                color: [\"var(--primary)\"],\r\n                opacity: 0.3,\r\n              },\r\n              {\r\n                offset: 100,\r\n                color: [\"var(--primary)\"],\r\n                opacity: 0,\r\n              },\r\n            ],\r\n          },\r\n        },\r\n        dataLabels: { enabled: false },\r\n        stroke: { width: 1 },\r\n        grid: { strokeDashArray: 4 },\r\n        series: [{ data: series }],\r\n        xaxis: {\r\n          categories: categories,\r\n          axisBorder: { show: false },\r\n          axisTicks: { show: false },\r\n        },\r\n      };\r\n\r\n      chart = new ApexCharts(chartRef.current, options as any);\r\n      chart.render();\r\n    }, 0);\r\n\r\n    return () => {\r\n      active = false;\r\n      clearTimeout(timer);\r\n      if (chart) {\r\n        chart.destroy();\r\n      }\r\n    };\r\n  }, [series, categories]);\r\n\r\n  return (\r\n    <Card>\r\n      <CardContent className=\"p-6\">\r\n        <div className=\"flex items-center justify-between mb-4\">\r\n          <CardTitle className=\"text-lg font-bold\">{title}</CardTitle>\r\n          <DropdownMenu>\r\n            <DropdownMenuTrigger\r\n              className={cn(\r\n                buttonVariants({ variant: \"ghost\", size: \"icon\" }),\r\n                \"h-8 w-8 rounded-xl shrink-0\",\r\n              )}\r\n            >\r\n              <MoreVertical className=\"h-4 w-4\" />\r\n            </DropdownMenuTrigger>\r\n            <DropdownMenuContent align=\"end\">\r\n              <DropdownMenuItem>Today</DropdownMenuItem>\r\n              <DropdownMenuItem>Weekly</DropdownMenuItem>\r\n              <DropdownMenuItem>Monthly</DropdownMenuItem>\r\n            </DropdownMenuContent>\r\n          </DropdownMenu>\r\n        </div>\r\n        <div className=\"flex items-baseline justify-end gap-2 my-4\">\r\n          <h3 className=\"text-3xl font-bold\">{value}</h3>\r\n          <Badge\r\n            variant=\"secondary\"\r\n            className=\"bg-green-500/10 text-green-500 border-none px-2 py-0.5\"\r\n          >\r\n            {percentage}\r\n          </Badge>\r\n        </div>\r\n        <div ref={chartRef} className=\"h-62.5\"></div>\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/widget/repeat-customer-card.tsx"
+    }
+  ],
+  "categories": [
+    "widget"
+  ],
+  "type": "registry:ui"
+}

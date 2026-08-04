@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-split-primary",
-  "title": "Split Primary Dropdown Menu",
-  "description": "Dropdown Menu Split Primary variant for dropdown-menu.",
+  "title": "Dropdown Menu Split Primary",
+  "description": "Dropdown Menu Split Primary variant for component.",
   "dependencies": [
     "lucide-react"
   ],

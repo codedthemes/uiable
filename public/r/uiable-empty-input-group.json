@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-empty-input-group",
   "title": "Empty Input Group",
-  "description": "Empty Input Group variant for empty.",
+  "description": "Empty Input Group variant for component.",
   "dependencies": [
     "lucide-react"
   ],

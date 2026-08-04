@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-spinner",
-  "title": "Spinner Badge",
-  "description": "Badge Spinner variant for badge.",
+  "title": "Badge Spinner",
+  "description": "Badge Spinner variant for component.",
   "registryDependencies": [
     "@uiable/badge",
     "@uiable/spinner"

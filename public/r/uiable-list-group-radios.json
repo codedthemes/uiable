@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-radios",
-  "title": "Radios List Group",
-  "description": "List Group Radios variant for list-group.",
+  "title": "List Group Radios",
+  "description": "List Group Radios variant for component.",
   "registryDependencies": [
     "@uiable/label",
     "@uiable/radio-group"

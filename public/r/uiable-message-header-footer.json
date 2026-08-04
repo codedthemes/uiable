@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-header-footer",
-  "title": "Header And Footer",
-  "description": "Message Header And Footer variant for message.",
+  "title": "Message Header Footer",
+  "description": "Message Header Footer variant for component.",
   "registryDependencies": [
     "@uiable/bubble",
     "@uiable/message"

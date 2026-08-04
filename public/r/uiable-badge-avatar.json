@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-avatar",
-  "title": "Avatar Badge",
-  "description": "Badge Avatar variant for badge.",
+  "title": "Badge Avatar",
+  "description": "Badge Avatar variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/badge"

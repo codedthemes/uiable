@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-growing-info",
-  "title": "Info Growing Spinner",
-  "description": "Spinner Growing Info variant for spinner.",
+  "title": "Spinner Growing Info",
+  "description": "Spinner Growing Info variant for component.",
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-info.tsx",

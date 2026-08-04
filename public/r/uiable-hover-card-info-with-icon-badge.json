@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-hover-card-info-with-icon-badge",
-  "title": "Card Info With Icon Badge",
-  "description": "Card Info With Icon Badge Hover Card variant for hover-card.",
+  "title": "Hover Card Info With Icon Badge",
+  "description": "Hover Card Info With Icon Badge variant for component.",
   "dependencies": [
     "lucide-react"
   ],

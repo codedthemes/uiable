@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-link",
-  "title": "Link Badge",
-  "description": "Badge Link variant for badge.",
+  "title": "Badge Link",
+  "description": "Badge Link variant for component.",
   "dependencies": [
     "lucide-react"
   ],

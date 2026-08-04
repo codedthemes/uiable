@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-menu-badge",
-  "title": "Menu Badge Sidebar",
+  "title": "Sidebar Menu Badge",
   "description": "Sidebar Menu Badge variant for component.",
   "dependencies": [
     "lucide-react"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-scroll-area-basic",
-  "title": "Basic Scroll Area",
-  "description": "Scroll Area Basic variant for scroll-area.",
+  "title": "Scroll Area Basic",
+  "description": "Scroll Area Basic variant for component.",
   "registryDependencies": [
     "@uiable/scroll-area",
     "@uiable/separator"

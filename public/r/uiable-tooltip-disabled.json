@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-tooltip-disabled",
-  "title": "Disabled Tooltip",
-  "description": "Tooltip Disabled variant for tooltip.",
+  "title": "Tooltip Disabled",
+  "description": "Tooltip Disabled variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/tooltip"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-avatar-border-radius",
-  "title": "Border Radius Avatar",
-  "description": "Avatar Border Radius variant for avatar.",
+  "title": "Avatar Border Radius",
+  "description": "Avatar Border Radius variant for component.",
   "registryDependencies": [
     "@uiable/avatar"
   ],

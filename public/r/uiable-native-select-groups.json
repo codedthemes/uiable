@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-native-select-groups",
-  "title": "Groups Native Select",
-  "description": "Native Select Groups variant for native-select.",
+  "title": "Native Select Groups",
+  "description": "Native Select Groups variant for component.",
   "registryDependencies": [
     "@uiable/native-select"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-split",
-  "title": "Split Button Group",
-  "description": "Button Group Split variant for button-group.",
+  "title": "Button Group Split",
+  "description": "Button Group Split variant for component.",
   "dependencies": [
     "@tabler/icons-react"
   ],

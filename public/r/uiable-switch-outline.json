@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-switch-outline",
-  "title": "Outline Switch",
-  "description": "Switch Outline variant for switch.",
+  "title": "Switch Outline",
+  "description": "Switch Outline variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/switch"

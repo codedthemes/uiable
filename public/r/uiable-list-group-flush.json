@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-list-group-flush",
-  "title": "Flush List Group",
-  "description": "List Group Flush variant for list-group.",
+  "title": "List Group Flush",
+  "description": "List Group Flush variant for component.",
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-flush.tsx",

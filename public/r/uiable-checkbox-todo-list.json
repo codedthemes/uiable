@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-checkbox-todo-list",
-  "title": "Todo List",
-  "description": "Todo List Checkbox variant for checkbox.",
+  "title": "Checkbox Todo List",
+  "description": "Checkbox Todo List variant for component.",
   "dependencies": [
     "framer-motion",
     "lucide-react"

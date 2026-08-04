@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-colors",
-  "title": "Colors Badge",
-  "description": "Badge Colors variant for badge.",
+  "title": "Badge Colors",
+  "description": "Badge Colors variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

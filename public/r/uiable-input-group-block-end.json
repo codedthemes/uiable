@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-group-block-end",
-  "title": "Block End Input Group",
-  "description": "Input Group Block End variant for input-group.",
+  "title": "Input Group Block End",
+  "description": "Input Group Block End variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/input-group"

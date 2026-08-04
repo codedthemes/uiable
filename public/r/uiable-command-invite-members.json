@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-command-invite-members",
-  "title": "Invite Members",
-  "description": "Collaborative command palette for inviting teammates and managing workspace actions.",
+  "title": "Command Invite Members",
+  "description": "Command Invite Members variant for component.",
   "dependencies": [
     "lucide-react"
   ],

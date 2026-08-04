@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-group-tooltip",
-  "title": "Tooltip Input Group",
-  "description": "Input Group Tooltip variant for input-group.",
+  "title": "Input Group Tooltip",
+  "description": "Input Group Tooltip variant for component.",
   "dependencies": [
     "lucide-react"
   ],

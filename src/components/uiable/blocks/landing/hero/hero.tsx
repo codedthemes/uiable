@@ -54,7 +54,7 @@ function ChangelogLink() {
   return (
     <Link
       href="/doc/changelog"
-      className="group flex items-center gap-0.5 rounded-full bg-primary/10 py-0.5 pr-1 pl-2.5 text-xs font-semibold text-primary transition-colors hover:bg-primary/20"
+      className="group flex items-center gap-0.5 rounded-full bg-primary/10 py-0.5 pr-1 pl-2.5 text-xs font-semibold text-[#6b9bff] transition-colors hover:bg-primary/20"
     >
       Changelog
       <div className="flex -space-x-1.5">
@@ -104,7 +104,7 @@ export default function Hero() {
           <PingDot />
           <span className="flex items-center gap-2">
             <span className="text-muted-foreground">
-              New Release July 28, 2026
+              New Release August 4, 2026
             </span>
             <ChangelogLink />
           </span>

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-group-textarea-examples",
-  "title": "Textarea Examples Input Group",
-  "description": "Input Group Textarea Examples variant for input-group.",
+  "title": "Input Group Textarea Examples",
+  "description": "Input Group Textarea Examples variant for component.",
   "dependencies": [
     "lucide-react"
   ],

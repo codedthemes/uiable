@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-aspect-ratio-square",
-  "title": "Square Aspect Ratio",
-  "description": "Aspect Ratio Square variant for aspect-ratio.",
+  "title": "Aspect Ratio Square",
+  "description": "Aspect Ratio Square variant for component.",
   "dependencies": [
     "next"
   ],

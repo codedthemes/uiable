@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-border-primary",
-  "title": "Primary Border Spinner",
-  "description": "Spinner Border Primary variant for spinner.",
+  "title": "Spinner Border Primary",
+  "description": "Spinner Border Primary variant for component.",
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-border-primary.tsx",

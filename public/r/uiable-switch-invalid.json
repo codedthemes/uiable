@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-switch-invalid",
-  "title": "Invalid Switch",
-  "description": "Switch Invalid variant for switch.",
+  "title": "Switch Invalid",
+  "description": "Switch Invalid variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/switch"

@@ -207,18 +207,21 @@ Pre-built page sections ready to drop into your project.
 ### Feature
 
 <div>
+  <a href="https://uiable.com/preview/feature/feature-1/feature-1" title="Feature 1"><kbd>Feature 1</kbd></a>
   <a href="https://uiable.com/preview/feature/feature-2/feature-2" title="Feature 2"><kbd>Feature 2</kbd></a>
 </div>
 
 ### Footer
 
 <div>
+  <a href="https://uiable.com/preview/footer/footer-7/footer-7" title="Footer 7"><kbd>Footer 7</kbd></a>
   <a href="https://uiable.com/preview/footer/footer-3/footer-3" title="Footer 3"><kbd>Footer 3</kbd></a>
 </div>
 
 ### Gallery
 
 <div>
+  <a href="https://uiable.com/preview/gallery/gallery-2/gallery-2" title="Gallery 2"><kbd>Gallery 2</kbd></a>
   <a href="https://uiable.com/preview/gallery/gallery-4/gallery-4" title="Gallery 4"><kbd>Gallery 4</kbd></a>
 </div>
 
@@ -231,6 +234,7 @@ Pre-built page sections ready to drop into your project.
 ### Portfolio
 
 <div>
+  <a href="https://uiable.com/preview/portfolio/portfolio-5/portfolio-5" title="Portfolio 5"><kbd>Portfolio 5</kbd></a>
   <a href="https://uiable.com/preview/portfolio/portfolio-4/portfolio-4" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
 </div>
 
@@ -243,6 +247,7 @@ Pre-built page sections ready to drop into your project.
 ### Process
 
 <div>
+  <a href="https://uiable.com/preview/process/process-6/process-6" title="Process 6"><kbd>Process 6</kbd></a>
   <a href="https://uiable.com/preview/process/process-1/process-1" title="Process 1"><kbd>Process 1</kbd></a>
 </div>
 

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-dismissible-danger",
-  "title": "Danger Dismissible Alert",
-  "description": "Alert Dismissible Danger variant for alert.",
+  "title": "Alert Dismissible Danger",
+  "description": "Alert Dismissible Danger variant for component.",
   "dependencies": [
     "lucide-react"
   ],

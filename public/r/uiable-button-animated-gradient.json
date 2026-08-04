@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-animated-gradient",
-  "title": "Gradient Animated Button",
-  "description": "Gradient Animated Button variant for button",
+  "title": "Button Animated Gradient",
+  "description": "Button Animated Gradient variant for component.",
   "dependencies": [
     "framer-motion",
     "lucide-react"

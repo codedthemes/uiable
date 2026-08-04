@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-data-table-expandable",
-  "title": "Expandable Data Table",
+  "title": "Data Table Expandable",
   "description": "Data Table Expandable variant for component.",
   "dependencies": [
     "@tanstack/react-table",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-chart-example-tooltip",
-  "title": "Tooltip Chart Example",
-  "description": "Chart Example Tooltip variant for chart.",
+  "title": "Chart Example Tooltip",
+  "description": "Chart Example Tooltip variant for component.",
   "dependencies": [
     "recharts"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sheet-side",
-  "title": "Side Sheet",
-  "description": "Sheet Side variant for sheet.",
+  "title": "Sheet Side",
+  "description": "Sheet Side variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/sheet"

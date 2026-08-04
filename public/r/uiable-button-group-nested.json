@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-nested",
-  "title": "Nested Button Group",
-  "description": "Button Group Nested variant for button-group.",
+  "title": "Button Group Nested",
+  "description": "Button Group Nested variant for component.",
   "dependencies": [
     "lucide-react"
   ],

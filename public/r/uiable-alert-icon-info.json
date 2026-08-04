@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-icon-info",
-  "title": "Info Icon Alert",
-  "description": "Alert Icon Info variant for alert.",
+  "title": "Alert Icon Info",
+  "description": "Alert Icon Info variant for component.",
   "dependencies": [
     "lucide-react"
   ],

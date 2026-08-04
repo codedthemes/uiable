@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-sizes",
-  "title": "Sizes Toggle",
-  "description": "Toggle Sizes variant for toggle.",
+  "title": "Toggle Sizes",
+  "description": "Toggle Sizes variant for component.",
   "registryDependencies": [
     "@uiable/toggle"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-presets",
-  "title": "Presets Calendar",
-  "description": "Calendar Presets variant for calendar.",
+  "title": "Calendar Presets",
+  "description": "Calendar Presets variant for component.",
   "dependencies": [
     "date-fns"
   ],

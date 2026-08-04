@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-group-fieldset",
-  "title": "Fieldset Radio Group",
-  "description": "Radio Group Fieldset variant for radio-group.",
+  "title": "Radio Group Fieldset",
+  "description": "Radio Group Fieldset variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/radio-group"

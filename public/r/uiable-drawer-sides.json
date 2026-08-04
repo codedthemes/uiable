@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-drawer-sides",
-  "title": "Sides Drawer",
-  "description": "Drawer Sides variant for drawer.",
+  "title": "Drawer Sides",
+  "description": "Drawer Sides variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/drawer"

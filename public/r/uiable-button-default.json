@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-default",
-  "title": "Default Button",
-  "description": "Button Default variant for button.",
+  "title": "Button Default",
+  "description": "Button Default variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-checkbox",
-  "title": "Checkbox Item",
-  "description": "Selectable item rows with checkbox for item.",
+  "title": "Item Checkbox",
+  "description": "Item Checkbox variant for component.",
   "dependencies": [
     "lucide-react"
   ],

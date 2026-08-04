@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-accordion-multiple",
-  "title": "Multiple Accordion",
-  "description": "Accordion Multiple variant for accordion.",
+  "title": "Accordion Multiple",
+  "description": "Accordion Multiple variant for component.",
   "registryDependencies": [
     "@uiable/accordion"
   ],

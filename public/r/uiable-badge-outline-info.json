@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-outline-info",
-  "title": "Info Outline Badge",
-  "description": "Badge Outline Info variant for badge.",
+  "title": "Badge Outline Info",
+  "description": "Badge Outline Info variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

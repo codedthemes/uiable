@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dialog-sticky-footer",
-  "title": "Sticky Footer Dialog",
-  "description": "Dialog Sticky Footer variant for dialog.",
+  "title": "Dialog Sticky Footer",
+  "description": "Dialog Sticky Footer variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog"

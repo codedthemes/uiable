@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-orientation",
-  "title": "Orientation Button Group",
-  "description": "Button Group Orientation variant for button-group.",
+  "title": "Button Group Orientation",
+  "description": "Button Group Orientation variant for component.",
   "dependencies": [
     "lucide-react"
   ],

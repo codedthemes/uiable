@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-attachment-sizes",
-  "title": "Sizes",
-  "description": "Attachment Sizes variant for attachment.",
+  "title": "Attachment Sizes",
+  "description": "Attachment Sizes variant for component.",
   "dependencies": [
     "lucide-react"
   ],

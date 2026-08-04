@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-link",
-  "title": "Link Item",
-  "description": "Item Link variant for item.",
+  "title": "Item Link",
+  "description": "Item Link variant for component.",
   "dependencies": [
     "lucide-react"
   ],

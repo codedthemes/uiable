@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-chart-line",
-  "title": "Line Chart",
+  "title": "Chart Line",
   "description": "Chart Line variant for component.",
   "dependencies": [
     "recharts"

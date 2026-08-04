@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-field-textarea",
-  "title": "Textarea Field",
-  "description": "Field Textarea variant for field.",
+  "title": "Field Textarea",
+  "description": "Field Textarea variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/textarea"

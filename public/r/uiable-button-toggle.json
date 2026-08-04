@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-toggle",
-  "title": "Toggle Button",
-  "description": "Toggle button variant for button",
+  "title": "Button Toggle",
+  "description": "Button Toggle variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

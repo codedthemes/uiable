@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sidebar-2",
   "title": "Sidebar 2",
-  "description": "Sidebar variant 2.",
+  "description": "Sidebar 2 variant for component.",
   "dependencies": [
     "iconsax-reactjs",
     "lucide-react"
@@ -12,8 +12,8 @@
     "@uiable/button",
     "@uiable/card",
     "@uiable/collapsible",
-    "@uiable/sidebar",
-    "uiable-layout-logo"
+    "@uiable/logo",
+    "@uiable/sidebar"
   ],
   "files": [
     {

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-fields",
-  "title": "Fields Radio",
-  "description": "Radio Fields variant for radio.",
+  "title": "Radio Fields",
+  "description": "Radio Fields variant for component.",
   "dependencies": [
     "@base-ui/react",
     "framer-motion"

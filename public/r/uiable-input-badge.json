@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-badge",
-  "title": "Badge Input",
-  "description": "Input Badge variant for input.",
+  "title": "Input Badge",
+  "description": "Input Badge variant for component.",
   "registryDependencies": [
     "@uiable/badge",
     "@uiable/field",

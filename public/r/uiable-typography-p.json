@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-typography-p",
-  "title": "P Typography",
-  "description": "Typography P variant for typography.",
+  "title": "Typography P",
+  "description": "Typography P variant for component.",
   "files": [
     {
       "path": "src/components/uiable/typography/typography-p.tsx",

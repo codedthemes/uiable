@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-group-list",
-  "title": "List Radio Group",
-  "description": "Radio Group List variant for radio-group.",
+  "title": "Radio Group List",
+  "description": "Radio Group List variant for component.",
   "dependencies": [
     "lucide-react"
   ],

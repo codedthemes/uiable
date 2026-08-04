@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-light-primary",
-  "title": "Light Primary Alert",
-  "description": "Alert Light Primary variant for alert.",
+  "title": "Alert Light Primary",
+  "description": "Alert Light Primary variant for component.",
   "registryDependencies": [
     "@uiable/alert"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-separator-list",
-  "title": "List Separator",
-  "description": "Separator List variant for separator.",
+  "title": "Separator List",
+  "description": "Separator List variant for component.",
   "registryDependencies": [
     "@uiable/separator"
   ],

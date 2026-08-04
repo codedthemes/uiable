@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-slider-controlled",
-  "title": "Controlled Slider",
-  "description": "Slider Controlled variant for slider.",
+  "title": "Slider Controlled",
+  "description": "Slider Controlled variant for component.",
   "registryDependencies": [
     "@uiable/label",
     "@uiable/slider"

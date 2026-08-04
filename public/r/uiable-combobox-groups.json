@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-groups",
-  "title": "Groups Combobox",
-  "description": "Combobox Groups variant for combobox.",
+  "title": "Combobox Groups",
+  "description": "Combobox Groups variant for component.",
   "registryDependencies": [
     "@uiable/combobox"
   ],

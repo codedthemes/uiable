@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-data-table-basic",
-  "title": "Basic Data Table",
-  "description": "Data Table Basic variant for data-table.",
+  "title": "Data Table Basic",
+  "description": "Data Table Basic variant for component.",
   "dependencies": [
     "@tanstack/react-table",
     "lucide-react"

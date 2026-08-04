@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-progress-label",
-  "title": "Label Progress",
-  "description": "Progress Label variant for progress.",
+  "title": "Progress Label",
+  "description": "Progress Label variant for component.",
   "dependencies": [
     "@base-ui/react"
   ],

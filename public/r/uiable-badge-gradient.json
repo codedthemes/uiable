@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-gradient",
-  "title": "Gradient Badge",
-  "description": "Badge Gradient variant for badge.",
+  "title": "Badge Gradient",
+  "description": "Badge Gradient variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

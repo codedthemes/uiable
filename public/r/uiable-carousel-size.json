@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-carousel-size",
-  "title": "Size Carousel",
-  "description": "Carousel Size variant for carousel.",
+  "title": "Carousel Size",
+  "description": "Carousel Size variant for component.",
   "registryDependencies": [
     "@uiable/card",
     "@uiable/carousel"

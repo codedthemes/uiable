@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-tabs-pills",
-  "title": "Pills Tabs",
-  "description": "Tabs Pills variant for tabs.",
+  "title": "Tabs Pills",
+  "description": "Tabs Pills variant for component.",
   "registryDependencies": [
     "@uiable/tabs"
   ],

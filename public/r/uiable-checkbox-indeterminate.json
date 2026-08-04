@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-checkbox-indeterminate",
-  "title": "Indeterminate Checkbox",
-  "description": "Indeterminate Checkbox variant for checkbox.",
+  "title": "Checkbox Indeterminate",
+  "description": "Checkbox Indeterminate variant for component.",
   "dependencies": [
     "@base-ui/react",
     "lucide-react"

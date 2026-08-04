@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-bubble-reactions",
   "title": "Bubble Reactions",
-  "description": "Bubble Reactions variant for bubble.",
+  "description": "Bubble Reactions variant for component.",
   "dependencies": [
     "sonner"
   ],

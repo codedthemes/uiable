@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-light-secondary",
-  "title": "Light Secondary Badge",
-  "description": "Badge Light Secondary variant for badge.",
+  "title": "Badge Light Secondary",
+  "description": "Badge Light Secondary variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

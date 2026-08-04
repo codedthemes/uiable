@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-right-navigation",
-  "title": "Right Navigation Calendar",
-  "description": "Calendar Right Navigation variant for calendar.",
+  "title": "Calendar Right Navigation",
+  "description": "Calendar Right Navigation variant for component.",
   "dependencies": [
     "date-fns",
     "lucide-react"

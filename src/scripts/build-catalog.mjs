@@ -7,8 +7,8 @@
 // Output is consumed by packages/uiable-mcp at runtime (via UIABLE_CATALOG / URL).
 
 import { readFileSync, writeFileSync } from "node:fs"
-import { fileURLToPath } from "node:url"
 import { dirname, resolve } from "node:path"
+import { fileURLToPath } from "node:url"
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = resolve(__dirname, "../..")
@@ -25,7 +25,20 @@ const blocksRegistry = JSON.parse(
     "utf8"
   )
 )
-registry.items = [...(uiRegistry.items || []), ...(blocksRegistry.items || [])]
+const primitiveRegistry = JSON.parse(
+  readFileSync(resolve(root, "src/components/ui/registry.json"), "utf8")
+)
+
+// Track which item names belong to the ui primitives registry for kind classification
+const primitiveNames = new Set(
+  (primitiveRegistry.items || []).map((i) => i.name)
+)
+
+registry.items = [
+  ...(primitiveRegistry.items || []),
+  ...(uiRegistry.items || []),
+  ...(blocksRegistry.items || []),
+]
 
 // Namespace + base URL. Override via env when publishing; defaults to the
 // registry.json homepage (currently a local dev URL — fine until publish).
@@ -36,8 +49,38 @@ const BASE_URL = (
   "http://localhost:3000"
 ).replace(/\/$/, "")
 
-// An item is considered a block if its registry type is "registry:block".
-const isBlock = (item) => item.type === "registry:block"
+// ── Custom order for blocks ───────────────────────────────────────────
+// Sequence is now controlled via block-sequences.json during registry generation.
+
+// Categories that denote a composable page-level block (vs a primitive component).
+const BLOCK_CATEGORIES = new Set([
+  "chat",
+  "feature",
+  "e-commerce",
+  "cta",
+  "contact",
+  "content",
+  "faq",
+  "statistics",
+  "footer",
+  "gallery",
+  "hero",
+  "pricing",
+  "process",
+  "portfolio",
+  "team",
+  "testimonial",
+  "navbar",
+  "auth-layout",
+  "dashboard-layout",
+  "component-layout",
+  "doc-layout",
+  "landing",
+])
+
+const isBlock = (item) =>
+  item.type === "registry:block" ||
+  (item.categories || []).some((c) => BLOCK_CATEGORIES.has(c))
 
 // Cheap keyword extraction for server-side search recall.
 const keywordsFor = (item) => {
@@ -53,7 +96,10 @@ const keywordsFor = (item) => {
 }
 
 const items = registry.items.map((item) => {
-  const kind = isBlock(item) ? "block" : "component"
+  let kind
+  if (isBlock(item)) kind = "block"
+  else if (primitiveNames.has(item.name)) kind = "primitive"
+  else kind = "component"
   return {
     name: item.name,
     kind,
@@ -71,7 +117,39 @@ const items = registry.items.map((item) => {
   }
 })
 
+const customSort = (aStr, bStr) => {
+  const aParts = aStr.split(/(\d+)/)
+  const bParts = bStr.split(/(\d+)/)
+  for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+    const a = aParts[i] || ""
+    const b = bParts[i] || ""
+    if (a !== b) {
+      const numA = parseInt(a, 10)
+      const numB = parseInt(b, 10)
+      if (!isNaN(numA) && !isNaN(numB)) {
+        return numA - numB
+      }
+      return a.localeCompare(b)
+    }
+  }
+  return 0
+}
+
+// Apply custom sort dynamically based on extracted sequence metadata.
+// Everything else is sorted alphabetically with numeric collation (1, 2 … 10, not 1, 10, 2).
+items.sort((a, b) => {
+  if (a.order !== undefined && b.order !== undefined) {
+    if (a.order !== b.order) return a.order - b.order
+  } else if (a.order !== undefined) {
+    return -1 // Items with explicit order come first
+  } else if (b.order !== undefined) {
+    return 1
+  }
+  return customSort(a.name, b.name)
+})
+
 const blocks = items.filter((i) => i.kind === "block")
+const primitives = items.filter((i) => i.kind === "primitive")
 const components = items.filter((i) => i.kind === "component")
 
 const catalog = {
@@ -82,6 +160,7 @@ const catalog = {
   counts: {
     total: items.length,
     blocks: blocks.length,
+    primitives: primitives.length,
     components: components.length,
   },
   categories: [...new Set(items.flatMap((i) => i.categories))].sort(),
@@ -92,5 +171,5 @@ const outPath = resolve(root, "public", "registry-index.json")
 writeFileSync(outPath, JSON.stringify(catalog, null, 2) + "\n", "utf8")
 
 console.log(
-  `Wrote ${outPath}\n  ${catalog.counts.total} items (${catalog.counts.blocks} blocks, ${catalog.counts.components} components)\n  ${catalog.categories.length} categories\n  base: ${BASE_URL}  namespace: ${NAMESPACE}`
+  `Wrote ${outPath}\n  ${catalog.counts.total} items (${catalog.counts.blocks} blocks, ${catalog.counts.components} components, ${catalog.counts.primitives} primitives)\n  ${catalog.categories.length} categories\n  base: ${BASE_URL}  namespace: ${NAMESPACE}`
 )

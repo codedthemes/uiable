@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-attachment-triggers",
-  "title": "Trigger",
-  "description": "Attachment Trigger variant for attachment.",
+  "title": "Attachment Triggers",
+  "description": "Attachment Triggers variant for component.",
   "dependencies": [
     "lucide-react"
   ],

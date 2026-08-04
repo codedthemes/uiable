@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-outline",
-  "title": "Outline Toggle",
-  "description": "Toggle Outline variant for toggle.",
+  "title": "Toggle Outline",
+  "description": "Toggle Outline variant for component.",
   "dependencies": [
     "lucide-react"
   ],

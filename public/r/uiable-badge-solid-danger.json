@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-solid-danger",
-  "title": "Danger Solid Badge",
-  "description": "Badge Solid Danger variant for badge.",
+  "title": "Badge Solid Danger",
+  "description": "Badge Solid Danger variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

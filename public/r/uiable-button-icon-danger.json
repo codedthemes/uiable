@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-icon-danger",
-  "title": "Danger Icon Button",
-  "description": "Button Icon Danger variant for button.",
+  "title": "Button Icon Danger",
+  "description": "Button Icon Danger variant for component.",
   "dependencies": [
     "lucide-react"
   ],

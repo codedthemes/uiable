@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-select-with-users",
-  "title": "With Users Select",
-  "description": "Select With Users variant for select.",
+  "title": "Select With Users",
+  "description": "Select With Users variant for component.",
   "registryDependencies": [
     "@uiable/avatar",
     "@uiable/select"

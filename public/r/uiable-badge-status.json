@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-status",
-  "title": "Status Badge",
-  "description": "Badge Status variant for badge.",
+  "title": "Badge Status",
+  "description": "Badge Status variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

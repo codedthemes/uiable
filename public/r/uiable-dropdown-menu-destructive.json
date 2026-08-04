@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-destructive",
-  "title": "Destructive Dropdown Menu",
-  "description": "Dropdown Menu Destructive variant for dropdown-menu.",
+  "title": "Dropdown Menu Destructive",
+  "description": "Dropdown Menu Destructive variant for component.",
   "dependencies": [
     "lucide-react"
   ],

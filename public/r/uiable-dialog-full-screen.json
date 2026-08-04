@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dialog-full-screen",
-  "title": "Full Screen Dialog",
-  "description": "Dialog Full Screen variant for dialog.",
+  "title": "Dialog Full Screen",
+  "description": "Dialog Full Screen variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dialog"

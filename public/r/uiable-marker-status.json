@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-marker-status",
-  "title": "Status Marker",
-  "description": "Marker Status variant for marker.",
+  "title": "Marker Status",
+  "description": "Marker Status variant for component.",
   "registryDependencies": [
     "@uiable/marker",
     "@uiable/spinner"

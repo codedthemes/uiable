@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-empty-card",
   "title": "Empty Card",
-  "description": "Empty Card variant for empty.",
+  "description": "Empty Card variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-alert-solid-primary",
-  "title": "Solid Primary Alert",
-  "description": "Alert Solid Primary variant for alert.",
+  "title": "Alert Solid Primary",
+  "description": "Alert Solid Primary variant for component.",
   "registryDependencies": [
     "@uiable/alert"
   ],

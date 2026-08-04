@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-marker-shimmer",
-  "title": "Shimmer Marker",
-  "description": "Marker Shimmer variant for marker.",
+  "title": "Marker Shimmer",
+  "description": "Marker Shimmer variant for component.",
   "registryDependencies": [
     "@uiable/marker"
   ],

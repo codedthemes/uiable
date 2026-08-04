@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-basic-success",
-  "title": "Success Dropdown Menu",
-  "description": "Dropdown Menu Basic Success variant for dropdown-menu.",
+  "title": "Dropdown Menu Basic Success",
+  "description": "Dropdown Menu Basic Success variant for component.",
   "dependencies": [
     "lucide-react"
   ],

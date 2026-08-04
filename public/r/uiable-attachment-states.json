@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-attachment-states",
-  "title": "States",
-  "description": "Attachment States variant for attachment.",
+  "title": "Attachment States",
+  "description": "Attachment States variant for component.",
   "dependencies": [
     "lucide-react"
   ],

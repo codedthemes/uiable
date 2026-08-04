@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-image",
-  "title": "Image Item",
-  "description": "Item Image variant for item.",
+  "title": "Item Image",
+  "description": "Item Image variant for component.",
   "registryDependencies": [
     "@uiable/item"
   ],

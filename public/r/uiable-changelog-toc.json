@@ -1,10 +1,10 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-changelog-toc",
-  "title": "Toc Changelog",
+  "title": "Changelog Toc",
   "description": "Changelog Toc variant for component.",
   "registryDependencies": [
-    "uiable-layout-table-of-contents"
+    "@uiable/table-of-contents"
   ],
   "files": [
     {

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-switch",
-  "title": "Switch Item",
-  "description": "Item with a toggle switch for item.",
+  "title": "Item Switch",
+  "description": "Item Switch variant for component.",
   "dependencies": [
     "lucide-react"
   ],

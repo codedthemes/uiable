@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-context-menu-submenu",
-  "title": "Submenu Context Menu",
-  "description": "Context Menu Submenu variant for context-menu.",
+  "title": "Context Menu Submenu",
+  "description": "Context Menu Submenu variant for component.",
   "registryDependencies": [
     "@uiable/context-menu"
   ],

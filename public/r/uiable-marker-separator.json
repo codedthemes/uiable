@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-marker-separator",
-  "title": "Separator Marker",
-  "description": "Marker Separator variant for marker.",
+  "title": "Marker Separator",
+  "description": "Marker Separator variant for component.",
   "registryDependencies": [
     "@uiable/marker"
   ],

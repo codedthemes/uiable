@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-select-align-item",
-  "title": "Align Item Select",
-  "description": "Select Align Item variant for select.",
+  "title": "Select Align Item",
+  "description": "Select Align Item variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/select",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-separator",
-  "title": "Separator Item",
-  "description": "Items visually divided by separator lines for item.",
+  "title": "Item Separator",
+  "description": "Item Separator variant for component.",
   "dependencies": [
     "lucide-react"
   ],

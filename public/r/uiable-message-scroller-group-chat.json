@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-message-scroller-group-chat",
-  "title": "Group Chat",
-  "description": "Message Scroller Group Chat variant for message-scroller.",
+  "title": "Message Scroller Group Chat",
+  "description": "Message Scroller Group Chat variant for component.",
   "dependencies": [
     "framer-motion",
     "lucide-react"

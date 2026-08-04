@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-toggle-group-spacing",
-  "title": "Spacing Toggle Group",
-  "description": "Toggle Group Spacing variant for toggle-group.",
+  "title": "Toggle Group Spacing",
+  "description": "Toggle Group Spacing variant for component.",
   "registryDependencies": [
     "@uiable/toggle-group"
   ],

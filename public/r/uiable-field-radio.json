@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-field-radio",
-  "title": "Radio Field",
-  "description": "Field Radio variant for field.",
+  "title": "Field Radio",
+  "description": "Field Radio variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/radio-group"

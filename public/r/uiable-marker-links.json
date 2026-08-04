@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-marker-links",
-  "title": "Links and Buttons",
-  "description": "Links and Buttons Marker variant for marker.",
+  "title": "Marker Links",
+  "description": "Marker Links variant for component.",
   "dependencies": [
     "lucide-react",
     "sonner"

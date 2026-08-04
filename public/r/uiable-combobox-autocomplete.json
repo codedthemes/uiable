@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-combobox-autocomplete",
-  "title": "Autocomplete Combobox",
-  "description": "Combobox Autocomplete variant for combobox.",
+  "title": "Combobox Autocomplete",
+  "description": "Combobox Autocomplete variant for component.",
   "registryDependencies": [
     "@uiable/combobox",
     "@uiable/field",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-kbd-button",
-  "title": "Button Kbd",
-  "description": "Kbd Button variant for kbd.",
+  "title": "Kbd Button",
+  "description": "Kbd Button variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/kbd"

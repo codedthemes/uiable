@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-group-box",
-  "title": "Box Radio Group",
-  "description": "Radio Group Box variant for radio-group.",
+  "title": "Radio Group Box",
+  "description": "Radio Group Box variant for component.",
   "dependencies": [
     "lucide-react"
   ],

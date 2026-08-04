@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-spinner-size",
-  "title": "Size Spinner",
-  "description": "Spinner Size variant for spinner.",
+  "title": "Spinner Size",
+  "description": "Spinner Size variant for component.",
   "registryDependencies": [
     "@uiable/spinner"
   ],

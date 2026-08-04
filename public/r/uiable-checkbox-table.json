@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-checkbox-table",
-  "title": "Table Checkbox",
-  "description": "Checkbox Table variant for checkbox.",
+  "title": "Checkbox Table",
+  "description": "Checkbox Table variant for component.",
   "registryDependencies": [
     "@uiable/checkbox",
     "@uiable/table"

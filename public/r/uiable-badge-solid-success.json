@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-badge-solid-success",
-  "title": "Success Solid Badge",
-  "description": "Badge Solid Success variant for badge.",
+  "title": "Badge Solid Success",
+  "description": "Badge Solid Success variant for component.",
   "registryDependencies": [
     "@uiable/badge"
   ],

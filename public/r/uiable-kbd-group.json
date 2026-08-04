@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-kbd-group",
-  "title": "Group Kbd",
-  "description": "Kbd Group variant for kbd.",
+  "title": "Kbd Group",
+  "description": "Kbd Group variant for component.",
   "registryDependencies": [
     "@uiable/kbd"
   ],

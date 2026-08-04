@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-separator",
-  "title": "Separator Button Group",
-  "description": "Button Group Separator variant for button-group.",
+  "title": "Button Group Separator",
+  "description": "Button Group Separator variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/button-group"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-button-group",
-  "title": "Button Group Input",
-  "description": "Input Button Group variant for input.",
+  "title": "Input Button Group",
+  "description": "Input Button Group variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/button-group",

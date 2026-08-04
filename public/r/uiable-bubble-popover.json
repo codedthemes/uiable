@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-bubble-popover",
-  "title": "Popover",
-  "description": "Bubble Popover variant for bubble.",
+  "title": "Bubble Popover",
+  "description": "Bubble Popover variant for component.",
   "dependencies": [
     "lucide-react"
   ],

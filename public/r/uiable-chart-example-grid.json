@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-chart-example-grid",
-  "title": "Grid Chart Example",
-  "description": "Chart Example Grid variant for chart.",
+  "title": "Chart Example Grid",
+  "description": "Chart Example Grid variant for component.",
   "dependencies": [
     "recharts"
   ],

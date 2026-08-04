@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-attachment-group",
-  "title": "Group",
-  "description": "Attachment Group variant for attachment.",
+  "title": "Attachment Group",
+  "description": "Attachment Group variant for component.",
   "dependencies": [
     "lucide-react"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-calendar-week-numbers",
-  "title": "Week Numbers Calendar",
-  "description": "Calendar Week Numbers variant for calendar.",
+  "title": "Calendar Week Numbers",
+  "description": "Calendar Week Numbers variant for component.",
   "registryDependencies": [
     "@uiable/calendar",
     "@uiable/card"

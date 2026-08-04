@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-item-variant",
-  "title": "Variant Item",
-  "description": "Item Variant variant for item.",
+  "title": "Item Variant",
+  "description": "Item Variant variant for component.",
   "dependencies": [
     "iconsax-reactjs"
   ],

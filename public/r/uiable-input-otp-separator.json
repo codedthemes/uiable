@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-input-otp-separator",
-  "title": "Separator Input Otp",
-  "description": "Input Otp Separator variant for input-otp.",
+  "title": "Input Otp Separator",
+  "description": "Input Otp Separator variant for component.",
   "registryDependencies": [
     "@uiable/input-otp"
   ],

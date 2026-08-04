@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-progress-height",
-  "title": "Height Progress",
-  "description": "Progress Height variant for progress.",
+  "title": "Progress Height",
+  "description": "Progress Height variant for component.",
   "dependencies": [
     "@base-ui/react"
   ],

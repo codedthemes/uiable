@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-kbd-input-group",
-  "title": "Input Group Kbd",
-  "description": "Kbd Input Group variant for kbd.",
+  "title": "Kbd Input Group",
+  "description": "Kbd Input Group variant for component.",
   "dependencies": [
     "lucide-react"
   ],

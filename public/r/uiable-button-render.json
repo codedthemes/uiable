@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-render",
-  "title": "Render Button",
-  "description": "Button Render variant for button.",
+  "title": "Button Render",
+  "description": "Button Render variant for component.",
   "registryDependencies": [
     "@uiable/button"
   ],

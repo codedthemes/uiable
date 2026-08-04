@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-button-group-size",
-  "title": "Size Button Group",
-  "description": "Button Group Size variant for button-group.",
+  "title": "Button Group Size",
+  "description": "Button Group Size variant for component.",
   "dependencies": [
     "lucide-react"
   ],

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-sonner-description",
-  "title": "Description Sonner",
-  "description": "Sonner Description variant for sonner.",
+  "title": "Sonner Description",
+  "description": "Sonner Description variant for component.",
   "dependencies": [
     "sonner"
   ],

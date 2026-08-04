@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-dropdown-menu-checkboxes",
-  "title": "Checkbox Dropdown Menu",
-  "description": "Dropdown Menu Checkboxes variant for dropdown-menu.",
+  "title": "Dropdown Menu Checkboxes",
+  "description": "Dropdown Menu Checkboxes variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/dropdown-menu"

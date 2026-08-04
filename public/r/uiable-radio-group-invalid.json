@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-radio-group-invalid",
-  "title": "Invalid Radio Group",
-  "description": "Radio Group Invalid variant for radio-group.",
+  "title": "Radio Group Invalid",
+  "description": "Radio Group Invalid variant for component.",
   "registryDependencies": [
     "@uiable/field",
     "@uiable/radio-group"

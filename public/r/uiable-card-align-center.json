@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "uiable-card-align-center",
-  "title": "Align Center Card",
-  "description": "Card Align Center variant for card.",
+  "title": "Card Align Center",
+  "description": "Card Align Center variant for component.",
   "registryDependencies": [
     "@uiable/button",
     "@uiable/card"
