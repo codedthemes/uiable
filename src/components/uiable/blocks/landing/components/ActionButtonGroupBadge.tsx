@@ -45,6 +45,7 @@ export default function ActionButtonGroupBadge() {
           <Button
             variant="ghost"
             size="icon-sm"
+            aria-label="Add item"
             className="rounded-none h-auto px-3 py-1.5 text-foreground hover:bg-muted dark:hover:bg-muted/80"
           >
             <PlusIcon className="size-3.5" />

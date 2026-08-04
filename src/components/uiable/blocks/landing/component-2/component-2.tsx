@@ -60,7 +60,7 @@ export default function Component2() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute right-0 bottom-0 left-0 z-20 h-70 bg-gradient-to-t from-card via-card/40 to-transparent" />
+        <div className="pointer-events-none absolute right-0 bottom-0 left-0 z-20 h-70 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
     </section>
   )

@@ -68,6 +68,7 @@ export default function CurrencySwapCard() {
             <div className="flex items-center gap-1 flex-1 min-w-0">
               <input
                 type="text"
+                aria-label={`Amount in ${isBtcToEth ? "BTC" : "ETH"}`}
                 value={inputValue}
                 onChange={(e) => {
                   const val = e.target.value;
@@ -104,6 +105,7 @@ export default function CurrencySwapCard() {
             variant="ghost"
             size="icon"
             onClick={handleSwapDirection}
+            aria-label="Swap currency direction"
             className="size-8 rounded-full shadow-md hover:bg-muted active:scale-95 transition-all bg-card border border-border flex items-center justify-center cursor-pointer"
           >
             <ArrowUpDown className="size-4 text-foreground" />
@@ -122,6 +124,7 @@ export default function CurrencySwapCard() {
               <input
                 type="text"
                 readOnly
+                aria-label={`Receive amount in ${isBtcToEth ? "ETH" : "BTC"}`}
                 value={currentOutput}
                 className="text-base font-semibold text-foreground bg-transparent border-none p-0 h-auto focus:outline-none focus:ring-0 w-full text-left"
               />

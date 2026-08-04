@@ -82,7 +82,7 @@ Within each group, imports MUST be sorted in **alphabetical order (A → Z) base
 4. **Project Imports** (Internal modules, layouts, hooks, lib)
 
    ```typescript
-   // project
+   // project imports
    import { cn } from "@/lib/utils";
    import { siteConfig } from "@/config/site";
    ```

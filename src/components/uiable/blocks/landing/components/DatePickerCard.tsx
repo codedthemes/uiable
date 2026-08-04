@@ -34,6 +34,7 @@ export default function DatePickerCard() {
               type="button"
               variant="ghost"
               size="icon"
+              aria-label="Pick a date"
               className="size-8 rounded-lg hover:bg-accent text-muted-foreground hover:text-foreground"
             />
           }

@@ -79,29 +79,31 @@ export default function LandingPage() {
     <SmoothScroll>
       <div className="w-full overflow-clip bg-background">
         <Navbar />
-        <div className="container mx-auto border-x border-border/60">
-          <BlockArchitecture fullWidth hasTopBorder={false}>
-            <Hero />
+        <main>
+          <div className="container mx-auto border-x border-border/60">
+            <BlockArchitecture fullWidth hasTopBorder={false}>
+              <Hero />
+            </BlockArchitecture>
+            <BlockArchitecture>
+              <Component1 />
+            </BlockArchitecture>
+            <BlockArchitecture>
+              <Component2 />
+            </BlockArchitecture>
+            <BlockArchitecture>
+              <Featured />
+            </BlockArchitecture>
+            <BlockArchitecture>
+              <FAQ />
+            </BlockArchitecture>
+            <BlockArchitecture>
+              <Contact />
+            </BlockArchitecture>
+          </div>
+          <BlockArchitecture fullWidth>
+            <Footer containerClassName="border-x border-t" />
           </BlockArchitecture>
-          <BlockArchitecture>
-            <Component1 />
-          </BlockArchitecture>
-          <BlockArchitecture>
-            <Component2 />
-          </BlockArchitecture>
-          <BlockArchitecture>
-            <Featured />
-          </BlockArchitecture>
-          <BlockArchitecture>
-            <FAQ />
-          </BlockArchitecture>
-          <BlockArchitecture>
-            <Contact />
-          </BlockArchitecture>
-        </div>
-        <BlockArchitecture fullWidth>
-          <Footer containerClassName="border-x border-t" />
-        </BlockArchitecture>
+        </main>
       </div>
     </SmoothScroll>
   )

@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button"
 
 // constants
-
 const portfolioItems = [
   {
     image: "/assets/images/block/img-portfolio-5-1.png",

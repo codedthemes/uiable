@@ -18,7 +18,7 @@ import { SectionHeader } from "@/components/uiable/blocks/landing/components"
 const faqItems = [
   {
     number: "1.",
-    question: `What is ${branding.brandName}`,
+    question: `What is ${branding.brandName}?`,
     answer: (
       <>
         {branding.brandName} is a free, open-source component library built with{" "}
@@ -26,7 +26,7 @@ const faqItems = [
           href="https://tailwindcss.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary no-underline! hover:underline"
+          className="text-primary underline hover:no-underline"
         >
           Tailwind CSS
         </a>
@@ -35,7 +35,7 @@ const faqItems = [
           href="https://ui.shadcn.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary no-underline! hover:underline"
+          className="text-primary underline hover:no-underline"
         >
           shadcn-style architecture
         </a>
@@ -44,7 +44,7 @@ const faqItems = [
           href="https://base-ui.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary no-underline! hover:underline"
+          className="text-primary underline hover:no-underline"
         >
           Base UI principles
         </a>
@@ -60,7 +60,7 @@ const faqItems = [
         Yes. Every {branding.brandName} component is free, open source, and{" "}
         <Link
           href="https://github.com/codedthemes/uiable?tab=MIT-1-ov-file"
-          className="text-primary no-underline! hover:underline"
+          className="text-primary underline hover:no-underline"
         >
           MIT-licensed
         </Link>
@@ -77,7 +77,7 @@ const faqItems = [
         Yes, every{" "}
         <Link
           href="/components"
-          className="text-primary no-underline! hover:underline"
+          className="text-primary underline hover:no-underline"
         >
           component
         </Link>{" "}
@@ -110,7 +110,6 @@ export default function FAQ() {
 
       {/* Accordion Component with item gaps */}
       <Accordion
-        defaultValue={["item-0"]}
         className="flex w-full flex-col gap-4"
       >
         {faqItems.map((item, index) => (

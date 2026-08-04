@@ -58,7 +58,7 @@ interface LogoProps {
 
 export default function Logo({ className }: LogoProps) {
   return (
-    <Link href="/" className={cn("group flex items-center gap-3", className)}>
+    <Link href="/" aria-label={`${branding.brandName} Home`} className={cn("group flex items-center gap-3", className)}>
       <div className="hidden dark:block">
         <LocalDarkLogo
           className={cn("group-data-[collapsible=icon]:hidden", className)}
