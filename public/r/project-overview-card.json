@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "project-overview-card",
+  "title": "Project Overview Card",
+  "description": "Widget Project Overview Card variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/widget/project-overview-card.tsx",
+      "content": "\"use client\";\r\n\r\n// shadcn\r\nimport { Button, buttonVariants } from \"@/components/ui/button\";\r\nimport { Card, CardContent, CardTitle } from \"@/components/ui/card\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger,\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n// project\r\nimport ProjectOverviewItem from \"./project-overview-item\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\n// assets\r\nimport { MoreVertical, Plus } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BLOCK - PROJECT OVERVIEW CARD | ------------------------------  //\r\n\r\nexport default function ProjectOverviewCard() {\r\n  return (\r\n    <Card>\r\n      <CardContent className=\"p-6\">\r\n        <div className=\"flex items-center justify-between mb-6\">\r\n          <CardTitle className=\"text-lg font-bold\">Project overview</CardTitle>\r\n          <DropdownMenu>\r\n            <DropdownMenuTrigger\r\n              className={cn(\r\n                buttonVariants({ variant: \"ghost\", size: \"icon\" }),\r\n                \"h-8 w-8 rounded-xl shrink-0\",\r\n              )}\r\n            >\r\n              <MoreVertical className=\"h-4 w-4\" />\r\n            </DropdownMenuTrigger>\r\n            <DropdownMenuContent align=\"end\">\r\n              <DropdownMenuItem>Today</DropdownMenuItem>\r\n              <DropdownMenuItem>Weekly</DropdownMenuItem>\r\n              <DropdownMenuItem>Monthly</DropdownMenuItem>\r\n            </DropdownMenuContent>\r\n          </DropdownMenu>\r\n        </div>\r\n        <div className=\"grid grid-cols-12 gap-6 items-center\">\r\n          <div className=\"col-span-12 md:col-span-6 xl:col-span-4\">\r\n            <ProjectOverviewItem\r\n              title=\"Total Tasks\"\r\n              value=\"34,686\"\r\n              series={[5, 25, 3, 10, 4, 50, 0]}\r\n              color=\"var(--primary)\"\r\n            />\r\n          </div>\r\n          <div className=\"col-span-12 md:col-span-6 xl:col-span-4\">\r\n            <ProjectOverviewItem\r\n              title=\"Pending Tasks\"\r\n              value=\"3,786\"\r\n              series={[0, 50, 4, 10, 3, 25, 5]}\r\n              color=\"#DC2626\"\r\n            />\r\n          </div>\r\n          <div className=\"col-span-12 md:col-span-6 xl:col-span-4\">\r\n            <Button className=\"w-full rounded-xl h-11\" variant=\"default\">\r\n              <Plus className=\"h-4 w-4 mr-2\" /> Add project\r\n            </Button>\r\n          </div>\r\n        </div>\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/widget/project-overview-card.tsx"
+    }
+  ],
+  "categories": [
+    "widget"
+  ],
+  "type": "registry:ui"
+}

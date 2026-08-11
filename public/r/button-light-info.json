@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-light-info",
+  "title": "Button Light Info",
+  "description": "Button Light Info variant for component.",
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-light-info.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON LIGHT INFO | ------------------------------  //\r\n\r\nexport default function ButtonLightInfo() {\r\n  return (\r\n    <Button className=\"bg-cyan-500/10 text-cyan-500 hover:bg-cyan-500 hover:text-white\">\r\n      Info\r\n    </Button>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-light-info.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

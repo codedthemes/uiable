@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-solid-danger",
+  "title": "Alert Solid Danger",
+  "description": "Alert Solid Danger variant for component.",
+  "registryDependencies": [
+    "@uiable/alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-solid-danger.tsx",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - SOLID DANGER | ------------------------------  //\r\n\r\nexport default function AlertSolidDanger() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-red-500 text-white border-transparent\">\r\n      Solid Danger Alert\r\n    </Alert>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-solid-danger.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

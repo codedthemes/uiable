@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-bars-scale",
+  "title": "Spinner Bars Scale",
+  "description": "Spinner Bars Scale variant for component.",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-bars-scale.tsx",
+      "content": "\"use client\"\n\n// third-party\nimport { motion } from \"framer-motion\"\n\n//  ------------------------------ | SPINNER - BARS SCALE | ------------------------------  //\n\nexport default function SpinnerBarsScale() {\n  return (\n    <div className=\"flex items-center gap-1\" role=\"status\" aria-label=\"Loading\">\n      <motion.div\n        className=\"h-4 w-1.5 rounded-sm bg-primary\"\n        animate={{ scaleY: [0.5, 1.2, 0.5], opacity: [0.5, 1, 0.5] }}\n        transition={{ duration: 1, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n      <motion.div\n        className=\"h-4 w-1.5 rounded-sm bg-primary\"\n        animate={{ scaleY: [0.5, 1.2, 0.5], opacity: [0.5, 1, 0.5] }}\n        transition={{\n          duration: 1,\n          repeat: Infinity,\n          ease: \"easeInOut\",\n          delay: 0.2,\n        }}\n      />\n      <motion.div\n        className=\"h-4 w-1.5 rounded-sm bg-primary\"\n        animate={{ scaleY: [0.5, 1.2, 0.5], opacity: [0.5, 1, 0.5] }}\n        transition={{\n          duration: 1,\n          repeat: Infinity,\n          ease: \"easeInOut\",\n          delay: 0.4,\n        }}\n      />\n      <span className=\"sr-only\">Loading...</span>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-bars-scale.tsx"
+    }
+  ],
+  "categories": [
+    "spinner"
+  ],
+  "type": "registry:ui"
+}

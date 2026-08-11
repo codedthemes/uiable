@@ -72,7 +72,7 @@ export default function Footer({
           </div>
 
           <p className="text-base leading-6 font-normal text-foreground">
-            v1.5.0 | Built by{" "}
+            v1.6.0 | Built by{" "}
             <Link
               href={branding.company.url}
               target="_blank"

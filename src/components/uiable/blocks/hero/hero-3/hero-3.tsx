@@ -1,0 +1,296 @@
+"use client"
+
+import * as React from "react"
+import { useEffect, useState } from "react"
+import Autoplay from "embla-carousel-autoplay"
+import { AnimatePresence, motion } from "framer-motion"
+
+import { Button } from "@/components/ui/button"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel"
+
+const navLinks = [
+  { name: "Home", href: "#" },
+  { name: "Pricing", href: "#" },
+  { name: "Gallery", href: "#" },
+  { name: "Portfolio", href: "#" },
+  { name: "Services", href: "#" },
+  { name: "Contact", href: "#" },
+  { name: "About", href: "#" },
+]
+const Gallery = [
+  { images: "https://cdn.uiable.com/block/img-home3-1.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-2.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-3.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-4.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-5.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-6.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-7.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-8.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-9.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-10.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-11.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-12.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-13.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-14.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-15.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-16.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-17.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-18.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-19.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-20.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-21.png" },
+  { images: "https://cdn.uiable.com/block/img-home3-22.png" },
+]
+//
+//  ------------------------------ | HERO3 | ------------------------------  //
+
+export default function Hero3() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [api, setApi] = useState<CarouselApi>()
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsOpen(false)
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  useEffect(() => {
+    if (!api) return
+
+    const interval = setInterval(() => {
+      api.scrollPrev()
+    }, 2000)
+
+    return () => clearInterval(interval)
+  }, [api])
+
+  return (
+    <div className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      <div className="absolute inset-y-0 left-0 w-2/4 p-2 sm:w-2/6 sm:p-5">
+        <div className="h-full overflow-hidden">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            orientation="vertical"
+            className="relative h-full w-full"
+          >
+            <CarouselContent className="absolute inset-0">
+              {Gallery.map((item, index) => (
+                <CarouselItem key={index} className="basis-auto pt-1">
+                  <div className="p-1">
+                    <img
+                      src={item.images}
+                      alt={item.images}
+                      className="w-full rounded-lg"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
+      </div>
+      <div className="absolute inset-y-0 right-0 w-2/4 p-2 sm:w-2/6 sm:p-5">
+        <div className="h-full overflow-hidden">
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "center",
+              loop: true,
+            }}
+            orientation="vertical"
+            className="relative h-full w-full"
+          >
+            <CarouselContent className="absolute inset-0">
+              {[...Gallery].reverse().map((item, index) => (
+                <CarouselItem key={index} className="basis-auto pt-1">
+                  <div className="p-1">
+                    <img
+                      src={item.images}
+                      alt={item.images}
+                      className="w-full rounded-lg"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
+      </div>
+      <div className="relative z-30 container mx-auto px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
+          <div className="basis-full backdrop-blur-md max-xl:rounded-2xl max-xl:bg-card/75 max-xl:px-4 xl:basis-2/6">
+            <div className="flex h-full flex-col items-center justify-between gap-10 py-4 lg:py-10 xl:min-h-screen">
+              <div className="relative max-w-160 rounded-full bg-card/50 p-3 pl-6 shadow-[0_0_40px_-8px_#4680ff38] backdrop-blur-md max-md:w-full">
+                <div className="flex flex-row items-center justify-between gap-10">
+                  <div className="flex flex-row items-center gap-3">
+                    <svg
+                      className="size-8 text-sky-500"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        opacity="0.3"
+                        d="M21.5315 11.5857L20.75 10.9605V21.25H22C22.4142 21.25 22.75 21.5858 22.75 22C22.75 22.4143 22.4142 22.75 22 22.75H2.00003C1.58581 22.75 1.25003 22.4143 1.25003 22C1.25003 21.5858 1.58581 21.25 2.00003 21.25H3.25003V10.9605L2.46855 11.5857C2.1451 11.8445 1.67313 11.792 1.41438 11.4686C1.15562 11.1451 1.20806 10.6731 1.53151 10.4144L9.65742 3.91366C11.027 2.818 12.9731 2.818 14.3426 3.91366L22.4685 10.4144C22.792 10.6731 22.8444 11.1451 22.5857 11.4686C22.3269 11.792 21.855 11.8445 21.5315 11.5857ZM12 6.75004C10.4812 6.75004 9.25003 7.98126 9.25003 9.50004C9.25003 11.0188 10.4812 12.25 12 12.25C13.5188 12.25 14.75 11.0188 14.75 9.50004C14.75 7.98126 13.5188 6.75004 12 6.75004ZM13.7459 13.3116C13.2871 13.25 12.7143 13.25 12.0494 13.25H11.9507C11.2858 13.25 10.7129 13.25 10.2542 13.3116C9.76255 13.3777 9.29128 13.5268 8.90904 13.9091C8.52679 14.2913 8.37773 14.7626 8.31163 15.2542C8.24996 15.7129 8.24999 16.2858 8.25003 16.9507L8.25003 21.25H9.75003H14.25H15.75L15.75 16.9507L15.75 16.8271C15.7498 16.2146 15.7462 15.6843 15.6884 15.2542C15.6223 14.7626 15.4733 14.2913 15.091 13.9091C14.7088 13.5268 14.2375 13.3777 13.7459 13.3116Z"
+                        fill="currentColor"
+                      />
+                      <g opacity="0.5">
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M10.75 9.5C10.75 8.80964 11.3096 8.25 12 8.25C12.6904 8.25 13.25 8.80964 13.25 9.5C13.25 10.1904 12.6904 10.75 12 10.75C11.3096 10.75 10.75 10.1904 10.75 9.5Z"
+                          fill="currentColor"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M10.75 9.5C10.75 8.80964 11.3096 8.25 12 8.25C12.6904 8.25 13.25 8.80964 13.25 9.5C13.25 10.1904 12.6904 10.75 12 10.75C11.3096 10.75 10.75 10.1904 10.75 9.5Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                      <path
+                        d="M12.0494 13.25C12.7142 13.25 13.2871 13.2499 13.7458 13.3116C14.2375 13.3777 14.7087 13.5268 15.091 13.909C15.4732 14.2913 15.6223 14.7625 15.6884 15.2542C15.7462 15.6842 15.7498 16.2146 15.75 16.827L15.75 21.25H8.25L8.25 16.9506C8.24997 16.2858 8.24993 15.7129 8.31161 15.2542C8.37771 14.7625 8.52677 14.2913 8.90901 13.909C9.29126 13.5268 9.76252 13.3777 10.2542 13.3116C10.7129 13.2499 11.2858 13.25 11.9506 13.25H12.0494Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M16 3H18.5C18.7761 3 19 3.22386 19 3.5L19 7.63955L15.5 4.83955V3.5C15.5 3.22386 15.7239 3 16 3Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span className="text-lg font-medium text-slate-900 sm:text-xl dark:text-slate-100">
+                      Nestora
+                    </span>
+                  </div>
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.2, ease: "easeOut" }}
+                        className="absolute top-full right-0 z-20 w-50"
+                      >
+                        <div className="mt-2 flex flex-col gap-2 rounded-2xl bg-card p-4 shadow-[0_0_40px_-8px_#4680ff38] backdrop-blur-md">
+                          {navLinks.map((item) => (
+                            <a
+                              key={item.name}
+                              className="rounded-lg px-3 py-1.5 text-slate-600 hover:bg-sky-500/10 hover:text-sky-500 dark:text-slate-300"
+                              href={item.href}
+                            >
+                              {item.name}
+                            </a>
+                          ))}
+                          <Button className="rounded-full border-0 border-b-2 border-b-slate-900 bg-slate-800 shadow-[0_8px_10px_-2px_#8f8f8f6b] sm:hidden">
+                            Buy Now
+                          </Button>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  <div className="flex flex-row gap-3">
+                    <Button className="rounded-full border-0 border-b-2 border-b-slate-900 bg-slate-800 shadow-[0_8px_10px_-2px_#8f8f8f6b] max-sm:hidden">
+                      Buy Now
+                    </Button>
+                    <Button
+                      size="icon-lg"
+                      className="rounded-full bg-sky-500 shadow-[0_8px_10px_-2px_#8f8f8f6b]"
+                      onClick={() => setIsOpen(!isOpen)}
+                    >
+                      {isOpen ? (
+                        <svg
+                          className="size-5"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10ZM9.17 14.83l5.66-5.66M14.83 14.83 9.17 9.17"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></path>
+                        </svg>
+                      ) : (
+                        <svg
+                          className="size-5"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M3 7h18M3 12h18M3 17h18"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                          ></path>
+                        </svg>
+                      )}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div className="flex max-w-160 flex-col items-center gap-4 text-center sm:gap-8">
+                <h1 className="max-w-150 text-lg leading-snug font-normal text-slate-900 sm:text-2xl xl:text-5xl dark:text-slate-100">
+                  Shaping a Better Future with Modern Architecture
+                </h1>
+                <p className="xl:text-md max-w-120 text-base text-slate-600 dark:text-slate-100">
+                  We create innovative, sustainable, and functional spaces that
+                  blend modern design with practical living. Our architectural
+                  solutions are crafted to enhance lifestyles, inspire
+                  communities, and build a smarter future for generations to
+                  come.
+                </p>
+                <div className="flex flex-row flex-wrap justify-center gap-4">
+                  <Button className="rounded-full border-0 border-b-2 border-b-sky-700 bg-sky-500 shadow-[0_8px_10px_-2px_#8f8f8f6b] lg:flex">
+                    Explore Now
+                  </Button>
+                  <Button className="rounded-full border-0 border-b-2 border-b-slate-700/30 bg-slate-500/10 text-card-foreground">
+                    Contact us
+                  </Button>
+                </div>
+              </div>
+              <div className="inline-flex cursor-pointer flex-col items-center gap-1">
+                <svg
+                  className="size-5 animate-bounce text-sky-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 21.25c-.19 0-.38-.07-.53-.22L5.4 14.96a.754.754 0 010-1.06c.29-.29.77-.29 1.06 0L12 19.44l5.54-5.54c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06l-6.07 6.07c-.15.15-.34.22-.53.22z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M12 21.08c-.41 0-.75-.34-.75-.75V3.5c0-.41.34-.75.75-.75s.75.34.75.75v16.83c0 .41-.34.75-.75.75z"
+                  ></path>
+                </svg>
+                <span className="animate-pulse text-xs text-slate-400 dark:text-slate-600">
+                  Scroll Down
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

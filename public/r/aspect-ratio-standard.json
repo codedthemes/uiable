@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio-standard",
+  "title": "Aspect Ratio Standard",
+  "description": "Aspect Ratio Standard variant for component.",
+  "registryDependencies": [
+    "@uiable/aspect-ratio"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/aspect-ratio/aspect-ratio-standard.tsx",
+      "content": "import { AspectRatio } from \"@/components/ui/aspect-ratio\"\n\n//  ------------------------------ | ASPECT RATIO - STANDARD | ------------------------------  //\n\nexport function AspectRatioStandard() {\n  return (\n    <AspectRatio ratio={4 / 3} className=\"w-full max-w-md rounded-lg bg-muted\">\n      <img\n        src=\"https://cdn.uiable.com/component/card-sample.png\"\n        alt=\"Standard photo\"\n        className=\"h-full w-full rounded-lg object-cover\"\n      />\n    </AspectRatio>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/aspect-ratio/aspect-ratio-standard.tsx"
+    }
+  ],
+  "categories": [
+    "aspect-ratio"
+  ],
+  "type": "registry:ui"
+}

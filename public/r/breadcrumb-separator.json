@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb-separator",
+  "title": "Breadcrumb Separator",
+  "description": "Breadcrumb Separator variant for component.",
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "registryDependencies": [
+    "@uiable/breadcrumb"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/breadcrumb/breadcrumb-separator.tsx",
+      "content": "import Link from \"next/link\";\r\n\r\n// shadcn\r\nimport {\r\n  Breadcrumb,\r\n  BreadcrumbItem,\r\n  BreadcrumbLink,\r\n  BreadcrumbList,\r\n  BreadcrumbPage,\r\n  BreadcrumbSeparator\r\n} from \"@/components/ui/breadcrumb\";\r\n\r\n// assets\r\nimport { DotIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BREADCRUMB - SEPARATOR | ------------------------------  //\r\n\r\nexport function BreadcrumbSeparatorDemo() {\r\n  return (\r\n    <Breadcrumb>\r\n      <BreadcrumbList>\r\n        <BreadcrumbItem>\r\n          <BreadcrumbLink render={<Link href=\"#\" />}>Home</BreadcrumbLink>\r\n        </BreadcrumbItem>\r\n        <BreadcrumbSeparator>\r\n          <DotIcon />\r\n        </BreadcrumbSeparator>\r\n        <BreadcrumbItem>\r\n          <BreadcrumbLink render={<Link href=\"#\" />}>Components</BreadcrumbLink>\r\n        </BreadcrumbItem>\r\n        <BreadcrumbSeparator>\r\n          <DotIcon />\r\n        </BreadcrumbSeparator>\r\n        <BreadcrumbItem>\r\n          <BreadcrumbPage>Breadcrumb</BreadcrumbPage>\r\n        </BreadcrumbItem>\r\n      </BreadcrumbList>\r\n    </Breadcrumb>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/breadcrumb/breadcrumb-separator.tsx"
+    }
+  ],
+  "categories": [
+    "breadcrumb"
+  ],
+  "type": "registry:ui"
+}

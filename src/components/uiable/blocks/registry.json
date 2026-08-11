@@ -4,7 +4,7 @@
   "homepage": "https://uiable.com",
   "items": [
     {
-      "name": "uiable-block-component-1",
+      "name": "block-component-1",
       "type": "registry:block",
       "title": "Component 1",
       "description": "Component 1 variant for block.",
@@ -15,17 +15,22 @@
           "target": "@components/uiable/blocks/landing/component-1/component-1.tsx"
         }
       ],
-      "categories": ["landing"],
+      "categories": [
+        "landing"
+      ],
       "registryDependencies": [
         "@uiable/button",
         "@uiable/card",
         "@uiable/components",
         "@uiable/separator"
       ],
-      "dependencies": ["@tabler/icons-react", "next"]
+      "dependencies": [
+        "@tabler/icons-react",
+        "next"
+      ]
     },
     {
-      "name": "uiable-block-component-2",
+      "name": "block-component-2",
       "type": "registry:block",
       "title": "Component 2",
       "description": "Component 2 variant for block.",
@@ -36,11 +41,15 @@
           "target": "@components/uiable/blocks/landing/component-2/component-2.tsx"
         }
       ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/components"]
+      "categories": [
+        "landing"
+      ],
+      "registryDependencies": [
+        "@uiable/components"
+      ]
     },
     {
-      "name": "uiable-block-contact",
+      "name": "block-contact",
       "type": "registry:block",
       "title": "Contact",
       "description": "Contact variant for block.",
@@ -51,12 +60,19 @@
           "target": "@components/uiable/blocks/landing/contact/Contact.tsx"
         }
       ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/button", "@uiable/input"],
-      "dependencies": ["sonner"]
+      "categories": [
+        "landing"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input"
+      ],
+      "dependencies": [
+        "sonner"
+      ]
     },
     {
-      "name": "uiable-block-contact-1",
+      "name": "block-contact-1",
       "type": "registry:block",
       "title": "Contact 1",
       "description": "Contact 1 variant for block.",
@@ -67,7 +83,9 @@
           "target": "@components/uiable/blocks/contact/contact-1/contact-1.tsx"
         }
       ],
-      "categories": ["contact"],
+      "categories": [
+        "contact"
+      ],
       "registryDependencies": [
         "@uiable/button",
         "@uiable/field",
@@ -76,7 +94,7 @@
       ]
     },
     {
-      "name": "uiable-block-content-1",
+      "name": "block-content-1",
       "type": "registry:block",
       "title": "Content 1",
       "description": "Content 1 variant for block.",
@@ -87,10 +105,12 @@
           "target": "@components/uiable/blocks/content/content-1/content-1.tsx"
         }
       ],
-      "categories": ["content"]
+      "categories": [
+        "content"
+      ]
     },
     {
-      "name": "uiable-block-cta-1",
+      "name": "block-cta-1",
       "type": "registry:block",
       "title": "Cta 1",
       "description": "Cta 1 variant for block.",
@@ -101,7 +121,9 @@
           "target": "@components/uiable/blocks/cta/cta-1/cta-1.tsx"
         }
       ],
-      "categories": ["cta"],
+      "categories": [
+        "cta"
+      ],
       "registryDependencies": [
         "@uiable/button",
         "@uiable/button-group",
@@ -110,7 +132,7 @@
       ]
     },
     {
-      "name": "uiable-block-cta-2",
+      "name": "block-cta-2",
       "type": "registry:block",
       "title": "Cta 2",
       "description": "Cta 2 variant for block.",
@@ -121,11 +143,16 @@
           "target": "@components/uiable/blocks/cta/cta-2/cta-2.tsx"
         }
       ],
-      "categories": ["cta"],
-      "registryDependencies": ["@uiable/button", "@uiable/input"]
+      "categories": [
+        "cta"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input"
+      ]
     },
     {
-      "name": "uiable-block-faq",
+      "name": "block-faq",
       "type": "registry:block",
       "title": "Faq",
       "description": "Faq variant for block.",
@@ -136,12 +163,19 @@
           "target": "@components/uiable/blocks/landing/faq/faq.tsx"
         }
       ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/accordion", "@uiable/components"],
-      "dependencies": ["next"]
+      "categories": [
+        "landing"
+      ],
+      "registryDependencies": [
+        "@uiable/accordion",
+        "@uiable/components"
+      ],
+      "dependencies": [
+        "next"
+      ]
     },
     {
-      "name": "uiable-block-faq-1",
+      "name": "block-faq-1",
       "type": "registry:block",
       "title": "Faq 1",
       "description": "Faq 1 variant for block.",
@@ -152,11 +186,15 @@
           "target": "@components/uiable/blocks/faq/faq-1/faq-1.tsx"
         }
       ],
-      "categories": ["faq"],
-      "registryDependencies": ["@uiable/accordion"]
+      "categories": [
+        "faq"
+      ],
+      "registryDependencies": [
+        "@uiable/accordion"
+      ]
     },
     {
-      "name": "uiable-block-feature",
+      "name": "block-feature",
       "type": "registry:block",
       "title": "Feature",
       "description": "Feature variant for block.",
@@ -167,12 +205,19 @@
           "target": "@components/uiable/blocks/landing/feature/Feature.tsx"
         }
       ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/button", "@uiable/components"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "landing"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/components"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     },
     {
-      "name": "uiable-block-feature-1",
+      "name": "block-feature-1",
       "type": "registry:block",
       "title": "Feature 1",
       "description": "Feature 1 variant for block.",
@@ -183,10 +228,12 @@
           "target": "@components/uiable/blocks/feature/feature-1/feature-1.tsx"
         }
       ],
-      "categories": ["feature"]
+      "categories": [
+        "feature"
+      ]
     },
     {
-      "name": "uiable-block-feature-2",
+      "name": "block-feature-2",
       "type": "registry:block",
       "title": "Feature 2",
       "description": "Feature 2 variant for block.",
@@ -197,11 +244,15 @@
           "target": "@components/uiable/blocks/feature/feature-2/feature-2.tsx"
         }
       ],
-      "categories": ["feature"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     },
     {
-      "name": "uiable-block-footer",
+      "name": "block-footer",
       "type": "registry:block",
       "title": "Footer",
       "description": "Footer variant for block.",
@@ -212,12 +263,19 @@
           "target": "@components/uiable/blocks/landing/footer/footer.tsx"
         }
       ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/logo"],
-      "dependencies": ["@tabler/icons-react", "next"]
+      "categories": [
+        "landing"
+      ],
+      "registryDependencies": [
+        "@uiable/logo"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "next"
+      ]
     },
     {
-      "name": "uiable-block-footer-3",
+      "name": "block-footer-3",
       "type": "registry:block",
       "title": "Footer 3",
       "description": "Footer 3 variant for block.",
@@ -228,10 +286,12 @@
           "target": "@components/uiable/blocks/footer/footer-3/footer-3.tsx"
         }
       ],
-      "categories": ["footer"]
+      "categories": [
+        "footer"
+      ]
     },
     {
-      "name": "uiable-block-footer-7",
+      "name": "block-footer-7",
       "type": "registry:block",
       "title": "Footer 7",
       "description": "Footer 7 variant for block.",
@@ -242,10 +302,12 @@
           "target": "@components/uiable/blocks/footer/footer-7/footer-7.tsx"
         }
       ],
-      "categories": ["footer"]
+      "categories": [
+        "footer"
+      ]
     },
     {
-      "name": "uiable-block-gallery-2",
+      "name": "block-gallery-2",
       "type": "registry:block",
       "title": "Gallery 2",
       "description": "Gallery 2 variant for block.",
@@ -256,10 +318,28 @@
           "target": "@components/uiable/blocks/gallery/gallery-2/gallery-2.tsx"
         }
       ],
-      "categories": ["gallery"]
+      "categories": [
+        "gallery"
+      ]
     },
     {
-      "name": "uiable-block-gallery-4",
+      "name": "block-gallery-3",
+      "type": "registry:block",
+      "title": "Gallery 3",
+      "description": "Gallery 3 variant for block.",
+      "files": [
+        {
+          "path": "gallery/gallery-3/gallery-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/gallery/gallery-3/gallery-3.tsx"
+        }
+      ],
+      "categories": [
+        "gallery"
+      ]
+    },
+    {
+      "name": "block-gallery-4",
       "type": "registry:block",
       "title": "Gallery 4",
       "description": "Gallery 4 variant for block.",
@@ -270,12 +350,18 @@
           "target": "@components/uiable/blocks/gallery/gallery-4/gallery-4.tsx"
         }
       ],
-      "categories": ["gallery"],
-      "registryDependencies": ["@uiable/carousel"],
-      "dependencies": ["embla-carousel-autoplay"]
+      "categories": [
+        "gallery"
+      ],
+      "registryDependencies": [
+        "@uiable/carousel"
+      ],
+      "dependencies": [
+        "embla-carousel-autoplay"
+      ]
     },
     {
-      "name": "uiable-block-hero",
+      "name": "block-hero",
       "type": "registry:block",
       "title": "Hero",
       "description": "Hero variant for block.",
@@ -286,12 +372,21 @@
           "target": "@components/uiable/blocks/landing/hero/hero.tsx"
         }
       ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/badge", "@uiable/button"],
-      "dependencies": ["@tabler/icons-react", "framer-motion", "next"]
+      "categories": [
+        "landing"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "framer-motion",
+        "next"
+      ]
     },
     {
-      "name": "uiable-block-hero-2",
+      "name": "block-hero-2",
       "type": "registry:block",
       "title": "Hero 2",
       "description": "Hero 2 variant for block.",
@@ -302,12 +397,42 @@
           "target": "@components/uiable/blocks/hero/hero-2/hero-2.tsx"
         }
       ],
-      "categories": ["hero"],
-      "registryDependencies": ["@uiable/button"],
-      "dependencies": ["framer-motion"]
+      "categories": [
+        "hero"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ]
     },
     {
-      "name": "uiable-block-navbar",
+      "name": "block-hero-3",
+      "type": "registry:block",
+      "title": "Hero 3",
+      "description": "Hero 3 variant for block.",
+      "files": [
+        {
+          "path": "hero/hero-3/hero-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-3/hero-3.tsx"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/carousel"
+      ],
+      "dependencies": [
+        "embla-carousel-autoplay",
+        "framer-motion"
+      ]
+    },
+    {
+      "name": "block-navbar",
       "type": "registry:block",
       "title": "Navbar",
       "description": "Navbar variant for block.",
@@ -318,17 +443,42 @@
           "target": "@components/uiable/blocks/landing/navbar/navbar.tsx"
         }
       ],
-      "categories": ["landing"],
+      "categories": [
+        "landing"
+      ],
       "registryDependencies": [
         "@uiable/NavSearchDialog",
         "@uiable/button",
         "@uiable/logo",
         "@uiable/separator"
       ],
-      "dependencies": ["@tabler/icons-react", "next"]
+      "dependencies": [
+        "@tabler/icons-react",
+        "next"
+      ]
     },
     {
-      "name": "uiable-block-portfolio-4",
+      "name": "block-portfolio-3",
+      "type": "registry:block",
+      "title": "Portfolio 3",
+      "description": "Portfolio 3 variant for block.",
+      "files": [
+        {
+          "path": "portfolio/portfolio-3/portfolio-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/portfolio/portfolio-3/portfolio-3.tsx"
+        }
+      ],
+      "categories": [
+        "portfolio"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/carousel"
+      ]
+    },
+    {
+      "name": "block-portfolio-4",
       "type": "registry:block",
       "title": "Portfolio 4",
       "description": "Portfolio 4 variant for block.",
@@ -339,12 +489,18 @@
           "target": "@components/uiable/blocks/portfolio/portfolio-4/portfolio-4.tsx"
         }
       ],
-      "categories": ["portfolio"],
-      "registryDependencies": ["@uiable/button"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "portfolio"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     },
     {
-      "name": "uiable-block-portfolio-5",
+      "name": "block-portfolio-5",
       "type": "registry:block",
       "title": "Portfolio 5",
       "description": "Portfolio 5 variant for block.",
@@ -355,11 +511,15 @@
           "target": "@components/uiable/blocks/portfolio/portfolio-5/portfolio-5.tsx"
         }
       ],
-      "categories": ["portfolio"],
-      "registryDependencies": ["@uiable/button"]
+      "categories": [
+        "portfolio"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ]
     },
     {
-      "name": "uiable-block-pricing-2",
+      "name": "block-pricing-2",
       "type": "registry:block",
       "title": "Pricing 2",
       "description": "Pricing 2 variant for block.",
@@ -370,12 +530,40 @@
           "target": "@components/uiable/blocks/pricing/pricing-2/pricing-2.tsx"
         }
       ],
-      "categories": ["pricing"],
-      "registryDependencies": ["@uiable/button"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "pricing"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     },
     {
-      "name": "uiable-block-process-1",
+      "name": "block-pricing-3",
+      "type": "registry:block",
+      "title": "Pricing 3",
+      "description": "Pricing 3 variant for block.",
+      "files": [
+        {
+          "path": "pricing/pricing-3/pricing-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/pricing/pricing-3/pricing-3.tsx"
+        }
+      ],
+      "categories": [
+        "pricing"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
+    },
+    {
+      "name": "block-process-1",
       "type": "registry:block",
       "title": "Process 1",
       "description": "Process 1 variant for block.",
@@ -386,11 +574,34 @@
           "target": "@components/uiable/blocks/process/process-1/process-1.tsx"
         }
       ],
-      "categories": ["process"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "process"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     },
     {
-      "name": "uiable-block-process-6",
+      "name": "block-process-3",
+      "type": "registry:block",
+      "title": "Process 3",
+      "description": "Process 3 variant for block.",
+      "files": [
+        {
+          "path": "process/process-3/process-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/process/process-3/process-3.tsx"
+        }
+      ],
+      "categories": [
+        "process"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
+    },
+    {
+      "name": "block-process-6",
       "type": "registry:block",
       "title": "Process 6",
       "description": "Process 6 variant for block.",
@@ -401,11 +612,15 @@
           "target": "@components/uiable/blocks/process/process-6/process-6.tsx"
         }
       ],
-      "categories": ["process"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "process"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     },
     {
-      "name": "uiable-block-statistics-1",
+      "name": "block-statistics-1",
       "type": "registry:block",
       "title": "Statistics 1",
       "description": "Statistics 1 variant for block.",
@@ -416,12 +631,18 @@
           "target": "@components/uiable/blocks/statistics/statistics-1/statistics-1.tsx"
         }
       ],
-      "categories": ["statistics"],
-      "registryDependencies": ["@uiable/button"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "statistics"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     },
     {
-      "name": "uiable-block-team-1",
+      "name": "block-team-1",
       "type": "registry:block",
       "title": "Team 1",
       "description": "Team 1 variant for block.",
@@ -432,11 +653,15 @@
           "target": "@components/uiable/blocks/team/team-1/team-1.tsx"
         }
       ],
-      "categories": ["team"],
-      "registryDependencies": ["@uiable/avatar"]
+      "categories": [
+        "team"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar"
+      ]
     },
     {
-      "name": "uiable-block-testimonial-1",
+      "name": "block-testimonial-1",
       "type": "registry:block",
       "title": "Testimonial 1",
       "description": "Testimonial 1 variant for block.",
@@ -447,9 +672,15 @@
           "target": "@components/uiable/blocks/testimonial/testimonial-1/testimonial-1.tsx"
         }
       ],
-      "categories": ["testimonial"],
-      "registryDependencies": ["@uiable/avatar"],
-      "dependencies": ["lucide-react"]
+      "categories": [
+        "testimonial"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
     }
   ]
 }

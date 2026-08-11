@@ -43,3 +43,7 @@ config.bat
 
 # claude code agent worktrees
 .claude/worktrees/
+.claude/launch.json
+
+# intermediate registry.json files split by tier (regenerated via `npm run registry:split`)
+/.registry-build/

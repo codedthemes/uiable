@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-block-end",
+  "title": "Input Group Block End",
+  "description": "Input Group Block End variant for component.",
+  "registryDependencies": [
+    "@uiable/field",
+    "@uiable/input-group"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input-group/input-group-block-end.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Field,\r\n  FieldDescription,\r\n  FieldGroup,\r\n  FieldLabel\r\n} from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput,\r\n  InputGroupText,\r\n  InputGroupTextarea\r\n} from \"@/components/ui/input-group\";\r\n\r\n//  ------------------------------ | INPUT GROUP - BLOCK END | ------------------------------  //\r\n\r\nexport function InputGroupBlockEnd() {\r\n  return (\r\n    <FieldGroup className=\"max-w-sm\">\r\n      <Field>\r\n        <FieldLabel htmlFor=\"block-end-input\">Input</FieldLabel>\r\n        <InputGroup className=\"h-auto\">\r\n          <InputGroupInput id=\"block-end-input\" placeholder=\"Enter amount\" />\r\n          <InputGroupAddon align=\"block-end\">\r\n            <InputGroupText>USD</InputGroupText>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <FieldDescription>Footer positioned below the input.</FieldDescription>\r\n      </Field>\r\n      <Field>\r\n        <FieldLabel htmlFor=\"block-end-textarea\">Textarea</FieldLabel>\r\n        <InputGroup>\r\n          <InputGroupTextarea\r\n            id=\"block-end-textarea\"\r\n            placeholder=\"Write a comment...\"\r\n          />\r\n          <InputGroupAddon align=\"block-end\">\r\n            <InputGroupText>0/280</InputGroupText>\r\n            <InputGroupButton variant=\"default\" size=\"sm\" className=\"ml-auto\">\r\n              Post\r\n            </InputGroupButton>\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <FieldDescription>\r\n          Footer positioned below the textarea.\r\n        </FieldDescription>\r\n      </Field>\r\n    </FieldGroup>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input-group/input-group-block-end.tsx"
+    }
+  ],
+  "categories": [
+    "input-group"
+  ],
+  "type": "registry:ui"
+}

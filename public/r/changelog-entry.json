@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "changelog-entry",
+  "title": "Changelog Entry",
+  "description": "Changelog Entry variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/separator"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/changelog/changelog-entry.tsx",
+      "content": "\"use client\"\r\n\r\n// shadcn\r\nimport { Separator } from \"@/components/ui/separator\"\r\n\r\n// project\r\nimport { CHANGELOG_DATA } from \"@/data/changelog-data\"\r\n\r\n// assets\r\nimport { ExternalLink } from \"lucide-react\"\r\n\r\n// types\r\ntype ChangelogRelease = (typeof CHANGELOG_DATA)[number]\r\n\r\ninterface ChangelogEntryProps {\r\n  release: ChangelogRelease\r\n  isLast?: boolean\r\n}\r\n\r\n//  ------------------------------ | COMPONENT - CHANGELOG ENTRY | ------------------------------  //\r\n\r\nexport default function ChangelogEntry({\r\n  release,\r\n  isLast = false,\r\n}: ChangelogEntryProps) {\r\n  return (\r\n    <article aria-labelledby={release.anchor} className=\"flex flex-col gap-10\">\r\n      <div className=\"flex flex-col gap-6\">\r\n        <div className=\"flex flex-row items-baseline gap-2\">\r\n          <h2\r\n            id={release.anchor}\r\n            className=\"group relative scroll-mt-24 text-xl font-semibold tracking-tight text-foreground\"\r\n          >\r\n            <a\r\n              href={`#${release.anchor}`}\r\n              className=\"inline-flex items-center gap-2 transition-colors hover:text-primary\"\r\n              aria-label={`Version ${release.version}`}\r\n            >\r\n              v{release.version}\r\n              {release.title && (\r\n                <span className=\"text-base font-normal text-muted-foreground\">\r\n                  — {release.title}\r\n                </span>\r\n              )}\r\n            </a>\r\n          </h2>\r\n\r\n          <span className=\"text-muted-foreground\">-</span>\r\n          <p className=\"text-sm text-muted-foreground\">{release.date}</p>\r\n        </div>\r\n\r\n        <div className=\"flex flex-col gap-6\">\r\n          {release.categories.map((category) => (\r\n            <div key={category.title} className=\"flex flex-col gap-3\">\r\n              <div className=\"flex items-center gap-2\">\r\n                <h3 className=\"text-sm font-semibold text-foreground\">\r\n                  {category.title}\r\n                </h3>\r\n                <span className=\"text-xs text-muted-foreground\">\r\n                  {category.items.length}{\" \"}\r\n                  {category.items.length === 1 ? \"change\" : \"changes\"}\r\n                </span>\r\n              </div>\r\n              <ul\r\n                className=\"ml-6 flex list-disc flex-col gap-2 marker:text-muted-foreground\"\r\n                role=\"list\"\r\n              >\r\n                {category.items.map((item, index) => {\r\n                  const text = typeof item === \"string\" ? item : item.text\r\n                  const previewUrl =\r\n                    typeof item === \"string\" ? undefined : item.previewUrl\r\n\r\n                  return (\r\n                    <li\r\n                      key={index}\r\n                      className=\"text-sm leading-relaxed text-muted-foreground\"\r\n                    >\r\n                      {text}\r\n                      {previewUrl && (\r\n                        <a\r\n                          href={previewUrl}\r\n                          target=\"_blank\"\r\n                          rel=\"noopener noreferrer\"\r\n                          className=\"ml-2 inline-flex items-center gap-1 font-medium text-primary hover:underline\"\r\n                        >\r\n                          Preview\r\n                          <ExternalLink className=\"size-3\" />\r\n                        </a>\r\n                      )}\r\n                    </li>\r\n                  )\r\n                })}\r\n              </ul>\r\n            </div>\r\n          ))}\r\n        </div>\r\n      </div>\r\n\r\n      {!isLast && <Separator />}\r\n    </article>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/changelog/changelog-entry.tsx"
+    }
+  ],
+  "categories": [
+    "changelog"
+  ],
+  "type": "registry:ui"
+}

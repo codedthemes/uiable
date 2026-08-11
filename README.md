@@ -124,6 +124,7 @@ The entire component library is transparent and open for contribution. No gated 
 <div>
   <a href="https://uiable.com/components/alert" title="Alert"><kbd>Alert</kbd></a>
   <a href="https://uiable.com/components/alert-dialog" title="Alert Dialog"><kbd>Alert Dialog</kbd></a>
+  <a href="https://uiable.com/components/circular-progress" title="Circular Progress"><kbd>Circular Progress</kbd></a>
   <a href="https://uiable.com/components/dialog" title="Dialog"><kbd>Dialog</kbd></a>
   <a href="https://uiable.com/components/drawer" title="Drawer"><kbd>Drawer</kbd></a>
   <a href="https://uiable.com/components/progress" title="Progress"><kbd>Progress</kbd></a>
@@ -222,6 +223,7 @@ Pre-built page sections ready to drop into your project.
 
 <div>
   <a href="https://uiable.com/preview/gallery/gallery-2/gallery-2" title="Gallery 2"><kbd>Gallery 2</kbd></a>
+  <a href="https://uiable.com/preview/gallery/gallery-3/gallery-3" title="Gallery 3"><kbd>Gallery 3</kbd></a>
   <a href="https://uiable.com/preview/gallery/gallery-4/gallery-4" title="Gallery 4"><kbd>Gallery 4</kbd></a>
 </div>
 
@@ -229,26 +231,30 @@ Pre-built page sections ready to drop into your project.
 
 <div>
   <a href="https://uiable.com/preview/hero/hero-2/hero-2" title="Hero 2"><kbd>Hero 2</kbd></a>
+  <a href="https://uiable.com/preview/hero/hero-3/hero-3" title="Hero 3"><kbd>Hero 3</kbd></a>
 </div>
 
 ### Portfolio
 
 <div>
-  <a href="https://uiable.com/preview/portfolio/portfolio-5/portfolio-5" title="Portfolio 5"><kbd>Portfolio 5</kbd></a>
+  <a href="https://uiable.com/preview/portfolio/portfolio-3/portfolio-3" title="Portfolio 3"><kbd>Portfolio 3</kbd></a>
   <a href="https://uiable.com/preview/portfolio/portfolio-4/portfolio-4" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
+  <a href="https://uiable.com/preview/portfolio/portfolio-5/portfolio-5" title="Portfolio 5"><kbd>Portfolio 5</kbd></a>
 </div>
 
 ### Pricing
 
 <div>
   <a href="https://uiable.com/preview/pricing/pricing-2/pricing-2" title="Pricing 2"><kbd>Pricing 2</kbd></a>
+  <a href="https://uiable.com/preview/pricing/pricing-3/pricing-3" title="Pricing 3"><kbd>Pricing 3</kbd></a>
 </div>
 
 ### Process
 
 <div>
-  <a href="https://uiable.com/preview/process/process-6/process-6" title="Process 6"><kbd>Process 6</kbd></a>
   <a href="https://uiable.com/preview/process/process-1/process-1" title="Process 1"><kbd>Process 1</kbd></a>
+  <a href="https://uiable.com/preview/process/process-3/process-3" title="Process 3"><kbd>Process 3</kbd></a>
+  <a href="https://uiable.com/preview/process/process-6/process-6" title="Process 6"><kbd>Process 6</kbd></a>
 </div>
 
 ### Statistics

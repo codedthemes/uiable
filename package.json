@@ -1,12 +1,15 @@
 {
   "name": "UIAble",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "registry:build": "shadcn build && npm run registry:catalog",
+    "registry:generate": "node src/scripts/generate-registry.mjs",
+    "registry:split": "node src/scripts/split-registry-by-tier.mjs",
     "registry:catalog": "node src/scripts/build-catalog.mjs",
-    "build": "next build",
+    "registry:build": "npm run registry:generate && npm run registry:split && shadcn build .registry-build/public/registry.json --output public/r && npm run registry:catalog && node src/scripts/generate-counts.mjs",
+    "registry:build:pro": "npm run registry:split && shadcn build .registry-build/pro/registry.json --output .pro-registry/r-flat && node src/scripts/split-pro-registry.mjs",
+    "build": "npm run registry:build && npm run registry:build:pro && next build",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write .",

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "empty-with-large-icon",
+  "title": "Empty With Large Icon",
+  "description": "Empty With Large Icon variant for component.",
+  "dependencies": [
+    "iconsax-reactjs"
+  ],
+  "registryDependencies": [
+    "@uiable/avatar",
+    "@uiable/button",
+    "@uiable/empty"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/empty/empty-with-large-icon.tsx",
+      "content": "// assets\r\nimport { FolderOpen } from \"iconsax-reactjs\"\r\n\r\n// shadcn\r\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\r\nimport { Button } from \"@/components/ui/button\"\r\nimport {\r\n  Empty,\r\n  EmptyContent,\r\n  EmptyDescription,\r\n  EmptyHeader,\r\n  EmptyMedia,\r\n  EmptyTitle,\r\n} from \"@/components/ui/empty\"\r\n\r\n//  ------------------------------ | EMPTY - WITH LARGE ICON | ------------------------------  //\r\n\r\nexport default function EmptyWithLargeIcon() {\r\n  return (\r\n    <Empty className=\"p-sm-8 rounded-lg p-4\">\r\n      <EmptyHeader>\r\n        <EmptyMedia variant=\"default\">\r\n          <Avatar className=\"size-16 rounded-lg ring-8 ring-muted/40 after:border-none dark:ring-muted/20\">\r\n            <AvatarFallback className=\"rounded-lg bg-muted text-foreground\">\r\n              <FolderOpen className=\"size-8\" />\r\n            </AvatarFallback>\r\n          </Avatar>\r\n        </EmptyMedia>\r\n        <EmptyTitle className=\"mt-2 text-xl\">No files found</EmptyTitle>\r\n        <EmptyDescription className=\"max-w-md\">\r\n          There are currently no files in this directory. Upload your documents\r\n          or assets to start collaborating.\r\n        </EmptyDescription>\r\n      </EmptyHeader>\r\n      <EmptyContent>\r\n        <Button>Upload File</Button>\r\n      </EmptyContent>\r\n    </Empty>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/empty/empty-with-large-icon.tsx"
+    }
+  ],
+  "categories": [
+    "empty"
+  ],
+  "type": "registry:ui"
+}

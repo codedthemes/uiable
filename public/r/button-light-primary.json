@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-light-primary",
+  "title": "Button Light Primary",
+  "description": "Button Light Primary variant for component.",
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-light-primary.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON LIGHT PRIMARY | ------------------------------  //\r\n\r\nexport default function ButtonLightPrimary() {\r\n  return (\r\n    <Button className=\"bg-primary/10 text-primary hover:bg-primary hover:text-white\">\r\n      Primary\r\n    </Button>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-light-primary.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

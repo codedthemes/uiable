@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-icon-warning",
+  "title": "Button Icon Warning",
+  "description": "Button Icon Warning variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-icon-warning.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// assets\r\nimport { AlertTriangle } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BUTTON ICON WARNING | ------------------------------  //\r\n\r\nexport default function ButtonIconWarning() {\r\n  return (\r\n    <Button className=\"gap-2 bg-yellow-500 text-white hover:bg-yellow-600\">\r\n      <AlertTriangle className=\"size-5\" /> Warning\r\n    </Button>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-icon-warning.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

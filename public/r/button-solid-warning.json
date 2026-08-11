@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-solid-warning",
+  "title": "Button Solid Warning",
+  "description": "Button Solid Warning variant for component.",
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-solid-warning.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON SOLID WARNING | ------------------------------  //\r\n\r\nexport default function ButtonSolidWarning() {\r\n  return (\r\n    <Button className=\"bg-yellow-500 text-white hover:bg-yellow-600\">\r\n      Warning\r\n    </Button>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-solid-warning.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

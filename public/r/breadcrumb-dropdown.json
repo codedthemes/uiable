@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb-dropdown",
+  "title": "Breadcrumb Dropdown",
+  "description": "Breadcrumb Dropdown variant for component.",
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "registryDependencies": [
+    "@uiable/breadcrumb",
+    "@uiable/button",
+    "@uiable/dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/breadcrumb/breadcrumb-dropdown.tsx",
+      "content": "import Link from \"next/link\";\r\n\r\n// shadcn\r\nimport {\r\n  Breadcrumb,\r\n  BreadcrumbItem,\r\n  BreadcrumbLink,\r\n  BreadcrumbList,\r\n  BreadcrumbPage,\r\n  BreadcrumbSeparator\r\n} from \"@/components/ui/breadcrumb\";\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuGroup,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n// assets\r\nimport { ChevronDownIcon, DotIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BREADCRUMB - DROPDOWN | ------------------------------  //\r\n\r\nexport function BreadcrumbDropdown() {\r\n  return (\r\n    <Breadcrumb>\r\n      <BreadcrumbList>\r\n        <BreadcrumbItem>\r\n          <BreadcrumbLink render={<Link href=\"#\" />}>Home</BreadcrumbLink>\r\n        </BreadcrumbItem>\r\n        <BreadcrumbSeparator>\r\n          <DotIcon />\r\n        </BreadcrumbSeparator>\r\n        <BreadcrumbItem>\r\n          <DropdownMenu>\r\n            <DropdownMenuTrigger\r\n              render={\r\n                <Button\r\n                  variant=\"ghost\"\r\n                  className=\"p-0 h-auto hover:bg-transparent dark:hover:bg-transparent aria-expanded:bg-transparent aria-expanded:text-inherit flex items-center gap-1\"\r\n                />\r\n              }\r\n            >\r\n              Components\r\n              <ChevronDownIcon data-icon=\"inline-end\" className=\"size-4\" />\r\n            </DropdownMenuTrigger>\r\n            <DropdownMenuContent align=\"start\">\r\n              <DropdownMenuGroup>\r\n                <DropdownMenuItem>Documentation</DropdownMenuItem>\r\n                <DropdownMenuItem>Themes</DropdownMenuItem>\r\n                <DropdownMenuItem></DropdownMenuItem>\r\n              </DropdownMenuGroup>\r\n            </DropdownMenuContent>\r\n          </DropdownMenu>\r\n        </BreadcrumbItem>\r\n        <BreadcrumbSeparator>\r\n          <DotIcon />\r\n        </BreadcrumbSeparator>\r\n        <BreadcrumbItem>\r\n          <BreadcrumbPage>Breadcrumb</BreadcrumbPage>\r\n        </BreadcrumbItem>\r\n      </BreadcrumbList>\r\n    </Breadcrumb>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/breadcrumb/breadcrumb-dropdown.tsx"
+    }
+  ],
+  "categories": [
+    "breadcrumb"
+  ],
+  "type": "registry:ui"
+}

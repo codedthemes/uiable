@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb-collapsed",
+  "title": "Breadcrumb Collapsed",
+  "description": "Breadcrumb Collapsed variant for component.",
+  "registryDependencies": [
+    "@uiable/breadcrumb"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/breadcrumb/breadcrumb-collapsed.tsx",
+      "content": "// shadcn\r\nimport {\r\n  Breadcrumb,\r\n  BreadcrumbEllipsis,\r\n  BreadcrumbItem,\r\n  BreadcrumbLink,\r\n  BreadcrumbList,\r\n  BreadcrumbPage,\r\n  BreadcrumbSeparator\r\n} from \"@/components/ui/breadcrumb\";\r\n\r\n//  ------------------------------ | BREADCRUMB - COLLAPSED | ------------------------------  //\r\n\r\nexport default function BreadcrumbCollapsed() {\r\n  return (\r\n    <Breadcrumb>\r\n      <BreadcrumbList>\r\n        <BreadcrumbItem>\r\n          <BreadcrumbLink href=\"#\">Home</BreadcrumbLink>\r\n        </BreadcrumbItem>\r\n        <BreadcrumbSeparator />\r\n        <BreadcrumbItem>\r\n          <BreadcrumbEllipsis />\r\n        </BreadcrumbItem>\r\n        <BreadcrumbSeparator />\r\n        <BreadcrumbItem>\r\n          <BreadcrumbLink href=\"#\">Components</BreadcrumbLink>\r\n        </BreadcrumbItem>\r\n        <BreadcrumbSeparator />\r\n        <BreadcrumbItem>\r\n          <BreadcrumbPage>Breadcrumb</BreadcrumbPage>\r\n        </BreadcrumbItem>\r\n      </BreadcrumbList>\r\n    </Breadcrumb>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/breadcrumb/breadcrumb-collapsed.tsx"
+    }
+  ],
+  "categories": [
+    "breadcrumb"
+  ],
+  "type": "registry:ui"
+}
