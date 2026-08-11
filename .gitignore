@@ -45,5 +45,9 @@ config.bat
 .claude/worktrees/
 .claude/launch.json
 
+# pro registry build output (regenerated via `npm run registry:build:pro`)
+/.pro-registry/
+
+
 # intermediate registry.json files split by tier (regenerated via `npm run registry:split`)
 /.registry-build/
