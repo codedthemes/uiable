@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-light-secondary",
+  "title": "Button Light Secondary",
+  "description": "Button Light Secondary variant for component.",
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-light-secondary.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON LIGHT SECONDARY | ------------------------------  //\r\n\r\nexport default function ButtonLightSecondary() {\r\n  return (\r\n    <Button className=\"bg-slate-500/10 text-slate-500 hover:bg-slate-500 hover:text-white\">\r\n      Secondary\r\n    </Button>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-light-secondary.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

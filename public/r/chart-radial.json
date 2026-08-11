@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chart-radial",
+  "title": "Chart Radial",
+  "description": "Chart Radial variant for component.",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [
+    "@uiable/chart"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/chart/chart-radial.tsx",
+      "content": "// third party\r\nimport { RadialBar, RadialBarChart } from \"recharts\"\r\n\r\n// shadcn\r\nimport {\r\n  ChartConfig,\r\n  ChartContainer,\r\n  ChartTooltip,\r\n  ChartTooltipContent,\r\n} from \"@/components/ui/chart\"\r\n\r\nconst chartData = [\r\n  { metric: \"cpu\", usage: 82, fill: \"var(--color-cpu)\" },\r\n  { metric: \"memory\", usage: 64, fill: \"var(--color-memory)\" },\r\n  { metric: \"storage\", usage: 45, fill: \"var(--color-storage)\" },\r\n]\r\n\r\nconst chartConfig = {\r\n  usage: {\r\n    label: \"Usage (%)\",\r\n  },\r\n  cpu: {\r\n    label: \"CPU Load\",\r\n    color: \"var(--chart-1)\",\r\n  },\r\n  memory: {\r\n    label: \"RAM Memory\",\r\n    color: \"var(--chart-2)\",\r\n  },\r\n  storage: {\r\n    label: \"SSD Storage\",\r\n    color: \"var(--chart-3)\",\r\n  },\r\n} satisfies ChartConfig\r\n\r\n//  ------------------------------ | CHART - RADIAL | ------------------------------  //\r\n\r\nexport function ChartRadial() {\r\n  return (\r\n    <ChartContainer\r\n      config={chartConfig}\r\n      className=\"mx-auto aspect-square max-h-[300px] min-h-[250px] w-full\"\r\n    >\r\n      <RadialBarChart\r\n        data={chartData}\r\n        startAngle={-90}\r\n        endAngle={380}\r\n        innerRadius={45}\r\n        outerRadius={110}\r\n      >\r\n        <ChartTooltip\r\n          cursor={false}\r\n          content={\r\n            <ChartTooltipContent\r\n              hideLabel\r\n              nameKey=\"metric\"\r\n              className=\"min-w-[10rem] gap-2 [&_div.flex-1]:items-center [&_div.flex-1]:gap-4 [&>div]:gap-2\"\r\n            />\r\n          }\r\n        />\r\n        <RadialBar dataKey=\"usage\" background cornerRadius={8} />\r\n      </RadialBarChart>\r\n    </ChartContainer>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/chart/chart-radial.tsx"
+    }
+  ],
+  "categories": [
+    "chart"
+  ],
+  "type": "registry:ui"
+}

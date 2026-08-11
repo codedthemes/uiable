@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-pill-warning",
+  "title": "Badge Pill Warning",
+  "description": "Badge Pill Warning variant for component.",
+  "registryDependencies": [
+    "@uiable/badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-pill-warning.tsx",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - PILL WARNING | ------------------------------  //\r\n\r\nexport default function BadgePillWarning() {\r\n  return (\r\n    <Badge className=\"rounded-full bg-yellow-500 text-white\">Warning</Badge>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-pill-warning.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-icon-warning",
+  "title": "Alert Icon Warning",
+  "description": "Alert Icon Warning variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-icon-warning.tsx",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n// assets\r\nimport { AlertTriangle } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ALERT - ICON WARNING | ------------------------------  //\r\n\r\nexport default function AlertIconWarning() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-yellow-500/20 bg-yellow-500/10 text-yellow-700 dark:text-yellow-400\">\r\n      <AlertTriangle className=\"h-5 w-5\" />\r\n      <span>A simple warning alert—check it out!</span>\r\n    </Alert>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-icon-warning.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

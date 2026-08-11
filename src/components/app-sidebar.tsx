@@ -4,8 +4,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, ComponentProps } from "react"
 
-// shadcn
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
   Collapsible,
@@ -24,6 +22,12 @@ import {
   SidebarGroupContent,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 // project
 import Logo from "./uiable/layout/shared/logo"
@@ -191,9 +195,21 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                                   {item.title}
                                 </span>
                                 {item.badge && (
-                                  <Badge className="ml-2 border-transparent bg-red-500/15 text-red-500">
-                                    {item.badge.label}
-                                  </Badge>
+                                  <TooltipProvider delay={0}>
+                                    <Tooltip>
+                                      <TooltipTrigger
+                                        render={
+                                          <span className="relative ml-2 flex size-1.5 cursor-default">
+                                            <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+                                            <span className="relative inline-flex size-1.5 rounded-full bg-red-500"></span>
+                                          </span>
+                                        }
+                                      />
+                                      <TooltipContent side="right" sideOffset={8}>
+                                        <p>New Added</p>
+                                      </TooltipContent>
+                                    </Tooltip>
+                                  </TooltipProvider>
                                 )}
                                 <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
                                   {CATEGORY_COUNTS[
@@ -247,14 +263,24 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                                   {item.title}
                                 </span>
                                 {item.badge && (
-                                  <Badge className="ml-2 border-transparent bg-red-500/15 text-red-500">
-                                    {item.badge.label}
-                                  </Badge>
+                                  <TooltipProvider delay={0}>
+                                    <Tooltip>
+                                      <TooltipTrigger
+                                        render={
+                                          <span className="relative ml-2 flex size-1.5 cursor-default">
+                                            <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+                                            <span className="relative inline-flex size-1.5 rounded-full bg-red-500"></span>
+                                          </span>
+                                        }
+                                      />
+                                      <TooltipContent side="top" sideOffset={8} className="px-2 py-1 text-[10px] rounded-md">
+                                        <p>New Added</p>
+                                      </TooltipContent>
+                                    </Tooltip>
+                                  </TooltipProvider>
                                 )}
                                 <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
-                                  {CATEGORY_COUNTS[
-                                    item.slug as keyof typeof CATEGORY_COUNTS
-                                  ] || 0}
+                                  {CATEGORY_COUNTS[ item.slug as keyof typeof CATEGORY_COUNTS ] || 0}
                                 </span>
                               </SidebarMenuButton>
                             </SidebarMenuItem>

@@ -20,6 +20,95 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.6.0",
+    date: "August 11, 2026",
+    anchor: "v1-6-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          {
+            text: "Gallery: Gallery 3",
+            previewUrl: "/preview/gallery/gallery-3/gallery-3",
+          },
+          {
+            text: "Hero: Hero 3",
+            previewUrl: "/preview/hero/hero-3/hero-3",
+          },
+          {
+            text: "Portfolio: Portfolio 3",
+            previewUrl: "/preview/portfolio/portfolio-3/portfolio-3",
+          },
+          {
+            text: "Pricing: Pricing 3",
+            previewUrl: "/preview/pricing/pricing-3/pricing-3",
+          },
+          {
+            text: "Process: Process 3",
+            previewUrl: "/preview/process/process-3/process-3",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Alert Dialog: Lock",
+            previewUrl: "/components/alert-dialog",
+          },
+          {
+            text: "Aspect Ratio: Standard",
+            previewUrl: "/components/aspect-ratio",
+          },
+          {
+            text: "Breadcrumb: Stepper",
+            previewUrl: "/components/breadcrumb",
+          },
+          {
+            text: "Label: Card",
+            previewUrl: "/components/label",
+          },
+          {
+            text: "List Group: Nested",
+            previewUrl: "/components/list-group",
+          },
+          {
+            text: "Navigation Menu: Mega",
+            previewUrl: "/components/navigation-menu",
+          },
+          {
+            text: "Progress: Circular With Label, With Steps",
+            previewUrl: "/components/progress",
+          },
+          {
+            text: "Scroll Area: Horizontal",
+            previewUrl: "/components/scroll-area",
+          },
+          {
+            text: "Skeleton: Chart, Profile",
+            previewUrl: "/components/skeleton",
+          },
+          {
+            text: "Sonner: Custom",
+            previewUrl: "/components/sonner",
+          },
+          {
+            text: "Spinner: Bars Scale",
+            previewUrl: "/components/spinner",
+          },
+          {
+            text: "Tooltip: Custom Delay",
+            previewUrl: "/components/tooltip",
+          },
+          {
+            text: "Circular Progress",
+            previewUrl: "/components/progress",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.5.0",
     date: "August 4, 2026",
     anchor: "v1-5-0",

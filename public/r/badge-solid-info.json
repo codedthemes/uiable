@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-solid-info",
+  "title": "Badge Solid Info",
+  "description": "Badge Solid Info variant for component.",
+  "registryDependencies": [
+    "@uiable/badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-solid-info.tsx",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - SOLID INFO | ------------------------------  //\r\n\r\nexport default function BadgeSolidInfo() {\r\n  return <Badge className=\"bg-cyan-500 text-white\">Info</Badge>;\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-solid-info.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

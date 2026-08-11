@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-right-navigation",
+  "title": "Calendar Right Navigation",
+  "description": "Calendar Right Navigation variant for component.",
+  "dependencies": [
+    "date-fns",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/calendar",
+    "@uiable/card"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/calendar/calendar-right-navigation.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// third party\r\nimport { addMonths, format, subMonths } from \"date-fns\"\r\n// assets\r\nimport { CalendarIcon, ChevronLeftIcon, ChevronRightIcon } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { Calendar } from \"@/components/ui/calendar\"\r\nimport { Card, CardContent } from \"@/components/ui/card\"\r\n\r\n//  ------------------------------ | CALENDAR - RIGHT NAVIGATION | ------------------------------  //\r\n\r\nexport function CalendarRightNavigation() {\r\n  const [date, setDate] = useState<Date | undefined>(\r\n    new Date(new Date().getFullYear(), new Date().getMonth(), 18)\r\n  )\r\n  const [currentMonth, setCurrentMonth] = useState<Date>(\r\n    new Date(new Date().getFullYear(), new Date().getMonth(), 1)\r\n  )\r\n\r\n  return (\r\n    <Card className=\"mx-auto w-full max-w-fit overflow-hidden p-0\">\r\n      {/* Top Header with Right-Aligned Navigation Controls */}\r\n      <div className=\"flex flex-wrap items-center justify-between gap-2 border-b bg-muted/20 px-4 py-3 sm:px-5 sm:py-3.5\">\r\n        <div className=\"flex items-center gap-2\">\r\n          <CalendarIcon className=\"size-4 text-primary\" />\r\n          <h3 className=\"text-sm font-semibold capitalize\">\r\n            {format(currentMonth, \"MMMM yyyy\")}\r\n          </h3>\r\n        </div>\r\n\r\n        {/* Right Side Header Navigation */}\r\n        <div className=\"flex items-center gap-1\">\r\n          <Button\r\n            variant=\"outline\"\r\n            size=\"icon-xs\"\r\n            onClick={() => setCurrentMonth(subMonths(currentMonth, 1))}\r\n            aria-label=\"Previous Month\"\r\n          >\r\n            <ChevronLeftIcon className=\"size-3.5\" />\r\n          </Button>\r\n          <Button\r\n            variant=\"outline\"\r\n            size=\"icon-xs\"\r\n            onClick={() => setCurrentMonth(addMonths(currentMonth, 1))}\r\n            aria-label=\"Next Month\"\r\n          >\r\n            <ChevronRightIcon className=\"size-3.5\" />\r\n          </Button>\r\n        </div>\r\n      </div>\r\n\r\n      <CardContent className=\"flex justify-center p-3 sm:p-4\">\r\n        <Calendar\r\n          mode=\"single\"\r\n          selected={date}\r\n          onSelect={setDate}\r\n          month={currentMonth}\r\n          onMonthChange={setCurrentMonth}\r\n          classNames={{\r\n            nav: \"hidden\",\r\n            month_caption: \"hidden\",\r\n          }}\r\n          className=\"p-0 [--cell-size:--spacing(8)] sm:[--cell-size:--spacing(9.5)]\"\r\n        />\r\n      </CardContent>\r\n    </Card>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/calendar/calendar-right-navigation.tsx"
+    }
+  ],
+  "categories": [
+    "calendar"
+  ],
+  "type": "registry:ui"
+}

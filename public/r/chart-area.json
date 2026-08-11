@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chart-area",
+  "title": "Chart Area",
+  "description": "Chart Area variant for component.",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [
+    "@uiable/chart"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/chart/chart-area.tsx",
+      "content": "// third party\r\nimport { Area, AreaChart, CartesianGrid, XAxis, YAxis } from \"recharts\"\r\n\r\n// shadcn\r\nimport {\r\n  ChartConfig,\r\n  ChartContainer,\r\n  ChartTooltip,\r\n  ChartTooltipContent,\r\n} from \"@/components/ui/chart\"\r\n\r\nconst chartData = [\r\n  { month: \"January\", inbound: 1420, outbound: 840 },\r\n  { month: \"February\", inbound: 1850, outbound: 1120 },\r\n  { month: \"March\", inbound: 2100, outbound: 1380 },\r\n  { month: \"April\", inbound: 1680, outbound: 1540 },\r\n  { month: \"May\", inbound: 2350, outbound: 1720 },\r\n  { month: \"June\", inbound: 2890, outbound: 2100 },\r\n  { month: \"July\", inbound: 3420, outbound: 2450 },\r\n]\r\n\r\nconst chartConfig = {\r\n  inbound: {\r\n    label: \"Inbound Traffic\",\r\n    color: \"var(--chart-1)\",\r\n  },\r\n  outbound: {\r\n    label: \"Outbound Traffic\",\r\n    color: \"var(--chart-2)\",\r\n  },\r\n} satisfies ChartConfig\r\n\r\n//  ------------------------------ | CHART - AREA | ------------------------------  //\r\n\r\nexport function ChartArea() {\r\n  return (\r\n    <ChartContainer config={chartConfig} className=\"min-h-[250px] w-full\">\r\n      <AreaChart\r\n        accessibilityLayer\r\n        data={chartData}\r\n        margin={{ left: 12, right: 12 }}\r\n      >\r\n        <CartesianGrid vertical={false} />\r\n        <XAxis\r\n          dataKey=\"month\"\r\n          tickLine={false}\r\n          axisLine={false}\r\n          tickMargin={8}\r\n          tickFormatter={(value) => value.slice(0, 3)}\r\n        />\r\n        <YAxis tickLine={false} axisLine={false} tickMargin={8} width={40} />\r\n        <ChartTooltip\r\n          cursor={false}\r\n          content={\r\n            <ChartTooltipContent\r\n              indicator=\"dot\"\r\n              className=\"min-w-[10rem] gap-2 [&_div.flex-1]:items-center [&_div.flex-1]:gap-4 [&>div]:gap-2\"\r\n            />\r\n          }\r\n        />\r\n        <defs>\r\n          <linearGradient id=\"fillInbound\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\r\n            <stop\r\n              offset=\"5%\"\r\n              stopColor=\"var(--color-inbound)\"\r\n              stopOpacity={0.8}\r\n            />\r\n            <stop\r\n              offset=\"95%\"\r\n              stopColor=\"var(--color-inbound)\"\r\n              stopOpacity={0.1}\r\n            />\r\n          </linearGradient>\r\n          <linearGradient id=\"fillOutbound\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\r\n            <stop\r\n              offset=\"5%\"\r\n              stopColor=\"var(--color-outbound)\"\r\n              stopOpacity={0.8}\r\n            />\r\n            <stop\r\n              offset=\"95%\"\r\n              stopColor=\"var(--color-outbound)\"\r\n              stopOpacity={0.1}\r\n            />\r\n          </linearGradient>\r\n        </defs>\r\n        <Area\r\n          dataKey=\"outbound\"\r\n          type=\"natural\"\r\n          fill=\"url(#fillOutbound)\"\r\n          fillOpacity={0.4}\r\n          stroke=\"var(--color-outbound)\"\r\n          strokeWidth={2}\r\n          stackId=\"a\"\r\n        />\r\n        <Area\r\n          dataKey=\"inbound\"\r\n          type=\"natural\"\r\n          fill=\"url(#fillInbound)\"\r\n          fillOpacity={0.4}\r\n          stroke=\"var(--color-inbound)\"\r\n          strokeWidth={2}\r\n          stackId=\"a\"\r\n        />\r\n      </AreaChart>\r\n    </ChartContainer>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/chart/chart-area.tsx"
+    }
+  ],
+  "categories": [
+    "chart"
+  ],
+  "type": "registry:ui"
+}

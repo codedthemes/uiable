@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-light-warning",
+  "title": "Button Light Warning",
+  "description": "Button Light Warning variant for component.",
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-light-warning.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON LIGHT WARNING | ------------------------------  //\r\n\r\nexport default function ButtonLightWarning() {\r\n  return (\r\n    <Button className=\"bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500 hover:text-white\">\r\n      Warning\r\n    </Button>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-light-warning.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

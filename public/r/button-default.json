@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-default",
+  "title": "Button Default",
+  "description": "Button Default variant for component.",
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-default.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON DEFAULT | ------------------------------  //\r\n\r\nexport default function ButtonDefault() {\r\n  return <Button>Button</Button>;\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-default.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

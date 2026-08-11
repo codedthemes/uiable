@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner-custom",
+  "title": "Sonner Custom",
+  "description": "Sonner Custom variant for component.",
+  "dependencies": [
+    "lucide-react",
+    "sonner"
+  ],
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/sonner/sonner-custom.tsx",
+      "content": "\"use client\"\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\n\r\n// third-party\r\nimport { toast } from \"sonner\"\r\n\r\n// assets\r\nimport { CheckCircle2 } from \"lucide-react\"\r\n\r\n//  ------------------------------ | SONNER - CUSTOM | ------------------------------  //\r\n\r\nexport function SonnerCustom() {\r\n  return (\r\n    <Button\r\n      onClick={() =>\r\n        toast.custom((t) => (\r\n          <div className=\"flex w-full items-center gap-3 rounded-lg border border-border bg-background p-4 shadow-lg\">\r\n            <CheckCircle2 className=\"size-5 text-green-500\" />\r\n            <div className=\"flex flex-col gap-1\">\r\n              <span className=\"text-sm font-medium\">Custom Layout</span>\r\n              <span className=\"text-xs text-muted-foreground\">\r\n                This is a fully custom toast component.\r\n              </span>\r\n            </div>\r\n            <Button\r\n              size=\"sm\"\r\n              variant=\"outline\"\r\n              className=\"ml-auto h-7 text-xs\"\r\n              onClick={() => toast.dismiss(t)}\r\n            >\r\n              Dismiss\r\n            </Button>\r\n          </div>\r\n        ))\r\n      }\r\n      className=\"w-fit\"\r\n    >\r\n      Show Custom Toast\r\n    </Button>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/sonner/sonner-custom.tsx"
+    }
+  ],
+  "categories": [
+    "sonner"
+  ],
+  "type": "registry:ui"
+}

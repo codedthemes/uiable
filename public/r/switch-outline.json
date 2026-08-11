@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-outline",
+  "title": "Switch Outline",
+  "description": "Switch Outline variant for component.",
+  "registryDependencies": [
+    "@uiable/field",
+    "@uiable/switch"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-outline.tsx",
+      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport {\r\n  Field,\r\n  FieldContent,\r\n  FieldGroup,\r\n  FieldLabel,\r\n} from \"@/components/ui/field\"\r\nimport { Switch } from \"@/components/ui/switch\"\r\n\r\n//  ------------------------------ | SWITCH - OUTLINE | ------------------------------  //\r\n\r\nexport function SwitchOutline() {\r\n  const [states, setStates] = useState({\r\n    success: true,\r\n    info: true,\r\n    warning: true,\r\n    danger: true,\r\n  })\r\n\r\n  return (\r\n    <FieldGroup className=\"w-full max-w-xs\">\r\n      {/* Success */}\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"switch-outline-success\">Success</FieldLabel>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"switch-outline-success\"\r\n          checked={states.success}\r\n          onCheckedChange={(checked) =>\r\n            setStates((prev) => ({ ...prev, success: checked }))\r\n          }\r\n          className=\"border border-green-500 ring-0 data-checked:bg-transparent data-checked:ring-0 [&_[data-slot=switch-thumb]]:data-checked:bg-green-500 [&_[data-slot=switch-thumb]]:data-unchecked:translate-x-0.5\"\r\n        />\r\n      </Field>\r\n\r\n      {/* Info */}\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"switch-outline-info\">Info</FieldLabel>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"switch-outline-info\"\r\n          checked={states.info}\r\n          onCheckedChange={(checked) =>\r\n            setStates((prev) => ({ ...prev, info: checked }))\r\n          }\r\n          className=\"border border-cyan-500 ring-0 data-checked:bg-transparent data-checked:ring-0 [&_[data-slot=switch-thumb]]:data-checked:bg-cyan-500 [&_[data-slot=switch-thumb]]:data-unchecked:translate-x-0.5\"\r\n        />\r\n      </Field>\r\n\r\n      {/* Warning */}\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"switch-outline-warning\">Warning</FieldLabel>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"switch-outline-warning\"\r\n          checked={states.warning}\r\n          onCheckedChange={(checked) =>\r\n            setStates((prev) => ({ ...prev, warning: checked }))\r\n          }\r\n          className=\"border border-yellow-500 ring-0 data-checked:bg-transparent data-checked:ring-0 [&_[data-slot=switch-thumb]]:data-checked:bg-yellow-500 [&_[data-slot=switch-thumb]]:data-unchecked:translate-x-0.5\"\r\n        />\r\n      </Field>\r\n\r\n      {/* Danger */}\r\n      <Field orientation=\"horizontal\">\r\n        <FieldContent>\r\n          <FieldLabel htmlFor=\"switch-outline-danger\">Danger</FieldLabel>\r\n        </FieldContent>\r\n        <Switch\r\n          id=\"switch-outline-danger\"\r\n          checked={states.danger}\r\n          onCheckedChange={(checked) =>\r\n            setStates((prev) => ({ ...prev, danger: checked }))\r\n          }\r\n          className=\"border border-red-500 ring-0 data-checked:bg-transparent data-checked:ring-0 [&_[data-slot=switch-thumb]]:data-checked:bg-red-500 [&_[data-slot=switch-thumb]]:data-unchecked:translate-x-0.5\"\r\n        />\r\n      </Field>\r\n    </FieldGroup>\r\n  )\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-outline.tsx"
+    }
+  ],
+  "categories": [
+    "switch"
+  ],
+  "type": "registry:ui"
+}

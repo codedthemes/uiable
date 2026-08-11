@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-solid-success",
+  "title": "Alert Solid Success",
+  "description": "Alert Solid Success variant for component.",
+  "registryDependencies": [
+    "@uiable/alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-solid-success.tsx",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - SOLID SUCCESS | ------------------------------  //\r\n\r\nexport default function AlertSolidSuccess() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-green-500 text-white border-transparent\">\r\n      Solid Success Alert\r\n    </Alert>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-solid-success.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

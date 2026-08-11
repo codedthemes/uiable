@@ -1,3 +1,9 @@
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
+
 // assets
 import {
   ChevronDownIcon,
@@ -6,13 +12,6 @@ import {
   ImageIcon,
   ShieldCheckIcon,
 } from "lucide-react"
-
-// shadcn
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible"
 
 //  ------------------------------ | LIST GROUP - NESTED | ------------------------------  //
 

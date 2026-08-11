@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-basic",
+  "title": "Input Basic",
+  "description": "Input Basic variant for component.",
+  "registryDependencies": [
+    "@uiable/input"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/input/input-basic.tsx",
+      "content": "// shadcn\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - BASIC | ------------------------------  //\r\n\r\nexport function InputBasic() {\r\n  return <Input placeholder=\"Enter text\" />;\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/input/input-basic.tsx"
+    }
+  ],
+  "categories": [
+    "input"
+  ],
+  "type": "registry:ui"
+}

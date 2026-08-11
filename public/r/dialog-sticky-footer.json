@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-sticky-footer",
+  "title": "Dialog Sticky Footer",
+  "description": "Dialog Sticky Footer variant for component.",
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/dialog"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-sticky-footer.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Dialog,\r\n  DialogClose,\r\n  DialogContent,\r\n  DialogDescription,\r\n  DialogFooter,\r\n  DialogHeader,\r\n  DialogTitle,\r\n  DialogTrigger\r\n} from \"@/components/ui/dialog\";\r\n\r\n//  ------------------------------ | DIALOG - STICKY FOOTER | ------------------------------  //\r\n\r\nexport function DialogStickyFooter() {\r\n  return (\r\n    <Dialog>\r\n      <DialogTrigger render={<Button />}>Sticky Footer</DialogTrigger>\r\n      <DialogContent>\r\n        <DialogHeader>\r\n          <DialogTitle>Sticky Footer</DialogTitle>\r\n          <DialogDescription>\r\n            This dialog has a sticky footer that stays visible while the content\r\n            scrolls.\r\n          </DialogDescription>\r\n        </DialogHeader>\r\n        <div className=\"no-scrollbar -mx-4 max-h-[50vh] overflow-y-auto px-4\">\r\n          {Array.from({ length: 10 }).map((_, index) => (\r\n            <p key={index} className=\"mb-4 leading-normal\">\r\n              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do\r\n              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\r\n              enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\r\n              reprehenderit in voluptate velit esse cillum dolore eu fugiat\r\n              nulla pariatur. Excepteur sint occaecat cupidatat non proident,\r\n              sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n            </p>\r\n          ))}\r\n        </div>\r\n        <DialogFooter>\r\n          <DialogClose render={<Button variant=\"outline\" />}>Close</DialogClose>\r\n        </DialogFooter>\r\n      </DialogContent>\r\n    </Dialog>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-sticky-footer.tsx"
+    }
+  ],
+  "categories": [
+    "dialog"
+  ],
+  "type": "registry:ui"
+}

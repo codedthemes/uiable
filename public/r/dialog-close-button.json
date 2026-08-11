@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-close-button",
+  "title": "Dialog Close Button",
+  "description": "Dialog Close Button variant for component.",
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/dialog",
+    "@uiable/input",
+    "@uiable/label"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-close-button.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Dialog,\r\n  DialogClose,\r\n  DialogContent,\r\n  DialogDescription,\r\n  DialogFooter,\r\n  DialogHeader,\r\n  DialogTitle,\r\n  DialogTrigger\r\n} from \"@/components/ui/dialog\";\r\nimport { Input } from \"@/components/ui/input\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\n//  ------------------------------ | DIALOG - CLOSE BUTTON | ------------------------------  //\r\n\r\nexport function DialogCloseButton() {\r\n  return (\r\n    <Dialog>\r\n      <DialogTrigger render={<Button />}>Share</DialogTrigger>\r\n      <DialogContent className=\"sm:max-w-md\">\r\n        <DialogHeader>\r\n          <DialogTitle>Share link</DialogTitle>\r\n          <DialogDescription>\r\n            Anyone who has this link will be able to view this.\r\n          </DialogDescription>\r\n        </DialogHeader>\r\n        <div className=\"flex items-center gap-2\">\r\n          <div className=\"grid flex-1 gap-2\">\r\n            <Label htmlFor=\"link\" className=\"sr-only\">\r\n              Link\r\n            </Label>\r\n            <Input\r\n              id=\"link\"\r\n              defaultValue=\"https://ui.shadcn.com/docs/installation\"\r\n              readOnly\r\n            />\r\n          </div>\r\n        </div>\r\n        <DialogFooter className=\"sm:justify-start\">\r\n          <DialogClose render={<Button type=\"button\" />}>Close</DialogClose>\r\n        </DialogFooter>\r\n      </DialogContent>\r\n    </Dialog>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-close-button.tsx"
+    }
+  ],
+  "categories": [
+    "dialog"
+  ],
+  "type": "registry:ui"
+}

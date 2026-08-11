@@ -4,8 +4,13 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 // project imports
-import { Badge } from "@/components/ui/badge"
 import CATEGORY_COUNTS from "@/category-counts.json"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 import { NAV_CATEGORIES } from "@/components-grid"
 import { cn } from "@/lib/utils"
 
@@ -88,9 +93,21 @@ export default function ComponentList({
                 <div className="flex items-center gap-2">
                   <span className="capitalize">{item.title}</span>
                   {item.badge && (
-                    <Badge className="border-transparent bg-red-500/15 text-red-500">
-                      {item.badge.label}
-                    </Badge>
+                    <TooltipProvider delay={0}>
+                      <Tooltip>
+                        <TooltipTrigger
+                          render={
+                            <span className="relative flex size-1.5 cursor-default">
+                              <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-500 opacity-75"></span>
+                              <span className="relative inline-flex size-1.5 rounded-full bg-red-500"></span>
+                            </span>
+                          }
+                        />
+                        <TooltipContent side="top" sideOffset={8} className="px-2 py-1 text-[10px] rounded-md">
+                          <p>New Added</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   )}
                 </div>
                 <span

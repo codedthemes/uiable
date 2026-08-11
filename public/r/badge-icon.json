@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-icon",
+  "title": "Badge Icon",
+  "description": "Badge Icon variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/badge"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-icon.tsx",
+      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n// assets\r\nimport { BadgeCheck, BookmarkIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BADGE - ICON | ------------------------------  //\r\n\r\nexport function BadgeWithIconLeft() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-2\">\r\n      <Badge variant=\"default\">\r\n        <BadgeCheck data-icon=\"inline-start\" />\r\n        Verified\r\n      </Badge>\r\n      <Badge variant=\"outline\">\r\n        Bookmark\r\n        <BookmarkIcon data-icon=\"inline-end\" />\r\n      </Badge>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-icon.tsx"
+    }
+  ],
+  "categories": [
+    "badge"
+  ],
+  "type": "registry:ui"
+}

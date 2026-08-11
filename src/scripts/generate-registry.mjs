@@ -167,6 +167,27 @@ function generateUiRegistry() {
 function generateUiableRegistry() {
   const uiablePath = path.join(process.cwd(), "src", "components", "uiable")
   if (!fs.existsSync(uiablePath)) return
+
+  const existingRegistryPath = path.join(uiablePath, "registry.json")
+  let existingBadgeItems = new Map()
+  if (fs.existsSync(existingRegistryPath)) {
+    try {
+      const existingData = JSON.parse(
+        fs.readFileSync(existingRegistryPath, "utf-8")
+      )
+      if (existingData.items) {
+        existingData.items.forEach((item) => {
+          if (item.badge) existingBadgeItems.set(item.name, item.badge)
+        })
+      }
+    } catch (e) {
+      console.error(
+        "Could not parse existing uiable/registry.json for badge flags",
+        e
+      )
+    }
+  }
+
   const dirs = fs.readdirSync(uiablePath, { withFileTypes: true })
 
   const items = []
@@ -190,7 +211,7 @@ function generateUiableRegistry() {
           }
 
           const item = {
-            name: `uiable-${basename}`,
+            name: basename,
             type: "registry:ui",
             title: toTitleCase(basename),
             description: `${toTitleCase(category)} ${toTitleCase(descriptionTitle)} variant for component.`,
@@ -207,6 +228,10 @@ function generateUiableRegistry() {
           if (registryDependencies.length > 0)
             item.registryDependencies = registryDependencies
           if (dependencies.length > 0) item.dependencies = dependencies
+
+          if (existingBadgeItems.has(item.name)) {
+            item.badge = existingBadgeItems.get(item.name)
+          }
 
           items.push(item)
         }
@@ -257,6 +282,27 @@ function generateBlocksRegistry() {
     "blocks"
   )
   if (!fs.existsSync(blocksPath)) return
+
+  const existingRegistryPath = path.join(blocksPath, "registry.json")
+  let existingProBlocks = new Set()
+  if (fs.existsSync(existingRegistryPath)) {
+    try {
+      const existingData = JSON.parse(
+        fs.readFileSync(existingRegistryPath, "utf-8")
+      )
+      if (existingData.items) {
+        existingData.items.forEach((item) => {
+          if (item.pro) existingProBlocks.add(item.name)
+        })
+      }
+    } catch (e) {
+      console.error(
+        "Could not parse existing blocks/registry.json for pro flags",
+        e
+      )
+    }
+  }
+
   const categories = fs.readdirSync(blocksPath, { withFileTypes: true })
 
   const items = []
@@ -298,12 +344,16 @@ function generateBlocksRegistry() {
           }
 
           const item = {
-            name: `uiable-block-${blockName}`,
+            name: `block-${blockName}`,
             type: "registry:block",
             title: toTitleCase(blockName),
             description: `${toTitleCase(blockName)} variant for block.`,
             files: blockFiles,
             categories: [category],
+          }
+
+          if (existingProBlocks.has(item.name)) {
+            item.pro = true
           }
 
           let orderIndex = blockSequences.indexOf(blockName)
@@ -336,12 +386,16 @@ function generateBlocksRegistry() {
             extractDependencies(filePath)
 
           const item = {
-            name: `uiable-block-${blockName}`,
+            name: `block-${blockName}`,
             type: "registry:block",
             title: toTitleCase(blockName),
             description: `${toTitleCase(blockName)} variant for block.`,
             files: blockFiles,
             categories: [category],
+          }
+
+          if (existingProBlocks.has(item.name)) {
+            item.pro = true
           }
 
           let orderIndex = blockSequences.indexOf(blockName)
@@ -384,8 +438,38 @@ function generateBlocksRegistry() {
   console.log(`Generated blocks/registry.json with ${items.length} items.`)
 }
 
+function cleanRegistryDirs() {
+  const dirsToClean = [
+    path.join(process.cwd(), "public", "r"),
+    path.join(process.cwd(), ".registry-build"),
+    path.join(process.cwd(), ".pro-registry"),
+  ]
+
+  const filesToClean = [
+    path.join(process.cwd(), "public", "registry-index.json"),
+  ]
+
+  dirsToClean.forEach((dir) => {
+    if (fs.existsSync(dir)) {
+      console.log(`Cleaning directory: ${dir}`)
+      fs.rmSync(dir, { recursive: true, force: true })
+    }
+  })
+
+  filesToClean.forEach((file) => {
+    if (fs.existsSync(file)) {
+      console.log(`Cleaning file: ${file}`)
+      fs.unlinkSync(file)
+    }
+  })
+}
+
+console.log("Cleaning old registry files...")
+cleanRegistryDirs()
 console.log("Generating registries...")
 generateUiRegistry()
 generateUiableRegistry()
 generateBlocksRegistry()
-console.log("All registries generated successfully!")
+console.log(
+  "All registries generated successfully! Please wait for registry build..."
+)

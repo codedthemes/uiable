@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-icon-dark",
+  "title": "Button Icon Dark",
+  "description": "Button Icon Dark variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-icon-dark.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// assets\r\nimport { Moon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BUTTON ICON DARK | ------------------------------  //\r\n\r\nexport default function ButtonIconDark() {\r\n  return (\r\n    <Button className=\"gap-2 bg-mist-800 text-white hover:bg-mist-900\">\r\n      <Moon className=\"size-5\" /> Dark\r\n    </Button>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-icon-dark.tsx"
+    }
+  ],
+  "categories": [
+    "button"
+  ],
+  "type": "registry:ui"
+}

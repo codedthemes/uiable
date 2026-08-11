@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "total-income-card",
+  "title": "Total Income Card",
+  "description": "Widget Total Income Card variant for component.",
+  "dependencies": [
+    "apexcharts",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/card",
+    "@uiable/dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/widget/total-income-card.tsx",
+      "content": "\"use client\";\r\n\r\nimport { useEffect, useRef } from \"react\";\r\n\r\n// shadcn\r\nimport { buttonVariants } from \"@/components/ui/button\";\r\nimport { Card, CardContent, CardTitle } from \"@/components/ui/card\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger,\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n// third party\r\nimport ApexCharts from \"apexcharts\";\r\n\r\n// project\r\nimport IncomeItem from \"./income-item\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\n// assets\r\nimport { MoreVertical } from \"lucide-react\";\r\n\r\ninterface TotalIncomeCardProps {\r\n  title: string;\r\n  series: number[];\r\n  labels: string[];\r\n  items: { label: string; amount: string; change: string; color: string }[];\r\n}\r\n\r\n//  ------------------------------ | BLOCK - TOTAL INCOME CARD | ------------------------------  //\r\n\r\nexport default function TotalIncomeCard({\r\n  title,\r\n  series,\r\n  labels,\r\n  items,\r\n}: TotalIncomeCardProps) {\r\n  const chartRef = useRef<HTMLDivElement>(null);\r\n\r\n  useEffect(() => {\r\n    let active = true;\r\n    let chart: ApexCharts | null = null;\r\n\r\n    const timer = setTimeout(() => {\r\n      if (!active || !chartRef.current) return;\r\n\r\n      const options = {\r\n        chart: { height: 320, type: \"donut\" },\r\n        series: series,\r\n        colors: [\"var(--primary)\", \"#E58A00\", \"#2CA87F\", \"#4680FF\"],\r\n        labels: labels,\r\n        fill: { opacity: [1, 1, 1, 0.3] },\r\n        legend: { show: false },\r\n        plotOptions: {\r\n          pie: {\r\n            donut: {\r\n              size: \"65%\",\r\n              labels: {\r\n                show: true,\r\n                name: { show: true },\r\n                value: { show: true },\r\n              },\r\n            },\r\n          },\r\n        },\r\n        dataLabels: { enabled: false },\r\n        responsive: [\r\n          {\r\n            breakpoint: 575,\r\n            options: {\r\n              chart: { height: 250 },\r\n              plotOptions: {\r\n                pie: { donut: { size: \"65%\", labels: { show: false } } },\r\n              },\r\n            },\r\n          },\r\n        ],\r\n      };\r\n\r\n      chart = new ApexCharts(chartRef.current, options as any);\r\n      chart.render();\r\n    }, 0);\r\n\r\n    return () => {\r\n      active = false;\r\n      clearTimeout(timer);\r\n      if (chart) {\r\n        chart.destroy();\r\n      }\r\n    };\r\n  }, [series, labels]);\r\n\r\n  return (\r\n    <Card>\r\n      <CardContent className=\"p-6\">\r\n        <div className=\"flex items-center justify-between mb-6\">\r\n          <CardTitle className=\"text-lg font-bold\">{title}</CardTitle>\r\n          <DropdownMenu>\r\n            <DropdownMenuTrigger\r\n              className={cn(\r\n                buttonVariants({ variant: \"ghost\", size: \"icon\" }),\r\n                \"h-8 w-8 rounded-xl shrink-0\",\r\n              )}\r\n            >\r\n              <MoreVertical className=\"h-4 w-4\" />\r\n            </DropdownMenuTrigger>\r\n            <DropdownMenuContent align=\"end\">\r\n              <DropdownMenuItem>Today</DropdownMenuItem>\r\n              <DropdownMenuItem>Weekly</DropdownMenuItem>\r\n              <DropdownMenuItem>Monthly</DropdownMenuItem>\r\n            </DropdownMenuContent>\r\n          </DropdownMenu>\r\n        </div>\r\n        <div ref={chartRef} className=\"h-[250px] mb-6\"></div>\r\n        <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-4\">\r\n          {items.map((item, idx) => (\r\n            <IncomeItem key={idx} {...item} />\r\n          ))}\r\n        </div>\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/widget/total-income-card.tsx"
+    }
+  ],
+  "categories": [
+    "widget"
+  ],
+  "type": "registry:ui"
+}

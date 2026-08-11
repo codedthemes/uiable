@@ -1,11 +1,12 @@
 import { useState, type MouseEvent } from "react"
-// assets
-import { Bookmark, Play } from "lucide-react"
 
 // shadcn
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+
+// assets
+import { Bookmark, Play } from "lucide-react"
 
 export interface Artwork {
   id: string

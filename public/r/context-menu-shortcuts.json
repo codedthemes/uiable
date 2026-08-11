@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "context-menu-shortcuts",
+  "title": "Context Menu Shortcuts",
+  "description": "Context Menu Shortcuts variant for component.",
+  "registryDependencies": [
+    "@uiable/context-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/context-menu/context-menu-shortcuts.tsx",
+      "content": "// shadcn\r\nimport {\r\n  ContextMenu,\r\n  ContextMenuContent,\r\n  ContextMenuGroup,\r\n  ContextMenuItem,\r\n  ContextMenuSeparator,\r\n  ContextMenuShortcut,\r\n  ContextMenuTrigger\r\n} from \"@/components/ui/context-menu\";\r\n\r\n//  ------------------------------ | CONTEXT MENU - SHORTCUTS | ------------------------------  //\r\n\r\nexport function ContextMenuShortcuts() {\r\n  return (\r\n    <ContextMenu>\r\n      <ContextMenuTrigger className=\"flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base\">\r\n        <span className=\"hidden pointer-fine:inline-block\">\r\n          Right click here\r\n        </span>\r\n        <span className=\"hidden pointer-coarse:inline-block\">\r\n          Long press here\r\n        </span>\r\n      </ContextMenuTrigger>\r\n      <ContextMenuContent>\r\n        <ContextMenuGroup>\r\n          <ContextMenuItem>\r\n            Back\r\n            <ContextMenuShortcut>⌘[</ContextMenuShortcut>\r\n          </ContextMenuItem>\r\n          <ContextMenuItem disabled>\r\n            Forward\r\n            <ContextMenuShortcut>⌘]</ContextMenuShortcut>\r\n          </ContextMenuItem>\r\n          <ContextMenuItem>\r\n            Reload\r\n            <ContextMenuShortcut>⌘R</ContextMenuShortcut>\r\n          </ContextMenuItem>\r\n        </ContextMenuGroup>\r\n        <ContextMenuSeparator />\r\n        <ContextMenuGroup>\r\n          <ContextMenuItem>\r\n            Save\r\n            <ContextMenuShortcut>⌘S</ContextMenuShortcut>\r\n          </ContextMenuItem>\r\n          <ContextMenuItem>\r\n            Save As...\r\n            <ContextMenuShortcut>⇧⌘S</ContextMenuShortcut>\r\n          </ContextMenuItem>\r\n        </ContextMenuGroup>\r\n      </ContextMenuContent>\r\n    </ContextMenu>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/context-menu/context-menu-shortcuts.tsx"
+    }
+  ],
+  "categories": [
+    "context-menu"
+  ],
+  "type": "registry:ui"
+}

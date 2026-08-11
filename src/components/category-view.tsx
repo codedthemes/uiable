@@ -25,7 +25,7 @@ interface Item {
   description: string
   files: { path: string }[]
   categories: string[]
-  badge?: {
+  badge?: boolean | string | {
     label: string
   }
   rawCode?: string
@@ -227,7 +227,11 @@ export default function CategoryView({ category, items }: CategoryViewProps) {
                   </h5>
                   {item.badge && (
                     <Badge className="border-transparent bg-red-500/15 text-red-500">
-                      {item.badge.label}
+                      {typeof item.badge === "boolean"
+                        ? "New"
+                        : typeof item.badge === "string"
+                          ? item.badge
+                          : (item.badge as { label: string }).label}
                     </Badge>
                   )}
                 </div>

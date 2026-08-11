@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-icon-danger",
+  "title": "Alert Icon Danger",
+  "description": "Alert Icon Danger variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/alert"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-icon-danger.tsx",
+      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n// assets\r\nimport { ShieldAlert } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ALERT - ICON DANGER | ------------------------------  //\r\n\r\nexport default function AlertIconDanger() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-red-500/20 bg-red-500/10 text-red-500 font-medium\">\r\n      <ShieldAlert className=\"h-5 w-5\" />\r\n      <span>A simple danger alert—check it out!</span>\r\n    </Alert>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-icon-danger.tsx"
+    }
+  ],
+  "categories": [
+    "alert"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-basic-success",
+  "title": "Dropdown Menu Basic Success",
+  "description": "Dropdown Menu Basic Success variant for component.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@uiable/button",
+    "@uiable/dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-basic-success.tsx",
+      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger\r\n} from \"@/components/ui/dropdown-menu\";\r\n\r\n// assets\r\nimport { ChevronDown } from \"lucide-react\";\r\n\r\n//  ------------------------------ | DROPDOWN MENU - BASIC SUCCESS | ------------------------------  //\r\n\r\nexport default function DropdownMenuBasicSuccess() {\r\n  return (\r\n    <DropdownMenu>\r\n      <DropdownMenuTrigger\r\n        render={\r\n          <Button\r\n            variant=\"default\"\r\n            className=\"bg-green-600 hover:bg-green-700 text-white\"\r\n          >\r\n            Success <ChevronDown className=\"ml-2 h-4 w-4\" />\r\n          </Button>\r\n        }\r\n      />\r\n      <DropdownMenuContent align=\"start\" className=\"w-48\">\r\n        <DropdownMenuItem>Action</DropdownMenuItem>\r\n        <DropdownMenuItem>Another action</DropdownMenuItem>\r\n        <DropdownMenuItem>Something else here</DropdownMenuItem>\r\n      </DropdownMenuContent>\r\n    </DropdownMenu>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-basic-success.tsx"
+    }
+  ],
+  "categories": [
+    "dropdown-menu"
+  ],
+  "type": "registry:ui"
+}
