@@ -1,7 +1,8 @@
 // shadcn
-import { ArrowUpRight } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
+
+// assets
+import { ArrowUpRight } from "lucide-react"
 
 //  ------------------------------ | PORTFOLIO 4 | ------------------------------  //
 
@@ -48,7 +49,7 @@ export default function Portfolio4() {
             <div className="basis-full lg:basis-6/12">
               <div className="relative rounded-3xl bg-card shadow-[0_0_40px_-8px_#4680ff38]">
                 <img
-                  src="/assets/images/block/img-portfolio-4-1.png"
+                  src="https://cdn.uiable.com/block/img-portfolio-4-1.png"
                   alt="Team meeting in a conference room"
                   className="w-full rounded-xl"
                 />
@@ -77,7 +78,7 @@ export default function Portfolio4() {
             <div className="basis-full lg:basis-6/12">
               <div className="relative rounded-3xl bg-card shadow-[0_0_40px_-8px_#4680ff38]">
                 <img
-                  src="/assets/images/block/img-portfolio-4-2.png"
+                  src="https://cdn.uiable.com/block/img-portfolio-4-2.png"
                   alt="Team meeting in a conference room"
                   className="w-full rounded-xl"
                 />

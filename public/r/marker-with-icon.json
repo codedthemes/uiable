@@ -3,22 +3,16 @@
   "name": "marker-with-icon",
   "title": "Marker With Icon",
   "description": "Marker With Icon variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/marker"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/marker"],
   "files": [
     {
       "path": "src/components/uiable/marker/marker-with-icon.tsx",
-      "content": "// shadcn\r\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\r\n\r\n// assets\r\nimport { BookOpenCheck, GitBranchIcon, SearchIcon } from \"lucide-react\"\r\n\r\n//  ------------------------------ | MARKER - WITH ICON | ------------------------------  //\r\n\r\nexport function MarkerWithIcon() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker>\r\n        <MarkerIcon>\r\n          <GitBranchIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Switched to a new branch</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\">\r\n        <MarkerIcon>\r\n          <SearchIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Explored 4 files</MarkerContent>\r\n      </Marker>\r\n      <Marker className=\"flex-col\">\r\n        <MarkerIcon>\r\n          <BookOpenCheck />\r\n        </MarkerIcon>\r\n        <MarkerContent>Syncing completed</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\n\n// assets\nimport { BookOpenCheck, GitBranchIcon, SearchIcon } from \"lucide-react\"\n\n//  ------------------------------ | MARKER - WITH ICON | ------------------------------  //\n\nexport function MarkerWithIcon() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\n      <Marker>\n        <MarkerIcon>\n          <GitBranchIcon />\n        </MarkerIcon>\n        <MarkerContent>Switched to a new branch</MarkerContent>\n      </Marker>\n      <Marker variant=\"separator\">\n        <MarkerIcon>\n          <SearchIcon />\n        </MarkerIcon>\n        <MarkerContent>Explored 4 files</MarkerContent>\n      </Marker>\n      <Marker className=\"flex-col\">\n        <MarkerIcon>\n          <BookOpenCheck />\n        </MarkerIcon>\n        <MarkerContent>Syncing completed</MarkerContent>\n      </Marker>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/marker/marker-with-icon.tsx"
     }
   ],
-  "categories": [
-    "marker"
-  ],
+  "categories": ["marker"],
   "type": "registry:ui"
 }

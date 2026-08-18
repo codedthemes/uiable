@@ -3,22 +3,16 @@
   "name": "tabs-icons",
   "title": "Tabs Icons",
   "description": "Tabs Icons variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/tabs"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/tabs"],
   "files": [
     {
       "path": "src/components/uiable/tabs/tabs-icons.tsx",
-      "content": "// shadcn\r\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\r\n\r\n// assets\r\nimport { AppWindowIcon, CodeIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TABS - ICONS | ------------------------------  //\r\n\r\nexport function TabsIcons() {\r\n  return (\r\n    <Tabs defaultValue=\"preview\">\r\n      <TabsList>\r\n        <TabsTrigger value=\"preview\">\r\n          <AppWindowIcon />\r\n          Preview\r\n        </TabsTrigger>\r\n        <TabsTrigger value=\"code\">\r\n          <CodeIcon />\r\n          Code\r\n        </TabsTrigger>\r\n      </TabsList>\r\n    </Tabs>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\"\n\n// assets\nimport { AppWindowIcon, CodeIcon } from \"lucide-react\"\n\n//  ------------------------------ | TABS - ICONS | ------------------------------  //\n\nexport function TabsIcons() {\n  return (\n    <Tabs defaultValue=\"preview\">\n      <TabsList>\n        <TabsTrigger value=\"preview\">\n          <AppWindowIcon />\n          Preview\n        </TabsTrigger>\n        <TabsTrigger value=\"code\">\n          <CodeIcon />\n          Code\n        </TabsTrigger>\n      </TabsList>\n    </Tabs>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/tabs/tabs-icons.tsx"
     }
   ],
-  "categories": [
-    "tabs"
-  ],
+  "categories": ["tabs"],
   "type": "registry:ui"
 }

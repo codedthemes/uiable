@@ -3,23 +3,16 @@
   "name": "button-group-split",
   "title": "Button Group Split",
   "description": "Button Group Split variant for component.",
-  "dependencies": [
-    "@tabler/icons-react"
-  ],
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/button-group"
-  ],
+  "dependencies": ["@tabler/icons-react"],
+  "registryDependencies": ["@uiable/button", "@uiable/button-group"],
   "files": [
     {
       "path": "src/components/uiable/button-group/button-group-split.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  ButtonGroup,\r\n  ButtonGroupSeparator\r\n} from \"@/components/ui/button-group\";\r\n\r\n// assets\r\nimport { IconPlus } from \"@tabler/icons-react\";\r\n\r\n//  ------------------------------ | BUTTON GROUP - SPLIT | ------------------------------  //\r\n\r\nexport default function ButtonGroupSplit() {\r\n  return (\r\n    <ButtonGroup>\r\n      <Button variant=\"secondary\">Button</Button>\r\n      <ButtonGroupSeparator />\r\n      <Button size=\"icon\" variant=\"secondary\" className=\"h-auto\">\r\n        <IconPlus />\r\n      </Button>\r\n    </ButtonGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { ButtonGroup, ButtonGroupSeparator } from \"@/components/ui/button-group\"\n\n// assets\nimport { IconPlus } from \"@tabler/icons-react\"\n\n//  ------------------------------ | BUTTON GROUP - SPLIT | ------------------------------  //\n\nexport default function ButtonGroupSplit() {\n  return (\n    <ButtonGroup>\n      <Button variant=\"secondary\">Button</Button>\n      <ButtonGroupSeparator />\n      <Button size=\"icon\" variant=\"secondary\" className=\"h-auto\">\n        <IconPlus />\n      </Button>\n    </ButtonGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/button-group/button-group-split.tsx"
     }
   ],
-  "categories": [
-    "button-group"
-  ],
+  "categories": ["button-group"],
   "type": "registry:ui"
 }

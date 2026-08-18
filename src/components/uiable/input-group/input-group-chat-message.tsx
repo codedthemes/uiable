@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { PaperclipIcon, SendIcon, SmileIcon } from "lucide-react"
 
 // shadcn
 import {
@@ -12,6 +10,9 @@ import {
   InputGroupText,
   InputGroupTextarea,
 } from "@/components/ui/input-group"
+
+// assets
+import { PaperclipIcon, SendIcon, SmileIcon } from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - CHAT MESSAGE | ------------------------------  //
 

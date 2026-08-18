@@ -3,19 +3,15 @@
   "name": "separator-menu",
   "title": "Separator Menu",
   "description": "Separator Menu variant for component.",
-  "registryDependencies": [
-    "@uiable/separator"
-  ],
+  "registryDependencies": ["@uiable/separator"],
   "files": [
     {
       "path": "src/components/uiable/separator/separator-menu.tsx",
-      "content": "// shadcn\r\nimport { Separator } from \"@/components/ui/separator\";\r\n\r\n//  ------------------------------ | SEPARATOR - MENU | ------------------------------  //\r\n\r\nexport function SeparatorMenu() {\r\n  return (\r\n    <div className=\"flex items-center gap-2 md:gap-4\">\r\n      <div className=\"flex flex-col gap-1\">\r\n        <h6 className=\"font-medium\">Settings</h6>\r\n        <span className=\"text-muted-foreground\">Manage preferences</span>\r\n      </div>\r\n      <Separator orientation=\"vertical\" />\r\n      <div className=\"flex flex-col gap-1\">\r\n        <h6 className=\"font-medium\">Account</h6>\r\n        <span className=\"text-muted-foreground\">Profile & security</span>\r\n      </div>\r\n      <Separator orientation=\"vertical\" className=\"hidden md:block\" />\r\n      <div className=\"hidden flex-col gap-1 md:flex\">\r\n        <h6 className=\"font-medium\">Help</h6>\r\n        <span className=\"text-muted-foreground\">Support & docs</span>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Separator } from \"@/components/ui/separator\"\n\n//  ------------------------------ | SEPARATOR - MENU | ------------------------------  //\n\nexport function SeparatorMenu() {\n  return (\n    <div className=\"flex items-center gap-2 md:gap-4\">\n      <div className=\"flex flex-col gap-1\">\n        <h6 className=\"font-medium\">Settings</h6>\n        <span className=\"text-muted-foreground\">Manage preferences</span>\n      </div>\n      <Separator orientation=\"vertical\" />\n      <div className=\"flex flex-col gap-1\">\n        <h6 className=\"font-medium\">Account</h6>\n        <span className=\"text-muted-foreground\">Profile & security</span>\n      </div>\n      <Separator orientation=\"vertical\" className=\"hidden md:block\" />\n      <div className=\"hidden flex-col gap-1 md:flex\">\n        <h6 className=\"font-medium\">Help</h6>\n        <span className=\"text-muted-foreground\">Support & docs</span>\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/separator/separator-menu.tsx"
     }
   ],
-  "categories": [
-    "separator"
-  ],
+  "categories": ["separator"],
   "type": "registry:ui"
 }

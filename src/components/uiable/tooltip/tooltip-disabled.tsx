@@ -1,10 +1,10 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger
-} from "@/components/ui/tooltip";
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 //  ------------------------------ | TOOLTIP - DISABLED | ------------------------------  //
 
@@ -20,5 +20,5 @@ export function TooltipDisabled() {
         </TooltipContent>
       </Tooltip>
     </>
-  );
+  )
 }

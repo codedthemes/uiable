@@ -6,6 +6,7 @@
 //
 // Output is consumed by packages/uiable-mcp at runtime (via UIABLE_CATALOG / URL).
 
+// third-party
 import { readFileSync, writeFileSync } from "node:fs"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"

@@ -12,9 +12,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
+// project-imports
+import { CHANGELOG_DATA } from "@/data/changelog-data"
 // project
 import { cn } from "@/lib/utils"
-import { CHANGELOG_DATA } from "@/data/changelog-data"
 
 // assets
 import { ListTree } from "lucide-react"

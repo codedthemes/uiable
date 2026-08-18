@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { MailPlus, Sparkles, UsersRound } from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -19,6 +17,9 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command"
+
+// assets
+import { MailPlus, Sparkles, UsersRound } from "lucide-react"
 
 const members = [
   {

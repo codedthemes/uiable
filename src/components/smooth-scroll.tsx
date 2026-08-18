@@ -1,6 +1,8 @@
 "use client"
 
 import { ReactNode, useEffect, useRef } from "react"
+
+// third-party
 import { ReactLenis, useLenis } from "lenis/react"
 
 //  ------------------------------ | COMPONENT - SMOOTH SCROLL | ------------------------------  //

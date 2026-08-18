@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { Bell, Globe, Lock, Moon } from "lucide-react"
 
 // shadcn
 import {
@@ -15,6 +13,9 @@ import {
   ItemTitle,
 } from "@/components/ui/item"
 import { Switch } from "@/components/ui/switch"
+
+// assets
+import { Bell, Globe, Lock, Moon } from "lucide-react"
 
 const settings = [
   {

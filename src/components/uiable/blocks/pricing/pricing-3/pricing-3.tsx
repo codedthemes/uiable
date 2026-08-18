@@ -1,6 +1,8 @@
-import { Check } from "lucide-react"
-
+// shadcn
 import { Button } from "@/components/ui/button"
+
+// assets
+import { Check } from "lucide-react"
 
 // constants
 const plans = [

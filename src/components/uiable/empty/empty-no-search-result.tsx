@@ -1,6 +1,3 @@
-// assets
-import { SearchNormal1 } from "iconsax-reactjs"
-
 // shadcn
 import { Button } from "@/components/ui/button"
 import {
@@ -11,6 +8,9 @@ import {
   EmptyMedia,
   EmptyTitle,
 } from "@/components/ui/empty"
+
+// third-party
+import { SearchNormal1 } from "iconsax-reactjs"
 
 //  ------------------------------ | EMPTY - NO SEARCH RESULT | ------------------------------  //
 

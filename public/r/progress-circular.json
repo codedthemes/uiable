@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-circular",
+  "title": "Progress Circular",
+  "description": "Progress Circular variant for component.",
+  "registryDependencies": ["@uiable/circular-progress"],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-circular.tsx",
+      "content": "// shadcn\nimport { CircularProgress } from \"@/components/ui/circular-progress\"\n\n//  ------------------------------ | PROGRESS - CIRCULAR | ------------------------------  //\n\nexport default function ProgressCircular() {\n  const value = 75\n\n  return (\n    <div className=\"flex w-full items-center justify-center py-6\">\n      <CircularProgress\n        value={value}\n        size={80}\n        strokeWidth={8}\n        showValue={false}\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-circular.tsx"
+    }
+  ],
+  "categories": ["progress"],
+  "type": "registry:ui"
+}

@@ -1,6 +1,3 @@
-// third party
-import { RadialBar, RadialBarChart } from "recharts"
-
 // shadcn
 import {
   ChartConfig,
@@ -8,6 +5,10 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+
+// third-party
+// third party
+import { RadialBar, RadialBarChart } from "recharts"
 
 const chartData = [
   { metric: "cpu", usage: 82, fill: "var(--color-cpu)" },

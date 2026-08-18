@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/typography/typography-small.tsx",
-      "content": "//  ------------------------------ | TYPOGRAPHY - SMALL | ------------------------------  //\r\n\r\nexport function TypographySmall() {\r\n  return <small className=\"text-sm\">Email address</small>;\r\n}\r\n",
+      "content": "//  ------------------------------ | TYPOGRAPHY - SMALL | ------------------------------  //\n\nexport function TypographySmall() {\n  return <small className=\"text-sm\">Email address</small>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/typography/typography-small.tsx"
     }
   ],
-  "categories": [
-    "typography"
-  ],
+  "categories": ["typography"],
   "type": "registry:ui"
 }

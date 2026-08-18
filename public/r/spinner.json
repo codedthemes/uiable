@@ -3,19 +3,15 @@
   "name": "spinner",
   "title": "Spinner",
   "description": "Spinner component.",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "files": [
     {
       "path": "src/components/ui/spinner.tsx",
-      "content": "import { ComponentProps } from \"react\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\n// assests\r\nimport { Loader2Icon } from \"lucide-react\"\r\n\r\nfunction Spinner({ className, ...props }: ComponentProps<\"svg\">) {\r\n  return (\r\n    <Loader2Icon\r\n      role=\"status\"\r\n      aria-label=\"Loading\"\r\n      className={cn(\"size-4 animate-spin\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport { Spinner }\r\n",
+      "content": "import { ComponentProps } from \"react\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\n// assets\n// assests\nimport { Loader2Icon } from \"lucide-react\"\n\nfunction Spinner({ className, ...props }: ComponentProps<\"svg\">) {\n  return (\n    <Loader2Icon\n      role=\"status\"\n      aria-label=\"Loading\"\n      className={cn(\"size-4 animate-spin\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { Spinner }\n",
       "type": "registry:component",
       "target": "@components/ui/spinner.tsx"
     }
   ],
-  "categories": [
-    "spinner"
-  ],
+  "categories": ["spinner"],
   "type": "registry:ui"
 }

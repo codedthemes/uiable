@@ -1,8 +1,12 @@
 "use client"
 
 import { CSSProperties } from "react"
+
+// third-party
 import { useTheme } from "next-themes"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
+
+// assets
 import {
   CircleCheckIcon,
   InfoIcon,

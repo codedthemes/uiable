@@ -3,19 +3,15 @@
   "name": "menubar-submenu",
   "title": "Menubar Submenu",
   "description": "Menubar Submenu variant for component.",
-  "registryDependencies": [
-    "@uiable/menubar"
-  ],
+  "registryDependencies": ["@uiable/menubar"],
   "files": [
     {
       "path": "src/components/uiable/menubar/menubar-submenu.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Menubar,\r\n  MenubarContent,\r\n  MenubarItem,\r\n  MenubarMenu,\r\n  MenubarSeparator,\r\n  MenubarShortcut,\r\n  MenubarSub,\r\n  MenubarSubContent,\r\n  MenubarSubTrigger,\r\n  MenubarTrigger\r\n} from \"@/components/ui/menubar\";\r\n\r\n//  ------------------------------ | MENUBAR - SUBMENU | ------------------------------  //\r\n\r\nexport function MenubarSubmenu() {\r\n  return (\r\n    <Menubar className=\"w-72\">\r\n      <MenubarMenu>\r\n        <MenubarTrigger>File</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarSub>\r\n            <MenubarSubTrigger>Share</MenubarSubTrigger>\r\n            <MenubarSubContent>\r\n              <MenubarItem>Email link</MenubarItem>\r\n              <MenubarItem>Messages</MenubarItem>\r\n              <MenubarItem>Notes</MenubarItem>\r\n            </MenubarSubContent>\r\n          </MenubarSub>\r\n          <MenubarSeparator />\r\n          <MenubarItem>\r\n            Print... <MenubarShortcut>⌘P</MenubarShortcut>\r\n          </MenubarItem>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n      <MenubarMenu>\r\n        <MenubarTrigger>Edit</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarItem>\r\n            Undo <MenubarShortcut>⌘Z</MenubarShortcut>\r\n          </MenubarItem>\r\n          <MenubarItem>\r\n            Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>\r\n          </MenubarItem>\r\n          <MenubarSeparator />\r\n          <MenubarSub>\r\n            <MenubarSubTrigger>Find</MenubarSubTrigger>\r\n            <MenubarSubContent>\r\n              <MenubarItem>Find...</MenubarItem>\r\n              <MenubarItem>Find Next</MenubarItem>\r\n              <MenubarItem>Find Previous</MenubarItem>\r\n            </MenubarSubContent>\r\n          </MenubarSub>\r\n          <MenubarSeparator />\r\n          <MenubarItem>Cut</MenubarItem>\r\n          <MenubarItem>Copy</MenubarItem>\r\n          <MenubarItem>Paste</MenubarItem>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n    </Menubar>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Menubar,\n  MenubarContent,\n  MenubarItem,\n  MenubarMenu,\n  MenubarSeparator,\n  MenubarShortcut,\n  MenubarSub,\n  MenubarSubContent,\n  MenubarSubTrigger,\n  MenubarTrigger,\n} from \"@/components/ui/menubar\"\n\n//  ------------------------------ | MENUBAR - SUBMENU | ------------------------------  //\n\nexport function MenubarSubmenu() {\n  return (\n    <Menubar className=\"w-72\">\n      <MenubarMenu>\n        <MenubarTrigger>File</MenubarTrigger>\n        <MenubarContent>\n          <MenubarSub>\n            <MenubarSubTrigger>Share</MenubarSubTrigger>\n            <MenubarSubContent>\n              <MenubarItem>Email link</MenubarItem>\n              <MenubarItem>Messages</MenubarItem>\n              <MenubarItem>Notes</MenubarItem>\n            </MenubarSubContent>\n          </MenubarSub>\n          <MenubarSeparator />\n          <MenubarItem>\n            Print... <MenubarShortcut>⌘P</MenubarShortcut>\n          </MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n      <MenubarMenu>\n        <MenubarTrigger>Edit</MenubarTrigger>\n        <MenubarContent>\n          <MenubarItem>\n            Undo <MenubarShortcut>⌘Z</MenubarShortcut>\n          </MenubarItem>\n          <MenubarItem>\n            Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>\n          </MenubarItem>\n          <MenubarSeparator />\n          <MenubarSub>\n            <MenubarSubTrigger>Find</MenubarSubTrigger>\n            <MenubarSubContent>\n              <MenubarItem>Find...</MenubarItem>\n              <MenubarItem>Find Next</MenubarItem>\n              <MenubarItem>Find Previous</MenubarItem>\n            </MenubarSubContent>\n          </MenubarSub>\n          <MenubarSeparator />\n          <MenubarItem>Cut</MenubarItem>\n          <MenubarItem>Copy</MenubarItem>\n          <MenubarItem>Paste</MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n    </Menubar>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/menubar/menubar-submenu.tsx"
     }
   ],
-  "categories": [
-    "menubar"
-  ],
+  "categories": ["menubar"],
   "type": "registry:ui"
 }

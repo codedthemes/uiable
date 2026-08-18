@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-list",
+  "title": "Skeleton List",
+  "description": "Skeleton List variant for component.",
+  "registryDependencies": ["@uiable/skeleton"],
+  "files": [
+    {
+      "path": "src/components/uiable/skeleton/skeleton-list.tsx",
+      "content": "// shadcn\nimport { Skeleton } from \"@/components/ui/skeleton\"\n\n//  ------------------------------ | SKELETON - LIST | ------------------------------  //\n\nexport function SkeletonList() {\n  return (\n    <div className=\"w-full max-w-md space-y-4\">\n      {[...Array(4)].map((_, i) => (\n        <div key={i} className=\"flex items-center space-x-4\">\n          <Skeleton className=\"h-12 w-12 rounded-lg\" />\n          <div className=\"flex-1 space-y-2\">\n            <Skeleton className=\"h-4 w-[80%]\" />\n            <Skeleton className=\"h-3 w-[60%]\" />\n          </div>\n        </div>\n      ))}\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/skeleton/skeleton-list.tsx"
+    }
+  ],
+  "categories": ["skeleton"],
+  "type": "registry:ui"
+}

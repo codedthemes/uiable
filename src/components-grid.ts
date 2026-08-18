@@ -164,7 +164,7 @@ export const NAV_CATEGORIES: NavSection[] = [
       },
       { title: "Hover Card", slug: "hover-card", breakpoints: { xs: 1 } },
       { title: "Kbd", slug: "kbd", breakpoints: { md: 2, sm: 2, xs: 1 } },
-      { title: "Label", slug: "label", badge: { label: "New" }, breakpoints: { xs: 1 } },
+      { title: "Label", slug: "label", breakpoints: { xs: 1 } },
       {
         title: "Marker",
         slug: "marker",
@@ -183,18 +183,19 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "List Group",
         slug: "list-group",
-        badge: { label: "New" },
         breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
       },
-      { title: "Scroll Area", slug: "scroll-area", badge: { label: "New" }, breakpoints: { xs: 1 } },
+      { title: "Scroll Area", slug: "scroll-area", breakpoints: { xs: 1 } },
       {
         title: "Separator",
         slug: "separator",
+        badge: { label: "New" },
         breakpoints: { md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Table",
         slug: "table",
+        badge: { label: "New" },
         breakpoints: { xl: 2, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -206,12 +207,12 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Typography",
         slug: "typography",
+        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Aspect Ratio",
         slug: "aspect-ratio",
-        badge: { label: "New" },
         breakpoints: { md: 2, sm: 1, xs: 1 },
       },
       {
@@ -228,17 +229,18 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Alert",
         slug: "alert",
+        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Alert Dialog",
         slug: "alert-dialog",
-        badge: { label: "New" },
         breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Dialog",
         slug: "dialog",
+        badge: { label: "New" },
         breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
@@ -252,12 +254,21 @@ export const NAV_CATEGORIES: NavSection[] = [
         badge: { label: "New" },
         breakpoints: { xl: 3, lg: 2, md: 2, sm: 1, xs: 1 },
       },
-      { title: "Sheet", slug: "sheet", breakpoints: { md: 2, xs: 1 } },
-      { title: "Sonner", slug: "sonner", badge: { label: "New" }, breakpoints: { md: 2, sm: 1, xs: 1 } },
+      {
+        title: "Sheet",
+        slug: "sheet",
+        badge: { label: "New" },
+        breakpoints: { md: 2, xs: 1 },
+      },
+      {
+        title: "Sonner",
+        slug: "sonner",
+        badge: { label: "New" },
+        breakpoints: { md: 2, sm: 1, xs: 1 },
+      },
       {
         title: "Spinner",
         slug: "spinner",
-        badge: { label: "New" },
         breakpoints: { md: 3, sm: 2, xs: 1 },
       },
     ],
@@ -268,7 +279,6 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Breadcrumb",
         slug: "breadcrumb",
-        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -289,7 +299,6 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Navigation Menu",
         slug: "navigation-menu",
-        badge: { label: "New" },
         breakpoints: { xs: 1 },
       },
       {
@@ -358,11 +367,13 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Contact",
         slug: "contact",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Content",
         slug: "content",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -378,6 +389,7 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Footer",
         slug: "footer",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -395,19 +407,16 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Portfolio",
         slug: "portfolio",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Pricing",
         slug: "pricing",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Process",
         slug: "process",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {

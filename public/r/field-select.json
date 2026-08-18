@@ -3,20 +3,15 @@
   "name": "field-select",
   "title": "Field Select",
   "description": "Field Select variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/select"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/select"],
   "files": [
     {
       "path": "src/components/uiable/field/field-select.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue\r\n} from \"@/components/ui/select\";\r\n\r\n// constants\r\nconst items = [\r\n  { label: \"Choose department\", value: null },\r\n  { label: \"Engineering\", value: \"engineering\" },\r\n  { label: \"Design\", value: \"design\" },\r\n  { label: \"Marketing\", value: \"marketing\" },\r\n  { label: \"Sales\", value: \"sales\" },\r\n  { label: \"Customer Support\", value: \"support\" },\r\n  { label: \"Human Resources\", value: \"hr\" },\r\n  { label: \"Finance\", value: \"finance\" },\r\n  { label: \"Operations\", value: \"operations\" }\r\n];\r\n\r\n//  ------------------------------ | FIELD - SELECT | ------------------------------  //\r\n\r\nexport default function FieldSelect() {\r\n  return (\r\n    <Field className=\"w-full max-w-xs\">\r\n      <FieldLabel>Department</FieldLabel>\r\n      <Select items={items}>\r\n        <SelectTrigger>\r\n          <SelectValue />\r\n        </SelectTrigger>\r\n        <SelectContent>\r\n          <SelectGroup>\r\n            {items.map((item) => (\r\n              <SelectItem key={item.value} value={item.value}>\r\n                {item.label}\r\n              </SelectItem>\r\n            ))}\r\n          </SelectGroup>\r\n        </SelectContent>\r\n      </Select>\r\n      <FieldDescription>\r\n        Select your department or area of work.\r\n      </FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\nimport {\n  Select,\n  SelectContent,\n  SelectGroup,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from \"@/components/ui/select\"\n\n// constants\nconst items = [\n  { label: \"Choose department\", value: null },\n  { label: \"Engineering\", value: \"engineering\" },\n  { label: \"Design\", value: \"design\" },\n  { label: \"Marketing\", value: \"marketing\" },\n  { label: \"Sales\", value: \"sales\" },\n  { label: \"Customer Support\", value: \"support\" },\n  { label: \"Human Resources\", value: \"hr\" },\n  { label: \"Finance\", value: \"finance\" },\n  { label: \"Operations\", value: \"operations\" },\n]\n\n//  ------------------------------ | FIELD - SELECT | ------------------------------  //\n\nexport default function FieldSelect() {\n  return (\n    <Field className=\"w-full max-w-xs\">\n      <FieldLabel>Department</FieldLabel>\n      <Select items={items}>\n        <SelectTrigger>\n          <SelectValue />\n        </SelectTrigger>\n        <SelectContent>\n          <SelectGroup>\n            {items.map((item) => (\n              <SelectItem key={item.value} value={item.value}>\n                {item.label}\n              </SelectItem>\n            ))}\n          </SelectGroup>\n        </SelectContent>\n      </Select>\n      <FieldDescription>\n        Select your department or area of work.\n      </FieldDescription>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/field/field-select.tsx"
     }
   ],
-  "categories": [
-    "field"
-  ],
+  "categories": ["field"],
   "type": "registry:ui"
 }

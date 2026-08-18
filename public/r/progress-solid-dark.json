@@ -3,19 +3,15 @@
   "name": "progress-solid-dark",
   "title": "Progress Solid Dark",
   "description": "Progress Solid Dark variant for component.",
-  "registryDependencies": [
-    "@uiable/progress"
-  ],
+  "registryDependencies": ["@uiable/progress"],
   "files": [
     {
       "path": "src/components/uiable/progress/progress-solid-dark.tsx",
-      "content": "// shadcn\r\nimport { Progress } from \"@/components/ui/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - SOLID DARK | ------------------------------  //\r\n\r\nexport default function ProgressSolidDark() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <Progress\r\n        value={85}\r\n        className=\"*:h-4 *:bg-muted/20 dark:*:bg-muted/10 *:rounded-lg **:bg-slate-800 dark:**:bg-slate-100 **:rounded-lg\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Progress } from \"@/components/ui/progress\"\n\n//  ------------------------------ | PROGRESS - SOLID DARK | ------------------------------  //\n\nexport default function ProgressSolidDark() {\n  return (\n    <div className=\"w-full\">\n      <Progress\n        value={85}\n        className=\"*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-slate-800 dark:*:bg-muted/10 dark:**:bg-slate-100\"\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-solid-dark.tsx"
     }
   ],
-  "categories": [
-    "progress"
-  ],
+  "categories": ["progress"],
   "type": "registry:ui"
 }

@@ -3,19 +3,15 @@
   "name": "badge-solid-info",
   "title": "Badge Solid Info",
   "description": "Badge Solid Info variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/badge/badge-solid-info.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - SOLID INFO | ------------------------------  //\r\n\r\nexport default function BadgeSolidInfo() {\r\n  return <Badge className=\"bg-cyan-500 text-white\">Info</Badge>;\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | BADGE - SOLID INFO | ------------------------------  //\n\nexport default function BadgeSolidInfo() {\n  return <Badge className=\"bg-cyan-500 text-white\">Info</Badge>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-solid-info.tsx"
     }
   ],
-  "categories": [
-    "badge"
-  ],
+  "categories": ["badge"],
   "type": "registry:ui"
 }

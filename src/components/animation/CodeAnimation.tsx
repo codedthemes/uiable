@@ -1,12 +1,17 @@
 "use client"
 
 import { useEffect, useRef, useState, type HTMLAttributes } from "react"
+
+// third-party
+import { motion } from "framer-motion"
+
+// project-imports
 import { DarkFav, LightFav } from "@/images/brand"
 import { AnimationBg } from "@/images/svg/landing"
-import { motion } from "framer-motion"
-import { ChevronLeft, ChevronRight, Slash } from "lucide-react"
-
 import { cn } from "@/lib/utils"
+
+// assets
+import { ChevronLeft, ChevronRight, Slash } from "lucide-react"
 
 interface CodeAnimationProps extends HTMLAttributes<HTMLDivElement> {
   badges?: unknown[]

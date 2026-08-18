@@ -20,6 +20,7 @@ import {
   useMessageScrollerScrollable,
 } from "@/components/ui/message-scroller"
 
+// project-imports
 // project imports
 import { MessageAnimated } from "@/components/message-animated"
 

@@ -9,9 +9,6 @@ import {
   useState,
 } from "react"
 
-// third party
-import { type BundledLanguage, codeToHtml } from "shiki"
-
 // shadcn
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -29,6 +26,11 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+// third-party
+// third party
+import { type BundledLanguage, codeToHtml } from "shiki"
+
+// project-imports
 // project imports
 import Loader from "@/components/Loader"
 import { cn } from "@/lib/utils"

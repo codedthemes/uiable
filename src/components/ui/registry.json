@@ -15,13 +15,8 @@
           "target": "@components/ui/accordion.tsx"
         }
       ],
-      "categories": [
-        "accordion"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["accordion"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "alert",
@@ -35,12 +30,8 @@
           "target": "@components/ui/alert.tsx"
         }
       ],
-      "categories": [
-        "alert"
-      ],
-      "dependencies": [
-        "class-variance-authority"
-      ]
+      "categories": ["alert"],
+      "dependencies": ["class-variance-authority"]
     },
     {
       "name": "alert-dialog",
@@ -54,15 +45,9 @@
           "target": "@components/ui/alert-dialog.tsx"
         }
       ],
-      "categories": [
-        "alert-dialog"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["alert-dialog"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "aspect-ratio",
@@ -76,9 +61,7 @@
           "target": "@components/ui/aspect-ratio.tsx"
         }
       ],
-      "categories": [
-        "aspect-ratio"
-      ]
+      "categories": ["aspect-ratio"]
     },
     {
       "name": "attachment",
@@ -92,16 +75,9 @@
           "target": "@components/ui/attachment.tsx"
         }
       ],
-      "categories": [
-        "attachment"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["attachment"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "avatar",
@@ -115,12 +91,8 @@
           "target": "@components/ui/avatar.tsx"
         }
       ],
-      "categories": [
-        "avatar"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["avatar"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "badge",
@@ -134,13 +106,8 @@
           "target": "@components/ui/badge.tsx"
         }
       ],
-      "categories": [
-        "badge"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["badge"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "breadcrumb",
@@ -154,13 +121,8 @@
           "target": "@components/ui/breadcrumb.tsx"
         }
       ],
-      "categories": [
-        "breadcrumb"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["breadcrumb"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "bubble",
@@ -174,13 +136,8 @@
           "target": "@components/ui/bubble.tsx"
         }
       ],
-      "categories": [
-        "bubble"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["bubble"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "button",
@@ -194,13 +151,8 @@
           "target": "@components/ui/button.tsx"
         }
       ],
-      "categories": [
-        "button"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["button"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "button-group",
@@ -214,16 +166,9 @@
           "target": "@components/ui/button-group.tsx"
         }
       ],
-      "categories": [
-        "button-group"
-      ],
-      "registryDependencies": [
-        "@uiable/separator"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["button-group"],
+      "registryDependencies": ["@uiable/separator"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "calendar",
@@ -237,16 +182,9 @@
           "target": "@components/ui/calendar.tsx"
         }
       ],
-      "categories": [
-        "calendar"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "lucide-react",
-        "react-day-picker"
-      ]
+      "categories": ["calendar"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react", "react-day-picker"]
     },
     {
       "name": "card",
@@ -260,9 +198,7 @@
           "target": "@components/ui/card.tsx"
         }
       ],
-      "categories": [
-        "card"
-      ]
+      "categories": ["card"]
     },
     {
       "name": "carousel",
@@ -276,16 +212,9 @@
           "target": "@components/ui/carousel.tsx"
         }
       ],
-      "categories": [
-        "carousel"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "embla-carousel-react",
-        "lucide-react"
-      ]
+      "categories": ["carousel"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["embla-carousel-react", "lucide-react"]
     },
     {
       "name": "chart",
@@ -299,12 +228,8 @@
           "target": "@components/ui/chart.tsx"
         }
       ],
-      "categories": [
-        "chart"
-      ],
-      "dependencies": [
-        "recharts"
-      ]
+      "categories": ["chart"],
+      "dependencies": ["recharts"]
     },
     {
       "name": "checkbox",
@@ -318,13 +243,8 @@
           "target": "@components/ui/checkbox.tsx"
         }
       ],
-      "categories": [
-        "checkbox"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["checkbox"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "circular-progress",
@@ -338,12 +258,8 @@
           "target": "@components/ui/circular-progress.tsx"
         }
       ],
-      "categories": [
-        "circular-progress"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["circular-progress"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "collapsible",
@@ -357,12 +273,8 @@
           "target": "@components/ui/collapsible.tsx"
         }
       ],
-      "categories": [
-        "collapsible"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["collapsible"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "combobox",
@@ -376,17 +288,9 @@
           "target": "@components/ui/combobox.tsx"
         }
       ],
-      "categories": [
-        "combobox"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/input-group"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["combobox"],
+      "registryDependencies": ["@uiable/button", "@uiable/input-group"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "command",
@@ -400,17 +304,9 @@
           "target": "@components/ui/command.tsx"
         }
       ],
-      "categories": [
-        "command"
-      ],
-      "registryDependencies": [
-        "@uiable/dialog",
-        "@uiable/input-group"
-      ],
-      "dependencies": [
-        "cmdk",
-        "lucide-react"
-      ]
+      "categories": ["command"],
+      "registryDependencies": ["@uiable/dialog", "@uiable/input-group"],
+      "dependencies": ["cmdk", "lucide-react"]
     },
     {
       "name": "context-menu",
@@ -424,13 +320,8 @@
           "target": "@components/ui/context-menu.tsx"
         }
       ],
-      "categories": [
-        "context-menu"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["context-menu"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "dialog",
@@ -444,16 +335,9 @@
           "target": "@components/ui/dialog.tsx"
         }
       ],
-      "categories": [
-        "dialog"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["dialog"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "direction",
@@ -467,12 +351,8 @@
           "target": "@components/ui/direction.tsx"
         }
       ],
-      "categories": [
-        "direction"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["direction"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "drawer",
@@ -486,12 +366,8 @@
           "target": "@components/ui/drawer.tsx"
         }
       ],
-      "categories": [
-        "drawer"
-      ],
-      "dependencies": [
-        "vaul"
-      ]
+      "categories": ["drawer"],
+      "dependencies": ["vaul"]
     },
     {
       "name": "dropdown-menu",
@@ -505,13 +381,8 @@
           "target": "@components/ui/dropdown-menu.tsx"
         }
       ],
-      "categories": [
-        "dropdown-menu"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["dropdown-menu"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "empty",
@@ -525,12 +396,8 @@
           "target": "@components/ui/empty.tsx"
         }
       ],
-      "categories": [
-        "empty"
-      ],
-      "dependencies": [
-        "class-variance-authority"
-      ]
+      "categories": ["empty"],
+      "dependencies": ["class-variance-authority"]
     },
     {
       "name": "field",
@@ -544,16 +411,9 @@
           "target": "@components/ui/field.tsx"
         }
       ],
-      "categories": [
-        "field"
-      ],
-      "registryDependencies": [
-        "@uiable/label",
-        "@uiable/separator"
-      ],
-      "dependencies": [
-        "class-variance-authority"
-      ]
+      "categories": ["field"],
+      "registryDependencies": ["@uiable/label", "@uiable/separator"],
+      "dependencies": ["class-variance-authority"]
     },
     {
       "name": "hover-card",
@@ -567,12 +427,8 @@
           "target": "@components/ui/hover-card.tsx"
         }
       ],
-      "categories": [
-        "hover-card"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["hover-card"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "input",
@@ -586,12 +442,8 @@
           "target": "@components/ui/input.tsx"
         }
       ],
-      "categories": [
-        "input"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["input"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "input-group",
@@ -605,17 +457,9 @@
           "target": "@components/ui/input-group.tsx"
         }
       ],
-      "categories": [
-        "input-group"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/input",
-        "@uiable/textarea"
-      ],
-      "dependencies": [
-        "class-variance-authority"
-      ]
+      "categories": ["input-group"],
+      "registryDependencies": ["@uiable/button", "@uiable/input", "@uiable/textarea"],
+      "dependencies": ["class-variance-authority"]
     },
     {
       "name": "input-otp",
@@ -629,13 +473,8 @@
           "target": "@components/ui/input-otp.tsx"
         }
       ],
-      "categories": [
-        "input-otp"
-      ],
-      "dependencies": [
-        "input-otp",
-        "lucide-react"
-      ]
+      "categories": ["input-otp"],
+      "dependencies": ["input-otp", "lucide-react"]
     },
     {
       "name": "item",
@@ -649,16 +488,9 @@
           "target": "@components/ui/item.tsx"
         }
       ],
-      "categories": [
-        "item"
-      ],
-      "registryDependencies": [
-        "@uiable/separator"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["item"],
+      "registryDependencies": ["@uiable/separator"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "kbd",
@@ -672,9 +504,7 @@
           "target": "@components/ui/kbd.tsx"
         }
       ],
-      "categories": [
-        "kbd"
-      ]
+      "categories": ["kbd"]
     },
     {
       "name": "label",
@@ -688,9 +518,7 @@
           "target": "@components/ui/label.tsx"
         }
       ],
-      "categories": [
-        "label"
-      ]
+      "categories": ["label"]
     },
     {
       "name": "marker",
@@ -704,13 +532,8 @@
           "target": "@components/ui/marker.tsx"
         }
       ],
-      "categories": [
-        "marker"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["marker"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "menubar",
@@ -724,16 +547,9 @@
           "target": "@components/ui/menubar.tsx"
         }
       ],
-      "categories": [
-        "menubar"
-      ],
-      "registryDependencies": [
-        "@uiable/dropdown-menu"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["menubar"],
+      "registryDependencies": ["@uiable/dropdown-menu"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "message",
@@ -747,9 +563,7 @@
           "target": "@components/ui/message.tsx"
         }
       ],
-      "categories": [
-        "message"
-      ]
+      "categories": ["message"]
     },
     {
       "name": "message-scroller",
@@ -763,16 +577,9 @@
           "target": "@components/ui/message-scroller.tsx"
         }
       ],
-      "categories": [
-        "message-scroller"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "@shadcn/react",
-        "lucide-react"
-      ]
+      "categories": ["message-scroller"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["@shadcn/react", "lucide-react"]
     },
     {
       "name": "native-select",
@@ -786,12 +593,8 @@
           "target": "@components/ui/native-select.tsx"
         }
       ],
-      "categories": [
-        "native-select"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["native-select"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "navigation-menu",
@@ -805,14 +608,8 @@
           "target": "@components/ui/navigation-menu.tsx"
         }
       ],
-      "categories": [
-        "navigation-menu"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority",
-        "lucide-react"
-      ]
+      "categories": ["navigation-menu"],
+      "dependencies": ["@base-ui/react", "class-variance-authority", "lucide-react"]
     },
     {
       "name": "pagination",
@@ -826,15 +623,9 @@
           "target": "@components/ui/pagination.tsx"
         }
       ],
-      "categories": [
-        "pagination"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["pagination"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "popover",
@@ -848,12 +639,8 @@
           "target": "@components/ui/popover.tsx"
         }
       ],
-      "categories": [
-        "popover"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["popover"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "progress",
@@ -867,12 +654,8 @@
           "target": "@components/ui/progress.tsx"
         }
       ],
-      "categories": [
-        "progress"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["progress"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "radio-group",
@@ -886,12 +669,8 @@
           "target": "@components/ui/radio-group.tsx"
         }
       ],
-      "categories": [
-        "radio-group"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["radio-group"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "resizable",
@@ -905,12 +684,8 @@
           "target": "@components/ui/resizable.tsx"
         }
       ],
-      "categories": [
-        "resizable"
-      ],
-      "dependencies": [
-        "react-resizable-panels"
-      ]
+      "categories": ["resizable"],
+      "dependencies": ["react-resizable-panels"]
     },
     {
       "name": "scroll-area",
@@ -924,12 +699,8 @@
           "target": "@components/ui/scroll-area.tsx"
         }
       ],
-      "categories": [
-        "scroll-area"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["scroll-area"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "select",
@@ -943,13 +714,8 @@
           "target": "@components/ui/select.tsx"
         }
       ],
-      "categories": [
-        "select"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["select"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "separator",
@@ -963,12 +729,8 @@
           "target": "@components/ui/separator.tsx"
         }
       ],
-      "categories": [
-        "separator"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["separator"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "sheet",
@@ -982,16 +744,9 @@
           "target": "@components/ui/sheet.tsx"
         }
       ],
-      "categories": [
-        "sheet"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "lucide-react"
-      ]
+      "categories": ["sheet"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["@base-ui/react", "lucide-react"]
     },
     {
       "name": "sidebar",
@@ -1005,22 +760,9 @@
           "target": "@components/ui/sidebar.tsx"
         }
       ],
-      "categories": [
-        "sidebar"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/input",
-        "@uiable/separator",
-        "@uiable/sheet",
-        "@uiable/skeleton",
-        "@uiable/tooltip"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority",
-        "iconsax-reactjs"
-      ]
+      "categories": ["sidebar"],
+      "registryDependencies": ["@uiable/button", "@uiable/input", "@uiable/separator", "@uiable/sheet", "@uiable/skeleton", "@uiable/tooltip"],
+      "dependencies": ["@base-ui/react", "class-variance-authority", "iconsax-reactjs"]
     },
     {
       "name": "skeleton",
@@ -1034,9 +776,7 @@
           "target": "@components/ui/skeleton.tsx"
         }
       ],
-      "categories": [
-        "skeleton"
-      ]
+      "categories": ["skeleton"]
     },
     {
       "name": "slider",
@@ -1050,12 +790,8 @@
           "target": "@components/ui/slider.tsx"
         }
       ],
-      "categories": [
-        "slider"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["slider"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "sonner",
@@ -1069,14 +805,8 @@
           "target": "@components/ui/sonner.tsx"
         }
       ],
-      "categories": [
-        "sonner"
-      ],
-      "dependencies": [
-        "lucide-react",
-        "next-themes",
-        "sonner"
-      ]
+      "categories": ["sonner"],
+      "dependencies": ["lucide-react", "next-themes", "sonner"]
     },
     {
       "name": "spinner",
@@ -1090,12 +820,8 @@
           "target": "@components/ui/spinner.tsx"
         }
       ],
-      "categories": [
-        "spinner"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["spinner"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "switch",
@@ -1109,12 +835,8 @@
           "target": "@components/ui/switch.tsx"
         }
       ],
-      "categories": [
-        "switch"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["switch"],
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "table",
@@ -1128,9 +850,7 @@
           "target": "@components/ui/table.tsx"
         }
       ],
-      "categories": [
-        "table"
-      ]
+      "categories": ["table"]
     },
     {
       "name": "tabs",
@@ -1144,13 +864,8 @@
           "target": "@components/ui/tabs.tsx"
         }
       ],
-      "categories": [
-        "tabs"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["tabs"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "textarea",
@@ -1164,9 +879,7 @@
           "target": "@components/ui/textarea.tsx"
         }
       ],
-      "categories": [
-        "textarea"
-      ]
+      "categories": ["textarea"]
     },
     {
       "name": "toggle",
@@ -1180,13 +893,8 @@
           "target": "@components/ui/toggle.tsx"
         }
       ],
-      "categories": [
-        "toggle"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["toggle"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "toggle-group",
@@ -1200,16 +908,9 @@
           "target": "@components/ui/toggle-group.tsx"
         }
       ],
-      "categories": [
-        "toggle-group"
-      ],
-      "registryDependencies": [
-        "@uiable/toggle"
-      ],
-      "dependencies": [
-        "@base-ui/react",
-        "class-variance-authority"
-      ]
+      "categories": ["toggle-group"],
+      "registryDependencies": ["@uiable/toggle"],
+      "dependencies": ["@base-ui/react", "class-variance-authority"]
     },
     {
       "name": "tooltip",
@@ -1223,12 +924,8 @@
           "target": "@components/ui/tooltip.tsx"
         }
       ],
-      "categories": [
-        "tooltip"
-      ],
-      "dependencies": [
-        "@base-ui/react"
-      ]
+      "categories": ["tooltip"],
+      "dependencies": ["@base-ui/react"]
     }
   ]
 }

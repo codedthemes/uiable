@@ -1,13 +1,13 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   HoverCard,
   HoverCardContent,
-  HoverCardTrigger
-} from "@/components/ui/hover-card";
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
 
 // constants
-const HOVER_CARD_SIDES = ["left", "top", "bottom", "right"] as const;
+const HOVER_CARD_SIDES = ["left", "top", "bottom", "right"] as const
 
 //  ------------------------------ | HOVER CARD - SIDES | ------------------------------  //
 
@@ -32,5 +32,5 @@ export function HoverCardSides() {
         </HoverCard>
       ))}
     </div>
-  );
+  )
 }

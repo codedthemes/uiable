@@ -3,22 +3,16 @@
   "name": "sonner-position",
   "title": "Sonner Position",
   "description": "Sonner Position variant for component.",
-  "dependencies": [
-    "sonner"
-  ],
-  "registryDependencies": [
-    "@uiable/button"
-  ],
+  "dependencies": ["sonner"],
+  "registryDependencies": ["@uiable/button"],
   "files": [
     {
       "path": "src/components/uiable/sonner/sonner-position.tsx",
-      "content": "\"use client\";\r\n\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n// third party\r\nimport { toast } from \"sonner\";\r\n\r\n//  ------------------------------ | SONNER - POSITION | ------------------------------  //\r\n\r\nexport function SonnerPosition() {\r\n  return (\r\n    <div className=\"flex flex-col gap-2\">\r\n      <div className=\"flex flex-wrap justify-center gap-2\">\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"top-left\" })\r\n          }\r\n        >\r\n          Top Left\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"top-center\" })\r\n          }\r\n        >\r\n          Top Center\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"top-right\" })\r\n          }\r\n        >\r\n          Top Right\r\n        </Button>\r\n      </div>\r\n      <div className=\"flex flex-wrap justify-center gap-2\">\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"bottom-left\" })\r\n          }\r\n        >\r\n          Bottom Left\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"bottom-center\" })\r\n          }\r\n        >\r\n          Bottom Center\r\n        </Button>\r\n        <Button\r\n          onClick={() =>\r\n            toast(\"Event has been created\", { position: \"bottom-right\" })\r\n          }\r\n        >\r\n          Bottom Right\r\n        </Button>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "\"use client\"\n\n// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n// third-party\n// third party\nimport { toast } from \"sonner\"\n\n//  ------------------------------ | SONNER - POSITION | ------------------------------  //\n\nexport function SonnerPosition() {\n  return (\n    <div className=\"flex flex-col gap-2\">\n      <div className=\"flex flex-wrap justify-center gap-2\">\n        <Button\n          onClick={() =>\n            toast(\"Event has been created\", { position: \"top-left\" })\n          }\n        >\n          Top Left\n        </Button>\n        <Button\n          onClick={() =>\n            toast(\"Event has been created\", { position: \"top-center\" })\n          }\n        >\n          Top Center\n        </Button>\n        <Button\n          onClick={() =>\n            toast(\"Event has been created\", { position: \"top-right\" })\n          }\n        >\n          Top Right\n        </Button>\n      </div>\n      <div className=\"flex flex-wrap justify-center gap-2\">\n        <Button\n          onClick={() =>\n            toast(\"Event has been created\", { position: \"bottom-left\" })\n          }\n        >\n          Bottom Left\n        </Button>\n        <Button\n          onClick={() =>\n            toast(\"Event has been created\", { position: \"bottom-center\" })\n          }\n        >\n          Bottom Center\n        </Button>\n        <Button\n          onClick={() =>\n            toast(\"Event has been created\", { position: \"bottom-right\" })\n          }\n        >\n          Bottom Right\n        </Button>\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/sonner/sonner-position.tsx"
     }
   ],
-  "categories": [
-    "sonner"
-  ],
+  "categories": ["sonner"],
   "type": "registry:ui"
 }

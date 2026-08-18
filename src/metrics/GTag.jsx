@@ -1,8 +1,10 @@
 "use client"
 
-import PropTypes from "prop-types"
-
+// next
 import Script from "next/script"
+
+// third-party
+import PropTypes from "prop-types"
 
 /***************************  METRICS - G-TAG  ***************************/
 

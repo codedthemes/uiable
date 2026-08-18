@@ -3,19 +3,15 @@
   "name": "progress-circular-with-label",
   "title": "Progress Circular With Label",
   "description": "Progress Circular With Label variant for component.",
-  "registryDependencies": [
-    "@uiable/circular-progress"
-  ],
+  "registryDependencies": ["@uiable/circular-progress"],
   "files": [
     {
       "path": "src/components/uiable/progress/progress-circular-with-label.tsx",
-      "content": "// shadcn\r\nimport { CircularProgress } from \"@/components/ui/circular-progress\"\r\n\r\n//  ------------------------------ | PROGRESS - CIRCULAR WITH LABEL | ------------------------------  //\r\n\r\nexport default function ProgressCircularWithLabel() {\r\n  const value = 75\r\n\r\n  return (\r\n    <div className=\"flex w-full items-center justify-center py-6\">\r\n      <CircularProgress\r\n        value={value}\r\n        size={85}\r\n        strokeWidth={10}\r\n        showValue={true}\r\n      />\r\n    </div>\r\n  )\r\n}",
+      "content": "// shadcn\nimport { CircularProgress } from \"@/components/ui/circular-progress\"\n\n//  ------------------------------ | PROGRESS - CIRCULAR WITH LABEL | ------------------------------  //\n\nexport default function ProgressCircularWithLabel() {\n  const value = 75\n\n  return (\n    <div className=\"flex w-full items-center justify-center py-6\">\n      <CircularProgress\n        value={value}\n        size={85}\n        strokeWidth={10}\n        showValue={true}\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-circular-with-label.tsx"
     }
   ],
-  "categories": [
-    "progress"
-  ],
+  "categories": ["progress"],
   "type": "registry:ui"
 }

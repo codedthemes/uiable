@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/typography/typography-large.tsx",
-      "content": "//  ------------------------------ | TYPOGRAPHY - LARGE | ------------------------------  //\r\n\r\nexport function TypographyLarge() {\r\n  return <div className=\"text-lg font-semibold\">Are you absolutely sure?</div>;\r\n}\r\n",
+      "content": "//  ------------------------------ | TYPOGRAPHY - LARGE | ------------------------------  //\n\nexport function TypographyLarge() {\n  return <div className=\"text-lg font-semibold\">Are you absolutely sure?</div>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/typography/typography-large.tsx"
     }
   ],
-  "categories": [
-    "typography"
-  ],
+  "categories": ["typography"],
   "type": "registry:ui"
 }

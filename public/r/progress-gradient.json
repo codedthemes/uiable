@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-gradient",
+  "title": "Progress Gradient",
+  "description": "Progress Gradient variant for component.",
+  "dependencies": ["@base-ui/react"],
+  "registryDependencies": ["@uiable/progress"],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-gradient.tsx",
+      "content": "// shadcn\nimport { ProgressIndicator, ProgressTrack } from \"@/components/ui/progress\"\n\n// third-party\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\"\n\n//  ------------------------------ | PROGRESS - GRADIENT | ------------------------------  //\n\nexport default function ProgressGradient() {\n  return (\n    <div className=\"w-full\">\n      <ProgressPrimitive.Root value={85}>\n        <ProgressTrack className=\"h-4 rounded-lg bg-muted/20 dark:bg-muted/40\">\n          <ProgressIndicator className=\"rounded-lg bg-gradient-to-r from-primary via-cyan-500 to-green-500\" />\n        </ProgressTrack>\n      </ProgressPrimitive.Root>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-gradient.tsx"
+    }
+  ],
+  "categories": ["progress"],
+  "type": "registry:ui"
+}

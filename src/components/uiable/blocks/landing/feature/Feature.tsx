@@ -5,6 +5,7 @@ import { useState } from "react"
 // shadcn
 import { Button } from "@/components/ui/button"
 
+// project-imports
 // project imports
 import branding from "@/branding.json"
 import {
@@ -144,8 +145,8 @@ export default function Feature() {
                   </div>
                 </div>
               }
-              src="/assets/images/landing/light.png"
-              darkSrc="/assets/images/landing/dark.png"
+              src="https://cdn.uiable.com/landing/light.png"
+              darkSrc="https://cdn.uiable.com/landing/dark.png"
               opacity={0.7}
             />
           )}
@@ -173,12 +174,12 @@ export default function Feature() {
                     className="flex size-full items-start justify-center"
                   >
                     <img
-                      src={`/assets/images/landing/image-light-${num}.png`}
+                      src={`https://cdn.uiable.com/landing/image-light-${num}.png`}
                       alt={`Feature layer ${num}`}
                       className="block size-full object-contain object-top md:h-[580px] md:w-[580px] dark:hidden"
                     />
                     <img
-                      src={`/assets/images/landing/image-dark-${num}.png`}
+                      src={`https://cdn.uiable.com/landing/image-dark-${num}.png`}
                       alt={`Feature layer ${num}`}
                       className="hidden size-full object-contain object-top md:h-[580px] md:w-[580px] dark:block"
                     />

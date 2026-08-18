@@ -1,3 +1,6 @@
+// shadcn
+import { Badge } from "@/components/ui/badge"
+
 // assets
 import {
   ArchiveIcon,
@@ -6,9 +9,6 @@ import {
   StarIcon,
   TrashIcon,
 } from "lucide-react"
-
-// shadcn
-import { Badge } from "@/components/ui/badge"
 
 //  ------------------------------ | LIST GROUP - BADGE | ------------------------------  //
 

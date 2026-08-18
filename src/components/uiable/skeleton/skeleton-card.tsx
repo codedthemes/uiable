@@ -1,6 +1,6 @@
 // shadcn
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { Skeleton } from "@/components/ui/skeleton"
 
 //  ------------------------------ | SKELETON - CARD | ------------------------------  //
 
@@ -17,5 +17,5 @@ export function SkeletonCard() {
         <Skeleton className="aspect-video w-full" />
       </CardContent>
     </Card>
-  );
+  )
 }

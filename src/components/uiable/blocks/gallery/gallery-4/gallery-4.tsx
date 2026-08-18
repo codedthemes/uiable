@@ -1,48 +1,50 @@
-// shadcn
 import React from "react"
-import Autoplay from "embla-carousel-autoplay"
 
+// shadcn
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel"
 
+// third-party
+import Autoplay from "embla-carousel-autoplay"
+
 // constants
 const Gallery = [
   {
     title: "Urban Reflections",
-    images: "/assets/images/block/img-gallery-1.png",
+    images: "https://cdn.uiable.com/block/img-gallery-1.png",
     description:
       "Rain-soaked streets mirror towering skyscrapers, creating dramatic reflections that highlight the beauty and energy of the modern city.",
   },
   {
     title: "Stormy Horizons",
-    images: "/assets/images/block/img-gallery-2.png",
+    images: "https://cdn.uiable.com/block/img-gallery-2.png",
     description:
       "Dark clouds gather above a bustling highway, capturing the contrast between nature's power and the rhythm of urban life.",
   },
   {
     title: "Golden City",
-    images: "/assets/images/block/img-gallery-3.png",
+    images: "https://cdn.uiable.com/block/img-gallery-3.png",
     description:
       "Warm evening light paints the skyline with soft colors, showcasing the architectural elegance and atmosphere of a thriving city.",
   },
   {
     title: "Architectural Charm",
-    images: "/assets/images/block/img-gallery-4.png",
+    images: "https://cdn.uiable.com/block/img-gallery-4.png",
     description:
       "Historic buildings and unique street corners reveal the character, craftsmanship, and timeless beauty of urban architecture.",
   },
   {
     title: "City Movement",
-    images: "/assets/images/block/img-gallery-5.png",
+    images: "https://cdn.uiable.com/block/img-gallery-5.png",
     description:
       "Busy streets filled with vehicles and towering buildings capture the constant motion and vibrant pace of city living.",
   },
   {
     title: "Neon Nights",
-    images: "/assets/images/block/img-gallery-6.png",
+    images: "https://cdn.uiable.com/block/img-gallery-6.png",
     description:
       "Glowing lights, reflections, and long-exposure effects transform the city after dark into a captivating visual experience.",
   },

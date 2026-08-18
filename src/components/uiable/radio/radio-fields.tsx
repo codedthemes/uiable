@@ -1,12 +1,5 @@
 "use client"
 
-// third party
-import { Radio as RadioPrimitive } from "@base-ui/react/radio"
-import { RadioGroup as RadioGroupPrimitive } from "@base-ui/react/radio-group"
-import { AnimatePresence, motion } from "framer-motion"
-
-// projects
-import { cn } from "@/lib/utils"
 // shadcn
 import { Badge } from "@/components/ui/badge"
 import {
@@ -20,6 +13,16 @@ import {
   FieldTitle,
 } from "@/components/ui/field"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+
+// third-party
+// third party
+import { Radio as RadioPrimitive } from "@base-ui/react/radio"
+import { RadioGroup as RadioGroupPrimitive } from "@base-ui/react/radio-group"
+import { AnimatePresence, motion } from "framer-motion"
+
+// project-imports
+// projects
+import { cn } from "@/lib/utils"
 
 // Animated radio
 function AnimatedRadioGroupItem({

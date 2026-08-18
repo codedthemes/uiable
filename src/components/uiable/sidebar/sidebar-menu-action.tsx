@@ -4,7 +4,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu"
 import {
   Sidebar,
   SidebarContent,
@@ -16,7 +16,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/components/ui/sidebar";
+} from "@/components/ui/sidebar"
 
 // assets
 import {
@@ -26,7 +26,7 @@ import {
   MoreHorizontalIcon,
   PieChartIcon,
   SendIcon,
-} from "lucide-react";
+} from "lucide-react"
 
 // constants
 const projects = [
@@ -55,7 +55,7 @@ const projects = [
     url: "#",
     icon: SendIcon,
   },
-];
+]
 
 //  ------------------------------ | SIDEBAR - MENU ACTION | ------------------------------  //
 
@@ -102,5 +102,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

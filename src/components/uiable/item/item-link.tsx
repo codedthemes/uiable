@@ -4,11 +4,11 @@ import {
   ItemActions,
   ItemContent,
   ItemDescription,
-  ItemTitle
-} from "@/components/ui/item";
+  ItemTitle,
+} from "@/components/ui/item"
 
 // assets
-import { ChevronRightIcon, ExternalLinkIcon } from "lucide-react";
+import { ChevronRightIcon, ExternalLinkIcon } from "lucide-react"
 
 //  ------------------------------ | ITEM - LINK | ------------------------------  //
 
@@ -41,5 +41,5 @@ export function ItemLink() {
         </ItemActions>
       </Item>
     </div>
-  );
+  )
 }

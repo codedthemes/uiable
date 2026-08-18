@@ -1,4 +1,6 @@
 import { ReactNode } from "react"
+
+// next
 import Link from "next/link"
 
 // shadcn
@@ -10,12 +12,17 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
+// third-party
+// third party
+import { Toaster } from "sonner"
+
+// project-imports
 // project
 import branding from "@/branding.json"
 import { AppSidebar } from "@/components/app-sidebar"
 import { ThemeToggle } from "@/components/customizer"
-import Footer from "@/components/uiable/blocks/landing/footer/footer"
 // import SearchBar from "@/components/uiable/layout/search-bar";
+import Footer from "@/components/uiable/blocks/landing/footer/footer"
 
 // assets
 import {
@@ -23,9 +30,6 @@ import {
   IconBrandGithub,
   IconBrandX,
 } from "@tabler/icons-react"
-
-// third party
-import { Toaster } from "sonner"
 
 function Divider() {
   return <Separator orientation="vertical" className="my-1.5" />

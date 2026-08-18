@@ -3,19 +3,15 @@
   "name": "toggle-disabled",
   "title": "Toggle Disabled",
   "description": "Toggle Disabled variant for component.",
-  "registryDependencies": [
-    "@uiable/toggle"
-  ],
+  "registryDependencies": ["@uiable/toggle"],
   "files": [
     {
       "path": "src/components/uiable/toggle/toggle-disabled.tsx",
-      "content": "// shadcn\r\nimport { Toggle } from \"@/components/ui/toggle\";\r\n\r\n//  ------------------------------ | TOGGLE - DISABLED | ------------------------------  //\r\n\r\nexport function ToggleDisabled() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Toggle aria-label=\"Toggle disabled\" disabled>\r\n        Disabled\r\n      </Toggle>\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle disabled outline\" disabled>\r\n        Disabled\r\n      </Toggle>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Toggle } from \"@/components/ui/toggle\"\n\n//  ------------------------------ | TOGGLE - DISABLED | ------------------------------  //\n\nexport function ToggleDisabled() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Toggle aria-label=\"Toggle disabled\" disabled>\n        Disabled\n      </Toggle>\n      <Toggle variant=\"outline\" aria-label=\"Toggle disabled outline\" disabled>\n        Disabled\n      </Toggle>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/toggle/toggle-disabled.tsx"
     }
   ],
-  "categories": [
-    "toggle"
-  ],
+  "categories": ["toggle"],
   "type": "registry:ui"
 }

@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | BASEUI ICON | ------------------------------  //
 
@@ -24,5 +24,5 @@ export default function BaseUi(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

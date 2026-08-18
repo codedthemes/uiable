@@ -3,11 +3,12 @@ import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
-  InputOTPSlot
-} from "@/components/ui/input-otp";
+  InputOTPSlot,
+} from "@/components/ui/input-otp"
 
+// third-party
 // third party
-import { REGEXP_ONLY_DIGITS_AND_CHARS } from "input-otp";
+import { REGEXP_ONLY_DIGITS_AND_CHARS } from "input-otp"
 
 //  ------------------------------ | INPUT OTP - ALPHANUMERIC | ------------------------------  //
 
@@ -26,5 +27,5 @@ export function InputOTPAlphanumeric() {
         <InputOTPSlot index={5} />
       </InputOTPGroup>
     </InputOTP>
-  );
+  )
 }

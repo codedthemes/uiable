@@ -1,7 +1,6 @@
 "use client"
 
 // shadcn
-import { Badge } from "@/components/ui/badge"
 import {
   Attachment,
   AttachmentAction,
@@ -11,6 +10,7 @@ import {
   AttachmentMedia,
   AttachmentTitle,
 } from "@/components/ui/attachment"
+import { Badge } from "@/components/ui/badge"
 
 // assets
 import { FileText, X } from "lucide-react"

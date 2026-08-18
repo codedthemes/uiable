@@ -3,19 +3,15 @@
   "name": "skeleton-chart",
   "title": "Skeleton Chart",
   "description": "Skeleton Chart variant for component.",
-  "registryDependencies": [
-    "@uiable/skeleton"
-  ],
+  "registryDependencies": ["@uiable/skeleton"],
   "files": [
     {
       "path": "src/components/uiable/skeleton/skeleton-chart.tsx",
-      "content": "import { Skeleton } from \"@/components/ui/skeleton\"\n\n//  ------------------------------ | SKELETON - CHART | ------------------------------  //\n\nexport function SkeletonChart() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-4 rounded-lg border p-4\">\n      <div className=\"flex items-center justify-between\">\n        <div className=\"space-y-2\">\n          <Skeleton className=\"h-4 w-[150px]\" />\n          <Skeleton className=\"h-3 w-[100px]\" />\n        </div>\n        <Skeleton className=\"h-6 w-12 rounded-full\" />\n      </div>\n      <div className=\"flex h-40 items-end gap-2 pt-4\">\n        <Skeleton className=\"h-[40%] w-full\" />\n        <Skeleton className=\"h-[70%] w-full\" />\n        <Skeleton className=\"h-[100%] w-full\" />\n        <Skeleton className=\"h-[60%] w-full\" />\n        <Skeleton className=\"h-[80%] w-full\" />\n        <Skeleton className=\"h-[50%] w-full\" />\n      </div>\n    </div>\n  )\n}\n",
+      "content": "// shadcn\nimport { Skeleton } from \"@/components/ui/skeleton\"\n\n//  ------------------------------ | SKELETON - CHART | ------------------------------  //\n\nexport function SkeletonChart() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-4 rounded-lg border p-4\">\n      <div className=\"flex items-center justify-between\">\n        <div className=\"space-y-2\">\n          <Skeleton className=\"h-4 w-[150px]\" />\n          <Skeleton className=\"h-3 w-[100px]\" />\n        </div>\n        <Skeleton className=\"h-6 w-12 rounded-full\" />\n      </div>\n      <div className=\"flex h-40 items-end gap-2 pt-4\">\n        <Skeleton className=\"h-[40%] w-full\" />\n        <Skeleton className=\"h-[70%] w-full\" />\n        <Skeleton className=\"h-[100%] w-full\" />\n        <Skeleton className=\"h-[60%] w-full\" />\n        <Skeleton className=\"h-[80%] w-full\" />\n        <Skeleton className=\"h-[50%] w-full\" />\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/skeleton/skeleton-chart.tsx"
     }
   ],
-  "categories": [
-    "skeleton"
-  ],
+  "categories": ["skeleton"],
   "type": "registry:ui"
 }

@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 const users = [
   {
     name: "Sarah Connor",
-    avatar: "/assets/images/block/profile-1.png",
+    avatar: "https://cdn.uiable.com/block/profile-1.png",
     mail: "sarah.connor@example.com",
     colorClass: "bg-pink-500",
     description:
@@ -14,7 +14,7 @@ const users = [
   },
   {
     name: "Michael Chen",
-    avatar: "/assets/images/block/profile-2.png",
+    avatar: "https://cdn.uiable.com/block/profile-2.png",
     mail: "michael.chen@example.com",
     colorClass: "bg-rose-900",
     description:
@@ -22,7 +22,7 @@ const users = [
   },
   {
     name: "David Ross",
-    avatar: "/assets/images/block/profile-3.png",
+    avatar: "https://cdn.uiable.com/block/profile-3.png",
     mail: "david.ross@example.com",
     colorClass: "bg-red-600",
     description:
@@ -30,7 +30,7 @@ const users = [
   },
   {
     name: "Emily Watson",
-    avatar: "/assets/images/block/profile-4.png",
+    avatar: "https://cdn.uiable.com/block/profile-4.png",
     mail: "emily.watson@example.com",
     colorClass: "bg-slate-400",
     description:
@@ -38,7 +38,7 @@ const users = [
   },
   {
     name: "Marcus Aurelius",
-    avatar: "/assets/images/block/profile-5.png",
+    avatar: "https://cdn.uiable.com/block/profile-5.png",
     mail: "marcus.aurelius@example.com",
     colorClass: "bg-amber-800",
     description:
@@ -46,7 +46,7 @@ const users = [
   },
   {
     name: "Aria Montgomery",
-    avatar: "/assets/images/block/profile-6.png",
+    avatar: "https://cdn.uiable.com/block/profile-6.png",
     mail: "aria.montgomery@example.com",
     colorClass: "bg-amber-500",
     description:
@@ -54,7 +54,7 @@ const users = [
   },
   {
     name: "Sophia Martinez",
-    avatar: "/assets/images/block/profile-7.png",
+    avatar: "https://cdn.uiable.com/block/profile-7.png",
     mail: "sophia.martinez@example.com",
     colorClass: "bg-sky-400",
     description:
@@ -62,7 +62,7 @@ const users = [
   },
   {
     name: "James Wilson",
-    avatar: "/assets/images/block/profile-8.png",
+    avatar: "https://cdn.uiable.com/block/profile-8.png",
     mail: "james.wilson@example.com",
     colorClass: "bg-blue-600",
     description:

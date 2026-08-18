@@ -3,23 +3,16 @@
   "name": "input-otp-pattern",
   "title": "Input Otp Pattern",
   "description": "Input Otp Pattern variant for component.",
-  "dependencies": [
-    "input-otp"
-  ],
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/input-otp"
-  ],
+  "dependencies": ["input-otp"],
+  "registryDependencies": ["@uiable/field", "@uiable/input-otp"],
   "files": [
     {
       "path": "src/components/uiable/input-otp/input-otp-pattern.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputOTP,\r\n  InputOTPGroup,\r\n  InputOTPSlot\r\n} from \"@/components/ui/input-otp\";\r\n\r\n// third party\r\nimport { REGEXP_ONLY_DIGITS } from \"input-otp\";\r\n\r\n//  ------------------------------ | INPUT OTP - PATTERN | ------------------------------  //\r\n\r\nexport function InputOTPPattern() {\r\n  return (\r\n    <Field className=\"w-fit\">\r\n      <FieldLabel htmlFor=\"digits-only\">Digits Only</FieldLabel>\r\n      <InputOTP id=\"digits-only\" maxLength={6} pattern={REGEXP_ONLY_DIGITS}>\r\n        <InputOTPGroup>\r\n          <InputOTPSlot index={0} />\r\n          <InputOTPSlot index={1} />\r\n          <InputOTPSlot index={2} />\r\n          <InputOTPSlot index={3} />\r\n          <InputOTPSlot index={4} />\r\n          <InputOTPSlot index={5} />\r\n        </InputOTPGroup>\r\n      </InputOTP>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldLabel } from \"@/components/ui/field\"\nimport {\n  InputOTP,\n  InputOTPGroup,\n  InputOTPSlot,\n} from \"@/components/ui/input-otp\"\n\n// third-party\n// third party\nimport { REGEXP_ONLY_DIGITS } from \"input-otp\"\n\n//  ------------------------------ | INPUT OTP - PATTERN | ------------------------------  //\n\nexport function InputOTPPattern() {\n  return (\n    <Field className=\"w-fit\">\n      <FieldLabel htmlFor=\"digits-only\">Digits Only</FieldLabel>\n      <InputOTP id=\"digits-only\" maxLength={6} pattern={REGEXP_ONLY_DIGITS}>\n        <InputOTPGroup>\n          <InputOTPSlot index={0} />\n          <InputOTPSlot index={1} />\n          <InputOTPSlot index={2} />\n          <InputOTPSlot index={3} />\n          <InputOTPSlot index={4} />\n          <InputOTPSlot index={5} />\n        </InputOTPGroup>\n      </InputOTP>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input-otp/input-otp-pattern.tsx"
     }
   ],
-  "categories": [
-    "input-otp"
-  ],
+  "categories": ["input-otp"],
   "type": "registry:ui"
 }

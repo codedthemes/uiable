@@ -3,19 +3,15 @@
   "name": "changelog-toc",
   "title": "Changelog Toc",
   "description": "Changelog Toc variant for component.",
-  "registryDependencies": [
-    "@uiable/table-of-contents"
-  ],
+  "registryDependencies": ["@uiable/table-of-contents"],
   "files": [
     {
       "path": "src/components/uiable/changelog/changelog-toc.tsx",
-      "content": "\"use client\"\r\n\r\n// project\r\nimport TableOfContents from \"@/components/uiable/layout/table-of-contents\"\r\nimport { CHANGELOG_DATA } from \"@/data/changelog-data\"\r\n\r\n//  ------------------------------ | COMPONENT - CHANGELOG TOC | ------------------------------  //\r\n\r\nexport default function ChangelogToc() {\r\n  const tocItems = CHANGELOG_DATA.map((release) => ({\r\n    title: `v${release.version} - ${release.date}`,\r\n    url: `#${release.anchor}`,\r\n  }))\r\n\r\n  return <TableOfContents items={tocItems} />\r\n}\r\n",
+      "content": "\"use client\"\n\n// project-imports\n// project\nimport TableOfContents from \"@/components/uiable/layout/table-of-contents\"\nimport { CHANGELOG_DATA } from \"@/data/changelog-data\"\n\n//  ------------------------------ | COMPONENT - CHANGELOG TOC | ------------------------------  //\n\nexport default function ChangelogToc() {\n  const tocItems = CHANGELOG_DATA.map((release) => ({\n    title: `v${release.version} - ${release.date}`,\n    url: `#${release.anchor}`,\n  }))\n\n  return <TableOfContents items={tocItems} />\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/changelog/changelog-toc.tsx"
     }
   ],
-  "categories": [
-    "changelog"
-  ],
+  "categories": ["changelog"],
   "type": "registry:ui"
 }

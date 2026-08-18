@@ -1,36 +1,37 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-  InputGroupInput
-} from "@/components/ui/input-group";
+  InputGroupInput,
+} from "@/components/ui/input-group"
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger
-} from "@/components/ui/popover";
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
+// project-imports
 // project
-import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
+import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 
 // assets
 import {
   IconCheck,
   IconCopy,
   IconInfoCircle,
-  IconStar
-} from "@tabler/icons-react";
+  IconStar,
+} from "@tabler/icons-react"
 
 //  ------------------------------ | INPUT GROUP - BUTTON | ------------------------------  //
 
 export default function InputGroupButtonExample() {
-  const { copyToClipboard, isCopied } = useCopyToClipboard();
-  const [isFavorite, setIsFavorite] = useState(false);
+  const { copyToClipboard, isCopied } = useCopyToClipboard()
+  const [isFavorite, setIsFavorite] = useState(false)
 
   return (
     <div className="grid w-full max-w-sm gap-6">
@@ -42,7 +43,7 @@ export default function InputGroupButtonExample() {
             title="Copy"
             size="icon-xs"
             onClick={() => {
-              copyToClipboard("https://x.com/shadcn");
+              copyToClipboard("https://x.com/shadcn")
             }}
           >
             {isCopied ? <IconCheck /> : <IconCopy />}
@@ -66,7 +67,7 @@ export default function InputGroupButtonExample() {
             <p>You should not enter any sensitive information on this site.</p>
           </PopoverContent>
         </Popover>
-        <InputGroupAddon className="text-muted-foreground pl-1.5">
+        <InputGroupAddon className="pl-1.5 text-muted-foreground">
           https://
         </InputGroupAddon>
         <InputGroupInput id="input-secure-19" />
@@ -89,5 +90,5 @@ export default function InputGroupButtonExample() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  );
+  )
 }

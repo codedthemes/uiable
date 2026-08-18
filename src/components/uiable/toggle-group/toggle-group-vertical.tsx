@@ -1,8 +1,8 @@
 // shadcn
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 
 // assets
-import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react";
+import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react"
 
 //  ------------------------------ | TOGGLE GROUP - VERTICAL | ------------------------------  //
 
@@ -24,5 +24,5 @@ export function ToggleGroupVertical() {
         <UnderlineIcon />
       </ToggleGroupItem>
     </ToggleGroup>
-  );
+  )
 }

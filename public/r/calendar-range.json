@@ -3,23 +3,16 @@
   "name": "calendar-range",
   "title": "Calendar Range",
   "description": "Calendar Range variant for component.",
-  "dependencies": [
-    "date-fns",
-    "react-day-picker"
-  ],
-  "registryDependencies": [
-    "@uiable/calendar"
-  ],
+  "dependencies": ["date-fns", "react-day-picker"],
+  "registryDependencies": ["@uiable/calendar"],
   "files": [
     {
       "path": "src/components/uiable/calendar/calendar-range.tsx",
-      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\n\r\n// third party\r\nimport { addDays } from \"date-fns\";\r\nimport { DateRange } from \"react-day-picker\";\r\n\r\n//  ------------------------------ | CALENDAR - RANGE | ------------------------------  //\r\n\r\nexport function CalendarRange() {\r\n  const [dateRange, setDateRange] = useState<DateRange | undefined>({\r\n    from: new Date(new Date().getFullYear(), 0, 12),\r\n    to: addDays(new Date(new Date().getFullYear(), 0, 12), 30)\r\n  });\r\n\r\n  return (\r\n    <Calendar\r\n      mode=\"range\"\r\n      defaultMonth={dateRange?.from}\r\n      selected={dateRange}\r\n      onSelect={setDateRange}\r\n      numberOfMonths={2}\r\n      className=\"rounded-lg border\"\r\n    />\r\n  );\r\n}\r\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Calendar } from \"@/components/ui/calendar\"\n\n// third-party\n// third party\nimport { addDays } from \"date-fns\"\nimport { DateRange } from \"react-day-picker\"\n\n//  ------------------------------ | CALENDAR - RANGE | ------------------------------  //\n\nexport function CalendarRange() {\n  const [dateRange, setDateRange] = useState<DateRange | undefined>({\n    from: new Date(new Date().getFullYear(), 0, 12),\n    to: addDays(new Date(new Date().getFullYear(), 0, 12), 30),\n  })\n\n  return (\n    <Calendar\n      mode=\"range\"\n      defaultMonth={dateRange?.from}\n      selected={dateRange}\n      onSelect={setDateRange}\n      numberOfMonths={2}\n      className=\"rounded-lg border\"\n    />\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/calendar/calendar-range.tsx"
     }
   ],
-  "categories": [
-    "calendar"
-  ],
+  "categories": ["calendar"],
   "type": "registry:ui"
 }

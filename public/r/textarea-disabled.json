@@ -3,20 +3,15 @@
   "name": "textarea-disabled",
   "title": "Textarea Disabled",
   "description": "Textarea Disabled variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/textarea"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/textarea"],
   "files": [
     {
       "path": "src/components/uiable/textarea/textarea-disabled.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Textarea } from \"@/components/ui/textarea\";\r\n\r\n//  ------------------------------ | TEXTAREA - DISABLED | ------------------------------  //\r\n\r\nexport function TextareaDisabled() {\r\n  return (\r\n    <Field data-disabled>\r\n      <FieldLabel htmlFor=\"textarea-disabled\">Message</FieldLabel>\r\n      <Textarea\r\n        id=\"textarea-disabled\"\r\n        placeholder=\"Type your message here.\"\r\n        disabled\r\n      />\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldLabel } from \"@/components/ui/field\"\nimport { Textarea } from \"@/components/ui/textarea\"\n\n//  ------------------------------ | TEXTAREA - DISABLED | ------------------------------  //\n\nexport function TextareaDisabled() {\n  return (\n    <Field data-disabled>\n      <FieldLabel htmlFor=\"textarea-disabled\">Message</FieldLabel>\n      <Textarea\n        id=\"textarea-disabled\"\n        placeholder=\"Type your message here.\"\n        disabled\n      />\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/textarea/textarea-disabled.tsx"
     }
   ],
-  "categories": [
-    "textarea"
-  ],
+  "categories": ["textarea"],
   "type": "registry:ui"
 }

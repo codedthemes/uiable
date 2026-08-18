@@ -3,19 +3,15 @@
   "name": "spinner-button",
   "title": "Spinner Button",
   "description": "Spinner Button variant for component.",
-  "registryDependencies": [
-    "@uiable/button"
-  ],
+  "registryDependencies": ["@uiable/button"],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-button.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | SPINNER - BUTTON | ------------------------------  //\r\n\r\nexport default function SpinnerButtonPrimary() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-4\">\r\n      <Button className=\"bg-primary text-white\" disabled>\r\n        <div\r\n          className=\"flex border-[2px] border-white/50 rounded-full size-4 animate-spin border-l-transparent\"\r\n          role=\"status\"\r\n        >\r\n          <span className=\"sr-only\">Loading...</span>\r\n        </div>\r\n      </Button>\r\n      <Button\r\n        className=\"bg-primary text-white inline-flex items-center gap-3\"\r\n        disabled\r\n      >\r\n        <div\r\n          className=\"flex border-[2px] border-white/50 rounded-full size-4 animate-spin border-l-transparent\"\r\n          role=\"status\"\r\n        >\r\n          <span className=\"sr-only\">Loading...</span>\r\n        </div>\r\n        Loading...\r\n      </Button>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | SPINNER - BUTTON | ------------------------------  //\n\nexport default function SpinnerButtonPrimary() {\n  return (\n    <div className=\"flex flex-wrap gap-4\">\n      <Button className=\"bg-primary text-white\" disabled>\n        <div\n          className=\"flex size-4 animate-spin rounded-full border-[2px] border-white/50 border-l-transparent\"\n          role=\"status\"\n        >\n          <span className=\"sr-only\">Loading...</span>\n        </div>\n      </Button>\n      <Button\n        className=\"inline-flex items-center gap-3 bg-primary text-white\"\n        disabled\n      >\n        <div\n          className=\"flex size-4 animate-spin rounded-full border-[2px] border-white/50 border-l-transparent\"\n          role=\"status\"\n        >\n          <span className=\"sr-only\">Loading...</span>\n        </div>\n        Loading...\n      </Button>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/spinner/spinner-button.tsx"
     }
   ],
-  "categories": [
-    "spinner"
-  ],
+  "categories": ["spinner"],
   "type": "registry:ui"
 }

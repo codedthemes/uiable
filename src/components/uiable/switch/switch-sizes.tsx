@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
-import { Switch } from "@/components/ui/switch";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
+import { Switch } from "@/components/ui/switch"
 
 //  ------------------------------ | SWITCH - SIZES | ------------------------------  //
 
@@ -16,5 +16,5 @@ export function SwitchSizes() {
         <FieldLabel htmlFor="switch-size-default">Default</FieldLabel>
       </Field>
     </FieldGroup>
-  );
+  )
 }

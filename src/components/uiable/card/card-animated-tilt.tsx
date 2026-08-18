@@ -1,16 +1,6 @@
 "use client"
 
 import { type MouseEvent } from "react"
-// third party
-import {
-  motion,
-  useMotionTemplate,
-  useMotionValue,
-  useSpring,
-  useTransform,
-} from "framer-motion"
-// assets
-import { Crown, Shield, Sparkles, Star } from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -30,6 +20,19 @@ import {
   ItemMedia,
   ItemTitle,
 } from "@/components/ui/item"
+
+// third-party
+// third party
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion"
+
+// assets
+import { Crown, Shield, Sparkles, Star } from "lucide-react"
 
 const benefits = [
   {

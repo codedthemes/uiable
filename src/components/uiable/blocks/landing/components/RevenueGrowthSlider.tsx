@@ -1,9 +1,12 @@
+// shadcn
+import { Slider } from "@/components/ui/slider"
+
+// project-imports
 // project imports
 import { Logo1, NoiseOverlay } from "@/images/svg/landing"
+
 // assets
 import { IconArrowUpRight } from "@tabler/icons-react"
-
-import { Slider } from "@/components/ui/slider"
 
 //  ------------------------------ | BLOCK - REVENUE GROWTH SLIDER | ------------------------------  //
 
@@ -38,7 +41,9 @@ export default function RevenueGrowthSlider() {
           </span>
         </div>
 
-        <label htmlFor="revenue-growth-slider" className="sr-only">Revenue growth percentage</label>
+        <label htmlFor="revenue-growth-slider" className="sr-only">
+          Revenue growth percentage
+        </label>
         <Slider
           defaultValue={[70]}
           max={100}

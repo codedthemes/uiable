@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | SVG - NOISE OVERLAY | ------------------------------  //
 
@@ -76,5 +76,5 @@ export default function NoiseOverlay(props: SVGAttributes<SVGElement>) {
         </filter>
       </defs>
     </svg>
-  );
+  )
 }

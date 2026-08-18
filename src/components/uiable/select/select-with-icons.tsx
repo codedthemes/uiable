@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { Building2, Coins, CreditCard, Smartphone, Wallet } from "lucide-react"
 
 // shadcn
 import {
@@ -13,6 +11,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+
+// assets
+import { Building2, Coins, CreditCard, Smartphone, Wallet } from "lucide-react"
 
 const paymentMethods = [
   {

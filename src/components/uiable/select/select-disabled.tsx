@@ -6,7 +6,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select"
 
 // constants
 const items = [
@@ -16,7 +16,7 @@ const items = [
   { label: "Blueberry", value: "blueberry" },
   { label: "Grapes", value: "grapes", disabled: true },
   { label: "Pineapple", value: "pineapple" },
-];
+]
 
 //  ------------------------------ | SELECT - DISABLED | ------------------------------  //
 
@@ -40,5 +40,5 @@ export function SelectDisabled() {
         </SelectGroup>
       </SelectContent>
     </Select>
-  );
+  )
 }

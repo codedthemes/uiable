@@ -3,20 +3,15 @@
   "name": "muted-item-group",
   "title": "Muted Item Group",
   "description": "Item Muted Item Group variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/item"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/item"],
   "files": [
     {
       "path": "src/components/uiable/item/muted-item-group.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemTitle\r\n} from \"@/components/ui/item\";\r\n\r\n//  ------------------------------ | ITEM - MUTED GROUP | ------------------------------  //\r\n\r\nexport function MutedItemGroup() {\r\n  return (\r\n    <ItemGroup>\r\n      <Item variant=\"muted\">\r\n        <ItemContent>\r\n          <ItemTitle>Item 1</ItemTitle>\r\n          <ItemDescription>First item in muted group.</ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Action</Button>\r\n        </ItemActions>\r\n      </Item>\r\n      <Item variant=\"muted\">\r\n        <ItemContent>\r\n          <ItemTitle>Item 2</ItemTitle>\r\n          <ItemDescription>Second item in muted group.</ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Action</Button>\r\n        </ItemActions>\r\n      </Item>\r\n      <Item variant=\"muted\">\r\n        <ItemContent>\r\n          <ItemTitle>Item 3</ItemTitle>\r\n          <ItemDescription>Third item in muted group.</ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <Button size=\"sm\">Action</Button>\r\n        </ItemActions>\r\n      </Item>\r\n    </ItemGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Item,\n  ItemActions,\n  ItemContent,\n  ItemDescription,\n  ItemGroup,\n  ItemTitle,\n} from \"@/components/ui/item\"\n\n//  ------------------------------ | ITEM - MUTED GROUP | ------------------------------  //\n\nexport function MutedItemGroup() {\n  return (\n    <ItemGroup>\n      <Item variant=\"muted\">\n        <ItemContent>\n          <ItemTitle>Item 1</ItemTitle>\n          <ItemDescription>First item in muted group.</ItemDescription>\n        </ItemContent>\n        <ItemActions>\n          <Button size=\"sm\">Action</Button>\n        </ItemActions>\n      </Item>\n      <Item variant=\"muted\">\n        <ItemContent>\n          <ItemTitle>Item 2</ItemTitle>\n          <ItemDescription>Second item in muted group.</ItemDescription>\n        </ItemContent>\n        <ItemActions>\n          <Button size=\"sm\">Action</Button>\n        </ItemActions>\n      </Item>\n      <Item variant=\"muted\">\n        <ItemContent>\n          <ItemTitle>Item 3</ItemTitle>\n          <ItemDescription>Third item in muted group.</ItemDescription>\n        </ItemContent>\n        <ItemActions>\n          <Button size=\"sm\">Action</Button>\n        </ItemActions>\n      </Item>\n    </ItemGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/item/muted-item-group.tsx"
     }
   ],
-  "categories": [
-    "item"
-  ],
+  "categories": ["item"],
   "type": "registry:ui"
 }

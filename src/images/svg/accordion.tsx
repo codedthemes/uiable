@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | ACCORDION | ------------------------------  //
 
@@ -159,5 +159,5 @@ export default function Accordion(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

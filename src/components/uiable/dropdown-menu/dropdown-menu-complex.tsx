@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -19,8 +19,8 @@ import {
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 // assets
 import {
@@ -48,8 +48,8 @@ import {
   SettingsIcon,
   ShieldIcon,
   SunIcon,
-  UserIcon
-} from "lucide-react";
+  UserIcon,
+} from "lucide-react"
 
 //  ------------------------------ | DROPDOWN MENU - COMPLEX | ------------------------------  //
 
@@ -57,9 +57,9 @@ export function DropdownMenuComplex() {
   const [notifications, setNotifications] = useState({
     email: true,
     sms: false,
-    push: true
-  });
-  const [theme, setTheme] = useState("light");
+    push: true,
+  })
+  const [theme, setTheme] = useState("light")
 
   return (
     <DropdownMenu>
@@ -234,7 +234,7 @@ export function DropdownMenuComplex() {
                             onCheckedChange={(checked) =>
                               setNotifications({
                                 ...notifications,
-                                push: checked === true
+                                push: checked === true,
                               })
                             }
                           >
@@ -246,7 +246,7 @@ export function DropdownMenuComplex() {
                             onCheckedChange={(checked) =>
                               setNotifications({
                                 ...notifications,
-                                email: checked === true
+                                email: checked === true,
                               })
                             }
                           >
@@ -290,5 +290,5 @@ export function DropdownMenuComplex() {
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

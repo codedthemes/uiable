@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { Filter, Sparkles } from "lucide-react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -17,6 +15,9 @@ import {
   CommandSeparator,
 } from "@/components/ui/command"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+
+// assets
+import { Filter, Sparkles } from "lucide-react"
 
 const categories = [
   { value: "all", label: "All" },

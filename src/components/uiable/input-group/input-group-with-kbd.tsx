@@ -3,18 +3,18 @@ import {
   Field,
   FieldDescription,
   FieldGroup,
-  FieldLabel
-} from "@/components/ui/field";
+  FieldLabel,
+} from "@/components/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput
-} from "@/components/ui/input-group";
-import { Kbd, KbdGroup } from "@/components/ui/kbd";
-import { Spinner } from "@/components/ui/spinner";
+  InputGroupInput,
+} from "@/components/ui/input-group"
+import { Kbd, KbdGroup } from "@/components/ui/kbd"
+import { Spinner } from "@/components/ui/spinner"
 
 // assets
-import { CheckIcon, InfoIcon, SearchIcon, SparklesIcon } from "lucide-react";
+import { CheckIcon, InfoIcon, SearchIcon, SparklesIcon } from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - WITH KBD | ------------------------------  //
 
@@ -131,5 +131,5 @@ export function InputGroupWithKbd() {
         </FieldDescription>
       </Field>
     </FieldGroup>
-  );
+  )
 }

@@ -1,14 +1,17 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { Moon, Sun } from "lucide-react"
 
-// projects
-import { cn } from "@/lib/utils"
 // shadcn
 import { Button } from "@/components/ui/button"
 import { Switch } from "@/components/ui/switch"
+
+// project-imports
+// projects
+import { cn } from "@/lib/utils"
+
+// assets
+import { Moon, Sun } from "lucide-react"
 
 //  ------------------------------ | SWITCH - TOGGLE THEME | ------------------------------  //
 

@@ -1,6 +1,8 @@
-'use client'
+"use client"
 
 import { useEffect } from "react"
+
+// third-party
 import PropTypes from "prop-types"
 
 function loadNotifyScript(notifyId) {

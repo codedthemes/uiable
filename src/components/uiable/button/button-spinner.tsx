@@ -1,12 +1,12 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Spinner } from "@/components/ui/spinner";
+import { Button } from "@/components/ui/button"
+import { Spinner } from "@/components/ui/spinner"
 
 //  ------------------------------ | BUTTON LOADING | ------------------------------  //
 
 export default function ButtonLoading() {
   return (
-    <div className="flex gap-2 flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center gap-2">
       <Button disabled className="gap-1">
         <Spinner />
         Generating
@@ -16,5 +16,5 @@ export default function ButtonLoading() {
         <Spinner />
       </Button>
     </div>
-  );
+  )
 }

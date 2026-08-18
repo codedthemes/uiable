@@ -1,9 +1,14 @@
 import { ComponentPropsWithRef } from "react"
+
+// third-party
 import { NavigationMenu as NavigationMenuPrimitive } from "@base-ui/react/navigation-menu"
 import { cva } from "class-variance-authority"
-import { ChevronDownIcon } from "lucide-react"
 
+// project-imports
 import { cn } from "@/lib/utils"
+
+// assets
+import { ChevronDownIcon } from "lucide-react"
 
 function NavigationMenu({
   align = "start",

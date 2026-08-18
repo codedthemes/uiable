@@ -3,19 +3,15 @@
   "name": "pagination-simple",
   "title": "Pagination Simple",
   "description": "Pagination Simple variant for component.",
-  "registryDependencies": [
-    "@uiable/pagination"
-  ],
+  "registryDependencies": ["@uiable/pagination"],
   "files": [
     {
       "path": "src/components/uiable/pagination/pagination-simple.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Pagination,\r\n  PaginationContent,\r\n  PaginationItem,\r\n  PaginationLink\r\n} from \"@/components/ui/pagination\";\r\n\r\n//  ------------------------------ | PAGINATION - SIMPLE | ------------------------------  //\r\n\r\nexport function PaginationSimple() {\r\n  return (\r\n    <Pagination>\r\n      <PaginationContent>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">1</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\" isActive>\r\n            2\r\n          </PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">3</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">4</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">5</PaginationLink>\r\n        </PaginationItem>\r\n      </PaginationContent>\r\n    </Pagination>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Pagination,\n  PaginationContent,\n  PaginationItem,\n  PaginationLink,\n} from \"@/components/ui/pagination\"\n\n//  ------------------------------ | PAGINATION - SIMPLE | ------------------------------  //\n\nexport function PaginationSimple() {\n  return (\n    <Pagination>\n      <PaginationContent>\n        <PaginationItem>\n          <PaginationLink href=\"#\">1</PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\" isActive>\n            2\n          </PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\">3</PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\">4</PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\">5</PaginationLink>\n        </PaginationItem>\n      </PaginationContent>\n    </Pagination>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/pagination/pagination-simple.tsx"
     }
   ],
-  "categories": [
-    "pagination"
-  ],
+  "categories": ["pagination"],
   "type": "registry:ui"
 }

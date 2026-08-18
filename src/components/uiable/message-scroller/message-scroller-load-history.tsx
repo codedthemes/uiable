@@ -1,11 +1,6 @@
 "use client"
 
 import { useCallback, useState } from "react"
-// assets
-import { RotateCwIcon } from "lucide-react"
-
-// third party
-import { toast } from "sonner"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -30,8 +25,17 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+
+// third-party
+// third party
+import { toast } from "sonner"
+
+// project-imports
 // projects
 import { MessageAnimated } from "@/components/message-animated"
+
+// assets
+import { RotateCwIcon } from "lucide-react"
 
 type ChatMessage = {
   id: string

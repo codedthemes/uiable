@@ -1,10 +1,15 @@
 import { ComponentProps } from "react"
+
+// shadcn
+import { Button } from "@/components/ui/button"
+
+// third-party
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
 
+// project-imports
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
 
 const attachmentVariants = cva(
   "group/attachment relative flex w-fit max-w-full min-w-0 shrink-0 flex-wrap rounded-xl border bg-card text-card-foreground transition-colors focus-within:ring-1 focus-within:ring-ring/50 has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed",
@@ -79,10 +84,7 @@ function AttachmentMedia({
   )
 }
 
-function AttachmentContent({
-  className,
-  ...props
-}: ComponentProps<"div">) {
+function AttachmentContent({ className, ...props }: ComponentProps<"div">) {
   return (
     <div
       data-slot="attachment-content"
@@ -95,10 +97,7 @@ function AttachmentContent({
   )
 }
 
-function AttachmentTitle({
-  className,
-  ...props
-}: ComponentProps<"span">) {
+function AttachmentTitle({ className, ...props }: ComponentProps<"span">) {
   return (
     <span
       data-slot="attachment-title"
@@ -128,10 +127,7 @@ function AttachmentDescription({
   )
 }
 
-function AttachmentActions({
-  className,
-  ...props
-}: ComponentProps<"div">) {
+function AttachmentActions({ className, ...props }: ComponentProps<"div">) {
   return (
     <div
       data-slot="attachment-actions"

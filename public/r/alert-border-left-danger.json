@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-border-left-danger",
+  "title": "Alert Border Left Danger",
+  "description": "Alert Border Left Danger variant for component.",
+  "registryDependencies": ["@uiable/alert"],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-border-left-danger.tsx",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\"\n\n// ------------------------------ | ALERT - BORDER LEFT DANGER | ------------------------------ //\n\nexport default function AlertBorderLeftDanger() {\n  return (\n    <Alert className=\"mb-3 grid-cols-1 rounded-none border-l-4 border-y-transparent border-r-transparent border-l-red-500 bg-red-500/10 px-5 py-3 text-red-500\">\n      A simple danger alert—check it out!\n    </Alert>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-border-left-danger.tsx"
+    }
+  ],
+  "categories": ["alert"],
+  "type": "registry:ui"
+}

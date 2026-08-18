@@ -3,20 +3,15 @@
   "name": "calendar-booked-dates",
   "title": "Calendar Booked Dates",
   "description": "Calendar Booked Dates variant for component.",
-  "registryDependencies": [
-    "@uiable/calendar",
-    "@uiable/card"
-  ],
+  "registryDependencies": ["@uiable/calendar", "@uiable/card"],
   "files": [
     {
       "path": "src/components/uiable/calendar/calendar-booked-dates.tsx",
-      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Calendar } from \"@/components/ui/calendar\";\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\n\r\n//  ------------------------------ | CALENDAR - BOOKED DATES | ------------------------------  //\r\n\r\nexport function CalendarBookedDates() {\r\n  const [date, setDate] = useState<Date | undefined>(\r\n    new Date(new Date().getFullYear(), 0, 6)\r\n  );\r\n  const bookedDates = Array.from(\r\n    { length: 15 },\r\n    (_, i) => new Date(new Date().getFullYear(), 0, 12 + i)\r\n  );\r\n\r\n  return (\r\n    <Card className=\"mx-auto w-fit p-0\">\r\n      <CardContent className=\"p-0\">\r\n        <Calendar\r\n          mode=\"single\"\r\n          defaultMonth={date}\r\n          selected={date}\r\n          onSelect={setDate}\r\n          disabled={bookedDates}\r\n          modifiers={{\r\n            booked: bookedDates\r\n          }}\r\n          modifiersClassNames={{\r\n            booked: \"[&>button]:line-through opacity-100\"\r\n          }}\r\n        />\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Calendar } from \"@/components/ui/calendar\"\nimport { Card, CardContent } from \"@/components/ui/card\"\n\n//  ------------------------------ | CALENDAR - BOOKED DATES | ------------------------------  //\n\nexport function CalendarBookedDates() {\n  const [date, setDate] = useState<Date | undefined>(\n    new Date(new Date().getFullYear(), 0, 6)\n  )\n  const bookedDates = Array.from(\n    { length: 15 },\n    (_, i) => new Date(new Date().getFullYear(), 0, 12 + i)\n  )\n\n  return (\n    <Card className=\"mx-auto w-fit p-0\">\n      <CardContent className=\"p-0\">\n        <Calendar\n          mode=\"single\"\n          defaultMonth={date}\n          selected={date}\n          onSelect={setDate}\n          disabled={bookedDates}\n          modifiers={{\n            booked: bookedDates,\n          }}\n          modifiersClassNames={{\n            booked: \"[&>button]:line-through opacity-100\",\n          }}\n        />\n      </CardContent>\n    </Card>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/calendar/calendar-booked-dates.tsx"
     }
   ],
-  "categories": [
-    "calendar"
-  ],
+  "categories": ["calendar"],
   "type": "registry:ui"
 }

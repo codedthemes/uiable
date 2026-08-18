@@ -20,6 +20,83 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.7.0",
+    date: "August 18, 2026",
+    anchor: "v1-7-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          {
+            text: "Contact: Contact 11",
+            previewUrl: "/preview/contact/contact-11/contact-11",
+          },
+          {
+            text: "Content: Content 5",
+            previewUrl: "/preview/content/content-5/content-5",
+          },
+          {
+            text: "Footer: Footer 11",
+            previewUrl: "/preview/footer/footer-11/footer-11",
+          },
+          {
+            text: "Gallery: Gallery 10",
+            previewUrl: "/preview/gallery/gallery-10/gallery-10",
+          },
+          {
+            text: "Hero: Hero 6",
+            previewUrl: "/preview/hero/hero-6/hero-6",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Alert: Border Left Danger, Border Left Dark",
+            previewUrl: "/components/alert",
+          },
+          {
+            text: "Dialog: Newsletter",
+            previewUrl: "/components/dialog",
+          },
+          {
+            text: "Progress: Circular, Gradient, With Value",
+            previewUrl: "/components/progress",
+          },
+          {
+            text: "Separator: Stats",
+            previewUrl: "/components/separator",
+          },
+          {
+            text: "Sheet: Menu",
+            previewUrl: "/components/sheet",
+          },
+          {
+            text: "Skeleton: List",
+            previewUrl: "/components/skeleton",
+          },
+          {
+            text: "Sonner: Action",
+            previewUrl: "/components/sonner",
+          },
+          {
+            text: "Table: Users",
+            previewUrl: "/components/table",
+          },
+          {
+            text: "Tooltip: Status",
+            previewUrl: "/components/tooltip",
+          },
+          {
+            text: "Typography: Italic, Link",
+            previewUrl: "/components/typography",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.6.0",
     date: "August 11, 2026",
     anchor: "v1-6-0",

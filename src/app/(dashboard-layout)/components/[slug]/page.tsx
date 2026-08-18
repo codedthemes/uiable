@@ -1,17 +1,20 @@
-import { notFound } from "next/navigation"
+// next
 import { Metadata } from "next"
+import { notFound } from "next/navigation"
 
+// third-party
 // third party
 import fs from "fs"
 import path from "path"
 
+// project-imports
 // project
 import branding from "@/branding.json"
 import CategoryDescription from "@/components/category-description"
 import CategoryView from "@/components/category-view"
-import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
-import uiRegistry from "@/components/uiable/registry.json"
 import blocksRegistry from "@/components/uiable/blocks/registry.json"
+import uiRegistry from "@/components/uiable/registry.json"
+import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 
 const categoryInfoMap = {
   ...componentCategoryInfoMap,
@@ -75,8 +78,21 @@ export default async function CategoryPage({
       const relativePath = item.files[0].path
       const filePath =
         item.type === "registry:block"
-          ? path.join(process.cwd(), "src", "components", "uiable", "blocks", relativePath)
-          : path.join(process.cwd(), "src", "components", "uiable", relativePath)
+          ? path.join(
+              process.cwd(),
+              "src",
+              "components",
+              "uiable",
+              "blocks",
+              relativePath
+            )
+          : path.join(
+              process.cwd(),
+              "src",
+              "components",
+              "uiable",
+              relativePath
+            )
       let rawCode = ""
       try {
         rawCode = fs.readFileSync(filePath, "utf8")

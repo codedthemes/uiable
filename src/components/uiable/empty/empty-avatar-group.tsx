@@ -1,17 +1,17 @@
 // shadcn
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 import {
   Empty,
   EmptyContent,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
-  EmptyTitle
-} from "@/components/ui/empty";
+  EmptyTitle,
+} from "@/components/ui/empty"
 
 // assets
-import { PlusIcon } from "lucide-react";
+import { PlusIcon } from "lucide-react"
 
 //  ------------------------------ | EMPTY - AVATAR GROUP | ------------------------------  //
 
@@ -20,7 +20,7 @@ export default function EmptyAvatarGroup() {
     <Empty>
       <EmptyHeader>
         <EmptyMedia>
-          <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:size-12 *:data-[slot=avatar]:ring-2">
+          <div className="flex -space-x-2 *:data-[slot=avatar]:size-12 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background">
             <Avatar>
               <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
               <AvatarFallback>CN</AvatarFallback>
@@ -53,5 +53,5 @@ export default function EmptyAvatarGroup() {
         </Button>
       </EmptyContent>
     </Empty>
-  );
+  )
 }

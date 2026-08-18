@@ -3,19 +3,15 @@
   "name": "tabs-line",
   "title": "Tabs Line",
   "description": "Tabs Line variant for component.",
-  "registryDependencies": [
-    "@uiable/tabs"
-  ],
+  "registryDependencies": ["@uiable/tabs"],
   "files": [
     {
       "path": "src/components/uiable/tabs/tabs-line.tsx",
-      "content": "// shadcn\r\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\r\n\r\n//  ------------------------------ | TABS - LINE | ------------------------------  //\r\n\r\nexport function TabsLine() {\r\n  return (\r\n    <Tabs defaultValue=\"overview\">\r\n      <TabsList variant=\"line\">\r\n        <TabsTrigger value=\"overview\">Overview</TabsTrigger>\r\n        <TabsTrigger value=\"analytics\">Analytics</TabsTrigger>\r\n        <TabsTrigger value=\"reports\">Reports</TabsTrigger>\r\n      </TabsList>\r\n    </Tabs>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\"\n\n//  ------------------------------ | TABS - LINE | ------------------------------  //\n\nexport function TabsLine() {\n  return (\n    <Tabs defaultValue=\"overview\">\n      <TabsList variant=\"line\">\n        <TabsTrigger value=\"overview\">Overview</TabsTrigger>\n        <TabsTrigger value=\"analytics\">Analytics</TabsTrigger>\n        <TabsTrigger value=\"reports\">Reports</TabsTrigger>\n      </TabsList>\n    </Tabs>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/tabs/tabs-line.tsx"
     }
   ],
-  "categories": [
-    "tabs"
-  ],
+  "categories": ["tabs"],
   "type": "registry:ui"
 }

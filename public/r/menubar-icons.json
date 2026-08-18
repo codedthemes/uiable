@@ -3,22 +3,16 @@
   "name": "menubar-icons",
   "title": "Menubar Icons",
   "description": "Menubar Icons variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/menubar"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/menubar"],
   "files": [
     {
       "path": "src/components/uiable/menubar/menubar-icons.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Menubar,\r\n  MenubarContent,\r\n  MenubarGroup,\r\n  MenubarItem,\r\n  MenubarMenu,\r\n  MenubarSeparator,\r\n  MenubarShortcut,\r\n  MenubarTrigger\r\n} from \"@/components/ui/menubar\";\r\n\r\n// assets\r\nimport {\r\n  FileIcon,\r\n  FolderIcon,\r\n  HelpCircleIcon,\r\n  SaveIcon,\r\n  SettingsIcon,\r\n  TrashIcon\r\n} from \"lucide-react\";\r\n\r\n//  ------------------------------ | MENUBAR - ICONS | ------------------------------  //\r\n\r\nexport function MenubarIcons() {\r\n  return (\r\n    <Menubar className=\"w-72\">\r\n      <MenubarMenu>\r\n        <MenubarTrigger>File</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarItem>\r\n            <FileIcon />\r\n            New File <MenubarShortcut>⌘N</MenubarShortcut>\r\n          </MenubarItem>\r\n          <MenubarItem>\r\n            <FolderIcon />\r\n            Open Folder\r\n          </MenubarItem>\r\n          <MenubarSeparator />\r\n          <MenubarItem>\r\n            <SaveIcon />\r\n            Save <MenubarShortcut>⌘S</MenubarShortcut>\r\n          </MenubarItem>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n      <MenubarMenu>\r\n        <MenubarTrigger>More</MenubarTrigger>\r\n        <MenubarContent>\r\n          <MenubarGroup>\r\n            <MenubarItem>\r\n              <SettingsIcon />\r\n              Settings\r\n            </MenubarItem>\r\n            <MenubarItem>\r\n              <HelpCircleIcon />\r\n              Help\r\n            </MenubarItem>\r\n            <MenubarSeparator />\r\n            <MenubarItem variant=\"destructive\">\r\n              <TrashIcon />\r\n              Delete\r\n            </MenubarItem>\r\n          </MenubarGroup>\r\n        </MenubarContent>\r\n      </MenubarMenu>\r\n    </Menubar>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Menubar,\n  MenubarContent,\n  MenubarGroup,\n  MenubarItem,\n  MenubarMenu,\n  MenubarSeparator,\n  MenubarShortcut,\n  MenubarTrigger,\n} from \"@/components/ui/menubar\"\n\n// assets\nimport {\n  FileIcon,\n  FolderIcon,\n  HelpCircleIcon,\n  SaveIcon,\n  SettingsIcon,\n  TrashIcon,\n} from \"lucide-react\"\n\n//  ------------------------------ | MENUBAR - ICONS | ------------------------------  //\n\nexport function MenubarIcons() {\n  return (\n    <Menubar className=\"w-72\">\n      <MenubarMenu>\n        <MenubarTrigger>File</MenubarTrigger>\n        <MenubarContent>\n          <MenubarItem>\n            <FileIcon />\n            New File <MenubarShortcut>⌘N</MenubarShortcut>\n          </MenubarItem>\n          <MenubarItem>\n            <FolderIcon />\n            Open Folder\n          </MenubarItem>\n          <MenubarSeparator />\n          <MenubarItem>\n            <SaveIcon />\n            Save <MenubarShortcut>⌘S</MenubarShortcut>\n          </MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n      <MenubarMenu>\n        <MenubarTrigger>More</MenubarTrigger>\n        <MenubarContent>\n          <MenubarGroup>\n            <MenubarItem>\n              <SettingsIcon />\n              Settings\n            </MenubarItem>\n            <MenubarItem>\n              <HelpCircleIcon />\n              Help\n            </MenubarItem>\n            <MenubarSeparator />\n            <MenubarItem variant=\"destructive\">\n              <TrashIcon />\n              Delete\n            </MenubarItem>\n          </MenubarGroup>\n        </MenubarContent>\n      </MenubarMenu>\n    </Menubar>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/menubar/menubar-icons.tsx"
     }
   ],
-  "categories": [
-    "menubar"
-  ],
+  "categories": ["menubar"],
   "type": "registry:ui"
 }

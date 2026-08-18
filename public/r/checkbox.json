@@ -3,20 +3,15 @@
   "name": "checkbox",
   "title": "Checkbox",
   "description": "Checkbox component.",
-  "dependencies": [
-    "@base-ui/react",
-    "lucide-react"
-  ],
+  "dependencies": ["@base-ui/react", "lucide-react"],
   "files": [
     {
       "path": "src/components/ui/checkbox.tsx",
-      "content": "\"use client\";\r\n\r\nimport { Checkbox as CheckboxPrimitive } from \"@base-ui/react/checkbox\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { CheckIcon } from \"lucide-react\";\r\n\r\nfunction Checkbox({ className, ...props }: CheckboxPrimitive.Root.Props) {\r\n  return (\r\n    <CheckboxPrimitive.Root\r\n      data-slot=\"checkbox\"\r\n      className={cn(\r\n        \"border-border dark:bg-input/30 data-checked:bg-primary data-checked:text-primary-foreground dark:data-checked:bg-primary data-checked:border-primary aria-invalid:aria-checked:border-primary aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 peer relative flex size-[17.5px] shrink-0 items-center justify-center rounded-[4px] border transition-colors outline-none group-has-disabled/field:opacity-50 after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:ring-3 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:ring-3\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      <CheckboxPrimitive.Indicator\r\n        data-slot=\"checkbox-indicator\"\r\n        className=\"grid place-content-center text-current transition-none [&>svg]:size-3 [&>svg]:stroke-3\"\r\n      >\r\n        <CheckIcon />\r\n      </CheckboxPrimitive.Indicator>\r\n    </CheckboxPrimitive.Root>\r\n  );\r\n}\r\n\r\nexport { Checkbox };\r\n",
+      "content": "\"use client\"\n\n// third-party\nimport { Checkbox as CheckboxPrimitive } from \"@base-ui/react/checkbox\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\n// assets\nimport { CheckIcon } from \"lucide-react\"\n\nfunction Checkbox({ className, ...props }: CheckboxPrimitive.Root.Props) {\n  return (\n    <CheckboxPrimitive.Root\n      data-slot=\"checkbox\"\n      className={cn(\n        \"peer relative flex size-[17.5px] shrink-0 items-center justify-center rounded-[4px] border border-border transition-colors outline-none group-has-disabled/field:opacity-50 after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aria-invalid:aria-checked:border-primary dark:bg-input/30 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-checked:border-primary data-checked:bg-primary data-checked:text-primary-foreground dark:data-checked:bg-primary\",\n        className\n      )}\n      {...props}\n    >\n      <CheckboxPrimitive.Indicator\n        data-slot=\"checkbox-indicator\"\n        className=\"grid place-content-center text-current transition-none [&>svg]:size-3 [&>svg]:stroke-3\"\n      >\n        <CheckIcon />\n      </CheckboxPrimitive.Indicator>\n    </CheckboxPrimitive.Root>\n  )\n}\n\nexport { Checkbox }\n",
       "type": "registry:component",
       "target": "@components/ui/checkbox.tsx"
     }
   ],
-  "categories": [
-    "checkbox"
-  ],
+  "categories": ["checkbox"],
   "type": "registry:ui"
 }

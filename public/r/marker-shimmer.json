@@ -3,19 +3,15 @@
   "name": "marker-shimmer",
   "title": "Marker Shimmer",
   "description": "Marker Shimmer variant for component.",
-  "registryDependencies": [
-    "@uiable/marker"
-  ],
+  "registryDependencies": ["@uiable/marker"],
   "files": [
     {
       "path": "src/components/uiable/marker/marker-shimmer.tsx",
-      "content": "// shadcn\r\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - SHIMMER | ------------------------------  //\r\n\r\nexport function MarkerShimmer() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker role=\"status\">\r\n        <MarkerContent className=\"shimmer\">Thinking...</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\" role=\"status\">\r\n        <MarkerContent className=\"shimmer\">Reading 4 files</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\n\n//  ------------------------------ | MARKER - SHIMMER | ------------------------------  //\n\nexport function MarkerShimmer() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\n      <Marker role=\"status\">\n        <MarkerContent className=\"shimmer\">Thinking...</MarkerContent>\n      </Marker>\n      <Marker variant=\"separator\" role=\"status\">\n        <MarkerContent className=\"shimmer\">Reading 4 files</MarkerContent>\n      </Marker>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/marker/marker-shimmer.tsx"
     }
   ],
-  "categories": [
-    "marker"
-  ],
+  "categories": ["marker"],
   "type": "registry:ui"
 }

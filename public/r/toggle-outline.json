@@ -3,22 +3,16 @@
   "name": "toggle-outline",
   "title": "Toggle Outline",
   "description": "Toggle Outline variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/toggle"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/toggle"],
   "files": [
     {
       "path": "src/components/uiable/toggle/toggle-outline.tsx",
-      "content": "// shadcn\r\nimport { Toggle } from \"@/components/ui/toggle\";\r\n\r\n// assets\r\nimport { BoldIcon, ItalicIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TOGGLE - OUTLINE | ------------------------------  //\r\n\r\nexport function ToggleOutline() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle italic\">\r\n        <ItalicIcon />\r\n        Italic\r\n      </Toggle>\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle bold\">\r\n        <BoldIcon />\r\n        Bold\r\n      </Toggle>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Toggle } from \"@/components/ui/toggle\"\n\n// assets\nimport { BoldIcon, ItalicIcon } from \"lucide-react\"\n\n//  ------------------------------ | TOGGLE - OUTLINE | ------------------------------  //\n\nexport function ToggleOutline() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Toggle variant=\"outline\" aria-label=\"Toggle italic\">\n        <ItalicIcon />\n        Italic\n      </Toggle>\n      <Toggle variant=\"outline\" aria-label=\"Toggle bold\">\n        <BoldIcon />\n        Bold\n      </Toggle>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/toggle/toggle-outline.tsx"
     }
   ],
-  "categories": [
-    "toggle"
-  ],
+  "categories": ["toggle"],
   "type": "registry:ui"
 }

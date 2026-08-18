@@ -1,17 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// third party
-import { motion } from "framer-motion"
-// assets
-import {
-  ArrowLeft,
-  BarChart3,
-  CheckCircle,
-  RotateCw,
-  Sparkles,
-  Users,
-} from "lucide-react"
 
 // shadcn
 import { Badge } from "@/components/ui/badge"
@@ -25,6 +14,20 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
+
+// third-party
+// third party
+import { motion } from "framer-motion"
+
+// assets
+import {
+  ArrowLeft,
+  BarChart3,
+  CheckCircle,
+  RotateCw,
+  Sparkles,
+  Users,
+} from "lucide-react"
 
 const pods = [
   {

@@ -3,19 +3,15 @@
   "name": "toggle-sizes",
   "title": "Toggle Sizes",
   "description": "Toggle Sizes variant for component.",
-  "registryDependencies": [
-    "@uiable/toggle"
-  ],
+  "registryDependencies": ["@uiable/toggle"],
   "files": [
     {
       "path": "src/components/uiable/toggle/toggle-sizes.tsx",
-      "content": "// shadcn\r\nimport { Toggle } from \"@/components/ui/toggle\";\r\n\r\n//  ------------------------------ | TOGGLE - SIZES | ------------------------------  //\r\n\r\nexport function ToggleSizes() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle small\" size=\"sm\">\r\n        Small\r\n      </Toggle>\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle default\" size=\"default\">\r\n        Default\r\n      </Toggle>\r\n      <Toggle variant=\"outline\" aria-label=\"Toggle large\" size=\"lg\">\r\n        Large\r\n      </Toggle>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Toggle } from \"@/components/ui/toggle\"\n\n//  ------------------------------ | TOGGLE - SIZES | ------------------------------  //\n\nexport function ToggleSizes() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Toggle variant=\"outline\" aria-label=\"Toggle small\" size=\"sm\">\n        Small\n      </Toggle>\n      <Toggle variant=\"outline\" aria-label=\"Toggle default\" size=\"default\">\n        Default\n      </Toggle>\n      <Toggle variant=\"outline\" aria-label=\"Toggle large\" size=\"lg\">\n        Large\n      </Toggle>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/toggle/toggle-sizes.tsx"
     }
   ],
-  "categories": [
-    "toggle"
-  ],
+  "categories": ["toggle"],
   "type": "registry:ui"
 }

@@ -184,12 +184,14 @@ Pre-built page sections ready to drop into your project.
 
 <div>
   <a href="https://uiable.com/preview/contact/contact-1/contact-1" title="Contact 1"><kbd>Contact 1</kbd></a>
+  <a href="https://uiable.com/preview/contact/contact-11/contact-11" title="Contact 11"><kbd>Contact 11</kbd></a>
 </div>
 
 ### Content
 
 <div>
   <a href="https://uiable.com/preview/content/content-1/content-1" title="Content 1"><kbd>Content 1</kbd></a>
+  <a href="https://uiable.com/preview/content/content-5/content-5" title="Content 5"><kbd>Content 5</kbd></a>
 </div>
 
 ### CTA
@@ -217,6 +219,7 @@ Pre-built page sections ready to drop into your project.
 <div>
   <a href="https://uiable.com/preview/footer/footer-7/footer-7" title="Footer 7"><kbd>Footer 7</kbd></a>
   <a href="https://uiable.com/preview/footer/footer-3/footer-3" title="Footer 3"><kbd>Footer 3</kbd></a>
+  <a href="https://uiable.com/preview/footer/footer-11/footer-11" title="Footer 11"><kbd>Footer 11</kbd></a>
 </div>
 
 ### Gallery
@@ -225,6 +228,7 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/preview/gallery/gallery-2/gallery-2" title="Gallery 2"><kbd>Gallery 2</kbd></a>
   <a href="https://uiable.com/preview/gallery/gallery-3/gallery-3" title="Gallery 3"><kbd>Gallery 3</kbd></a>
   <a href="https://uiable.com/preview/gallery/gallery-4/gallery-4" title="Gallery 4"><kbd>Gallery 4</kbd></a>
+  <a href="https://uiable.com/preview/gallery/gallery-10/gallery-10" title="Gallery 10"><kbd>Gallery 10</kbd></a>
 </div>
 
 ### Hero
@@ -232,6 +236,7 @@ Pre-built page sections ready to drop into your project.
 <div>
   <a href="https://uiable.com/preview/hero/hero-2/hero-2" title="Hero 2"><kbd>Hero 2</kbd></a>
   <a href="https://uiable.com/preview/hero/hero-3/hero-3" title="Hero 3"><kbd>Hero 3</kbd></a>
+  <a href="https://uiable.com/preview/hero/hero-6/hero-6" title="Hero 6"><kbd>Hero 6</kbd></a>
 </div>
 
 ### Portfolio

@@ -15,19 +15,9 @@
           "target": "@components/uiable/blocks/landing/component-1/component-1.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/card",
-        "@uiable/components",
-        "@uiable/separator"
-      ],
-      "dependencies": [
-        "@tabler/icons-react",
-        "next"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/components", "@uiable/separator"],
+      "dependencies": ["@tabler/icons-react", "next"]
     },
     {
       "name": "block-component-2",
@@ -41,12 +31,8 @@
           "target": "@components/uiable/blocks/landing/component-2/component-2.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/components"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/components"]
     },
     {
       "name": "block-contact",
@@ -60,16 +46,9 @@
           "target": "@components/uiable/blocks/landing/contact/Contact.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/input"
-      ],
-      "dependencies": [
-        "sonner"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/button", "@uiable/input"],
+      "dependencies": ["sonner"]
     },
     {
       "name": "block-contact-1",
@@ -83,15 +62,24 @@
           "target": "@components/uiable/blocks/contact/contact-1/contact-1.tsx"
         }
       ],
-      "categories": [
-        "contact"
+      "categories": ["contact"],
+      "registryDependencies": ["@uiable/button", "@uiable/field", "@uiable/input", "@uiable/textarea"]
+    },
+    {
+      "name": "block-contact-11",
+      "type": "registry:block",
+      "title": "Contact 11",
+      "description": "Contact 11 variant for block.",
+      "files": [
+        {
+          "path": "contact/contact-11/contact-11.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/contact/contact-11/contact-11.tsx"
+        }
       ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/field",
-        "@uiable/input",
-        "@uiable/textarea"
-      ]
+      "categories": ["contact"],
+      "registryDependencies": ["@uiable/button", "@uiable/field", "@uiable/input", "@uiable/textarea"],
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "block-content-1",
@@ -105,9 +93,22 @@
           "target": "@components/uiable/blocks/content/content-1/content-1.tsx"
         }
       ],
-      "categories": [
-        "content"
-      ]
+      "categories": ["content"]
+    },
+    {
+      "name": "block-content-5",
+      "type": "registry:block",
+      "title": "Content 5",
+      "description": "Content 5 variant for block.",
+      "files": [
+        {
+          "path": "content/content-5/content-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/content/content-5/content-5.tsx"
+        }
+      ],
+      "categories": ["content"],
+      "registryDependencies": ["@uiable/button"]
     },
     {
       "name": "block-cta-1",
@@ -121,15 +122,8 @@
           "target": "@components/uiable/blocks/cta/cta-1/cta-1.tsx"
         }
       ],
-      "categories": [
-        "cta"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/button-group",
-        "@uiable/field",
-        "@uiable/input"
-      ]
+      "categories": ["cta"],
+      "registryDependencies": ["@uiable/button", "@uiable/button-group", "@uiable/field", "@uiable/input"]
     },
     {
       "name": "block-cta-2",
@@ -143,13 +137,8 @@
           "target": "@components/uiable/blocks/cta/cta-2/cta-2.tsx"
         }
       ],
-      "categories": [
-        "cta"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/input"
-      ]
+      "categories": ["cta"],
+      "registryDependencies": ["@uiable/button", "@uiable/input"]
     },
     {
       "name": "block-faq",
@@ -163,16 +152,9 @@
           "target": "@components/uiable/blocks/landing/faq/faq.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/accordion",
-        "@uiable/components"
-      ],
-      "dependencies": [
-        "next"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/accordion", "@uiable/components"],
+      "dependencies": ["next"]
     },
     {
       "name": "block-faq-1",
@@ -186,12 +168,8 @@
           "target": "@components/uiable/blocks/faq/faq-1/faq-1.tsx"
         }
       ],
-      "categories": [
-        "faq"
-      ],
-      "registryDependencies": [
-        "@uiable/accordion"
-      ]
+      "categories": ["faq"],
+      "registryDependencies": ["@uiable/accordion"]
     },
     {
       "name": "block-feature",
@@ -205,16 +183,9 @@
           "target": "@components/uiable/blocks/landing/feature/Feature.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/components"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/button", "@uiable/components"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-feature-1",
@@ -228,9 +199,7 @@
           "target": "@components/uiable/blocks/feature/feature-1/feature-1.tsx"
         }
       ],
-      "categories": [
-        "feature"
-      ]
+      "categories": ["feature"]
     },
     {
       "name": "block-feature-2",
@@ -244,12 +213,8 @@
           "target": "@components/uiable/blocks/feature/feature-2/feature-2.tsx"
         }
       ],
-      "categories": [
-        "feature"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["feature"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-footer",
@@ -263,16 +228,9 @@
           "target": "@components/uiable/blocks/landing/footer/footer.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/logo"
-      ],
-      "dependencies": [
-        "@tabler/icons-react",
-        "next"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/logo"],
+      "dependencies": ["@tabler/icons-react", "next"]
     },
     {
       "name": "block-footer-3",
@@ -286,9 +244,7 @@
           "target": "@components/uiable/blocks/footer/footer-3/footer-3.tsx"
         }
       ],
-      "categories": [
-        "footer"
-      ]
+      "categories": ["footer"]
     },
     {
       "name": "block-footer-7",
@@ -302,9 +258,22 @@
           "target": "@components/uiable/blocks/footer/footer-7/footer-7.tsx"
         }
       ],
-      "categories": [
-        "footer"
-      ]
+      "categories": ["footer"]
+    },
+    {
+      "name": "block-footer-11",
+      "type": "registry:block",
+      "title": "Footer 11",
+      "description": "Footer 11 variant for block.",
+      "files": [
+        {
+          "path": "footer/footer-11/footer-11.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/footer/footer-11/footer-11.tsx"
+        }
+      ],
+      "categories": ["footer"],
+      "dependencies": ["framer-motion", "lucide-react"]
     },
     {
       "name": "block-gallery-2",
@@ -318,9 +287,7 @@
           "target": "@components/uiable/blocks/gallery/gallery-2/gallery-2.tsx"
         }
       ],
-      "categories": [
-        "gallery"
-      ]
+      "categories": ["gallery"]
     },
     {
       "name": "block-gallery-3",
@@ -334,9 +301,7 @@
           "target": "@components/uiable/blocks/gallery/gallery-3/gallery-3.tsx"
         }
       ],
-      "categories": [
-        "gallery"
-      ]
+      "categories": ["gallery"]
     },
     {
       "name": "block-gallery-4",
@@ -350,15 +315,25 @@
           "target": "@components/uiable/blocks/gallery/gallery-4/gallery-4.tsx"
         }
       ],
-      "categories": [
-        "gallery"
+      "categories": ["gallery"],
+      "registryDependencies": ["@uiable/carousel"],
+      "dependencies": ["embla-carousel-autoplay"]
+    },
+    {
+      "name": "block-gallery-10",
+      "type": "registry:block",
+      "title": "Gallery 10",
+      "description": "Gallery 10 variant for block.",
+      "files": [
+        {
+          "path": "gallery/gallery-10/gallery-10.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/gallery/gallery-10/gallery-10.tsx"
+        }
       ],
-      "registryDependencies": [
-        "@uiable/carousel"
-      ],
-      "dependencies": [
-        "embla-carousel-autoplay"
-      ]
+      "categories": ["gallery"],
+      "registryDependencies": ["@uiable/button", "@uiable/carousel"],
+      "dependencies": ["embla-carousel-autoplay", "lucide-react"]
     },
     {
       "name": "block-hero",
@@ -372,18 +347,9 @@
           "target": "@components/uiable/blocks/landing/hero/hero.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/badge",
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "@tabler/icons-react",
-        "framer-motion",
-        "next"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/badge", "@uiable/button"],
+      "dependencies": ["@tabler/icons-react", "framer-motion", "next"]
     },
     {
       "name": "block-hero-2",
@@ -397,15 +363,9 @@
           "target": "@components/uiable/blocks/hero/hero-2/hero-2.tsx"
         }
       ],
-      "categories": [
-        "hero"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "framer-motion"
-      ]
+      "categories": ["hero"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "block-hero-3",
@@ -419,17 +379,25 @@
           "target": "@components/uiable/blocks/hero/hero-3/hero-3.tsx"
         }
       ],
-      "categories": [
-        "hero"
+      "categories": ["hero"],
+      "registryDependencies": ["@uiable/button", "@uiable/carousel"],
+      "dependencies": ["embla-carousel-autoplay", "framer-motion"]
+    },
+    {
+      "name": "block-hero-6",
+      "type": "registry:block",
+      "title": "Hero 6",
+      "description": "Hero 6 variant for block.",
+      "files": [
+        {
+          "path": "hero/hero-6/hero-6.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-6/hero-6.tsx"
+        }
       ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/carousel"
-      ],
-      "dependencies": [
-        "embla-carousel-autoplay",
-        "framer-motion"
-      ]
+      "categories": ["hero"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "block-navbar",
@@ -443,19 +411,9 @@
           "target": "@components/uiable/blocks/landing/navbar/navbar.tsx"
         }
       ],
-      "categories": [
-        "landing"
-      ],
-      "registryDependencies": [
-        "@uiable/NavSearchDialog",
-        "@uiable/button",
-        "@uiable/logo",
-        "@uiable/separator"
-      ],
-      "dependencies": [
-        "@tabler/icons-react",
-        "next"
-      ]
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/NavSearchDialog", "@uiable/button", "@uiable/logo", "@uiable/separator"],
+      "dependencies": ["@tabler/icons-react", "next"]
     },
     {
       "name": "block-portfolio-3",
@@ -469,13 +427,8 @@
           "target": "@components/uiable/blocks/portfolio/portfolio-3/portfolio-3.tsx"
         }
       ],
-      "categories": [
-        "portfolio"
-      ],
-      "registryDependencies": [
-        "@uiable/button",
-        "@uiable/carousel"
-      ]
+      "categories": ["portfolio"],
+      "registryDependencies": ["@uiable/button", "@uiable/carousel"]
     },
     {
       "name": "block-portfolio-4",
@@ -489,15 +442,9 @@
           "target": "@components/uiable/blocks/portfolio/portfolio-4/portfolio-4.tsx"
         }
       ],
-      "categories": [
-        "portfolio"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["portfolio"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-portfolio-5",
@@ -511,12 +458,8 @@
           "target": "@components/uiable/blocks/portfolio/portfolio-5/portfolio-5.tsx"
         }
       ],
-      "categories": [
-        "portfolio"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ]
+      "categories": ["portfolio"],
+      "registryDependencies": ["@uiable/button"]
     },
     {
       "name": "block-pricing-2",
@@ -530,15 +473,9 @@
           "target": "@components/uiable/blocks/pricing/pricing-2/pricing-2.tsx"
         }
       ],
-      "categories": [
-        "pricing"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["pricing"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-pricing-3",
@@ -552,15 +489,9 @@
           "target": "@components/uiable/blocks/pricing/pricing-3/pricing-3.tsx"
         }
       ],
-      "categories": [
-        "pricing"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["pricing"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-process-1",
@@ -574,12 +505,8 @@
           "target": "@components/uiable/blocks/process/process-1/process-1.tsx"
         }
       ],
-      "categories": [
-        "process"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["process"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-process-3",
@@ -593,12 +520,8 @@
           "target": "@components/uiable/blocks/process/process-3/process-3.tsx"
         }
       ],
-      "categories": [
-        "process"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["process"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-process-6",
@@ -612,12 +535,8 @@
           "target": "@components/uiable/blocks/process/process-6/process-6.tsx"
         }
       ],
-      "categories": [
-        "process"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["process"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-statistics-1",
@@ -631,15 +550,9 @@
           "target": "@components/uiable/blocks/statistics/statistics-1/statistics-1.tsx"
         }
       ],
-      "categories": [
-        "statistics"
-      ],
-      "registryDependencies": [
-        "@uiable/button"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["statistics"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-team-1",
@@ -653,12 +566,8 @@
           "target": "@components/uiable/blocks/team/team-1/team-1.tsx"
         }
       ],
-      "categories": [
-        "team"
-      ],
-      "registryDependencies": [
-        "@uiable/avatar"
-      ]
+      "categories": ["team"],
+      "registryDependencies": ["@uiable/avatar"]
     },
     {
       "name": "block-testimonial-1",
@@ -672,15 +581,9 @@
           "target": "@components/uiable/blocks/testimonial/testimonial-1/testimonial-1.tsx"
         }
       ],
-      "categories": [
-        "testimonial"
-      ],
-      "registryDependencies": [
-        "@uiable/avatar"
-      ],
-      "dependencies": [
-        "lucide-react"
-      ]
+      "categories": ["testimonial"],
+      "registryDependencies": ["@uiable/avatar"],
+      "dependencies": ["lucide-react"]
     }
   ]
 }

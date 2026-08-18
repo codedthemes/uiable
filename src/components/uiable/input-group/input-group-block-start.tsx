@@ -3,19 +3,19 @@ import {
   Field,
   FieldDescription,
   FieldGroup,
-  FieldLabel
-} from "@/components/ui/field";
+  FieldLabel,
+} from "@/components/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
   InputGroupText,
-  InputGroupTextarea
-} from "@/components/ui/input-group";
+  InputGroupTextarea,
+} from "@/components/ui/input-group"
 
 // assets
-import { CopyIcon, FileCodeIcon } from "lucide-react";
+import { CopyIcon, FileCodeIcon } from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - BLOCK START | ------------------------------  //
 
@@ -57,5 +57,5 @@ export function InputGroupBlockStart() {
         </FieldDescription>
       </Field>
     </FieldGroup>
-  );
+  )
 }

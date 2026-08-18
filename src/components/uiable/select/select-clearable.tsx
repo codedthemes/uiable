@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { X } from "lucide-react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -14,6 +12,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+
+// assets
+import { X } from "lucide-react"
 
 const categories = [
   { label: "Engineering", value: "engineering" },

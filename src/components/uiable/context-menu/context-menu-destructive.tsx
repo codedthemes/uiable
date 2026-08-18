@@ -5,11 +5,11 @@ import {
   ContextMenuGroup,
   ContextMenuItem,
   ContextMenuSeparator,
-  ContextMenuTrigger
-} from "@/components/ui/context-menu";
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
 
 // assets
-import { PencilIcon, ShareIcon, TrashIcon } from "lucide-react";
+import { PencilIcon, ShareIcon, TrashIcon } from "lucide-react"
 
 //  ------------------------------ | CONTEXT MENU - DESTRUCTIVE | ------------------------------  //
 
@@ -44,5 +44,5 @@ export function ContextMenuDestructive() {
         </ContextMenuGroup>
       </ContextMenuContent>
     </ContextMenu>
-  );
+  )
 }

@@ -1,6 +1,8 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+
+// project-imports
 import { SparkleGrid } from "@/images/svg/landing"
 
 interface HoverBgProps {

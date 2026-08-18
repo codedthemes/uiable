@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { CalendarIcon } from "lucide-react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -13,6 +11,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+
+// assets
+import { CalendarIcon } from "lucide-react"
 
 //  ------------------------------ | DATE PICKER - DISABLED | ------------------------------  //
 

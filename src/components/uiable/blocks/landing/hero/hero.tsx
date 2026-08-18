@@ -1,15 +1,20 @@
 "use client"
 
+// next
 import Link from "next/link"
-import { motion } from "framer-motion"
 
 // shadcn
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
+// third-party
+import { motion } from "framer-motion"
+
+// project-imports
 // project imports
 import branding from "@/branding.json"
 import { HoverBg } from "@/components/animation"
+import { Shadcn, BaseUi, Tailwind } from "@/images/svg/icons"
 
 // assets
 import {
@@ -18,7 +23,6 @@ import {
   IconBrandReact,
   IconChevronRight,
 } from "@tabler/icons-react"
-import { Shadcn, BaseUi, Tailwind } from "@/images/svg/icons"
 
 //  ------------------------------ | CONSTANTS | ------------------------------  //
 
@@ -104,7 +108,7 @@ export default function Hero() {
           <PingDot />
           <span className="flex items-center gap-2">
             <span className="text-muted-foreground">
-              New Release August 11, 2026
+              New Release August 18, 2026
             </span>
             <ChangelogLink />
           </span>

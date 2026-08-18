@@ -28,10 +28,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 
-// project
-import Logo from "@/components/uiable/layout/shared/logo"
-
-// assets
+// third-party
 import {
   ArrowRight2,
   Clipboard,
@@ -45,6 +42,12 @@ import {
   Sort,
   StatusUp,
 } from "iconsax-reactjs"
+
+// project-imports
+// project
+import Logo from "@/components/uiable/layout/shared/logo"
+
+// assets
 import { LockKeyhole, Power, Settings, User } from "lucide-react"
 
 const imgCoupon = {

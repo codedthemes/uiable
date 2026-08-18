@@ -1,5 +1,5 @@
 // shadcn
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 
 //  ------------------------------ | CARD - BASIC | ------------------------------  //
 
@@ -8,5 +8,5 @@ export default function CardBasic() {
     <Card>
       <CardContent>This is some text within a card body.</CardContent>
     </Card>
-  );
+  )
 }

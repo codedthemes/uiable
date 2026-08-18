@@ -1,13 +1,14 @@
 // shadcn
-import { Heart, MessageCircle, Reply } from "lucide-react"
-
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
+// assets
+import { Heart, MessageCircle, Reply } from "lucide-react"
 
 // constant
 const testimonials = [
   {
     name: "Sarah Connor",
-    avatar: "/assets/images/block/profile-1.png",
+    avatar: "https://cdn.uiable.com/block/profile-1.png",
     position: "Lead DevOps Engineer",
     description:
       "This platform has completely transformed how our team manages deployment workflows. The onboarding is incredibly fast and intuitive.",
@@ -17,7 +18,7 @@ const testimonials = [
   },
   {
     name: "Emily Watson",
-    avatar: "/assets/images/block/profile-4.png",
+    avatar: "https://cdn.uiable.com/block/profile-4.png",
     position: "Product Manager at TechFlow",
     description:
       "Automating our repetitive tasks has saved us hours of manual coordination. We can now focus on what truly matters.",
@@ -27,7 +28,7 @@ const testimonials = [
   },
   {
     name: "Marcus Aurelius",
-    avatar: "/assets/images/block/profile-5.png",
+    avatar: "https://cdn.uiable.com/block/profile-5.png",
     position: "Chief Operations Officer",
     description:
       "Having instant access to detailed insights and performance metrics has empowered our team to make data-driven decisions confidently.",
@@ -37,7 +38,7 @@ const testimonials = [
   },
   {
     name: "Aria Montgomery",
-    avatar: "/assets/images/block/profile-6.png",
+    avatar: "https://cdn.uiable.com/block/profile-6.png",
     position: "Senior UX Designer",
     description:
       "Collaboration is seamless here. Real-time updates and shared workspaces have bridged the gap between our design and dev teams.",
@@ -47,7 +48,7 @@ const testimonials = [
   },
   {
     name: "Sophia Martinez",
-    avatar: "/assets/images/block/profile-7.png",
+    avatar: "https://cdn.uiable.com/block/profile-7.png",
     position: "Director of Security",
     description:
       "Security is paramount for us. The advanced encryption and role-based access controls keep our sensitive client data fully protected.",
@@ -57,7 +58,7 @@ const testimonials = [
   },
   {
     name: "James Wilson",
-    avatar: "/assets/images/block/profile-8.png",
+    avatar: "https://cdn.uiable.com/block/profile-8.png",
     position: "Integration Architect",
     description:
       "The pre-built integrations made it incredibly easy to connect all of our existing tools without breaking any workflows.",

@@ -1,6 +1,10 @@
 "use client"
 
 import { useState } from "react"
+
+// shadcn
+import { Toggle } from "@/components/ui/toggle"
+
 // assets
 import {
   EyeIcon,
@@ -14,9 +18,6 @@ import {
   Volume2Icon,
   VolumeXIcon,
 } from "lucide-react"
-
-// shadcn
-import { Toggle } from "@/components/ui/toggle"
 
 //  ------------------------------ | TOGGLE - ICON | ------------------------------  //
 

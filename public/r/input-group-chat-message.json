@@ -3,22 +3,16 @@
   "name": "input-group-chat-message",
   "title": "Input Group Chat Message",
   "description": "Input Group Chat Message variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/input-group"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/input-group"],
   "files": [
     {
       "path": "src/components/uiable/input-group/input-group-chat-message.tsx",
-      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { PaperclipIcon, SendIcon, SmileIcon } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupText,\r\n  InputGroupTextarea,\r\n} from \"@/components/ui/input-group\"\r\n\r\n//  ------------------------------ | INPUT GROUP - CHAT MESSAGE | ------------------------------  //\r\n\r\nexport default function InputGroupChatMessage() {\r\n  const [value, setValue] = useState(\"\")\r\n  const maxLength = 2000\r\n\r\n  return (\r\n    <div className=\"grid w-full max-w-md gap-4\">\r\n      <InputGroup>\r\n        <InputGroupTextarea\r\n          id=\"chat-message-input\"\r\n          placeholder=\"Type a message...\"\r\n          className=\"min-h-[80px]\"\r\n          value={value}\r\n          onChange={(e) => setValue(e.target.value.slice(0, maxLength))}\r\n        />\r\n        <InputGroupAddon align=\"block-end\" className=\"border-t border-border\">\r\n          <InputGroupButton aria-label=\"Attach file\" variant=\"ghost\">\r\n            <PaperclipIcon />\r\n          </InputGroupButton>\r\n          <InputGroupButton aria-label=\"Add emoji\" variant=\"ghost\">\r\n            <SmileIcon />\r\n          </InputGroupButton>\r\n          <InputGroupText className=\"ml-auto text-xs\">\r\n            {value.length}/{maxLength}\r\n          </InputGroupText>\r\n          <InputGroupButton\r\n            type=\"submit\"\r\n            variant=\"default\"\r\n            size=\"sm\"\r\n            className=\"ml-2\"\r\n          >\r\n            Send\r\n            <SendIcon />\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupText,\n  InputGroupTextarea,\n} from \"@/components/ui/input-group\"\n\n// assets\nimport { PaperclipIcon, SendIcon, SmileIcon } from \"lucide-react\"\n\n//  ------------------------------ | INPUT GROUP - CHAT MESSAGE | ------------------------------  //\n\nexport default function InputGroupChatMessage() {\n  const [value, setValue] = useState(\"\")\n  const maxLength = 2000\n\n  return (\n    <div className=\"grid w-full max-w-md gap-4\">\n      <InputGroup>\n        <InputGroupTextarea\n          id=\"chat-message-input\"\n          placeholder=\"Type a message...\"\n          className=\"min-h-[80px]\"\n          value={value}\n          onChange={(e) => setValue(e.target.value.slice(0, maxLength))}\n        />\n        <InputGroupAddon align=\"block-end\" className=\"border-t border-border\">\n          <InputGroupButton aria-label=\"Attach file\" variant=\"ghost\">\n            <PaperclipIcon />\n          </InputGroupButton>\n          <InputGroupButton aria-label=\"Add emoji\" variant=\"ghost\">\n            <SmileIcon />\n          </InputGroupButton>\n          <InputGroupText className=\"ml-auto text-xs\">\n            {value.length}/{maxLength}\n          </InputGroupText>\n          <InputGroupButton\n            type=\"submit\"\n            variant=\"default\"\n            size=\"sm\"\n            className=\"ml-2\"\n          >\n            Send\n            <SendIcon />\n          </InputGroupButton>\n        </InputGroupAddon>\n      </InputGroup>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input-group/input-group-chat-message.tsx"
     }
   ],
-  "categories": [
-    "input-group"
-  ],
+  "categories": ["input-group"],
   "type": "registry:ui"
 }

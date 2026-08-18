@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense } from "react"
 
 // shadcn
 import {
@@ -12,7 +12,7 @@ import {
   SidebarMenuItem,
   SidebarMenuSkeleton,
   SidebarProvider,
-} from "@/components/ui/sidebar";
+} from "@/components/ui/sidebar"
 
 // assets
 import {
@@ -21,7 +21,7 @@ import {
   MapIcon,
   PieChartIcon,
   SendIcon,
-} from "lucide-react";
+} from "lucide-react"
 
 // constants
 const projects = [
@@ -55,13 +55,13 @@ const projects = [
     icon: SendIcon,
     badge: "8",
   },
-];
+]
 
 // Dummy fetch function.
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function fetchProjects() {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
-  return projects;
+  await new Promise((resolve) => setTimeout(resolve, 3000))
+  return projects
 }
 
 //  ------------------------------ | SIDEBAR - RSC | ------------------------------  //
@@ -82,7 +82,7 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }
 
 function NavProjectsSkeleton() {
@@ -94,7 +94,7 @@ function NavProjectsSkeleton() {
         </SidebarMenuItem>
       ))}
     </SidebarMenu>
-  );
+  )
 }
 
 function NavProjects() {
@@ -109,5 +109,5 @@ function NavProjects() {
         </SidebarMenuItem>
       ))}
     </SidebarMenu>
-  );
+  )
 }

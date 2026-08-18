@@ -22,6 +22,6 @@
   "menuColor": "default",
   "menuAccent": "subtle",
   "registries": {
-    "@react-bits": "https://reactbits.dev/r/{name}.json"
+    "@uiable": "https://uiable.com/r/{name}.json"
   }
 }

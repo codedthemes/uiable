@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-growing-danger.tsx",
-      "content": "//  ------------------------------ | SPINNER - GROWING DANGER | ------------------------------  //\r\n\r\nexport default function SpinnerGrowingDanger() {\r\n  return (\r\n    <div\r\n      className=\"inline-flex bg-destructive rounded-full opacity-75 size-4 animate-ping\"\r\n      role=\"status\"\r\n    >\r\n      <span className=\"sr-only\">Loading...</span>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "//  ------------------------------ | SPINNER - GROWING DANGER | ------------------------------  //\n\nexport default function SpinnerGrowingDanger() {\n  return (\n    <div\n      className=\"inline-flex size-4 animate-ping rounded-full bg-destructive opacity-75\"\n      role=\"status\"\n    >\n      <span className=\"sr-only\">Loading...</span>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/spinner/spinner-growing-danger.tsx"
     }
   ],
-  "categories": [
-    "spinner"
-  ],
+  "categories": ["spinner"],
   "type": "registry:ui"
 }

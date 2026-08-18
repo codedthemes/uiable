@@ -1,4 +1,6 @@
 import { ReactNode } from "react"
+
+// next
 import { Metadata } from "next"
 
 // shadcn
@@ -7,14 +9,13 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 // third-party
 import { Toaster } from "sonner"
 
+// project-imports
 // project
 import branding from "@/branding.json"
 import { BackToTop } from "@/components/back-to-top"
 import { ThemePresetStyles } from "@/components/customizer/ThemePresetStyles"
 import { ThemeProvider } from "@/components/theme-provider"
 import Metrics from "@/metrics"
-
-// assets
 import "./globals.css"
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL!
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   title: `UI component library built on shadcn and Base UI - ${branding.brandName}`,
   description:
     "A set of beautifully designed UI components you can customize, extend, and make your own. Open source and built for Next.js",
-   verification: {
+  verification: {
     google: "iRaIhBSXplR-7cMYw5KsLhMEEOHHC8VZ-V2euMAVubA",
   },
   icons: { icon: "https://cdn.uiable.com/brand/favicon.svg" },

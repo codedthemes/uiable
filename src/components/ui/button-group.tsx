@@ -1,12 +1,17 @@
 "use client"
 
 import { ComponentProps } from "react"
+
+// shadcn
+import { Separator } from "@/components/ui/separator"
+
+// third-party
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
 
+// project-imports
 import { cn } from "@/lib/utils"
-import { Separator } from "@/components/ui/separator"
 
 const buttonGroupVariants = cva(
   "flex w-fit items-stretch *:focus-visible:relative *:focus-visible:z-10 has-[>[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-r-lg [&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit [&>input]:flex-1",

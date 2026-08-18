@@ -1,6 +1,3 @@
-// lucide-react
-import { Download, ExternalLink, Eye, Image as ImageIcon } from "lucide-react"
-
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -10,6 +7,10 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+
+// assets
+// lucide-react
+import { Download, ExternalLink, Eye, Image as ImageIcon } from "lucide-react"
 
 //  ------------------------------ | HOVER CARD - IMAGE PREVIEW | ------------------------------  //
 

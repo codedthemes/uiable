@@ -3,20 +3,15 @@
   "name": "input-invalid",
   "title": "Input Invalid",
   "description": "Input Invalid variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/input"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/input"],
   "files": [
     {
       "path": "src/components/uiable/input/input-invalid.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - INVALID | ------------------------------  //\r\n\r\nexport function InputInvalid() {\r\n  return (\r\n    <Field data-invalid>\r\n      <FieldLabel htmlFor=\"input-invalid\">Invalid Input</FieldLabel>\r\n      <Input id=\"input-invalid\" placeholder=\"Error\" aria-invalid />\r\n      <FieldDescription>\r\n        This field contains validation errors.\r\n      </FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"\n\n//  ------------------------------ | INPUT - INVALID | ------------------------------  //\n\nexport function InputInvalid() {\n  return (\n    <Field data-invalid>\n      <FieldLabel htmlFor=\"input-invalid\">Invalid Input</FieldLabel>\n      <Input id=\"input-invalid\" placeholder=\"Error\" aria-invalid />\n      <FieldDescription>\n        This field contains validation errors.\n      </FieldDescription>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input/input-invalid.tsx"
     }
   ],
-  "categories": [
-    "input"
-  ],
+  "categories": ["input"],
   "type": "registry:ui"
 }

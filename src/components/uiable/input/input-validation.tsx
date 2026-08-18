@@ -1,13 +1,14 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { Check, Eye, EyeOff, X } from "lucide-react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
 import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+
+// assets
+import { Check, Eye, EyeOff, X } from "lucide-react"
 
 //  ------------------------------ | INPUT - VALIDATION | ------------------------------  //
 

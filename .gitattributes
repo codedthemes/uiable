@@ -1,0 +1,11 @@
+# Force LF line endings for all text files, regardless of each dev's local
+# core.autocrlf setting, to avoid cross-platform CRLF diffs (matches
+# prettier.config.cjs's endOfLine: "lf").
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff2 binary

@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/message-scroller"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 
+// project-imports
 // project imports
 import { MessageAnimated } from "@/components/message-animated"
 

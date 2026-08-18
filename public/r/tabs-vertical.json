@@ -3,19 +3,15 @@
   "name": "tabs-vertical",
   "title": "Tabs Vertical",
   "description": "Tabs Vertical variant for component.",
-  "registryDependencies": [
-    "@uiable/tabs"
-  ],
+  "registryDependencies": ["@uiable/tabs"],
   "files": [
     {
       "path": "src/components/uiable/tabs/tabs-vertical.tsx",
-      "content": "// shadcn\r\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\r\n\r\n//  ------------------------------ | TABS - VERTICAL | ------------------------------  //\r\n\r\nexport function TabsVertical() {\r\n  return (\r\n    <Tabs defaultValue=\"account\" orientation=\"vertical\">\r\n      <TabsList>\r\n        <TabsTrigger value=\"account\">Account</TabsTrigger>\r\n        <TabsTrigger value=\"password\">Password</TabsTrigger>\r\n        <TabsTrigger value=\"notifications\">Notifications</TabsTrigger>\r\n      </TabsList>\r\n    </Tabs>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\"\n\n//  ------------------------------ | TABS - VERTICAL | ------------------------------  //\n\nexport function TabsVertical() {\n  return (\n    <Tabs defaultValue=\"account\" orientation=\"vertical\">\n      <TabsList>\n        <TabsTrigger value=\"account\">Account</TabsTrigger>\n        <TabsTrigger value=\"password\">Password</TabsTrigger>\n        <TabsTrigger value=\"notifications\">Notifications</TabsTrigger>\n      </TabsList>\n    </Tabs>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/tabs/tabs-vertical.tsx"
     }
   ],
-  "categories": [
-    "tabs"
-  ],
+  "categories": ["tabs"],
   "type": "registry:ui"
 }

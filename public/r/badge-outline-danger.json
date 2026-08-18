@@ -3,19 +3,15 @@
   "name": "badge-outline-danger",
   "title": "Badge Outline Danger",
   "description": "Badge Outline Danger variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/badge/badge-outline-danger.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - OUTLINE DANGER | ------------------------------  //\r\n\r\nexport default function BadgeOutlineDanger() {\r\n  return (\r\n    <Badge className=\"border-red-500 text-red-500 bg-transparent\">Danger</Badge>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | BADGE - OUTLINE DANGER | ------------------------------  //\n\nexport default function BadgeOutlineDanger() {\n  return (\n    <Badge className=\"border-red-500 bg-transparent text-red-500\">Danger</Badge>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-outline-danger.tsx"
     }
   ],
-  "categories": [
-    "badge"
-  ],
+  "categories": ["badge"],
   "type": "registry:ui"
 }

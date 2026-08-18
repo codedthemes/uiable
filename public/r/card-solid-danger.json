@@ -3,19 +3,15 @@
   "name": "card-solid-danger",
   "title": "Card Solid Danger",
   "description": "Card Solid Danger variant for component.",
-  "registryDependencies": [
-    "@uiable/card"
-  ],
+  "registryDependencies": ["@uiable/card"],
   "files": [
     {
       "path": "src/components/uiable/card/card-solid-danger.tsx",
-      "content": "// shadcn\r\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\";\r\n\r\n//  ------------------------------ | CARD - SOLID DANGER | ------------------------------  //\r\n\r\nexport default function CardSolidDanger() {\r\n  return (\r\n    <Card className=\"rounded-xl shadow-none border-none ring-1 ring-red-500/20 bg-red-500 text-red-500-foreground overflow-hidden\">\r\n      <CardHeader className=\"p-4 border-b border-white/10\">\r\n        <CardTitle className=\"text-base font-bold text-white\">Header</CardTitle>\r\n      </CardHeader>\r\n      <CardContent className=\"p-5\">\r\n        <CardTitle className=\"text-lg font-bold mb-2 text-white\">\r\n          Danger card title\r\n        </CardTitle>\r\n        <p className=\"text-sm opacity-90 leading-relaxed text-white\">\r\n          Some quick example text to build on the card title and make up the\r\n          bulk of the card's content.\r\n        </p>\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Card, CardContent, CardHeader, CardTitle } from \"@/components/ui/card\"\n\n//  ------------------------------ | CARD - SOLID DANGER | ------------------------------  //\n\nexport default function CardSolidDanger() {\n  return (\n    <Card className=\"text-red-500-foreground overflow-hidden rounded-xl border-none bg-red-500 shadow-none ring-1 ring-red-500/20\">\n      <CardHeader className=\"border-b border-white/10 p-4\">\n        <CardTitle className=\"text-base font-bold text-white\">Header</CardTitle>\n      </CardHeader>\n      <CardContent className=\"p-5\">\n        <CardTitle className=\"mb-2 text-lg font-bold text-white\">\n          Danger card title\n        </CardTitle>\n        <p className=\"text-sm leading-relaxed text-white opacity-90\">\n          Some quick example text to build on the card title and make up the\n          bulk of the card's content.\n        </p>\n      </CardContent>\n    </Card>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/card/card-solid-danger.tsx"
     }
   ],
-  "categories": [
-    "card"
-  ],
+  "categories": ["card"],
   "type": "registry:ui"
 }

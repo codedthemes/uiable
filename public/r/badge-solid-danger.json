@@ -3,19 +3,15 @@
   "name": "badge-solid-danger",
   "title": "Badge Solid Danger",
   "description": "Badge Solid Danger variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/badge/badge-solid-danger.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - SOLID DANGER | ------------------------------  //\r\n\r\nexport default function BadgeSolidDanger() {\r\n  return <Badge className=\"bg-red-500 text-white\">Danger</Badge>;\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | BADGE - SOLID DANGER | ------------------------------  //\n\nexport default function BadgeSolidDanger() {\n  return <Badge className=\"bg-red-500 text-white\">Danger</Badge>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-solid-danger.tsx"
     }
   ],
-  "categories": [
-    "badge"
-  ],
+  "categories": ["badge"],
   "type": "registry:ui"
 }

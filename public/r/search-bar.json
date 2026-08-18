@@ -3,22 +3,16 @@
   "name": "search-bar",
   "title": "Search Bar",
   "description": "Layout Search Bar variant for component.",
-  "dependencies": [
-    "iconsax-reactjs"
-  ],
-  "registryDependencies": [
-    "@uiable/input"
-  ],
+  "dependencies": ["iconsax-reactjs"],
+  "registryDependencies": ["@uiable/input"],
   "files": [
     {
       "path": "src/components/uiable/layout/search-bar.tsx",
-      "content": "// shadcn\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n// assets\r\nimport { SearchNormal1 } from \"iconsax-reactjs\";\r\n\r\n//  ------------------------------ | LAYOUT - SEARCH BAR | ------------------------------  //\r\n\r\nexport default function SearchBar() {\r\n  return (\r\n    <div className=\"relative w-49.5 hidden md:block\">\r\n      <SearchNormal1 className=\"absolute left-3.5 top-3.5 h-4 w-4 text-muted-foreground\" />\r\n      <Input\r\n        id=\"search-bar-input\"\r\n        type=\"search\"\r\n        placeholder=\"Ctrl + K\"\r\n        className=\"border rounded-xl h-auto block text-base pl-10 py-[.66rem] pr-3 w-full placeholder:text-[#bec8d0] disabled:bg-secondary-200/10 disabled:pointer-events-none focus:outline-none focus:border-primary dark:focus:border-primary border-border bg-input\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Input } from \"@/components/ui/input\"\n\n// third-party\nimport { SearchNormal1 } from \"iconsax-reactjs\"\n\n//  ------------------------------ | LAYOUT - SEARCH BAR | ------------------------------  //\n\nexport default function SearchBar() {\n  return (\n    <div className=\"relative hidden w-49.5 md:block\">\n      <SearchNormal1 className=\"absolute top-3.5 left-3.5 h-4 w-4 text-muted-foreground\" />\n      <Input\n        id=\"search-bar-input\"\n        type=\"search\"\n        placeholder=\"Ctrl + K\"\n        className=\"disabled:bg-secondary-200/10 block h-auto w-full rounded-xl border border-border bg-input py-[.66rem] pr-3 pl-10 text-base placeholder:text-[#bec8d0] focus:border-primary focus:outline-none disabled:pointer-events-none dark:focus:border-primary\"\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/layout/search-bar.tsx"
     }
   ],
-  "categories": [
-    "layout"
-  ],
+  "categories": ["layout"],
   "type": "registry:ui"
 }

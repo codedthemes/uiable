@@ -3,21 +3,15 @@
   "name": "kbd-tooltip",
   "title": "Kbd Tooltip",
   "description": "Kbd Tooltip variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/kbd",
-    "@uiable/tooltip"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/kbd", "@uiable/tooltip"],
   "files": [
     {
       "path": "src/components/uiable/kbd/kbd-tooltip.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\";\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger\r\n} from \"@/components/ui/tooltip\";\r\n\r\n//  ------------------------------ | KBD - TOOLTIP | ------------------------------  //\r\n\r\nexport default function KbdTooltip() {\r\n  return (\r\n    <div className=\"flex flex-wrap gap-4\">\r\n      <Tooltip>\r\n        <TooltipTrigger render={<Button variant=\"outline\" />}>\r\n          Save\r\n        </TooltipTrigger>\r\n        <TooltipContent className=\"pr-1.5\">\r\n          <div className=\"flex items-center gap-2\">\r\n            Save Changes <Kbd>S</Kbd>\r\n          </div>\r\n        </TooltipContent>\r\n      </Tooltip>\r\n      <Tooltip>\r\n        <TooltipTrigger render={<Button variant=\"outline\" />}>\r\n          Print\r\n        </TooltipTrigger>\r\n        <TooltipContent className=\"pr-1.5\">\r\n          <div className=\"flex items-center gap-2\">\r\n            Print Document{\" \"}\r\n            <KbdGroup>\r\n              <Kbd>Ctrl</Kbd>\r\n              <Kbd>P</Kbd>\r\n            </KbdGroup>\r\n          </div>\r\n        </TooltipContent>\r\n      </Tooltip>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\"\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\"\n\n//  ------------------------------ | KBD - TOOLTIP | ------------------------------  //\n\nexport default function KbdTooltip() {\n  return (\n    <div className=\"flex flex-wrap gap-4\">\n      <Tooltip>\n        <TooltipTrigger render={<Button variant=\"outline\" />}>\n          Save\n        </TooltipTrigger>\n        <TooltipContent className=\"pr-1.5\">\n          <div className=\"flex items-center gap-2\">\n            Save Changes <Kbd>S</Kbd>\n          </div>\n        </TooltipContent>\n      </Tooltip>\n      <Tooltip>\n        <TooltipTrigger render={<Button variant=\"outline\" />}>\n          Print\n        </TooltipTrigger>\n        <TooltipContent className=\"pr-1.5\">\n          <div className=\"flex items-center gap-2\">\n            Print Document{\" \"}\n            <KbdGroup>\n              <Kbd>Ctrl</Kbd>\n              <Kbd>P</Kbd>\n            </KbdGroup>\n          </div>\n        </TooltipContent>\n      </Tooltip>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/kbd/kbd-tooltip.tsx"
     }
   ],
-  "categories": [
-    "kbd"
-  ],
+  "categories": ["kbd"],
   "type": "registry:ui"
 }

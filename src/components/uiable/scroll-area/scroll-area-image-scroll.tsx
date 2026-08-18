@@ -1,11 +1,12 @@
 import { useState, type MouseEvent } from "react"
-// assets
-import { Eye, Heart, Tag } from "lucide-react"
 
 // shadcn
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
+
+// assets
+import { Eye, Heart, Tag } from "lucide-react"
 
 interface PhotoItem {
   id: string

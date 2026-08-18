@@ -3,19 +3,15 @@
   "name": "separator-list",
   "title": "Separator List",
   "description": "Separator List variant for component.",
-  "registryDependencies": [
-    "@uiable/separator"
-  ],
+  "registryDependencies": ["@uiable/separator"],
   "files": [
     {
       "path": "src/components/uiable/separator/separator-list.tsx",
-      "content": "// shadcn\r\nimport { Separator } from \"@/components/ui/separator\";\r\n\r\n//  ------------------------------ | SEPARATOR - LIST | ------------------------------  //\r\n\r\nexport function SeparatorList() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-2\">\r\n      <dl className=\"flex items-center justify-between\">\r\n        <dt>Item 1</dt>\r\n        <dd className=\"text-muted-foreground\">Value 1</dd>\r\n      </dl>\r\n      <Separator />\r\n      <dl className=\"flex items-center justify-between\">\r\n        <dt>Item 2</dt>\r\n        <dd className=\"text-muted-foreground\">Value 2</dd>\r\n      </dl>\r\n      <Separator />\r\n      <dl className=\"flex items-center justify-between\">\r\n        <dt>Item 3</dt>\r\n        <dd className=\"text-muted-foreground\">Value 3</dd>\r\n      </dl>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Separator } from \"@/components/ui/separator\"\n\n//  ------------------------------ | SEPARATOR - LIST | ------------------------------  //\n\nexport function SeparatorList() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-2\">\n      <dl className=\"flex items-center justify-between\">\n        <dt>Item 1</dt>\n        <dd className=\"text-muted-foreground\">Value 1</dd>\n      </dl>\n      <Separator />\n      <dl className=\"flex items-center justify-between\">\n        <dt>Item 2</dt>\n        <dd className=\"text-muted-foreground\">Value 2</dd>\n      </dl>\n      <Separator />\n      <dl className=\"flex items-center justify-between\">\n        <dt>Item 3</dt>\n        <dd className=\"text-muted-foreground\">Value 3</dd>\n      </dl>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/separator/separator-list.tsx"
     }
   ],
-  "categories": [
-    "separator"
-  ],
+  "categories": ["separator"],
   "type": "registry:ui"
 }

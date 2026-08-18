@@ -14,7 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-// assets
+// third-party
 import {
   ArrowDown2,
   TextBold,

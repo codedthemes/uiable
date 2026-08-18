@@ -1,12 +1,13 @@
 import { useState } from "react"
-// assets
-import { CheckCircle2, RefreshCw, Terminal, Trash2 } from "lucide-react"
 
 // shadcn
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
+
+// assets
+import { CheckCircle2, RefreshCw, Terminal, Trash2 } from "lucide-react"
 
 interface LogEntry {
   line: number

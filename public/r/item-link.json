@@ -3,22 +3,16 @@
   "name": "item-link",
   "title": "Item Link",
   "description": "Item Link variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/item"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/item"],
   "files": [
     {
       "path": "src/components/uiable/item/item-link.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Item,\r\n  ItemActions,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemTitle\r\n} from \"@/components/ui/item\";\r\n\r\n// assets\r\nimport { ChevronRightIcon, ExternalLinkIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ITEM - LINK | ------------------------------  //\r\n\r\nexport function ItemLink() {\r\n  return (\r\n    <div className=\"flex w-full max-w-md flex-col gap-4\">\r\n      <Item render={<a href=\"#\" />}>\r\n        <ItemContent>\r\n          <ItemTitle>Visit our documentation</ItemTitle>\r\n          <ItemDescription>\r\n            Learn how to get started with our components.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <ChevronRightIcon className=\"size-4\" />\r\n        </ItemActions>\r\n      </Item>\r\n      <Item\r\n        variant=\"outline\"\r\n        render={<a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" />}\r\n      >\r\n        <ItemContent>\r\n          <ItemTitle>External resource</ItemTitle>\r\n          <ItemDescription>\r\n            Opens in a new tab with security attributes.\r\n          </ItemDescription>\r\n        </ItemContent>\r\n        <ItemActions>\r\n          <ExternalLinkIcon className=\"size-4\" />\r\n        </ItemActions>\r\n      </Item>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Item,\n  ItemActions,\n  ItemContent,\n  ItemDescription,\n  ItemTitle,\n} from \"@/components/ui/item\"\n\n// assets\nimport { ChevronRightIcon, ExternalLinkIcon } from \"lucide-react\"\n\n//  ------------------------------ | ITEM - LINK | ------------------------------  //\n\nexport function ItemLink() {\n  return (\n    <div className=\"flex w-full max-w-md flex-col gap-4\">\n      <Item render={<a href=\"#\" />}>\n        <ItemContent>\n          <ItemTitle>Visit our documentation</ItemTitle>\n          <ItemDescription>\n            Learn how to get started with our components.\n          </ItemDescription>\n        </ItemContent>\n        <ItemActions>\n          <ChevronRightIcon className=\"size-4\" />\n        </ItemActions>\n      </Item>\n      <Item\n        variant=\"outline\"\n        render={<a href=\"#\" target=\"_blank\" rel=\"noopener noreferrer\" />}\n      >\n        <ItemContent>\n          <ItemTitle>External resource</ItemTitle>\n          <ItemDescription>\n            Opens in a new tab with security attributes.\n          </ItemDescription>\n        </ItemContent>\n        <ItemActions>\n          <ExternalLinkIcon className=\"size-4\" />\n        </ItemActions>\n      </Item>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/item/item-link.tsx"
     }
   ],
-  "categories": [
-    "item"
-  ],
+  "categories": ["item"],
   "type": "registry:ui"
 }

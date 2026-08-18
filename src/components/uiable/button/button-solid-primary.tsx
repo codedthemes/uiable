@@ -1,12 +1,12 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
 //  ------------------------------ | BUTTON SOLID PRIMARY | ------------------------------  //
 
 export default function ButtonSolidPrimary() {
   return (
-    <Button className="bg-primary text-white hover:bg-primary-600">
+    <Button className="hover:bg-primary-600 bg-primary text-white">
       Primary
     </Button>
-  );
+  )
 }

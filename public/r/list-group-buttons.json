@@ -3,19 +3,15 @@
   "name": "list-group-buttons",
   "title": "List Group Buttons",
   "description": "List Group Buttons variant for component.",
-  "registryDependencies": [
-    "@uiable/button"
-  ],
+  "registryDependencies": ["@uiable/button"],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-buttons.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | LIST GROUP - BUTTONS | ------------------------------  //\r\n\r\nexport default function ListGroupButtons() {\r\n  return (\r\n    <div className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card overflow-hidden\">\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start hover:bg-muted/50 border-none font-normal\"\r\n      >\r\n        Cras justo odio\r\n      </Button>\r\n      <Button\r\n        variant=\"default\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start border-none font-normal bg-primary text-primary-foreground\"\r\n      >\r\n        Dapibus ac facilisis in\r\n      </Button>\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start hover:bg-muted/50 border-none font-normal\"\r\n      >\r\n        Morbi leo risus\r\n      </Button>\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start hover:bg-muted/50 border-none font-normal\"\r\n      >\r\n        Porta ac consectetur ac\r\n      </Button>\r\n      <Button\r\n        variant=\"ghost\"\r\n        className=\"block w-full text-left py-4 px-6.25 h-auto rounded-none justify-start border-none font-normal opacity-50 cursor-not-allowed\"\r\n        disabled\r\n      >\r\n        Vestibulum at eros\r\n      </Button>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | LIST GROUP - BUTTONS | ------------------------------  //\n\nexport default function ListGroupButtons() {\n  return (\n    <div className=\"divide-border-border divide-y overflow-hidden rounded-lg border border-border bg-card\">\n      <Button\n        variant=\"ghost\"\n        className=\"block h-auto w-full justify-start rounded-none border-none px-6.25 py-4 text-left font-normal hover:bg-muted/50\"\n      >\n        Cras justo odio\n      </Button>\n      <Button\n        variant=\"default\"\n        className=\"block h-auto w-full justify-start rounded-none border-none bg-primary px-6.25 py-4 text-left font-normal text-primary-foreground\"\n      >\n        Dapibus ac facilisis in\n      </Button>\n      <Button\n        variant=\"ghost\"\n        className=\"block h-auto w-full justify-start rounded-none border-none px-6.25 py-4 text-left font-normal hover:bg-muted/50\"\n      >\n        Morbi leo risus\n      </Button>\n      <Button\n        variant=\"ghost\"\n        className=\"block h-auto w-full justify-start rounded-none border-none px-6.25 py-4 text-left font-normal hover:bg-muted/50\"\n      >\n        Porta ac consectetur ac\n      </Button>\n      <Button\n        variant=\"ghost\"\n        className=\"block h-auto w-full cursor-not-allowed justify-start rounded-none border-none px-6.25 py-4 text-left font-normal opacity-50\"\n        disabled\n      >\n        Vestibulum at eros\n      </Button>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/list-group/list-group-buttons.tsx"
     }
   ],
-  "categories": [
-    "list-group"
-  ],
+  "categories": ["list-group"],
   "type": "registry:ui"
 }

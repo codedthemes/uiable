@@ -1,16 +1,18 @@
 "use client"
 
-import Link from "next/link"
+// next
 import dynamic from "next/dynamic"
+import Link from "next/link"
 
+// project-imports
 // project imports
 import branding from "@/branding.json"
 import { cn } from "@/lib/utils"
 
 // assets
-const brandFavLogo = "/assets/images/brand/favicon.svg"
-const brandLogoDark = "/assets/images/brand/logo-white.svg"
-const brandLogoLight = "/assets/images/brand/logo-dark.svg"
+const brandFavLogo = "https://cdn.uiable.com/brand/favicon.svg"
+const brandLogoDark = "https://cdn.uiable.com/brand/logo-white.svg"
+const brandLogoLight = "https://cdn.uiable.com/brand/logo-dark.svg"
 
 const LocalLightLogo = dynamic<{ className?: string }>(
   () =>
@@ -58,7 +60,11 @@ interface LogoProps {
 
 export default function Logo({ className }: LogoProps) {
   return (
-    <Link href="/" aria-label={`${branding.brandName} Home`} className={cn("group flex items-center gap-3", className)}>
+    <Link
+      href="/"
+      aria-label={`${branding.brandName} Home`}
+      className={cn("group flex items-center gap-3", className)}
+    >
       <div className="hidden dark:block">
         <LocalDarkLogo
           className={cn("group-data-[collapsible=icon]:hidden", className)}

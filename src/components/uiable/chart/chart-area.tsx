@@ -1,6 +1,3 @@
-// third party
-import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
-
 // shadcn
 import {
   ChartConfig,
@@ -8,6 +5,10 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+
+// third-party
+// third party
+import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 const chartData = [
   { month: "January", inbound: 1420, outbound: 840 },

@@ -1,5 +1,6 @@
 "use client"
 
+// next
 import Link from "next/link"
 
 // shadcn
@@ -10,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+// project-imports
 // project imports
 import branding from "@/branding.json"
 import { SectionHeader } from "@/components/uiable/blocks/landing/components"
@@ -109,9 +111,7 @@ export default function FAQ() {
       />
 
       {/* Accordion Component with item gaps */}
-      <Accordion
-        className="flex w-full flex-col gap-4"
-      >
+      <Accordion className="flex w-full flex-col gap-4">
         {faqItems.map((item, index) => (
           <AccordionItem
             key={index}

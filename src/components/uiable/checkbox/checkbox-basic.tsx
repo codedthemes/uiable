@@ -1,6 +1,6 @@
 // shadcn
-import { Checkbox } from "@/components/ui/checkbox";
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Checkbox } from "@/components/ui/checkbox"
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
 
 //  ------------------------------ | CHECKBOX - BASIC | ------------------------------  //
 
@@ -14,5 +14,5 @@ export function CheckboxBasic() {
         </FieldLabel>
       </Field>
     </FieldGroup>
-  );
+  )
 }

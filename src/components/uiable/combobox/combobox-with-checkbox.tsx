@@ -2,9 +2,6 @@
 
 import { Fragment } from "react"
 
-// third party
-import { Combobox as ComboboxPrimitive } from "@base-ui/react"
-
 // shadcn
 import {
   Combobox,
@@ -18,6 +15,11 @@ import {
   useComboboxAnchor,
 } from "@/components/ui/combobox"
 
+// third-party
+// third party
+import { Combobox as ComboboxPrimitive } from "@base-ui/react"
+
+// project-imports
 // project
 import { cn } from "@/lib/utils"
 

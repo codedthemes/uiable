@@ -2,8 +2,8 @@
 import {
   Collapsible,
   CollapsibleContent,
-  CollapsibleTrigger
-} from "@/components/ui/collapsible";
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
 import {
   Sidebar,
   SidebarContent,
@@ -13,11 +13,11 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarProvider
-} from "@/components/ui/sidebar";
+  SidebarProvider,
+} from "@/components/ui/sidebar"
 
 // assets
-import { ChevronDownIcon, LifeBuoyIcon, SendIcon } from "lucide-react";
+import { ChevronDownIcon, LifeBuoyIcon, SendIcon } from "lucide-react"
 
 //  ------------------------------ | SIDEBAR - GROUP COLLAPSIBLE | ------------------------------  //
 
@@ -30,7 +30,7 @@ export default function AppSidebar() {
             <SidebarGroup>
               <SidebarGroupLabel
                 render={<CollapsibleTrigger />}
-                className="hover:bg-sidebar-accent hover:text-sidebar-accent-foreground text-base py-3"
+                className="py-3 text-base hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
               >
                 Help
                 <ChevronDownIcon className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
@@ -58,5 +58,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

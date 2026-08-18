@@ -1,8 +1,6 @@
 "use client"
 
 import { useRef, useState } from "react"
-// third party
-import { AnimatePresence, motion, type Variants } from "framer-motion"
 
 // shadcn
 import {
@@ -10,6 +8,10 @@ import {
   InputOTPGroup,
   InputOTPSlot,
 } from "@/components/ui/input-otp"
+
+// third-party
+// third party
+import { AnimatePresence, motion, type Variants } from "framer-motion"
 
 const filledAnimate = {
   scale: [1, 1.15, 0.9, 1.04, 1] as number[],

@@ -3,21 +3,15 @@
   "name": "input-badge",
   "title": "Input Badge",
   "description": "Input Badge variant for component.",
-  "registryDependencies": [
-    "@uiable/badge",
-    "@uiable/field",
-    "@uiable/input"
-  ],
+  "registryDependencies": ["@uiable/badge", "@uiable/field", "@uiable/input"],
   "files": [
     {
       "path": "src/components/uiable/input/input-badge.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - BADGE | ------------------------------  //\r\n\r\nexport function InputBadge() {\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"input-badge\">\r\n        Webhook URL{\" \"}\r\n        <Badge variant=\"default\" className=\"ml-auto\">\r\n          Beta\r\n        </Badge>\r\n      </FieldLabel>\r\n      <Input\r\n        id=\"input-badge\"\r\n        type=\"url\"\r\n        placeholder=\"https://api.example.com/webhook\"\r\n      />\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\nimport { Field, FieldLabel } from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"\n\n//  ------------------------------ | INPUT - BADGE | ------------------------------  //\n\nexport function InputBadge() {\n  return (\n    <Field>\n      <FieldLabel htmlFor=\"input-badge\">\n        Webhook URL{\" \"}\n        <Badge variant=\"default\" className=\"ml-auto\">\n          Beta\n        </Badge>\n      </FieldLabel>\n      <Input\n        id=\"input-badge\"\n        type=\"url\"\n        placeholder=\"https://api.example.com/webhook\"\n      />\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input/input-badge.tsx"
     }
   ],
-  "categories": [
-    "input"
-  ],
+  "categories": ["input"],
   "type": "registry:ui"
 }

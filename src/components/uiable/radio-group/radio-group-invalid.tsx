@@ -4,9 +4,9 @@ import {
   FieldDescription,
   FieldLabel,
   FieldLegend,
-  FieldSet
-} from "@/components/ui/field";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+  FieldSet,
+} from "@/components/ui/field"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 //  ------------------------------ | RADIO GROUP - INVALID | ------------------------------  //
 
@@ -38,5 +38,5 @@ export function RadioGroupInvalid() {
         </Field>
       </RadioGroup>
     </FieldSet>
-  );
+  )
 }

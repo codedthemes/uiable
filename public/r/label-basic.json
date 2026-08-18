@@ -3,20 +3,15 @@
   "name": "label-basic",
   "title": "Label Basic",
   "description": "Label Basic variant for component.",
-  "registryDependencies": [
-    "@uiable/checkbox",
-    "@uiable/label"
-  ],
+  "registryDependencies": ["@uiable/checkbox", "@uiable/label"],
   "files": [
     {
       "path": "src/components/uiable/label/label-basic.tsx",
-      "content": "// shadcn\r\nimport { Checkbox } from \"@/components/ui/checkbox\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\n//  ------------------------------ | LABEL - BASIC | ------------------------------  //\r\n\r\nexport default function LabelBasic() {\r\n  return (\r\n    <div className=\"flex items-center space-x-2 p-8 bg-card border rounded-xl border-border \">\r\n      <Checkbox id=\"terms\" />\r\n      <Label\r\n        htmlFor=\"terms\"\r\n        className=\"text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer\"\r\n      >\r\n        Accept terms and conditions\r\n      </Label>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Checkbox } from \"@/components/ui/checkbox\"\nimport { Label } from \"@/components/ui/label\"\n\n//  ------------------------------ | LABEL - BASIC | ------------------------------  //\n\nexport default function LabelBasic() {\n  return (\n    <div className=\"flex items-center space-x-2 rounded-xl border border-border bg-card p-8\">\n      <Checkbox id=\"terms\" />\n      <Label\n        htmlFor=\"terms\"\n        className=\"cursor-pointer text-base leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"\n      >\n        Accept terms and conditions\n      </Label>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/label/label-basic.tsx"
     }
   ],
-  "categories": [
-    "label"
-  ],
+  "categories": ["label"],
   "type": "registry:ui"
 }

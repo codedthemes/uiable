@@ -2,9 +2,8 @@
 
 import * as React from "react"
 import { useEffect, useState } from "react"
-import Autoplay from "embla-carousel-autoplay"
-import { AnimatePresence, motion } from "framer-motion"
 
+// shadcn
 import { Button } from "@/components/ui/button"
 import {
   Carousel,
@@ -12,6 +11,10 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel"
+
+// third-party
+import Autoplay from "embla-carousel-autoplay"
+import { AnimatePresence, motion } from "framer-motion"
 
 const navLinks = [
   { name: "Home", href: "#" },

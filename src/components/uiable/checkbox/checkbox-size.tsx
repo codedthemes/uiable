@@ -1,9 +1,11 @@
-// third party
-import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox"
-
 // shadcn
 import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
 
+// third-party
+// third party
+import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox"
+
+// project-imports
 // project imports
 import { cn } from "@/lib/utils"
 

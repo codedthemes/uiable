@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/typography/typography-lead.tsx",
-      "content": "//  ------------------------------ | TYPOGRAPHY - LEAD | ------------------------------  //\r\n\r\nexport function TypographyLead() {\r\n  return (\r\n    <p className=\"text-muted-foreground text-xl\">\r\n      A modal dialog that interrupts the user with important content and expects\r\n      a response.\r\n    </p>\r\n  );\r\n}\r\n",
+      "content": "//  ------------------------------ | TYPOGRAPHY - LEAD | ------------------------------  //\n\nexport function TypographyLead() {\n  return (\n    <p className=\"text-xl text-muted-foreground\">\n      A modal dialog that interrupts the user with important content and expects\n      a response.\n    </p>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/typography/typography-lead.tsx"
     }
   ],
-  "categories": [
-    "typography"
-  ],
+  "categories": ["typography"],
   "type": "registry:ui"
 }

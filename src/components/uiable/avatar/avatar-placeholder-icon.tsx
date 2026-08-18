@@ -1,8 +1,8 @@
-// assets
-import { BotIcon, BuildingIcon, SparklesIcon, UserIcon } from "lucide-react"
-
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+
+// assets
+import { BotIcon, BuildingIcon, SparklesIcon, UserIcon } from "lucide-react"
 
 //  ------------------------------ | AVATAR - PLACEHOLDER ICON | ------------------------------  //
 

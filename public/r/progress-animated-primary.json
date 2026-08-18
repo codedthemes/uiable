@@ -3,22 +3,16 @@
   "name": "progress-animated-primary",
   "title": "Progress Animated Primary",
   "description": "Progress Animated Primary variant for component.",
-  "dependencies": [
-    "@base-ui/react"
-  ],
-  "registryDependencies": [
-    "@uiable/progress"
-  ],
+  "dependencies": ["@base-ui/react"],
+  "registryDependencies": ["@uiable/progress"],
   "files": [
     {
       "path": "src/components/uiable/progress/progress-animated-primary.tsx",
-      "content": "// shadcn\r\nimport { ProgressIndicator, ProgressTrack } from \"@/components/ui/progress\";\r\n\r\n// third party\r\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - ANIMATED PRIMARY | ------------------------------  //\r\n\r\nexport default function ProgressAnimatedPrimary() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <ProgressPrimitive.Root value={70}>\r\n        <ProgressTrack className=\"h-4 bg-muted/20 dark:bg-muted/10 rounded-lg\">\r\n          <ProgressIndicator className=\"bg-primary rounded-lg animate-progress-bar-stripes bg-[linear-gradient(45deg,rgba(255,255,255,.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.15)_50%,rgba(255,255,255,.15)_75%,transparent_75%,transparent)] bg-[length:16px_16px]\" />\r\n        </ProgressTrack>\r\n      </ProgressPrimitive.Root>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { ProgressIndicator, ProgressTrack } from \"@/components/ui/progress\"\n\n// third-party\n// third party\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\"\n\n//  ------------------------------ | PROGRESS - ANIMATED PRIMARY | ------------------------------  //\n\nexport default function ProgressAnimatedPrimary() {\n  return (\n    <div className=\"w-full\">\n      <ProgressPrimitive.Root value={70}>\n        <ProgressTrack className=\"h-4 rounded-lg bg-muted/20 dark:bg-muted/10\">\n          <ProgressIndicator className=\"animate-progress-bar-stripes rounded-lg bg-primary bg-[linear-gradient(45deg,rgba(255,255,255,.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.15)_50%,rgba(255,255,255,.15)_75%,transparent_75%,transparent)] bg-[length:16px_16px]\" />\n        </ProgressTrack>\n      </ProgressPrimitive.Root>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-animated-primary.tsx"
     }
   ],
-  "categories": [
-    "progress"
-  ],
+  "categories": ["progress"],
   "type": "registry:ui"
 }

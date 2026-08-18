@@ -3,23 +3,16 @@
   "name": "sidebar-footer",
   "title": "Sidebar Footer",
   "description": "Sidebar Footer variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/dropdown-menu",
-    "@uiable/sidebar"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/dropdown-menu", "@uiable/sidebar"],
   "files": [
     {
       "path": "src/components/uiable/sidebar/sidebar-footer.tsx",
-      "content": "// shadcn\r\nimport {\r\n  DropdownMenu,\r\n  DropdownMenuContent,\r\n  DropdownMenuItem,\r\n  DropdownMenuTrigger\r\n} from \"@/components/ui/dropdown-menu\";\r\nimport {\r\n  Sidebar,\r\n  SidebarContent,\r\n  SidebarFooter,\r\n  SidebarHeader,\r\n  SidebarInset,\r\n  SidebarMenu,\r\n  SidebarMenuButton,\r\n  SidebarMenuItem,\r\n  SidebarProvider,\r\n  SidebarTrigger\r\n} from \"@/components/ui/sidebar\";\r\n\r\n// assets\r\nimport { ChevronUpIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | SIDEBAR - FOOTER | ------------------------------  //\r\n\r\nexport default function AppSidebar() {\r\n  return (\r\n    <SidebarProvider className=\"relative min-h-[450px]\">\r\n      <Sidebar className=\"absolute h-[450px]\">\r\n        <SidebarHeader />\r\n        <SidebarContent />\r\n        <SidebarFooter>\r\n          <SidebarMenu>\r\n            <SidebarMenuItem>\r\n              <DropdownMenu>\r\n                <DropdownMenuTrigger\r\n                  render={\r\n                    <SidebarMenuButton className=\"data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground\" />\r\n                  }\r\n                >\r\n                  Username\r\n                  <ChevronUpIcon className=\"ml-auto\" />\r\n                </DropdownMenuTrigger>\r\n                <DropdownMenuContent\r\n                  side=\"top\"\r\n                  className=\"w-(--radix-popper-anchor-width)\"\r\n                >\r\n                  <DropdownMenuItem>\r\n                    <span>Account</span>\r\n                  </DropdownMenuItem>\r\n                  <DropdownMenuItem>\r\n                    <span>Billing</span>\r\n                  </DropdownMenuItem>\r\n                  <DropdownMenuItem>\r\n                    <span>Sign out</span>\r\n                  </DropdownMenuItem>\r\n                </DropdownMenuContent>\r\n              </DropdownMenu>\r\n            </SidebarMenuItem>\r\n          </SidebarMenu>\r\n        </SidebarFooter>\r\n      </Sidebar>\r\n      <SidebarInset>\r\n        <header className=\"flex h-12 items-center justify-between px-4\">\r\n          <SidebarTrigger />\r\n        </header>\r\n      </SidebarInset>\r\n    </SidebarProvider>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"\nimport {\n  Sidebar,\n  SidebarContent,\n  SidebarFooter,\n  SidebarHeader,\n  SidebarInset,\n  SidebarMenu,\n  SidebarMenuButton,\n  SidebarMenuItem,\n  SidebarProvider,\n  SidebarTrigger,\n} from \"@/components/ui/sidebar\"\n\n// assets\nimport { ChevronUpIcon } from \"lucide-react\"\n\n//  ------------------------------ | SIDEBAR - FOOTER | ------------------------------  //\n\nexport default function AppSidebar() {\n  return (\n    <SidebarProvider className=\"relative min-h-[450px]\">\n      <Sidebar className=\"absolute h-[450px]\">\n        <SidebarHeader />\n        <SidebarContent />\n        <SidebarFooter>\n          <SidebarMenu>\n            <SidebarMenuItem>\n              <DropdownMenu>\n                <DropdownMenuTrigger\n                  render={\n                    <SidebarMenuButton className=\"data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground\" />\n                  }\n                >\n                  Username\n                  <ChevronUpIcon className=\"ml-auto\" />\n                </DropdownMenuTrigger>\n                <DropdownMenuContent\n                  side=\"top\"\n                  className=\"w-(--radix-popper-anchor-width)\"\n                >\n                  <DropdownMenuItem>\n                    <span>Account</span>\n                  </DropdownMenuItem>\n                  <DropdownMenuItem>\n                    <span>Billing</span>\n                  </DropdownMenuItem>\n                  <DropdownMenuItem>\n                    <span>Sign out</span>\n                  </DropdownMenuItem>\n                </DropdownMenuContent>\n              </DropdownMenu>\n            </SidebarMenuItem>\n          </SidebarMenu>\n        </SidebarFooter>\n      </Sidebar>\n      <SidebarInset>\n        <header className=\"flex h-12 items-center justify-between px-4\">\n          <SidebarTrigger />\n        </header>\n      </SidebarInset>\n    </SidebarProvider>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/sidebar/sidebar-footer.tsx"
     }
   ],
-  "categories": [
-    "sidebar"
-  ],
+  "categories": ["sidebar"],
   "type": "registry:ui"
 }

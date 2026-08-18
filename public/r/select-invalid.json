@@ -3,20 +3,15 @@
   "name": "select-invalid",
   "title": "Select Invalid",
   "description": "Select Invalid variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/select"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/select"],
   "files": [
     {
       "path": "src/components/uiable/select/select-invalid.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldError, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue,\r\n} from \"@/components/ui/select\";\r\n\r\n// constants\r\nconst items = [\r\n  { label: \"Select a fruit\", value: null },\r\n  { label: \"Apple\", value: \"apple\" },\r\n  { label: \"Banana\", value: \"banana\" },\r\n  { label: \"Blueberry\", value: \"blueberry\" },\r\n];\r\n\r\n//  ------------------------------ | SELECT - INVALID | ------------------------------  //\r\n\r\nexport function SelectInvalid() {\r\n  return (\r\n    <Field data-invalid className=\"w-full max-w-48\">\r\n      <FieldLabel>Fruit</FieldLabel>\r\n      <Select items={items}>\r\n        <SelectTrigger aria-invalid>\r\n          <SelectValue />\r\n        </SelectTrigger>\r\n        <SelectContent>\r\n          <SelectGroup>\r\n            {items.map((item) => (\r\n              <SelectItem key={item.value} value={item.value}>\r\n                {item.label}\r\n              </SelectItem>\r\n            ))}\r\n          </SelectGroup>\r\n        </SelectContent>\r\n      </Select>\r\n      <FieldError>Please select a fruit.</FieldError>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldError, FieldLabel } from \"@/components/ui/field\"\nimport {\n  Select,\n  SelectContent,\n  SelectGroup,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from \"@/components/ui/select\"\n\n// constants\nconst items = [\n  { label: \"Select a fruit\", value: null },\n  { label: \"Apple\", value: \"apple\" },\n  { label: \"Banana\", value: \"banana\" },\n  { label: \"Blueberry\", value: \"blueberry\" },\n]\n\n//  ------------------------------ | SELECT - INVALID | ------------------------------  //\n\nexport function SelectInvalid() {\n  return (\n    <Field data-invalid className=\"w-full max-w-48\">\n      <FieldLabel>Fruit</FieldLabel>\n      <Select items={items}>\n        <SelectTrigger aria-invalid>\n          <SelectValue />\n        </SelectTrigger>\n        <SelectContent>\n          <SelectGroup>\n            {items.map((item) => (\n              <SelectItem key={item.value} value={item.value}>\n                {item.label}\n              </SelectItem>\n            ))}\n          </SelectGroup>\n        </SelectContent>\n      </Select>\n      <FieldError>Please select a fruit.</FieldError>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/select/select-invalid.tsx"
     }
   ],
-  "categories": [
-    "select"
-  ],
+  "categories": ["select"],
   "type": "registry:ui"
 }

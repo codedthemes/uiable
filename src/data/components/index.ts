@@ -1,4 +1,5 @@
 // project
+// project-imports
 import { accordionInfo } from "./accordion"
 import { alertInfo } from "./alert"
 import { alertDialogInfo } from "./alert-dialog"
@@ -64,9 +65,10 @@ import { textareaInfo } from "./textarea"
 import { toggleInfo } from "./toggle"
 import { toggleGroupInfo } from "./toggle-group"
 import { tooltipInfo } from "./tooltip"
+import { typographyInfo } from "./typography"
+
 // types
 import { CategoryInfo } from "./types"
-import { typographyInfo } from "./typography"
 
 export const categoryInfoMap: Record<string, CategoryInfo> = {
   accordion: accordionInfo,

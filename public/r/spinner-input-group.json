@@ -3,23 +3,16 @@
   "name": "spinner-input-group",
   "title": "Spinner Input Group",
   "description": "Spinner Input Group variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/input-group",
-    "@uiable/spinner"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/input-group", "@uiable/spinner"],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-input-group.tsx",
-      "content": "// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput,\r\n  InputGroupTextarea\r\n} from \"@/components/ui/input-group\";\r\nimport { Spinner } from \"@/components/ui/spinner\";\r\n\r\n// assets\r\nimport { ArrowUpIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | SPINNER - INPUT GROUP | ------------------------------  //\r\n\r\nexport function SpinnerInputGroup() {\r\n  return (\r\n    <div className=\"flex w-full max-w-md flex-col gap-4\">\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Send a message...\" disabled />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <Spinner />\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup>\r\n        <InputGroupTextarea placeholder=\"Send a message...\" disabled />\r\n        <InputGroupAddon align=\"block-end\">\r\n          <Spinner /> Validating...\r\n          <InputGroupButton className=\"ml-auto\" variant=\"default\">\r\n            <ArrowUpIcon />\r\n            <span className=\"sr-only\">Send</span>\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n  InputGroupTextarea,\n} from \"@/components/ui/input-group\"\nimport { Spinner } from \"@/components/ui/spinner\"\n\n// assets\nimport { ArrowUpIcon } from \"lucide-react\"\n\n//  ------------------------------ | SPINNER - INPUT GROUP | ------------------------------  //\n\nexport function SpinnerInputGroup() {\n  return (\n    <div className=\"flex w-full max-w-md flex-col gap-4\">\n      <InputGroup>\n        <InputGroupInput placeholder=\"Send a message...\" disabled />\n        <InputGroupAddon align=\"inline-end\">\n          <Spinner />\n        </InputGroupAddon>\n      </InputGroup>\n      <InputGroup>\n        <InputGroupTextarea placeholder=\"Send a message...\" disabled />\n        <InputGroupAddon align=\"block-end\">\n          <Spinner /> Validating...\n          <InputGroupButton className=\"ml-auto\" variant=\"default\">\n            <ArrowUpIcon />\n            <span className=\"sr-only\">Send</span>\n          </InputGroupButton>\n        </InputGroupAddon>\n      </InputGroup>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/spinner/spinner-input-group.tsx"
     }
   ],
-  "categories": [
-    "spinner"
-  ],
+  "categories": ["spinner"],
   "type": "registry:ui"
 }
