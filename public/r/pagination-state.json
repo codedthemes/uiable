@@ -3,19 +3,15 @@
   "name": "pagination-state",
   "title": "Pagination State",
   "description": "Pagination State variant for component.",
-  "registryDependencies": [
-    "@uiable/pagination"
-  ],
+  "registryDependencies": ["@uiable/pagination"],
   "files": [
     {
       "path": "src/components/uiable/pagination/pagination-state.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Pagination,\r\n  PaginationContent,\r\n  PaginationItem,\r\n  PaginationLink,\r\n  PaginationNext,\r\n  PaginationPrevious\r\n} from \"@/components/ui/pagination\";\r\n\r\n//  ------------------------------ | PAGINATION - STATE | ------------------------------  //\r\n\r\nexport default function PaginationState() {\r\n  return (\r\n    <Pagination className=\"justify-start\">\r\n      <PaginationContent>\r\n        <PaginationItem>\r\n          <PaginationPrevious\r\n            href=\"#\"\r\n            className=\"pointer-events-none opacity-50\"\r\n          />\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">1</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink\r\n            href=\"#\"\r\n            isActive\r\n            className=\"bg-primary text-primary-foreground\"\r\n          >\r\n            2\r\n          </PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">3</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationNext href=\"#\" />\r\n        </PaginationItem>\r\n      </PaginationContent>\r\n    </Pagination>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Pagination,\n  PaginationContent,\n  PaginationItem,\n  PaginationLink,\n  PaginationNext,\n  PaginationPrevious,\n} from \"@/components/ui/pagination\"\n\n//  ------------------------------ | PAGINATION - STATE | ------------------------------  //\n\nexport default function PaginationState() {\n  return (\n    <Pagination className=\"justify-start\">\n      <PaginationContent>\n        <PaginationItem>\n          <PaginationPrevious\n            href=\"#\"\n            className=\"pointer-events-none opacity-50\"\n          />\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\">1</PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink\n            href=\"#\"\n            isActive\n            className=\"bg-primary text-primary-foreground\"\n          >\n            2\n          </PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\">3</PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationNext href=\"#\" />\n        </PaginationItem>\n      </PaginationContent>\n    </Pagination>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/pagination/pagination-state.tsx"
     }
   ],
-  "categories": [
-    "pagination"
-  ],
+  "categories": ["pagination"],
   "type": "registry:ui"
 }

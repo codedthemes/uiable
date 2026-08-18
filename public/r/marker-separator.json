@@ -3,19 +3,15 @@
   "name": "marker-separator",
   "title": "Marker Separator",
   "description": "Marker Separator variant for component.",
-  "registryDependencies": [
-    "@uiable/marker"
-  ],
+  "registryDependencies": ["@uiable/marker"],
   "files": [
     {
       "path": "src/components/uiable/marker/marker-separator.tsx",
-      "content": "// shadcn\r\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - SEPARATOR | ------------------------------  //\r\n\r\nexport function MarkerSeparator() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>Today</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>Worked for 42s</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>Conversation compacted</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\n\n//  ------------------------------ | MARKER - SEPARATOR | ------------------------------  //\n\nexport function MarkerSeparator() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\n      <Marker variant=\"separator\">\n        <MarkerContent>Today</MarkerContent>\n      </Marker>\n      <Marker variant=\"separator\">\n        <MarkerContent>Worked for 42s</MarkerContent>\n      </Marker>\n      <Marker variant=\"separator\">\n        <MarkerContent>Conversation compacted</MarkerContent>\n      </Marker>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/marker/marker-separator.tsx"
     }
   ],
-  "categories": [
-    "marker"
-  ],
+  "categories": ["marker"],
   "type": "registry:ui"
 }

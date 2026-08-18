@@ -1,22 +1,23 @@
-"use client";
+"use client"
 
 // shadcn
 import {
   Field,
   FieldDescription,
   FieldGroup,
-  FieldLabel
-} from "@/components/ui/field";
+  FieldLabel,
+} from "@/components/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-  InputGroupText
-} from "@/components/ui/input-group";
+  InputGroupText,
+} from "@/components/ui/input-group"
 
+// third-party
 // third party
-import { toast } from "sonner";
+import { toast } from "sonner"
 
 // assets
 import {
@@ -26,8 +27,8 @@ import {
   MicIcon,
   RadioIcon,
   SearchIcon,
-  StarIcon
-} from "lucide-react";
+  StarIcon,
+} from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - WITH ADDONS | ------------------------------  //
 
@@ -76,7 +77,7 @@ export function InputGroupWithAddons() {
           <InputGroupInput id="input-addon-20" />
           <InputGroupAddon align="block-start">
             <InputGroupText>First Name</InputGroupText>
-            <InfoIcon className="text-muted-foreground ml-auto" />
+            <InfoIcon className="ml-auto text-muted-foreground" />
           </InputGroupAddon>
         </InputGroup>
       </Field>
@@ -86,7 +87,7 @@ export function InputGroupWithAddons() {
           <InputGroupInput id="input-addon-21" />
           <InputGroupAddon align="block-end">
             <InputGroupText>20/240 characters</InputGroupText>
-            <InfoIcon className="text-muted-foreground ml-auto" />
+            <InfoIcon className="ml-auto text-muted-foreground" />
           </InputGroupAddon>
         </InputGroup>
       </Field>
@@ -136,5 +137,5 @@ export function InputGroupWithAddons() {
         </InputGroup>
       </Field>
     </FieldGroup>
-  );
+  )
 }

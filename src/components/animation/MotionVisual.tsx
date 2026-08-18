@@ -2,9 +2,11 @@
 
 import { CSSProperties } from "react"
 
+// third-party
 // third party
 import { motion } from "framer-motion"
 
+// project-imports
 // project imports
 import { LightFav, DarkFav } from "@/images/brand"
 import { AnimationBg } from "@/images/svg/landing"

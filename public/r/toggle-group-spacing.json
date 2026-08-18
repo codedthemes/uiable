@@ -3,19 +3,15 @@
   "name": "toggle-group-spacing",
   "title": "Toggle Group Spacing",
   "description": "Toggle Group Spacing variant for component.",
-  "registryDependencies": [
-    "@uiable/toggle-group"
-  ],
+  "registryDependencies": ["@uiable/toggle-group"],
   "files": [
     {
       "path": "src/components/uiable/toggle-group/toggle-group-spacing.tsx",
-      "content": "// shadcn\r\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\";\r\n\r\n//  ------------------------------ | TOGGLE GROUP - SPACING | ------------------------------  //\r\n\r\nexport function ToggleGroupSpacing() {\r\n  return (\r\n    <ToggleGroup size=\"sm\" defaultValue={[\"top\"]} variant=\"outline\" spacing={2}>\r\n      <ToggleGroupItem value=\"top\" aria-label=\"Toggle top\">\r\n        Top\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"bottom\" aria-label=\"Toggle bottom\">\r\n        Bottom\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"left\" aria-label=\"Toggle left\">\r\n        Left\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"right\" aria-label=\"Toggle right\">\r\n        Right\r\n      </ToggleGroupItem>\r\n    </ToggleGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\"\n\n//  ------------------------------ | TOGGLE GROUP - SPACING | ------------------------------  //\n\nexport function ToggleGroupSpacing() {\n  return (\n    <ToggleGroup size=\"sm\" defaultValue={[\"top\"]} variant=\"outline\" spacing={2}>\n      <ToggleGroupItem value=\"top\" aria-label=\"Toggle top\">\n        Top\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"bottom\" aria-label=\"Toggle bottom\">\n        Bottom\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"left\" aria-label=\"Toggle left\">\n        Left\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"right\" aria-label=\"Toggle right\">\n        Right\n      </ToggleGroupItem>\n    </ToggleGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/toggle-group/toggle-group-spacing.tsx"
     }
   ],
-  "categories": [
-    "toggle-group"
-  ],
+  "categories": ["toggle-group"],
   "type": "registry:ui"
 }

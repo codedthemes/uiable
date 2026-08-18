@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/typography/typography-muted.tsx",
-      "content": "//  ------------------------------ | TYPOGRAPHY - MUTED | ------------------------------  //\r\n\r\nexport function TypographyMuted() {\r\n  return <p className=\"text-muted-foreground\">Enter your email address.</p>;\r\n}\r\n",
+      "content": "//  ------------------------------ | TYPOGRAPHY - MUTED | ------------------------------  //\n\nexport function TypographyMuted() {\n  return <p className=\"text-muted-foreground\">Enter your email address.</p>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/typography/typography-muted.tsx"
     }
   ],
-  "categories": [
-    "typography"
-  ],
+  "categories": ["typography"],
   "type": "registry:ui"
 }

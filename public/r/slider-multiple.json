@@ -3,19 +3,15 @@
   "name": "slider-multiple",
   "title": "Slider Multiple",
   "description": "Slider Multiple variant for component.",
-  "registryDependencies": [
-    "@uiable/slider"
-  ],
+  "registryDependencies": ["@uiable/slider"],
   "files": [
     {
       "path": "src/components/uiable/slider/slider-multiple.tsx",
-      "content": "// shadcn\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n//  ------------------------------ | SLIDER - MULTIPLE | ------------------------------  //\r\n\r\nexport function SliderMultiple() {\r\n  return (\r\n    <Slider\r\n      defaultValue={[10, 20, 70]}\r\n      max={100}\r\n      step={10}\r\n      className=\"mx-auto w-full max-w-xs\"\r\n    />\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Slider } from \"@/components/ui/slider\"\n\n//  ------------------------------ | SLIDER - MULTIPLE | ------------------------------  //\n\nexport function SliderMultiple() {\n  return (\n    <Slider\n      defaultValue={[10, 20, 70]}\n      max={100}\n      step={10}\n      className=\"mx-auto w-full max-w-xs\"\n    />\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/slider/slider-multiple.tsx"
     }
   ],
-  "categories": [
-    "slider"
-  ],
+  "categories": ["slider"],
   "type": "registry:ui"
 }

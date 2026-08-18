@@ -3,20 +3,15 @@
   "name": "button-spinner",
   "title": "Button Spinner",
   "description": "Button Spinner variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/spinner"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/spinner"],
   "files": [
     {
       "path": "src/components/uiable/button/button-spinner.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Spinner } from \"@/components/ui/spinner\";\r\n\r\n//  ------------------------------ | BUTTON LOADING | ------------------------------  //\r\n\r\nexport default function ButtonLoading() {\r\n  return (\r\n    <div className=\"flex gap-2 flex-wrap justify-center\">\r\n      <Button disabled className=\"gap-1\">\r\n        <Spinner />\r\n        Generating\r\n      </Button>\r\n      <Button variant=\"secondary\" disabled className=\"gap-1\">\r\n        Downloading\r\n        <Spinner />\r\n      </Button>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { Spinner } from \"@/components/ui/spinner\"\n\n//  ------------------------------ | BUTTON LOADING | ------------------------------  //\n\nexport default function ButtonLoading() {\n  return (\n    <div className=\"flex flex-wrap justify-center gap-2\">\n      <Button disabled className=\"gap-1\">\n        <Spinner />\n        Generating\n      </Button>\n      <Button variant=\"secondary\" disabled className=\"gap-1\">\n        Downloading\n        <Spinner />\n      </Button>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-spinner.tsx"
     }
   ],
-  "categories": [
-    "button"
-  ],
+  "categories": ["button"],
   "type": "registry:ui"
 }

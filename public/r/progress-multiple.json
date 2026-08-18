@@ -3,22 +3,16 @@
   "name": "progress-multiple",
   "title": "Progress Multiple",
   "description": "Progress Multiple variant for component.",
-  "dependencies": [
-    "@base-ui/react"
-  ],
-  "registryDependencies": [
-    "@uiable/progress"
-  ],
+  "dependencies": ["@base-ui/react"],
+  "registryDependencies": ["@uiable/progress"],
   "files": [
     {
       "path": "src/components/uiable/progress/progress-multiple.tsx",
-      "content": "// shadcn\r\nimport { ProgressTrack } from \"@/components/ui/progress\";\r\n\r\n// third party\r\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\";\r\n\r\n//  ------------------------------ | PROGRESS - MULTIPLE | ------------------------------  //\r\n\r\nexport default function ProgressMultiple() {\r\n  return (\r\n    <div className=\"w-full\">\r\n      <ProgressPrimitive.Root value={null}>\r\n        <ProgressTrack className=\"h-4 bg-muted/20 dark:bg-muted/10 rounded-lg flex overflow-hidden\">\r\n          <div\r\n            className=\"bg-primary h-full first:rounded-l-lg last:rounded-r-lg shrink-0\"\r\n            style={{ width: \"15%\" }}\r\n            role=\"progressbar\"\r\n            aria-valuenow={15}\r\n            aria-valuemin={0}\r\n            aria-valuemax={100}\r\n          />\r\n          <div\r\n            className=\"bg-green-600 h-full first:rounded-l-lg last:rounded-r-lg shrink-0\"\r\n            style={{ width: \"30%\" }}\r\n            role=\"progressbar\"\r\n            aria-valuenow={30}\r\n            aria-valuemin={0}\r\n            aria-valuemax={100}\r\n          />\r\n          <div\r\n            className=\"bg-cyan-500 h-full first:rounded-l-lg last:rounded-r-lg shrink-0\"\r\n            style={{ width: \"20%\" }}\r\n            role=\"progressbar\"\r\n            aria-valuenow={20}\r\n            aria-valuemin={0}\r\n            aria-valuemax={100}\r\n          />\r\n        </ProgressTrack>\r\n      </ProgressPrimitive.Root>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { ProgressTrack } from \"@/components/ui/progress\"\n\n// third-party\n// third party\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\"\n\n//  ------------------------------ | PROGRESS - MULTIPLE | ------------------------------  //\n\nexport default function ProgressMultiple() {\n  return (\n    <div className=\"w-full\">\n      <ProgressPrimitive.Root value={null}>\n        <ProgressTrack className=\"flex h-4 overflow-hidden rounded-lg bg-muted/20 dark:bg-muted/10\">\n          <div\n            className=\"h-full shrink-0 bg-primary first:rounded-l-lg last:rounded-r-lg\"\n            style={{ width: \"15%\" }}\n            role=\"progressbar\"\n            aria-valuenow={15}\n            aria-valuemin={0}\n            aria-valuemax={100}\n          />\n          <div\n            className=\"h-full shrink-0 bg-green-600 first:rounded-l-lg last:rounded-r-lg\"\n            style={{ width: \"30%\" }}\n            role=\"progressbar\"\n            aria-valuenow={30}\n            aria-valuemin={0}\n            aria-valuemax={100}\n          />\n          <div\n            className=\"h-full shrink-0 bg-cyan-500 first:rounded-l-lg last:rounded-r-lg\"\n            style={{ width: \"20%\" }}\n            role=\"progressbar\"\n            aria-valuenow={20}\n            aria-valuemin={0}\n            aria-valuemax={100}\n          />\n        </ProgressTrack>\n      </ProgressPrimitive.Root>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-multiple.tsx"
     }
   ],
-  "categories": [
-    "progress"
-  ],
+  "categories": ["progress"],
   "type": "registry:ui"
 }

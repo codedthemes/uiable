@@ -1,3 +1,4 @@
+// types
 import { CategoryInfo } from "./types"
 
 export const searchInfo: CategoryInfo = {

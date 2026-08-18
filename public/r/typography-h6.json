@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/typography/typography-h6.tsx",
-      "content": "//  ------------------------------ | TYPOGRAPHY - H6 | ------------------------------  //\r\n\r\nexport function TypographyH6() {\r\n  return (\r\n    <h6 className=\"scroll-m-20 text-base font-semibold tracking-tight\">\r\n      Audit Procedures\r\n    </h6>\r\n  );\r\n}\r\n",
+      "content": "//  ------------------------------ | TYPOGRAPHY - H6 | ------------------------------  //\n\nexport function TypographyH6() {\n  return (\n    <h6 className=\"scroll-m-20 text-base font-semibold tracking-tight\">\n      Audit Procedures\n    </h6>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/typography/typography-h6.tsx"
     }
   ],
-  "categories": [
-    "typography"
-  ],
+  "categories": ["typography"],
   "type": "registry:ui"
 }

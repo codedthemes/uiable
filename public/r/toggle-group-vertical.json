@@ -3,22 +3,16 @@
   "name": "toggle-group-vertical",
   "title": "Toggle Group Vertical",
   "description": "Toggle Group Vertical variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/toggle-group"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/toggle-group"],
   "files": [
     {
       "path": "src/components/uiable/toggle-group/toggle-group-vertical.tsx",
-      "content": "// shadcn\r\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\";\r\n\r\n// assets\r\nimport { BoldIcon, ItalicIcon, UnderlineIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TOGGLE GROUP - VERTICAL | ------------------------------  //\r\n\r\nexport function ToggleGroupVertical() {\r\n  return (\r\n    <ToggleGroup\r\n      multiple\r\n      orientation=\"vertical\"\r\n      spacing={1}\r\n      defaultValue={[\"bold\", \"italic\"]}\r\n    >\r\n      <ToggleGroupItem value=\"bold\" aria-label=\"Toggle bold\">\r\n        <BoldIcon />\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"italic\" aria-label=\"Toggle italic\">\r\n        <ItalicIcon />\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"underline\" aria-label=\"Toggle underline\">\r\n        <UnderlineIcon />\r\n      </ToggleGroupItem>\r\n    </ToggleGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\"\n\n// assets\nimport { BoldIcon, ItalicIcon, UnderlineIcon } from \"lucide-react\"\n\n//  ------------------------------ | TOGGLE GROUP - VERTICAL | ------------------------------  //\n\nexport function ToggleGroupVertical() {\n  return (\n    <ToggleGroup\n      multiple\n      orientation=\"vertical\"\n      spacing={1}\n      defaultValue={[\"bold\", \"italic\"]}\n    >\n      <ToggleGroupItem value=\"bold\" aria-label=\"Toggle bold\">\n        <BoldIcon />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"italic\" aria-label=\"Toggle italic\">\n        <ItalicIcon />\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"underline\" aria-label=\"Toggle underline\">\n        <UnderlineIcon />\n      </ToggleGroupItem>\n    </ToggleGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/toggle-group/toggle-group-vertical.tsx"
     }
   ],
-  "categories": [
-    "toggle-group"
-  ],
+  "categories": ["toggle-group"],
   "type": "registry:ui"
 }

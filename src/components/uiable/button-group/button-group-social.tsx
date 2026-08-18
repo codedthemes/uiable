@@ -1,12 +1,14 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 
 // shadcn
 import { Button } from "@/components/ui/button"
 import { ButtonGroup } from "@/components/ui/button-group"
 import { Separator } from "@/components/ui/separator"
+
+// third-party
+import { motion } from "framer-motion"
 
 // assets
 import { Heart, MessageCircle } from "lucide-react"

@@ -2,37 +2,37 @@
 const Gallery = [
   {
     title: "Traditional Wedding Ceremony",
-    images: "/assets/images/block/img-gal-wed-1.png",
+    images: "https://cdn.uiable.com/block/img-gal-wed-1.png",
     description:
       "A beautifully decorated wedding mandap adorned with floral arrangements, capturing the elegance and traditions of a cultural wedding ceremony.",
   },
   {
     title: "Joyful Wedding Celebration",
-    images: "/assets/images/block/img-gal-wed-2.png",
+    images: "https://cdn.uiable.com/block/img-gal-wed-2.png",
     description:
       "The newlyweds celebrate their special moment with family and friends as balloons fill the sky, creating unforgettable memories.",
   },
   {
     title: "Elegant Ceremony Setup",
-    images: "/assets/images/block/img-gal-wed-3.png",
+    images: "https://cdn.uiable.com/block/img-gal-wed-3.png",
     description:
       "Beautiful floral aisle decorations and seating arrangements create a romantic atmosphere for exchanging vows.",
   },
   {
     title: "Romantic Beach Walk",
-    images: "/assets/images/block/img-gal-wed-4.png",
+    images: "https://cdn.uiable.com/block/img-gal-wed-4.png",
     description:
       "A newly married couple strolls hand in hand along the shoreline, embracing a peaceful and romantic sunset moment.",
   },
   {
     title: "Bridal Bouquet Elegance",
-    images: "/assets/images/block/img-gal-wed-5.png",
+    images: "https://cdn.uiable.com/block/img-gal-wed-5.png",
     description:
       "A stunning bouquet of roses and seasonal flowers symbolizes love, beauty, and the celebration of a new beginning.",
   },
   {
     title: "Wedding Details & Rings",
-    images: "/assets/images/block/img-gal-wed-6.png",
+    images: "https://cdn.uiable.com/block/img-gal-wed-6.png",
     description:
       "Delicate bridal shoes and wedding rings capture the charming details that make the special day truly memorable.",
   },

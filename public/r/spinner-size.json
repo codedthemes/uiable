@@ -3,19 +3,15 @@
   "name": "spinner-size",
   "title": "Spinner Size",
   "description": "Spinner Size variant for component.",
-  "registryDependencies": [
-    "@uiable/spinner"
-  ],
+  "registryDependencies": ["@uiable/spinner"],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-size.tsx",
-      "content": "// shadcn\r\nimport { Spinner } from \"@/components/ui/spinner\";\r\n\r\n//  ------------------------------ | SPINNER - SIZE | ------------------------------  //\r\n\r\nexport function SpinnerSize() {\r\n  return (\r\n    <div className=\"flex items-center gap-6\">\r\n      <Spinner className=\"size-3\" />\r\n      <Spinner className=\"size-4\" />\r\n      <Spinner className=\"size-6\" />\r\n      <Spinner className=\"size-8\" />\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Spinner } from \"@/components/ui/spinner\"\n\n//  ------------------------------ | SPINNER - SIZE | ------------------------------  //\n\nexport function SpinnerSize() {\n  return (\n    <div className=\"flex items-center gap-6\">\n      <Spinner className=\"size-3\" />\n      <Spinner className=\"size-4\" />\n      <Spinner className=\"size-6\" />\n      <Spinner className=\"size-8\" />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/spinner/spinner-size.tsx"
     }
   ],
-  "categories": [
-    "spinner"
-  ],
+  "categories": ["spinner"],
   "type": "registry:ui"
 }

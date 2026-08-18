@@ -1,3 +1,4 @@
+// assets
 import { Blocks, Cpu, Rocket, Shield, TrendingUp, Users } from "lucide-react"
 
 //  ------------------------------ | FEATURE - 2 | ------------------------------  //

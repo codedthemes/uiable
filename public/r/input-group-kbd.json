@@ -3,23 +3,16 @@
   "name": "input-group-kbd",
   "title": "Input Group Kbd",
   "description": "Input Group Kbd variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/input-group",
-    "@uiable/kbd"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/input-group", "@uiable/kbd"],
   "files": [
     {
       "path": "src/components/uiable/input-group/input-group-kbd.tsx",
-      "content": "// shadcn\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\nimport { Kbd } from \"@/components/ui/kbd\";\r\n\r\n// assets\r\nimport { SearchIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - KBD | ------------------------------  //\r\n\r\nexport function InputGroupKbd() {\r\n  return (\r\n    <InputGroup className=\"max-w-sm\">\r\n      <InputGroupInput placeholder=\"Search...\" />\r\n      <InputGroupAddon>\r\n        <SearchIcon className=\"text-muted-foreground\" />\r\n      </InputGroupAddon>\r\n      <InputGroupAddon align=\"inline-end\">\r\n        <Kbd>⌘K</Kbd>\r\n      </InputGroupAddon>\r\n    </InputGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupInput,\n} from \"@/components/ui/input-group\"\nimport { Kbd } from \"@/components/ui/kbd\"\n\n// assets\nimport { SearchIcon } from \"lucide-react\"\n\n//  ------------------------------ | INPUT GROUP - KBD | ------------------------------  //\n\nexport function InputGroupKbd() {\n  return (\n    <InputGroup className=\"max-w-sm\">\n      <InputGroupInput placeholder=\"Search...\" />\n      <InputGroupAddon>\n        <SearchIcon className=\"text-muted-foreground\" />\n      </InputGroupAddon>\n      <InputGroupAddon align=\"inline-end\">\n        <Kbd>⌘K</Kbd>\n      </InputGroupAddon>\n    </InputGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input-group/input-group-kbd.tsx"
     }
   ],
-  "categories": [
-    "input-group"
-  ],
+  "categories": ["input-group"],
   "type": "registry:ui"
 }

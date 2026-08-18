@@ -3,19 +3,15 @@
   "name": "native-select-disabled",
   "title": "Native Select Disabled",
   "description": "Native Select Disabled variant for component.",
-  "registryDependencies": [
-    "@uiable/native-select"
-  ],
+  "registryDependencies": ["@uiable/native-select"],
   "files": [
     {
       "path": "src/components/uiable/native-select/native-select-disabled.tsx",
-      "content": "// shadcn\r\nimport {\r\n  NativeSelect,\r\n  NativeSelectOption\r\n} from \"@/components/ui/native-select\";\r\n\r\n//  ------------------------------ | NATIVE SELECT - DISABLED | ------------------------------  //\r\n\r\nexport function NativeSelectDisabled() {\r\n  return (\r\n    <NativeSelect disabled className=\"w-35 [&>select]:w-full\">\r\n      <NativeSelectOption value=\"\">Disabled</NativeSelectOption>\r\n      <NativeSelectOption value=\"apple\">Apple</NativeSelectOption>\r\n      <NativeSelectOption value=\"banana\">Banana</NativeSelectOption>\r\n      <NativeSelectOption value=\"blueberry\">Blueberry</NativeSelectOption>\r\n    </NativeSelect>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { NativeSelect, NativeSelectOption } from \"@/components/ui/native-select\"\n\n//  ------------------------------ | NATIVE SELECT - DISABLED | ------------------------------  //\n\nexport function NativeSelectDisabled() {\n  return (\n    <NativeSelect disabled className=\"w-35 [&>select]:w-full\">\n      <NativeSelectOption value=\"\">Disabled</NativeSelectOption>\n      <NativeSelectOption value=\"apple\">Apple</NativeSelectOption>\n      <NativeSelectOption value=\"banana\">Banana</NativeSelectOption>\n      <NativeSelectOption value=\"blueberry\">Blueberry</NativeSelectOption>\n    </NativeSelect>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/native-select/native-select-disabled.tsx"
     }
   ],
-  "categories": [
-    "native-select"
-  ],
+  "categories": ["native-select"],
   "type": "registry:ui"
 }

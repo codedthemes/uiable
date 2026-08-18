@@ -1,6 +1,3 @@
-// assets
-import { Activity, CreditCard, Mail, Users } from "lucide-react"
-
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -14,6 +11,9 @@ import {
   ItemSeparator,
   ItemTitle,
 } from "@/components/ui/item"
+
+// assets
+import { Activity, CreditCard, Mail, Users } from "lucide-react"
 
 //  ------------------------------ | ITEM - SEPARATOR | ------------------------------  //
 

@@ -3,19 +3,15 @@
   "name": "avatar-fallback",
   "title": "Avatar Fallback",
   "description": "Avatar Fallback variant for component.",
-  "registryDependencies": [
-    "@uiable/avatar"
-  ],
+  "registryDependencies": ["@uiable/avatar"],
   "files": [
     {
       "path": "src/components/uiable/avatar/avatar-fallback.tsx",
-      "content": "// shadcn\r\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\r\n\r\n//  ------------------------------ | AVATAR - FALLBACK | ------------------------------  //\r\n\r\nexport function AvatarFallbackDemo() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-primary/10 font-medium text-primary\">\r\n          AB\r\n        </AvatarFallback>\r\n      </Avatar>\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-green-500/10 font-medium text-green-500\">\r\n          JD\r\n        </AvatarFallback>\r\n      </Avatar>\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-yellow-500/10 font-medium text-yellow-500\">\r\n          MK\r\n        </AvatarFallback>\r\n      </Avatar>\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-red-500/10 font-medium text-red-500\">\r\n          ST\r\n        </AvatarFallback>\r\n      </Avatar>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\n\n//  ------------------------------ | AVATAR - FALLBACK | ------------------------------  //\n\nexport function AvatarFallbackDemo() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-primary/10 font-medium text-primary\">\n          AB\n        </AvatarFallback>\n      </Avatar>\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-green-500/10 font-medium text-green-500\">\n          JD\n        </AvatarFallback>\n      </Avatar>\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-yellow-500/10 font-medium text-yellow-500\">\n          MK\n        </AvatarFallback>\n      </Avatar>\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-red-500/10 font-medium text-red-500\">\n          ST\n        </AvatarFallback>\n      </Avatar>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/avatar/avatar-fallback.tsx"
     }
   ],
-  "categories": [
-    "avatar"
-  ],
+  "categories": ["avatar"],
   "type": "registry:ui"
 }

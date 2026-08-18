@@ -3,19 +3,15 @@
   "name": "separator",
   "title": "Separator",
   "description": "Separator component.",
-  "dependencies": [
-    "@base-ui/react"
-  ],
+  "dependencies": ["@base-ui/react"],
   "files": [
     {
       "path": "src/components/ui/separator.tsx",
-      "content": "\"use client\";\r\n\r\nimport { Separator as SeparatorPrimitive } from \"@base-ui/react/separator\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nfunction Separator({\r\n  className,\r\n  orientation = \"horizontal\",\r\n  ...props\r\n}: SeparatorPrimitive.Props) {\r\n  return (\r\n    <SeparatorPrimitive\r\n      data-slot=\"separator\"\r\n      orientation={orientation}\r\n      className={cn(\r\n        \"bg-border shrink-0 data-horizontal:h-px data-horizontal:w-full data-vertical:w-px data-vertical:self-stretch\",\r\n        className\r\n      )}\r\n      {...props}\r\n    />\r\n  );\r\n}\r\n\r\nexport { Separator };\r\n",
+      "content": "\"use client\"\n\n// third-party\nimport { Separator as SeparatorPrimitive } from \"@base-ui/react/separator\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\nfunction Separator({\n  className,\n  orientation = \"horizontal\",\n  ...props\n}: SeparatorPrimitive.Props) {\n  return (\n    <SeparatorPrimitive\n      data-slot=\"separator\"\n      orientation={orientation}\n      className={cn(\n        \"shrink-0 bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:w-px data-vertical:self-stretch\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Separator }\n",
       "type": "registry:component",
       "target": "@components/ui/separator.tsx"
     }
   ],
-  "categories": [
-    "separator"
-  ],
+  "categories": ["separator"],
   "type": "registry:ui"
 }

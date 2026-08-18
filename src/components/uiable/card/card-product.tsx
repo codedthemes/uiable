@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { Heart, ShoppingBag, ShoppingCart, Star } from "lucide-react"
 
 // shadcn
 import { Badge } from "@/components/ui/badge"
@@ -15,6 +13,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+
+// assets
+import { Heart, ShoppingBag, ShoppingCart, Star } from "lucide-react"
 
 //  ------------------------------ | CARD - PRODUCT | ------------------------------  //
 

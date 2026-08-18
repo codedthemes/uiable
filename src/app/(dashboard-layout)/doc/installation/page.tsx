@@ -2,21 +2,23 @@
 import { memo, useEffect, useState } from "react"
 
 // shadcn
-import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
+// third-party
+import { Book, InfoCircle, Magicpen, Setting2 } from "iconsax-reactjs"
+// third party
+import { codeToHtml, type BundledLanguage } from "shiki"
+
+// project-imports
 // project
 import branding from "@/branding.json"
 import DocsNavigation from "@/components/doc-bottom-nav"
 import TableOfContents from "@/components/uiable/layout/table-of-contents"
 
 // assets
-import { Book, InfoCircle, Magicpen, Setting2 } from "iconsax-reactjs"
-
-// third party
-import { codeToHtml, type BundledLanguage } from "shiki"
 import { Copy, SquareCheckBig } from "lucide-react"
 
 // constants

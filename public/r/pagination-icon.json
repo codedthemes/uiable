@@ -3,19 +3,15 @@
   "name": "pagination-icon",
   "title": "Pagination Icon",
   "description": "Pagination Icon variant for component.",
-  "registryDependencies": [
-    "@uiable/pagination"
-  ],
+  "registryDependencies": ["@uiable/pagination"],
   "files": [
     {
       "path": "src/components/uiable/pagination/pagination-icon.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Pagination,\r\n  PaginationContent,\r\n  PaginationItem,\r\n  PaginationLink,\r\n  PaginationNext,\r\n  PaginationPrevious\r\n} from \"@/components/ui/pagination\";\r\n\r\n//  ------------------------------ | PAGINATION - ICON | ------------------------------  //\r\n\r\nexport default function PaginationIcon() {\r\n  return (\r\n    <Pagination className=\"justify-start\">\r\n      <PaginationContent>\r\n        <PaginationItem>\r\n          <PaginationPrevious href=\"#\" text=\"\" />\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">1</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\" isActive>\r\n            2\r\n          </PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationLink href=\"#\">3</PaginationLink>\r\n        </PaginationItem>\r\n        <PaginationItem>\r\n          <PaginationNext href=\"#\" text=\"\" />\r\n        </PaginationItem>\r\n      </PaginationContent>\r\n    </Pagination>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Pagination,\n  PaginationContent,\n  PaginationItem,\n  PaginationLink,\n  PaginationNext,\n  PaginationPrevious,\n} from \"@/components/ui/pagination\"\n\n//  ------------------------------ | PAGINATION - ICON | ------------------------------  //\n\nexport default function PaginationIcon() {\n  return (\n    <Pagination className=\"justify-start\">\n      <PaginationContent>\n        <PaginationItem>\n          <PaginationPrevious href=\"#\" text=\"\" />\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\">1</PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\" isActive>\n            2\n          </PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\">3</PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationNext href=\"#\" text=\"\" />\n        </PaginationItem>\n      </PaginationContent>\n    </Pagination>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/pagination/pagination-icon.tsx"
     }
   ],
-  "categories": [
-    "pagination"
-  ],
+  "categories": ["pagination"],
   "type": "registry:ui"
 }

@@ -1,6 +1,9 @@
 import { ComponentProps } from "react"
+
+// next
 import Link from "next/link"
 
+// project-imports
 // project
 import branding from "@/branding.json"
 import Logo from "@/components/uiable/layout/shared/logo"
@@ -72,7 +75,7 @@ export default function Footer({
           </div>
 
           <p className="text-base leading-6 font-normal text-foreground">
-            v1.6.0 | Built by{" "}
+            v1.7.0 | Built by{" "}
             <Link
               href={branding.company.url}
               target="_blank"

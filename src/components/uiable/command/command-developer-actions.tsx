@@ -1,18 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import {
-  ArrowUpRight,
-  Boxes,
-  Bug,
-  Code2,
-  GitBranch,
-  Play,
-  Sparkles,
-  TerminalSquare,
-  type LucideIcon,
-} from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -28,6 +16,19 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command"
+
+// assets
+import {
+  ArrowUpRight,
+  Boxes,
+  Bug,
+  Code2,
+  GitBranch,
+  Play,
+  Sparkles,
+  TerminalSquare,
+  type LucideIcon,
+} from "lucide-react"
 
 interface ActionItem {
   title: string

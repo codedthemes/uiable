@@ -3,9 +3,7 @@
   "name": "spinner-bars-scale",
   "title": "Spinner Bars Scale",
   "description": "Spinner Bars Scale variant for component.",
-  "dependencies": [
-    "framer-motion"
-  ],
+  "dependencies": ["framer-motion"],
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-bars-scale.tsx",
@@ -14,8 +12,6 @@
       "target": "@components/uiable/spinner/spinner-bars-scale.tsx"
     }
   ],
-  "categories": [
-    "spinner"
-  ],
+  "categories": ["spinner"],
   "type": "registry:ui"
 }

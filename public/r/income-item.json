@@ -3,19 +3,15 @@
   "name": "income-item",
   "title": "Income Item",
   "description": "Widget Income Item variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "files": [
     {
       "path": "src/components/uiable/widget/income-item.tsx",
-      "content": "// project\r\nimport { cn } from \"@/lib/utils\";\r\n\r\n// assets\r\nimport { ArrowUpRight } from \"lucide-react\";\r\n\r\ninterface IncomeItemProps {\r\n  label: string;\r\n  amount: string;\r\n  change: string;\r\n  color: string;\r\n}\r\n\r\n//  ------------------------------ | BLOCK - INCOME ITEM | ------------------------------  //\r\n\r\nexport default function IncomeItem({\r\n  label,\r\n  amount,\r\n  change,\r\n  color\r\n}: IncomeItemProps) {\r\n  return (\r\n    <div className=\"p-4 rounded-xl bg-muted/30 border border-transparent hover:border-border transition-colors\">\r\n      <div className=\"flex items-center gap-2 mb-1\">\r\n        <span className={cn(\"w-2 h-2 rounded-full\", color)}></span>\r\n        <span className=\"text-xs font-medium text-muted-foreground\">\r\n          {label}\r\n        </span>\r\n      </div>\r\n      <h6 className=\"text-sm font-bold flex items-center gap-2\">\r\n        {amount}\r\n        <span className=\"text-[10px] font-normal text-muted-foreground flex items-center\">\r\n          <ArrowUpRight className=\"h-2 w-2 mr-1 text-green-500\" /> {change}\r\n        </span>\r\n      </h6>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// project\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\n// assets\nimport { ArrowUpRight } from \"lucide-react\"\n\ninterface IncomeItemProps {\n  label: string\n  amount: string\n  change: string\n  color: string\n}\n\n//  ------------------------------ | BLOCK - INCOME ITEM | ------------------------------  //\n\nexport default function IncomeItem({\n  label,\n  amount,\n  change,\n  color,\n}: IncomeItemProps) {\n  return (\n    <div className=\"rounded-xl border border-transparent bg-muted/30 p-4 transition-colors hover:border-border\">\n      <div className=\"mb-1 flex items-center gap-2\">\n        <span className={cn(\"h-2 w-2 rounded-full\", color)}></span>\n        <span className=\"text-xs font-medium text-muted-foreground\">\n          {label}\n        </span>\n      </div>\n      <h6 className=\"flex items-center gap-2 text-sm font-bold\">\n        {amount}\n        <span className=\"flex items-center text-[10px] font-normal text-muted-foreground\">\n          <ArrowUpRight className=\"mr-1 h-2 w-2 text-green-500\" /> {change}\n        </span>\n      </h6>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/widget/income-item.tsx"
     }
   ],
-  "categories": [
-    "widget"
-  ],
+  "categories": ["widget"],
   "type": "registry:ui"
 }

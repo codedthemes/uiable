@@ -5,11 +5,11 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 // assets
-import { Home } from "lucide-react";
+import { Home } from "lucide-react"
 
 //  ------------------------------ | BREADCRUMB - ICON | ------------------------------  //
 
@@ -32,5 +32,5 @@ export default function BreadcrumbIcon() {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
+  )
 }

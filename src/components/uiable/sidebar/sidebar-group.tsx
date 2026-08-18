@@ -8,11 +8,11 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarProvider
-} from "@/components/ui/sidebar";
+  SidebarProvider,
+} from "@/components/ui/sidebar"
 
 // assets
-import { LifeBuoyIcon, SendIcon } from "lucide-react";
+import { LifeBuoyIcon, SendIcon } from "lucide-react"
 
 //  ------------------------------ | SIDEBAR - GROUP | ------------------------------  //
 
@@ -43,5 +43,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

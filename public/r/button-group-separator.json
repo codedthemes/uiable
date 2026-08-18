@@ -3,20 +3,15 @@
   "name": "button-group-separator",
   "title": "Button Group Separator",
   "description": "Button Group Separator variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/button-group"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/button-group"],
   "files": [
     {
       "path": "src/components/uiable/button-group/button-group-separator.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  ButtonGroup,\r\n  ButtonGroupSeparator\r\n} from \"@/components/ui/button-group\";\r\n\r\n//  ------------------------------ | BUTTON GROUP - SEPARATOR | ------------------------------  //\r\n\r\nexport default function ButtonGroupSeparatorDemo() {\r\n  return (\r\n    <ButtonGroup>\r\n      <Button>Copy</Button>\r\n      <ButtonGroupSeparator />\r\n      <Button>Paste</Button>\r\n    </ButtonGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { ButtonGroup, ButtonGroupSeparator } from \"@/components/ui/button-group\"\n\n//  ------------------------------ | BUTTON GROUP - SEPARATOR | ------------------------------  //\n\nexport default function ButtonGroupSeparatorDemo() {\n  return (\n    <ButtonGroup>\n      <Button>Copy</Button>\n      <ButtonGroupSeparator />\n      <Button>Paste</Button>\n    </ButtonGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/button-group/button-group-separator.tsx"
     }
   ],
-  "categories": [
-    "button-group"
-  ],
+  "categories": ["button-group"],
   "type": "registry:ui"
 }

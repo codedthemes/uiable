@@ -3,20 +3,15 @@
   "name": "switch-disabled",
   "title": "Switch Disabled",
   "description": "Switch Disabled variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/switch"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/switch"],
   "files": [
     {
       "path": "src/components/uiable/switch/switch-disabled.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { Switch } from \"@/components/ui/switch\";\r\n\r\n//  ------------------------------ | SWITCH - DISABLED | ------------------------------  //\r\n\r\nexport function SwitchDisabled() {\r\n  return (\r\n    <Field orientation=\"horizontal\" data-disabled className=\"w-fit\">\r\n      <Switch id=\"switch-disabled-unchecked\" disabled />\r\n      <FieldLabel htmlFor=\"switch-disabled-unchecked\">Disabled</FieldLabel>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldLabel } from \"@/components/ui/field\"\nimport { Switch } from \"@/components/ui/switch\"\n\n//  ------------------------------ | SWITCH - DISABLED | ------------------------------  //\n\nexport function SwitchDisabled() {\n  return (\n    <Field orientation=\"horizontal\" data-disabled className=\"w-fit\">\n      <Switch id=\"switch-disabled-unchecked\" disabled />\n      <FieldLabel htmlFor=\"switch-disabled-unchecked\">Disabled</FieldLabel>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/switch/switch-disabled.tsx"
     }
   ],
-  "categories": [
-    "switch"
-  ],
+  "categories": ["switch"],
   "type": "registry:ui"
 }

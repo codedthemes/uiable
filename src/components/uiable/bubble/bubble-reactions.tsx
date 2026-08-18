@@ -1,11 +1,11 @@
 "use client"
 
-// third-party
-import { toast } from "sonner"
-
 // shadcn
 import { Bubble, BubbleContent, BubbleReactions } from "@/components/ui/bubble"
 import { Button } from "@/components/ui/button"
+
+// third-party
+import { toast } from "sonner"
 
 //  ------------------------------ | BUBBLE - REACTIONS | ------------------------------  //
 

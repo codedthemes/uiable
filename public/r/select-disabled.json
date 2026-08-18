@@ -3,19 +3,15 @@
   "name": "select-disabled",
   "title": "Select Disabled",
   "description": "Select Disabled variant for component.",
-  "registryDependencies": [
-    "@uiable/select"
-  ],
+  "registryDependencies": ["@uiable/select"],
   "files": [
     {
       "path": "src/components/uiable/select/select-disabled.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Select,\r\n  SelectContent,\r\n  SelectGroup,\r\n  SelectItem,\r\n  SelectTrigger,\r\n  SelectValue,\r\n} from \"@/components/ui/select\";\r\n\r\n// constants\r\nconst items = [\r\n  { label: \"Select a fruit\", value: null },\r\n  { label: \"Apple\", value: \"apple\" },\r\n  { label: \"Banana\", value: \"banana\" },\r\n  { label: \"Blueberry\", value: \"blueberry\" },\r\n  { label: \"Grapes\", value: \"grapes\", disabled: true },\r\n  { label: \"Pineapple\", value: \"pineapple\" },\r\n];\r\n\r\n//  ------------------------------ | SELECT - DISABLED | ------------------------------  //\r\n\r\nexport function SelectDisabled() {\r\n  return (\r\n    <Select items={items} disabled>\r\n      <SelectTrigger className=\"w-full max-w-48\">\r\n        <SelectValue />\r\n      </SelectTrigger>\r\n      <SelectContent>\r\n        <SelectGroup>\r\n          {items.map((item) => (\r\n            <SelectItem\r\n              key={item.value}\r\n              value={item.value}\r\n              disabled={item.disabled}\r\n            >\r\n              {item.label}\r\n            </SelectItem>\r\n          ))}\r\n        </SelectGroup>\r\n      </SelectContent>\r\n    </Select>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Select,\n  SelectContent,\n  SelectGroup,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from \"@/components/ui/select\"\n\n// constants\nconst items = [\n  { label: \"Select a fruit\", value: null },\n  { label: \"Apple\", value: \"apple\" },\n  { label: \"Banana\", value: \"banana\" },\n  { label: \"Blueberry\", value: \"blueberry\" },\n  { label: \"Grapes\", value: \"grapes\", disabled: true },\n  { label: \"Pineapple\", value: \"pineapple\" },\n]\n\n//  ------------------------------ | SELECT - DISABLED | ------------------------------  //\n\nexport function SelectDisabled() {\n  return (\n    <Select items={items} disabled>\n      <SelectTrigger className=\"w-full max-w-48\">\n        <SelectValue />\n      </SelectTrigger>\n      <SelectContent>\n        <SelectGroup>\n          {items.map((item) => (\n            <SelectItem\n              key={item.value}\n              value={item.value}\n              disabled={item.disabled}\n            >\n              {item.label}\n            </SelectItem>\n          ))}\n        </SelectGroup>\n      </SelectContent>\n    </Select>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/select/select-disabled.tsx"
     }
   ],
-  "categories": [
-    "select"
-  ],
+  "categories": ["select"],
   "type": "registry:ui"
 }

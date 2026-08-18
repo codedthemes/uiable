@@ -10,6 +10,7 @@
 // Run before `shadcn build .registry-build/public/registry.json --output public/r`
 // or `shadcn build .registry-build/pro/registry.json --output .pro-registry/r-flat`.
 
+// third-party
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs"
 import { dirname, relative, resolve } from "node:path"
 import { fileURLToPath } from "node:url"

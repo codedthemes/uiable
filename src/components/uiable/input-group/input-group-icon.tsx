@@ -2,8 +2,8 @@
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput
-} from "@/components/ui/input-group";
+  InputGroupInput,
+} from "@/components/ui/input-group"
 
 // assets
 import {
@@ -12,8 +12,8 @@ import {
   InfoIcon,
   MailIcon,
   SearchIcon,
-  StarIcon
-} from "lucide-react";
+  StarIcon,
+} from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - ICON | ------------------------------  //
 
@@ -49,5 +49,5 @@ export default function InputGroupIcon() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  );
+  )
 }

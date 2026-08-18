@@ -1,16 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import {
-  Activity,
-  ArrowUpRight,
-  Bell,
-  CheckCircle2,
-  Lock,
-  TrendingUp,
-  Users,
-} from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -34,6 +24,17 @@ import {
 import { Progress } from "@/components/ui/progress"
 import { Switch } from "@/components/ui/switch"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+// assets
+import {
+  Activity,
+  ArrowUpRight,
+  Bell,
+  CheckCircle2,
+  Lock,
+  TrendingUp,
+  Users,
+} from "lucide-react"
 
 //  ------------------------------ | CARD - TABS | ------------------------------  //
 

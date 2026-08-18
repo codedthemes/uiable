@@ -3,19 +3,15 @@
   "name": "marker-variants",
   "title": "Marker Variants",
   "description": "Marker Variants variant for component.",
-  "registryDependencies": [
-    "@uiable/marker"
-  ],
+  "registryDependencies": ["@uiable/marker"],
   "files": [
     {
       "path": "src/components/uiable/marker/marker-variants.tsx",
-      "content": "// shadcn\r\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\r\n\r\n//  ------------------------------ | MARKER - VARIANTS | ------------------------------  //\r\n\r\nexport function MarkerVariants() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker>\r\n        <MarkerContent>A default marker for inline notes.</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\">\r\n        <MarkerContent>A separator marker</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"border\">\r\n        <MarkerContent>A border marker for row boundaries.</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Marker, MarkerContent } from \"@/components/ui/marker\"\n\n//  ------------------------------ | MARKER - VARIANTS | ------------------------------  //\n\nexport function MarkerVariants() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\n      <Marker>\n        <MarkerContent>A default marker for inline notes.</MarkerContent>\n      </Marker>\n      <Marker variant=\"separator\">\n        <MarkerContent>A separator marker</MarkerContent>\n      </Marker>\n      <Marker variant=\"border\">\n        <MarkerContent>A border marker for row boundaries.</MarkerContent>\n      </Marker>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/marker/marker-variants.tsx"
     }
   ],
-  "categories": [
-    "marker"
-  ],
+  "categories": ["marker"],
   "type": "registry:ui"
 }

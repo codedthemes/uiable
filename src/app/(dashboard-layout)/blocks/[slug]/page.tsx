@@ -1,16 +1,20 @@
+// next
+import { Metadata } from "next"
+import { notFound } from "next/navigation"
+
+// third-party
 // third party
 import fs from "fs"
 import path from "path"
-import { Metadata } from "next"
-import { notFound } from "next/navigation"
+
+// project-imports
 // project
 import branding from "@/branding.json"
-import { blockCategoryInfoMap } from "@/data/blocks"
-import uiRegistry from "@/components/uiable/registry.json"
-import blocksRegistry from "@/components/uiable/blocks/registry.json"
-
 import BlockView from "@/components/block-view"
 import CategoryDescription from "@/components/category-description"
+import blocksRegistry from "@/components/uiable/blocks/registry.json"
+import uiRegistry from "@/components/uiable/registry.json"
+import { blockCategoryInfoMap } from "@/data/blocks"
 
 export async function generateMetadata({
   params,
@@ -65,8 +69,21 @@ export default async function BlockCategoryPage({
       const relativePath = item.files[0].path
       const filePath =
         item.type === "registry:block"
-          ? path.join(process.cwd(), "src", "components", "uiable", "blocks", relativePath)
-          : path.join(process.cwd(), "src", "components", "uiable", relativePath)
+          ? path.join(
+              process.cwd(),
+              "src",
+              "components",
+              "uiable",
+              "blocks",
+              relativePath
+            )
+          : path.join(
+              process.cwd(),
+              "src",
+              "components",
+              "uiable",
+              relativePath
+            )
       let rawCode = ""
       try {
         rawCode = fs.readFileSync(filePath, "utf8")

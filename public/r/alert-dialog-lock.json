@@ -3,22 +3,15 @@
   "name": "alert-dialog-lock",
   "title": "Alert Dialog Lock",
   "description": "Alert Dialog Lock variant for component.",
-  "registryDependencies": [
-    "@uiable/alert-dialog",
-    "@uiable/button",
-    "@uiable/input",
-    "@uiable/label"
-  ],
+  "registryDependencies": ["@uiable/alert-dialog", "@uiable/button", "@uiable/input", "@uiable/label"],
   "files": [
     {
       "path": "src/components/uiable/alert-dialog/alert-dialog-lock.tsx",
-      "content": "import {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger,\n} from \"@/components/ui/alert-dialog\"\nimport { Button } from \"@/components/ui/button\"\nimport { Input } from \"@/components/ui/input\"\nimport { Label } from \"@/components/ui/label\"\n\n//  ------------------------------ | ALERT DIALOG - LOCK | ------------------------------  //\n\nexport function AlertDialogLock() {\n  return (\n    <AlertDialog>\n      <AlertDialogTrigger render={<Button>Access Dialog</Button>} />\n      <AlertDialogContent>\n        <AlertDialogHeader>\n          <AlertDialogTitle>Access Denied</AlertDialogTitle>\n          <AlertDialogDescription>\n            Please contact your administrator to request permission.\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n\n        <div className=\"grid gap-2 py-4\">\n          <Label htmlFor=\"reason\">Reason for access</Label>\n          <Input\n            id=\"reason\"\n            placeholder=\"e.g. I need to review the Q3 reports\"\n          />\n        </div>\n\n        <AlertDialogFooter className=\"border-t-0 bg-transparent pt-0\">\n          <AlertDialogCancel variant=\"outline\" className=\"dark:border-border\">\n            Close\n          </AlertDialogCancel>\n          <AlertDialogAction>Request Access</AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  )\n}\n",
+      "content": "// shadcn\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger,\n} from \"@/components/ui/alert-dialog\"\nimport { Button } from \"@/components/ui/button\"\nimport { Input } from \"@/components/ui/input\"\nimport { Label } from \"@/components/ui/label\"\n\n//  ------------------------------ | ALERT DIALOG - LOCK | ------------------------------  //\n\nexport function AlertDialogLock() {\n  return (\n    <AlertDialog>\n      <AlertDialogTrigger render={<Button>Access Dialog</Button>} />\n      <AlertDialogContent>\n        <AlertDialogHeader>\n          <AlertDialogTitle>Access Denied</AlertDialogTitle>\n          <AlertDialogDescription>\n            Please contact your administrator to request permission.\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n\n        <div className=\"grid gap-2 py-4\">\n          <Label htmlFor=\"reason\">Reason for access</Label>\n          <Input\n            id=\"reason\"\n            placeholder=\"e.g. I need to review the Q3 reports\"\n          />\n        </div>\n\n        <AlertDialogFooter className=\"border-t-0 bg-transparent pt-0\">\n          <AlertDialogCancel variant=\"outline\" className=\"dark:border-border\">\n            Close\n          </AlertDialogCancel>\n          <AlertDialogAction>Request Access</AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/alert-dialog/alert-dialog-lock.tsx"
     }
   ],
-  "categories": [
-    "alert-dialog"
-  ],
+  "categories": ["alert-dialog"],
   "type": "registry:ui"
 }

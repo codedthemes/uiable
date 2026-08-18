@@ -3,20 +3,15 @@
   "name": "textarea-character-count",
   "title": "Textarea Character Count",
   "description": "Textarea Character Count variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/textarea"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/textarea"],
   "files": [
     {
       "path": "src/components/uiable/textarea/textarea-character-count.tsx",
-      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n\r\n// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\r\nimport { Textarea } from \"@/components/ui/textarea\"\r\n\r\n//  ------------------------------ | TEXTAREA - CHARACTER COUNT | ------------------------------  //\r\n\r\nexport function TextareaCharacterCount() {\r\n  const [text, setText] = useState(\"\")\r\n  const maxLength = 200\r\n\r\n  return (\r\n    <Field>\r\n      <FieldLabel htmlFor=\"textarea-char-count\">Short Biography</FieldLabel>\r\n      <Textarea\r\n        id=\"textarea-char-count\"\r\n        placeholder=\"Write a few sentences about your professional background...\"\r\n        value={text}\r\n        maxLength={maxLength}\r\n        onChange={(e) => setText(e.target.value)}\r\n      />\r\n      <div className=\"flex items-center justify-between\">\r\n        <FieldDescription>\r\n          Brief summary for your profile card.\r\n        </FieldDescription>\r\n        <span className=\"text-xs text-muted-foreground tabular-nums\">\r\n          {text.length}/{maxLength}\r\n        </span>\r\n      </div>\r\n    </Field>\r\n  )\r\n}\r\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\nimport { Textarea } from \"@/components/ui/textarea\"\n\n//  ------------------------------ | TEXTAREA - CHARACTER COUNT | ------------------------------  //\n\nexport function TextareaCharacterCount() {\n  const [text, setText] = useState(\"\")\n  const maxLength = 200\n\n  return (\n    <Field>\n      <FieldLabel htmlFor=\"textarea-char-count\">Short Biography</FieldLabel>\n      <Textarea\n        id=\"textarea-char-count\"\n        placeholder=\"Write a few sentences about your professional background...\"\n        value={text}\n        maxLength={maxLength}\n        onChange={(e) => setText(e.target.value)}\n      />\n      <div className=\"flex items-center justify-between\">\n        <FieldDescription>\n          Brief summary for your profile card.\n        </FieldDescription>\n        <span className=\"text-xs text-muted-foreground tabular-nums\">\n          {text.length}/{maxLength}\n        </span>\n      </div>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/textarea/textarea-character-count.tsx"
     }
   ],
-  "categories": [
-    "textarea"
-  ],
+  "categories": ["textarea"],
   "type": "registry:ui"
 }

@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
+// project-imports
 // project imports
 import { MetricChart } from "@/images/svg/landing"
 
@@ -100,7 +101,10 @@ export default function RevenueChartCard() {
               if (val) setMetric(val as MetricType)
             }}
           >
-            <SelectTrigger aria-label="Select metric" className="h-auto w-auto gap-1 border-0 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground focus:border-transparent focus:ring-0">
+            <SelectTrigger
+              aria-label="Select metric"
+              className="h-auto w-auto gap-1 border-0 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground focus:border-transparent focus:ring-0"
+            >
               <SelectValue />
             </SelectTrigger>
             <SelectContent>

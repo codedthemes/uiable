@@ -3,21 +3,15 @@
   "name": "input-inline",
   "title": "Input Inline",
   "description": "Input Inline variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/field",
-    "@uiable/input"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/field", "@uiable/input"],
   "files": [
     {
       "path": "src/components/uiable/input/input-inline.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Field } from \"@/components/ui/field\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - INLINE | ------------------------------  //\r\n\r\nexport function InputInline() {\r\n  return (\r\n    <Field orientation=\"horizontal\">\r\n      <Input type=\"search\" placeholder=\"Search...\" />\r\n      <Button>Search</Button>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { Field } from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"\n\n//  ------------------------------ | INPUT - INLINE | ------------------------------  //\n\nexport function InputInline() {\n  return (\n    <Field orientation=\"horizontal\">\n      <Input type=\"search\" placeholder=\"Search...\" />\n      <Button>Search</Button>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input/input-inline.tsx"
     }
   ],
-  "categories": [
-    "input"
-  ],
+  "categories": ["input"],
   "type": "registry:ui"
 }

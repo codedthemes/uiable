@@ -3,24 +3,16 @@
   "name": "bubble-tooltip",
   "title": "Bubble Tooltip",
   "description": "Bubble Tooltip variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/bubble",
-    "@uiable/button",
-    "@uiable/tooltip"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/bubble", "@uiable/button", "@uiable/tooltip"],
   "files": [
     {
       "path": "src/components/uiable/bubble/bubble-tooltip.tsx",
-      "content": "// shadcn\r\nimport { Bubble, BubbleContent, BubbleReactions } from \"@/components/ui/bubble\"\r\nimport { Button } from \"@/components/ui/button\"\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger,\r\n} from \"@/components/ui/tooltip\"\r\n\r\n// assets\r\nimport { CheckIcon } from \"lucide-react\"\r\n\r\n//  ------------------------------ | BUBBLE - TOOLTIP | ------------------------------  //\r\n\r\nexport function BubbleTooltip() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-4\">\r\n      <Bubble variant=\"secondary\">\r\n        <BubbleContent>Did you remove the stale route?</BubbleContent>\r\n      </Bubble>\r\n      <Bubble align=\"end\">\r\n        <BubbleContent className=\"dark:text-white\">\r\n          Yes, removed it from the registry.\r\n        </BubbleContent>\r\n        <BubbleReactions>\r\n          <Tooltip>\r\n            <TooltipTrigger\r\n              render={\r\n                <Button variant=\"ghost\" size=\"icon-xs\">\r\n                  <CheckIcon />\r\n                </Button>\r\n              }\r\n            />\r\n            <TooltipContent>Read on Jan 5, 2026 at 4:32 PM</TooltipContent>\r\n          </Tooltip>\r\n        </BubbleReactions>\r\n      </Bubble>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Bubble, BubbleContent, BubbleReactions } from \"@/components/ui/bubble\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\"\n\n// assets\nimport { CheckIcon } from \"lucide-react\"\n\n//  ------------------------------ | BUBBLE - TOOLTIP | ------------------------------  //\n\nexport function BubbleTooltip() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-4\">\n      <Bubble variant=\"secondary\">\n        <BubbleContent>Did you remove the stale route?</BubbleContent>\n      </Bubble>\n      <Bubble align=\"end\">\n        <BubbleContent className=\"dark:text-white\">\n          Yes, removed it from the registry.\n        </BubbleContent>\n        <BubbleReactions>\n          <Tooltip>\n            <TooltipTrigger\n              render={\n                <Button variant=\"ghost\" size=\"icon-xs\">\n                  <CheckIcon />\n                </Button>\n              }\n            />\n            <TooltipContent>Read on Jan 5, 2026 at 4:32 PM</TooltipContent>\n          </Tooltip>\n        </BubbleReactions>\n      </Bubble>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/bubble/bubble-tooltip.tsx"
     }
   ],
-  "categories": [
-    "bubble"
-  ],
+  "categories": ["bubble"],
   "type": "registry:ui"
 }

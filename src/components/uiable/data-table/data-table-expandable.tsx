@@ -1,28 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// third party
-import {
-  ColumnDef,
-  ColumnFiltersState,
-  ExpandedState,
-  flexRender,
-  getCoreRowModel,
-  getExpandedRowModel,
-  getFilteredRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  SortingState,
-  useReactTable,
-  VisibilityState,
-} from "@tanstack/react-table"
-// assets
-import {
-  ArrowUpDown,
-  ChevronDown,
-  ChevronRight,
-  MoreHorizontal,
-} from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -48,6 +26,31 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+
+// third-party
+// third party
+import {
+  ColumnDef,
+  ColumnFiltersState,
+  ExpandedState,
+  flexRender,
+  getCoreRowModel,
+  getExpandedRowModel,
+  getFilteredRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  SortingState,
+  useReactTable,
+  VisibilityState,
+} from "@tanstack/react-table"
+
+// assets
+import {
+  ArrowUpDown,
+  ChevronDown,
+  ChevronRight,
+  MoreHorizontal,
+} from "lucide-react"
 
 // types
 export type UserRecord = {

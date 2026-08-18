@@ -4,21 +4,21 @@ import { Button } from "@/components/ui/button"
 // constants
 const portfolioItems = [
   {
-    image: "/assets/images/block/img-portfolio-5-1.png",
+    image: "https://cdn.uiable.com/block/img-portfolio-5-1.png",
     alt: "Modern corporate workspace",
     title: "Corporate Workspace",
     description:
       "A contemporary office designed to foster collaboration, productivity, and a comfortable working environment.",
   },
   {
-    image: "/assets/images/block/img-portfolio-5-2.png",
+    image: "https://cdn.uiable.com/block/img-portfolio-5-2.png",
     alt: "Modern meeting lounge",
     title: "Creative Meeting Lounge",
     description:
       "An elegant lounge space created for client meetings, team discussions, and meaningful collaboration.",
   },
   {
-    image: "/assets/images/block/img-portfolio-5-3.png",
+    image: "https://cdn.uiable.com/block/img-portfolio-5-3.png",
     alt: "Open collaboration area",
     title: "Open Collaboration Hub",
     description:

@@ -1,14 +1,14 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 // assets
-import { ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react"
 
 //  ------------------------------ | DROPDOWN MENU - OUTLINE PRIMARY | ------------------------------  //
 
@@ -31,5 +31,5 @@ export default function DropdownMenuOutlinePrimary() {
         <DropdownMenuItem>Something else here</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

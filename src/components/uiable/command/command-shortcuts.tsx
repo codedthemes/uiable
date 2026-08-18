@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Command,
   CommandDialog,
@@ -12,16 +12,16 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-  CommandShortcut
-} from "@/components/ui/command";
+  CommandShortcut,
+} from "@/components/ui/command"
 
 // assets
-import { CreditCardIcon, SettingsIcon, UserIcon } from "lucide-react";
+import { CreditCardIcon, SettingsIcon, UserIcon } from "lucide-react"
 
 //  ------------------------------ | COMMAND - SHORTCUTS | ------------------------------  //
 
 export function CommandWithShortcuts() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="flex flex-col gap-4">
@@ -54,5 +54,5 @@ export function CommandWithShortcuts() {
         </Command>
       </CommandDialog>
     </div>
-  );
+  )
 }

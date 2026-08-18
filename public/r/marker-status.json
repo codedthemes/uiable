@@ -3,20 +3,15 @@
   "name": "marker-status",
   "title": "Marker Status",
   "description": "Marker Status variant for component.",
-  "registryDependencies": [
-    "@uiable/marker",
-    "@uiable/spinner"
-  ],
+  "registryDependencies": ["@uiable/marker", "@uiable/spinner"],
   "files": [
     {
       "path": "src/components/uiable/marker/marker-status.tsx",
-      "content": "// shadcn\r\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\r\nimport { Spinner } from \"@/components/ui/spinner\"\r\n\r\n//  ------------------------------ | MARKER - STATUS | ------------------------------  //\r\n\r\nexport function MarkerStatus() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\r\n      <Marker role=\"status\">\r\n        <MarkerIcon>\r\n          <Spinner />\r\n        </MarkerIcon>\r\n        <MarkerContent>Compacting conversation</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"separator\" role=\"status\">\r\n        <MarkerIcon>\r\n          <Spinner />\r\n        </MarkerIcon>\r\n        <MarkerContent>Running tests</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\nimport { Spinner } from \"@/components/ui/spinner\"\n\n//  ------------------------------ | MARKER - STATUS | ------------------------------  //\n\nexport function MarkerStatus() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-6\">\n      <Marker role=\"status\">\n        <MarkerIcon>\n          <Spinner />\n        </MarkerIcon>\n        <MarkerContent>Compacting conversation</MarkerContent>\n      </Marker>\n      <Marker variant=\"separator\" role=\"status\">\n        <MarkerIcon>\n          <Spinner />\n        </MarkerIcon>\n        <MarkerContent>Running tests</MarkerContent>\n      </Marker>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/marker/marker-status.tsx"
     }
   ],
-  "categories": [
-    "marker"
-  ],
+  "categories": ["marker"],
   "type": "registry:ui"
 }

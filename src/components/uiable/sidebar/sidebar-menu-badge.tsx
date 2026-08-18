@@ -10,7 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from "@/components/ui/sidebar";
+} from "@/components/ui/sidebar"
 
 // assets
 import {
@@ -19,7 +19,7 @@ import {
   MapIcon,
   PieChartIcon,
   SendIcon,
-} from "lucide-react";
+} from "lucide-react"
 
 // constants
 const projects = [
@@ -53,7 +53,7 @@ const projects = [
     icon: SendIcon,
     badge: "8",
   },
-];
+]
 
 //  ------------------------------ | SIDEBAR - MENU BADGE | ------------------------------  //
 
@@ -84,5 +84,5 @@ export default function AppSidebar() {
         </SidebarContent>
       </Sidebar>
     </SidebarProvider>
-  );
+  )
 }

@@ -7,8 +7,8 @@ import {
   MenubarMenu,
   MenubarSeparator,
   MenubarShortcut,
-  MenubarTrigger
-} from "@/components/ui/menubar";
+  MenubarTrigger,
+} from "@/components/ui/menubar"
 
 //  ------------------------------ | MENUBAR - CHECKBOX | ------------------------------  //
 
@@ -40,5 +40,5 @@ export function MenubarCheckbox() {
         </MenubarContent>
       </MenubarMenu>
     </Menubar>
-  );
+  )
 }

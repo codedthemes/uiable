@@ -3,23 +3,16 @@
   "name": "breadcrumb-stepper",
   "title": "Breadcrumb Stepper",
   "description": "Breadcrumb Stepper variant for component.",
-  "dependencies": [
-    "next"
-  ],
-  "registryDependencies": [
-    "@uiable/badge",
-    "@uiable/breadcrumb"
-  ],
+  "dependencies": ["next"],
+  "registryDependencies": ["@uiable/badge", "@uiable/breadcrumb"],
   "files": [
     {
       "path": "src/components/uiable/breadcrumb/breadcrumb-stepper.tsx",
-      "content": "import Link from \"next/link\"\n\n// shadcn\nimport { Badge } from \"@/components/ui/badge\"\nimport {\n  Breadcrumb,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n} from \"@/components/ui/breadcrumb\"\n\n//  ------------------------------ | BREADCRUMB - STEPPER | ------------------------------  //\n\nexport default function BreadcrumbStepper() {\n  return (\n    <Breadcrumb>\n      <BreadcrumbList className=\"gap-2 sm:gap-3\">\n        <BreadcrumbItem>\n          <BreadcrumbLink\n            render={<Link href=\"#\" />}\n            className=\"flex items-center gap-2\"\n          >\n            <Badge\n              variant=\"secondary\"\n              className=\"flex size-5 items-center justify-center rounded-full bg-muted p-0 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-muted-foreground\"\n            >\n              1\n            </Badge>\n            <span>Home</span>\n          </BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbLink\n            render={<Link href=\"#\" />}\n            className=\"flex items-center gap-2\"\n          >\n            <Badge\n              variant=\"secondary\"\n              className=\"flex size-5 items-center justify-center rounded-full bg-muted p-0 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-muted-foreground\"\n            >\n              2\n            </Badge>\n            <span>Components</span>\n          </BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbPage className=\"flex items-center gap-2\">\n            <Badge className=\"flex size-5 items-center justify-center rounded-full p-0 text-xs font-medium\">\n              3\n            </Badge>\n            <span>Breadcrumb</span>\n          </BreadcrumbPage>\n        </BreadcrumbItem>\n      </BreadcrumbList>\n    </Breadcrumb>\n  )\n}\n",
+      "content": "// next\nimport Link from \"next/link\"\n\n// shadcn\nimport { Badge } from \"@/components/ui/badge\"\nimport {\n  Breadcrumb,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n} from \"@/components/ui/breadcrumb\"\n\n//  ------------------------------ | BREADCRUMB - STEPPER | ------------------------------  //\n\nexport default function BreadcrumbStepper() {\n  return (\n    <Breadcrumb>\n      <BreadcrumbList className=\"gap-2 sm:gap-3\">\n        <BreadcrumbItem>\n          <BreadcrumbLink\n            render={<Link href=\"#\" />}\n            className=\"flex items-center gap-2\"\n          >\n            <Badge\n              variant=\"secondary\"\n              className=\"flex size-5 items-center justify-center rounded-full bg-muted p-0 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-muted-foreground\"\n            >\n              1\n            </Badge>\n            <span>Home</span>\n          </BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbLink\n            render={<Link href=\"#\" />}\n            className=\"flex items-center gap-2\"\n          >\n            <Badge\n              variant=\"secondary\"\n              className=\"flex size-5 items-center justify-center rounded-full bg-muted p-0 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-muted-foreground\"\n            >\n              2\n            </Badge>\n            <span>Components</span>\n          </BreadcrumbLink>\n        </BreadcrumbItem>\n        <BreadcrumbSeparator />\n        <BreadcrumbItem>\n          <BreadcrumbPage className=\"flex items-center gap-2\">\n            <Badge className=\"flex size-5 items-center justify-center rounded-full p-0 text-xs font-medium\">\n              3\n            </Badge>\n            <span>Breadcrumb</span>\n          </BreadcrumbPage>\n        </BreadcrumbItem>\n      </BreadcrumbList>\n    </Breadcrumb>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/breadcrumb/breadcrumb-stepper.tsx"
     }
   ],
-  "categories": [
-    "breadcrumb"
-  ],
+  "categories": ["breadcrumb"],
   "type": "registry:ui"
 }

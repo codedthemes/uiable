@@ -1,11 +1,12 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 
+// third-party
 // third party
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
-// assets
-import { ProfileAvatar } from "@/images/svg/landing";
+// project-imports
+import { ProfileAvatar } from "@/images/svg/landing"
 
 //  ------------------------------ | BLOCK - PROFILE CARD | ------------------------------  //
 
@@ -17,11 +18,11 @@ export default function ProfileCard() {
       </div>
 
       <div className="flex flex-col gap-1 text-center">
-        <p className="text-lg font-medium leading-6 tracking-normal text-secondary-foreground text-center">
+        <p className="text-center text-lg leading-6 font-medium tracking-normal text-secondary-foreground">
           Morgan James
         </p>
 
-        <p className="text-xs font-medium leading-3 tracking-normal text-muted-foreground">
+        <p className="text-xs leading-3 font-medium tracking-normal text-muted-foreground">
           Product Designer
         </p>
       </div>
@@ -49,5 +50,5 @@ export default function ProfileCard() {
         </motion.div>
       </div>
     </div>
-  );
+  )
 }

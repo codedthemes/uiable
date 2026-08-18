@@ -3,20 +3,15 @@
   "name": "kbd-button",
   "title": "Kbd Button",
   "description": "Kbd Button variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/kbd"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/kbd"],
   "files": [
     {
       "path": "src/components/uiable/kbd/kbd-button.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Kbd } from \"@/components/ui/kbd\";\r\n\r\n//  ------------------------------ | KBD - BUTTON | ------------------------------  //\r\n\r\nexport default function KbdButton() {\r\n  return (\r\n    <Button>\r\n      Accept{\" \"}\r\n      <Kbd data-icon=\"inline-end\" className=\"ml-1\">\r\n        ⏎\r\n      </Kbd>\r\n    </Button>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { Kbd } from \"@/components/ui/kbd\"\n\n//  ------------------------------ | KBD - BUTTON | ------------------------------  //\n\nexport default function KbdButton() {\n  return (\n    <Button>\n      Accept{\" \"}\n      <Kbd data-icon=\"inline-end\" className=\"ml-1\">\n        ⏎\n      </Kbd>\n    </Button>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/kbd/kbd-button.tsx"
     }
   ],
-  "categories": [
-    "kbd"
-  ],
+  "categories": ["kbd"],
   "type": "registry:ui"
 }

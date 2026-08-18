@@ -1,6 +1,4 @@
 import { useMemo } from "react"
-// third party
-import { Label, Pie, PieChart } from "recharts"
 
 // shadcn
 import {
@@ -9,6 +7,10 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+
+// third-party
+// third party
+import { Label, Pie, PieChart } from "recharts"
 
 const chartData = [
   { category: "electronics", revenue: 4500, fill: "var(--color-electronics)" },

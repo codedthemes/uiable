@@ -3,19 +3,15 @@
   "name": "kbd-group",
   "title": "Kbd Group",
   "description": "Kbd Group variant for component.",
-  "registryDependencies": [
-    "@uiable/kbd"
-  ],
+  "registryDependencies": ["@uiable/kbd"],
   "files": [
     {
       "path": "src/components/uiable/kbd/kbd-group.tsx",
-      "content": "// shadcn\r\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\";\r\n\r\n//  ------------------------------ | KBD - GROUP | ------------------------------  //\r\n\r\nexport default function KbdGroupExample() {\r\n  return (\r\n    <div className=\"flex flex-col items-center gap-4\">\r\n      <div className=\"flex items-center gap-1 flex-wrap\">\r\n        Use{\" \"}\r\n        <KbdGroup>\r\n          <Kbd>Ctrl + B</Kbd>\r\n          <Kbd>Ctrl + K</Kbd>\r\n        </KbdGroup>{\" \"}\r\n        to open the command palette\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\"\n\n//  ------------------------------ | KBD - GROUP | ------------------------------  //\n\nexport default function KbdGroupExample() {\n  return (\n    <div className=\"flex flex-col items-center gap-4\">\n      <div className=\"flex flex-wrap items-center gap-1\">\n        Use{\" \"}\n        <KbdGroup>\n          <Kbd>Ctrl + B</Kbd>\n          <Kbd>Ctrl + K</Kbd>\n        </KbdGroup>{\" \"}\n        to open the command palette\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/kbd/kbd-group.tsx"
     }
   ],
-  "categories": [
-    "kbd"
-  ],
+  "categories": ["kbd"],
   "type": "registry:ui"
 }

@@ -1,7 +1,8 @@
 // shadcn
-import { ChevronRight } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
+
+// assets
+import { ChevronRight } from "lucide-react"
 
 // constants
 const plans = [

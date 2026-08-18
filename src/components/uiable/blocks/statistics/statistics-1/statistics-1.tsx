@@ -1,7 +1,8 @@
+// shadcn
+import { Button } from "@/components/ui/button"
+
 // assets
 import { Briefcase, Globe, Heart, Users } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
 
 const steps = [
   {

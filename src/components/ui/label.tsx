@@ -1,8 +1,9 @@
-"use client";
+"use client"
 
-import { ComponentProps } from "react";
+import { ComponentProps } from "react"
 
-import { cn } from "@/lib/utils";
+// project-imports
+import { cn } from "@/lib/utils"
 
 function Label({ className, ...props }: ComponentProps<"label">) {
   return (
@@ -14,7 +15,7 @@ function Label({ className, ...props }: ComponentProps<"label">) {
       )}
       {...props}
     />
-  );
+  )
 }
 
-export { Label };
+export { Label }

@@ -39,9 +39,11 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+// third-party
 // third party
 import { useChat } from "@ai-sdk/react"
 
+// project-imports
 // project
 import { MessageAnimated } from "@/components/message-animated"
 import { createChat, getMessageText } from "@/lib/ai"

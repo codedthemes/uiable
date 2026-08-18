@@ -3,23 +3,16 @@
   "name": "input-group-inline-end",
   "title": "Input Group Inline End",
   "description": "Input Group Inline End variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/input-group"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/field", "@uiable/input-group"],
   "files": [
     {
       "path": "src/components/uiable/input-group/input-group-inline-end.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput\r\n} from \"@/components/ui/input-group\";\r\n\r\n// assets\r\nimport { EyeOffIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | INPUT GROUP - INLINE END | ------------------------------  //\r\n\r\nexport function InputGroupInlineEnd() {\r\n  return (\r\n    <Field className=\"max-w-sm\">\r\n      <FieldLabel htmlFor=\"inline-end-input\">Input</FieldLabel>\r\n      <InputGroup>\r\n        <InputGroupInput\r\n          id=\"inline-end-input\"\r\n          type=\"password\"\r\n          placeholder=\"Enter password\"\r\n        />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <EyeOffIcon />\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <FieldDescription>Icon positioned at the end.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupInput,\n} from \"@/components/ui/input-group\"\n\n// assets\nimport { EyeOffIcon } from \"lucide-react\"\n\n//  ------------------------------ | INPUT GROUP - INLINE END | ------------------------------  //\n\nexport function InputGroupInlineEnd() {\n  return (\n    <Field className=\"max-w-sm\">\n      <FieldLabel htmlFor=\"inline-end-input\">Input</FieldLabel>\n      <InputGroup>\n        <InputGroupInput\n          id=\"inline-end-input\"\n          type=\"password\"\n          placeholder=\"Enter password\"\n        />\n        <InputGroupAddon align=\"inline-end\">\n          <EyeOffIcon />\n        </InputGroupAddon>\n      </InputGroup>\n      <FieldDescription>Icon positioned at the end.</FieldDescription>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input-group/input-group-inline-end.tsx"
     }
   ],
-  "categories": [
-    "input-group"
-  ],
+  "categories": ["input-group"],
   "type": "registry:ui"
 }

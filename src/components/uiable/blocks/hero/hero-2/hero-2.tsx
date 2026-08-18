@@ -1,9 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
 
+// shadcn
 import { Button } from "@/components/ui/button"
+
+// third-party
+import { AnimatePresence, motion } from "framer-motion"
 
 const navLinks = [
   { name: "Home", href: "#" },
@@ -26,7 +29,7 @@ export default function Hero2() {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/assets/images/block/img-home2-bg.jpg')] blur-sm"></div>
+      <div className="absolute inset-0 bg-[url('https://cdn.uiable.com/block/img-home2-bg.jpg')] blur-sm"></div>
       <div className="absolute inset-0 z-10 bg-pink-600 opacity-70 dark:bg-pink-800"></div>
       <div className="relative z-30 w-full bg-card/80 px-3 py-4 shadow-[0_0_40px_-8px_#4680ff38] shadow-pink-500/20 backdrop-blur-md max-md:w-full">
         <div className="container mx-auto max-w-300 px-6 lg:px-8">
@@ -354,7 +357,7 @@ export default function Hero2() {
                   </div>
                 </div>
                 <img
-                  src="/assets/images/block/home-mob-img.png"
+                  src="https://cdn.uiable.com/block/home-mob-img.png"
                   alt="Team meeting in a conference room"
                   className="relative z-10 w-110 max-w-full"
                 />

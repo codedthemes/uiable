@@ -1,8 +1,8 @@
 // shadcn
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 // assets
-import { AlertTriangleIcon } from "lucide-react";
+import { AlertTriangleIcon } from "lucide-react"
 
 //  ------------------------------ | ALERT - COLORS | ------------------------------  //
 
@@ -16,5 +16,5 @@ export default function AlertColors() {
         continue using the service.
       </AlertDescription>
     </Alert>
-  );
+  )
 }

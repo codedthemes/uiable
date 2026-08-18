@@ -3,16 +3,16 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
-  InputGroupInput
-} from "@/components/ui/input-group";
+  InputGroupInput,
+} from "@/components/ui/input-group"
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger
-} from "@/components/ui/tooltip";
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 // assets
-import { HelpCircle, InfoIcon } from "lucide-react";
+import { HelpCircle, InfoIcon } from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - TOOLTIP | ------------------------------  //
 
@@ -83,5 +83,5 @@ export default function InputGroupTooltip() {
         </Tooltip>
       </InputGroup>
     </div>
-  );
+  )
 }

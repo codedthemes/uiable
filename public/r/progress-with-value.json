@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-with-value",
+  "title": "Progress With Value",
+  "description": "Progress With Value variant for component.",
+  "dependencies": ["@base-ui/react"],
+  "registryDependencies": ["@uiable/progress"],
+  "files": [
+    {
+      "path": "src/components/uiable/progress/progress-with-value.tsx",
+      "content": "// shadcn\nimport {\n  ProgressIndicator,\n  ProgressTrack,\n  ProgressValue,\n} from \"@/components/ui/progress\"\n\n// third-party\nimport { Progress as ProgressPrimitive } from \"@base-ui/react/progress\"\n\n//  ------------------------------ | PROGRESS - WITH VALUE | ------------------------------  //\n\nexport default function ProgressWithValue() {\n  return (\n    <div className=\"w-full\">\n      <ProgressPrimitive.Root value={45} className=\"flex items-center gap-4\">\n        <ProgressTrack className=\"h-2.5 flex-1 rounded-lg bg-secondary dark:bg-muted/40\">\n          <ProgressIndicator className=\"rounded-lg bg-primary\" />\n        </ProgressTrack>\n        <ProgressValue className=\"w-9 text-right text-sm font-semibold text-foreground\" />\n      </ProgressPrimitive.Root>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/progress/progress-with-value.tsx"
+    }
+  ],
+  "categories": ["progress"],
+  "type": "registry:ui"
+}

@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuLabel,
-  DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 // assets
-import { BellIcon, MailIcon, MessageSquareIcon } from "lucide-react";
+import { BellIcon, MailIcon, MessageSquareIcon } from "lucide-react"
 
 //  ------------------------------ | DROPDOWN MENU - CHECKBOXES ICONS | ------------------------------  //
 
@@ -22,8 +22,8 @@ export function DropdownMenuCheckboxesIcons() {
   const [notifications, setNotifications] = useState({
     email: true,
     sms: false,
-    push: true
-  });
+    push: true,
+  })
 
   return (
     <DropdownMenu>
@@ -63,5 +63,5 @@ export function DropdownMenuCheckboxesIcons() {
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

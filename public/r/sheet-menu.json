@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sheet-menu",
+  "title": "Sheet Menu",
+  "description": "Sheet Menu variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/sheet"],
+  "files": [
+    {
+      "path": "src/components/uiable/sheet/sheet-menu.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Sheet,\n  SheetContent,\n  SheetHeader,\n  SheetTitle,\n  SheetTrigger,\n} from \"@/components/ui/sheet\"\n\n// assets\nimport { Home, LogOut, Menu, Settings, Users } from \"lucide-react\"\n\n//  ------------------------------ | SHEET - MENU | ------------------------------  //\n\nexport default function SheetMenu() {\n  return (\n    <Sheet>\n      <SheetTrigger\n        render={\n          <Button\n            variant=\"outline\"\n            className=\"h-10 w-10 p-0 dark:border-border\"\n          />\n        }\n      >\n        <Menu className=\"h-5 w-5\" />\n      </SheetTrigger>\n      <SheetContent\n        side=\"left\"\n        className=\"flex w-[300px] flex-col gap-6 px-0 py-6 sm:max-w-[300px]\"\n      >\n        <SheetHeader className=\"px-6 text-left\">\n          <SheetTitle className=\"text-xl font-bold\">App Navigation</SheetTitle>\n        </SheetHeader>\n\n        <div className=\"flex-1 space-y-1 overflow-y-auto px-4\">\n          <Button\n            variant=\"ghost\"\n            className=\"w-full justify-start text-base font-normal\"\n          >\n            <Home className=\"mr-3 h-5 w-5\" />\n            Dashboard\n          </Button>\n          <Button\n            variant=\"ghost\"\n            className=\"w-full justify-start text-base font-normal\"\n          >\n            <Users className=\"mr-3 h-5 w-5\" />\n            Team Members\n          </Button>\n          <Button\n            variant=\"ghost\"\n            className=\"w-full justify-start text-base font-normal\"\n          >\n            <Settings className=\"mr-3 h-5 w-5\" />\n            Settings\n          </Button>\n        </div>\n\n        <div className=\"mt-auto border-t px-6 pt-6\">\n          <div className=\"flex items-center gap-3\">\n            <Avatar className=\"after:border-none\">\n              <AvatarImage\n                src=\"https://cdn.uiable.com/user/avatar-2.jpg\"\n                alt=\"user\"\n              />\n              <AvatarFallback>PP</AvatarFallback>\n            </Avatar>\n            <div className=\"flex flex-col\">\n              <span className=\"text-sm leading-none font-medium\">John Doe</span>\n              <span className=\"mt-1 text-xs text-muted-foreground\">\n                john@example.com\n              </span>\n            </div>\n            <Button variant=\"ghost\" className=\"ml-auto h-8 w-8 p-0\">\n              <LogOut className=\"h-4 w-4\" />\n            </Button>\n          </div>\n        </div>\n      </SheetContent>\n    </Sheet>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/sheet/sheet-menu.tsx"
+    }
+  ],
+  "categories": ["sheet"],
+  "type": "registry:ui"
+}

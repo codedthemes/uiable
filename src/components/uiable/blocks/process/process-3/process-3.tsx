@@ -1,3 +1,4 @@
+// assets
 import { Search, TrendingUp, Zap } from "lucide-react"
 
 const steps = [

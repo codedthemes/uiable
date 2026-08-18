@@ -3,19 +3,15 @@
   "name": "alert-solid-secondary",
   "title": "Alert Solid Secondary",
   "description": "Alert Solid Secondary variant for component.",
-  "registryDependencies": [
-    "@uiable/alert"
-  ],
+  "registryDependencies": ["@uiable/alert"],
   "files": [
     {
       "path": "src/components/uiable/alert/alert-solid-secondary.tsx",
-      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n//  ------------------------------ | ALERT - SOLID SECONDARY | ------------------------------  //\r\n\r\nexport default function AlertSolidSecondary() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border grid-cols-1 bg-secondary-500 text-white border-transparent\">\r\n      Solid Secondary Alert\r\n    </Alert>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\"\n\n//  ------------------------------ | ALERT - SOLID SECONDARY | ------------------------------  //\n\nexport default function AlertSolidSecondary() {\n  return (\n    <Alert className=\"bg-secondary-500 mb-3 grid-cols-1 rounded-lg border border-transparent px-5 py-3 text-white\">\n      Solid Secondary Alert\n    </Alert>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-solid-secondary.tsx"
     }
   ],
-  "categories": [
-    "alert"
-  ],
+  "categories": ["alert"],
   "type": "registry:ui"
 }

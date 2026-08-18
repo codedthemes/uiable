@@ -1,6 +1,3 @@
-// lucide-react
-import { ArrowUpRight, GitFork, Globe, Star } from "lucide-react"
-
 // shadcn
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -9,6 +6,10 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+
+// assets
+// lucide-react
+import { ArrowUpRight, GitFork, Globe, Star } from "lucide-react"
 
 //  ------------------------------ | HOVER CARD - LINK PREVIEW | ------------------------------  //
 

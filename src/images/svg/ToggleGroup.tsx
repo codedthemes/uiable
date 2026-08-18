@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | TOGGLEGROUP | ------------------------------  //
 
@@ -83,5 +83,5 @@ export default function ToggleGroup(props: SVGAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

@@ -1,13 +1,13 @@
 // shadcn
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
 import {
   InputGroup,
   InputGroupAddon,
-  InputGroupInput
-} from "@/components/ui/input-group";
+  InputGroupInput,
+} from "@/components/ui/input-group"
 
 // assets
-import { SearchIcon } from "lucide-react";
+import { SearchIcon } from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - INLINE START | ------------------------------  //
 
@@ -23,5 +23,5 @@ export function InputGroupInlineStart() {
       </InputGroup>
       <FieldDescription>Icon positioned at the start.</FieldDescription>
     </Field>
-  );
+  )
 }

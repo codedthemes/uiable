@@ -3,19 +3,15 @@
   "name": "slider-vertical",
   "title": "Slider Vertical",
   "description": "Slider Vertical variant for component.",
-  "registryDependencies": [
-    "@uiable/slider"
-  ],
+  "registryDependencies": ["@uiable/slider"],
   "files": [
     {
       "path": "src/components/uiable/slider/slider-vertical.tsx",
-      "content": "// shadcn\r\nimport { Slider } from \"@/components/ui/slider\";\r\n\r\n//  ------------------------------ | SLIDER - VERTICAL | ------------------------------  //\r\n\r\nexport function SliderVertical() {\r\n  return (\r\n    <div className=\"mx-auto flex w-full max-w-xs items-center justify-center gap-6\">\r\n      <Slider\r\n        defaultValue={[50]}\r\n        max={100}\r\n        step={1}\r\n        orientation=\"vertical\"\r\n        className=\"h-40\"\r\n      />\r\n      <Slider\r\n        defaultValue={[25]}\r\n        max={100}\r\n        step={1}\r\n        orientation=\"vertical\"\r\n        className=\"h-40\"\r\n      />\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Slider } from \"@/components/ui/slider\"\n\n//  ------------------------------ | SLIDER - VERTICAL | ------------------------------  //\n\nexport function SliderVertical() {\n  return (\n    <div className=\"mx-auto flex w-full max-w-xs items-center justify-center gap-6\">\n      <Slider\n        defaultValue={[50]}\n        max={100}\n        step={1}\n        orientation=\"vertical\"\n        className=\"h-40\"\n      />\n      <Slider\n        defaultValue={[25]}\n        max={100}\n        step={1}\n        orientation=\"vertical\"\n        className=\"h-40\"\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/slider/slider-vertical.tsx"
     }
   ],
-  "categories": [
-    "slider"
-  ],
+  "categories": ["slider"],
   "type": "registry:ui"
 }

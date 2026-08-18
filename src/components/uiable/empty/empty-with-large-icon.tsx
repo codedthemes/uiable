@@ -1,6 +1,3 @@
-// assets
-import { FolderOpen } from "iconsax-reactjs"
-
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -12,6 +9,9 @@ import {
   EmptyMedia,
   EmptyTitle,
 } from "@/components/ui/empty"
+
+// third-party
+import { FolderOpen } from "iconsax-reactjs"
 
 //  ------------------------------ | EMPTY - WITH LARGE ICON | ------------------------------  //
 

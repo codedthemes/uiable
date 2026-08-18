@@ -1,13 +1,14 @@
 // shadcn
-import { Field, FieldLabel } from "@/components/ui/field";
+import { Field, FieldLabel } from "@/components/ui/field"
 import {
   InputOTP,
   InputOTPGroup,
-  InputOTPSlot
-} from "@/components/ui/input-otp";
+  InputOTPSlot,
+} from "@/components/ui/input-otp"
 
+// third-party
 // third party
-import { REGEXP_ONLY_DIGITS } from "input-otp";
+import { REGEXP_ONLY_DIGITS } from "input-otp"
 
 //  ------------------------------ | INPUT OTP - PATTERN | ------------------------------  //
 
@@ -26,5 +27,5 @@ export function InputOTPPattern() {
         </InputOTPGroup>
       </InputOTP>
     </Field>
-  );
+  )
 }

@@ -1,6 +1,3 @@
-// lucide-react
-import { Cloud } from "lucide-react"
-
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -9,6 +6,10 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+
+// assets
+// lucide-react
+import { Cloud } from "lucide-react"
 
 //  ------------------------------ | HOVER CARD - INFO WITH ICON BADGE | ------------------------------  //
 

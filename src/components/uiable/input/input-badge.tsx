@@ -1,7 +1,7 @@
 // shadcn
-import { Badge } from "@/components/ui/badge";
-import { Field, FieldLabel } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge"
+import { Field, FieldLabel } from "@/components/ui/field"
+import { Input } from "@/components/ui/input"
 
 //  ------------------------------ | INPUT - BADGE | ------------------------------  //
 
@@ -20,5 +20,5 @@ export function InputBadge() {
         placeholder="https://api.example.com/webhook"
       />
     </Field>
-  );
+  )
 }

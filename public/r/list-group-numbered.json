@@ -3,19 +3,15 @@
   "name": "list-group-numbered",
   "title": "List Group Numbered",
   "description": "List Group Numbered variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-numbered.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | LIST GROUP - NUMBERED | ------------------------------  //\r\n\r\nexport default function ListGroupNumbered() {\r\n  return (\r\n    <ol className=\"list-decimal list-inside rounded-lg divide-y divide-border-border  border border-border  bg-card overflow-hidden\">\r\n      <li className=\"py-4 px-6.25\">\r\n        <div className=\"inline-flex justify-between items-start w-[calc(100%-24px)] ml-2\">\r\n          <div className=\"flex flex-col\">\r\n            <span className=\"font-bold\">Subheading</span>\r\n            <span className=\"text-sm text-muted-foreground\">\r\n              Cras justo odio\r\n            </span>\r\n          </div>\r\n          <Badge className=\"bg-primary text-primary-foreground font-normal\">\r\n            14\r\n          </Badge>\r\n        </div>\r\n      </li>\r\n      <li className=\"py-4 px-6.25\">\r\n        <div className=\"inline-flex justify-between items-start w-[calc(100%-24px)] ml-2\">\r\n          <div className=\"flex flex-col\">\r\n            <span className=\"font-bold\">Subheading</span>\r\n            <span className=\"text-sm text-muted-foreground\">\r\n              Dapibus ac facilisis in\r\n            </span>\r\n          </div>\r\n          <Badge className=\"bg-primary text-primary-foreground font-normal\">\r\n            2\r\n          </Badge>\r\n        </div>\r\n      </li>\r\n      <li className=\"py-4 px-6.25\">\r\n        <div className=\"inline-flex justify-between items-start w-[calc(100%-24px)] ml-2\">\r\n          <div className=\"flex flex-col\">\r\n            <span className=\"font-bold\">Subheading</span>\r\n            <span className=\"text-sm text-muted-foreground\">\r\n              Morbi leo risus\r\n            </span>\r\n          </div>\r\n          <Badge className=\"bg-primary text-primary-foreground font-normal\">\r\n            1\r\n          </Badge>\r\n        </div>\r\n      </li>\r\n    </ol>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | LIST GROUP - NUMBERED | ------------------------------  //\n\nexport default function ListGroupNumbered() {\n  return (\n    <ol className=\"divide-border-border list-inside list-decimal divide-y overflow-hidden rounded-lg border border-border bg-card\">\n      <li className=\"px-6.25 py-4\">\n        <div className=\"ml-2 inline-flex w-[calc(100%-24px)] items-start justify-between\">\n          <div className=\"flex flex-col\">\n            <span className=\"font-bold\">Subheading</span>\n            <span className=\"text-sm text-muted-foreground\">\n              Cras justo odio\n            </span>\n          </div>\n          <Badge className=\"bg-primary font-normal text-primary-foreground\">\n            14\n          </Badge>\n        </div>\n      </li>\n      <li className=\"px-6.25 py-4\">\n        <div className=\"ml-2 inline-flex w-[calc(100%-24px)] items-start justify-between\">\n          <div className=\"flex flex-col\">\n            <span className=\"font-bold\">Subheading</span>\n            <span className=\"text-sm text-muted-foreground\">\n              Dapibus ac facilisis in\n            </span>\n          </div>\n          <Badge className=\"bg-primary font-normal text-primary-foreground\">\n            2\n          </Badge>\n        </div>\n      </li>\n      <li className=\"px-6.25 py-4\">\n        <div className=\"ml-2 inline-flex w-[calc(100%-24px)] items-start justify-between\">\n          <div className=\"flex flex-col\">\n            <span className=\"font-bold\">Subheading</span>\n            <span className=\"text-sm text-muted-foreground\">\n              Morbi leo risus\n            </span>\n          </div>\n          <Badge className=\"bg-primary font-normal text-primary-foreground\">\n            1\n          </Badge>\n        </div>\n      </li>\n    </ol>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/list-group/list-group-numbered.tsx"
     }
   ],
-  "categories": [
-    "list-group"
-  ],
+  "categories": ["list-group"],
   "type": "registry:ui"
 }

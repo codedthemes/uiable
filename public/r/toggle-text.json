@@ -3,22 +3,16 @@
   "name": "toggle-text",
   "title": "Toggle Text",
   "description": "Toggle Text variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/toggle"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/toggle"],
   "files": [
     {
       "path": "src/components/uiable/toggle/toggle-text.tsx",
-      "content": "// shadcn\r\nimport { Toggle } from \"@/components/ui/toggle\";\r\n\r\n// assets\r\nimport { ItalicIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | TOGGLE - TEXT | ------------------------------  //\r\n\r\nexport function ToggleText() {\r\n  return (\r\n    <Toggle aria-label=\"Toggle italic\">\r\n      <ItalicIcon />\r\n      Italic\r\n    </Toggle>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Toggle } from \"@/components/ui/toggle\"\n\n// assets\nimport { ItalicIcon } from \"lucide-react\"\n\n//  ------------------------------ | TOGGLE - TEXT | ------------------------------  //\n\nexport function ToggleText() {\n  return (\n    <Toggle aria-label=\"Toggle italic\">\n      <ItalicIcon />\n      Italic\n    </Toggle>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/toggle/toggle-text.tsx"
     }
   ],
-  "categories": [
-    "toggle"
-  ],
+  "categories": ["toggle"],
   "type": "registry:ui"
 }

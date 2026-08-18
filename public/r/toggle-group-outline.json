@@ -3,19 +3,15 @@
   "name": "toggle-group-outline",
   "title": "Toggle Group Outline",
   "description": "Toggle Group Outline variant for component.",
-  "registryDependencies": [
-    "@uiable/toggle-group"
-  ],
+  "registryDependencies": ["@uiable/toggle-group"],
   "files": [
     {
       "path": "src/components/uiable/toggle-group/toggle-group-outline.tsx",
-      "content": "// shadcn\r\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\";\r\n\r\n//  ------------------------------ | TOGGLE GROUP - OUTLINE | ------------------------------  //\r\n\r\nexport function ToggleGroupOutline() {\r\n  return (\r\n    <ToggleGroup variant=\"outline\" defaultValue={[\"all\"]}>\r\n      <ToggleGroupItem value=\"all\" aria-label=\"Toggle all\">\r\n        All\r\n      </ToggleGroupItem>\r\n      <ToggleGroupItem value=\"missed\" aria-label=\"Toggle missed\">\r\n        Missed\r\n      </ToggleGroupItem>\r\n    </ToggleGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { ToggleGroup, ToggleGroupItem } from \"@/components/ui/toggle-group\"\n\n//  ------------------------------ | TOGGLE GROUP - OUTLINE | ------------------------------  //\n\nexport function ToggleGroupOutline() {\n  return (\n    <ToggleGroup variant=\"outline\" defaultValue={[\"all\"]}>\n      <ToggleGroupItem value=\"all\" aria-label=\"Toggle all\">\n        All\n      </ToggleGroupItem>\n      <ToggleGroupItem value=\"missed\" aria-label=\"Toggle missed\">\n        Missed\n      </ToggleGroupItem>\n    </ToggleGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/toggle-group/toggle-group-outline.tsx"
     }
   ],
-  "categories": [
-    "toggle-group"
-  ],
+  "categories": ["toggle-group"],
   "type": "registry:ui"
 }

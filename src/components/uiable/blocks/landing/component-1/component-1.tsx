@@ -1,3 +1,4 @@
+// next
 import Link from "next/link"
 
 // shadcn
@@ -5,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
+// project-imports
 // project
 import categoryCounts from "@/category-counts.json"
 import BorderGlow from "@/components/animation/BorderGlow"

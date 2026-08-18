@@ -3,23 +3,16 @@
   "name": "empty-background",
   "title": "Empty Background",
   "description": "Empty Background variant for component.",
-  "dependencies": [
-    "iconsax-reactjs"
-  ],
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/empty"
-  ],
+  "dependencies": ["iconsax-reactjs"],
+  "registryDependencies": ["@uiable/button", "@uiable/empty"],
   "files": [
     {
       "path": "src/components/uiable/empty/empty-background.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Empty,\r\n  EmptyContent,\r\n  EmptyDescription,\r\n  EmptyHeader,\r\n  EmptyMedia,\r\n  EmptyTitle\r\n} from \"@/components/ui/empty\";\r\n\r\n// assets\r\nimport { NotificationBing, Refresh } from \"iconsax-reactjs\";\r\n\r\n//  ------------------------------ | EMPTY - MUTED | ------------------------------  //\r\n\r\nexport function EmptyMuted() {\r\n  return (\r\n    <Empty className=\"bg-background h-full rounded-lg\">\r\n      <EmptyHeader>\r\n        <EmptyMedia variant=\"icon\">\r\n          <NotificationBing />\r\n        </EmptyMedia>\r\n        <EmptyTitle>No Notifications</EmptyTitle>\r\n        <EmptyDescription className=\"max-w-xs text-pretty\">\r\n          You're all caught up. New notifications will appear here.\r\n        </EmptyDescription>\r\n      </EmptyHeader>\r\n      <EmptyContent>\r\n        <Button className=\"gap-1\">\r\n          <Refresh />\r\n          Refresh\r\n        </Button>\r\n      </EmptyContent>\r\n    </Empty>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Empty,\n  EmptyContent,\n  EmptyDescription,\n  EmptyHeader,\n  EmptyMedia,\n  EmptyTitle,\n} from \"@/components/ui/empty\"\n\n// third-party\nimport { NotificationBing, Refresh } from \"iconsax-reactjs\"\n\n//  ------------------------------ | EMPTY - MUTED | ------------------------------  //\n\nexport function EmptyMuted() {\n  return (\n    <Empty className=\"h-full rounded-lg bg-background\">\n      <EmptyHeader>\n        <EmptyMedia variant=\"icon\">\n          <NotificationBing />\n        </EmptyMedia>\n        <EmptyTitle>No Notifications</EmptyTitle>\n        <EmptyDescription className=\"max-w-xs text-pretty\">\n          You're all caught up. New notifications will appear here.\n        </EmptyDescription>\n      </EmptyHeader>\n      <EmptyContent>\n        <Button className=\"gap-1\">\n          <Refresh />\n          Refresh\n        </Button>\n      </EmptyContent>\n    </Empty>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/empty/empty-background.tsx"
     }
   ],
-  "categories": [
-    "empty"
-  ],
+  "categories": ["empty"],
   "type": "registry:ui"
 }

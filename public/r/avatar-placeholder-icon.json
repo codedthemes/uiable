@@ -3,22 +3,16 @@
   "name": "avatar-placeholder-icon",
   "title": "Avatar Placeholder Icon",
   "description": "Avatar Placeholder Icon variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/avatar"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar"],
   "files": [
     {
       "path": "src/components/uiable/avatar/avatar-placeholder-icon.tsx",
-      "content": "// assets\r\nimport { BotIcon, BuildingIcon, SparklesIcon, UserIcon } from \"lucide-react\"\r\n\r\n// shadcn\r\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\r\n\r\n//  ------------------------------ | AVATAR - PLACEHOLDER ICON | ------------------------------  //\r\n\r\nexport function AvatarPlaceholderIcon() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-primary/10 text-primary\">\r\n          <UserIcon className=\"size-4\" />\r\n        </AvatarFallback>\r\n      </Avatar>\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-green-500/10 text-green-500\">\r\n          <BuildingIcon className=\"size-4\" />\r\n        </AvatarFallback>\r\n      </Avatar>\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-yellow-500/10 text-yellow-500\">\r\n          <BotIcon className=\"size-4\" />\r\n        </AvatarFallback>\r\n      </Avatar>\r\n      <Avatar className=\"border-none after:border-none\">\r\n        <AvatarFallback className=\"bg-red-500/10 text-red-500\">\r\n          <SparklesIcon className=\"size-4\" />\r\n        </AvatarFallback>\r\n      </Avatar>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\n\n// assets\nimport { BotIcon, BuildingIcon, SparklesIcon, UserIcon } from \"lucide-react\"\n\n//  ------------------------------ | AVATAR - PLACEHOLDER ICON | ------------------------------  //\n\nexport function AvatarPlaceholderIcon() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-primary/10 text-primary\">\n          <UserIcon className=\"size-4\" />\n        </AvatarFallback>\n      </Avatar>\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-green-500/10 text-green-500\">\n          <BuildingIcon className=\"size-4\" />\n        </AvatarFallback>\n      </Avatar>\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-yellow-500/10 text-yellow-500\">\n          <BotIcon className=\"size-4\" />\n        </AvatarFallback>\n      </Avatar>\n      <Avatar className=\"border-none after:border-none\">\n        <AvatarFallback className=\"bg-red-500/10 text-red-500\">\n          <SparklesIcon className=\"size-4\" />\n        </AvatarFallback>\n      </Avatar>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/avatar/avatar-placeholder-icon.tsx"
     }
   ],
-  "categories": [
-    "avatar"
-  ],
+  "categories": ["avatar"],
   "type": "registry:ui"
 }

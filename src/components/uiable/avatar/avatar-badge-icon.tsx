@@ -4,10 +4,10 @@ import {
   AvatarBadge,
   AvatarFallback,
   AvatarImage,
-} from "@/components/ui/avatar";
+} from "@/components/ui/avatar"
 
 // assets
-import { PlusIcon } from "lucide-react";
+import { PlusIcon } from "lucide-react"
 
 //  ------------------------------ | AVATAR - BADGE ICON | ------------------------------  //
 
@@ -23,5 +23,5 @@ export function AvatarBadgeIconExample() {
         <PlusIcon />
       </AvatarBadge>
     </Avatar>
-  );
+  )
 }

@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-basic.tsx",
-      "content": "//  ------------------------------ | LIST GROUP - BASIC | ------------------------------  //\r\n\r\nexport default function ListGroupBasic() {\r\n  return (\r\n    <ul className=\"rounded-lg divide-y divide-border-border  border border-border  bg-card\">\r\n      <li className=\"py-4 px-6.25\">Cras justo odio</li>\r\n      <li className=\"py-4 px-6.25\">Dapibus ac facilisis in</li>\r\n      <li className=\"py-4 px-6.25\">Morbi leo risus</li>\r\n      <li className=\"py-4 px-6.25\">Porta ac consectetur ac</li>\r\n      <li className=\"py-4 px-6.25\">Vestibulum at eros</li>\r\n    </ul>\r\n  );\r\n}\r\n",
+      "content": "//  ------------------------------ | LIST GROUP - BASIC | ------------------------------  //\n\nexport default function ListGroupBasic() {\n  return (\n    <ul className=\"divide-border-border divide-y rounded-lg border border-border bg-card\">\n      <li className=\"px-6.25 py-4\">Cras justo odio</li>\n      <li className=\"px-6.25 py-4\">Dapibus ac facilisis in</li>\n      <li className=\"px-6.25 py-4\">Morbi leo risus</li>\n      <li className=\"px-6.25 py-4\">Porta ac consectetur ac</li>\n      <li className=\"px-6.25 py-4\">Vestibulum at eros</li>\n    </ul>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/list-group/list-group-basic.tsx"
     }
   ],
-  "categories": [
-    "list-group"
-  ],
+  "categories": ["list-group"],
   "type": "registry:ui"
 }

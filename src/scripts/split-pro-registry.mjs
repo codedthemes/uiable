@@ -6,6 +6,7 @@
 //
 // Run after `shadcn build .registry-build/pro/registry.json --output .pro-registry/r-flat`.
 
+// third-party
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
@@ -38,7 +39,11 @@ for (const file of files) {
   }
   const destDir = resolve(outRoot, dir)
   mkdirSync(destDir, { recursive: true })
-  writeFileSync(resolve(destDir, file), JSON.stringify(item, null, 2) + "\n", "utf8")
+  writeFileSync(
+    resolve(destDir, file),
+    JSON.stringify(item, null, 2) + "\n",
+    "utf8"
+  )
   counts[dir]++
 }
 

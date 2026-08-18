@@ -3,19 +3,15 @@
   "name": "direction",
   "title": "Direction",
   "description": "Direction component.",
-  "dependencies": [
-    "@base-ui/react"
-  ],
+  "dependencies": ["@base-ui/react"],
   "files": [
     {
       "path": "src/components/ui/direction.tsx",
-      "content": "\"use client\";\r\n\r\nexport {\r\n  DirectionProvider,\r\n  useDirection\r\n} from \"@base-ui/react/direction-provider\";\r\n",
+      "content": "\"use client\"\n\nexport {\n  DirectionProvider,\n  useDirection,\n} from \"@base-ui/react/direction-provider\"\n",
       "type": "registry:component",
       "target": "@components/ui/direction.tsx"
     }
   ],
-  "categories": [
-    "direction"
-  ],
+  "categories": ["direction"],
   "type": "registry:ui"
 }

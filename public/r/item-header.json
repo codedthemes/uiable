@@ -3,19 +3,15 @@
   "name": "item-header",
   "title": "Item Header",
   "description": "Item Header variant for component.",
-  "registryDependencies": [
-    "@uiable/item"
-  ],
+  "registryDependencies": ["@uiable/item"],
   "files": [
     {
       "path": "src/components/uiable/item/item-header.tsx",
-      "content": "// shadcn\r\nimport {\r\n  Item,\r\n  ItemContent,\r\n  ItemDescription,\r\n  ItemGroup,\r\n  ItemHeader,\r\n  ItemTitle,\r\n} from \"@/components/ui/item\";\r\n\r\n// constants\r\nconst models = [\r\n  {\r\n    name: \"v0-1.5-sm\",\r\n    description: \"Everyday tasks and UI generation.\",\r\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\r\n    credit: \"Valeria Reverdo on Unsplash\",\r\n  },\r\n  {\r\n    name: \"v0-1.5-lg\",\r\n    description: \"Advanced thinking or reasoning.\",\r\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\r\n    credit: \"Michael Oeser on Unsplash\",\r\n  },\r\n  {\r\n    name: \"v0-2.0-mini\",\r\n    description: \"Open Source model for everyone.\",\r\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\r\n    credit: \"Cherry Laithang on Unsplash\",\r\n  },\r\n];\r\n\r\n//  ------------------------------ | ITEM - HEADER | ------------------------------  //\r\n\r\nexport function ItemHeaderDemo() {\r\n  return (\r\n    <div className=\"flex w-full max-w-xl flex-col gap-6\">\r\n      <ItemGroup className=\"grid grid-cols-3 gap-4\">\r\n        {models.map((model) => (\r\n          <Item key={model.name} variant=\"outline\">\r\n            <ItemHeader>\r\n              <img\r\n                src={model.image}\r\n                alt={model.name}\r\n                width={128}\r\n                height={128}\r\n                className=\"aspect-square w-full rounded-sm object-cover\"\r\n              />\r\n            </ItemHeader>\r\n            <ItemContent>\r\n              <ItemTitle>{model.name}</ItemTitle>\r\n              <ItemDescription>{model.description}</ItemDescription>\r\n            </ItemContent>\r\n          </Item>\r\n        ))}\r\n      </ItemGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  Item,\n  ItemContent,\n  ItemDescription,\n  ItemGroup,\n  ItemHeader,\n  ItemTitle,\n} from \"@/components/ui/item\"\n\n// constants\nconst models = [\n  {\n    name: \"v0-1.5-sm\",\n    description: \"Everyday tasks and UI generation.\",\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\n    credit: \"Valeria Reverdo on Unsplash\",\n  },\n  {\n    name: \"v0-1.5-lg\",\n    description: \"Advanced thinking or reasoning.\",\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\n    credit: \"Michael Oeser on Unsplash\",\n  },\n  {\n    name: \"v0-2.0-mini\",\n    description: \"Open Source model for everyone.\",\n    image: \"https://cdn.uiable.com/component/card-sample.png\",\n    credit: \"Cherry Laithang on Unsplash\",\n  },\n]\n\n//  ------------------------------ | ITEM - HEADER | ------------------------------  //\n\nexport function ItemHeaderDemo() {\n  return (\n    <div className=\"flex w-full max-w-xl flex-col gap-6\">\n      <ItemGroup className=\"grid grid-cols-3 gap-4\">\n        {models.map((model) => (\n          <Item key={model.name} variant=\"outline\">\n            <ItemHeader>\n              <img\n                src={model.image}\n                alt={model.name}\n                width={128}\n                height={128}\n                className=\"aspect-square w-full rounded-sm object-cover\"\n              />\n            </ItemHeader>\n            <ItemContent>\n              <ItemTitle>{model.name}</ItemTitle>\n              <ItemDescription>{model.description}</ItemDescription>\n            </ItemContent>\n          </Item>\n        ))}\n      </ItemGroup>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/item/item-header.tsx"
     }
   ],
-  "categories": [
-    "item"
-  ],
+  "categories": ["item"],
   "type": "registry:ui"
 }

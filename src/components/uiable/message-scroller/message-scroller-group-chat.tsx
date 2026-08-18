@@ -2,9 +2,6 @@
 
 import { useState } from "react"
 
-// third party
-import { motion } from "framer-motion"
-
 // shadcn
 import { Bubble, BubbleContent } from "@/components/ui/bubble"
 import { Button } from "@/components/ui/button"
@@ -32,6 +29,10 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+
+// third-party
+// third party
+import { motion } from "framer-motion"
 
 // assets
 import { RotateCwIcon } from "lucide-react"

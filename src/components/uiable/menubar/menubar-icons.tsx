@@ -7,8 +7,8 @@ import {
   MenubarMenu,
   MenubarSeparator,
   MenubarShortcut,
-  MenubarTrigger
-} from "@/components/ui/menubar";
+  MenubarTrigger,
+} from "@/components/ui/menubar"
 
 // assets
 import {
@@ -17,8 +17,8 @@ import {
   HelpCircleIcon,
   SaveIcon,
   SettingsIcon,
-  TrashIcon
-} from "lucide-react";
+  TrashIcon,
+} from "lucide-react"
 
 //  ------------------------------ | MENUBAR - ICONS | ------------------------------  //
 
@@ -64,5 +64,5 @@ export function MenubarIcons() {
         </MenubarContent>
       </MenubarMenu>
     </Menubar>
-  );
+  )
 }

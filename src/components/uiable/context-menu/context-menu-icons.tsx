@@ -5,16 +5,16 @@ import {
   ContextMenuGroup,
   ContextMenuItem,
   ContextMenuSeparator,
-  ContextMenuTrigger
-} from "@/components/ui/context-menu";
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
 
 // assets
 import {
   ClipboardPasteIcon,
   CopyIcon,
   ScissorsIcon,
-  TrashIcon
-} from "lucide-react";
+  TrashIcon,
+} from "lucide-react"
 
 //  ------------------------------ | CONTEXT MENU - ICONS | ------------------------------  //
 
@@ -53,5 +53,5 @@ export function ContextMenuIcons() {
         </ContextMenuGroup>
       </ContextMenuContent>
     </ContextMenu>
-  );
+  )
 }

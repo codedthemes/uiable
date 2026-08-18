@@ -1,6 +1,6 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button"
+import { Textarea } from "@/components/ui/textarea"
 
 //  ------------------------------ | TEXTAREA - BUTTON | ------------------------------  //
 
@@ -10,5 +10,5 @@ export function TextareaButton() {
       <Textarea placeholder="Type your message here." />
       <Button>Send message</Button>
     </div>
-  );
+  )
 }

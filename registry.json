@@ -2,9 +2,5 @@
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "uiable",
   "homepage": "https://uiable.com",
-  "include": [
-    "src/components/ui/registry.json",
-    "src/components/uiable/registry.json",
-    "src/components/uiable/blocks/registry.json"
-  ]
+  "include": ["src/components/uiable/registry.json", "src/components/uiable/blocks/registry.json", "src/components/ui/registry.json"]
 }

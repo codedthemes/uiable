@@ -9,8 +9,8 @@ import {
   ComboboxItem,
   ComboboxLabel,
   ComboboxList,
-  ComboboxSeparator
-} from "@/components/ui/combobox";
+  ComboboxSeparator,
+} from "@/components/ui/combobox"
 
 // constants
 const timezones = [
@@ -22,8 +22,8 @@ const timezones = [
       "(GMT-6) Chicago",
       "(GMT-5) Toronto",
       "(GMT-8) Vancouver",
-      "(GMT-3) São Paulo"
-    ]
+      "(GMT-3) São Paulo",
+    ],
   },
   {
     value: "Europe",
@@ -33,8 +33,8 @@ const timezones = [
       "(GMT+1) Berlin",
       "(GMT+1) Rome",
       "(GMT+1) Madrid",
-      "(GMT+1) Amsterdam"
-    ]
+      "(GMT+1) Amsterdam",
+    ],
   },
   {
     value: "Asia/Pacific",
@@ -44,10 +44,10 @@ const timezones = [
       "(GMT+8) Singapore",
       "(GMT+4) Dubai",
       "(GMT+11) Sydney",
-      "(GMT+9) Seoul"
-    ]
-  }
-] as const;
+      "(GMT+9) Seoul",
+    ],
+  },
+] as const
 
 //  ------------------------------ | COMBOBOX - GROUPS | ------------------------------  //
 
@@ -74,5 +74,5 @@ export function ComboboxWithGroupsAndSeparator() {
         </ComboboxList>
       </ComboboxContent>
     </Combobox>
-  );
+  )
 }

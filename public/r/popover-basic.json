@@ -3,20 +3,15 @@
   "name": "popover-basic",
   "title": "Popover Basic",
   "description": "Popover Basic variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/popover"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/popover"],
   "files": [
     {
       "path": "src/components/uiable/popover/popover-basic.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Popover,\r\n  PopoverContent,\r\n  PopoverDescription,\r\n  PopoverHeader,\r\n  PopoverTitle,\r\n  PopoverTrigger\r\n} from \"@/components/ui/popover\";\r\n\r\n//  ------------------------------ | POPOVER - BASIC | ------------------------------  //\r\n\r\nexport function PopoverBasic() {\r\n  return (\r\n    <>\r\n      <Popover>\r\n        <PopoverTrigger render={<Button className=\"w-fit\" />}>\r\n          Open Popover\r\n        </PopoverTrigger>\r\n        <PopoverContent align=\"start\">\r\n          <PopoverHeader>\r\n            <PopoverTitle className=\"h5\">Dimensions</PopoverTitle>\r\n            <PopoverDescription>\r\n              Set the dimensions for the layer.\r\n            </PopoverDescription>\r\n          </PopoverHeader>\r\n        </PopoverContent>\r\n      </Popover>\r\n    </>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Popover,\n  PopoverContent,\n  PopoverDescription,\n  PopoverHeader,\n  PopoverTitle,\n  PopoverTrigger,\n} from \"@/components/ui/popover\"\n\n//  ------------------------------ | POPOVER - BASIC | ------------------------------  //\n\nexport function PopoverBasic() {\n  return (\n    <>\n      <Popover>\n        <PopoverTrigger render={<Button className=\"w-fit\" />}>\n          Open Popover\n        </PopoverTrigger>\n        <PopoverContent align=\"start\">\n          <PopoverHeader>\n            <PopoverTitle className=\"h5\">Dimensions</PopoverTitle>\n            <PopoverDescription>\n              Set the dimensions for the layer.\n            </PopoverDescription>\n          </PopoverHeader>\n        </PopoverContent>\n      </Popover>\n    </>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/popover/popover-basic.tsx"
     }
   ],
-  "categories": [
-    "popover"
-  ],
+  "categories": ["popover"],
   "type": "registry:ui"
 }

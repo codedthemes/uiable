@@ -3,19 +3,15 @@
   "name": "badge-light-success",
   "title": "Badge Light Success",
   "description": "Badge Light Success variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/badge/badge-light-success.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - LIGHT SUCCESS | ------------------------------  //\r\n\r\nexport default function BadgeLightSuccess() {\r\n  return (\r\n    <Badge className=\"bg-green-500/10 text-green-500 border-transparent\">\r\n      Success\r\n    </Badge>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | BADGE - LIGHT SUCCESS | ------------------------------  //\n\nexport default function BadgeLightSuccess() {\n  return (\n    <Badge className=\"border-transparent bg-green-500/10 text-green-500\">\n      Success\n    </Badge>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-light-success.tsx"
     }
   ],
-  "categories": [
-    "badge"
-  ],
+  "categories": ["badge"],
   "type": "registry:ui"
 }

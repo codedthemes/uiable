@@ -3,20 +3,15 @@
   "name": "component-sidebar",
   "title": "Component Sidebar",
   "description": "Layout Component Sidebar variant for component.",
-  "registryDependencies": [
-    "@uiable/card",
-    "@uiable/scroll-area"
-  ],
+  "registryDependencies": ["@uiable/card", "@uiable/scroll-area"],
   "files": [
     {
       "path": "src/components/uiable/layout/component-sidebar.tsx",
-      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Card, CardContent, CardHeader } from \"@/components/ui/card\";\r\nimport { ScrollArea } from \"@/components/ui/scroll-area\";\r\n\r\n// project\r\nimport ComponentList from \"./component-list\";\r\nimport ComponentSearch from \"./shared/component-search\";\r\n\r\n//  ------------------------------ | COMPONENT - SIDEBAR | ------------------------------  //\r\n\r\nexport default function ComponentSidebar() {\r\n  const [search, setSearch] = useState(\"\");\r\n\r\n  return (\r\n    <aside className=\"hidden lg:flex w-72 flex-col shrink-0 sticky top-24\">\r\n      <Card className=\"mb-0\">\r\n        <CardHeader>\r\n          <ComponentSearch value={search} onChange={setSearch} />\r\n        </CardHeader>\r\n        <ScrollArea className=\"h-[calc(100vh-230px)]\">\r\n          <CardContent className=\"flex-1\">\r\n            <ComponentList search={search} />\r\n          </CardContent>\r\n        </ScrollArea>\r\n      </Card>\r\n    </aside>\r\n  );\r\n}\r\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Card, CardContent, CardHeader } from \"@/components/ui/card\"\nimport { ScrollArea } from \"@/components/ui/scroll-area\"\n\n// project-imports\n// project\nimport ComponentList from \"./component-list\"\nimport ComponentSearch from \"./shared/component-search\"\n\n//  ------------------------------ | COMPONENT - SIDEBAR | ------------------------------  //\n\nexport default function ComponentSidebar() {\n  const [search, setSearch] = useState(\"\")\n\n  return (\n    <aside className=\"sticky top-24 hidden w-72 shrink-0 flex-col lg:flex\">\n      <Card className=\"mb-0\">\n        <CardHeader>\n          <ComponentSearch value={search} onChange={setSearch} />\n        </CardHeader>\n        <ScrollArea className=\"h-[calc(100vh-230px)]\">\n          <CardContent className=\"flex-1\">\n            <ComponentList search={search} />\n          </CardContent>\n        </ScrollArea>\n      </Card>\n    </aside>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/layout/component-sidebar.tsx"
     }
   ],
-  "categories": [
-    "layout"
-  ],
+  "categories": ["layout"],
   "type": "registry:ui"
 }

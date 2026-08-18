@@ -1,6 +1,3 @@
-// assets
-import { InfoIcon } from "lucide-react"
-
 // shadcn
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -9,6 +6,9 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+
+// assets
+import { InfoIcon } from "lucide-react"
 
 //  ------------------------------ | LABEL - REQUIRED | ------------------------------  //
 

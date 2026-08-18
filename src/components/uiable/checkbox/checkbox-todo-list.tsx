@@ -2,12 +2,6 @@
 
 import { useMemo, useState } from "react"
 
-// third party
-import { AnimatePresence, motion } from "framer-motion"
-
-// assets
-import { CheckCircle2, ListTodo, Trash2 } from "lucide-react"
-
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -18,6 +12,13 @@ import {
   ProgressLabel,
   ProgressValue,
 } from "@/components/ui/progress"
+
+// third-party
+// third party
+import { AnimatePresence, motion } from "framer-motion"
+
+// assets
+import { CheckCircle2, ListTodo, Trash2 } from "lucide-react"
 
 interface TodoItem {
   id: string

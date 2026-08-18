@@ -1,6 +1,3 @@
-// third party
-import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
-
 // shadcn
 import {
   ChartConfig,
@@ -10,6 +7,10 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+
+// third-party
+// third party
+import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 
 const chartData = [
   { day: "Monday", organic: 340, direct: 210, social: 150 },

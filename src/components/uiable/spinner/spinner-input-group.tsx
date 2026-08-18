@@ -4,12 +4,12 @@ import {
   InputGroupAddon,
   InputGroupButton,
   InputGroupInput,
-  InputGroupTextarea
-} from "@/components/ui/input-group";
-import { Spinner } from "@/components/ui/spinner";
+  InputGroupTextarea,
+} from "@/components/ui/input-group"
+import { Spinner } from "@/components/ui/spinner"
 
 // assets
-import { ArrowUpIcon } from "lucide-react";
+import { ArrowUpIcon } from "lucide-react"
 
 //  ------------------------------ | SPINNER - INPUT GROUP | ------------------------------  //
 
@@ -33,5 +33,5 @@ export function SpinnerInputGroup() {
         </InputGroupAddon>
       </InputGroup>
     </div>
-  );
+  )
 }

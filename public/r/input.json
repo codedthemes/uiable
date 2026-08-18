@@ -3,19 +3,15 @@
   "name": "input",
   "title": "Input",
   "description": "Input component.",
-  "dependencies": [
-    "@base-ui/react"
-  ],
+  "dependencies": ["@base-ui/react"],
   "files": [
     {
       "path": "src/components/ui/input.tsx",
-      "content": "import { ComponentProps } from \"react\";\r\n\r\nimport { Input as InputPrimitive } from \"@base-ui/react/input\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nfunction Input({ className, type, ...props }: ComponentProps<\"input\">) {\r\n  return (\r\n    <InputPrimitive\r\n      type={type}\r\n      data-slot=\"input\"\r\n      className={cn(\r\n        \"border rounded-lg block text-base py-[.8rem] px-3 w-full placeholder:text-[#bec8d0] disabled:bg-secondary-200/10 disabled:pointer-events-none focus:outline-none focus:border-primary dark:focus:border-primary border-border bg-input\",\r\n        className\r\n      )}\r\n      {...props}\r\n    />\r\n  );\r\n}\r\n\r\nexport { Input };\r\n",
+      "content": "import { ComponentProps } from \"react\"\n\n// third-party\nimport { Input as InputPrimitive } from \"@base-ui/react/input\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\nfunction Input({ className, type, ...props }: ComponentProps<\"input\">) {\n  return (\n    <InputPrimitive\n      type={type}\n      data-slot=\"input\"\n      className={cn(\n        \"disabled:bg-secondary-200/10 block w-full rounded-lg border border-border bg-input px-3 py-[.8rem] text-base placeholder:text-[#bec8d0] focus:border-primary focus:outline-none disabled:pointer-events-none dark:focus:border-primary\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Input }\n",
       "type": "registry:component",
       "target": "@components/ui/input.tsx"
     }
   ],
-  "categories": [
-    "input"
-  ],
+  "categories": ["input"],
   "type": "registry:ui"
 }

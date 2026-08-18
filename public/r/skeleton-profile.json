@@ -3,19 +3,15 @@
   "name": "skeleton-profile",
   "title": "Skeleton Profile",
   "description": "Skeleton Profile variant for component.",
-  "registryDependencies": [
-    "@uiable/skeleton"
-  ],
+  "registryDependencies": ["@uiable/skeleton"],
   "files": [
     {
       "path": "src/components/uiable/skeleton/skeleton-profile.tsx",
-      "content": "import { Skeleton } from \"@/components/ui/skeleton\"\n\n//  ------------------------------ | SKELETON - PROFILE | ------------------------------  //\n\nexport function SkeletonProfile() {\n  return (\n    <div className=\"w-full max-w-md overflow-hidden rounded-lg border\">\n      <Skeleton className=\"h-32 w-full rounded-none\" />\n      <div className=\"-mt-12 flex flex-col items-center p-4\">\n        <Skeleton className=\"h-24 w-24 rounded-full border-4 border-background\" />\n        <div className=\"mt-4 flex w-full flex-col items-center space-y-2\">\n          <Skeleton className=\"h-6 w-[200px]\" />\n          <Skeleton className=\"h-4 w-[150px]\" />\n        </div>\n        <div className=\"mt-6 flex w-full justify-center gap-4\">\n          <Skeleton className=\"h-10 w-[100px] rounded-lg\" />\n          <Skeleton className=\"h-10 w-[100px] rounded-lg\" />\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+      "content": "// shadcn\nimport { Skeleton } from \"@/components/ui/skeleton\"\n\n//  ------------------------------ | SKELETON - PROFILE | ------------------------------  //\n\nexport function SkeletonProfile() {\n  return (\n    <div className=\"w-full max-w-md overflow-hidden rounded-lg border\">\n      <Skeleton className=\"h-32 w-full rounded-none\" />\n      <div className=\"-mt-12 flex flex-col items-center p-4\">\n        <Skeleton className=\"h-24 w-24 rounded-full border-4 border-background\" />\n        <div className=\"mt-4 flex w-full flex-col items-center space-y-2\">\n          <Skeleton className=\"h-6 w-[200px]\" />\n          <Skeleton className=\"h-4 w-[150px]\" />\n        </div>\n        <div className=\"mt-6 flex w-full justify-center gap-4\">\n          <Skeleton className=\"h-10 w-[100px] rounded-lg\" />\n          <Skeleton className=\"h-10 w-[100px] rounded-lg\" />\n        </div>\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/skeleton/skeleton-profile.tsx"
     }
   ],
-  "categories": [
-    "skeleton"
-  ],
+  "categories": ["skeleton"],
   "type": "registry:ui"
 }

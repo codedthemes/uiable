@@ -3,19 +3,15 @@
   "name": "input-basic",
   "title": "Input Basic",
   "description": "Input Basic variant for component.",
-  "registryDependencies": [
-    "@uiable/input"
-  ],
+  "registryDependencies": ["@uiable/input"],
   "files": [
     {
       "path": "src/components/uiable/input/input-basic.tsx",
-      "content": "// shadcn\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n//  ------------------------------ | INPUT - BASIC | ------------------------------  //\r\n\r\nexport function InputBasic() {\r\n  return <Input placeholder=\"Enter text\" />;\r\n}\r\n",
+      "content": "// shadcn\nimport { Input } from \"@/components/ui/input\"\n\n//  ------------------------------ | INPUT - BASIC | ------------------------------  //\n\nexport function InputBasic() {\n  return <Input placeholder=\"Enter text\" />\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input/input-basic.tsx"
     }
   ],
-  "categories": [
-    "input"
-  ],
+  "categories": ["input"],
   "type": "registry:ui"
 }

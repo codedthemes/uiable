@@ -3,19 +3,15 @@
   "name": "button-secondary",
   "title": "Button Secondary",
   "description": "Button Secondary variant for component.",
-  "registryDependencies": [
-    "@uiable/button"
-  ],
+  "registryDependencies": ["@uiable/button"],
   "files": [
     {
       "path": "src/components/uiable/button/button-secondary.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON SECONDARY | ------------------------------  //\r\n\r\nexport default function ButtonSecondary() {\r\n  return <Button variant=\"secondary\">Secondary</Button>;\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | BUTTON SECONDARY | ------------------------------  //\n\nexport default function ButtonSecondary() {\n  return <Button variant=\"secondary\">Secondary</Button>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-secondary.tsx"
     }
   ],
-  "categories": [
-    "button"
-  ],
+  "categories": ["button"],
   "type": "registry:ui"
 }

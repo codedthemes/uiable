@@ -1,4 +1,4 @@
-import type { SVGAttributes } from "react";
+import type { SVGAttributes } from "react"
 
 //  ------------------------------ | SVG - PROFILE AVATAR | ------------------------------  //
 
@@ -15,5 +15,5 @@ export default function ProfileAvatar(props: SVGAttributes<SVGElement>) {
         fill="currentColor"
       />
     </svg>
-  );
+  )
 }

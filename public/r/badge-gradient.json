@@ -3,19 +3,15 @@
   "name": "badge-gradient",
   "title": "Badge Gradient",
   "description": "Badge Gradient variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/badge/badge-gradient.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\"\r\n\r\n//  ------------------------------ | BADGE - GRADIENT VARIANT | ------------------------------  //\r\n\r\nexport function BadgeGradient() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-2\">\r\n      <Badge className=\"border-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-xs\">\r\n        Spectrum\r\n      </Badge>\r\n      <Badge className=\"border-0 bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-xs\">\r\n        Ocean\r\n      </Badge>\r\n      <Badge className=\"border-0 bg-gradient-to-r from-amber-500 to-rose-500 text-white shadow-xs\">\r\n        Sunset\r\n      </Badge>\r\n      <Badge className=\"border-0 bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-xs\">\r\n        Aurora\r\n      </Badge>\r\n      <Badge className=\"border border-violet-500/30 bg-gradient-to-r from-violet-500/15 via-fuchsia-500/15 to-pink-500/15 text-violet-700 dark:text-violet-300\">\r\n        Subtle Glass\r\n      </Badge>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | BADGE - GRADIENT VARIANT | ------------------------------  //\n\nexport function BadgeGradient() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Badge className=\"border-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-xs\">\n        Spectrum\n      </Badge>\n      <Badge className=\"border-0 bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-xs\">\n        Ocean\n      </Badge>\n      <Badge className=\"border-0 bg-gradient-to-r from-amber-500 to-rose-500 text-white shadow-xs\">\n        Sunset\n      </Badge>\n      <Badge className=\"border-0 bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-xs\">\n        Aurora\n      </Badge>\n      <Badge className=\"border border-violet-500/30 bg-gradient-to-r from-violet-500/15 via-fuchsia-500/15 to-pink-500/15 text-violet-700 dark:text-violet-300\">\n        Subtle Glass\n      </Badge>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-gradient.tsx"
     }
   ],
-  "categories": [
-    "badge"
-  ],
+  "categories": ["badge"],
   "type": "registry:ui"
 }

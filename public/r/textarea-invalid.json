@@ -3,20 +3,15 @@
   "name": "textarea-invalid",
   "title": "Textarea Invalid",
   "description": "Textarea Invalid variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/textarea"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/textarea"],
   "files": [
     {
       "path": "src/components/uiable/textarea/textarea-invalid.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\";\r\nimport { Textarea } from \"@/components/ui/textarea\";\r\n\r\n//  ------------------------------ | TEXTAREA - INVALID | ------------------------------  //\r\n\r\nexport function TextareaInvalid() {\r\n  return (\r\n    <Field data-invalid>\r\n      <FieldLabel htmlFor=\"textarea-invalid\">Message</FieldLabel>\r\n      <Textarea\r\n        id=\"textarea-invalid\"\r\n        placeholder=\"Type your message here.\"\r\n        aria-invalid\r\n      />\r\n      <FieldDescription>Please enter a valid message.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\nimport { Textarea } from \"@/components/ui/textarea\"\n\n//  ------------------------------ | TEXTAREA - INVALID | ------------------------------  //\n\nexport function TextareaInvalid() {\n  return (\n    <Field data-invalid>\n      <FieldLabel htmlFor=\"textarea-invalid\">Message</FieldLabel>\n      <Textarea\n        id=\"textarea-invalid\"\n        placeholder=\"Type your message here.\"\n        aria-invalid\n      />\n      <FieldDescription>Please enter a valid message.</FieldDescription>\n    </Field>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/textarea/textarea-invalid.tsx"
     }
   ],
-  "categories": [
-    "textarea"
-  ],
+  "categories": ["textarea"],
   "type": "registry:ui"
 }

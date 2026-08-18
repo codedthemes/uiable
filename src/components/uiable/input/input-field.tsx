@@ -1,6 +1,6 @@
 // shadcn
-import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field"
+import { Input } from "@/components/ui/input"
 
 //  ------------------------------ | INPUT - FIELD | ------------------------------  //
 
@@ -17,5 +17,5 @@ export function InputField() {
         Choose a unique username for your account.
       </FieldDescription>
     </Field>
-  );
+  )
 }

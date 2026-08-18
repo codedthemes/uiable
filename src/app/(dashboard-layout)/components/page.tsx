@@ -1,8 +1,10 @@
+// next
 import { Metadata } from "next"
 
+// project-imports
+import ComponentsPageClient from "./components-page-client"
 // projects imports
 import branding from "@/branding.json"
-import ComponentsPageClient from "./components-page-client"
 
 export const metadata: Metadata = {
   title: `UI Components - ${branding.brandName}`,

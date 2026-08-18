@@ -1,21 +1,21 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle
-} from "@/components/ui/card";
+  CardTitle,
+} from "@/components/ui/card"
 
 // assets
-import { ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon } from "lucide-react"
 
 //  ------------------------------ | CARD - SMALL | ------------------------------  //
 
 export function CardSmall() {
-  const featureName = "Scheduled reports";
+  const featureName = "Scheduled reports"
 
   return (
     <Card size="sm">
@@ -28,15 +28,15 @@ export function CardSmall() {
       <CardContent>
         <ul className="grid gap-2">
           <li className="flex gap-2">
-            <ChevronRightIcon className="text-muted-foreground mt-0.5 size-4 shrink-0" />
+            <ChevronRightIcon className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
             <span>Choose a schedule (daily, or weekly).</span>
           </li>
           <li className="flex gap-2">
-            <ChevronRightIcon className="text-muted-foreground mt-0.5 size-4 shrink-0" />
+            <ChevronRightIcon className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
             <span>Send to channels or specific teammates.</span>
           </li>
           <li className="flex gap-2">
-            <ChevronRightIcon className="text-muted-foreground mt-0.5 size-4 shrink-0" />
+            <ChevronRightIcon className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
             <span>Include charts, tables, and key metrics.</span>
           </li>
         </ul>
@@ -48,5 +48,5 @@ export function CardSmall() {
         </Button>
       </CardFooter>
     </Card>
-  );
+  )
 }

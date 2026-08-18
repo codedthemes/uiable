@@ -1,3 +1,4 @@
+// next
 import { NextResponse } from "next/server"
 
 // ------------------------------ | API - MAILERLITE SUBSCRIBE | ------------------------------ //

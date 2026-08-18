@@ -9,9 +9,11 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
+// third-party
 // third party
 import { type BundledLanguage, codeToHtml } from "shiki"
 
+// project-imports
 // project
 import { categories } from "@/components-grid"
 import { cn } from "@/lib/utils"
@@ -25,9 +27,12 @@ interface Item {
   description: string
   files: { path: string }[]
   categories: string[]
-  badge?: boolean | string | {
-    label: string
-  }
+  badge?:
+    | boolean
+    | string
+    | {
+        label: string
+      }
   rawCode?: string
   type?: string
 }

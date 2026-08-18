@@ -3,24 +3,16 @@
   "name": "button-group-input",
   "title": "Button Group Input",
   "description": "Button Group Input variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/button-group",
-    "@uiable/input"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/button", "@uiable/button-group", "@uiable/input"],
   "files": [
     {
       "path": "src/components/uiable/button-group/button-group-input.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { ButtonGroup } from \"@/components/ui/button-group\";\r\nimport { Input } from \"@/components/ui/input\";\r\n\r\n// assets\r\nimport { SearchIcon } from \"lucide-react\";\r\n\r\n//  ------------------------------ | BUTTON GROUP - INPUT | ------------------------------  //\r\n\r\nexport default function ButtonGroupInput() {\r\n  return (\r\n    <ButtonGroup className=\"items-stretch\">\r\n      <Input placeholder=\"Search...\" className=\"z-10\" />\r\n      <Button variant=\"outline\" aria-label=\"Search\">\r\n        <SearchIcon />\r\n      </Button>\r\n    </ButtonGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { ButtonGroup } from \"@/components/ui/button-group\"\nimport { Input } from \"@/components/ui/input\"\n\n// assets\nimport { SearchIcon } from \"lucide-react\"\n\n//  ------------------------------ | BUTTON GROUP - INPUT | ------------------------------  //\n\nexport default function ButtonGroupInput() {\n  return (\n    <ButtonGroup className=\"items-stretch\">\n      <Input placeholder=\"Search...\" className=\"z-10\" />\n      <Button variant=\"outline\" aria-label=\"Search\">\n        <SearchIcon />\n      </Button>\n    </ButtonGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/button-group/button-group-input.tsx"
     }
   ],
-  "categories": [
-    "button-group"
-  ],
+  "categories": ["button-group"],
   "type": "registry:ui"
 }

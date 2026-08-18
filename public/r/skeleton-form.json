@@ -3,19 +3,15 @@
   "name": "skeleton-form",
   "title": "Skeleton Form",
   "description": "Skeleton Form variant for component.",
-  "registryDependencies": [
-    "@uiable/skeleton"
-  ],
+  "registryDependencies": ["@uiable/skeleton"],
   "files": [
     {
       "path": "src/components/uiable/skeleton/skeleton-form.tsx",
-      "content": "// shadcn\r\nimport { Skeleton } from \"@/components/ui/skeleton\";\r\n\r\n//  ------------------------------ | SKELETON - FORM | ------------------------------  //\r\n\r\nexport function SkeletonForm() {\r\n  return (\r\n    <div className=\"flex w-full max-w-xs flex-col gap-7\">\r\n      <div className=\"flex flex-col gap-3\">\r\n        <Skeleton className=\"h-4 w-18\" />\r\n        <Skeleton className=\"h-8 w-full\" />\r\n      </div>\r\n      <div className=\"flex flex-col gap-3\">\r\n        <Skeleton className=\"h-4 w-24\" />\r\n        <Skeleton className=\"h-8 w-full\" />\r\n      </div>\r\n      <Skeleton className=\"h-8 w-28\" />\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Skeleton } from \"@/components/ui/skeleton\"\n\n//  ------------------------------ | SKELETON - FORM | ------------------------------  //\n\nexport function SkeletonForm() {\n  return (\n    <div className=\"flex w-full max-w-xs flex-col gap-7\">\n      <div className=\"flex flex-col gap-3\">\n        <Skeleton className=\"h-4 w-18\" />\n        <Skeleton className=\"h-8 w-full\" />\n      </div>\n      <div className=\"flex flex-col gap-3\">\n        <Skeleton className=\"h-4 w-24\" />\n        <Skeleton className=\"h-8 w-full\" />\n      </div>\n      <Skeleton className=\"h-8 w-28\" />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/skeleton/skeleton-form.tsx"
     }
   ],
-  "categories": [
-    "skeleton"
-  ],
+  "categories": ["skeleton"],
   "type": "registry:ui"
 }

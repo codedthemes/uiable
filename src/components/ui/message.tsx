@@ -1,5 +1,6 @@
 import { ComponentProps } from "react"
 
+// project-imports
 import { cn } from "@/lib/utils"
 
 function MessageGroup({ className, ...props }: ComponentProps<"div">) {

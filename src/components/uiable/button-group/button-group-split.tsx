@@ -1,12 +1,9 @@
 // shadcn
-import { Button } from "@/components/ui/button";
-import {
-  ButtonGroup,
-  ButtonGroupSeparator
-} from "@/components/ui/button-group";
+import { Button } from "@/components/ui/button"
+import { ButtonGroup, ButtonGroupSeparator } from "@/components/ui/button-group"
 
 // assets
-import { IconPlus } from "@tabler/icons-react";
+import { IconPlus } from "@tabler/icons-react"
 
 //  ------------------------------ | BUTTON GROUP - SPLIT | ------------------------------  //
 
@@ -19,5 +16,5 @@ export default function ButtonGroupSplit() {
         <IconPlus />
       </Button>
     </ButtonGroup>
-  );
+  )
 }

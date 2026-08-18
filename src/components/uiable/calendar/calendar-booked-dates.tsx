@@ -1,21 +1,21 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
 
 // shadcn
-import { Calendar } from "@/components/ui/calendar";
-import { Card, CardContent } from "@/components/ui/card";
+import { Calendar } from "@/components/ui/calendar"
+import { Card, CardContent } from "@/components/ui/card"
 
 //  ------------------------------ | CALENDAR - BOOKED DATES | ------------------------------  //
 
 export function CalendarBookedDates() {
   const [date, setDate] = useState<Date | undefined>(
     new Date(new Date().getFullYear(), 0, 6)
-  );
+  )
   const bookedDates = Array.from(
     { length: 15 },
     (_, i) => new Date(new Date().getFullYear(), 0, 12 + i)
-  );
+  )
 
   return (
     <Card className="mx-auto w-fit p-0">
@@ -27,13 +27,13 @@ export function CalendarBookedDates() {
           onSelect={setDate}
           disabled={bookedDates}
           modifiers={{
-            booked: bookedDates
+            booked: bookedDates,
           }}
           modifiersClassNames={{
-            booked: "[&>button]:line-through opacity-100"
+            booked: "[&>button]:line-through opacity-100",
           }}
         />
       </CardContent>
     </Card>
-  );
+  )
 }

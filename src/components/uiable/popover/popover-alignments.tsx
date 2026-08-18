@@ -1,17 +1,17 @@
 // shadcn
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Popover,
   PopoverContent,
-  PopoverTrigger
-} from "@/components/ui/popover";
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
 //  ------------------------------ | POPOVER - ALIGNMENTS | ------------------------------  //
 
 export function PopoverAlignments() {
   return (
     <>
-      <div className="flex gap-6 flex-wrap">
+      <div className="flex flex-wrap gap-6">
         <Popover>
           <PopoverTrigger render={<Button size="sm" />}>Start</PopoverTrigger>
           <PopoverContent align="start" className="w-28">
@@ -32,5 +32,5 @@ export function PopoverAlignments() {
         </Popover>
       </div>
     </>
-  );
+  )
 }

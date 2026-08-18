@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { AtSignIcon, MapPin, Smartphone, User } from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -16,6 +14,9 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command"
+
+// assets
+import { AtSignIcon, MapPin, Smartphone, User } from "lucide-react"
 
 interface Contact {
   id: string

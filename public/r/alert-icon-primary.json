@@ -3,22 +3,16 @@
   "name": "alert-icon-primary",
   "title": "Alert Icon Primary",
   "description": "Alert Icon Primary variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/alert"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/alert"],
   "files": [
     {
       "path": "src/components/uiable/alert/alert-icon-primary.tsx",
-      "content": "// shadcn\r\nimport { Alert } from \"@/components/ui/alert\";\r\n\r\n// assets\r\nimport { Zap } from \"lucide-react\";\r\n\r\n//  ------------------------------ | ALERT - ICON PRIMARY | ------------------------------  //\r\n\r\nexport default function AlertIconPrimary() {\r\n  return (\r\n    <Alert className=\"px-5 py-3 mb-3 rounded-lg border flex items-center gap-3 border-primary/20 bg-primary/10 text-primary\">\r\n      <Zap className=\"h-5 w-5\" />\r\n      <span>A simple primary alert—check it out!</span>\r\n    </Alert>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\"\n\n// assets\nimport { Zap } from \"lucide-react\"\n\n//  ------------------------------ | ALERT - ICON PRIMARY | ------------------------------  //\n\nexport default function AlertIconPrimary() {\n  return (\n    <Alert className=\"mb-3 flex items-center gap-3 rounded-lg border border-primary/20 bg-primary/10 px-5 py-3 text-primary\">\n      <Zap className=\"h-5 w-5\" />\n      <span>A simple primary alert—check it out!</span>\n    </Alert>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/alert/alert-icon-primary.tsx"
     }
   ],
-  "categories": [
-    "alert"
-  ],
+  "categories": ["alert"],
   "type": "registry:ui"
 }

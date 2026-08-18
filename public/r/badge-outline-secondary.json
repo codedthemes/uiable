@@ -3,19 +3,15 @@
   "name": "badge-outline-secondary",
   "title": "Badge Outline Secondary",
   "description": "Badge Outline Secondary variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/badge/badge-outline-secondary.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - OUTLINE SECONDARY | ------------------------------  //\r\n\r\nexport default function BadgeOutlineSecondary() {\r\n  return (\r\n    <Badge className=\"border-secondary-500 text-secondary-500 bg-transparent\">\r\n      Secondary\r\n    </Badge>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | BADGE - OUTLINE SECONDARY | ------------------------------  //\n\nexport default function BadgeOutlineSecondary() {\n  return (\n    <Badge className=\"border-secondary-500 text-secondary-500 bg-transparent\">\n      Secondary\n    </Badge>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-outline-secondary.tsx"
     }
   ],
-  "categories": [
-    "badge"
-  ],
+  "categories": ["badge"],
   "type": "registry:ui"
 }

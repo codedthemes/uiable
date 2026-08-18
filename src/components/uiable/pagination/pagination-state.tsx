@@ -5,8 +5,8 @@ import {
   PaginationItem,
   PaginationLink,
   PaginationNext,
-  PaginationPrevious
-} from "@/components/ui/pagination";
+  PaginationPrevious,
+} from "@/components/ui/pagination"
 
 //  ------------------------------ | PAGINATION - STATE | ------------------------------  //
 
@@ -40,5 +40,5 @@ export default function PaginationState() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  );
+  )
 }

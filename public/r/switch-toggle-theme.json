@@ -3,23 +3,16 @@
   "name": "switch-toggle-theme",
   "title": "Switch Toggle Theme",
   "description": "Switch Toggle Theme variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/switch"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/button", "@uiable/switch"],
   "files": [
     {
       "path": "src/components/uiable/switch/switch-toggle-theme.tsx",
-      "content": "\"use client\"\r\n\r\nimport { useState } from \"react\"\r\n// assets\r\nimport { Moon, Sun } from \"lucide-react\"\r\n\r\n// projects\r\nimport { cn } from \"@/lib/utils\"\r\n// shadcn\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { Switch } from \"@/components/ui/switch\"\r\n\r\n//  ------------------------------ | SWITCH - TOGGLE THEME | ------------------------------  //\r\n\r\nexport function SwitchToggleTheme() {\r\n  const [darkBetween, setDarkBetween] = useState(true)\r\n\r\n  return (\r\n    <div className=\"flex items-center justify-center gap-2.5 py-4\">\r\n      <Button\r\n        variant=\"link\"\r\n        size=\"icon-xs\"\r\n        onClick={() => setDarkBetween(false)}\r\n        className={cn(\r\n          \"cursor-pointer transition-colors\",\r\n          !darkBetween\r\n            ? \"text-amber-500 dark:text-amber-400\"\r\n            : \"text-muted-foreground\"\r\n        )}\r\n        aria-label=\"Light mode\"\r\n      >\r\n        <Sun className=\"size-4\" />\r\n      </Button>\r\n      <Switch\r\n        id=\"switch-theme-between\"\r\n        checked={darkBetween}\r\n        onCheckedChange={setDarkBetween}\r\n        className=\"!rounded-md [&_[data-slot=switch-thumb]]:!rounded-sm\"\r\n      />\r\n      <Button\r\n        variant=\"link\"\r\n        size=\"icon-xs\"\r\n        onClick={() => setDarkBetween(true)}\r\n        className={cn(\r\n          \"cursor-pointer transition-colors\",\r\n          darkBetween ? \"text-foreground\" : \"text-muted-foreground\"\r\n        )}\r\n        aria-label=\"Dark mode\"\r\n      >\r\n        <Moon className=\"size-4\" />\r\n      </Button>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { Switch } from \"@/components/ui/switch\"\n\n// project-imports\n// projects\nimport { cn } from \"@/lib/utils\"\n\n// assets\nimport { Moon, Sun } from \"lucide-react\"\n\n//  ------------------------------ | SWITCH - TOGGLE THEME | ------------------------------  //\n\nexport function SwitchToggleTheme() {\n  const [darkBetween, setDarkBetween] = useState(true)\n\n  return (\n    <div className=\"flex items-center justify-center gap-2.5 py-4\">\n      <Button\n        variant=\"link\"\n        size=\"icon-xs\"\n        onClick={() => setDarkBetween(false)}\n        className={cn(\n          \"cursor-pointer transition-colors\",\n          !darkBetween\n            ? \"text-amber-500 dark:text-amber-400\"\n            : \"text-muted-foreground\"\n        )}\n        aria-label=\"Light mode\"\n      >\n        <Sun className=\"size-4\" />\n      </Button>\n      <Switch\n        id=\"switch-theme-between\"\n        checked={darkBetween}\n        onCheckedChange={setDarkBetween}\n        className=\"!rounded-md [&_[data-slot=switch-thumb]]:!rounded-sm\"\n      />\n      <Button\n        variant=\"link\"\n        size=\"icon-xs\"\n        onClick={() => setDarkBetween(true)}\n        className={cn(\n          \"cursor-pointer transition-colors\",\n          darkBetween ? \"text-foreground\" : \"text-muted-foreground\"\n        )}\n        aria-label=\"Dark mode\"\n      >\n        <Moon className=\"size-4\" />\n      </Button>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/switch/switch-toggle-theme.tsx"
     }
   ],
-  "categories": [
-    "switch"
-  ],
+  "categories": ["switch"],
   "type": "registry:ui"
 }

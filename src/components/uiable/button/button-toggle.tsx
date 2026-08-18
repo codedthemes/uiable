@@ -5,11 +5,12 @@ import { useState } from "react"
 // shadcn
 import { Button } from "@/components/ui/button"
 
+// third-party
+import { Moon, Sun1 } from "iconsax-reactjs"
+
+// project-imports
 // project imports
 import { cn } from "@/lib/utils"
-
-// assets
-import { Moon, Sun1 } from "iconsax-reactjs"
 
 //  ------------------------------ | BUTTON TOGGLE | ------------------------------  //
 

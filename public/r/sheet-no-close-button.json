@@ -3,20 +3,15 @@
   "name": "sheet-no-close-button",
   "title": "Sheet No Close Button",
   "description": "Sheet No Close Button variant for component.",
-  "registryDependencies": [
-    "@uiable/button",
-    "@uiable/sheet"
-  ],
+  "registryDependencies": ["@uiable/button", "@uiable/sheet"],
   "files": [
     {
       "path": "src/components/uiable/sheet/sheet-no-close-button.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\nimport {\r\n  Sheet,\r\n  SheetContent,\r\n  SheetDescription,\r\n  SheetHeader,\r\n  SheetTitle,\r\n  SheetTrigger,\r\n} from \"@/components/ui/sheet\";\r\n\r\n//  ------------------------------ | SHEET - NO CLOSE BUTTON | ------------------------------  //\r\n\r\nexport default function SheetNoCloseButton() {\r\n  return (\r\n    <Sheet>\r\n      <SheetTrigger render={<Button />}>Open Sheet</SheetTrigger>\r\n      <SheetContent showCloseButton={false}>\r\n        <SheetHeader>\r\n          <SheetTitle>No Close Button</SheetTitle>\r\n          <SheetDescription>\r\n            This sheet doesn't have a close button in the top-right corner.\r\n            Click outside to close.\r\n          </SheetDescription>\r\n        </SheetHeader>\r\n      </SheetContent>\r\n    </Sheet>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Sheet,\n  SheetContent,\n  SheetDescription,\n  SheetHeader,\n  SheetTitle,\n  SheetTrigger,\n} from \"@/components/ui/sheet\"\n\n//  ------------------------------ | SHEET - NO CLOSE BUTTON | ------------------------------  //\n\nexport default function SheetNoCloseButton() {\n  return (\n    <Sheet>\n      <SheetTrigger render={<Button />}>Open Sheet</SheetTrigger>\n      <SheetContent showCloseButton={false}>\n        <SheetHeader>\n          <SheetTitle>No Close Button</SheetTitle>\n          <SheetDescription>\n            This sheet doesn't have a close button in the top-right corner.\n            Click outside to close.\n          </SheetDescription>\n        </SheetHeader>\n      </SheetContent>\n    </Sheet>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/sheet/sheet-no-close-button.tsx"
     }
   ],
-  "categories": [
-    "sheet"
-  ],
+  "categories": ["sheet"],
   "type": "registry:ui"
 }

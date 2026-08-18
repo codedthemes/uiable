@@ -1,15 +1,20 @@
 "use client"
 
 import { useState } from "react"
-// third party
-import { AnimatePresence, motion } from "framer-motion"
-// assets
-import { HeartIcon, ThumbsUpIcon } from "lucide-react"
 
-// projects
-import { cn } from "@/lib/utils"
 // shadcn
 import { Toggle } from "@/components/ui/toggle"
+
+// third-party
+// third party
+import { AnimatePresence, motion } from "framer-motion"
+
+// project-imports
+// projects
+import { cn } from "@/lib/utils"
+
+// assets
+import { HeartIcon, ThumbsUpIcon } from "lucide-react"
 
 //  ------------------------------ | TOGGLE - ANIMATED | ------------------------------  //
 

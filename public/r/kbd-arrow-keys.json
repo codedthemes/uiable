@@ -3,19 +3,15 @@
   "name": "kbd-arrow-keys",
   "title": "Kbd Arrow Keys",
   "description": "Kbd Arrow Keys variant for component.",
-  "registryDependencies": [
-    "@uiable/kbd"
-  ],
+  "registryDependencies": ["@uiable/kbd"],
   "files": [
     {
       "path": "src/components/uiable/kbd/kbd-arrow-keys.tsx",
-      "content": "// shadcn\r\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\"\r\n\r\n//  ------------------------------ | KBD - ARROW KEYS | ------------------------------  //\r\n\r\nexport default function KbdArrowKeys() {\r\n  return (\r\n    <div className=\"flex flex-col items-center gap-4\">\r\n      <div className=\"flex flex-col items-center gap-1.5\">\r\n        <Kbd className=\"h-6 min-w-6 justify-center\">↑</Kbd>\r\n        <div className=\"flex items-center gap-1.5\">\r\n          <Kbd className=\"h-6 min-w-6 justify-center\">←</Kbd>\r\n          <Kbd className=\"h-6 min-w-6 justify-center\">↓</Kbd>\r\n          <Kbd className=\"h-6 min-w-6 justify-center\">→</Kbd>\r\n        </div>\r\n      </div>\r\n      <div className=\"flex flex-wrap items-center justify-center gap-1 text-sm text-muted-foreground\">\r\n        Use arrow keys or{\" \"}\r\n        <KbdGroup>\r\n          <Kbd>Alt</Kbd>\r\n          <Kbd>→</Kbd>\r\n        </KbdGroup>{\" \"}\r\n        to navigate history\r\n      </div>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\"\n\n//  ------------------------------ | KBD - ARROW KEYS | ------------------------------  //\n\nexport default function KbdArrowKeys() {\n  return (\n    <div className=\"flex flex-col items-center gap-4\">\n      <div className=\"flex flex-col items-center gap-1.5\">\n        <Kbd className=\"h-6 min-w-6 justify-center\">↑</Kbd>\n        <div className=\"flex items-center gap-1.5\">\n          <Kbd className=\"h-6 min-w-6 justify-center\">←</Kbd>\n          <Kbd className=\"h-6 min-w-6 justify-center\">↓</Kbd>\n          <Kbd className=\"h-6 min-w-6 justify-center\">→</Kbd>\n        </div>\n      </div>\n      <div className=\"flex flex-wrap items-center justify-center gap-1 text-sm text-muted-foreground\">\n        Use arrow keys or{\" \"}\n        <KbdGroup>\n          <Kbd>Alt</Kbd>\n          <Kbd>→</Kbd>\n        </KbdGroup>{\" \"}\n        to navigate history\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/kbd/kbd-arrow-keys.tsx"
     }
   ],
-  "categories": [
-    "kbd"
-  ],
+  "categories": ["kbd"],
   "type": "registry:ui"
 }

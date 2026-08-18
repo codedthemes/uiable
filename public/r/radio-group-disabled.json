@@ -3,20 +3,15 @@
   "name": "radio-group-disabled",
   "title": "Radio Group Disabled",
   "description": "Radio Group Disabled variant for component.",
-  "registryDependencies": [
-    "@uiable/field",
-    "@uiable/radio-group"
-  ],
+  "registryDependencies": ["@uiable/field", "@uiable/radio-group"],
   "files": [
     {
       "path": "src/components/uiable/radio-group/radio-group-disabled.tsx",
-      "content": "// shadcn\r\nimport { Field, FieldLabel } from \"@/components/ui/field\";\r\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\r\n\r\n//  ------------------------------ | RADIO GROUP - DISABLED | ------------------------------  //\r\n\r\nexport function RadioGroupDisabled() {\r\n  return (\r\n    <RadioGroup defaultValue=\"option2\" className=\"w-fit\">\r\n      <Field orientation=\"horizontal\" data-disabled>\r\n        <RadioGroupItem value=\"option1\" id=\"disabled-1\" disabled />\r\n        <FieldLabel htmlFor=\"disabled-1\" className=\"font-normal\">\r\n          Disabled\r\n        </FieldLabel>\r\n      </Field>\r\n      <Field orientation=\"horizontal\">\r\n        <RadioGroupItem value=\"option2\" id=\"disabled-2\" />\r\n        <FieldLabel htmlFor=\"disabled-2\" className=\"font-normal\">\r\n          Option 2\r\n        </FieldLabel>\r\n      </Field>\r\n      <Field orientation=\"horizontal\">\r\n        <RadioGroupItem value=\"option3\" id=\"disabled-3\" />\r\n        <FieldLabel htmlFor=\"disabled-3\" className=\"font-normal\">\r\n          Option 3\r\n        </FieldLabel>\r\n      </Field>\r\n    </RadioGroup>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Field, FieldLabel } from \"@/components/ui/field\"\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\"\n\n//  ------------------------------ | RADIO GROUP - DISABLED | ------------------------------  //\n\nexport function RadioGroupDisabled() {\n  return (\n    <RadioGroup defaultValue=\"option2\" className=\"w-fit\">\n      <Field orientation=\"horizontal\" data-disabled>\n        <RadioGroupItem value=\"option1\" id=\"disabled-1\" disabled />\n        <FieldLabel htmlFor=\"disabled-1\" className=\"font-normal\">\n          Disabled\n        </FieldLabel>\n      </Field>\n      <Field orientation=\"horizontal\">\n        <RadioGroupItem value=\"option2\" id=\"disabled-2\" />\n        <FieldLabel htmlFor=\"disabled-2\" className=\"font-normal\">\n          Option 2\n        </FieldLabel>\n      </Field>\n      <Field orientation=\"horizontal\">\n        <RadioGroupItem value=\"option3\" id=\"disabled-3\" />\n        <FieldLabel htmlFor=\"disabled-3\" className=\"font-normal\">\n          Option 3\n        </FieldLabel>\n      </Field>\n    </RadioGroup>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/radio-group/radio-group-disabled.tsx"
     }
   ],
-  "categories": [
-    "radio-group"
-  ],
+  "categories": ["radio-group"],
   "type": "registry:ui"
 }

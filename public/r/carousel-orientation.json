@@ -3,20 +3,15 @@
   "name": "carousel-orientation",
   "title": "Carousel Orientation",
   "description": "Carousel Orientation variant for component.",
-  "registryDependencies": [
-    "@uiable/card",
-    "@uiable/carousel"
-  ],
+  "registryDependencies": ["@uiable/card", "@uiable/carousel"],
   "files": [
     {
       "path": "src/components/uiable/carousel/carousel-orientation.tsx",
-      "content": "// shadcn\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\nimport {\r\n  Carousel,\r\n  CarouselContent,\r\n  CarouselItem,\r\n  CarouselNext,\r\n  CarouselPrevious\r\n} from \"@/components/ui/carousel\";\r\n\r\n//  ------------------------------ | CAROUSEL - ORIENTATION | ------------------------------  //\r\n\r\nexport default function CarouselOrientation() {\r\n  return (\r\n    <div className=\"relative py-10 w-full flex items-center justify-center\">\r\n      <Carousel\r\n        opts={{\r\n          align: \"center\"\r\n        }}\r\n        orientation=\"vertical\"\r\n        className=\"w-full max-w-xs\"\r\n      >\r\n        <CarouselContent className=\"mt-1 h-[270px]\">\r\n          {Array.from({ length: 5 }).map((_, index) => (\r\n            <CarouselItem key={index} className=\"basis-1/2 pt-1\">\r\n              <div className=\"p-1\">\r\n                <Card className=\"bg-primary/10 border-primary mb-0\">\r\n                  <CardContent className=\"flex items-center justify-center p-6\">\r\n                    <span className=\"text-3xl font-semibold text-primary\">\r\n                      {index + 1}\r\n                    </span>\r\n                  </CardContent>\r\n                </Card>\r\n              </div>\r\n            </CarouselItem>\r\n          ))}\r\n        </CarouselContent>\r\n        <CarouselPrevious />\r\n        <CarouselNext />\r\n      </Carousel>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Card, CardContent } from \"@/components/ui/card\"\nimport {\n  Carousel,\n  CarouselContent,\n  CarouselItem,\n  CarouselNext,\n  CarouselPrevious,\n} from \"@/components/ui/carousel\"\n\n//  ------------------------------ | CAROUSEL - ORIENTATION | ------------------------------  //\n\nexport default function CarouselOrientation() {\n  return (\n    <div className=\"relative flex w-full items-center justify-center py-10\">\n      <Carousel\n        opts={{\n          align: \"center\",\n        }}\n        orientation=\"vertical\"\n        className=\"w-full max-w-xs\"\n      >\n        <CarouselContent className=\"mt-1 h-[270px]\">\n          {Array.from({ length: 5 }).map((_, index) => (\n            <CarouselItem key={index} className=\"basis-1/2 pt-1\">\n              <div className=\"p-1\">\n                <Card className=\"mb-0 border-primary bg-primary/10\">\n                  <CardContent className=\"flex items-center justify-center p-6\">\n                    <span className=\"text-3xl font-semibold text-primary\">\n                      {index + 1}\n                    </span>\n                  </CardContent>\n                </Card>\n              </div>\n            </CarouselItem>\n          ))}\n        </CarouselContent>\n        <CarouselPrevious />\n        <CarouselNext />\n      </Carousel>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/carousel/carousel-orientation.tsx"
     }
   ],
-  "categories": [
-    "carousel"
-  ],
+  "categories": ["carousel"],
   "type": "registry:ui"
 }

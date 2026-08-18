@@ -3,20 +3,15 @@
   "name": "toggle",
   "title": "Toggle",
   "description": "Toggle component.",
-  "dependencies": [
-    "@base-ui/react",
-    "class-variance-authority"
-  ],
+  "dependencies": ["@base-ui/react", "class-variance-authority"],
   "files": [
     {
       "path": "src/components/ui/toggle.tsx",
-      "content": "\"use client\";\r\n\r\nimport { Toggle as TogglePrimitive } from \"@base-ui/react/toggle\";\r\nimport { cva, type VariantProps } from \"class-variance-authority\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nconst toggleVariants = cva(\r\n  \"hover:text-foreground aria-pressed:bg-primary/10 aria-pressed:text-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[state=on]:bg-muted gap-1 rounded-lg text-base font-medium transition-all [&_svg:not([class*='size-'])]:size-4 group/toggle hover:bg-muted inline-flex items-center justify-center whitespace-nowrap outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0\",\r\n  {\r\n    variants: {\r\n      variant: {\r\n        default: \"bg-transparent\",\r\n        outline:\r\n          \"border-border hover:bg-muted border bg-transparent aria-pressed:border-primary/15\"\r\n      },\r\n      size: {\r\n        default: \"h-8 min-w-8 px-2 rounded-lg\",\r\n        sm: \"h-7 min-w-7 rounded-md px-1.5 text-[0.8rem]\",\r\n        lg: \"h-9 min-w-9 px-2.5 rounded-xl\"\r\n      }\r\n    },\r\n    defaultVariants: {\r\n      variant: \"default\",\r\n      size: \"default\"\r\n    }\r\n  }\r\n);\r\n\r\nfunction Toggle({\r\n  className,\r\n  variant = \"default\",\r\n  size = \"default\",\r\n  ...props\r\n}: TogglePrimitive.Props & VariantProps<typeof toggleVariants>) {\r\n  return (\r\n    <TogglePrimitive\r\n      data-slot=\"toggle\"\r\n      className={cn(toggleVariants({ variant, size, className }))}\r\n      {...props}\r\n    />\r\n  );\r\n}\r\n\r\nexport { Toggle, toggleVariants };\r\n",
+      "content": "\"use client\"\n\n// third-party\nimport { Toggle as TogglePrimitive } from \"@base-ui/react/toggle\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\nconst toggleVariants = cva(\n  \"group/toggle inline-flex items-center justify-center gap-1 rounded-lg text-base font-medium whitespace-nowrap transition-all outline-none hover:bg-muted hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-primary/10 aria-pressed:text-primary data-[state=on]:bg-muted dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-transparent\",\n        outline:\n          \"border border-border bg-transparent hover:bg-muted aria-pressed:border-primary/15\",\n      },\n      size: {\n        default: \"h-8 min-w-8 rounded-lg px-2\",\n        sm: \"h-7 min-w-7 rounded-md px-1.5 text-[0.8rem]\",\n        lg: \"h-9 min-w-9 rounded-xl px-2.5\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  }\n)\n\nfunction Toggle({\n  className,\n  variant = \"default\",\n  size = \"default\",\n  ...props\n}: TogglePrimitive.Props & VariantProps<typeof toggleVariants>) {\n  return (\n    <TogglePrimitive\n      data-slot=\"toggle\"\n      className={cn(toggleVariants({ variant, size, className }))}\n      {...props}\n    />\n  )\n}\n\nexport { Toggle, toggleVariants }\n",
       "type": "registry:component",
       "target": "@components/ui/toggle.tsx"
     }
   ],
-  "categories": [
-    "toggle"
-  ],
+  "categories": ["toggle"],
   "type": "registry:ui"
 }

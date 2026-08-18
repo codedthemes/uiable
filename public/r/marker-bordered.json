@@ -3,22 +3,16 @@
   "name": "marker-bordered",
   "title": "Marker Bordered",
   "description": "Marker Bordered variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/marker"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/marker"],
   "files": [
     {
       "path": "src/components/uiable/marker/marker-bordered.tsx",
-      "content": "// shadcn\r\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\r\n\r\n// assets\r\nimport { FileTextIcon, GitBranchIcon, SearchIcon } from \"lucide-react\"\r\n\r\n//  ------------------------------ | MARKER - BORDER | ------------------------------  //\r\n\r\nexport function MarkerBorder() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-3\">\r\n      <Marker variant=\"border\">\r\n        <MarkerIcon>\r\n          <GitBranchIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Switched to release-candidate</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"border\">\r\n        <MarkerIcon>\r\n          <SearchIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Reviewed 8 related files</MarkerContent>\r\n      </Marker>\r\n      <Marker variant=\"border\">\r\n        <MarkerIcon>\r\n          <FileTextIcon />\r\n        </MarkerIcon>\r\n        <MarkerContent>Opened implementation notes</MarkerContent>\r\n      </Marker>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Marker, MarkerContent, MarkerIcon } from \"@/components/ui/marker\"\n\n// assets\nimport { FileTextIcon, GitBranchIcon, SearchIcon } from \"lucide-react\"\n\n//  ------------------------------ | MARKER - BORDER | ------------------------------  //\n\nexport function MarkerBorder() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-3\">\n      <Marker variant=\"border\">\n        <MarkerIcon>\n          <GitBranchIcon />\n        </MarkerIcon>\n        <MarkerContent>Switched to release-candidate</MarkerContent>\n      </Marker>\n      <Marker variant=\"border\">\n        <MarkerIcon>\n          <SearchIcon />\n        </MarkerIcon>\n        <MarkerContent>Reviewed 8 related files</MarkerContent>\n      </Marker>\n      <Marker variant=\"border\">\n        <MarkerIcon>\n          <FileTextIcon />\n        </MarkerIcon>\n        <MarkerContent>Opened implementation notes</MarkerContent>\n      </Marker>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/marker/marker-bordered.tsx"
     }
   ],
-  "categories": [
-    "marker"
-  ],
+  "categories": ["marker"],
   "type": "registry:ui"
 }

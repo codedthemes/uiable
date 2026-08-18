@@ -1,10 +1,11 @@
 "use client"
 
-// third party
-import { motion } from "framer-motion"
-
 // shadcn
 import { Button } from "@/components/ui/button"
+
+// third-party
+// third party
+import { motion } from "framer-motion"
 
 // assets
 import { ArrowRight } from "lucide-react"

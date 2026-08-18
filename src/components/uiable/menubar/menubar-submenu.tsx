@@ -9,8 +9,8 @@ import {
   MenubarSub,
   MenubarSubContent,
   MenubarSubTrigger,
-  MenubarTrigger
-} from "@/components/ui/menubar";
+  MenubarTrigger,
+} from "@/components/ui/menubar"
 
 //  ------------------------------ | MENUBAR - SUBMENU | ------------------------------  //
 
@@ -59,5 +59,5 @@ export function MenubarSubmenu() {
         </MenubarContent>
       </MenubarMenu>
     </Menubar>
-  );
+  )
 }

@@ -1,6 +1,3 @@
-// assets
-import { ArrowRight, Cpu, Database, Layers, Zap } from "lucide-react"
-
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -13,6 +10,9 @@ import {
   ItemMedia,
   ItemTitle,
 } from "@/components/ui/item"
+
+// assets
+import { ArrowRight, Cpu, Database, Layers, Zap } from "lucide-react"
 
 const plans = [
   {

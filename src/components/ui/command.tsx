@@ -1,19 +1,25 @@
-"use client";
+"use client"
 
-import { ComponentProps, ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react"
 
-import { Command as CommandPrimitive } from "cmdk";
-
-import { cn } from "@/lib/utils";
+// shadcn
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
-  DialogTitle
-} from "@/components/ui/dialog";
-import { InputGroup, InputGroupAddon } from "@/components/ui/input-group";
-import { SearchIcon, CheckIcon } from "lucide-react";
+  DialogTitle,
+} from "@/components/ui/dialog"
+import { InputGroup, InputGroupAddon } from "@/components/ui/input-group"
+
+// third-party
+import { Command as CommandPrimitive } from "cmdk"
+
+// project-imports
+import { cn } from "@/lib/utils"
+
+// assets
+import { SearchIcon, CheckIcon } from "lucide-react"
 
 function Command({
   className,
@@ -23,12 +29,12 @@ function Command({
     <CommandPrimitive
       data-slot="command"
       className={cn(
-        "bg-card text-popover-foreground flex size-full flex-col overflow-hidden rounded-lg! p-4 shadow-[0_4px_24px_0_rgba(62,57,107,.18)]",
+        "flex size-full flex-col overflow-hidden rounded-lg! bg-card p-4 text-popover-foreground shadow-[0_4px_24px_0_rgba(62,57,107,.18)]",
         className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function CommandDialog({
@@ -39,11 +45,11 @@ function CommandDialog({
   showCloseButton = false,
   ...props
 }: Omit<ComponentProps<typeof Dialog>, "children"> & {
-  title?: string;
-  description?: string;
-  className?: string;
-  showCloseButton?: boolean;
-  children: ReactNode;
+  title?: string
+  description?: string
+  className?: string
+  showCloseButton?: boolean
+  children: ReactNode
 }) {
   return (
     <Dialog {...props}>
@@ -61,7 +67,7 @@ function CommandDialog({
         {children}
       </DialogContent>
     </Dialog>
-  );
+  )
 }
 
 function CommandInput({
@@ -70,7 +76,7 @@ function CommandInput({
 }: ComponentProps<typeof CommandPrimitive.Input>) {
   return (
     <div data-slot="command-input-wrapper" className="p-1 pb-0">
-      <InputGroup className="border rounded-lg flex text-base py-[.8rem] px-3 w-full placeholder:text-[#bec8d0] disabled:bg-secondary-200/10 disabled:pointer-events-none focus:outline-none focus:border-primary dark:focus:border-primary border-border bg-input *:data-[slot=input-group-addon]:pl-2!">
+      <InputGroup className="disabled:bg-secondary-200/10 flex w-full rounded-lg border border-border bg-input px-3 py-[.8rem] text-base placeholder:text-[#bec8d0] focus:border-primary focus:outline-none disabled:pointer-events-none *:data-[slot=input-group-addon]:pl-2! dark:focus:border-primary">
         <CommandPrimitive.Input
           data-slot="command-input"
           className={cn(
@@ -84,7 +90,7 @@ function CommandInput({
         </InputGroupAddon>
       </InputGroup>
     </div>
-  );
+  )
 }
 
 function CommandList({
@@ -100,7 +106,7 @@ function CommandList({
       )}
       {...props}
     />
-  );
+  )
 }
 
 function CommandEmpty({
@@ -113,7 +119,7 @@ function CommandEmpty({
       className={cn("py-6 text-center text-base", className)}
       {...props}
     />
-  );
+  )
 }
 
 function CommandGroup({
@@ -124,12 +130,12 @@ function CommandGroup({
     <CommandPrimitive.Group
       data-slot="command-group"
       className={cn(
-        "text-foreground **:[[cmdk-group-heading]]:text-muted-foreground overflow-hidden p-1 **:[[cmdk-group-heading]]:px-3 **:[[cmdk-group-heading]]:py-1.5 **:[[cmdk-group-heading]]:text-sm **:[[cmdk-group-heading]]:font-medium",
+        "overflow-hidden p-1 text-foreground **:[[cmdk-group-heading]]:px-3 **:[[cmdk-group-heading]]:py-1.5 **:[[cmdk-group-heading]]:text-sm **:[[cmdk-group-heading]]:font-medium **:[[cmdk-group-heading]]:text-muted-foreground",
         className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function CommandSeparator({
@@ -139,10 +145,10 @@ function CommandSeparator({
   return (
     <CommandPrimitive.Separator
       data-slot="command-separator"
-      className={cn("bg-border mx-2 h-px", className)}
+      className={cn("mx-2 h-px bg-border", className)}
       {...props}
     />
-  );
+  )
 }
 
 function CommandItem({
@@ -154,7 +160,7 @@ function CommandItem({
     <CommandPrimitive.Item
       data-slot="command-item"
       className={cn(
-        "data-selected:bg-background data-selected:text-foreground data-selected:*:[svg]:text-foreground group/command-item relative flex cursor-default items-center gap-2 rounded-lg px-3 py-2 text-base outline-hidden select-none in-data-[slot=dialog-content]:rounded-lg! data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "group/command-item relative flex cursor-default items-center gap-2 rounded-lg px-3 py-2 text-base outline-hidden select-none in-data-[slot=dialog-content]:rounded-lg! data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 data-selected:bg-background data-selected:text-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 data-selected:*:[svg]:text-foreground",
         className
       )}
       {...props}
@@ -162,23 +168,20 @@ function CommandItem({
       {children}
       <CheckIcon className="ml-auto opacity-0 group-has-data-[slot=command-shortcut]/command-item:hidden group-data-[checked=true]/command-item:opacity-100" />
     </CommandPrimitive.Item>
-  );
+  )
 }
 
-function CommandShortcut({
-  className,
-  ...props
-}: ComponentProps<"span">) {
+function CommandShortcut({ className, ...props }: ComponentProps<"span">) {
   return (
     <span
       data-slot="command-shortcut"
       className={cn(
-        "text-muted-foreground group-data-selected/command-item:text-foreground ml-auto text-xs tracking-widest",
+        "ml-auto text-xs tracking-widest text-muted-foreground group-data-selected/command-item:text-foreground",
         className
       )}
       {...props}
     />
-  );
+  )
 }
 
 export {
@@ -190,5 +193,5 @@ export {
   CommandGroup,
   CommandItem,
   CommandShortcut,
-  CommandSeparator
-};
+  CommandSeparator,
+}

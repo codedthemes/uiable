@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-// assets
-import { FileText, ImageIcon, Music, Video } from "lucide-react"
 
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -17,6 +15,9 @@ import {
   ItemMedia,
   ItemTitle,
 } from "@/components/ui/item"
+
+// assets
+import { FileText, ImageIcon, Music, Video } from "lucide-react"
 
 const files = [
   {

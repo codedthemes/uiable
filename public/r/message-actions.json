@@ -3,24 +3,16 @@
   "name": "message-actions",
   "title": "Message Actions",
   "description": "Message Actions variant for component.",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@uiable/bubble",
-    "@uiable/button",
-    "@uiable/message"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/bubble", "@uiable/button", "@uiable/message"],
   "files": [
     {
       "path": "src/components/uiable/message/message-actions.tsx",
-      "content": "// shadcn\r\nimport { Bubble, BubbleContent } from \"@/components/ui/bubble\"\r\nimport { Button } from \"@/components/ui/button\"\r\nimport { Message, MessageContent, MessageFooter } from \"@/components/ui/message\"\r\n\r\n// assets\r\nimport {\r\n  CopyIcon,\r\n  RefreshCcwIcon,\r\n  ThumbsDownIcon,\r\n  ThumbsUpIcon,\r\n} from \"lucide-react\"\r\n\r\n//  ------------------------------ | MESSAGE - ACTIONS | ------------------------------  //\r\n\r\nexport function MessageActions() {\r\n  return (\r\n    <div className=\"flex w-full max-w-sm flex-col gap-8\">\r\n      <Message>\r\n        <MessageContent>\r\n          <Bubble variant=\"muted\">\r\n            <BubbleContent>\r\n              The install failure is coming from the workspace package.\r\n            </BubbleContent>\r\n          </Bubble>\r\n          <MessageFooter>\r\n            <Button variant=\"ghost\" size=\"icon\" aria-label=\"Copy\" title=\"Copy\">\r\n              <CopyIcon />\r\n            </Button>\r\n            <Button variant=\"ghost\" size=\"icon\" aria-label=\"Like\" title=\"Like\">\r\n              <ThumbsUpIcon />\r\n            </Button>\r\n            <Button\r\n              variant=\"ghost\"\r\n              size=\"icon\"\r\n              aria-label=\"Dislike\"\r\n              title=\"Dislike\"\r\n            >\r\n              <ThumbsDownIcon />\r\n            </Button>\r\n          </MessageFooter>\r\n        </MessageContent>\r\n      </Message>\r\n      <Message align=\"end\">\r\n        <MessageContent>\r\n          <Bubble>\r\n            <BubbleContent className=\"dark:text-white\">\r\n              Okay drop me a link. Taking a look...\r\n            </BubbleContent>\r\n          </Bubble>\r\n          <MessageFooter className=\"gap-2\">\r\n            <span className=\"font-normal text-destructive\">Failed to send</span>\r\n            <Button\r\n              variant=\"ghost\"\r\n              size=\"icon-xs\"\r\n              title=\"Retry\"\r\n              aria-label=\"Retry\"\r\n            >\r\n              <RefreshCcwIcon />\r\n            </Button>\r\n          </MessageFooter>\r\n        </MessageContent>\r\n      </Message>\r\n    </div>\r\n  )\r\n}\r\n",
+      "content": "// shadcn\nimport { Bubble, BubbleContent } from \"@/components/ui/bubble\"\nimport { Button } from \"@/components/ui/button\"\nimport { Message, MessageContent, MessageFooter } from \"@/components/ui/message\"\n\n// assets\nimport {\n  CopyIcon,\n  RefreshCcwIcon,\n  ThumbsDownIcon,\n  ThumbsUpIcon,\n} from \"lucide-react\"\n\n//  ------------------------------ | MESSAGE - ACTIONS | ------------------------------  //\n\nexport function MessageActions() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-8\">\n      <Message>\n        <MessageContent>\n          <Bubble variant=\"muted\">\n            <BubbleContent>\n              The install failure is coming from the workspace package.\n            </BubbleContent>\n          </Bubble>\n          <MessageFooter>\n            <Button variant=\"ghost\" size=\"icon\" aria-label=\"Copy\" title=\"Copy\">\n              <CopyIcon />\n            </Button>\n            <Button variant=\"ghost\" size=\"icon\" aria-label=\"Like\" title=\"Like\">\n              <ThumbsUpIcon />\n            </Button>\n            <Button\n              variant=\"ghost\"\n              size=\"icon\"\n              aria-label=\"Dislike\"\n              title=\"Dislike\"\n            >\n              <ThumbsDownIcon />\n            </Button>\n          </MessageFooter>\n        </MessageContent>\n      </Message>\n      <Message align=\"end\">\n        <MessageContent>\n          <Bubble>\n            <BubbleContent className=\"dark:text-white\">\n              Okay drop me a link. Taking a look...\n            </BubbleContent>\n          </Bubble>\n          <MessageFooter className=\"gap-2\">\n            <span className=\"font-normal text-destructive\">Failed to send</span>\n            <Button\n              variant=\"ghost\"\n              size=\"icon-xs\"\n              title=\"Retry\"\n              aria-label=\"Retry\"\n            >\n              <RefreshCcwIcon />\n            </Button>\n          </MessageFooter>\n        </MessageContent>\n      </Message>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/message/message-actions.tsx"
     }
   ],
-  "categories": [
-    "message"
-  ],
+  "categories": ["message"],
   "type": "registry:ui"
 }

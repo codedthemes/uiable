@@ -7,7 +7,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select"
 
 // constants
 const northAmerica = [
@@ -17,7 +17,7 @@ const northAmerica = [
   { label: "Pacific Standard Time", value: "pst" },
   { label: "Alaska Standard Time", value: "akst" },
   { label: "Hawaii Standard Time", value: "hst" },
-];
+]
 
 const europeAfrica = [
   { label: "Greenwich Mean Time", value: "gmt" },
@@ -26,7 +26,7 @@ const europeAfrica = [
   { label: "Western European Summer Time", value: "west" },
   { label: "Central Africa Time", value: "cat" },
   { label: "East Africa Time", value: "eat" },
-];
+]
 
 const asia = [
   { label: "Moscow Time", value: "msk" },
@@ -35,7 +35,7 @@ const asia = [
   { label: "Japan Standard Time", value: "jst" },
   { label: "Korea Standard Time", value: "kst" },
   { label: "Indonesia Central Standard Time", value: "ist_indonesia" },
-];
+]
 
 const australiaPacific = [
   { label: "Australian Western Standard Time", value: "awst" },
@@ -43,14 +43,14 @@ const australiaPacific = [
   { label: "Australian Eastern Standard Time", value: "aest" },
   { label: "New Zealand Standard Time", value: "nzst" },
   { label: "Fiji Time", value: "fjt" },
-];
+]
 
 const southAmerica = [
   { label: "Argentina Time", value: "art" },
   { label: "Bolivia Time", value: "bot" },
   { label: "Brasilia Time", value: "brt" },
   { label: "Chile Standard Time", value: "clt" },
-];
+]
 
 const items = [
   { label: "Select a timezone", value: null },
@@ -59,7 +59,7 @@ const items = [
   ...asia,
   ...australiaPacific,
   ...southAmerica,
-];
+]
 
 //  ------------------------------ | SELECT - SCROLLABLE | ------------------------------  //
 
@@ -112,5 +112,5 @@ export function SelectScrollable() {
         </SelectGroup>
       </SelectContent>
     </Select>
-  );
+  )
 }

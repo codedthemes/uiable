@@ -1,4 +1,7 @@
+// next
 import { MetadataRoute } from "next"
+
+// project-imports
 import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

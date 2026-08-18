@@ -1,8 +1,5 @@
 // shadcn
-import {
-  NativeSelect,
-  NativeSelectOption
-} from "@/components/ui/native-select";
+import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select"
 
 //  ------------------------------ | NATIVE SELECT - DISABLED | ------------------------------  //
 
@@ -14,5 +11,5 @@ export function NativeSelectDisabled() {
       <NativeSelectOption value="banana">Banana</NativeSelectOption>
       <NativeSelectOption value="blueberry">Blueberry</NativeSelectOption>
     </NativeSelect>
-  );
+  )
 }

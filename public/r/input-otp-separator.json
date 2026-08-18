@@ -3,19 +3,15 @@
   "name": "input-otp-separator",
   "title": "Input Otp Separator",
   "description": "Input Otp Separator variant for component.",
-  "registryDependencies": [
-    "@uiable/input-otp"
-  ],
+  "registryDependencies": ["@uiable/input-otp"],
   "files": [
     {
       "path": "src/components/uiable/input-otp/input-otp-separator.tsx",
-      "content": "// shadcn\r\nimport {\r\n  InputOTP,\r\n  InputOTPGroup,\r\n  InputOTPSeparator,\r\n  InputOTPSlot\r\n} from \"@/components/ui/input-otp\";\r\n\r\n//  ------------------------------ | INPUT OTP - SEPARATOR | ------------------------------  //\r\n\r\nexport default function InputOTPWithSeparator() {\r\n  return (\r\n    <InputOTP maxLength={6}>\r\n      <InputOTPGroup>\r\n        <InputOTPSlot index={0} />\r\n        <InputOTPSlot index={1} />\r\n      </InputOTPGroup>\r\n      <InputOTPSeparator />\r\n      <InputOTPGroup>\r\n        <InputOTPSlot index={2} />\r\n        <InputOTPSlot index={3} />\r\n      </InputOTPGroup>\r\n      <InputOTPSeparator />\r\n      <InputOTPGroup>\r\n        <InputOTPSlot index={4} />\r\n        <InputOTPSlot index={5} />\r\n      </InputOTPGroup>\r\n    </InputOTP>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport {\n  InputOTP,\n  InputOTPGroup,\n  InputOTPSeparator,\n  InputOTPSlot,\n} from \"@/components/ui/input-otp\"\n\n//  ------------------------------ | INPUT OTP - SEPARATOR | ------------------------------  //\n\nexport default function InputOTPWithSeparator() {\n  return (\n    <InputOTP maxLength={6}>\n      <InputOTPGroup>\n        <InputOTPSlot index={0} />\n        <InputOTPSlot index={1} />\n      </InputOTPGroup>\n      <InputOTPSeparator />\n      <InputOTPGroup>\n        <InputOTPSlot index={2} />\n        <InputOTPSlot index={3} />\n      </InputOTPGroup>\n      <InputOTPSeparator />\n      <InputOTPGroup>\n        <InputOTPSlot index={4} />\n        <InputOTPSlot index={5} />\n      </InputOTPGroup>\n    </InputOTP>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input-otp/input-otp-separator.tsx"
     }
   ],
-  "categories": [
-    "input-otp"
-  ],
+  "categories": ["input-otp"],
   "type": "registry:ui"
 }

@@ -3,19 +3,15 @@
   "name": "separator-vertical",
   "title": "Separator Vertical",
   "description": "Separator Vertical variant for component.",
-  "registryDependencies": [
-    "@uiable/separator"
-  ],
+  "registryDependencies": ["@uiable/separator"],
   "files": [
     {
       "path": "src/components/uiable/separator/separator-vertical.tsx",
-      "content": "// shadcn\r\nimport { Separator } from \"@/components/ui/separator\";\r\n\r\n//  ------------------------------ | SEPARATOR - VERTICAL | ------------------------------  //\r\n\r\nexport function SeparatorVertical() {\r\n  return (\r\n    <div className=\"flex h-5 items-center gap-4\">\r\n      <div>Blog</div>\r\n      <Separator orientation=\"vertical\" />\r\n      <div>Docs</div>\r\n      <Separator orientation=\"vertical\" />\r\n      <div>Source</div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Separator } from \"@/components/ui/separator\"\n\n//  ------------------------------ | SEPARATOR - VERTICAL | ------------------------------  //\n\nexport function SeparatorVertical() {\n  return (\n    <div className=\"flex h-5 items-center gap-4\">\n      <div>Blog</div>\n      <Separator orientation=\"vertical\" />\n      <div>Docs</div>\n      <Separator orientation=\"vertical\" />\n      <div>Source</div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/separator/separator-vertical.tsx"
     }
   ],
-  "categories": [
-    "separator"
-  ],
+  "categories": ["separator"],
   "type": "registry:ui"
 }

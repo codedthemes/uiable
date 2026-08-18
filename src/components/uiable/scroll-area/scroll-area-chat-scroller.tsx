@@ -1,4 +1,12 @@
 import { useState } from "react"
+
+// shadcn
+import { Avatar, AvatarBadge, AvatarFallback } from "@/components/ui/avatar"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { ScrollArea } from "@/components/ui/scroll-area"
+
 // assets
 import {
   Bot,
@@ -10,13 +18,6 @@ import {
   Sparkles,
   User,
 } from "lucide-react"
-
-// shadcn
-import { Avatar, AvatarBadge, AvatarFallback } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { ScrollArea } from "@/components/ui/scroll-area"
 
 interface ChatMessage {
   id: string

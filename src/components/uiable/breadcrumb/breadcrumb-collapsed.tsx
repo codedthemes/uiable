@@ -6,8 +6,8 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeparator
-} from "@/components/ui/breadcrumb";
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 //  ------------------------------ | BREADCRUMB - COLLAPSED | ------------------------------  //
 
@@ -32,5 +32,5 @@ export default function BreadcrumbCollapsed() {
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
-  );
+  )
 }

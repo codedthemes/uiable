@@ -1,3 +1,4 @@
+// next
 import { redirect } from "next/navigation"
 
 //  ------------------------------ | PAGE - DOC | ------------------------------  //

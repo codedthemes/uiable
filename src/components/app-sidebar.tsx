@@ -1,9 +1,12 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { useState, ComponentProps } from "react"
 
+// next
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+
+// shadcn
 import { Button } from "@/components/ui/button"
 import {
   Collapsible,
@@ -29,6 +32,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+// project-imports
 // project
 import Logo from "./uiable/layout/shared/logo"
 import CATEGORY_COUNTS from "@/category-counts.json"
@@ -205,7 +209,10 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                                           </span>
                                         }
                                       />
-                                      <TooltipContent side="right" sideOffset={8}>
+                                      <TooltipContent
+                                        side="right"
+                                        sideOffset={8}
+                                      >
                                         <p>New Added</p>
                                       </TooltipContent>
                                     </Tooltip>
@@ -273,14 +280,20 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                                           </span>
                                         }
                                       />
-                                      <TooltipContent side="top" sideOffset={8} className="px-2 py-1 text-[10px] rounded-md">
+                                      <TooltipContent
+                                        side="top"
+                                        sideOffset={8}
+                                        className="rounded-md px-2 py-1 text-[10px]"
+                                      >
                                         <p>New Added</p>
                                       </TooltipContent>
                                     </Tooltip>
                                   </TooltipProvider>
                                 )}
                                 <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
-                                  {CATEGORY_COUNTS[ item.slug as keyof typeof CATEGORY_COUNTS ] || 0}
+                                  {CATEGORY_COUNTS[
+                                    item.slug as keyof typeof CATEGORY_COUNTS
+                                  ] || 0}
                                 </span>
                               </SidebarMenuButton>
                             </SidebarMenuItem>

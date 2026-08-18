@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-stats",
+  "title": "Separator Stats",
+  "description": "Separator Stats variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/separator"],
+  "files": [
+    {
+      "path": "src/components/uiable/separator/separator-stats.tsx",
+      "content": "// shadcn\nimport { Separator } from \"@/components/ui/separator\"\n\n// assets\nimport { ArrowUpRight, Users, Wallet } from \"lucide-react\"\n\n//  ------------------------------ | SEPARATOR - STATS | ------------------------------  //\n\nexport function SeparatorStats() {\n  return (\n    <div className=\"w-full max-w-2xl rounded-lg border p-6 text-card-foreground\">\n      <div className=\"flex flex-col flex-wrap gap-6 md:flex-row md:items-center md:justify-between\">\n        <div className=\"flex flex-1 flex-col gap-1\">\n          <div className=\"flex items-center gap-2 text-sm font-medium text-muted-foreground\">\n            <Wallet className=\"size-4 text-primary\" />\n            <span>Total Revenue</span>\n          </div>\n          <div className=\"flex flex-wrap items-baseline gap-2\">\n            <h3 className=\"text-2xl font-bold tracking-tight\">$48,295</h3>\n            <span className=\"flex items-center text-xs font-medium text-green-500\">\n              +14.2%\n              <ArrowUpRight className=\"size-3\" />\n            </span>\n          </div>\n        </div>\n\n        <Separator orientation=\"vertical\" className=\"hidden h-12 md:block\" />\n        <Separator className=\"block md:hidden\" />\n\n        <div className=\"flex flex-1 flex-col gap-1\">\n          <div className=\"flex items-center gap-2 text-sm font-medium text-muted-foreground\">\n            <Users className=\"size-4 min-w-[16px] text-primary\" />\n            <span>Active Subscriptions</span>\n          </div>\n          <div className=\"flex flex-wrap items-baseline gap-2\">\n            <h3 className=\"text-2xl font-bold tracking-tight\">2,845</h3>\n            <span className=\"flex items-center text-xs font-medium text-green-500\">\n              +8.1%\n              <ArrowUpRight className=\"size-3\" />\n            </span>\n          </div>\n        </div>\n\n        <Separator orientation=\"vertical\" className=\"hidden h-12 md:block\" />\n        <Separator className=\"block md:hidden\" />\n\n        <div className=\"flex flex-1 flex-col gap-1\">\n          <span className=\"text-sm font-medium text-muted-foreground\">\n            Conversion Rate\n          </span>\n          <div className=\"flex flex-wrap items-baseline gap-2\">\n            <h3 className=\"text-2xl font-bold tracking-tight\">4.38%</h3>\n            <span className=\"text-xs font-medium text-muted-foreground\">\n              vs last month\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/separator/separator-stats.tsx"
+    }
+  ],
+  "categories": ["separator"],
+  "type": "registry:ui"
+}

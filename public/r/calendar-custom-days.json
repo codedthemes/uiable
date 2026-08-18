@@ -3,24 +3,16 @@
   "name": "calendar-custom-days",
   "title": "Calendar Custom Days",
   "description": "Calendar Custom Days variant for component.",
-  "dependencies": [
-    "date-fns",
-    "react-day-picker"
-  ],
-  "registryDependencies": [
-    "@uiable/calendar",
-    "@uiable/card"
-  ],
+  "dependencies": ["date-fns", "react-day-picker"],
+  "registryDependencies": ["@uiable/calendar", "@uiable/card"],
   "files": [
     {
       "path": "src/components/uiable/calendar/calendar-custom-days.tsx",
-      "content": "\"use client\";\r\n\r\nimport { useState } from \"react\";\r\n\r\n// shadcn\r\nimport { Calendar, CalendarDayButton } from \"@/components/ui/calendar\";\r\nimport { Card, CardContent } from \"@/components/ui/card\";\r\n\r\n// third party\r\nimport { addDays } from \"date-fns\";\r\nimport { DateRange } from \"react-day-picker\";\r\n\r\n//  ------------------------------ | CALENDAR - CUSTOM DAYS | ------------------------------  //\r\n\r\nexport function CalendarCustomDays() {\r\n  const [range, setRange] = useState<DateRange | undefined>({\r\n    from: new Date(new Date().getFullYear(), 11, 8),\r\n    to: addDays(new Date(new Date().getFullYear(), 11, 8), 10)\r\n  });\r\n\r\n  return (\r\n    <Card className=\"mx-auto w-fit p-0\">\r\n      <CardContent className=\"p-0\">\r\n        <Calendar\r\n          mode=\"range\"\r\n          defaultMonth={range?.from}\r\n          selected={range}\r\n          onSelect={setRange}\r\n          numberOfMonths={1}\r\n          captionLayout=\"dropdown\"\r\n          className=\"[--cell-size:--spacing(10)] md:[--cell-size:--spacing(12)]\"\r\n          formatters={{\r\n            formatMonthDropdown: (date) => {\r\n              return date.toLocaleString(\"default\", { month: \"long\" });\r\n            }\r\n          }}\r\n          components={{\r\n            DayButton: ({ children, modifiers, day, ...props }) => {\r\n              const isWeekend =\r\n                day.date.getDay() === 0 || day.date.getDay() === 6;\r\n\r\n              return (\r\n                <CalendarDayButton day={day} modifiers={modifiers} {...props}>\r\n                  {children}\r\n                  {!modifiers.outside && (\r\n                    <span>{isWeekend ? \"$120\" : \"$100\"}</span>\r\n                  )}\r\n                </CalendarDayButton>\r\n              );\r\n            }\r\n          }}\r\n        />\r\n      </CardContent>\r\n    </Card>\r\n  );\r\n}\r\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Calendar, CalendarDayButton } from \"@/components/ui/calendar\"\nimport { Card, CardContent } from \"@/components/ui/card\"\n\n// third-party\n// third party\nimport { addDays } from \"date-fns\"\nimport { DateRange } from \"react-day-picker\"\n\n//  ------------------------------ | CALENDAR - CUSTOM DAYS | ------------------------------  //\n\nexport function CalendarCustomDays() {\n  const [range, setRange] = useState<DateRange | undefined>({\n    from: new Date(new Date().getFullYear(), 11, 8),\n    to: addDays(new Date(new Date().getFullYear(), 11, 8), 10),\n  })\n\n  return (\n    <Card className=\"mx-auto w-fit p-0\">\n      <CardContent className=\"p-0\">\n        <Calendar\n          mode=\"range\"\n          defaultMonth={range?.from}\n          selected={range}\n          onSelect={setRange}\n          numberOfMonths={1}\n          captionLayout=\"dropdown\"\n          className=\"[--cell-size:--spacing(10)] md:[--cell-size:--spacing(12)]\"\n          formatters={{\n            formatMonthDropdown: (date) => {\n              return date.toLocaleString(\"default\", { month: \"long\" })\n            },\n          }}\n          components={{\n            DayButton: ({ children, modifiers, day, ...props }) => {\n              const isWeekend =\n                day.date.getDay() === 0 || day.date.getDay() === 6\n\n              return (\n                <CalendarDayButton day={day} modifiers={modifiers} {...props}>\n                  {children}\n                  {!modifiers.outside && (\n                    <span>{isWeekend ? \"$120\" : \"$100\"}</span>\n                  )}\n                </CalendarDayButton>\n              )\n            },\n          }}\n        />\n      </CardContent>\n    </Card>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/calendar/calendar-custom-days.tsx"
     }
   ],
-  "categories": [
-    "calendar"
-  ],
+  "categories": ["calendar"],
   "type": "registry:ui"
 }

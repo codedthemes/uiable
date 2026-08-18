@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "typography-link",
+  "title": "Typography Link",
+  "description": "Typography Link variant for component.",
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-link.tsx",
+      "content": "export function TypographyLink() {\n  return (\n    <a\n      href=\"#\"\n      className=\"font-medium text-primary underline underline-offset-4 hover:text-primary/80\"\n    >\n      This is a typography link\n    </a>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-link.tsx"
+    }
+  ],
+  "categories": ["typography"],
+  "type": "registry:ui"
+}

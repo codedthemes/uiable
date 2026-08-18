@@ -1,16 +1,20 @@
 "use client"
 
+// next
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-// project imports
-import CATEGORY_COUNTS from "@/category-counts.json"
+// shadcn
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+
+// project-imports
+// project imports
+import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_CATEGORIES } from "@/components-grid"
 import { cn } from "@/lib/utils"
 
@@ -103,7 +107,11 @@ export default function ComponentList({
                             </span>
                           }
                         />
-                        <TooltipContent side="top" sideOffset={8} className="px-2 py-1 text-[10px] rounded-md">
+                        <TooltipContent
+                          side="top"
+                          sideOffset={8}
+                          className="rounded-md px-2 py-1 text-[10px]"
+                        >
                           <p>New Added</p>
                         </TooltipContent>
                       </Tooltip>

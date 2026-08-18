@@ -1,5 +1,5 @@
 // shadcn
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card"
 
 //  ------------------------------ | CARD - IMAGE BOTTOM | ------------------------------  //
 
@@ -15,10 +15,10 @@ export default function CardImageBottom() {
         <p className="text-xs text-muted-foreground">Last updated 3 mins ago</p>
       </CardContent>
       <img
-        className="w-full h-48 object-cover"
+        className="h-48 w-full object-cover"
         src="https://cdn.uiable.com/component/card-sample.png"
         alt="Card image cap"
       />
     </Card>
-  );
+  )
 }

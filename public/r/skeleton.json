@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/ui/skeleton.tsx",
-      "content": "import { ComponentProps } from \"react\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction Skeleton({ className, ...props }: ComponentProps<\"div\">) {\r\n  return (\r\n    <div\r\n      data-slot=\"skeleton\"\r\n      className={cn(\"animate-pulse rounded-lg bg-background\", className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport { Skeleton }\r\n",
+      "content": "import { ComponentProps } from \"react\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\nfunction Skeleton({ className, ...props }: ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      className={cn(\"animate-pulse rounded-lg bg-background\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { Skeleton }\n",
       "type": "registry:component",
       "target": "@components/ui/skeleton.tsx"
     }
   ],
-  "categories": [
-    "skeleton"
-  ],
+  "categories": ["skeleton"],
   "type": "registry:ui"
 }

@@ -3,19 +3,15 @@
   "name": "badge-light-danger",
   "title": "Badge Light Danger",
   "description": "Badge Light Danger variant for component.",
-  "registryDependencies": [
-    "@uiable/badge"
-  ],
+  "registryDependencies": ["@uiable/badge"],
   "files": [
     {
       "path": "src/components/uiable/badge/badge-light-danger.tsx",
-      "content": "// shadcn\r\nimport { Badge } from \"@/components/ui/badge\";\r\n\r\n//  ------------------------------ | BADGE - LIGHT DANGER | ------------------------------  //\r\n\r\nexport default function BadgeLightDanger() {\r\n  return (\r\n    <Badge className=\"bg-red-500/15 text-red-500 border-transparent\">\r\n      Danger\r\n    </Badge>\r\n  );\r\n}\r\n",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\n\n//  ------------------------------ | BADGE - LIGHT DANGER | ------------------------------  //\n\nexport default function BadgeLightDanger() {\n  return (\n    <Badge className=\"border-transparent bg-red-500/15 text-red-500\">\n      Danger\n    </Badge>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/badge/badge-light-danger.tsx"
     }
   ],
-  "categories": [
-    "badge"
-  ],
+  "categories": ["badge"],
   "type": "registry:ui"
 }

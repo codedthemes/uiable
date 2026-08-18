@@ -6,13 +6,11 @@
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-size-custom.tsx",
-      "content": "//  ------------------------------ | SPINNER - SIZE CUSTOM | ------------------------------  //\r\n\r\nexport default function SpinnerSizeCustom() {\r\n  return (\r\n    <div className=\"flex flex-wrap items-center gap-4\">\r\n      <div\r\n        className=\"inline-block border-[2px] border-slate-800 dark:border-white/50 rounded-full size-10 animate-spin border-l-transparent dark:border-l-transparent\"\r\n        role=\"status\"\r\n      >\r\n        <span className=\"sr-only\">Loading...</span>\r\n      </div>\r\n      <div\r\n        className=\"inline-flex bg-slate-800 dark:bg-white/50 rounded-full opacity-75 size-5 animate-ping\"\r\n        role=\"status\"\r\n      >\r\n        <span className=\"sr-only\">Loading...</span>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "content": "//  ------------------------------ | SPINNER - SIZE CUSTOM | ------------------------------  //\n\nexport default function SpinnerSizeCustom() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-4\">\n      <div\n        className=\"inline-block size-10 animate-spin rounded-full border-[2px] border-slate-800 border-l-transparent dark:border-white/50 dark:border-l-transparent\"\n        role=\"status\"\n      >\n        <span className=\"sr-only\">Loading...</span>\n      </div>\n      <div\n        className=\"inline-flex size-5 animate-ping rounded-full bg-slate-800 opacity-75 dark:bg-white/50\"\n        role=\"status\"\n      >\n        <span className=\"sr-only\">Loading...</span>\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/spinner/spinner-size-custom.tsx"
     }
   ],
-  "categories": [
-    "spinner"
-  ],
+  "categories": ["spinner"],
   "type": "registry:ui"
 }

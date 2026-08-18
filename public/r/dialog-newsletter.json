@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-newsletter",
+  "title": "Dialog Newsletter",
+  "description": "Dialog Newsletter variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dialog", "@uiable/input"],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-newsletter.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/components/ui/dialog\"\nimport { Input } from \"@/components/ui/input\"\n\n// assets\nimport { Mail } from \"lucide-react\"\n\n//  ------------------------------ | DIALOG - NEWSLETTER | ------------------------------  //\n\nexport function DialogNewsletter() {\n  return (\n    <Dialog>\n      <DialogTrigger\n        render={\n          <Button variant=\"outline\" className=\"dark:border-border\">\n            Subscribe Newsletter\n          </Button>\n        }\n      />\n      <DialogContent className=\"sm:max-w-md\">\n        <DialogHeader className=\"flex flex-col items-center text-center\">\n          <Avatar className=\"mb-4 h-16 w-16 bg-primary/10 after:border-none\">\n            <AvatarFallback className=\"bg-transparent text-primary\">\n              <Mail className=\"h-8 w-8\" />\n            </AvatarFallback>\n          </Avatar>\n          <DialogTitle className=\"text-2xl\">\n            Subscribe to our newsletter\n          </DialogTitle>\n          <DialogDescription className=\"text-base\">\n            Get the latest updates, articles, and resources, sent to your inbox\n            weekly.\n          </DialogDescription>\n        </DialogHeader>\n        <div className=\"mt-4 flex flex-col gap-3\">\n          <Input\n            placeholder=\"Enter your email address\"\n            type=\"email\"\n            className=\"h-12\"\n          />\n          <Button size=\"lg\" className=\"h-12 w-full\">\n            Subscribe\n          </Button>\n        </div>\n        <p className=\"mt-2 text-center text-xs text-muted-foreground\">\n          By subscribing, you agree to our Terms of Service and Privacy Policy.\n        </p>\n      </DialogContent>\n    </Dialog>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-newsletter.tsx"
+    }
+  ],
+  "categories": ["dialog"],
+  "type": "registry:ui"
+}

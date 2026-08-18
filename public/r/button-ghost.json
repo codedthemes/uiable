@@ -3,19 +3,15 @@
   "name": "button-ghost",
   "title": "Button Ghost",
   "description": "Button Ghost variant for component.",
-  "registryDependencies": [
-    "@uiable/button"
-  ],
+  "registryDependencies": ["@uiable/button"],
   "files": [
     {
       "path": "src/components/uiable/button/button-ghost.tsx",
-      "content": "// shadcn\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\n//  ------------------------------ | BUTTON GHOST | ------------------------------  //\r\n\r\nexport default function ButtonGhost() {\r\n  return <Button variant=\"ghost\">Ghost</Button>;\r\n}\r\n",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | BUTTON GHOST | ------------------------------  //\n\nexport default function ButtonGhost() {\n  return <Button variant=\"ghost\">Ghost</Button>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/button/button-ghost.tsx"
     }
   ],
-  "categories": [
-    "button"
-  ],
+  "categories": ["button"],
   "type": "registry:ui"
 }

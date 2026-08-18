@@ -3,8 +3,8 @@ import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
-  InputOTPSlot
-} from "@/components/ui/input-otp";
+  InputOTPSlot,
+} from "@/components/ui/input-otp"
 
 //  ------------------------------ | INPUT OTP - SEPARATOR | ------------------------------  //
 
@@ -26,5 +26,5 @@ export default function InputOTPWithSeparator() {
         <InputOTPSlot index={5} />
       </InputOTPGroup>
     </InputOTP>
-  );
+  )
 }
