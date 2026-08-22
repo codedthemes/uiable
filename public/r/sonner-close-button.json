@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner-close-button",
+  "title": "Sonner Close Button",
+  "description": "Sonner Close Button variant for component.",
+  "dependencies": ["sonner"],
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/sonner/sonner-close-button.tsx",
+      "content": "\"use client\"\n\n// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n// third-party\nimport { toast } from \"sonner\"\n\n//  ------------------------------ | SONNER - CLOSE BUTTON | ------------------------------  //\n\nexport function SonnerCloseButton() {\n  return (\n    <Button\n      onClick={() =>\n        toast(\"Toast with close button\", {\n          description: \"You can close this toast using the button.\",\n          closeButton: true,\n          classNames: {\n            closeButton: \"!-right-4 !left-auto\",\n          },\n        })\n      }\n      className=\"w-fit\"\n    >\n      Show Closeable Toast\n    </Button>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/sonner/sonner-close-button.tsx"
+    }
+  ],
+  "categories": ["sonner"],
+  "type": "registry:ui"
+}

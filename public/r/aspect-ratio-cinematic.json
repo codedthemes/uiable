@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio-cinematic",
+  "title": "Aspect Ratio Cinematic",
+  "description": "Aspect Ratio Cinematic variant for component.",
+  "registryDependencies": ["@uiable/aspect-ratio"],
+  "files": [
+    {
+      "path": "src/components/uiable/aspect-ratio/aspect-ratio-cinematic.tsx",
+      "content": "// shadcn\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\"\n\n//  ------------------------------ | ASPECT RATIO - CINEMATIC | ------------------------------  //\n\nexport function AspectRatioCinematic() {\n  return (\n    <AspectRatio\n      ratio={21 / 9}\n      className=\"w-full max-w-4xl overflow-hidden rounded-lg bg-muted\"\n    >\n      <img\n        src=\"https://cdn.uiable.com/component/card-sample.png\"\n        alt=\"Cinematic photo\"\n        className=\"h-full w-full object-cover\"\n      />\n    </AspectRatio>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/aspect-ratio/aspect-ratio-cinematic.tsx"
+    }
+  ],
+  "categories": ["aspect-ratio"],
+  "type": "registry:ui"
+}

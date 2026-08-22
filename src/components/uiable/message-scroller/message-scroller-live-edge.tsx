@@ -32,7 +32,6 @@ import { useChat } from "@ai-sdk/react"
 
 // project-imports
 import { MessageAnimated } from "@/components/message-animated"
-// project imports
 import { createChat, getMessageText } from "@/lib/ai"
 
 // assets

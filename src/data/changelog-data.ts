@@ -20,6 +20,79 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.8.0",
+    date: "August 25, 2026",
+    anchor: "v1-8-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          {
+            text: "FAQ: FAQ 4",
+            previewUrl: "/preview/faq/faq-4/faq-4",
+          },
+          {
+            text: "Pricing: Pricing 9",
+            previewUrl: "/preview/pricing/pricing-9/pricing-9",
+          },
+          {
+            text: "Process: Process 4",
+            previewUrl: "/preview/process/process-4/process-4",
+          },
+          {
+            text: "Team: Team 3",
+            previewUrl: "/preview/team/team-3/team-3",
+          },
+          {
+            text: "Testimonial: Testimonial 9",
+            previewUrl: "/preview/testimonial/testimonial-9/testimonial-9",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Alert: Outlined Danger, Outlined Dark, Outlined Info, Outlined Primary, Outlined Secondary, Outlined Success, Outlined Warning",
+            previewUrl: "/components/alert",
+          },
+          {
+            text: "Alert Dialog: Warning",
+            previewUrl: "/components/alert-dialog",
+          },
+          {
+            text: "Aspect Ratio: Cinematic",
+            previewUrl: "/components/aspect-ratio",
+          },
+          {
+            text: "Breadcrumb: Background",
+            previewUrl: "/components/breadcrumb",
+          },
+          {
+            text: "Dialog: Destructive",
+            previewUrl: "/components/dialog",
+          },
+          {
+            text: "Menubar: Editor",
+            previewUrl: "/components/menubar",
+          },
+          {
+            text: "Separator: With Text",
+            previewUrl: "/components/separator",
+          },
+          {
+            text: "Sonner: Close Button, Icon",
+            previewUrl: "/components/sonner",
+          },
+          {
+            text: "Spinner: Dots Pulse",
+            previewUrl: "/components/spinner",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.7.0",
     date: "August 18, 2026",
     anchor: "v1-7-0",

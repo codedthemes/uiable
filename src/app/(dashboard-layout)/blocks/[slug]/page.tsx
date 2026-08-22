@@ -64,7 +64,12 @@ export default async function BlockCategoryPage({
   ]
 
   const items = registryItems
-    .filter((item: any) => item.categories?.includes(category))
+    .filter(
+      (item: any) =>
+        item.categories?.includes(category) &&
+        item.files &&
+        item.files.length > 0
+    )
     .map((item: any) => {
       const relativePath = item.files[0].path
       const filePath =

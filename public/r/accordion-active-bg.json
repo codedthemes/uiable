@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-active-bg",
+  "title": "Accordion Active Bg",
+  "description": "Accordion Active Bg variant for component.",
+  "registryDependencies": ["@uiable/accordion"],
+  "files": [
+    {
+      "path": "src/components/uiable/accordion/accordion-active-bg.tsx",
+      "content": "// shadcn\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\"\n\n//  ------------------------------ | ACCORDION ACTIVE WITH BACKGROUND | ------------------------------  //\n\nexport default function AccordionActiveBg() {\n  return (\n    <Accordion defaultValue={[\"item-1\"]} className=\"w-full space-y-3\">\n      <AccordionItem\n        value=\"item-1\"\n        className=\"rounded-lg border border-border bg-card transition-colors duration-200 data-open:border-primary/20 data-open:bg-primary/5\"\n      >\n        <AccordionTrigger className=\"items-center px-5 py-4 text-base font-semibold hover:no-underline\">\n          What is your return policy?\n        </AccordionTrigger>\n        <AccordionContent className=\"px-5 pt-0 pb-5 text-muted-foreground\">\n          You can return any item within 30 days of purchase for a full refund.\n          Items must be in original condition with tags attached. Please ensure\n          you keep your receipt as proof of purchase.\n        </AccordionContent>\n      </AccordionItem>\n      <AccordionItem\n        value=\"item-2\"\n        className=\"rounded-lg border border-border bg-card transition-colors duration-200 data-open:border-primary/20 data-open:bg-primary/5\"\n      >\n        <AccordionTrigger className=\"items-center px-5 py-4 text-base font-semibold hover:no-underline\">\n          How long does shipping take?\n        </AccordionTrigger>\n        <AccordionContent className=\"px-5 pt-0 pb-5 text-muted-foreground\">\n          Standard shipping usually takes 3-5 business days. Expedited shipping\n          options are available at checkout if you need your items sooner.\n          International orders may take up to 2 weeks.\n        </AccordionContent>\n      </AccordionItem>\n      <AccordionItem\n        value=\"item-3\"\n        className=\"rounded-lg border border-border bg-card transition-colors duration-200 data-open:border-primary/20 data-open:bg-primary/5\"\n      >\n        <AccordionTrigger className=\"items-center px-5 py-4 text-base font-semibold hover:no-underline\">\n          Do you ship internationally?\n        </AccordionTrigger>\n        <AccordionContent className=\"px-5 pt-0 pb-5 text-muted-foreground\">\n          Yes, we ship to over 100 countries worldwide. Shipping costs will\n          apply, and will be added at checkout. We run discounts and promotions\n          all year, so stay tuned for exclusive deals.\n        </AccordionContent>\n      </AccordionItem>\n    </Accordion>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/accordion/accordion-active-bg.tsx"
+    }
+  ],
+  "categories": ["accordion"],
+  "type": "registry:ui"
+}

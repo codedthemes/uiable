@@ -2,7 +2,6 @@
 import { Slider } from "@/components/ui/slider"
 
 // project-imports
-// project imports
 import { Logo1, NoiseOverlay } from "@/images/svg/landing"
 
 // assets

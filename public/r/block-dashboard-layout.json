@@ -1,0 +1,9 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-dashboard-layout",
+  "title": "Dashboard Layout",
+  "description": "Dashboard Layout variant for block.",
+  "files": [],
+  "categories": ["layout"],
+  "type": "registry:block"
+}

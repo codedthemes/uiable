@@ -3,7 +3,6 @@ import { Metadata } from "next"
 
 // project-imports
 import BlocksPageClient from "./blocks-page-client"
-// project imports
 import branding from "@/branding.json"
 
 export const metadata: Metadata = {

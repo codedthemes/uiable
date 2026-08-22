@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-dots-pulse",
+  "title": "Spinner Dots Pulse",
+  "description": "Spinner Dots Pulse variant for component.",
+  "dependencies": ["framer-motion"],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-dots-pulse.tsx",
+      "content": "\"use client\"\n\n// third-party\nimport { motion } from \"framer-motion\"\n\n//  ------------------------------ | SPINNER - DOTS PULSE | ------------------------------  //\n\nexport default function SpinnerDotsPulse() {\n  const dotVariants = {\n    initial: { y: 0, opacity: 0.5 },\n    animate: { y: -6, opacity: 1 },\n  }\n\n  return (\n    <div\n      className=\"flex items-center gap-1.5\"\n      role=\"status\"\n      aria-label=\"Loading\"\n    >\n      <motion.div\n        className=\"size-2 rounded-full bg-primary\"\n        variants={dotVariants}\n        initial=\"initial\"\n        animate=\"animate\"\n        transition={{\n          duration: 0.5,\n          repeat: Infinity,\n          repeatType: \"mirror\",\n          ease: \"easeInOut\",\n        }}\n      />\n      <motion.div\n        className=\"size-2 rounded-full bg-primary\"\n        variants={dotVariants}\n        initial=\"initial\"\n        animate=\"animate\"\n        transition={{\n          duration: 0.5,\n          repeat: Infinity,\n          repeatType: \"mirror\",\n          ease: \"easeInOut\",\n          delay: 0.15,\n        }}\n      />\n      <motion.div\n        className=\"size-2 rounded-full bg-primary\"\n        variants={dotVariants}\n        initial=\"initial\"\n        animate=\"animate\"\n        transition={{\n          duration: 0.5,\n          repeat: Infinity,\n          repeatType: \"mirror\",\n          ease: \"easeInOut\",\n          delay: 0.3,\n        }}\n      />\n      <span className=\"sr-only\">Loading...</span>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-dots-pulse.tsx"
+    }
+  ],
+  "categories": ["spinner"],
+  "type": "registry:ui"
+}

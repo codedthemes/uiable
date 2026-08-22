@@ -4,7 +4,6 @@ import { ReactNode } from "react"
 import { Metadata } from "next"
 
 // project-imports
-// project imports
 import branding from "@/branding.json"
 import SmoothScroll from "@/components/smooth-scroll"
 import Component1 from "@/components/uiable/blocks/landing/component-1/component-1"

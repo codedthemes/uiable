@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-destructive",
+  "title": "Dialog Destructive",
+  "description": "Dialog Destructive variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dialog"],
+  "files": [
+    {
+      "path": "src/components/uiable/dialog/dialog-destructive.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Dialog,\n  DialogClose,\n  DialogContent,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/components/ui/dialog\"\n\n// assets\nimport { AlertCircle } from \"lucide-react\"\n\n//  ------------------------------ | DIALOG - DESTRUCTIVE | ------------------------------  //\n\nexport function DialogDestructive() {\n  return (\n    <Dialog>\n      <DialogTrigger\n        render={<Button variant=\"destructive\">Delete Account</Button>}\n      />\n      <DialogContent className=\"sm:max-w-md\">\n        <DialogHeader className=\"flex flex-col items-center sm:items-center\">\n          <Avatar className=\"mb-4 h-12 w-12 after:border-none\">\n            <AvatarFallback className=\"bg-red-100 text-red-600 dark:bg-red-900/20 dark:text-red-500\">\n              <AlertCircle className=\"h-6 w-6\" />\n            </AvatarFallback>\n          </Avatar>\n          <DialogTitle className=\"text-xl\">Delete Account</DialogTitle>\n          <DialogDescription className=\"mt-2 text-center\">\n            Are you sure you want to delete your account? This action cannot be\n            undone and all your data will be permanently removed.\n          </DialogDescription>\n        </DialogHeader>\n        <DialogFooter className=\"mt-4 sm:justify-center\">\n          <DialogClose\n            render={\n              <Button\n                variant=\"outline\"\n                className=\"w-full sm:w-auto dark:border-border\"\n              />\n            }\n          >\n            Cancel\n          </DialogClose>\n          <Button variant=\"destructive\" className=\"w-full sm:w-auto\">\n            Yes, delete account\n          </Button>\n        </DialogFooter>\n      </DialogContent>\n    </Dialog>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dialog/dialog-destructive.tsx"
+    }
+  ],
+  "categories": ["dialog"],
+  "type": "registry:ui"
+}

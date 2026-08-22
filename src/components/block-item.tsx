@@ -31,7 +31,6 @@ import {
 import { type BundledLanguage, codeToHtml } from "shiki"
 
 // project-imports
-// project imports
 import Loader from "@/components/Loader"
 import { cn } from "@/lib/utils"
 

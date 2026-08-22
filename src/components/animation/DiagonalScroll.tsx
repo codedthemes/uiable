@@ -3,7 +3,6 @@
 import { useEffect, useRef, type ReactNode, type RefObject } from "react"
 
 // project-imports
-// project imports
 import { cn } from "@/lib/utils"
 
 interface DiagonalScrollProps {

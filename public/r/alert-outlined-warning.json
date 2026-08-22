@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-outlined-warning",
+  "title": "Alert Outlined Warning",
+  "description": "Alert Outlined Warning variant for component.",
+  "registryDependencies": ["@uiable/alert"],
+  "files": [
+    {
+      "path": "src/components/uiable/alert/alert-outlined-warning.tsx",
+      "content": "// shadcn\nimport { Alert } from \"@/components/ui/alert\"\n\n// ------------------------------ | ALERT - OUTLINED WARNING | ------------------------------ //\n\nexport default function AlertOutlinedWarning() {\n  return (\n    <Alert className=\"mb-3 grid-cols-1 rounded-lg border-1 border-yellow-500 bg-transparent px-5 py-3 text-yellow-500\">\n      A simple warning alert—check it out!\n    </Alert>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert/alert-outlined-warning.tsx"
+    }
+  ],
+  "categories": ["alert"],
+  "type": "registry:ui"
+}

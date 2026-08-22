@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-dialog-warning",
+  "title": "Alert Dialog Warning",
+  "description": "Alert Dialog Warning variant for component.",
+  "registryDependencies": ["@uiable/alert-dialog", "@uiable/button", "@uiable/checkbox", "@uiable/label"],
+  "files": [
+    {
+      "path": "src/components/uiable/alert-dialog/alert-dialog-warning.tsx",
+      "content": "// shadcn\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger,\n} from \"@/components/ui/alert-dialog\"\nimport { Button } from \"@/components/ui/button\"\nimport { Checkbox } from \"@/components/ui/checkbox\"\nimport { Label } from \"@/components/ui/label\"\n\n//  ------------------------------ | ALERT DIALOG - WARNING | ------------------------------  //\n\nexport function AlertDialogWarning() {\n  return (\n    <AlertDialog>\n      <AlertDialogTrigger\n        render={\n          <Button className=\"bg-yellow-500 text-white hover:bg-yellow-600\">\n            Warning Dialog\n          </Button>\n        }\n      />\n      <AlertDialogContent>\n        <AlertDialogHeader>\n          <AlertDialogTitle>Unsaved Changes</AlertDialogTitle>\n          <AlertDialogDescription>\n            You have unsaved changes. Are you sure you want to leave this page?\n            All your unsaved progress will be lost.\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n\n        <div className=\"flex items-center space-x-2 py-4\">\n          <Checkbox id=\"dont-show\" />\n          <Label\n            htmlFor=\"dont-show\"\n            className=\"text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"\n          >\n            Don't show this warning again\n          </Label>\n        </div>\n\n        <AlertDialogFooter>\n          <AlertDialogCancel variant=\"outline\" className=\"dark:border-border\">\n            Cancel\n          </AlertDialogCancel>\n          <AlertDialogAction className=\"bg-yellow-500 text-white hover:bg-yellow-600\">\n            Discard Changes\n          </AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert-dialog/alert-dialog-warning.tsx"
+    }
+  ],
+  "categories": ["alert-dialog"],
+  "type": "registry:ui"
+}

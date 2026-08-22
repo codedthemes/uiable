@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/select"
 
 // project-imports
-// project imports
 import { MetricChart } from "@/images/svg/landing"
 
 // assets

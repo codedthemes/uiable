@@ -9,7 +9,6 @@ import { motion } from "framer-motion"
 // project-imports
 import { LightFav, DarkFav } from "@/images/brand"
 import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons"
-// project imports
 import { AnimationBg } from "@/images/svg/landing"
 
 // assets

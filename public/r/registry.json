@@ -4,6 +4,21 @@
   "homepage": "https://uiable.com",
   "items": [
     {
+      "name": "accordion-active-bg",
+      "type": "registry:ui",
+      "title": "Accordion Active Bg",
+      "description": "Accordion Active Bg variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/accordion/accordion-active-bg.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/accordion/accordion-active-bg.tsx"
+        }
+      ],
+      "categories": ["accordion"],
+      "registryDependencies": ["@uiable/accordion"]
+    },
+    {
       "name": "accordion-basic",
       "type": "registry:ui",
       "title": "Accordion Basic",
@@ -137,8 +152,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": "new"
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-border-left-dark",
@@ -153,8 +167,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": "new"
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-colors",
@@ -280,6 +293,25 @@
       "categories": ["alert-dialog"],
       "registryDependencies": ["@uiable/alert-dialog", "@uiable/button"],
       "dependencies": ["iconsax-reactjs"]
+    },
+    {
+      "name": "alert-dialog-warning",
+      "type": "registry:ui",
+      "title": "Alert Dialog Warning",
+      "description": "Alert Dialog Warning variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert-dialog/alert-dialog-warning.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert-dialog/alert-dialog-warning.tsx"
+        }
+      ],
+      "categories": ["alert-dialog"],
+      "registryDependencies": ["@uiable/alert-dialog", "@uiable/button", "@uiable/checkbox", "@uiable/label"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
     },
     {
       "name": "alert-dismissible-danger",
@@ -611,6 +643,139 @@
       "registryDependencies": ["@uiable/alert"]
     },
     {
+      "name": "alert-outlined-danger",
+      "type": "registry:ui",
+      "title": "Alert Outlined Danger",
+      "description": "Alert Outlined Danger variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert/alert-outlined-danger.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert/alert-outlined-danger.tsx"
+        }
+      ],
+      "categories": ["alert"],
+      "registryDependencies": ["@uiable/alert"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
+      "name": "alert-outlined-dark",
+      "type": "registry:ui",
+      "title": "Alert Outlined Dark",
+      "description": "Alert Outlined Dark variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert/alert-outlined-dark.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert/alert-outlined-dark.tsx"
+        }
+      ],
+      "categories": ["alert"],
+      "registryDependencies": ["@uiable/alert"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
+      "name": "alert-outlined-info",
+      "type": "registry:ui",
+      "title": "Alert Outlined Info",
+      "description": "Alert Outlined Info variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert/alert-outlined-info.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert/alert-outlined-info.tsx"
+        }
+      ],
+      "categories": ["alert"],
+      "registryDependencies": ["@uiable/alert"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
+      "name": "alert-outlined-primary",
+      "type": "registry:ui",
+      "title": "Alert Outlined Primary",
+      "description": "Alert Outlined Primary variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert/alert-outlined-primary.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert/alert-outlined-primary.tsx"
+        }
+      ],
+      "categories": ["alert"],
+      "registryDependencies": ["@uiable/alert"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
+      "name": "alert-outlined-secondary",
+      "type": "registry:ui",
+      "title": "Alert Outlined Secondary",
+      "description": "Alert Outlined Secondary variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert/alert-outlined-secondary.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert/alert-outlined-secondary.tsx"
+        }
+      ],
+      "categories": ["alert"],
+      "registryDependencies": ["@uiable/alert"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
+      "name": "alert-outlined-success",
+      "type": "registry:ui",
+      "title": "Alert Outlined Success",
+      "description": "Alert Outlined Success variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert/alert-outlined-success.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert/alert-outlined-success.tsx"
+        }
+      ],
+      "categories": ["alert"],
+      "registryDependencies": ["@uiable/alert"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
+      "name": "alert-outlined-warning",
+      "type": "registry:ui",
+      "title": "Alert Outlined Warning",
+      "description": "Alert Outlined Warning variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert/alert-outlined-warning.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert/alert-outlined-warning.tsx"
+        }
+      ],
+      "categories": ["alert"],
+      "registryDependencies": ["@uiable/alert"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
       "name": "alert-solid-danger",
       "type": "registry:ui",
       "title": "Alert Solid Danger",
@@ -714,6 +879,25 @@
       ],
       "categories": ["alert"],
       "registryDependencies": ["@uiable/alert"]
+    },
+    {
+      "name": "aspect-ratio-cinematic",
+      "type": "registry:ui",
+      "title": "Aspect Ratio Cinematic",
+      "description": "Aspect Ratio Cinematic variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/aspect-ratio/aspect-ratio-cinematic.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/aspect-ratio/aspect-ratio-cinematic.tsx"
+        }
+      ],
+      "categories": ["aspect-ratio"],
+      "registryDependencies": ["@uiable/aspect-ratio"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
     },
     {
       "name": "aspect-ratio-portrait",
@@ -1597,6 +1781,26 @@
       ],
       "categories": ["layout"],
       "registryDependencies": ["@uiable/card", "@uiable/scroll-area"]
+    },
+    {
+      "name": "breadcrumb-background",
+      "type": "registry:ui",
+      "title": "Breadcrumb Background",
+      "description": "Breadcrumb Background variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/breadcrumb/breadcrumb-background.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/breadcrumb/breadcrumb-background.tsx"
+        }
+      ],
+      "categories": ["breadcrumb"],
+      "registryDependencies": ["@uiable/breadcrumb"],
+      "dependencies": ["next"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
     },
     {
       "name": "breadcrumb-basic",
@@ -4587,6 +4791,26 @@
       "registryDependencies": ["@uiable/button", "@uiable/dialog", "@uiable/input", "@uiable/label"]
     },
     {
+      "name": "dialog-destructive",
+      "type": "registry:ui",
+      "title": "Dialog Destructive",
+      "description": "Dialog Destructive variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/dialog/dialog-destructive.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/dialog/dialog-destructive.tsx"
+        }
+      ],
+      "categories": ["dialog"],
+      "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dialog"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
       "name": "dialog-full-screen",
       "type": "registry:ui",
       "title": "Dialog Full Screen",
@@ -4630,8 +4854,7 @@
       ],
       "categories": ["dialog"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dialog", "@uiable/input"],
-      "dependencies": ["lucide-react"],
-      "badge": "new"
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "dialog-no-close-button",
@@ -6919,6 +7142,26 @@
       "registryDependencies": ["@uiable/menubar"]
     },
     {
+      "name": "menubar-editor",
+      "type": "registry:ui",
+      "title": "Menubar Editor",
+      "description": "Menubar Editor variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/menubar/menubar-editor.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/menubar/menubar-editor.tsx"
+        }
+      ],
+      "categories": ["menubar"],
+      "registryDependencies": ["@uiable/menubar"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
       "name": "menubar-icons",
       "type": "registry:ui",
       "title": "Menubar Icons",
@@ -7517,8 +7760,7 @@
         }
       ],
       "categories": ["progress"],
-      "registryDependencies": ["@uiable/circular-progress"],
-      "badge": "new"
+      "registryDependencies": ["@uiable/circular-progress"]
     },
     {
       "name": "progress-circular-with-label",
@@ -7565,8 +7807,7 @@
       ],
       "categories": ["progress"],
       "registryDependencies": ["@uiable/progress"],
-      "dependencies": ["@base-ui/react"],
-      "badge": "new"
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "progress-height",
@@ -7768,8 +8009,7 @@
       ],
       "categories": ["progress"],
       "registryDependencies": ["@uiable/progress"],
-      "dependencies": ["@base-ui/react"],
-      "badge": "new"
+      "dependencies": ["@base-ui/react"]
     },
     {
       "name": "project-overview-card",
@@ -8294,8 +8534,7 @@
       ],
       "categories": ["separator"],
       "registryDependencies": ["@uiable/separator"],
-      "dependencies": ["lucide-react"],
-      "badge": "new"
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "separator-vertical",
@@ -8313,6 +8552,25 @@
       "registryDependencies": ["@uiable/separator"]
     },
     {
+      "name": "separator-with-text",
+      "type": "registry:ui",
+      "title": "Separator With Text",
+      "description": "Separator With Text variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/separator/separator-with-text.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/separator/separator-with-text.tsx"
+        }
+      ],
+      "categories": ["separator"],
+      "registryDependencies": ["@uiable/separator"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
+    },
+    {
       "name": "sheet-menu",
       "type": "registry:ui",
       "title": "Sheet Menu",
@@ -8326,8 +8584,7 @@
       ],
       "categories": ["sheet"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/sheet"],
-      "dependencies": ["lucide-react"],
-      "badge": "new"
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "sheet-no-close-button",
@@ -8671,8 +8928,7 @@
         }
       ],
       "categories": ["skeleton"],
-      "registryDependencies": ["@uiable/skeleton"],
-      "badge": "new"
+      "registryDependencies": ["@uiable/skeleton"]
     },
     {
       "name": "skeleton-profile",
@@ -8823,8 +9079,27 @@
       ],
       "categories": ["sonner"],
       "registryDependencies": ["@uiable/button"],
+      "dependencies": ["sonner"]
+    },
+    {
+      "name": "sonner-close-button",
+      "type": "registry:ui",
+      "title": "Sonner Close Button",
+      "description": "Sonner Close Button variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/sonner/sonner-close-button.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/sonner/sonner-close-button.tsx"
+        }
+      ],
+      "categories": ["sonner"],
+      "registryDependencies": ["@uiable/button"],
       "dependencies": ["sonner"],
-      "badge": "new"
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
     },
     {
       "name": "sonner-custom",
@@ -8857,6 +9132,26 @@
       "categories": ["sonner"],
       "registryDependencies": ["@uiable/button"],
       "dependencies": ["sonner"]
+    },
+    {
+      "name": "sonner-icon",
+      "type": "registry:ui",
+      "title": "Sonner Icon",
+      "description": "Sonner Icon variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/sonner/sonner-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/sonner/sonner-icon.tsx"
+        }
+      ],
+      "categories": ["sonner"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react", "sonner"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
     },
     {
       "name": "sonner-position",
@@ -9047,6 +9342,25 @@
       ],
       "categories": ["spinner"],
       "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "spinner-dots-pulse",
+      "type": "registry:ui",
+      "title": "Spinner Dots Pulse",
+      "description": "Spinner Dots Pulse variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/spinner/spinner-dots-pulse.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/spinner/spinner-dots-pulse.tsx"
+        }
+      ],
+      "categories": ["spinner"],
+      "dependencies": ["framer-motion"],
+      "badge": {
+        "label": "New",
+        "variant": "default"
+      }
     },
     {
       "name": "spinner-empty",
@@ -9415,8 +9729,7 @@
       ],
       "categories": ["table"],
       "registryDependencies": ["@uiable/avatar", "@uiable/badge", "@uiable/button", "@uiable/dropdown-menu", "@uiable/table"],
-      "dependencies": ["lucide-react"],
-      "badge": "new"
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "tabs-basic",
@@ -9938,8 +10251,7 @@
       ],
       "categories": ["tooltip"],
       "registryDependencies": ["@uiable/button", "@uiable/tooltip"],
-      "dependencies": ["lucide-react"],
-      "badge": "new"
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "total-income-card",
@@ -10113,8 +10425,7 @@
           "target": "@components/uiable/typography/typography-italic.tsx"
         }
       ],
-      "categories": ["typography"],
-      "badge": "new"
+      "categories": ["typography"]
     },
     {
       "name": "typography-large",
@@ -10156,8 +10467,7 @@
           "target": "@components/uiable/typography/typography-link.tsx"
         }
       ],
-      "categories": ["typography"],
-      "badge": "new"
+      "categories": ["typography"]
     },
     {
       "name": "typography-list",
@@ -10340,6 +10650,22 @@
       "dependencies": ["framer-motion"]
     },
     {
+      "name": "block-contact-15",
+      "type": "registry:block",
+      "title": "Contact 15",
+      "description": "Contact 15 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/contact/contact-15/contact-15.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/contact/contact-15/contact-15.tsx"
+        }
+      ],
+      "categories": ["contact"],
+      "registryDependencies": ["@uiable/button", "@uiable/field", "@uiable/input", "@uiable/radio-group", "@uiable/select", "@uiable/textarea"],
+      "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
       "name": "block-content-1",
       "type": "registry:block",
       "title": "Content 1",
@@ -10354,6 +10680,35 @@
       "categories": ["content"]
     },
     {
+      "name": "block-content-3",
+      "type": "registry:block",
+      "title": "Content 3",
+      "description": "Content 3 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/content/content-3/content-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/content/content-3/content-3.tsx"
+        }
+      ],
+      "categories": ["content"]
+    },
+    {
+      "name": "block-content-4",
+      "type": "registry:block",
+      "title": "Content 4",
+      "description": "Content 4 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/content/content-4/content-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/content/content-4/content-4.tsx"
+        }
+      ],
+      "categories": ["content"],
+      "registryDependencies": ["@uiable/button"]
+    },
+    {
       "name": "block-content-5",
       "type": "registry:block",
       "title": "Content 5",
@@ -10363,6 +10718,21 @@
           "path": "src/components/uiable/blocks/content/content-5/content-5.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/content/content-5/content-5.tsx"
+        }
+      ],
+      "categories": ["content"],
+      "registryDependencies": ["@uiable/button"]
+    },
+    {
+      "name": "block-content-6",
+      "type": "registry:block",
+      "title": "Content 6",
+      "description": "Content 6 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/content/content-6/content-6.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/content/content-6/content-6.tsx"
         }
       ],
       "categories": ["content"],
@@ -10399,6 +10769,28 @@
       "registryDependencies": ["@uiable/button", "@uiable/input"]
     },
     {
+      "name": "block-cta-7",
+      "type": "registry:block",
+      "title": "Cta 7",
+      "description": "Cta 7 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/cta/cta-7/cta-7.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/cta/cta-7/cta-7.tsx"
+        }
+      ],
+      "categories": ["cta"]
+    },
+    {
+      "name": "block-dashboard-layout",
+      "type": "registry:block",
+      "title": "Dashboard Layout",
+      "description": "Dashboard Layout variant for block.",
+      "files": [],
+      "categories": ["layout"]
+    },
+    {
       "name": "block-faq",
       "type": "registry:block",
       "title": "Faq",
@@ -10428,6 +10820,21 @@
       ],
       "categories": ["faq"],
       "registryDependencies": ["@uiable/accordion"]
+    },
+    {
+      "name": "block-faq-4",
+      "type": "registry:block",
+      "title": "Faq 4",
+      "description": "Faq 4 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/faq/faq-4/faq-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/faq/faq-4/faq-4.tsx"
+        }
+      ],
+      "categories": ["faq"],
+      "registryDependencies": ["@uiable/accordion", "@uiable/button"]
     },
     {
       "name": "block-feature",
@@ -10752,6 +11159,22 @@
       "dependencies": ["lucide-react"]
     },
     {
+      "name": "block-pricing-9",
+      "type": "registry:block",
+      "title": "Pricing 9",
+      "description": "Pricing 9 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/pricing/pricing-9/pricing-9.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/pricing/pricing-9/pricing-9.tsx"
+        }
+      ],
+      "categories": ["pricing"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react"]
+    },
+    {
       "name": "block-process-1",
       "type": "registry:block",
       "title": "Process 1",
@@ -10776,6 +11199,21 @@
           "path": "src/components/uiable/blocks/process/process-3/process-3.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/process/process-3/process-3.tsx"
+        }
+      ],
+      "categories": ["process"],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "block-process-4",
+      "type": "registry:block",
+      "title": "Process 4",
+      "description": "Process 4 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/process/process-4/process-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/process/process-4/process-4.tsx"
         }
       ],
       "categories": ["process"],
@@ -10813,6 +11251,21 @@
       "dependencies": ["lucide-react"]
     },
     {
+      "name": "block-statistics-2",
+      "type": "registry:block",
+      "title": "Statistics 2",
+      "description": "Statistics 2 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/statistics/statistics-2/statistics-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/statistics/statistics-2/statistics-2.tsx"
+        }
+      ],
+      "categories": ["statistics"],
+      "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
       "name": "block-team-1",
       "type": "registry:block",
       "title": "Team 1",
@@ -10826,6 +11279,35 @@
       ],
       "categories": ["team"],
       "registryDependencies": ["@uiable/avatar"]
+    },
+    {
+      "name": "block-team-3",
+      "type": "registry:block",
+      "title": "Team 3",
+      "description": "Team 3 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/team/team-3/team-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/team/team-3/team-3.tsx"
+        }
+      ],
+      "categories": ["team"],
+      "registryDependencies": ["@uiable/avatar", "@uiable/carousel"]
+    },
+    {
+      "name": "block-team-4",
+      "type": "registry:block",
+      "title": "Team 4",
+      "description": "Team 4 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/team/team-4/team-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/team/team-4/team-4.tsx"
+        }
+      ],
+      "categories": ["team"]
     },
     {
       "name": "block-testimonial-1",
@@ -10842,6 +11324,22 @@
       "categories": ["testimonial"],
       "registryDependencies": ["@uiable/avatar"],
       "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "block-testimonial-9",
+      "type": "registry:block",
+      "title": "Testimonial 9",
+      "description": "Testimonial 9 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/testimonial/testimonial-9/testimonial-9.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/testimonial/testimonial-9/testimonial-9.tsx"
+        }
+      ],
+      "categories": ["testimonial"],
+      "registryDependencies": ["@uiable/avatar"],
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "accordion",

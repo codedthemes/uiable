@@ -3,7 +3,6 @@
 import { Children, ReactNode, useEffect, useState } from "react"
 
 // project-imports
-// project imports
 import { AnimationBg } from "@/images/svg/landing"
 
 interface EchoStackProps {
