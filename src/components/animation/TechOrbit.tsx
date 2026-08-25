@@ -3,7 +3,6 @@
 import { ReactNode } from "react"
 
 // third-party
-// third party
 import { motion } from "framer-motion"
 
 // project-imports

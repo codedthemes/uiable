@@ -10783,14 +10783,6 @@
       "categories": ["cta"]
     },
     {
-      "name": "block-dashboard-layout",
-      "type": "registry:block",
-      "title": "Dashboard Layout",
-      "description": "Dashboard Layout variant for block.",
-      "files": [],
-      "categories": ["layout"]
-    },
-    {
       "name": "block-faq",
       "type": "registry:block",
       "title": "Faq",

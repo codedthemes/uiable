@@ -33,6 +33,7 @@ import { type BundledLanguage, codeToHtml } from "shiki"
 // project-imports
 import Loader from "@/components/Loader"
 import { cn } from "@/lib/utils"
+import { toPreviewSlug } from "@/utils/preview-slug"
 
 // assets
 import {
@@ -123,6 +124,9 @@ export default function BlockItem({
     .replace(/^src\//, "")
     .replace(/^components\/uiable\//, "")
     .replace(".tsx", "")
+  // Collapse the duplicated trailing segment so the preview URL reads
+  // `/preview/cta/cta-13` instead of `/preview/cta/cta-13/cta-13`.
+  const previewSlug = toPreviewSlug(filePath)
 
   const iframeEl = useRef<HTMLIFrameElement>(null)
   const [viewportHeight, setViewportHeight] = useState(0)
@@ -211,7 +215,7 @@ export default function BlockItem({
   }
 
   const handleOpenPreview = () => {
-    window.open(`/preview/${filePath}`, "_blank")
+    window.open(`/preview/${previewSlug}`, "_blank")
   }
 
   const handleCopyClick = () => {
@@ -443,7 +447,7 @@ export default function BlockItem({
                     </div>
                   )}
                   <iframe
-                    src={`/preview/${filePath}`}
+                    src={`/preview/${previewSlug}`}
                     className={cn(
                       "w-full border-0 transition-opacity duration-300",
                       isIframeLoading ? "opacity-0" : "opacity-100"

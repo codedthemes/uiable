@@ -183,113 +183,113 @@ Pre-built page sections ready to drop into your project.
 ### Contact
 
 <div>
-  <a href="https://uiable.com/preview/contact/contact-1/contact-1" title="Contact 1"><kbd>Contact 1</kbd></a>
-  <a href="https://uiable.com/preview/contact/contact-11/contact-11" title="Contact 11"><kbd>Contact 11</kbd></a>
-  <a href="https://uiable.com/preview/contact/contact-15/contact-15" title="Contact 15"><kbd>Contact 15</kbd></a>
+  <a href="https://uiable.com/preview/contact/contact-1" title="Contact 1"><kbd>Contact 1</kbd></a>
+  <a href="https://uiable.com/preview/contact/contact-11" title="Contact 11"><kbd>Contact 11</kbd></a>
+  <a href="https://uiable.com/preview/contact/contact-15" title="Contact 15"><kbd>Contact 15</kbd></a>
 </div>
 
 ### Content
 
 <div>
-  <a href="https://uiable.com/preview/content/content-1/content-1" title="Content 1"><kbd>Content 1</kbd></a>
-  <a href="https://uiable.com/preview/content/content-5/content-5" title="Content 5"><kbd>Content 5</kbd></a>
-  <a href="https://uiable.com/preview/content/content-3/content-3" title="Content 3"><kbd>Content 3</kbd></a>
-  <a href="https://uiable.com/preview/content/content-4/content-4" title="Content 4"><kbd>Content 4</kbd></a>
-  <a href="https://uiable.com/preview/content/content-6/content-6" title="Content 6"><kbd>Content 6</kbd></a>
+  <a href="https://uiable.com/preview/content/content-1" title="Content 1"><kbd>Content 1</kbd></a>
+  <a href="https://uiable.com/preview/content/content-5" title="Content 5"><kbd>Content 5</kbd></a>
+  <a href="https://uiable.com/preview/content/content-3" title="Content 3"><kbd>Content 3</kbd></a>
+  <a href="https://uiable.com/preview/content/content-4" title="Content 4"><kbd>Content 4</kbd></a>
+  <a href="https://uiable.com/preview/content/content-6" title="Content 6"><kbd>Content 6</kbd></a>
 </div>
 
 ### CTA
 
 <div>
-  <a href="https://uiable.com/preview/cta/cta-1/cta-1" title="Call To Action 1"><kbd>Call To Action 1</kbd></a>
-  <a href="https://uiable.com/preview/cta/cta-2/cta-2" title="Call To Action 2"><kbd>Call To Action 2</kbd></a>
-  <a href="https://uiable.com/preview/cta/cta-7/cta-7" title="CTA 7"><kbd>CTA 7</kbd></a>
+  <a href="https://uiable.com/preview/cta/cta-1" title="Call To Action 1"><kbd>Call To Action 1</kbd></a>
+  <a href="https://uiable.com/preview/cta/cta-2" title="Call To Action 2"><kbd>Call To Action 2</kbd></a>
+  <a href="https://uiable.com/preview/cta/cta-7" title="CTA 7"><kbd>CTA 7</kbd></a>
 </div>
 
 ### Faq
 
 <div>
-  <a href="https://uiable.com/preview/faq/faq-1/faq-1" title="FAQ 1"><kbd>FAQ 1</kbd></a>
-  <a href="https://uiable.com/preview/faq/faq-4/faq-4" title="FAQ 4"><kbd>FAQ 4</kbd></a>
+  <a href="https://uiable.com/preview/faq/faq-1" title="FAQ 1"><kbd>FAQ 1</kbd></a>
+  <a href="https://uiable.com/preview/faq/faq-4" title="FAQ 4"><kbd>FAQ 4</kbd></a>
 </div>
 
 ### Feature
 
 <div>
-  <a href="https://uiable.com/preview/feature/feature-1/feature-1" title="Feature 1"><kbd>Feature 1</kbd></a>
-  <a href="https://uiable.com/preview/feature/feature-2/feature-2" title="Feature 2"><kbd>Feature 2</kbd></a>
+  <a href="https://uiable.com/preview/feature/feature-1" title="Feature 1"><kbd>Feature 1</kbd></a>
+  <a href="https://uiable.com/preview/feature/feature-2" title="Feature 2"><kbd>Feature 2</kbd></a>
 </div>
 
 ### Footer
 
 <div>
-  <a href="https://uiable.com/preview/footer/footer-7/footer-7" title="Footer 7"><kbd>Footer 7</kbd></a>
-  <a href="https://uiable.com/preview/footer/footer-3/footer-3" title="Footer 3"><kbd>Footer 3</kbd></a>
-  <a href="https://uiable.com/preview/footer/footer-11/footer-11" title="Footer 11"><kbd>Footer 11</kbd></a>
+  <a href="https://uiable.com/preview/footer/footer-7" title="Footer 7"><kbd>Footer 7</kbd></a>
+  <a href="https://uiable.com/preview/footer/footer-3" title="Footer 3"><kbd>Footer 3</kbd></a>
+  <a href="https://uiable.com/preview/footer/footer-11" title="Footer 11"><kbd>Footer 11</kbd></a>
 </div>
 
 ### Gallery
 
 <div>
-  <a href="https://uiable.com/preview/gallery/gallery-2/gallery-2" title="Gallery 2"><kbd>Gallery 2</kbd></a>
-  <a href="https://uiable.com/preview/gallery/gallery-3/gallery-3" title="Gallery 3"><kbd>Gallery 3</kbd></a>
-  <a href="https://uiable.com/preview/gallery/gallery-4/gallery-4" title="Gallery 4"><kbd>Gallery 4</kbd></a>
-  <a href="https://uiable.com/preview/gallery/gallery-10/gallery-10" title="Gallery 10"><kbd>Gallery 10</kbd></a>
+  <a href="https://uiable.com/preview/gallery/gallery-2" title="Gallery 2"><kbd>Gallery 2</kbd></a>
+  <a href="https://uiable.com/preview/gallery/gallery-3" title="Gallery 3"><kbd>Gallery 3</kbd></a>
+  <a href="https://uiable.com/preview/gallery/gallery-4" title="Gallery 4"><kbd>Gallery 4</kbd></a>
+  <a href="https://uiable.com/preview/gallery/gallery-10" title="Gallery 10"><kbd>Gallery 10</kbd></a>
 </div>
 
 ### Hero
 
 <div>
-  <a href="https://uiable.com/preview/hero/hero-2/hero-2" title="Hero 2"><kbd>Hero 2</kbd></a>
-  <a href="https://uiable.com/preview/hero/hero-3/hero-3" title="Hero 3"><kbd>Hero 3</kbd></a>
-  <a href="https://uiable.com/preview/hero/hero-6/hero-6" title="Hero 6"><kbd>Hero 6</kbd></a>
+  <a href="https://uiable.com/preview/hero/hero-2" title="Hero 2"><kbd>Hero 2</kbd></a>
+  <a href="https://uiable.com/preview/hero/hero-3" title="Hero 3"><kbd>Hero 3</kbd></a>
+  <a href="https://uiable.com/preview/hero/hero-6" title="Hero 6"><kbd>Hero 6</kbd></a>
 </div>
 
 ### Portfolio
 
 <div>
-  <a href="https://uiable.com/preview/portfolio/portfolio-3/portfolio-3" title="Portfolio 3"><kbd>Portfolio 3</kbd></a>
-  <a href="https://uiable.com/preview/portfolio/portfolio-4/portfolio-4" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
-  <a href="https://uiable.com/preview/portfolio/portfolio-5/portfolio-5" title="Portfolio 5"><kbd>Portfolio 5</kbd></a>
+  <a href="https://uiable.com/preview/portfolio/portfolio-3" title="Portfolio 3"><kbd>Portfolio 3</kbd></a>
+  <a href="https://uiable.com/preview/portfolio/portfolio-4" title="Portfolio 4"><kbd>Portfolio 4</kbd></a>
+  <a href="https://uiable.com/preview/portfolio/portfolio-5" title="Portfolio 5"><kbd>Portfolio 5</kbd></a>
 </div>
 
 ### Pricing
 
 <div>
-  <a href="https://uiable.com/preview/pricing/pricing-2/pricing-2" title="Pricing 2"><kbd>Pricing 2</kbd></a>
-  <a href="https://uiable.com/preview/pricing/pricing-3/pricing-3" title="Pricing 3"><kbd>Pricing 3</kbd></a>
-  <a href="https://uiable.com/preview/pricing/pricing-9/pricing-9" title="Pricing 9"><kbd>Pricing 9</kbd></a>
+  <a href="https://uiable.com/preview/pricing/pricing-2" title="Pricing 2"><kbd>Pricing 2</kbd></a>
+  <a href="https://uiable.com/preview/pricing/pricing-3" title="Pricing 3"><kbd>Pricing 3</kbd></a>
+  <a href="https://uiable.com/preview/pricing/pricing-9" title="Pricing 9"><kbd>Pricing 9</kbd></a>
 </div>
 
 ### Process
 
 <div>
-  <a href="https://uiable.com/preview/process/process-1/process-1" title="Process 1"><kbd>Process 1</kbd></a>
-  <a href="https://uiable.com/preview/process/process-3/process-3" title="Process 3"><kbd>Process 3</kbd></a>
-  <a href="https://uiable.com/preview/process/process-4/process-4" title="Process 4"><kbd>Process 4</kbd></a>
-  <a href="https://uiable.com/preview/process/process-6/process-6" title="Process 6"><kbd>Process 6</kbd></a>
+  <a href="https://uiable.com/preview/process/process-1" title="Process 1"><kbd>Process 1</kbd></a>
+  <a href="https://uiable.com/preview/process/process-3" title="Process 3"><kbd>Process 3</kbd></a>
+  <a href="https://uiable.com/preview/process/process-4" title="Process 4"><kbd>Process 4</kbd></a>
+  <a href="https://uiable.com/preview/process/process-6" title="Process 6"><kbd>Process 6</kbd></a>
 </div>
 
 ### Statistics
 
 <div>
-  <a href="https://uiable.com/preview/statistics/statistics-1/statistics-1" title="Statistics 1"><kbd>Statistics 1</kbd></a>
-  <a href="https://uiable.com/preview/statistics/statistics-2/statistics-2" title="Statistics 2"><kbd>Statistics 2</kbd></a>
+  <a href="https://uiable.com/preview/statistics/statistics-1" title="Statistics 1"><kbd>Statistics 1</kbd></a>
+  <a href="https://uiable.com/preview/statistics/statistics-2" title="Statistics 2"><kbd>Statistics 2</kbd></a>
 </div>
 
 ### Team
 
 <div>
-  <a href="https://uiable.com/preview/team/team-1/team-1" title="Team 1"><kbd>Team 1</kbd></a>
-  <a href="https://uiable.com/preview/team/team-3/team-3" title="Team 3"><kbd>Team 3</kbd></a>
-  <a href="https://uiable.com/preview/team/team-4/team-4" title="Team 4"><kbd>Team 4</kbd></a>
+  <a href="https://uiable.com/preview/team/team-1" title="Team 1"><kbd>Team 1</kbd></a>
+  <a href="https://uiable.com/preview/team/team-3" title="Team 3"><kbd>Team 3</kbd></a>
+  <a href="https://uiable.com/preview/team/team-4" title="Team 4"><kbd>Team 4</kbd></a>
 </div>
 
 ### Testimonial
 
 <div>
-  <a href="https://uiable.com/preview/testimonial/testimonial-1/testimonial-1" title="Testimonial 1"><kbd>Testimonial 1</kbd></a>
-  <a href="https://uiable.com/preview/testimonial/testimonial-9/testimonial-9" title="Testimonial 9"><kbd>Testimonial 9</kbd></a>
+  <a href="https://uiable.com/preview/testimonial/testimonial-1" title="Testimonial 1"><kbd>Testimonial 1</kbd></a>
+  <a href="https://uiable.com/preview/testimonial/testimonial-9" title="Testimonial 9"><kbd>Testimonial 9</kbd></a>
 </div>
 
 ### Landing

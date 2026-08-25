@@ -4,8 +4,8 @@
   "baseUrl": "https://uiable.com",
   "generatedFrom": "registry.json",
   "counts": {
-    "total": 796,
-    "blocks": 51,
+    "total": 795,
+    "blocks": 50,
     "primitives": 61,
     "components": 684
   },
@@ -3609,27 +3609,6 @@
       "addCommand": "npx shadcn@latest add @uiable/block-cta-7",
       "url": "https://uiable.com/r/block-cta-7.json",
       "previewUrl": "https://uiable.com/preview/block-cta-7"
-    },
-    {
-      "name": "block-dashboard-layout",
-      "kind": "block",
-      "type": "registry:block",
-      "title": "Dashboard Layout",
-      "description": "Dashboard Layout variant for block.",
-      "categories": [
-        "layout"
-      ],
-      "dependencies": [],
-      "registryDependencies": [],
-      "files": [],
-      "keywords": [
-        "dashboard",
-        "layout",
-        "block"
-      ],
-      "addCommand": "npx shadcn@latest add @uiable/block-dashboard-layout",
-      "url": "https://uiable.com/r/block-dashboard-layout.json",
-      "previewUrl": "https://uiable.com/preview/block-dashboard-layout"
     },
     {
       "name": "block-faq",
