@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/tooltip"
 
 // project-imports
-// project imports
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_CATEGORIES } from "@/components-grid"
 import { cn } from "@/lib/utils"

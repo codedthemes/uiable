@@ -13,7 +13,6 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 
 // project-imports
-// project imports
 import { Star } from "@/images/svg/icons"
 import { cn } from "@/lib/utils"
 

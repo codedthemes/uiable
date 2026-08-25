@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
 // project-imports
-// project imports
 import branding from "@/branding.json"
 import { HoverBg } from "@/components/animation"
 import { Shadcn, BaseUi, Tailwind } from "@/images/svg/icons"
@@ -108,7 +107,7 @@ export default function Hero() {
           <PingDot />
           <span className="flex items-center gap-2">
             <span className="text-muted-foreground">
-              New Release August 18, 2026
+              New Release August 25, 2026
             </span>
             <ChangelogLink />
           </span>

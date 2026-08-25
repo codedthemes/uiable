@@ -6,7 +6,6 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 // project-imports
-// project imports
 import branding from "@/branding.json"
 import {
   CodeAnimation,

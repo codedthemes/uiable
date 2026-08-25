@@ -20,6 +20,79 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.8.0",
+    date: "August 25, 2026",
+    anchor: "v1-8-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          {
+            text: "FAQ: FAQ 4",
+            previewUrl: "/preview/faq/faq-4",
+          },
+          {
+            text: "Pricing: Pricing 9",
+            previewUrl: "/preview/pricing/pricing-9",
+          },
+          {
+            text: "Process: Process 4",
+            previewUrl: "/preview/process/process-4",
+          },
+          {
+            text: "Team: Team 3",
+            previewUrl: "/preview/team/team-3",
+          },
+          {
+            text: "Testimonial: Testimonial 9",
+            previewUrl: "/preview/testimonial/testimonial-9",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Alert: Outlined Danger, Outlined Dark, Outlined Info, Outlined Primary, Outlined Secondary, Outlined Success, Outlined Warning",
+            previewUrl: "/components/alert",
+          },
+          {
+            text: "Alert Dialog: Warning",
+            previewUrl: "/components/alert-dialog",
+          },
+          {
+            text: "Aspect Ratio: Cinematic",
+            previewUrl: "/components/aspect-ratio",
+          },
+          {
+            text: "Breadcrumb: Background",
+            previewUrl: "/components/breadcrumb",
+          },
+          {
+            text: "Dialog: Destructive",
+            previewUrl: "/components/dialog",
+          },
+          {
+            text: "Menubar: Editor",
+            previewUrl: "/components/menubar",
+          },
+          {
+            text: "Separator: With Text",
+            previewUrl: "/components/separator",
+          },
+          {
+            text: "Sonner: Close Button, Icon",
+            previewUrl: "/components/sonner",
+          },
+          {
+            text: "Spinner: Dots Pulse",
+            previewUrl: "/components/spinner",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.7.0",
     date: "August 18, 2026",
     anchor: "v1-7-0",
@@ -29,23 +102,23 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         items: [
           {
             text: "Contact: Contact 11",
-            previewUrl: "/preview/contact/contact-11/contact-11",
+            previewUrl: "/preview/contact/contact-11",
           },
           {
             text: "Content: Content 5",
-            previewUrl: "/preview/content/content-5/content-5",
+            previewUrl: "/preview/content/content-5",
           },
           {
             text: "Footer: Footer 11",
-            previewUrl: "/preview/footer/footer-11/footer-11",
+            previewUrl: "/preview/footer/footer-11",
           },
           {
             text: "Gallery: Gallery 10",
-            previewUrl: "/preview/gallery/gallery-10/gallery-10",
+            previewUrl: "/preview/gallery/gallery-10",
           },
           {
             text: "Hero: Hero 6",
-            previewUrl: "/preview/hero/hero-6/hero-6",
+            previewUrl: "/preview/hero/hero-6",
           },
         ],
       },
@@ -106,23 +179,23 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         items: [
           {
             text: "Gallery: Gallery 3",
-            previewUrl: "/preview/gallery/gallery-3/gallery-3",
+            previewUrl: "/preview/gallery/gallery-3",
           },
           {
             text: "Hero: Hero 3",
-            previewUrl: "/preview/hero/hero-3/hero-3",
+            previewUrl: "/preview/hero/hero-3",
           },
           {
             text: "Portfolio: Portfolio 3",
-            previewUrl: "/preview/portfolio/portfolio-3/portfolio-3",
+            previewUrl: "/preview/portfolio/portfolio-3",
           },
           {
             text: "Pricing: Pricing 3",
-            previewUrl: "/preview/pricing/pricing-3/pricing-3",
+            previewUrl: "/preview/pricing/pricing-3",
           },
           {
             text: "Process: Process 3",
-            previewUrl: "/preview/process/process-3/process-3",
+            previewUrl: "/preview/process/process-3",
           },
         ],
       },
@@ -195,23 +268,23 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         items: [
           {
             text: "Feature: Feature 1",
-            previewUrl: "/preview/feature/feature-1/feature-1",
+            previewUrl: "/preview/feature/feature-1",
           },
           {
             text: "Footer: Footer 7",
-            previewUrl: "/preview/footer/footer-7/footer-7",
+            previewUrl: "/preview/footer/footer-7",
           },
           {
             text: "Gallery: Gallery 2",
-            previewUrl: "/preview/gallery/gallery-2/gallery-2",
+            previewUrl: "/preview/gallery/gallery-2",
           },
           {
             text: "Portfolio: Portfolio 5",
-            previewUrl: "/preview/portfolio/portfolio-5/portfolio-5",
+            previewUrl: "/preview/portfolio/portfolio-5",
           },
           {
             text: "Process: Process 6",
-            previewUrl: "/preview/process/process-6/process-6",
+            previewUrl: "/preview/process/process-6",
           },
         ],
       },
@@ -248,20 +321,20 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         items: [
           {
             text: "Pricing: Pricing 2",
-            previewUrl: "/preview/pricing/pricing-2/pricing-2",
+            previewUrl: "/preview/pricing/pricing-2",
           },
           {
             text: "Process: Process 1",
-            previewUrl: "/preview/process/process-1/process-1",
+            previewUrl: "/preview/process/process-1",
           },
           {
             text: "Statistics: Statistics 1",
-            previewUrl: "/preview/statistics/statistics-1/statistics-1",
+            previewUrl: "/preview/statistics/statistics-1",
           },
-          { text: "Team: Team 1", previewUrl: "/preview/team/team-1/team-1" },
+          { text: "Team: Team 1", previewUrl: "/preview/team/team-1" },
           {
             text: "Testimonial: Testimonial 1",
-            previewUrl: "/preview/testimonial/testimonial-1/testimonial-1",
+            previewUrl: "/preview/testimonial/testimonial-1",
           },
         ],
       },
@@ -347,23 +420,23 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         items: [
           {
             text: "Hero: Hero 2",
-            previewUrl: "/preview/hero/hero-2/hero-2",
+            previewUrl: "/preview/hero/hero-2",
           },
           {
             text: "Feature: Feature 2",
-            previewUrl: "/preview/feature/feature-2/feature-2",
+            previewUrl: "/preview/feature/feature-2",
           },
           {
             text: "Footer: Footer 3",
-            previewUrl: "/preview/footer/footer-3/footer-3",
+            previewUrl: "/preview/footer/footer-3",
           },
           {
             text: "Gallery: Gallery 4",
-            previewUrl: "/preview/gallery/gallery-4/gallery-4",
+            previewUrl: "/preview/gallery/gallery-4",
           },
           {
             text: "Portfolio: Portfolio 4",
-            previewUrl: "/preview/portfolio/portfolio-4/portfolio-4",
+            previewUrl: "/preview/portfolio/portfolio-4",
           },
         ],
       },

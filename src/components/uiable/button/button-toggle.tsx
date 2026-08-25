@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button"
 import { Moon, Sun1 } from "iconsax-reactjs"
 
 // project-imports
-// project imports
 import { cn } from "@/lib/utils"
 
 //  ------------------------------ | BUTTON TOGGLE | ------------------------------  //

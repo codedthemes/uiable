@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
 // project-imports
-// project imports
 import branding from "@/branding.json"
 import { ThemeToggle } from "@/components/customizer"
 import NavSearchDialog from "@/components/uiable/blocks/landing/components/NavSearchDialog"

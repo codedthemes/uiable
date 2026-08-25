@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menubar-editor",
+  "title": "Menubar Editor",
+  "description": "Menubar Editor variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/menubar"],
+  "files": [
+    {
+      "path": "src/components/uiable/menubar/menubar-editor.tsx",
+      "content": "// shadcn\nimport {\n  Menubar,\n  MenubarContent,\n  MenubarItem,\n  MenubarMenu,\n  MenubarSeparator,\n  MenubarShortcut,\n  MenubarTrigger,\n} from \"@/components/ui/menubar\"\n\n// assets\nimport {\n  AlignCenterIcon,\n  AlignJustifyIcon,\n  AlignLeftIcon,\n  AlignRightIcon,\n  BoldIcon,\n  ItalicIcon,\n  StrikethroughIcon,\n  UnderlineIcon,\n} from \"lucide-react\"\n\n//  ------------------------------ | MENUBAR - EDITOR | ------------------------------  //\n\nexport function MenubarEditor() {\n  return (\n    <Menubar className=\"w-fit border shadow-sm\">\n      <MenubarMenu>\n        <MenubarTrigger className=\"font-semibold\">Format</MenubarTrigger>\n        <MenubarContent className=\"w-auto\">\n          <MenubarItem>\n            <BoldIcon className=\"mr-2 h-4 w-4\" />\n            Bold <MenubarShortcut>⌘B</MenubarShortcut>\n          </MenubarItem>\n          <MenubarItem>\n            <ItalicIcon className=\"mr-2 h-4 w-4\" />\n            Italic <MenubarShortcut>⌘I</MenubarShortcut>\n          </MenubarItem>\n          <MenubarItem>\n            <UnderlineIcon className=\"mr-2 h-4 w-4\" />\n            Underline <MenubarShortcut>⌘U</MenubarShortcut>\n          </MenubarItem>\n          <MenubarItem>\n            <StrikethroughIcon className=\"mr-2 h-4 w-4\" />\n            Strikethrough <MenubarShortcut>⌘⇧X</MenubarShortcut>\n          </MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n      <MenubarMenu>\n        <MenubarTrigger className=\"font-semibold\">Align</MenubarTrigger>\n        <MenubarContent className=\"w-auto\">\n          <MenubarItem>\n            <AlignLeftIcon className=\"mr-2 h-4 w-4\" />\n            Left <MenubarShortcut>⌘⇧L</MenubarShortcut>\n          </MenubarItem>\n          <MenubarItem>\n            <AlignCenterIcon className=\"mr-2 h-4 w-4\" />\n            Center <MenubarShortcut>⌘⇧E</MenubarShortcut>\n          </MenubarItem>\n          <MenubarItem>\n            <AlignRightIcon className=\"mr-2 h-4 w-4\" />\n            Right <MenubarShortcut>⌘⇧R</MenubarShortcut>\n          </MenubarItem>\n          <MenubarSeparator />\n          <MenubarItem>\n            <AlignJustifyIcon className=\"mr-2 h-4 w-4\" />\n            Justify <MenubarShortcut>⌘⇧J</MenubarShortcut>\n          </MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n    </Menubar>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/menubar/menubar-editor.tsx"
+    }
+  ],
+  "categories": ["menubar"],
+  "type": "registry:ui"
+}

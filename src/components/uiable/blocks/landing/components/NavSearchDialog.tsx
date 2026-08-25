@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/command"
 
 // project-imports
-// project imports
 import { NAV_CATEGORIES, NAV_BLOCKS } from "@/components-grid"
 
 // assets

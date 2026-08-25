@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/accordion"
 
 // project-imports
-// project imports
 import branding from "@/branding.json"
 import { SectionHeader } from "@/components/uiable/blocks/landing/components"
 

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-with-text",
+  "title": "Separator With Text",
+  "description": "Separator With Text variant for component.",
+  "registryDependencies": ["@uiable/separator"],
+  "files": [
+    {
+      "path": "src/components/uiable/separator/separator-with-text.tsx",
+      "content": "// shadcn\nimport { Separator } from \"@/components/ui/separator\"\n\n//  ------------------------------ | SEPARATOR - WITH TEXT | ------------------------------  //\n\nexport function SeparatorWithText() {\n  return (\n    <div className=\"flex w-full max-w-md flex-col gap-6\">\n      <div className=\"flex items-center gap-4\">\n        <Separator className=\"flex-1\" />\n        <span className=\"text-xs font-medium tracking-wider text-muted-foreground uppercase\">\n          Or continue with\n        </span>\n        <Separator className=\"flex-1\" />\n      </div>\n\n      <div className=\"flex items-center gap-3\">\n        <span className=\"text-sm font-semibold text-foreground\">\n          Section Break\n        </span>\n        <Separator className=\"flex-1\" />\n      </div>\n\n      <div className=\"relative flex items-center justify-center\">\n        <Separator className=\"w-full\" />\n        <span className=\"absolute rounded-lg bg-background px-3 py-1 text-xs font-medium text-muted-foreground\">\n          Updated Today\n        </span>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/separator/separator-with-text.tsx"
+    }
+  ],
+  "categories": ["separator"],
+  "type": "registry:ui"
+}

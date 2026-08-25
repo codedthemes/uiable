@@ -7,7 +7,6 @@ import { Separator } from "@/components/ui/separator"
 import { DocumentText, Global, SecuritySafe, Shield } from "iconsax-reactjs"
 
 // project-imports
-// project imports
 import branding from "@/branding.json"
 import DocsNavigation from "@/components/doc-bottom-nav"
 import TableOfContents from "@/components/uiable/layout/table-of-contents"
