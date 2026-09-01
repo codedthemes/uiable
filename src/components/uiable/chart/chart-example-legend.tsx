@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/chart"
 
 // third-party
-// third party
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
 
 // constants

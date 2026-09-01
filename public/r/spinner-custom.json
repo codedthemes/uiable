@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "src/components/uiable/spinner/spinner-custom.tsx",
-      "content": "import { ComponentProps } from \"react\"\n\n// project-imports\n// project\nimport { cn } from \"@/lib/utils\"\n\n// assets\nimport { LoaderIcon } from \"lucide-react\"\n\nfunction Spinner({ className, ...props }: ComponentProps<\"svg\">) {\n  return (\n    <LoaderIcon\n      role=\"status\"\n      aria-label=\"Loading\"\n      className={cn(\"size-4 animate-spin\", className)}\n      {...props}\n    />\n  )\n}\n\n//  ------------------------------ | SPINNER - CUSTOM | ------------------------------  //\n\nexport function SpinnerCustom() {\n  return (\n    <div className=\"flex items-center gap-4\">\n      <Spinner />\n    </div>\n  )\n}\n",
+      "content": "import { ComponentProps } from \"react\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\n// assets\nimport { LoaderIcon } from \"lucide-react\"\n\nfunction Spinner({ className, ...props }: ComponentProps<\"svg\">) {\n  return (\n    <LoaderIcon\n      role=\"status\"\n      aria-label=\"Loading\"\n      className={cn(\"size-4 animate-spin\", className)}\n      {...props}\n    />\n  )\n}\n\n//  ------------------------------ | SPINNER - CUSTOM | ------------------------------  //\n\nexport function SpinnerCustom() {\n  return (\n    <div className=\"flex items-center gap-4\">\n      <Spinner />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/spinner/spinner-custom.tsx"
     }

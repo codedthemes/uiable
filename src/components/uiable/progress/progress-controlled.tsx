@@ -7,7 +7,6 @@ import { ProgressIndicator, ProgressTrack } from "@/components/ui/progress"
 import { Slider } from "@/components/ui/slider"
 
 // third-party
-// third party
 import { Progress as ProgressPrimitive } from "@base-ui/react/progress"
 
 //  ------------------------------ | PROGRESS - CONTROLLED | ------------------------------  //

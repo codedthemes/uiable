@@ -7,7 +7,6 @@ import { Calendar, CalendarDayButton } from "@/components/ui/calendar"
 import { Card, CardContent } from "@/components/ui/card"
 
 // third-party
-// third party
 import { addDays } from "date-fns"
 import { DateRange } from "react-day-picker"
 

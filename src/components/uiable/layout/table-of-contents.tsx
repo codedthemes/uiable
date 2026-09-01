@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 interface TocItem {

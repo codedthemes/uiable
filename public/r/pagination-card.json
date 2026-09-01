@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pagination-card",
+  "title": "Pagination Card",
+  "description": "Pagination Card variant for component.",
+  "registryDependencies": ["@uiable/pagination"],
+  "files": [
+    {
+      "path": "src/components/uiable/pagination/pagination-card.tsx",
+      "content": "// shadcn\nimport {\n  Pagination,\n  PaginationContent,\n  PaginationItem,\n  PaginationLink,\n  PaginationNext,\n  PaginationPrevious,\n} from \"@/components/ui/pagination\"\n\n//  ------------------------------ | PAGINATION - CARD | ------------------------------  //\n\nexport default function PaginationCard() {\n  return (\n    <Pagination className=\"justify-start\">\n      <div className=\"rounded-lg border p-1\">\n        <PaginationContent className=\"gap-1\">\n          <PaginationItem>\n            <PaginationPrevious\n              href=\"#\"\n              className=\"rounded-lg text-muted-foreground hover:text-foreground\"\n            />\n          </PaginationItem>\n          <PaginationItem>\n            <PaginationLink\n              href=\"#\"\n              className=\"rounded-lg text-muted-foreground hover:text-foreground\"\n            >\n              1\n            </PaginationLink>\n          </PaginationItem>\n          <PaginationItem>\n            <PaginationLink href=\"#\" isActive className=\"rounded-lg\">\n              2\n            </PaginationLink>\n          </PaginationItem>\n          <PaginationItem>\n            <PaginationLink\n              href=\"#\"\n              className=\"rounded-lg text-muted-foreground hover:text-foreground\"\n            >\n              3\n            </PaginationLink>\n          </PaginationItem>\n          <PaginationItem>\n            <PaginationNext\n              href=\"#\"\n              className=\"rounded-lg text-muted-foreground hover:text-foreground\"\n            />\n          </PaginationItem>\n        </PaginationContent>\n      </div>\n    </Pagination>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/pagination/pagination-card.tsx"
+    }
+  ],
+  "categories": ["pagination"],
+  "type": "registry:ui"
+}

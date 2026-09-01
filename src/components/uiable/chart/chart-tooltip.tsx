@@ -1,7 +1,6 @@
 import { CSSProperties, ComponentProps } from "react"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 //  ------------------------------ | CHART - TOOLTIP | ------------------------------  //

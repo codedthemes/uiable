@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/input-group"
 
 // third-party
-// third party
 import TextareaAutosize from "react-textarea-autosize"
 
 //  ------------------------------ | INPUT GROUP - CUSTOM | ------------------------------  //

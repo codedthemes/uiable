@@ -7,15 +7,14 @@ import { Button } from "@/components/ui/button"
 
 // project-imports
 import branding from "@/branding.json"
-import {
-  CodeAnimation,
-  DiagonalScroll,
-  EchoStack,
-  MotionVisual,
-  TechOrbit,
-} from "@/components/animation"
-import { SectionHeader } from "@/components/uiable/blocks/landing/components"
-import { DarkFav, LightFav } from "@/images/brand"
+import CodeAnimation from "@/components/animation/CodeAnimation"
+import DiagonalScroll from "@/components/animation/DiagonalScroll"
+import EchoStack from "@/components/animation/EchoStack"
+import MotionVisual from "@/components/animation/MotionVisual"
+import TechOrbit from "@/components/animation/TechOrbit"
+import SectionHeader from "@/components/uiable/blocks/landing/components/SectionHeader"
+import DarkFav from "@/images/brand/dark-fav"
+import LightFav from "@/images/brand/light-fav"
 import { cn } from "@/lib/utils"
 
 // assets

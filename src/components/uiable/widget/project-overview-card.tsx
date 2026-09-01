@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 // project-imports
-// project
 import ProjectOverviewItem from "./project-overview-item"
 import { cn } from "@/lib/utils"
 

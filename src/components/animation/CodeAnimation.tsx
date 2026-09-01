@@ -6,7 +6,8 @@ import { useEffect, useRef, useState, type HTMLAttributes } from "react"
 import { motion } from "framer-motion"
 
 // project-imports
-import { DarkFav, LightFav } from "@/images/brand"
+import DarkFav from "@/images/brand/dark-fav"
+import LightFav from "@/images/brand/light-fav"
 import { AnimationBg } from "@/images/svg/landing"
 import { cn } from "@/lib/utils"
 

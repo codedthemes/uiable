@@ -3,12 +3,10 @@ import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 // third-party
-// third party
 import fs from "fs"
 import path from "path"
 
 // project-imports
-// project
 import branding from "@/branding.json"
 import CategoryDescription from "@/components/category-description"
 import CategoryView from "@/components/category-view"

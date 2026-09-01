@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-badge",
+  "title": "Tabs Badge",
+  "description": "Tabs Badge variant for component.",
+  "registryDependencies": ["@uiable/badge", "@uiable/tabs"],
+  "files": [
+    {
+      "path": "src/components/uiable/tabs/tabs-badge.tsx",
+      "content": "// shadcn\nimport { Badge } from \"@/components/ui/badge\"\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\"\n\n//  ------------------------------ | TABS - BADGE | ------------------------------  //\n\nexport function TabsBadge() {\n  return (\n    <Tabs defaultValue=\"home\" className=\"w-full\">\n      <TabsList className=\"border-b-border-border flex h-auto w-full flex-wrap justify-start gap-1 rounded-b-none border-b bg-transparent p-0 group-data-horizontal/tabs:h-auto\">\n        <TabsTrigger\n          value=\"home\"\n          className=\"rounded-b-none border-b-2 border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none\"\n        >\n          Home\n        </TabsTrigger>\n        <TabsTrigger\n          value=\"profile\"\n          className=\"rounded-b-none border-b-2 border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none\"\n        >\n          Profile\n          <Badge\n            variant=\"default\"\n            className=\"ml-1 h-5 rounded-full px-1.5 py-0 text-[10px]\"\n          >\n            New\n          </Badge>\n        </TabsTrigger>\n        <TabsTrigger\n          value=\"contact\"\n          className=\"rounded-b-none border-b-2 border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none\"\n        >\n          Contact\n        </TabsTrigger>\n      </TabsList>\n      <div className=\"mt-4\">\n        <TabsContent value=\"home\">\n          <p className=\"text-base text-muted-foreground\">\n            Lorem Ipsum is simply dummy text of the printing and typesetting\n            industry.\n          </p>\n        </TabsContent>\n        <TabsContent value=\"profile\">\n          <p className=\"text-base text-muted-foreground\">\n            It is a long established fact that a reader will be distracted by\n            the readable content of a page.\n          </p>\n        </TabsContent>\n        <TabsContent value=\"contact\">\n          <p className=\"text-base text-muted-foreground\">\n            There are many variations of passages of Lorem Ipsum available.\n          </p>\n        </TabsContent>\n      </div>\n    </Tabs>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tabs/tabs-badge.tsx"
+    }
+  ],
+  "categories": ["tabs"],
+  "type": "registry:ui"
+}

@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/input-otp"
 
 // third-party
-// third party
 import { REGEXP_ONLY_DIGITS_AND_CHARS } from "input-otp"
 
 //  ------------------------------ | INPUT OTP - ALPHANUMERIC | ------------------------------  //

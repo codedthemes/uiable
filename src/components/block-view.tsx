@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useState } from "react"
 
 // project-imports
-// project
 import { Item } from "./block-item"
 import { categories } from "@/components-grid"
 import LazySection from "@/components/LazySection"
@@ -64,20 +63,21 @@ export default function CategoryView({ category, items }: CategoryViewProps) {
       style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}
     >
       {items.map((item, index) => (
-        <LazySection
-          key={item.name}
-          sections={{
-            importFunc: () => import("./block-item"),
-            props: {
-              item,
-              index,
-              isLast: index === items.length - 1,
-              handleCopy,
-              copiedIndex,
-            },
-          }}
-          offset="200px"
-        />
+        <div key={item.name} className="relative">
+          <LazySection
+            sections={{
+              importFunc: () => import("./block-item"),
+              props: {
+                item,
+                index,
+                isLast: index === items.length - 1,
+                handleCopy,
+                copiedIndex,
+              },
+            }}
+            offset="200px"
+          />
+        </div>
       ))}
     </div>
   )

@@ -7,7 +7,6 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
 // project-imports
-// project
 import BlockList from "./block-list"
 import ComponentSearch from "./shared/component-search"
 import { cn } from "@/lib/utils"

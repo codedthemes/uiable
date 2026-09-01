@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 // project-imports
-import { Bitcoin, Ethereum } from "@/images/svg/icons"
+import Bitcoin from "@/images/svg/icons/bitcoin"
+import Ethereum from "@/images/svg/icons/ethereum"
 
 // assets
 import { ChevronDown, ArrowUpDown } from "lucide-react"

@@ -10,11 +10,9 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 // third-party
-// third party
 import { type BundledLanguage, codeToHtml } from "shiki"
 
 // project-imports
-// project
 import { categories } from "@/components-grid"
 import { cn } from "@/lib/utils"
 

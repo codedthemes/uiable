@@ -34,7 +34,6 @@ import {
 } from "@/components/ui/tooltip"
 
 // third-party
-// third party
 import { toast } from "sonner"
 
 // assets

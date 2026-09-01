@@ -4,7 +4,6 @@
 import { Button } from "@/components/ui/button"
 
 // third-party
-// third party
 import { toast } from "sonner"
 
 //  ------------------------------ | SONNER - DESCRIPTION | ------------------------------  //

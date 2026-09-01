@@ -22,7 +22,6 @@ import {
 } from "@/components/ui/sidebar"
 
 // project-imports
-// project
 import Logo from "@/components/uiable/layout/shared/logo"
 
 // assets

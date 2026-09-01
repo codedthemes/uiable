@@ -6,7 +6,8 @@ import { CSSProperties } from "react"
 import { motion } from "framer-motion"
 
 // project-imports
-import { LightFav, DarkFav } from "@/images/brand"
+import DarkFav from "@/images/brand/dark-fav"
+import LightFav from "@/images/brand/light-fav"
 import { AnimationBg } from "@/images/svg/landing"
 
 // ------------------------------ | MOTION VISUAL | ------------------------------ //

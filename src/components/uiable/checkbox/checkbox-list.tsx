@@ -3,7 +3,6 @@
 import { useState } from "react"
 
 // third-party
-// third party
 import { AnimatePresence, motion } from "framer-motion"
 
 // fruit options

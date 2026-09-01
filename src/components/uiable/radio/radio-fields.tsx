@@ -15,13 +15,11 @@ import {
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 // third-party
-// third party
 import { Radio as RadioPrimitive } from "@base-ui/react/radio"
 import { RadioGroup as RadioGroupPrimitive } from "@base-ui/react/radio-group"
 import { AnimatePresence, motion } from "framer-motion"
 
-// project-imports
-// projects
+// project-importss
 import { cn } from "@/lib/utils"
 
 // Animated radio

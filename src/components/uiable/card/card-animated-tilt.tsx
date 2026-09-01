@@ -22,7 +22,6 @@ import {
 } from "@/components/ui/item"
 
 // third-party
-// third party
 import {
   motion,
   useMotionTemplate,

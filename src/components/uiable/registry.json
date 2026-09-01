@@ -94,6 +94,25 @@
       "registryDependencies": ["@uiable/accordion"]
     },
     {
+      "name": "accordion-icons",
+      "type": "registry:ui",
+      "title": "Accordion Icons",
+      "description": "Accordion Icons variant for component.",
+      "files": [
+        {
+          "path": "accordion/accordion-icons.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/accordion/accordion-icons.tsx"
+        }
+      ],
+      "categories": ["accordion"],
+      "registryDependencies": ["@uiable/accordion", "@uiable/avatar"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "accordion-multiple",
       "type": "registry:ui",
       "title": "Accordion Multiple",
@@ -307,11 +326,7 @@
         }
       ],
       "categories": ["alert-dialog"],
-      "registryDependencies": ["@uiable/alert-dialog", "@uiable/button", "@uiable/checkbox", "@uiable/label"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert-dialog", "@uiable/button", "@uiable/checkbox", "@uiable/label"]
     },
     {
       "name": "alert-dismissible-danger",
@@ -655,11 +670,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-outlined-dark",
@@ -674,11 +685,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-outlined-info",
@@ -693,11 +700,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-outlined-primary",
@@ -712,11 +715,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-outlined-secondary",
@@ -731,11 +730,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-outlined-success",
@@ -750,11 +745,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-outlined-warning",
@@ -769,11 +760,7 @@
         }
       ],
       "categories": ["alert"],
-      "registryDependencies": ["@uiable/alert"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/alert"]
     },
     {
       "name": "alert-solid-danger",
@@ -893,11 +880,7 @@
         }
       ],
       "categories": ["aspect-ratio"],
-      "registryDependencies": ["@uiable/aspect-ratio"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/aspect-ratio"]
     },
     {
       "name": "aspect-ratio-portrait",
@@ -1796,11 +1779,7 @@
       ],
       "categories": ["breadcrumb"],
       "registryDependencies": ["@uiable/breadcrumb"],
-      "dependencies": ["next"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "dependencies": ["next"]
     },
     {
       "name": "breadcrumb-basic",
@@ -1895,6 +1874,25 @@
       "categories": ["breadcrumb"],
       "registryDependencies": ["@uiable/breadcrumb"],
       "dependencies": ["next"]
+    },
+    {
+      "name": "breadcrumb-outline",
+      "type": "registry:ui",
+      "title": "Breadcrumb Outline",
+      "description": "Breadcrumb Outline variant for component.",
+      "files": [
+        {
+          "path": "breadcrumb/breadcrumb-outline.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/breadcrumb/breadcrumb-outline.tsx"
+        }
+      ],
+      "categories": ["breadcrumb"],
+      "registryDependencies": ["@uiable/breadcrumb"],
+      "dependencies": ["next"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "breadcrumb-page-header",
@@ -4465,6 +4463,25 @@
       "dependencies": ["lucide-react"]
     },
     {
+      "name": "context-menu-font-style",
+      "type": "registry:ui",
+      "title": "Context Menu Font Style",
+      "description": "Context Menu Font Style variant for component.",
+      "files": [
+        {
+          "path": "context-menu/context-menu-font-style.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/context-menu/context-menu-font-style.tsx"
+        }
+      ],
+      "categories": ["context-menu"],
+      "registryDependencies": ["@uiable/context-menu"],
+      "dependencies": ["@tabler/icons-react"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "context-menu-groups",
       "type": "registry:ui",
       "title": "Context Menu Groups",
@@ -4539,6 +4556,24 @@
       ],
       "categories": ["context-menu"],
       "registryDependencies": ["@uiable/context-menu"]
+    },
+    {
+      "name": "context-menu-spell-check",
+      "type": "registry:ui",
+      "title": "Context Menu Spell Check",
+      "description": "Context Menu Spell Check variant for component.",
+      "files": [
+        {
+          "path": "context-menu/context-menu-spell-check.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/context-menu/context-menu-spell-check.tsx"
+        }
+      ],
+      "categories": ["context-menu"],
+      "registryDependencies": ["@uiable/context-menu"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "context-menu-submenu",
@@ -4804,11 +4839,7 @@
       ],
       "categories": ["dialog"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dialog"],
-      "dependencies": ["lucide-react"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "dialog-full-screen",
@@ -5198,6 +5229,25 @@
       "categories": ["dropdown-menu"],
       "registryDependencies": ["@uiable/button", "@uiable/dropdown-menu"],
       "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "dropdown-menu-profile-detailed",
+      "type": "registry:ui",
+      "title": "Dropdown Menu Profile Detailed",
+      "description": "Dropdown Menu Profile Detailed variant for component.",
+      "files": [
+        {
+          "path": "dropdown-menu/dropdown-menu-profile-detailed.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/dropdown-menu/dropdown-menu-profile-detailed.tsx"
+        }
+      ],
+      "categories": ["dropdown-menu"],
+      "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dropdown-menu"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "dropdown-menu-radio-group",
@@ -7142,6 +7192,25 @@
       "registryDependencies": ["@uiable/menubar"]
     },
     {
+      "name": "menubar-compact",
+      "type": "registry:ui",
+      "title": "Menubar Compact",
+      "description": "Menubar Compact variant for component.",
+      "files": [
+        {
+          "path": "menubar/menubar-compact.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/menubar/menubar-compact.tsx"
+        }
+      ],
+      "categories": ["menubar"],
+      "registryDependencies": ["@uiable/menubar"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "menubar-editor",
       "type": "registry:ui",
       "title": "Menubar Editor",
@@ -7155,11 +7224,7 @@
       ],
       "categories": ["menubar"],
       "registryDependencies": ["@uiable/menubar"],
-      "dependencies": ["lucide-react"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "menubar-icons",
@@ -7596,6 +7661,24 @@
       "registryDependencies": ["@uiable/pagination"]
     },
     {
+      "name": "pagination-card",
+      "type": "registry:ui",
+      "title": "Pagination Card",
+      "description": "Pagination Card variant for component.",
+      "files": [
+        {
+          "path": "pagination/pagination-card.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/pagination/pagination-card.tsx"
+        }
+      ],
+      "categories": ["pagination"],
+      "registryDependencies": ["@uiable/pagination"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "pagination-icon",
       "type": "registry:ui",
       "title": "Pagination Icon",
@@ -7714,6 +7797,25 @@
       ],
       "categories": ["popover"],
       "registryDependencies": ["@uiable/button", "@uiable/field", "@uiable/input", "@uiable/popover"]
+    },
+    {
+      "name": "popover-user-profile",
+      "type": "registry:ui",
+      "title": "Popover User Profile",
+      "description": "Popover User Profile variant for component.",
+      "files": [
+        {
+          "path": "popover/popover-user-profile.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/popover/popover-user-profile.tsx"
+        }
+      ],
+      "categories": ["popover"],
+      "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/popover", "@uiable/separator"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "profile-card",
@@ -8229,6 +8331,24 @@
       "dependencies": ["apexcharts", "lucide-react"]
     },
     {
+      "name": "resizable-admin-layout",
+      "type": "registry:ui",
+      "title": "Resizable Admin Layout",
+      "description": "Resizable Admin Layout variant for component.",
+      "files": [
+        {
+          "path": "resizable/resizable-admin-layout.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/resizable/resizable-admin-layout.tsx"
+        }
+      ],
+      "categories": ["resizable"],
+      "registryDependencies": ["@uiable/resizable"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "resizable-handle",
       "type": "registry:ui",
       "title": "Resizable Handle",
@@ -8564,11 +8684,7 @@
         }
       ],
       "categories": ["separator"],
-      "registryDependencies": ["@uiable/separator"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "registryDependencies": ["@uiable/separator"]
     },
     {
       "name": "sheet-menu",
@@ -9095,11 +9211,7 @@
       ],
       "categories": ["sonner"],
       "registryDependencies": ["@uiable/button"],
-      "dependencies": ["sonner"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "dependencies": ["sonner"]
     },
     {
       "name": "sonner-custom",
@@ -9147,11 +9259,7 @@
       ],
       "categories": ["sonner"],
       "registryDependencies": ["@uiable/button"],
-      "dependencies": ["lucide-react", "sonner"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "dependencies": ["lucide-react", "sonner"]
     },
     {
       "name": "sonner-position",
@@ -9356,11 +9464,7 @@
         }
       ],
       "categories": ["spinner"],
-      "dependencies": ["framer-motion"],
-      "badge": {
-        "label": "New",
-        "variant": "default"
-      }
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "spinner-empty",
@@ -9730,6 +9834,24 @@
       "categories": ["table"],
       "registryDependencies": ["@uiable/avatar", "@uiable/badge", "@uiable/button", "@uiable/dropdown-menu", "@uiable/table"],
       "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "tabs-badge",
+      "type": "registry:ui",
+      "title": "Tabs Badge",
+      "description": "Tabs Badge variant for component.",
+      "files": [
+        {
+          "path": "tabs/tabs-badge.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/tabs/tabs-badge.tsx"
+        }
+      ],
+      "categories": ["tabs"],
+      "registryDependencies": ["@uiable/badge", "@uiable/tabs"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "tabs-basic",

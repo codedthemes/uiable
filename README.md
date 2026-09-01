@@ -206,6 +206,12 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/preview/cta/cta-7" title="CTA 7"><kbd>CTA 7</kbd></a>
 </div>
 
+### E-Commerce
+
+<div>
+  <a href="https://uiable.com/preview/e-commerce/e-commerce-2" title="E-Commerce 2"><kbd>E-Commerce 2</kbd></a>
+</div>
+
 ### Faq
 
 <div>
@@ -218,6 +224,7 @@ Pre-built page sections ready to drop into your project.
 <div>
   <a href="https://uiable.com/preview/feature/feature-1" title="Feature 1"><kbd>Feature 1</kbd></a>
   <a href="https://uiable.com/preview/feature/feature-2" title="Feature 2"><kbd>Feature 2</kbd></a>
+  <a href="https://uiable.com/preview/feature/feature-4" title="Feature 4"><kbd>Feature 4</kbd></a>
 </div>
 
 ### Footer
@@ -275,6 +282,7 @@ Pre-built page sections ready to drop into your project.
 <div>
   <a href="https://uiable.com/preview/statistics/statistics-1" title="Statistics 1"><kbd>Statistics 1</kbd></a>
   <a href="https://uiable.com/preview/statistics/statistics-2" title="Statistics 2"><kbd>Statistics 2</kbd></a>
+  <a href="https://uiable.com/preview/statistics/statistics-5" title="Statistics 5"><kbd>Statistics 5</kbd></a>
 </div>
 
 ### Team
@@ -283,6 +291,7 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/preview/team/team-1" title="Team 1"><kbd>Team 1</kbd></a>
   <a href="https://uiable.com/preview/team/team-3" title="Team 3"><kbd>Team 3</kbd></a>
   <a href="https://uiable.com/preview/team/team-4" title="Team 4"><kbd>Team 4</kbd></a>
+  <a href="https://uiable.com/preview/team/team-7" title="Team 7"><kbd>Team 7</kbd></a>
 </div>
 
 ### Testimonial
@@ -290,6 +299,7 @@ Pre-built page sections ready to drop into your project.
 <div>
   <a href="https://uiable.com/preview/testimonial/testimonial-1" title="Testimonial 1"><kbd>Testimonial 1</kbd></a>
   <a href="https://uiable.com/preview/testimonial/testimonial-9" title="Testimonial 9"><kbd>Testimonial 9</kbd></a>
+  <a href="https://uiable.com/preview/testimonial/testimonial-5" title="Testimonial 5"><kbd>Testimonial 5</kbd></a>
 </div>
 
 ### Landing

@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/chart"
 
 // third-party
-// third party
 import { RadialBar, RadialBarChart } from "recharts"
 
 const chartData = [

@@ -2,7 +2,6 @@
 import { ChartConfig, ChartContainer } from "@/components/ui/chart"
 
 // third-party
-// third party
 import { Bar, BarChart, CartesianGrid } from "recharts"
 
 // constants

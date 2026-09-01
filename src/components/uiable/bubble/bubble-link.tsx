@@ -4,7 +4,6 @@
 import { Bubble, BubbleContent, BubbleGroup } from "@/components/ui/bubble"
 
 // third-party
-// third party
 import { toast } from "sonner"
 
 //  ------------------------------ | BUBBLE - LINK & BUTTONS | ------------------------------  //

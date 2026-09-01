@@ -6,8 +6,11 @@ import { ReactNode } from "react"
 import { motion } from "framer-motion"
 
 // project-imports
-import { LightFav, DarkFav } from "@/images/brand"
-import { BaseUi, Shadcn, Tailwind } from "@/images/svg/icons"
+import DarkFav from "@/images/brand/dark-fav"
+import LightFav from "@/images/brand/light-fav"
+import BaseUi from "@/images/svg/icons/baseui"
+import Shadcn from "@/images/svg/icons/shadcn"
+import Tailwind from "@/images/svg/icons/tailwind"
 import { AnimationBg } from "@/images/svg/landing"
 
 // assets

@@ -6,11 +6,9 @@ import { useState } from "react"
 import { Field, FieldGroup, FieldLabel, FieldSet } from "@/components/ui/field"
 
 // third-party
-// third party
 import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 // assets

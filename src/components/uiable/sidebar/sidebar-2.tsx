@@ -44,7 +44,6 @@ import {
 } from "iconsax-reactjs"
 
 // project-imports
-// project
 import Logo from "@/components/uiable/layout/shared/logo"
 
 // assets

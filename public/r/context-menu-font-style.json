@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "context-menu-font-style",
+  "title": "Context Menu Font Style",
+  "description": "Context Menu Font Style variant for component.",
+  "dependencies": ["@tabler/icons-react"],
+  "registryDependencies": ["@uiable/context-menu"],
+  "files": [
+    {
+      "path": "src/components/uiable/context-menu/context-menu-font-style.tsx",
+      "content": "// shadcn\nimport {\n  ContextMenu,\n  ContextMenuCheckboxItem,\n  ContextMenuContent,\n  ContextMenuGroup,\n  ContextMenuItem,\n  ContextMenuSeparator,\n  ContextMenuShortcut,\n  ContextMenuTrigger,\n} from \"@/components/ui/context-menu\"\n\n// assets\nimport {\n  IconBold,\n  IconEraser,\n  IconItalic,\n  IconStrikethrough,\n  IconUnderline,\n} from \"@tabler/icons-react\"\n\n//  ------------------------------ | CONTEXT MENU - FONT & STYLE | ------------------------------  //\n\nexport function ContextMenuFontStyle() {\n  return (\n    <ContextMenu>\n      <ContextMenuTrigger className=\"flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base\">\n        <span className=\"hidden pointer-fine:inline-block\">\n          Right click here\n        </span>\n        <span className=\"hidden pointer-coarse:inline-block\">\n          Long press to style\n        </span>\n      </ContextMenuTrigger>\n      <ContextMenuContent className=\"w-64\">\n        <ContextMenuGroup>\n          <ContextMenuCheckboxItem checked>\n            <IconBold className=\"mr-2 h-4 w-4\" />\n            Bold\n            <ContextMenuShortcut>⌘B</ContextMenuShortcut>\n          </ContextMenuCheckboxItem>\n          <ContextMenuCheckboxItem checked={false}>\n            <IconItalic className=\"mr-2 h-4 w-4\" />\n            Italic\n            <ContextMenuShortcut>⌘I</ContextMenuShortcut>\n          </ContextMenuCheckboxItem>\n          <ContextMenuCheckboxItem checked={false}>\n            <IconUnderline className=\"mr-2 h-4 w-4\" />\n            Underline\n            <ContextMenuShortcut>⌘U</ContextMenuShortcut>\n          </ContextMenuCheckboxItem>\n          <ContextMenuCheckboxItem checked={false}>\n            <IconStrikethrough className=\"mr-2 h-4 w-4\" />\n            Strikethrough\n            <ContextMenuShortcut>⇧⌘X</ContextMenuShortcut>\n          </ContextMenuCheckboxItem>\n        </ContextMenuGroup>\n        <ContextMenuSeparator />\n        <ContextMenuGroup>\n          <ContextMenuItem className=\"text-muted-foreground\">\n            <IconEraser className=\"mr-2 h-4 w-4\" />\n            Clear formatting\n            <ContextMenuShortcut>⌘\\</ContextMenuShortcut>\n          </ContextMenuItem>\n        </ContextMenuGroup>\n      </ContextMenuContent>\n    </ContextMenu>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/context-menu/context-menu-font-style.tsx"
+    }
+  ],
+  "categories": ["context-menu"],
+  "type": "registry:ui"
+}

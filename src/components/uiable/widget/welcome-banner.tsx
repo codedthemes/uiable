@@ -5,7 +5,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 // project-imports
-// project
 import branding from "@/branding.json"
 import { cn } from "@/lib/utils"
 

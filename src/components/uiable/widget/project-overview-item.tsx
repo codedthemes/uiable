@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react"
 
 // third-party
-// third party
 import ApexCharts from "apexcharts"
 
 interface ProjectOverviewItemProps {

@@ -33,7 +33,6 @@ import {
 } from "@/components/ui/tooltip"
 
 // project-imports
-// project
 import Logo from "./uiable/layout/shared/logo"
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_BLOCKS, NAV_CATEGORIES } from "@/components-grid"

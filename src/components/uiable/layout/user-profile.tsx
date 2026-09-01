@@ -31,7 +31,6 @@ import {
 } from "iconsax-reactjs"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 const uImg1 = {

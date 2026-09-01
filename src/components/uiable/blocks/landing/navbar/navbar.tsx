@@ -14,7 +14,7 @@ import branding from "@/branding.json"
 import { ThemeToggle } from "@/components/customizer"
 import NavSearchDialog from "@/components/uiable/blocks/landing/components/NavSearchDialog"
 import Logo from "@/components/uiable/layout/shared/logo"
-import { Star } from "@/images/svg/icons"
+import Star from "@/images/svg/icons/star"
 import { cn } from "@/lib/utils"
 
 // assets
