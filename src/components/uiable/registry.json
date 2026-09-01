@@ -108,7 +108,9 @@
       "categories": ["accordion"],
       "registryDependencies": ["@uiable/accordion", "@uiable/avatar"],
       "dependencies": ["lucide-react"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "accordion-multiple",
@@ -1888,7 +1890,9 @@
       "categories": ["breadcrumb"],
       "registryDependencies": ["@uiable/breadcrumb"],
       "dependencies": ["next"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "breadcrumb-page-header",
@@ -4473,7 +4477,9 @@
       "categories": ["context-menu"],
       "registryDependencies": ["@uiable/context-menu"],
       "dependencies": ["@tabler/icons-react"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "context-menu-groups",
@@ -4565,7 +4571,9 @@
       ],
       "categories": ["context-menu"],
       "registryDependencies": ["@uiable/context-menu"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "context-menu-submenu",
@@ -5237,7 +5245,9 @@
       "categories": ["dropdown-menu"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dropdown-menu"],
       "dependencies": ["lucide-react"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "dropdown-menu-radio-group",
@@ -7196,7 +7206,9 @@
       "categories": ["menubar"],
       "registryDependencies": ["@uiable/menubar"],
       "dependencies": ["lucide-react"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "menubar-editor",
@@ -7662,7 +7674,9 @@
       ],
       "categories": ["pagination"],
       "registryDependencies": ["@uiable/pagination"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "pagination-icon",
@@ -7799,7 +7813,9 @@
       "categories": ["popover"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/popover", "@uiable/separator"],
       "dependencies": ["lucide-react"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "profile-card",
@@ -8328,7 +8344,9 @@
       ],
       "categories": ["resizable"],
       "registryDependencies": ["@uiable/resizable"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "resizable-handle",
@@ -9831,7 +9849,9 @@
       ],
       "categories": ["tabs"],
       "registryDependencies": ["@uiable/badge", "@uiable/tabs"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "tabs-basic",

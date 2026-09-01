@@ -227,7 +227,9 @@
         }
       ],
       "categories": ["e-commerce"],
-      "badge": { "label": "New" },
+      "badge": {
+        "label": "New"
+      },
       "registryDependencies": ["@uiable/button"]
     },
     {
@@ -334,7 +336,9 @@
         }
       ],
       "categories": ["feature"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "block-footer",
@@ -733,7 +737,9 @@
         }
       ],
       "categories": ["statistics"],
-      "badge": { "label": "New" },
+      "badge": {
+        "label": "New"
+      },
       "registryDependencies": ["@uiable/button"],
       "dependencies": ["lucide-react"]
     },
@@ -794,7 +800,9 @@
         }
       ],
       "categories": ["team"],
-      "badge": { "label": "New" }
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "block-testimonial-1",
@@ -825,7 +833,9 @@
         }
       ],
       "categories": ["testimonial"],
-      "badge": { "label": "New" },
+      "badge": {
+        "label": "New"
+      },
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/carousel"],
       "dependencies": ["framer-motion"]
     },
