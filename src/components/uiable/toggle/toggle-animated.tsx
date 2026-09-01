@@ -6,11 +6,9 @@ import { useState } from "react"
 import { Toggle } from "@/components/ui/toggle"
 
 // third-party
-// third party
 import { AnimatePresence, motion } from "framer-motion"
 
-// project-imports
-// projects
+// project-importss
 import { cn } from "@/lib/utils"
 
 // assets

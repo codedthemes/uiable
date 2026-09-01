@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/progress"
 
 // third-party
-// third party
 import { AnimatePresence, motion } from "framer-motion"
 
 // assets

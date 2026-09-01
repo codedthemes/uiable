@@ -16,7 +16,6 @@ import {
 import { Progress } from "@/components/ui/progress"
 
 // third-party
-// third party
 import { motion } from "framer-motion"
 
 // assets

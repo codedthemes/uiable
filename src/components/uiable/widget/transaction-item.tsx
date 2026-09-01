@@ -2,7 +2,6 @@
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 // assets

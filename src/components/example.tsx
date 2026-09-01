@@ -1,7 +1,6 @@
 import { ComponentProps } from "react"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 //  ------------------------------ | COMPONENT - EXAMPLE | ------------------------------  //

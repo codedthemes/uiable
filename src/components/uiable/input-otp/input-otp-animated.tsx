@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/input-otp"
 
 // third-party
-// third party
 import { AnimatePresence, motion, type Variants } from "framer-motion"
 
 const filledAnimate = {

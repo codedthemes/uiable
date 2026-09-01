@@ -5,7 +5,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 interface MobileNavProps {

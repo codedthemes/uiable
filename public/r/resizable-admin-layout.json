@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "resizable-admin-layout",
+  "title": "Resizable Admin Layout",
+  "description": "Resizable Admin Layout variant for component.",
+  "registryDependencies": ["@uiable/resizable"],
+  "files": [
+    {
+      "path": "src/components/uiable/resizable/resizable-admin-layout.tsx",
+      "content": "// shadcn\nimport {\n  ResizableHandle,\n  ResizablePanel,\n  ResizablePanelGroup,\n} from \"@/components/ui/resizable\"\n\n//  ------------------------------ | RESIZABLE - ADMIN LAYOUT | ------------------------------  //\n\nexport default function ResizableAdminLayout() {\n  return (\n    <ResizablePanelGroup\n      orientation=\"horizontal\"\n      className=\"min-h-[400px] max-w-[800px] rounded-lg border md:min-w-[450px]\"\n    >\n      <ResizablePanel defaultSize=\"25%\">\n        <div className=\"flex h-full items-center justify-center p-6\">\n          <span className=\"font-semibold\">Sidebar</span>\n        </div>\n      </ResizablePanel>\n      <ResizableHandle withHandle />\n      <ResizablePanel defaultSize=\"75%\">\n        <ResizablePanelGroup orientation=\"vertical\">\n          <ResizablePanel defaultSize=\"10%\">\n            <div className=\"flex h-full items-center justify-center p-6\">\n              <span className=\"font-semibold\">Header</span>\n            </div>\n          </ResizablePanel>\n          <ResizableHandle />\n          <ResizablePanel defaultSize={85}>\n            <div className=\"flex h-full items-center justify-center p-6\">\n              <span className=\"font-semibold\">Content</span>\n            </div>\n          </ResizablePanel>\n        </ResizablePanelGroup>\n      </ResizablePanel>\n    </ResizablePanelGroup>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/resizable/resizable-admin-layout.tsx"
+    }
+  ],
+  "categories": ["resizable"],
+  "type": "registry:ui"
+}

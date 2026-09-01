@@ -1,7 +1,6 @@
 import { ComponentProps } from "react"
 
 // third-party
-// third party
 import { ThemeProvider as NextThemesProvider } from "next-themes"
 
 //  ------------------------------ | COMPONENT - THEME PROVIDER | ------------------------------  //

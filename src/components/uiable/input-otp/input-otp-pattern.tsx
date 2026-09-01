@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/input-otp"
 
 // third-party
-// third party
 import { REGEXP_ONLY_DIGITS } from "input-otp"
 
 //  ------------------------------ | INPUT OTP - PATTERN | ------------------------------  //

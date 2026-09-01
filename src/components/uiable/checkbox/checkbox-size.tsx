@@ -2,7 +2,6 @@
 import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
 
 // third-party
-// third party
 import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox"
 
 // project-imports

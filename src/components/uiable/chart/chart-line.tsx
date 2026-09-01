@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/chart"
 
 // third-party
-// third party
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 
 const chartData = [

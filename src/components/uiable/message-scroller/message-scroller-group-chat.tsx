@@ -31,7 +31,6 @@ import {
 } from "@/components/ui/tooltip"
 
 // third-party
-// third party
 import { motion } from "framer-motion"
 
 // assets

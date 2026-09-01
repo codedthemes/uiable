@@ -15,8 +15,8 @@ const brandLogoLight = "https://cdn.uiable.com/brand/logo-dark.svg"
 
 const LocalLightLogo = dynamic<{ className?: string }>(
   () =>
-    import("@/images/brand")
-      .then((mod) => mod.LightLogo)
+    import("@/images/brand/light-logo")
+      .then((mod) => mod.default)
       .catch(() => {
         return function FallbackLightLogo({ className, ...props }: any) {
           return (
@@ -34,8 +34,8 @@ const LocalLightLogo = dynamic<{ className?: string }>(
 
 const LocalDarkLogo = dynamic<{ className?: string }>(
   () =>
-    import("@/images/brand")
-      .then((mod) => mod.DarkLogo)
+    import("@/images/brand/dark-logo")
+      .then((mod) => mod.default)
       .catch(() => {
         return function FallbackDarkLogo({ className, ...props }: any) {
           return (

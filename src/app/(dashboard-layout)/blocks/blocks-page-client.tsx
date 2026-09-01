@@ -12,7 +12,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Link1 } from "iconsax-reactjs"
 
 // project-imports
-// project
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_BLOCKS } from "@/components-grid"
 import Intro from "@/images/svg/Intro"

@@ -286,6 +286,7 @@ function generateBlocksRegistry() {
 
   const existingRegistryPath = path.join(blocksPath, "registry.json")
   let existingProBlocks = new Set()
+  let existingBadgeBlocks = new Map()
   if (fs.existsSync(existingRegistryPath)) {
     try {
       const existingData = JSON.parse(
@@ -294,11 +295,12 @@ function generateBlocksRegistry() {
       if (existingData.items) {
         existingData.items.forEach((item) => {
           if (item.pro) existingProBlocks.add(item.name)
+          if (item.badge) existingBadgeBlocks.set(item.name, item.badge)
         })
       }
     } catch (e) {
       console.error(
-        "Could not parse existing blocks/registry.json for pro flags",
+        "Could not parse existing blocks/registry.json for pro or badge flags",
         e
       )
     }
@@ -356,6 +358,9 @@ function generateBlocksRegistry() {
           if (existingProBlocks.has(item.name)) {
             item.pro = true
           }
+          if (existingBadgeBlocks.has(item.name)) {
+            item.badge = existingBadgeBlocks.get(item.name)
+          }
 
           let orderIndex = blockSequences.indexOf(blockName)
           if (orderIndex !== -1) {
@@ -397,6 +402,9 @@ function generateBlocksRegistry() {
 
           if (existingProBlocks.has(item.name)) {
             item.pro = true
+          }
+          if (existingBadgeBlocks.has(item.name)) {
+            item.badge = existingBadgeBlocks.get(item.name)
           }
 
           let orderIndex = blockSequences.indexOf(blockName)

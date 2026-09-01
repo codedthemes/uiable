@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/sidebar"
 
 // third-party
-// third party
 import { toast, Toaster } from "sonner"
 
 // assets

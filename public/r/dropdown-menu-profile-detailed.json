@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-profile-detailed",
+  "title": "Dropdown Menu Profile Detailed",
+  "description": "Dropdown Menu Profile Detailed variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dropdown-menu"],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-profile-detailed.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"\n\n// assets\nimport {\n  BadgeCheckIcon,\n  BellIcon,\n  CreditCardIcon,\n  LogOutIcon,\n  SettingsIcon,\n} from \"lucide-react\"\n\n//  ------------------------------ | DROPDOWN MENU - PROFILE DETAILED | ------------------------------  //\n\nexport function DropdownMenuProfileDetailed() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger\n        render={<Button variant=\"ghost\" size=\"icon\" className=\"rounded-full\" />}\n      >\n        <Avatar>\n          <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"shadcn\" />\n          <AvatarFallback>JD</AvatarFallback>\n        </Avatar>\n      </DropdownMenuTrigger>\n      <DropdownMenuContent align=\"end\" className=\"w-56\">\n        <DropdownMenuGroup>\n          <DropdownMenuLabel className=\"font-normal\">\n            <div className=\"flex flex-col space-y-1\">\n              <h6 className=\"text-sm leading-none font-medium\">John Doe</h6>\n              <p className=\"text-xs leading-none text-muted-foreground\">\n                john.doe@example.com\n              </p>\n            </div>\n          </DropdownMenuLabel>\n        </DropdownMenuGroup>\n        <DropdownMenuSeparator />\n        <DropdownMenuGroup>\n          <DropdownMenuItem>\n            <BadgeCheckIcon />\n            Account\n          </DropdownMenuItem>\n          <DropdownMenuItem>\n            <CreditCardIcon />\n            Billing\n          </DropdownMenuItem>\n          <DropdownMenuItem>\n            <SettingsIcon />\n            Settings\n          </DropdownMenuItem>\n          <DropdownMenuItem>\n            <BellIcon />\n            Notifications\n          </DropdownMenuItem>\n        </DropdownMenuGroup>\n        <DropdownMenuSeparator />\n        <DropdownMenuItem variant=\"destructive\">\n          <LogOutIcon />\n          Sign Out\n        </DropdownMenuItem>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-profile-detailed.tsx"
+    }
+  ],
+  "categories": ["dropdown-menu"],
+  "type": "registry:ui"
+}

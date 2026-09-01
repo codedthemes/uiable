@@ -1,22 +1,20 @@
 "use client"
 
 // project-imports
-import {
-  ProfileCard,
-  AskMeAnything,
-  RevenueGrowthSlider,
-  OneTimePasswordCard,
-  ActionButtonGroupBadge,
-  RevenueChartCard,
-  PrivacyVisibilityCard,
-  UploadFilesCard,
-  DeploymentEnvironmentCard,
-  EventAlertCard,
-  VerificationBannerCard,
-  CurrencySwapCard,
-  PowerUsageCard,
-  SectionHeader,
-} from "@/components/uiable/blocks/landing/components"
+import ActionButtonGroupBadge from "@/components/uiable/blocks/landing/components/ActionButtonGroupBadge"
+import AskMeAnything from "@/components/uiable/blocks/landing/components/AskMeAnything"
+import CurrencySwapCard from "@/components/uiable/blocks/landing/components/CurrencySwapCard"
+import DeploymentEnvironmentCard from "@/components/uiable/blocks/landing/components/DeploymentEnvironmentCard"
+import EventAlertCard from "@/components/uiable/blocks/landing/components/EventAlertCard"
+import OneTimePasswordCard from "@/components/uiable/blocks/landing/components/OneTimePasswordCard"
+import PowerUsageCard from "@/components/uiable/blocks/landing/components/PowerUsageCard"
+import PrivacyVisibilityCard from "@/components/uiable/blocks/landing/components/PrivacyVisibilityCard"
+import ProfileCard from "@/components/uiable/blocks/landing/components/ProfileCard"
+import RevenueChartCard from "@/components/uiable/blocks/landing/components/RevenueChartCard"
+import RevenueGrowthSlider from "@/components/uiable/blocks/landing/components/RevenueGrowthSlider"
+import SectionHeader from "@/components/uiable/blocks/landing/components/SectionHeader"
+import UploadFilesCard from "@/components/uiable/blocks/landing/components/UploadFilesCard"
+import VerificationBannerCard from "@/components/uiable/blocks/landing/components/VerificationBannerCard"
 
 //  ------------------------------ | COMPONENT 2 | ------------------------------  //
 

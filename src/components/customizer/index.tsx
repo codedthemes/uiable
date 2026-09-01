@@ -15,14 +15,12 @@ import {
 } from "@/components/ui/sheet"
 
 // third-party
-// third party
 import { useTheme } from "next-themes"
 
 // project-imports
 import { RadiusControl } from "./RadiusControl"
 // import { ThemePresetButtons } from "./ThemePresetButtons";
 import { ThemePresetStyles } from "./ThemePresetStyles"
-// project
 import { useThemeRadius } from "@/hooks/use-theme-radius"
 
 // assets

@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/chart"
 
 // third-party
-// third party
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 const chartData = [

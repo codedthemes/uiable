@@ -7,9 +7,11 @@ import {
   useEffect,
   useRef,
   useState,
+  useMemo,
 } from "react"
 
 // shadcn
+import { Badge } from "@/components/ui/badge"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import {
@@ -32,6 +34,8 @@ import { type BundledLanguage, codeToHtml } from "shiki"
 
 // project-imports
 import Loader from "@/components/Loader"
+import { TreeView } from "@/components/tree-view"
+import { buildFileTree } from "@/lib/tree-view-utils"
 import { cn } from "@/lib/utils"
 import { toPreviewSlug } from "@/utils/preview-slug"
 
@@ -54,7 +58,14 @@ export interface Item {
   title: string
   description: string
   files: { path: string }[]
+  dependencyFiles?: { path: string }[]
   categories: string[]
+  badge?:
+    | boolean
+    | string
+    | {
+        label: string
+      }
   rawCode?: string
 }
 
@@ -132,6 +143,88 @@ export default function BlockItem({
   const [viewportHeight, setViewportHeight] = useState(0)
   const [isIframeLoading, setIsIframeLoading] = useState(true)
   const [copiedCommand, setCopiedCommand] = useState(false)
+
+  // Tree view state
+  const [selectedFilePath, setSelectedFilePath] = useState<string>("")
+  const [sourceCode, setSourceCode] = useState<string>("")
+  const [isLoadingCode, setIsLoadingCode] = useState<boolean>(false)
+
+  // Initialize tree view data
+  const treeData = useMemo(() => {
+    const allFiles = [
+      ...item.files.map((f) => f.path),
+      ...(item.dependencyFiles?.map((f) => f.path) || []),
+    ]
+    return buildFileTree(allFiles)
+  }, [item])
+
+  useEffect(() => {
+    const allFiles = [
+      ...item.files.map((f) => f.path),
+      ...(item.dependencyFiles?.map((f) => f.path) || []),
+    ]
+    // Select the first file by default
+    if (allFiles.length > 0 && !selectedFilePath) {
+      queueMicrotask(() => {
+        setSelectedFilePath(allFiles[0])
+      })
+    }
+  }, [item, selectedFilePath])
+
+  // Fetch code when selected file changes
+  useEffect(() => {
+    if (!selectedFilePath) return
+
+    let mounted = true
+
+    // For the main file, we can use rawCode if available and it matches
+    const mainFileCode = item.rawCode
+    if (selectedFilePath === item.files[0]?.path && mainFileCode) {
+      queueMicrotask(() => {
+        if (mounted) {
+          setSourceCode(mainFileCode)
+          setIsLoadingCode(false)
+        }
+      })
+      return
+    }
+
+    queueMicrotask(() => {
+      if (mounted) {
+        setIsLoadingCode(true)
+      }
+    })
+
+    // Otherwise fetch from API
+    fetch(`/api/code?path=${encodeURIComponent(selectedFilePath)}`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch code")
+        return res.text()
+      })
+      .then((code) => {
+        if (mounted) {
+          setSourceCode(code)
+          setIsLoadingCode(false)
+        }
+      })
+      .catch((err) => {
+        console.error("Error fetching code:", err)
+        if (mounted) {
+          setSourceCode("")
+          setIsLoadingCode(false)
+        }
+      })
+
+    return () => {
+      mounted = false
+    }
+  }, [selectedFilePath, item.files, item.rawCode])
+
+  const handleFileSelect = useCallback((node: any) => {
+    if (node.type === "file" && node.path) {
+      setSelectedFilePath(node.path)
+    }
+  }, [])
 
   // Set iframe height based on its content
   const setIframeHeight = useCallback(() => {
@@ -219,7 +312,7 @@ export default function BlockItem({
   }
 
   const handleCopyClick = () => {
-    handleCopy(index, item.rawCode || "")
+    handleCopy(index, sourceCode || item.rawCode || "")
   }
 
   const handleIframeLoadEvent = (event: SyntheticEvent<HTMLIFrameElement>) => {
@@ -239,9 +332,20 @@ export default function BlockItem({
             <CardHeader className="py-4">
               <div className="grid grid-cols-3 flex-col items-center justify-between sm:flex-row">
                 <div className="flex flex-col gap-1">
-                  <h5 className="mb-0 line-clamp-1 text-[18px] font-semibold">
-                    {item.title}
-                  </h5>
+                  <div className="flex items-center gap-2">
+                    <h5 className="mb-0 line-clamp-1 text-[18px] font-semibold">
+                      {item.title}
+                    </h5>
+                    {item.badge && (
+                      <Badge className="border-transparent bg-red-500/15 text-red-500">
+                        {typeof item.badge === "boolean"
+                          ? "New"
+                          : typeof item.badge === "string"
+                            ? item.badge
+                            : (item.badge as { label: string }).label}
+                      </Badge>
+                    )}
+                  </div>
                 </div>
                 <div className="flex flex-row flex-wrap items-center justify-center gap-1 text-center">
                   <div className="resize-button-group hidden items-center gap-2 rounded-lg border border-border/50 bg-card p-0.5 lg:inline-flex">
@@ -392,38 +496,67 @@ export default function BlockItem({
                         <p>View code</p>
                       </TooltipContent>
                     </Tooltip>
-                    <DialogContent className="flex max-h-[95vh] w-full flex-col gap-0 overflow-hidden p-6 sm:max-w-5xl">
+                    <DialogContent className="flex max-h-[95vh] w-full flex-col gap-0 overflow-hidden p-6 sm:max-w-[calc(100%-2rem)] xl:max-w-5xl">
                       <DialogHeader className="gap-1 pb-5">
                         <DialogTitle className="text-[16px] font-semibold">
                           {item.title} Code
                         </DialogTitle>
                       </DialogHeader>
-                      <div className="flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-[8px] bg-[#282c34]">
-                        <div className="flex w-full flex-none items-center justify-between border-b border-white/10 px-4 py-2">
-                          <span className="text-xs font-medium tracking-wider text-white uppercase">
-                            TSX
-                          </span>
-                          <Button
-                            variant="ghost"
-                            size="icon-lg"
-                            className="text-white/70 transition-colors hover:bg-white/10 hover:text-white"
-                            onClick={handleCopyClick}
-                          >
-                            {copiedIndex === index ? (
-                              <SquareCheckBig className="size-4 text-green-500" />
-                            ) : (
-                              <Copy className="size-4" />
-                            )}
-                          </Button>
-                        </div>
-                        <div className="min-h-0 flex-1 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overflow-auto p-4 text-[14px] leading-relaxed">
-                          {item.rawCode ? (
-                            <CodeBlock lang="tsx">{item.rawCode}</CodeBlock>
-                          ) : (
-                            <div className="py-10 text-center text-white/50">
-                              No code available.
+                      <div className="dark flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-[8px] border border-white/10 bg-[#282c34] md:flex-row">
+                        {item.files.length +
+                          (item.dependencyFiles?.length ?? 0) >
+                          1 &&
+                          treeData &&
+                          treeData.length > 0 && (
+                            <div className="flex w-full shrink-0 flex-col border-b border-white/10 md:w-[240px] md:border-r md:border-b-0">
+                              <div className="flex w-full flex-none items-center justify-between border-b border-white/10 px-4 py-4.5">
+                                <span className="text-xs font-medium tracking-wider text-white uppercase">
+                                  Files
+                                </span>
+                              </div>
+                              <div className="max-h-[200px] scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overflow-y-auto p-2 md:max-h-none md:flex-1">
+                                <TreeView
+                                  data={treeData}
+                                  selected={selectedFilePath}
+                                  onSelect={handleFileSelect}
+                                  className="text-white/70 [&_button]:bg-transparent! [&_button]:text-white/70 [&_button:hover]:bg-white/10 [&_button:hover]:text-white"
+                                />
+                              </div>
                             </div>
                           )}
+
+                        <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+                          <div className="flex w-full flex-none items-center justify-between border-b border-white/10 px-4 py-2">
+                            <span className="text-xs font-medium tracking-wider text-white">
+                              {selectedFilePath.split("/").pop()}
+                            </span>
+                            <Button
+                              variant="ghost"
+                              size="icon-lg"
+                              className="text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+                              onClick={handleCopyClick}
+                            >
+                              {copiedIndex === index ? (
+                                <SquareCheckBig className="size-4 text-green-500" />
+                              ) : (
+                                <Copy className="size-4" />
+                              )}
+                            </Button>
+                          </div>
+                          <div className="min-h-[80vh] flex-1 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overflow-auto p-4 text-[14px] leading-relaxed">
+                            {isLoadingCode ? (
+                              <div className="flex h-full w-full items-center justify-center py-12">
+                                <Loader2 className="size-6 animate-spin text-white/50" />
+                              </div>
+                            ) : sourceCode ? (
+                              <CodeBlock lang="tsx">{sourceCode}</CodeBlock>
+                            ) : (
+                              <div className="py-10 text-center text-white/50">
+                                No code available for{" "}
+                                {selectedFilePath.split("/").pop()}.
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </DialogContent>

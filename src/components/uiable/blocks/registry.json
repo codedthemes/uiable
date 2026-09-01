@@ -16,7 +16,7 @@
         }
       ],
       "categories": ["landing"],
-      "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/components", "@uiable/separator"],
+      "registryDependencies": ["@uiable/SectionHeader", "@uiable/button", "@uiable/card", "@uiable/separator"],
       "dependencies": ["@tabler/icons-react", "next"]
     },
     {
@@ -32,7 +32,7 @@
         }
       ],
       "categories": ["landing"],
-      "registryDependencies": ["@uiable/components"]
+      "registryDependencies": ["@uiable/ActionButtonGroupBadge", "@uiable/AskMeAnything", "@uiable/CurrencySwapCard", "@uiable/DeploymentEnvironmentCard", "@uiable/EventAlertCard", "@uiable/OneTimePasswordCard", "@uiable/PowerUsageCard", "@uiable/PrivacyVisibilityCard", "@uiable/ProfileCard", "@uiable/RevenueChartCard", "@uiable/RevenueGrowthSlider", "@uiable/SectionHeader", "@uiable/UploadFilesCard", "@uiable/VerificationBannerCard"]
     },
     {
       "name": "block-contact",
@@ -215,6 +215,22 @@
       "categories": ["cta"]
     },
     {
+      "name": "block-e-commerce-2",
+      "type": "registry:block",
+      "title": "E Commerce 2",
+      "description": "E Commerce 2 variant for block.",
+      "files": [
+        {
+          "path": "e-commerce/e-commerce-2/e-commerce-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/e-commerce/e-commerce-2/e-commerce-2.tsx"
+        }
+      ],
+      "categories": ["e-commerce"],
+      "badge": { "label": "New" },
+      "registryDependencies": ["@uiable/button"]
+    },
+    {
       "name": "block-faq",
       "type": "registry:block",
       "title": "Faq",
@@ -227,7 +243,7 @@
         }
       ],
       "categories": ["landing"],
-      "registryDependencies": ["@uiable/accordion", "@uiable/components"],
+      "registryDependencies": ["@uiable/SectionHeader", "@uiable/accordion"],
       "dependencies": ["next"]
     },
     {
@@ -273,7 +289,7 @@
         }
       ],
       "categories": ["landing"],
-      "registryDependencies": ["@uiable/button", "@uiable/components"],
+      "registryDependencies": ["@uiable/SectionHeader", "@uiable/button"],
       "dependencies": ["lucide-react"]
     },
     {
@@ -304,6 +320,21 @@
       ],
       "categories": ["feature"],
       "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "block-feature-4",
+      "type": "registry:block",
+      "title": "Feature 4",
+      "description": "Feature 4 variant for block.",
+      "files": [
+        {
+          "path": "feature/feature-4/feature-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/feature/feature-4/feature-4.tsx"
+        }
+      ],
+      "categories": ["feature"],
+      "badge": { "label": "New" }
     },
     {
       "name": "block-footer",
@@ -690,6 +721,23 @@
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
+      "name": "block-statistics-5",
+      "type": "registry:block",
+      "title": "Statistics 5",
+      "description": "Statistics 5 variant for block.",
+      "files": [
+        {
+          "path": "statistics/statistics-5/statistics-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/statistics/statistics-5/statistics-5.tsx"
+        }
+      ],
+      "categories": ["statistics"],
+      "badge": { "label": "New" },
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["lucide-react"]
+    },
+    {
       "name": "block-team-1",
       "type": "registry:block",
       "title": "Team 1",
@@ -734,6 +782,21 @@
       "categories": ["team"]
     },
     {
+      "name": "block-team-7",
+      "type": "registry:block",
+      "title": "Team 7",
+      "description": "Team 7 variant for block.",
+      "files": [
+        {
+          "path": "team/team-7/team-7.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/team/team-7/team-7.tsx"
+        }
+      ],
+      "categories": ["team"],
+      "badge": { "label": "New" }
+    },
+    {
       "name": "block-testimonial-1",
       "type": "registry:block",
       "title": "Testimonial 1",
@@ -748,6 +811,23 @@
       "categories": ["testimonial"],
       "registryDependencies": ["@uiable/avatar"],
       "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "block-testimonial-5",
+      "type": "registry:block",
+      "title": "Testimonial 5",
+      "description": "Testimonial 5 variant for block.",
+      "files": [
+        {
+          "path": "testimonial/testimonial-5/testimonial-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/testimonial/testimonial-5/testimonial-5.tsx"
+        }
+      ],
+      "categories": ["testimonial"],
+      "badge": { "label": "New" },
+      "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/carousel"],
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "block-testimonial-9",

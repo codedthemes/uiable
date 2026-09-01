@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/chart"
 
 // third-party
-// third party
 import { Label, Pie, PieChart } from "recharts"
 
 const chartData = [

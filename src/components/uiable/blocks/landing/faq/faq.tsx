@@ -13,7 +13,7 @@ import {
 
 // project-imports
 import branding from "@/branding.json"
-import { SectionHeader } from "@/components/uiable/blocks/landing/components"
+import SectionHeader from "@/components/uiable/blocks/landing/components/SectionHeader"
 
 // constants
 const faqItems = [

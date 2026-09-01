@@ -16,11 +16,9 @@ import {
 } from "@/components/ui/combobox"
 
 // third-party
-// third party
 import { Combobox as ComboboxPrimitive } from "@base-ui/react"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 // assets

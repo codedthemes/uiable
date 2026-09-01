@@ -7,7 +7,6 @@ import { Message, MessageAvatar, MessageContent } from "@/components/ui/message"
 import { MessageScrollerItem } from "@/components/ui/message-scroller"
 
 // third-party
-// third party
 import { motion } from "framer-motion"
 
 type ChatMessage = {

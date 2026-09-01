@@ -27,7 +27,6 @@ import {
 } from "@/components/ui/message-scroller"
 
 // third-party
-// third party
 import { useChat } from "@ai-sdk/react"
 
 // project-imports

@@ -12,12 +12,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-// third-party
-// third party
-import { Toaster } from "sonner"
-
 // project-imports
-// project
 import branding from "@/branding.json"
 import { AppSidebar } from "@/components/app-sidebar"
 import { ThemeToggle } from "@/components/customizer"
@@ -103,16 +98,9 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
               </Button>
               <Divider />
               <ThemeToggle />
-              {/* <div className="h-4 w-px bg-border mx-1" /> */}
-              {/* <NotificationDropdown /> */}
-              {/* <div className="h-4 w-px bg-border mx-1" /> */}
-              {/* <UserProfile /> */}
             </div>
           </header>
-          <main className="flex-1 p-4 lg:p-8">
-            {children}
-            <Toaster />
-          </main>
+          <main className="flex-1 p-4 lg:p-8"> {children} </main>
           <Separator />
           <Footer showGradient={false} />
         </SidebarInset>

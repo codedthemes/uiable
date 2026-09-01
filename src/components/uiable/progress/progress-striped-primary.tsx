@@ -2,7 +2,6 @@
 import { ProgressIndicator, ProgressTrack } from "@/components/ui/progress"
 
 // third-party
-// third party
 import { Progress as ProgressPrimitive } from "@base-ui/react/progress"
 
 //  ------------------------------ | PROGRESS - STRIPED PRIMARY | ------------------------------  //

@@ -8,7 +8,6 @@ import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 
 // third-party
-// third party
 import { addDays } from "date-fns"
 
 //  ------------------------------ | CALENDAR - PRESETS | ------------------------------  //

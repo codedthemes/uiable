@@ -4,7 +4,6 @@
 import { Marker, MarkerContent, MarkerIcon } from "@/components/ui/marker"
 
 // third-party
-// third party
 import { toast } from "sonner"
 
 // assets

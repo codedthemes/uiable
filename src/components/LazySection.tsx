@@ -11,7 +11,6 @@ import {
 } from "react"
 
 // project-imports
-// project
 import Loader from "@/components/Loader"
 
 interface SectionConfig {

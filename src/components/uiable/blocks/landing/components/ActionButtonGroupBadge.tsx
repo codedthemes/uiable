@@ -13,7 +13,6 @@ import {
 import { Separator } from "@/components/ui/separator"
 
 // project-imports
-// project
 import DatePickerCard from "./DatePickerCard"
 
 // assets

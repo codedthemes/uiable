@@ -4,7 +4,6 @@
 import { Separator } from "@/components/ui/separator"
 
 // project-imports
-// project
 import { CHANGELOG_DATA } from "@/data/changelog-data"
 
 // assets

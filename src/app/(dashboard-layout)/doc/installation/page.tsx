@@ -13,7 +13,6 @@ import { Book, InfoCircle, Magicpen, Setting2 } from "iconsax-reactjs"
 import { codeToHtml, type BundledLanguage } from "shiki"
 
 // project-imports
-// project
 import branding from "@/branding.json"
 import DocsNavigation from "@/components/doc-bottom-nav"
 import TableOfContents from "@/components/uiable/layout/table-of-contents"

@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "src/components/uiable/input-otp/input-otp-four-digits.tsx",
-      "content": "// shadcn\nimport {\n  InputOTP,\n  InputOTPGroup,\n  InputOTPSlot,\n} from \"@/components/ui/input-otp\"\n\n// third-party\n// third party\nimport { REGEXP_ONLY_DIGITS } from \"input-otp\"\n\n//  ------------------------------ | INPUT OTP - FOUR DIGITS | ------------------------------  //\n\nexport function InputOTPFourDigits() {\n  return (\n    <InputOTP maxLength={4} pattern={REGEXP_ONLY_DIGITS}>\n      <InputOTPGroup>\n        <InputOTPSlot index={0} />\n        <InputOTPSlot index={1} />\n        <InputOTPSlot index={2} />\n        <InputOTPSlot index={3} />\n      </InputOTPGroup>\n    </InputOTP>\n  )\n}\n",
+      "content": "// shadcn\nimport {\n  InputOTP,\n  InputOTPGroup,\n  InputOTPSlot,\n} from \"@/components/ui/input-otp\"\n\n// third-party\nimport { REGEXP_ONLY_DIGITS } from \"input-otp\"\n\n//  ------------------------------ | INPUT OTP - FOUR DIGITS | ------------------------------  //\n\nexport function InputOTPFourDigits() {\n  return (\n    <InputOTP maxLength={4} pattern={REGEXP_ONLY_DIGITS}>\n      <InputOTPGroup>\n        <InputOTPSlot index={0} />\n        <InputOTPSlot index={1} />\n        <InputOTPSlot index={2} />\n        <InputOTPSlot index={3} />\n      </InputOTPGroup>\n    </InputOTP>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/input-otp/input-otp-four-digits.tsx"
     }

@@ -10,7 +10,6 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import { Toaster } from "sonner"
 
 // project-imports
-// project
 import branding from "@/branding.json"
 import { BackToTop } from "@/components/back-to-top"
 import { ThemePresetStyles } from "@/components/customizer/ThemePresetStyles"

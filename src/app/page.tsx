@@ -14,7 +14,7 @@ import Featured from "@/components/uiable/blocks/landing/feature/Feature"
 import Footer from "@/components/uiable/blocks/landing/footer/footer"
 import Hero from "@/components/uiable/blocks/landing/hero/hero"
 import Navbar from "@/components/uiable/blocks/landing/navbar/navbar"
-import { Star } from "@/images/svg/icons"
+import Star from "@/images/svg/icons/star"
 import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {

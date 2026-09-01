@@ -12,7 +12,6 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 // project-imports
-// project
 import TransactionItem from "./transaction-item"
 import { cn } from "@/lib/utils"
 

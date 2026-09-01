@@ -7,10 +7,9 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
 // project-imports
-// project
 import categoryCounts from "@/category-counts.json"
 import BorderGlow from "@/components/animation/BorderGlow"
-import { SectionHeader } from "@/components/uiable/blocks/landing/components"
+import SectionHeader from "@/components/uiable/blocks/landing/components/SectionHeader"
 import ButtonSvg from "@/images/svg/button"
 import ButtonGroupSvg from "@/images/svg/ButtonGroup"
 import InputOtpSvg from "@/images/svg/InputOtp"

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menubar-compact",
+  "title": "Menubar Compact",
+  "description": "Menubar Compact variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/menubar"],
+  "files": [
+    {
+      "path": "src/components/uiable/menubar/menubar-compact.tsx",
+      "content": "// shadcn\nimport {\n  Menubar,\n  MenubarContent,\n  MenubarItem,\n  MenubarMenu,\n  MenubarSeparator,\n  MenubarTrigger,\n} from \"@/components/ui/menubar\"\n\n// assets\nimport { MoreHorizontalIcon, PenIcon, ShareIcon, TrashIcon } from \"lucide-react\"\n\n//  ------------------------------ | MENUBAR - COMPACT | ------------------------------  //\n\nexport function MenubarCompact() {\n  return (\n    <Menubar className=\"h-9 w-fit p-1\">\n      <MenubarMenu>\n        <MenubarTrigger className=\"h-full px-2 py-1 hover:bg-muted focus:bg-muted data-[state=open]:bg-muted\">\n          <MoreHorizontalIcon className=\"h-4 w-4 text-muted-foreground\" />\n        </MenubarTrigger>\n        <MenubarContent align=\"start\">\n          <MenubarItem>\n            <PenIcon className=\"mr-2 h-4 w-4\" />\n            Edit\n          </MenubarItem>\n          <MenubarItem>\n            <ShareIcon className=\"mr-2 h-4 w-4\" />\n            Share\n          </MenubarItem>\n          <MenubarSeparator />\n          <MenubarItem variant=\"destructive\">\n            <TrashIcon className=\"mr-2 h-4 w-4\" />\n            Delete\n          </MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n    </Menubar>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/menubar/menubar-compact.tsx"
+    }
+  ],
+  "categories": ["menubar"],
+  "type": "registry:ui"
+}

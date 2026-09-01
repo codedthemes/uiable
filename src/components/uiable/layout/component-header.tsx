@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/sheet"
 
 // project-imports
-// project
 import ComponentList from "./component-list"
 import ComponentSearch from "./shared/component-search"
 import Logo from "./shared/logo"

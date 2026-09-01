@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 
 // project-imports
-// project
 import TaskListItem from "./task-list-item"
 
 // assets

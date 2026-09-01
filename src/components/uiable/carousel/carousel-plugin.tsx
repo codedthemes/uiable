@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/carousel"
 
 // third-party
-// third party
 import Autoplay from "embla-carousel-autoplay"
 
 //  ------------------------------ | CAROUSEL - PLUGIN | ------------------------------  //

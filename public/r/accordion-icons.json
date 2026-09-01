@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "accordion-icons",
+  "title": "Accordion Icons",
+  "description": "Accordion Icons variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/accordion", "@uiable/avatar"],
+  "files": [
+    {
+      "path": "src/components/uiable/accordion/accordion-icons.tsx",
+      "content": "// shadcn\nimport {\n  Accordion,\n  AccordionContent,\n  AccordionItem,\n  AccordionTrigger,\n} from \"@/components/ui/accordion\"\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\n\n// assets\nimport { Bell, CreditCard, ShieldCheck } from \"lucide-react\"\n\n//  ------------------------------ | ACCORDION WITH ICONS | ------------------------------  //\n\nexport default function AccordionIcons() {\n  return (\n    <Accordion\n      defaultValue={[\"item-1\"]}\n      className=\"w-full rounded-lg border border-border\"\n    >\n      <AccordionItem value=\"item-1\" className=\"border-border\">\n        <AccordionTrigger className=\"items-center p-4 text-base font-semibold hover:no-underline\">\n          <span className=\"flex items-center gap-3\">\n            <Avatar className=\"rounded-lg after:border-none\">\n              <AvatarFallback className=\"rounded-md bg-primary/10 text-primary\">\n                <Bell className=\"h-4 w-4\" />\n              </AvatarFallback>\n            </Avatar>\n            Notifications\n          </span>\n        </AccordionTrigger>\n        <AccordionContent className=\"p-4 pt-0 text-muted-foreground\">\n          Manage your notification settings. You can choose to receive alerts\n          for various activities, updates, and reminders directly to your inbox\n          or mobile device.\n        </AccordionContent>\n      </AccordionItem>\n      <AccordionItem value=\"item-2\" className=\"border-border\">\n        <AccordionTrigger className=\"items-center p-4 text-base font-semibold hover:no-underline\">\n          <span className=\"flex items-center gap-3\">\n            <Avatar className=\"rounded-lg after:border-none\">\n              <AvatarFallback className=\"rounded-md bg-primary/10 text-primary\">\n                <ShieldCheck className=\"h-4 w-4\" />\n              </AvatarFallback>\n            </Avatar>\n            Security\n          </span>\n        </AccordionTrigger>\n        <AccordionContent className=\"p-4 pt-0 text-muted-foreground\">\n          Update your password, set up two-factor authentication, and review\n          recent login activity to ensure your account remains secure at all\n          times.\n        </AccordionContent>\n      </AccordionItem>\n      <AccordionItem value=\"item-3\" className=\"border-border\">\n        <AccordionTrigger className=\"items-center p-4 text-base font-semibold hover:no-underline\">\n          <span className=\"flex items-center gap-3\">\n            <Avatar className=\"rounded-lg after:border-none\">\n              <AvatarFallback className=\"rounded-md bg-primary/10 text-primary\">\n                <CreditCard className=\"h-4 w-4\" />\n              </AvatarFallback>\n            </Avatar>\n            Billing\n          </span>\n        </AccordionTrigger>\n        <AccordionContent className=\"p-4 pt-0 text-muted-foreground\">\n          Review your current subscription plan, manage payment methods, and\n          download invoices for your past transactions and purchases.\n        </AccordionContent>\n      </AccordionItem>\n    </Accordion>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/accordion/accordion-icons.tsx"
+    }
+  ],
+  "categories": ["accordion"],
+  "type": "registry:ui"
+}

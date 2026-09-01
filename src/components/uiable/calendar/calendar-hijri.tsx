@@ -14,7 +14,6 @@ import { DayPicker } from "@daypicker/persian"
 import { DayButton, getDefaultClassNames } from "react-day-picker"
 
 // project-imports
-// project
 import { cn } from "@/lib/utils"
 
 // assets

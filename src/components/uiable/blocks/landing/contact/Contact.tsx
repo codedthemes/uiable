@@ -7,11 +7,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
 // third-party
-// third party
 import { toast } from "sonner"
 
 // project-imports
-import { LightFav } from "@/images/brand"
+import LightFav from "@/images/brand/light-fav"
 import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
 
 //  ------------------------------ | CONTACT | ------------------------------  //

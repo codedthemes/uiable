@@ -12,8 +12,10 @@ import { motion } from "framer-motion"
 
 // project-imports
 import branding from "@/branding.json"
-import { HoverBg } from "@/components/animation"
-import { Shadcn, BaseUi, Tailwind } from "@/images/svg/icons"
+import HoverBg from "@/components/animation/HoverBg"
+import BaseUi from "@/images/svg/icons/baseui"
+import Shadcn from "@/images/svg/icons/shadcn"
+import Tailwind from "@/images/svg/icons/tailwind"
 
 // assets
 import {
@@ -107,7 +109,7 @@ export default function Hero() {
           <PingDot />
           <span className="flex items-center gap-2">
             <span className="text-muted-foreground">
-              New Release August 25, 2026
+              New Release September 01, 2026
             </span>
             <ChangelogLink />
           </span>
@@ -148,6 +150,7 @@ export default function Hero() {
         >
           Start Building
         </Button>
+
         <Button
           variant="outline"
           size="lg"

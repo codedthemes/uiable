@@ -8,7 +8,6 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 
 // project-imports
-// project
 import branding from "@/branding.json"
 import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 

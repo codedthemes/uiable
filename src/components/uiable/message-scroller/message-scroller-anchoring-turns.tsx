@@ -30,7 +30,6 @@ import {
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 
 // project-imports
-// project
 import { MessageAnimated } from "@/components/message-animated"
 
 // assets

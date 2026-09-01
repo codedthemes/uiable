@@ -4,10 +4,10 @@
   "baseUrl": "https://uiable.com",
   "generatedFrom": "registry.json",
   "counts": {
-    "total": 795,
-    "blocks": 50,
+    "total": 810,
+    "blocks": 55,
     "primitives": 61,
-    "components": 684
+    "components": 694
   },
   "categories": [
     "accordion",
@@ -41,6 +41,7 @@
     "direction",
     "drawer",
     "dropdown-menu",
+    "e-commerce",
     "empty",
     "faq",
     "feature",
@@ -271,6 +272,34 @@
       "addCommand": "npx shadcn@latest add @uiable/accordion-flush",
       "url": "https://uiable.com/r/accordion-flush.json",
       "previewUrl": "https://uiable.com/preview/accordion-flush"
+    },
+    {
+      "name": "accordion-icons",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Accordion Icons",
+      "description": "Accordion Icons variant for component.",
+      "categories": [
+        "accordion"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/accordion",
+        "@uiable/avatar"
+      ],
+      "files": [
+        "@components/uiable/accordion/accordion-icons.tsx"
+      ],
+      "keywords": [
+        "accordion",
+        "icons",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/accordion-icons",
+      "url": "https://uiable.com/r/accordion-icons.json",
+      "previewUrl": "https://uiable.com/preview/accordion-icons"
     },
     {
       "name": "accordion-multiple",
@@ -3262,9 +3291,9 @@
         "next"
       ],
       "registryDependencies": [
+        "@uiable/SectionHeader",
         "@uiable/button",
         "@uiable/card",
-        "@uiable/components",
         "@uiable/separator"
       ],
       "files": [
@@ -3290,7 +3319,20 @@
       ],
       "dependencies": [],
       "registryDependencies": [
-        "@uiable/components"
+        "@uiable/ActionButtonGroupBadge",
+        "@uiable/AskMeAnything",
+        "@uiable/CurrencySwapCard",
+        "@uiable/DeploymentEnvironmentCard",
+        "@uiable/EventAlertCard",
+        "@uiable/OneTimePasswordCard",
+        "@uiable/PowerUsageCard",
+        "@uiable/PrivacyVisibilityCard",
+        "@uiable/ProfileCard",
+        "@uiable/RevenueChartCard",
+        "@uiable/RevenueGrowthSlider",
+        "@uiable/SectionHeader",
+        "@uiable/UploadFilesCard",
+        "@uiable/VerificationBannerCard"
       ],
       "files": [
         "@components/uiable/blocks/landing/component-2/component-2.tsx"
@@ -3611,6 +3653,30 @@
       "previewUrl": "https://uiable.com/preview/block-cta-7"
     },
     {
+      "name": "block-e-commerce-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 2",
+      "description": "E Commerce 2 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-2/e-commerce-2.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-2",
+      "url": "https://uiable.com/r/block-e-commerce-2.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-2"
+    },
+    {
       "name": "block-faq",
       "kind": "block",
       "type": "registry:block",
@@ -3623,8 +3689,8 @@
         "next"
       ],
       "registryDependencies": [
-        "@uiable/accordion",
-        "@uiable/components"
+        "@uiable/SectionHeader",
+        "@uiable/accordion"
       ],
       "files": [
         "@components/uiable/blocks/landing/faq/faq.tsx"
@@ -3700,8 +3766,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "@uiable/button",
-        "@uiable/components"
+        "@uiable/SectionHeader",
+        "@uiable/button"
       ],
       "files": [
         "@components/uiable/blocks/landing/feature/Feature.tsx"
@@ -3760,6 +3826,28 @@
       "addCommand": "npx shadcn@latest add @uiable/block-feature-2",
       "url": "https://uiable.com/r/block-feature-2.json",
       "previewUrl": "https://uiable.com/preview/block-feature-2"
+    },
+    {
+      "name": "block-feature-4",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 4",
+      "description": "Feature 4 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-4/feature-4.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-4",
+      "url": "https://uiable.com/r/block-feature-4.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-4"
     },
     {
       "name": "block-footer",
@@ -4453,6 +4541,32 @@
       "previewUrl": "https://uiable.com/preview/block-statistics-2"
     },
     {
+      "name": "block-statistics-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Statistics 5",
+      "description": "Statistics 5 variant for block.",
+      "categories": [
+        "statistics"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/statistics/statistics-5/statistics-5.tsx"
+      ],
+      "keywords": [
+        "statistics",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-statistics-5",
+      "url": "https://uiable.com/r/block-statistics-5.json",
+      "previewUrl": "https://uiable.com/preview/block-statistics-5"
+    },
+    {
       "name": "block-team-1",
       "kind": "block",
       "type": "registry:block",
@@ -4524,6 +4638,28 @@
       "previewUrl": "https://uiable.com/preview/block-team-4"
     },
     {
+      "name": "block-team-7",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Team 7",
+      "description": "Team 7 variant for block.",
+      "categories": [
+        "team"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/team/team-7/team-7.tsx"
+      ],
+      "keywords": [
+        "team",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-team-7",
+      "url": "https://uiable.com/r/block-team-7.json",
+      "previewUrl": "https://uiable.com/preview/block-team-7"
+    },
+    {
       "name": "block-testimonial-1",
       "kind": "block",
       "type": "registry:block",
@@ -4548,6 +4684,34 @@
       "addCommand": "npx shadcn@latest add @uiable/block-testimonial-1",
       "url": "https://uiable.com/r/block-testimonial-1.json",
       "previewUrl": "https://uiable.com/preview/block-testimonial-1"
+    },
+    {
+      "name": "block-testimonial-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 5",
+      "description": "Testimonial 5 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/carousel"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-5/testimonial-5.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-5",
+      "url": "https://uiable.com/r/block-testimonial-5.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-5"
     },
     {
       "name": "block-testimonial-9",
@@ -4787,6 +4951,33 @@
       "addCommand": "npx shadcn@latest add @uiable/breadcrumb-link",
       "url": "https://uiable.com/r/breadcrumb-link.json",
       "previewUrl": "https://uiable.com/preview/breadcrumb-link"
+    },
+    {
+      "name": "breadcrumb-outline",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Breadcrumb Outline",
+      "description": "Breadcrumb Outline variant for component.",
+      "categories": [
+        "breadcrumb"
+      ],
+      "dependencies": [
+        "next"
+      ],
+      "registryDependencies": [
+        "@uiable/breadcrumb"
+      ],
+      "files": [
+        "@components/uiable/breadcrumb/breadcrumb-outline.tsx"
+      ],
+      "keywords": [
+        "breadcrumb",
+        "outline",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/breadcrumb-outline",
+      "url": "https://uiable.com/r/breadcrumb-outline.json",
+      "previewUrl": "https://uiable.com/preview/breadcrumb-outline"
     },
     {
       "name": "breadcrumb-page-header",
@@ -9654,6 +9845,35 @@
       "previewUrl": "https://uiable.com/preview/context-menu-destructive"
     },
     {
+      "name": "context-menu-font-style",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Context Menu Font Style",
+      "description": "Context Menu Font Style variant for component.",
+      "categories": [
+        "context-menu"
+      ],
+      "dependencies": [
+        "@tabler/icons-react"
+      ],
+      "registryDependencies": [
+        "@uiable/context-menu"
+      ],
+      "files": [
+        "@components/uiable/context-menu/context-menu-font-style.tsx"
+      ],
+      "keywords": [
+        "context",
+        "menu",
+        "font",
+        "style",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/context-menu-font-style",
+      "url": "https://uiable.com/r/context-menu-font-style.json",
+      "previewUrl": "https://uiable.com/preview/context-menu-font-style"
+    },
+    {
       "name": "context-menu-groups",
       "kind": "component",
       "type": "registry:ui",
@@ -9784,6 +10004,33 @@
       "addCommand": "npx shadcn@latest add @uiable/context-menu-sides",
       "url": "https://uiable.com/r/context-menu-sides.json",
       "previewUrl": "https://uiable.com/preview/context-menu-sides"
+    },
+    {
+      "name": "context-menu-spell-check",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Context Menu Spell Check",
+      "description": "Context Menu Spell Check variant for component.",
+      "categories": [
+        "context-menu"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/context-menu"
+      ],
+      "files": [
+        "@components/uiable/context-menu/context-menu-spell-check.tsx"
+      ],
+      "keywords": [
+        "context",
+        "menu",
+        "spell",
+        "check",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/context-menu-spell-check",
+      "url": "https://uiable.com/r/context-menu-spell-check.json",
+      "previewUrl": "https://uiable.com/preview/context-menu-spell-check"
     },
     {
       "name": "context-menu-submenu",
@@ -11120,6 +11367,37 @@
       "addCommand": "npx shadcn@latest add @uiable/dropdown-menu-outline-primary",
       "url": "https://uiable.com/r/dropdown-menu-outline-primary.json",
       "previewUrl": "https://uiable.com/preview/dropdown-menu-outline-primary"
+    },
+    {
+      "name": "dropdown-menu-profile-detailed",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Dropdown Menu Profile Detailed",
+      "description": "Dropdown Menu Profile Detailed variant for component.",
+      "categories": [
+        "dropdown-menu"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/dropdown-menu"
+      ],
+      "files": [
+        "@components/uiable/dropdown-menu/dropdown-menu-profile-detailed.tsx"
+      ],
+      "keywords": [
+        "dropdown",
+        "menu",
+        "profile",
+        "detailed",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/dropdown-menu-profile-detailed",
+      "url": "https://uiable.com/r/dropdown-menu-profile-detailed.json",
+      "previewUrl": "https://uiable.com/preview/dropdown-menu-profile-detailed"
     },
     {
       "name": "dropdown-menu-radio-group",
@@ -14880,6 +15158,33 @@
       "previewUrl": "https://uiable.com/preview/menubar-checkbox"
     },
     {
+      "name": "menubar-compact",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Menubar Compact",
+      "description": "Menubar Compact variant for component.",
+      "categories": [
+        "menubar"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/menubar"
+      ],
+      "files": [
+        "@components/uiable/menubar/menubar-compact.tsx"
+      ],
+      "keywords": [
+        "menubar",
+        "compact",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/menubar-compact",
+      "url": "https://uiable.com/r/menubar-compact.json",
+      "previewUrl": "https://uiable.com/preview/menubar-compact"
+    },
+    {
       "name": "menubar-editor",
       "kind": "component",
       "type": "registry:ui",
@@ -15849,6 +16154,31 @@
       "previewUrl": "https://uiable.com/preview/pagination-basic"
     },
     {
+      "name": "pagination-card",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Pagination Card",
+      "description": "Pagination Card variant for component.",
+      "categories": [
+        "pagination"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/pagination"
+      ],
+      "files": [
+        "@components/uiable/pagination/pagination-card.tsx"
+      ],
+      "keywords": [
+        "pagination",
+        "card",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/pagination-card",
+      "url": "https://uiable.com/r/pagination-card.json",
+      "previewUrl": "https://uiable.com/preview/pagination-card"
+    },
+    {
       "name": "pagination-icon",
       "kind": "component",
       "type": "registry:ui",
@@ -16079,6 +16409,37 @@
       "addCommand": "npx shadcn@latest add @uiable/popover-form",
       "url": "https://uiable.com/r/popover-form.json",
       "previewUrl": "https://uiable.com/preview/popover-form"
+    },
+    {
+      "name": "popover-user-profile",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Popover User Profile",
+      "description": "Popover User Profile variant for component.",
+      "categories": [
+        "popover"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/popover",
+        "@uiable/separator"
+      ],
+      "files": [
+        "@components/uiable/popover/popover-user-profile.tsx"
+      ],
+      "keywords": [
+        "popover",
+        "user",
+        "profile",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/popover-user-profile",
+      "url": "https://uiable.com/r/popover-user-profile.json",
+      "previewUrl": "https://uiable.com/preview/popover-user-profile"
     },
     {
       "name": "profile-card",
@@ -17069,6 +17430,32 @@
       "addCommand": "npx shadcn@latest add @uiable/resizable",
       "url": "https://uiable.com/r/resizable.json",
       "previewUrl": "https://uiable.com/preview/resizable"
+    },
+    {
+      "name": "resizable-admin-layout",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Resizable Admin Layout",
+      "description": "Resizable Admin Layout variant for component.",
+      "categories": [
+        "resizable"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/resizable"
+      ],
+      "files": [
+        "@components/uiable/resizable/resizable-admin-layout.tsx"
+      ],
+      "keywords": [
+        "resizable",
+        "admin",
+        "layout",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/resizable-admin-layout",
+      "url": "https://uiable.com/r/resizable-admin-layout.json",
+      "previewUrl": "https://uiable.com/preview/resizable-admin-layout"
     },
     {
       "name": "resizable-handle",
@@ -19961,6 +20348,32 @@
       "addCommand": "npx shadcn@latest add @uiable/tabs",
       "url": "https://uiable.com/r/tabs.json",
       "previewUrl": "https://uiable.com/preview/tabs"
+    },
+    {
+      "name": "tabs-badge",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Tabs Badge",
+      "description": "Tabs Badge variant for component.",
+      "categories": [
+        "tabs"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/tabs"
+      ],
+      "files": [
+        "@components/uiable/tabs/tabs-badge.tsx"
+      ],
+      "keywords": [
+        "tabs",
+        "badge",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/tabs-badge",
+      "url": "https://uiable.com/r/tabs-badge.json",
+      "previewUrl": "https://uiable.com/preview/tabs-badge"
     },
     {
       "name": "tabs-basic",

@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/popover"
 
 // project-imports
-// project
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 
 // assets

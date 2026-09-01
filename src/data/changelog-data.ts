@@ -20,6 +20,79 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.9.0",
+    date: "September 01, 2026",
+    anchor: "v1-9-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          {
+            text: "E-Commerce: E-Commerce 2",
+            previewUrl: "/preview/e-commerce/e-commerce-2",
+          },
+          {
+            text: "Feature: Feature 4",
+            previewUrl: "/preview/feature/feature-4",
+          },
+          {
+            text: "Statistics: Statistics 5",
+            previewUrl: "/preview/statistics/statistics-5",
+          },
+          {
+            text: "Team: Team 7",
+            previewUrl: "/preview/team/team-7",
+          },
+          {
+            text: "Testimonial: Testimonial 5",
+            previewUrl: "/preview/testimonial/testimonial-5",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Accordion: With Icons",
+            previewUrl: "/components/accordion",
+          },
+          {
+            text: "Breadcrumb: Outline",
+            previewUrl: "/components/breadcrumb",
+          },
+          {
+            text: "Context Menu: Font & Style Menu, Spell Check Menu",
+            previewUrl: "/components/context-menu",
+          },
+          {
+            text: "Dropdown Menu: Profile Detailed",
+            previewUrl: "/components/dropdown-menu",
+          },
+          {
+            text: "Menubar: Compact",
+            previewUrl: "/components/menubar",
+          },
+          {
+            text: "Pagination: Card",
+            previewUrl: "/components/pagination",
+          },
+          {
+            text: "Popover: User Profile",
+            previewUrl: "/components/popover",
+          },
+          {
+            text: "Resizable: Main Admin Layout",
+            previewUrl: "/components/resizable",
+          },
+          {
+            text: "Tabs: With Badge",
+            previewUrl: "/components/tabs",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.8.0",
     date: "August 25, 2026",
     anchor: "v1-8-0",

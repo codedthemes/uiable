@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-user-profile",
+  "title": "Popover User Profile",
+  "description": "Popover User Profile variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/popover", "@uiable/separator"],
+  "files": [
+    {
+      "path": "src/components/uiable/popover/popover-user-profile.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Popover,\n  PopoverContent,\n  PopoverTrigger,\n} from \"@/components/ui/popover\"\nimport { Separator } from \"@/components/ui/separator\"\n\n// assets\nimport { CreditCard, LogOut, Settings, User } from \"lucide-react\"\n\n//  ------------------------------ | POPOVER - USER PROFILE | ------------------------------  //\n\nexport function PopoverUserProfile() {\n  return (\n    <Popover>\n      <PopoverTrigger\n        render={\n          <Button\n            variant=\"ghost\"\n            size=\"icon\"\n            className=\"h-10 w-10 rounded-full p-0\"\n          />\n        }\n      >\n        <Avatar className=\"h-8 w-8\">\n          <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n          <AvatarFallback>CN</AvatarFallback>\n        </Avatar>\n      </PopoverTrigger>\n      <PopoverContent className=\"w-64 gap-0 p-3\" align=\"start\">\n        <div className=\"flex items-center gap-3 p-2\">\n          <Avatar className=\"h-10 w-10\">\n            <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n            <AvatarFallback>CN</AvatarFallback>\n          </Avatar>\n          <div className=\"flex flex-col\">\n            <h6 className=\"text-sm font-medium\">Shadcn</h6>\n            <span className=\"text-xs text-muted-foreground\">m@example.com</span>\n          </div>\n        </div>\n        <Separator className=\"my-1\" />\n        <div className=\"flex flex-col gap-1 p-1\">\n          <Button variant=\"ghost\" className=\"h-8 w-full justify-start text-sm\">\n            <User className=\"mr-2 h-4 w-4\" />\n            Profile\n          </Button>\n          <Button variant=\"ghost\" className=\"h-8 w-full justify-start text-sm\">\n            <CreditCard className=\"mr-2 h-4 w-4\" />\n            Billing\n          </Button>\n          <Button variant=\"ghost\" className=\"h-8 w-full justify-start text-sm\">\n            <Settings className=\"mr-2 h-4 w-4\" />\n            Settings\n          </Button>\n        </div>\n        <Separator className=\"my-1\" />\n        <div className=\"p-1\">\n          <Button\n            variant=\"ghost\"\n            className=\"h-8 w-full justify-start text-sm text-destructive hover:bg-destructive/10 hover:text-destructive\"\n          >\n            <LogOut className=\"mr-2 h-4 w-4\" />\n            Log out\n          </Button>\n        </div>\n      </PopoverContent>\n    </Popover>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/popover/popover-user-profile.tsx"
+    }
+  ],
+  "categories": ["popover"],
+  "type": "registry:ui"
+}
