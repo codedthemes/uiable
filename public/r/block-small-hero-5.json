@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-small-hero-5",
+  "title": "Small Hero 5",
+  "description": "Small Hero 5 variant for block.",
+  "dependencies": ["framer-motion"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/small-hero/small-hero-5/small-hero-5.tsx",
+      "content": "\"use client\"\n\n// third-party\nimport { motion, type Variants } from \"framer-motion\"\n\ninterface StatItem {\n  value: string\n  label: string\n}\n\nconst stats: StatItem[] = [\n  {\n    value: \"500+\",\n    label: \"Global Routes\",\n  },\n  {\n    value: \"12,000+\",\n    label: \"Flights Monthly\",\n  },\n  {\n    value: \"99.4%\",\n    label: \"On-Time Arrivals\",\n  },\n  {\n    value: \"2.5M+\",\n    label: \"Happy Travelers\",\n  },\n]\n\n//  ------------------------------ | ANIMATION VARIANTS | ------------------------------  //\n\nconst containerVariants: Variants = {\n  hidden: { opacity: 0 },\n  visible: {\n    opacity: 1,\n    transition: {\n      staggerChildren: 0.1,\n      delayChildren: 0.1,\n    },\n  },\n}\n\nconst itemVariants: Variants = {\n  hidden: { opacity: 0, y: 18 },\n  visible: {\n    opacity: 1,\n    y: 0,\n    transition: {\n      duration: 0.55,\n      ease: [0.22, 1, 0.36, 1],\n    },\n  },\n}\n\n//  ------------------------------ | SMALL HERO 5 | ------------------------------  //\n\nexport default function SmallHero5() {\n  return (\n    <section className=\"relative flex min-h-120 w-full flex-col justify-center overflow-hidden bg-[#a6c3e1] sm:min-h-130 lg:min-h-140\">\n      <div className=\"pointer-events-none absolute inset-0\">\n        <img\n          src=\"https://cdn.uiable.com/block/small-hero-bg.png\"\n          alt=\"Airplanes background\"\n          className=\"size-full object-cover object-right\"\n        />\n      </div>\n\n      <div className=\"relative z-10 container mx-auto px-6 py-16 sm:px-10 sm:py-20 lg:px-14 lg:py-24\">\n        <motion.div\n          variants={containerVariants}\n          initial=\"hidden\"\n          animate=\"visible\"\n          className=\"flex max-w-5xl flex-col gap-16 lg:gap-20\"\n        >\n          <motion.div variants={itemVariants}>\n            <h1 className=\"text-4xl font-black tracking-tight text-slate-950 uppercase sm:text-6xl md:text-7xl lg:text-[5.4rem] lg:leading-[0.96]\">\n              Discover The World,\n              <br />\n              Fly With Confidence\n            </h1>\n          </motion.div>\n\n          <motion.div\n            variants={itemVariants}\n            className=\"border-slate-200/90 pt-8 sm:border-t sm:pt-10\"\n          >\n            <div className=\"grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-8 lg:gap-12\">\n              {stats.map((stat) => (\n                <div\n                  key={stat.label}\n                  className=\"flex flex-col items-start gap-1\"\n                >\n                  <span className=\"text-2xl font-black tracking-tight text-slate-950 sm:text-3xl lg:text-4xl\">\n                    {stat.value}\n                  </span>\n                  <span className=\"text-xs font-semibold text-slate-700 sm:text-sm\">\n                    {stat.label}\n                  </span>\n                </div>\n              ))}\n            </div>\n          </motion.div>\n        </motion.div>\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/small-hero/small-hero-5/small-hero-5.tsx"
+    }
+  ],
+  "categories": ["small-hero"],
+  "type": "registry:block"
+}
