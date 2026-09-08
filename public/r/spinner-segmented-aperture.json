@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-segmented-aperture",
+  "title": "Spinner Segmented Aperture",
+  "description": "Spinner Segmented Aperture variant for component.",
+  "dependencies": ["framer-motion"],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-segmented-aperture.tsx",
+      "content": "\"use client\"\n\n// third-party\nimport { motion } from \"framer-motion\"\n\n//  ------------------------------ | SPINNER - SEGMENTED APERTURE | ------------------------------  //\n\nexport default function SpinnerSegmentedAperture() {\n  const segments = Array.from({ length: 12 }, (_, i) => i)\n\n  return (\n    <div className=\"relative size-10\" role=\"status\" aria-label=\"Loading\">\n      {segments.map((i) => {\n        const rotation = i * 30\n        return (\n          <div\n            key={i}\n            className=\"absolute top-0 left-1/2 h-full w-0.5 -translate-x-1/2\"\n            style={{ transform: `rotate(${rotation}deg)` }}\n          >\n            <motion.div\n              className=\"h-2.5 w-full rounded-full bg-primary\"\n              animate={{\n                opacity: [0.15, 1, 0.15],\n                scaleY: [0.8, 1.1, 0.8],\n              }}\n              transition={{\n                duration: 1,\n                repeat: Infinity,\n                ease: \"easeInOut\",\n                delay: (i / 12) * 1,\n              }}\n            />\n          </div>\n        )\n      })}\n      <span className=\"sr-only\">Loading...</span>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-segmented-aperture.tsx"
+    }
+  ],
+  "categories": ["spinner"],
+  "type": "registry:ui"
+}

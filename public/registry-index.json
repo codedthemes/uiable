@@ -4,10 +4,10 @@
   "baseUrl": "https://uiable.com",
   "generatedFrom": "registry.json",
   "counts": {
-    "total": 810,
-    "blocks": 55,
-    "primitives": 61,
-    "components": 694
+    "total": 829,
+    "blocks": 60,
+    "primitives": 62,
+    "components": 707
   },
   "categories": [
     "accordion",
@@ -17,6 +17,7 @@
     "attachment",
     "avatar",
     "badge",
+    "bento",
     "breadcrumb",
     "bubble",
     "button",
@@ -81,6 +82,7 @@
     "sidebar",
     "skeleton",
     "slider",
+    "small-hero",
     "sonner",
     "spinner",
     "statistics",
@@ -93,6 +95,7 @@
     "toggle",
     "toggle-group",
     "tooltip",
+    "typewriter",
     "typography",
     "widget"
   ],
@@ -708,6 +711,35 @@
       "addCommand": "npx shadcn@latest add @uiable/alert-dialog-small-media",
       "url": "https://uiable.com/r/alert-dialog-small-media.json",
       "previewUrl": "https://uiable.com/preview/alert-dialog-small-media"
+    },
+    {
+      "name": "alert-dialog-subscription",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Alert Dialog Subscription",
+      "description": "Alert Dialog Subscription variant for component.",
+      "categories": [
+        "alert-dialog"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/alert-dialog",
+        "@uiable/button",
+        "@uiable/label",
+        "@uiable/radio-group"
+      ],
+      "files": [
+        "@components/uiable/alert-dialog/alert-dialog-subscription.tsx"
+      ],
+      "keywords": [
+        "alert",
+        "dialog",
+        "subscription",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/alert-dialog-subscription",
+      "url": "https://uiable.com/r/alert-dialog-subscription.json",
+      "previewUrl": "https://uiable.com/preview/alert-dialog-subscription"
     },
     {
       "name": "alert-dialog-warning",
@@ -1813,6 +1845,32 @@
       "addCommand": "npx shadcn@latest add @uiable/aspect-ratio-standard",
       "url": "https://uiable.com/r/aspect-ratio-standard.json",
       "previewUrl": "https://uiable.com/preview/aspect-ratio-standard"
+    },
+    {
+      "name": "aspect-ratio-widescreen",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Aspect Ratio Widescreen",
+      "description": "Aspect Ratio Widescreen variant for component.",
+      "categories": [
+        "aspect-ratio"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/aspect-ratio"
+      ],
+      "files": [
+        "@components/uiable/aspect-ratio/aspect-ratio-widescreen.tsx"
+      ],
+      "keywords": [
+        "aspect",
+        "ratio",
+        "widescreen",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/aspect-ratio-widescreen",
+      "url": "https://uiable.com/r/aspect-ratio-widescreen.json",
+      "previewUrl": "https://uiable.com/preview/aspect-ratio-widescreen"
     },
     {
       "name": "attachment",
@@ -3278,6 +3336,36 @@
       "previewUrl": "https://uiable.com/preview/badge-status"
     },
     {
+      "name": "block-bento-4",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Bento 4",
+      "description": "Bento 4 variant for block.",
+      "categories": [
+        "bento"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button-ai",
+        "@uiable/card",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/bento/bento-4/bento-4.tsx"
+      ],
+      "keywords": [
+        "bento",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-bento-4",
+      "url": "https://uiable.com/r/block-bento-4.json",
+      "previewUrl": "https://uiable.com/preview/block-bento-4"
+    },
+    {
       "name": "block-component-1",
       "kind": "block",
       "type": "registry:block",
@@ -3631,6 +3719,33 @@
       "previewUrl": "https://uiable.com/preview/block-cta-2"
     },
     {
+      "name": "block-cta-3",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Cta 3",
+      "description": "Cta 3 variant for block.",
+      "categories": [
+        "cta"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/button-group",
+        "@uiable/field",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/cta/cta-3/cta-3.tsx"
+      ],
+      "keywords": [
+        "cta",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-cta-3",
+      "url": "https://uiable.com/r/block-cta-3.json",
+      "previewUrl": "https://uiable.com/preview/block-cta-3"
+    },
+    {
       "name": "block-cta-7",
       "kind": "block",
       "type": "registry:block",
@@ -3675,6 +3790,54 @@
       "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-2",
       "url": "https://uiable.com/r/block-e-commerce-2.json",
       "previewUrl": "https://uiable.com/preview/block-e-commerce-2"
+    },
+    {
+      "name": "block-e-commerce-3",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 3",
+      "description": "E Commerce 3 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-3/e-commerce-3.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-3",
+      "url": "https://uiable.com/r/block-e-commerce-3.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-3"
+    },
+    {
+      "name": "block-e-commerce-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 5",
+      "description": "E Commerce 5 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-5/e-commerce-5.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-5",
+      "url": "https://uiable.com/r/block-e-commerce-5.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-5"
     },
     {
       "name": "block-faq",
@@ -4488,6 +4651,31 @@
       "addCommand": "npx shadcn@latest add @uiable/block-sidebar",
       "url": "https://uiable.com/r/block-sidebar.json",
       "previewUrl": "https://uiable.com/preview/block-sidebar"
+    },
+    {
+      "name": "block-small-hero-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Small Hero 5",
+      "description": "Small Hero 5 variant for block.",
+      "categories": [
+        "small-hero"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/small-hero/small-hero-5/small-hero-5.tsx"
+      ],
+      "keywords": [
+        "small",
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-small-hero-5",
+      "url": "https://uiable.com/r/block-small-hero-5.json",
+      "previewUrl": "https://uiable.com/preview/block-small-hero-5"
     },
     {
       "name": "block-statistics-1",
@@ -5327,6 +5515,31 @@
       "addCommand": "npx shadcn@latest add @uiable/button",
       "url": "https://uiable.com/r/button.json",
       "previewUrl": "https://uiable.com/preview/button"
+    },
+    {
+      "name": "button-ai",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Button Ai",
+      "description": "Button Ai variant for component.",
+      "categories": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/button/button-ai.tsx"
+      ],
+      "keywords": [
+        "button",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/button-ai",
+      "url": "https://uiable.com/r/button-ai.json",
+      "previewUrl": "https://uiable.com/preview/button-ai"
     },
     {
       "name": "button-animated",
@@ -10690,6 +10903,36 @@
       "previewUrl": "https://uiable.com/preview/dialog-no-close-button"
     },
     {
+      "name": "dialog-qr-scanner",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Dialog Qr Scanner",
+      "description": "Dialog Qr Scanner variant for component.",
+      "categories": [
+        "dialog"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/dialog"
+      ],
+      "files": [
+        "@components/uiable/dialog/dialog-qr-scanner.tsx"
+      ],
+      "keywords": [
+        "dialog",
+        "scanner",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/dialog-qr-scanner",
+      "url": "https://uiable.com/r/dialog-qr-scanner.json",
+      "previewUrl": "https://uiable.com/preview/dialog-qr-scanner"
+    },
+    {
       "name": "dialog-scrollable-content",
       "kind": "component",
       "type": "registry:ui",
@@ -10845,6 +11088,36 @@
       "addCommand": "npx shadcn@latest add @uiable/drawer-dialog",
       "url": "https://uiable.com/r/drawer-dialog.json",
       "previewUrl": "https://uiable.com/preview/drawer-dialog"
+    },
+    {
+      "name": "drawer-event-rsvp",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Drawer Event Rsvp",
+      "description": "Drawer Event Rsvp variant for component.",
+      "categories": [
+        "drawer"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/drawer"
+      ],
+      "files": [
+        "@components/uiable/drawer/drawer-event-rsvp.tsx"
+      ],
+      "keywords": [
+        "drawer",
+        "event",
+        "rsvp",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/drawer-event-rsvp",
+      "url": "https://uiable.com/r/drawer-event-rsvp.json",
+      "previewUrl": "https://uiable.com/preview/drawer-event-rsvp"
     },
     {
       "name": "drawer-scrollable-content",
@@ -18212,6 +18485,37 @@
       "previewUrl": "https://uiable.com/preview/sheet-no-close-button"
     },
     {
+      "name": "sheet-settings",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Sheet Settings",
+      "description": "Sheet Settings variant for component.",
+      "categories": [
+        "sheet"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input",
+        "@uiable/label",
+        "@uiable/sheet",
+        "@uiable/switch"
+      ],
+      "files": [
+        "@components/uiable/sheet/sheet-settings.tsx"
+      ],
+      "keywords": [
+        "sheet",
+        "settings",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/sheet-settings",
+      "url": "https://uiable.com/r/sheet-settings.json",
+      "previewUrl": "https://uiable.com/preview/sheet-settings"
+    },
+    {
       "name": "sheet-side",
       "kind": "component",
       "type": "registry:ui",
@@ -19583,6 +19887,32 @@
       "previewUrl": "https://uiable.com/preview/spinner-button"
     },
     {
+      "name": "spinner-capsule-track",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Spinner Capsule Track",
+      "description": "Spinner Capsule Track variant for component.",
+      "categories": [
+        "spinner"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/spinner/spinner-capsule-track.tsx"
+      ],
+      "keywords": [
+        "spinner",
+        "capsule",
+        "track",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/spinner-capsule-track",
+      "url": "https://uiable.com/r/spinner-capsule-track.json",
+      "previewUrl": "https://uiable.com/preview/spinner-capsule-track"
+    },
+    {
       "name": "spinner-custom",
       "kind": "component",
       "type": "registry:ui",
@@ -19858,6 +20188,32 @@
       "previewUrl": "https://uiable.com/preview/spinner-input-group"
     },
     {
+      "name": "spinner-segmented-aperture",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Spinner Segmented Aperture",
+      "description": "Spinner Segmented Aperture variant for component.",
+      "categories": [
+        "spinner"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/spinner/spinner-segmented-aperture.tsx"
+      ],
+      "keywords": [
+        "spinner",
+        "segmented",
+        "aperture",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/spinner-segmented-aperture",
+      "url": "https://uiable.com/r/spinner-segmented-aperture.json",
+      "previewUrl": "https://uiable.com/preview/spinner-segmented-aperture"
+    },
+    {
       "name": "spinner-size",
       "kind": "component",
       "type": "registry:ui",
@@ -19929,6 +20285,32 @@
       "addCommand": "npx shadcn@latest add @uiable/spinner-size-small",
       "url": "https://uiable.com/r/spinner-size-small.json",
       "previewUrl": "https://uiable.com/preview/spinner-size-small"
+    },
+    {
+      "name": "spinner-wave-helix",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Spinner Wave Helix",
+      "description": "Spinner Wave Helix variant for component.",
+      "categories": [
+        "spinner"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/spinner/spinner-wave-helix.tsx"
+      ],
+      "keywords": [
+        "spinner",
+        "wave",
+        "helix",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/spinner-wave-helix",
+      "url": "https://uiable.com/r/spinner-wave-helix.json",
+      "previewUrl": "https://uiable.com/preview/spinner-wave-helix"
     },
     {
       "name": "switch",
@@ -20292,6 +20674,35 @@
       "addCommand": "npx shadcn@latest add @uiable/table-of-contents",
       "url": "https://uiable.com/r/table-of-contents.json",
       "previewUrl": "https://uiable.com/preview/table-of-contents"
+    },
+    {
+      "name": "table-status",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Table Status",
+      "description": "Table Status variant for component.",
+      "categories": [
+        "table"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/table"
+      ],
+      "files": [
+        "@components/uiable/table/table-status.tsx"
+      ],
+      "keywords": [
+        "table",
+        "status",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/table-status",
+      "url": "https://uiable.com/r/table-status.json",
+      "previewUrl": "https://uiable.com/preview/table-status"
     },
     {
       "name": "table-users",
@@ -21302,6 +21713,62 @@
       "previewUrl": "https://uiable.com/preview/tooltip-disabled"
     },
     {
+      "name": "tooltip-dot",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Tooltip Dot",
+      "description": "Tooltip Dot variant for component.",
+      "categories": [
+        "tooltip"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/tooltip"
+      ],
+      "files": [
+        "@components/uiable/tooltip/tooltip-dot.tsx"
+      ],
+      "keywords": [
+        "tooltip",
+        "dot",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/tooltip-dot",
+      "url": "https://uiable.com/r/tooltip-dot.json",
+      "previewUrl": "https://uiable.com/preview/tooltip-dot"
+    },
+    {
+      "name": "tooltip-glow",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Tooltip Glow",
+      "description": "Tooltip Glow variant for component.",
+      "categories": [
+        "tooltip"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/kbd",
+        "@uiable/tooltip"
+      ],
+      "files": [
+        "@components/uiable/tooltip/tooltip-glow.tsx"
+      ],
+      "keywords": [
+        "tooltip",
+        "glow",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/tooltip-glow",
+      "url": "https://uiable.com/r/tooltip-glow.json",
+      "previewUrl": "https://uiable.com/preview/tooltip-glow"
+    },
+    {
       "name": "tooltip-keyboard",
       "kind": "component",
       "type": "registry:ui",
@@ -21474,6 +21941,30 @@
       "addCommand": "npx shadcn@latest add @uiable/transactions-card",
       "url": "https://uiable.com/r/transactions-card.json",
       "previewUrl": "https://uiable.com/preview/transactions-card"
+    },
+    {
+      "name": "typewriter",
+      "kind": "primitive",
+      "type": "registry:ui",
+      "title": "Typewriter",
+      "description": "Typewriter component.",
+      "categories": [
+        "typewriter"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/ui/typewriter.tsx"
+      ],
+      "keywords": [
+        "typewriter",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/typewriter",
+      "url": "https://uiable.com/r/typewriter.json",
+      "previewUrl": "https://uiable.com/preview/typewriter"
     },
     {
       "name": "typography-blockquote",
@@ -21859,6 +22350,31 @@
       "addCommand": "npx shadcn@latest add @uiable/typography-table",
       "url": "https://uiable.com/r/typography-table.json",
       "previewUrl": "https://uiable.com/preview/typography-table"
+    },
+    {
+      "name": "typography-typewriter",
+      "kind": "component",
+      "type": "registry:ui",
+      "title": "Typography Typewriter",
+      "description": "Typography Typewriter variant for component.",
+      "categories": [
+        "typography"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/typewriter"
+      ],
+      "files": [
+        "@components/uiable/typography/typography-typewriter.tsx"
+      ],
+      "keywords": [
+        "typography",
+        "typewriter",
+        "component"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/typography-typewriter",
+      "url": "https://uiable.com/r/typography-typewriter.json",
+      "previewUrl": "https://uiable.com/preview/typography-typewriter"
     },
     {
       "name": "user-profile",

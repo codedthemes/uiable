@@ -926,6 +926,21 @@
       ],
       "categories": ["tooltip"],
       "dependencies": ["@base-ui/react"]
+    },
+    {
+      "name": "typewriter",
+      "type": "registry:ui",
+      "title": "Typewriter",
+      "description": "Typewriter component.",
+      "files": [
+        {
+          "path": "typewriter.tsx",
+          "type": "registry:component",
+          "target": "@components/ui/typewriter.tsx"
+        }
+      ],
+      "categories": ["typewriter"],
+      "dependencies": ["framer-motion"]
     }
   ]
 }

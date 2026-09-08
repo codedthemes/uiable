@@ -109,7 +109,7 @@ export default function Hero() {
           <PingDot />
           <span className="flex items-center gap-2">
             <span className="text-muted-foreground">
-              New Release September 01, 2026
+              New Release September 08, 2026
             </span>
             <ChangelogLink />
           </span>

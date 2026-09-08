@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-wave-helix",
+  "title": "Spinner Wave Helix",
+  "description": "Spinner Wave Helix variant for component.",
+  "dependencies": ["framer-motion"],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-wave-helix.tsx",
+      "content": "\"use client\"\n\n// third-party\nimport { motion } from \"framer-motion\"\n\n//  ------------------------------ | SPINNER - WAVE HELIX | ------------------------------  //\n\nexport default function SpinnerWaveHelix() {\n  const bars = [0, 1, 2, 3, 4, 5]\n\n  return (\n    <div\n      className=\"flex h-8 items-center gap-1.5\"\n      role=\"status\"\n      aria-label=\"Loading\"\n    >\n      {bars.map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-1 rounded-full bg-primary\"\n          animate={{\n            height: [\"8px\", \"28px\", \"8px\"],\n            opacity: [0.35, 1, 0.35],\n          }}\n          transition={{\n            duration: 1.1,\n            repeat: Infinity,\n            ease: \"easeInOut\",\n            delay: i * 0.14,\n          }}\n        />\n      ))}\n      <span className=\"sr-only\">Loading...</span>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-wave-helix.tsx"
+    }
+  ],
+  "categories": ["spinner"],
+  "type": "registry:ui"
+}

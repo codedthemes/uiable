@@ -1,15 +1,15 @@
 {
   "name": "UIAble",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
     "registry:generate": "node src/scripts/generate-registry.mjs",
     "registry:counts": "node src/scripts/generate-counts.mjs",
     "registry:split": "node src/scripts/split-registry-by-tier.mjs",
-    "registry:build": "npm run registry:generate && npm run registry:split && shadcn build .registry-build/public/registry.json --output .registry-build/public-temp && node src/scripts/sync-dir.mjs .registry-build/public-temp public/r && npm run registry:catalog && npm run registry:counts",
+    "registry:build": "npm run registry:generate && npm run registry:split && npx shadcn build .registry-build/public/registry.json --output .registry-build/public-temp && node src/scripts/sync-dir.mjs .registry-build/public-temp public/r && npm run registry:catalog && npm run registry:counts",
     "registry:catalog": "node src/scripts/build-catalog.mjs",
-    "registry:build:pro": "npm run registry:split && shadcn build .registry-build/pro/registry.json --output .pro-registry/r-flat && node src/scripts/split-pro-registry.mjs",
+    "registry:build:pro": "npm run registry:split && npx shadcn build .registry-build/pro/registry.json --output .pro-registry/r-flat && node src/scripts/split-pro-registry.mjs",
     "build": "npm run registry:build && npm run registry:build:pro && next build",
     "start": "next start",
     "lint": "eslint",

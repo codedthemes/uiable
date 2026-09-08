@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-cta-3",
+  "title": "Cta 3",
+  "description": "Cta 3 variant for block.",
+  "registryDependencies": ["@uiable/button", "@uiable/button-group", "@uiable/field", "@uiable/input"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/cta/cta-3/cta-3.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { ButtonGroup } from \"@/components/ui/button-group\"\nimport { Field } from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"\n\n//  ------------------------------ | CTA 3 | ------------------------------  //\n\nexport default function Cta3() {\n  return (\n    <div className=\"relative py-24 sm:py-32\">\n      <div className=\"absolute inset-0 z-10 bg-linear-65 from-purple-500 to-pink-500\"></div>\n      <div className=\"absolute inset-0 z-20 bg-card/85\"></div>\n      <div className=\"relative z-30 container mx-auto px-6 lg:px-8\">\n        <div className=\"mx-auto max-w-250 rounded-lg bg-card p-5 shadow-[0_0_40px_-8px_#d547cc3d] sm:p-14\">\n          <div className=\"flex flex-col items-center gap-4 text-center md:flex-row md:gap-24\">\n            <h2 className=\"text-lg font-medium text-slate-800 sm:text-3xl dark:text-slate-100\">\n              Subscribe\n            </h2>\n            <Field>\n              <ButtonGroup className=\"items-stretch [&>[data-slot]:not(:has(~[data-slot]))]:rounded-r-lg!\">\n                <Input\n                  id=\"input-button-group\"\n                  className=\"rounded-r-none\"\n                  placeholder=\"We never SPAM\"\n                />\n                <Button\n                  variant=\"default\"\n                  className=\"bg-linear-65 from-purple-500 to-pink-500\"\n                >\n                  Get Started\n                </Button>\n              </ButtonGroup>\n            </Field>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/cta/cta-3/cta-3.tsx"
+    }
+  ],
+  "categories": ["cta"],
+  "type": "registry:block"
+}

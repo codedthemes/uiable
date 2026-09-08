@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "typography-typewriter",
+  "title": "Typography Typewriter",
+  "description": "Typography Typewriter variant for component.",
+  "registryDependencies": ["@uiable/typewriter"],
+  "files": [
+    {
+      "path": "src/components/uiable/typography/typography-typewriter.tsx",
+      "content": "\"use client\"\n\n// shadcn\nimport { Typewriter } from \"@/components/ui/typewriter\"\n\n//  ------------------------------ | TYPOGRAPHY - TYPEWRITER | ------------------------------  //\n\nexport function TypographyTypewriter() {\n  return (\n    <h2 className=\"text-2xl font-bold tracking-tight text-foreground sm:text-3xl\">\n      <Typewriter\n        text=\"Craft stunning user interfaces with Shadcn and Framer Motion.\"\n        speed={45}\n        delay={300}\n        cursorStyle=\"bar\"\n        hideCursorOnComplete={false}\n      />\n    </h2>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/typography/typography-typewriter.tsx"
+    }
+  ],
+  "categories": ["typography"],
+  "type": "registry:ui"
+}
