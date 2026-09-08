@@ -74,7 +74,7 @@ export default function Footer({
           </div>
 
           <p className="text-base leading-6 font-normal text-foreground">
-            v1.9.0 | Built by{" "}
+            v1.10.0 | Built by{" "}
             <Link
               href={branding.company.url}
               target="_blank"

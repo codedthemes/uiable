@@ -23,7 +23,12 @@ export const NAV_CATEGORIES: NavSection[] = [
   {
     title: "Inputs",
     items: [
-      { title: "Button", slug: "button", breakpoints: { xl: 3, lg: 2, xs: 1 } },
+      {
+        title: "Button",
+        slug: "button",
+        badge: { label: "New" },
+        breakpoints: { xl: 3, lg: 2, xs: 1 },
+      },
       {
         title: "Button Group",
         slug: "button-group",
@@ -194,21 +199,25 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Table",
         slug: "table",
+        badge: { label: "New" },
         breakpoints: { xl: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Tooltip",
         slug: "tooltip",
+        badge: { label: "New" },
         breakpoints: { md: 3, sm: 2, xs: 1 },
       },
       {
         title: "Typography",
         slug: "typography",
+        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Aspect Ratio",
         slug: "aspect-ratio",
+        badge: { label: "New" },
         breakpoints: { md: 2, sm: 1, xs: 1 },
       },
       {
@@ -229,16 +238,19 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Alert Dialog",
         slug: "alert-dialog",
+        badge: { label: "New" },
         breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Dialog",
         slug: "dialog",
+        badge: { label: "New" },
         breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Drawer",
         slug: "drawer",
+        badge: { label: "New" },
         breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
@@ -249,6 +261,7 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Sheet",
         slug: "sheet",
+        badge: { label: "New" },
         breakpoints: { md: 2, xs: 1 },
       },
       {
@@ -259,6 +272,7 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Spinner",
         slug: "spinner",
+        badge: { label: "New" },
         breakpoints: { md: 3, sm: 2, xs: 1 },
       },
     ],
@@ -269,19 +283,16 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Breadcrumb",
         slug: "breadcrumb",
-        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Dropdown Menu",
         slug: "dropdown-menu",
-        badge: { label: "New" },
         breakpoints: { lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Menubar",
         slug: "menubar",
-        badge: { label: "New" },
         breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
       },
       {
@@ -297,13 +308,11 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Pagination",
         slug: "pagination",
-        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Tabs",
         slug: "tabs",
-        badge: { label: "New" },
         breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
       },
       {
@@ -319,7 +328,6 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Accordion",
         slug: "accordion",
-        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -335,19 +343,16 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Context Menu",
         slug: "context-menu",
-        badge: { label: "New" },
         breakpoints: { md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Popover",
         slug: "popover",
-        badge: { label: "New" },
         breakpoints: { lg: 3, md: 2, sm: 1 },
       },
       {
         title: "Resizable",
         slug: "resizable",
-        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
     ],
@@ -359,8 +364,15 @@ export const NAV_BLOCKS: NavSection[] = [
     title: "UI",
     items: [
       {
+        title: "Bento",
+        slug: "bento",
+        badge: { label: "New" },
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
         title: "Call To Action",
         slug: "cta",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -387,7 +399,6 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Feature",
         slug: "feature",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -403,6 +414,12 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Hero",
         slug: "hero",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Small Hero",
+        slug: "small-hero",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -423,19 +440,16 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Statistics",
         slug: "statistics",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Team",
         slug: "team",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Testimonial",
         slug: "testimonial",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
     ],

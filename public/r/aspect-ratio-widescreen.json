@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio-widescreen",
+  "title": "Aspect Ratio Widescreen",
+  "description": "Aspect Ratio Widescreen variant for component.",
+  "registryDependencies": ["@uiable/aspect-ratio"],
+  "files": [
+    {
+      "path": "src/components/uiable/aspect-ratio/aspect-ratio-widescreen.tsx",
+      "content": "// shadcn\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\"\n\n//  ------------------------------ | ASPECT RATIO - WIDESCREEN | ------------------------------  //\n\nexport function AspectRatioWidescreen() {\n  return (\n    <AspectRatio\n      ratio={16 / 9}\n      className=\"w-full max-w-3xl rounded-lg bg-muted\"\n    >\n      <img\n        src=\"https://cdn.uiable.com/component/card-sample.png\"\n        alt=\"Landscape photo\"\n        className=\"h-full w-full rounded-lg object-cover\"\n      />\n    </AspectRatio>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/aspect-ratio/aspect-ratio-widescreen.tsx"
+    }
+  ],
+  "categories": ["aspect-ratio"],
+  "type": "registry:ui"
+}

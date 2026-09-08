@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-dot",
+  "title": "Tooltip Dot",
+  "description": "Tooltip Dot variant for component.",
+  "registryDependencies": ["@uiable/button", "@uiable/tooltip"],
+  "files": [
+    {
+      "path": "src/components/uiable/tooltip/tooltip-dot.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\"\n\n//  ------------------------------ | TOOLTIP - DOT | ------------------------------  //\n\nexport function TooltipDot() {\n  const dotItems = [\n    {\n      label: \"Collapsible\",\n      tooltip: \"Collapsible updated with 3 new variants\",\n      dotClass: \"bg-green-500\",\n    },\n    {\n      label: \"Calendar\",\n      tooltip: \"2 upcoming meetings in Calendar\",\n      dotClass: \"bg-yellow-500\",\n    },\n  ]\n\n  return (\n    <div className=\"flex flex-wrap items-center gap-4\">\n      {dotItems.map((item) => (\n        <Button\n          key={item.label}\n          variant=\"link\"\n          className=\"gap-1 px-0 text-foreground\"\n        >\n          <span>{item.label}</span>\n          <Tooltip>\n            <TooltipTrigger render={<span className=\"flex items-center p-1\" />}>\n              <span\n                className={`block size-1.5 rounded-full ${item.dotClass}`}\n              />\n            </TooltipTrigger>\n            <TooltipContent\n              side=\"top\"\n              className=\"rounded-lg px-3 py-2 text-xs font-medium shadow-xl\"\n            >\n              {item.tooltip}\n            </TooltipContent>\n          </Tooltip>\n        </Button>\n      ))}\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/tooltip/tooltip-dot.tsx"
+    }
+  ],
+  "categories": ["tooltip"],
+  "type": "registry:ui"
+}

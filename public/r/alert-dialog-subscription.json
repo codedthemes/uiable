@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-dialog-subscription",
+  "title": "Alert Dialog Subscription",
+  "description": "Alert Dialog Subscription variant for component.",
+  "registryDependencies": ["@uiable/alert-dialog", "@uiable/button", "@uiable/label", "@uiable/radio-group"],
+  "files": [
+    {
+      "path": "src/components/uiable/alert-dialog/alert-dialog-subscription.tsx",
+      "content": "// shadcn\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger,\n} from \"@/components/ui/alert-dialog\"\nimport { Button } from \"@/components/ui/button\"\nimport { Label } from \"@/components/ui/label\"\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\"\n\n//  ------------------------------ | ALERT DIALOG - SUBSCRIPTION | ------------------------------  //\n\nexport function AlertDialogSubscription() {\n  return (\n    <AlertDialog>\n      <AlertDialogTrigger\n        render={\n          <Button variant=\"outline\" className=\"dark:border-border\">\n            Upgrade Dialog\n          </Button>\n        }\n      />\n      <AlertDialogContent>\n        <AlertDialogHeader>\n          <AlertDialogTitle>Upgrade to Pro</AlertDialogTitle>\n          <AlertDialogDescription>\n            You've reached the limit of your free plan. Upgrade to Pro to unlock\n            unlimited projects, advanced analytics, and premium support.\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n\n        <RadioGroup defaultValue=\"monthly\" className=\"gap-3\">\n          <div className=\"flex items-center space-x-2 rounded-lg border p-3\">\n            <RadioGroupItem value=\"monthly\" id=\"plan-monthly\" />\n            <Label\n              htmlFor=\"plan-monthly\"\n              className=\"flex flex-1 cursor-pointer flex-col items-start gap-1\"\n            >\n              <h6 className=\"font-medium\">Monthly Plan</h6>\n              <span className=\"text-sm text-muted-foreground\">\n                $9.00 / month\n              </span>\n            </Label>\n          </div>\n          <div className=\"flex items-center space-x-2 rounded-lg border p-3\">\n            <RadioGroupItem value=\"yearly\" id=\"plan-yearly\" />\n            <Label\n              htmlFor=\"plan-yearly\"\n              className=\"flex flex-1 cursor-pointer flex-col items-start gap-1\"\n            >\n              <h6 className=\"font-medium\">Annual Plan</h6>\n              <span className=\"text-sm text-muted-foreground\">\n                $90.00 / year (Save 16%)\n              </span>\n            </Label>\n          </div>\n        </RadioGroup>\n\n        <AlertDialogFooter className=\"border-t-0 bg-transparent pt-0\">\n          <AlertDialogCancel variant=\"outline\" className=\"dark:border-border\">\n            Maybe Later\n          </AlertDialogCancel>\n          <AlertDialogAction>Upgrade Now</AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/alert-dialog/alert-dialog-subscription.tsx"
+    }
+  ],
+  "categories": ["alert-dialog"],
+  "type": "registry:ui"
+}

@@ -4,6 +4,25 @@
   "homepage": "https://uiable.com",
   "items": [
     {
+      "name": "block-bento-4",
+      "type": "registry:block",
+      "title": "Bento 4",
+      "description": "Bento 4 variant for block.",
+      "files": [
+        {
+          "path": "bento/bento-4/bento-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/bento/bento-4/bento-4.tsx"
+        }
+      ],
+      "categories": ["bento"],
+      "badge": {
+        "label": "New"
+      },
+      "registryDependencies": ["@uiable/badge", "@uiable/button-ai", "@uiable/card", "@uiable/input"],
+      "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
       "name": "block-component-1",
       "type": "registry:block",
       "title": "Component 1",
@@ -201,6 +220,24 @@
       "registryDependencies": ["@uiable/button", "@uiable/input"]
     },
     {
+      "name": "block-cta-3",
+      "type": "registry:block",
+      "title": "Cta 3",
+      "description": "Cta 3 variant for block.",
+      "files": [
+        {
+          "path": "cta/cta-3/cta-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/cta/cta-3/cta-3.tsx"
+        }
+      ],
+      "categories": ["cta"],
+      "badge": {
+        "label": "New"
+      },
+      "registryDependencies": ["@uiable/button", "@uiable/button-group", "@uiable/field", "@uiable/input"]
+    },
+    {
       "name": "block-cta-7",
       "type": "registry:block",
       "title": "Cta 7",
@@ -224,6 +261,39 @@
           "path": "e-commerce/e-commerce-2/e-commerce-2.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/e-commerce/e-commerce-2/e-commerce-2.tsx"
+        }
+      ],
+      "categories": ["e-commerce"],
+      "registryDependencies": ["@uiable/button"]
+    },
+    {
+      "name": "block-e-commerce-3",
+      "type": "registry:block",
+      "title": "E Commerce 3",
+      "description": "E Commerce 3 variant for block.",
+      "files": [
+        {
+          "path": "e-commerce/e-commerce-3/e-commerce-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/e-commerce/e-commerce-3/e-commerce-3.tsx"
+        }
+      ],
+      "categories": ["e-commerce"],
+      "badge": {
+        "label": "New"
+      },
+      "registryDependencies": ["@uiable/button"]
+    },
+    {
+      "name": "block-e-commerce-5",
+      "type": "registry:block",
+      "title": "E Commerce 5",
+      "description": "E Commerce 5 variant for block.",
+      "files": [
+        {
+          "path": "e-commerce/e-commerce-5/e-commerce-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/e-commerce/e-commerce-5/e-commerce-5.tsx"
         }
       ],
       "categories": ["e-commerce"],
@@ -335,10 +405,7 @@
           "target": "@components/uiable/blocks/feature/feature-4/feature-4.tsx"
         }
       ],
-      "categories": ["feature"],
-      "badge": {
-        "label": "New"
-      }
+      "categories": ["feature"]
     },
     {
       "name": "block-footer",
@@ -694,6 +761,24 @@
       "dependencies": ["lucide-react"]
     },
     {
+      "name": "block-small-hero-5",
+      "type": "registry:block",
+      "title": "Small Hero 5",
+      "description": "Small Hero 5 variant for block.",
+      "files": [
+        {
+          "path": "small-hero/small-hero-5/small-hero-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/small-hero/small-hero-5/small-hero-5.tsx"
+        }
+      ],
+      "categories": ["small-hero"],
+      "badge": {
+        "label": "New"
+      },
+      "dependencies": ["framer-motion"]
+    },
+    {
       "name": "block-statistics-1",
       "type": "registry:block",
       "title": "Statistics 1",
@@ -737,9 +822,6 @@
         }
       ],
       "categories": ["statistics"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/button"],
       "dependencies": ["lucide-react"]
     },
@@ -799,10 +881,7 @@
           "target": "@components/uiable/blocks/team/team-7/team-7.tsx"
         }
       ],
-      "categories": ["team"],
-      "badge": {
-        "label": "New"
-      }
+      "categories": ["team"]
     },
     {
       "name": "block-testimonial-1",
@@ -833,9 +912,6 @@
         }
       ],
       "categories": ["testimonial"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/carousel"],
       "dependencies": ["framer-motion"]
     },

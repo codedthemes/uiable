@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-capsule-track",
+  "title": "Spinner Capsule Track",
+  "description": "Spinner Capsule Track variant for component.",
+  "dependencies": ["framer-motion"],
+  "files": [
+    {
+      "path": "src/components/uiable/spinner/spinner-capsule-track.tsx",
+      "content": "\"use client\"\n\n// third-party\nimport { motion } from \"framer-motion\"\n\n//  ------------------------------ | SPINNER - CAPSULE TRACK | ------------------------------  //\n\nexport default function SpinnerCapsuleTrack() {\n  return (\n    <div\n      className=\"relative flex h-3 w-16 items-center overflow-hidden rounded-full bg-primary/15 p-0.5\"\n      role=\"status\"\n      aria-label=\"Loading\"\n    >\n      <motion.div\n        className=\"h-full rounded-full bg-primary\"\n        animate={{\n          left: [\"0%\", \"50%\", \"0%\"],\n          width: [\"30%\", \"60%\", \"30%\"],\n          opacity: [0.7, 1, 0.7],\n        }}\n        transition={{\n          duration: 1.6,\n          repeat: Infinity,\n          ease: \"easeInOut\",\n        }}\n        style={{ position: \"absolute\" }}\n      />\n      <span className=\"sr-only\">Loading...</span>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/spinner/spinner-capsule-track.tsx"
+    }
+  ],
+  "categories": ["spinner"],
+  "type": "registry:ui"
+}

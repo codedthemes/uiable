@@ -20,6 +20,83 @@ interface ChangelogRelease {
 
 export const CHANGELOG_DATA: ChangelogRelease[] = [
   {
+    version: "1.10.0",
+    date: "September 08, 2026",
+    anchor: "v1-10-0",
+    categories: [
+      {
+        title: "New Blocks",
+        items: [
+          {
+            text: "Bento: Bento 4",
+            previewUrl: "/preview/bento/bento-4",
+          },
+          {
+            text: "Call To Action: CTA 3",
+            previewUrl: "/preview/cta/cta-3",
+          },
+          {
+            text: "E-Commerce: E-Commerce 3",
+            previewUrl: "/preview/e-commerce/e-commerce-3",
+          },
+          {
+            text: "E-Commerce: E-Commerce 5",
+            previewUrl: "/preview/e-commerce/e-commerce-5",
+          },
+          {
+            text: "Small Hero: Small Hero 5",
+            previewUrl: "/preview/small-hero/small-hero-5",
+          },
+        ],
+      },
+      {
+        title: "New Components variants",
+        items: [
+          {
+            text: "Alert Dialog: Subscription",
+            previewUrl: "/components/alert-dialog",
+          },
+          {
+            text: "Aspect Ratio: Widescreen",
+            previewUrl: "/components/aspect-ratio",
+          },
+          {
+            text: "Button: AI",
+            previewUrl: "/components/button",
+          },
+          {
+            text: "Dialog: QR Code Scanner",
+            previewUrl: "/components/dialog",
+          },
+          {
+            text: "Drawer: Event RSVP",
+            previewUrl: "/components/drawer",
+          },
+          {
+            text: "Sheet: Settings",
+            previewUrl: "/components/sheet",
+          },
+          {
+            text: "Spinner: Capsule Track, Segmented Aperture, Wave Helix",
+            previewUrl: "/components/spinner",
+          },
+          {
+            text: "Table: Status",
+            previewUrl: "/components/table",
+          },
+          {
+            text: "Tooltip: Dot, Glow",
+            previewUrl: "/components/tooltip",
+          },
+          {
+            text: "Typography: Typewriter",
+            previewUrl: "/components/typography",
+          },
+        ],
+      },
+    ],
+  },
+  {
     version: "1.9.0",
     date: "September 01, 2026",
     anchor: "v1-9-0",

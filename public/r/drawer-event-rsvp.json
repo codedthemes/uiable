@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "drawer-event-rsvp",
+  "title": "Drawer Event Rsvp",
+  "description": "Drawer Event Rsvp variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/drawer"],
+  "files": [
+    {
+      "path": "src/components/uiable/drawer/drawer-event-rsvp.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback } from \"@/components/ui/avatar\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Drawer,\n  DrawerClose,\n  DrawerContent,\n  DrawerDescription,\n  DrawerFooter,\n  DrawerHeader,\n  DrawerTitle,\n  DrawerTrigger,\n} from \"@/components/ui/drawer\"\n\n// assets\nimport { Calendar, Clock, MapPin } from \"lucide-react\"\n\n//  ------------------------------ | DRAWER - EVENT RSVP | ------------------------------  //\n\nexport function DrawerEventRsvp() {\n  return (\n    <Drawer>\n      <DrawerTrigger asChild>\n        <Button>View Event Details</Button>\n      </DrawerTrigger>\n      <DrawerContent>\n        <div className=\"mx-auto w-full max-w-lg\">\n          <DrawerHeader>\n            <DrawerTitle>Design System Workshop</DrawerTitle>\n            <DrawerDescription>\n              Learn how to build scalable design systems.\n            </DrawerDescription>\n          </DrawerHeader>\n          <div className=\"space-y-4 p-4\">\n            <div className=\"flex items-center gap-3 text-sm\">\n              <Avatar className=\"h-10 w-10 after:border-none\">\n                <AvatarFallback>\n                  <Calendar className=\"h-5 w-5 text-muted-foreground\" />\n                </AvatarFallback>\n              </Avatar>\n              <div>\n                <p className=\"font-medium\">Saturday, October 25</p>\n                <p className=\"text-muted-foreground\">Add to Calendar</p>\n              </div>\n            </div>\n            <div className=\"flex items-center gap-3 text-sm\">\n              <Avatar className=\"h-10 w-10 after:border-none\">\n                <AvatarFallback>\n                  <Clock className=\"h-5 w-5 text-muted-foreground\" />\n                </AvatarFallback>\n              </Avatar>\n              <div>\n                <p className=\"font-medium\">10:00 AM - 2:00 PM PST</p>\n                <p className=\"text-muted-foreground\">4 hours</p>\n              </div>\n            </div>\n            <div className=\"flex items-center gap-3 text-sm\">\n              <Avatar className=\"h-10 w-10 after:border-none\">\n                <AvatarFallback>\n                  <MapPin className=\"h-5 w-5 text-muted-foreground\" />\n                </AvatarFallback>\n              </Avatar>\n              <div>\n                <p className=\"font-medium\">Tech Hub SF</p>\n                <p className=\"text-muted-foreground\">\n                  123 Innovation Dr, San Francisco\n                </p>\n              </div>\n            </div>\n          </div>\n          <DrawerFooter>\n            <Button>Confirm RSVP</Button>\n            <DrawerClose asChild>\n              <Button variant=\"outline\" className=\"dark:border-border\">\n                Cancel\n              </Button>\n            </DrawerClose>\n          </DrawerFooter>\n        </div>\n      </DrawerContent>\n    </Drawer>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/drawer/drawer-event-rsvp.tsx"
+    }
+  ],
+  "categories": ["drawer"],
+  "type": "registry:ui"
+}

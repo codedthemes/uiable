@@ -107,10 +107,7 @@
       ],
       "categories": ["accordion"],
       "registryDependencies": ["@uiable/accordion", "@uiable/avatar"],
-      "dependencies": ["lucide-react"],
-      "badge": {
-        "label": "New"
-      }
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "accordion-multiple",
@@ -312,6 +309,24 @@
       "categories": ["alert-dialog"],
       "registryDependencies": ["@uiable/alert-dialog", "@uiable/button"],
       "dependencies": ["iconsax-reactjs"]
+    },
+    {
+      "name": "alert-dialog-subscription",
+      "type": "registry:ui",
+      "title": "Alert Dialog Subscription",
+      "description": "Alert Dialog Subscription variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/alert-dialog/alert-dialog-subscription.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/alert-dialog/alert-dialog-subscription.tsx"
+        }
+      ],
+      "categories": ["alert-dialog"],
+      "registryDependencies": ["@uiable/alert-dialog", "@uiable/button", "@uiable/label", "@uiable/radio-group"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "alert-dialog-warning",
@@ -928,6 +943,24 @@
       ],
       "categories": ["aspect-ratio"],
       "registryDependencies": ["@uiable/aspect-ratio"]
+    },
+    {
+      "name": "aspect-ratio-widescreen",
+      "type": "registry:ui",
+      "title": "Aspect Ratio Widescreen",
+      "description": "Aspect Ratio Widescreen variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/aspect-ratio/aspect-ratio-widescreen.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/aspect-ratio/aspect-ratio-widescreen.tsx"
+        }
+      ],
+      "categories": ["aspect-ratio"],
+      "registryDependencies": ["@uiable/aspect-ratio"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "attachment-group",
@@ -1889,10 +1922,7 @@
       ],
       "categories": ["breadcrumb"],
       "registryDependencies": ["@uiable/breadcrumb"],
-      "dependencies": ["next"],
-      "badge": {
-        "label": "New"
-      }
+      "dependencies": ["next"]
     },
     {
       "name": "breadcrumb-page-header",
@@ -2065,6 +2095,24 @@
       ],
       "categories": ["bubble"],
       "registryDependencies": ["@uiable/bubble"]
+    },
+    {
+      "name": "button-ai",
+      "type": "registry:ui",
+      "title": "Button Ai",
+      "description": "Button Ai variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/button/button-ai.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/button/button-ai.tsx"
+        }
+      ],
+      "categories": ["button"],
+      "dependencies": ["framer-motion", "lucide-react"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "button-animated",
@@ -4476,10 +4524,7 @@
       ],
       "categories": ["context-menu"],
       "registryDependencies": ["@uiable/context-menu"],
-      "dependencies": ["@tabler/icons-react"],
-      "badge": {
-        "label": "New"
-      }
+      "dependencies": ["@tabler/icons-react"]
     },
     {
       "name": "context-menu-groups",
@@ -4570,10 +4615,7 @@
         }
       ],
       "categories": ["context-menu"],
-      "registryDependencies": ["@uiable/context-menu"],
-      "badge": {
-        "label": "New"
-      }
+      "registryDependencies": ["@uiable/context-menu"]
     },
     {
       "name": "context-menu-submenu",
@@ -4903,6 +4945,25 @@
       "registryDependencies": ["@uiable/button", "@uiable/dialog"]
     },
     {
+      "name": "dialog-qr-scanner",
+      "type": "registry:ui",
+      "title": "Dialog Qr Scanner",
+      "description": "Dialog Qr Scanner variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/dialog/dialog-qr-scanner.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/dialog/dialog-qr-scanner.tsx"
+        }
+      ],
+      "categories": ["dialog"],
+      "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dialog"],
+      "dependencies": ["framer-motion", "lucide-react"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "dialog-scrollable-content",
       "type": "registry:ui",
       "title": "Dialog Scrollable Content",
@@ -4961,6 +5022,25 @@
       ],
       "categories": ["drawer"],
       "registryDependencies": ["@uiable/button", "@uiable/dialog", "@uiable/drawer", "@uiable/input", "@uiable/label"]
+    },
+    {
+      "name": "drawer-event-rsvp",
+      "type": "registry:ui",
+      "title": "Drawer Event Rsvp",
+      "description": "Drawer Event Rsvp variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/drawer/drawer-event-rsvp.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/drawer/drawer-event-rsvp.tsx"
+        }
+      ],
+      "categories": ["drawer"],
+      "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/drawer"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "drawer-scrollable-content",
@@ -5244,10 +5324,7 @@
       ],
       "categories": ["dropdown-menu"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/dropdown-menu"],
-      "dependencies": ["lucide-react"],
-      "badge": {
-        "label": "New"
-      }
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "dropdown-menu-radio-group",
@@ -7205,10 +7282,7 @@
       ],
       "categories": ["menubar"],
       "registryDependencies": ["@uiable/menubar"],
-      "dependencies": ["lucide-react"],
-      "badge": {
-        "label": "New"
-      }
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "menubar-editor",
@@ -7673,10 +7747,7 @@
         }
       ],
       "categories": ["pagination"],
-      "registryDependencies": ["@uiable/pagination"],
-      "badge": {
-        "label": "New"
-      }
+      "registryDependencies": ["@uiable/pagination"]
     },
     {
       "name": "pagination-icon",
@@ -7812,10 +7883,7 @@
       ],
       "categories": ["popover"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/popover", "@uiable/separator"],
-      "dependencies": ["lucide-react"],
-      "badge": {
-        "label": "New"
-      }
+      "dependencies": ["lucide-react"]
     },
     {
       "name": "profile-card",
@@ -8343,10 +8411,7 @@
         }
       ],
       "categories": ["resizable"],
-      "registryDependencies": ["@uiable/resizable"],
-      "badge": {
-        "label": "New"
-      }
+      "registryDependencies": ["@uiable/resizable"]
     },
     {
       "name": "resizable-handle",
@@ -8716,6 +8781,25 @@
       ],
       "categories": ["sheet"],
       "registryDependencies": ["@uiable/button", "@uiable/sheet"]
+    },
+    {
+      "name": "sheet-settings",
+      "type": "registry:ui",
+      "title": "Sheet Settings",
+      "description": "Sheet Settings variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/sheet/sheet-settings.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/sheet/sheet-settings.tsx"
+        }
+      ],
+      "categories": ["sheet"],
+      "registryDependencies": ["@uiable/button", "@uiable/input", "@uiable/label", "@uiable/sheet", "@uiable/switch"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "sheet-side",
@@ -9437,6 +9521,24 @@
       "registryDependencies": ["@uiable/button"]
     },
     {
+      "name": "spinner-capsule-track",
+      "type": "registry:ui",
+      "title": "Spinner Capsule Track",
+      "description": "Spinner Capsule Track variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/spinner/spinner-capsule-track.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/spinner/spinner-capsule-track.tsx"
+        }
+      ],
+      "categories": ["spinner"],
+      "dependencies": ["framer-motion"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "spinner-custom",
       "type": "registry:ui",
       "title": "Spinner Custom",
@@ -9596,6 +9698,24 @@
       "dependencies": ["lucide-react"]
     },
     {
+      "name": "spinner-segmented-aperture",
+      "type": "registry:ui",
+      "title": "Spinner Segmented Aperture",
+      "description": "Spinner Segmented Aperture variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/spinner/spinner-segmented-aperture.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/spinner/spinner-segmented-aperture.tsx"
+        }
+      ],
+      "categories": ["spinner"],
+      "dependencies": ["framer-motion"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "spinner-size",
       "type": "registry:ui",
       "title": "Spinner Size",
@@ -9637,6 +9757,24 @@
         }
       ],
       "categories": ["spinner"]
+    },
+    {
+      "name": "spinner-wave-helix",
+      "type": "registry:ui",
+      "title": "Spinner Wave Helix",
+      "description": "Spinner Wave Helix variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/spinner/spinner-wave-helix.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/spinner/spinner-wave-helix.tsx"
+        }
+      ],
+      "categories": ["spinner"],
+      "dependencies": ["framer-motion"],
+      "badge": {
+        "label": "New"
+      }
     },
     {
       "name": "switch-choice-card",
@@ -9820,6 +9958,25 @@
       "categories": ["layout"]
     },
     {
+      "name": "table-status",
+      "type": "registry:ui",
+      "title": "Table Status",
+      "description": "Table Status variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/table/table-status.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/table/table-status.tsx"
+        }
+      ],
+      "categories": ["table"],
+      "registryDependencies": ["@uiable/badge", "@uiable/button", "@uiable/table"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "table-users",
       "type": "registry:ui",
       "title": "Table Users",
@@ -9848,10 +10005,7 @@
         }
       ],
       "categories": ["tabs"],
-      "registryDependencies": ["@uiable/badge", "@uiable/tabs"],
-      "badge": {
-        "label": "New"
-      }
+      "registryDependencies": ["@uiable/badge", "@uiable/tabs"]
     },
     {
       "name": "tabs-basic",
@@ -10329,6 +10483,43 @@
       "registryDependencies": ["@uiable/button", "@uiable/tooltip"]
     },
     {
+      "name": "tooltip-dot",
+      "type": "registry:ui",
+      "title": "Tooltip Dot",
+      "description": "Tooltip Dot variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/tooltip/tooltip-dot.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/tooltip/tooltip-dot.tsx"
+        }
+      ],
+      "categories": ["tooltip"],
+      "registryDependencies": ["@uiable/button", "@uiable/tooltip"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
+      "name": "tooltip-glow",
+      "type": "registry:ui",
+      "title": "Tooltip Glow",
+      "description": "Tooltip Glow variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/tooltip/tooltip-glow.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/tooltip/tooltip-glow.tsx"
+        }
+      ],
+      "categories": ["tooltip"],
+      "registryDependencies": ["@uiable/badge", "@uiable/button", "@uiable/kbd", "@uiable/tooltip"],
+      "dependencies": ["lucide-react"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "tooltip-keyboard",
       "type": "registry:ui",
       "title": "Tooltip Keyboard",
@@ -10662,6 +10853,24 @@
       "categories": ["typography"]
     },
     {
+      "name": "typography-typewriter",
+      "type": "registry:ui",
+      "title": "Typography Typewriter",
+      "description": "Typography Typewriter variant for component.",
+      "files": [
+        {
+          "path": "src/components/uiable/typography/typography-typewriter.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/typography/typography-typewriter.tsx"
+        }
+      ],
+      "categories": ["typography"],
+      "registryDependencies": ["@uiable/typewriter"],
+      "badge": {
+        "label": "New"
+      }
+    },
+    {
       "name": "user-profile",
       "type": "registry:ui",
       "title": "User Profile",
@@ -10692,6 +10901,25 @@
       "categories": ["widget"],
       "registryDependencies": ["@uiable/button", "@uiable/card"],
       "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "block-bento-4",
+      "type": "registry:block",
+      "title": "Bento 4",
+      "description": "Bento 4 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/bento/bento-4/bento-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/bento/bento-4/bento-4.tsx"
+        }
+      ],
+      "categories": ["bento"],
+      "badge": {
+        "label": "New"
+      },
+      "registryDependencies": ["@uiable/badge", "@uiable/button-ai", "@uiable/card", "@uiable/input"],
+      "dependencies": ["framer-motion", "lucide-react"]
     },
     {
       "name": "block-component-1",
@@ -10891,6 +11119,24 @@
       "registryDependencies": ["@uiable/button", "@uiable/input"]
     },
     {
+      "name": "block-cta-3",
+      "type": "registry:block",
+      "title": "Cta 3",
+      "description": "Cta 3 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/cta/cta-3/cta-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/cta/cta-3/cta-3.tsx"
+        }
+      ],
+      "categories": ["cta"],
+      "badge": {
+        "label": "New"
+      },
+      "registryDependencies": ["@uiable/button", "@uiable/button-group", "@uiable/field", "@uiable/input"]
+    },
+    {
       "name": "block-cta-7",
       "type": "registry:block",
       "title": "Cta 7",
@@ -10914,6 +11160,39 @@
           "path": "src/components/uiable/blocks/e-commerce/e-commerce-2/e-commerce-2.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/e-commerce/e-commerce-2/e-commerce-2.tsx"
+        }
+      ],
+      "categories": ["e-commerce"],
+      "registryDependencies": ["@uiable/button"]
+    },
+    {
+      "name": "block-e-commerce-3",
+      "type": "registry:block",
+      "title": "E Commerce 3",
+      "description": "E Commerce 3 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/e-commerce/e-commerce-3/e-commerce-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/e-commerce/e-commerce-3/e-commerce-3.tsx"
+        }
+      ],
+      "categories": ["e-commerce"],
+      "badge": {
+        "label": "New"
+      },
+      "registryDependencies": ["@uiable/button"]
+    },
+    {
+      "name": "block-e-commerce-5",
+      "type": "registry:block",
+      "title": "E Commerce 5",
+      "description": "E Commerce 5 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/e-commerce/e-commerce-5/e-commerce-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/e-commerce/e-commerce-5/e-commerce-5.tsx"
         }
       ],
       "categories": ["e-commerce"],
@@ -11025,10 +11304,7 @@
           "target": "@components/uiable/blocks/feature/feature-4/feature-4.tsx"
         }
       ],
-      "categories": ["feature"],
-      "badge": {
-        "label": "New"
-      }
+      "categories": ["feature"]
     },
     {
       "name": "block-footer",
@@ -11384,6 +11660,24 @@
       "dependencies": ["lucide-react"]
     },
     {
+      "name": "block-small-hero-5",
+      "type": "registry:block",
+      "title": "Small Hero 5",
+      "description": "Small Hero 5 variant for block.",
+      "files": [
+        {
+          "path": "src/components/uiable/blocks/small-hero/small-hero-5/small-hero-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/small-hero/small-hero-5/small-hero-5.tsx"
+        }
+      ],
+      "categories": ["small-hero"],
+      "badge": {
+        "label": "New"
+      },
+      "dependencies": ["framer-motion"]
+    },
+    {
       "name": "block-statistics-1",
       "type": "registry:block",
       "title": "Statistics 1",
@@ -11427,9 +11721,6 @@
         }
       ],
       "categories": ["statistics"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/button"],
       "dependencies": ["lucide-react"]
     },
@@ -11489,10 +11780,7 @@
           "target": "@components/uiable/blocks/team/team-7/team-7.tsx"
         }
       ],
-      "categories": ["team"],
-      "badge": {
-        "label": "New"
-      }
+      "categories": ["team"]
     },
     {
       "name": "block-testimonial-1",
@@ -11523,9 +11811,6 @@
         }
       ],
       "categories": ["testimonial"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/carousel"],
       "dependencies": ["framer-motion"]
     },
@@ -12468,6 +12753,21 @@
       ],
       "categories": ["tooltip"],
       "dependencies": ["@base-ui/react"]
+    },
+    {
+      "name": "typewriter",
+      "type": "registry:ui",
+      "title": "Typewriter",
+      "description": "Typewriter component.",
+      "files": [
+        {
+          "path": "src/components/ui/typewriter.tsx",
+          "type": "registry:component",
+          "target": "@components/ui/typewriter.tsx"
+        }
+      ],
+      "categories": ["typewriter"],
+      "dependencies": ["framer-motion"]
     }
   ]
 }

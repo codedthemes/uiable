@@ -180,6 +180,12 @@ The entire component library is transparent and open for contribution. No gated 
 
 Pre-built page sections ready to drop into your project.
 
+### Bento
+
+<div>
+  <a href="https://uiable.com/preview/bento/bento-4" title="Bento 4"><kbd>Bento 4</kbd></a>
+</div>
+
 ### Contact
 
 <div>
@@ -203,6 +209,7 @@ Pre-built page sections ready to drop into your project.
 <div>
   <a href="https://uiable.com/preview/cta/cta-1" title="Call To Action 1"><kbd>Call To Action 1</kbd></a>
   <a href="https://uiable.com/preview/cta/cta-2" title="Call To Action 2"><kbd>Call To Action 2</kbd></a>
+  <a href="https://uiable.com/preview/cta/cta-3" title="CTA 3"><kbd>CTA 3</kbd></a>
   <a href="https://uiable.com/preview/cta/cta-7" title="CTA 7"><kbd>CTA 7</kbd></a>
 </div>
 
@@ -250,6 +257,12 @@ Pre-built page sections ready to drop into your project.
   <a href="https://uiable.com/preview/hero/hero-2" title="Hero 2"><kbd>Hero 2</kbd></a>
   <a href="https://uiable.com/preview/hero/hero-3" title="Hero 3"><kbd>Hero 3</kbd></a>
   <a href="https://uiable.com/preview/hero/hero-6" title="Hero 6"><kbd>Hero 6</kbd></a>
+</div>
+
+### Small Hero
+
+<div>
+  <a href="https://uiable.com/preview/small-hero/small-hero-5" title="Small Hero 5"><kbd>Small Hero 5</kbd></a>
 </div>
 
 ### Portfolio
