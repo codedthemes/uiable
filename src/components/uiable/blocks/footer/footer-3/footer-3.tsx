@@ -1,10 +1,16 @@
-// constants
+"use client"
+
+// third-party
+import { motion, type Variants } from "framer-motion"
+
+// types
 const footerColumns = [
   {
     title: "About Us",
     links: ["Our Story", "Our Team", "Careers", "Press & Media", "Contact Us"],
   },
 ]
+
 const socialIcons = [
   {
     label: "Facebook",
@@ -70,107 +76,127 @@ const socialIcons = [
       </svg>
     ),
   },
-  {
-    label: "YouTube",
-    svg: (
-      <svg
-        className="h-6 w-6"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g clipPath="url(#clip0_255_10820)">
-          <path
-            d="M18 3C18.6566 3 19.3068 3.12933 19.9134 3.3806C20.52 3.63188 21.0712 4.00017 21.5355 4.46447C21.9998 4.92876 22.3681 5.47995 22.6194 6.08658C22.8707 6.69321 23 7.34339 23 8V16C23 16.6566 22.8707 17.3068 22.6194 17.9134C22.3681 18.52 21.9998 19.0712 21.5355 19.5355C21.0712 19.9998 20.52 20.3681 19.9134 20.6194C19.3068 20.8707 18.6566 21 18 21H6C5.34339 21 4.69321 20.8707 4.08658 20.6194C3.47995 20.3681 2.92876 19.9998 2.46447 19.5355C1.52678 18.5979 1 17.3261 1 16V8C1 6.67392 1.52678 5.40215 2.46447 4.46447C3.40215 3.52678 4.67392 3 6 3H18ZM9 9V15C9.00014 15.1768 9.04718 15.3505 9.13631 15.5032C9.22545 15.656 9.35349 15.7823 9.50739 15.8695C9.66129 15.9566 9.83555 16.0013 10.0124 15.9991C10.0124 15.9991 10.0124 15.9991 10.514 15.857L15.514 12.857C15.6619 12.7681 15.7842 12.6425 15.8691 12.4923C15.954 12.3421 15.9987 12.1725 15.9987 12C15.9987 11.8275 15.954 11.6579 15.8691 11.5077C15.7842 11.3575 15.6619 11.2319 15.514 11.143L10.514 8.143C10.3623 8.0521 10.1892 8.00306 10.0124 8.00087C9.83555 7.99868 9.66129 8.04342 9.50739 8.13054C9.35349 8.21765 9.22545 8.34402 9.13631 8.49677C9.04718 8.64951 9.00014 8.82315 9 9Z"
-            fill="currentColor"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_255_10820">
-            <rect className="h-8 w-8" fill="currentColor" />
-          </clipPath>
-        </defs>
-      </svg>
-    ),
-  },
-  {
-    label: "Dribbble",
-    svg: (
-      <svg
-        className="h-6 w-6"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M13.6113 14.8809C14.12 16.447 14.4781 18.0556 14.6826 19.6865C13.9541 19.8957 13.1984 20.0035 12.4375 20.0029H12.4365C11.0199 20.0052 9.63281 19.6347 8.41797 18.9365C9.00362 17.9926 9.75575 17.1548 10.6406 16.4629C11.5286 15.7686 12.5342 15.2327 13.6113 14.8809ZM16.2803 14.4092C17.5044 14.3629 18.7264 14.5451 19.8818 14.9443C19.3534 16.3333 18.4304 17.5453 17.2207 18.4375C17.004 17.0748 16.6903 15.7287 16.2803 14.4092ZM12.2988 11.6064C12.4252 11.8688 12.5471 12.1335 12.665 12.4004C10.0709 13.2722 7.84713 14.9662 6.3457 17.2139C5.74889 16.5111 5.27957 15.7128 4.96484 14.8506C4.6418 13.9655 4.4879 13.032 4.50391 12.0957C7.09404 12.5386 9.78697 12.371 12.2988 11.6064ZM18.9014 7.75684C19.8685 9.08936 20.382 10.6827 20.373 12.3125C18.7469 11.8118 17.0319 11.6429 15.335 11.8203C15.1649 11.4159 14.9871 11.0147 14.7988 10.6182C16.3077 9.87524 17.6909 8.9102 18.9014 7.75684ZM8.33301 5.61426C9.32073 6.742 10.2115 7.94704 10.9941 9.21875C9.04591 9.73043 7.00771 9.82372 5.01855 9.49121C5.65035 7.87834 6.81396 6.51137 8.33301 5.61426ZM12.4365 4.5H12.4375C14.13 4.50008 15.6966 5.01767 16.9834 5.89746C15.9692 6.85441 14.8114 7.6548 13.5488 8.27051C12.7934 6.99507 11.9419 5.77688 11 4.62695C11.4733 4.54228 11.9541 4.49966 12.4365 4.5Z"
-          fill="currentColor"
-          stroke="currentColor"
-        />
-      </svg>
-    ),
-  },
 ]
+
+// Variants
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+}
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 15 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+}
+
 //  ------------------------------ | FOOTER - 3 | ------------------------------  //
 export default function Footer3() {
   return (
     <footer className="relative overflow-hidden bg-slate-900 py-20 sm:py-25">
-      <span className="absolute right-2/4 -bottom-85 block h-100 w-100 translate-x-2/4 rounded-full bg-linear-to-r from-cyan-500 to-blue-500 opacity-50 blur-3xl"></span>
+      <motion.span
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [0.35, 0.55, 0.35],
+        }}
+        transition={{
+          duration: 7,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute right-2/4 -bottom-85 block h-100 w-100 translate-x-2/4 rounded-full bg-linear-to-r from-cyan-500 to-blue-500 opacity-50 blur-3xl"
+      />
 
       <div className="relative z-30 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-2 text-center sm:gap-5 md:justify-between lg:flex-row">
-          <div className="flex flex-row items-center gap-3">
-            <svg
-              className="size-8 fill-sky-500"
-              viewBox="0 0 256 256"
-              id="Flat"
-              xmlns="http://www.w3.org/2000/svg"
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={containerVariants}
+          className="flex flex-col items-center gap-4 text-center sm:gap-5 md:justify-between lg:flex-row"
+        >
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-row items-center gap-3"
+          >
+            <motion.div
+              whileHover={{ rotate: 180, scale: 1.1 }}
+              transition={{ duration: 0.5 }}
             >
-              <g opacity="0.1">
-                <path d="M73.87573,111.39355l-.009-.03369L42.51636,148.98047a7.99958,7.99958,0,0,0-1.66358,6.85693l12.3628,55.63281a8,8,0,0,0,12.80713,4.51172L96,192C78.36523,161.44922,72.74268,134.47656,73.87573,111.39355Z" />
-              </g>
-              <g opacity="0.1">
-                <path d="M181.52239,110.6714l.009-.03369,31.35034,37.6206a7.99958,7.99958,0,0,1,1.66358,6.85693l-12.3628,55.63282a8,8,0,0,1-12.80712,4.51172l-29.9773-23.98194C177.03289,160.72706,182.65544,133.75441,181.52239,110.6714Z" />
-              </g>
-              <g>
-                <path d="M144,216H112a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16Z" />
-                <circle cx="128" cy="96" r="12" />
-                <path d="M219.62891,143.85889l-30.23658-36.28418a124.52267,124.52267,0,0,0-7.98022-34.8833c-11.61719-30.21192-32.15625-49.999-43.36523-59.10547a16.07708,16.07708,0,0,0-20.07813-.0669C106.61328,22.61621,85.81055,42.38867,74.07617,72.605A122.76188,122.76188,0,0,0,65.979,108.32861L36.37109,143.85889A16.10066,16.10066,0,0,0,33.043,157.57275l12.36328,55.63282a15.98523,15.98523,0,0,0,25.61328,9.023L98.80566,200h58.38868l27.78515,22.22852a15.91184,15.91184,0,0,0,9.96485,3.51709,16.0905,16.0905,0,0,0,5.34668-.91944,15.90581,15.90581,0,0,0,10.30273-11.62012L222.957,157.57373A16.102,16.102,0,0,0,219.62891,143.85889ZM127.9668,26.01074C198.25391,83.126,169.43359,157.01074,155.25,184H100.67871C52.6709,96.27734,109.22559,41.02637,127.9668,26.01074ZM61.02539,209.73486l-12.36328-55.6333,17.92651-21.5122q3.40906,28.0371,19.14038,57.38281Zm133.94922,0-24.74976-19.7998q15.53064-29.55175,18.74341-57.87695l18.36963,22.04345Z" />
-              </g>
-            </svg>
+              <svg
+                className="size-8 fill-sky-500"
+                viewBox="0 0 256 256"
+                id="Flat"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.1">
+                  <path d="M73.87573,111.39355l-.009-.03369L42.51636,148.98047a7.99958,7.99958,0,0,0-1.66358,6.85693l12.3628,55.63281a8,8,0,0,0,12.80713,4.51172L96,192C78.36523,161.44922,72.74268,134.47656,73.87573,111.39355Z" />
+                </g>
+                <g opacity="0.1">
+                  <path d="M181.52239,110.6714l.009-.03369,31.35034,37.6206a7.99958,7.99958,0,0,1,1.66358,6.85693l-12.3628,55.63282a8,8,0,0,1-12.80712,4.51172l-29.9773-23.98194C177.03289,160.72706,182.65544,133.75441,181.52239,110.6714Z" />
+                </g>
+                <g>
+                  <path d="M144,216H112a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16Z" />
+                  <circle cx="128" cy="96" r="12" />
+                  <path d="M219.62891,143.85889l-30.23658-36.28418a124.52267,124.52267,0,0,0-7.98022-34.8833c-11.61719-30.21192-32.15625-49.999-43.36523-59.10547a16.07708,16.07708,0,0,0-20.07813-.0669C106.61328,22.61621,85.81055,42.38867,74.07617,72.605A122.76188,122.76188,0,0,0,65.979,108.32861L36.37109,143.85889A16.10066,16.10066,0,0,0,33.043,157.57275l12.36328,55.63282a15.98523,15.98523,0,0,0,25.61328,9.023L98.80566,200h58.38868l27.78515,22.22852a15.91184,15.91184,0,0,0,9.96485,3.51709,16.0905,16.0905,0,0,0,5.34668-.91944,15.90581,15.90581,0,0,0,10.30273-11.62012L222.957,157.57373A16.102,16.102,0,0,0,219.62891,143.85889ZM127.9668,26.01074C198.25391,83.126,169.43359,157.01074,155.25,184H100.67871C52.6709,96.27734,109.22559,41.02637,127.9668,26.01074ZM61.02539,209.73486l-12.36328-55.6333,17.92651-21.5122q3.40906,28.0371,19.14038,57.38281Zm133.94922,0-24.74976-19.7998q15.53064-29.55175,18.74341-57.87695l18.36963,22.04345Z" />
+                </g>
+              </svg>
+            </motion.div>
             <span className="text-lg font-medium text-slate-100 sm:text-xl">
               SaaSify
             </span>
-          </div>
-          <div className="">
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="">
             {footerColumns.map((col) => (
-              <ul key={col.title} className="flex items-center gap-1.5">
+              <ul
+                key={col.title}
+                className="flex flex-wrap items-center justify-center gap-1.5"
+              >
                 {col.links.map((link) => (
                   <li key={link}>
-                    <a
+                    <motion.a
                       href="#"
-                      className="rounded-full px-4 py-2 text-base text-slate-400 transition-all duration-300 ease-in-out hover:bg-slate-800 hover:text-cyan-500"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="inline-block rounded-full px-4 py-2 text-base text-slate-400 transition-all duration-300 ease-in-out hover:bg-slate-800 hover:text-cyan-500"
                     >
                       {link}
-                    </a>
+                    </motion.a>
                   </li>
                 ))}
               </ul>
             ))}
-          </div>
-          <div className="flex gap-2">
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="flex gap-2">
             {socialIcons.map(({ label, svg }) => (
-              <a
+              <motion.a
                 key={label}
                 href="#"
                 aria-label={label}
-                className={`inline-flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition-all duration-500 hover:-translate-y-1 hover:shadow-md`}
+                whileHover={{ y: -4, scale: 1.12 }}
+                whileTap={{ scale: 0.92 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="inline-flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition-all duration-500 hover:shadow-md"
               >
                 {svg}
-              </a>
+              </motion.a>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </footer>
   )

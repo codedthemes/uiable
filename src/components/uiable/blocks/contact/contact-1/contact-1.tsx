@@ -1,43 +1,102 @@
+"use client"
+
 // shadcn
 import { Button } from "@/components/ui/button"
 import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 
+// third-party
+import { motion, type Variants } from "framer-motion"
+
 //  ------------------------------ | CONTACT 1 | ------------------------------  //
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+}
+
+const itemVariants: Variants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+  },
+}
+
+const cardVariants: Variants = {
+  hidden: { y: 30, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+  },
+}
 
 export default function Contact1() {
   return (
     <div className="relative overflow-hidden bg-[url('https://cdn.uiable.com/block/img-city-bg.jpg')] bg-cover bg-center py-24 sm:py-32">
-      <div className="absolute inset-0 z-20 bg-linear-to-b from-card/50 to-card"></div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="absolute inset-0 z-20 bg-linear-to-b from-card/50 to-card"
+      ></motion.div>
       <div className="relative z-30 container mx-auto px-6 lg:px-8">
-        <div className="flex flex-col gap-8">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+          className="flex flex-col gap-8"
+        >
           <div className="mx-auto flex max-w-108 flex-col items-center gap-2 text-center sm:gap-4">
-            <h2 className="text-lg font-medium text-slate-800 sm:text-3xl dark:text-slate-50">
+            <motion.h2
+              variants={itemVariants}
+              className="text-lg font-medium text-slate-800 sm:text-3xl dark:text-slate-50"
+            >
               Get in Touch
-            </h2>
-            <p className="max-w-90 text-slate-600 dark:text-slate-100">
+            </motion.h2>
+            <motion.p
+              variants={itemVariants}
+              className="max-w-90 text-slate-600 dark:text-slate-100"
+            >
               Get in touch for questions, support, or feedback. We’re here to
               help and hear from you.
-            </p>
+            </motion.p>
           </div>
-          <div className="mx-auto w-330 max-w-full rounded-lg bg-card p-5 shadow-[0_0_40px_-8px_#4680ff38] sm:p-14">
+
+          <motion.div
+            variants={cardVariants}
+            className="mx-auto w-330 max-w-full rounded-lg bg-card p-5 shadow-[0_0_40px_-8px_#4680ff38] sm:p-14"
+          >
             <div className="flex flex-col items-center gap-6 lg:flex-row">
               <div className="w-full basis-full text-center lg:basis-5/12">
                 <FieldGroup>
                   <div className="grid grid-cols-12 gap-6">
-                    <Field className="col-span-6">
-                      <FieldLabel htmlFor="fieldgroup-name">
-                        First Name
-                      </FieldLabel>
-                      <Input id="fieldgroup-name" placeholder="Jordan" />
-                    </Field>
-                    <Field className="col-span-6">
-                      <FieldLabel htmlFor="fieldgroup-lname">
-                        Last Name
-                      </FieldLabel>
-                      <Input id="fieldgroup-lname" placeholder="Lee" />
-                    </Field>
+                    <div className="col-span-6">
+                      <Field>
+                        <FieldLabel htmlFor="fieldgroup-name">
+                          First Name
+                        </FieldLabel>
+                        <Input id="fieldgroup-name" placeholder="Jordan" />
+                      </Field>
+                    </div>
+                    <div className="col-span-6">
+                      <Field>
+                        <FieldLabel htmlFor="fieldgroup-lname">
+                          Last Name
+                        </FieldLabel>
+                        <Input id="fieldgroup-lname" placeholder="Lee" />
+                      </Field>
+                    </div>
                   </div>
                   <Field>
                     <FieldLabel htmlFor="fieldgroup-email">Email</FieldLabel>
@@ -57,22 +116,42 @@ export default function Contact1() {
                     />
                   </Field>
                   <Field orientation="horizontal" className="justify-center">
-                    <Button type="reset" variant="outline" className="bg-card">
+                    <Button
+                      type="reset"
+                      variant="outline"
+                      className="bg-card hover:translate-y-1 hover:opacity-90"
+                    >
                       Reset
                     </Button>
-                    <Button type="submit">Get Started</Button>
+                    <Button
+                      type="submit"
+                      className="hover:translate-y-1 hover:opacity-90"
+                    >
+                      Send Messege
+                    </Button>
                   </Field>
                 </FieldGroup>
               </div>
               <div className="w-full basis-full text-center lg:basis-7/12">
                 <div className="flex flex-col items-center gap-4 lg:flex-row">
                   <div className="w-full basis-full text-center lg:basis-6/12">
-                    <div className="group rounded-2xl bg-background px-6 py-10 transition-all hover:bg-pink-500">
+                    <motion.div
+                      whileHover={{ scale: 1.03, y: -5 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
+                      className="group cursor-pointer rounded-2xl bg-background px-6 py-10 transition-all hover:bg-pink-500"
+                    >
                       <div className="flex flex-col gap-6">
                         <h2 className="text-md font-medium text-slate-800 transition-all group-hover:text-white sm:text-2xl dark:text-slate-100">
                           Contact Us
                         </h2>
-                        <div className="mx-auto inline-flex size-30 items-center justify-center rounded-full bg-pink-500 text-white transition-all group-hover:bg-white group-hover:text-pink-500">
+                        <motion.div
+                          whileHover={{ rotate: 10 }}
+                          className="mx-auto inline-flex size-30 items-center justify-center rounded-full bg-pink-500 text-white transition-all group-hover:bg-white group-hover:text-pink-500"
+                        >
                           <svg
                             className="size-16"
                             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +167,7 @@ export default function Contact1() {
                               fill="currentColor"
                             ></path>
                           </svg>
-                        </div>
+                        </motion.div>
                         <div className="flex flex-col gap-1">
                           <p className="text-md text-slate-800 transition-all group-hover:text-white sm:text-lg dark:text-slate-100">
                             Email
@@ -96,6 +175,11 @@ export default function Contact1() {
                           <a href="mailto:contact@example.com">
                             <p className="text-slate-600 transition-all group-hover:text-white dark:text-slate-400 dark:group-hover:text-white">
                               contact@example.com
+                            </p>
+                          </a>
+                          <a href="mailto:hr@suport.com">
+                            <p className="text-slate-600 transition-all group-hover:text-white dark:text-slate-400 dark:group-hover:text-white">
+                              Hr@suport.com
                             </p>
                           </a>
                         </div>
@@ -108,17 +192,33 @@ export default function Contact1() {
                               +1 (555) 123-4567
                             </p>
                           </a>
+                          <a href="tel:+1 (555) 987-1234">
+                            <p className="text-slate-600 transition-all group-hover:text-white dark:text-slate-400 dark:group-hover:text-white">
+                              +1 (687) 987-1234
+                            </p>
+                          </a>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                   <div className="w-full basis-full text-center lg:basis-6/12">
-                    <div className="group rounded-2xl bg-background px-6 py-10 transition-all hover:bg-sky-500">
+                    <motion.div
+                      whileHover={{ scale: 1.03, y: -5 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
+                      className="group cursor-pointer rounded-2xl bg-background px-6 py-10 transition-all hover:bg-sky-500"
+                    >
                       <div className="flex flex-col gap-6">
                         <h2 className="text-md font-medium text-slate-800 transition-all group-hover:text-white sm:text-2xl dark:text-slate-100">
                           Reach Us
                         </h2>
-                        <div className="mx-auto inline-flex size-30 items-center justify-center rounded-full bg-sky-500 text-white transition-all group-hover:bg-white group-hover:text-sky-500">
+                        <motion.div
+                          whileHover={{ rotate: 10 }}
+                          className="mx-auto inline-flex size-30 items-center justify-center rounded-full bg-sky-500 text-white transition-all group-hover:bg-white group-hover:text-sky-500"
+                        >
                           <svg
                             className="size-16"
                             xmlns="http://www.w3.org/2000/svg"
@@ -130,13 +230,14 @@ export default function Contact1() {
                               fill="currentColor"
                             ></path>
                           </svg>
-                        </div>
+                        </motion.div>
                         <div className="flex flex-col gap-1">
                           <p className="text-md text-slate-800 transition-all group-hover:text-white sm:text-lg dark:text-slate-100">
                             Company Headquarters
                           </p>
                           <p className="text-slate-600 transition-all group-hover:text-white dark:text-slate-400 dark:group-hover:text-white">
-                            118 E John Carpenter Fwy, Irving, Texas
+                            2450 Business Park Drive Building C, Irving, TX
+                            75063
                           </p>
                         </div>
                         <div className="flex flex-col gap-1">
@@ -144,17 +245,17 @@ export default function Contact1() {
                             Corporate Office
                           </p>
                           <p className="text-slate-600 transition-all group-hover:text-white dark:text-slate-400 dark:group-hover:text-white">
-                            742 Evergreen Terrace, Springfield, Illinois
+                            4500 Innovation Parkway Office 120, Dallas, TX 75261
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   )

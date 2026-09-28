@@ -7,9 +7,7 @@ import { Button } from "@/components/ui/button"
 
 // third-party
 import { Dialog as SheetPrimitive } from "@base-ui/react/dialog"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
 import { XIcon } from "lucide-react"

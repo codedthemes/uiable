@@ -4,8 +4,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 interface MobileNavProps {
   onSelect?: () => void

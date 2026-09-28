@@ -1,10 +1,14 @@
+"use client"
+
 // shadcn
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
+// third-party
+import { motion, type Variants } from "framer-motion"
 
 // assets
 import { Heart, MessageCircle, Reply } from "lucide-react"
 
-// constant
 const testimonials = [
   {
     name: "Sarah Connor",
@@ -67,27 +71,69 @@ const testimonials = [
     comments: 50,
   },
 ]
+
 //  ------------------------------ | TESTIMONIAL 1 | ------------------------------  //
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
+  },
+}
+
+const itemVariants: Variants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+  },
+}
 
 export default function Testimonial1() {
   return (
     <section className="bg-slate-100 py-24 sm:py-32 dark:bg-slate-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-5 sm:gap-12">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+          className="flex flex-col items-center gap-5 sm:gap-12"
+        >
           <div className="flex flex-col items-center gap-4 text-center sm:gap-6">
-            <h2 className="text-lg font-medium text-slate-800 sm:text-3xl dark:text-slate-50">
+            <motion.h2
+              variants={itemVariants}
+              className="text-lg font-medium text-slate-800 sm:text-3xl dark:text-slate-50"
+            >
               Success stories unveiled
-            </h2>
-            <p className="max-w-150 text-slate-600 dark:text-slate-100">
+            </motion.h2>
+            <motion.p
+              variants={itemVariants}
+              className="max-w-150 text-slate-600 dark:text-slate-100"
+            >
               Explore success stories that highlight how our solutions have
               helped businesses overcome challenges, improve efficiency, and
               achieve measurable growth. These real-world examples demonstrate
               the impact of innovation and collaboration.
-            </p>
+            </motion.p>
           </div>
-          <div className="grid grid-cols-12 gap-4">
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-12 gap-4 text-left"
+          >
             {testimonials.map((testimonial, idx) => (
-              <div key={idx} className="col-span-12 lg:col-span-6">
+              <motion.div
+                key={idx}
+                className="col-span-12 lg:col-span-6"
+                variants={itemVariants}
+                whileHover={{ scale: 1.015, y: -2 }}
+                transition={{ duration: 0.3 }}
+              >
                 <div className="relative h-full overflow-hidden rounded-lg bg-card p-5 shadow-[0_0_40px_-8px_#4680ff38] sm:p-8 dark:shadow-none">
                   <div className="flex flex-row gap-4">
                     <Avatar className="size-20! shrink-0">
@@ -106,7 +152,7 @@ export default function Testimonial1() {
                           <div className="text-lg font-medium text-slate-800 dark:text-slate-50">
                             {testimonial.name}
                           </div>
-                          <p className="text-base font-medium text-slate-400 dark:text-slate-500">
+                          <p className="dark:text-slate-505 text-base font-medium text-slate-400">
                             {testimonial.position}
                           </p>
                         </div>
@@ -114,15 +160,15 @@ export default function Testimonial1() {
                           {testimonial.description}
                         </p>
                         <div className="flex flex-row flex-wrap items-center gap-5 text-slate-500">
-                          <div className="flex flex-row items-center gap-1">
+                          <div className="flex cursor-pointer flex-row items-center gap-1 transition-colors hover:text-rose-500">
                             <Heart className="size-4 text-rose-500" />
                             <span>{testimonial.likes}</span>
                           </div>
-                          <div className="flex flex-row items-center gap-1">
+                          <div className="flex cursor-pointer flex-row items-center gap-1 transition-colors hover:text-sky-500">
                             <Reply className="size-4 text-sky-500" />
                             <span>{testimonial.replies}</span>
                           </div>
-                          <div className="flex flex-row items-center gap-1">
+                          <div className="flex cursor-pointer flex-row items-center gap-1 transition-colors hover:text-lime-500">
                             <MessageCircle className="size-4 text-lime-500" />
                             <span>{testimonial.comments}</span>
                           </div>
@@ -131,10 +177,10 @@ export default function Testimonial1() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   )

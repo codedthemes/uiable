@@ -4,9 +4,7 @@ import { ComponentProps } from "react"
 
 // third-party
 import { Avatar as AvatarPrimitive } from "@base-ui/react/avatar"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 function Avatar({
   className,

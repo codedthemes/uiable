@@ -1,6 +1,5 @@
 "use client"
 
-import * as React from "react"
 import { useEffect, useState } from "react"
 
 // shadcn
@@ -16,6 +15,7 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 import { AnimatePresence, motion } from "framer-motion"
 
+// types
 const navLinks = [
   { name: "Home", href: "#" },
   { name: "Pricing", href: "#" },
@@ -208,7 +208,7 @@ export default function Hero3() {
                     )}
                   </AnimatePresence>
                   <div className="flex flex-row gap-3">
-                    <Button className="rounded-full border-0 border-b-2 border-b-slate-900 bg-slate-800 shadow-[0_8px_10px_-2px_#8f8f8f6b] max-sm:hidden">
+                    <Button className="rounded-full border-0 border-b-2 border-b-slate-900 bg-slate-800 shadow-[0_8px_10px_-2px_#8f8f8f6b] hover:translate-y-1 hover:opacity-90 max-sm:hidden">
                       Buy Now
                     </Button>
                     <Button
@@ -262,10 +262,10 @@ export default function Hero3() {
                   come.
                 </p>
                 <div className="flex flex-row flex-wrap justify-center gap-4">
-                  <Button className="rounded-full border-0 border-b-2 border-b-sky-700 bg-sky-500 shadow-[0_8px_10px_-2px_#8f8f8f6b] lg:flex">
+                  <Button className="rounded-full border-0 border-b-2 border-b-sky-700 bg-sky-500 shadow-[0_8px_10px_-2px_#8f8f8f6b] hover:translate-y-1 hover:opacity-90 lg:flex">
                     Explore Now
                   </Button>
-                  <Button className="rounded-full border-0 border-b-2 border-b-slate-700/30 bg-slate-500/10 text-card-foreground">
+                  <Button className="rounded-full border-0 border-b-2 border-b-slate-700/30 bg-slate-500/10 text-card-foreground hover:translate-y-1 hover:opacity-90">
                     Contact us
                   </Button>
                 </div>

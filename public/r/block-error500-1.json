@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-error500-1",
+  "title": "Error500 1",
+  "description": "Error500 1 variant for block.",
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/error-500/error500-1/error500-1.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | ERROR 500 1 | ------------------------------  //\n\nexport default function Error5001() {\n  return (\n    <section className=\"flex h-[100vh] min-h-[400px] flex-col items-center justify-center gap-6 px-4 py-16 text-center\">\n      <h1 className=\"text-7xl tracking-tight text-primary sm:text-8xl md:text-8xl\">\n        500\n      </h1>\n      <div className=\"flex max-w-md flex-col gap-2\">\n        <h2 className=\"text-2xl font-bold tracking-tight text-foreground sm:text-3xl\">\n          Internal Server Error\n        </h2>\n        <p className=\"text-sm text-muted-foreground sm:text-base\">\n          Server error 500. We are fixing the problem. Please try again at a\n          later stage.\n        </p>\n      </div>\n      <div>\n        <Button>Back to Home</Button>\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/error-500/error500-1/error500-1.tsx"
+    }
+  ],
+  "categories": ["error-500"],
+  "type": "registry:block"
+}

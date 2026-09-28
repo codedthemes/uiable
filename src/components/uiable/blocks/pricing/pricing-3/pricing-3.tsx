@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 // assets
 import { Check } from "lucide-react"
 
-// constants
 const plans = [
   {
     recommended: false,
@@ -140,7 +139,7 @@ export default function Pricing3() {
                       <Button
                         size="lg"
                         className={
-                          "w-full rounded-full border-0 border-b-2 shadow-[0_8px_10px_-2px_#8f8f8f6b] " +
+                          "w-full rounded-full border-0 border-b-2 shadow-[0_8px_10px_-2px_#8f8f8f6b] hover:translate-y-1 hover:opacity-90 " +
                           (plan.recommended
                             ? "border-b-slate-200 bg-white text-slate-800"
                             : "border-b-cyan-700 bg-cyan-500 text-white")

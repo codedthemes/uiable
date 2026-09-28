@@ -3,10 +3,11 @@
   "name": "textarea",
   "title": "Textarea",
   "description": "Textarea component.",
+  "dependencies": ["cn"],
   "files": [
     {
       "path": "src/components/ui/textarea.tsx",
-      "content": "import { ComponentProps } from \"react\"\n\n// project-imports\nimport { cn } from \"@/lib/utils\"\n\nfunction Textarea({ className, ...props }: ComponentProps<\"textarea\">) {\n  return (\n    <textarea\n      data-slot=\"textarea\"\n      className={cn(\n        \"disabled:bg-secondary-200/10 dark:disabled:bg-secondary-200/10 flex field-sizing-content min-h-22 w-full rounded-lg border border-border bg-input px-3 py-[.8rem] text-base transition-colors outline-none placeholder:text-[#bec8d0] focus:border-primary focus:outline-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive dark:focus:border-primary dark:aria-invalid:border-destructive/50\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Textarea }\n",
+      "content": "import { ComponentProps } from \"react\"\n\n// third-party\nimport { cn } from \"cn\"\n\nfunction Textarea({ className, ...props }: ComponentProps<\"textarea\">) {\n  return (\n    <textarea\n      data-slot=\"textarea\"\n      className={cn(\n        \"disabled:bg-secondary-200/10 dark:disabled:bg-secondary-200/10 flex field-sizing-content min-h-22 w-full rounded-lg border border-border bg-input px-3 py-[.8rem] text-base transition-colors outline-none placeholder:text-[#bec8d0] focus:border-primary focus:outline-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive dark:focus:border-primary dark:aria-invalid:border-destructive/50\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Textarea }\n",
       "type": "registry:component",
       "target": "@components/ui/textarea.tsx"
     }

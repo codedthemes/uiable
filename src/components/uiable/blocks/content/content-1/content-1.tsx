@@ -1,5 +1,3 @@
-//  ------------------------------- | CONTENT 1 | -------------------------------  //
-
 export default function Content1() {
   return (
     <div className="overflow-hidden py-24 sm:py-32">

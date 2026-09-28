@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-navbar-2",
+  "title": "Navbar 2",
+  "description": "Navbar 2 variant for block.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/button", "@uiable/notification-dropdown", "@uiable/search-bar", "@uiable/sidebar", "@uiable/user-profile"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/navbar/navbar-2/navbar-2.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { SidebarProvider, SidebarTrigger } from \"@/components/ui/sidebar\"\n\n// project-imports\nimport NotificationDropdown from \"@/components/uiable/layout/notification-dropdown\"\nimport SearchBar from \"@/components/uiable/layout/search-bar\"\nimport UserProfile from \"@/components/uiable/layout/user-profile\"\n\n// assets\nimport { Settings } from \"lucide-react\"\n\n//  ------------------------------ | LAYOUT - DASHBOARD | ------------------------------  //\n\nexport default function Navbar2() {\n  return (\n    <SidebarProvider className=\"min-h-fit w-full\">\n      <header className=\"sticky top-0 z-40 flex h-16 w-full shrink-0 items-center gap-1 bg-background/80 px-4 backdrop-blur-md sm:px-6\">\n        <SidebarTrigger className=\"relative mx-1 -ml-1 flex h-11 w-11 items-center justify-center rounded-lg\" />\n        <SearchBar />\n        <div className=\"flex-1\" />\n        <div className=\"flex items-center gap-2 sm:gap-4\">\n          <Button\n            variant=\"ghost\"\n            size=\"icon\"\n            className=\"inline-flex h-9 w-9 items-center justify-center rounded-lg border border-transparent text-muted-foreground transition-colors hover:bg-muted hover:text-primary\"\n          >\n            <Settings className=\"size-5\" />\n          </Button>\n          <div className=\"mx-1 h-4 w-px bg-border\" />\n          <NotificationDropdown />\n          <div className=\"mx-1 h-4 w-px bg-border\" />\n          <UserProfile />\n        </div>\n      </header>\n    </SidebarProvider>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/navbar/navbar-2/navbar-2.tsx"
+    }
+  ],
+  "categories": ["navbar"],
+  "type": "registry:block"
+}

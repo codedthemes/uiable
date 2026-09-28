@@ -4,9 +4,11 @@
 import dynamic from "next/dynamic"
 import Link from "next/link"
 
+// third-party
+import { cn } from "cn"
+
 // project-imports
 import branding from "@/branding.json"
-import { cn } from "@/lib/utils"
 
 // assets
 const brandFavLogo = "https://cdn.uiable.com/brand/favicon.svg"
@@ -53,17 +55,19 @@ const LocalDarkLogo = dynamic<{ className?: string }>(
 
 interface LogoProps {
   className?: string
+  link?: boolean
+  href?: string
 }
 
 //  ------------------------------ | SHARED - LOGO | ------------------------------  //
 
-export default function Logo({ className }: LogoProps) {
-  return (
-    <Link
-      href="/"
-      aria-label={`${branding.brandName} Home`}
-      className={cn("group flex items-center gap-3", className)}
-    >
+export default function Logo({
+  className,
+  link = true,
+  href = "/",
+}: LogoProps) {
+  const content = (
+    <>
       <div className="hidden dark:block">
         <LocalDarkLogo
           className={cn("group-data-[collapsible=icon]:hidden", className)}
@@ -90,6 +94,22 @@ export default function Logo({ className }: LogoProps) {
           )}
         />
       </div>
+    </>
+  )
+
+  const containerClassName = cn("group flex items-center gap-3", className)
+
+  if (!link) {
+    return <div className={containerClassName}>{content}</div>
+  }
+
+  return (
+    <Link
+      href={href}
+      aria-label={`${branding.brandName} Home`}
+      className={containerClassName}
+    >
+      {content}
     </Link>
   )
 }

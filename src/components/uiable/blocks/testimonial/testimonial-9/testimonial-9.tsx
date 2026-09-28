@@ -1,5 +1,7 @@
 "use client"
 
+import React from "react"
+
 // shadcn
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 

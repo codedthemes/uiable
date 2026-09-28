@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-widgets-11",
+  "title": "Widgets 11",
+  "description": "Widgets 11 variant for block.",
+  "registryDependencies": ["@uiable/card"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/widgets/widgets-11/widgets-11.tsx",
+      "content": "// shadcn\nimport { Card } from \"@/components/ui/card\"\n\n//  ------------------------------ | WIDGETS 11 | ------------------------------  //\n\nexport default function Widgets11() {\n  return (\n    <section>\n      <Card className=\"group relative mb-0 h-64 w-full max-w-sm overflow-hidden rounded-2xl border-none\">\n        <img\n          src=\"https://cdn.uiable.com/block/widgets-7.png\"\n          alt=\"Widget presentation\"\n          className=\"h-full w-full object-cover\"\n        />\n      </Card>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/widgets/widgets-11/widgets-11.tsx"
+    }
+  ],
+  "categories": ["widgets"],
+  "type": "registry:block"
+}

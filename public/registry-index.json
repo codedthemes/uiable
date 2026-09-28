@@ -4,8 +4,8 @@
   "baseUrl": "https://uiable.com",
   "generatedFrom": "registry.json",
   "counts": {
-    "total": 829,
-    "blocks": 60,
+    "total": 931,
+    "blocks": 162,
     "primitives": 62,
     "components": 707
   },
@@ -27,10 +27,13 @@
     "carousel",
     "changelog",
     "chart",
+    "charts",
+    "check-mail",
     "checkbox",
     "circular-progress",
     "collapsible",
     "combobox",
+    "coming-soon",
     "command",
     "contact",
     "content",
@@ -44,6 +47,8 @@
     "dropdown-menu",
     "e-commerce",
     "empty",
+    "error-404",
+    "error-500",
     "faq",
     "feature",
     "field",
@@ -55,16 +60,19 @@
     "input-group",
     "input-otp",
     "item",
+    "join-waitlist",
     "kbd",
     "label",
     "landing",
     "layout",
     "list-group",
+    "login",
     "marker",
     "menubar",
     "message",
     "message-scroller",
     "native-select",
+    "navbar",
     "navigation-menu",
     "pagination",
     "popover",
@@ -74,6 +82,7 @@
     "progress",
     "radio",
     "radio-group",
+    "reset-password",
     "resizable",
     "scroll-area",
     "select",
@@ -97,7 +106,9 @@
     "tooltip",
     "typewriter",
     "typography",
-    "widget"
+    "under-construction",
+    "widget",
+    "widgets"
   ],
   "items": [
     {
@@ -111,6 +122,7 @@
       ],
       "dependencies": [
         "@base-ui/react",
+        "cn",
         "lucide-react"
       ],
       "registryDependencies": [],
@@ -2046,7 +2058,8 @@
         "avatar"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -2387,7 +2400,8 @@
       ],
       "dependencies": [
         "@base-ui/react",
-        "class-variance-authority"
+        "class-variance-authority",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -3366,6 +3380,178 @@
       "previewUrl": "https://uiable.com/preview/block-bento-4"
     },
     {
+      "name": "block-bento-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Bento 5",
+      "description": "Bento 5 variant for block.",
+      "categories": [
+        "bento"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/chart"
+      ],
+      "files": [
+        "@components/uiable/blocks/bento/bento-5/bento-5.tsx"
+      ],
+      "keywords": [
+        "bento",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-bento-5",
+      "url": "https://uiable.com/r/block-bento-5.json",
+      "previewUrl": "https://uiable.com/preview/block-bento-5"
+    },
+    {
+      "name": "block-charts-7",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Charts 7",
+      "description": "Charts 7 variant for block.",
+      "categories": [
+        "charts"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@uiable/card",
+        "@uiable/chart"
+      ],
+      "files": [
+        "@components/uiable/blocks/charts/charts-7/charts-7.tsx"
+      ],
+      "keywords": [
+        "charts",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-charts-7",
+      "url": "https://uiable.com/r/block-charts-7.json",
+      "previewUrl": "https://uiable.com/preview/block-charts-7"
+    },
+    {
+      "name": "block-charts-11",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Charts 11",
+      "description": "Charts 11 variant for block.",
+      "categories": [
+        "charts"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@uiable/card",
+        "@uiable/chart"
+      ],
+      "files": [
+        "@components/uiable/blocks/charts/charts-11/charts-11.tsx"
+      ],
+      "keywords": [
+        "charts",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-charts-11",
+      "url": "https://uiable.com/r/block-charts-11.json",
+      "previewUrl": "https://uiable.com/preview/block-charts-11"
+    },
+    {
+      "name": "block-check-mail-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Check Mail 2",
+      "description": "Check Mail 2 variant for block.",
+      "categories": [
+        "check-mail"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "next"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/check-mail/check-mail-2/check-mail-2.tsx"
+      ],
+      "keywords": [
+        "check",
+        "mail",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-check-mail-2",
+      "url": "https://uiable.com/r/block-check-mail-2.json",
+      "previewUrl": "https://uiable.com/preview/block-check-mail-2"
+    },
+    {
+      "name": "block-coming-soon-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Coming Soon 1",
+      "description": "Coming Soon 1 variant for block.",
+      "categories": [
+        "coming-soon"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/coming-soon/coming-soon-1/coming-soon-1.tsx"
+      ],
+      "keywords": [
+        "coming",
+        "soon",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-coming-soon-1",
+      "url": "https://uiable.com/r/block-coming-soon-1.json",
+      "previewUrl": "https://uiable.com/preview/block-coming-soon-1"
+    },
+    {
+      "name": "block-coming-soon-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Coming Soon 2",
+      "description": "Coming Soon 2 variant for block.",
+      "categories": [
+        "coming-soon"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/coming-soon/coming-soon-2/coming-soon-2.tsx"
+      ],
+      "keywords": [
+        "coming",
+        "soon",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-coming-soon-2",
+      "url": "https://uiable.com/r/block-coming-soon-2.json",
+      "previewUrl": "https://uiable.com/preview/block-coming-soon-2"
+    },
+    {
       "name": "block-component-1",
       "kind": "block",
       "type": "registry:block",
@@ -3435,6 +3621,38 @@
       "previewUrl": "https://uiable.com/preview/block-component-2"
     },
     {
+      "name": "block-component-layout",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Component Layout",
+      "description": "Component Layout variant for block.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/input",
+        "@uiable/logo",
+        "@uiable/scroll-area",
+        "@uiable/sheet"
+      ],
+      "files": [
+        "@components/uiable/blocks/layout/component-layout/ComponentLayout.tsx"
+      ],
+      "keywords": [
+        "component",
+        "layout",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-component-layout",
+      "url": "https://uiable.com/r/block-component-layout.json",
+      "previewUrl": "https://uiable.com/preview/block-component-layout"
+    },
+    {
       "name": "block-contact",
       "kind": "block",
       "type": "registry:block",
@@ -3471,7 +3689,9 @@
       "categories": [
         "contact"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
       "registryDependencies": [
         "@uiable/button",
         "@uiable/field",
@@ -3488,6 +3708,169 @@
       "addCommand": "npx shadcn@latest add @uiable/block-contact-1",
       "url": "https://uiable.com/r/block-contact-1.json",
       "previewUrl": "https://uiable.com/preview/block-contact-1"
+    },
+    {
+      "name": "block-contact-3",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 3",
+      "description": "Contact 3 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/contact/contact-3/contact-3.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-3",
+      "url": "https://uiable.com/r/block-contact-3.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-3"
+    },
+    {
+      "name": "block-contact-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 5",
+      "description": "Contact 5 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/field",
+        "@uiable/input",
+        "@uiable/textarea"
+      ],
+      "files": [
+        "@components/uiable/blocks/contact/contact-5/contact-5.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-5",
+      "url": "https://uiable.com/r/block-contact-5.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-5"
+    },
+    {
+      "name": "block-contact-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 6",
+      "description": "Contact 6 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/contact/contact-6/contact-6.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-6",
+      "url": "https://uiable.com/r/block-contact-6.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-6"
+    },
+    {
+      "name": "block-contact-7",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 7",
+      "description": "Contact 7 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/field",
+        "@uiable/input",
+        "@uiable/textarea"
+      ],
+      "files": [
+        "@components/uiable/blocks/contact/contact-7/contact-7.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-7",
+      "url": "https://uiable.com/r/block-contact-7.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-7"
+    },
+    {
+      "name": "block-contact-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 8",
+      "description": "Contact 8 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/contact/contact-8/contact-8.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-8",
+      "url": "https://uiable.com/r/block-contact-8.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-8"
+    },
+    {
+      "name": "block-contact-10",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 10",
+      "description": "Contact 10 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/field",
+        "@uiable/input",
+        "@uiable/textarea"
+      ],
+      "files": [
+        "@components/uiable/blocks/contact/contact-10/contact-10.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-10",
+      "url": "https://uiable.com/r/block-contact-10.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-10"
     },
     {
       "name": "block-contact-11",
@@ -3551,6 +3934,89 @@
       "previewUrl": "https://uiable.com/preview/block-contact-15"
     },
     {
+      "name": "block-contact-19",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 19",
+      "description": "Contact 19 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "cn",
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input",
+        "@uiable/label",
+        "@uiable/select",
+        "@uiable/textarea"
+      ],
+      "files": [
+        "@components/uiable/blocks/contact/contact-19/contact-19.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-19",
+      "url": "https://uiable.com/r/block-contact-19.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-19"
+    },
+    {
+      "name": "block-contact-20",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 20",
+      "description": "Contact 20 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "next"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/contact/contact-20/contact-20.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-20",
+      "url": "https://uiable.com/r/block-contact-20.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-20"
+    },
+    {
+      "name": "block-contact-21",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 21",
+      "description": "Contact 21 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "next"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/contact/contact-21/contact-21.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-21",
+      "url": "https://uiable.com/r/block-contact-21.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-21"
+    },
+    {
       "name": "block-content-1",
       "kind": "block",
       "type": "registry:block",
@@ -3571,6 +4037,28 @@
       "addCommand": "npx shadcn@latest add @uiable/block-content-1",
       "url": "https://uiable.com/r/block-content-1.json",
       "previewUrl": "https://uiable.com/preview/block-content-1"
+    },
+    {
+      "name": "block-content-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Content 2",
+      "description": "Content 2 variant for block.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/content/content-2/content-2.tsx"
+      ],
+      "keywords": [
+        "content",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-content-2",
+      "url": "https://uiable.com/r/block-content-2.json",
+      "previewUrl": "https://uiable.com/preview/block-content-2"
     },
     {
       "name": "block-content-3",
@@ -3667,6 +4155,134 @@
       "previewUrl": "https://uiable.com/preview/block-content-6"
     },
     {
+      "name": "block-content-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Content 9",
+      "description": "Content 9 variant for block.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/content/content-9/content-9.tsx"
+      ],
+      "keywords": [
+        "content",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-content-9",
+      "url": "https://uiable.com/r/block-content-9.json",
+      "previewUrl": "https://uiable.com/preview/block-content-9"
+    },
+    {
+      "name": "block-content-10",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Content 10",
+      "description": "Content 10 variant for block.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/content/content-10/content-10.tsx"
+      ],
+      "keywords": [
+        "content",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-content-10",
+      "url": "https://uiable.com/r/block-content-10.json",
+      "previewUrl": "https://uiable.com/preview/block-content-10"
+    },
+    {
+      "name": "block-content-11",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Content 11",
+      "description": "Content 11 variant for block.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/carousel",
+        "@uiable/dialog",
+        "@uiable/tabs"
+      ],
+      "files": [
+        "@components/uiable/blocks/content/content-11/content-11.tsx"
+      ],
+      "keywords": [
+        "content",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-content-11",
+      "url": "https://uiable.com/r/block-content-11.json",
+      "previewUrl": "https://uiable.com/preview/block-content-11"
+    },
+    {
+      "name": "block-content-15",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Content 15",
+      "description": "Content 15 variant for block.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/content/content-15/content-15.tsx"
+      ],
+      "keywords": [
+        "content",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-content-15",
+      "url": "https://uiable.com/r/block-content-15.json",
+      "previewUrl": "https://uiable.com/preview/block-content-15"
+    },
+    {
+      "name": "block-content-16",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Content 16",
+      "description": "Content 16 variant for block.",
+      "categories": [
+        "content"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/card"
+      ],
+      "files": [
+        "@components/uiable/blocks/content/content-16/content-16.tsx"
+      ],
+      "keywords": [
+        "content",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-content-16",
+      "url": "https://uiable.com/r/block-content-16.json",
+      "previewUrl": "https://uiable.com/preview/block-content-16"
+    },
+    {
       "name": "block-cta-1",
       "kind": "block",
       "type": "registry:block",
@@ -3675,12 +4291,13 @@
       "categories": [
         "cta"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "lucide-react"
+      ],
       "registryDependencies": [
+        "@uiable/badge",
         "@uiable/button",
-        "@uiable/button-group",
-        "@uiable/field",
-        "@uiable/input"
+        "@uiable/card"
       ],
       "files": [
         "@components/uiable/blocks/cta/cta-1/cta-1.tsx"
@@ -3702,10 +4319,13 @@
       "categories": [
         "cta"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "lucide-react"
+      ],
       "registryDependencies": [
+        "@uiable/badge",
         "@uiable/button",
-        "@uiable/input"
+        "@uiable/card"
       ],
       "files": [
         "@components/uiable/blocks/cta/cta-2/cta-2.tsx"
@@ -3727,12 +4347,12 @@
       "categories": [
         "cta"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
       "registryDependencies": [
-        "@uiable/button",
-        "@uiable/button-group",
-        "@uiable/field",
-        "@uiable/input"
+        "@uiable/button"
       ],
       "files": [
         "@components/uiable/blocks/cta/cta-3/cta-3.tsx"
@@ -3744,6 +4364,30 @@
       "addCommand": "npx shadcn@latest add @uiable/block-cta-3",
       "url": "https://uiable.com/r/block-cta-3.json",
       "previewUrl": "https://uiable.com/preview/block-cta-3"
+    },
+    {
+      "name": "block-cta-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Cta 6",
+      "description": "Cta 6 variant for block.",
+      "categories": [
+        "cta"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/cta/cta-6/cta-6.tsx"
+      ],
+      "keywords": [
+        "cta",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-cta-6",
+      "url": "https://uiable.com/r/block-cta-6.json",
+      "previewUrl": "https://uiable.com/preview/block-cta-6"
     },
     {
       "name": "block-cta-7",
@@ -3766,6 +4410,149 @@
       "addCommand": "npx shadcn@latest add @uiable/block-cta-7",
       "url": "https://uiable.com/r/block-cta-7.json",
       "previewUrl": "https://uiable.com/preview/block-cta-7"
+    },
+    {
+      "name": "block-cta-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Cta 9",
+      "description": "Cta 9 variant for block.",
+      "categories": [
+        "cta"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/cta/cta-9/cta-9.tsx"
+      ],
+      "keywords": [
+        "cta",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-cta-9",
+      "url": "https://uiable.com/r/block-cta-9.json",
+      "previewUrl": "https://uiable.com/preview/block-cta-9"
+    },
+    {
+      "name": "block-cta-12",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Cta 12",
+      "description": "Cta 12 variant for block.",
+      "categories": [
+        "cta"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/cta/cta-12/cta-12.tsx"
+      ],
+      "keywords": [
+        "cta",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-cta-12",
+      "url": "https://uiable.com/r/block-cta-12.json",
+      "previewUrl": "https://uiable.com/preview/block-cta-12"
+    },
+    {
+      "name": "block-cta-14",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Cta 14",
+      "description": "Cta 14 variant for block.",
+      "categories": [
+        "cta"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/cta/cta-14/cta-14.tsx"
+      ],
+      "keywords": [
+        "cta",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-cta-14",
+      "url": "https://uiable.com/r/block-cta-14.json",
+      "previewUrl": "https://uiable.com/preview/block-cta-14"
+    },
+    {
+      "name": "block-dashboard-layout",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Dashboard Layout",
+      "description": "Dashboard Layout variant for block.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "iconsax-reactjs",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/collapsible",
+        "@uiable/logo",
+        "@uiable/notification-dropdown",
+        "@uiable/search-bar",
+        "@uiable/sidebar",
+        "@uiable/user-profile"
+      ],
+      "files": [
+        "@components/uiable/blocks/layout/dashboard-layout/Dashboard.tsx"
+      ],
+      "keywords": [
+        "dashboard",
+        "layout",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-dashboard-layout",
+      "url": "https://uiable.com/r/block-dashboard-layout.json",
+      "previewUrl": "https://uiable.com/preview/block-dashboard-layout"
+    },
+    {
+      "name": "block-doc-layout",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Doc Layout",
+      "description": "Doc Layout variant for block.",
+      "categories": [
+        "layout"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/collapsible",
+        "@uiable/logo",
+        "@uiable/notification-dropdown",
+        "@uiable/search-bar",
+        "@uiable/sidebar",
+        "@uiable/user-profile"
+      ],
+      "files": [
+        "@components/uiable/blocks/layout/doc-layout/DocLayout.tsx"
+      ],
+      "keywords": [
+        "doc",
+        "layout",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-doc-layout",
+      "url": "https://uiable.com/r/block-doc-layout.json",
+      "previewUrl": "https://uiable.com/preview/block-doc-layout"
     },
     {
       "name": "block-e-commerce-2",
@@ -3838,6 +4625,267 @@
       "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-5",
       "url": "https://uiable.com/r/block-e-commerce-5.json",
       "previewUrl": "https://uiable.com/preview/block-e-commerce-5"
+    },
+    {
+      "name": "block-e-commerce-7",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 7",
+      "description": "E Commerce 7 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-7/e-commerce-7.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-7",
+      "url": "https://uiable.com/r/block-e-commerce-7.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-7"
+    },
+    {
+      "name": "block-e-commerce-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 8",
+      "description": "E Commerce 8 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-8/e-commerce-8.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-8",
+      "url": "https://uiable.com/r/block-e-commerce-8.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-8"
+    },
+    {
+      "name": "block-e-commerce-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 9",
+      "description": "E Commerce 9 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-9/e-commerce-9.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-9",
+      "url": "https://uiable.com/r/block-e-commerce-9.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-9"
+    },
+    {
+      "name": "block-e-commerce-10",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 10",
+      "description": "E Commerce 10 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-10/e-commerce-10.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-10",
+      "url": "https://uiable.com/r/block-e-commerce-10.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-10"
+    },
+    {
+      "name": "block-e-commerce-19",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 19",
+      "description": "E Commerce 19 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/card",
+        "@uiable/item",
+        "@uiable/separator"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-19/e-commerce-19.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-19",
+      "url": "https://uiable.com/r/block-e-commerce-19.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-19"
+    },
+    {
+      "name": "block-e-commerce-21",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "E Commerce 21",
+      "description": "E Commerce 21 variant for block.",
+      "categories": [
+        "e-commerce"
+      ],
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/item",
+        "@uiable/separator"
+      ],
+      "files": [
+        "@components/uiable/blocks/e-commerce/e-commerce-21/e-commerce-21.tsx"
+      ],
+      "keywords": [
+        "commerce",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-e-commerce-21",
+      "url": "https://uiable.com/r/block-e-commerce-21.json",
+      "previewUrl": "https://uiable.com/preview/block-e-commerce-21"
+    },
+    {
+      "name": "block-error404-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Error404 1",
+      "description": "Error404 1 variant for block.",
+      "categories": [
+        "error-404"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/error-404/error404-1/error404-1.tsx"
+      ],
+      "keywords": [
+        "error404",
+        "block",
+        "error",
+        "404"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-error404-1",
+      "url": "https://uiable.com/r/block-error404-1.json",
+      "previewUrl": "https://uiable.com/preview/block-error404-1"
+    },
+    {
+      "name": "block-error404-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Error404 2",
+      "description": "Error404 2 variant for block.",
+      "categories": [
+        "error-404"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/error-404/error404-2/error404-2.tsx"
+      ],
+      "keywords": [
+        "error404",
+        "block",
+        "error",
+        "404"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-error404-2",
+      "url": "https://uiable.com/r/block-error404-2.json",
+      "previewUrl": "https://uiable.com/preview/block-error404-2"
+    },
+    {
+      "name": "block-error500-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Error500 1",
+      "description": "Error500 1 variant for block.",
+      "categories": [
+        "error-500"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/error-500/error500-1/error500-1.tsx"
+      ],
+      "keywords": [
+        "error500",
+        "block",
+        "error",
+        "500"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-error500-1",
+      "url": "https://uiable.com/r/block-error500-1.json",
+      "previewUrl": "https://uiable.com/preview/block-error500-1"
+    },
+    {
+      "name": "block-error500-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Error500 2",
+      "description": "Error500 2 variant for block.",
+      "categories": [
+        "error-500"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/error-500/error500-2/error500-2.tsx"
+      ],
+      "keywords": [
+        "error500",
+        "block",
+        "error",
+        "500"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-error500-2",
+      "url": "https://uiable.com/r/block-error500-2.json",
+      "previewUrl": "https://uiable.com/preview/block-error500-2"
     },
     {
       "name": "block-faq",
@@ -3917,6 +4965,103 @@
       "previewUrl": "https://uiable.com/preview/block-faq-4"
     },
     {
+      "name": "block-faq-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Faq 6",
+      "description": "Faq 6 variant for block.",
+      "categories": [
+        "faq"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/faq/faq-6/faq-6.tsx"
+      ],
+      "keywords": [
+        "faq",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-faq-6",
+      "url": "https://uiable.com/r/block-faq-6.json",
+      "previewUrl": "https://uiable.com/preview/block-faq-6"
+    },
+    {
+      "name": "block-faq-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Faq 8",
+      "description": "Faq 8 variant for block.",
+      "categories": [
+        "faq"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/accordion",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/faq/faq-8/faq-8.tsx"
+      ],
+      "keywords": [
+        "faq",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-faq-8",
+      "url": "https://uiable.com/r/block-faq-8.json",
+      "previewUrl": "https://uiable.com/preview/block-faq-8"
+    },
+    {
+      "name": "block-faq-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Faq 9",
+      "description": "Faq 9 variant for block.",
+      "categories": [
+        "faq"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/accordion",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/faq/faq-9/faq-9.tsx"
+      ],
+      "keywords": [
+        "faq",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-faq-9",
+      "url": "https://uiable.com/r/block-faq-9.json",
+      "previewUrl": "https://uiable.com/preview/block-faq-9"
+    },
+    {
+      "name": "block-faq-10",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Faq 10",
+      "description": "Faq 10 variant for block.",
+      "categories": [
+        "faq"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/accordion",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/faq/faq-10/faq-10.tsx"
+      ],
+      "keywords": [
+        "faq",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-faq-10",
+      "url": "https://uiable.com/r/block-faq-10.json",
+      "previewUrl": "https://uiable.com/preview/block-faq-10"
+    },
+    {
       "name": "block-feature",
       "kind": "block",
       "type": "registry:block",
@@ -3991,6 +5136,30 @@
       "previewUrl": "https://uiable.com/preview/block-feature-2"
     },
     {
+      "name": "block-feature-3",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 3",
+      "description": "Feature 3 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-3/feature-3.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-3",
+      "url": "https://uiable.com/r/block-feature-3.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-3"
+    },
+    {
       "name": "block-feature-4",
       "kind": "block",
       "type": "registry:block",
@@ -4011,6 +5180,255 @@
       "addCommand": "npx shadcn@latest add @uiable/block-feature-4",
       "url": "https://uiable.com/r/block-feature-4.json",
       "previewUrl": "https://uiable.com/preview/block-feature-4"
+    },
+    {
+      "name": "block-feature-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 6",
+      "description": "Feature 6 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-6/feature-6.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-6",
+      "url": "https://uiable.com/r/block-feature-6.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-6"
+    },
+    {
+      "name": "block-feature-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 8",
+      "description": "Feature 8 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-8/feature-8.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-8",
+      "url": "https://uiable.com/r/block-feature-8.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-8"
+    },
+    {
+      "name": "block-feature-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 9",
+      "description": "Feature 9 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-9/feature-9.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-9",
+      "url": "https://uiable.com/r/block-feature-9.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-9"
+    },
+    {
+      "name": "block-feature-18",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 18",
+      "description": "Feature 18 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "cn",
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/feature/feature-18/feature-18.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-18",
+      "url": "https://uiable.com/r/block-feature-18.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-18"
+    },
+    {
+      "name": "block-feature-24",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 24",
+      "description": "Feature 24 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-24/feature-24.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-24",
+      "url": "https://uiable.com/r/block-feature-24.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-24"
+    },
+    {
+      "name": "block-feature-27",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 27",
+      "description": "Feature 27 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge"
+      ],
+      "files": [
+        "@components/uiable/blocks/feature/feature-27/feature-27.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-27",
+      "url": "https://uiable.com/r/block-feature-27.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-27"
+    },
+    {
+      "name": "block-feature-30",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 30",
+      "description": "Feature 30 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/card"
+      ],
+      "files": [
+        "@components/uiable/blocks/feature/feature-30/feature-30.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-30",
+      "url": "https://uiable.com/r/block-feature-30.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-30"
+    },
+    {
+      "name": "block-feature-39",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 39",
+      "description": "Feature 39 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-39/feature-39.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-39",
+      "url": "https://uiable.com/r/block-feature-39.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-39"
+    },
+    {
+      "name": "block-feature-42",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 42",
+      "description": "Feature 42 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-42/feature-42.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-42",
+      "url": "https://uiable.com/r/block-feature-42.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-42"
+    },
+    {
+      "name": "block-feature-45",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 45",
+      "description": "Feature 45 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/feature/feature-45/feature-45.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-45",
+      "url": "https://uiable.com/r/block-feature-45.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-45"
     },
     {
       "name": "block-footer",
@@ -4041,6 +5459,31 @@
       "previewUrl": "https://uiable.com/preview/block-footer"
     },
     {
+      "name": "block-footer-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Footer 2",
+      "description": "Footer 2 variant for block.",
+      "categories": [
+        "footer"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/footer/footer-2/footer-2.tsx"
+      ],
+      "keywords": [
+        "footer",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-footer-2",
+      "url": "https://uiable.com/r/block-footer-2.json",
+      "previewUrl": "https://uiable.com/preview/block-footer-2"
+    },
+    {
       "name": "block-footer-3",
       "kind": "block",
       "type": "registry:block",
@@ -4049,7 +5492,9 @@
       "categories": [
         "footer"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
       "registryDependencies": [],
       "files": [
         "@components/uiable/blocks/footer/footer-3/footer-3.tsx"
@@ -4071,7 +5516,9 @@
       "categories": [
         "footer"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
       "registryDependencies": [],
       "files": [
         "@components/uiable/blocks/footer/footer-7/footer-7.tsx"
@@ -4083,6 +5530,34 @@
       "addCommand": "npx shadcn@latest add @uiable/block-footer-7",
       "url": "https://uiable.com/r/block-footer-7.json",
       "previewUrl": "https://uiable.com/preview/block-footer-7"
+    },
+    {
+      "name": "block-footer-10",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Footer 10",
+      "description": "Footer 10 variant for block.",
+      "categories": [
+        "footer"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/footer/footer-10/footer-10.tsx"
+      ],
+      "keywords": [
+        "footer",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-footer-10",
+      "url": "https://uiable.com/r/block-footer-10.json",
+      "previewUrl": "https://uiable.com/preview/block-footer-10"
     },
     {
       "name": "block-footer-11",
@@ -4108,6 +5583,76 @@
       "addCommand": "npx shadcn@latest add @uiable/block-footer-11",
       "url": "https://uiable.com/r/block-footer-11.json",
       "previewUrl": "https://uiable.com/preview/block-footer-11"
+    },
+    {
+      "name": "block-footer-19",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Footer 19",
+      "description": "Footer 19 variant for block.",
+      "categories": [
+        "footer"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/footer/footer-19/footer-19.tsx"
+      ],
+      "keywords": [
+        "footer",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-footer-19",
+      "url": "https://uiable.com/r/block-footer-19.json",
+      "previewUrl": "https://uiable.com/preview/block-footer-19"
+    },
+    {
+      "name": "block-footer-20",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Footer 20",
+      "description": "Footer 20 variant for block.",
+      "categories": [
+        "footer"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "next"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/footer/footer-20/footer-20.tsx"
+      ],
+      "keywords": [
+        "footer",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-footer-20",
+      "url": "https://uiable.com/r/block-footer-20.json",
+      "previewUrl": "https://uiable.com/preview/block-footer-20"
+    },
+    {
+      "name": "block-gallery-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Gallery 1",
+      "description": "Gallery 1 variant for block.",
+      "categories": [
+        "gallery"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/gallery/gallery-1/gallery-1.tsx"
+      ],
+      "keywords": [
+        "gallery",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-gallery-1",
+      "url": "https://uiable.com/r/block-gallery-1.json",
+      "previewUrl": "https://uiable.com/preview/block-gallery-1"
     },
     {
       "name": "block-gallery-2",
@@ -4189,6 +5734,7 @@
         "gallery"
       ],
       "dependencies": [
+        "cn",
         "embla-carousel-autoplay",
         "lucide-react"
       ],
@@ -4206,6 +5752,38 @@
       "addCommand": "npx shadcn@latest add @uiable/block-gallery-10",
       "url": "https://uiable.com/r/block-gallery-10.json",
       "previewUrl": "https://uiable.com/preview/block-gallery-10"
+    },
+    {
+      "name": "block-gallery-11",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Gallery 11",
+      "description": "Gallery 11 variant for block.",
+      "categories": [
+        "gallery"
+      ],
+      "dependencies": [
+        "cn",
+        "framer-motion",
+        "lucide-react",
+        "next"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/gallery/gallery-11/gallery-11.tsx"
+      ],
+      "keywords": [
+        "gallery",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-gallery-11",
+      "url": "https://uiable.com/r/block-gallery-11.json",
+      "previewUrl": "https://uiable.com/preview/block-gallery-11"
     },
     {
       "name": "block-hero",
@@ -4292,6 +5870,60 @@
       "previewUrl": "https://uiable.com/preview/block-hero-3"
     },
     {
+      "name": "block-hero-4",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 4",
+      "description": "Hero 4 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/hero/hero-4/hero-4.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-4",
+      "url": "https://uiable.com/r/block-hero-4.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-4"
+    },
+    {
+      "name": "block-hero-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 5",
+      "description": "Hero 5 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "embla-carousel-autoplay",
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/carousel"
+      ],
+      "files": [
+        "@components/uiable/blocks/hero/hero-5/hero-5.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-5",
+      "url": "https://uiable.com/r/block-hero-5.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-5"
+    },
+    {
       "name": "block-hero-6",
       "kind": "block",
       "type": "registry:block",
@@ -4316,6 +5948,151 @@
       "addCommand": "npx shadcn@latest add @uiable/block-hero-6",
       "url": "https://uiable.com/r/block-hero-6.json",
       "previewUrl": "https://uiable.com/preview/block-hero-6"
+    },
+    {
+      "name": "block-hero-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 8",
+      "description": "Hero 8 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "date-fns",
+        "embla-carousel-autoplay",
+        "framer-motion",
+        "lucide-react",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/calendar",
+        "@uiable/carousel",
+        "@uiable/field",
+        "@uiable/input",
+        "@uiable/popover",
+        "@uiable/select"
+      ],
+      "files": [
+        "@components/uiable/blocks/hero/hero-8/hero-8.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-8",
+      "url": "https://uiable.com/r/block-hero-8.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-8"
+    },
+    {
+      "name": "block-hero-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 9",
+      "description": "Hero 9 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/hero/hero-9/hero-9.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-9",
+      "url": "https://uiable.com/r/block-hero-9.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-9"
+    },
+    {
+      "name": "block-hero-15",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 15",
+      "description": "Hero 15 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/hero/hero-15/hero-15.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-15",
+      "url": "https://uiable.com/r/block-hero-15.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-15"
+    },
+    {
+      "name": "block-hero-22",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 22",
+      "description": "Hero 22 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "next"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/hero/hero-22/hero-22.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-22",
+      "url": "https://uiable.com/r/block-hero-22.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-22"
+    },
+    {
+      "name": "block-join-waitlist-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Join Waitlist 1",
+      "description": "Join Waitlist 1 variant for block.",
+      "categories": [
+        "join-waitlist"
+      ],
+      "dependencies": [
+        "@tabler/icons-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/join-waitlist/join-waitlist-1/join-waitlist-1.tsx"
+      ],
+      "keywords": [
+        "join",
+        "waitlist",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-join-waitlist-1",
+      "url": "https://uiable.com/r/block-join-waitlist-1.json",
+      "previewUrl": "https://uiable.com/preview/block-join-waitlist-1"
     },
     {
       "name": "block-list",
@@ -4344,6 +6121,65 @@
       "addCommand": "npx shadcn@latest add @uiable/block-list",
       "url": "https://uiable.com/r/block-list.json",
       "previewUrl": "https://uiable.com/preview/block-list"
+    },
+    {
+      "name": "block-login-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Login 1",
+      "description": "Login 1 variant for block.",
+      "categories": [
+        "login"
+      ],
+      "dependencies": [
+        "next"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/checkbox",
+        "@uiable/input",
+        "@uiable/logo"
+      ],
+      "files": [
+        "@components/uiable/blocks/login/login-1/login-1.tsx"
+      ],
+      "keywords": [
+        "login",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-login-1",
+      "url": "https://uiable.com/r/block-login-1.json",
+      "previewUrl": "https://uiable.com/preview/block-login-1"
+    },
+    {
+      "name": "block-login-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Login 2",
+      "description": "Login 2 variant for block.",
+      "categories": [
+        "login"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/checkbox",
+        "@uiable/field",
+        "@uiable/input",
+        "@uiable/logo",
+        "@uiable/separator"
+      ],
+      "files": [
+        "@components/uiable/blocks/login/login-2/login-2.tsx"
+      ],
+      "keywords": [
+        "login",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-login-2",
+      "url": "https://uiable.com/r/block-login-2.json",
+      "previewUrl": "https://uiable.com/preview/block-login-2"
     },
     {
       "name": "block-navbar",
@@ -4375,6 +6211,91 @@
       "addCommand": "npx shadcn@latest add @uiable/block-navbar",
       "url": "https://uiable.com/r/block-navbar.json",
       "previewUrl": "https://uiable.com/preview/block-navbar"
+    },
+    {
+      "name": "block-navbar-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Navbar 2",
+      "description": "Navbar 2 variant for block.",
+      "categories": [
+        "navbar"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/notification-dropdown",
+        "@uiable/search-bar",
+        "@uiable/sidebar",
+        "@uiable/user-profile"
+      ],
+      "files": [
+        "@components/uiable/blocks/navbar/navbar-2/navbar-2.tsx"
+      ],
+      "keywords": [
+        "navbar",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-navbar-2",
+      "url": "https://uiable.com/r/block-navbar-2.json",
+      "previewUrl": "https://uiable.com/preview/block-navbar-2"
+    },
+    {
+      "name": "block-navbar-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Navbar 6",
+      "description": "Navbar 6 variant for block.",
+      "categories": [
+        "navbar"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/logo",
+        "@uiable/mobile-nav",
+        "@uiable/sheet"
+      ],
+      "files": [
+        "@components/uiable/blocks/navbar/navbar-6/navbar-6.tsx"
+      ],
+      "keywords": [
+        "navbar",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-navbar-6",
+      "url": "https://uiable.com/r/block-navbar-6.json",
+      "previewUrl": "https://uiable.com/preview/block-navbar-6"
+    },
+    {
+      "name": "block-portfolio-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Portfolio 2",
+      "description": "Portfolio 2 variant for block.",
+      "categories": [
+        "portfolio"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/portfolio/portfolio-2/portfolio-2.tsx"
+      ],
+      "keywords": [
+        "portfolio",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-portfolio-2",
+      "url": "https://uiable.com/r/block-portfolio-2.json",
+      "previewUrl": "https://uiable.com/preview/block-portfolio-2"
     },
     {
       "name": "block-portfolio-3",
@@ -4450,6 +6371,78 @@
       "addCommand": "npx shadcn@latest add @uiable/block-portfolio-5",
       "url": "https://uiable.com/r/block-portfolio-5.json",
       "previewUrl": "https://uiable.com/preview/block-portfolio-5"
+    },
+    {
+      "name": "block-portfolio-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Portfolio 8",
+      "description": "Portfolio 8 variant for block.",
+      "categories": [
+        "portfolio"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/carousel"
+      ],
+      "files": [
+        "@components/uiable/blocks/portfolio/portfolio-8/portfolio-8.tsx"
+      ],
+      "keywords": [
+        "portfolio",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-portfolio-8",
+      "url": "https://uiable.com/r/block-portfolio-8.json",
+      "previewUrl": "https://uiable.com/preview/block-portfolio-8"
+    },
+    {
+      "name": "block-portfolio-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Portfolio 9",
+      "description": "Portfolio 9 variant for block.",
+      "categories": [
+        "portfolio"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/portfolio/portfolio-9/portfolio-9.tsx"
+      ],
+      "keywords": [
+        "portfolio",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-portfolio-9",
+      "url": "https://uiable.com/r/block-portfolio-9.json",
+      "previewUrl": "https://uiable.com/preview/block-portfolio-9"
+    },
+    {
+      "name": "block-portfolio-10",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Portfolio 10",
+      "description": "Portfolio 10 variant for block.",
+      "categories": [
+        "portfolio"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/portfolio/portfolio-10/portfolio-10.tsx"
+      ],
+      "keywords": [
+        "portfolio",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-portfolio-10",
+      "url": "https://uiable.com/r/block-portfolio-10.json",
+      "previewUrl": "https://uiable.com/preview/block-portfolio-10"
     },
     {
       "name": "block-pricing-2",
@@ -4528,6 +6521,117 @@
       "addCommand": "npx shadcn@latest add @uiable/block-pricing-9",
       "url": "https://uiable.com/r/block-pricing-9.json",
       "previewUrl": "https://uiable.com/preview/block-pricing-9"
+    },
+    {
+      "name": "block-pricing-10",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Pricing 10",
+      "description": "Pricing 10 variant for block.",
+      "categories": [
+        "pricing"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/pricing/pricing-10/pricing-10.tsx"
+      ],
+      "keywords": [
+        "pricing",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-pricing-10",
+      "url": "https://uiable.com/r/block-pricing-10.json",
+      "previewUrl": "https://uiable.com/preview/block-pricing-10"
+    },
+    {
+      "name": "block-pricing-12",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Pricing 12",
+      "description": "Pricing 12 variant for block.",
+      "categories": [
+        "pricing"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/separator",
+        "@uiable/tabs"
+      ],
+      "files": [
+        "@components/uiable/blocks/pricing/pricing-12/pricing-12.tsx"
+      ],
+      "keywords": [
+        "pricing",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-pricing-12",
+      "url": "https://uiable.com/r/block-pricing-12.json",
+      "previewUrl": "https://uiable.com/preview/block-pricing-12"
+    },
+    {
+      "name": "block-pricing-18",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Pricing 18",
+      "description": "Pricing 18 variant for block.",
+      "categories": [
+        "pricing"
+      ],
+      "dependencies": [
+        "cn",
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/pricing/pricing-18/pricing-18.tsx"
+      ],
+      "keywords": [
+        "pricing",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-pricing-18",
+      "url": "https://uiable.com/r/block-pricing-18.json",
+      "previewUrl": "https://uiable.com/preview/block-pricing-18"
+    },
+    {
+      "name": "block-pricing-19",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Pricing 19",
+      "description": "Pricing 19 variant for block.",
+      "categories": [
+        "pricing"
+      ],
+      "dependencies": [
+        "cn",
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/pricing/pricing-19/pricing-19.tsx"
+      ],
+      "keywords": [
+        "pricing",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-pricing-19",
+      "url": "https://uiable.com/r/block-pricing-19.json",
+      "previewUrl": "https://uiable.com/preview/block-pricing-19"
     },
     {
       "name": "block-process-1",
@@ -4626,6 +6730,82 @@
       "previewUrl": "https://uiable.com/preview/block-process-6"
     },
     {
+      "name": "block-process-7",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Process 7",
+      "description": "Process 7 variant for block.",
+      "categories": [
+        "process"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/process/process-7/process-7.tsx"
+      ],
+      "keywords": [
+        "process",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-process-7",
+      "url": "https://uiable.com/r/block-process-7.json",
+      "previewUrl": "https://uiable.com/preview/block-process-7"
+    },
+    {
+      "name": "block-process-9",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Process 9",
+      "description": "Process 9 variant for block.",
+      "categories": [
+        "process"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/process/process-9/process-9.tsx"
+      ],
+      "keywords": [
+        "process",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-process-9",
+      "url": "https://uiable.com/r/block-process-9.json",
+      "previewUrl": "https://uiable.com/preview/block-process-9"
+    },
+    {
+      "name": "block-reset-password-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Reset Password 1",
+      "description": "Reset Password 1 variant for block.",
+      "categories": [
+        "reset-password"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/field",
+        "@uiable/input"
+      ],
+      "files": [
+        "@components/uiable/blocks/reset-password/reset-password-1/reset-password-1.tsx"
+      ],
+      "keywords": [
+        "reset",
+        "password",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-reset-password-1",
+      "url": "https://uiable.com/r/block-reset-password-1.json",
+      "previewUrl": "https://uiable.com/preview/block-reset-password-1"
+    },
+    {
       "name": "block-sidebar",
       "kind": "component",
       "type": "registry:ui",
@@ -4678,6 +6858,31 @@
       "previewUrl": "https://uiable.com/preview/block-small-hero-5"
     },
     {
+      "name": "block-small-hero-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Small Hero 6",
+      "description": "Small Hero 6 variant for block.",
+      "categories": [
+        "small-hero"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/small-hero/small-hero-6/small-hero-6.tsx"
+      ],
+      "keywords": [
+        "small",
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-small-hero-6",
+      "url": "https://uiable.com/r/block-small-hero-6.json",
+      "previewUrl": "https://uiable.com/preview/block-small-hero-6"
+    },
+    {
       "name": "block-statistics-1",
       "kind": "block",
       "type": "registry:block",
@@ -4687,6 +6892,7 @@
         "statistics"
       ],
       "dependencies": [
+        "framer-motion",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -4729,6 +6935,32 @@
       "previewUrl": "https://uiable.com/preview/block-statistics-2"
     },
     {
+      "name": "block-statistics-4",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Statistics 4",
+      "description": "Statistics 4 variant for block.",
+      "categories": [
+        "statistics"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/statistics/statistics-4/statistics-4.tsx"
+      ],
+      "keywords": [
+        "statistics",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-statistics-4",
+      "url": "https://uiable.com/r/block-statistics-4.json",
+      "previewUrl": "https://uiable.com/preview/block-statistics-4"
+    },
+    {
       "name": "block-statistics-5",
       "kind": "block",
       "type": "registry:block",
@@ -4753,6 +6985,30 @@
       "addCommand": "npx shadcn@latest add @uiable/block-statistics-5",
       "url": "https://uiable.com/r/block-statistics-5.json",
       "previewUrl": "https://uiable.com/preview/block-statistics-5"
+    },
+    {
+      "name": "block-statistics-11",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Statistics 11",
+      "description": "Statistics 11 variant for block.",
+      "categories": [
+        "statistics"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/statistics/statistics-11/statistics-11.tsx"
+      ],
+      "keywords": [
+        "statistics",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-statistics-11",
+      "url": "https://uiable.com/r/block-statistics-11.json",
+      "previewUrl": "https://uiable.com/preview/block-statistics-11"
     },
     {
       "name": "block-team-1",
@@ -4787,7 +7043,9 @@
       "categories": [
         "team"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "cn"
+      ],
       "registryDependencies": [
         "@uiable/avatar",
         "@uiable/carousel"
@@ -4826,6 +7084,30 @@
       "previewUrl": "https://uiable.com/preview/block-team-4"
     },
     {
+      "name": "block-team-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Team 6",
+      "description": "Team 6 variant for block.",
+      "categories": [
+        "team"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/avatar"
+      ],
+      "files": [
+        "@components/uiable/blocks/team/team-6/team-6.tsx"
+      ],
+      "keywords": [
+        "team",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-team-6",
+      "url": "https://uiable.com/r/block-team-6.json",
+      "previewUrl": "https://uiable.com/preview/block-team-6"
+    },
+    {
       "name": "block-team-7",
       "kind": "block",
       "type": "registry:block",
@@ -4857,6 +7139,7 @@
         "testimonial"
       ],
       "dependencies": [
+        "framer-motion",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -4902,6 +7185,59 @@
       "previewUrl": "https://uiable.com/preview/block-testimonial-5"
     },
     {
+      "name": "block-testimonial-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 6",
+      "description": "Testimonial 6 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-6/testimonial-6.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-6",
+      "url": "https://uiable.com/r/block-testimonial-6.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-6"
+    },
+    {
+      "name": "block-testimonial-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 8",
+      "description": "Testimonial 8 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-8/testimonial-8.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-8",
+      "url": "https://uiable.com/r/block-testimonial-8.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-8"
+    },
+    {
       "name": "block-testimonial-9",
       "kind": "block",
       "type": "registry:block",
@@ -4926,6 +7262,408 @@
       "addCommand": "npx shadcn@latest add @uiable/block-testimonial-9",
       "url": "https://uiable.com/r/block-testimonial-9.json",
       "previewUrl": "https://uiable.com/preview/block-testimonial-9"
+    },
+    {
+      "name": "block-testimonial-16",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 16",
+      "description": "Testimonial 16 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-16/testimonial-16.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-16",
+      "url": "https://uiable.com/r/block-testimonial-16.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-16"
+    },
+    {
+      "name": "block-testimonial-17",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 17",
+      "description": "Testimonial 17 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-17/testimonial-17.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-17",
+      "url": "https://uiable.com/r/block-testimonial-17.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-17"
+    },
+    {
+      "name": "block-testimonial-18",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 18",
+      "description": "Testimonial 18 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "ogl"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-18/testimonial-18.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-18",
+      "url": "https://uiable.com/r/block-testimonial-18.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-18"
+    },
+    {
+      "name": "block-testimonial-20",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 20",
+      "description": "Testimonial 20 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-20/testimonial-20.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-20",
+      "url": "https://uiable.com/r/block-testimonial-20.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-20"
+    },
+    {
+      "name": "block-testimonial-21",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 21",
+      "description": "Testimonial 21 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/PortfolioSpotlightCard",
+        "@uiable/badge"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-21/testimonial-21.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-21",
+      "url": "https://uiable.com/r/block-testimonial-21.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-21"
+    },
+    {
+      "name": "block-testimonial-22",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 22",
+      "description": "Testimonial 22 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-22/testimonial-22.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-22",
+      "url": "https://uiable.com/r/block-testimonial-22.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-22"
+    },
+    {
+      "name": "block-testimonial-24",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 24",
+      "description": "Testimonial 24 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/card"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-24/testimonial-24.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-24",
+      "url": "https://uiable.com/r/block-testimonial-24.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-24"
+    },
+    {
+      "name": "block-testimonial-25",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Testimonial 25",
+      "description": "Testimonial 25 variant for block.",
+      "categories": [
+        "testimonial"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/avatar",
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/testimonial/testimonial-25/testimonial-25.tsx"
+      ],
+      "keywords": [
+        "testimonial",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-testimonial-25",
+      "url": "https://uiable.com/r/block-testimonial-25.json",
+      "previewUrl": "https://uiable.com/preview/block-testimonial-25"
+    },
+    {
+      "name": "block-under-construction-1",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Under Construction 1",
+      "description": "Under Construction 1 variant for block.",
+      "categories": [
+        "under-construction"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/under-construction/under-construction-1/under-construction-1.tsx"
+      ],
+      "keywords": [
+        "under",
+        "construction",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-under-construction-1",
+      "url": "https://uiable.com/r/block-under-construction-1.json",
+      "previewUrl": "https://uiable.com/preview/block-under-construction-1"
+    },
+    {
+      "name": "block-under-construction-2",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Under Construction 2",
+      "description": "Under Construction 2 variant for block.",
+      "categories": [
+        "under-construction"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/under-construction/under-construction-2/under-construction-2.tsx"
+      ],
+      "keywords": [
+        "under",
+        "construction",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-under-construction-2",
+      "url": "https://uiable.com/r/block-under-construction-2.json",
+      "previewUrl": "https://uiable.com/preview/block-under-construction-2"
+    },
+    {
+      "name": "block-widgets-11",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Widgets 11",
+      "description": "Widgets 11 variant for block.",
+      "categories": [
+        "widgets"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@uiable/card"
+      ],
+      "files": [
+        "@components/uiable/blocks/widgets/widgets-11/widgets-11.tsx"
+      ],
+      "keywords": [
+        "widgets",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-widgets-11",
+      "url": "https://uiable.com/r/block-widgets-11.json",
+      "previewUrl": "https://uiable.com/preview/block-widgets-11"
+    },
+    {
+      "name": "block-widgets-17",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Widgets 17",
+      "description": "Widgets 17 variant for block.",
+      "categories": [
+        "widgets"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/progress"
+      ],
+      "files": [
+        "@components/uiable/blocks/widgets/widgets-17/widgets-17.tsx"
+      ],
+      "keywords": [
+        "widgets",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-widgets-17",
+      "url": "https://uiable.com/r/block-widgets-17.json",
+      "previewUrl": "https://uiable.com/preview/block-widgets-17"
+    },
+    {
+      "name": "block-widgets-18",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Widgets 18",
+      "description": "Widgets 18 variant for block.",
+      "categories": [
+        "widgets"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge",
+        "@uiable/button",
+        "@uiable/card"
+      ],
+      "files": [
+        "@components/uiable/blocks/widgets/widgets-18/widgets-18.tsx"
+      ],
+      "keywords": [
+        "widgets",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-widgets-18",
+      "url": "https://uiable.com/r/block-widgets-18.json",
+      "previewUrl": "https://uiable.com/preview/block-widgets-18"
+    },
+    {
+      "name": "block-widgets-19",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Widgets 19",
+      "description": "Widgets 19 variant for block.",
+      "categories": [
+        "widgets"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@uiable/card",
+        "@uiable/chart"
+      ],
+      "files": [
+        "@components/uiable/blocks/widgets/widgets-19/widgets-19.tsx"
+      ],
+      "keywords": [
+        "widgets",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-widgets-19",
+      "url": "https://uiable.com/r/block-widgets-19.json",
+      "previewUrl": "https://uiable.com/preview/block-widgets-19"
+    },
+    {
+      "name": "block-widgets-22",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Widgets 22",
+      "description": "Widgets 22 variant for block.",
+      "categories": [
+        "widgets"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button",
+        "@uiable/card",
+        "@uiable/tabs"
+      ],
+      "files": [
+        "@components/uiable/blocks/widgets/widgets-22/widgets-22.tsx"
+      ],
+      "keywords": [
+        "widgets",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-widgets-22",
+      "url": "https://uiable.com/r/block-widgets-22.json",
+      "previewUrl": "https://uiable.com/preview/block-widgets-22"
     },
     {
       "name": "breadcrumb",
@@ -5502,7 +8240,8 @@
       ],
       "dependencies": [
         "@base-ui/react",
-        "class-variance-authority"
+        "class-variance-authority",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -5526,6 +8265,7 @@
         "button"
       ],
       "dependencies": [
+        "cn",
         "framer-motion",
         "lucide-react"
       ],
@@ -7218,6 +9958,7 @@
         "calendar"
       ],
       "dependencies": [
+        "cn",
         "lucide-react",
         "react-day-picker"
       ],
@@ -7554,7 +10295,9 @@
       "categories": [
         "card"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "cn"
+      ],
       "registryDependencies": [],
       "files": [
         "@components/ui/card.tsx"
@@ -8176,6 +10919,7 @@
         "carousel"
       ],
       "dependencies": [
+        "cn",
         "embla-carousel-react",
         "lucide-react"
       ],
@@ -8442,6 +11186,7 @@
         "chart"
       ],
       "dependencies": [
+        "cn",
         "recharts"
       ],
       "registryDependencies": [],
@@ -8737,6 +11482,7 @@
       ],
       "dependencies": [
         "@base-ui/react",
+        "cn",
         "lucide-react"
       ],
       "registryDependencies": [],
@@ -10666,6 +13412,7 @@
       ],
       "dependencies": [
         "@base-ui/react",
+        "cn",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -11183,6 +13930,7 @@
       ],
       "dependencies": [
         "@base-ui/react",
+        "cn",
         "lucide-react"
       ],
       "registryDependencies": [],
@@ -12108,7 +14856,8 @@
         "field"
       ],
       "dependencies": [
-        "class-variance-authority"
+        "class-variance-authority",
+        "cn"
       ],
       "registryDependencies": [
         "@uiable/label",
@@ -12659,7 +15408,8 @@
         "input"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -14119,7 +16869,8 @@
       ],
       "dependencies": [
         "@base-ui/react",
-        "class-variance-authority"
+        "class-variance-authority",
+        "cn"
       ],
       "registryDependencies": [
         "@uiable/separator"
@@ -14713,7 +17464,9 @@
       "categories": [
         "label"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "cn"
+      ],
       "registryDependencies": [],
       "files": [
         "@components/ui/label.tsx"
@@ -16589,7 +19342,8 @@
         "popover"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -16755,7 +19509,8 @@
         "progress"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -17790,7 +20545,8 @@
         "scroll-area"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -17996,6 +20752,7 @@
       ],
       "dependencies": [
         "@base-ui/react",
+        "cn",
         "lucide-react"
       ],
       "registryDependencies": [],
@@ -18259,7 +21016,8 @@
         "separator"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -18412,6 +21170,7 @@
       ],
       "dependencies": [
         "@base-ui/react",
+        "cn",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -18553,7 +21312,8 @@
       "dependencies": [
         "@base-ui/react",
         "class-variance-authority",
-        "iconsax-reactjs"
+        "cn",
+        "lucide-react"
       ],
       "registryDependencies": [
         "@uiable/button",
@@ -19008,7 +21768,9 @@
       "categories": [
         "skeleton"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "cn"
+      ],
       "registryDependencies": [],
       "files": [
         "@components/ui/skeleton.tsx"
@@ -20322,7 +23084,8 @@
         "switch"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -20746,7 +23509,8 @@
       ],
       "dependencies": [
         "@base-ui/react",
-        "class-variance-authority"
+        "class-variance-authority",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -21003,7 +23767,9 @@
       "categories": [
         "textarea"
       ],
-      "dependencies": [],
+      "dependencies": [
+        "cn"
+      ],
       "registryDependencies": [],
       "files": [
         "@components/ui/textarea.tsx"
@@ -21642,7 +24408,8 @@
         "tooltip"
       ],
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "cn"
       ],
       "registryDependencies": [],
       "files": [
@@ -22386,6 +25153,7 @@
         "layout"
       ],
       "dependencies": [
+        "cn",
         "iconsax-reactjs"
       ],
       "registryDependencies": [

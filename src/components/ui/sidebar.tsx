@@ -1,9 +1,9 @@
 "use client"
 
 import {
-  CSSProperties,
   ComponentProps,
   createContext,
+  CSSProperties,
   useCallback,
   useContext,
   useEffect,
@@ -33,12 +33,20 @@ import {
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
-import { HamburgerMenu } from "iconsax-reactjs"
+import { cn } from "cn"
 
 // project-imports
 import { useIsMobile } from "@/hooks/use-mobile"
-import { cn } from "@/lib/utils"
 
+// assets
+import {
+  PanelLeftClose,
+  PanelLeftOpen,
+  PanelRightClose,
+  PanelRightOpen,
+} from "lucide-react"
+
+// types
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
 const SIDEBAR_WIDTH = "17.5rem"
@@ -268,9 +276,13 @@ function Sidebar({
 function SidebarTrigger({
   className,
   onClick,
+  reverseIcon = false,
   ...props
-}: ComponentProps<typeof Button>) {
-  const { toggleSidebar } = useSidebar()
+}: ComponentProps<typeof Button> & { reverseIcon?: boolean }) {
+  const { toggleSidebar, state } = useSidebar()
+
+  const CloseIcon = reverseIcon ? PanelLeftClose : PanelRightClose
+  const OpenIcon = reverseIcon ? PanelLeftOpen : PanelRightOpen
 
   return (
     <Button
@@ -285,7 +297,11 @@ function SidebarTrigger({
       }}
       {...props}
     >
-      <HamburgerMenu className="size-6" />
+      {state === "expanded" ? (
+        <CloseIcon className="size-6" />
+      ) : (
+        <OpenIcon className="size-6" />
+      )}
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )
@@ -483,7 +499,7 @@ function SidebarMenuItem({ className, ...props }: ComponentProps<"li">) {
 }
 
 const sidebarMenuButtonVariants = cva(
-  "peer/menu-button group/menu-button flex w-full items-center gap-3 overflow-hidden rounded-lg p-2 text-start text-sm font-medium text-sidebar-foreground ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pe-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground [&_svg]:size-4 [&_svg]:shrink-0 [&>span:last-child]:truncate",
+  "peer/menu-button group/menu-button flex h-7 w-full items-center gap-3 overflow-hidden rounded-lg p-2 text-start text-sm font-medium text-sidebar-foreground ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pe-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground [&_svg]:size-4 [&_svg]:shrink-0 [&>span:last-child]:truncate",
   {
     variants: {
       variant: {

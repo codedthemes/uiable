@@ -8,6 +8,7 @@ import {
   type PropsWithChildren,
 } from "react"
 
+// types
 interface Position {
   x: number
   y: number

@@ -2,9 +2,7 @@
 
 // third-party
 import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
 import { CheckIcon } from "lucide-react"

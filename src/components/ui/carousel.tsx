@@ -2,8 +2,8 @@
 
 import {
   ComponentProps,
-  KeyboardEvent,
   createContext,
+  KeyboardEvent,
   useCallback,
   useContext,
   useEffect,
@@ -14,16 +14,15 @@ import {
 import { Button } from "@/components/ui/button"
 
 // third-party
+import { cn } from "cn"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
 
-// project-imports
-import { cn } from "@/lib/utils"
-
 // assets
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 
+// types
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]

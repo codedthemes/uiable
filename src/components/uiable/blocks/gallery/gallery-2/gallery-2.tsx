@@ -1,4 +1,3 @@
-// constants
 const Gallery = [
   {
     title: "Traditional Wedding Ceremony",

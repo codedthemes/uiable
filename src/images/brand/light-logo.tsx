@@ -1,5 +1,3 @@
-//  ------------------------------ | LIGHT LOGO | ------------------------------  //
-
 export default function LightLogo() {
   return (
     <svg

@@ -1,22 +1,20 @@
 "use client"
 
 import {
-  CSSProperties,
   ComponentProps,
   ComponentType,
-  ReactNode,
   createContext,
+  CSSProperties,
+  ReactNode,
   useContext,
   useId,
   useMemo,
 } from "react"
 
 // third-party
+import { cn } from "cn"
 import * as RechartsPrimitive from "recharts"
 import type { TooltipValueType } from "recharts"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" } as const

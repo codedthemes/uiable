@@ -2109,7 +2109,7 @@
         }
       ],
       "categories": ["button"],
-      "dependencies": ["framer-motion", "lucide-react"],
+      "dependencies": ["cn", "framer-motion", "lucide-react"],
       "badge": {
         "label": "New"
       }
@@ -10884,7 +10884,7 @@
       ],
       "categories": ["layout"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/card", "@uiable/dropdown-menu", "@uiable/scroll-area", "@uiable/switch"],
-      "dependencies": ["iconsax-reactjs"]
+      "dependencies": ["cn", "iconsax-reactjs"]
     },
     {
       "name": "welcome-banner",

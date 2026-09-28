@@ -1,4 +1,3 @@
-// Curve Icons
 function CurveIcon() {
   return (
     <svg

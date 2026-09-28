@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-under-construction-2",
+  "title": "Under Construction 2",
+  "description": "Under Construction 2 variant for block.",
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/under-construction/under-construction-2/under-construction-2.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | UNDER CONSTRUCTION 2 | ------------------------------  //\n\nexport default function UnderConstruction2() {\n  return (\n    <section className=\"flex min-h-screen flex-col items-center justify-center gap-6 px-4 py-16 text-center\">\n      <div className=\"flex justify-center\">\n        <img\n          src=\"https://cdn.uiable.com/block/img-construction-2.svg\"\n          alt=\"Under Construction Illustration\"\n          className=\"h-auto max-h-[380px] w-full max-w-[374px] object-contain select-none\"\n        />\n      </div>\n\n      <div className=\"flex max-w-md flex-col items-center gap-3\">\n        <h1 className=\"text-3xl font-bold tracking-tight text-foreground sm:text-4xl\">\n          Under Construction\n        </h1>\n        <p className=\"text-base text-muted-foreground\">\n          Hey! Please check out this site later. We are doing some maintenance\n          on it right now.\n        </p>\n      </div>\n\n      <div>\n        <Button>Back To Home</Button>\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/under-construction/under-construction-2/under-construction-2.tsx"
+    }
+  ],
+  "categories": ["under-construction"],
+  "type": "registry:block"
+}

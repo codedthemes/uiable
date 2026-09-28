@@ -1,4 +1,9 @@
-// constants
+"use client"
+
+// third-party
+import { motion, type Variants } from "framer-motion"
+
+// types
 const footerColumns = [
   {
     title: "About Us",
@@ -116,6 +121,29 @@ const socialIcons = [
     ),
   },
 ]
+// Variants
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+}
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  },
+}
 
 //  ------------------------------ | FOOTER - 7 | ------------------------------  //
 export default function Footer7() {
@@ -124,64 +152,76 @@ export default function Footer7() {
       <div className="absolute inset-0 z-10 bg-linear-to-r from-cyan-500 to-blue-500"></div>
       <div className="absolute inset-0 z-20 bg-card/85"></div>
       <div className="relative z-30 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto w-330 max-w-full rounded-lg bg-card p-5 shadow-[0_0_40px_-8px_#4680ff38] sm:p-14">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={containerVariants}
+          className="mx-auto w-330 max-w-full rounded-lg bg-card p-5 shadow-[0_0_40px_-8px_#4680ff38] sm:p-14"
+        >
           <div className="flex flex-col items-center gap-8 text-center sm:gap-12">
-            <div className="flex flex-row items-center gap-3">
-              <svg
-                className="size-8 fill-sky-500"
-                viewBox="0 0 256 256"
-                id="Flat"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.1">
-                  <path d="M73.87573,111.39355l-.009-.03369L42.51636,148.98047a7.99958,7.99958,0,0,0-1.66358,6.85693l12.3628,55.63281a8,8,0,0,0,12.80713,4.51172L96,192C78.36523,161.44922,72.74268,134.47656,73.87573,111.39355Z" />
-                </g>
-                <g opacity="0.1">
-                  <path d="M181.52239,110.6714l.009-.03369,31.35034,37.6206a7.99958,7.99958,0,0,1,1.66358,6.85693l-12.3628,55.63282a8,8,0,0,1-12.80712,4.51172l-29.9773-23.98194C177.03289,160.72706,182.65544,133.75441,181.52239,110.6714Z" />
-                </g>
-                <g>
-                  <path d="M144,216H112a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16Z" />
-                  <circle cx="128" cy="96" r="12" />
-                  <path d="M219.62891,143.85889l-30.23658-36.28418a124.52267,124.52267,0,0,0-7.98022-34.8833c-11.61719-30.21192-32.15625-49.999-43.36523-59.10547a16.07708,16.07708,0,0,0-20.07813-.0669C106.61328,22.61621,85.81055,42.38867,74.07617,72.605A122.76188,122.76188,0,0,0,65.979,108.32861L36.37109,143.85889A16.10066,16.10066,0,0,0,33.043,157.57275l12.36328,55.63282a15.98523,15.98523,0,0,0,25.61328,9.023L98.80566,200h58.38868l27.78515,22.22852a15.91184,15.91184,0,0,0,9.96485,3.51709,16.0905,16.0905,0,0,0,5.34668-.91944,15.90581,15.90581,0,0,0,10.30273-11.62012L222.957,157.57373A16.102,16.102,0,0,0,219.62891,143.85889ZM127.9668,26.01074C198.25391,83.126,169.43359,157.01074,155.25,184H100.67871C52.6709,96.27734,109.22559,41.02637,127.9668,26.01074ZM61.02539,209.73486l-12.36328-55.6333,17.92651-21.5122q3.40906,28.0371,19.14038,57.38281Zm133.94922,0-24.74976-19.7998q15.53064-29.55175,18.74341-57.87695l18.36963,22.04345Z" />
-                </g>
-              </svg>
-              <span className="text-lg font-medium text-slate-900 sm:text-xl dark:text-slate-100">
-                SaaSify
-              </span>
-            </div>
-            <div className="">
-              {footerColumns.map((col) => (
-                <ul
-                  key={col.title}
-                  className="flex flex-wrap items-center justify-center gap-1.5"
+            <motion.div variants={itemVariants}>
+              <div className="flex flex-row items-center gap-3">
+                <svg
+                  className="size-8 fill-sky-500"
+                  viewBox="0 0 256 256"
+                  id="Flat"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  {col.links.map((link) => (
-                    <li key={link}>
-                      <a
-                        href="#"
-                        className="inline-block rounded-full px-5 py-3 text-base text-slate-400 transition-all duration-300 ease-in-out hover:bg-cyan-500/10 hover:text-cyan-500"
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              ))}
-            </div>
-            <div className="flex gap-3 sm:gap-4">
-              {socialIcons.map(({ label, svg, bgClass }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className={`inline-flex size-10 items-center justify-center rounded-lg text-white ${bgClass} transition-all duration-500 hover:-translate-y-1 hover:shadow-md`}
-                >
-                  {svg}
-                </a>
-              ))}
-            </div>
+                  <g opacity="0.1">
+                    <path d="M73.87573,111.39355l-.009-.03369L42.51636,148.98047a7.99958,7.99958,0,0,0-1.66358,6.85693l12.3628,55.63281a8,8,0,0,0,12.80713,4.51172L96,192C78.36523,161.44922,72.74268,134.47656,73.87573,111.39355Z" />
+                  </g>
+                  <g opacity="0.1">
+                    <path d="M181.52239,110.6714l.009-.03369,31.35034,37.6206a7.99958,7.99958,0,0,1,1.66358,6.85693l-12.3628,55.63282a8,8,0,0,1-12.80712,4.51172l-29.9773-23.98194C177.03289,160.72706,182.65544,133.75441,181.52239,110.6714Z" />
+                  </g>
+                  <g>
+                    <path d="M144,216H112a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16Z" />
+                    <circle cx="128" cy="96" r="12" />
+                    <path d="M219.62891,143.85889l-30.23658-36.28418a124.52267,124.52267,0,0,0-7.98022-34.8833c-11.61719-30.21192-32.15625-49.999-43.36523-59.10547a16.07708,16.07708,0,0,0-20.07813-.0669C106.61328,22.61621,85.81055,42.38867,74.07617,72.605A122.76188,122.76188,0,0,0,65.979,108.32861L36.37109,143.85889A16.10066,16.10066,0,0,0,33.043,157.57275l12.36328,55.63282a15.98523,15.98523,0,0,0,25.61328,9.023L98.80566,200h58.38868l27.78515,22.22852a15.91184,15.91184,0,0,0,9.96485,3.51709,16.0905,16.0905,0,0,0,5.34668-.91944,15.90581,15.90581,0,0,0,10.30273-11.62012L222.957,157.57373A16.102,16.102,0,0,0,219.62891,143.85889ZM127.9668,26.01074C198.25391,83.126,169.43359,157.01074,155.25,184H100.67871C52.6709,96.27734,109.22559,41.02637,127.9668,26.01074ZM61.02539,209.73486l-12.36328-55.6333,17.92651-21.5122q3.40906,28.0371,19.14038,57.38281Zm133.94922,0-24.74976-19.7998q15.53064-29.55175,18.74341-57.87695l18.36963,22.04345Z" />
+                  </g>
+                </svg>
+                <span className="text-lg font-medium text-slate-900 sm:text-xl dark:text-slate-100">
+                  SaaSify
+                </span>
+              </div>
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <div className="">
+                {footerColumns.map((col) => (
+                  <ul
+                    key={col.title}
+                    className="flex flex-wrap items-center justify-center gap-1.5"
+                  >
+                    {col.links.map((link) => (
+                      <li key={link}>
+                        <a
+                          href="#"
+                          className="inline-block rounded-full px-5 py-3 text-base text-slate-400 transition-all duration-300 ease-in-out hover:bg-cyan-500/10 hover:text-cyan-500"
+                        >
+                          {link}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ))}
+              </div>
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <div className="flex gap-3 sm:gap-4">
+                {socialIcons.map(({ label, svg, bgClass }) => (
+                  <a
+                    key={label}
+                    href="#"
+                    aria-label={label}
+                    className={`inline-flex size-10 items-center justify-center rounded-lg text-white ${bgClass} transition-all duration-500 hover:-translate-y-1 hover:shadow-md`}
+                  >
+                    {svg}
+                  </a>
+                ))}
+              </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   )
