@@ -11,7 +11,6 @@ import {
   ComboboxValue,
 } from "@/components/ui/combobox"
 
-// constants
 const countries = [
   { code: "", value: "", continent: "", label: "Select country" },
   {

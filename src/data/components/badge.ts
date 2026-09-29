@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -23,6 +22,11 @@ export const badgeInfo: CategoryInfo = {
     "Outline . Border-only badge ideal for dense data tables",
     "Destructive . Red-tinted badge used to highlight errors or critical alerts",
     "Notification Dot . Tiny, textless badge absolute-positioned over icons (like a bell)",
+    "With Status . Live indicator dots and pulsing status rings inside badges",
+    "With Avatar . Nested user avatars or profile chips inside badges",
+    "Sizes . Flexible sizing from compact tags up to prominent labels",
+    "Closable . Interactive dismissible tags with remove actions",
+    "Gradient Variant . Rich gradient styles and subtle glass treatments",
   ],
   whyUseHeading: `Why ${branding.brandName} Badge?`,
   whyUseDescription: [

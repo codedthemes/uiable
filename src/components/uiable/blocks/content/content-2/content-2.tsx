@@ -1,3 +1,5 @@
+//  ------------------------------ | CONTENT 2 | ------------------------------  //
+
 export default function Content2() {
   return (
     <div className="relative py-24 sm:py-32">

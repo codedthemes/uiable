@@ -2,9 +2,7 @@
 
 // third-party
 import { Progress as ProgressPrimitive } from "@base-ui/react/progress"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 function CircularProgress({
   className,

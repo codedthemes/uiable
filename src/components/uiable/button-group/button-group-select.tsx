@@ -17,7 +17,6 @@ import {
 // assets
 import { ArrowRightIcon } from "lucide-react"
 
-// constants
 const CURRENCIES = [
   { label: "US Dollar", value: "$" },
   { label: "Euro", value: "€" },

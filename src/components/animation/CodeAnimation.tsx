@@ -3,17 +3,18 @@
 import { useEffect, useRef, useState, type HTMLAttributes } from "react"
 
 // third-party
+import { cn } from "cn"
 import { motion } from "framer-motion"
 
 // project-imports
 import DarkFav from "@/images/brand/dark-fav"
 import LightFav from "@/images/brand/light-fav"
-import { AnimationBg } from "@/images/svg/landing"
-import { cn } from "@/lib/utils"
+import AnimationBg from "@/images/svg/landing/animation-bg"
 
 // assets
 import { ChevronLeft, ChevronRight, Slash } from "lucide-react"
 
+// types
 interface CodeAnimationProps extends HTMLAttributes<HTMLDivElement> {
   badges?: unknown[]
   className?: string
@@ -188,7 +189,7 @@ export default function CodeAnimation({
   return (
     <div
       className={cn(
-        "relative flex h-full min-h-[324px] w-full items-center justify-center overflow-hidden rounded-3xl py-10 select-none sm:min-h-[440px] md:min-h-[500px]",
+        "relative flex h-full min-h-[240px] w-full items-center justify-center overflow-hidden rounded-3xl py-6 select-none sm:min-h-[280px] md:min-h-[320px]",
         className
       )}
     >
@@ -219,11 +220,11 @@ export default function CodeAnimation({
           layout
           variants={bracketVariants}
           animate={bracketsExpanded ? "visible" : "hidden"}
-          className="flex w-8 shrink-0 items-center justify-center overflow-hidden text-slate-900 sm:w-12 md:w-20 dark:text-slate-100"
+          className="flex w-6 shrink-0 items-center justify-center overflow-hidden text-slate-900 sm:w-8 md:w-10 dark:text-slate-100"
         >
           <ChevronLeft
             strokeWidth={0.5}
-            className="h-30 w-30 shrink-0 lg:max-xl:h-30 lg:max-xl:w-30 xl:h-70 xl:w-70"
+            className="h-16 w-16 shrink-0 sm:h-20 sm:w-20 md:h-24 md:w-24"
           />
         </motion.div>
 
@@ -244,7 +245,7 @@ export default function CodeAnimation({
           >
             <Slash
               strokeWidth={1}
-              className="h-14 w-14 rotate-[150deg] lg:max-xl:h-14 lg:max-xl:w-14 xl:h-35 xl:w-35"
+              className="h-9 w-9 rotate-[150deg] sm:h-11 sm:w-11 md:h-12 md:w-12"
             />
           </motion.div>
         </motion.div>
@@ -253,11 +254,11 @@ export default function CodeAnimation({
           layout
           variants={bracketVariants}
           animate={bracketsExpanded ? "visible" : "hidden"}
-          className="flex w-8 shrink-0 items-center justify-center overflow-hidden text-slate-900 sm:w-12 md:w-20 dark:text-slate-100"
+          className="flex w-6 shrink-0 items-center justify-center overflow-hidden text-slate-900 sm:w-8 md:w-10 dark:text-slate-100"
         >
           <ChevronRight
             strokeWidth={0.5}
-            className="h-30 w-30 shrink-0 lg:max-xl:h-30 lg:max-xl:w-30 xl:h-70 xl:w-70"
+            className="h-16 w-16 shrink-0 sm:h-20 sm:w-20 md:h-24 md:w-24"
           />
         </motion.div>
       </motion.div>

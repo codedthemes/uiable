@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -23,6 +22,9 @@ export const collapsibleInfo: CategoryInfo = {
     "Default Open: Collapsible configured to render its content visibly on initial page load",
     "Card Integrated: A collapsible section embedded specifically inside a Card footer",
     "Icon Trigger: Using a simple chevron (+) / (-) button as the sole trigger",
+    "Nested Sidebar Items: Nested folder structures built using collapsible groups",
+    "Setting Menu List: A premium settings list where each row expands into detailed options",
+    "Animated: Highly customized collapsible variant with icon rotation and slide effects",
   ],
   whyUseHeading: `Why ${branding.brandName} Collapsible?`,
   whyUseDescription: [

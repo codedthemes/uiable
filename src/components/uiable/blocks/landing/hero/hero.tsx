@@ -1,4 +1,5 @@
-"use client"
+// react
+import { Fragment } from "react"
 
 // next
 import Link from "next/link"
@@ -6,79 +7,61 @@ import Link from "next/link"
 // shadcn
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-
-// third-party
-import { motion } from "framer-motion"
+import { TextMarquee } from "@/components/ui/text-marquee"
 
 // project-imports
 import branding from "@/branding.json"
 import HoverBg from "@/components/animation/HoverBg"
 import BaseUi from "@/images/svg/icons/baseui"
+import Motion from "@/images/svg/icons/motion"
 import Shadcn from "@/images/svg/icons/shadcn"
 import Tailwind from "@/images/svg/icons/tailwind"
+import CodedThemeFabIcon from "@/images/svg/landing/ct-fab-logo"
 
 // assets
 import {
   IconArrowUpRight,
   IconBrandNextjs,
   IconBrandReact,
-  IconChevronRight,
+  IconBrandTypescript,
 } from "@tabler/icons-react"
 
 //  ------------------------------ | CONSTANTS | ------------------------------  //
 
-const tech_icons = [
+const techIcons = [
   { name: "React", Icon: IconBrandReact },
   { name: "Next.js", Icon: IconBrandNextjs },
   { name: "Shadcn", Icon: Shadcn },
   { name: "Base UI", Icon: BaseUi },
   { name: "Tailwind CSS", Icon: Tailwind },
+  { name: "Motion", Icon: Motion },
+  { name: "TypeScript", Icon: IconBrandTypescript },
 ]
 
-const features = [
-  "Production Ready",
-  "Open Source",
-  "Accessible",
-  "AI Ready Structure",
+const stats = [
+  { label: "Blocks", value: "390+" },
+  { label: "Templates", value: "7" },
+  { label: "Components", value: "790+" },
+  { label: "Dashboards", value: "2" },
 ]
 
-const delays = [0, 150, 300]
+//  ------------------------------ | HELPERS | ------------------------------  //
 
-//  ------------------------------ | SUB-COMPONENTS | ------------------------------  //
-
-function PingDot() {
+function StatItems() {
   return (
-    <div className="relative flex h-3 w-3 items-center justify-center">
-      <span className="pointer-events-none absolute inline-flex h-full w-full animate-ping rounded-full bg-slate-950 opacity-75 dark:bg-slate-50" />
-      <div className="relative h-2 w-2 rounded-full bg-slate-950 dark:bg-slate-50" />
-    </div>
-  )
-}
-
-function ChangelogLink() {
-  return (
-    <Link
-      href="/doc/changelog"
-      className="group flex items-center gap-0.5 rounded-full bg-primary/10 py-0.5 pr-1 pl-2.5 text-xs font-semibold text-[#6b9bff] transition-colors hover:bg-primary/20"
-    >
-      Changelog
-      <div className="flex -space-x-1.5">
-        {delays.map((delay) => (
-          <motion.div
-            key={delay}
-            animate={{ opacity: [0.2, 1, 0.2] }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              delay: delay / 1000,
-              ease: "linear",
-            }}
-          >
-            <IconChevronRight className="h-3.5 w-3.5" />
-          </motion.div>
-        ))}
-      </div>
-    </Link>
+    <>
+      {stats.map((item, index) => (
+        <Fragment key={item.label}>
+          <span className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs whitespace-nowrap sm:text-sm">
+            <span className="text-muted-foreground">{item.value}</span>
+            <span className="text-muted-foreground">{item.label}</span>
+          </span>
+          {index < stats.length - 1 && (
+            <span aria-hidden className="h-3.5 w-px shrink-0 bg-border" />
+          )}
+        </Fragment>
+      ))}
+    </>
   )
 }
 
@@ -101,19 +84,21 @@ export default function Hero() {
 
       <HoverBg className="opacity-60 dark:opacity-60" />
 
-      <div className="relative z-10 flex items-center justify-center">
-        <Badge
-          variant="outline"
-          className="inline-flex items-center gap-3 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-medium text-secondary-foreground"
-        >
-          <PingDot />
-          <span className="flex items-center gap-2">
-            <span className="text-muted-foreground">
-              New Release September 08, 2026
-            </span>
-            <ChangelogLink />
-          </span>
-        </Badge>
+      <div className="relative z-10 flex w-full justify-center">
+        {/* Mobile: scrolling marquee */}
+        <div className="w-full max-w-xs overflow-hidden rounded-full border border-border bg-card px-1.5 py-1 shadow-sm sm:hidden">
+          <TextMarquee duration={16} gap="0px" repeat={3}>
+            <div className="flex items-center">
+              <StatItems />
+              <span aria-hidden className="h-3.5 w-px shrink-0 bg-border" />
+            </div>
+          </TextMarquee>
+        </div>
+
+        {/* sm and up: single-row pill */}
+        <div className="hidden max-w-full flex-wrap items-center justify-center rounded-full border border-border bg-card px-1.5 py-1 shadow-sm sm:inline-flex">
+          <StatItems />
+        </div>
       </div>
 
       <div className="relative z-10 flex w-full flex-col items-center gap-7">
@@ -150,14 +135,13 @@ export default function Hero() {
         >
           Start Building
         </Button>
-
         <Button
           variant="outline"
           size="lg"
           id="cta-view-components"
           nativeButton={false}
           render={<Link href="/components" />}
-          className="h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent"
+          className="h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent dark:border-border dark:bg-card dark:hover:bg-accent/10"
         >
           View Components
           <IconArrowUpRight className="size-4" aria-hidden="true" />
@@ -165,7 +149,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex items-center justify-center gap-4">
-        {tech_icons.map((item) => {
+        {techIcons.map((item) => {
           const IconComponent = item.Icon
           return (
             <Button
@@ -186,17 +170,26 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex items-center justify-center">
-        <div className="flex flex-wrap items-center justify-center gap-2.5">
-          {features.map((item) => (
-            <Badge
-              key={item}
-              variant="outline"
-              className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2.5 text-xs font-medium text-secondary-foreground"
-            >
-              {item}
-            </Badge>
-          ))}
-        </div>
+        <Link
+          href="https://codedthemes.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Badge
+            variant="outline"
+            className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-primary/20 [&>svg]:size-5!"
+          >
+            <span className="text-xs font-normal text-foreground">
+              {" "}
+              Product by{" "}
+            </span>
+            <CodedThemeFabIcon className="mx-1 size-5!" />
+            <span className="text-base font-medium text-secondary-foreground">
+              {" "}
+              CodedThemes
+            </span>
+          </Badge>
+        </Link>
       </div>
     </section>
   )

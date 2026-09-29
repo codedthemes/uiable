@@ -3,7 +3,7 @@
   "name": "block-gallery-11",
   "title": "Gallery 11",
   "description": "Gallery 11 variant for block.",
-  "dependencies": ["cn", "framer-motion", "lucide-react", "next"],
+  "dependencies": ["cn", "framer-motion", "lucide-react"],
   "registryDependencies": ["@uiable/badge", "@uiable/button", "@uiable/card", "@uiable/input"],
   "files": [
     {

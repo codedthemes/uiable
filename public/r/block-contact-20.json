@@ -3,7 +3,7 @@
   "name": "block-contact-20",
   "title": "Contact 20",
   "description": "Contact 20 variant for block.",
-  "dependencies": ["framer-motion", "next"],
+  "dependencies": ["framer-motion"],
   "files": [
     {
       "path": "src/components/uiable/blocks/contact/contact-20/contact-20.tsx",

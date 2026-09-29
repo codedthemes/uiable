@@ -3,7 +3,7 @@
   "name": "component-sidebar",
   "title": "Component Sidebar",
   "description": "Layout Component Sidebar variant for component.",
-  "registryDependencies": ["@uiable/card", "@uiable/scroll-area"],
+  "registryDependencies": ["@uiable/card", "@uiable/component-list", "@uiable/component-search", "@uiable/scroll-area"],
   "files": [
     {
       "path": "src/components/uiable/layout/component-sidebar.tsx",

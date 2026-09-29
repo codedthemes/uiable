@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "src/components/uiable/progress/progress-solid-dark.tsx",
-      "content": "// shadcn\nimport { Progress } from \"@/components/ui/progress\"\n\n//  ------------------------------ | PROGRESS - SOLID DARK | ------------------------------  //\n\nexport default function ProgressSolidDark() {\n  return (\n    <div className=\"w-full\">\n      <Progress\n        value={85}\n        className=\"*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-slate-800 dark:*:bg-muted/10 dark:**:bg-slate-100\"\n      />\n    </div>\n  )\n}\n",
+      "content": "// shadcn\nimport { Progress } from \"@/components/ui/progress\"\n\n//  ------------------------------ | PROGRESS - SOLID DARK | ------------------------------  //\n\nexport default function ProgressSolidDark() {\n  return (\n    <div className=\"w-full\">\n      <Progress\n        value={85}\n        className=\"*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-slate-800 dark:*:bg-muted/40 dark:**:bg-slate-100\"\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-solid-dark.tsx"
     }

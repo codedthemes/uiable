@@ -4,12 +4,10 @@ import { ComponentProps } from "react"
 
 // third-party
 import { ContextMenu as ContextMenuPrimitive } from "@base-ui/react/context-menu"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
-import { ChevronRightIcon, CheckIcon } from "lucide-react"
+import { CheckIcon, ChevronRightIcon } from "lucide-react"
 
 function ContextMenu({ ...props }: ContextMenuPrimitive.Root.Props) {
   return <ContextMenuPrimitive.Root data-slot="context-menu" {...props} />

@@ -12,17 +12,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "*",
-        disallow: [
-          "/auth/login",
-          "/auth/forgot-password",
-          "/auth/register",
-          "/auth/verify-email",
-          "/auth/reset-password",
-          "/auth/callback",
-          "/admin/*",
-          "/auth/error",
-          "/assets/svg/*",
-        ],
+        disallow: ["/admin/*", "/assets/svg/*"],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

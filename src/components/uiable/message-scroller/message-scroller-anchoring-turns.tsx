@@ -39,7 +39,6 @@ import {
   RotateCwIcon,
 } from "lucide-react"
 
-// types
 type AnchorRole = "user" | "assistant"
 
 type ChatMessage = {
@@ -48,7 +47,6 @@ type ChatMessage = {
   text: string
 }
 
-// constants
 const scriptedMessages: ChatMessage[] = [
   {
     id: "anchor-1-user",

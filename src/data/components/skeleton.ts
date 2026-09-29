@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -22,6 +21,9 @@ export const skeletonInfo: CategoryInfo = {
     "Avatar (Circular) . Perfectly round circles mimicking user profile pictures",
     "Card Skeleton . A composite of multiple skeletons arranged to look exactly like a loading Card component",
     "Data Table Rows . Repeating horizontal bars mimicking rows of data loading into a grid",
+    "Chart . A layout mimicking a bar or line chart with axes and bars",
+    "List (Feed) . A repeating list of items with avatars and text lines",
+    "User Profile . A composite skeleton with a cover image, avatar, and actions",
   ],
   whyUseHeading: `Why ${branding.brandName} Skeleton?`,
   whyUseDescription: [

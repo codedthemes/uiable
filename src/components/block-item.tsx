@@ -1,17 +1,8 @@
 "use client"
 
-import {
-  memo,
-  SyntheticEvent,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-  useMemo,
-} from "react"
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 // shadcn
-import { Badge } from "@/components/ui/badge"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import {
@@ -29,14 +20,14 @@ import {
 } from "@/components/ui/tooltip"
 
 // third-party
-// third party
-import { type BundledLanguage, codeToHtml } from "shiki"
+import { cn } from "cn"
+import { codeToHtml, type BundledLanguage } from "shiki"
 
 // project-imports
 import Loader from "@/components/Loader"
-import { TreeView } from "@/components/tree-view"
+import { TreeView, type TreeViewFileItem } from "@/components/tree-view"
+import { fetchFileSource } from "@/lib/pro-client"
 import { buildFileTree } from "@/lib/tree-view-utils"
-import { cn } from "@/lib/utils"
 import { toPreviewSlug } from "@/utils/preview-slug"
 
 // assets
@@ -49,23 +40,18 @@ import {
   RotateCw,
   Smartphone,
   SquareCheckBig,
-  Terminal,
   Tablet,
+  Terminal,
 } from "lucide-react"
+
+// types
 
 export interface Item {
   name: string
   title: string
   description: string
   files: { path: string }[]
-  dependencyFiles?: { path: string }[]
   categories: string[]
-  badge?:
-    | boolean
-    | string
-    | {
-        label: string
-      }
   rawCode?: string
 }
 
@@ -125,8 +111,6 @@ interface BlockItemProps {
 export default function BlockItem({
   item,
   index,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  isLast,
   handleCopy,
   copiedIndex,
 }: BlockItemProps) {
@@ -144,87 +128,36 @@ export default function BlockItem({
   const [isIframeLoading, setIsIframeLoading] = useState(true)
   const [copiedCommand, setCopiedCommand] = useState(false)
 
-  // Tree view state
-  const [selectedFilePath, setSelectedFilePath] = useState<string>("")
-  const [sourceCode, setSourceCode] = useState<string>("")
+  const defaultFilePath = item.files?.[0]?.path || ""
+  const [selectedFilePath, setSelectedFilePath] =
+    useState<string>(defaultFilePath)
   const [isLoadingCode, setIsLoadingCode] = useState<boolean>(false)
+  const [codeCache, setCodeCache] = useState<Record<string, string>>(() => {
+    return item.rawCode && defaultFilePath
+      ? { [defaultFilePath]: item.rawCode }
+      : {}
+  })
 
-  // Initialize tree view data
-  const treeData = useMemo(() => {
-    const allFiles = [
-      ...item.files.map((f) => f.path),
-      ...(item.dependencyFiles?.map((f) => f.path) || []),
-    ]
-    return buildFileTree(allFiles)
-  }, [item])
+  const fileTreeData = useMemo(
+    () => buildFileTree(item.files.map((f) => f.path)),
+    [item.files]
+  )
 
-  useEffect(() => {
-    const allFiles = [
-      ...item.files.map((f) => f.path),
-      ...(item.dependencyFiles?.map((f) => f.path) || []),
-    ]
-    // Select the first file by default
-    if (allFiles.length > 0 && !selectedFilePath) {
-      queueMicrotask(() => {
-        setSelectedFilePath(allFiles[0])
-      })
+  const handleFileSelect = async (treeItem: TreeViewFileItem) => {
+    const path = treeItem.path || treeItem.name
+    setSelectedFilePath(path)
+
+    if (codeCache[path]) return
+
+    setIsLoadingCode(true)
+    const code = await fetchFileSource(item.name, path)
+    if (code) {
+      setCodeCache((prev) => ({ ...prev, [path]: code }))
     }
-  }, [item, selectedFilePath])
+    setIsLoadingCode(false)
+  }
 
-  // Fetch code when selected file changes
-  useEffect(() => {
-    if (!selectedFilePath) return
-
-    let mounted = true
-
-    // For the main file, we can use rawCode if available and it matches
-    const mainFileCode = item.rawCode
-    if (selectedFilePath === item.files[0]?.path && mainFileCode) {
-      queueMicrotask(() => {
-        if (mounted) {
-          setSourceCode(mainFileCode)
-          setIsLoadingCode(false)
-        }
-      })
-      return
-    }
-
-    queueMicrotask(() => {
-      if (mounted) {
-        setIsLoadingCode(true)
-      }
-    })
-
-    // Otherwise fetch from API
-    fetch(`/api/code?path=${encodeURIComponent(selectedFilePath)}`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch code")
-        return res.text()
-      })
-      .then((code) => {
-        if (mounted) {
-          setSourceCode(code)
-          setIsLoadingCode(false)
-        }
-      })
-      .catch((err) => {
-        console.error("Error fetching code:", err)
-        if (mounted) {
-          setSourceCode("")
-          setIsLoadingCode(false)
-        }
-      })
-
-    return () => {
-      mounted = false
-    }
-  }, [selectedFilePath, item.files, item.rawCode])
-
-  const handleFileSelect = useCallback((node: any) => {
-    if (node.type === "file" && node.path) {
-      setSelectedFilePath(node.path)
-    }
-  }, [])
+  const sourceCode = codeCache[selectedFilePath] || ""
 
   // Set iframe height based on its content
   const setIframeHeight = useCallback(() => {
@@ -236,6 +169,20 @@ export default function BlockItem({
         setViewportHeight(height)
       }
     }
+  }, [])
+
+  const syncThemeToIframe = useCallback(() => {
+    const iframe = iframeEl.current
+    if (!iframe?.contentWindow) return
+    iframe.contentWindow.postMessage(
+      {
+        type: "uiable-theme-sync",
+        htmlClass: document.documentElement.className,
+        bodyClass: document.body.className,
+        bodyStyle: document.body.style.cssText,
+      },
+      "*"
+    )
   }, [])
   useEffect(() => {
     const iframe = iframeEl.current
@@ -267,6 +214,20 @@ export default function BlockItem({
     }
   }, [setIframeHeight])
 
+  // Sync parent theme classes into the iframe whenever they change
+  useEffect(() => {
+    const observer = new MutationObserver(syncThemeToIframe)
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    })
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["class", "style"],
+    })
+    return () => observer.disconnect()
+  }, [syncThemeToIframe])
+
   // Handle screen size change
   const onScreenChange = () => {
     // Reset height to allow accurate measurement of shrinking content
@@ -292,10 +253,10 @@ export default function BlockItem({
     }
   }
 
-  // Handle copying shadcn CLI command
+  const installCommand = `npx shadcn add @uiable/${item.name.replace(/^uiable-/, "")}`
+
   const handleCopyCommand = () => {
-    const commandText = `npx shadcn add @uiable/${item.name.replace(/^uiable-/, "")}`
-    navigator.clipboard.writeText(commandText)
+    navigator.clipboard.writeText(installCommand)
     setCopiedCommand(true)
     setTimeout(() => setCopiedCommand(false), 2000)
   }
@@ -312,40 +273,32 @@ export default function BlockItem({
   }
 
   const handleCopyClick = () => {
-    handleCopy(index, sourceCode || item.rawCode || "")
+    handleCopy(index, sourceCode)
   }
 
-  const handleIframeLoadEvent = (event: SyntheticEvent<HTMLIFrameElement>) => {
+  const handleIframeLoadEvent = (
+    event: React.SyntheticEvent<HTMLIFrameElement>
+  ) => {
     const iframe = event.currentTarget
     if (iframe) {
       iframe.removeAttribute("srcdoc")
       setIframeHeight()
       setIsIframeLoading(false)
+      syncThemeToIframe()
     }
   }
 
   return (
     <div className="group/blockshow flex flex-col gap-8">
-      <div className="container mx-auto flex items-center justify-between px-4 sm:px-8">
+      <div className="flex items-center justify-between">
         <div className="flex w-full flex-col gap-4">
           <Card className="group/item relative mb-0 overflow-hidden">
             <CardHeader className="py-4">
               <div className="grid grid-cols-3 flex-col items-center justify-between sm:flex-row">
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2">
-                    <h5 className="mb-0 line-clamp-1 text-[18px] font-semibold">
-                      {item.title}
-                    </h5>
-                    {item.badge && (
-                      <Badge className="border-transparent bg-red-500/15 text-red-500">
-                        {typeof item.badge === "boolean"
-                          ? "New"
-                          : typeof item.badge === "string"
-                            ? item.badge
-                            : (item.badge as { label: string }).label}
-                      </Badge>
-                    )}
-                  </div>
+                <div className="flex flex-row items-center gap-2">
+                  <h5 className="mb-0 line-clamp-1 text-[18px] font-semibold">
+                    {item.title}
+                  </h5>
                 </div>
                 <div className="flex flex-row flex-wrap items-center justify-center gap-1 text-center">
                   <div className="resize-button-group hidden items-center gap-2 rounded-lg border border-border/50 bg-card p-0.5 lg:inline-flex">
@@ -442,18 +395,27 @@ export default function BlockItem({
                   </div>
                 </div>
                 <div className="flex justify-end gap-2">
-                  <Button
-                    onClick={handleCopyCommand}
-                    variant="outline"
-                    className="gap-1.5 border-border/80 bg-card"
-                  >
-                    {copiedCommand ? (
-                      <SquareCheckBig className="size-4 text-green-500" />
-                    ) : (
-                      <Terminal className="size-4" />
-                    )}{" "}
-                    npx shadcn add @uiable/{item.name.replace(/^uiable-/, "")}
-                  </Button>
+                  <Tooltip>
+                    <TooltipTrigger
+                      render={<span className="inline-block w-fit" />}
+                    >
+                      <Button
+                        onClick={handleCopyCommand}
+                        variant="outline"
+                        className="gap-1.5 border-border/80 bg-card max-2xl:size-10"
+                      >
+                        {copiedCommand ? (
+                          <SquareCheckBig className="size-4 text-green-500" />
+                        ) : (
+                          <Terminal className="size-4" />
+                        )}{" "}
+                        <span className="max-2xl:hidden">{installCommand}</span>
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Copy CLI Command</p>
+                    </TooltipContent>
+                  </Tooltip>
                   <Tooltip>
                     <TooltipTrigger
                       render={<span className="inline-block w-fit" />}
@@ -503,11 +465,9 @@ export default function BlockItem({
                         </DialogTitle>
                       </DialogHeader>
                       <div className="dark flex min-h-0 w-full flex-1 flex-col overflow-hidden rounded-[8px] border border-white/10 bg-[#282c34] md:flex-row">
-                        {item.files.length +
-                          (item.dependencyFiles?.length ?? 0) >
-                          1 &&
-                          treeData &&
-                          treeData.length > 0 && (
+                        {item.files.length > 1 &&
+                          fileTreeData &&
+                          fileTreeData.length > 0 && (
                             <div className="flex w-full shrink-0 flex-col border-b border-white/10 md:w-[240px] md:border-r md:border-b-0">
                               <div className="flex w-full flex-none items-center justify-between border-b border-white/10 px-4 py-4.5">
                                 <span className="text-xs font-medium tracking-wider text-white uppercase">
@@ -516,7 +476,7 @@ export default function BlockItem({
                               </div>
                               <div className="max-h-[200px] scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent overflow-y-auto p-2 md:max-h-none md:flex-1">
                                 <TreeView
-                                  data={treeData}
+                                  data={fileTreeData}
                                   selected={selectedFilePath}
                                   onSelect={handleFileSelect}
                                   className="text-white/70 [&_button]:bg-transparent! [&_button]:text-white/70 [&_button:hover]:bg-white/10 [&_button:hover]:text-white"

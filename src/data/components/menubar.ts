@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -20,6 +19,10 @@ export const menubarInfo: CategoryInfo = {
   variantsHeading: "Popular Menubar Variants",
   variants: [
     'Default: Standard horizontal bar containing items like "File", "Edit", and "View"',
+    "Application: Mimics desktop app menus (File, Edit, View, Window, Help)",
+    "Editor: Formatting options for rich text editing (Bold, Italic, Align)",
+    "Profile: Designed for user profile settings (Avatar, Profile, Logout)",
+    "Compact: Minimalist quick-action menu",
     "Nested Submenus: Deeply nested dropdown trees branching off primary menu items",
     'With Checkboxes/Radios: Interactive submenu items acting as state toggles (e.g., "View Grid")',
     "Keyboard Hints: Menus displaying aligned Kbd shortcut hints for power users",

@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -12,7 +11,7 @@ export const fieldInfo: CategoryInfo = {
   ],
   whatIsHeading: `What is ${branding.brandName} Field?`,
   whatIsDescription: [
-    "The `UiableField` component is a wrapper around structure that groups form inputs and their labels, helper text, and validation error messages into a single component.",
+    `The \`${branding.brandName}Field\` component is a wrapper around structure that groups form inputs and their labels, helper text, and validation error messages into a single component.`,
     "This is not locked inside a npm package like the traditional UI libraries. You get the actual source code inside your project directly so you can edit, customize and extend the flexbox layout and error alignments as you need.",
     "It’s completely styled with Tailwind CSS, eliminating the pain of vertically stacked forms and dealing with dynamically injected error messages without breaking page layouts.",
   ],

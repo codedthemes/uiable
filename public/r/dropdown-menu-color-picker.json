@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-color-picker",
+  "title": "Dropdown Menu Color Picker",
+  "description": "Dropdown Menu Color Picker variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/button", "@uiable/dropdown-menu"],
+  "files": [
+    {
+      "path": "src/components/uiable/dropdown-menu/dropdown-menu-color-picker.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"\n\n// assets\nimport { PaletteIcon } from \"lucide-react\"\n\nconst colors = [\n  { name: \"Zinc\", value: \"bg-zinc-500\" },\n  { name: \"Red\", value: \"bg-red-500\" },\n  { name: \"Orange\", value: \"bg-orange-500\" },\n  { name: \"Amber\", value: \"bg-amber-500\" },\n  { name: \"Yellow\", value: \"bg-yellow-500\" },\n  { name: \"Green\", value: \"bg-green-500\" },\n  { name: \"Emerald\", value: \"bg-emerald-500\" },\n  { name: \"Teal\", value: \"bg-teal-500\" },\n  { name: \"Cyan\", value: \"bg-cyan-500\" },\n  { name: \"Blue\", value: \"bg-blue-500\" },\n  { name: \"Indigo\", value: \"bg-indigo-500\" },\n  { name: \"Violet\", value: \"bg-violet-500\" },\n  { name: \"Purple\", value: \"bg-purple-500\" },\n  { name: \"Fuchsia\", value: \"bg-fuchsia-500\" },\n  { name: \"Pink\", value: \"bg-pink-500\" },\n  { name: \"Rose\", value: \"bg-rose-500\" },\n]\n\n//  ------------------------------ | DROPDOWN MENU - COLOR PICKER | ------------------------------  //\n\nexport function DropdownMenuColorPicker() {\n  return (\n    <DropdownMenu>\n      <DropdownMenuTrigger\n        render={<Button variant=\"outline\" className=\"dark:border-border\" />}\n      >\n        <PaletteIcon className=\"mr-1\" />\n        Theme Color\n      </DropdownMenuTrigger>\n      <DropdownMenuContent align=\"start\" className=\"w-[200px]\">\n        <DropdownMenuGroup>\n          <DropdownMenuLabel>Choose Color</DropdownMenuLabel>\n        </DropdownMenuGroup>\n        <DropdownMenuSeparator />\n        <DropdownMenuGroup className=\"grid grid-cols-4 gap-1 p-1\">\n          {colors.map((color) => (\n            <DropdownMenuItem\n              key={color.name}\n              className=\"flex h-10 w-10 items-center justify-center rounded-lg p-0\"\n              title={color.name}\n            >\n              <div className={`h-6 w-6 rounded-full ${color.value}`} />\n            </DropdownMenuItem>\n          ))}\n        </DropdownMenuGroup>\n      </DropdownMenuContent>\n    </DropdownMenu>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/dropdown-menu/dropdown-menu-color-picker.tsx"
+    }
+  ],
+  "categories": ["dropdown-menu"],
+  "type": "registry:ui"
+}

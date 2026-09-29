@@ -1,7 +1,5 @@
 "use client"
 
-import { ComponentType, useEffect, useState } from "react"
-
 // next
 import Link from "next/link"
 
@@ -14,74 +12,13 @@ import { Link1 } from "iconsax-reactjs"
 // project-imports
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_BLOCKS } from "@/components-grid"
-import Intro from "@/images/svg/Intro"
-
-// types
-type SvgIconComponent = ComponentType<{ className?: string }>
-type SvgIconModule = { default: SvgIconComponent }
-
-/**
- * SVG Mapping for categories whose slug doesn't match the filename directly
- */
-const SVG_MAPPING: Record<string, string> = {
-  cta: "CallToAction",
-  landing: "ComponentSoon",
-}
-
-/**
- * Dynamic SVG importers map.
- * Paths remain explicit so Turbopack can include the chunks.
- */
-const SVG_IMPORTERS: Record<string, () => Promise<SvgIconModule>> = {
-  CallToAction: () => import("@/images/svg/CallToAction"),
-  ComponentSoon: () => import("@/images/svg/ComponentSoon"),
-  contact: () => import("@/images/svg/contact"),
-  content: () => import("@/images/svg/content"),
-  faq: () => import("@/images/svg/faq"),
-  Intro: () => import("@/images/svg/Intro"),
-}
-
-/**
- * DynamicSVG Component
- * Loads category-specific SVG illustrations dynamically
- */
-function DynamicSVG({ slug }: { slug: string }) {
-  const [SVGComp, setSVGComp] = useState<SvgIconComponent>(() => Intro)
-
-  useEffect(() => {
-    let mounted = true
-    const mappedName = SVG_MAPPING[slug] || slug
-    const importer = SVG_IMPORTERS[mappedName]
-
-    if (!importer) {
-      setTimeout(() => setSVGComp(() => Intro), 0)
-      return () => {
-        mounted = false
-      }
-    }
-
-    importer()
-      .then((mod) => {
-        if (mounted) setSVGComp(() => mod.default)
-      })
-      .catch((err) => {
-        console.error(`Failed to load SVG for ${slug} (${mappedName}):`, err)
-        if (mounted) setSVGComp(() => Intro)
-      })
-
-    return () => {
-      mounted = false
-    }
-  }, [slug])
-
-  return <SVGComp className="h-auto w-full" />
-}
+import { DynamicSVG } from "@/components/category-dynamic-svg"
 
 //  ------------------------------ | PAGE - BLOCKS | ------------------------------  //
 
 export default function BlocksPageClient() {
   return (
-    <div className="container mx-auto flex flex-1 items-start px-4 sm:px-8">
+    <div className="flex flex-1 items-start">
       <div className="flex w-full flex-col gap-8 pb-20">
         <div className="flex flex-col gap-2">
           <h2>All Blocks</h2>

@@ -1,5 +1,3 @@
-// projects imports
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -24,6 +22,12 @@ export const cardInfo: CategoryInfo = {
     "With Image Header . Card featuring a full-width image or banner at the top",
     "Dashboard Metric . Compact card optimized for displaying large numbers and sparklines",
     "Ghost/Flat . Card with no shadow and a subtle gray background for nested layouts",
+    "Product Card . E-commerce layout featuring product images, discount tags, rating badge, swatches, and cart actions",
+    "Tabbing Card . Interactive tabbed interface switching between Overview, Analytics, and Settings views",
+    "Credit Card . Premium virtual payment card with EMV chip, balance summary, and freeze/security controls",
+    "Animated Tilt . Realistic 3D perspective tilt pass card with dynamic light sheen using framer-motion",
+    "Animated Flip . Interactive dual-sided card rotating 3D smoothly between front and back views using framer-motion",
+    "Animated Border . High-tech card surrounded by an infinite rotating primary gradient ring using framer-motion",
   ],
   whyUseHeading: `Why ${branding.brandName} Card?`,
   whyUseDescription: [

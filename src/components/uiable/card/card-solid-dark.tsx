@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function CardSolidDark() {
   return (
-    <Card className="ring-dark-500/50 bg-dark-500 overflow-hidden rounded-xl border-none text-white shadow-none ring-1">
+    <Card className="ring-dark-500/50 overflow-hidden rounded-xl border-none bg-mist-800 text-white shadow-none ring-1">
       <CardHeader className="border-b border-white/10 p-4">
         <CardTitle className="text-base font-bold text-white">Header</CardTitle>
       </CardHeader>

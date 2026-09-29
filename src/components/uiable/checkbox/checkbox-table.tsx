@@ -13,7 +13,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-// constants
 const tableData = [
   {
     id: "1",

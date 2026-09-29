@@ -15,6 +15,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
+  useSidebar,
 } from "@/components/ui/sidebar"
 
 // assets
@@ -28,7 +29,6 @@ import {
   SendIcon,
 } from "lucide-react"
 
-// constants
 const projects = [
   {
     name: "Design Engineering",
@@ -56,6 +56,18 @@ const projects = [
     icon: SendIcon,
   },
 ]
+
+function CustomTrigger() {
+  const { toggleSidebar, state, isMobile, openMobile } = useSidebar()
+  const isOpen = isMobile ? openMobile : state === "expanded"
+
+  return (
+    <Button onClick={toggleSidebar} size="sm" variant="ghost" className="gap-2">
+      {isOpen ? <PanelLeftCloseIcon /> : <PanelLeftOpenIcon />}
+      <span>{isOpen ? "Close" : "Open"} Sidebar</span>
+    </Button>
+  )
+}
 
 //  ------------------------------ | SIDEBAR - CONTROLLED | ------------------------------  //
 
@@ -89,15 +101,7 @@ export default function AppSidebar() {
       </Sidebar>
       <SidebarInset>
         <header className="flex h-12 items-center justify-between px-4">
-          <Button
-            onClick={() => setOpen((open) => !open)}
-            size="sm"
-            variant="ghost"
-            className="gap-2"
-          >
-            {open ? <PanelLeftCloseIcon /> : <PanelLeftOpenIcon />}
-            <span>{open ? "Close" : "Open"} Sidebar</span>
-          </Button>
+          <CustomTrigger />
         </header>
       </SidebarInset>
     </SidebarProvider>

@@ -11,7 +11,8 @@ import { toast } from "sonner"
 
 // project-imports
 import LightFav from "@/images/brand/light-fav"
-import { ContactLeftGrid, ContactRightGrid } from "@/images/svg/landing"
+import ContactLeftGrid from "@/images/svg/landing/contact-left-grid"
+import ContactRightGrid from "@/images/svg/landing/contact-right-grid"
 
 //  ------------------------------ | CONTACT | ------------------------------  //
 

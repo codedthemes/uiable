@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 interface TocItem {
   title: string

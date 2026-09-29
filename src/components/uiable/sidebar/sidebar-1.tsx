@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import {
+  Sidebar,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar"
 
 // assets
 import { Search } from "lucide-react"
@@ -98,9 +103,9 @@ export default function Sidebar1() {
   })).filter((section) => section.items.length > 0)
 
   return (
-    <div className="flex h-[500px] w-full rounded-lg border bg-background p-4">
-      <aside className="flex h-[450px] w-72 shrink-0 flex-col overflow-hidden rounded-lg border bg-background">
-        <Card className="mb-0 flex h-full flex-col rounded-none border-0 shadow-none">
+    <SidebarProvider className="relative h-[600px] w-full overflow-hidden rounded-lg border bg-background shadow-sm">
+      <Sidebar className="absolute z-10 h-full border-r border-border bg-background">
+        <Card className="mb-0 flex h-full flex-col rounded-none border-0 bg-transparent shadow-none">
           <CardHeader>
             {/* Search — matches ComponentSearch design */}
             <div className="relative w-full">
@@ -158,7 +163,13 @@ export default function Sidebar1() {
             </CardContent>
           </ScrollArea>
         </Card>
-      </aside>
-    </div>
+      </Sidebar>
+
+      <main className="flex-1 overflow-auto bg-muted/20">
+        <header className="flex h-14 items-center border-b border-border/50 bg-background/50 px-4 backdrop-blur">
+          <SidebarTrigger className="-ml-1" />
+        </header>
+      </main>
+    </SidebarProvider>
   )
 }

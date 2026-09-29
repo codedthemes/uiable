@@ -6,10 +6,8 @@ import { useState } from "react"
 import { Toggle } from "@/components/ui/toggle"
 
 // third-party
+import { cn } from "cn"
 import { AnimatePresence, motion } from "framer-motion"
-
-// project-importss
-import { cn } from "@/lib/utils"
 
 // assets
 import { HeartIcon, ThumbsUpIcon } from "lucide-react"

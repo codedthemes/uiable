@@ -43,7 +43,6 @@ import { motion } from "framer-motion"
 // assets
 import { ArrowUpIcon, RotateCwIcon } from "lucide-react"
 
-// constants
 const animationPresets = {
   fade: {
     label: "Fade",
@@ -130,13 +129,15 @@ const defaultMessageText: Record<AnimationPreset, string> = {
   "scale-fade": "This preset scales the message in while fading it.",
 }
 
+interface AnimatedMessageProps {
+  message: DemoMessage
+  anchor: boolean
+}
+
 const AnimatedMessage = memo(function AnimatedMessage({
   message,
   anchor,
-}: {
-  message: DemoMessage
-  anchor: boolean
-}) {
+}: AnimatedMessageProps) {
   const preset = animationPresets[message.preset]
   const isUser = message.role === "user"
 

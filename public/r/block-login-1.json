@@ -3,7 +3,6 @@
   "name": "block-login-1",
   "title": "Login 1",
   "description": "Login 1 variant for block.",
-  "dependencies": ["next"],
   "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/checkbox", "@uiable/input", "@uiable/logo"],
   "files": [
     {

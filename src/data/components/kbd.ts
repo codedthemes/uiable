@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -22,6 +21,9 @@ export const kbdInfo: CategoryInfo = {
     "Default (Light Pill): A subtle gray background with a soft border, mimicking a physical key",
     "Mac Command Keys: Standardized styling for rendering the ⌘ (Command) and ⌥ (Option) symbols",
     "Windows Ctrl Keys: Standardized styling for rendering Ctrl and Alt combinations",
+    "Function Keys: Specialized display for F1–F12 quick action strips and debugger combinations",
+    "Arrow Keys: Directional D-Pad clusters, WASD/Vim schemes, and multi-select navigation keys",
+    "Shortcut Keys: Categorized multi-key chords and application command shortcuts",
     "Inlined in Text: A Kbd component perfectly sized to sit inside a sentence without breaking the line height",
     "Ghost: A variant with no background, relying only on a subtle border and monospaced font",
   ],

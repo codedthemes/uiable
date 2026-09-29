@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -19,8 +18,11 @@ export const scrollAreaInfo: CategoryInfo = {
   ],
   variantsHeading: "Popular Scroll Area Variants",
   variants: [
-    "Vertical Only: Standard scrollbar for tall content blocks (e.g., sidebars, long articles)",
-    "Horizontal Only: Scrollbar specifically for wide content (e.g., overflowing data tables, image carousels)",
+    "Basic Scroll Area: Standard vertical scrollbar for tall lists, sidebars, and tags",
+    "Horizontal Scroll Area: Dedicated horizontal scrollbar for wide media carousels and album decks",
+    "Image Gallery Scroll Area: Smooth masonry-style photo grid scroller with interactive overlays and likes",
+    "Interactive Chat Scroller: Multi-turn AI assistant conversation view supporting dynamic code blocks and suggestion chips",
+    "Terminal Logs Scroller: Real-time developer build console and colored log output inside a dark terminal window",
   ],
   whyUseHeading: `Why ${branding.brandName} Scroll Area?`,
   whyUseDescription: [

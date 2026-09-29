@@ -6,8 +6,8 @@ import { useState } from "react"
 import { Badge } from "@/components/ui/badge"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 
-// project-importss
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 // assets
 import { Bell, Bookmark, Heart, Pin, Star } from "lucide-react"

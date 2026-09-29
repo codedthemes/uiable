@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -24,6 +23,13 @@ export const typographyInfo: CategoryInfo = {
     "Muted Text . Smaller, lower-contrast text used for timestamps, footnotes, or helper text",
     "Blockquotes . Styled quotation blocks with a distinct left border and italicized font",
     "Inline Code . Monospaced text pills for highlighting variable names or commands",
+    "Font Styles . Italic and other font variations for emphasis within text content",
+    "Links . Themed anchor tags with underline offset and hover states",
+    "Typewriter . Dynamic character-by-character typing with customizable blinking cursors and accessible rendering",
+    "Gradient Text . Continuous flowing multi-color animated gradient mesh typography",
+    "Blur In . Cinematic word-by-word blur-to-sharp unmasking with spring physics",
+    "Marquee Text . Infinite smooth scrolling marquee text with directional flow and pause-on-hover",
+    "Text Highlight . Hand-drawn marker brush and background highlight expanding beneath words",
   ],
   whyUseHeading: `Why ${branding.brandName} Typography?`,
   whyUseDescription: [
@@ -35,6 +41,7 @@ export const typographyInfo: CategoryInfo = {
   features: [
     "Fluid Sizing: Utilizes responsive Tailwind classes to ensure text looks perfect on all devices.",
     "Semantic HTML Tags: Strict adherence to proper heading tags ensures flawless SEO and screen reader interpretation.",
+    "Motion & Text Animations: Built-in Framer Motion effects including Typewriter, Gradient Mesh, Scramble Decode, Blur In, Slide Up, Shimmer, and 3D Word Carousel.",
     "Optimized Line Lengths: Utilizes max-w-prose (around 65 characters) to ensure long paragraphs remain easy to read.",
     "Perfect Line Heights: Carefully calibrated leading-tight for headings and leading-7 for paragraphs.",
     "Zero Dependency Lock-in: Direct source access allows for deep typographic customization.",

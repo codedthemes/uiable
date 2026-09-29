@@ -4,7 +4,7 @@ import { Alert } from "@/components/ui/alert"
 // assets
 import { Zap } from "lucide-react"
 
-//  ------------------------------ | ALERT - ICON PRIMARY | ------------------------------  //
+// ------------------------------ | ALERT - ICON PRIMARY | ------------------------------ //
 
 export default function AlertIconPrimary() {
   return (

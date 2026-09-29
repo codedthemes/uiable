@@ -11,7 +11,7 @@ export default function ProgressLabel() {
   return (
     <div className="w-full">
       <ProgressPrimitive.Root value={value}>
-        <ProgressTrack className="h-5 rounded-lg bg-muted/20 dark:bg-muted/10">
+        <ProgressTrack className="h-5 rounded-lg bg-muted/20 dark:bg-muted/40">
           <ProgressIndicator className="flex items-center justify-center rounded-lg bg-primary text-[10px] font-bold text-white uppercase">
             {value}%
           </ProgressIndicator>

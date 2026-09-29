@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 // assets
 import { Moon, X } from "lucide-react"
 
-//  ------------------------------ | ALERT - DISMISSIBLE DARK | ------------------------------  //
+// ------------------------------ | ALERT - DISMISSIBLE DARK | ------------------------------ //
 
 export default function AlertDismissibleDark() {
   const [isVisible, setIsVisible] = useState(true)
@@ -17,7 +17,7 @@ export default function AlertDismissibleDark() {
   if (!isVisible) return null
 
   return (
-    <Alert className="border-dark-800/20 bg-dark-800/10 text-dark-800 dark:text-dark-300 relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border px-5 py-3 pr-10">
+    <Alert className="relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border border-mist-800/20 bg-mist-800/10 px-5 py-3 pr-10 text-mist-800 dark:bg-mist-800 dark:text-mist-300">
       <Moon className="h-5 w-5 shrink-0" />
       <span>
         <strong>Dark Mode</strong> is now enabled for your account.

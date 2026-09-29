@@ -11,7 +11,6 @@ import {
 // assets
 import { SearchX } from "lucide-react"
 
-// constants
 const frameworks = [
   "Next.js",
   "SvelteKit",

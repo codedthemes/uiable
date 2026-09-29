@@ -1,34 +1,13 @@
 import { ReactNode } from "react"
 
-// next
-import Link from "next/link"
-
 // shadcn
-import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar"
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
 
 // project-imports
-import branding from "@/branding.json"
 import { AppSidebar } from "@/components/app-sidebar"
-import { ThemeToggle } from "@/components/customizer"
-// import SearchBar from "@/components/uiable/layout/search-bar";
+import DashboardHeader from "@/components/dashboard-header"
 import Footer from "@/components/uiable/blocks/landing/footer/footer"
-
-// assets
-import {
-  IconBrandDiscord,
-  IconBrandGithub,
-  IconBrandX,
-} from "@tabler/icons-react"
-
-function Divider() {
-  return <Separator orientation="vertical" className="my-1.5" />
-}
 
 //  ------------------------------ | LAYOUT - DASHBOARD | ------------------------------  //
 
@@ -41,66 +20,8 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           id="main-scroll-area"
           className="flex min-h-0 flex-1 flex-col overflow-y-auto"
         >
-          <header className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-1 bg-background/80 px-4 backdrop-blur-md sm:px-6">
-            <SidebarTrigger className="relative mx-1 -ml-1 flex h-11 w-11 items-center justify-center rounded-lg" />
-            {/* <SearchBar /> */}
-            <div className="flex-1" />
-            <div className="flex items-center gap-2.5">
-              <Button
-                variant="ghost"
-                size="icon-lg"
-                aria-label="Twitter"
-                nativeButton={false}
-                render={
-                  <Link
-                    href={branding.company.socialLink.x}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                }
-                className="flex h-10.5 w-10.5 items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
-              >
-                <IconBrandX className="size-4.5" />
-              </Button>
-              <Divider />
-
-              <Button
-                variant="ghost"
-                size="icon-lg"
-                aria-label="Discord"
-                nativeButton={false}
-                render={
-                  <Link
-                    href={branding.company.socialLink.discord}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                }
-                className="flex h-10.5 w-10.5 items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
-              >
-                <IconBrandDiscord className="size-4.5" />
-              </Button>
-              <Divider />
-
-              <Button
-                nativeButton={false}
-                variant="ghost"
-                render={
-                  <Link
-                    href={branding.company.socialLink.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                }
-                className="flex h-10.5 w-10.5 items-center justify-center rounded-sm hover:bg-foreground/10 dark:hover:bg-muted"
-              >
-                <IconBrandGithub className="size-4.5" />
-              </Button>
-              <Divider />
-              <ThemeToggle />
-            </div>
-          </header>
-          <main className="flex-1 p-4 lg:p-8"> {children} </main>
+          <DashboardHeader />
+          <main className="flex-1 p-4 sm:p-6">{children}</main>
           <Separator />
           <Footer showGradient={false} />
         </SidebarInset>

@@ -17,10 +17,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 // third-party
 import { Radio as RadioPrimitive } from "@base-ui/react/radio"
 import { RadioGroup as RadioGroupPrimitive } from "@base-ui/react/radio-group"
+import { cn } from "cn"
 import { AnimatePresence, motion } from "framer-motion"
-
-// project-importss
-import { cn } from "@/lib/utils"
 
 // Animated radio
 function AnimatedRadioGroupItem({

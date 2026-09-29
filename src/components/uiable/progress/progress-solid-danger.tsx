@@ -8,7 +8,7 @@ export default function ProgressSolidDanger() {
     <div className="w-full">
       <Progress
         value={100}
-        className="*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-destructive dark:*:bg-muted/10"
+        className="*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-destructive dark:*:bg-muted/40"
       />
     </div>
   )

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 // assets
 import { CircleCheck, X } from "lucide-react"
 
-//  ------------------------------ | ALERT - DISMISSIBLE SUCCESS | ------------------------------  //
+// ------------------------------ | ALERT - DISMISSIBLE SUCCESS | ------------------------------ //
 
 export default function AlertDismissibleSuccess() {
   const [isVisible, setIsVisible] = useState(true)
@@ -17,7 +17,7 @@ export default function AlertDismissibleSuccess() {
   if (!isVisible) return null
 
   return (
-    <Alert className="relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border border-green-600/20 bg-green-600/10 px-5 py-3 pr-10 text-green-700 dark:text-green-400">
+    <Alert className="relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border border-green-500/20 bg-green-500/10 px-5 py-3 pr-10 text-green-500">
       <CircleCheck className="h-5 w-5 shrink-0" />
       <span>
         <strong>Success!</strong> Your changes have been saved successfully.

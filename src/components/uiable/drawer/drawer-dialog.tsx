@@ -25,9 +25,11 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
+// third-party
+import { cn } from "cn"
+
 // project-imports
 import { useMediaQuery } from "@/hooks/use-media-query"
-import { cn } from "@/lib/utils"
 
 //  ------------------------------ | DRAWER - DIALOG | ------------------------------  //
 

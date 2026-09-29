@@ -41,13 +41,15 @@ import { ChevronDownIcon, InfoIcon, StarIcon } from "lucide-react"
 
 //  ------------------------------ | INPUT GROUP - WITH TOOLTIP | ------------------------------  //
 
+interface InputGroupWithTooltipProps {
+  country: string
+  setCountry: (value: string) => void
+}
+
 export function InputGroupWithTooltip({
   country,
   setCountry,
-}: {
-  country: string
-  setCountry: (value: string) => void
-}) {
+}: InputGroupWithTooltipProps) {
   return (
     <>
       <FieldGroup>

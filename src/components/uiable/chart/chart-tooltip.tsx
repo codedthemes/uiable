@@ -1,7 +1,7 @@
-import { CSSProperties, ComponentProps } from "react"
+import { ComponentProps, CSSProperties } from "react"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 //  ------------------------------ | CHART - TOOLTIP | ------------------------------  //
 
@@ -120,14 +120,7 @@ export function ChartTooltipDemo() {
   )
 }
 
-function TooltipDemo({
-  indicator = "dot",
-  label,
-  payload,
-  hideLabel,
-  hideIndicator,
-  className,
-}: {
+interface TooltipDemoProps extends ComponentProps<"div"> {
   label: string
   hideLabel?: boolean
   hideIndicator?: boolean
@@ -139,7 +132,16 @@ function TooltipDemo({
   }[]
   nameKey?: string
   labelKey?: string
-} & ComponentProps<"div">) {
+}
+
+function TooltipDemo({
+  indicator = "dot",
+  label,
+  payload,
+  hideLabel,
+  hideIndicator,
+  className,
+}: TooltipDemoProps) {
   const tooltipLabel = hideLabel ? null : (
     <div className="font-medium">{label}</div>
   )

@@ -10,7 +10,6 @@ import {
 // third-party
 import Autoplay from "embla-carousel-autoplay"
 
-// constants
 const Gallery = [
   {
     title: "Urban Reflections",
@@ -53,22 +52,18 @@ const Gallery = [
 //  ------------------------------ | GALLERY 4 | ------------------------------  //
 
 export default function Gallery4() {
-  const plugin = React.useMemo(
-    () => Autoplay({ delay: 2000, stopOnInteraction: true }),
-    []
-  )
+  const plugin = React.useMemo(() => Autoplay({ delay: 2000 }), [])
   return (
     <section className="overflow-hidden py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-5 sm:gap-12">
           <div className="flex flex-col items-center gap-4 text-center sm:gap-6">
             <h2 className="text-lg font-medium text-slate-800 sm:text-3xl dark:text-slate-50">
-              Portfolio Gallery
+              Capturing Cities, Telling Stories
             </h2>
             <p className="max-w-150 text-slate-600 dark:text-slate-100">
-              Explore a curated collection of projects that showcase creativity,
-              craftsmanship, and attention to detail across a variety of designs
-              and spaces.
+              A visual journey through urban landscapes, fleeting moments, and
+              the raw beauty of city life
             </p>
           </div>
           <Carousel

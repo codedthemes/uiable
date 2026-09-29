@@ -19,16 +19,26 @@ export interface NavSection {
   items: CategoryItem[]
 }
 
-export const NAV_CATEGORIES: NavSection[] = [
+export interface DocItem {
+  title: string
+  slug: string
+}
+
+export const NAV_DOCS: DocItem[] = [
+  { title: "Introduction", slug: "introduction" },
+  { title: "Installation", slug: "installation" },
+  { title: "Shadcn CLI", slug: "cli" },
+  { title: "Components", slug: "components" },
+  { title: "Blocks", slug: "blocks" },
+  { title: "MCP", slug: "mcp" },
+  { title: "Changelog", slug: "changelog" },
+]
+
+export const NAV_COMPONENTS: NavSection[] = [
   {
     title: "Inputs",
     items: [
-      {
-        title: "Button",
-        slug: "button",
-        badge: { label: "New" },
-        breakpoints: { xl: 3, lg: 2, xs: 1 },
-      },
+      { title: "Button", slug: "button", breakpoints: { xl: 3, lg: 2, xs: 1 } },
       {
         title: "Button Group",
         slug: "button-group",
@@ -47,12 +57,12 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Command",
         slug: "command",
-        breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
+        breakpoints: { xl: 3, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Date Picker",
         slug: "date-picker",
-        breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
+        breakpoints: { xl: 3, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Input",
@@ -71,11 +81,16 @@ export const NAV_CATEGORIES: NavSection[] = [
         slug: "native-select",
         breakpoints: { lg: 3, md: 2, sm: 1, xs: 1 },
       },
+      {
+        title: "Questionnaire",
+        slug: "questionnaire",
+        breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
+      },
       { title: "Radio", slug: "radio", breakpoints: { xs: 1 } },
       {
         title: "Radio Group",
         slug: "radio-group",
-        breakpoints: { lg: 3, md: 2, sm: 1, xs: 1 },
+        breakpoints: { lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Select",
@@ -87,21 +102,13 @@ export const NAV_CATEGORIES: NavSection[] = [
         slug: "slider",
         breakpoints: { xl: 3, lg: 2, md: 2, sm: 1, xs: 1 },
       },
-      {
-        title: "Switch",
-        slug: "switch",
-        breakpoints: { md: 2, sm: 2, xs: 1 },
-      },
+      { title: "Switch", slug: "switch", breakpoints: { md: 2, sm: 2, xs: 1 } },
       {
         title: "Textarea",
         slug: "textarea",
         breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
       },
-      {
-        title: "Toggle",
-        slug: "toggle",
-        breakpoints: { sm: 2, xs: 1 },
-      },
+      { title: "Toggle", slug: "toggle", breakpoints: { sm: 2, xs: 1 } },
       {
         title: "Toggle Group",
         slug: "toggle-group",
@@ -118,20 +125,17 @@ export const NAV_CATEGORIES: NavSection[] = [
     title: "Data Display",
     items: [
       {
+        title: "Coupon",
+        slug: "coupon",
+        breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
+      },
+      {
         title: "Attachment",
         slug: "attachment",
         breakpoints: { lg: 2, xs: 1 },
       },
-      {
-        title: "Avatar",
-        slug: "avatar",
-        breakpoints: { md: 3, sm: 2, xs: 1 },
-      },
-      {
-        title: "Badge",
-        slug: "badge",
-        breakpoints: { lg: 3, sm: 2, xs: 1 },
-      },
+      { title: "Avatar", slug: "avatar", breakpoints: { lg: 3, sm: 2, xs: 1 } },
+      { title: "Badge", slug: "badge", breakpoints: { lg: 3, sm: 2, xs: 1 } },
       {
         title: "Bubble",
         slug: "bubble",
@@ -140,12 +144,12 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Card",
         slug: "card",
-        breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
+        breakpoints: { lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Carousel",
         slug: "carousel",
-        breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
+        breakpoints: { xl: 2, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Chart",
@@ -167,7 +171,11 @@ export const NAV_CATEGORIES: NavSection[] = [
         slug: "field",
         breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
       },
-      { title: "Hover Card", slug: "hover-card", breakpoints: { xs: 1 } },
+      {
+        title: "Hover Card",
+        slug: "hover-card",
+        breakpoints: { md: 2, sm: 1, xs: 1 },
+      },
       { title: "Kbd", slug: "kbd", breakpoints: { md: 2, sm: 2, xs: 1 } },
       { title: "Label", slug: "label", breakpoints: { xs: 1 } },
       {
@@ -183,14 +191,18 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Message Scroller",
         slug: "message-scroller",
-        breakpoints: { md: 2, sm: 2, xs: 1 },
+        breakpoints: { lg: 2, xs: 1 },
       },
       {
         title: "List Group",
         slug: "list-group",
-        breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
+        breakpoints: { lg: 2, md: 1, sm: 1, xs: 1 },
       },
-      { title: "Scroll Area", slug: "scroll-area", breakpoints: { xs: 1 } },
+      {
+        title: "Scroll Area",
+        slug: "scroll-area",
+        breakpoints: { lg: 2, md: 1, sm: 1, xs: 1 },
+      },
       {
         title: "Separator",
         slug: "separator",
@@ -199,31 +211,37 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Table",
         slug: "table",
-        badge: { label: "New" },
         breakpoints: { xl: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Tooltip",
         slug: "tooltip",
-        badge: { label: "New" },
-        breakpoints: { md: 3, sm: 2, xs: 1 },
+        breakpoints: { lg: 3, sm: 2, xs: 1 },
       },
       {
         title: "Typography",
         slug: "typography",
-        badge: { label: "New" },
         breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Aspect Ratio",
         slug: "aspect-ratio",
-        badge: { label: "New" },
         breakpoints: { md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Skeleton",
         slug: "skeleton",
         breakpoints: { lg: 3, md: 2, sm: 1, xs: 1 },
+      },
+      {
+        title: "Timeline",
+        slug: "timeline",
+        breakpoints: { xl: 2, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Tree View",
+        slug: "tree-view",
+        breakpoints: { xl: 2, lg: 1, md: 1, sm: 1, xs: 1 },
       },
     ],
   },
@@ -238,42 +256,29 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Alert Dialog",
         slug: "alert-dialog",
-        badge: { label: "New" },
         breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Dialog",
         slug: "dialog",
-        badge: { label: "New" },
         breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Drawer",
         slug: "drawer",
-        badge: { label: "New" },
-        breakpoints: { xl: 3, lg: 3, md: 2, sm: 1, xs: 1 },
+        breakpoints: { xl: 3, lg: 2, md: 2, sm: 1, xs: 1 },
       },
       {
         title: "Progress",
         slug: "progress",
         breakpoints: { xl: 3, lg: 2, md: 2, sm: 1, xs: 1 },
       },
-      {
-        title: "Sheet",
-        slug: "sheet",
-        badge: { label: "New" },
-        breakpoints: { md: 2, xs: 1 },
-      },
-      {
-        title: "Sonner",
-        slug: "sonner",
-        breakpoints: { md: 2, sm: 1, xs: 1 },
-      },
+      { title: "Sheet", slug: "sheet", breakpoints: { md: 2, xs: 1 } },
+      { title: "Sonner", slug: "sonner", breakpoints: { md: 2, sm: 1, xs: 1 } },
       {
         title: "Spinner",
         slug: "spinner",
-        badge: { label: "New" },
-        breakpoints: { md: 3, sm: 2, xs: 1 },
+        breakpoints: { lg: 3, sm: 2, xs: 1 },
       },
     ],
   },
@@ -296,11 +301,6 @@ export const NAV_CATEGORIES: NavSection[] = [
         breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
       },
       {
-        title: "Navbar",
-        slug: "navbar",
-        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
-      },
-      {
         title: "Navigation Menu",
         slug: "navigation-menu",
         breakpoints: { xs: 1 },
@@ -313,7 +313,7 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Tabs",
         slug: "tabs",
-        breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
+        breakpoints: { lg: 2, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Sidebar",
@@ -333,7 +333,7 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Collapsible",
         slug: "collapsible",
-        breakpoints: { lg: 2, md: 2, sm: 1, xs: 1 },
+        breakpoints: { lg: 2, md: 1, sm: 1, xs: 1 },
       },
     ],
   },
@@ -353,7 +353,7 @@ export const NAV_CATEGORIES: NavSection[] = [
       {
         title: "Resizable",
         slug: "resizable",
-        breakpoints: { xl: 2, lg: 2, md: 1, sm: 1, xs: 1 },
+        breakpoints: { xl: 2, lg: 1, md: 1, sm: 1, xs: 1 },
       },
     ],
   },
@@ -366,13 +366,11 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Bento",
         slug: "bento",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Call To Action",
         slug: "cta",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -386,9 +384,8 @@ export const NAV_BLOCKS: NavSection[] = [
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
-        title: "E-Commerce",
+        title: "E-commerce",
         slug: "e-commerce",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -419,7 +416,6 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Small Hero",
         slug: "small-hero",
-        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -452,10 +448,80 @@ export const NAV_BLOCKS: NavSection[] = [
         slug: "testimonial",
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
+      {
+        title: "Login",
+        slug: "login",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Sign Up",
+        slug: "sign-up",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Forgot Password",
+        slug: "forgot-password",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Reset Password",
+        slug: "reset-password",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Check Mail",
+        slug: "check-mail",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Code Verification",
+        slug: "code-verification",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Error 404",
+        slug: "error-404",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Error 500",
+        slug: "error-500",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Coming Soon",
+        slug: "coming-soon",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Under Construction",
+        slug: "under-construction",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Join Waitlist",
+        slug: "join-waitlist",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Widgets",
+        slug: "widgets",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Charts",
+        slug: "charts",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
+      {
+        title: "Navbar",
+        slug: "navbar",
+        breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
+      },
     ],
   },
 ]
 
-export const categories = [...NAV_CATEGORIES, ...NAV_BLOCKS].flatMap(
+export const categories = [...NAV_COMPONENTS, ...NAV_BLOCKS].flatMap(
   (section) => section.items
 )

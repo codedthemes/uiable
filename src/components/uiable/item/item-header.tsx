@@ -8,7 +8,6 @@ import {
   ItemTitle,
 } from "@/components/ui/item"
 
-// constants
 const models = [
   {
     name: "v0-1.5-sm",
@@ -35,7 +34,7 @@ const models = [
 export function ItemHeaderDemo() {
   return (
     <div className="flex w-full max-w-xl flex-col gap-6">
-      <ItemGroup className="grid grid-cols-3 gap-4">
+      <ItemGroup className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {models.map((model) => (
           <Item key={model.name} variant="outline">
             <ItemHeader>

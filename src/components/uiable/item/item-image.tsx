@@ -8,7 +8,6 @@ import {
   ItemTitle,
 } from "@/components/ui/item"
 
-// constants
 const music = [
   {
     title: "Midnight City Lights",

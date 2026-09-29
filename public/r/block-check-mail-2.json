@@ -3,7 +3,7 @@
   "name": "block-check-mail-2",
   "title": "Check Mail 2",
   "description": "Check Mail 2 variant for block.",
-  "dependencies": ["framer-motion", "lucide-react", "next"],
+  "dependencies": ["framer-motion", "lucide-react"],
   "registryDependencies": ["@uiable/button"],
   "files": [
     {

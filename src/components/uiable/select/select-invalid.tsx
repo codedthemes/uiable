@@ -9,7 +9,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-// constants
 const items = [
   { label: "Select a fruit", value: null },
   { label: "Apple", value: "apple" },

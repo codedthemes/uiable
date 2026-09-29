@@ -6,7 +6,6 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
 
-// constants
 const HOVER_CARD_SIDES = ["left", "top", "bottom", "right"] as const
 
 //  ------------------------------ | HOVER CARD - SIDES | ------------------------------  //

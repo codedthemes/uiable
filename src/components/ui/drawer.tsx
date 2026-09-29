@@ -3,10 +3,8 @@
 import { ComponentProps } from "react"
 
 // third-party
+import { cn } from "cn"
 import { Drawer as DrawerPrimitive } from "vaul"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 function Drawer({ ...props }: ComponentProps<typeof DrawerPrimitive.Root>) {
   return <DrawerPrimitive.Root data-slot="drawer" {...props} />

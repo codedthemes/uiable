@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "src/components/uiable/progress/progress-solid-secondary.tsx",
-      "content": "// shadcn\nimport { Progress } from \"@/components/ui/progress\"\n\n//  ------------------------------ | PROGRESS - SOLID SECONDARY | ------------------------------  //\n\nexport default function ProgressSolidSecondary() {\n  return (\n    <div className=\"w-full\">\n      <Progress\n        value={50}\n        className=\"*:h-4 *:rounded-lg *:bg-slate-500/20 **:rounded-lg **:bg-secondary dark:*:bg-muted/10\"\n      />\n    </div>\n  )\n}\n",
+      "content": "// shadcn\nimport { Progress } from \"@/components/ui/progress\"\n\n//  ------------------------------ | PROGRESS - SOLID SECONDARY | ------------------------------  //\n\nexport default function ProgressSolidSecondary() {\n  return (\n    <div className=\"w-full\">\n      <Progress\n        value={50}\n        className=\"*:h-4 *:rounded-lg *:bg-muted/10 **:rounded-lg **:bg-slate-500 dark:*:bg-muted/40\"\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-solid-secondary.tsx"
     }

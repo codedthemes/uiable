@@ -4,6 +4,507 @@
   "homepage": "https://uiable.com",
   "items": [
     {
+      "name": "block-gallery-1",
+      "type": "registry:block",
+      "title": "Gallery 1",
+      "description": "Gallery 1 variant for block.",
+      "files": [
+        {
+          "path": "gallery/gallery-1/gallery-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/gallery/gallery-1/gallery-1.tsx"
+        }
+      ],
+      "categories": ["gallery"],
+      "order": 1
+    },
+    {
+      "name": "block-navbar",
+      "type": "registry:block",
+      "title": "Navbar",
+      "description": "Navbar variant for block.",
+      "files": [
+        {
+          "path": "landing/navbar/navbar.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/navbar/navbar.tsx"
+        },
+        {
+          "path": "../../../branding.json",
+          "type": "registry:file",
+          "target": "src/branding.json"
+        },
+        {
+          "path": "../../../components-grid.ts",
+          "type": "registry:component",
+          "target": "src/components-grid.ts"
+        },
+        {
+          "path": "../../customizer/RadiusControl.tsx",
+          "type": "registry:component",
+          "target": "@components/customizer/RadiusControl.tsx"
+        },
+        {
+          "path": "../../customizer/ThemePresetButtons.tsx",
+          "type": "registry:component",
+          "target": "@components/customizer/ThemePresetButtons.tsx"
+        },
+        {
+          "path": "../../customizer/ThemePresetStyles.tsx",
+          "type": "registry:component",
+          "target": "@components/customizer/ThemePresetStyles.tsx"
+        },
+        {
+          "path": "../../customizer/index.tsx",
+          "type": "registry:component",
+          "target": "@components/customizer/index.tsx"
+        },
+        {
+          "path": "landing/components/NavSearchDialog.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/NavSearchDialog.tsx"
+        },
+        {
+          "path": "../../../hooks/use-github-star-count.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-github-star-count.ts"
+        },
+        {
+          "path": "../../../hooks/use-theme-radius.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-theme-radius.ts"
+        },
+        {
+          "path": "../../../images/svg/icons/star.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/star.tsx"
+        },
+        {
+          "path": "../../../utils/github.ts",
+          "type": "registry:component",
+          "target": "src/utils/github.ts"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 2,
+      "registryDependencies": ["@uiable/button", "@uiable/command", "@uiable/input", "@uiable/logo", "@uiable/separator", "@uiable/sheet", "@uiable/slider"],
+      "dependencies": ["@tabler/icons-react", "cn", "lucide-react", "next-themes"]
+    },
+    {
+      "name": "block-hero",
+      "type": "registry:block",
+      "title": "Hero",
+      "description": "Hero variant for block.",
+      "files": [
+        {
+          "path": "landing/hero/hero.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/hero/hero.tsx"
+        },
+        {
+          "path": "../../../branding.json",
+          "type": "registry:file",
+          "target": "src/branding.json"
+        },
+        {
+          "path": "../../animation/HoverBg.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/HoverBg.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/baseui.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/baseui.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/motion.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/motion.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/shadcn.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/shadcn.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/tailwind.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/tailwind.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/ct-fab-logo.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/ct-fab-logo.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/sparkle-grid.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/sparkle-grid.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 3,
+      "registryDependencies": ["@uiable/badge", "@uiable/button", "@uiable/text-marquee"],
+      "dependencies": ["@tabler/icons-react"]
+    },
+    {
+      "name": "block-component-1",
+      "type": "registry:block",
+      "title": "Component 1",
+      "description": "Component 1 variant for block.",
+      "files": [
+        {
+          "path": "landing/component-1/component-1.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/component-1/component-1.tsx"
+        },
+        {
+          "path": "../../../category-counts.json",
+          "type": "registry:file",
+          "target": "src/category-counts.json"
+        },
+        {
+          "path": "../../animation/BorderGlow.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/BorderGlow.tsx"
+        },
+        {
+          "path": "landing/components/SectionHeader.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/SectionHeader.tsx"
+        },
+        {
+          "path": "../../../images/svg/ButtonGroup.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/ButtonGroup.tsx"
+        },
+        {
+          "path": "../../../images/svg/InputOtp.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/InputOtp.tsx"
+        },
+        {
+          "path": "../../../images/svg/ToggleGroup.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/ToggleGroup.tsx"
+        },
+        {
+          "path": "../../../images/svg/button.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/button.tsx"
+        },
+        {
+          "path": "../../../images/svg/item.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/item.tsx"
+        },
+        {
+          "path": "../../../images/svg/switch.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/switch.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 4,
+      "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/separator"],
+      "dependencies": ["@tabler/icons-react", "cn"]
+    },
+    {
+      "name": "block-component-2",
+      "type": "registry:block",
+      "title": "Component 2",
+      "description": "Component 2 variant for block.",
+      "files": [
+        {
+          "path": "landing/component-2/component-2.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/component-2/component-2.tsx"
+        },
+        {
+          "path": "landing/components/ActionButtonGroupBadge.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/ActionButtonGroupBadge.tsx"
+        },
+        {
+          "path": "landing/components/AskMeAnything.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/AskMeAnything.tsx"
+        },
+        {
+          "path": "landing/components/CurrencySwapCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/CurrencySwapCard.tsx"
+        },
+        {
+          "path": "landing/components/DatePickerCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/DatePickerCard.tsx"
+        },
+        {
+          "path": "landing/components/DeploymentEnvironmentCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/DeploymentEnvironmentCard.tsx"
+        },
+        {
+          "path": "landing/components/EventAlertCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/EventAlertCard.tsx"
+        },
+        {
+          "path": "landing/components/OneTimePasswordCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/OneTimePasswordCard.tsx"
+        },
+        {
+          "path": "landing/components/PowerUsageCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/PowerUsageCard.tsx"
+        },
+        {
+          "path": "landing/components/PrivacyVisibilityCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/PrivacyVisibilityCard.tsx"
+        },
+        {
+          "path": "landing/components/ProfileCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/ProfileCard.tsx"
+        },
+        {
+          "path": "landing/components/RevenueChartCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/RevenueChartCard.tsx"
+        },
+        {
+          "path": "landing/components/RevenueGrowthSlider.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/RevenueGrowthSlider.tsx"
+        },
+        {
+          "path": "landing/components/SectionHeader.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/SectionHeader.tsx"
+        },
+        {
+          "path": "landing/components/UploadFilesCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/UploadFilesCard.tsx"
+        },
+        {
+          "path": "landing/components/VerificationBannerCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/VerificationBannerCard.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/bitcoin.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/bitcoin.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/ethereum.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/ethereum.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/logo1.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/logo1.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/metric-chart.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/metric-chart.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/noise-overlay.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/noise-overlay.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/profile-avatar.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/profile-avatar.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 5,
+      "registryDependencies": ["@uiable/badge", "@uiable/button", "@uiable/button-group", "@uiable/calendar", "@uiable/checkbox", "@uiable/dialog", "@uiable/input-group", "@uiable/input-otp", "@uiable/popover", "@uiable/radio-group", "@uiable/select", "@uiable/separator", "@uiable/slider", "@uiable/tabs"],
+      "dependencies": ["@tabler/icons-react", "cn", "date-fns", "framer-motion", "lucide-react"]
+    },
+    {
+      "name": "block-feature",
+      "type": "registry:block",
+      "title": "Feature",
+      "description": "Feature variant for block.",
+      "files": [
+        {
+          "path": "landing/feature/Feature.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/feature/Feature.tsx"
+        },
+        {
+          "path": "../../../images/brand/dark-fav.tsx",
+          "type": "registry:component",
+          "target": "src/images/brand/dark-fav.tsx"
+        },
+        {
+          "path": "../../../images/brand/light-fav.tsx",
+          "type": "registry:component",
+          "target": "src/images/brand/light-fav.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/baseui.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/baseui.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/shadcn.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/shadcn.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/tailwind.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/tailwind.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/feature-build.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/feature-build.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/feature-motion.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/feature-motion.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/figma-logo.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/figma-logo.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/figma-orbit-ring.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/figma-orbit-ring.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 7,
+      "dependencies": ["@tabler/icons-react", "cn", "lucide-react"]
+    },
+    {
+      "name": "block-faq",
+      "type": "registry:block",
+      "title": "Faq",
+      "description": "Faq variant for block.",
+      "files": [
+        {
+          "path": "landing/faq/faq.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/faq/faq.tsx"
+        },
+        {
+          "path": "../../../branding.json",
+          "type": "registry:file",
+          "target": "src/branding.json"
+        },
+        {
+          "path": "landing/components/SectionHeader.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/SectionHeader.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 8,
+      "registryDependencies": ["@uiable/accordion"],
+      "dependencies": ["cn"]
+    },
+    {
+      "name": "block-contact",
+      "type": "registry:block",
+      "title": "Contact",
+      "description": "Contact variant for block.",
+      "files": [
+        {
+          "path": "landing/contact/Contact.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/contact/Contact.tsx"
+        },
+        {
+          "path": "../../../images/brand/light-fav.tsx",
+          "type": "registry:component",
+          "target": "src/images/brand/light-fav.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/contact-left-grid.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/contact-left-grid.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/contact-right-grid.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/contact-right-grid.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 9,
+      "registryDependencies": ["@uiable/button", "@uiable/input"],
+      "dependencies": ["sonner"]
+    },
+    {
+      "name": "block-footer",
+      "type": "registry:block",
+      "title": "Footer",
+      "description": "Footer variant for block.",
+      "files": [
+        {
+          "path": "landing/footer/footer.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/footer/footer.tsx"
+        },
+        {
+          "path": "../../../branding.json",
+          "type": "registry:file",
+          "target": "src/branding.json"
+        }
+      ],
+      "categories": ["landing"],
+      "order": 10,
+      "registryDependencies": ["@uiable/logo"],
+      "dependencies": ["@tabler/icons-react", "cn"]
+    },
+    {
+      "name": "block-about",
+      "type": "registry:block",
+      "title": "About",
+      "description": "About variant for block.",
+      "files": [
+        {
+          "path": "landing/about/about-us.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/about/about-us.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/able-pro-logo.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/able-pro-logo.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/berry-logo.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/berry-logo.tsx"
+        },
+        {
+          "path": "../../../images/svg/landing/mantis-logo.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/landing/mantis-logo.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/avatar"],
+      "dependencies": ["cn", "framer-motion", "lucide-react"]
+    },
+    {
       "name": "block-bento-4",
       "type": "registry:block",
       "title": "Bento 4",
@@ -16,9 +517,6 @@
         }
       ],
       "categories": ["bento"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/badge", "@uiable/button-ai", "@uiable/card", "@uiable/input"],
       "dependencies": ["framer-motion", "lucide-react"]
     },
@@ -37,6 +535,52 @@
       "categories": ["bento"],
       "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/chart"],
       "dependencies": ["@tabler/icons-react", "lucide-react", "recharts"]
+    },
+    {
+      "name": "block-blocks-showcase",
+      "type": "registry:block",
+      "title": "Blocks Showcase",
+      "description": "Blocks Showcase variant for block.",
+      "files": [
+        {
+          "path": "landing/blocks-showcase/blocks-showcase.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/blocks-showcase/blocks-showcase.tsx"
+        },
+        {
+          "path": "../../../category-counts.json",
+          "type": "registry:file",
+          "target": "src/category-counts.json"
+        },
+        {
+          "path": "../../animation/AutoScrollPreview.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/AutoScrollPreview.tsx"
+        },
+        {
+          "path": "../../animation/CrossfadeImages.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/CrossfadeImages.tsx"
+        },
+        {
+          "path": "../../animation/MarqueeImages.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/MarqueeImages.tsx"
+        },
+        {
+          "path": "../../animation/TestimonialsMarquee.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/TestimonialsMarquee.tsx"
+        },
+        {
+          "path": "landing/components/SectionHeader.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/SectionHeader.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/badge"],
+      "dependencies": ["@tabler/icons-react", "cn"]
     },
     {
       "name": "block-charts-7",
@@ -84,7 +628,7 @@
       ],
       "categories": ["check-mail"],
       "registryDependencies": ["@uiable/button"],
-      "dependencies": ["framer-motion", "lucide-react", "next"]
+      "dependencies": ["framer-motion", "lucide-react"]
     },
     {
       "name": "block-coming-soon-1",
@@ -117,69 +661,6 @@
       "categories": ["coming-soon"],
       "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/input"],
       "dependencies": ["lucide-react"]
-    },
-    {
-      "name": "block-component-1",
-      "type": "registry:block",
-      "title": "Component 1",
-      "description": "Component 1 variant for block.",
-      "files": [
-        {
-          "path": "landing/component-1/component-1.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/component-1/component-1.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/SectionHeader", "@uiable/button", "@uiable/card", "@uiable/separator"],
-      "dependencies": ["@tabler/icons-react", "next"]
-    },
-    {
-      "name": "block-component-2",
-      "type": "registry:block",
-      "title": "Component 2",
-      "description": "Component 2 variant for block.",
-      "files": [
-        {
-          "path": "landing/component-2/component-2.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/component-2/component-2.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/ActionButtonGroupBadge", "@uiable/AskMeAnything", "@uiable/CurrencySwapCard", "@uiable/DeploymentEnvironmentCard", "@uiable/EventAlertCard", "@uiable/OneTimePasswordCard", "@uiable/PowerUsageCard", "@uiable/PrivacyVisibilityCard", "@uiable/ProfileCard", "@uiable/RevenueChartCard", "@uiable/RevenueGrowthSlider", "@uiable/SectionHeader", "@uiable/UploadFilesCard", "@uiable/VerificationBannerCard"]
-    },
-    {
-      "name": "block-component-layout",
-      "type": "registry:block",
-      "title": "Component Layout",
-      "description": "Component Layout variant for block.",
-      "files": [
-        {
-          "path": "layout/component-layout/ComponentLayout.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/layout/component-layout/ComponentLayout.tsx"
-        }
-      ],
-      "categories": ["layout"],
-      "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/input", "@uiable/logo", "@uiable/scroll-area", "@uiable/sheet"],
-      "dependencies": ["lucide-react"]
-    },
-    {
-      "name": "block-contact",
-      "type": "registry:block",
-      "title": "Contact",
-      "description": "Contact variant for block.",
-      "files": [
-        {
-          "path": "landing/contact/Contact.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/contact/Contact.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/button", "@uiable/input"],
-      "dependencies": ["sonner"]
     },
     {
       "name": "block-contact-1",
@@ -308,22 +789,6 @@
       "dependencies": ["framer-motion"]
     },
     {
-      "name": "block-contact-15",
-      "type": "registry:block",
-      "title": "Contact 15",
-      "description": "Contact 15 variant for block.",
-      "files": [
-        {
-          "path": "contact/contact-15/contact-15.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/contact/contact-15/contact-15.tsx"
-        }
-      ],
-      "categories": ["contact"],
-      "registryDependencies": ["@uiable/button", "@uiable/field", "@uiable/input", "@uiable/radio-group", "@uiable/select", "@uiable/textarea"],
-      "dependencies": ["framer-motion", "lucide-react"]
-    },
-    {
       "name": "block-contact-19",
       "type": "registry:block",
       "title": "Contact 19",
@@ -352,7 +817,7 @@
         }
       ],
       "categories": ["contact"],
-      "dependencies": ["framer-motion", "next"]
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "block-contact-21",
@@ -367,7 +832,7 @@
         }
       ],
       "categories": ["contact"],
-      "dependencies": ["framer-motion", "lucide-react", "next"]
+      "dependencies": ["framer-motion", "lucide-react"]
     },
     {
       "name": "block-content-1",
@@ -398,20 +863,6 @@
       "categories": ["content"]
     },
     {
-      "name": "block-content-3",
-      "type": "registry:block",
-      "title": "Content 3",
-      "description": "Content 3 variant for block.",
-      "files": [
-        {
-          "path": "content/content-3/content-3.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/content/content-3/content-3.tsx"
-        }
-      ],
-      "categories": ["content"]
-    },
-    {
       "name": "block-content-4",
       "type": "registry:block",
       "title": "Content 4",
@@ -421,36 +872,6 @@
           "path": "content/content-4/content-4.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/content/content-4/content-4.tsx"
-        }
-      ],
-      "categories": ["content"],
-      "registryDependencies": ["@uiable/button"]
-    },
-    {
-      "name": "block-content-5",
-      "type": "registry:block",
-      "title": "Content 5",
-      "description": "Content 5 variant for block.",
-      "files": [
-        {
-          "path": "content/content-5/content-5.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/content/content-5/content-5.tsx"
-        }
-      ],
-      "categories": ["content"],
-      "registryDependencies": ["@uiable/button"]
-    },
-    {
-      "name": "block-content-6",
-      "type": "registry:block",
-      "title": "Content 6",
-      "description": "Content 6 variant for block.",
-      "files": [
-        {
-          "path": "content/content-6/content-6.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/content/content-6/content-6.tsx"
         }
       ],
       "categories": ["content"],
@@ -577,9 +998,6 @@
         }
       ],
       "categories": ["cta"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/button"],
       "dependencies": ["framer-motion", "lucide-react"]
     },
@@ -597,20 +1015,6 @@
       ],
       "categories": ["cta"],
       "registryDependencies": ["@uiable/button"]
-    },
-    {
-      "name": "block-cta-7",
-      "type": "registry:block",
-      "title": "Cta 7",
-      "description": "Cta 7 variant for block.",
-      "files": [
-        {
-          "path": "cta/cta-7/cta-7.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/cta/cta-7/cta-7.tsx"
-        }
-      ],
-      "categories": ["cta"]
     },
     {
       "name": "block-cta-9",
@@ -658,38 +1062,6 @@
       "registryDependencies": ["@uiable/button", "@uiable/input"]
     },
     {
-      "name": "block-dashboard-layout",
-      "type": "registry:block",
-      "title": "Dashboard Layout",
-      "description": "Dashboard Layout variant for block.",
-      "files": [
-        {
-          "path": "layout/dashboard-layout/Dashboard.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/layout/dashboard-layout/Dashboard.tsx"
-        }
-      ],
-      "categories": ["layout"],
-      "registryDependencies": ["@uiable/avatar", "@uiable/button", "@uiable/card", "@uiable/collapsible", "@uiable/logo", "@uiable/notification-dropdown", "@uiable/search-bar", "@uiable/sidebar", "@uiable/user-profile"],
-      "dependencies": ["iconsax-reactjs", "lucide-react"]
-    },
-    {
-      "name": "block-doc-layout",
-      "type": "registry:block",
-      "title": "Doc Layout",
-      "description": "Doc Layout variant for block.",
-      "files": [
-        {
-          "path": "layout/doc-layout/DocLayout.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/layout/doc-layout/DocLayout.tsx"
-        }
-      ],
-      "categories": ["layout"],
-      "registryDependencies": ["@uiable/button", "@uiable/collapsible", "@uiable/logo", "@uiable/notification-dropdown", "@uiable/search-bar", "@uiable/sidebar", "@uiable/user-profile"],
-      "dependencies": ["lucide-react"]
-    },
-    {
       "name": "block-e-commerce-2",
       "type": "registry:block",
       "title": "E Commerce 2",
@@ -717,9 +1089,6 @@
         }
       ],
       "categories": ["e-commerce"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/button"]
     },
     {
@@ -735,9 +1104,6 @@
         }
       ],
       "categories": ["e-commerce"],
-      "badge": {
-        "label": "New"
-      },
       "registryDependencies": ["@uiable/button"]
     },
     {
@@ -895,22 +1261,6 @@
       "registryDependencies": ["@uiable/button"]
     },
     {
-      "name": "block-faq",
-      "type": "registry:block",
-      "title": "Faq",
-      "description": "Faq variant for block.",
-      "files": [
-        {
-          "path": "landing/faq/faq.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/faq/faq.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/SectionHeader", "@uiable/accordion"],
-      "dependencies": ["next"]
-    },
-    {
       "name": "block-faq-1",
       "type": "registry:block",
       "title": "Faq 1",
@@ -998,22 +1348,6 @@
       ],
       "categories": ["faq"],
       "registryDependencies": ["@uiable/accordion", "@uiable/button"]
-    },
-    {
-      "name": "block-feature",
-      "type": "registry:block",
-      "title": "Feature",
-      "description": "Feature variant for block.",
-      "files": [
-        {
-          "path": "landing/feature/Feature.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/feature/Feature.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/SectionHeader", "@uiable/button"],
-      "dependencies": ["lucide-react"]
     },
     {
       "name": "block-feature-1",
@@ -1226,22 +1560,6 @@
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
-      "name": "block-footer",
-      "type": "registry:block",
-      "title": "Footer",
-      "description": "Footer variant for block.",
-      "files": [
-        {
-          "path": "landing/footer/footer.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/footer/footer.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/logo"],
-      "dependencies": ["@tabler/icons-react", "next"]
-    },
-    {
       "name": "block-footer-2",
       "type": "registry:block",
       "title": "Footer 2",
@@ -1303,21 +1621,6 @@
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
-      "name": "block-footer-11",
-      "type": "registry:block",
-      "title": "Footer 11",
-      "description": "Footer 11 variant for block.",
-      "files": [
-        {
-          "path": "footer/footer-11/footer-11.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/footer/footer-11/footer-11.tsx"
-        }
-      ],
-      "categories": ["footer"],
-      "dependencies": ["framer-motion", "lucide-react"]
-    },
-    {
       "name": "block-footer-19",
       "type": "registry:block",
       "title": "Footer 19",
@@ -1344,21 +1647,7 @@
         }
       ],
       "categories": ["footer"],
-      "dependencies": ["framer-motion", "lucide-react", "next"]
-    },
-    {
-      "name": "block-gallery-1",
-      "type": "registry:block",
-      "title": "Gallery 1",
-      "description": "Gallery 1 variant for block.",
-      "files": [
-        {
-          "path": "gallery/gallery-1/gallery-1.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/gallery/gallery-1/gallery-1.tsx"
-        }
-      ],
-      "categories": ["gallery"]
+      "dependencies": ["framer-motion", "lucide-react"]
     },
     {
       "name": "block-gallery-2",
@@ -1414,6 +1703,11 @@
           "path": "gallery/gallery-10/gallery-10.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/gallery/gallery-10/gallery-10.tsx"
+        },
+        {
+          "path": "../../../images/svg/icons/star.tsx",
+          "type": "registry:component",
+          "target": "src/images/svg/icons/star.tsx"
         }
       ],
       "categories": ["gallery"],
@@ -1434,23 +1728,7 @@
       ],
       "categories": ["gallery"],
       "registryDependencies": ["@uiable/badge", "@uiable/button", "@uiable/card", "@uiable/input"],
-      "dependencies": ["cn", "framer-motion", "lucide-react", "next"]
-    },
-    {
-      "name": "block-hero",
-      "type": "registry:block",
-      "title": "Hero",
-      "description": "Hero variant for block.",
-      "files": [
-        {
-          "path": "landing/hero/hero.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/hero/hero.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/badge", "@uiable/button"],
-      "dependencies": ["@tabler/icons-react", "framer-motion", "next"]
+      "dependencies": ["cn", "framer-motion", "lucide-react"]
     },
     {
       "name": "block-hero-2",
@@ -1581,21 +1859,6 @@
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
-      "name": "block-hero-22",
-      "type": "registry:block",
-      "title": "Hero 22",
-      "description": "Hero 22 variant for block.",
-      "files": [
-        {
-          "path": "hero/hero-22/hero-22.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/hero/hero-22/hero-22.tsx"
-        }
-      ],
-      "categories": ["hero"],
-      "dependencies": ["framer-motion", "lucide-react", "next"]
-    },
-    {
       "name": "block-join-waitlist-1",
       "type": "registry:block",
       "title": "Join Waitlist 1",
@@ -1624,8 +1887,7 @@
         }
       ],
       "categories": ["login"],
-      "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/checkbox", "@uiable/input", "@uiable/logo"],
-      "dependencies": ["next"]
+      "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/checkbox", "@uiable/input", "@uiable/logo"]
     },
     {
       "name": "block-login-2",
@@ -1641,22 +1903,6 @@
       ],
       "categories": ["login"],
       "registryDependencies": ["@uiable/button", "@uiable/checkbox", "@uiable/field", "@uiable/input", "@uiable/logo", "@uiable/separator"]
-    },
-    {
-      "name": "block-navbar",
-      "type": "registry:block",
-      "title": "Navbar",
-      "description": "Navbar variant for block.",
-      "files": [
-        {
-          "path": "landing/navbar/navbar.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/landing/navbar/navbar.tsx"
-        }
-      ],
-      "categories": ["landing"],
-      "registryDependencies": ["@uiable/NavSearchDialog", "@uiable/button", "@uiable/logo", "@uiable/separator"],
-      "dependencies": ["@tabler/icons-react", "next"]
     },
     {
       "name": "block-navbar-2",
@@ -1705,21 +1951,6 @@
       "categories": ["portfolio"],
       "registryDependencies": ["@uiable/button"],
       "dependencies": ["lucide-react"]
-    },
-    {
-      "name": "block-portfolio-3",
-      "type": "registry:block",
-      "title": "Portfolio 3",
-      "description": "Portfolio 3 variant for block.",
-      "files": [
-        {
-          "path": "portfolio/portfolio-3/portfolio-3.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/portfolio/portfolio-3/portfolio-3.tsx"
-        }
-      ],
-      "categories": ["portfolio"],
-      "registryDependencies": ["@uiable/button", "@uiable/carousel"]
     },
     {
       "name": "block-portfolio-4",
@@ -2026,9 +2257,6 @@
         }
       ],
       "categories": ["small-hero"],
-      "badge": {
-        "label": "New"
-      },
       "dependencies": ["framer-motion"]
     },
     {
@@ -2060,21 +2288,6 @@
       ],
       "categories": ["statistics"],
       "registryDependencies": ["@uiable/button"],
-      "dependencies": ["framer-motion", "lucide-react"]
-    },
-    {
-      "name": "block-statistics-2",
-      "type": "registry:block",
-      "title": "Statistics 2",
-      "description": "Statistics 2 variant for block.",
-      "files": [
-        {
-          "path": "statistics/statistics-2/statistics-2.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/statistics/statistics-2/statistics-2.tsx"
-        }
-      ],
-      "categories": ["statistics"],
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
@@ -2154,20 +2367,6 @@
       "categories": ["team"],
       "registryDependencies": ["@uiable/avatar", "@uiable/carousel"],
       "dependencies": ["cn"]
-    },
-    {
-      "name": "block-team-4",
-      "type": "registry:block",
-      "title": "Team 4",
-      "description": "Team 4 variant for block.",
-      "files": [
-        {
-          "path": "team/team-4/team-4.tsx",
-          "type": "registry:component",
-          "target": "@components/uiable/blocks/team/team-4/team-4.tsx"
-        }
-      ],
-      "categories": ["team"]
     },
     {
       "name": "block-team-6",
@@ -2288,6 +2487,11 @@
           "path": "testimonial/testimonial-16/testimonial-16.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/testimonial/testimonial-16/testimonial-16.tsx"
+        },
+        {
+          "path": "../../animation/BorderGlow.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/BorderGlow.tsx"
         }
       ],
       "categories": ["testimonial"],
@@ -2304,6 +2508,11 @@
           "path": "testimonial/testimonial-17/testimonial-17.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/testimonial/testimonial-17/testimonial-17.tsx"
+        },
+        {
+          "path": "../../animation/SpotlightCard.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/SpotlightCard.tsx"
         }
       ],
       "categories": ["testimonial"],
@@ -2320,6 +2529,11 @@
           "path": "testimonial/testimonial-18/testimonial-18.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/testimonial/testimonial-18/testimonial-18.tsx"
+        },
+        {
+          "path": "../../animation/SpotlightCard.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/SpotlightCard.tsx"
         }
       ],
       "categories": ["testimonial"],
@@ -2351,10 +2565,15 @@
           "path": "testimonial/testimonial-21/testimonial-21.tsx",
           "type": "registry:component",
           "target": "@components/uiable/blocks/testimonial/testimonial-21/testimonial-21.tsx"
+        },
+        {
+          "path": "landing/components/PortfolioSpotlightCard.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/PortfolioSpotlightCard.tsx"
         }
       ],
       "categories": ["testimonial"],
-      "registryDependencies": ["@uiable/PortfolioSpotlightCard", "@uiable/badge"],
+      "registryDependencies": ["@uiable/badge"],
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
@@ -2404,6 +2623,27 @@
       "categories": ["testimonial"],
       "registryDependencies": ["@uiable/avatar", "@uiable/button"],
       "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
+      "name": "block-testimonials",
+      "type": "registry:block",
+      "title": "Testimonials",
+      "description": "Testimonials variant for block.",
+      "files": [
+        {
+          "path": "landing/testimonials/testimonials.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/testimonials/testimonials.tsx"
+        },
+        {
+          "path": "landing/components/SectionHeader.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/SectionHeader.tsx"
+        }
+      ],
+      "categories": ["landing"],
+      "registryDependencies": ["@uiable/avatar"],
+      "dependencies": ["cn", "framer-motion"]
     },
     {
       "name": "block-under-construction-1",

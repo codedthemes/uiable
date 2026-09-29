@@ -10,7 +10,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 // assets
 import { Cloud, HardDrive, Server } from "lucide-react"
 
-// constants
 const plans = [
   {
     value: "local",

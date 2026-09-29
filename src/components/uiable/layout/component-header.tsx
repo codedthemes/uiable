@@ -43,7 +43,7 @@ export default function ComponentHeader() {
         <div className="flex items-center gap-2 sm:gap-4">
           <nav className="hidden items-center gap-6 md:flex">
             <Link
-              href="/dashboard"
+              href="/admin-dashboard"
               className="text-base font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               Dashboard

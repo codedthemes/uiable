@@ -17,10 +17,12 @@ import { format } from "date-fns"
 // assets
 import { Calendar as CalendarIcon } from "lucide-react"
 
+const DEFAULT_DATE = new Date(2025, 5, 1)
+
 // ------------------------------ | DATE PICKER CARD | ------------------------------ //
 
 export default function DatePickerCard() {
-  const [date, setDate] = useState<Date | undefined>(new Date(2025, 5, 1))
+  const [date, setDate] = useState<Date | undefined>(DEFAULT_DATE)
 
   return (
     <div className="flex items-center justify-between rounded-xl border border-border bg-background px-3 py-2 text-sm text-foreground">
@@ -34,12 +36,12 @@ export default function DatePickerCard() {
               type="button"
               variant="ghost"
               size="icon"
-              aria-label="Pick a date"
+              aria-label="Choose date"
               className="size-8 rounded-lg text-muted-foreground hover:bg-accent hover:text-foreground"
             />
           }
         >
-          <CalendarIcon className="size-4.5" />
+          <CalendarIcon aria-hidden="true" className="size-4.5" />
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0" align="end">
           <Calendar

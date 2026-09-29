@@ -17,24 +17,49 @@ import {
 } from "@/components/ui/command"
 
 // project-imports
-import { NAV_CATEGORIES, NAV_BLOCKS } from "@/components-grid"
+import { NAV_COMPONENTS, NAV_BLOCKS, NAV_DOCS } from "@/components-grid"
 
 // assets
 import {
-  IconSparkles,
   IconComponents,
   IconLayoutDashboard,
+  IconSparkles,
+  type Icon as TablerIcon,
 } from "@tabler/icons-react"
 
+// types
+interface NavSearchDialogProps {
+  open: boolean
+  setOpen: (open: boolean) => void
+}
+
+interface CommandResultItemProps {
+  icon: TablerIcon
+  value: string
+  title: string
+  onSelect: () => void
+}
+
 // ------------------------------ | NAVBAR SEARCH DIALOG | ------------------------------  //
+
+function CommandResultItem({
+  icon: Icon,
+  value,
+  title,
+  onSelect,
+}: CommandResultItemProps) {
+  return (
+    <CommandItem value={value} onSelect={onSelect}>
+      <Icon aria-hidden="true" className="size-4" />
+      <span>{title}</span>
+    </CommandItem>
+  )
+}
 
 export default function NavSearchDialog({
   open,
   setOpen,
-}: {
-  open: boolean
-  setOpen: (open: boolean) => void
-}) {
+}: NavSearchDialogProps) {
   const router = useRouter()
   const [search, setSearch] = useState("")
   const [prevOpen, setPrevOpen] = useState(open)
@@ -75,56 +100,32 @@ export default function NavSearchDialog({
             <>
               <CommandEmpty>No results found.</CommandEmpty>
               <CommandGroup heading="Documentation">
-                <CommandItem
-                  value="Introduction"
-                  onSelect={() =>
-                    runCommand(() => router.push("/doc/introduction"))
-                  }
-                >
-                  <IconSparkles className="mr-2 size-4" />
-                  <span>Introduction</span>
-                </CommandItem>
-                <CommandItem
-                  value="Installation"
-                  onSelect={() =>
-                    runCommand(() => router.push("/doc/installation"))
-                  }
-                >
-                  <IconSparkles className="mr-2 size-4" />
-                  <span>Installation</span>
-                </CommandItem>
-                <CommandItem
-                  value="Shadcn CLI"
-                  onSelect={() => runCommand(() => router.push("/doc/cli"))}
-                >
-                  <IconSparkles className="mr-2 size-4" />
-                  <span>Shadcn CLI</span>
-                </CommandItem>
-                <CommandItem
-                  value="Changelog"
-                  onSelect={() =>
-                    runCommand(() => router.push("/doc/changelog"))
-                  }
-                >
-                  <IconSparkles className="mr-2 size-4" />
-                  <span>Changelog</span>
-                </CommandItem>
+                {NAV_DOCS.map((doc) => (
+                  <CommandResultItem
+                    key={doc.slug}
+                    icon={IconSparkles}
+                    value={doc.title}
+                    title={doc.title}
+                    onSelect={() =>
+                      runCommand(() => router.push(`/doc/${doc.slug}`))
+                    }
+                  />
+                ))}
               </CommandGroup>
-              {NAV_CATEGORIES.map((section) => (
+              {NAV_COMPONENTS.map((section) => (
                 <CommandGroup key={section.title} heading={section.title}>
                   {section.items.map((item) => (
-                    <CommandItem
+                    <CommandResultItem
                       key={item.slug}
+                      icon={IconComponents}
                       value={item.title}
+                      title={item.title}
                       onSelect={() =>
                         runCommand(() =>
                           router.push(`/components/${item.slug}`)
                         )
                       }
-                    >
-                      <IconComponents className="mr-2 size-4" />
-                      <span>{item.title}</span>
-                    </CommandItem>
+                    />
                   ))}
                 </CommandGroup>
               ))}
@@ -134,45 +135,41 @@ export default function NavSearchDialog({
                   heading={`Blocks - ${section.title}`}
                 >
                   {section.items.map((item) => (
-                    <CommandItem
+                    <CommandResultItem
                       key={item.slug}
-                      value={item.title}
+                      icon={IconLayoutDashboard}
+                      value={`${item.title} block`}
+                      title={item.title}
                       onSelect={() =>
                         runCommand(() => router.push(`/blocks/${item.slug}`))
                       }
-                    >
-                      <IconLayoutDashboard className="mr-2 size-4" />
-                      <span>{item.title}</span>
-                    </CommandItem>
+                    />
                   ))}
                 </CommandGroup>
               ))}
             </>
           ) : (
             <CommandGroup heading="Suggestions">
-              <CommandItem
+              <CommandResultItem
+                icon={IconSparkles}
                 value="Introduction"
+                title={NAV_DOCS[0].title}
                 onSelect={() =>
-                  runCommand(() => router.push("/doc/introduction"))
+                  runCommand(() => router.push(`/doc/${NAV_DOCS[0].slug}`))
                 }
-              >
-                <IconSparkles className="mr-2 size-4" />
-                <span>Introduction</span>
-              </CommandItem>
-              <CommandItem
+              />
+              <CommandResultItem
+                icon={IconComponents}
                 value="Components"
+                title="Components"
                 onSelect={() => runCommand(() => router.push("/components"))}
-              >
-                <IconComponents className="mr-2 size-4" />
-                <span>Components</span>
-              </CommandItem>
-              <CommandItem
+              />
+              <CommandResultItem
+                icon={IconLayoutDashboard}
                 value="Blocks"
+                title="Blocks"
                 onSelect={() => runCommand(() => router.push("/blocks"))}
-              >
-                <IconLayoutDashboard className="mr-2 size-4" />
-                <span>Blocks</span>
-              </CommandItem>
+              />
             </CommandGroup>
           )}
         </CommandList>

@@ -19,6 +19,7 @@ export function ToggleGroupFontWeightSelector() {
         variant="outline"
         spacing={2}
         size="lg"
+        className="flex-wrap"
       >
         <ToggleGroupItem
           value="light"

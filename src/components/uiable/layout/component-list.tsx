@@ -5,16 +5,11 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 // shadcn
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+import { Badge } from "@/components/ui/badge"
 
 // project-imports
 import CATEGORY_COUNTS from "@/category-counts.json"
-import { NAV_CATEGORIES } from "@/components-grid"
+import { NAV_COMPONENTS } from "@/components-grid"
 import { cn } from "@/lib/utils"
 
 interface ComponentListProps {
@@ -30,7 +25,7 @@ export default function ComponentList({
 }: ComponentListProps) {
   const pathname = usePathname()
 
-  const filteredSections = NAV_CATEGORIES.map((section) => ({
+  const filteredSections = NAV_COMPONENTS.map((section) => ({
     ...section,
     items: section.items.filter(
       (item) =>
@@ -39,7 +34,7 @@ export default function ComponentList({
     ),
   })).filter((section) => section.items.length > 0)
 
-  const totalComponents = NAV_CATEGORIES.reduce((total, section) => {
+  const totalComponents = NAV_COMPONENTS.reduce((total, section) => {
     return (
       total +
       section.items.reduce((secTotal, item) => {
@@ -96,25 +91,9 @@ export default function ComponentList({
                 <div className="flex items-center gap-2">
                   <span className="capitalize">{item.title}</span>
                   {item.badge && (
-                    <TooltipProvider delay={0}>
-                      <Tooltip>
-                        <TooltipTrigger
-                          render={
-                            <span className="relative flex size-1.5 cursor-default">
-                              <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-500 opacity-75"></span>
-                              <span className="relative inline-flex size-1.5 rounded-full bg-red-500"></span>
-                            </span>
-                          }
-                        />
-                        <TooltipContent
-                          side="top"
-                          sideOffset={8}
-                          className="rounded-md px-2 py-1 text-[10px]"
-                        >
-                          <p>New Added</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
+                    <Badge className="border-transparent bg-red-500/15 text-red-500">
+                      {item.badge.label}
+                    </Badge>
                   )}
                 </div>
                 <span

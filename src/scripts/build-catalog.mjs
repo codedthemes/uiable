@@ -55,7 +55,6 @@ const BASE_URL = (
 
 // Categories that denote a composable page-level block (vs a primitive component).
 const BLOCK_CATEGORIES = new Set([
-  "chat",
   "feature",
   "e-commerce",
   "cta",
@@ -104,6 +103,12 @@ const items = registry.items.map((item) => {
   return {
     name: item.name,
     kind,
+    // Pro items stay in the catalog so they remain discoverable — only their source is
+    // gated, behind the token check in /r/[name]. The flag is what lets a consumer
+    // (the catalog UI, the MCP server) say "this needs a subscription" instead of
+    // handing out an addCommand that 401s. `undefined` is dropped by JSON.stringify,
+    // so free items carry no `pro` key at all.
+    pro: item.pro || undefined,
     type: item.type,
     title: item.title,
     description: item.description,
@@ -169,7 +174,22 @@ const catalog = {
 }
 
 const outPath = resolve(root, "public", "registry-index.json")
-writeFileSync(outPath, JSON.stringify(catalog, null, 2) + "\n", "utf8")
+const newContent = JSON.stringify(catalog, null, 2) + "\n"
+
+// Only write if content actually changed (normalize line endings for comparison)
+let shouldWrite = true
+try {
+  const existing = readFileSync(outPath, "utf8")
+  if (existing.replace(/\r\n/g, "\n") === newContent.replace(/\r\n/g, "\n")) {
+    shouldWrite = false
+  }
+} catch {
+  // File doesn't exist yet — write it
+}
+
+if (shouldWrite) {
+  writeFileSync(outPath, newContent, "utf8")
+}
 
 console.log(
   `Wrote ${outPath}\n  ${catalog.counts.total} items (${catalog.counts.blocks} blocks, ${catalog.counts.components} components, ${catalog.counts.primitives} primitives)\n  ${catalog.categories.length} categories\n  base: ${BASE_URL}  namespace: ${NAMESPACE}`

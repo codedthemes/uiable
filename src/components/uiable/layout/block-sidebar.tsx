@@ -6,20 +6,24 @@ import { useState } from "react"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
+// third-party
+import { cn } from "cn"
+
 // project-imports
 import BlockList from "./block-list"
 import ComponentSearch from "./shared/component-search"
-import { cn } from "@/lib/utils"
 
 //  ------------------------------ | LAYOUT - BLOCK SIDEBAR | ------------------------------  //
+
+interface BlockSidebarProps {
+  isMobile?: boolean
+  onSelect?: () => void
+}
 
 export default function BlockSidebar({
   isMobile,
   onSelect,
-}: {
-  isMobile?: boolean
-  onSelect?: () => void
-}) {
+}: BlockSidebarProps) {
   const [search, setSearch] = useState("")
 
   return (

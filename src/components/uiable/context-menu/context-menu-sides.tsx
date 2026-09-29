@@ -11,9 +11,9 @@ import {
 
 export function ContextMenuSides() {
   return (
-    <div className="grid w-full max-w-sm grid-cols-2 gap-4">
+    <div className="grid w-full max-w-sm grid-cols-2 gap-2 sm:gap-4">
       <ContextMenu>
-        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base">
+        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed p-1 text-base">
           <span className="hidden pointer-fine:inline-block">
             Right click (top)
           </span>
@@ -30,7 +30,7 @@ export function ContextMenuSides() {
         </ContextMenuContent>
       </ContextMenu>
       <ContextMenu>
-        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed text-base">
+        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-lg border border-dashed p-1 text-base">
           <span className="hidden pointer-fine:inline-block">
             Right click (right)
           </span>
@@ -47,7 +47,7 @@ export function ContextMenuSides() {
         </ContextMenuContent>
       </ContextMenu>
       <ContextMenu>
-        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-xl border border-dashed text-base">
+        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-xl border border-dashed p-1 text-base">
           <span className="hidden pointer-fine:inline-block">
             Right click (bottom)
           </span>
@@ -64,7 +64,7 @@ export function ContextMenuSides() {
         </ContextMenuContent>
       </ContextMenu>
       <ContextMenu>
-        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-xl border border-dashed text-base">
+        <ContextMenuTrigger className="flex aspect-video w-full max-w-xs items-center justify-center rounded-xl border border-dashed p-1 text-base">
           <span className="hidden pointer-fine:inline-block">
             Right click (left)
           </span>

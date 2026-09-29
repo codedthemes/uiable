@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -21,6 +20,9 @@ export const carouselInfo: CategoryInfo = {
     "Default Gallery . Standard image slider showing one item at a time",
     "Multi-Item Slider . Carousel displaying 3 or 4 items per view, ideal for product showcases",
     "With Indicators . Carousel featuring clickable navigation dots at the bottom",
+    "Dots Carousel . Carousel featuring clickable navigation dots and smooth slide transitions",
+    "Thumbnails Carousel . Carousel with synchronized interactive thumbnail preview navigation",
+    "Animated Carousel . Carousel with dynamic motion, active slide scaling, and progress indicator",
     "Auto-playing . Carousel that automatically scrolls through items on a timer",
     "Vertical Scroll . Carousel oriented vertically, perfect for sidebars or tight spaces",
   ],

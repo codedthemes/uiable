@@ -3,7 +3,6 @@
   "name": "aspect-ratio-square",
   "title": "Aspect Ratio Square",
   "description": "Aspect Ratio Square variant for component.",
-  "dependencies": ["next"],
   "registryDependencies": ["@uiable/aspect-ratio"],
   "files": [
     {

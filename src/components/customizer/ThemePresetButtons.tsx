@@ -3,7 +3,6 @@
 // shadcn
 import { Button } from "@/components/ui/button"
 
-// constants
 const PRESET_BUTTONS = [
   { label: "Default", value: "default" },
   { label: "Ghibli Studio", value: "ghibli-studio" },

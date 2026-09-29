@@ -10,7 +10,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-// constants
 const invoices = [
   {
     invoice: "INV001",

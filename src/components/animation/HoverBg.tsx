@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 
 // project-imports
-import { SparkleGrid } from "@/images/svg/landing"
+import SparkleGrid from "@/images/svg/landing/sparkle-grid"
 
 interface HoverBgProps {
   className?: string

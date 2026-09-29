@@ -3,7 +3,7 @@
   "name": "breadcrumb-separator",
   "title": "Breadcrumb Separator",
   "description": "Breadcrumb Separator variant for component.",
-  "dependencies": ["lucide-react", "next"],
+  "dependencies": ["lucide-react"],
   "registryDependencies": ["@uiable/breadcrumb"],
   "files": [
     {

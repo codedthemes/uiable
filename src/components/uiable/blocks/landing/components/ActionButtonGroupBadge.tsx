@@ -13,7 +13,7 @@ import {
 import { Separator } from "@/components/ui/separator"
 
 // project-imports
-import DatePickerCard from "./DatePickerCard"
+import DatePickerCard from "@/components/uiable/blocks/landing/components/DatePickerCard"
 
 // assets
 import { BadgeCheck, PlusIcon } from "lucide-react"
@@ -55,7 +55,7 @@ export default function ActionButtonGroupBadge() {
             aria-label="Add item"
             className="h-auto rounded-none px-3 py-1.5 text-foreground hover:bg-muted dark:hover:bg-muted/80"
           >
-            <PlusIcon className="size-3.5" />
+            <PlusIcon aria-hidden="true" className="size-3.5" />
           </Button>
         </ButtonGroup>
       </div>
@@ -76,7 +76,7 @@ export default function ActionButtonGroupBadge() {
           </DialogContent>
         </Dialog>
         <Badge>
-          <BadgeCheck data-icon="inline-start" />
+          <BadgeCheck data-icon="inline-start" aria-hidden="true" />
           Verified
         </Badge>
       </div>

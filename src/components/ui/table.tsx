@@ -2,8 +2,8 @@
 
 import { ComponentProps } from "react"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 function Table({ className, ...props }: ComponentProps<"table">) {
   return (

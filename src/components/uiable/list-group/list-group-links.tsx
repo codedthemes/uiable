@@ -12,7 +12,7 @@ export default function ListGroupLinks() {
       <a
         href="#!"
         aria-current="true"
-        className="block bg-primary px-6.25 py-4 text-primary-foreground"
+        className="block bg-primary px-6.25 py-4 text-white"
       >
         Dapibus ac facilisis in
       </a>

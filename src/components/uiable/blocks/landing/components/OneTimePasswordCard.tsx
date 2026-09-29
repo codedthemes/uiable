@@ -9,6 +9,8 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp"
 
+const OTP_LENGTH = 6
+
 // ------------------------------ | ONE TIME PASSWORD CARD | ------------------------------ //
 
 export default function OneTimePasswordCard() {
@@ -20,19 +22,11 @@ export default function OneTimePasswordCard() {
         One-Time Password
       </p>
       <div className="flex justify-start">
-        <InputOTP
-          maxLength={6}
-          value={otp}
-          onChange={setOtp}
-          aria-label="One-time password"
-        >
+        <InputOTP maxLength={OTP_LENGTH} value={otp} onChange={setOtp}>
           <InputOTPGroup>
-            <InputOTPSlot index={0} className="h-9 w-9" />
-            <InputOTPSlot index={1} className="h-9 w-9" />
-            <InputOTPSlot index={2} className="h-9 w-9" />
-            <InputOTPSlot index={3} className="h-9 w-9" />
-            <InputOTPSlot index={4} className="h-9 w-9" />
-            <InputOTPSlot index={5} className="h-9 w-9" />
+            {Array.from({ length: OTP_LENGTH }, (_, index) => (
+              <InputOTPSlot key={index} index={index} className="h-9 w-9" />
+            ))}
           </InputOTPGroup>
         </InputOTP>
       </div>

@@ -14,7 +14,6 @@ import {
   ItemTitle,
 } from "@/components/ui/item"
 
-// constants
 const countries = [
   { code: "", value: "", continent: "", label: "Select country" },
   {
@@ -82,7 +81,7 @@ export function ComboboxWithCustomItems() {
         <ComboboxList>
           {(country) => (
             <ComboboxItem key={country.code} value={country}>
-              <Item size="xs" className="p-0">
+              <Item size="xs" className="border-none p-0">
                 <ItemContent>
                   <ItemTitle className="whitespace-nowrap">
                     {country.label}

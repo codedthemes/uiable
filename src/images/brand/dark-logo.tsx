@@ -1,3 +1,5 @@
+//  ------------------------------ | DARK LOGO | ------------------------------  //
+
 export default function DarkLogo() {
   return (
     <svg

@@ -18,6 +18,7 @@ export default function MobileNav({ onSelect, className }: MobileNavProps) {
   const pathname = usePathname()
 
   const links = [
+    { label: "Dashboard", href: "/admin-dashboard" },
     { label: "Components", href: "/components" },
     { label: "Documentation", href: "/doc" },
   ]

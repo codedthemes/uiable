@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-marquee",
+  "title": "Text Marquee",
+  "description": "Text Marquee component.",
+  "dependencies": ["cn", "framer-motion"],
+  "files": [
+    {
+      "path": "src/components/ui/text-marquee.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\n\n// third-party\nimport { cn } from \"cn\"\nimport { motion } from \"framer-motion\"\n\nexport type MarqueeDirection = \"left\" | \"right\"\n\nexport interface TextMarqueeProps extends React.HTMLAttributes<HTMLDivElement> {\n  children: React.ReactNode\n  direction?: MarqueeDirection\n  duration?: number\n  pauseOnHover?: boolean\n  fadeEdges?: boolean\n  repeat?: number\n  gap?: string\n  className?: string\n}\n\nexport function TextMarquee({\n  children,\n  direction = \"left\",\n  duration = 20,\n  pauseOnHover = true,\n  fadeEdges = true,\n  repeat = 4,\n  gap = \"2rem\",\n  className,\n  style,\n  ...props\n}: TextMarqueeProps) {\n  const [isPaused, setIsPaused] = React.useState(false)\n  const isReverse = direction === \"right\"\n\n  const maskStyle: React.CSSProperties = fadeEdges\n    ? {\n        maskImage:\n          \"linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)\",\n        WebkitMaskImage:\n          \"linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)\",\n      }\n    : {}\n\n  return (\n    <div\n      className={cn(\n        \"group relative flex w-full flex-row overflow-hidden select-none\",\n        className\n      )}\n      style={{\n        ...maskStyle,\n        ...style,\n      }}\n      onMouseEnter={() => pauseOnHover && setIsPaused(true)}\n      onMouseLeave={() => pauseOnHover && setIsPaused(false)}\n      {...props}\n    >\n      {/* Infinite scrolling track */}\n      <motion.div\n        className={cn(\n          \"flex shrink-0 transform-gpu flex-row items-center\",\n          isPaused && \"[animation-play-state:paused]\"\n        )}\n        style={{\n          gap,\n        }}\n        animate={{\n          x: isReverse ? [\"-50%\", \"0%\"] : [\"0%\", \"-50%\"],\n        }}\n        transition={{\n          duration,\n          repeat: Infinity,\n          ease: \"linear\",\n        }}\n      >\n        {Array.from({ length: repeat }).map((_, idx) => (\n          <div\n            key={idx}\n            className=\"flex shrink-0 items-center whitespace-nowrap\"\n            style={{\n              paddingRight: gap,\n            }}\n          >\n            {children}\n          </div>\n        ))}\n      </motion.div>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/ui/text-marquee.tsx"
+    }
+  ],
+  "categories": ["text-marquee"],
+  "type": "registry:ui"
+}

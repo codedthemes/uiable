@@ -3,7 +3,7 @@
   "name": "block-footer-20",
   "title": "Footer 20",
   "description": "Footer 20 variant for block.",
-  "dependencies": ["framer-motion", "lucide-react", "next"],
+  "dependencies": ["framer-motion", "lucide-react"],
   "files": [
     {
       "path": "src/components/uiable/blocks/footer/footer-20/footer-20.tsx",

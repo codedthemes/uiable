@@ -17,7 +17,7 @@ export function ProgressControlled() {
   return (
     <div className="flex w-full max-w-sm flex-col gap-4">
       <ProgressPrimitive.Root value={value}>
-        <ProgressTrack className="h-4 rounded-lg bg-muted/20 dark:bg-muted/10">
+        <ProgressTrack className="h-4 rounded-lg bg-muted/20 dark:bg-muted/40">
           <ProgressIndicator className="animate-[1s_linear_infinite_progress-bar-stripes] rounded-lg bg-primary bg-[linear-gradient(45deg,rgba(255,255,255,.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,.15)_50%,rgba(255,255,255,.15)_75%,transparent_75%,transparent)] bg-[length:16px_16px]" />
         </ProgressTrack>
       </ProgressPrimitive.Root>

@@ -3,7 +3,7 @@
 import { Children, ReactNode, useEffect, useState } from "react"
 
 // project-imports
-import { AnimationBg } from "@/images/svg/landing"
+import AnimationBg from "@/images/svg/landing/animation-bg"
 
 interface EchoStackProps {
   children: ReactNode
@@ -92,7 +92,7 @@ export default function EchoStack({
               className={`absolute flex h-full w-full justify-center ${index === 0 ? "items-center" : "top-[-30px] sm:top-[-60px]"} overflow-hidden rounded-2xl ${cardClassName}`}
               style={{
                 transform: isVisible
-                  ? `translateY(calc(${index} * clamp(25px, 5vw, 50px))) scale(${scale})`
+                  ? `translateY(calc(${index} * clamp(20px, 3.5vw, 34px))) scale(${scale})`
                   : "translateY(100%) scale(0.9)",
                 opacity: isVisible ? 1 : 0,
                 zIndex: index,

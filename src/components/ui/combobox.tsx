@@ -13,12 +13,10 @@ import {
 
 // third-party
 import { Combobox as ComboboxPrimitive } from "@base-ui/react"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
-import { ChevronDownIcon, XIcon, CheckIcon } from "lucide-react"
+import { CheckIcon, ChevronDownIcon, XIcon } from "lucide-react"
 
 const Combobox = ComboboxPrimitive.Root
 

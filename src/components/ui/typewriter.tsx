@@ -3,10 +3,8 @@
 import * as React from "react"
 
 // third-party
+import { cn } from "cn"
 import { motion, useInView, type HTMLMotionProps } from "framer-motion"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 export type CursorStyle = "bar" | "underscore" | "glow-line" | "custom"
 
@@ -354,18 +352,12 @@ export const Typewriter = React.forwardRef<HTMLSpanElement, TypewriterProps>(
     const shouldShowCursor = cursor && (!hideCursorOnComplete || !isComplete)
 
     return (
-      <motion.span
-        ref={setRefs}
-        className={cn("inline-flex items-center", className)}
-        {...props}
-      >
+      <motion.span ref={setRefs} className={cn("inline", className)} {...props}>
         {/* Accessible screen reader full text */}
         <span className="sr-only">{currentWord}</span>
 
         {/* Visual animated character sequence */}
-        <span aria-hidden="true" className="inline-block">
-          {displayedText}
-        </span>
+        <span aria-hidden="true">{displayedText}</span>
 
         {shouldShowCursor && (
           <TypewriterCursor

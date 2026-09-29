@@ -40,9 +40,17 @@ This file is the primary source of truth for AI agents working in this repositor
 
 ### 5. Registry Integration
 
-- Every new exportable component/variant must be added to root `registry.json`.
-- Do not manually edit generated files under `public/r/**` unless explicitly requested.
-- Use `npm run registry:build` after registry updates.
+- Every new exportable component/variant must be added to the relevant registry.json
+  (`src/components/uiable/registry.json` for components, `.../blocks/registry.json` for blocks,
+  `.../themes/registry.json` for themes).
+- Do not manually edit generated files under `public/r/**` or `.pro-registry/**` unless
+  explicitly requested — both are build output.
+- Public and pro (auth-gated) items live in the **same** source tree and the
+  **same** registry.json files — there is no separate pro folder. What makes an item pro
+  is a `"pro": true` field on its registry.json entry; omit it for a free item.
+- After registry updates: `npm run registry:build` for free items, `npm run registry:build:pro`
+  for pro items (either is safe to run alone). Full workflow and auth model:
+  `project-docs/REGISTRY.md`.
 
 ## Design System & Color Mapping
 
@@ -85,4 +93,10 @@ Contrast and variant rules:
 
 ---
 
-Refer to `component-prompt.md` for migration tactics and output style.
+## Block Authoring
+
+For creating new blocks under `components/uiable/blocks/**`, use
+`block-rules.md` as the single reference. It covers folder/naming conventions,
+the file anatomy, the full design-token table, layout and responsive patterns,
+pro tagging, the new-category checklist, and the rules for translating an
+external reference design into UIAble styling.

@@ -14,7 +14,7 @@ export default function ListGroupButtons() {
       </Button>
       <Button
         variant="default"
-        className="block h-auto w-full justify-start rounded-none border-none bg-primary px-6.25 py-4 text-left font-normal text-primary-foreground"
+        className="block h-auto w-full justify-start rounded-none border-none bg-primary px-6.25 py-4 text-left font-normal text-white"
       >
         Dapibus ac facilisis in
       </Button>

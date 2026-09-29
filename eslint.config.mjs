@@ -118,6 +118,7 @@ const eslintConfig = defineConfig([
     "dist/**",
     "next-env.d.ts",
     ".env*",
+    ".claude/worktrees/**",
   ]),
 ])
 

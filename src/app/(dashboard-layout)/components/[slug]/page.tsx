@@ -10,19 +10,28 @@ import path from "path"
 import branding from "@/branding.json"
 import CategoryDescription from "@/components/category-description"
 import CategoryView from "@/components/category-view"
-import blocksRegistry from "@/components/uiable/blocks/registry.json"
-import uiRegistry from "@/components/uiable/registry.json"
-import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
+import { categoryInfoMap } from "@/data/components"
 
-const categoryInfoMap = {
-  ...componentCategoryInfoMap,
+interface CategoryPageProps {
+  params: Promise<{ slug: string }>
+}
+
+function getComponentCategories(): Set<string> {
+  const uiRegistryPath = path.join(
+    process.cwd(),
+    "src/components/uiable/registry.json"
+  )
+  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
+  const categories = new Set<string>()
+  ;(uiRegistry.items || []).forEach((item: any) => {
+    item.categories?.forEach((cat: string) => categories.add(cat))
+  })
+  return categories
 }
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ slug: string }>
-}): Promise<Metadata> {
+}: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params
   const data = categoryInfoMap[slug]
 
@@ -53,44 +62,43 @@ export async function generateMetadata({
 
 //  ------------------------------ | PAGE - CATEGORY | ------------------------------  //
 
-export default async function CategoryPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>
-}) {
+export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params
+
+  if (!getComponentCategories().has(slug)) {
+    notFound()
+  }
+
   const data = categoryInfoMap[slug]
 
   if (!data) {
     notFound()
   }
 
-  const registryItems = [
-    ...(uiRegistry.items || []),
-    ...(blocksRegistry.items || []),
-  ]
+  const uiRegistryPath = path.join(
+    process.cwd(),
+    "src/components/uiable/registry.json"
+  )
+  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
+  const registryItems = [...(uiRegistry.items || [])]
 
   const items = registryItems
     .filter((item: any) => item.categories?.includes(slug))
     .map((item: any) => {
+      // Pro source never enters the (statically generated) page payload —
+      // entitled users fetch it per-request from /api/source/[name].
+      if (item.pro) {
+        return { ...item, pro: true, rawCode: "" }
+      }
       const relativePath = item.files[0].path
       const filePath =
         item.type === "registry:block"
           ? path.join(
               process.cwd(),
-              "src",
-              "components",
-              "uiable",
-              "blocks",
+              "src/components/uiable/blocks",
               relativePath
             )
-          : path.join(
-              process.cwd(),
-              "src",
-              "components",
-              "uiable",
-              relativePath
-            )
+          : path.join(process.cwd(), "src/components/uiable", relativePath)
       let rawCode = ""
       try {
         rawCode = fs.readFileSync(filePath, "utf8")
@@ -123,17 +131,7 @@ export default async function CategoryPage({
 }
 
 export async function generateStaticParams() {
-  const registryItems = [
-    ...(uiRegistry.items || []),
-    ...(blocksRegistry.items || []),
-  ]
-
-  const categories = new Set<string>()
-  registryItems.forEach((item: any) => {
-    item.categories?.forEach((cat: string) => categories.add(cat))
-  })
-
-  return Array.from(categories).map((slug) => ({
+  return Array.from(getComponentCategories()).map((slug) => ({
     slug,
   }))
 }

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "coupon-basic",
+  "title": "Coupon Basic",
+  "description": "Coupon Basic variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/coupon/coupon-basic.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n// assets\nimport { Copy } from \"lucide-react\"\n\n//  ------------------------------ | COUPON - BASIC | ------------------------------  //\n\nexport default function CouponBasic() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col items-stretch rounded-lg border bg-card text-card-foreground sm:flex-row\">\n      <div className=\"flex flex-col items-center justify-center border-b border-dashed p-4 sm:border-r sm:border-b-0 sm:p-6\">\n        <h3 className=\"text-3xl font-bold text-primary\">20%</h3>\n        <span className=\"text-sm font-semibold tracking-widest text-muted-foreground uppercase\">\n          OFF\n        </span>\n      </div>\n      <div className=\"flex flex-1 flex-col justify-between p-4 sm:p-6\">\n        <div>\n          <h3 className=\"leading-none font-semibold tracking-tight\">\n            Summer Sale\n          </h3>\n          <p className=\"mt-2 text-sm text-muted-foreground\">\n            Valid until Aug 31, 2026\n          </p>\n        </div>\n        <div className=\"mt-4 flex items-center gap-2 rounded-lg bg-muted p-2\">\n          <code className=\"flex-1 text-center font-mono text-sm font-bold\">\n            SUMMER20\n          </code>\n          <Button\n            variant=\"ghost\"\n            size=\"icon\"\n            className=\"h-7 w-7 text-muted-foreground hover:text-foreground\"\n            title=\"Copy code\"\n          >\n            <Copy className=\"h-4 w-4\" />\n          </Button>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/coupon/coupon-basic.tsx"
+    }
+  ],
+  "categories": ["coupon"],
+  "type": "registry:ui"
+}

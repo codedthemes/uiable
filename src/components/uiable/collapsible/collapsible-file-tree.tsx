@@ -11,7 +11,6 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 // assets
 import { ChevronRightIcon, FileIcon, FolderIcon } from "lucide-react"
 
-// types
 type FileTreeItem = { name: string } | { name: string; items: FileTreeItem[] }
 
 //  ------------------------------ | COLLAPSIBLE - FILE TREE | ------------------------------  //

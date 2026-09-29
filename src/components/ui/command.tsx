@@ -14,12 +14,10 @@ import { InputGroup, InputGroupAddon } from "@/components/ui/input-group"
 
 // third-party
 import { Command as CommandPrimitive } from "cmdk"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
-import { SearchIcon, CheckIcon } from "lucide-react"
+import { CheckIcon, SearchIcon } from "lucide-react"
 
 function Command({
   className,

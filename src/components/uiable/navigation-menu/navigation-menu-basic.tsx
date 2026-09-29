@@ -1,5 +1,3 @@
-import { ComponentPropsWithoutRef } from "react"
-
 // next
 import Link from "next/link"
 
@@ -21,7 +19,6 @@ import {
   CircleDashedIcon,
 } from "lucide-react"
 
-// constants
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Alert Dialog",
@@ -147,7 +144,7 @@ function ListItem({
   children,
   href,
   ...props
-}: ComponentPropsWithoutRef<"li"> & { href: string }) {
+}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
   return (
     <li {...props}>
       <NavigationMenuLink

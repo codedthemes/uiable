@@ -76,8 +76,8 @@ function writeRegistry(dir, name, items) {
       })),
     }
   })
-  writeFileSync(
-    resolve(outDir, "registry.json"),
+  const outPath = resolve(outDir, "registry.json")
+  const newContent =
     JSON.stringify(
       {
         $schema: "https://ui.shadcn.com/schema/registry.json",
@@ -87,9 +87,22 @@ function writeRegistry(dir, name, items) {
       },
       null,
       2
-    ) + "\n",
-    "utf8"
-  )
+    ) + "\n"
+
+  // Only write if content actually changed
+  let shouldWrite = true
+  try {
+    const existing = readFileSync(outPath, "utf8")
+    if (existing.replace(/\r\n/g, "\n") === newContent.replace(/\r\n/g, "\n")) {
+      shouldWrite = false
+    }
+  } catch {
+    // File doesn't exist yet
+  }
+
+  if (shouldWrite) {
+    writeFileSync(outPath, newContent, "utf8")
+  }
 }
 
 writeRegistry(".registry-build/public", rootRegistry.name, publicItems)

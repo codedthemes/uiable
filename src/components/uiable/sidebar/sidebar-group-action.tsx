@@ -10,10 +10,11 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
+  SidebarTrigger,
 } from "@/components/ui/sidebar"
 
 // third-party
-import { toast, Toaster } from "sonner"
+import { toast } from "sonner"
 
 // assets
 import { FrameIcon, MapIcon, PieChartIcon, PlusIcon } from "lucide-react"
@@ -23,12 +24,6 @@ import { FrameIcon, MapIcon, PieChartIcon, PlusIcon } from "lucide-react"
 export default function AppSidebar() {
   return (
     <SidebarProvider className="relative min-h-[450px]">
-      <Toaster
-        position="bottom-left"
-        toastOptions={{
-          className: "ml-[160px]",
-        }}
-      />
       <Sidebar className="absolute h-[450px]">
         <SidebarContent>
           <SidebarGroup>
@@ -64,6 +59,11 @@ export default function AppSidebar() {
           </SidebarGroup>
         </SidebarContent>
       </Sidebar>
+      <main className="flex-1 overflow-auto bg-muted/20">
+        <header className="flex h-14 items-center border-b border-border/50 bg-background/50 px-4 backdrop-blur">
+          <SidebarTrigger className="-ml-1" />
+        </header>
+      </main>
     </SidebarProvider>
   )
 }

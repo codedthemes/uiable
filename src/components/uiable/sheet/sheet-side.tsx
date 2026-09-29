@@ -11,7 +11,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-// constants
 const SHEET_SIDES = ["top", "right", "bottom", "left"] as const
 
 //  ------------------------------ | SHEET - SIDE | ------------------------------  //

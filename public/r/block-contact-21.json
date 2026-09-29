@@ -3,7 +3,7 @@
   "name": "block-contact-21",
   "title": "Contact 21",
   "description": "Contact 21 variant for block.",
-  "dependencies": ["framer-motion", "lucide-react", "next"],
+  "dependencies": ["framer-motion", "lucide-react"],
   "files": [
     {
       "path": "src/components/uiable/blocks/contact/contact-21/contact-21.tsx",

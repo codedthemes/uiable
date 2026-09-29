@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -24,6 +23,7 @@ export const dialogInfo: CategoryInfo = {
     "Full Screen: Dialog that expands to cover the entire viewport, perfect for complex mobile flows",
     "Quick Edit: Compact modal designed specifically for editing a single row of data from a table",
     "Uncontrolled: Dialog managing its own open/close state internally without requiring complex React state",
+    "Animated: A variant utilizing framer-motion for an engaging entrance animation rather than standard CSS",
   ],
   whyUseHeading: `Why ${branding.brandName} Dialog?`,
   whyUseDescription: [

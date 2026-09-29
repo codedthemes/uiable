@@ -5,9 +5,7 @@ import { ComponentProps } from "react"
 // third-party
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
 import { ChevronRightIcon, MoreHorizontalIcon } from "lucide-react"

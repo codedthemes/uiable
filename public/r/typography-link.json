@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/components/uiable/typography/typography-link.tsx",
-      "content": "export function TypographyLink() {\n  return (\n    <a\n      href=\"#\"\n      className=\"font-medium text-primary underline underline-offset-4 hover:text-primary/80\"\n    >\n      This is a typography link\n    </a>\n  )\n}\n",
+      "content": "//  ------------------------------ | TYPOGRAPHY - LINK | ------------------------------  //\n\nexport function TypographyLink() {\n  return (\n    <a\n      href=\"#\"\n      className=\"font-medium text-primary underline underline-offset-4 hover:text-primary/80\"\n    >\n      This is a typography link\n    </a>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/typography/typography-link.tsx"
     }

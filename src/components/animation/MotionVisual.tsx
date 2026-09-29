@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 // project-imports
 import DarkFav from "@/images/brand/dark-fav"
 import LightFav from "@/images/brand/light-fav"
-import { AnimationBg } from "@/images/svg/landing"
+import AnimationBg from "@/images/svg/landing/animation-bg"
 
 // ------------------------------ | MOTION VISUAL | ------------------------------ //
 
@@ -17,7 +17,7 @@ export default function MotionVisual() {
     "M0 17.2207C7.82264 12.1804 16.564 8.57792 25.5551 6.04752C106.333 -15.0859 180.464 43.3414 226.918 104.937C229.638 108.479 232.371 111.88 235.117 115.146C285.46 184.808 392.423 206.118 460.93 152.12C468.597 146.733 475.878 140.769 482.5 134.221C475.694 140.576 468.272 146.324 460.501 151.493C390.622 203.134 288.015 180.915 238.179 112.572C235.471 109.352 232.772 105.997 230.082 102.504C183.36 40.3955 106.317 -18.2241 25.3407 5.3184C16.3571 8.09598 7.67585 11.9568 0 17.2207Z"
 
   return (
-    <div className="relative flex h-full min-h-[380px] w-full items-center justify-center overflow-hidden rounded-3xl py-10 select-none sm:min-h-[440px] md:min-h-[500px]">
+    <div className="relative flex h-full min-h-[240px] w-full items-center justify-center overflow-hidden rounded-3xl py-6 select-none sm:min-h-[280px] md:min-h-[320px]">
       {/* SVG Background */}
       <AnimationBg className="top-1/2 left-1/2 max-h-full max-w-full -translate-x-1/2 -translate-y-1/2 p-4 sm:p-8 md:p-12" />
 

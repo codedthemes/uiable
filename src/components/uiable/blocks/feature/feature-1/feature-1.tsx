@@ -1,3 +1,5 @@
+//  ------------------------------ | FEATURE - 1 | ------------------------------  //
+
 export default function Feature1() {
   const features = [
     {

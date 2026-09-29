@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from "react"
+import { useState } from "react"
 
 // shadcn
 import { Button } from "@/components/ui/button"
@@ -17,7 +17,7 @@ export function ButtonGroupQtySelect() {
     setQty((prev) => String(Math.max(1, (parseInt(prev, 10) || 1) + offset)))
   }
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (/^\d*$/.test(e.target.value)) setQty(e.target.value)
   }
 

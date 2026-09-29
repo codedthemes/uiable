@@ -9,7 +9,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-// constants
 const items = [
   { label: "Choose department", value: null },
   { label: "Engineering", value: "engineering" },

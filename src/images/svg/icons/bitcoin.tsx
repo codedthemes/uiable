@@ -1,3 +1,4 @@
+// types
 import type { SVGAttributes } from "react"
 
 //  ------------------------------ | BITCOIN ICON | ------------------------------  //

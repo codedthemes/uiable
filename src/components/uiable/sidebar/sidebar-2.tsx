@@ -26,6 +26,7 @@ import {
   SidebarMenuSubItem,
   SidebarProvider,
   SidebarRail,
+  SidebarTrigger,
 } from "@/components/ui/sidebar"
 
 // third-party
@@ -67,7 +68,7 @@ export default function Sidebar2() {
   return (
     <SidebarProvider className="relative h-[600px] w-full overflow-hidden rounded-lg border bg-background">
       <Sidebar
-        collapsible="icon"
+        collapsible="offcanvas"
         variant="inset"
         className="absolute z-10 h-full border-r border-dashed border-border"
       >
@@ -81,7 +82,7 @@ export default function Sidebar2() {
 
         <SidebarContent className="gap-0 px-2 *:py-0">
           {/* User Profile Card */}
-          <Card className="m-1.75 bg-[#f3f5f7] shadow-none dark:bg-[#1b232d]">
+          <Card className="m-1.75 bg-primary/5 shadow-none">
             <CardContent className="p-5!">
               <Collapsible
                 open={isUserOpen}
@@ -372,8 +373,8 @@ export default function Sidebar2() {
             <CardContent className="text-center">
               <img
                 src={imgCoupon.src}
-                alt="coupon"
                 className="mx-auto w-2/4 max-w-full"
+                alt=""
               />
               <h5 className="mt-1 mb-0">UIAble</h5>
               <p className="mb-4">Checkout pro features</p>
@@ -386,6 +387,12 @@ export default function Sidebar2() {
         </SidebarContent>
         <SidebarRail />
       </Sidebar>
+
+      <main className="flex-1 overflow-auto bg-muted/20">
+        <header className="flex h-14 items-center border-b border-border/50 bg-background/50 px-4 backdrop-blur">
+          <SidebarTrigger className="-ml-1" />
+        </header>
+      </main>
     </SidebarProvider>
   )
 }

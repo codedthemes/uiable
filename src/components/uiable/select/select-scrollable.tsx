@@ -9,7 +9,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-// constants
 const northAmerica = [
   { label: "Eastern Standard Time", value: "est" },
   { label: "Central Standard Time", value: "cst" },

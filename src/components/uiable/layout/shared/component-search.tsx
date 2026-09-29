@@ -3,8 +3,8 @@
 // shadcn
 import { Input } from "@/components/ui/input"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 // assets
 import { Search } from "lucide-react"
@@ -22,7 +22,7 @@ export default function ComponentSearch({
   value,
   onChange,
   className,
-  placeholder = "Search...",
+  placeholder = "Search Doc/Blocks/Components",
 }: ComponentSearchProps) {
   return (
     <div className={cn("relative w-full", className)}>

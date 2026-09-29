@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -22,6 +21,7 @@ export const alertDialogInfo: CategoryInfo = {
     'Acknowledgment . Informational dialog requiring the user to explicitly click "I Understand" to proceed',
     "Non-Dismissible . Dialog that completely disables the Escape key and clicking outside, forcing a button click",
     'With Verification . Dialog requiring the user to type a confirmation word (e.g., "DELETE") before the action enables',
+    "Animated . Alert dialog with a smooth, dynamic entrance animation using framer-motion",
   ],
   whyUseHeading: `Why ${branding.brandName} Alert Dialog?`,
   whyUseDescription: [

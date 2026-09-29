@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -23,6 +22,7 @@ export const emptyInfo: CategoryInfo = {
     'Action-Oriented . Layout strongly focused on a primary button (e.g., "Create your first project")',
     "Compact . Minimal empty state designed to fit inside small sidebars or dropdowns",
     "Search No Results . Specific variant designed for when search queries return zero hits",
+    "With Large Icon . Empty state where the media section features a prominent, large icon inside a styled container",
   ],
   whyUseHeading: `Why ${branding.brandName} Empty State?`,
   whyUseDescription: [

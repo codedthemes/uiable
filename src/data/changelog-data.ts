@@ -61,10 +61,6 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             previewUrl: "/components/aspect-ratio",
           },
           {
-            text: "Button: AI",
-            previewUrl: "/components/button",
-          },
-          {
             text: "Dialog: QR Code Scanner",
             previewUrl: "/components/dialog",
           },
