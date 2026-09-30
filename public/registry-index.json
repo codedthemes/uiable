@@ -5749,12 +5749,12 @@
         "landing"
       ],
       "dependencies": [
-        "@tabler/icons-react"
+        "@tabler/icons-react",
+        "framer-motion"
       ],
       "registryDependencies": [
         "@uiable/badge",
-        "@uiable/button",
-        "@uiable/text-marquee"
+        "@uiable/button"
       ],
       "files": [
         "@components/uiable/blocks/landing/hero/hero.tsx",
@@ -6041,11 +6041,14 @@
       "dependencies": [
         "cn"
       ],
-      "registryDependencies": [],
+      "registryDependencies": [
+        "@uiable/tooltip"
+      ],
       "files": [
         "@components/uiable/layout/block-list.tsx",
         "src/category-counts.json",
-        "src/components-grid.ts"
+        "src/components-grid.ts",
+        "@components/new-dot.tsx"
       ],
       "keywords": [
         "block",
@@ -11251,9 +11254,7 @@
       "categories": [
         "changelog"
       ],
-      "dependencies": [
-        "lucide-react"
-      ],
+      "dependencies": [],
       "registryDependencies": [
         "@uiable/separator"
       ],
@@ -12859,12 +12860,13 @@
       ],
       "dependencies": [],
       "registryDependencies": [
-        "@uiable/badge"
+        "@uiable/tooltip"
       ],
       "files": [
         "@components/uiable/layout/component-list.tsx",
         "src/category-counts.json",
-        "src/components-grid.ts"
+        "src/components-grid.ts",
+        "@components/new-dot.tsx"
       ],
       "keywords": [
         "component",

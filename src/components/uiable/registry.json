@@ -68,9 +68,6 @@
       "type": "registry:ui",
       "title": "Accordion Custom",
       "description": "Accordion Custom variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "accordion/accordion-custom.tsx",
@@ -1195,9 +1192,6 @@
       "type": "registry:ui",
       "title": "Avatar Group Tooltip",
       "description": "Avatar Group Tooltip variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "avatar/avatar-group-tooltip.tsx",
@@ -1259,9 +1253,6 @@
       "type": "registry:ui",
       "title": "Badge Closable",
       "description": "Badge Closable variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "badge/badge-closable.tsx",
@@ -1820,9 +1811,15 @@
           "path": "../../components-grid.ts",
           "type": "registry:component",
           "target": "src/components-grid.ts"
+        },
+        {
+          "path": "../new-dot.tsx",
+          "type": "registry:component",
+          "target": "@components/new-dot.tsx"
         }
       ],
       "categories": ["layout"],
+      "registryDependencies": ["@uiable/tooltip"],
       "dependencies": ["cn"]
     },
     {
@@ -2201,9 +2198,6 @@
       "type": "registry:ui",
       "title": "Button Contextual Feedback",
       "description": "Button Contextual Feedback variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-contextual-feedback.tsx",
@@ -2220,9 +2214,6 @@
       "type": "registry:ui",
       "title": "Button Copy",
       "description": "Button Copy variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "button/button-copy.tsx",
@@ -3182,9 +3173,6 @@
       "type": "registry:ui",
       "title": "Calendar Dialog",
       "description": "Calendar Dialog variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "calendar/calendar-dialog.tsx",
@@ -3341,9 +3329,6 @@
       "type": "registry:ui",
       "title": "Card Animated Border",
       "description": "Card Animated Border variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "card/card-animated-border.tsx",
@@ -3407,9 +3392,6 @@
       "type": "registry:ui",
       "title": "Card Credit",
       "description": "Card Credit variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "card/card-credit.tsx",
@@ -3684,9 +3666,6 @@
       "type": "registry:ui",
       "title": "Carousel Animated",
       "description": "Carousel Animated variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "carousel/carousel-animated.tsx",
@@ -3718,9 +3697,6 @@
       "type": "registry:ui",
       "title": "Carousel Dots",
       "description": "Carousel Dots variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "carousel/carousel-dots.tsx",
@@ -3813,9 +3789,6 @@
       "type": "registry:ui",
       "title": "Carousel Thumbnails",
       "description": "Carousel Thumbnails variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "carousel/carousel-thumbnails.tsx",
@@ -3845,8 +3818,7 @@
         }
       ],
       "categories": ["changelog"],
-      "registryDependencies": ["@uiable/separator"],
-      "dependencies": ["lucide-react"]
+      "registryDependencies": ["@uiable/separator"]
     },
     {
       "name": "changelog-mobile-toc",
@@ -4253,9 +4225,6 @@
       "type": "registry:ui",
       "title": "Collapsible Setting Menu List",
       "description": "Collapsible Setting Menu List variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "collapsible/collapsible-setting-menu-list.tsx",
@@ -4700,10 +4669,15 @@
           "path": "../../components-grid.ts",
           "type": "registry:component",
           "target": "src/components-grid.ts"
+        },
+        {
+          "path": "../new-dot.tsx",
+          "type": "registry:component",
+          "target": "@components/new-dot.tsx"
         }
       ],
       "categories": ["layout"],
-      "registryDependencies": ["@uiable/badge"]
+      "registryDependencies": ["@uiable/tooltip"]
     },
     {
       "name": "component-search",
@@ -4909,9 +4883,6 @@
       "type": "registry:ui",
       "title": "Coupon Basic",
       "description": "Coupon Basic variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "coupon/coupon-basic.tsx",
@@ -5526,9 +5497,6 @@
       "type": "registry:ui",
       "title": "Dropdown Menu Color Picker",
       "description": "Dropdown Menu Color Picker variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "dropdown-menu/dropdown-menu-color-picker.tsx",
@@ -5609,9 +5577,6 @@
       "type": "registry:ui",
       "title": "Dropdown Menu Notifications",
       "description": "Dropdown Menu Notifications variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "dropdown-menu/dropdown-menu-notifications.tsx",
@@ -7670,9 +7635,6 @@
       "type": "registry:ui",
       "title": "Menubar Profile",
       "description": "Menubar Profile variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "menubar/menubar-profile.tsx",
@@ -8076,9 +8038,6 @@
       "type": "registry:ui",
       "title": "Navigation Menu Icons",
       "description": "Navigation Menu Icons variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "navigation-menu/navigation-menu-icons.tsx",
@@ -8218,9 +8177,6 @@
       "type": "registry:ui",
       "title": "Pagination Rounded",
       "description": "Pagination Rounded variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "pagination/pagination-rounded.tsx",
@@ -8326,9 +8282,6 @@
       "type": "registry:ui",
       "title": "Popover Notifications",
       "description": "Popover Notifications variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "popover/popover-notifications.tsx",
@@ -8641,9 +8594,6 @@
       "type": "registry:ui",
       "title": "Questionnaire Basic",
       "description": "Questionnaire Basic variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "questionnaire/questionnaire-basic.tsx",
@@ -8659,9 +8609,6 @@
       "type": "registry:ui",
       "title": "Questionnaire Dialog",
       "description": "Questionnaire Dialog variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "questionnaire/questionnaire-dialog.tsx",
@@ -8677,9 +8624,6 @@
       "type": "registry:ui",
       "title": "Questionnaire Progress",
       "description": "Questionnaire Progress variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "questionnaire/questionnaire-progress.tsx",
@@ -8695,9 +8639,6 @@
       "type": "registry:ui",
       "title": "Questionnaire Resume",
       "description": "Questionnaire Resume variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "questionnaire/questionnaire-resume.tsx",
@@ -8713,9 +8654,6 @@
       "type": "registry:ui",
       "title": "Questionnaire Skippable",
       "description": "Questionnaire Skippable variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "questionnaire/questionnaire-skippable.tsx",
@@ -8915,9 +8853,6 @@
       "type": "registry:ui",
       "title": "Resizable Table Column",
       "description": "Resizable Table Column variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "resizable/resizable-table-column.tsx",
@@ -9103,9 +9038,6 @@
       "type": "registry:ui",
       "title": "Select Multi",
       "description": "Select Multi variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "select/select-multi.tsx",
@@ -9369,9 +9301,6 @@
       "type": "registry:ui",
       "title": "Sidebar 5",
       "description": "Sidebar 5 variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "sidebar/sidebar-5.tsx",
@@ -9712,9 +9641,6 @@
       "type": "registry:ui",
       "title": "Slider Emoji Rating",
       "description": "Slider Emoji Rating variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "slider/slider-emoji-rating.tsx",
@@ -9746,9 +9672,6 @@
       "type": "registry:ui",
       "title": "Slider Price Range",
       "description": "Slider Price Range variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "slider/slider-price-range.tsx",
@@ -10129,9 +10052,6 @@
       "type": "registry:ui",
       "title": "Switch Animated Stretch",
       "description": "Switch Animated Stretch variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "switch/switch-animated-stretch.tsx",
@@ -10147,9 +10067,6 @@
       "type": "registry:ui",
       "title": "Switch Animated Theme",
       "description": "Switch Animated Theme variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "switch/switch-animated-theme.tsx",
@@ -10470,9 +10387,6 @@
       "type": "registry:ui",
       "title": "Tabs Pills Badge",
       "description": "Tabs Pills Badge variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "tabs/tabs-pills-badge.tsx",
@@ -10638,9 +10552,6 @@
       "type": "registry:ui",
       "title": "Timeline Basic",
       "description": "Timeline Basic variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "timeline/timeline-basic.tsx",
@@ -10656,9 +10567,6 @@
       "type": "registry:ui",
       "title": "Timeline Collapsible",
       "description": "Timeline Collapsible variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "timeline/timeline-collapsible.tsx",
@@ -10675,9 +10583,6 @@
       "type": "registry:ui",
       "title": "Timeline Horizontal",
       "description": "Timeline Horizontal variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "timeline/timeline-horizontal.tsx",
@@ -10694,9 +10599,6 @@
       "type": "registry:ui",
       "title": "Timeline Status",
       "description": "Timeline Status variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "timeline/timeline-status.tsx",
@@ -10744,9 +10646,6 @@
       "type": "registry:ui",
       "title": "Toggle Group Animated Toolbar",
       "description": "Toggle Group Animated Toolbar variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "toggle-group/toggle-group-animated-toolbar.tsx",
@@ -11043,9 +10942,6 @@
       "type": "registry:ui",
       "title": "Tree View Basic",
       "description": "Tree View Basic variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "tree-view/tree-view-basic.tsx",
@@ -11062,9 +10958,6 @@
       "type": "registry:ui",
       "title": "Tree View Checkbox Select",
       "description": "Tree View Checkbox Select variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "tree-view/tree-view-checkbox-select.tsx",
@@ -11081,9 +10974,6 @@
       "type": "registry:ui",
       "title": "Tree View Organization",
       "description": "Tree View Organization variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "tree-view/tree-view-organization.tsx",
@@ -11100,9 +10990,6 @@
       "type": "registry:ui",
       "title": "Tree View Search Filter",
       "description": "Tree View Search Filter variant for component.",
-      "badge": {
-        "label": "New"
-      },
       "files": [
         {
           "path": "tree-view/tree-view-search-filter.tsx",

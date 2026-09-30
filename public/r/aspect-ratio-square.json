@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "src/components/uiable/aspect-ratio/aspect-ratio-square.tsx",
-      "content": "// next\nimport Image from \"next/image\"\n\n// shadcn\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\"\n\n//  ------------------------------ | ASPECT RATIO - SQUARE | ------------------------------  //\n\nexport function AspectRatioSquare() {\n  return (\n    <AspectRatio\n      ratio={1 / 1}\n      className=\"w-full max-w-[12rem] rounded-lg bg-muted\"\n    >\n      <Image\n        src=\"https://avatar.vercel.sh/shadcn1\"\n        alt=\"Photo\"\n        fill\n        className=\"rounded-lg object-cover\"\n      />\n    </AspectRatio>\n  )\n}\n",
+      "content": "// shadcn\nimport { AspectRatio } from \"@/components/ui/aspect-ratio\"\n\n//  ------------------------------ | ASPECT RATIO - SQUARE | ------------------------------  //\n\nexport function AspectRatioSquare() {\n  return (\n    <AspectRatio\n      ratio={1 / 1}\n      className=\"w-full max-w-[12rem] rounded-lg bg-muted\"\n    >\n      <img\n        src=\"https://avatar.vercel.sh/shadcn1\"\n        alt=\"Photo\"\n        className=\"absolute inset-0 h-full w-full rounded-lg object-cover\"\n      />\n    </AspectRatio>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/aspect-ratio/aspect-ratio-square.tsx"
     }

@@ -1811,9 +1811,15 @@
           "path": "src/components-grid.ts",
           "type": "registry:component",
           "target": "src/components-grid.ts"
+        },
+        {
+          "path": "src/components/new-dot.tsx",
+          "type": "registry:component",
+          "target": "@components/new-dot.tsx"
         }
       ],
       "categories": ["layout"],
+      "registryDependencies": ["@uiable/tooltip"],
       "dependencies": ["cn"]
     },
     {
@@ -3812,8 +3818,7 @@
         }
       ],
       "categories": ["changelog"],
-      "registryDependencies": ["@uiable/separator"],
-      "dependencies": ["lucide-react"]
+      "registryDependencies": ["@uiable/separator"]
     },
     {
       "name": "changelog-mobile-toc",
@@ -4664,10 +4669,15 @@
           "path": "src/components-grid.ts",
           "type": "registry:component",
           "target": "src/components-grid.ts"
+        },
+        {
+          "path": "src/components/new-dot.tsx",
+          "type": "registry:component",
+          "target": "@components/new-dot.tsx"
         }
       ],
       "categories": ["layout"],
-      "registryDependencies": ["@uiable/badge"]
+      "registryDependencies": ["@uiable/tooltip"]
     },
     {
       "name": "component-search",
@@ -11401,8 +11411,8 @@
       ],
       "categories": ["landing"],
       "order": 3,
-      "registryDependencies": ["@uiable/badge", "@uiable/button", "@uiable/text-marquee"],
-      "dependencies": ["@tabler/icons-react"]
+      "registryDependencies": ["@uiable/badge", "@uiable/button"],
+      "dependencies": ["@tabler/icons-react", "framer-motion"]
     },
     {
       "name": "block-component-1",
