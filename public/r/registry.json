@@ -68,6 +68,9 @@
       "type": "registry:ui",
       "title": "Accordion Custom",
       "description": "Accordion Custom variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/accordion/accordion-custom.tsx",
@@ -1192,6 +1195,9 @@
       "type": "registry:ui",
       "title": "Avatar Group Tooltip",
       "description": "Avatar Group Tooltip variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/avatar/avatar-group-tooltip.tsx",
@@ -1253,6 +1259,9 @@
       "type": "registry:ui",
       "title": "Badge Closable",
       "description": "Badge Closable variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/badge/badge-closable.tsx",
@@ -2198,6 +2207,9 @@
       "type": "registry:ui",
       "title": "Button Contextual Feedback",
       "description": "Button Contextual Feedback variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/button/button-contextual-feedback.tsx",
@@ -2214,6 +2226,9 @@
       "type": "registry:ui",
       "title": "Button Copy",
       "description": "Button Copy variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/button/button-copy.tsx",
@@ -3173,6 +3188,9 @@
       "type": "registry:ui",
       "title": "Calendar Dialog",
       "description": "Calendar Dialog variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/calendar/calendar-dialog.tsx",
@@ -3329,6 +3347,9 @@
       "type": "registry:ui",
       "title": "Card Animated Border",
       "description": "Card Animated Border variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/card/card-animated-border.tsx",
@@ -3392,6 +3413,9 @@
       "type": "registry:ui",
       "title": "Card Credit",
       "description": "Card Credit variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/card/card-credit.tsx",
@@ -3666,6 +3690,9 @@
       "type": "registry:ui",
       "title": "Carousel Animated",
       "description": "Carousel Animated variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/carousel/carousel-animated.tsx",
@@ -3697,6 +3724,9 @@
       "type": "registry:ui",
       "title": "Carousel Dots",
       "description": "Carousel Dots variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/carousel/carousel-dots.tsx",
@@ -3789,6 +3819,9 @@
       "type": "registry:ui",
       "title": "Carousel Thumbnails",
       "description": "Carousel Thumbnails variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/carousel/carousel-thumbnails.tsx",
@@ -4225,6 +4258,9 @@
       "type": "registry:ui",
       "title": "Collapsible Setting Menu List",
       "description": "Collapsible Setting Menu List variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/collapsible/collapsible-setting-menu-list.tsx",
@@ -4883,6 +4919,9 @@
       "type": "registry:ui",
       "title": "Coupon Basic",
       "description": "Coupon Basic variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/coupon/coupon-basic.tsx",
@@ -5497,6 +5536,9 @@
       "type": "registry:ui",
       "title": "Dropdown Menu Color Picker",
       "description": "Dropdown Menu Color Picker variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/dropdown-menu/dropdown-menu-color-picker.tsx",
@@ -5577,6 +5619,9 @@
       "type": "registry:ui",
       "title": "Dropdown Menu Notifications",
       "description": "Dropdown Menu Notifications variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/dropdown-menu/dropdown-menu-notifications.tsx",
@@ -7635,6 +7680,9 @@
       "type": "registry:ui",
       "title": "Menubar Profile",
       "description": "Menubar Profile variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/menubar/menubar-profile.tsx",
@@ -8038,6 +8086,9 @@
       "type": "registry:ui",
       "title": "Navigation Menu Icons",
       "description": "Navigation Menu Icons variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/navigation-menu/navigation-menu-icons.tsx",
@@ -8177,6 +8228,9 @@
       "type": "registry:ui",
       "title": "Pagination Rounded",
       "description": "Pagination Rounded variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/pagination/pagination-rounded.tsx",
@@ -8282,6 +8336,9 @@
       "type": "registry:ui",
       "title": "Popover Notifications",
       "description": "Popover Notifications variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/popover/popover-notifications.tsx",
@@ -8594,6 +8651,9 @@
       "type": "registry:ui",
       "title": "Questionnaire Basic",
       "description": "Questionnaire Basic variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/questionnaire/questionnaire-basic.tsx",
@@ -8609,6 +8669,9 @@
       "type": "registry:ui",
       "title": "Questionnaire Dialog",
       "description": "Questionnaire Dialog variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/questionnaire/questionnaire-dialog.tsx",
@@ -8624,6 +8687,9 @@
       "type": "registry:ui",
       "title": "Questionnaire Progress",
       "description": "Questionnaire Progress variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/questionnaire/questionnaire-progress.tsx",
@@ -8639,6 +8705,9 @@
       "type": "registry:ui",
       "title": "Questionnaire Resume",
       "description": "Questionnaire Resume variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/questionnaire/questionnaire-resume.tsx",
@@ -8654,6 +8723,9 @@
       "type": "registry:ui",
       "title": "Questionnaire Skippable",
       "description": "Questionnaire Skippable variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/questionnaire/questionnaire-skippable.tsx",
@@ -8853,6 +8925,9 @@
       "type": "registry:ui",
       "title": "Resizable Table Column",
       "description": "Resizable Table Column variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/resizable/resizable-table-column.tsx",
@@ -9038,6 +9113,9 @@
       "type": "registry:ui",
       "title": "Select Multi",
       "description": "Select Multi variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/select/select-multi.tsx",
@@ -9301,6 +9379,9 @@
       "type": "registry:ui",
       "title": "Sidebar 5",
       "description": "Sidebar 5 variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/sidebar/sidebar-5.tsx",
@@ -9641,6 +9722,9 @@
       "type": "registry:ui",
       "title": "Slider Emoji Rating",
       "description": "Slider Emoji Rating variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/slider/slider-emoji-rating.tsx",
@@ -9672,6 +9756,9 @@
       "type": "registry:ui",
       "title": "Slider Price Range",
       "description": "Slider Price Range variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/slider/slider-price-range.tsx",
@@ -10052,6 +10139,9 @@
       "type": "registry:ui",
       "title": "Switch Animated Stretch",
       "description": "Switch Animated Stretch variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/switch/switch-animated-stretch.tsx",
@@ -10067,6 +10157,9 @@
       "type": "registry:ui",
       "title": "Switch Animated Theme",
       "description": "Switch Animated Theme variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/switch/switch-animated-theme.tsx",
@@ -10387,6 +10480,9 @@
       "type": "registry:ui",
       "title": "Tabs Pills Badge",
       "description": "Tabs Pills Badge variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/tabs/tabs-pills-badge.tsx",
@@ -10552,6 +10648,9 @@
       "type": "registry:ui",
       "title": "Timeline Basic",
       "description": "Timeline Basic variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/timeline/timeline-basic.tsx",
@@ -10567,6 +10666,9 @@
       "type": "registry:ui",
       "title": "Timeline Collapsible",
       "description": "Timeline Collapsible variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/timeline/timeline-collapsible.tsx",
@@ -10583,6 +10685,9 @@
       "type": "registry:ui",
       "title": "Timeline Horizontal",
       "description": "Timeline Horizontal variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/timeline/timeline-horizontal.tsx",
@@ -10599,6 +10704,9 @@
       "type": "registry:ui",
       "title": "Timeline Status",
       "description": "Timeline Status variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/timeline/timeline-status.tsx",
@@ -10646,6 +10754,9 @@
       "type": "registry:ui",
       "title": "Toggle Group Animated Toolbar",
       "description": "Toggle Group Animated Toolbar variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/toggle-group/toggle-group-animated-toolbar.tsx",
@@ -10942,6 +11053,9 @@
       "type": "registry:ui",
       "title": "Tree View Basic",
       "description": "Tree View Basic variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/tree-view/tree-view-basic.tsx",
@@ -10958,6 +11072,9 @@
       "type": "registry:ui",
       "title": "Tree View Checkbox Select",
       "description": "Tree View Checkbox Select variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/tree-view/tree-view-checkbox-select.tsx",
@@ -10974,6 +11091,9 @@
       "type": "registry:ui",
       "title": "Tree View Organization",
       "description": "Tree View Organization variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/tree-view/tree-view-organization.tsx",
@@ -10990,6 +11110,9 @@
       "type": "registry:ui",
       "title": "Tree View Search Filter",
       "description": "Tree View Search Filter variant for component.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/tree-view/tree-view-search-filter.tsx",
@@ -11275,6 +11398,9 @@
       "type": "registry:block",
       "title": "Gallery 1",
       "description": "Gallery 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/gallery/gallery-1/gallery-1.tsx",
@@ -11745,6 +11871,9 @@
       "type": "registry:block",
       "title": "About",
       "description": "About variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/landing/about/about-us.tsx",
@@ -11792,6 +11921,9 @@
       "type": "registry:block",
       "title": "Bento 5",
       "description": "Bento 5 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/bento/bento-5/bento-5.tsx",
@@ -11808,6 +11940,9 @@
       "type": "registry:block",
       "title": "Blocks Showcase",
       "description": "Blocks Showcase variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/landing/blocks-showcase/blocks-showcase.tsx",
@@ -11854,6 +11989,9 @@
       "type": "registry:block",
       "title": "Charts 7",
       "description": "Charts 7 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/charts/charts-7/charts-7.tsx",
@@ -11870,6 +12008,9 @@
       "type": "registry:block",
       "title": "Charts 11",
       "description": "Charts 11 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/charts/charts-11/charts-11.tsx",
@@ -11886,6 +12027,9 @@
       "type": "registry:block",
       "title": "Check Mail 2",
       "description": "Check Mail 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/check-mail/check-mail-2/check-mail-2.tsx",
@@ -11902,6 +12046,9 @@
       "type": "registry:block",
       "title": "Coming Soon 1",
       "description": "Coming Soon 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/coming-soon/coming-soon-1/coming-soon-1.tsx",
@@ -11918,6 +12065,9 @@
       "type": "registry:block",
       "title": "Coming Soon 2",
       "description": "Coming Soon 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/coming-soon/coming-soon-2/coming-soon-2.tsx",
@@ -11950,6 +12100,9 @@
       "type": "registry:block",
       "title": "Contact 3",
       "description": "Contact 3 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-3/contact-3.tsx",
@@ -11966,6 +12119,9 @@
       "type": "registry:block",
       "title": "Contact 5",
       "description": "Contact 5 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-5/contact-5.tsx",
@@ -11982,6 +12138,9 @@
       "type": "registry:block",
       "title": "Contact 6",
       "description": "Contact 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-6/contact-6.tsx",
@@ -11997,6 +12156,9 @@
       "type": "registry:block",
       "title": "Contact 7",
       "description": "Contact 7 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-7/contact-7.tsx",
@@ -12013,6 +12175,9 @@
       "type": "registry:block",
       "title": "Contact 8",
       "description": "Contact 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-8/contact-8.tsx",
@@ -12028,6 +12193,9 @@
       "type": "registry:block",
       "title": "Contact 10",
       "description": "Contact 10 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-10/contact-10.tsx",
@@ -12060,6 +12228,9 @@
       "type": "registry:block",
       "title": "Contact 19",
       "description": "Contact 19 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-19/contact-19.tsx",
@@ -12076,6 +12247,9 @@
       "type": "registry:block",
       "title": "Contact 20",
       "description": "Contact 20 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-20/contact-20.tsx",
@@ -12091,6 +12265,9 @@
       "type": "registry:block",
       "title": "Contact 21",
       "description": "Contact 21 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/contact/contact-21/contact-21.tsx",
@@ -12120,6 +12297,9 @@
       "type": "registry:block",
       "title": "Content 2",
       "description": "Content 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/content/content-2/content-2.tsx",
@@ -12149,6 +12329,9 @@
       "type": "registry:block",
       "title": "Content 9",
       "description": "Content 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/content/content-9/content-9.tsx",
@@ -12164,6 +12347,9 @@
       "type": "registry:block",
       "title": "Content 10",
       "description": "Content 10 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/content/content-10/content-10.tsx",
@@ -12179,6 +12365,9 @@
       "type": "registry:block",
       "title": "Content 11",
       "description": "Content 11 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/content/content-11/content-11.tsx",
@@ -12194,6 +12383,9 @@
       "type": "registry:block",
       "title": "Content 15",
       "description": "Content 15 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/content/content-15/content-15.tsx",
@@ -12209,6 +12401,9 @@
       "type": "registry:block",
       "title": "Content 16",
       "description": "Content 16 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/content/content-16/content-16.tsx",
@@ -12273,6 +12468,9 @@
       "type": "registry:block",
       "title": "Cta 6",
       "description": "Cta 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/cta/cta-6/cta-6.tsx",
@@ -12288,6 +12486,9 @@
       "type": "registry:block",
       "title": "Cta 9",
       "description": "Cta 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/cta/cta-9/cta-9.tsx",
@@ -12302,6 +12503,9 @@
       "type": "registry:block",
       "title": "Cta 12",
       "description": "Cta 12 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/cta/cta-12/cta-12.tsx",
@@ -12318,6 +12522,9 @@
       "type": "registry:block",
       "title": "Cta 14",
       "description": "Cta 14 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/cta/cta-14/cta-14.tsx",
@@ -12378,6 +12585,9 @@
       "type": "registry:block",
       "title": "E Commerce 7",
       "description": "E Commerce 7 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/e-commerce/e-commerce-7/e-commerce-7.tsx",
@@ -12394,6 +12604,9 @@
       "type": "registry:block",
       "title": "E Commerce 8",
       "description": "E Commerce 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/e-commerce/e-commerce-8/e-commerce-8.tsx",
@@ -12410,6 +12623,9 @@
       "type": "registry:block",
       "title": "E Commerce 9",
       "description": "E Commerce 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/e-commerce/e-commerce-9/e-commerce-9.tsx",
@@ -12425,6 +12641,9 @@
       "type": "registry:block",
       "title": "E Commerce 10",
       "description": "E Commerce 10 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/e-commerce/e-commerce-10/e-commerce-10.tsx",
@@ -12440,6 +12659,9 @@
       "type": "registry:block",
       "title": "E Commerce 19",
       "description": "E Commerce 19 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/e-commerce/e-commerce-19/e-commerce-19.tsx",
@@ -12456,6 +12678,9 @@
       "type": "registry:block",
       "title": "E Commerce 21",
       "description": "E Commerce 21 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/e-commerce/e-commerce-21/e-commerce-21.tsx",
@@ -12472,6 +12697,9 @@
       "type": "registry:block",
       "title": "Error404 1",
       "description": "Error404 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/error-404/error404-1/error404-1.tsx",
@@ -12487,6 +12715,9 @@
       "type": "registry:block",
       "title": "Error404 2",
       "description": "Error404 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/error-404/error404-2/error404-2.tsx",
@@ -12502,6 +12733,9 @@
       "type": "registry:block",
       "title": "Error500 1",
       "description": "Error500 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/error-500/error500-1/error500-1.tsx",
@@ -12517,6 +12751,9 @@
       "type": "registry:block",
       "title": "Error500 2",
       "description": "Error500 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/error-500/error500-2/error500-2.tsx",
@@ -12562,6 +12799,9 @@
       "type": "registry:block",
       "title": "Faq 6",
       "description": "Faq 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/faq/faq-6/faq-6.tsx",
@@ -12576,6 +12816,9 @@
       "type": "registry:block",
       "title": "Faq 8",
       "description": "Faq 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/faq/faq-8/faq-8.tsx",
@@ -12591,6 +12834,9 @@
       "type": "registry:block",
       "title": "Faq 9",
       "description": "Faq 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/faq/faq-9/faq-9.tsx",
@@ -12606,6 +12852,9 @@
       "type": "registry:block",
       "title": "Faq 10",
       "description": "Faq 10 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/faq/faq-10/faq-10.tsx",
@@ -12650,6 +12899,9 @@
       "type": "registry:block",
       "title": "Feature 3",
       "description": "Feature 3 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-3/feature-3.tsx",
@@ -12679,6 +12931,9 @@
       "type": "registry:block",
       "title": "Feature 6",
       "description": "Feature 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-6/feature-6.tsx",
@@ -12694,6 +12949,9 @@
       "type": "registry:block",
       "title": "Feature 8",
       "description": "Feature 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-8/feature-8.tsx",
@@ -12709,6 +12967,9 @@
       "type": "registry:block",
       "title": "Feature 9",
       "description": "Feature 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-9/feature-9.tsx",
@@ -12724,6 +12985,9 @@
       "type": "registry:block",
       "title": "Feature 18",
       "description": "Feature 18 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-18/feature-18.tsx",
@@ -12740,6 +13004,9 @@
       "type": "registry:block",
       "title": "Feature 24",
       "description": "Feature 24 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-24/feature-24.tsx",
@@ -12755,6 +13022,9 @@
       "type": "registry:block",
       "title": "Feature 27",
       "description": "Feature 27 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-27/feature-27.tsx",
@@ -12771,6 +13041,9 @@
       "type": "registry:block",
       "title": "Feature 30",
       "description": "Feature 30 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-30/feature-30.tsx",
@@ -12787,6 +13060,9 @@
       "type": "registry:block",
       "title": "Feature 39",
       "description": "Feature 39 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-39/feature-39.tsx",
@@ -12801,6 +13077,9 @@
       "type": "registry:block",
       "title": "Feature 42",
       "description": "Feature 42 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-42/feature-42.tsx",
@@ -12816,6 +13095,9 @@
       "type": "registry:block",
       "title": "Feature 45",
       "description": "Feature 45 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/feature/feature-45/feature-45.tsx",
@@ -12831,6 +13113,9 @@
       "type": "registry:block",
       "title": "Footer 2",
       "description": "Footer 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/footer/footer-2/footer-2.tsx",
@@ -12876,6 +13161,9 @@
       "type": "registry:block",
       "title": "Footer 10",
       "description": "Footer 10 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/footer/footer-10/footer-10.tsx",
@@ -12892,6 +13180,9 @@
       "type": "registry:block",
       "title": "Footer 19",
       "description": "Footer 19 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/footer/footer-19/footer-19.tsx",
@@ -12906,6 +13197,9 @@
       "type": "registry:block",
       "title": "Footer 20",
       "description": "Footer 20 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/footer/footer-20/footer-20.tsx",
@@ -12986,6 +13280,9 @@
       "type": "registry:block",
       "title": "Gallery 11",
       "description": "Gallery 11 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/gallery/gallery-11/gallery-11.tsx",
@@ -13034,6 +13331,9 @@
       "type": "registry:block",
       "title": "Hero 4",
       "description": "Hero 4 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/hero/hero-4/hero-4.tsx",
@@ -13050,6 +13350,9 @@
       "type": "registry:block",
       "title": "Hero 5",
       "description": "Hero 5 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/hero/hero-5/hero-5.tsx",
@@ -13082,6 +13385,9 @@
       "type": "registry:block",
       "title": "Hero 8",
       "description": "Hero 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/hero/hero-8/hero-8.tsx",
@@ -13098,6 +13404,9 @@
       "type": "registry:block",
       "title": "Hero 9",
       "description": "Hero 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/hero/hero-9/hero-9.tsx",
@@ -13114,6 +13423,9 @@
       "type": "registry:block",
       "title": "Hero 15",
       "description": "Hero 15 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/hero/hero-15/hero-15.tsx",
@@ -13130,6 +13442,9 @@
       "type": "registry:block",
       "title": "Join Waitlist 1",
       "description": "Join Waitlist 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/join-waitlist/join-waitlist-1/join-waitlist-1.tsx",
@@ -13146,6 +13461,9 @@
       "type": "registry:block",
       "title": "Login 1",
       "description": "Login 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/login/login-1/login-1.tsx",
@@ -13161,6 +13479,9 @@
       "type": "registry:block",
       "title": "Login 2",
       "description": "Login 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/login/login-2/login-2.tsx",
@@ -13176,6 +13497,9 @@
       "type": "registry:block",
       "title": "Navbar 2",
       "description": "Navbar 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/navbar/navbar-2/navbar-2.tsx",
@@ -13192,6 +13516,9 @@
       "type": "registry:block",
       "title": "Navbar 6",
       "description": "Navbar 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/navbar/navbar-6/navbar-6.tsx",
@@ -13208,6 +13535,9 @@
       "type": "registry:block",
       "title": "Portfolio 2",
       "description": "Portfolio 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/portfolio/portfolio-2/portfolio-2.tsx",
@@ -13255,6 +13585,9 @@
       "type": "registry:block",
       "title": "Portfolio 8",
       "description": "Portfolio 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/portfolio/portfolio-8/portfolio-8.tsx",
@@ -13270,6 +13603,9 @@
       "type": "registry:block",
       "title": "Portfolio 9",
       "description": "Portfolio 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/portfolio/portfolio-9/portfolio-9.tsx",
@@ -13285,6 +13621,9 @@
       "type": "registry:block",
       "title": "Portfolio 10",
       "description": "Portfolio 10 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/portfolio/portfolio-10/portfolio-10.tsx",
@@ -13348,6 +13687,9 @@
       "type": "registry:block",
       "title": "Pricing 10",
       "description": "Pricing 10 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/pricing/pricing-10/pricing-10.tsx",
@@ -13364,6 +13706,9 @@
       "type": "registry:block",
       "title": "Pricing 12",
       "description": "Pricing 12 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/pricing/pricing-12/pricing-12.tsx",
@@ -13380,6 +13725,9 @@
       "type": "registry:block",
       "title": "Pricing 18",
       "description": "Pricing 18 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/pricing/pricing-18/pricing-18.tsx",
@@ -13396,6 +13744,9 @@
       "type": "registry:block",
       "title": "Pricing 19",
       "description": "Pricing 19 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/pricing/pricing-19/pricing-19.tsx",
@@ -13471,6 +13822,9 @@
       "type": "registry:block",
       "title": "Process 7",
       "description": "Process 7 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/process/process-7/process-7.tsx",
@@ -13486,6 +13840,9 @@
       "type": "registry:block",
       "title": "Process 9",
       "description": "Process 9 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/process/process-9/process-9.tsx",
@@ -13501,6 +13858,9 @@
       "type": "registry:block",
       "title": "Reset Password 1",
       "description": "Reset Password 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/reset-password/reset-password-1/reset-password-1.tsx",
@@ -13531,6 +13891,9 @@
       "type": "registry:block",
       "title": "Small Hero 6",
       "description": "Small Hero 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/small-hero/small-hero-6/small-hero-6.tsx",
@@ -13562,6 +13925,9 @@
       "type": "registry:block",
       "title": "Statistics 4",
       "description": "Statistics 4 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/statistics/statistics-4/statistics-4.tsx",
@@ -13594,6 +13960,9 @@
       "type": "registry:block",
       "title": "Statistics 11",
       "description": "Statistics 11 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/statistics/statistics-11/statistics-11.tsx",
@@ -13640,6 +14009,9 @@
       "type": "registry:block",
       "title": "Team 6",
       "description": "Team 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/team/team-6/team-6.tsx",
@@ -13701,6 +14073,9 @@
       "type": "registry:block",
       "title": "Testimonial 6",
       "description": "Testimonial 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-6/testimonial-6.tsx",
@@ -13717,6 +14092,9 @@
       "type": "registry:block",
       "title": "Testimonial 8",
       "description": "Testimonial 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-8/testimonial-8.tsx",
@@ -13749,6 +14127,9 @@
       "type": "registry:block",
       "title": "Testimonial 16",
       "description": "Testimonial 16 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-16/testimonial-16.tsx",
@@ -13770,6 +14151,9 @@
       "type": "registry:block",
       "title": "Testimonial 17",
       "description": "Testimonial 17 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-17/testimonial-17.tsx",
@@ -13791,6 +14175,9 @@
       "type": "registry:block",
       "title": "Testimonial 18",
       "description": "Testimonial 18 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-18/testimonial-18.tsx",
@@ -13812,6 +14199,9 @@
       "type": "registry:block",
       "title": "Testimonial 20",
       "description": "Testimonial 20 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-20/testimonial-20.tsx",
@@ -13827,6 +14217,9 @@
       "type": "registry:block",
       "title": "Testimonial 21",
       "description": "Testimonial 21 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-21/testimonial-21.tsx",
@@ -13848,6 +14241,9 @@
       "type": "registry:block",
       "title": "Testimonial 22",
       "description": "Testimonial 22 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-22/testimonial-22.tsx",
@@ -13864,6 +14260,9 @@
       "type": "registry:block",
       "title": "Testimonial 24",
       "description": "Testimonial 24 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-24/testimonial-24.tsx",
@@ -13880,6 +14279,9 @@
       "type": "registry:block",
       "title": "Testimonial 25",
       "description": "Testimonial 25 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/testimonial/testimonial-25/testimonial-25.tsx",
@@ -13896,6 +14298,9 @@
       "type": "registry:block",
       "title": "Testimonials",
       "description": "Testimonials variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/landing/testimonials/testimonials.tsx",
@@ -13917,6 +14322,9 @@
       "type": "registry:block",
       "title": "Under Construction 1",
       "description": "Under Construction 1 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/under-construction/under-construction-1/under-construction-1.tsx",
@@ -13932,6 +14340,9 @@
       "type": "registry:block",
       "title": "Under Construction 2",
       "description": "Under Construction 2 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/under-construction/under-construction-2/under-construction-2.tsx",
@@ -13947,6 +14358,9 @@
       "type": "registry:block",
       "title": "Widgets 11",
       "description": "Widgets 11 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/widgets/widgets-11/widgets-11.tsx",
@@ -13962,6 +14376,9 @@
       "type": "registry:block",
       "title": "Widgets 17",
       "description": "Widgets 17 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/widgets/widgets-17/widgets-17.tsx",
@@ -13978,6 +14395,9 @@
       "type": "registry:block",
       "title": "Widgets 18",
       "description": "Widgets 18 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/widgets/widgets-18/widgets-18.tsx",
@@ -13994,6 +14414,9 @@
       "type": "registry:block",
       "title": "Widgets 19",
       "description": "Widgets 19 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/widgets/widgets-19/widgets-19.tsx",
@@ -14010,6 +14433,9 @@
       "type": "registry:block",
       "title": "Widgets 22",
       "description": "Widgets 22 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "src/components/uiable/blocks/widgets/widgets-22/widgets-22.tsx",

@@ -64,9 +64,29 @@ async function smartWriteFileSync(filePath, content) {
   fs.writeFileSync(filePath, content)
 }
 
-// Reads a JSON file that's either a flat array of block names, or an object whose
-// values are arrays of block names (keys are just labels for readability) — used for
-// both block-sequences.json and pro-blocks.json — and flattens it into one name list.
+function readExistingBadges(registryPath) {
+  const badges = new Map()
+  if (!fs.existsSync(registryPath)) return badges
+  try {
+    const existing = JSON.parse(fs.readFileSync(registryPath, "utf8"))
+    for (const item of existing.items || []) {
+      if (item.badge) badges.set(item.name, item.badge)
+    }
+  } catch (e) {
+    console.error(`Could not read badges from ${registryPath}`, e)
+  }
+  return badges
+}
+
+function applyBadges(items, badges) {
+  return items.map((item) => {
+    const badge = badges.get(item.name)
+    if (!badge) return item
+    const { name, type, title, description, ...rest } = item
+    return { name, type, title, description, badge, ...rest }
+  })
+}
+
 function readBlockNameList(filePath) {
   const names = []
   if (fs.existsSync(filePath)) {
@@ -473,7 +493,7 @@ async function generateUiableRegistry() {
   if (!fs.existsSync(uiablePath)) return
   const dirs = fs.readdirSync(uiablePath, { withFileTypes: true })
 
-  const items = []
+  let items = []
 
   for (const dirent of dirs) {
     if (dirent.isDirectory() && dirent.name !== "blocks") {
@@ -535,6 +555,7 @@ async function generateUiableRegistry() {
   }
 
   items.sort((a, b) => customSort(a.name, b.name))
+  items = applyBadges(items, existingUiableBadges)
 
   const registryContent = {
     $schema: "https://ui.shadcn.com/schema/registry.json",
@@ -577,7 +598,7 @@ async function generateBlocksRegistry() {
 
   const categories = fs.readdirSync(blocksPath, { withFileTypes: true })
 
-  const items = []
+  let items = []
 
   for (const categoryDir of categories) {
     if (categoryDir.isDirectory()) {
@@ -730,6 +751,7 @@ async function generateBlocksRegistry() {
     }
     return customSort(a.name, b.name)
   })
+  items = applyBadges(items, existingBlockBadges)
 
   const registryContent = {
     $schema: "https://ui.shadcn.com/schema/registry.json",
@@ -783,6 +805,13 @@ function reportUnresolvedImports() {
   }
   console.warn("")
 }
+
+const existingUiableBadges = readExistingBadges(
+  path.join(UIABLE_DIR, "registry.json")
+)
+const existingBlockBadges = readExistingBadges(
+  path.join(BLOCKS_DIR, "registry.json")
+)
 
 console.log("Cleaning old registry files...")
 cleanRegistryDirs()

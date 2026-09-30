@@ -361,12 +361,7 @@ export default function ComponentsPageClient() {
               {section.items.map((item) => {
                 const Demo = DEMOS[item.slug]
                 return (
-                  <DemoCard
-                    key={item.slug}
-                    slug={item.slug}
-                    title={item.title}
-                    badgeLabel={item.badge?.label}
-                  >
+                  <DemoCard key={item.slug} slug={item.slug} title={item.title}>
                     {(hovered) =>
                       Demo ? (
                         <Demo hovered={hovered} />
