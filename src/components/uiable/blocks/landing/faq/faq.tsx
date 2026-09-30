@@ -94,7 +94,7 @@ export default function FAQ() {
   return (
     <section className="mx-auto flex w-full flex-col gap-10 px-4 py-12.5 sm:px-8">
       <SectionHeader
-        title="Got Questions? We've Got Answers"
+        title="Got questions? We've got answers"
         titleClassName="tracking-tight"
         subtitle="Browse our frequently asked questions to find quick, clear answers and helpful information."
       />
