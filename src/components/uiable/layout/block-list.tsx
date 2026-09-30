@@ -10,6 +10,7 @@ import { cn } from "cn"
 // project-imports
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_BLOCKS } from "@/components-grid"
+import NewDot from "@/components/new-dot"
 
 interface BlockListProps {
   search?: string
@@ -81,7 +82,10 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
                     : "text-sidebar-foreground hover:bg-muted-foreground/6 hover:text-foreground"
                 )}
               >
-                <span className="capitalize">{item.title}</span>
+                <div className="flex items-center gap-0.5">
+                  <span className="capitalize">{item.title}</span>
+                  {item.badge && <NewDot side="right" />}
+                </div>
                 <span
                   className={cn(
                     "text-xs transition-colors",

@@ -26,9 +26,12 @@ interface Item {
   description: string
   files: { path: string }[]
   categories: string[]
-  badge?: {
-    label: string
-  }
+  badge?:
+    | boolean
+    | string
+    | {
+        label: string
+      }
   rawCode?: string
   type?: string
 }
@@ -186,7 +189,10 @@ function CategoryItem({ item, index, category }: CategoryItemProps) {
   }
 
   return (
-    <Card className="group/item mb-0 overflow-hidden">
+    <Card
+      id={item.name}
+      className="group/item mb-0 scroll-mt-24 overflow-hidden"
+    >
       <CardHeader className="py-3">
         <div className="flex flex-row items-center justify-between gap-1">
           <div className="flex items-center gap-2">
@@ -195,7 +201,11 @@ function CategoryItem({ item, index, category }: CategoryItemProps) {
             </h5>
             {item.badge && (
               <Badge className="border-transparent bg-red-500/15 text-red-500">
-                {item.badge.label}
+                {typeof item.badge === "boolean"
+                  ? "New"
+                  : typeof item.badge === "string"
+                    ? item.badge
+                    : item.badge.label}
               </Badge>
             )}
           </div>
@@ -370,6 +380,16 @@ export default function CategoryView({ category, items }: CategoryViewProps) {
   useEffect(() => {
     setTimeout(() => setMounted(true), 0)
   }, [])
+
+  useEffect(() => {
+    if (!mounted) return
+    const id = decodeURIComponent(window.location.hash.slice(1))
+    if (!id) return
+    const timer = setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ block: "start" })
+    }, 100)
+    return () => clearTimeout(timer)
+  }, [mounted])
 
   const activeCategory = useMemo(
     () => categories.find((c) => c.slug === category),

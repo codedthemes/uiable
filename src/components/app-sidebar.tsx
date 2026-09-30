@@ -35,6 +35,7 @@ import {
 import Logo from "./uiable/layout/shared/logo"
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_BLOCKS, NAV_COMPONENTS } from "@/components-grid"
+import NewDot from "@/components/new-dot"
 import BlockList from "@/components/uiable/layout/block-list"
 import ComponentList from "@/components/uiable/layout/component-list"
 import ComponentSearch from "@/components/uiable/layout/shared/component-search"
@@ -262,6 +263,7 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                                 <span className="font-medium">
                                   {item.title}
                                 </span>
+                                {item.badge && <NewDot side="right" />}
                                 <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
                                   {CATEGORY_COUNTS[
                                     item.slug as keyof typeof CATEGORY_COUNTS
@@ -312,6 +314,7 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
                                 <span className="font-medium">
                                   {item.title}
                                 </span>
+                                {item.badge && <NewDot side="top" />}
                                 <span className="ml-auto inline-flex size-5 items-center justify-center text-xs text-sidebar-ring">
                                   {CATEGORY_COUNTS[
                                     item.slug as keyof typeof CATEGORY_COUNTS

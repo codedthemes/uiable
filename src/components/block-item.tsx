@@ -3,6 +3,7 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react"
 
 // shadcn
+import { Badge } from "@/components/ui/badge"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import {
@@ -52,6 +53,12 @@ export interface Item {
   description: string
   files: { path: string }[]
   categories: string[]
+  badge?:
+    | boolean
+    | string
+    | {
+        label: string
+      }
   rawCode?: string
 }
 
@@ -299,6 +306,15 @@ export default function BlockItem({
                   <h5 className="mb-0 line-clamp-1 text-[18px] font-semibold">
                     {item.title}
                   </h5>
+                  {item.badge && (
+                    <Badge className="border-transparent bg-red-500/15 text-red-500">
+                      {typeof item.badge === "boolean"
+                        ? "New"
+                        : typeof item.badge === "string"
+                          ? item.badge
+                          : item.badge.label}
+                    </Badge>
+                  )}
                 </div>
                 <div className="flex flex-row flex-wrap items-center justify-center gap-1 text-center">
                   <div className="resize-button-group hidden items-center gap-2 rounded-lg border border-border/50 bg-card p-0.5 lg:inline-flex">

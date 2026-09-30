@@ -4,12 +4,10 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-// shadcn
-import { Badge } from "@/components/ui/badge"
-
 // project-imports
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_COMPONENTS } from "@/components-grid"
+import NewDot from "@/components/new-dot"
 import { cn } from "@/lib/utils"
 
 interface ComponentListProps {
@@ -88,13 +86,9 @@ export default function ComponentList({
                     : "text-sidebar-foreground hover:bg-muted-foreground/6 hover:text-foreground"
                 )}
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-0.5">
                   <span className="capitalize">{item.title}</span>
-                  {item.badge && (
-                    <Badge className="border-transparent bg-red-500/15 text-red-500">
-                      {item.badge.label}
-                    </Badge>
-                  )}
+                  {item.badge && <NewDot side="right" />}
                 </div>
                 <span
                   className={cn(

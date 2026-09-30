@@ -92,7 +92,7 @@ export default function RootLayout({
         <ThemePresetStyles />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

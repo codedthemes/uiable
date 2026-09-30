@@ -3,8 +3,6 @@
 import type { ReactNode } from "react"
 
 // next
-import Image from "next/image"
-
 // third-party
 import { motion, useReducedMotion, type Variants } from "framer-motion"
 
@@ -127,12 +125,10 @@ export default function Contact20() {
       <FadeIn direction="left" delay={0.3} className="relative w-full flex-1">
         <div className="pointer-events-none absolute inset-0 translate-y-10 rounded-full bg-primary/20 blur-3xl" />
         <div className="relative z-10 h-75 w-full">
-          <Image
+          <img
             src="https://cdn.uiable.com/img-4.jpg"
             alt="A bright, modern workspace with a laptop and a potted plant"
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="rounded-2xl object-cover shadow-lg"
+            className="absolute inset-0 h-full w-full rounded-2xl object-cover shadow-lg"
           />
         </div>
       </FadeIn>

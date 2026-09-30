@@ -3,8 +3,6 @@
 import type { ReactNode } from "react"
 
 // next
-import Image from "next/image"
-
 // third-party
 import { motion, useReducedMotion, type Variants } from "framer-motion"
 
@@ -109,12 +107,10 @@ export default function Contact21() {
           />
 
           <StaggerItem className="relative flex min-h-48 items-end overflow-hidden rounded-2xl border border-border/60 bg-muted p-6 sm:col-span-2 md:min-h-64 lg:col-span-1 lg:h-full">
-            <Image
+            <img
               src="https://cdn.uiable.com/img-5.jpg"
               alt=""
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 33vw"
-              className="object-cover opacity-60 mix-blend-multiply dark:opacity-50 dark:mix-blend-normal dark:brightness-90 dark:contrast-110 dark:hue-rotate-180 dark:invert"
+              className="absolute inset-0 h-full w-full object-cover opacity-60 mix-blend-multiply dark:opacity-50 dark:mix-blend-normal dark:brightness-90 dark:contrast-110 dark:hue-rotate-180 dark:invert"
             />
             <div className="relative z-10 w-full rounded-xl border border-border/60 bg-card/90 p-4 shadow-sm backdrop-blur-sm">
               <div className="mb-1 flex items-center gap-3">

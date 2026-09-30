@@ -1,13 +1,12 @@
-// react
-import { Fragment } from "react"
-
 // next
 import Link from "next/link"
 
 // shadcn
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { TextMarquee } from "@/components/ui/text-marquee"
+
+// third-party
+import { div as MotionDiv } from "framer-motion/client"
 
 // project-imports
 import branding from "@/branding.json"
@@ -24,6 +23,7 @@ import {
   IconBrandNextjs,
   IconBrandReact,
   IconBrandTypescript,
+  IconChevronRight,
 } from "@tabler/icons-react"
 
 //  ------------------------------ | CONSTANTS | ------------------------------  //
@@ -38,30 +38,43 @@ const techIcons = [
   { name: "TypeScript", Icon: IconBrandTypescript },
 ]
 
-const stats = [
-  { label: "Blocks", value: "390+" },
-  { label: "Templates", value: "7" },
-  { label: "Components", value: "790+" },
-  { label: "Dashboards", value: "2" },
-]
+const delays = [0, 150, 300]
 
-//  ------------------------------ | HELPERS | ------------------------------  //
+//  ------------------------------ | SUB-COMPONENTS | ------------------------------  //
 
-function StatItems() {
+function PingDot() {
   return (
-    <>
-      {stats.map((item, index) => (
-        <Fragment key={item.label}>
-          <span className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs whitespace-nowrap sm:text-sm">
-            <span className="text-muted-foreground">{item.value}</span>
-            <span className="text-muted-foreground">{item.label}</span>
-          </span>
-          {index < stats.length - 1 && (
-            <span aria-hidden className="h-3.5 w-px shrink-0 bg-border" />
-          )}
-        </Fragment>
-      ))}
-    </>
+    <div className="relative flex h-3 w-3 items-center justify-center">
+      <span className="pointer-events-none absolute inline-flex h-full w-full animate-ping rounded-full bg-slate-950 opacity-75 dark:bg-slate-50" />
+      <div className="relative h-2 w-2 rounded-full bg-slate-950 dark:bg-slate-50" />
+    </div>
+  )
+}
+
+function ChangelogLink() {
+  return (
+    <Link
+      href="/doc/changelog"
+      className="group flex items-center gap-0.5 rounded-full bg-primary/10 py-0.5 pr-1 pl-2.5 text-xs font-semibold text-[#6b9bff] transition-colors hover:bg-primary/20"
+    >
+      Changelog
+      <div className="flex -space-x-1.5">
+        {delays.map((delay) => (
+          <MotionDiv
+            key={delay}
+            animate={{ opacity: [0.2, 1, 0.2] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              delay: delay / 1000,
+              ease: "linear",
+            }}
+          >
+            <IconChevronRight className="h-3.5 w-3.5" />
+          </MotionDiv>
+        ))}
+      </div>
+    </Link>
   )
 }
 
@@ -84,21 +97,19 @@ export default function Hero() {
 
       <HoverBg className="opacity-60 dark:opacity-60" />
 
-      <div className="relative z-10 flex w-full justify-center">
-        {/* Mobile: scrolling marquee */}
-        <div className="w-full max-w-xs overflow-hidden rounded-full border border-border bg-card px-1.5 py-1 shadow-sm sm:hidden">
-          <TextMarquee duration={16} gap="0px" repeat={3}>
-            <div className="flex items-center">
-              <StatItems />
-              <span aria-hidden className="h-3.5 w-px shrink-0 bg-border" />
-            </div>
-          </TextMarquee>
-        </div>
-
-        {/* sm and up: single-row pill */}
-        <div className="hidden max-w-full flex-wrap items-center justify-center rounded-full border border-border bg-card px-1.5 py-1 shadow-sm sm:inline-flex">
-          <StatItems />
-        </div>
+      <div className="relative z-10 flex items-center justify-center">
+        <Badge
+          variant="outline"
+          className="inline-flex items-center gap-3 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-medium text-secondary-foreground"
+        >
+          <PingDot />
+          <span className="flex items-center gap-2">
+            <span className="text-muted-foreground">
+              New Release September 30, 2026
+            </span>
+            <ChangelogLink />
+          </span>
+        </Badge>
       </div>
 
       <div className="relative z-10 flex w-full flex-col items-center gap-7">
