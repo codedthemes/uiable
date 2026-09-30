@@ -546,6 +546,26 @@
       "dependencies": ["@tabler/icons-react", "lucide-react", "recharts"]
     },
     {
+      "name": "block-bento-7",
+      "type": "registry:block",
+      "title": "Bento 7",
+      "description": "Bento 7 variant for block.",
+      "files": [
+        {
+          "path": "bento/bento-7/bento-7.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/bento/bento-7/bento-7.tsx"
+        },
+        {
+          "path": "../../animation/Particles.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/Particles.tsx"
+        }
+      ],
+      "categories": ["bento"],
+      "dependencies": ["framer-motion", "ogl", "react-qr-code"]
+    },
+    {
       "name": "block-blocks-showcase",
       "type": "registry:block",
       "title": "Blocks Showcase",
@@ -648,6 +668,48 @@
         }
       ],
       "categories": ["check-mail"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
+      "name": "block-code-verification-4",
+      "type": "registry:block",
+      "title": "Code Verification 4",
+      "description": "Code Verification 4 variant for block.",
+      "files": [
+        {
+          "path": "code-verification/code-verification-4/code-verification-4.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/code-verification/code-verification-4/code-verification-4.tsx"
+        },
+        {
+          "path": "../../../images/landings/LightLogo.tsx",
+          "type": "registry:component",
+          "target": "src/images/landings/LightLogo.tsx"
+        }
+      ],
+      "categories": ["code-verification"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["framer-motion"]
+    },
+    {
+      "name": "block-code-verification-5",
+      "type": "registry:block",
+      "title": "Code Verification 5",
+      "description": "Code Verification 5 variant for block.",
+      "files": [
+        {
+          "path": "code-verification/code-verification-5/code-verification-5.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/code-verification/code-verification-5/code-verification-5.tsx"
+        },
+        {
+          "path": "../../../images/landings/LightLogo.tsx",
+          "type": "registry:component",
+          "target": "src/images/landings/LightLogo.tsx"
+        }
+      ],
+      "categories": ["code-verification"],
       "registryDependencies": ["@uiable/button"],
       "dependencies": ["framer-motion", "lucide-react"]
     },
@@ -832,6 +894,37 @@
       "categories": ["contact"],
       "registryDependencies": ["@uiable/button", "@uiable/field", "@uiable/input", "@uiable/textarea"],
       "dependencies": ["framer-motion"]
+    },
+    {
+      "name": "block-contact-18",
+      "type": "registry:block",
+      "title": "Contact 18",
+      "description": "Contact 18 variant for block.",
+      "files": [
+        {
+          "path": "contact/contact-18/contact-18.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/contact/contact-18/contact-18.tsx"
+        },
+        {
+          "path": "../../animation/Particles.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/Particles.tsx"
+        },
+        {
+          "path": "../../animation/SeoAnimatedParticles.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/SeoAnimatedParticles.tsx"
+        },
+        {
+          "path": "../../animation/SeoBackgroundEffects.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/SeoBackgroundEffects.tsx"
+        }
+      ],
+      "categories": ["contact"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["framer-motion", "ogl"]
     },
     {
       "name": "block-contact-19",
@@ -1666,6 +1759,27 @@
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
+      "name": "block-feature-32",
+      "type": "registry:block",
+      "title": "Feature 32",
+      "description": "Feature 32 variant for block.",
+      "files": [
+        {
+          "path": "feature/feature-32/feature-32.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/feature/feature-32/feature-32.tsx"
+        },
+        {
+          "path": "../../animation/SaasSpotlightCard.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/SaasSpotlightCard.tsx"
+        }
+      ],
+      "categories": ["feature"],
+      "registryDependencies": ["@uiable/badge"],
+      "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
       "name": "block-feature-39",
       "type": "registry:block",
       "title": "Feature 39",
@@ -1818,6 +1932,27 @@
         }
       ],
       "categories": ["footer"],
+      "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
+      "name": "block-forgot-password-3",
+      "type": "registry:block",
+      "title": "Forgot Password 3",
+      "description": "Forgot Password 3 variant for block.",
+      "files": [
+        {
+          "path": "forgot-password/forgot-password-3/forgot-password-3.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/forgot-password/forgot-password-3/forgot-password-3.tsx"
+        },
+        {
+          "path": "../../../images/landings/LightLogo.tsx",
+          "type": "registry:component",
+          "target": "src/images/landings/LightLogo.tsx"
+        }
+      ],
+      "categories": ["forgot-password"],
+      "registryDependencies": ["@uiable/button"],
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
@@ -2048,6 +2183,96 @@
       "dependencies": ["framer-motion", "lucide-react"]
     },
     {
+      "name": "block-hero-16",
+      "type": "registry:block",
+      "title": "Hero 16",
+      "description": "Hero 16 variant for block.",
+      "files": [
+        {
+          "path": "hero/hero-16/hero-16.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-16/hero-16.tsx"
+        },
+        {
+          "path": "../../animation/MoltenMetal.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/MoltenMetal.tsx"
+        },
+        {
+          "path": "landing/components/HeroBackground.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/HeroBackground.tsx"
+        }
+      ],
+      "categories": ["hero"],
+      "dependencies": ["framer-motion", "ogl"]
+    },
+    {
+      "name": "block-hero-17",
+      "type": "registry:block",
+      "title": "Hero 17",
+      "description": "Hero 17 variant for block.",
+      "files": [
+        {
+          "path": "hero/hero-17/hero-17.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-17/hero-17.tsx"
+        },
+        {
+          "path": "../../animation/MoltenMetal.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/MoltenMetal.tsx"
+        },
+        {
+          "path": "landing/components/HeroBackground.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/HeroBackground.tsx"
+        }
+      ],
+      "categories": ["hero"],
+      "dependencies": ["framer-motion", "ogl"]
+    },
+    {
+      "name": "block-hero-19",
+      "type": "registry:block",
+      "title": "Hero 19",
+      "description": "Hero 19 variant for block.",
+      "files": [
+        {
+          "path": "hero/hero-19/hero-19.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-19/hero-19.tsx"
+        },
+        {
+          "path": "../../animation/MoltenMetal.tsx",
+          "type": "registry:component",
+          "target": "@components/animation/MoltenMetal.tsx"
+        },
+        {
+          "path": "landing/components/HeroBackground.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/landing/components/HeroBackground.tsx"
+        }
+      ],
+      "categories": ["hero"],
+      "dependencies": ["framer-motion", "ogl"]
+    },
+    {
+      "name": "block-hero-22",
+      "type": "registry:block",
+      "title": "Hero 22",
+      "description": "Hero 22 variant for block.",
+      "files": [
+        {
+          "path": "hero/hero-22/hero-22.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/hero/hero-22/hero-22.tsx"
+        }
+      ],
+      "categories": ["hero"],
+      "dependencies": ["framer-motion", "lucide-react"]
+    },
+    {
       "name": "block-join-waitlist-1",
       "type": "registry:block",
       "title": "Join Waitlist 1",
@@ -2138,6 +2363,27 @@
       ],
       "categories": ["navbar"],
       "registryDependencies": ["@uiable/button", "@uiable/logo", "@uiable/mobile-nav", "@uiable/sheet"],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "block-navbar-8",
+      "type": "registry:block",
+      "title": "Navbar 8",
+      "description": "Navbar 8 variant for block.",
+      "files": [
+        {
+          "path": "navbar/navbar-8/navbar-8.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/navbar/navbar-8/navbar-8.tsx"
+        },
+        {
+          "path": "../../../images/landings/AiDarkLogo.tsx",
+          "type": "registry:component",
+          "target": "src/images/landings/AiDarkLogo.tsx"
+        }
+      ],
+      "categories": ["navbar"],
+      "registryDependencies": ["@uiable/button"],
       "dependencies": ["lucide-react"]
     },
     {
@@ -2480,6 +2726,27 @@
       ],
       "categories": ["reset-password"],
       "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/field", "@uiable/input"]
+    },
+    {
+      "name": "block-sign-up-6",
+      "type": "registry:block",
+      "title": "Sign Up 6",
+      "description": "Sign Up 6 variant for block.",
+      "files": [
+        {
+          "path": "sign-up/sign-up-6/sign-up-6.tsx",
+          "type": "registry:component",
+          "target": "@components/uiable/blocks/sign-up/sign-up-6/sign-up-6.tsx"
+        },
+        {
+          "path": "../../../images/landings/LightLogo.tsx",
+          "type": "registry:component",
+          "target": "src/images/landings/LightLogo.tsx"
+        }
+      ],
+      "categories": ["sign-up"],
+      "registryDependencies": ["@uiable/button"],
+      "dependencies": ["framer-motion"]
     },
     {
       "name": "block-small-hero-5",

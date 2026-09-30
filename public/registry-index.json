@@ -4,8 +4,8 @@
   "baseUrl": "https://uiable.com",
   "generatedFrom": "registry.json",
   "counts": {
-    "total": 947,
-    "blocks": 152,
+    "total": 959,
+    "blocks": 164,
     "primitives": 72,
     "components": 723
   },
@@ -32,6 +32,7 @@
     "check-mail",
     "checkbox",
     "circular-progress",
+    "code-verification",
     "collapsible",
     "combobox",
     "coming-soon",
@@ -55,6 +56,7 @@
     "feature",
     "field",
     "footer",
+    "forgot-password",
     "gallery",
     "hero",
     "hover-card",
@@ -94,6 +96,7 @@
     "separator",
     "sheet",
     "sidebar",
+    "sign-up",
     "skeleton",
     "slider",
     "small-hero",
@@ -3535,6 +3538,33 @@
       "previewUrl": "https://uiable.com/preview/block-bento-5"
     },
     {
+      "name": "block-bento-7",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Bento 7",
+      "description": "Bento 7 variant for block.",
+      "categories": [
+        "bento"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "ogl",
+        "react-qr-code"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/bento/bento-7/bento-7.tsx",
+        "@components/animation/Particles.tsx"
+      ],
+      "keywords": [
+        "bento",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-bento-7",
+      "url": "https://uiable.com/r/block-bento-7.json",
+      "previewUrl": "https://uiable.com/preview/block-bento-7"
+    },
+    {
       "name": "block-blocks-showcase",
       "kind": "block",
       "type": "registry:block",
@@ -3651,6 +3681,63 @@
       "addCommand": "npx shadcn@latest add @uiable/block-check-mail-2",
       "url": "https://uiable.com/r/block-check-mail-2.json",
       "previewUrl": "https://uiable.com/preview/block-check-mail-2"
+    },
+    {
+      "name": "block-code-verification-4",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Code Verification 4",
+      "description": "Code Verification 4 variant for block.",
+      "categories": [
+        "code-verification"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/code-verification/code-verification-4/code-verification-4.tsx",
+        "src/images/landings/LightLogo.tsx"
+      ],
+      "keywords": [
+        "code",
+        "verification",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-code-verification-4",
+      "url": "https://uiable.com/r/block-code-verification-4.json",
+      "previewUrl": "https://uiable.com/preview/block-code-verification-4"
+    },
+    {
+      "name": "block-code-verification-5",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Code Verification 5",
+      "description": "Code Verification 5 variant for block.",
+      "categories": [
+        "code-verification"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/code-verification/code-verification-5/code-verification-5.tsx",
+        "src/images/landings/LightLogo.tsx"
+      ],
+      "keywords": [
+        "code",
+        "verification",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-code-verification-5",
+      "url": "https://uiable.com/r/block-code-verification-5.json",
+      "previewUrl": "https://uiable.com/preview/block-code-verification-5"
     },
     {
       "name": "block-coming-soon-1",
@@ -4065,6 +4152,36 @@
       "addCommand": "npx shadcn@latest add @uiable/block-contact-11",
       "url": "https://uiable.com/r/block-contact-11.json",
       "previewUrl": "https://uiable.com/preview/block-contact-11"
+    },
+    {
+      "name": "block-contact-18",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Contact 18",
+      "description": "Contact 18 variant for block.",
+      "categories": [
+        "contact"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "ogl"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/contact/contact-18/contact-18.tsx",
+        "@components/animation/Particles.tsx",
+        "@components/animation/SeoAnimatedParticles.tsx",
+        "@components/animation/SeoBackgroundEffects.tsx"
+      ],
+      "keywords": [
+        "contact",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-contact-18",
+      "url": "https://uiable.com/r/block-contact-18.json",
+      "previewUrl": "https://uiable.com/preview/block-contact-18"
     },
     {
       "name": "block-contact-19",
@@ -5339,6 +5456,34 @@
       "previewUrl": "https://uiable.com/preview/block-feature-30"
     },
     {
+      "name": "block-feature-32",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Feature 32",
+      "description": "Feature 32 variant for block.",
+      "categories": [
+        "feature"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/badge"
+      ],
+      "files": [
+        "@components/uiable/blocks/feature/feature-32/feature-32.tsx",
+        "@components/animation/SaasSpotlightCard.tsx"
+      ],
+      "keywords": [
+        "feature",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-feature-32",
+      "url": "https://uiable.com/r/block-feature-32.json",
+      "previewUrl": "https://uiable.com/preview/block-feature-32"
+    },
+    {
       "name": "block-feature-39",
       "kind": "block",
       "type": "registry:block",
@@ -5585,6 +5730,35 @@
       "addCommand": "npx shadcn@latest add @uiable/block-footer-20",
       "url": "https://uiable.com/r/block-footer-20.json",
       "previewUrl": "https://uiable.com/preview/block-footer-20"
+    },
+    {
+      "name": "block-forgot-password-3",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Forgot Password 3",
+      "description": "Forgot Password 3 variant for block.",
+      "categories": [
+        "forgot-password"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/forgot-password/forgot-password-3/forgot-password-3.tsx",
+        "src/images/landings/LightLogo.tsx"
+      ],
+      "keywords": [
+        "forgot",
+        "password",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-forgot-password-3",
+      "url": "https://uiable.com/r/block-forgot-password-3.json",
+      "previewUrl": "https://uiable.com/preview/block-forgot-password-3"
     },
     {
       "name": "block-gallery-1",
@@ -6001,6 +6175,112 @@
       "previewUrl": "https://uiable.com/preview/block-hero-15"
     },
     {
+      "name": "block-hero-16",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 16",
+      "description": "Hero 16 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "ogl"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/hero/hero-16/hero-16.tsx",
+        "@components/animation/MoltenMetal.tsx",
+        "@components/uiable/blocks/landing/components/HeroBackground.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-16",
+      "url": "https://uiable.com/r/block-hero-16.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-16"
+    },
+    {
+      "name": "block-hero-17",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 17",
+      "description": "Hero 17 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "ogl"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/hero/hero-17/hero-17.tsx",
+        "@components/animation/MoltenMetal.tsx",
+        "@components/uiable/blocks/landing/components/HeroBackground.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-17",
+      "url": "https://uiable.com/r/block-hero-17.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-17"
+    },
+    {
+      "name": "block-hero-19",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 19",
+      "description": "Hero 19 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "ogl"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/hero/hero-19/hero-19.tsx",
+        "@components/animation/MoltenMetal.tsx",
+        "@components/uiable/blocks/landing/components/HeroBackground.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-19",
+      "url": "https://uiable.com/r/block-hero-19.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-19"
+    },
+    {
+      "name": "block-hero-22",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Hero 22",
+      "description": "Hero 22 variant for block.",
+      "categories": [
+        "hero"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        "@components/uiable/blocks/hero/hero-22/hero-22.tsx"
+      ],
+      "keywords": [
+        "hero",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-hero-22",
+      "url": "https://uiable.com/r/block-hero-22.json",
+      "previewUrl": "https://uiable.com/preview/block-hero-22"
+    },
+    {
       "name": "block-join-waitlist-1",
       "kind": "block",
       "type": "registry:block",
@@ -6222,6 +6502,33 @@
       "addCommand": "npx shadcn@latest add @uiable/block-navbar-6",
       "url": "https://uiable.com/r/block-navbar-6.json",
       "previewUrl": "https://uiable.com/preview/block-navbar-6"
+    },
+    {
+      "name": "block-navbar-8",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Navbar 8",
+      "description": "Navbar 8 variant for block.",
+      "categories": [
+        "navbar"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/navbar/navbar-8/navbar-8.tsx",
+        "src/images/landings/AiDarkLogo.tsx"
+      ],
+      "keywords": [
+        "navbar",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-navbar-8",
+      "url": "https://uiable.com/r/block-navbar-8.json",
+      "previewUrl": "https://uiable.com/preview/block-navbar-8"
     },
     {
       "name": "block-portfolio-2",
@@ -6762,6 +7069,33 @@
       "addCommand": "npx shadcn@latest add @uiable/block-sidebar",
       "url": "https://uiable.com/r/block-sidebar.json",
       "previewUrl": "https://uiable.com/preview/block-sidebar"
+    },
+    {
+      "name": "block-sign-up-6",
+      "kind": "block",
+      "type": "registry:block",
+      "title": "Sign Up 6",
+      "description": "Sign Up 6 variant for block.",
+      "categories": [
+        "sign-up"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "registryDependencies": [
+        "@uiable/button"
+      ],
+      "files": [
+        "@components/uiable/blocks/sign-up/sign-up-6/sign-up-6.tsx",
+        "src/images/landings/LightLogo.tsx"
+      ],
+      "keywords": [
+        "sign",
+        "block"
+      ],
+      "addCommand": "npx shadcn@latest add @uiable/block-sign-up-6",
+      "url": "https://uiable.com/r/block-sign-up-6.json",
+      "previewUrl": "https://uiable.com/preview/block-sign-up-6"
     },
     {
       "name": "block-small-hero-5",

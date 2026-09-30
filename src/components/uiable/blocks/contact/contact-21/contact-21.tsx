@@ -108,7 +108,7 @@ export default function Contact21() {
 
           <StaggerItem className="relative flex min-h-48 items-end overflow-hidden rounded-2xl border border-border/60 bg-muted p-6 sm:col-span-2 md:min-h-64 lg:col-span-1 lg:h-full">
             <img
-              src="https://cdn.uiable.com/img-5.jpg"
+              src="https://cdn.uiable.com/block/img-5.jpg"
               alt=""
               className="absolute inset-0 h-full w-full object-cover opacity-60 mix-blend-multiply dark:opacity-50 dark:mix-blend-normal dark:brightness-90 dark:contrast-110 dark:hue-rotate-180 dark:invert"
             />

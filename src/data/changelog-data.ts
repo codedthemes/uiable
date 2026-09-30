@@ -35,7 +35,10 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         items: [
           {
             text: "Bento",
-            links: [{ label: "Bento 5", url: "/preview/bento/bento-5" }],
+            links: [
+              { label: "Bento 5", url: "/preview/bento/bento-5" },
+              { label: "Bento 7", url: "/preview/bento/bento-7" },
+            ],
             previewUrl: "/blocks/bento",
           },
           {
@@ -55,6 +58,20 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
               },
             ],
             previewUrl: "/blocks/check-mail",
+          },
+          {
+            text: "Code Verification",
+            links: [
+              {
+                label: "Code Verification 4",
+                url: "/preview/code-verification/code-verification-4",
+              },
+              {
+                label: "Code Verification 5",
+                url: "/preview/code-verification/code-verification-5",
+              },
+            ],
+            previewUrl: "/blocks/code-verification",
           },
           {
             text: "Coming Soon",
@@ -79,6 +96,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
               { label: "Contact 7", url: "/preview/contact/contact-7" },
               { label: "Contact 8", url: "/preview/contact/contact-8" },
               { label: "Contact 10", url: "/preview/contact/contact-10" },
+              { label: "Contact 18", url: "/preview/contact/contact-18" },
               { label: "Contact 19", url: "/preview/contact/contact-19" },
               { label: "Contact 20", url: "/preview/contact/contact-20" },
               { label: "Contact 21", url: "/preview/contact/contact-21" },
@@ -174,6 +192,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
               { label: "Feature 24", url: "/preview/feature/feature-24" },
               { label: "Feature 27", url: "/preview/feature/feature-27" },
               { label: "Feature 30", url: "/preview/feature/feature-30" },
+              { label: "Feature 32", url: "/preview/feature/feature-32" },
               { label: "Feature 39", url: "/preview/feature/feature-39" },
               { label: "Feature 42", url: "/preview/feature/feature-42" },
               { label: "Feature 45", url: "/preview/feature/feature-45" },
@@ -191,6 +210,16 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             previewUrl: "/blocks/footer",
           },
           {
+            text: "Forgot Password",
+            links: [
+              {
+                label: "Forgot Password 3",
+                url: "/preview/forgot-password/forgot-password-3",
+              },
+            ],
+            previewUrl: "/blocks/forgot-password",
+          },
+          {
             text: "Gallery",
             links: [
               { label: "Gallery 1", url: "/preview/gallery/gallery-1" },
@@ -206,6 +235,10 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
               { label: "Hero 8", url: "/preview/hero/hero-8" },
               { label: "Hero 9", url: "/preview/hero/hero-9" },
               { label: "Hero 15", url: "/preview/hero/hero-15" },
+              { label: "Hero 16", url: "/preview/hero/hero-16" },
+              { label: "Hero 17", url: "/preview/hero/hero-17" },
+              { label: "Hero 19", url: "/preview/hero/hero-19" },
+              { label: "Hero 22", url: "/preview/hero/hero-22" },
             ],
             previewUrl: "/blocks/hero",
           },
@@ -232,6 +265,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               { label: "Navbar 2", url: "/preview/navbar/navbar-2" },
               { label: "Navbar 6", url: "/preview/navbar/navbar-6" },
+              { label: "Navbar 8", url: "/preview/navbar/navbar-8" },
             ],
             previewUrl: "/blocks/navbar",
           },
@@ -272,6 +306,11 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
               },
             ],
             previewUrl: "/blocks/reset-password",
+          },
+          {
+            text: "Sign Up",
+            links: [{ label: "Sign Up 6", url: "/preview/sign-up/sign-up-6" }],
+            previewUrl: "/blocks/sign-up",
           },
           {
             text: "Small Hero",
@@ -398,7 +437,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Custom",
-                url: "/components/accordion#accordion-custom",
+                url: "/components/accordion",
               },
             ],
             previewUrl: "/components/accordion",
@@ -409,16 +448,14 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Group Tooltip",
-                url: "/components/avatar#avatar-group-tooltip",
+                url: "/components/avatar",
               },
             ],
             previewUrl: "/components/avatar",
           },
           {
             text: "Badge",
-            links: [
-              { label: "Closable", url: "/components/badge#badge-closable" },
-            ],
+            links: [{ label: "Closable", url: "/components/badge" }],
             previewUrl: "/components/badge",
           },
           {
@@ -426,17 +463,15 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Contextual Feedback",
-                url: "/components/button#button-contextual-feedback",
+                url: "/components/button",
               },
-              { label: "Copy", url: "/components/button#button-copy" },
+              { label: "Copy", url: "/components/button" },
             ],
             previewUrl: "/components/button",
           },
           {
             text: "Calendar",
-            links: [
-              { label: "Dialog", url: "/components/calendar#calendar-dialog" },
-            ],
+            links: [{ label: "Dialog", url: "/components/calendar" }],
             previewUrl: "/components/calendar",
           },
           {
@@ -444,9 +479,9 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Animated Border",
-                url: "/components/card#card-animated-border",
+                url: "/components/card",
               },
-              { label: "Credit", url: "/components/card#card-credit" },
+              { label: "Credit", url: "/components/card" },
             ],
             previewUrl: "/components/card",
           },
@@ -455,12 +490,12 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Animated",
-                url: "/components/carousel#carousel-animated",
+                url: "/components/carousel",
               },
-              { label: "Dots", url: "/components/carousel#carousel-dots" },
+              { label: "Dots", url: "/components/carousel" },
               {
                 label: "Thumbnails",
-                url: "/components/carousel#carousel-thumbnails",
+                url: "/components/carousel",
               },
             ],
             previewUrl: "/components/carousel",
@@ -470,14 +505,14 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Setting Menu List",
-                url: "/components/collapsible#collapsible-setting-menu-list",
+                url: "/components/collapsible",
               },
             ],
             previewUrl: "/components/collapsible",
           },
           {
             text: "Coupon",
-            links: [{ label: "Basic", url: "/components/coupon#coupon-basic" }],
+            links: [{ label: "Basic", url: "/components/coupon" }],
             previewUrl: "/components/coupon",
           },
           {
@@ -485,11 +520,11 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Color Picker",
-                url: "/components/dropdown-menu#dropdown-menu-color-picker",
+                url: "/components/dropdown-menu",
               },
               {
                 label: "Notifications",
-                url: "/components/dropdown-menu#dropdown-menu-notifications",
+                url: "/components/dropdown-menu",
               },
             ],
             previewUrl: "/components/dropdown-menu",
@@ -497,9 +532,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
           { text: "Liquid Glass" },
           {
             text: "Menubar",
-            links: [
-              { label: "Profile", url: "/components/menubar#menubar-profile" },
-            ],
+            links: [{ label: "Profile", url: "/components/menubar" }],
             previewUrl: "/components/menubar",
           },
           {
@@ -507,7 +540,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Icons",
-                url: "/components/navigation-menu#navigation-menu-icons",
+                url: "/components/navigation-menu",
               },
             ],
             previewUrl: "/components/navigation-menu",
@@ -517,7 +550,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Rounded",
-                url: "/components/pagination#pagination-rounded",
+                url: "/components/pagination",
               },
             ],
             previewUrl: "/components/pagination",
@@ -527,7 +560,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Notifications",
-                url: "/components/popover#popover-notifications",
+                url: "/components/popover",
               },
             ],
             previewUrl: "/components/popover",
@@ -537,23 +570,23 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Basic",
-                url: "/components/questionnaire#questionnaire-basic",
+                url: "/components/questionnaire",
               },
               {
                 label: "Dialog",
-                url: "/components/questionnaire#questionnaire-dialog",
+                url: "/components/questionnaire",
               },
               {
                 label: "Progress",
-                url: "/components/questionnaire#questionnaire-progress",
+                url: "/components/questionnaire",
               },
               {
                 label: "Resume",
-                url: "/components/questionnaire#questionnaire-resume",
+                url: "/components/questionnaire",
               },
               {
                 label: "Skippable",
-                url: "/components/questionnaire#questionnaire-skippable",
+                url: "/components/questionnaire",
               },
             ],
             previewUrl: "/components/questionnaire",
@@ -563,21 +596,19 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Table Column",
-                url: "/components/resizable#resizable-table-column",
+                url: "/components/resizable",
               },
             ],
             previewUrl: "/components/resizable",
           },
           {
             text: "Select",
-            links: [{ label: "Multi", url: "/components/select#select-multi" }],
+            links: [{ label: "Multi", url: "/components/select" }],
             previewUrl: "/components/select",
           },
           {
             text: "Sidebar",
-            links: [
-              { label: "Sidebar 5", url: "/components/sidebar#sidebar-5" },
-            ],
+            links: [{ label: "Sidebar 5", url: "/components/sidebar" }],
             previewUrl: "/components/sidebar",
           },
           {
@@ -585,11 +616,11 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Emoji Rating",
-                url: "/components/slider#slider-emoji-rating",
+                url: "/components/slider",
               },
               {
                 label: "Price Range",
-                url: "/components/slider#slider-price-range",
+                url: "/components/slider",
               },
             ],
             previewUrl: "/components/slider",
@@ -599,11 +630,11 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Animated Stretch",
-                url: "/components/switch#switch-animated-stretch",
+                url: "/components/switch",
               },
               {
                 label: "Animated Theme",
-                url: "/components/switch#switch-animated-theme",
+                url: "/components/switch",
               },
             ],
             previewUrl: "/components/switch",
@@ -613,7 +644,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Pills Badge",
-                url: "/components/tabs#tabs-pills-badge",
+                url: "/components/tabs",
               },
             ],
             previewUrl: "/components/tabs",
@@ -621,16 +652,16 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
           {
             text: "Timeline",
             links: [
-              { label: "Basic", url: "/components/timeline#timeline-basic" },
+              { label: "Basic", url: "/components/timeline" },
               {
                 label: "Collapsible",
-                url: "/components/timeline#timeline-collapsible",
+                url: "/components/timeline",
               },
               {
                 label: "Horizontal",
-                url: "/components/timeline#timeline-horizontal",
+                url: "/components/timeline",
               },
-              { label: "Status", url: "/components/timeline#timeline-status" },
+              { label: "Status", url: "/components/timeline" },
             ],
             previewUrl: "/components/timeline",
           },
@@ -639,7 +670,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
             links: [
               {
                 label: "Animated Toolbar",
-                url: "/components/toggle-group#toggle-group-animated-toolbar",
+                url: "/components/toggle-group",
               },
             ],
             previewUrl: "/components/toggle-group",
@@ -647,18 +678,18 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
           {
             text: "Tree View",
             links: [
-              { label: "Basic", url: "/components/tree-view#tree-view-basic" },
+              { label: "Basic", url: "/components/tree-view" },
               {
                 label: "Checkbox Select",
-                url: "/components/tree-view#tree-view-checkbox-select",
+                url: "/components/tree-view",
               },
               {
                 label: "Organization",
-                url: "/components/tree-view#tree-view-organization",
+                url: "/components/tree-view",
               },
               {
                 label: "Search Filter",
-                url: "/components/tree-view#tree-view-search-filter",
+                url: "/components/tree-view",
               },
             ],
             previewUrl: "/components/tree-view",
@@ -676,24 +707,44 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Blocks",
         items: [
           {
-            text: "Bento: Bento 4",
-            previewUrl: "/preview/bento/bento-4",
+            text: "Bento",
+            links: [{ label: "Bento 4", url: "/preview/bento/bento-4" }],
+            previewUrl: "/blocks/bento",
           },
           {
-            text: "Call To Action: CTA 3",
-            previewUrl: "/preview/cta/cta-3",
+            text: "Call To Action",
+            links: [{ label: "CTA 3", url: "/preview/cta/cta-3" }],
+            previewUrl: "/blocks/cta",
           },
           {
-            text: "E-Commerce: E-Commerce 3",
-            previewUrl: "/preview/e-commerce/e-commerce-3",
+            text: "E-Commerce",
+            links: [
+              {
+                label: "E-Commerce 3",
+                url: "/preview/e-commerce/e-commerce-3",
+              },
+            ],
+            previewUrl: "/blocks/e-commerce",
           },
           {
-            text: "E-Commerce: E-Commerce 5",
-            previewUrl: "/preview/e-commerce/e-commerce-5",
+            text: "E-Commerce",
+            links: [
+              {
+                label: "E-Commerce 5",
+                url: "/preview/e-commerce/e-commerce-5",
+              },
+            ],
+            previewUrl: "/blocks/e-commerce",
           },
           {
-            text: "Small Hero: Small Hero 5",
-            previewUrl: "/preview/small-hero/small-hero-5",
+            text: "Small Hero",
+            links: [
+              {
+                label: "Small Hero 5",
+                url: "/preview/small-hero/small-hero-5",
+              },
+            ],
+            previewUrl: "/blocks/small-hero",
           },
         ],
       },
@@ -701,39 +752,79 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Alert Dialog: Subscription",
+            text: "Alert Dialog",
+            links: [
+              {
+                label: "Subscription",
+                url: "/components/alert-dialog",
+              },
+            ],
             previewUrl: "/components/alert-dialog",
           },
           {
-            text: "Aspect Ratio: Widescreen",
+            text: "Aspect Ratio",
+            links: [{ label: "Widescreen", url: "/components/aspect-ratio" }],
             previewUrl: "/components/aspect-ratio",
           },
           {
-            text: "Dialog: QR Code Scanner",
+            text: "Dialog",
+            links: [{ label: "QR Code Scanner", url: "/components/dialog" }],
             previewUrl: "/components/dialog",
           },
           {
-            text: "Drawer: Event RSVP",
+            text: "Drawer",
+            links: [
+              {
+                label: "Event RSVP",
+                url: "/components/drawer",
+              },
+            ],
             previewUrl: "/components/drawer",
           },
           {
-            text: "Sheet: Settings",
+            text: "Sheet",
+            links: [{ label: "Settings", url: "/components/sheet" }],
             previewUrl: "/components/sheet",
           },
           {
-            text: "Spinner: Capsule Track, Segmented Aperture, Wave Helix",
+            text: "Spinner",
+            links: [
+              {
+                label: "Capsule Track",
+                url: "/components/spinner",
+              },
+              {
+                label: "Segmented Aperture",
+                url: "/components/spinner",
+              },
+              {
+                label: "Wave Helix",
+                url: "/components/spinner",
+              },
+            ],
             previewUrl: "/components/spinner",
           },
           {
-            text: "Table: Status",
+            text: "Table",
+            links: [{ label: "Status", url: "/components/table" }],
             previewUrl: "/components/table",
           },
           {
-            text: "Tooltip: Dot, Glow",
+            text: "Tooltip",
+            links: [
+              { label: "Dot", url: "/components/tooltip" },
+              { label: "Glow", url: "/components/tooltip" },
+            ],
             previewUrl: "/components/tooltip",
           },
           {
-            text: "Typography: Typewriter",
+            text: "Typography",
+            links: [
+              {
+                label: "Typewriter",
+                url: "/components/typography",
+              },
+            ],
             previewUrl: "/components/typography",
           },
         ],
@@ -749,24 +840,44 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Blocks",
         items: [
           {
-            text: "E-Commerce: E-Commerce 2",
-            previewUrl: "/preview/e-commerce/e-commerce-2",
+            text: "E-Commerce",
+            links: [
+              {
+                label: "E-Commerce 2",
+                url: "/preview/e-commerce/e-commerce-2",
+              },
+            ],
+            previewUrl: "/blocks/e-commerce",
           },
           {
-            text: "Feature: Feature 4",
-            previewUrl: "/preview/feature/feature-4",
+            text: "Feature",
+            links: [{ label: "Feature 4", url: "/preview/feature/feature-4" }],
+            previewUrl: "/blocks/feature",
           },
           {
-            text: "Statistics: Statistics 5",
-            previewUrl: "/preview/statistics/statistics-5",
+            text: "Statistics",
+            links: [
+              {
+                label: "Statistics 5",
+                url: "/preview/statistics/statistics-5",
+              },
+            ],
+            previewUrl: "/blocks/statistics",
           },
           {
-            text: "Team: Team 7",
-            previewUrl: "/preview/team/team-7",
+            text: "Team",
+            links: [{ label: "Team 7", url: "/preview/team/team-7" }],
+            previewUrl: "/blocks/team",
           },
           {
-            text: "Testimonial: Testimonial 5",
-            previewUrl: "/preview/testimonial/testimonial-5",
+            text: "Testimonial",
+            links: [
+              {
+                label: "Testimonial 5",
+                url: "/preview/testimonial/testimonial-5",
+              },
+            ],
+            previewUrl: "/blocks/testimonial",
           },
         ],
       },
@@ -774,39 +885,68 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Accordion: With Icons",
+            text: "Accordion",
+            links: [{ label: "With Icons", url: "/components/accordion" }],
             previewUrl: "/components/accordion",
           },
           {
-            text: "Breadcrumb: Outline",
+            text: "Breadcrumb",
+            links: [
+              {
+                label: "Outline",
+                url: "/components/breadcrumb",
+              },
+            ],
             previewUrl: "/components/breadcrumb",
           },
           {
-            text: "Context Menu: Font & Style Menu, Spell Check Menu",
+            text: "Context Menu",
+            links: [
+              { label: "Font & Style Menu", url: "/components/context-menu" },
+              { label: "Spell Check Menu", url: "/components/context-menu" },
+            ],
             previewUrl: "/components/context-menu",
           },
           {
-            text: "Dropdown Menu: Profile Detailed",
+            text: "Dropdown Menu",
+            links: [
+              {
+                label: "Profile Detailed",
+                url: "/components/dropdown-menu",
+              },
+            ],
             previewUrl: "/components/dropdown-menu",
           },
           {
-            text: "Menubar: Compact",
+            text: "Menubar",
+            links: [{ label: "Compact", url: "/components/menubar" }],
             previewUrl: "/components/menubar",
           },
           {
-            text: "Pagination: Card",
+            text: "Pagination",
+            links: [{ label: "Card", url: "/components/pagination" }],
             previewUrl: "/components/pagination",
           },
           {
-            text: "Popover: User Profile",
+            text: "Popover",
+            links: [
+              {
+                label: "User Profile",
+                url: "/components/popover",
+              },
+            ],
             previewUrl: "/components/popover",
           },
           {
-            text: "Resizable: Main Admin Layout",
+            text: "Resizable",
+            links: [
+              { label: "Main Admin Layout", url: "/components/resizable" },
+            ],
             previewUrl: "/components/resizable",
           },
           {
-            text: "Tabs: With Badge",
+            text: "Tabs",
+            links: [{ label: "With Badge", url: "/components/tabs" }],
             previewUrl: "/components/tabs",
           },
         ],
@@ -822,24 +962,34 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Blocks",
         items: [
           {
-            text: "FAQ: FAQ 4",
-            previewUrl: "/preview/faq/faq-4",
+            text: "FAQ",
+            links: [{ label: "FAQ 4", url: "/preview/faq/faq-4" }],
+            previewUrl: "/blocks/faq",
           },
           {
-            text: "Pricing: Pricing 9",
-            previewUrl: "/preview/pricing/pricing-9",
+            text: "Pricing",
+            links: [{ label: "Pricing 9", url: "/preview/pricing/pricing-9" }],
+            previewUrl: "/blocks/pricing",
           },
           {
-            text: "Process: Process 4",
-            previewUrl: "/preview/process/process-4",
+            text: "Process",
+            links: [{ label: "Process 4", url: "/preview/process/process-4" }],
+            previewUrl: "/blocks/process",
           },
           {
-            text: "Team: Team 3",
-            previewUrl: "/preview/team/team-3",
+            text: "Team",
+            links: [{ label: "Team 3", url: "/preview/team/team-3" }],
+            previewUrl: "/blocks/team",
           },
           {
-            text: "Testimonial: Testimonial 9",
-            previewUrl: "/preview/testimonial/testimonial-9",
+            text: "Testimonial",
+            links: [
+              {
+                label: "Testimonial 9",
+                url: "/preview/testimonial/testimonial-9",
+              },
+            ],
+            previewUrl: "/blocks/testimonial",
           },
         ],
       },
@@ -847,39 +997,113 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Alert: Outlined Danger, Outlined Dark, Outlined Info, Outlined Primary, Outlined Secondary, Outlined Success, Outlined Warning",
+            text: "Alert",
+            links: [
+              {
+                label: "Outlined Danger",
+                url: "/components/alert",
+              },
+              {
+                label: "Outlined Dark",
+                url: "/components/alert",
+              },
+              {
+                label: "Outlined Info",
+                url: "/components/alert",
+              },
+              {
+                label: "Outlined Primary",
+                url: "/components/alert",
+              },
+              {
+                label: "Outlined Secondary",
+                url: "/components/alert",
+              },
+              {
+                label: "Outlined Success",
+                url: "/components/alert",
+              },
+              {
+                label: "Outlined Warning",
+                url: "/components/alert",
+              },
+            ],
             previewUrl: "/components/alert",
           },
           {
-            text: "Alert Dialog: Warning",
+            text: "Alert Dialog",
+            links: [
+              {
+                label: "Warning",
+                url: "/components/alert-dialog",
+              },
+            ],
             previewUrl: "/components/alert-dialog",
           },
           {
-            text: "Aspect Ratio: Cinematic",
+            text: "Aspect Ratio",
+            links: [
+              {
+                label: "Cinematic",
+                url: "/components/aspect-ratio",
+              },
+            ],
             previewUrl: "/components/aspect-ratio",
           },
           {
-            text: "Breadcrumb: Background",
+            text: "Breadcrumb",
+            links: [
+              {
+                label: "Background",
+                url: "/components/breadcrumb",
+              },
+            ],
             previewUrl: "/components/breadcrumb",
           },
           {
-            text: "Dialog: Destructive",
+            text: "Dialog",
+            links: [
+              {
+                label: "Destructive",
+                url: "/components/dialog",
+              },
+            ],
             previewUrl: "/components/dialog",
           },
           {
-            text: "Menubar: Editor",
+            text: "Menubar",
+            links: [{ label: "Editor", url: "/components/menubar" }],
             previewUrl: "/components/menubar",
           },
           {
-            text: "Separator: With Text",
+            text: "Separator",
+            links: [
+              {
+                label: "With Text",
+                url: "/components/separator",
+              },
+            ],
             previewUrl: "/components/separator",
           },
           {
-            text: "Sonner: Close Button, Icon",
+            text: "Sonner",
+            links: [
+              {
+                label: "Close Button",
+                url: "/components/sonner",
+              },
+              { label: "Icon", url: "/components/sonner" },
+            ],
             previewUrl: "/components/sonner",
           },
           {
-            text: "Spinner: Dots Pulse",
+            text: "Spinner",
+            links: [
+              {
+                label: "Dots Pulse",
+                url: "/components/spinner",
+              },
+            ],
             previewUrl: "/components/spinner",
           },
         ],
@@ -895,24 +1119,33 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Blocks",
         items: [
           {
-            text: "Contact: Contact 11",
-            previewUrl: "/preview/contact/contact-11",
+            text: "Contact",
+            links: [
+              { label: "Contact 11", url: "/preview/contact/contact-11" },
+            ],
+            previewUrl: "/blocks/contact",
           },
           {
-            text: "Content: Content 5",
-            previewUrl: "/preview/content/content-5",
+            text: "Content",
+            links: [{ label: "Content 5", url: "/blocks/content" }],
+            previewUrl: "/blocks/content",
           },
           {
-            text: "Footer: Footer 11",
-            previewUrl: "/preview/footer/footer-11",
+            text: "Footer",
+            links: [{ label: "Footer 11", url: "/blocks/footer" }],
+            previewUrl: "/blocks/footer",
           },
           {
-            text: "Gallery: Gallery 10",
-            previewUrl: "/preview/gallery/gallery-10",
+            text: "Gallery",
+            links: [
+              { label: "Gallery 10", url: "/preview/gallery/gallery-10" },
+            ],
+            previewUrl: "/blocks/gallery",
           },
           {
-            text: "Hero: Hero 6",
-            previewUrl: "/preview/hero/hero-6",
+            text: "Hero",
+            links: [{ label: "Hero 6", url: "/preview/hero/hero-6" }],
+            previewUrl: "/blocks/hero",
           },
         ],
       },
@@ -920,43 +1153,86 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Alert: Border Left Danger, Border Left Dark",
+            text: "Alert",
+            links: [
+              {
+                label: "Border Left Danger",
+                url: "/components/alert",
+              },
+              {
+                label: "Border Left Dark",
+                url: "/components/alert",
+              },
+            ],
             previewUrl: "/components/alert",
           },
           {
-            text: "Dialog: Newsletter",
+            text: "Dialog",
+            links: [
+              {
+                label: "Newsletter",
+                url: "/components/dialog",
+              },
+            ],
             previewUrl: "/components/dialog",
           },
           {
-            text: "Progress: Circular, Gradient, With Value",
+            text: "Progress",
+            links: [
+              {
+                label: "Circular",
+                url: "/components/progress",
+              },
+              {
+                label: "Gradient",
+                url: "/components/progress",
+              },
+              {
+                label: "With Value",
+                url: "/components/progress",
+              },
+            ],
             previewUrl: "/components/progress",
           },
           {
-            text: "Separator: Stats",
+            text: "Separator",
+            links: [{ label: "Stats", url: "/components/separator" }],
             previewUrl: "/components/separator",
           },
           {
-            text: "Sheet: Menu",
+            text: "Sheet",
+            links: [{ label: "Menu", url: "/components/sheet" }],
             previewUrl: "/components/sheet",
           },
           {
-            text: "Skeleton: List",
+            text: "Skeleton",
+            links: [{ label: "List", url: "/components/skeleton" }],
             previewUrl: "/components/skeleton",
           },
           {
-            text: "Sonner: Action",
+            text: "Sonner",
+            links: [{ label: "Action", url: "/components/sonner" }],
             previewUrl: "/components/sonner",
           },
           {
-            text: "Table: Users",
+            text: "Table",
+            links: [{ label: "Users", url: "/components/table" }],
             previewUrl: "/components/table",
           },
           {
-            text: "Tooltip: Status",
+            text: "Tooltip",
+            links: [{ label: "Status", url: "/components/tooltip" }],
             previewUrl: "/components/tooltip",
           },
           {
-            text: "Typography: Italic, Link",
+            text: "Typography",
+            links: [
+              {
+                label: "Italic",
+                url: "/components/typography",
+              },
+              { label: "Link", url: "/components/typography" },
+            ],
             previewUrl: "/components/typography",
           },
         ],
@@ -972,24 +1248,29 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Blocks",
         items: [
           {
-            text: "Gallery: Gallery 3",
-            previewUrl: "/preview/gallery/gallery-3",
+            text: "Gallery",
+            links: [{ label: "Gallery 3", url: "/preview/gallery/gallery-3" }],
+            previewUrl: "/blocks/gallery",
           },
           {
-            text: "Hero: Hero 3",
-            previewUrl: "/preview/hero/hero-3",
+            text: "Hero",
+            links: [{ label: "Hero 3", url: "/preview/hero/hero-3" }],
+            previewUrl: "/blocks/hero",
           },
           {
-            text: "Portfolio: Portfolio 3",
-            previewUrl: "/preview/portfolio/portfolio-3",
+            text: "Portfolio",
+            links: [{ label: "Portfolio 3", url: "/blocks/portfolio" }],
+            previewUrl: "/blocks/portfolio",
           },
           {
-            text: "Pricing: Pricing 3",
-            previewUrl: "/preview/pricing/pricing-3",
+            text: "Pricing",
+            links: [{ label: "Pricing 3", url: "/preview/pricing/pricing-3" }],
+            previewUrl: "/blocks/pricing",
           },
           {
-            text: "Process: Process 3",
-            previewUrl: "/preview/process/process-3",
+            text: "Process",
+            links: [{ label: "Process 3", url: "/preview/process/process-3" }],
+            previewUrl: "/blocks/process",
           },
         ],
       },
@@ -997,51 +1278,118 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Alert Dialog: Lock",
+            text: "Alert Dialog",
+            links: [
+              {
+                label: "Lock",
+                url: "/components/alert-dialog",
+              },
+            ],
             previewUrl: "/components/alert-dialog",
           },
           {
-            text: "Aspect Ratio: Standard",
+            text: "Aspect Ratio",
+            links: [
+              {
+                label: "Standard",
+                url: "/components/aspect-ratio",
+              },
+            ],
             previewUrl: "/components/aspect-ratio",
           },
           {
-            text: "Breadcrumb: Stepper",
+            text: "Breadcrumb",
+            links: [
+              {
+                label: "Stepper",
+                url: "/components/breadcrumb",
+              },
+            ],
             previewUrl: "/components/breadcrumb",
           },
           {
-            text: "Label: Card",
+            text: "Label",
+            links: [{ label: "Card", url: "/components/label" }],
             previewUrl: "/components/label",
           },
           {
-            text: "List Group: Nested",
+            text: "List Group",
+            links: [
+              {
+                label: "Nested",
+                url: "/components/list-group",
+              },
+            ],
             previewUrl: "/components/list-group",
           },
           {
-            text: "Navigation Menu: Mega",
+            text: "Navigation Menu",
+            links: [
+              {
+                label: "Mega",
+                url: "/components/navigation-menu",
+              },
+            ],
             previewUrl: "/components/navigation-menu",
           },
           {
-            text: "Progress: Circular With Label, With Steps",
+            text: "Progress",
+            links: [
+              {
+                label: "Circular With Label",
+                url: "/components/progress",
+              },
+              {
+                label: "With Steps",
+                url: "/components/progress",
+              },
+            ],
             previewUrl: "/components/progress",
           },
           {
-            text: "Scroll Area: Horizontal",
+            text: "Scroll Area",
+            links: [
+              {
+                label: "Horizontal",
+                url: "/components/scroll-area",
+              },
+            ],
             previewUrl: "/components/scroll-area",
           },
           {
-            text: "Skeleton: Chart, Profile",
+            text: "Skeleton",
+            links: [
+              { label: "Chart", url: "/components/skeleton" },
+              {
+                label: "Profile",
+                url: "/components/skeleton",
+              },
+            ],
             previewUrl: "/components/skeleton",
           },
           {
-            text: "Sonner: Custom",
+            text: "Sonner",
+            links: [{ label: "Custom", url: "/components/sonner" }],
             previewUrl: "/components/sonner",
           },
           {
-            text: "Spinner: Bars Scale",
+            text: "Spinner",
+            links: [
+              {
+                label: "Bars Scale",
+                url: "/components/spinner",
+              },
+            ],
             previewUrl: "/components/spinner",
           },
           {
-            text: "Tooltip: Custom Delay",
+            text: "Tooltip",
+            links: [
+              {
+                label: "Custom Delay",
+                url: "/components/tooltip",
+              },
+            ],
             previewUrl: "/components/tooltip",
           },
           {
@@ -1061,24 +1409,31 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Blocks",
         items: [
           {
-            text: "Feature: Feature 1",
-            previewUrl: "/preview/feature/feature-1",
+            text: "Feature",
+            links: [{ label: "Feature 1", url: "/preview/feature/feature-1" }],
+            previewUrl: "/blocks/feature",
           },
           {
-            text: "Footer: Footer 7",
-            previewUrl: "/preview/footer/footer-7",
+            text: "Footer",
+            links: [{ label: "Footer 7", url: "/preview/footer/footer-7" }],
+            previewUrl: "/blocks/footer",
           },
           {
-            text: "Gallery: Gallery 2",
-            previewUrl: "/preview/gallery/gallery-2",
+            text: "Gallery",
+            links: [{ label: "Gallery 2", url: "/preview/gallery/gallery-2" }],
+            previewUrl: "/blocks/gallery",
           },
           {
-            text: "Portfolio: Portfolio 5",
-            previewUrl: "/preview/portfolio/portfolio-5",
+            text: "Portfolio",
+            links: [
+              { label: "Portfolio 5", url: "/preview/portfolio/portfolio-5" },
+            ],
+            previewUrl: "/blocks/portfolio",
           },
           {
-            text: "Process: Process 6",
-            previewUrl: "/preview/process/process-6",
+            text: "Process",
+            links: [{ label: "Process 6", url: "/preview/process/process-6" }],
+            previewUrl: "/blocks/process",
           },
         ],
       },
@@ -1086,19 +1441,64 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Kbd: Arrow Keys, Function Keys, Shortcut Keys",
+            text: "Kbd",
+            links: [
+              { label: "Arrow Keys", url: "/components/kbd" },
+              {
+                label: "Function Keys",
+                url: "/components/kbd",
+              },
+              {
+                label: "Shortcut Keys",
+                url: "/components/kbd",
+              },
+            ],
             previewUrl: "/components/kbd",
           },
           {
-            text: "Label: Card, Disabled, Required",
+            text: "Label",
+            links: [
+              { label: "Card", url: "/components/label" },
+              { label: "Disabled", url: "/components/label" },
+              { label: "Required", url: "/components/label" },
+            ],
             previewUrl: "/components/label",
           },
           {
-            text: "List Group: Avatar, Badge, Nested",
+            text: "List Group",
+            links: [
+              {
+                label: "Avatar",
+                url: "/components/list-group",
+              },
+              {
+                label: "Badge",
+                url: "/components/list-group",
+              },
+              {
+                label: "Nested",
+                url: "/components/list-group",
+              },
+            ],
             previewUrl: "/components/list-group",
           },
           {
-            text: "Scroll Area: Chat Scroller, Horizontal, Image Scroll, Terminal Logs",
+            text: "Scroll Area",
+            links: [
+              {
+                label: "Chat Scroller",
+                url: "/components/scroll-area",
+              },
+              {
+                label: "Horizontal",
+                url: "/components/scroll-area",
+              },
+              {
+                label: "Image Scroll",
+                url: "/components/scroll-area",
+              },
+              { label: "Terminal Logs", url: "/components/scroll-area" },
+            ],
             previewUrl: "/components/scroll-area",
           },
         ],
@@ -1114,21 +1514,39 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Blocks",
         items: [
           {
-            text: "Pricing: Pricing 2",
-            previewUrl: "/preview/pricing/pricing-2",
+            text: "Pricing",
+            links: [{ label: "Pricing 2", url: "/preview/pricing/pricing-2" }],
+            previewUrl: "/blocks/pricing",
           },
           {
-            text: "Process: Process 1",
-            previewUrl: "/preview/process/process-1",
+            text: "Process",
+            links: [{ label: "Process 1", url: "/preview/process/process-1" }],
+            previewUrl: "/blocks/process",
           },
           {
-            text: "Statistics: Statistics 1",
-            previewUrl: "/preview/statistics/statistics-1",
+            text: "Statistics",
+            links: [
+              {
+                label: "Statistics 1",
+                url: "/preview/statistics/statistics-1",
+              },
+            ],
+            previewUrl: "/blocks/statistics",
           },
-          { text: "Team: Team 1", previewUrl: "/preview/team/team-1" },
           {
-            text: "Testimonial: Testimonial 1",
-            previewUrl: "/preview/testimonial/testimonial-1",
+            text: "Team",
+            links: [{ label: "Team 1", url: "/preview/team/team-1" }],
+            previewUrl: "/blocks/team",
+          },
+          {
+            text: "Testimonial",
+            links: [
+              {
+                label: "Testimonial 1",
+                url: "/preview/testimonial/testimonial-1",
+              },
+            ],
+            previewUrl: "/blocks/testimonial",
           },
         ],
       },
@@ -1136,23 +1554,77 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Chart: Pie, Radial, Area, Line",
+            text: "Chart",
+            links: [
+              { label: "Pie", url: "/components/chart" },
+              { label: "Radial", url: "/components/chart" },
+              { label: "Area", url: "/components/chart" },
+              { label: "Line", url: "/components/chart" },
+            ],
             previewUrl: "/components/chart",
           },
           {
-            text: "Data Table: Expandable, Pagination, Editable",
+            text: "Data Table",
+            links: [
+              {
+                label: "Expandable",
+                url: "/components/data-table",
+              },
+              {
+                label: "Pagination",
+                url: "/components/data-table",
+              },
+              {
+                label: "Editable",
+                url: "/components/data-table",
+              },
+            ],
             previewUrl: "/components/data-table",
           },
           {
-            text: "Empty: No Search Result, With Large Icon",
+            text: "Empty",
+            links: [
+              {
+                label: "No Search Result",
+                url: "/components/empty",
+              },
+              {
+                label: "With Large Icon",
+                url: "/components/empty",
+              },
+            ],
             previewUrl: "/components/empty",
           },
           {
-            text: "Field: One Time Password Form",
+            text: "Field",
+            links: [
+              {
+                label: "One Time Password Form",
+                url: "/components/field",
+              },
+            ],
             previewUrl: "/components/field",
           },
           {
-            text: "Hover Card: Info With Icon Badge, Image Preview, Simple Info Tooltip, Link Preview",
+            text: "Hover Card",
+            links: [
+              {
+                label: "Info With Icon Badge",
+                url: "/components/hover-card",
+              },
+              {
+                label: "Image Preview",
+                url: "/components/hover-card",
+              },
+              {
+                label: "Simple Info Tooltip",
+                url: "/components/hover-card",
+              },
+              {
+                label: "Link Preview",
+                url: "/components/hover-card",
+              },
+            ],
             previewUrl: "/components/hover-card",
           },
         ],
@@ -1168,43 +1640,146 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Select: With Icons, With Users, With Status, Clearable",
+            text: "Select",
+            links: [
+              {
+                label: "With Icons",
+                url: "/components/select",
+              },
+              {
+                label: "With Users",
+                url: "/components/select",
+              },
+              {
+                label: "With Status",
+                url: "/components/select",
+              },
+              {
+                label: "Clearable",
+                url: "/components/select",
+              },
+            ],
             previewUrl: "/components/select",
           },
           {
-            text: "Slider: Color Options",
+            text: "Slider",
+            links: [
+              {
+                label: "Color Options",
+                url: "/components/slider",
+              },
+            ],
             previewUrl: "/components/slider",
           },
           {
-            text: "Switch: Toggle Theme, Color Options, Outline, Square",
+            text: "Switch",
+            links: [
+              {
+                label: "Toggle Theme",
+                url: "/components/switch",
+              },
+              {
+                label: "Color Options",
+                url: "/components/switch",
+              },
+              { label: "Outline", url: "/components/switch" },
+              { label: "Square", url: "/components/switch" },
+            ],
             previewUrl: "/components/switch",
           },
           {
-            text: "Textarea: Helper Text, Character Count, Feedback, Readonly",
+            text: "Textarea",
+            links: [
+              {
+                label: "Helper Text",
+                url: "/components/textarea",
+              },
+              {
+                label: "Character Count",
+                url: "/components/textarea",
+              },
+              {
+                label: "Feedback",
+                url: "/components/textarea",
+              },
+              {
+                label: "Readonly",
+                url: "/components/textarea",
+              },
+            ],
             previewUrl: "/components/textarea",
           },
           {
-            text: "Toggle: Icon, Animated",
+            text: "Toggle",
+            links: [
+              { label: "Icon", url: "/components/toggle" },
+              { label: "Animated", url: "/components/toggle" },
+            ],
             previewUrl: "/components/toggle",
           },
           {
-            text: "Toggle Group: Filled Icon",
+            text: "Toggle Group",
+            links: [
+              {
+                label: "Filled Icon",
+                url: "/components/toggle-group",
+              },
+            ],
             previewUrl: "/components/toggle-group",
           },
           {
-            text: "Calendar: Right Navigation",
+            text: "Calendar",
+            links: [
+              {
+                label: "Right Navigation",
+                url: "/components/calendar",
+              },
+            ],
             previewUrl: "/components/calendar",
           },
           {
-            text: "Avatar: Fallback, Placeholder Icon, Counter Indicator, Border Radius",
+            text: "Avatar",
+            links: [
+              { label: "Fallback", url: "/components/avatar" },
+              {
+                label: "Placeholder Icon",
+                url: "/components/avatar",
+              },
+              {
+                label: "Counter Indicator",
+                url: "/components/avatar",
+              },
+              {
+                label: "Border Radius",
+                url: "/components/avatar",
+              },
+            ],
             previewUrl: "/components/avatar",
           },
           {
-            text: "Badge: Status, Avatar, Sizes, Gradient",
+            text: "Badge",
+            links: [
+              { label: "Status", url: "/components/badge" },
+              { label: "Avatar", url: "/components/badge" },
+              { label: "Sizes", url: "/components/badge" },
+              { label: "Gradient", url: "/components/badge" },
+            ],
             previewUrl: "/components/badge",
           },
           {
-            text: "Card: Product, Tabs, Animated Tilt, Animated Flip",
+            text: "Card",
+            links: [
+              { label: "Product", url: "/components/card" },
+              { label: "Tabs", url: "/components/card" },
+              {
+                label: "Animated Tilt",
+                url: "/components/card",
+              },
+              {
+                label: "Animated Flip",
+                url: "/components/card",
+              },
+            ],
             previewUrl: "/components/card",
           },
         ],
@@ -1213,24 +1788,31 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "Introduce New UI Blocks",
         items: [
           {
-            text: "Hero: Hero 2",
-            previewUrl: "/preview/hero/hero-2",
+            text: "Hero",
+            links: [{ label: "Hero 2", url: "/preview/hero/hero-2" }],
+            previewUrl: "/blocks/hero",
           },
           {
-            text: "Feature: Feature 2",
-            previewUrl: "/preview/feature/feature-2",
+            text: "Feature",
+            links: [{ label: "Feature 2", url: "/preview/feature/feature-2" }],
+            previewUrl: "/blocks/feature",
           },
           {
-            text: "Footer: Footer 3",
-            previewUrl: "/preview/footer/footer-3",
+            text: "Footer",
+            links: [{ label: "Footer 3", url: "/preview/footer/footer-3" }],
+            previewUrl: "/blocks/footer",
           },
           {
-            text: "Gallery: Gallery 4",
-            previewUrl: "/preview/gallery/gallery-4",
+            text: "Gallery",
+            links: [{ label: "Gallery 4", url: "/preview/gallery/gallery-4" }],
+            previewUrl: "/blocks/gallery",
           },
           {
-            text: "Portfolio: Portfolio 4",
-            previewUrl: "/preview/portfolio/portfolio-4",
+            text: "Portfolio",
+            links: [
+              { label: "Portfolio 4", url: "/preview/portfolio/portfolio-4" },
+            ],
+            previewUrl: "/blocks/portfolio",
           },
         ],
       },
@@ -1245,35 +1827,106 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
         title: "New Components variants",
         items: [
           {
-            text: "Command: 4 new variants",
+            text: "Command",
+            links: [{ label: "4 new variants", url: "/components/command" }],
             previewUrl: "/components/command",
           },
           {
-            text: "Date Picker: 2 new variants (Disabled, Time)",
+            text: "Date Picker",
+            links: [
+              {
+                label: "Disabled",
+                url: "/components/date-picker",
+              },
+              {
+                label: "Time",
+                url: "/components/date-picker",
+              },
+            ],
             previewUrl: "/components/date-picker",
           },
           {
-            text: "Input: 3 new variants (Range, Select, Validation)",
+            text: "Input",
+            links: [
+              { label: "Range", url: "/components/input" },
+              { label: "Select", url: "/components/input" },
+              {
+                label: "Validation",
+                url: "/components/input",
+              },
+            ],
             previewUrl: "/components/input",
           },
           {
-            text: "Input Group: 1 new variant (Chat Message)",
+            text: "Input Group",
+            links: [
+              {
+                label: "Chat Message",
+                url: "/components/input-group",
+              },
+            ],
             previewUrl: "/components/input-group",
           },
           {
-            text: "Input OTP: 3 new variants (Animated, Filled, Outlined)",
+            text: "Input OTP",
+            links: [
+              {
+                label: "Animated",
+                url: "/components/input-otp",
+              },
+              {
+                label: "Filled",
+                url: "/components/input-otp",
+              },
+              {
+                label: "Outlined",
+                url: "/components/input-otp",
+              },
+            ],
             previewUrl: "/components/input-otp",
           },
           {
-            text: "Item: 4 new variants (Background, Checkbox, Separator, Switch)",
+            text: "Item",
+            links: [
+              { label: "Background", url: "/components/item" },
+              { label: "Checkbox", url: "/components/item" },
+              { label: "Separator", url: "/components/item" },
+              { label: "Switch", url: "/components/item" },
+            ],
             previewUrl: "/components/item",
           },
           {
-            text: "Message Scroller: 3 core variants (Anchoring Turns, Animating, Context Visible)",
+            text: "Message Scroller",
+            links: [
+              {
+                label: "Anchoring Turns",
+                url: "/components/message-scroller",
+              },
+              { label: "Animating", url: "/components/message-scroller" },
+              {
+                label: "Context Visible",
+                url: "/components/message-scroller",
+              },
+            ],
             previewUrl: "/components/message-scroller",
           },
           {
-            text: "Radio Group: 4 new variants (Box, Colors, List, Sizes)",
+            text: "Radio Group",
+            links: [
+              { label: "Box", url: "/components/radio-group" },
+              {
+                label: "Colors",
+                url: "/components/radio-group",
+              },
+              {
+                label: "List",
+                url: "/components/radio-group",
+              },
+              {
+                label: "Sizes",
+                url: "/components/radio-group",
+              },
+            ],
             previewUrl: "/components/radio-group",
           },
         ],
@@ -1281,7 +1934,7 @@ export const CHANGELOG_DATA: ChangelogRelease[] = [
       {
         title: "Introduce New UI Blocks",
         items: [
-          { text: "Call To Action", previewUrl: "/blocks/call-to-action" },
+          { text: "Call To Action", previewUrl: "/blocks/cta" },
           { text: "Contact", previewUrl: "/blocks/contact" },
           { text: "Content", previewUrl: "/blocks/content" },
           { text: "FAQ", previewUrl: "/blocks/faq" },

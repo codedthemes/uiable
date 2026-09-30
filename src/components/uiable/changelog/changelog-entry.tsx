@@ -89,7 +89,7 @@ export default function ChangelogEntry({
                               {text}:
                             </span>{" "}
                             {links.map((link, linkIndex) => (
-                              <span key={link.url}>
+                              <span key={`${link.label}-${linkIndex}`}>
                                 <button
                                   type="button"
                                   onClick={() => openPreview(link.url)}

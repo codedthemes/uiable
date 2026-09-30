@@ -66,7 +66,7 @@ const courses: Course[] = [
     title: "Foundations of Graphic Design",
     description:
       "Learn the core principles of visual communication, typography, and layout.",
-    image: "https://cdn.uiable.com/img-6.jpg",
+    image: "https://cdn.uiable.com/block/img-6.jpg",
     category: "Design",
     level: "Beginner",
     duration: "12 Weeks",
@@ -81,7 +81,7 @@ const courses: Course[] = [
     title: "React for Beginners",
     description:
       "Build interactive web applications using modern React hooks and components.",
-    image: "https://cdn.uiable.com/img-7.jpg",
+    image: "https://cdn.uiable.com/block/img-7.jpg",
     category: "Code",
     level: "Intermediate",
     duration: "8 Weeks",
@@ -96,7 +96,7 @@ const courses: Course[] = [
     title: "Data Analysis with Python",
     description:
       "Master pandas, NumPy, and data visualization techniques for real-world datasets.",
-    image: "https://cdn.uiable.com/img-8.jpg",
+    image: "https://cdn.uiable.com/block/img-8.jpg",
     category: "Business",
     level: "Advanced",
     duration: "16 Weeks",
@@ -111,7 +111,7 @@ const courses: Course[] = [
     title: "UX Research Essentials",
     description:
       "Plan interviews, run usability tests, and turn findings into product decisions.",
-    image: "https://cdn.uiable.com/img-9.jpg",
+    image: "https://cdn.uiable.com/block/img-9.jpg",
     category: "Design",
     level: "Intermediate",
     duration: "6 Weeks",
@@ -126,7 +126,7 @@ const courses: Course[] = [
     title: "Scaling Node.js Services",
     description:
       "Design resilient APIs, add caching layers, and ship services that survive traffic spikes.",
-    image: "https://cdn.uiable.com/img-10.jpg",
+    image: "https://cdn.uiable.com/block/img-10.jpg",
     category: "Code",
     level: "Advanced",
     duration: "10 Weeks",
@@ -141,7 +141,7 @@ const courses: Course[] = [
     title: "Product Marketing Fundamentals",
     description:
       "Position a product, write messaging that lands, and plan a launch end to end.",
-    image: "https://cdn.uiable.com/img-11.jpg",
+    image: "https://cdn.uiable.com/block/img-11.jpg",
     category: "Business",
     level: "Beginner",
     duration: "5 Weeks",

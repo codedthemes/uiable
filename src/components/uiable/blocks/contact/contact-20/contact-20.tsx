@@ -126,7 +126,7 @@ export default function Contact20() {
         <div className="pointer-events-none absolute inset-0 translate-y-10 rounded-full bg-primary/20 blur-3xl" />
         <div className="relative z-10 h-75 w-full">
           <img
-            src="https://cdn.uiable.com/img-4.jpg"
+            src="https://cdn.uiable.com/block/img-4.jpg"
             alt="A bright, modern workspace with a laptop and a potted plant"
             className="absolute inset-0 h-full w-full rounded-2xl object-cover shadow-lg"
           />
