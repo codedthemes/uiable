@@ -1,6 +1,6 @@
 "use client"
 
-import { CSSProperties, createContext, useContext } from "react"
+import { createContext, CSSProperties, useContext } from "react"
 
 // shadcn
 import { toggleVariants } from "@/components/ui/toggle"
@@ -9,9 +9,7 @@ import { toggleVariants } from "@/components/ui/toggle"
 import { Toggle as TogglePrimitive } from "@base-ui/react/toggle"
 import { ToggleGroup as ToggleGroupPrimitive } from "@base-ui/react/toggle-group"
 import { type VariantProps } from "class-variance-authority"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 const ToggleGroupContext = createContext<
   VariantProps<typeof toggleVariants> & {

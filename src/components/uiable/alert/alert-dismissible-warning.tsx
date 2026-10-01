@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 // assets
 import { AlertTriangle, X } from "lucide-react"
 
-//  ------------------------------ | ALERT - DISMISSIBLE WARNING | ------------------------------  //
+// ------------------------------ | ALERT - DISMISSIBLE WARNING | ------------------------------ //
 
 export default function AlertDismissibleWarning() {
   const [isVisible, setIsVisible] = useState(true)
@@ -17,7 +17,7 @@ export default function AlertDismissibleWarning() {
   if (!isVisible) return null
 
   return (
-    <Alert className="relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border border-yellow-500/20 bg-yellow-500/10 px-5 py-3 pr-10 text-yellow-700">
+    <Alert className="relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border border-yellow-500/20 bg-yellow-500/10 px-5 py-3 pr-10 text-yellow-500">
       <AlertTriangle className="h-5 w-5 shrink-0" />
       <span>
         <strong>Warning!</strong> Your subscription will expire in 3 days.

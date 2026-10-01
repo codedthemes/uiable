@@ -4,18 +4,13 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-// shadcn
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+// third-party
+import { cn } from "cn"
 
 // project-imports
 import CATEGORY_COUNTS from "@/category-counts.json"
 import { NAV_BLOCKS } from "@/components-grid"
-import { cn } from "@/lib/utils"
+import NewDot from "@/components/new-dot"
 
 interface BlockListProps {
   search?: string
@@ -87,29 +82,9 @@ export default function BlockList({ search = "", onSelect }: BlockListProps) {
                     : "text-sidebar-foreground hover:bg-muted-foreground/6 hover:text-foreground"
                 )}
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-0.5">
                   <span className="capitalize">{item.title}</span>
-                  {item.badge && (
-                    <TooltipProvider delay={0}>
-                      <Tooltip>
-                        <TooltipTrigger
-                          render={
-                            <span className="relative flex size-1.5 cursor-default">
-                              <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-500 opacity-75"></span>
-                              <span className="relative inline-flex size-1.5 rounded-full bg-red-500"></span>
-                            </span>
-                          }
-                        />
-                        <TooltipContent
-                          side="top"
-                          sideOffset={8}
-                          className="rounded-md px-2 py-1 text-[10px]"
-                        >
-                          <p>New Added</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  )}
+                  {item.badge && <NewDot side="right" />}
                 </div>
                 <span
                   className={cn(

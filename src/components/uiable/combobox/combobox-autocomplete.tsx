@@ -14,7 +14,6 @@ import {
 import { Field, FieldDescription } from "@/components/ui/field"
 import { Kbd } from "@/components/ui/kbd"
 
-// constants
 const frameworks = [
   "Next.js",
   "SvelteKit",

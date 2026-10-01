@@ -2,9 +2,7 @@
 
 // third-party
 import { Accordion as AccordionPrimitive } from "@base-ui/react/accordion"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
 import { ChevronDownIcon, ChevronUpIcon } from "lucide-react"

@@ -67,7 +67,7 @@ export default function Portfolio4() {
                       </div>
                     </div>
                     <div className="shrink-0">
-                      <Button className="text-white-500 flex size-12 items-center justify-center rounded-lg border border-yellow-500 bg-yellow-500">
+                      <Button className="text-white-500 flex size-12 items-center justify-center rounded-lg border border-yellow-500 bg-yellow-500 hover:translate-y-1 hover:opacity-90">
                         <ArrowUpRight className="size-6 text-white" />
                       </Button>
                     </div>
@@ -96,7 +96,7 @@ export default function Portfolio4() {
                       </div>
                     </div>
                     <div className="shrink-0">
-                      <Button className="text-white-500 flex size-12 items-center justify-center rounded-lg border border-orange-500 bg-orange-500">
+                      <Button className="text-white-500 flex size-12 items-center justify-center rounded-lg border border-orange-500 bg-orange-500 hover:translate-y-1 hover:opacity-90">
                         <ArrowUpRight className="size-6 text-white" />
                       </Button>
                     </div>

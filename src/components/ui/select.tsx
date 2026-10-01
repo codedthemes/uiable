@@ -4,12 +4,10 @@ import { ComponentProps } from "react"
 
 // third-party
 import { Select as SelectPrimitive } from "@base-ui/react/select"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
-import { ChevronDownIcon, CheckIcon, ChevronUpIcon } from "lucide-react"
+import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react"
 
 const Select = SelectPrimitive.Root
 

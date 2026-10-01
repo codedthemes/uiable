@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-gradient",
+  "title": "Text Gradient",
+  "description": "Text Gradient component.",
+  "dependencies": ["cn", "framer-motion"],
+  "files": [
+    {
+      "path": "src/components/ui/text-gradient.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\n\n// third-party\nimport { cn } from \"cn\"\nimport { motion, type HTMLMotionProps } from \"framer-motion\"\n\nconst DEFAULT_GRADIENT =\n  \"linear-gradient(135deg, var(--primary) 0%, #8b5cf6 35%, #06b6d4 70%, var(--primary) 100%)\"\n\nexport interface TextGradientProps extends HTMLMotionProps<\"span\"> {\n  children: React.ReactNode\n  gradient?: string\n  duration?: number\n  animate?: boolean\n  className?: string\n}\n\nexport function TextGradient({\n  children,\n  gradient = DEFAULT_GRADIENT,\n  duration = 5,\n  animate = true,\n  className,\n  ...props\n}: TextGradientProps) {\n  return (\n    <motion.span\n      className={cn(\n        \"inline-block bg-clip-text text-transparent select-none\",\n        className\n      )}\n      style={{\n        backgroundImage: gradient,\n        backgroundSize: animate ? \"300% 300%\" : \"100% 100%\",\n        WebkitBackgroundClip: \"text\",\n        WebkitTextFillColor: \"transparent\",\n      }}\n      animate={\n        animate\n          ? {\n              backgroundPosition: [\"0% 50%\", \"100% 50%\", \"0% 50%\"],\n            }\n          : undefined\n      }\n      transition={\n        animate\n          ? {\n              duration,\n              repeat: Infinity,\n              ease: \"easeInOut\",\n            }\n          : undefined\n      }\n      {...props}\n    >\n      {children}\n    </motion.span>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/ui/text-gradient.tsx"
+    }
+  ],
+  "categories": ["text-gradient"],
+  "type": "registry:ui"
+}

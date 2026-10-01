@@ -1,5 +1,3 @@
-"use client"
-
 // next
 import Link from "next/link"
 
@@ -8,38 +6,36 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
 // third-party
-import { motion } from "framer-motion"
+import { div as MotionDiv } from "framer-motion/client"
 
 // project-imports
 import branding from "@/branding.json"
 import HoverBg from "@/components/animation/HoverBg"
 import BaseUi from "@/images/svg/icons/baseui"
+import Motion from "@/images/svg/icons/motion"
 import Shadcn from "@/images/svg/icons/shadcn"
 import Tailwind from "@/images/svg/icons/tailwind"
+import CodedThemeFabIcon from "@/images/svg/landing/ct-fab-logo"
 
 // assets
 import {
   IconArrowUpRight,
   IconBrandNextjs,
   IconBrandReact,
+  IconBrandTypescript,
   IconChevronRight,
 } from "@tabler/icons-react"
 
 //  ------------------------------ | CONSTANTS | ------------------------------  //
 
-const tech_icons = [
+const techIcons = [
   { name: "React", Icon: IconBrandReact },
   { name: "Next.js", Icon: IconBrandNextjs },
   { name: "Shadcn", Icon: Shadcn },
   { name: "Base UI", Icon: BaseUi },
   { name: "Tailwind CSS", Icon: Tailwind },
-]
-
-const features = [
-  "Production Ready",
-  "Open Source",
-  "Accessible",
-  "AI Ready Structure",
+  { name: "Motion", Icon: Motion },
+  { name: "TypeScript", Icon: IconBrandTypescript },
 ]
 
 const delays = [0, 150, 300]
@@ -64,7 +60,7 @@ function ChangelogLink() {
       Changelog
       <div className="flex -space-x-1.5">
         {delays.map((delay) => (
-          <motion.div
+          <MotionDiv
             key={delay}
             animate={{ opacity: [0.2, 1, 0.2] }}
             transition={{
@@ -75,7 +71,7 @@ function ChangelogLink() {
             }}
           >
             <IconChevronRight className="h-3.5 w-3.5" />
-          </motion.div>
+          </MotionDiv>
         ))}
       </div>
     </Link>
@@ -109,7 +105,7 @@ export default function Hero() {
           <PingDot />
           <span className="flex items-center gap-2">
             <span className="text-muted-foreground">
-              New Release September 08, 2026
+              New Release September 30, 2026
             </span>
             <ChangelogLink />
           </span>
@@ -150,14 +146,13 @@ export default function Hero() {
         >
           Start Building
         </Button>
-
         <Button
           variant="outline"
           size="lg"
           id="cta-view-components"
           nativeButton={false}
           render={<Link href="/components" />}
-          className="h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent"
+          className="h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent dark:border-border dark:bg-card dark:hover:bg-accent/10"
         >
           View Components
           <IconArrowUpRight className="size-4" aria-hidden="true" />
@@ -165,7 +160,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex items-center justify-center gap-4">
-        {tech_icons.map((item) => {
+        {techIcons.map((item) => {
           const IconComponent = item.Icon
           return (
             <Button
@@ -186,17 +181,26 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex items-center justify-center">
-        <div className="flex flex-wrap items-center justify-center gap-2.5">
-          {features.map((item) => (
-            <Badge
-              key={item}
-              variant="outline"
-              className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2.5 text-xs font-medium text-secondary-foreground"
-            >
-              {item}
-            </Badge>
-          ))}
-        </div>
+        <Link
+          href="https://codedthemes.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Badge
+            variant="outline"
+            className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-primary/20 [&>svg]:size-5!"
+          >
+            <span className="text-xs font-normal text-foreground">
+              {" "}
+              Product by{" "}
+            </span>
+            <CodedThemeFabIcon className="mx-1 size-5!" />
+            <span className="text-base font-medium text-secondary-foreground">
+              {" "}
+              CodedThemes
+            </span>
+          </Badge>
+        </Link>
       </div>
     </section>
   )

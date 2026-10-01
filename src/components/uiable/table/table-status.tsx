@@ -10,8 +10,8 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 // assets
 import {

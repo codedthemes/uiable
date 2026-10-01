@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-blur-in",
+  "title": "Text Blur In",
+  "description": "Text Blur In component.",
+  "dependencies": ["cn", "framer-motion"],
+  "files": [
+    {
+      "path": "src/components/ui/text-blur-in.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\n\n// third-party\nimport { cn } from \"cn\"\nimport { motion, type HTMLMotionProps, type Variants } from \"framer-motion\"\n\nexport interface TextBlurInProps extends Omit<\n  HTMLMotionProps<\"span\">,\n  \"children\"\n> {\n  text?: string\n  children?: string\n  splitBy?: \"words\" | \"characters\"\n  delay?: number\n  stagger?: number\n  duration?: number\n  blur?: number\n  triggerOnView?: boolean\n  className?: string\n}\n\nexport function TextBlurIn({\n  text = \"\",\n  children,\n  splitBy = \"words\",\n  delay = 0,\n  stagger = 0.08,\n  duration = 0.6,\n  blur = 12,\n  triggerOnView = true,\n  className,\n  ...props\n}: TextBlurInProps) {\n  const content = children || text\n  const tokens = React.useMemo(() => {\n    if (splitBy === \"characters\") {\n      return content.split(\"\")\n    }\n    return content.split(\" \")\n  }, [content, splitBy])\n\n  const containerVariants: Variants = {\n    hidden: { opacity: 0 },\n    visible: {\n      opacity: 1,\n      transition: {\n        staggerChildren: stagger,\n        delayChildren: delay,\n      },\n    },\n  }\n\n  const itemVariants: Variants = {\n    hidden: {\n      opacity: 0,\n      filter: `blur(${blur}px)`,\n      y: 8,\n      scale: 0.96,\n    },\n    visible: {\n      opacity: 1,\n      filter: \"blur(0px)\",\n      y: 0,\n      scale: 1,\n      transition: {\n        duration,\n        ease: [0.25, 0.4, 0.25, 1],\n      },\n    },\n  }\n\n  return (\n    <motion.span\n      variants={containerVariants}\n      initial=\"hidden\"\n      whileInView={triggerOnView ? \"visible\" : undefined}\n      animate={!triggerOnView ? \"visible\" : undefined}\n      viewport={{ once: true, margin: \"0px 0px -50px 0px\" }}\n      className={cn(\"inline-flex flex-wrap items-center\", className)}\n      {...props}\n    >\n      <span className=\"sr-only\">{content}</span>\n      {tokens.map((token, idx) => (\n        <motion.span\n          key={idx}\n          variants={itemVariants}\n          aria-hidden=\"true\"\n          className=\"inline-block\"\n        >\n          {token}\n          {splitBy === \"words\" && idx < tokens.length - 1 && \"\\u00A0\"}\n        </motion.span>\n      ))}\n    </motion.span>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/ui/text-blur-in.tsx"
+    }
+  ],
+  "categories": ["text-blur-in"],
+  "type": "registry:ui"
+}

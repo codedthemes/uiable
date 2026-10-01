@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 

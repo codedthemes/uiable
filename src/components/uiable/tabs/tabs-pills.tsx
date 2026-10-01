@@ -6,22 +6,22 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 export function TabsPills() {
   return (
     <Tabs defaultValue="home" className="w-full">
-      <TabsList className="h-auto max-h-10! gap-1 bg-transparent p-0">
+      <TabsList className="flex h-auto flex-wrap gap-1 bg-transparent p-0 group-data-horizontal/tabs:h-auto">
         <TabsTrigger
           value="home"
-          className="rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="rounded-lg border px-6 py-2 shadow-none data-active:bg-primary data-active:text-primary-foreground"
         >
           Home
         </TabsTrigger>
         <TabsTrigger
           value="profile"
-          className="rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="rounded-lg border px-6 py-2 shadow-none data-active:bg-primary data-active:text-primary-foreground"
         >
           Profile
         </TabsTrigger>
         <TabsTrigger
           value="contact"
-          className="rounded-lg border px-6 py-2 shadow-none data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+          className="rounded-lg border px-6 py-2 shadow-none data-active:bg-primary data-active:text-primary-foreground"
         >
           Contact
         </TabsTrigger>

@@ -2,9 +2,7 @@
 
 // third-party
 import { Switch as SwitchPrimitive } from "@base-ui/react/switch"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 function Switch({
   className,

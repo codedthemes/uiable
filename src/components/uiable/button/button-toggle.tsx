@@ -6,10 +6,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 // third-party
+import { cn } from "cn"
 import { Moon, Sun1 } from "iconsax-reactjs"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 //  ------------------------------ | BUTTON TOGGLE | ------------------------------  //
 

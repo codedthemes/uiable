@@ -1,3 +1,6 @@
+// react
+import type { ComponentType } from "react"
+
 // next
 import Link from "next/link"
 
@@ -20,8 +23,22 @@ import ToggleGroupSvg from "@/images/svg/ToggleGroup"
 // assets
 import { IconArrowUpRight } from "@tabler/icons-react"
 
-// constants
-const components_data = [
+// types
+interface ComponentEntry {
+  title: string
+  slug: string
+  count: string
+  Svg: ComponentType<{ className?: string }>
+}
+
+interface ComponentCardProps {
+  title: string
+  slug: string
+  count: string
+  Svg: ComponentType<{ className?: string }>
+}
+
+const componentsData: ComponentEntry[] = [
   {
     title: "Button",
     slug: "button",
@@ -60,6 +77,41 @@ const components_data = [
   },
 ]
 
+function ComponentCard({ title, slug, count, Svg }: ComponentCardProps) {
+  return (
+    <BorderGlow className="rounded-lg">
+      <Link href={`/components/${slug}`} className="group block cursor-pointer">
+        <Card className="mb-0 overflow-hidden border-0 transition-all duration-300">
+          <CardContent className="flex flex-col gap-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <p className="font-sans text-base leading-none font-medium tracking-normal text-secondary-foreground capitalize">
+                  {title}
+                </p>
+
+                <Separator orientation="vertical" />
+                <p className="text-sm font-medium text-muted-foreground">
+                  {count}
+                </p>
+              </div>
+              <div className="flex flex-row items-center gap-2 group-hover:text-primary">
+                <IconArrowUpRight
+                  aria-hidden="true"
+                  className="size-5 text-foreground"
+                />
+              </div>
+            </div>
+            <div className="h-px w-full bg-border/70" />
+            <div className="flex min-h-40 items-center justify-center p-0">
+              <Svg className="h-full max-h-45 w-full max-w-7xl" />
+            </div>
+          </CardContent>
+        </Card>
+      </Link>
+    </BorderGlow>
+  )
+}
+
 //  ------------------------------ | COMPONENT 1 | ------------------------------  //
 
 export default function Component1() {
@@ -71,37 +123,8 @@ export default function Component1() {
       />
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {components_data.map(({ title, slug, count, Svg }) => (
-          <BorderGlow key={title} className="rounded-lg">
-            <Link
-              href={`/components/${slug}`}
-              className="group block cursor-pointer"
-            >
-              <Card className="mb-0 overflow-hidden border-0 transition-all duration-300">
-                <CardContent>
-                  <div className="mb-1 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <p className="font-sans text-base leading-none font-medium tracking-normal text-secondary-foreground capitalize">
-                        {title}
-                      </p>
-
-                      <Separator orientation="vertical" />
-                      <p className="text-sm font-medium text-muted-foreground">
-                        {count}
-                      </p>
-                    </div>
-                    <div className="flex flex-row items-center gap-2 group-hover:text-primary">
-                      <IconArrowUpRight className="size-5 text-foreground" />
-                    </div>
-                  </div>
-                  <div className="my-4 h-px flex-1 bg-border/70" />
-                  <div className="flex min-h-40 items-center justify-center p-0">
-                    <Svg className="h-full max-h-45 w-full max-w-7xl" />
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-          </BorderGlow>
+        {componentsData.map((entry) => (
+          <ComponentCard key={entry.title} {...entry} />
         ))}
       </div>
 
@@ -114,7 +137,7 @@ export default function Component1() {
           className="h-11 gap-2 rounded-lg border-border bg-card px-6 font-medium text-foreground hover:bg-accent dark:border-border dark:bg-card dark:hover:bg-accent/10"
         >
           View Components
-          <IconArrowUpRight className="size-5" />
+          <IconArrowUpRight aria-hidden="true" className="size-5" />
         </Button>
       </div>
     </section>

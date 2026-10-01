@@ -11,8 +11,6 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 
-// project
-
 //  ------------------------------ | DRAWER - SCROLLABLE CONTENT | ------------------------------  //
 
 export function DrawerScrollableContent() {
@@ -42,7 +40,7 @@ export function DrawerScrollableContent() {
         <DrawerFooter>
           <div className="grid grid-cols-2 gap-2">
             <Button>Submit</Button>
-            <DrawerClose>
+            <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>
           </div>

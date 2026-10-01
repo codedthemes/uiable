@@ -5,8 +5,8 @@ import { useCallback, useEffect, useRef, useState } from "react"
 // shadcn
 import { Button } from "@/components/ui/button"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 // assets
 import { ArrowUp } from "lucide-react"
@@ -62,6 +62,7 @@ export function BackToTop() {
   return (
     <Button
       onClick={scrollToTop}
+      aria-label="Scroll to top"
       className={cn(
         "fixed right-10 bottom-6 z-50 h-12 w-12 rounded-full shadow-lg transition-all duration-300",
         "bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90",
@@ -70,7 +71,7 @@ export function BackToTop() {
           : "pointer-events-none translate-y-10 opacity-0"
       )}
     >
-      <ArrowUp className="size-6.5" />
+      <ArrowUp className="size-6.5" aria-hidden="true" />
       <span className="sr-only">Scroll to top</span>
     </Button>
   )

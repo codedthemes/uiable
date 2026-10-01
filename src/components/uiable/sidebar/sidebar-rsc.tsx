@@ -12,6 +12,7 @@ import {
   SidebarMenuItem,
   SidebarMenuSkeleton,
   SidebarProvider,
+  SidebarTrigger,
 } from "@/components/ui/sidebar"
 
 // assets
@@ -23,7 +24,6 @@ import {
   SendIcon,
 } from "lucide-react"
 
-// constants
 const projects = [
   {
     name: "Design Engineering",
@@ -81,6 +81,11 @@ export default function AppSidebar() {
           </SidebarGroup>
         </SidebarContent>
       </Sidebar>
+      <main className="flex-1 overflow-auto bg-muted/20">
+        <header className="flex h-14 items-center border-b border-border/50 bg-background/50 px-4 backdrop-blur">
+          <SidebarTrigger className="-ml-1" />
+        </header>
+      </main>
     </SidebarProvider>
   )
 }

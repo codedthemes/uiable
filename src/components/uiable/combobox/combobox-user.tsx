@@ -16,7 +16,6 @@ import {
   ItemTitle,
 } from "@/components/ui/item"
 
-// constants
 const users = [
   {
     id: "1",

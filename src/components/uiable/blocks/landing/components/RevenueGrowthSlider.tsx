@@ -2,7 +2,8 @@
 import { Slider } from "@/components/ui/slider"
 
 // project-imports
-import { Logo1, NoiseOverlay } from "@/images/svg/landing"
+import Logo1 from "@/images/svg/landing/logo1"
+import NoiseOverlay from "@/images/svg/landing/noise-overlay"
 
 // assets
 import { IconArrowUpRight } from "@tabler/icons-react"
@@ -12,11 +13,14 @@ import { IconArrowUpRight } from "@tabler/icons-react"
 export default function RevenueGrowthSlider() {
   return (
     <div className="relative overflow-hidden rounded-xl bg-primary p-6 text-white shadow-[0_4px_20px_color-mix(in_srgb,var(--primary)_25%,transparent)]">
-      <NoiseOverlay />
+      <NoiseOverlay aria-hidden="true" />
 
       <div className="relative z-10 flex flex-col gap-6">
         <div className="flex items-center justify-between">
-          <div className="relative flex size-12 items-center justify-center">
+          <div
+            aria-hidden="true"
+            className="relative flex size-12 items-center justify-center"
+          >
             <div className="absolute inset-0 rounded-full border border-white/25 bg-[linear-gradient(180deg,rgba(255,255,255,0.14)_0%,rgba(255,255,255,0.04)_100%),var(--primary)] shadow-[inset_0_1px_2px_rgba(255,255,255,0.45),inset_0_-3px_8px_rgba(0,0,0,0.12),0_2px_12px_rgba(255,255,255,0.12)]" />
 
             <div className="absolute top-[8%] left-[12%] h-[34%] w-[76%] rounded-full bg-white/35 blur-lg" />
@@ -29,25 +33,21 @@ export default function RevenueGrowthSlider() {
           </div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-2">
           <span className="flex items-center gap-1 text-xs font-medium opacity-75">
-            <IconArrowUpRight className="size-3.5" />
+            <IconArrowUpRight aria-hidden="true" className="size-3.5" />
             Revenue
           </span>
 
-          <span className="mt-2 text-lg leading-snug font-semibold">
+          <span className="text-lg leading-snug font-semibold">
             85% Growth Compared to Yesterday
           </span>
         </div>
 
-        <label htmlFor="revenue-growth-slider" className="sr-only">
-          Revenue growth percentage
-        </label>
         <Slider
           defaultValue={[70]}
           max={100}
           step={1}
-          aria-label="Revenue growth percentage"
           className="w-full text-white [&_[data-slot=slider-range]]:bg-white [&_[data-slot=slider-thumb]]:border-white [&_[data-slot=slider-track]]:bg-white/30"
         />
       </div>

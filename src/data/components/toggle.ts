@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -19,7 +18,8 @@ export const toggleInfo: CategoryInfo = {
   ],
   variantsHeading: "Popular Toggle Variants",
   variants: [
-    "Default . Standard icon-only toggle button",
+    "Icon . Standard icon-only toggle buttons",
+    "Animated . Interactive toggles with micro-animations like favorite or bookmark",
     "Outline . Toggle with a border that fills with color when active",
     "With Text . Toggle featuring both an icon and a text label",
     "Sized Variants . Small, Default, and Large toggles to match varying UI densities",

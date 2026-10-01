@@ -63,21 +63,20 @@ export default function CategoryView({ category, items }: CategoryViewProps) {
       style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}
     >
       {items.map((item, index) => (
-        <div key={item.name} className="relative">
-          <LazySection
-            sections={{
-              importFunc: () => import("./block-item"),
-              props: {
-                item,
-                index,
-                isLast: index === items.length - 1,
-                handleCopy,
-                copiedIndex,
-              },
-            }}
-            offset="200px"
-          />
-        </div>
+        <LazySection
+          key={item.name}
+          sections={{
+            importFunc: () => import("./block-item"),
+            props: {
+              item,
+              index,
+              isLast: index === items.length - 1,
+              handleCopy,
+              copiedIndex,
+            },
+          }}
+          offset="200px"
+        />
       ))}
     </div>
   )

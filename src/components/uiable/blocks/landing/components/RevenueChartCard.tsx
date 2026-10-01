@@ -11,13 +11,15 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
+// third-party
+import { cn } from "cn"
+
 // project-imports
-import { MetricChart } from "@/images/svg/landing"
+import MetricChart from "@/images/svg/landing/metric-chart"
 
 // assets
 import { IconArrowDownRight, IconArrowUpRight } from "@tabler/icons-react"
 
-// constants
 const metricData = {
   revenue: {
     value: "22,680",
@@ -68,16 +70,25 @@ function TrendBadge({ trend, change }: TrendBadgeProps) {
   const isUp = trend === "up"
   return (
     <div
-      className={`mt-1 flex items-center gap-1 rounded-md px-2 py-1 text-xs font-semibold transition-colors duration-300 ${
+      className={cn(
+        "mt-1 flex items-center gap-1 rounded-md px-2 py-1 text-xs font-semibold transition-colors duration-300",
         isUp
           ? "bg-emerald-500/10 text-emerald-500 dark:bg-emerald-500/20 dark:text-emerald-400"
           : "bg-rose-500/10 text-rose-500 dark:bg-rose-500/20 dark:text-rose-400"
-      }`}
+      )}
     >
       {isUp ? (
-        <IconArrowUpRight className="size-3.5" stroke={2.5} />
+        <IconArrowUpRight
+          aria-hidden="true"
+          className="size-3.5"
+          stroke={2.5}
+        />
       ) : (
-        <IconArrowDownRight className="size-3.5" stroke={2.5} />
+        <IconArrowDownRight
+          aria-hidden="true"
+          className="size-3.5"
+          stroke={2.5}
+        />
       )}
       <span>{change}</span>
     </div>
@@ -100,10 +111,7 @@ export default function RevenueChartCard() {
               if (val) setMetric(val as MetricType)
             }}
           >
-            <SelectTrigger
-              aria-label="Select metric"
-              className="h-auto w-auto gap-1 border-0 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground focus:border-transparent focus:ring-0"
-            >
+            <SelectTrigger className="h-auto w-auto gap-1 border-0 bg-transparent p-0 text-xs font-medium text-muted-foreground hover:text-foreground focus:border-transparent focus:ring-0">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>

@@ -1,7 +1,7 @@
 import { ComponentProps } from "react"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 function Card({
   className,

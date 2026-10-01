@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-copy",
+  "title": "Button Copy",
+  "description": "Button Copy variant for component.",
+  "dependencies": ["framer-motion", "lucide-react"],
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/button/button-copy.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n// third-party\nimport { motion, AnimatePresence } from \"framer-motion\"\n\n// assets\nimport { CopyIcon, CheckIcon } from \"lucide-react\"\n\n//  ------------------------------ | BUTTON - COPY | ------------------------------  //\n\nexport default function ButtonCopy() {\n  const [copied, setCopied] = useState(false)\n\n  const handleCopy = () => {\n    navigator.clipboard.writeText(\"https://uiable.com\")\n    setCopied(true)\n    setTimeout(() => setCopied(false), 2000)\n  }\n\n  return (\n    <Button\n      variant=\"link\"\n      size=\"icon\"\n      onClick={handleCopy}\n      aria-label={copied ? \"Copied\" : \"Copy Link\"}\n      className=\"text-muted-foreground hover:text-foreground\"\n    >\n      <AnimatePresence mode=\"wait\" initial={false}>\n        {copied ? (\n          <motion.div\n            key=\"check\"\n            initial={{ opacity: 0, scale: 0.5 }}\n            animate={{ opacity: 1, scale: 1 }}\n            exit={{ opacity: 0, scale: 0.5 }}\n            transition={{ duration: 0.15 }}\n          >\n            <CheckIcon className=\"text-green-500\" />\n          </motion.div>\n        ) : (\n          <motion.div\n            key=\"copy\"\n            initial={{ opacity: 0, scale: 0.5 }}\n            animate={{ opacity: 1, scale: 1 }}\n            exit={{ opacity: 0, scale: 0.5 }}\n            transition={{ duration: 0.15 }}\n          >\n            <CopyIcon />\n          </motion.div>\n        )}\n      </AnimatePresence>\n    </Button>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/button/button-copy.tsx"
+    }
+  ],
+  "categories": ["button"],
+  "type": "registry:ui"
+}

@@ -4,8 +4,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 interface MobileNavProps {
   onSelect?: () => void
@@ -18,6 +18,7 @@ export default function MobileNav({ onSelect, className }: MobileNavProps) {
   const pathname = usePathname()
 
   const links = [
+    { label: "Dashboard", href: "/admin-dashboard" },
     { label: "Components", href: "/components" },
     { label: "Documentation", href: "/doc" },
   ]

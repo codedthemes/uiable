@@ -11,7 +11,6 @@ import { Globe, Lock, Users } from "lucide-react"
 
 //  ------------------------------ | RADIO GROUP - LIST | ------------------------------  //
 
-// constants
 const options = [
   {
     value: "public",

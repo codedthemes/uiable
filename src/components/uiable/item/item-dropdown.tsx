@@ -19,7 +19,6 @@ import {
 // assets
 import { ChevronDownIcon } from "lucide-react"
 
-// constants
 const people = [
   {
     username: "shadcn",

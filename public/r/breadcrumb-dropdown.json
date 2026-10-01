@@ -3,7 +3,7 @@
   "name": "breadcrumb-dropdown",
   "title": "Breadcrumb Dropdown",
   "description": "Breadcrumb Dropdown variant for component.",
-  "dependencies": ["lucide-react", "next"],
+  "dependencies": ["lucide-react"],
   "registryDependencies": ["@uiable/breadcrumb", "@uiable/button", "@uiable/dropdown-menu"],
   "files": [
     {

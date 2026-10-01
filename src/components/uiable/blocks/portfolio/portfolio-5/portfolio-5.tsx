@@ -1,7 +1,6 @@
 // shadcn
 import { Button } from "@/components/ui/button"
 
-// constants
 const portfolioItems = [
   {
     image: "https://cdn.uiable.com/block/img-portfolio-5-1.png",
@@ -70,7 +69,7 @@ export default function Portfolio5() {
                       <div className="shrink-0">
                         <Button
                           variant="link"
-                          className="text-white-500 flex size-12 items-center justify-center rounded-lg border-0 text-rose-500"
+                          className="text-white-500 flex size-12 items-center justify-center rounded-lg border-0 text-rose-500 hover:translate-y-1 hover:opacity-90"
                         >
                           <svg
                             className="size-8 transition-all duration-300 group-aria-expanded/accordion-trigger:rotate-90 md:size-8"
@@ -97,10 +96,10 @@ export default function Portfolio5() {
             </div>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
-            <Button className="rounded-full bg-rose-500">
+            <Button className="rounded-full bg-rose-500 hover:translate-y-1 hover:opacity-90">
               Explore Portfolio
             </Button>
-            <Button className="rounded-full bg-card text-card-foreground">
+            <Button className="rounded-full bg-card text-card-foreground hover:translate-y-1 hover:opacity-90">
               Get a Free Quote
             </Button>
           </div>

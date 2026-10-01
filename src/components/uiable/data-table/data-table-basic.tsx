@@ -42,7 +42,6 @@ import {
 // assets
 import { ArrowUpDown, MoreHorizontal } from "lucide-react"
 
-// constants
 const data: Payment[] = [
   {
     id: "m5gr84i9",
@@ -241,11 +240,11 @@ export const columns: ColumnDef<Payment>[] = [
 
       return (
         <DropdownMenu>
-          <DropdownMenuTrigger>
-            <Button variant="ghost" className="h-8 w-8 p-0">
-              <span className="sr-only">Open menu</span>
-              <MoreHorizontal className="h-4 w-4" />
-            </Button>
+          <DropdownMenuTrigger
+            render={<Button variant="ghost" className="h-8 w-8 p-0" />}
+          >
+            <span className="sr-only">Open menu</span>
+            <MoreHorizontal className="h-4 w-4" />
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="min-w-50">
             <DropdownMenuGroup>
@@ -296,7 +295,7 @@ export default function DataTableBasic() {
 
   return (
     <div className="w-full">
-      <div className="flex w-full items-center justify-between py-4">
+      <div className="flex w-full items-center justify-between gap-2 py-4">
         <Input
           placeholder="Filter emails..."
           value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}

@@ -6,7 +6,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-// constants
 const items = [
   {
     value: "billing",

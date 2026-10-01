@@ -7,9 +7,7 @@ import { Field, FieldGroup, FieldLabel, FieldSet } from "@/components/ui/field"
 
 // third-party
 import { Checkbox as CheckboxPrimitive } from "@base-ui/react/checkbox"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
 import { CheckIcon, MinusIcon } from "lucide-react"

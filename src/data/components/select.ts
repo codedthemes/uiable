@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -20,6 +19,10 @@ export const selectInfo: CategoryInfo = {
   variantsHeading: "Popular Select Variants",
   variants: [
     "Default: Standard custom dropdown for selecting a single option",
+    "With Icons: Dropdown options featuring crisp visual icons alongside text labels",
+    "With Users: Rich assignee selection displaying user avatars, names, and roles",
+    "With Status: Status picker with colored indicator dots for visual feedback",
+    "Clearable: Single selection dropdown with a dedicated quick clear button",
     "Multi-Select: Select allowing multiple selections with removable tag badges",
     "Grouped Options: Dropdown with options categorized by distinct, unselectable headers",
   ],

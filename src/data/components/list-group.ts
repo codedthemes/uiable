@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -19,9 +18,11 @@ export const listGroupInfo: CategoryInfo = {
   variantsHeading: "Popular List Group Variants",
   variants: [
     "Default (Bordered): Standard vertical list with outer borders and rounded corners",
+    "Avatar: Directory rows with profile photos, secondary descriptions, and trailing status badges",
+    "Badge (Icons & Counters): Navigation rows featuring leading icons and trailing unread or status badges",
+    "Nested (Collapsible): Multi-level expandable list structure with parent triggers and indented child rows",
     "Flush (Edge to edge): Borderless list designed for cards, sidebars, or embedded panels",
     "Actionable: Interactive rows that behave like links or buttons with hover states",
-    "With Badges and Icons: Flexible rows with leading icons and trailing status badges",
     "Numbered: Ordered list layout using semantic <ol> structure for auto numbering",
   ],
   whyUseHeading: `Why ${branding.brandName} List Group?`,

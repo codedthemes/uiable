@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -20,6 +19,11 @@ export const separatorInfo: CategoryInfo = {
   variants: [
     "Horizontal (Default) . A standard 1px tall line spanning the full width of its container",
     "Vertical . A 1px wide line spanning the full height of its container, perfect for separating inline items",
+    "With Text . Separator divided by centered text or badge labels, ideal for login OR breaks and section headers",
+    "With Icon . Decorative line interrupted by subtle circle icons or badges",
+    "Card Section . Clean structural dividers separating card headers, property lists, and footer action bars",
+    "Stats . Responsive horizontal and vertical dividers separating data metrics inside statistical panels",
+    "Action . Interactive section breaks integrating action buttons directly into the dividing line",
   ],
   whyUseHeading: `Why ${branding.brandName} Separator?`,
   whyUseDescription: [

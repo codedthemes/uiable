@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
 // project-imports
-import { ProfileAvatar } from "@/images/svg/landing"
+import ProfileAvatar from "@/images/svg/landing/profile-avatar"
 
 //  ------------------------------ | BLOCK - PROFILE CARD | ------------------------------  //
 
@@ -13,7 +13,12 @@ export default function ProfileCard() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 rounded-md border border-border bg-card px-4 pt-5 pb-5">
       <div className="flex size-20 items-center justify-center overflow-hidden rounded-full bg-foreground pt-8 dark:bg-muted">
-        <ProfileAvatar width={70} height={60} className="text-background" />
+        <ProfileAvatar
+          aria-hidden="true"
+          width={70}
+          height={60}
+          className="text-background"
+        />
       </div>
 
       <div className="flex flex-col gap-1 text-center">

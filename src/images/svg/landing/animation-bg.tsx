@@ -1,8 +1,7 @@
 import { HTMLAttributes } from "react"
 
-// project-imports
-// third party
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 //  ------------------------------ | ANIMATION BG | ------------------------------  //
 

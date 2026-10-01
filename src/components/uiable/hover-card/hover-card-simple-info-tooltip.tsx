@@ -1,3 +1,5 @@
+// lucide-react
+
 // shadcn
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -8,7 +10,6 @@ import {
 } from "@/components/ui/hover-card"
 
 // assets
-// lucide-react
 import { Info, Sparkles } from "lucide-react"
 
 //  ------------------------------ | HOVER CARD - SIMPLE INFO TOOLTIP | ------------------------------  //

@@ -10,6 +10,7 @@ import {
   type PointerEvent,
 } from "react"
 
+// types
 interface BorderGlowProps {
   children?: ReactNode
   className?: string

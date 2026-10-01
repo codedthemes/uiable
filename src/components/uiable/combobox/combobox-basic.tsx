@@ -8,7 +8,6 @@ import {
   ComboboxList,
 } from "@/components/ui/combobox"
 
-// constants
 const frameworks = [
   "Next.js",
   "SvelteKit",

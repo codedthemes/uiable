@@ -6,7 +6,7 @@ export default function ListGroupCustomContent() {
       <a
         href="#!"
         aria-current="true"
-        className="group block bg-primary px-6.25 py-4 text-primary-foreground"
+        className="group block bg-primary px-6.25 py-4 text-white"
       >
         <div className="mb-1 flex w-full items-center justify-between">
           <h5 className="text-lg font-bold text-white">

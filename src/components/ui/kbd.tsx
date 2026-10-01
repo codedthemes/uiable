@@ -1,9 +1,7 @@
-import { ComponentProps } from "react"
+// third-party
+import { cn } from "cn"
 
-// project-imports
-import { cn } from "@/lib/utils"
-
-function Kbd({ className, ...props }: ComponentProps<"kbd">) {
+function Kbd({ className, ...props }: React.ComponentProps<"kbd">) {
   return (
     <kbd
       data-slot="kbd"
@@ -16,7 +14,7 @@ function Kbd({ className, ...props }: ComponentProps<"kbd">) {
   )
 }
 
-function KbdGroup({ className, ...props }: ComponentProps<"div">) {
+function KbdGroup({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <kbd
       data-slot="kbd-group"

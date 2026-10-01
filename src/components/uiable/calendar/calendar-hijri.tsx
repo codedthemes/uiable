@@ -2,19 +2,13 @@
 
 import { ComponentProps, useEffect, useRef, useState } from "react"
 
-// next
-import { Vazirmatn } from "next/font/google"
-
 // shadcn
 import { Button, buttonVariants } from "@/components/ui/button"
 
 // third-party
 import { DayPicker } from "@daypicker/persian"
-// third party
+import { cn } from "cn"
 import { DayButton, getDefaultClassNames } from "react-day-picker"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 // assets
 import {
@@ -23,8 +17,7 @@ import {
   ChevronRightIcon,
 } from "lucide-react"
 
-//constants
-const vazirmatn = Vazirmatn({ subsets: ["arabic"] })
+const vazirmatn = { className: "font-[Vazirmatn]" }
 
 //  ------------------------------ | CALENDAR - HIJRI | ------------------------------  //
 
@@ -223,6 +216,7 @@ function CalendarDayButton({
     <Button
       variant="ghost"
       size="icon"
+      suppressHydrationWarning
       data-day={day.date.toLocaleDateString()}
       data-selected-single={
         modifiers.selected &&

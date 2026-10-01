@@ -3,6 +3,7 @@ import { NextResponse } from "next/server"
 
 // ------------------------------ | API - MAILERLITE SUBSCRIBE | ------------------------------ //
 
+// constant
 const API_KEY = process.env.MAILERLITE_API_KEY
 const API_ENDPOINT = process.env.MAILERLITE_API_ENDPOINT
 const DEFAULT_GROUP = process.env.MAILERLITE_GROUP?.trim() ?? "uiable_landing"

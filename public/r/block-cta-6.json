@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-cta-6",
+  "title": "Cta 6",
+  "description": "Cta 6 variant for block.",
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/cta/cta-6/cta-6.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | CTA 6 | ------------------------------  //\n\nexport default function Cta6() {\n  return (\n    <section className=\"relative overflow-hidden bg-slate-900 py-20 sm:py-25\">\n      <span className=\"absolute right-2/4 -bottom-80 block h-100 w-150 translate-x-2/4 rounded-full bg-linear-to-r from-cyan-500 to-blue-500\"></span>\n      <div className=\"absolute inset-0 z-20 bg-slate-900/10 backdrop-blur-[150px]\"></div>\n      <div className=\"relative z-30 container mx-auto px-4 sm:px-6 lg:px-8\">\n        <div className=\"flex flex-col items-center gap-4 sm:gap-8\">\n          <div className=\"flex flex-col items-center gap-2 text-center sm:gap-5\">\n            <div className=\"flex rounded-full border border-sky-500/50 bg-sky-500/10 px-6 py-2\">\n              <span className=\"text-sm font-bold text-sky-500\">\n                Exclusive Sale\n              </span>\n            </div>\n            <h2 className=\"text-lg font-medium text-slate-100 sm:text-3xl\">\n              Premium Deals Await You\n            </h2>\n            <p className=\"max-w-100 text-slate-400\">\n              Carefully selected offers at unbeatable prices, available for a\n              limited time only. Shop before they’re gone!\n            </p>\n          </div>\n          <Button\n            size=\"lg\"\n            className=\"border-2 border-pink-500 bg-pink-500 text-white hover:bg-pink-500/20 hover:text-pink-500\"\n          >\n            Explore Now\n          </Button>\n        </div>\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/cta/cta-6/cta-6.tsx"
+    }
+  ],
+  "categories": ["cta"],
+  "type": "registry:block"
+}

@@ -5,6 +5,9 @@ import { useState } from "react"
 // shadcn
 import { Button } from "@/components/ui/button"
 
+// third-party
+import { cn } from "cn"
+
 // ------------------------------ | EVENT ALERT CARD | ------------------------------ //
 
 export default function EventAlertCard() {
@@ -23,11 +26,12 @@ export default function EventAlertCard() {
       <Button
         size="sm"
         onClick={() => setEnabled(!enabled)}
-        className={`h-8.5 rounded-lg px-4 py-2 text-xs font-semibold transition-colors ${
+        className={cn(
+          "h-8.5 rounded-lg px-4 py-2 text-xs font-semibold transition-colors",
           enabled
             ? "bg-muted text-muted-foreground hover:bg-muted/80"
             : "bg-primary text-primary-foreground hover:bg-primary/90"
-        }`}
+        )}
       >
         {enabled ? "Disable" : "Enable"}
       </Button>

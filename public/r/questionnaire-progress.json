@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "questionnaire-progress",
+  "title": "Questionnaire Progress",
+  "description": "Questionnaire Progress variant for component.",
+  "registryDependencies": ["@uiable/questionnaire"],
+  "files": [
+    {
+      "path": "src/components/uiable/questionnaire/questionnaire-progress.tsx",
+      "content": "\"use client\"\n\n// shadcn\nimport {\n  Questionnaire,\n  QuestionnaireActions,\n  QuestionnaireChoice,\n  QuestionnaireChoices,\n  QuestionnaireItem,\n  QuestionnaireNext,\n  QuestionnairePrevious,\n  QuestionnaireProgress,\n  QuestionnaireSubmit,\n  QuestionnaireTitle,\n} from \"@/components/ui/questionnaire\"\n\n//  ------------------------------ | QUESTIONNAIRE - PROGRESS | ------------------------------  //\n\nexport function QuestionnaireProgressVariant() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Questionnaire\n        onSubmit={(e) => {\n          e.preventDefault()\n          const data = Object.fromEntries(new FormData(e.currentTarget))\n          console.log(data)\n        }}\n      >\n        <QuestionnaireProgress\n          className=\"mb-4 self-start\"\n          render={(props, state) => (\n            <div {...props} className=\"flex flex-col gap-2\">\n              <div className=\"flex items-center gap-1\">\n                {Array.from({ length: state.total }).map((_, i) => (\n                  <div\n                    key={i}\n                    className={`h-1 w-12 rounded-full ${i < state.current ? \"bg-primary\" : \"bg-muted\"}`}\n                  />\n                ))}\n              </div>\n              <span className=\"text-xs font-medium text-muted-foreground\">\n                Checkpoint {state.current} of {state.total}\n              </span>\n            </div>\n          )}\n        />\n\n        <QuestionnaireItem name=\"role\">\n          <QuestionnaireTitle>What is your primary role?</QuestionnaireTitle>\n          <QuestionnaireChoices>\n            <QuestionnaireChoice value=\"developer\">\n              Developer\n            </QuestionnaireChoice>\n            <QuestionnaireChoice value=\"designer\">Designer</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"manager\">Manager</QuestionnaireChoice>\n          </QuestionnaireChoices>\n          <QuestionnaireActions>\n            <QuestionnaireNext />\n          </QuestionnaireActions>\n        </QuestionnaireItem>\n\n        <QuestionnaireItem name=\"experience\">\n          <QuestionnaireTitle>Years of experience?</QuestionnaireTitle>\n          <QuestionnaireChoices>\n            <QuestionnaireChoice value=\"junior\">0-2 years</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"mid\">3-5 years</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"senior\">5+ years</QuestionnaireChoice>\n          </QuestionnaireChoices>\n          <QuestionnaireActions>\n            <QuestionnairePrevious />\n            <QuestionnaireSubmit />\n          </QuestionnaireActions>\n        </QuestionnaireItem>\n      </Questionnaire>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/questionnaire/questionnaire-progress.tsx"
+    }
+  ],
+  "categories": ["questionnaire"],
+  "type": "registry:ui"
+}

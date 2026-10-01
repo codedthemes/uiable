@@ -3,10 +3,8 @@
 import { ComponentProps, useContext } from "react"
 
 // third-party
+import { cn } from "cn"
 import { OTPInput, OTPInputContext } from "input-otp"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 // assets
 import { MinusIcon } from "lucide-react"

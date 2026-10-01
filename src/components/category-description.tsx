@@ -9,10 +9,12 @@ import { Card, CardContent } from "@/components/ui/card"
 
 // project-imports
 import branding from "@/branding.json"
+import { blockCategoryInfoMap } from "@/data/blocks"
 import { categoryInfoMap as componentCategoryInfoMap } from "@/data/components"
 
 const categoryInfoMap = {
   ...componentCategoryInfoMap,
+  ...blockCategoryInfoMap,
 }
 
 interface CategoryDescriptionProps {
@@ -57,21 +59,19 @@ export default function CategoryDescription({
               ))}
             </div>
           </div>
-          {data.variants && data.variants.length > 0 && (
-            <div className="flex flex-col gap-4">
-              <h3 className="capitalize">{data.variantsHeading ?? ""}</h3>
-              <ul className="flex list-disc flex-col gap-3 pl-6">
-                {data.variants.map((f: string, i: number) => {
-                  const [bold, ...rest] = f.split(". ")
-                  return (
-                    <li key={i}>
-                      <b>{bold}:</b> {rest.join(". ")}
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          )}
+          <div className="flex flex-col gap-4">
+            <h3 className="capitalize">{data.variantsHeading ?? ""}</h3>
+            <ul className="flex list-disc flex-col gap-3 pl-6">
+              {(data.variants ?? []).map((f: string, i: number) => {
+                const [bold, ...rest] = f.split(". ")
+                return (
+                  <li key={i}>
+                    <b>{bold}:</b> {rest.join(". ")}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
           <div className="flex flex-col gap-4">
             <h3 className="capitalize">{data.whyUseHeading}</h3>
             <div className="flex flex-col gap-3">
@@ -105,14 +105,12 @@ export default function CategoryDescription({
                 />
               ))}
             </div>
-            {data.integrationList && data.integrationList.length > 0 && (
-              <ul className="flex list-disc flex-col gap-3 pl-6">
-                {data.integrationList.map((p: string, i: number) => {
-                  return <li key={i}>{p}</li>
-                })}
-              </ul>
-            )}
-            {data.integrationNote && <p>{data.integrationNote}</p>}
+            <ul className="flex list-disc flex-col gap-3 pl-6">
+              {(data.integrationList ?? []).map((p: string, i: number) => {
+                return <li key={i}>{p}</li>
+              })}
+            </ul>
+            <p>{data.integrationNote ?? ""}</p>
           </div>
           {data.faqs && data.faqs.length > 0 && (
             <div className="flex flex-col gap-4">

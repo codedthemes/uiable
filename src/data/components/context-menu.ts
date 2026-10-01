@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -24,6 +23,9 @@ export const contextMenuInfo: CategoryInfo = {
     "With Icons & Shortcuts: Menu items featuring leading icons and trailing keyboard shortcuts",
     'Destructive Actions: Menu items tinted red to indicate severe actions (e.g., "Delete")',
     "Checkbox / Radio Items: Interactive menu items acting as state toggles",
+    "Spell Check: Shows spelling suggestions and dictionary actions",
+    "Font & Style: Checkbox items with icons for text formatting",
+    "Animated Radial Bubble: A circular, animated context menu with a gradient background",
   ],
   whyUseHeading: `Why ${branding.brandName} Context Menu?`,
   whyUseDescription: [

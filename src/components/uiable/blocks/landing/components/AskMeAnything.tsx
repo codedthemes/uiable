@@ -3,15 +3,16 @@ import { Badge } from "@/components/ui/badge"
 import {
   InputGroup,
   InputGroupAddon,
+  InputGroupButton,
   InputGroupInput,
 } from "@/components/ui/input-group"
 
 // assets
 import {
+  CircleQuestionMark,
+  GitPullRequestArrow,
   Plus,
   Sparkles,
-  GitPullRequestArrow,
-  CircleQuestionMark,
 } from "lucide-react"
 
 //  ------------------------------ | BLOCK - ASK ME ANYTHING | ------------------------------  //
@@ -35,9 +36,10 @@ export default function AskMeAnything() {
         </Badge>
         <Badge
           variant="outline"
+          aria-label="Add custom topic"
           className="cursor-pointer rounded-full px-3 py-1.5 text-xs leading-3 font-normal tracking-normal text-accent-foreground hover:bg-accent xl:px-2 xl:py-1"
         >
-          <Plus className="size-3.5" />
+          <Plus aria-hidden="true" className="size-3.5" />
         </Badge>
       </div>
 
@@ -55,10 +57,22 @@ export default function AskMeAnything() {
         />
         <InputGroupAddon
           align="inline-end"
-          className="flex items-center gap-3 py-0 pr-4 pl-2 text-muted-foreground/80"
+          className="gap-3 py-0 pr-4 pl-2 text-muted-foreground/80"
         >
-          <GitPullRequestArrow className="size-4 cursor-pointer transition-colors hover:text-foreground" />
-          <CircleQuestionMark className="size-4 cursor-pointer transition-colors hover:text-foreground" />
+          <InputGroupButton
+            aria-label="Compare answers"
+            size="icon-xs"
+            className="hover:text-foreground"
+          >
+            <GitPullRequestArrow className="size-4" />
+          </InputGroupButton>
+          <InputGroupButton
+            aria-label="Get help"
+            size="icon-xs"
+            className="hover:text-foreground"
+          >
+            <CircleQuestionMark className="size-4" />
+          </InputGroupButton>
         </InputGroupAddon>
       </InputGroup>
     </div>

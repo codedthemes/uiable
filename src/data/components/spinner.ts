@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -19,8 +18,9 @@ export const spinnerInfo: CategoryInfo = {
   variantsHeading: "Popular Spinner Variants",
   variants: [
     "Default (Circular) . Standard infinitely rotating SVG circle with a highlighted edge",
-    'Dots . Three dots that pulse or bounce sequentially (often used for "typing" indicators)',
-    "Pulse . A solid shape that scales up and fades out infinitely",
+    "Framer Motion Animated . High-performance animated loaders including Orbital, Radar Pulse, Wave Helix, and Tri-Node",
+    "Dots & Droplets . Dynamic dots and bouncing droplets that pulse with elastic harmonic physics",
+    "Pulse & Aperture . Luxury chronometer-style radial dashes and expanding sonar pulse waves",
     `Inside Button . Spinner specifically sized and aligned to replace text or icons inside a loading ${branding.brandName} Button`,
   ],
   whyUseHeading: `Why ${branding.brandName} Spinner?`,

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-under-construction-1",
+  "title": "Under Construction 1",
+  "description": "Under Construction 1 variant for block.",
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/under-construction/under-construction-1/under-construction-1.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | UNDER CONSTRUCTION 1 | ------------------------------  //\n\nexport default function UnderConstruction1() {\n  return (\n    <section className=\"relative flex h-[100vh] min-h-[800px] items-center justify-center overflow-hidden bg-[url('https://cdn.uiable.com/block/img-cunstruct-1-bg.png')] [background-size:100%_auto] bg-top bg-no-repeat px-4 py-16 sm:px-6 lg:px-8\">\n      <div className=\"container mx-auto flex min-h-[calc(100vh-8rem)] max-w-6xl items-center justify-center bg-bottom bg-no-repeat py-12 pt-24 sm:pt-28 md:pt-12 md:pr-24 lg:pr-40 xl:pr-60 2xl:pr-72\">\n        <div className=\"grid grid-cols-1 items-center justify-center gap-8 md:grid-cols-2 md:gap-8 lg:gap-12\">\n          <div className=\"flex flex-col items-center gap-4 text-center\">\n            <h1>Under Construction</h1>\n            <p className=\"max-w-md text-base text-muted-foreground\">\n              Hey! Please check out this site later. We are doing some\n              maintenance on it right now.\n            </p>\n            <div>\n              <Button>Back To Home</Button>\n            </div>\n          </div>\n\n          <div className=\"flex items-center justify-center\">\n            <img\n              src=\"https://cdn.uiable.com/block/img-cunstruct-1.svg\"\n              alt=\"Under Construction Illustration\"\n              className=\"h-auto max-h-[260px] w-full max-w-[260px] object-contain select-none sm:max-h-[300px] sm:max-w-[300px] md:max-h-[340px] md:max-w-[340px] lg:max-h-[380px] lg:max-w-[374px]\"\n            />\n          </div>\n        </div>\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/under-construction/under-construction-1/under-construction-1.tsx"
+    }
+  ],
+  "categories": ["under-construction"],
+  "type": "registry:block"
+}

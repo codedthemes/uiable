@@ -3,7 +3,7 @@
   "name": "navigation-menu-mega",
   "title": "Navigation Menu Mega",
   "description": "Navigation Menu Mega variant for component.",
-  "dependencies": ["lucide-react", "next"],
+  "dependencies": ["lucide-react"],
   "registryDependencies": ["@uiable/button", "@uiable/navigation-menu"],
   "files": [
     {

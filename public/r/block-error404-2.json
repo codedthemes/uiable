@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-error404-2",
+  "title": "Error404 2",
+  "description": "Error404 2 variant for block.",
+  "registryDependencies": ["@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/error-404/error404-2/error404-2.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\n\n//  ------------------------------ | ERROR 404 2 | ------------------------------  //\n\nexport default function Error4042() {\n  return (\n    <section className=\"flex h-[100vh] min-h-[600px] flex-col items-center justify-center gap-6 px-4 py-16 text-center\">\n      <div className=\"mb-8\">\n        <img\n          src=\"https://cdn.uiable.com/block/img-error-404.svg\"\n          alt=\"404 Page Not Found Illustration\"\n          className=\"h-auto max-w-full select-none\"\n        />\n      </div>\n      <div className=\"flex flex-col gap-2\">\n        <h1>Page Not Found</h1>\n        <p className=\"text-muted-foreground\">\n          The page you are looking for was moved, removed, renamed, or might\n          never exist!\n        </p>\n      </div>\n      <div>\n        <Button>Back to Home</Button>\n      </div>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/error-404/error404-2/error404-2.tsx"
+    }
+  ],
+  "categories": ["error-404"],
+  "type": "registry:block"
+}

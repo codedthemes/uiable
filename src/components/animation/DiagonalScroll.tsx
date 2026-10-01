@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, type ReactNode, type RefObject } from "react"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
+// types
 interface DiagonalScrollProps {
   badge: ReactNode
   src: string
@@ -16,17 +17,14 @@ interface DiagonalScrollProps {
 
 //  ------------------------------ | DIAGONAL SCROLL | ------------------------------  //
 
-function ScrollImage({
-  innerRef,
-  src,
-  darkSrc,
-  opacity,
-}: {
+interface ScrollImageProps {
   innerRef: RefObject<HTMLDivElement | null>
   src: string
   darkSrc?: string
   opacity: number
-}) {
+}
+
+function ScrollImage({ innerRef, src, darkSrc, opacity }: ScrollImageProps) {
   return (
     <div
       ref={innerRef}
@@ -97,7 +95,7 @@ export default function DiagonalScroll({
   return (
     <div
       className={cn(
-        "relative flex h-full min-h-[380px] w-full items-center justify-center overflow-hidden rounded-3xl select-none sm:min-h-[440px] md:min-h-[500px]",
+        "relative flex h-full min-h-[260px] w-full items-center justify-center overflow-hidden rounded-3xl select-none sm:min-h-[300px] md:min-h-[340px]",
         className
       )}
     >

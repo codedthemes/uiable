@@ -94,11 +94,11 @@ type GroupChatItem =
       scrollAnchor?: boolean
     }
 
-function GroupChatMessage({
-  item,
-}: {
+interface GroupChatMessageProps {
   item: Extract<GroupChatItem, { type: "message" }>
-}) {
+}
+
+function GroupChatMessage({ item }: GroupChatMessageProps) {
   const isCurrentUser = item.sender === currentUser
   const variant = isCurrentUser
     ? "muted"
@@ -128,13 +128,12 @@ function GroupChatMessage({
   )
 }
 
-function GroupChatMarker({
-  item,
-  scrollAnchor = false,
-}: {
+interface GroupChatMarkerProps {
   item: Extract<GroupChatItem, { type: "event" }>
   scrollAnchor?: boolean
-}) {
+}
+
+function GroupChatMarker({ item, scrollAnchor = false }: GroupChatMarkerProps) {
   return (
     <MessageScrollerItem scrollAnchor={scrollAnchor}>
       <motion.div

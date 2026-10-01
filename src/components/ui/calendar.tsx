@@ -6,6 +6,7 @@ import { ComponentProps, useEffect, useRef } from "react"
 import { Button, buttonVariants } from "@/components/ui/button"
 
 // third-party
+import { cn } from "cn"
 import {
   DayPicker,
   getDefaultClassNames,
@@ -13,15 +14,14 @@ import {
   type Locale,
 } from "react-day-picker"
 
-// project-imports
-import { cn } from "@/lib/utils"
-
 // assets
 import {
+  ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-  ChevronDownIcon,
 } from "lucide-react"
+
+// types
 
 function Calendar({
   className,
@@ -212,6 +212,7 @@ function CalendarDayButton({
     <Button
       variant="ghost"
       size="icon"
+      suppressHydrationWarning
       data-day={day.date.toLocaleDateString(locale?.code)}
       data-selected-single={
         modifiers.selected &&

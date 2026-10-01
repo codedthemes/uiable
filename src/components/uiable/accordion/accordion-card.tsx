@@ -13,7 +13,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-// constants
 const items = [
   {
     value: "plans",

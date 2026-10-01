@@ -16,7 +16,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-// constants
 const countries = [
   { label: "United States", value: "us" },
   { label: "United Kingdom", value: "uk" },

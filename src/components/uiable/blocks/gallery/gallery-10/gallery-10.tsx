@@ -10,11 +10,11 @@ import {
 } from "@/components/ui/carousel"
 
 // third-party
+import { cn } from "cn"
 import Autoplay from "embla-carousel-autoplay"
 
 // project-imports
 import Star from "@/images/svg/icons/star"
-import { cn } from "@/lib/utils"
 
 // assets
 import { ArrowLeft, ArrowRight } from "lucide-react"

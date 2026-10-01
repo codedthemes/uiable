@@ -2,8 +2,8 @@
 
 import { ComponentProps } from "react"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 function Label({ className, ...props }: ComponentProps<"label">) {
   return (

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-login-1",
+  "title": "Login 1",
+  "description": "Login 1 variant for block.",
+  "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/checkbox", "@uiable/input", "@uiable/logo"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/login/login-1/login-1.tsx",
+      "content": "// next\nimport Link from \"next/link\"\n\n// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { Card, CardContent } from \"@/components/ui/card\"\nimport { Checkbox } from \"@/components/ui/checkbox\"\nimport { Input } from \"@/components/ui/input\"\n\n// project-imports\nimport Logo from \"@/components/uiable/layout/shared/logo\"\n\n//  ------------------------------ | LOGIN | ------------------------------  //\n\nexport default function Login1() {\n  return (\n    <div className=\"flex min-h-screen w-full items-center justify-center bg-[url('https://cdn.uiable.com/authentication/img-auth-bg.jpg')] bg-cover bg-center px-4 py-10 dark:bg-[url('https://cdn.uiable.com/authentication/img-auth-bg-dark.jpg')]\">\n      <Card className=\"w-full max-w-md shadow-none\">\n        <CardContent className=\"space-y-4 p-6 sm:p-10\">\n          <div className=\"text-center\">\n            <Logo className=\"mb-2 justify-center\" link={false} />\n          </div>\n\n          <div className=\"mb-4 text-center\">\n            <h4 className=\"mb-4 text-center font-medium\">\n              Login with your email\n            </h4>\n          </div>\n\n          <div className=\"grid gap-0\">\n            <div className=\"mb-3 grid gap-2\">\n              <Input\n                id=\"email\"\n                type=\"email\"\n                placeholder=\"Email Address\"\n                required\n              />\n            </div>\n            <div className=\"mb-4 grid gap-2\">\n              <Input\n                id=\"password\"\n                type=\"password\"\n                placeholder=\"Password\"\n                required\n              />\n            </div>\n            <div className=\"mt-1 flex flex-wrap items-center justify-between gap-2\">\n              <div className=\"flex items-center space-x-2\">\n                <Checkbox\n                  id=\"remember\"\n                  className=\"rounded border-[#bec8d0] data-[state=checked]:border-primary data-[state=checked]:bg-primary\"\n                  defaultChecked\n                />\n                <label\n                  htmlFor=\"remember\"\n                  className=\"peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"\n                >\n                  Remember me?\n                </label>\n              </div>\n              <Link href=\"#\" className=\"text-primary\">\n                Forgot Password?\n              </Link>\n            </div>\n            <Button className=\"mt-4 w-full\">Login</Button>\n          </div>\n          <div className=\"mt-4 flex flex-wrap items-end justify-between gap-2\">\n            <h6 className=\"f-w-500 mb-0\">Don't have an Account?</h6>\n            <Link href=\"#\" className=\"text-primary\">\n              Create Account\n            </Link>\n          </div>\n        </CardContent>\n      </Card>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/login/login-1/login-1.tsx"
+    }
+  ],
+  "categories": ["login"],
+  "type": "registry:block"
+}

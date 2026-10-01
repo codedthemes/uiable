@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mobile-nav",
+  "title": "Mobile Nav",
+  "description": "Layout Mobile Nav variant for component.",
+  "dependencies": ["cn"],
+  "files": [
+    {
+      "path": "src/components/uiable/layout/shared/mobile-nav.tsx",
+      "content": "\"use client\"\n\n// next\nimport Link from \"next/link\"\nimport { usePathname } from \"next/navigation\"\n\n// third-party\nimport { cn } from \"cn\"\n\ninterface MobileNavProps {\n  onSelect?: () => void\n  className?: string\n}\n\n//  ------------------------------ | SHARED - MOBILE NAV | ------------------------------  //\n\nexport default function MobileNav({ onSelect, className }: MobileNavProps) {\n  const pathname = usePathname()\n\n  const links = [\n    { label: \"Dashboard\", href: \"/admin-dashboard\" },\n    { label: \"Components\", href: \"/components\" },\n    { label: \"Documentation\", href: \"/doc\" },\n  ]\n\n  return (\n    <nav className={cn(\"flex flex-col gap-2\", className)}>\n      {links.map((link) => (\n        <Link\n          key={link.href}\n          href={link.href}\n          onClick={onSelect}\n          className={cn(\n            \"rounded-lg px-3 py-2 text-sm font-medium transition-colors\",\n            pathname === link.href ||\n              (link.href === \"/components\" &&\n                pathname.startsWith(\"/components\"))\n              ? \"bg-primary/10 text-primary\"\n              : \"hover:bg-muted\"\n          )}\n        >\n          {link.label}\n        </Link>\n      ))}\n    </nav>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/layout/shared/mobile-nav.tsx"
+    }
+  ],
+  "categories": ["layout"],
+  "type": "registry:ui"
+}

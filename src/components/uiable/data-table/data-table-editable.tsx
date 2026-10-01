@@ -49,7 +49,6 @@ import {
 // assets
 import { ArrowUpDown, MoreHorizontal, Plus, Trash2 } from "lucide-react"
 
-// types
 export type Payment = {
   id: string
   amount: number
@@ -120,17 +119,19 @@ const initialData: Payment[] = [
   },
 ]
 
+interface EditableCellProps {
+  getValue: () => unknown
+  row: { index: number }
+  column: { id: string }
+  table: any
+}
+
 function EditableEmailCell({
   getValue,
   row,
   column,
   table,
-}: {
-  getValue: () => unknown
-  row: { index: number }
-  column: { id: string }
-  table: any
-}) {
+}: EditableCellProps) {
   const initialValue = getValue() as string
   const [value, setValue] = useState(initialValue)
   const [prevInitialValue, setPrevInitialValue] = useState(initialValue)
@@ -159,12 +160,7 @@ function EditableAmountCell({
   row,
   column,
   table,
-}: {
-  getValue: () => unknown
-  row: { index: number }
-  column: { id: string }
-  table: any
-}) {
+}: EditableCellProps) {
   const initialValue = getValue() as number
   const [value, setValue] = useState<string>(initialValue.toString())
   const [prevInitialValue, setPrevInitialValue] = useState(initialValue)

@@ -12,7 +12,6 @@ import {
   ComboboxSeparator,
 } from "@/components/ui/combobox"
 
-// constants
 const timezones = [
   {
     value: "Americas",

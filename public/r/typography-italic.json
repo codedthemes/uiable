@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/components/uiable/typography/typography-italic.tsx",
-      "content": "export function TypographyItalic() {\n  return <span className=\"italic\">This is italic text</span>\n}\n",
+      "content": "//  ------------------------------ | TYPOGRAPHY - ITALIC | ------------------------------  //\n\nexport function TypographyItalic() {\n  return <span className=\"italic\">This is italic text</span>\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/typography/typography-italic.tsx"
     }

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "component-search",
+  "title": "Component Search",
+  "description": "Layout Component Search variant for component.",
+  "dependencies": ["cn", "lucide-react"],
+  "registryDependencies": ["@uiable/input"],
+  "files": [
+    {
+      "path": "src/components/uiable/layout/shared/component-search.tsx",
+      "content": "\"use client\"\n\n// shadcn\nimport { Input } from \"@/components/ui/input\"\n\n// third-party\nimport { cn } from \"cn\"\n\n// assets\nimport { Search } from \"lucide-react\"\n\ninterface ComponentSearchProps {\n  value: string\n  onChange: (value: string) => void\n  className?: string\n  placeholder?: string\n}\n\n//  ------------------------------ | SHARED - COMPONENT SEARCH | ------------------------------  //\n\nexport default function ComponentSearch({\n  value,\n  onChange,\n  className,\n  placeholder = \"Search Doc/Blocks/Components\",\n}: ComponentSearchProps) {\n  return (\n    <div className={cn(\"relative w-full\", className)}>\n      <Search className=\"absolute top-2.5 left-3 h-3.5 w-3.5 text-muted-foreground\" />\n      <Input\n        id=\"component-search-input\"\n        placeholder={placeholder}\n        className=\"h-auto bg-card py-1.5 pl-8\"\n        value={value}\n        onChange={(e) => onChange(e.target.value)}\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/layout/shared/component-search.tsx"
+    }
+  ],
+  "categories": ["layout"],
+  "type": "registry:ui"
+}

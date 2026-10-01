@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "src/components/uiable/progress/progress-circular-with-label.tsx",
-      "content": "// shadcn\nimport { CircularProgress } from \"@/components/ui/circular-progress\"\n\n//  ------------------------------ | PROGRESS - CIRCULAR WITH LABEL | ------------------------------  //\n\nexport default function ProgressCircularWithLabel() {\n  const value = 75\n\n  return (\n    <div className=\"flex w-full items-center justify-center py-6\">\n      <CircularProgress\n        value={value}\n        size={85}\n        strokeWidth={10}\n        showValue={true}\n      />\n    </div>\n  )\n}\n",
+      "content": "// components\n\n// shadcn\nimport { CircularProgress } from \"@/components/ui/circular-progress\"\n\n//  ------------------------------ | PROGRESS - CIRCULAR WITH LABEL | ------------------------------  //\n\nexport default function ProgressCircularWithLabel() {\n  const value = 75\n\n  return (\n    <div className=\"flex w-full items-center justify-center py-6\">\n      <CircularProgress\n        value={value}\n        size={85}\n        strokeWidth={10}\n        showValue={true}\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-circular-with-label.tsx"
     }

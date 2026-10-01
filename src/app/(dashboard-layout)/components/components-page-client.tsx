@@ -1,134 +1,336 @@
 "use client"
 
-import { ComponentType, useEffect, useState } from "react"
+import { ComponentType, ReactNode, useState } from "react"
 
 // next
 import Link from "next/link"
 
 // shadcn
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Field, FieldLabel } from "@/components/ui/field"
+import { Switch } from "@/components/ui/switch"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 // third-party
-import { Link1 } from "iconsax-reactjs"
+import { cn } from "cn"
+import { ArrowRight2 } from "iconsax-reactjs"
 
 // project-imports
+import { OTHER_DEMOS } from "./demos"
+import {
+  clickState,
+  cursorState,
+  isActiveAt,
+  pressScale,
+  HOVER_TIMELINE,
+} from "./timeline"
+// project
 import branding from "@/branding.json"
 import CATEGORY_COUNTS from "@/category-counts.json"
-import { NAV_CATEGORIES } from "@/components-grid"
-import Intro from "@/images/svg/Intro"
+import { NAV_COMPONENTS } from "@/components-grid"
+import { DynamicSVG } from "@/components/category-dynamic-svg"
+import { useCycleClock } from "@/hooks/use-cycle-clock"
 
-/**
- * SVG Mapping for categories whose slug doesn't match the filename directly
- */
-const SVG_MAPPING: Record<string, string> = {
-  "date-picker": "datepicker",
-  "dropdown-menu": "dropdown",
+// assets
+import { MousePointer2 } from "lucide-react"
+
+//  ------------------------------ | SHARED CURSOR/RIPPLE PIECES | ------------------------------  //
+
+interface DemoCursorProps {
+  x: number
+  y: number
+  opacity: number
+  scale: number
+  anchorClassName?: string
 }
 
-type SvgIconComponent = ComponentType<{ className?: string }>
-type SvgIconModule = { default: SvgIconComponent }
-
-/**
- * Dynamic SVG importers map.
- * Paths remain explicit so Turbopack can include the chunks.
- */
-const SVG_IMPORTERS: Record<string, () => Promise<SvgIconModule>> = {
-  accordion: () => import("@/images/svg/accordion"),
-  alert: () => import("@/images/svg/alert"),
-  "alert-dialog": () => import("@/images/svg/AlertDialog"),
-  "aspect-ratio": () => import("@/images/svg/AspectRatio"),
-  avatar: () => import("@/images/svg/avatar"),
-  badge: () => import("@/images/svg/badge"),
-  breadcrumb: () => import("@/images/svg/breadcrumb"),
-  button: () => import("@/images/svg/button"),
-  "button-group": () => import("@/images/svg/ButtonGroup"),
-  calendar: () => import("@/images/svg/calendar"),
-  card: () => import("@/images/svg/card"),
-  carousel: () => import("@/images/svg/carousel"),
-  chart: () => import("@/images/svg/chart"),
-  checkbox: () => import("@/images/svg/checkbox"),
-  collapsible: () => import("@/images/svg/collapsible"),
-  combobox: () => import("@/images/svg/combobox"),
-  command: () => import("@/images/svg/command"),
-  "context-menu": () => import("@/images/svg/ContextMenu"),
-  "data-table": () => import("@/images/svg/DataTable"),
-  datepicker: () => import("@/images/svg/datepicker"),
-  dialog: () => import("@/images/svg/dialog"),
-  drawer: () => import("@/images/svg/drawer"),
-  dropdown: () => import("@/images/svg/dropdown"),
-  empty: () => import("@/images/svg/empty"),
-  field: () => import("@/images/svg/field"),
-  "hover-card": () => import("@/images/svg/HoverCard"),
-  input: () => import("@/images/svg/input"),
-  "input-group": () => import("@/images/svg/InputGroup"),
-  "input-otp": () => import("@/images/svg/InputOtp"),
-  item: () => import("@/images/svg/item"),
-  kbd: () => import("@/images/svg/kbd"),
-  label: () => import("@/images/svg/label"),
-  "list-group": () => import("@/images/svg/ListGroup"),
-  menubar: () => import("@/images/svg/menubar"),
-  "native-select": () => import("@/images/svg/NativeSelect"),
-  "navigation-menu": () => import("@/images/svg/NavigationMenu"),
-  pagination: () => import("@/images/svg/pagination"),
-  popover: () => import("@/images/svg/popover"),
-  progress: () => import("@/images/svg/progress"),
-  radio: () => import("@/images/svg/radio"),
-  "radio-group": () => import("@/images/svg/RadioGroup"),
-  resizable: () => import("@/images/svg/resizable"),
-  "scroll-area": () => import("@/images/svg/ScrollArea"),
-  select: () => import("@/images/svg/select"),
-  separator: () => import("@/images/svg/separator"),
-  sheet: () => import("@/images/svg/sheet"),
-  sidebar: () => import("@/images/svg/sidebar"),
-  skeleton: () => import("@/images/svg/skeleton"),
-  slider: () => import("@/images/svg/slider"),
-  sonner: () => import("@/images/svg/sonner"),
-  spinner: () => import("@/images/svg/spinner"),
-  switch: () => import("@/images/svg/switch"),
-  table: () => import("@/images/svg/table"),
-  tabs: () => import("@/images/svg/tabs"),
-  textarea: () => import("@/images/svg/textarea"),
-  toggle: () => import("@/images/svg/toggle"),
-  "toggle-group": () => import("@/images/svg/ToggleGroup"),
-  tooltip: () => import("@/images/svg/tooltip"),
-  typography: () => import("@/images/svg/typography"),
-  navbar: () => import("@/images/svg/ComponentSoon"),
+export function DemoCursor({
+  x,
+  y,
+  opacity,
+  scale,
+  anchorClassName = "top-1/2 left-1/2",
+}: DemoCursorProps) {
+  return (
+    <MousePointer2
+      className={cn(
+        "pointer-events-none absolute size-5 fill-foreground text-foreground",
+        anchorClassName
+      )}
+      style={{
+        transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${scale})`,
+        opacity,
+      }}
+    />
+  )
 }
 
+interface DemoRippleProps {
+  opacity: number
+  scale: number
+  anchorClassName?: string
+}
+
+export function DemoRipple({
+  opacity,
+  scale,
+  anchorClassName = "top-1/2 left-1/2",
+}: DemoRippleProps) {
+  return (
+    <span
+      className={cn(
+        "pointer-events-none absolute size-10 rounded-full bg-primary/40",
+        anchorClassName
+      )}
+      style={{ transform: `translate(-50%, -50%) scale(${scale})`, opacity }}
+    />
+  )
+}
+
+//  ------------------------------ | DEMO PREVIEWS | ------------------------------  //
+
+function ButtonDemo({ hovered }: { hovered: boolean }) {
+  const t = useCycleClock(HOVER_TIMELINE.cycle, 0, hovered)
+  const { cursor, ripple, press } = clickState(
+    t,
+    { x: 46, y: -34 },
+    HOVER_TIMELINE
+  )
+
+  return (
+    <div className="relative flex size-full items-center justify-center">
+      <DemoRipple opacity={ripple.opacity} scale={ripple.scale} />
+      <Button
+        size="sm"
+        className="pointer-events-none relative"
+        style={{ transform: `scale(${press})` }}
+      >
+        Click me
+      </Button>
+      <DemoCursor {...cursor} />
+    </div>
+  )
+}
+
+function SwitchDemo({ hovered }: { hovered: boolean }) {
+  const t = useCycleClock(HOVER_TIMELINE.cycle, 0, hovered)
+  const checked = isActiveAt(t, HOVER_TIMELINE)
+  const { cursor, ripple, press } = clickState(
+    t,
+    { x: 46, y: -32 },
+    HOVER_TIMELINE
+  )
+
+  return (
+    <div className="relative flex size-full items-center justify-center">
+      <DemoRipple opacity={ripple.opacity} scale={ripple.scale} />
+      <Field
+        orientation="horizontal"
+        className="pointer-events-none w-fit"
+        style={{ transform: `scale(${press})` }}
+      >
+        <Switch
+          checked={checked}
+          onCheckedChange={() => {}}
+          id="lottie-switch"
+        />
+        <FieldLabel htmlFor="lottie-switch" className="font-normal">
+          Notifications
+        </FieldLabel>
+      </Field>
+      <DemoCursor {...cursor} />
+    </div>
+  )
+}
+
+function CheckboxDemo({ hovered }: { hovered: boolean }) {
+  const t = useCycleClock(HOVER_TIMELINE.cycle, 0, hovered)
+  const checked = isActiveAt(t, HOVER_TIMELINE)
+  const { cursor, ripple, press } = clickState(
+    t,
+    { x: 44, y: -30 },
+    HOVER_TIMELINE
+  )
+
+  return (
+    <div className="relative flex size-full items-center justify-center">
+      <DemoRipple opacity={ripple.opacity} scale={ripple.scale} />
+      <Field
+        orientation="horizontal"
+        className="pointer-events-none w-fit"
+        style={{ transform: `scale(${press})` }}
+      >
+        <Checkbox
+          checked={checked}
+          onCheckedChange={() => {}}
+          id="lottie-checkbox"
+        />
+        <FieldLabel htmlFor="lottie-checkbox" className="font-normal">
+          Accept terms
+        </FieldLabel>
+      </Field>
+      <DemoCursor {...cursor} />
+    </div>
+  )
+}
+
+function AccordionDemo({ hovered }: { hovered: boolean }) {
+  const t = useCycleClock(HOVER_TIMELINE.cycle, 0, hovered)
+  const open = isActiveAt(t, HOVER_TIMELINE)
+  const cursor = cursorState(t, { x: 42, y: -36 }, HOVER_TIMELINE)
+
+  return (
+    <div className="relative size-full">
+      <Accordion
+        value={open ? ["item-1"] : []}
+        onValueChange={() => {}}
+        className="w-full"
+      >
+        <AccordionItem
+          value="item-1"
+          className="pointer-events-none rounded-md border-border bg-background px-3"
+        >
+          <AccordionTrigger className="py-2 text-sm font-medium hover:no-underline">
+            Is it accessible?
+          </AccordionTrigger>
+          <AccordionContent className="pb-2 text-xs text-muted-foreground">
+            Yes, it adheres to the WAI-ARIA pattern.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+      <DemoCursor {...cursor} anchorClassName="top-4 left-[78%]" />
+    </div>
+  )
+}
+
+function TabsDemo({ hovered }: { hovered: boolean }) {
+  const t = useCycleClock(HOVER_TIMELINE.cycle, 0, hovered)
+  const active = isActiveAt(t, HOVER_TIMELINE) ? "profile" : "home"
+  const cursor = cursorState(t, { x: 30, y: -30 }, HOVER_TIMELINE)
+
+  return (
+    <div className="relative flex size-full items-center justify-center">
+      <Tabs
+        value={active}
+        onValueChange={() => {}}
+        className="pointer-events-none w-52"
+      >
+        <TabsList className="w-full">
+          <TabsTrigger value="home">Home</TabsTrigger>
+          <TabsTrigger value="profile">Profile</TabsTrigger>
+        </TabsList>
+        <TabsContent
+          value="home"
+          className="mt-2 text-xs text-muted-foreground"
+        >
+          Home content preview.
+        </TabsContent>
+        <TabsContent
+          value="profile"
+          className="mt-2 text-xs text-muted-foreground"
+        >
+          Profile content.
+        </TabsContent>
+      </Tabs>
+      <DemoCursor {...cursor} anchorClassName="top-[26%] left-[74%]" />
+    </div>
+  )
+}
+
+//  ------------------------------ | SVG FALLBACK | ------------------------------  //
+
 /**
- * DynamicSVG Component
- * Loads category-specific SVG illustrations with dynamic imports
+ * For the structural categories with no compact live preview (navbar,
+ * sidebar, and anything without a registered demo) — fall back to the
+ * existing decorative illustration. Always visible at rest (never blank);
+ * hovering adds a brief attention pulse via the shared click-bounce curve.
  */
-function DynamicSVG({ slug }: { slug: string }) {
-  const [SVGComp, setSVGComp] = useState<SvgIconComponent>(() => Intro)
+interface SvgFallbackDemoProps {
+  slug: string
+  hovered: boolean
+}
 
-  useEffect(() => {
-    let mounted = true
-    const mappedName = SVG_MAPPING[slug] || slug
-    const importer = SVG_IMPORTERS[mappedName]
+function SvgFallbackDemo({ slug, hovered }: SvgFallbackDemoProps) {
+  const t = useCycleClock(HOVER_TIMELINE.cycle, 0, hovered)
+  const press = pressScale(t, HOVER_TIMELINE)
+  const scale = 2 - press
 
-    if (!importer) {
-      setTimeout(() => setSVGComp(() => Intro), 0)
-      return () => {
-        mounted = false
-      }
-    }
+  return (
+    <div
+      className="pointer-events-none flex size-full items-center justify-center"
+      style={{ transform: `scale(${scale})` }}
+    >
+      <DynamicSVG slug={slug} />
+    </div>
+  )
+}
 
-    importer()
-      .then((mod) => {
-        if (mounted) setSVGComp(() => mod.default)
-      })
-      .catch((err) => {
-        console.error(`Failed to load SVG for ${slug} (${mappedName}):`, err)
-        if (mounted) setSVGComp(() => Intro)
-      })
+//  ------------------------------ | CARD SHELL | ------------------------------  //
 
-    return () => {
-      mounted = false
-    }
-  }, [slug])
+interface DemoCardProps {
+  slug: string
+  title: string
+  children: ReactNode | ((hovered: boolean) => ReactNode)
+  badgeLabel?: string
+}
 
-  return <SVGComp className="h-auto w-full" />
+function DemoCard({ slug, title, children, badgeLabel }: DemoCardProps) {
+  const count = CATEGORY_COUNTS[slug as keyof typeof CATEGORY_COUNTS] || 0
+  const [hovered, setHovered] = useState(false)
+
+  return (
+    <Link
+      href={`/components/${slug}`}
+      className="group block h-full"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <Card className="mb-0 flex h-full flex-col overflow-hidden transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-primary/40 group-hover:shadow-md">
+        <CardContent className="flex h-full flex-col gap-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <h5>{title}</h5>
+              {badgeLabel && (
+                <Badge className="border-transparent bg-red-500/15 text-red-500">
+                  {badgeLabel}
+                </Badge>
+              )}
+            </div>
+            <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+              <span>
+                {count} {count === 1 ? "variant" : "variants"}
+              </span>
+              <ArrowRight2 className="size-3.5 -translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:text-primary group-hover:opacity-100" />
+            </div>
+          </div>
+
+          <div className="relative h-40 flex-1 overflow-hidden rounded-md border border-dashed border-border/70 bg-muted/30 p-8 transition-colors duration-300 group-hover:border-primary/30 group-hover:bg-muted/50">
+            {typeof children === "function" ? children(hovered) : children}
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
+  )
+}
+
+//  ------------------------------ | DEMOS LOOKUP | ------------------------------  //
+
+const DEMOS: Record<string, ComponentType<{ hovered: boolean }>> = {
+  button: ButtonDemo,
+  switch: SwitchDemo,
+  checkbox: CheckboxDemo,
+  accordion: AccordionDemo,
+  tabs: TabsDemo,
+  ...OTHER_DEMOS,
 }
 
 //  ------------------------------ | PAGE - COMPONENTS | ------------------------------  //
@@ -140,14 +342,13 @@ export default function ComponentsPageClient() {
         <h2>UI Components - {branding.brandName}</h2>
         <p>
           450+ production-ready React UI components built with Tailwind CSS,
-          powered by shadcn/ui and Base UI. Designed for modern Next.js
-          applications with accessibility, customization, and developer
-          experience in mind.
+          powered by shadcn/ui and Base UI. Hover any card below for a live
+          interactive preview.
         </p>
       </div>
 
       <div className="mt-4 grid gap-12">
-        {NAV_CATEGORIES.map((section) => (
+        {NAV_COMPONENTS.map((section) => (
           <div key={section.title} className="flex flex-col gap-6">
             <div className="flex items-center gap-5">
               <h5 className="tracking-[0.1em] uppercase opacity-60">
@@ -158,36 +359,17 @@ export default function ComponentsPageClient() {
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {section.items.map((item) => {
-                const count =
-                  CATEGORY_COUNTS[item.slug as keyof typeof CATEGORY_COUNTS] ||
-                  0
+                const Demo = DEMOS[item.slug]
                 return (
-                  <Link
-                    key={item.slug}
-                    href={`/components/${item.slug}`}
-                    className="group block"
-                  >
-                    <Card className="an1imate-wiggle mb-0 overflow-hidden transition-all duration-300 animate-alternate animate-infinite">
-                      <CardContent>
-                        <div className="mb-1 flex items-center justify-between">
-                          <div className="flex flex-col gap-1">
-                            <h5>{item.title}</h5>
-                            <p className="text-sm text-primary">
-                              {count} {count === 1 ? "variant" : "variants"}
-                            </p>
-                          </div>
-                          <div className="flex flex-row items-center gap-2 group-hover:text-primary">
-                            View all
-                            <Link1 className="size-5 opacity-20 transition-all group-hover:text-primary group-hover:opacity-100 dark:opacity-50" />
-                          </div>
-                        </div>
-                        <div className="my-4 h-px flex-1 bg-border/70" />
-                        <CardContent className="flex min-h-20 items-center justify-center p-0">
-                          <DynamicSVG slug={item.slug} />
-                        </CardContent>
-                      </CardContent>
-                    </Card>
-                  </Link>
+                  <DemoCard key={item.slug} slug={item.slug} title={item.title}>
+                    {(hovered) =>
+                      Demo ? (
+                        <Demo hovered={hovered} />
+                      ) : (
+                        <SvgFallbackDemo slug={item.slug} hovered={hovered} />
+                      )
+                    }
+                  </DemoCard>
                 )
               })}
             </div>

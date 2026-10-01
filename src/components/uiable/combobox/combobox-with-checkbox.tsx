@@ -17,14 +17,11 @@ import {
 
 // third-party
 import { Combobox as ComboboxPrimitive } from "@base-ui/react"
-
-// project-imports
-import { cn } from "@/lib/utils"
+import { cn } from "cn"
 
 // assets
 import { CheckIcon } from "lucide-react"
 
-// constants
 const frameworks = [
   "Next.js",
   "SvelteKit",

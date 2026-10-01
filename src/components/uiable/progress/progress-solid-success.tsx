@@ -8,7 +8,7 @@ export default function ProgressSolidSuccess() {
     <div className="w-full">
       <Progress
         value={25}
-        className="*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-green-600 dark:*:bg-muted/10"
+        className="*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-green-600 dark:*:bg-muted/40"
       />
     </div>
   )

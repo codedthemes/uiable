@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -21,6 +20,9 @@ export const sliderInfo: CategoryInfo = {
     "Default . Standard horizontal slider with a single thumb for one value",
     "Range Slider . Slider with two thumbs for selecting a minimum and maximum range",
     "With Marks . Slider displaying distinct step intervals or tick marks along the track",
+    "Emoji Rating . Interactive satisfaction rating slider with animated emoji avatars",
+    "Color Options . Hue palette slider with live swatch preview and presets",
+    "Equalizer Price Range . Animated price range slider with interactive equalizer distribution bars",
     "Vertical . Slider oriented vertically for volume controls or equalizers",
     "Disabled . Read-only state with muted styling and blocked interactions",
   ],

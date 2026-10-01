@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 // assets
 import { ChevronRight } from "lucide-react"
 
-// constants
 const plans = [
   {
     recommended: false,
@@ -75,13 +74,16 @@ export default function Pricing2() {
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4">
-                <Button size="lg" className="rounded-full bg-sky-500">
+                <Button
+                  size="lg"
+                  className="rounded-full bg-sky-500 hover:translate-y-1 hover:opacity-90"
+                >
                   Start Free Trial
                 </Button>
 
                 <Button
                   size="lg"
-                  className="rounded-full bg-slate-200 text-card-foreground dark:bg-slate-800"
+                  className="rounded-full bg-slate-200 text-card-foreground hover:translate-y-1 hover:opacity-90 dark:bg-slate-800"
                 >
                   Compare Plans
                 </Button>
@@ -135,7 +137,7 @@ export default function Pricing2() {
                         <Button
                           size="lg"
                           className={
-                            "w-full rounded-full border-2 border-sky-500 " +
+                            "w-full rounded-full border-2 border-sky-500 hover:translate-y-1 hover:opacity-90 " +
                             (plan.recommended
                               ? "bg-sky-500 text-white"
                               : " bg-transparent text-sky-500")

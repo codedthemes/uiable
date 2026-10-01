@@ -29,7 +29,7 @@ import {
 // third-party
 import { toast } from "sonner"
 
-// project-importss
+// project-imports
 import { MessageAnimated } from "@/components/message-animated"
 
 // assets

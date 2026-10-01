@@ -24,11 +24,7 @@ export default function PaginationState() {
           <PaginationLink href="#">1</PaginationLink>
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink
-            href="#"
-            isActive
-            className="bg-primary text-primary-foreground"
-          >
+          <PaginationLink href="#" isActive className="bg-primary text-white">
             2
           </PaginationLink>
         </PaginationItem>

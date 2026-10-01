@@ -51,7 +51,6 @@ import {
   MoreHorizontal,
 } from "lucide-react"
 
-// types
 export type UserRecord = {
   id: string
   name: string

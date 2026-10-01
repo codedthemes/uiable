@@ -6,8 +6,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Switch } from "@/components/ui/switch"
 
-// project-importss
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 // assets
 import { Moon, Sun } from "lucide-react"

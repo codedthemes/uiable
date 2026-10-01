@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "questionnaire-skippable",
+  "title": "Questionnaire Skippable",
+  "description": "Questionnaire Skippable variant for component.",
+  "registryDependencies": ["@uiable/questionnaire"],
+  "files": [
+    {
+      "path": "src/components/uiable/questionnaire/questionnaire-skippable.tsx",
+      "content": "\"use client\"\n\n// shadcn\nimport {\n  Questionnaire,\n  QuestionnaireActions,\n  QuestionnaireChoice,\n  QuestionnaireChoices,\n  QuestionnaireDescription,\n  QuestionnaireItem,\n  QuestionnaireNext,\n  QuestionnairePrevious,\n  QuestionnaireSkip,\n  QuestionnaireSubmit,\n  QuestionnaireTitle,\n} from \"@/components/ui/questionnaire\"\n\n//  ------------------------------ | QUESTIONNAIRE - SKIPPPABLE | ------------------------------  //\n\nexport function QuestionnaireSkippable() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Questionnaire\n        onSubmit={(e) => {\n          e.preventDefault()\n          const data = Object.fromEntries(new FormData(e.currentTarget))\n          console.log(data)\n        }}\n      >\n        <QuestionnaireItem name=\"color\">\n          <QuestionnaireTitle>What is your favorite color?</QuestionnaireTitle>\n          <QuestionnaireDescription>\n            Feel free to skip this question if you want.\n          </QuestionnaireDescription>\n          <QuestionnaireChoices>\n            <QuestionnaireChoice value=\"red\">Red</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"blue\">Blue</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"green\">Green</QuestionnaireChoice>\n          </QuestionnaireChoices>\n          <QuestionnaireActions>\n            <QuestionnaireSkip />\n            <QuestionnaireNext />\n          </QuestionnaireActions>\n        </QuestionnaireItem>\n\n        <QuestionnaireItem name=\"likes_shadcn\">\n          <QuestionnaireTitle>Do you like Shadcn UI?</QuestionnaireTitle>\n          <QuestionnaireChoices>\n            <QuestionnaireChoice value=\"yes\">\n              Yes, absolutely\n            </QuestionnaireChoice>\n            <QuestionnaireChoice value=\"no\">Not really</QuestionnaireChoice>\n          </QuestionnaireChoices>\n          <QuestionnaireActions>\n            <QuestionnairePrevious />\n            <QuestionnaireSubmit />\n          </QuestionnaireActions>\n        </QuestionnaireItem>\n      </Questionnaire>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/questionnaire/questionnaire-skippable.tsx"
+    }
+  ],
+  "categories": ["questionnaire"],
+  "type": "registry:ui"
+}

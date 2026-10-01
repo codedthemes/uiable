@@ -1,14 +1,14 @@
-import { ComponentProps } from "react"
+import * as React from "react"
 
 // third-party
 import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
+import { cn } from "cn"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// types
 
-function BubbleGroup({ className, ...props }: ComponentProps<"div">) {
+function BubbleGroup({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="bubble-group"
@@ -50,7 +50,7 @@ function Bubble({
   align = "start",
   className,
   ...props
-}: ComponentProps<"div"> &
+}: React.ComponentProps<"div"> &
   VariantProps<typeof bubbleVariants> & {
     align?: "start" | "end"
   }) {
@@ -113,7 +113,7 @@ function BubbleReactions({
   align = "end",
   className,
   ...props
-}: ComponentProps<"div"> & {
+}: React.ComponentProps<"div"> & {
   align?: "start" | "end"
   side?: "top" | "bottom"
 }) {

@@ -6,7 +6,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-// constants
 const items = [
   {
     value: "item-1",
@@ -42,7 +41,7 @@ const items = [
 
 //  ------------------------------ | FAQ - 1 | ------------------------------  //
 
-export default function faq1() {
+export default function Faq1() {
   return (
     <div className="relative overflow-hidden py-24 sm:py-32">
       <div className="absolute inset-0 z-10 bg-linear-to-r from-cyan-500 to-blue-500"></div>

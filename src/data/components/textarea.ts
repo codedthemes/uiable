@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -19,7 +18,10 @@ export const textareaInfo: CategoryInfo = {
   variantsHeading: "Popular Textarea Variants",
   variants: [
     "Default . Standard multi-line text input field for basic data entry",
-    "Auto-Resizing . Textarea that automatically expands its height based on the user's content",
+    "Helper Text . Textarea paired with helpful descriptive text to guide user input",
+    "Character Count . Textarea with a live character counter to track input length against limits",
+    "Feedback . Dedicated multi-line form layout designed for collecting user suggestions and feedback",
+    "Read Only . Non-editable textarea state for displaying system logs, API notes, or copied text",
     "Error State . Textarea displaying clear visual indicators (red borders) when validation fails",
     "Disabled . Read-only state with muted styling and blocked interactions",
   ],

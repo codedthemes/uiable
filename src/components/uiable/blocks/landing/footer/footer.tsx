@@ -3,10 +3,12 @@ import { ComponentProps } from "react"
 // next
 import Link from "next/link"
 
+// third-party
+import { cn } from "cn"
+
 // project-imports
 import branding from "@/branding.json"
 import Logo from "@/components/uiable/layout/shared/logo"
-import { cn } from "@/lib/utils"
 
 // assets
 import {
@@ -20,7 +22,6 @@ interface FooterProps extends ComponentProps<"footer"> {
   showGradient?: boolean
 }
 
-// constants
 const navLinks = [
   { href: "/components", label: "Components" },
   { href: "/doc/introduction", label: "Documentation" },
@@ -67,14 +68,13 @@ export default function Footer({
           containerClassName
         )}
       >
-        {/* LEFT */}
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2.5">
             <Logo />
           </div>
 
           <p className="text-base leading-6 font-normal text-foreground">
-            v1.10.0 | Built by{" "}
+            v1.11.0 | Built by{" "}
             <Link
               href={branding.company.url}
               target="_blank"
@@ -86,10 +86,8 @@ export default function Footer({
           </p>
         </div>
 
-        {/* RIGHT */}
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center md:items-center">
-          {/* NAV LINKS */}
-          <nav className="flex items-center gap-8">
+          <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
@@ -101,10 +99,11 @@ export default function Footer({
             ))}
           </nav>
 
-          {/* DIVIDER */}
-          <div className="hidden h-6 w-px bg-black/10 sm:block" />
+          <div
+            aria-hidden="true"
+            className="hidden h-6 w-px bg-border sm:block"
+          />
 
-          {/* SOCIALS */}
           <div className="flex items-center gap-2.5">
             {socialLinks.map(({ Icon, href, label }) => (
               <Link
@@ -115,7 +114,7 @@ export default function Footer({
                 aria-label={label}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-card text-foreground transition-colors hover:bg-muted dark:hover:bg-muted"
               >
-                <Icon size={18} />
+                <Icon aria-hidden="true" className="size-4.5" />
               </Link>
             ))}
           </div>

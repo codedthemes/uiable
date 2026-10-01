@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pagination-rounded",
+  "title": "Pagination Rounded",
+  "description": "Pagination Rounded variant for component.",
+  "registryDependencies": ["@uiable/pagination"],
+  "files": [
+    {
+      "path": "src/components/uiable/pagination/pagination-rounded.tsx",
+      "content": "// shadcn\nimport {\n  Pagination,\n  PaginationContent,\n  PaginationItem,\n  PaginationLink,\n  PaginationNext,\n  PaginationPrevious,\n} from \"@/components/ui/pagination\"\n\n//  ------------------------------ | PAGINATION - ROUNDED | ------------------------------  //\n\nexport default function PaginationRounded() {\n  return (\n    <Pagination className=\"justify-start\">\n      <PaginationContent className=\"gap-2\">\n        <PaginationItem>\n          <PaginationPrevious\n            href=\"#\"\n            className=\"rounded-full bg-secondary/50 hover:bg-secondary\"\n          />\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink\n            href=\"#\"\n            className=\"rounded-full bg-secondary/50 hover:bg-secondary\"\n          >\n            1\n          </PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink href=\"#\" isActive className=\"rounded-full\">\n            2\n          </PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationLink\n            href=\"#\"\n            className=\"rounded-full bg-secondary/50 hover:bg-secondary\"\n          >\n            3\n          </PaginationLink>\n        </PaginationItem>\n        <PaginationItem>\n          <PaginationNext\n            href=\"#\"\n            className=\"rounded-full bg-secondary/50 hover:bg-secondary\"\n          />\n        </PaginationItem>\n      </PaginationContent>\n    </Pagination>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/pagination/pagination-rounded.tsx"
+    }
+  ],
+  "categories": ["pagination"],
+  "type": "registry:ui"
+}

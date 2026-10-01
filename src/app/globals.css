@@ -3,6 +3,10 @@
 @import "tailwindcss-animated";
 @import "shadcn/tailwind.css";
 
+@source not "../../skills";
+@source not "../../block-rules.md";
+@source not "../../agent.md";
+
 @font-face {
   font-family: "Inter var";
   font-weight: 100 900;
@@ -189,6 +193,21 @@
       background-position-x: 1rem;
     }
   }
+
+  --animate-gradient-text: gradient-text var(--gradient-speed, 8s) linear
+    infinite;
+
+  @keyframes gradient-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
 
 @layer base {
@@ -284,4 +303,19 @@
 input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: var(--foreground) !important;
+}
+
+[data-checked] .questionnaire-choice-indicator {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+.dark [data-checked] .questionnaire-choice-indicator {
+  background-color: var(--primary);
+}
+[data-checked] .questionnaire-choice-indicator-dot {
+  display: block !important;
+}
+[data-multiple] [data-checked] .questionnaire-choice-indicator-check {
+  display: block !important;
 }

@@ -10,7 +10,7 @@ export default function ProgressMultiple() {
   return (
     <div className="w-full">
       <ProgressPrimitive.Root value={null}>
-        <ProgressTrack className="flex h-4 overflow-hidden rounded-lg bg-muted/20 dark:bg-muted/10">
+        <ProgressTrack className="flex h-4 overflow-hidden rounded-lg bg-muted/20 dark:bg-muted/40">
           <div
             className="h-full shrink-0 bg-primary first:rounded-l-lg last:rounded-r-lg"
             style={{ width: "15%" }}

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 // assets
 import { Info, X } from "lucide-react"
 
-//  ------------------------------ | ALERT - DISMISSIBLE INFO | ------------------------------  //
+// ------------------------------ | ALERT - DISMISSIBLE INFO | ------------------------------ //
 
 export default function AlertDismissibleInfo() {
   const [isVisible, setIsVisible] = useState(true)
@@ -17,7 +17,7 @@ export default function AlertDismissibleInfo() {
   if (!isVisible) return null
 
   return (
-    <Alert className="relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border border-cyan-500/20 bg-cyan-500/10 px-5 py-3 pr-10 text-cyan-700">
+    <Alert className="relative mb-3 flex grid-cols-1 items-center gap-3 rounded-lg border border-cyan-500/20 bg-cyan-500/10 px-5 py-3 pr-10 text-cyan-500">
       <Info className="h-5 w-5 shrink-0" />
       <span>
         <strong>Note:</strong> A new update is available for your software.

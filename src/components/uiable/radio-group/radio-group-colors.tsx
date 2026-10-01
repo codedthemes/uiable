@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 // assets
 import { Check } from "lucide-react"
 
-// constants
 const colors = [
   {
     value: "slate",

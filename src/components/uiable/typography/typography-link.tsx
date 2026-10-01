@@ -1,3 +1,5 @@
+//  ------------------------------ | TYPOGRAPHY - LINK | ------------------------------  //
+
 export function TypographyLink() {
   return (
     <a

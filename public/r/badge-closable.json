@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-closable",
+  "title": "Badge Closable",
+  "description": "Badge Closable variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/badge", "@uiable/button"],
+  "files": [
+    {
+      "path": "src/components/uiable/badge/badge-closable.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// shadcn\nimport { Badge } from \"@/components/ui/badge\"\nimport { Button } from \"@/components/ui/button\"\n\n// assets\nimport { RotateCcw, X } from \"lucide-react\"\n\nconst INITIAL_TAGS = [\n  { id: \"react\", label: \"React\" },\n  { id: \"typescript\", label: \"TypeScript\" },\n  { id: \"tailwind\", label: \"Tailwind CSS\" },\n  { id: \"nextjs\", label: \"Next.js\" },\n]\n\n//  ------------------------------ | BADGE - CLOSABLE | ------------------------------  //\n\nexport function BadgeClosable() {\n  const [tags, setTags] = useState(INITIAL_TAGS)\n\n  const handleRemove = (id: string) => {\n    setTags((prev) => prev.filter((tag) => tag.id !== id))\n  }\n\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      {tags.map((tag) => (\n        <Badge\n          key={tag.id}\n          variant=\"secondary\"\n          className=\"gap-1.5 pr-1 transition-all hover:bg-secondary/80\"\n        >\n          {tag.label}\n          <Button\n            type=\"button\"\n            variant=\"ghost\"\n            size=\"icon-xs\"\n            onClick={() => handleRemove(tag.id)}\n            aria-label={`Remove ${tag.label}`}\n            className=\"size-4 rounded-full hover:bg-muted-foreground/20\"\n          >\n            <X className=\"size-3\" />\n          </Button>\n        </Badge>\n      ))}\n      {tags.length === 0 && (\n        <Button\n          variant=\"ghost\"\n          size=\"sm\"\n          onClick={() => setTags(INITIAL_TAGS)}\n          className=\"h-7 gap-1.5 text-xs text-muted-foreground\"\n        >\n          <RotateCcw className=\"size-3\" />\n          Reset Tags\n        </Button>\n      )}\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/badge/badge-closable.tsx"
+    }
+  ],
+  "categories": ["badge"],
+  "type": "registry:ui"
+}

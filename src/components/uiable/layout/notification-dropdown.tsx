@@ -35,7 +35,7 @@ export default function NotificationDropdown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="min-w-[calc(100vw-8px)] overflow-hidden rounded-xl border-border/40 p-2 shadow-xl sm:min-w-[450px]"
+        className="min-w-[calc(100vw-8px)] overflow-hidden rounded-xl border-border/40 bg-card p-2 shadow-xl sm:min-w-[450px]"
       >
         <DropdownMenuGroup className="flex items-center justify-between p-5">
           <DropdownMenuLabel className="p-0">
@@ -67,8 +67,8 @@ export default function NotificationDropdown() {
                     </span>
                     <h5 className="text-body mb-2">UI/UX Design</h5>
                     <p className="mb-0">
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
+                      Lorem Ipsum has been the industry&apos;s standard dummy
+                      text ever since the 1500s, when an unknown printer took a
                       galley of type and scrambled it to make a type
                     </p>
                   </div>
@@ -87,8 +87,8 @@ export default function NotificationDropdown() {
                     </span>
                     <h5 className="text-body mb-2">Message</h5>
                     <p className="mb-0">
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500.
+                      Lorem Ipsum has been the industry&apos;s standard dummy
+                      text ever since the 1500.
                     </p>
                   </div>
                 </div>
@@ -112,8 +112,8 @@ export default function NotificationDropdown() {
                     </span>
                     <h5 className="text-body mb-2">Forms</h5>
                     <p className="mb-0">
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
+                      Lorem Ipsum has been the industry&apos;s standard dummy
+                      text ever since the 1500s, when an unknown printer took a
                       galley of type and scrambled it to make a type
                     </p>
                   </div>
@@ -161,8 +161,8 @@ export default function NotificationDropdown() {
                     </span>
                     <h5 className="text-body mb-2">Security</h5>
                     <p className="mb-0">
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
+                      Lorem Ipsum has been the industry&apos;s standard dummy
+                      text ever since the 1500s, when an unknown printer took a
                       galley of type and scrambled it to make a type
                     </p>
                   </div>

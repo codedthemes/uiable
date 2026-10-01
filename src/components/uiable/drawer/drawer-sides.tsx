@@ -11,7 +11,6 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
 
-// constants
 const DRAWER_SIDES = ["top", "right", "bottom", "left"] as const
 
 //  ------------------------------ | DRAWER - SIDES | ------------------------------  //
@@ -53,7 +52,7 @@ export function DrawerWithSides() {
             <DrawerFooter>
               <div className="grid grid-cols-2 gap-2">
                 <Button>Submit</Button>
-                <DrawerClose>
+                <DrawerClose asChild>
                   <Button variant="outline">Cancel</Button>
                 </DrawerClose>
               </div>

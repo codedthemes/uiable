@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "navigation-menu-icons",
+  "title": "Navigation Menu Icons",
+  "description": "Navigation Menu Icons variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/navigation-menu"],
+  "files": [
+    {
+      "path": "src/components/uiable/navigation-menu/navigation-menu-icons.tsx",
+      "content": "\"use client\"\n\n// next\nimport Link from \"next/link\"\n\n// shadcn\nimport {\n  NavigationMenu,\n  NavigationMenuItem,\n  NavigationMenuLink,\n  NavigationMenuList,\n  navigationMenuTriggerStyle,\n} from \"@/components/ui/navigation-menu\"\n\n// assets\nimport { HelpCircleIcon, HomeIcon, SettingsIcon, UserIcon } from \"lucide-react\"\n\n//  ------------------------------ | NAVIGATION MENU - ICONS | ------------------------------  //\n\nexport function NavigationMenuIcons() {\n  return (\n    <NavigationMenu>\n      <NavigationMenuList className=\"flex-wrap justify-center gap-y-2\">\n        <NavigationMenuItem>\n          <NavigationMenuLink\n            className={navigationMenuTriggerStyle()}\n            render={\n              <Link href=\"#\" className=\"flex items-center gap-2\">\n                <HomeIcon className=\"size-4\" />\n                <span>Home</span>\n              </Link>\n            }\n          />\n        </NavigationMenuItem>\n        <NavigationMenuItem>\n          <NavigationMenuLink\n            className={navigationMenuTriggerStyle()}\n            render={\n              <Link href=\"#\" className=\"flex items-center gap-2\">\n                <UserIcon className=\"size-4\" />\n                <span>Profile</span>\n              </Link>\n            }\n          />\n        </NavigationMenuItem>\n        <NavigationMenuItem>\n          <NavigationMenuLink\n            className={navigationMenuTriggerStyle()}\n            render={\n              <Link href=\"#\" className=\"flex items-center gap-2\">\n                <SettingsIcon className=\"size-4\" />\n                <span>Settings</span>\n              </Link>\n            }\n          />\n        </NavigationMenuItem>\n        <NavigationMenuItem>\n          <NavigationMenuLink\n            className={navigationMenuTriggerStyle()}\n            render={\n              <Link href=\"#\" className=\"flex items-center gap-2\">\n                <HelpCircleIcon className=\"size-4\" />\n                <span>Help</span>\n              </Link>\n            }\n          />\n        </NavigationMenuItem>\n      </NavigationMenuList>\n    </NavigationMenu>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/navigation-menu/navigation-menu-icons.tsx"
+    }
+  ],
+  "categories": ["navigation-menu"],
+  "type": "registry:ui"
+}

@@ -1,4 +1,3 @@
-// project
 // project-imports
 import { accordionInfo } from "./accordion"
 import { alertInfo } from "./alert"
@@ -20,6 +19,8 @@ import { collapsibleInfo } from "./collapsible"
 import { comboboxInfo } from "./combobox"
 import { commandInfo } from "./command"
 import { contextMenuInfo } from "./context-menu"
+import { couponInfo } from "./coupon"
+import { cursorInfo } from "./cursor"
 import { dataTableInfo } from "./data-table"
 import { datePickerInfo } from "./date-picker"
 import { dialogInfo } from "./dialog"
@@ -46,10 +47,12 @@ import { navigationMenuInfo } from "./navigation-menu"
 import { paginationInfo } from "./pagination"
 import { popoverInfo } from "./popover"
 import { progressInfo } from "./progress"
+import { questionnaireInfo } from "./questionnaire"
 import { radioInfo } from "./radio"
 import { radioGroupInfo } from "./radio-group"
 import { resizableInfo } from "./resizable"
 import { scrollAreaInfo } from "./scroll-area"
+import { searchInfo } from "./search"
 import { selectInfo } from "./select"
 import { separatorInfo } from "./separator"
 import { sheetInfo } from "./sheet"
@@ -62,9 +65,11 @@ import { switchInfo } from "./switch"
 import { tableInfo } from "./table"
 import { tabsInfo } from "./tabs"
 import { textareaInfo } from "./textarea"
+import { timelineInfo } from "./timeline"
 import { toggleInfo } from "./toggle"
 import { toggleGroupInfo } from "./toggle-group"
 import { tooltipInfo } from "./tooltip"
+import { treeViewInfo } from "./tree-view"
 import { typographyInfo } from "./typography"
 
 // types
@@ -78,10 +83,10 @@ export const categoryInfoMap: Record<string, CategoryInfo> = {
   attachment: attachmentInfo,
   avatar: avatarInfo,
   badge: badgeInfo,
+  bubble: bubbleInfo,
   breadcrumb: breadcrumbInfo,
   button: buttonInfo,
   "button-group": buttonGroupInfo,
-  bubble: bubbleInfo,
   calendar: calendarInfo,
   card: cardInfo,
   carousel: carouselInfo,
@@ -91,6 +96,7 @@ export const categoryInfoMap: Record<string, CategoryInfo> = {
   combobox: comboboxInfo,
   command: commandInfo,
   "context-menu": contextMenuInfo,
+  coupon: couponInfo,
   "data-table": dataTableInfo,
   "date-picker": datePickerInfo,
   dialog: dialogInfo,
@@ -108,15 +114,16 @@ export const categoryInfoMap: Record<string, CategoryInfo> = {
   label: labelInfo,
   "list-group": listGroupInfo,
   marker: markerInfo,
+  menubar: menubarInfo,
   message: messageInfo,
   "message-scroller": messageScrollerInfo,
-  menubar: menubarInfo,
   "native-select": nativeSelectInfo,
   navbar: navbarInfo,
   "navigation-menu": navigationMenuInfo,
   pagination: paginationInfo,
   popover: popoverInfo,
   progress: progressInfo,
+  questionnaire: questionnaireInfo,
   radio: radioInfo,
   "radio-group": radioGroupInfo,
   resizable: resizableInfo,
@@ -133,8 +140,12 @@ export const categoryInfoMap: Record<string, CategoryInfo> = {
   table: tableInfo,
   tabs: tabsInfo,
   textarea: textareaInfo,
+  timeline: timelineInfo,
+  "tree-view": treeViewInfo,
   toggle: toggleInfo,
   "toggle-group": toggleGroupInfo,
   tooltip: tooltipInfo,
   typography: typographyInfo,
+  search: searchInfo,
+  cursor: cursorInfo,
 }

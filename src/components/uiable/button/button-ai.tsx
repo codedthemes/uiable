@@ -3,10 +3,8 @@
 import { useState } from "react"
 
 // third-party
+import { cn } from "cn"
 import { motion, AnimatePresence } from "framer-motion"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 // assets
 import { Sparkles } from "lucide-react"

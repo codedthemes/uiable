@@ -14,9 +14,7 @@ export default function ListGroupNumbered() {
               Cras justo odio
             </span>
           </div>
-          <Badge className="bg-primary font-normal text-primary-foreground">
-            14
-          </Badge>
+          <Badge className="bg-primary font-normal text-white">14</Badge>
         </div>
       </li>
       <li className="px-6.25 py-4">
@@ -27,9 +25,7 @@ export default function ListGroupNumbered() {
               Dapibus ac facilisis in
             </span>
           </div>
-          <Badge className="bg-primary font-normal text-primary-foreground">
-            2
-          </Badge>
+          <Badge className="bg-primary font-normal text-white">2</Badge>
         </div>
       </li>
       <li className="px-6.25 py-4">
@@ -40,9 +36,7 @@ export default function ListGroupNumbered() {
               Morbi leo risus
             </span>
           </div>
-          <Badge className="bg-primary font-normal text-primary-foreground">
-            1
-          </Badge>
+          <Badge className="bg-primary font-normal text-white">1</Badge>
         </div>
       </li>
     </ol>

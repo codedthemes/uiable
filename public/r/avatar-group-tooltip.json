@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-group-tooltip",
+  "title": "Avatar Group Tooltip",
+  "description": "Avatar Group Tooltip variant for component.",
+  "registryDependencies": ["@uiable/avatar", "@uiable/tooltip"],
+  "files": [
+    {
+      "path": "src/components/uiable/avatar/avatar-group-tooltip.tsx",
+      "content": "// shadcn\nimport {\n  Avatar,\n  AvatarFallback,\n  AvatarGroup,\n  AvatarGroupCount,\n  AvatarImage,\n} from \"@/components/ui/avatar\"\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\"\n\nconst users = [\n  {\n    name: \"Sophia Taylor\",\n    src: \"https://cdn.uiable.com/user/avatar-1.jpg\",\n    fallback: \"ST\",\n  },\n  {\n    name: \"Liam Johnson\",\n    src: \"https://cdn.uiable.com/user/avatar-2.jpg\",\n    fallback: \"LJ\",\n  },\n  {\n    name: \"Emma Williams\",\n    src: \"https://cdn.uiable.com/user/avatar-3.jpg\",\n    fallback: \"EW\",\n  },\n  {\n    name: \"Noah Brown\",\n    src: \"https://cdn.uiable.com/user/avatar-4.jpg\",\n    fallback: \"NB\",\n  },\n]\n\n//  ------------------------------ | AVATAR - GROUP TOOLTIP | ------------------------------  //\n\nexport function AvatarGroupTooltip() {\n  return (\n    <AvatarGroup>\n      {users.map((user) => (\n        <Tooltip key={user.name}>\n          <TooltipTrigger\n            render={\n              <Avatar className=\"cursor-pointer transition-transform hover:z-10 hover:scale-105\">\n                <AvatarImage src={user.src} alt={user.name} />\n                <AvatarFallback>{user.fallback}</AvatarFallback>\n              </Avatar>\n            }\n          />\n          <TooltipContent>{user.name}</TooltipContent>\n        </Tooltip>\n      ))}\n      <AvatarGroupCount>+3</AvatarGroupCount>\n    </AvatarGroup>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/avatar/avatar-group-tooltip.tsx"
+    }
+  ],
+  "categories": ["avatar"],
+  "type": "registry:ui"
+}

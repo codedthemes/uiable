@@ -3,7 +3,6 @@
   "name": "breadcrumb-stepper",
   "title": "Breadcrumb Stepper",
   "description": "Breadcrumb Stepper variant for component.",
-  "dependencies": ["next"],
   "registryDependencies": ["@uiable/badge", "@uiable/breadcrumb"],
   "files": [
     {

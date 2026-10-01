@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -22,6 +21,10 @@ export const switchInfo: CategoryInfo = {
     "With Label . Switch tightly coupled with a clickable text label for better hit targets",
     "Sized Variants . Small, Medium, and Large switches to match varying UI densities",
     "Disabled . Read-only state with muted styling and blocked interactions",
+    "Toggle Theme . Interactive light and dark mode switches with icons",
+    "Color Options . Vibrant semantic color palettes including success, info, warning, and danger",
+    "Outline . Bordered track styling with contrasting thumbs",
+    "Square . Sharp and squircle geometric corner profiles for modern layouts",
   ],
   whyUseHeading: `Why ${branding.brandName} Switch?`,
   whyUseDescription: [

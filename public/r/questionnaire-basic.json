@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "questionnaire-basic",
+  "title": "Questionnaire Basic",
+  "description": "Questionnaire Basic variant for component.",
+  "registryDependencies": ["@uiable/questionnaire"],
+  "files": [
+    {
+      "path": "src/components/uiable/questionnaire/questionnaire-basic.tsx",
+      "content": "\"use client\"\n\n// shadcn\nimport {\n  Questionnaire,\n  QuestionnaireActions,\n  QuestionnaireChoice,\n  QuestionnaireChoices,\n  QuestionnaireDescription,\n  QuestionnaireItem,\n  QuestionnaireNext,\n  QuestionnairePrevious,\n  QuestionnaireSubmit,\n  QuestionnaireTitle,\n} from \"@/components/ui/questionnaire\"\n\n//  ------------------------------ | QUESTIONNAIRE - BASIC | ------------------------------  //\n\nexport function QuestionnaireBasic() {\n  return (\n    <div className=\"w-full max-w-md\">\n      <Questionnaire\n        onSubmit={(e) => {\n          e.preventDefault()\n          const data = Object.fromEntries(new FormData(e.currentTarget))\n          console.log(data)\n        }}\n      >\n        <QuestionnaireItem name=\"project-type\">\n          <QuestionnaireTitle>\n            What kind of projects do you work on?\n          </QuestionnaireTitle>\n          <QuestionnaireDescription>\n            Select the option that best describes your work.\n          </QuestionnaireDescription>\n          <QuestionnaireChoices>\n            <QuestionnaireChoice value=\"web\">\n              Web Development\n            </QuestionnaireChoice>\n            <QuestionnaireChoice value=\"mobile\">\n              Mobile Apps\n            </QuestionnaireChoice>\n            <QuestionnaireChoice value=\"desktop\">\n              Desktop Apps\n            </QuestionnaireChoice>\n          </QuestionnaireChoices>\n          <QuestionnaireActions>\n            <QuestionnaireNext />\n          </QuestionnaireActions>\n        </QuestionnaireItem>\n\n        <QuestionnaireItem name=\"tools\" multiple>\n          <QuestionnaireTitle>What are your favorite tools?</QuestionnaireTitle>\n          <QuestionnaireDescription>\n            Select all that apply.\n          </QuestionnaireDescription>\n          <QuestionnaireChoices>\n            <QuestionnaireChoice value=\"react\">React</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"vue\">Vue</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"svelte\">Svelte</QuestionnaireChoice>\n            <QuestionnaireChoice value=\"angular\">Angular</QuestionnaireChoice>\n          </QuestionnaireChoices>\n          <QuestionnaireActions>\n            <QuestionnairePrevious />\n            <QuestionnaireSubmit />\n          </QuestionnaireActions>\n        </QuestionnaireItem>\n      </Questionnaire>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/questionnaire/questionnaire-basic.tsx"
+    }
+  ],
+  "categories": ["questionnaire"],
+  "type": "registry:ui"
+}

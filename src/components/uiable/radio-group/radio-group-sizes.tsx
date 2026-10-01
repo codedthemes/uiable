@@ -7,7 +7,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 //  ------------------------------ | RADIO GROUP - SIZES | ------------------------------  //
 
-// constants
 const sizes = [
   { value: "xs", label: "XS", description: "Extra Small" },
   { value: "sm", label: "SM", description: "Small" },

@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "src/components/uiable/progress/progress-solid-danger.tsx",
-      "content": "// shadcn\nimport { Progress } from \"@/components/ui/progress\"\n\n//  ------------------------------ | PROGRESS - SOLID DANGER | ------------------------------  //\n\nexport default function ProgressSolidDanger() {\n  return (\n    <div className=\"w-full\">\n      <Progress\n        value={100}\n        className=\"*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-destructive dark:*:bg-muted/10\"\n      />\n    </div>\n  )\n}\n",
+      "content": "// shadcn\nimport { Progress } from \"@/components/ui/progress\"\n\n//  ------------------------------ | PROGRESS - SOLID DANGER | ------------------------------  //\n\nexport default function ProgressSolidDanger() {\n  return (\n    <div className=\"w-full\">\n      <Progress\n        value={100}\n        className=\"*:h-4 *:rounded-lg *:bg-muted/20 **:rounded-lg **:bg-destructive dark:*:bg-muted/40\"\n      />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/progress/progress-solid-danger.tsx"
     }

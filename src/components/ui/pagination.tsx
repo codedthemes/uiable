@@ -3,8 +3,8 @@ import { ComponentProps } from "react"
 // shadcn
 import { Button } from "@/components/ui/button"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// third-party
+import { cn } from "cn"
 
 // assets
 import {

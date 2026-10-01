@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menubar-profile",
+  "title": "Menubar Profile",
+  "description": "Menubar Profile variant for component.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/avatar", "@uiable/menubar"],
+  "files": [
+    {
+      "path": "src/components/uiable/menubar/menubar-profile.tsx",
+      "content": "// shadcn\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"\nimport {\n  Menubar,\n  MenubarContent,\n  MenubarItem,\n  MenubarMenu,\n  MenubarSeparator,\n  MenubarTrigger,\n} from \"@/components/ui/menubar\"\n\n// assets\nimport {\n  LogOutIcon,\n  MessageSquareIcon,\n  SettingsIcon,\n  UserIcon,\n} from \"lucide-react\"\n\n//  ------------------------------ | MENUBAR - PROFILE | ------------------------------  //\n\nexport function MenubarProfile() {\n  return (\n    <Menubar className=\"border-none bg-transparent shadow-none\">\n      <MenubarMenu>\n        <MenubarTrigger className=\"border-none bg-transparent p-0 hover:bg-transparent focus:bg-transparent aria-expanded:bg-transparent aria-expanded:shadow-none data-[state=open]:bg-transparent\">\n          <Avatar className=\"h-8 w-8 cursor-pointer\">\n            <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n            <AvatarFallback>CN</AvatarFallback>\n          </Avatar>\n        </MenubarTrigger>\n        <MenubarContent align=\"end\" className=\"w-56\">\n          <div className=\"flex items-center justify-start gap-2 p-2\">\n            <div className=\"flex flex-col space-y-1 leading-none\">\n              <p className=\"font-medium\">shadcn</p>\n              <p className=\"w-[200px] truncate text-sm text-muted-foreground\">\n                shadcn@example.com\n              </p>\n            </div>\n          </div>\n          <MenubarSeparator />\n          <MenubarItem>\n            <UserIcon className=\"mr-2 h-4 w-4\" />\n            Profile\n          </MenubarItem>\n          <MenubarItem>\n            <MessageSquareIcon className=\"mr-2 h-4 w-4\" />\n            Messages\n          </MenubarItem>\n          <MenubarItem>\n            <SettingsIcon className=\"mr-2 h-4 w-4\" />\n            Settings\n          </MenubarItem>\n          <MenubarSeparator />\n          <MenubarItem variant=\"destructive\">\n            <LogOutIcon className=\"mr-2 h-4 w-4\" />\n            Log out\n          </MenubarItem>\n        </MenubarContent>\n      </MenubarMenu>\n    </Menubar>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/menubar/menubar-profile.tsx"
+    }
+  ],
+  "categories": ["menubar"],
+  "type": "registry:ui"
+}

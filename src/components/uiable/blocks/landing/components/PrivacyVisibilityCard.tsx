@@ -12,36 +12,29 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
+// third-party
+import { cn } from "cn"
+
 // assets
 import { Globe, Lock, Users } from "lucide-react"
 
-// constants
 const visibilityOptions = [
   { value: "public", label: "Public", Icon: Globe },
   { value: "private", label: "Private", Icon: Lock },
   { value: "friends", label: "Friends Only", Icon: Users },
 ] as const
 
-const visibilityItems: Record<string, ReactNode> = {
-  public: (
-    <span className="flex items-center gap-2">
-      <Globe className="size-4 text-muted-foreground" />
-      Public
-    </span>
-  ),
-  private: (
-    <span className="flex items-center gap-2">
-      <Lock className="size-4 text-muted-foreground" />
-      Private
-    </span>
-  ),
-  friends: (
-    <span className="flex items-center gap-2">
-      <Users className="size-4 text-muted-foreground" />
-      Friends Only
-    </span>
-  ),
-}
+// Derived from `visibilityOptions` so the display node and the dropdown
+// list never drift out of sync.
+const visibilityItems: Record<string, ReactNode> = Object.fromEntries(
+  visibilityOptions.map(({ value, label, Icon }) => [
+    value,
+    <span key={value} className="flex items-center gap-2">
+      <Icon aria-hidden="true" className="size-4 text-muted-foreground" />
+      {label}
+    </span>,
+  ])
+)
 
 const preferencesConfig = [
   { id: "email", label: "Show email", weight: "font-medium" },
@@ -90,33 +83,35 @@ export default function PrivacyVisibilityCard() {
         }}
         items={visibilityItems}
       >
-        <SelectTrigger
-          aria-label="Select visibility"
-          className="h-auto w-full rounded-lg bg-card px-3.5 py-2.5 text-xs font-semibold"
-        >
+        <SelectTrigger className="h-auto w-full rounded-lg bg-card px-3.5 py-2.5 text-xs font-semibold">
           <SelectValue />
         </SelectTrigger>
         <SelectContent>
           {visibilityOptions.map(({ value, label, Icon }) => (
             <SelectItem key={value} value={value}>
-              <Icon className="size-4 text-muted-foreground" />
+              <Icon
+                aria-hidden="true"
+                className="size-4 text-muted-foreground"
+              />
               {label}
             </SelectItem>
           ))}
         </SelectContent>
       </Select>
 
-      <div className="mt-2 flex flex-col gap-3.5">
+      <div className="flex flex-col gap-3.5">
         {preferencesConfig.map(({ id, label, weight }) => {
           const checked = preferences[id]
           return (
             <label
               key={id}
-              className={`flex cursor-pointer items-center gap-3 text-xs transition-colors ${weight} ${
+              className={cn(
+                "flex cursor-pointer items-center gap-3 text-xs transition-colors",
+                weight,
                 checked
                   ? "text-foreground"
                   : "text-foreground/70 hover:text-foreground"
-              }`}
+              )}
             >
               <Checkbox
                 checked={checked}

@@ -24,9 +24,8 @@ import { ThemePresetStyles } from "./ThemePresetStyles"
 import { useThemeRadius } from "@/hooks/use-theme-radius"
 
 // assets
-import { CircleCheckBig, Moon, Cpu, Settings2, Sun } from "lucide-react"
+import { CircleCheckBig, Cpu, Moon, Settings2, Sun } from "lucide-react"
 
-// constants
 const THEME_PRESET_KEY = "theme-preset"
 
 const themeClasses = [
@@ -183,7 +182,7 @@ export function ThemeToggle() {
   )
 
   const resetDefault = useCallback(() => {
-    setTheme("system")
+    setTheme("light")
     themeClasses.forEach((cls) => document.body.classList.remove(cls))
     document.body.classList.add("default")
     localStorage.removeItem(THEME_PRESET_KEY)

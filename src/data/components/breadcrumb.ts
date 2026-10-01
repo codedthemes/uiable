@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -23,6 +22,8 @@ export const breadcrumbInfo: CategoryInfo = {
     "Collapsed . Breadcrumb displaying an ellipsis (...) dropdown when the trail becomes too long",
     "With Dropdown . Breadcrumb item that triggers a dropdown menu to select sibling pages directly",
     "Background Pill . Stylized breadcrumb wrapped inside a slightly darker pill background",
+    "Stepper . Breadcrumb featuring numerical indicators to display multi-step progress",
+    "Outline . Clean breadcrumb container wrapped in a subtle border for improved distinction",
   ],
   whyUseHeading: `Why ${branding.brandName} Breadcrumb?`,
   whyUseDescription: [

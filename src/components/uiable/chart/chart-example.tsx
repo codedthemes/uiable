@@ -4,7 +4,6 @@ import { ChartConfig, ChartContainer } from "@/components/ui/chart"
 // third-party
 import { Bar, BarChart } from "recharts"
 
-// constants
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
   { month: "February", desktop: 305, mobile: 200 },

@@ -1,4 +1,8 @@
+// next
+import { Metadata } from "next"
+
 // shadcn
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
@@ -7,7 +11,15 @@ import branding from "@/branding.json"
 import DocsNavigation from "@/components/doc-bottom-nav"
 import TableOfContents from "@/components/uiable/layout/table-of-contents"
 
-// constants
+// constant
+export const metadata: Metadata = {
+  title: `Introduction - ${branding.brandName}`,
+  description: `Learn what ${branding.brandName} is, why it exists, and how the Free and Pro tiers differ.`,
+  alternates: {
+    canonical: "/doc/introduction",
+  },
+}
+
 const tocItems = [
   { title: "Overview", url: "#introduction" },
   { title: `What is ${branding.brandName}?`, url: "#what-is-uiable" },
@@ -36,6 +48,16 @@ export default function IntroductionPage() {
                   interfaces and ship production-ready applications faster than
                   ever.
                 </p>
+                <Alert className="border-cyan-500 bg-cyan-500/10 text-cyan-800">
+                  <AlertTitle>
+                    Welcome to the {branding.brandName} Documentation
+                  </AlertTitle>
+                  <AlertDescription>
+                    This is your starting point for building premium user
+                    interfaces. Explore our extensive library of components and
+                    blocks to accelerate your workflow.
+                  </AlertDescription>
+                </Alert>
                 <Separator className="mb-6" />
                 <div className="space-y-5" id="what-is-uiable">
                   <h4 className="group relative mb-2 scroll-mt-20">
@@ -111,7 +133,7 @@ export default function IntroductionPage() {
                       </p>
                     </li>
                     <li className="hidden">
-                      <b className="">Premium Block Variants</b>
+                      <b className="">Pro Block Variants</b>
                       <p>
                         Go beyond simple buttons and inputs. Access complex
                         ready-made block compositions for hero sections,

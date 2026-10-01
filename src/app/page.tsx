@@ -3,10 +3,14 @@ import { ReactNode } from "react"
 // next
 import { Metadata } from "next"
 
+// third-party
+import { cn } from "cn"
+
 // project-imports
 import branding from "@/branding.json"
 import SmoothScroll from "@/components/smooth-scroll"
-import Component1 from "@/components/uiable/blocks/landing/component-1/component-1"
+import AboutUs from "@/components/uiable/blocks/landing/about/about-us"
+import BlocksShowcase from "@/components/uiable/blocks/landing/blocks-showcase/blocks-showcase"
 import Component2 from "@/components/uiable/blocks/landing/component-2/component-2"
 import Contact from "@/components/uiable/blocks/landing/contact/Contact"
 import FAQ from "@/components/uiable/blocks/landing/faq/faq"
@@ -14,9 +18,10 @@ import Featured from "@/components/uiable/blocks/landing/feature/Feature"
 import Footer from "@/components/uiable/blocks/landing/footer/footer"
 import Hero from "@/components/uiable/blocks/landing/hero/hero"
 import Navbar from "@/components/uiable/blocks/landing/navbar/navbar"
+import Testimonials from "@/components/uiable/blocks/landing/testimonials/testimonials"
 import Star from "@/images/svg/icons/star"
-import { cn } from "@/lib/utils"
 
+// constant
 export const metadata: Metadata = {
   title: `${branding.brandName} - Component Library`,
   alternates: {
@@ -39,15 +44,17 @@ function TopStars() {
   )
 }
 
+interface BlockArchitectureProps {
+  children: ReactNode
+  fullWidth?: boolean
+  hasTopBorder?: boolean
+}
+
 function BlockArchitecture({
   children,
   fullWidth = false,
   hasTopBorder = true,
-}: {
-  children: ReactNode
-  fullWidth?: boolean
-  hasTopBorder?: boolean
-}) {
+}: BlockArchitectureProps) {
   return (
     <div
       className={cn(
@@ -79,31 +86,35 @@ export default function LandingPage() {
     <SmoothScroll>
       <div className="w-full overflow-clip bg-background">
         <Navbar />
-        <main>
-          <div className="container mx-auto border-x border-border/60">
-            <BlockArchitecture fullWidth hasTopBorder={false}>
-              <Hero />
-            </BlockArchitecture>
-            <BlockArchitecture>
-              <Component1 />
-            </BlockArchitecture>
-            <BlockArchitecture>
-              <Component2 />
-            </BlockArchitecture>
+        <div className="container mx-auto border-x border-border/60 max-[1199px]:max-w-none!">
+          <BlockArchitecture fullWidth hasTopBorder={false}>
+            <Hero />
+          </BlockArchitecture>
+          <BlockArchitecture>
+            <BlocksShowcase />
+          </BlockArchitecture>
+          <BlockArchitecture>
             <BlockArchitecture>
               <Featured />
             </BlockArchitecture>
-            <BlockArchitecture>
-              <FAQ />
-            </BlockArchitecture>
-            <BlockArchitecture>
-              <Contact />
-            </BlockArchitecture>
-          </div>
-          <BlockArchitecture fullWidth>
-            <Footer containerClassName="border-x border-t" />
+            <Component2 />
           </BlockArchitecture>
-        </main>
+          <BlockArchitecture>
+            <Testimonials />
+          </BlockArchitecture>
+          <BlockArchitecture>
+            <AboutUs />
+          </BlockArchitecture>
+          <BlockArchitecture>
+            <FAQ />
+          </BlockArchitecture>
+          <BlockArchitecture>
+            <Contact />
+          </BlockArchitecture>
+        </div>
+        <BlockArchitecture fullWidth>
+          <Footer containerClassName="border-x border-t" />
+        </BlockArchitecture>
       </div>
     </SmoothScroll>
   )

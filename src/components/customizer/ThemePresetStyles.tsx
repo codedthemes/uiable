@@ -1,4 +1,3 @@
-// constants
 const PRESET_DATA: Record<string, string[]> = {
   "preset-2": [
     "255 226 226",

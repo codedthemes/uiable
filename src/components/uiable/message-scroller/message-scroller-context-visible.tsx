@@ -57,7 +57,6 @@ import {
   TelescopeIcon,
 } from "lucide-react"
 
-// constants
 const DEFAULT_PEEK = 64
 
 const chat = createChat()

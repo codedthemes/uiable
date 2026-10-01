@@ -11,10 +11,22 @@ import branding from "@/branding.json"
 import BlockView from "@/components/block-view"
 import CategoryDescription from "@/components/category-description"
 import { blockCategoryInfoMap } from "@/data/blocks"
-import { resolveDisplayPath } from "@/lib/tree-view-utils"
 
 interface BlockCategoryPageProps {
   params: Promise<{ slug: string }>
+}
+
+function getBlockCategories(): Set<string> {
+  const blocksRegistryPath = path.join(
+    /*turbopackIgnore: true*/ process.cwd(),
+    "src/components/uiable/blocks/registry.json"
+  )
+  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
+  const categories = new Set<string>()
+  ;(blocksRegistry.items || []).forEach((item: any) => {
+    item.categories?.forEach((cat: string) => categories.add(cat))
+  })
+  return categories
 }
 
 export async function generateMetadata({
@@ -28,23 +40,11 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${data.title} - UI component library built on shadcn and Base UI - ${branding.brandName}`,
+    title: `${data.title} section built on shadcn and Base UI - ${branding.brandName}`,
     description: data.description[0] || "",
     alternates: {
       canonical: `/blocks/${category}`,
     },
-    // openGraph: {
-    //   title: `${data.title} - UI component library built on shadcn and Base UI - ${branding.brandName}`,
-    //   description: data.description[0] || "",
-    //   images: [
-    //     {
-    //       url: `https://cdn.uiable.com/og/${category}.png`,
-    //       width: 1200,
-    //       height: 630,
-    //       alt: `${data.title} Block - ${branding.brandName}`,
-    //     },
-    //   ],
-    // },
   }
 }
 
@@ -55,67 +55,16 @@ export default async function BlockCategoryPage({
 }: BlockCategoryPageProps) {
   const { slug: category } = await params
 
-  const uiRegistryPath = path.join(
-    /*turbopackIgnore: true*/ process.cwd(),
-    "src/components/uiable/registry.json"
-  )
+  if (!getBlockCategories().has(category)) {
+    notFound()
+  }
+
   const blocksRegistryPath = path.join(
     /*turbopackIgnore: true*/ process.cwd(),
     "src/components/uiable/blocks/registry.json"
   )
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
   const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
-  const registryItems = [
-    ...(uiRegistry.items || []),
-    ...(blocksRegistry.items || []),
-  ]
-
-  const itemsByName = new Map<string, any>(
-    registryItems.map((it: any) => [it.name, it])
-  )
-
-  const readSource = (displayPath: string) => {
-    try {
-      return fs.readFileSync(
-        path.join(/*turbopackIgnore: true*/ process.cwd(), displayPath),
-        "utf8"
-      )
-    } catch {
-      return ""
-    }
-  }
-
-  // Walk an item's `@uiable/*` registryDependencies (recursively) and collect
-  // the source of every component they install, so the code viewer can show
-  // the imported components — and the full `src/...` path where each belongs —
-  // instead of only the block's own two files.
-  const collectDependencyFiles = (
-    item: any,
-    seenPaths: Set<string>,
-    seenItems: Set<string>
-  ): { path: string; target?: string; code: string }[] => {
-    const out: { path: string; target?: string; code: string }[] = []
-    for (const dep of item.registryDependencies || []) {
-      if (typeof dep !== "string" || !dep.startsWith("@uiable/")) continue
-      const depName = dep.slice("@uiable/".length)
-      if (seenItems.has(depName)) continue
-      seenItems.add(depName)
-      const depItem = itemsByName.get(depName)
-      if (!depItem?.files) continue
-      for (const file of depItem.files) {
-        const displayPath = resolveDisplayPath(file)
-        if (seenPaths.has(displayPath)) continue
-        seenPaths.add(displayPath)
-        out.push({
-          path: displayPath,
-          target: file.target,
-          code: readSource(displayPath),
-        })
-      }
-      out.push(...collectDependencyFiles(depItem, seenPaths, seenItems))
-    }
-    return out
-  }
+  const registryItems = [...(blocksRegistry.items || [])]
 
   const items = registryItems
     .filter((item: any) => item.categories?.includes(category))
@@ -140,15 +89,7 @@ export default async function BlockCategoryPage({
       } catch (error) {
         console.error(`Failed to read file: ${filePath}`, error)
       }
-      const ownPaths = new Set<string>(
-        item.files.map((f: any) => resolveDisplayPath(f))
-      )
-      const dependencyFiles = collectDependencyFiles(
-        item,
-        ownPaths,
-        new Set<string>()
-      )
-      return { ...item, rawCode, dependencyFiles }
+      return { ...item, rawCode }
     })
 
   if (items.length === 0) {
@@ -173,27 +114,7 @@ export default async function BlockCategoryPage({
 }
 
 export async function generateStaticParams() {
-  const uiRegistryPath = path.join(
-    /*turbopackIgnore: true*/ process.cwd(),
-    "src/components/uiable/registry.json"
-  )
-  const blocksRegistryPath = path.join(
-    /*turbopackIgnore: true*/ process.cwd(),
-    "src/components/uiable/blocks/registry.json"
-  )
-  const uiRegistry = JSON.parse(fs.readFileSync(uiRegistryPath, "utf8"))
-  const blocksRegistry = JSON.parse(fs.readFileSync(blocksRegistryPath, "utf8"))
-  const registryItems = [
-    ...(uiRegistry.items || []),
-    ...(blocksRegistry.items || []),
-  ]
-
-  const categories = new Set<string>()
-  registryItems.forEach((item: any) => {
-    item.categories?.forEach((cat: string) => categories.add(cat))
-  })
-
-  return Array.from(categories).map((category) => ({
+  return Array.from(getBlockCategories()).map((category) => ({
     slug: category,
   }))
 }

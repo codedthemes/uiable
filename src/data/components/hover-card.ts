@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -18,10 +17,11 @@ export const hoverCardInfo: CategoryInfo = {
   ],
   variantsHeading: "Popular Hover Card Variants",
   variants: [
-    "Profile Preview: Triggered by a username or avatar, showing a mini bio and follow button",
-    "Link Preview: Triggered by a text link, showing an image and excerpt of the destination page",
-    "Informational: Displaying rich formatting (lists, bold text) that wouldn't fit in a simple Tooltip",
-    "With Delayed Open: Card that waits 500ms before appearing to prevent accidental triggering",
+    "Sides: Demonstration of hover cards positioned on left, top, bottom, and right sides",
+    "Info with Icon Badge: Triggered by a security/status button, displaying a glowing icon badge and verification breakdown",
+    "Image Preview: Triggered by asset names or media links, displaying high-res thumbnails with dimensions and download actions",
+    "Simple Info Tooltip: Compact structured info card for clarifying technical terms or definitions",
+    "Link Preview: Rich web card preview displaying site favicon, star/fork metrics, and external repository summary",
   ],
   whyUseHeading: `Why ${branding.brandName} Hover Card?`,
   whyUseDescription: [

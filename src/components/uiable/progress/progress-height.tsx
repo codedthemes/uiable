@@ -14,7 +14,7 @@ export default function ProgressHeight() {
           Thin Progress (2px)
         </h6>
         <ProgressPrimitive.Root value={25}>
-          <ProgressTrack className="h-0.5 bg-muted/20 dark:bg-muted/10">
+          <ProgressTrack className="h-0.5 bg-muted/20 dark:bg-muted/40">
             <ProgressIndicator className="bg-primary" />
           </ProgressTrack>
         </ProgressPrimitive.Root>
@@ -25,7 +25,7 @@ export default function ProgressHeight() {
           Large Progress (20px)
         </h6>
         <ProgressPrimitive.Root value={25}>
-          <ProgressTrack className="h-5 rounded-lg bg-muted/20 dark:bg-muted/10">
+          <ProgressTrack className="h-5 rounded-lg bg-muted/20 dark:bg-muted/40">
             <ProgressIndicator className="rounded-lg bg-primary" />
           </ProgressTrack>
         </ProgressPrimitive.Root>

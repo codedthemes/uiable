@@ -14,7 +14,6 @@ import {
 // assets
 import { PlusIcon } from "lucide-react"
 
-// constants
 const people = [
   {
     username: "shadcn",

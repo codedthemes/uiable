@@ -1,6 +1,3 @@
-// next
-import Image from "next/image"
-
 // shadcn
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
@@ -12,11 +9,10 @@ export function AspectRatioPortrait() {
       ratio={9 / 16}
       className="w-full max-w-[10rem] rounded-lg bg-muted"
     >
-      <Image
+      <img
         src="https://avatar.vercel.sh/shadcn1"
         alt="Photo"
-        fill
-        className="rounded-lg object-cover"
+        className="absolute inset-0 h-full w-full rounded-lg object-cover"
       />
     </AspectRatio>
   )

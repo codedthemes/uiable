@@ -4,7 +4,7 @@ import { Alert } from "@/components/ui/alert"
 // assets
 import { ShieldAlert } from "lucide-react"
 
-//  ------------------------------ | ALERT - ICON DANGER | ------------------------------  //
+// ------------------------------ | ALERT - ICON DANGER | ------------------------------ //
 
 export default function AlertIconDanger() {
   return (

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-animated-stretch",
+  "title": "Switch Animated Stretch",
+  "description": "Switch Animated Stretch variant for component.",
+  "dependencies": ["@base-ui/react", "cn", "framer-motion"],
+  "files": [
+    {
+      "path": "src/components/uiable/switch/switch-animated-stretch.tsx",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\n\n// third-party\nimport { Switch as SwitchPrimitive } from \"@base-ui/react/switch\"\nimport { cn } from \"cn\"\nimport { motion } from \"framer-motion\"\n\nconst MotionRoot = motion.create(SwitchPrimitive.Root)\nconst MotionThumb = motion.create(SwitchPrimitive.Thumb)\n\n//  ------------------------------ | SWITCH - ANIMATED STRETCH | ------------------------------  //\n\nexport default function SwitchAnimatedStretch() {\n  const [isOn, setIsOn] = useState(false)\n\n  return (\n    <div className=\"flex items-center justify-center p-5\">\n      <MotionRoot\n        checked={isOn}\n        onCheckedChange={setIsOn}\n        className={cn(\n          \"relative flex h-12 w-28 cursor-pointer items-center rounded-full p-1.5 transition-colors duration-500 outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\",\n          isOn ? \"bg-green-500\" : \"bg-slate-200 dark:bg-slate-700\"\n        )}\n        layout\n        aria-label=\"Toggle setting\"\n      >\n        {/* Track Text */}\n        <div className=\"pointer-events-none absolute inset-0 flex items-center justify-between px-4 text-sm font-bold tracking-wider text-white\">\n          <motion.span\n            initial={false}\n            animate={{ opacity: isOn ? 1 : 0, x: isOn ? 0 : -10 }}\n            transition={{ duration: 0.3 }}\n          >\n            ON\n          </motion.span>\n          <motion.span\n            className=\"text-slate-400 dark:text-slate-300\"\n            initial={false}\n            animate={{ opacity: !isOn ? 1 : 0, x: !isOn ? 0 : 10 }}\n            transition={{ duration: 0.3 }}\n          >\n            OFF\n          </motion.span>\n        </div>\n\n        {/* Stretchy Thumb */}\n        <MotionThumb\n          layout\n          initial={false}\n          animate={{\n            x: isOn ? 64 : 0,\n            width: 36,\n          }}\n          whileTap={{ width: 48 }}\n          transition={{\n            type: \"spring\",\n            stiffness: 500,\n            damping: 25,\n          }}\n          className=\"relative z-10 block h-9 rounded-full bg-white shadow-sm ring-0\"\n        />\n      </MotionRoot>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/switch/switch-animated-stretch.tsx"
+    }
+  ],
+  "categories": ["switch"],
+  "type": "registry:ui"
+}

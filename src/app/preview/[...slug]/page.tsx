@@ -6,6 +6,7 @@ import { use, useEffect, useState } from "react"
 import { notFound } from "next/navigation"
 
 // project-imports
+import { blockWrapperClasses, blockChildClasses } from "./preview-classes"
 import { ThemePresetStyles } from "@/components/customizer/ThemePresetStyles"
 import { fromPreviewSlug } from "@/utils/preview-slug"
 
@@ -52,6 +53,10 @@ export default function PreviewPage({
       if (event.data?.type === "uiable-theme-sync") {
         document.documentElement.className = event.data.htmlClass
         document.body.className = event.data.bodyClass
+        if (typeof window !== "undefined" && window.self !== window.top) {
+          document.documentElement.classList.add("in-iframe-preview")
+          document.body.classList.add("in-iframe-preview")
+        }
         if (typeof event.data.bodyStyle === "string") {
           document.body.style.cssText = event.data.bodyStyle
         }
@@ -108,6 +113,13 @@ export default function PreviewPage({
     }
   }, [filePath])
 
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.self !== window.top) {
+      document.documentElement.classList.add("in-iframe-preview")
+      document.body.classList.add("in-iframe-preview")
+    }
+  }, [])
+
   if (!Comp) {
     return (
       <>
@@ -117,11 +129,64 @@ export default function PreviewPage({
     )
   }
 
+  // This page only ever renders as a visual preview (iframe-embedded or
+  // opened directly) — clicking a real link inside the block would otherwise
+  // navigate away to this app's own routes (e.g. the Logo's "/"), replacing the
+  // preview. Only suppress that navigation: block clicks that land on an anchor
+  // with an href. Every other click (tab switches, accordions, dialogs, etc.)
+  // is left alone so interactive blocks stay functional in the preview.
+  const suppressPreviewClicks = (event: React.MouseEvent<HTMLDivElement>) => {
+    const anchor = (event.target as HTMLElement)?.closest?.("a[href]")
+    if (anchor) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+  }
+
   return (
     <>
       <ThemePresetStyles />
-      <div className="min-h-screen bg-card">
-        <Comp />
+      <style>{`
+          html.in-iframe-preview, body.in-iframe-preview {
+            overflow-x: hidden !important;
+          }
+
+          /* Normalizes multi-vh scroll runways (e.g. min-h-[220vh], lg:min-h-[350vh]) in iframe previews */
+          .in-iframe-preview [class*="min-h-["][class*="vh]"] {
+            min-height: auto !important;
+          }
+
+          /* ONLY targets sticky elements that are INSIDE a multi-vh scroll runway */
+          .in-iframe-preview [class*="min-h-["][class*="vh]"] [class*="sticky"] {
+            position: relative !important;
+            top: auto !important;
+          }
+
+          /* ONLY targets screen-height stages that are INSIDE a multi-vh scroll runway */
+          .in-iframe-preview [class*="min-h-["][class*="vh]"] [class*="min-h-screen"],
+          .in-iframe-preview [class*="min-h-["][class*="vh]"] .h-screen {
+            height: auto !important;
+            min-height: 0 !important;
+          }
+
+          /* ONLY targets fixed background layers that are INSIDE a multi-vh scroll runway */
+          .in-iframe-preview [class*="min-h-["][class*="vh]"] .fixed {
+            position: absolute !important;
+          }
+        `}</style>
+      <div
+        onClickCapture={suppressPreviewClicks}
+        className={["min-h-screen bg-card", blockWrapperClasses[filePath]]
+          .filter(Boolean)
+          .join(" ")}
+      >
+        {blockChildClasses[filePath] ? (
+          <div className={blockChildClasses[filePath]}>
+            <Comp />
+          </div>
+        ) : (
+          <Comp />
+        )}
       </div>
     </>
   )

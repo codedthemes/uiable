@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -23,6 +22,8 @@ export const toggleGroupInfo: CategoryInfo = {
     "Multiple Selection . Acts like checkboxes; multiple toggles can be active simultaneously",
     "Outline Group . Bordered toggles where internal borders collapse perfectly",
     "Icon Only . Compact group of icon toggles ideal for toolbars",
+    "Filled Icon Toggle . Interactive toggle group where active items display a solid primary fill with scalable filled icons",
+    "Animated Toolbar . Interactive toolbar with Framer Motion layoutId sliding pill indicators and keyboard shortcut badges",
   ],
   whyUseHeading: `Why ${branding.brandName} Toggle Group?`,
   whyUseDescription: [

@@ -1,8 +1,6 @@
 // shadcn
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-// constants
-
 const users = [
   {
     name: "Sarah Connor",
@@ -71,7 +69,7 @@ const users = [
 ]
 //  ------------------------------ | TEAM 1 | ------------------------------  //
 
-export default function team1() {
+export default function Team1() {
   return (
     <section className="bg-slate-100 py-24 sm:py-32 dark:bg-slate-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

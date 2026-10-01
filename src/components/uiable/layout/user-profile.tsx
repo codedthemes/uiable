@@ -20,6 +20,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Switch } from "@/components/ui/switch"
 
 // third-party
+import { cn } from "cn"
 import {
   Add,
   Lock1,
@@ -29,9 +30,6 @@ import {
   Setting,
   Share,
 } from "iconsax-reactjs"
-
-// project-imports
-import { cn } from "@/lib/utils"
 
 const uImg1 = {
   src: "https://cdn.uiable.com/user/avatar-1.jpg",

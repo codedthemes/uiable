@@ -15,7 +15,6 @@ import { InputGroupAddon } from "@/components/ui/input-group"
 // assets
 import { GlobeIcon } from "lucide-react"
 
-// constants
 const timezones = [
   {
     value: "Americas",

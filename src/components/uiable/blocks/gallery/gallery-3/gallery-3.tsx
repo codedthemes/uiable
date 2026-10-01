@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-// constants
 const Gallery = [
   {
     title: "Modern Villa Exterior",

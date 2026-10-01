@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-widgets-17",
+  "title": "Widgets 17",
+  "description": "Widgets 17 variant for block.",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@uiable/button", "@uiable/card", "@uiable/progress"],
+  "files": [
+    {
+      "path": "src/components/uiable/blocks/widgets/widgets-17/widgets-17.tsx",
+      "content": "// shadcn\nimport { Button } from \"@/components/ui/button\"\nimport { Card, CardContent, CardHeader } from \"@/components/ui/card\"\nimport { Progress } from \"@/components/ui/progress\"\n\n// assets\nimport { Paperclip, Plus } from \"lucide-react\"\n\n//  ------------------------------ | WIDGETS 17 | ------------------------------  //\n\nconst tasks = [\n  { label: \"Horizontal Layout\", dot: \"bg-orange-400\", attachments: 2 },\n  { label: \"Invoice Generator\", dot: \"bg-orange-400\", attachments: 0 },\n  { label: \"Package Upgrades\", dot: \"bg-amber-600\", attachments: 0 },\n  { label: \"Figma Auto Layout\", dot: \"bg-green-500\", attachments: 0 },\n]\n\nexport default function Widgets17() {\n  return (\n    <section className=\"w-full\">\n      <Card className=\"mb-0 flex w-full flex-col rounded-2xl border-border/60 shadow-sm\">\n        <CardHeader className=\"pb-2\">\n          <p className=\"text-base font-bold text-foreground\">\n            Project - Able Pro\n          </p>\n        </CardHeader>\n\n        <CardContent className=\"flex flex-col gap-5\">\n          {/* progress block */}\n          <div className=\"flex flex-col gap-2\">\n            <div className=\"flex items-center justify-between text-sm\">\n              <span className=\"text-muted-foreground\">Release v1.2.0</span>\n              <span className=\"font-semibold text-foreground\">70%</span>\n            </div>\n            <Progress value={70} className=\"h-2 rounded-full\" />\n          </div>\n\n          {/* task list */}\n          <ul className=\"flex flex-col divide-y divide-border\">\n            {tasks.map((task) => (\n              <li\n                key={task.label}\n                className=\"flex items-center justify-between py-3\"\n              >\n                <div className=\"flex items-center gap-3\">\n                  <span\n                    className={`size-2.5 shrink-0 rounded-full ${task.dot}`}\n                  />\n                  <span className=\"text-sm text-foreground\">{task.label}</span>\n                </div>\n                {task.attachments > 0 && (\n                  <span className=\"flex items-center gap-1 rounded-md border border-border px-2 py-0.5 text-xs text-muted-foreground\">\n                    <Paperclip className=\"size-3\" />\n                    {task.attachments}\n                  </span>\n                )}\n              </li>\n            ))}\n          </ul>\n\n          {/* add task button */}\n          <Button className=\"w-full gap-2 rounded-full\">\n            <Plus className=\"size-4\" />\n            Add task\n          </Button>\n        </CardContent>\n      </Card>\n    </section>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/uiable/blocks/widgets/widgets-17/widgets-17.tsx"
+    }
+  ],
+  "categories": ["widgets"],
+  "type": "registry:block"
+}

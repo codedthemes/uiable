@@ -20,7 +20,6 @@ import {
 } from "@/components/ui/select"
 import { Switch } from "@/components/ui/switch"
 
-// constants
 const items = [
   { label: "Select a fruit", value: null },
   { label: "Apple", value: "apple" },

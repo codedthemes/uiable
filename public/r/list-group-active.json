@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "src/components/uiable/list-group/list-group-active.tsx",
-      "content": "//  ------------------------------ | LIST GROUP - ACTIVE | ------------------------------  //\n\nexport default function ListGroupActive() {\n  return (\n    <ul className=\"divide-border-border divide-y overflow-hidden rounded-lg border border-border bg-card\">\n      <li className=\"px-6.25 py-4\">Cras justo odio</li>\n      <li className=\"bg-primary px-6.25 py-4 text-primary-foreground\">\n        Dapibus ac facilisis in\n      </li>\n      <li className=\"px-6.25 py-4\">Morbi leo risus</li>\n      <li className=\"px-6.25 py-4\">Porta ac consectetur ac</li>\n      <li className=\"px-6.25 py-4\">Vestibulum at eros</li>\n    </ul>\n  )\n}\n",
+      "content": "//  ------------------------------ | LIST GROUP - ACTIVE | ------------------------------  //\n\nexport default function ListGroupActive() {\n  return (\n    <ul className=\"divide-border-border divide-y overflow-hidden rounded-lg border border-border bg-card\">\n      <li className=\"px-6.25 py-4\">Cras justo odio</li>\n      <li className=\"bg-primary px-6.25 py-4 text-white\">\n        Dapibus ac facilisis in\n      </li>\n      <li className=\"px-6.25 py-4\">Morbi leo risus</li>\n      <li className=\"px-6.25 py-4\">Porta ac consectetur ac</li>\n      <li className=\"px-6.25 py-4\">Vestibulum at eros</li>\n    </ul>\n  )\n}\n",
       "type": "registry:component",
       "target": "@components/uiable/list-group/list-group-active.tsx"
     }

@@ -3,7 +3,6 @@
   "name": "breadcrumb-ellipsis",
   "title": "Breadcrumb Ellipsis",
   "description": "Breadcrumb Ellipsis variant for component.",
-  "dependencies": ["next"],
   "registryDependencies": ["@uiable/breadcrumb"],
   "files": [
     {

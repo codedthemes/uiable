@@ -7,13 +7,13 @@ import { ReactLenis, useLenis } from "lenis/react"
 
 //  ------------------------------ | COMPONENT - SMOOTH SCROLL | ------------------------------  //
 
-const LENIS_OPTIONS = { lerp: 0.1, duration: 2.2 }
+const LENIS_OPTIONS = { lerp: 0.1, duration: 1.6 }
 
-function isScrollLocked() {
-  return (
-    document.body.hasAttribute("data-scroll-locked") ||
-    document.body.style.overflow === "hidden"
-  )
+const OPEN_MODAL_SELECTOR =
+  '[role="dialog"][data-open], [role="alertdialog"][data-open]'
+
+function hasOpenModal() {
+  return document.querySelector(OPEN_MODAL_SELECTOR) !== null
 }
 
 function ScrollLocker() {
@@ -24,7 +24,7 @@ function ScrollLocker() {
     if (!lenis) return
 
     const applyState = () => {
-      const locked = isScrollLocked()
+      const locked = hasOpenModal()
       if (locked === lockedRef.current) return
       lockedRef.current = locked
       if (locked) {
@@ -37,8 +37,9 @@ function ScrollLocker() {
     const observer = new MutationObserver(applyState)
 
     observer.observe(document.body, {
+      subtree: true,
       attributes: true,
-      attributeFilter: ["data-scroll-locked", "style"],
+      attributeFilter: ["data-open", "data-closed"],
     })
 
     applyState()

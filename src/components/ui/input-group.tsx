@@ -9,9 +9,9 @@ import { Textarea } from "@/components/ui/textarea"
 
 // third-party
 import { cva, type VariantProps } from "class-variance-authority"
+import { cn } from "cn"
 
-// project-imports
-import { cn } from "@/lib/utils"
+// types
 
 function InputGroup({ className, ...props }: ComponentProps<"div">) {
   return (

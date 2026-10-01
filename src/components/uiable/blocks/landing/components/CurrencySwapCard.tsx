@@ -11,9 +11,11 @@ import Bitcoin from "@/images/svg/icons/bitcoin"
 import Ethereum from "@/images/svg/icons/ethereum"
 
 // assets
-import { ChevronDown, ArrowUpDown } from "lucide-react"
+import { ArrowUpDown, ChevronDown } from "lucide-react"
 
 const tabs = ["swap", "trade", "buy", "sell"]
+// Fixed mock exchange rate for this preview widget — not a live quote.
+const BTC_TO_ETH_RATE = 42.5
 
 // ------------------------------ | CURRENCY SWAP CARD | ------------------------------ //
 
@@ -25,7 +27,7 @@ export default function CurrencySwapCard() {
   const getOutputValue = () => {
     const val = parseFloat(inputValue)
     if (isNaN(val)) return ""
-    const num = isBtcToEth ? val * 42.5 : val / 42.5
+    const num = isBtcToEth ? val * BTC_TO_ETH_RATE : val / BTC_TO_ETH_RATE
     if (isBtcToEth) {
       return num.toFixed(2)
     } else {
@@ -62,7 +64,6 @@ export default function CurrencySwapCard() {
       </Tabs>
 
       <div className="flex flex-col gap-1.5">
-        {/* TOP Input Block (Amount / Send) */}
         <div className="flex flex-col gap-1.5">
           <div className="flex items-center justify-between px-0.5">
             <span className="text-sm leading-4 font-medium tracking-normal text-foreground">
@@ -73,7 +74,6 @@ export default function CurrencySwapCard() {
             <div className="flex min-w-0 flex-1 items-center gap-1">
               <input
                 type="text"
-                aria-label={`Amount in ${isBtcToEth ? "BTC" : "ETH"}`}
                 value={inputValue}
                 onChange={(e) => {
                   const val = e.target.value
@@ -88,36 +88,45 @@ export default function CurrencySwapCard() {
               </span>
             </div>
 
-            <div
+            <button
+              type="button"
               onClick={handleSwapDirection}
               className="flex cursor-pointer items-center gap-2 pl-2 transition-opacity select-none hover:opacity-80"
             >
-              {isBtcToEth ? <Bitcoin /> : <Ethereum />}
+              {isBtcToEth ? (
+                <Bitcoin aria-hidden="true" />
+              ) : (
+                <Ethereum aria-hidden="true" />
+              )}
               <span className="text-xs leading-3 font-medium tracking-normal text-muted-foreground">
                 {isBtcToEth ? "BTC" : "ETH"}
               </span>
-              <ChevronDown size={16} className="text-muted-foreground" />
-            </div>
+              <ChevronDown
+                aria-hidden="true"
+                className="size-4 text-muted-foreground"
+              />
+            </button>
           </div>
           <span className="px-0.5 text-xs leading-3 font-normal tracking-normal text-muted-foreground">
             Balance: {isBtcToEth ? "0.20 BTC" : "8.50 ETH"}
           </span>
         </div>
 
-        {/* Swap Direction Button */}
         <div className="relative z-10 -my-2.5 flex justify-center">
           <Button
             variant="ghost"
             size="icon"
+            aria-label="Swap direction"
             onClick={handleSwapDirection}
-            aria-label="Swap currency direction"
             className="flex size-8 cursor-pointer items-center justify-center rounded-full border border-border bg-card shadow-md transition-all hover:bg-muted active:scale-95"
           >
-            <ArrowUpDown className="size-4 text-foreground" />
+            <ArrowUpDown
+              aria-hidden="true"
+              className="size-4 text-foreground"
+            />
           </Button>
         </div>
 
-        {/* BOTTOM Input Block (Receive) */}
         <div className="flex flex-col gap-1.5">
           <div className="flex items-center justify-between px-0.5">
             <span className="text-sm leading-4 font-medium tracking-normal text-foreground">
@@ -129,7 +138,6 @@ export default function CurrencySwapCard() {
               <input
                 type="text"
                 readOnly
-                aria-label={`Receive amount in ${isBtcToEth ? "ETH" : "BTC"}`}
                 value={currentOutput}
                 className="h-auto w-full border-none bg-transparent p-0 text-left text-base font-semibold text-foreground focus:ring-0 focus:outline-none"
               />
@@ -138,16 +146,24 @@ export default function CurrencySwapCard() {
               </span>
             </div>
 
-            <div
+            <button
+              type="button"
               onClick={handleSwapDirection}
               className="flex cursor-pointer items-center gap-2 pl-2 transition-opacity select-none hover:opacity-80"
             >
-              {isBtcToEth ? <Ethereum /> : <Bitcoin />}
+              {isBtcToEth ? (
+                <Ethereum aria-hidden="true" />
+              ) : (
+                <Bitcoin aria-hidden="true" />
+              )}
               <span className="text-xs leading-3 font-medium tracking-normal text-muted-foreground">
                 {isBtcToEth ? "ETH" : "BTC"}
               </span>
-              <ChevronDown size={16} className="text-muted-foreground" />
-            </div>
+              <ChevronDown
+                aria-hidden="true"
+                className="size-4 text-muted-foreground"
+              />
+            </button>
           </div>
           <span className="px-0.5 text-xs leading-3 font-normal tracking-normal text-muted-foreground">
             Balance: {isBtcToEth ? "8.50 ETH" : "0.20 BTC"}
@@ -157,7 +173,7 @@ export default function CurrencySwapCard() {
 
       <Button
         onClick={handleSwapDirection}
-        className="mt-1 w-full rounded-lg bg-primary py-2.5 text-sm font-semibold text-primary-foreground capitalize hover:bg-primary/90"
+        className="w-full rounded-lg bg-primary py-2.5 text-sm font-semibold text-primary-foreground capitalize hover:bg-primary/90"
       >
         {activeTab}
       </Button>

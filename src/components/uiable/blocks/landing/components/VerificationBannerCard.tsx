@@ -13,12 +13,12 @@ export default function VerificationBannerCard() {
       className="flex h-auto w-full cursor-pointer items-center justify-between rounded-xl border border-border bg-card px-4 py-3 transition-colors hover:bg-accent/20"
     >
       <div className="flex items-center gap-2.5">
-        <BadgeCheck className="size-5 text-foreground" />
+        <BadgeCheck aria-hidden="true" className="size-5 text-foreground" />
         <span className="text-sm leading-5 font-medium tracking-normal text-foreground">
           Your profile has been verified.
         </span>
       </div>
-      <ChevronRight className="size-5 text-foreground" />
+      <ChevronRight aria-hidden="true" className="size-5 text-foreground" />
     </Button>
   )
 }

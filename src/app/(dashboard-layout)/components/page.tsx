@@ -3,18 +3,18 @@ import { Metadata } from "next"
 
 // project-imports
 import ComponentsPageClient from "./components-page-client"
-// projects imports
 import branding from "@/branding.json"
 
+// constant
 export const metadata: Metadata = {
-  title: `UI Components - ${branding.brandName}`,
+  title: `All Components - ${branding.brandName}`,
   description:
     "450+ production-ready React UI components built with Tailwind CSS, powered by shadcn/ui and Base UI. Designed for modern Next.js applications with accessibility, customization, and developer experience in mind.",
   alternates: {
     canonical: "/components",
   },
   openGraph: {
-    title: `UI Components - ${branding.brandName}`,
+    title: `All Components - ${branding.brandName}`,
     description:
       "450+ production-ready React UI components built with Tailwind CSS, powered by shadcn/ui and Base UI. Designed for modern Next.js applications with accessibility, customization, and developer experience in mind.",
     images: [

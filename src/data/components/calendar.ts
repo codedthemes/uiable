@@ -1,4 +1,3 @@
-// projects imports
 // project-imports
 import branding from "@/branding.json"
 
@@ -21,6 +20,8 @@ export const calendarInfo: CategoryInfo = {
     "Single Month . Standard view displaying one month for single date selection",
     "Multiple Months . Dual-month (or more) view ideal for large date-range picking",
     "Range Selection . Visual logic connecting a start date and end date with a highlighted track",
+    "Dialog Calendar . Interactive calendar embedded in a dialog modal with quick date presets",
+    "Right Navigation . Sleek layout with right-aligned header controls and a quick-navigation panel",
     "With Fixed Weeks . Calendar grid that always renders 6 rows to prevent layout shifting",
     "Localized . Calendar dynamically translated into different languages/start-of-week rules",
   ],
