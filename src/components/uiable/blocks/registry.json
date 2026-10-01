@@ -550,6 +550,9 @@
       "type": "registry:block",
       "title": "Bento 7",
       "description": "Bento 7 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "bento/bento-7/bento-7.tsx",
@@ -676,6 +679,9 @@
       "type": "registry:block",
       "title": "Code Verification 4",
       "description": "Code Verification 4 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "code-verification/code-verification-4/code-verification-4.tsx",
@@ -697,6 +703,9 @@
       "type": "registry:block",
       "title": "Code Verification 5",
       "description": "Code Verification 5 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "code-verification/code-verification-5/code-verification-5.tsx",
@@ -900,6 +909,9 @@
       "type": "registry:block",
       "title": "Contact 18",
       "description": "Contact 18 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "contact/contact-18/contact-18.tsx",
@@ -1763,6 +1775,9 @@
       "type": "registry:block",
       "title": "Feature 32",
       "description": "Feature 32 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "feature/feature-32/feature-32.tsx",
@@ -1939,6 +1954,9 @@
       "type": "registry:block",
       "title": "Forgot Password 3",
       "description": "Forgot Password 3 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "forgot-password/forgot-password-3/forgot-password-3.tsx",
@@ -2187,6 +2205,9 @@
       "type": "registry:block",
       "title": "Hero 16",
       "description": "Hero 16 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "hero/hero-16/hero-16.tsx",
@@ -2212,6 +2233,9 @@
       "type": "registry:block",
       "title": "Hero 17",
       "description": "Hero 17 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "hero/hero-17/hero-17.tsx",
@@ -2237,6 +2261,9 @@
       "type": "registry:block",
       "title": "Hero 19",
       "description": "Hero 19 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "hero/hero-19/hero-19.tsx",
@@ -2262,6 +2289,9 @@
       "type": "registry:block",
       "title": "Hero 22",
       "description": "Hero 22 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "hero/hero-22/hero-22.tsx",
@@ -2370,6 +2400,9 @@
       "type": "registry:block",
       "title": "Navbar 8",
       "description": "Navbar 8 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "navbar/navbar-8/navbar-8.tsx",
@@ -2732,6 +2765,9 @@
       "type": "registry:block",
       "title": "Sign Up 6",
       "description": "Sign Up 6 variant for block.",
+      "badge": {
+        "label": "New"
+      },
       "files": [
         {
           "path": "sign-up/sign-up-6/sign-up-6.tsx",

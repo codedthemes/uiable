@@ -514,11 +514,13 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Sign Up",
         slug: "sign-up",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
         title: "Forgot Password",
         slug: "forgot-password",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
@@ -536,6 +538,7 @@ export const NAV_BLOCKS: NavSection[] = [
       {
         title: "Code Verification",
         slug: "code-verification",
+        badge: { label: "New" },
         breakpoints: { xl: 1, lg: 1, md: 1, sm: 1, xs: 1 },
       },
       {
